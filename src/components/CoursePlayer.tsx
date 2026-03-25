@@ -1,6 +1,6 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useRef } from "react";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
+import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
 import { Separator } from "@/components/ui/separator";
@@ -12,8 +12,6 @@ import {
 } from "@/data/foundationsCourse";
 import type {
   Module,
-  Lesson,
-  QuizQuestion,
   ContentBlock,
 } from "@/data/foundationsCourse";
 
@@ -38,14 +36,6 @@ function IconLock() {
     <svg viewBox="0 0 24 24" className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2">
       <rect x="3" y="11" width="18" height="11" rx="2" />
       <path d="M7 11V7a5 5 0 0110 0v4" />
-    </svg>
-  );
-}
-function IconPlay() {
-  return (
-    <svg viewBox="0 0 24 24" className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2">
-      <circle cx="12" cy="12" r="10" />
-      <polygon points="10 8 16 12 10 16 10 8" fill="currentColor" />
     </svg>
   );
 }
@@ -371,7 +361,7 @@ function QuizView({
 
       {/* Options */}
       <div className="space-y-3 mb-8">
-        {q.options.map((opt, i) => {
+        {q.options.map((opt: string, i: number) => {
           let cls = "border-slate-200 hover:border-[hsl(174,62%,32%)]/50 bg-white";
           if (answered) {
             if (i === q.correctIndex) cls = "border-emerald-500 bg-emerald-50";
@@ -609,7 +599,6 @@ export default function CoursePlayer({ onExit }: { onExit: () => void }) {
           <div className="space-y-1">
             {course.modules.map((mod, mi) => {
               const accessible = isModuleAccessible(mi);
-              const allLessonsComplete = mod.lessons.every((l) => completion.lessons.has(l.id));
               const quizScore = completion.quizScores[mod.id];
               const quizPassed = quizScore && Math.round((quizScore.score / quizScore.total) * 100) >= 70;
 

@@ -5,7 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription, CardFooter }
 import { Badge } from "@/components/ui/badge";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
@@ -20,7 +20,7 @@ import aboutClassroomImg from "@/assets/generated/about-classroom.png";
 import courseDispensingImg from "@/assets/generated/course-dispensing.png";
 import courseAiImg from "@/assets/generated/course-ai.png";
 import caribbeanAerialImg from "@/assets/generated/caribbean-aerial.png";
-import logoConceptImg from "@/assets/generated/logo-concept.png";
+// logo-concept.png available at @/assets/generated/logo-concept.png
 
 /* ─── SVG Logo ─── */
 function PixopharmLogo({ className = "", size = 32 }: { className?: string; size?: number }) {
@@ -63,7 +63,7 @@ function IconShield() {
   return <svg viewBox="0 0 24 24" className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /><path d="M9 12l2 2 4-4" /></svg>;
 }
 
-const courseIcons: Record<string, () => JSX.Element> = {
+const courseIcons: Record<string, () => React.JSX.Element> = {
   GraduationCap: IconGradCap,
   Calculator: IconCalculator,
   Pill: IconPill,
