@@ -1,5 +1,285 @@
 # PIXOPHARM LMS Progress
 
+---
+
+## 2026-03-24: Database Seeding — All Course Data
+
+### Completed
+- **Seeded all 8 courses** from `courses.ts` into the `courses` Supabase table
+- **Seeded 61 modules** across all 8 courses into the `modules` table
+- **Seeded 28 lessons** (full JSONB content) for the Foundations course into the `lessons` table
+- **Seeded 43 quiz questions** (with options, correct_answer, explanation) for the Foundations course into the `quiz_questions` table
+
+### Database Counts (Verified)
+| Table | Count |
+|-------|-------|
+| courses | 8 |
+| modules | 61 (8 Foundations + 53 other courses) |
+| lessons | 28 (Foundations only — other courses have module placeholders) |
+| quiz_questions | 43 (Foundations only) |
+
+### Course IDs in Supabase
+| Course | UUID |
+|--------|------|
+| Foundations of Pharmacy Practice | 2d3d4181-05e9-469d-9c9b-ed563149e294 |
+| Pharmaceutical Calculations & Dosage | dd25fa41-616e-4c83-88bf-fbb574512ada |
+| Dispensing & Medication Management | bcdb80e6-5845-48cc-82b7-70ac3d8da041 |
+| Pharmacology Essentials | ef9fdc97-37eb-4511-82d6-73967e8d5d32 |
+| Caribbean Pharmaceutical Regulations | fd15008c-7718-4201-8cbe-dfc9be46bcbd |
+| AI in Pharmacy Practice | b6577f7d-1347-4167-83a2-c227b1156eb6 |
+| Patient Care & Communication | cc73874f-1b11-40e9-8523-ecdb8997faae |
+| Quality Assurance & Safety | 444dbc5b-1ed6-49cb-81bb-79079c0034ea |
+
+### Foundations Module IDs
+| Module | UUID |
+|--------|------|
+| M1: Introduction to Pharmacy | 2ca1bc64-d718-4353-892a-89be0b272618 |
+| M2: Pharmaceutical Terminology | ee8e5d5c-a94b-4a3c-8ee5-904f097547f2 |
+| M3: Prescription Orders & Labels | db6b2cd0-a20f-4885-ae7d-8df359b1d226 |
+| M4: Caribbean Pharmacy Law | 0b66db50-8b62-40ed-8242-f18d59a1b7af |
+| M5: Ethics & Confidentiality | 43669b1f-41bf-4d09-8c56-32a11d6c671e |
+| M6: Pharmacy Workflow | b182b19a-c304-4aac-9cc9-5c2a3ab72616 |
+| M7: Health Systems | 86f5d734-d2d9-4ac5-a4fd-6d209d9db6eb |
+| M8: Career Pathways | 47b5a060-0545-441a-a35d-cc1cd5775488 |
+
+### Admin User
+- **UUID**: 082ea382-d5d6-4708-be39-6047a55bbe7f (set as `created_by` on all courses)
+
+### Notes
+- All 8 courses set to `status = 'published'`
+- Lessons store full content as JSONB arrays of ContentBlock objects (heading, text, callout, table, island-comparison, key-term, case-study, video-placeholder, image-placeholder, divider, list)
+- Quiz options stored as JSONB string arrays; correct_answer is 0-based index
+- Non-Foundations courses have module title placeholders only (no lessons/quizzes yet — content needs to be built)
+
+---
+
+## 2026-03-24: Admin Feature Development
+
+### Status: IN PROGRESS
+
+### Database Migrations Applied
+1. **`create_courses_modules_lessons_tables`** — DONE
+   - `courses` table (id, title, slug, description, skill_level, duration_weeks, icon, color, image_url, status, order, prerequisites, what_youll_learn, created_by, timestamps)
+   - `modules` table (id, course_id FK, title, description, order_index, timestamps)
+   - `lessons` table (id, module_id FK, title, content JSONB, order_index, duration_minutes, timestamps)
+   - `quiz_questions` table (id, module_id FK, question, options JSONB, correct_answer, explanation, order_index)
+   - Indexes on FKs, slug, status
+   - `update_updated_at()` trigger on all content tables
+   - RLS enabled on all tables
+
+2. **`admin_role_rls_policies`** — DONE
+   - `is_admin()` SQL helper function (SECURITY DEFINER, checks profiles.role = 'admin')
+   - Ian Thomson set as admin (082ea382-d5d6-4708-be39-6047a55bbe7f)
+   - Courses: public SELECT on published, admin full CRUD
+   - Modules/Lessons/Quiz Questions: public SELECT via published course join, admin full CRUD
+   - Profiles: admin can view/update all
+   - Enrollments/Course Progress/Certificates: admin can view all
+
+### Task Tracker
+| # | Task | Status |
+|---|------|--------|
+| 1 | Database schema: courses, modules, lessons, quiz_questions | DONE |
+| 2 | Admin role: is_admin() + RLS policies | DONE |
+| 3 | Admin auth hook: useAdmin + route guard | DONE |
+| 4 | Admin Dashboard UI: CRUD + Student tracking + Analytics | DONE |
+| 5 | Preview as Student mode | DONE (integrated into admin dashboard) |
+| 6 | Seed existing course data into DB | DONE |
+| 7 | Documentation: Admin features spec | DONE |
+
+### Build Status
+- TypeScript: PASSES (zero errors)
+- Vite build: PASSES (dist/ output generated)
+- Bundle size: 821 KB JS (234 KB gzipped) + 66 KB CSS (12 KB gzipped)
+
+### Admin Dashboard Files Created (2026-03-24)
+1. **`src/hooks/useAdmin.ts`** — DONE
+   - Fetches user profile from `profiles` table
+   - Checks `role === 'admin'`
+   - Returns `{ isAdmin, loading, profile }`
+   - Caches result per user ID (useRef) to avoid re-fetching
+
+2. **`src/lib/admin-api.ts`** — DONE
+   - 15 CRUD functions wrapping Supabase queries:
+     - Courses: fetchCourses, fetchCourse (with full module/lesson/quiz tree), createCourse, updateCourse, deleteCourse
+     - Modules: createModule, updateModule, deleteModule
+     - Lessons: createLesson, updateLesson, deleteLesson
+     - Quiz Questions: createQuizQuestion, updateQuizQuestion, deleteQuizQuestion
+     - Students: fetchStudents (profiles + enrollments + progress joins)
+     - Analytics: fetchAnalytics (aggregate stats, course popularity, progress distribution, recent completions)
+   - Full TypeScript types exported for Course, Module, Lesson, QuizQuestion, StudentProfile, AnalyticsData
+
+3. **`src/components/AdminDashboard.tsx`** — DONE (~1400 lines)
+   - **Layout**: Collapsible navy sidebar + white top bar + main content area
+   - **Dashboard page**: Welcome message, 4 stat cards, quick actions, recent activity feed
+   - **Courses page**: Full CRUD with expandable course rows showing modules/lessons/quizzes
+     - Course create/edit dialog: title, auto-slug, description, skill level, duration, icon, color, prerequisites (multi-select badges), what-you'll-learn (dynamic list), status
+     - Module create/edit dialog: title, description, number, learning objectives (dynamic list)
+     - Lesson create/edit dialog: title, duration, order
+     - Quiz question create/edit dialog: question, 4 options with radio for correct answer, explanation
+     - Delete confirmation dialog for all entity types
+   - **Students page**: Searchable/sortable table with name, island, courses, progress bar, status, joined date
+     - Student detail dialog: per-course progress, quiz scores, lessons completed
+     - CSV export functionality
+   - **Analytics page**: 4 stat cards, CSS bar chart for course popularity, progress distribution, recent completions
+   - **Settings page**: Admin profile info, platform stats
+   - **Preview as Student**: Opens CoursePlayer with amber preview banner
+   - **UX**: Loading skeletons, toast notifications, form validation, empty states, keyboard shortcuts (Escape), responsive design
+   - **Design**: Matches existing app (teal primary, navy dark, DM Sans font, shadcn/ui components)
+   - All inline SVG icons (no Lucide dependency)
+   - TypeScript compiles cleanly, Vite build passes
+
+### Architecture Decisions
+- **Admin role**: Using existing `role` column on `profiles` table + `is_admin()` SQL function
+- **RLS strategy**: Public users see published content only; admin bypasses via `is_admin()` check
+- **Frontend routing**: Admin dashboard as separate view component, not embedded in landing page
+- **Course data**: Moving from hardcoded TypeScript to Supabase tables; existing data will be seeded
+
+---
+
+## Current State (2026-03-24)
+
+### Live Deployment
+- **Vercel URL**: https://pixopharm-lms.vercel.app
+- **Vercel Account**: ian-angus (ian-angus-projects)
+- **Git**: Local repo initialized (master branch, 2 commits)
+- **Stack**: React 18 + TypeScript + Vite + Tailwind CSS 3.4.1 + shadcn/ui + Radix UI
+- **Node/pnpm**: pnpm lockfile v9, TypeScript 5.9.3, Vite 8.0.2
+
+### Project File Structure
+```
+pixopharm-lms/
+├── src/
+│   ├── App.tsx                          — Main site (marketing + course player routing)
+│   ├── App.css                          — Global styles, hero gradient, animations
+│   ├── main.tsx                         — React entry point
+│   ├── index.css                        — Tailwind base + Google Fonts import
+│   ├── components/
+│   │   ├── CoursePlayer.tsx             — Interactive course player (sidebar, content renderer, quiz, certificate)
+│   │   └── ui/                         — 35+ shadcn/ui components (accordion, badge, button, card, dialog, etc.)
+│   ├── data/
+│   │   ├── courses.ts                  — Course catalog (8 courses with metadata, modules list, descriptions)
+│   │   └── foundationsCourse.ts        — Full course content (8 modules, 27 lessons, 43 quiz questions, ~2900 lines)
+│   ├── assets/
+│   │   └── generated/                  — 6 Google Flow-generated images:
+│   │       ├── hero.png                — Caribbean pharmacy interior (928 KB)
+│   │       ├── about-classroom.png     — Training classroom scene (892 KB)
+│   │       ├── course-dispensing.png   — Pharmaceutical dispensing (671 KB)
+│   │       ├── course-ai.png           — AI in pharmacy (804 KB)
+│   │       ├── caribbean-aerial.png    — Aerial coastline for CTA (1043 KB)
+│   │       └── logo-concept.png        — Logo concept (138 KB)
+│   ├── hooks/use-toast.ts
+│   └── lib/utils.ts                    — cn() utility for Tailwind class merging
+├── research/
+│   ├── caribbean_pharmacy_research.md  — Broad Caribbean + Barbados (Sections 1-10, ~1800 lines)
+│   ├── trinidad_tobago_pharmacy_research.md — Trinidad deep-dive (10 sections)
+│   └── jamaica_pharmacy_research.md    — Jamaica deep-dive (12 sections)
+├── package.json                        — Dependencies (React 19, Radix UI, etc.)
+├── pnpm-lock.yaml
+├── vite.config.ts                      — Vite config with @/ path alias
+├── tailwind.config.js                  — Tailwind with shadcn/ui theme
+├── tsconfig.json / tsconfig.app.json / tsconfig.node.json
+├── index.html                          — HTML entry point
+└── progress.md                         — This file
+```
+
+### What's Built (App.tsx Sections)
+1. **Navbar** — Fixed top nav with logo, links (About, Regulations, Courses, Pricing, Testimonials, FAQ), Sign In / Get Started buttons, mobile hamburger
+2. **Hero** — Full-height gradient hero with hero.png image, tagline "Every Island. Every Regulation. One Platform.", CTA buttons, CARICOM/Self-Paced/AI-Enhanced badges
+3. **StatsBar** — 500+ Graduates, 15 Caribbean Nations, 8 Expert Courses, 51 Learning Modules, 98% Pass Rate
+4. **About** — Two-column with about-classroom.png, regulatory callout (drug scheduling differences), 6 feature cards with emojis, 3-stat summary row
+5. **Island Regulatory Navigator** — Interactive drug comparison tool (6 drugs × 3 islands), tabbed between Summary/Details views, color-coded drug status badges (OTC/Rx/Restricted/Controlled/Behind Counter)
+6. **Courses** — Filterable course grid (All/Beginner/Intermediate/Advanced), 8 course cards with icons, course detail dialog with module list, "Start Course →" for Foundations course
+7. **Pricing** — 3 plans (Starter $29, Professional $59, Enterprise $149) with feature lists, popular badge on Professional
+8. **Testimonials** — 4 testimonial cards from Caribbean pharmacy professionals (Jamaica, Trinidad, Haiti, Barbados)
+9. **FAQ** — 9 accordion items covering course design, certifications, drug classification differences, multi-island practice
+10. **Admin Panel** — Tabbed admin area (Content/Students/Analytics) with mock data, course builder form, student table, analytics charts
+11. **CTA** — Call-to-action with caribbean-aerial.png background overlay, "Ready to Elevate Caribbean Pharmacy?"
+12. **Footer** — 4-column footer (brand, quick links, courses, support + legal)
+
+### Course Player (CoursePlayer.tsx)
+- **Navigation**: Collapsible sidebar with module/lesson tree, sequential unlocking (70% quiz pass required)
+- **Content Renderer**: Supports 12 block types: heading, text, callout (info/warning/tip/example), table, island_comparison, key_terms, case_study, video_placeholder, image_placeholder, divider, list
+- **Quiz System**: Per-question feedback with explanations, score tracking, 70% pass threshold, retake capability
+- **Certificate**: Completion view with course title, date, module count
+- **Progress State**: `{ lessons: Set<string>; quizScores: Record<string, { score: number; total: number }> }` — currently in-memory only (React useState)
+
+### Foundations Course Content (foundationsCourse.ts)
+| Module | Title | Lessons | Quiz Qs |
+|--------|-------|---------|---------|
+| 1 | The Role of the Pharmacy Technician | 3 | 5 |
+| 2 | Pharmaceutical Terminology, Medical Abbreviations & Drug Name Stems | 3 | 8 |
+| 3 | Caribbean Pharmaceutical Regulatory Framework | 4 | 5 |
+| 4 | Drug Classification & Scheduling Across Islands | 3 | 5 |
+| 5 | Ethics & Patient Confidentiality | 5 | 5 |
+| 6 | Pharmacy Operations & Workflow | 3 | 5 |
+| 7 | Communication & Patient Interaction | 3 | 5 |
+| 8 | Introduction to Technology in Pharmacy | 3 | 5 |
+| **Total** | | **27** | **43** |
+
+Module 2 includes drug name stems/suffixes (35+ stems across 5 tables: cardiovascular, diabetes, anti-infectives, pain/mental health, respiratory/specialty).
+Module 5 is the deepest (5 lessons) covering ethics, data protection acts (all 3 islands), informed consent, ethical dilemmas (3 case studies), whistleblowing.
+
+### Generated Images (via Google Flow / Playwright CDP)
+All images generated using Google Flow at https://labs.google/fx/tools/flow with Playwright CDP automation:
+- Chrome launched with `--remote-debugging-port=9333`
+- Images downloaded via in-browser `fetch()` with auth cookies → ArrayBuffer → Node Buffer → file
+- Model used: "Nano Banana 2" (Google Flow default)
+
+### Vercel Deployment
+- Auto-detected as Vite project
+- Build command: `pnpm run build` (runs `tsc -b && vite build`)
+- Output: `dist/` directory
+- TypeScript errors fixed for Vercel build (unused imports, JSX namespace, implicit any types)
+
+### Supabase Integration (DONE)
+- **Project URL**: https://hqyewiroiswmhfghkzhz.supabase.co
+- **Auth**: Email/password signup + login via `useAuth` hook
+- **Progress persistence**: `useProgress` hook saves to `course_progress` table (Supabase) with localStorage fallback for anonymous users
+- **AuthModal**: Sign in / Sign up dialog component
+- **Navbar**: Shows user avatar + name when signed in, Sign In/Out buttons
+- **Database schema**: `supabase-schema.sql` — run in Supabase SQL Editor to create tables:
+  - `profiles` (auto-created on signup via trigger)
+  - `enrollments` (user_id + course_id)
+  - `course_progress` (completed_lessons jsonb + quiz_scores jsonb)
+  - `certificates` (user_id + course_id + certificate_number)
+  - All tables have RLS policies
+- **Env vars**: Set on Vercel (`VITE_SUPABASE_URL`, `VITE_SUPABASE_PUBLISHABLE_KEY`)
+- **Supabase MCP plugin**: Enabled in `~/.claude/settings.json` (needs session restart to activate)
+
+### New Files from Supabase Integration
+- `src/lib/supabase.ts` — Supabase client init
+- `src/hooks/useAuth.ts` — Auth state, signIn, signUp, signOut
+- `src/hooks/useProgress.ts` — Persistent progress (Supabase + localStorage fallback)
+- `src/components/AuthModal.tsx` — Sign in/up modal
+- `supabase-schema.sql` — Database migration SQL
+- `.env` — Local env vars (gitignored)
+
+### Supabase URL Configuration (DONE - 2026-03-24)
+- **Site URL**: `https://pixopharm-lms.vercel.app` (changed from `http://localhost:3000`)
+- **Redirect URLs**:
+  - `https://pixopharm-lms.vercel.app/**` (production)
+  - `http://localhost:5173/**` (local dev)
+- Email verification links now redirect to the Vercel production site
+- Database schema (`supabase-schema.sql`) already executed via Playwright in Supabase SQL Editor
+
+### What's NOT Built Yet
+- **Remaining 7 courses** — Only "Foundations of Pharmacy Practice" has full content; other 7 courses have catalog entries but no lesson content
+- **Image optimization** — Images are large PNGs (650KB-1MB each), could be converted to WebP
+- **Video content** — All video references are placeholders
+- **Payment integration** — Pricing page is UI-only, no Stripe/payment processing
+- **Course reminders/notifications** — No automated email reminders
+- **Search** — No course/content search functionality
+- **Mobile nav** — Hamburger menu exists but course player sidebar not optimized for small screens
+- **SEO** — Basic index.html only, no meta tags, OG tags, sitemap
+
+### Next Steps (Immediate)
+1. **Connect GitHub** — Push to GitHub repo for Vercel auto-deploys
+2. **Build remaining courses** — Client needs to approve before building 7 more courses
+3. **Image optimization** — Convert PNGs to WebP, add lazy loading
+4. **Test full auth flow** — Sign up → verify email → redirect to Vercel → sign in → course progress saves
+
+---
+
 ## 2026-03-24: Pharmacy Ethics & Patient Confidentiality Research
 
 ### Completed

@@ -1,0 +1,2171 @@
+// ============================================================================
+// PIXOPHARM LMS — Admin Dashboard
+// Full admin console: Dashboard, Courses, Students, Analytics, Settings
+// ============================================================================
+
+import { useState, useEffect, useCallback, useMemo } from "react";
+import type { User } from "@supabase/supabase-js";
+
+// ── UI Components ────────────────────────────────────────────────────────────
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+  CardDescription,
+  CardFooter,
+} from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+// Tabs not used in admin dashboard (sidebar nav instead)
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Textarea } from "@/components/ui/textarea";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogDescription,
+  DialogFooter,
+  DialogClose,
+} from "@/components/ui/dialog";
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "@/components/ui/table";
+import { Progress } from "@/components/ui/progress";
+import { Separator } from "@/components/ui/separator";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+import { Skeleton } from "@/components/ui/skeleton";
+import { useToast } from "@/hooks/use-toast";
+
+// ── Admin API ────────────────────────────────────────────────────────────────
+import { useAdmin } from "@/hooks/useAdmin";
+import type { AdminProfile } from "@/hooks/useAdmin";
+import {
+  fetchCourses,
+  fetchCourse,
+  createCourse,
+  updateCourse,
+  deleteCourse,
+  createModule,
+  updateModule,
+  deleteModule,
+  createLesson,
+  updateLesson,
+  deleteLesson,
+  createQuizQuestion,
+  updateQuizQuestion,
+  deleteQuizQuestion,
+  fetchStudents,
+  fetchAnalytics,
+} from "@/lib/admin-api";
+import type {
+  Course,
+  Module,
+  Lesson,
+  QuizQuestion,
+  StudentProfile,
+  AnalyticsData,
+} from "@/lib/admin-api";
+
+// ── CoursePlayer for Preview ─────────────────────────────────────────────────
+import CoursePlayer from "@/components/CoursePlayer";
+
+// ============================================================================
+// TYPES
+// ============================================================================
+
+interface AdminDashboardProps {
+  user: User;
+  onExit: () => void;
+}
+
+type AdminPage = "dashboard" | "courses" | "students" | "analytics" | "settings";
+
+// ============================================================================
+// SVG ICONS (inline to avoid Lucide dependency bloat)
+// ============================================================================
+
+function IconDashboard() {
+  return (
+    <svg viewBox="0 0 24 24" className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <rect x="3" y="3" width="7" height="7" rx="1" />
+      <rect x="14" y="3" width="7" height="7" rx="1" />
+      <rect x="3" y="14" width="7" height="7" rx="1" />
+      <rect x="14" y="14" width="7" height="7" rx="1" />
+    </svg>
+  );
+}
+function IconCourses() {
+  return (
+    <svg viewBox="0 0 24 24" className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2zM22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z" />
+    </svg>
+  );
+}
+function IconStudents() {
+  return (
+    <svg viewBox="0 0 24 24" className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
+      <circle cx="9" cy="7" r="4" />
+      <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" />
+    </svg>
+  );
+}
+function IconAnalytics() {
+  return (
+    <svg viewBox="0 0 24 24" className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M18 20V10M12 20V4M6 20v-6" />
+    </svg>
+  );
+}
+function IconSettings() {
+  return (
+    <svg viewBox="0 0 24 24" className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <circle cx="12" cy="12" r="3" />
+      <path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.32 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z" />
+    </svg>
+  );
+}
+function IconPlus() {
+  return (
+    <svg viewBox="0 0 24 24" className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
+      <path d="M12 5v14M5 12h14" />
+    </svg>
+  );
+}
+function IconEdit() {
+  return (
+    <svg viewBox="0 0 24 24" className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7" />
+      <path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z" />
+    </svg>
+  );
+}
+function IconTrash() {
+  return (
+    <svg viewBox="0 0 24 24" className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <polyline points="3 6 5 6 21 6" />
+      <path d="M19 6v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6m3 0V4a2 2 0 012-2h4a2 2 0 012 2v2" />
+    </svg>
+  );
+}
+function IconChevronRight() {
+  return (
+    <svg viewBox="0 0 24 24" className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <polyline points="9 18 15 12 9 6" />
+    </svg>
+  );
+}
+function IconSearch() {
+  return (
+    <svg viewBox="0 0 24 24" className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <circle cx="11" cy="11" r="8" />
+      <line x1="21" y1="21" x2="16.65" y2="16.65" />
+    </svg>
+  );
+}
+function IconDownload() {
+  return (
+    <svg viewBox="0 0 24 24" className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" />
+      <polyline points="7 10 12 15 17 10" />
+      <line x1="12" y1="15" x2="12" y2="3" />
+    </svg>
+  );
+}
+function IconEye() {
+  return (
+    <svg viewBox="0 0 24 24" className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+      <circle cx="12" cy="12" r="3" />
+    </svg>
+  );
+}
+function IconLogOut() {
+  return (
+    <svg viewBox="0 0 24 24" className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4" />
+      <polyline points="16 17 21 12 16 7" />
+      <line x1="21" y1="12" x2="9" y2="12" />
+    </svg>
+  );
+}
+function IconAward() {
+  return (
+    <svg viewBox="0 0 24 24" className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <circle cx="12" cy="8" r="7" />
+      <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" />
+    </svg>
+  );
+}
+
+// ── Logo (reused from App.tsx) ───────────────────────────────────────────────
+function PixopharmLogo({ size = 32 }: { size?: number }) {
+  return (
+    <svg viewBox="0 0 40 40" width={size} height={size} fill="none">
+      <rect width="40" height="40" rx="8" fill="hsl(174 62% 32%)" />
+      <path d="M12 28 L12 14 L20 10 L28 14 L28 22 L20 26 L12 22" stroke="white" strokeWidth="2" fill="none" strokeLinejoin="round" />
+      <path d="M20 10 L20 26" stroke="white" strokeWidth="1.5" opacity="0.6" />
+      <path d="M12 14 L28 14" stroke="white" strokeWidth="1" opacity="0.4" />
+      <circle cx="20" cy="18" r="3" fill="white" opacity="0.9" />
+      <path d="M18.5 17 L19.5 19 L21.5 16.5" stroke="hsl(174 62% 32%)" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+}
+
+// ============================================================================
+// HELPER: Slug generator
+// ============================================================================
+
+function slugify(text: string): string {
+  return text
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/(^-|-$)/g, "");
+}
+
+// ============================================================================
+// HELPER: Status badge variant
+// ============================================================================
+
+function statusBadge(status: string) {
+  switch (status) {
+    case "published":
+      return <Badge className="bg-emerald-100 text-emerald-700 hover:bg-emerald-100 border-emerald-200">Published</Badge>;
+    case "archived":
+      return <Badge className="bg-slate-100 text-slate-600 hover:bg-slate-100 border-slate-200">Archived</Badge>;
+    default:
+      return <Badge className="bg-amber-100 text-amber-700 hover:bg-amber-100 border-amber-200">Draft</Badge>;
+  }
+}
+
+// ============================================================================
+// LOADING SKELETONS
+// ============================================================================
+
+function StatCardSkeleton() {
+  return (
+    <Card>
+      <CardHeader className="pb-2">
+        <Skeleton className="h-4 w-24" />
+      </CardHeader>
+      <CardContent>
+        <Skeleton className="h-8 w-16 mb-1" />
+        <Skeleton className="h-3 w-32" />
+      </CardContent>
+    </Card>
+  );
+}
+
+function TableSkeleton({ rows = 5 }: { rows?: number }) {
+  return (
+    <div className="space-y-3">
+      {Array.from({ length: rows }).map((_, i) => (
+        <div key={i} className="flex items-center gap-4">
+          <Skeleton className="h-10 flex-1" />
+          <Skeleton className="h-10 w-24" />
+          <Skeleton className="h-10 w-20" />
+        </div>
+      ))}
+    </div>
+  );
+}
+
+// ============================================================================
+// EMPTY STATES
+// ============================================================================
+
+function EmptyState({ title, description, action }: { title: string; description: string; action?: React.ReactNode }) {
+  return (
+    <div className="flex flex-col items-center justify-center py-16 text-center">
+      <div className="w-16 h-16 rounded-full bg-muted flex items-center justify-center mb-4">
+        <IconCourses />
+      </div>
+      <h3 className="text-lg font-semibold text-foreground mb-1">{title}</h3>
+      <p className="text-sm text-muted-foreground max-w-md mb-4">{description}</p>
+      {action}
+    </div>
+  );
+}
+
+// ============================================================================
+// MAIN COMPONENT
+// ============================================================================
+
+export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
+  const { isAdmin, loading: adminLoading, profile } = useAdmin(user);
+  const { toast } = useToast();
+
+  // ── Navigation State ─────────────────────────────────────────────────────
+  const [activePage, setActivePage] = useState<AdminPage>("dashboard");
+  const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
+
+  // ── Data State ───────────────────────────────────────────────────────────
+  const [courses, setCourses] = useState<Course[]>([]);
+  const [coursesLoading, setCoursesLoading] = useState(true);
+  const [students, setStudents] = useState<StudentProfile[]>([]);
+  const [studentsLoading, setStudentsLoading] = useState(true);
+  const [analytics, setAnalytics] = useState<AnalyticsData | null>(null);
+  const [analyticsLoading, setAnalyticsLoading] = useState(true);
+
+  // ── Course Detail State ──────────────────────────────────────────────────
+  const [expandedCourseId, setExpandedCourseId] = useState<string | null>(null);
+  const [courseDetail, setCourseDetail] = useState<{
+    course: Course;
+    modules: (Module & { lessons: Lesson[]; quiz_questions: QuizQuestion[] })[];
+  } | null>(null);
+  const [courseDetailLoading, setCourseDetailLoading] = useState(false);
+
+  // ── Dialog State ─────────────────────────────────────────────────────────
+  const [showCourseDialog, setShowCourseDialog] = useState(false);
+  const [editingCourse, setEditingCourse] = useState<Course | null>(null);
+  const [showModuleDialog, setShowModuleDialog] = useState(false);
+  const [editingModule, setEditingModule] = useState<Module | null>(null);
+  const [moduleParentCourseId, setModuleParentCourseId] = useState<string>("");
+  const [showLessonDialog, setShowLessonDialog] = useState(false);
+  const [editingLesson, setEditingLesson] = useState<Lesson | null>(null);
+  const [lessonParentModuleId, setLessonParentModuleId] = useState<string>("");
+  const [showQuizDialog, setShowQuizDialog] = useState(false);
+  const [editingQuiz, setEditingQuiz] = useState<QuizQuestion | null>(null);
+  const [quizParentModuleId, setQuizParentModuleId] = useState<string>("");
+  const [showDeleteDialog, setShowDeleteDialog] = useState(false);
+  const [deleteTarget, setDeleteTarget] = useState<{ type: string; id: string; name: string } | null>(null);
+
+  // ── Student Detail State ─────────────────────────────────────────────────
+  const [selectedStudent, setSelectedStudent] = useState<StudentProfile | null>(null);
+  const [studentSearch, setStudentSearch] = useState("");
+  const [studentSort, setStudentSort] = useState<"name" | "progress" | "recent">("name");
+
+  // ── Preview State ────────────────────────────────────────────────────────
+  const [previewCourseId, setPreviewCourseId] = useState<string | null>(null);
+
+  // ── Form State ───────────────────────────────────────────────────────────
+  const [courseForm, setCourseForm] = useState({
+    title: "",
+    slug: "",
+    description: "",
+    skill_level: "Beginner",
+    duration_weeks: 4,
+    icon: "GraduationCap",
+    color: "blue",
+    prerequisites: [] as string[],
+    what_youll_learn: [""],
+    status: "draft" as "draft" | "published" | "archived",
+    order: 99,
+  });
+  const [moduleForm, setModuleForm] = useState({
+    title: "",
+    description: "",
+    order_index: 1,
+  });
+  const [lessonForm, setLessonForm] = useState({
+    title: "",
+    duration_minutes: 15,
+    order_index: 99,
+  });
+  const [quizForm, setQuizForm] = useState({
+    question: "",
+    options: ["", "", "", ""],
+    correct_answer: 0,
+    explanation: "",
+    order_index: 99,
+  });
+  const [formErrors, setFormErrors] = useState<Record<string, string>>({});
+
+  // ── Data Loading ─────────────────────────────────────────────────────────
+
+  const loadCourses = useCallback(async () => {
+    setCoursesLoading(true);
+    try {
+      const data = await fetchCourses();
+      setCourses(data);
+    } catch (err) {
+      toast({ title: "Error loading courses", description: String(err), variant: "destructive" });
+    } finally {
+      setCoursesLoading(false);
+    }
+  }, [toast]);
+
+  const loadStudents = useCallback(async () => {
+    setStudentsLoading(true);
+    try {
+      const data = await fetchStudents();
+      setStudents(data);
+    } catch (err) {
+      toast({ title: "Error loading students", description: String(err), variant: "destructive" });
+    } finally {
+      setStudentsLoading(false);
+    }
+  }, [toast]);
+
+  const loadAnalytics = useCallback(async () => {
+    setAnalyticsLoading(true);
+    try {
+      const data = await fetchAnalytics();
+      setAnalytics(data);
+    } catch (err) {
+      toast({ title: "Error loading analytics", description: String(err), variant: "destructive" });
+    } finally {
+      setAnalyticsLoading(false);
+    }
+  }, [toast]);
+
+  const loadCourseDetail = useCallback(
+    async (courseId: string) => {
+      setCourseDetailLoading(true);
+      try {
+        const data = await fetchCourse(courseId);
+        setCourseDetail(data);
+      } catch (err) {
+        toast({ title: "Error loading course detail", description: String(err), variant: "destructive" });
+      } finally {
+        setCourseDetailLoading(false);
+      }
+    },
+    [toast]
+  );
+
+  // Load data on mount and page switch
+  useEffect(() => {
+    if (adminLoading || !isAdmin) return;
+
+    if (activePage === "dashboard" || activePage === "courses") {
+      loadCourses();
+    }
+    if (activePage === "dashboard" || activePage === "students") {
+      loadStudents();
+    }
+    if (activePage === "dashboard" || activePage === "analytics") {
+      loadAnalytics();
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [activePage, adminLoading, isAdmin]);
+
+  // Load course detail when expanding
+  useEffect(() => {
+    if (expandedCourseId) {
+      loadCourseDetail(expandedCourseId);
+    } else {
+      setCourseDetail(null);
+    }
+  }, [expandedCourseId, loadCourseDetail]);
+
+  // Keyboard shortcut: Escape to close dialogs
+  useEffect(() => {
+    const handler = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        setShowCourseDialog(false);
+        setShowModuleDialog(false);
+        setShowLessonDialog(false);
+        setShowQuizDialog(false);
+        setShowDeleteDialog(false);
+        setSelectedStudent(null);
+        setPreviewCourseId(null);
+      }
+    };
+    window.addEventListener("keydown", handler);
+    return () => window.removeEventListener("keydown", handler);
+  }, []);
+
+  // ── Course CRUD Handlers ─────────────────────────────────────────────────
+
+  function openNewCourse() {
+    setEditingCourse(null);
+    setCourseForm({
+      title: "",
+      slug: "",
+      description: "",
+      skill_level: "Beginner",
+      duration_weeks: 4,
+      icon: "GraduationCap",
+      color: "blue",
+      prerequisites: [],
+      what_youll_learn: [""],
+      status: "draft",
+      order: courses.length + 1,
+    });
+    setFormErrors({});
+    setShowCourseDialog(true);
+  }
+
+  function openEditCourse(course: Course) {
+    setEditingCourse(course);
+    setCourseForm({
+      title: course.title,
+      slug: course.slug,
+      description: course.description,
+      skill_level: course.skill_level,
+      duration_weeks: course.duration_weeks,
+      icon: course.icon,
+      color: course.color,
+      prerequisites: course.prerequisites ?? [],
+      what_youll_learn: course.what_youll_learn?.length ? course.what_youll_learn : [""],
+      status: course.status,
+      order: course.order,
+    });
+    setFormErrors({});
+    setShowCourseDialog(true);
+  }
+
+  async function handleSaveCourse() {
+    // Validate
+    const errors: Record<string, string> = {};
+    if (!courseForm.title.trim()) errors.title = "Title is required";
+    if (!courseForm.slug.trim()) errors.slug = "Slug is required";
+    if (!courseForm.description.trim()) errors.description = "Description is required";
+    if (Object.keys(errors).length > 0) {
+      setFormErrors(errors);
+      return;
+    }
+
+    const payload = {
+      ...courseForm,
+      what_youll_learn: courseForm.what_youll_learn.filter((s) => s.trim()),
+    };
+
+    try {
+      if (editingCourse) {
+        await updateCourse(editingCourse.id, payload);
+        toast({ title: "Course updated", description: `"${courseForm.title}" has been updated.` });
+      } else {
+        await createCourse(payload);
+        toast({ title: "Course created", description: `"${courseForm.title}" has been created.` });
+      }
+      setShowCourseDialog(false);
+      loadCourses();
+    } catch (err) {
+      toast({ title: "Error saving course", description: String(err), variant: "destructive" });
+    }
+  }
+
+  // ── Module CRUD Handlers ─────────────────────────────────────────────────
+
+  function openNewModule(courseId: string) {
+    setEditingModule(null);
+    setModuleParentCourseId(courseId);
+    const existingCount = courseDetail?.modules.length ?? 0;
+    setModuleForm({
+      title: "",
+      description: "",
+      order_index: existingCount + 1,
+    });
+    setFormErrors({});
+    setShowModuleDialog(true);
+  }
+
+  function openEditModule(mod: Module) {
+    setEditingModule(mod);
+    setModuleParentCourseId(mod.course_id);
+    setModuleForm({
+      title: mod.title,
+      description: mod.description ?? "",
+      order_index: mod.order_index,
+    });
+    setFormErrors({});
+    setShowModuleDialog(true);
+  }
+
+  async function handleSaveModule() {
+    const errors: Record<string, string> = {};
+    if (!moduleForm.title.trim()) errors.title = "Title is required";
+    if (Object.keys(errors).length > 0) {
+      setFormErrors(errors);
+      return;
+    }
+
+    const payload = { ...moduleForm };
+
+    try {
+      if (editingModule) {
+        await updateModule(editingModule.id, payload);
+        toast({ title: "Module updated", description: `"${moduleForm.title}" has been updated.` });
+      } else {
+        await createModule(moduleParentCourseId, payload);
+        toast({ title: "Module created", description: `"${moduleForm.title}" has been created.` });
+      }
+      setShowModuleDialog(false);
+      if (expandedCourseId) loadCourseDetail(expandedCourseId);
+      loadCourses();
+    } catch (err) {
+      toast({ title: "Error saving module", description: String(err), variant: "destructive" });
+    }
+  }
+
+  // ── Lesson CRUD Handlers ─────────────────────────────────────────────────
+
+  function openNewLesson(moduleId: string) {
+    setEditingLesson(null);
+    setLessonParentModuleId(moduleId);
+    setLessonForm({ title: "", duration_minutes: 15, order_index: 99 });
+    setFormErrors({});
+    setShowLessonDialog(true);
+  }
+
+  function openEditLesson(lesson: Lesson) {
+    setEditingLesson(lesson);
+    setLessonParentModuleId(lesson.module_id);
+    setLessonForm({ title: lesson.title, duration_minutes: lesson.duration_minutes, order_index: lesson.order_index });
+    setFormErrors({});
+    setShowLessonDialog(true);
+  }
+
+  async function handleSaveLesson() {
+    const errors: Record<string, string> = {};
+    if (!lessonForm.title.trim()) errors.title = "Title is required";
+    if (Object.keys(errors).length > 0) {
+      setFormErrors(errors);
+      return;
+    }
+
+    try {
+      if (editingLesson) {
+        await updateLesson(editingLesson.id, lessonForm);
+        toast({ title: "Lesson updated", description: `"${lessonForm.title}" has been updated.` });
+      } else {
+        await createLesson(lessonParentModuleId, lessonForm);
+        toast({ title: "Lesson created", description: `"${lessonForm.title}" has been created.` });
+      }
+      setShowLessonDialog(false);
+      if (expandedCourseId) loadCourseDetail(expandedCourseId);
+    } catch (err) {
+      toast({ title: "Error saving lesson", description: String(err), variant: "destructive" });
+    }
+  }
+
+  // ── Quiz CRUD Handlers ───────────────────────────────────────────────────
+
+  function openNewQuiz(moduleId: string) {
+    setEditingQuiz(null);
+    setQuizParentModuleId(moduleId);
+    setQuizForm({ question: "", options: ["", "", "", ""], correct_answer: 0, explanation: "", order_index: 99 });
+    setFormErrors({});
+    setShowQuizDialog(true);
+  }
+
+  function openEditQuiz(q: QuizQuestion) {
+    setEditingQuiz(q);
+    setQuizParentModuleId(q.module_id);
+    setQuizForm({
+      question: q.question,
+      options: q.options.length >= 4 ? q.options : [...q.options, ...Array(4 - q.options.length).fill("")],
+      correct_answer: q.correct_answer,
+      explanation: q.explanation,
+      order_index: q.order_index,
+    });
+    setFormErrors({});
+    setShowQuizDialog(true);
+  }
+
+  async function handleSaveQuiz() {
+    const errors: Record<string, string> = {};
+    if (!quizForm.question.trim()) errors.question = "Question is required";
+    const filledOptions = quizForm.options.filter((o) => o.trim());
+    if (filledOptions.length < 2) errors.options = "At least 2 options are required";
+    if (Object.keys(errors).length > 0) {
+      setFormErrors(errors);
+      return;
+    }
+
+    try {
+      if (editingQuiz) {
+        await updateQuizQuestion(editingQuiz.id, quizForm);
+        toast({ title: "Quiz question updated" });
+      } else {
+        await createQuizQuestion(quizParentModuleId, quizForm);
+        toast({ title: "Quiz question created" });
+      }
+      setShowQuizDialog(false);
+      if (expandedCourseId) loadCourseDetail(expandedCourseId);
+    } catch (err) {
+      toast({ title: "Error saving quiz question", description: String(err), variant: "destructive" });
+    }
+  }
+
+  // ── Delete Handler ───────────────────────────────────────────────────────
+
+  function confirmDelete(type: string, id: string, name: string) {
+    setDeleteTarget({ type, id, name });
+    setShowDeleteDialog(true);
+  }
+
+  async function handleDelete() {
+    if (!deleteTarget) return;
+    try {
+      switch (deleteTarget.type) {
+        case "course":
+          await deleteCourse(deleteTarget.id);
+          toast({ title: "Course deleted", description: `"${deleteTarget.name}" has been deleted.` });
+          setExpandedCourseId(null);
+          loadCourses();
+          break;
+        case "module":
+          await deleteModule(deleteTarget.id);
+          toast({ title: "Module deleted", description: `"${deleteTarget.name}" has been deleted.` });
+          if (expandedCourseId) loadCourseDetail(expandedCourseId);
+          loadCourses();
+          break;
+        case "lesson":
+          await deleteLesson(deleteTarget.id);
+          toast({ title: "Lesson deleted", description: `"${deleteTarget.name}" has been deleted.` });
+          if (expandedCourseId) loadCourseDetail(expandedCourseId);
+          break;
+        case "quiz":
+          await deleteQuizQuestion(deleteTarget.id);
+          toast({ title: "Quiz question deleted" });
+          if (expandedCourseId) loadCourseDetail(expandedCourseId);
+          break;
+      }
+    } catch (err) {
+      toast({ title: "Error deleting", description: String(err), variant: "destructive" });
+    } finally {
+      setShowDeleteDialog(false);
+      setDeleteTarget(null);
+    }
+  }
+
+  // ── Student CSV Export ───────────────────────────────────────────────────
+
+  function exportStudentsCSV() {
+    const headers = ["Name", "Island", "Enrolled Courses", "Progress %", "Status", "Created"];
+    const rows = filteredStudents.map((s) => {
+      const enrollCount = s.enrollments?.length ?? 0;
+      const avgProgress = getStudentAvgProgress(s);
+      const status = enrollCount > 0 ? "Active" : "Inactive";
+      return [s.full_name, s.island ?? "N/A", enrollCount, avgProgress, status, s.created_at?.split("T")[0] ?? ""];
+    });
+
+    const csv = [headers, ...rows].map((r) => r.map((c) => `"${c}"`).join(",")).join("\n");
+    const blob = new Blob([csv], { type: "text/csv" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = `pixopharm-students-${new Date().toISOString().split("T")[0]}.csv`;
+    a.click();
+    URL.revokeObjectURL(url);
+    toast({ title: "CSV exported", description: `${filteredStudents.length} students exported.` });
+  }
+
+  // ── Computed Values ──────────────────────────────────────────────────────
+
+  function getStudentAvgProgress(s: StudentProfile): number {
+    if (!s.progress?.length) return 0;
+    const total = s.progress.reduce((sum, p) => sum + (p.completed_lessons?.length ?? 0), 0);
+    // Rough estimate using 30 lessons per course
+    return Math.min(100, Math.round((total / (s.progress.length * 30)) * 100));
+  }
+
+  const filteredStudents = useMemo(() => {
+    let list = [...students];
+    if (studentSearch.trim()) {
+      const q = studentSearch.toLowerCase();
+      list = list.filter(
+        (s) =>
+          s.full_name.toLowerCase().includes(q) ||
+          (s.island ?? "").toLowerCase().includes(q)
+      );
+    }
+    switch (studentSort) {
+      case "progress":
+        list.sort((a, b) => getStudentAvgProgress(b) - getStudentAvgProgress(a));
+        break;
+      case "recent":
+        list.sort((a, b) => (b.created_at ?? "").localeCompare(a.created_at ?? ""));
+        break;
+      default:
+        list.sort((a, b) => a.full_name.localeCompare(b.full_name));
+    }
+    return list;
+  }, [students, studentSearch, studentSort]);
+
+  const dashboardStats = useMemo(() => {
+    const totalCourses = courses.length;
+    const totalStudents = students.length;
+    const activeEnrollments = students.reduce((sum, s) => sum + (s.enrollments?.length ?? 0), 0);
+    const avgCompletion = analytics?.completion_rate ?? 0;
+    return { totalCourses, totalStudents, activeEnrollments, avgCompletion };
+  }, [courses, students, analytics]);
+
+  // ── Guard: not admin ─────────────────────────────────────────────────────
+
+  if (adminLoading) {
+    return (
+      <div className="min-h-screen bg-background flex items-center justify-center" style={{ fontFamily: "'DM Sans', sans-serif" }}>
+        <div className="flex flex-col items-center gap-4">
+          <PixopharmLogo size={48} />
+          <Skeleton className="h-6 w-48" />
+          <Skeleton className="h-4 w-32" />
+        </div>
+      </div>
+    );
+  }
+
+  if (!isAdmin) {
+    return (
+      <div className="min-h-screen bg-background flex items-center justify-center" style={{ fontFamily: "'DM Sans', sans-serif" }}>
+        <Card className="max-w-md w-full">
+          <CardHeader>
+            <CardTitle>Access Denied</CardTitle>
+            <CardDescription>You do not have admin privileges to access this page.</CardDescription>
+          </CardHeader>
+          <CardFooter>
+            <Button onClick={onExit}>Return to Site</Button>
+          </CardFooter>
+        </Card>
+      </div>
+    );
+  }
+
+  // ── Preview Mode ─────────────────────────────────────────────────────────
+
+  if (previewCourseId) {
+    return (
+      <div className="min-h-screen" style={{ fontFamily: "'DM Sans', sans-serif" }}>
+        {/* Preview Banner */}
+        <div className="bg-amber-500 text-white px-4 py-2 flex items-center justify-between text-sm font-medium sticky top-0 z-50">
+          <div className="flex items-center gap-2">
+            <IconEye />
+            <span>ADMIN PREVIEW MODE — Viewing as student</span>
+          </div>
+          <Button
+            size="sm"
+            variant="outline"
+            className="bg-white text-amber-700 hover:bg-amber-50 border-amber-300"
+            onClick={() => setPreviewCourseId(null)}
+          >
+            Exit Preview
+          </Button>
+        </div>
+        <CoursePlayer user={user} onExit={() => setPreviewCourseId(null)} />
+      </div>
+    );
+  }
+
+  // ══════════════════════════════════════════════════════════════════════════
+  // RENDER
+  // ══════════════════════════════════════════════════════════════════════════
+
+  return (
+    <div className="min-h-screen bg-background flex" style={{ fontFamily: "'DM Sans', sans-serif" }}>
+
+      {/* ── Sidebar ────────────────────────────────────────────────────────── */}
+      <aside
+        className={`${
+          sidebarCollapsed ? "w-16" : "w-60"
+        } bg-[hsl(213,50%,16%)] text-white flex flex-col transition-all duration-200 shrink-0 sticky top-0 h-screen`}
+      >
+        {/* Logo */}
+        <div className="flex items-center gap-3 p-4 border-b border-white/10">
+          <PixopharmLogo size={28} />
+          {!sidebarCollapsed && <span className="font-semibold text-sm tracking-tight">Admin Console</span>}
+        </div>
+
+        {/* Nav Items */}
+        <nav className="flex-1 py-4 space-y-1 px-2">
+          {([
+            { id: "dashboard" as AdminPage, label: "Dashboard", icon: <IconDashboard /> },
+            { id: "courses" as AdminPage, label: "Courses", icon: <IconCourses /> },
+            { id: "students" as AdminPage, label: "Students", icon: <IconStudents /> },
+            { id: "analytics" as AdminPage, label: "Analytics", icon: <IconAnalytics /> },
+            { id: "settings" as AdminPage, label: "Settings", icon: <IconSettings /> },
+          ]).map((item) => (
+            <button
+              key={item.id}
+              onClick={() => setActivePage(item.id)}
+              className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-colors ${
+                activePage === item.id
+                  ? "bg-white/15 text-white"
+                  : "text-white/60 hover:text-white hover:bg-white/5"
+              }`}
+            >
+              {item.icon}
+              {!sidebarCollapsed && <span>{item.label}</span>}
+            </button>
+          ))}
+        </nav>
+
+        {/* Collapse Toggle */}
+        <div className="p-2 border-t border-white/10">
+          <button
+            onClick={() => setSidebarCollapsed(!sidebarCollapsed)}
+            className="w-full flex items-center justify-center p-2 rounded-lg text-white/40 hover:text-white/80 hover:bg-white/5 transition-colors"
+          >
+            <svg viewBox="0 0 24 24" className={`w-4 h-4 transition-transform ${sidebarCollapsed ? "rotate-180" : ""}`} fill="none" stroke="currentColor" strokeWidth="2">
+              <polyline points="15 18 9 12 15 6" />
+            </svg>
+          </button>
+        </div>
+      </aside>
+
+      {/* ── Main Content ──────────────────────────────────────────────────── */}
+      <div className="flex-1 flex flex-col min-h-screen overflow-x-hidden">
+        {/* Top Bar */}
+        <header className="bg-white border-b px-6 py-3 flex items-center justify-between sticky top-0 z-40">
+          <h1 className="text-lg font-semibold text-foreground capitalize">{activePage}</h1>
+          <div className="flex items-center gap-4">
+            <span className="text-sm text-muted-foreground">
+              {(profile as AdminProfile | null)?.full_name ?? user.email}
+            </span>
+            <Button variant="outline" size="sm" onClick={onExit} className="gap-2">
+              <IconLogOut />
+              Exit Admin
+            </Button>
+          </div>
+        </header>
+
+        {/* Page Content */}
+        <main className="flex-1 p-6">
+
+          {/* ════════════════════════════════════════════════════════════════ */}
+          {/* A. DASHBOARD OVERVIEW                                          */}
+          {/* ════════════════════════════════════════════════════════════════ */}
+          {activePage === "dashboard" && (
+            <div className="space-y-6">
+              {/* Welcome */}
+              <div>
+                <h2 className="text-2xl font-bold text-foreground">
+                  Welcome back, {(profile as AdminProfile | null)?.full_name?.split(" ")[0] ?? "Admin"}
+                </h2>
+                <p className="text-muted-foreground text-sm mt-1">
+                  Here is what is happening with your courses today.
+                </p>
+              </div>
+
+              {/* Stat Cards */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                {coursesLoading || studentsLoading ? (
+                  <>
+                    <StatCardSkeleton />
+                    <StatCardSkeleton />
+                    <StatCardSkeleton />
+                    <StatCardSkeleton />
+                  </>
+                ) : (
+                  <>
+                    <Card>
+                      <CardHeader className="pb-2">
+                        <CardDescription>Total Courses</CardDescription>
+                      </CardHeader>
+                      <CardContent>
+                        <div className="text-3xl font-bold text-foreground">{dashboardStats.totalCourses}</div>
+                        <p className="text-xs text-muted-foreground mt-1">
+                          {courses.filter((c) => c.status === "published").length} published
+                        </p>
+                      </CardContent>
+                    </Card>
+                    <Card>
+                      <CardHeader className="pb-2">
+                        <CardDescription>Total Students</CardDescription>
+                      </CardHeader>
+                      <CardContent>
+                        <div className="text-3xl font-bold text-foreground">{dashboardStats.totalStudents}</div>
+                        <p className="text-xs text-muted-foreground mt-1">Registered learners</p>
+                      </CardContent>
+                    </Card>
+                    <Card>
+                      <CardHeader className="pb-2">
+                        <CardDescription>Active Enrollments</CardDescription>
+                      </CardHeader>
+                      <CardContent>
+                        <div className="text-3xl font-bold text-foreground">{dashboardStats.activeEnrollments}</div>
+                        <p className="text-xs text-muted-foreground mt-1">Across all courses</p>
+                      </CardContent>
+                    </Card>
+                    <Card>
+                      <CardHeader className="pb-2">
+                        <CardDescription>Avg Completion Rate</CardDescription>
+                      </CardHeader>
+                      <CardContent>
+                        <div className="text-3xl font-bold text-foreground">{dashboardStats.avgCompletion}%</div>
+                        <Progress value={dashboardStats.avgCompletion} className="mt-2 h-1.5" />
+                      </CardContent>
+                    </Card>
+                  </>
+                )}
+              </div>
+
+              {/* Quick Actions + Recent Activity */}
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                {/* Quick Actions */}
+                <Card>
+                  <CardHeader>
+                    <CardTitle className="text-base">Quick Actions</CardTitle>
+                  </CardHeader>
+                  <CardContent className="space-y-3">
+                    <Button
+                      className="w-full justify-start gap-2 bg-[hsl(174,62%,32%)] hover:bg-[hsl(174,62%,26%)]"
+                      onClick={() => { setActivePage("courses"); setTimeout(openNewCourse, 100); }}
+                    >
+                      <IconPlus /> Create New Course
+                    </Button>
+                    <Button
+                      variant="outline"
+                      className="w-full justify-start gap-2"
+                      onClick={() => setActivePage("students")}
+                    >
+                      <IconStudents /> View All Students
+                    </Button>
+                    <Button
+                      variant="outline"
+                      className="w-full justify-start gap-2"
+                      onClick={() => setActivePage("analytics")}
+                    >
+                      <IconAnalytics /> View Analytics
+                    </Button>
+                  </CardContent>
+                </Card>
+
+                {/* Recent Activity */}
+                <Card>
+                  <CardHeader>
+                    <CardTitle className="text-base">Recent Activity</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    {analyticsLoading ? (
+                      <TableSkeleton rows={4} />
+                    ) : analytics?.recent_completions.length ? (
+                      <div className="space-y-3">
+                        {analytics.recent_completions.slice(0, 5).map((c, i) => (
+                          <div key={i} className="flex items-start gap-3 text-sm">
+                            <div className="w-8 h-8 rounded-full bg-emerald-100 flex items-center justify-center shrink-0 mt-0.5">
+                              <IconAward />
+                            </div>
+                            <div>
+                              <p className="font-medium text-foreground">{c.student_name}</p>
+                              <p className="text-muted-foreground text-xs">
+                                Completed "{c.course_title}" on {new Date(c.completed_at).toLocaleDateString()}
+                              </p>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    ) : (
+                      <p className="text-sm text-muted-foreground">No recent completions yet.</p>
+                    )}
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
+          )}
+
+          {/* ════════════════════════════════════════════════════════════════ */}
+          {/* B. COURSES MANAGEMENT                                          */}
+          {/* ════════════════════════════════════════════════════════════════ */}
+          {activePage === "courses" && (
+            <div className="space-y-4">
+              {/* Header */}
+              <div className="flex items-center justify-between">
+                <div>
+                  <h2 className="text-xl font-bold text-foreground">Course Management</h2>
+                  <p className="text-sm text-muted-foreground">{courses.length} course{courses.length !== 1 ? "s" : ""} total</p>
+                </div>
+                <Button onClick={openNewCourse} className="gap-2 bg-[hsl(174,62%,32%)] hover:bg-[hsl(174,62%,26%)]">
+                  <IconPlus /> New Course
+                </Button>
+              </div>
+
+              {/* Courses List */}
+              {coursesLoading ? (
+                <TableSkeleton rows={6} />
+              ) : courses.length === 0 ? (
+                <EmptyState
+                  title="No courses yet"
+                  description="Create your first course to get started with the PIXOPHARM LMS."
+                  action={
+                    <Button onClick={openNewCourse} className="gap-2 bg-[hsl(174,62%,32%)] hover:bg-[hsl(174,62%,26%)]">
+                      <IconPlus /> Create Course
+                    </Button>
+                  }
+                />
+              ) : (
+                <div className="space-y-2">
+                  {courses.map((course) => (
+                    <Card key={course.id} className="overflow-hidden">
+                      {/* Course Row */}
+                      <div
+                        className="flex items-center gap-4 px-4 py-3 cursor-pointer hover:bg-muted/50 transition-colors"
+                        onClick={() => setExpandedCourseId(expandedCourseId === course.id ? null : course.id)}
+                      >
+                        <div className={`transition-transform ${expandedCourseId === course.id ? "rotate-90" : ""}`}>
+                          <IconChevronRight />
+                        </div>
+                        <div className="flex-1 min-w-0">
+                          <div className="flex items-center gap-2">
+                            <h3 className="font-semibold text-sm text-foreground truncate">{course.title}</h3>
+                            {statusBadge(course.status)}
+                          </div>
+                          <p className="text-xs text-muted-foreground mt-0.5">
+                            {course.skill_level} &middot; {course.duration_weeks} weeks &middot; {course.modules_count ?? 0} modules &middot; {course.enrolled_count ?? 0} enrolled
+                          </p>
+                        </div>
+                        <div className="flex items-center gap-1 shrink-0">
+                          <Button
+                            size="sm"
+                            variant="ghost"
+                            className="h-8 w-8 p-0"
+                            title="Preview as Student"
+                            onClick={(e) => { e.stopPropagation(); setPreviewCourseId(course.id); }}
+                          >
+                            <IconEye />
+                          </Button>
+                          <Button
+                            size="sm"
+                            variant="ghost"
+                            className="h-8 w-8 p-0"
+                            onClick={(e) => { e.stopPropagation(); openEditCourse(course); }}
+                          >
+                            <IconEdit />
+                          </Button>
+                          <Button
+                            size="sm"
+                            variant="ghost"
+                            className="h-8 w-8 p-0 text-destructive hover:text-destructive"
+                            onClick={(e) => { e.stopPropagation(); confirmDelete("course", course.id, course.title); }}
+                          >
+                            <IconTrash />
+                          </Button>
+                        </div>
+                      </div>
+
+                      {/* Expanded: Modules & Lessons */}
+                      {expandedCourseId === course.id && (
+                        <div className="border-t bg-muted/30 px-4 py-4">
+                          {courseDetailLoading ? (
+                            <TableSkeleton rows={3} />
+                          ) : courseDetail ? (
+                            <div className="space-y-3">
+                              <div className="flex items-center justify-between">
+                                <h4 className="text-sm font-semibold text-foreground">Modules</h4>
+                                <Button size="sm" variant="outline" className="gap-1 h-7 text-xs" onClick={() => openNewModule(course.id)}>
+                                  <IconPlus /> Add Module
+                                </Button>
+                              </div>
+
+                              {courseDetail.modules.length === 0 ? (
+                                <p className="text-sm text-muted-foreground italic">No modules yet. Add one to get started.</p>
+                              ) : (
+                                courseDetail.modules.map((mod) => (
+                                  <ModuleCard
+                                    key={mod.id}
+                                    mod={mod}
+                                    onEditModule={() => openEditModule(mod)}
+                                    onDeleteModule={() => confirmDelete("module", mod.id, mod.title)}
+                                    onAddLesson={() => openNewLesson(mod.id)}
+                                    onEditLesson={openEditLesson}
+                                    onDeleteLesson={(l) => confirmDelete("lesson", l.id, l.title)}
+                                    onAddQuiz={() => openNewQuiz(mod.id)}
+                                    onEditQuiz={openEditQuiz}
+                                    onDeleteQuiz={(q) => confirmDelete("quiz", q.id, q.question.slice(0, 40))}
+                                  />
+                                ))
+                              )}
+                            </div>
+                          ) : (
+                            <p className="text-sm text-muted-foreground">Failed to load course details.</p>
+                          )}
+                        </div>
+                      )}
+                    </Card>
+                  ))}
+                </div>
+              )}
+            </div>
+          )}
+
+          {/* ════════════════════════════════════════════════════════════════ */}
+          {/* C. STUDENTS VIEW                                               */}
+          {/* ════════════════════════════════════════════════════════════════ */}
+          {activePage === "students" && (
+            <div className="space-y-4">
+              {/* Header */}
+              <div className="flex items-center justify-between flex-wrap gap-3">
+                <div>
+                  <h2 className="text-xl font-bold text-foreground">Students</h2>
+                  <p className="text-sm text-muted-foreground">{students.length} registered student{students.length !== 1 ? "s" : ""}</p>
+                </div>
+                <Button variant="outline" size="sm" className="gap-2" onClick={exportStudentsCSV}>
+                  <IconDownload /> Export CSV
+                </Button>
+              </div>
+
+              {/* Search & Sort */}
+              <div className="flex items-center gap-3 flex-wrap">
+                <div className="relative flex-1 min-w-[200px] max-w-sm">
+                  <div className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground">
+                    <IconSearch />
+                  </div>
+                  <Input
+                    placeholder="Search students..."
+                    value={studentSearch}
+                    onChange={(e) => setStudentSearch(e.target.value)}
+                    className="pl-9"
+                  />
+                </div>
+                <Select value={studentSort} onValueChange={(v) => setStudentSort(v as typeof studentSort)}>
+                  <SelectTrigger className="w-40">
+                    <SelectValue />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="name">Sort by Name</SelectItem>
+                    <SelectItem value="progress">Sort by Progress</SelectItem>
+                    <SelectItem value="recent">Sort by Recent</SelectItem>
+                  </SelectContent>
+                </Select>
+              </div>
+
+              {/* Students Table */}
+              {studentsLoading ? (
+                <TableSkeleton rows={8} />
+              ) : filteredStudents.length === 0 ? (
+                <EmptyState
+                  title={studentSearch ? "No matching students" : "No students yet"}
+                  description={studentSearch ? "Try adjusting your search criteria." : "Students will appear here once they sign up."}
+                />
+              ) : (
+                <Card>
+                  <Table>
+                    <TableHeader>
+                      <TableRow>
+                        <TableHead>Name</TableHead>
+                        <TableHead>Island</TableHead>
+                        <TableHead className="text-center">Courses</TableHead>
+                        <TableHead className="text-center">Progress</TableHead>
+                        <TableHead>Status</TableHead>
+                        <TableHead className="text-right">Joined</TableHead>
+                      </TableRow>
+                    </TableHeader>
+                    <TableBody>
+                      {filteredStudents.map((s) => {
+                        const enrollCount = s.enrollments?.length ?? 0;
+                        const avgProg = getStudentAvgProgress(s);
+                        const isActive = enrollCount > 0;
+                        return (
+                          <TableRow
+                            key={s.id}
+                            className="cursor-pointer hover:bg-muted/50"
+                            onClick={() => setSelectedStudent(s)}
+                          >
+                            <TableCell className="font-medium">{s.full_name}</TableCell>
+                            <TableCell className="text-muted-foreground">{s.island ?? "N/A"}</TableCell>
+                            <TableCell className="text-center">{enrollCount}</TableCell>
+                            <TableCell className="text-center">
+                              <div className="flex items-center gap-2 justify-center">
+                                <Progress value={avgProg} className="h-1.5 w-16" />
+                                <span className="text-xs text-muted-foreground w-8">{avgProg}%</span>
+                              </div>
+                            </TableCell>
+                            <TableCell>
+                              <Badge variant={isActive ? "default" : "secondary"} className={isActive ? "bg-emerald-100 text-emerald-700 hover:bg-emerald-100" : ""}>
+                                {isActive ? "Active" : "Inactive"}
+                              </Badge>
+                            </TableCell>
+                            <TableCell className="text-right text-muted-foreground text-sm">
+                              {s.created_at ? new Date(s.created_at).toLocaleDateString() : "N/A"}
+                            </TableCell>
+                          </TableRow>
+                        );
+                      })}
+                    </TableBody>
+                  </Table>
+                </Card>
+              )}
+            </div>
+          )}
+
+          {/* ════════════════════════════════════════════════════════════════ */}
+          {/* D. ANALYTICS                                                   */}
+          {/* ════════════════════════════════════════════════════════════════ */}
+          {activePage === "analytics" && (
+            <div className="space-y-6">
+              <h2 className="text-xl font-bold text-foreground">Analytics</h2>
+
+              {/* Stat Cards */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                {analyticsLoading ? (
+                  <>
+                    <StatCardSkeleton />
+                    <StatCardSkeleton />
+                    <StatCardSkeleton />
+                    <StatCardSkeleton />
+                  </>
+                ) : analytics ? (
+                  <>
+                    <Card>
+                      <CardHeader className="pb-2"><CardDescription>Total Enrollments</CardDescription></CardHeader>
+                      <CardContent><div className="text-3xl font-bold">{analytics.total_enrollments}</div></CardContent>
+                    </Card>
+                    <Card>
+                      <CardHeader className="pb-2"><CardDescription>Completion Rate</CardDescription></CardHeader>
+                      <CardContent>
+                        <div className="text-3xl font-bold">{analytics.completion_rate}%</div>
+                        <Progress value={analytics.completion_rate} className="mt-2 h-1.5" />
+                      </CardContent>
+                    </Card>
+                    <Card>
+                      <CardHeader className="pb-2"><CardDescription>Avg Quiz Score</CardDescription></CardHeader>
+                      <CardContent>
+                        <div className="text-3xl font-bold">{analytics.average_score}%</div>
+                        <Progress value={analytics.average_score} className="mt-2 h-1.5" />
+                      </CardContent>
+                    </Card>
+                    <Card>
+                      <CardHeader className="pb-2"><CardDescription>Certificates Issued</CardDescription></CardHeader>
+                      <CardContent>
+                        <div className="text-3xl font-bold">{analytics.certificates_issued}</div>
+                      </CardContent>
+                    </Card>
+                  </>
+                ) : (
+                  <p className="text-sm text-muted-foreground col-span-4">Analytics data unavailable.</p>
+                )}
+              </div>
+
+              {/* Course Popularity (CSS bar chart) */}
+              {analytics && analytics.course_popularity.length > 0 && (
+                <Card>
+                  <CardHeader>
+                    <CardTitle className="text-base">Course Popularity</CardTitle>
+                    <CardDescription>Enrollments by course</CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="space-y-3">
+                      {analytics.course_popularity.map((cp) => {
+                        const maxEnrolled = Math.max(1, ...analytics.course_popularity.map((c) => c.enrolled));
+                        const pct = Math.round((cp.enrolled / maxEnrolled) * 100);
+                        return (
+                          <div key={cp.course_id} className="space-y-1">
+                            <div className="flex items-center justify-between text-sm">
+                              <span className="font-medium text-foreground truncate mr-4">{cp.title}</span>
+                              <span className="text-muted-foreground shrink-0">{cp.enrolled} enrolled</span>
+                            </div>
+                            <div className="w-full bg-muted rounded-full h-2.5">
+                              <div
+                                className="h-2.5 rounded-full transition-all duration-500"
+                                style={{ width: `${pct}%`, backgroundColor: "hsl(174 62% 32%)" }}
+                              />
+                            </div>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </CardContent>
+                </Card>
+              )}
+
+              {/* Progress Distribution + Recent Completions */}
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                {/* Progress Distribution */}
+                {analytics && (
+                  <Card>
+                    <CardHeader>
+                      <CardTitle className="text-base">Student Progress Distribution</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <div className="space-y-3">
+                        {analytics.progress_distribution.map((b) => {
+                          const maxCount = Math.max(1, ...analytics.progress_distribution.map((d) => d.count));
+                          const pct = Math.round((b.count / maxCount) * 100);
+                          return (
+                            <div key={b.bucket} className="space-y-1">
+                              <div className="flex items-center justify-between text-sm">
+                                <span className="text-foreground">{b.bucket}</span>
+                                <span className="text-muted-foreground">{b.count} students</span>
+                              </div>
+                              <div className="w-full bg-muted rounded-full h-2">
+                                <div
+                                  className="h-2 rounded-full transition-all duration-500 bg-[hsl(174,62%,32%)]"
+                                  style={{ width: `${pct}%` }}
+                                />
+                              </div>
+                            </div>
+                          );
+                        })}
+                      </div>
+                    </CardContent>
+                  </Card>
+                )}
+
+                {/* Recent Completions */}
+                {analytics && (
+                  <Card>
+                    <CardHeader>
+                      <CardTitle className="text-base">Recent Completions</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      {analytics.recent_completions.length === 0 ? (
+                        <p className="text-sm text-muted-foreground">No completions yet.</p>
+                      ) : (
+                        <div className="space-y-3">
+                          {analytics.recent_completions.map((c, i) => (
+                            <div key={i} className="flex items-center gap-3 text-sm">
+                              <div className="w-8 h-8 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center shrink-0 text-xs font-bold">
+                                {c.student_name.split(" ").map((n) => n[0]).join("").slice(0, 2)}
+                              </div>
+                              <div className="flex-1 min-w-0">
+                                <p className="font-medium text-foreground truncate">{c.student_name}</p>
+                                <p className="text-xs text-muted-foreground truncate">{c.course_title}</p>
+                              </div>
+                              <span className="text-xs text-muted-foreground shrink-0">
+                                {new Date(c.completed_at).toLocaleDateString()}
+                              </span>
+                            </div>
+                          ))}
+                        </div>
+                      )}
+                    </CardContent>
+                  </Card>
+                )}
+              </div>
+            </div>
+          )}
+
+          {/* ════════════════════════════════════════════════════════════════ */}
+          {/* E. SETTINGS                                                    */}
+          {/* ════════════════════════════════════════════════════════════════ */}
+          {activePage === "settings" && (
+            <div className="space-y-6 max-w-2xl">
+              <h2 className="text-xl font-bold text-foreground">Settings</h2>
+
+              <Card>
+                <CardHeader>
+                  <CardTitle className="text-base">Admin Profile</CardTitle>
+                  <CardDescription>Your account information</CardDescription>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <div className="grid grid-cols-2 gap-4">
+                    <div>
+                      <Label className="text-xs text-muted-foreground">Name</Label>
+                      <p className="font-medium text-foreground">{profile?.full_name ?? "N/A"}</p>
+                    </div>
+                    <div>
+                      <Label className="text-xs text-muted-foreground">Email</Label>
+                      <p className="font-medium text-foreground">{user.email ?? "N/A"}</p>
+                    </div>
+                    <div>
+                      <Label className="text-xs text-muted-foreground">Role</Label>
+                      <p className="font-medium text-foreground capitalize">{profile?.role ?? "N/A"}</p>
+                    </div>
+                    <div>
+                      <Label className="text-xs text-muted-foreground">Island</Label>
+                      <p className="font-medium text-foreground">{profile?.island ?? "Not set"}</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardHeader>
+                  <CardTitle className="text-base">Platform Stats</CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-2 text-sm">
+                  <div className="flex justify-between">
+                    <span className="text-muted-foreground">Total Courses</span>
+                    <span className="font-medium">{courses.length}</span>
+                  </div>
+                  <Separator />
+                  <div className="flex justify-between">
+                    <span className="text-muted-foreground">Published</span>
+                    <span className="font-medium">{courses.filter((c) => c.status === "published").length}</span>
+                  </div>
+                  <Separator />
+                  <div className="flex justify-between">
+                    <span className="text-muted-foreground">Registered Students</span>
+                    <span className="font-medium">{students.length}</span>
+                  </div>
+                  <Separator />
+                  <div className="flex justify-between">
+                    <span className="text-muted-foreground">Platform Version</span>
+                    <span className="font-medium">1.0.0</span>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          )}
+        </main>
+      </div>
+
+      {/* ══════════════════════════════════════════════════════════════════ */}
+      {/* DIALOGS                                                          */}
+      {/* ══════════════════════════════════════════════════════════════════ */}
+
+      {/* ── Course Dialog ─────────────────────────────────────────────── */}
+      <Dialog open={showCourseDialog} onOpenChange={setShowCourseDialog}>
+        <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto">
+          <DialogHeader>
+            <DialogTitle>{editingCourse ? "Edit Course" : "Create New Course"}</DialogTitle>
+            <DialogDescription>
+              {editingCourse ? "Update the course details below." : "Fill in the details to create a new course."}
+            </DialogDescription>
+          </DialogHeader>
+
+          <div className="space-y-4 py-2">
+            {/* Title */}
+            <div className="space-y-1.5">
+              <Label htmlFor="course-title">Title *</Label>
+              <Input
+                id="course-title"
+                value={courseForm.title}
+                onChange={(e) => {
+                  const title = e.target.value;
+                  setCourseForm((f) => ({
+                    ...f,
+                    title,
+                    slug: !editingCourse ? slugify(title) : f.slug,
+                  }));
+                  setFormErrors((e) => ({ ...e, title: "" }));
+                }}
+                placeholder="e.g., Foundations of Pharmacy Practice"
+              />
+              {formErrors.title && <p className="text-xs text-destructive">{formErrors.title}</p>}
+            </div>
+
+            {/* Slug */}
+            <div className="space-y-1.5">
+              <Label htmlFor="course-slug">Slug *</Label>
+              <Input
+                id="course-slug"
+                value={courseForm.slug}
+                onChange={(e) => {
+                  setCourseForm((f) => ({ ...f, slug: e.target.value }));
+                  setFormErrors((er) => ({ ...er, slug: "" }));
+                }}
+                placeholder="foundations-pharmacy-practice"
+              />
+              {formErrors.slug && <p className="text-xs text-destructive">{formErrors.slug}</p>}
+            </div>
+
+            {/* Description */}
+            <div className="space-y-1.5">
+              <Label htmlFor="course-desc">Description *</Label>
+              <Textarea
+                id="course-desc"
+                value={courseForm.description}
+                onChange={(e) => {
+                  setCourseForm((f) => ({ ...f, description: e.target.value }));
+                  setFormErrors((er) => ({ ...er, description: "" }));
+                }}
+                placeholder="Course description..."
+                rows={3}
+              />
+              {formErrors.description && <p className="text-xs text-destructive">{formErrors.description}</p>}
+            </div>
+
+            {/* Skill Level & Duration */}
+            <div className="grid grid-cols-2 gap-4">
+              <div className="space-y-1.5">
+                <Label>Skill Level</Label>
+                <Select
+                  value={courseForm.skill_level}
+                  onValueChange={(v) => setCourseForm((f) => ({ ...f, skill_level: v }))}
+                >
+                  <SelectTrigger><SelectValue /></SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="Beginner">Beginner</SelectItem>
+                    <SelectItem value="Intermediate">Intermediate</SelectItem>
+                    <SelectItem value="Advanced">Advanced</SelectItem>
+                  </SelectContent>
+                </Select>
+              </div>
+              <div className="space-y-1.5">
+                <Label htmlFor="course-weeks">Duration (weeks)</Label>
+                <Input
+                  id="course-weeks"
+                  type="number"
+                  min={1}
+                  value={courseForm.duration_weeks}
+                  onChange={(e) => setCourseForm((f) => ({ ...f, duration_weeks: parseInt(e.target.value) || 1 }))}
+                />
+              </div>
+            </div>
+
+            {/* Icon & Color */}
+            <div className="grid grid-cols-2 gap-4">
+              <div className="space-y-1.5">
+                <Label>Icon</Label>
+                <Select value={courseForm.icon} onValueChange={(v) => setCourseForm((f) => ({ ...f, icon: v }))}>
+                  <SelectTrigger><SelectValue /></SelectTrigger>
+                  <SelectContent>
+                    {["GraduationCap", "Calculator", "Pill", "HeartPulse", "Scale", "BrainCircuit", "MessageCircleHeart", "ShieldCheck"].map((i) => (
+                      <SelectItem key={i} value={i}>{i}</SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
+              </div>
+              <div className="space-y-1.5">
+                <Label>Color</Label>
+                <Select value={courseForm.color} onValueChange={(v) => setCourseForm((f) => ({ ...f, color: v }))}>
+                  <SelectTrigger><SelectValue /></SelectTrigger>
+                  <SelectContent>
+                    {["blue", "emerald", "violet", "rose", "amber", "cyan", "teal", "orange"].map((c) => (
+                      <SelectItem key={c} value={c}>
+                        <div className="flex items-center gap-2">
+                          <div className={`w-3 h-3 rounded-full bg-${c}-500`} />
+                          <span className="capitalize">{c}</span>
+                        </div>
+                      </SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
+              </div>
+            </div>
+
+            {/* Prerequisites */}
+            <div className="space-y-1.5">
+              <Label>Prerequisites</Label>
+              <div className="flex flex-wrap gap-1.5">
+                {courses
+                  .filter((c) => c.id !== editingCourse?.id)
+                  .map((c) => {
+                    const selected = courseForm.prerequisites.includes(c.id);
+                    return (
+                      <Badge
+                        key={c.id}
+                        variant={selected ? "default" : "outline"}
+                        className={`cursor-pointer transition-colors ${selected ? "bg-[hsl(174,62%,32%)] hover:bg-[hsl(174,62%,26%)]" : "hover:bg-muted"}`}
+                        onClick={() => {
+                          setCourseForm((f) => ({
+                            ...f,
+                            prerequisites: selected
+                              ? f.prerequisites.filter((p) => p !== c.id)
+                              : [...f.prerequisites, c.id],
+                          }));
+                        }}
+                      >
+                        {c.title}
+                      </Badge>
+                    );
+                  })}
+                {courses.filter((c) => c.id !== editingCourse?.id).length === 0 && (
+                  <p className="text-xs text-muted-foreground">No other courses available for prerequisites.</p>
+                )}
+              </div>
+            </div>
+
+            {/* What You'll Learn (dynamic list) */}
+            <div className="space-y-1.5">
+              <Label>What You Will Learn</Label>
+              <div className="space-y-2">
+                {courseForm.what_youll_learn.map((item, idx) => (
+                  <div key={idx} className="flex items-center gap-2">
+                    <Input
+                      value={item}
+                      onChange={(e) => {
+                        const arr = [...courseForm.what_youll_learn];
+                        arr[idx] = e.target.value;
+                        setCourseForm((f) => ({ ...f, what_youll_learn: arr }));
+                      }}
+                      placeholder={`Learning outcome ${idx + 1}`}
+                    />
+                    {courseForm.what_youll_learn.length > 1 && (
+                      <Button
+                        type="button"
+                        size="sm"
+                        variant="ghost"
+                        className="h-8 w-8 p-0 text-destructive shrink-0"
+                        onClick={() => {
+                          const arr = courseForm.what_youll_learn.filter((_, i) => i !== idx);
+                          setCourseForm((f) => ({ ...f, what_youll_learn: arr }));
+                        }}
+                      >
+                        <IconTrash />
+                      </Button>
+                    )}
+                  </div>
+                ))}
+                <Button
+                  type="button"
+                  size="sm"
+                  variant="outline"
+                  className="gap-1 text-xs"
+                  onClick={() => setCourseForm((f) => ({ ...f, what_youll_learn: [...f.what_youll_learn, ""] }))}
+                >
+                  <IconPlus /> Add item
+                </Button>
+              </div>
+            </div>
+
+            {/* Status */}
+            <div className="space-y-1.5">
+              <Label>Status</Label>
+              <Select
+                value={courseForm.status}
+                onValueChange={(v) => setCourseForm((f) => ({ ...f, status: v as typeof f.status }))}
+              >
+                <SelectTrigger><SelectValue /></SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="draft">Draft</SelectItem>
+                  <SelectItem value="published">Published</SelectItem>
+                  <SelectItem value="archived">Archived</SelectItem>
+                </SelectContent>
+              </Select>
+            </div>
+          </div>
+
+          <DialogFooter>
+            <DialogClose asChild>
+              <Button variant="outline">Cancel</Button>
+            </DialogClose>
+            <Button onClick={handleSaveCourse} className="bg-[hsl(174,62%,32%)] hover:bg-[hsl(174,62%,26%)]">
+              {editingCourse ? "Save Changes" : "Create Course"}
+            </Button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
+
+      {/* ── Module Dialog ─────────────────────────────────────────────── */}
+      <Dialog open={showModuleDialog} onOpenChange={setShowModuleDialog}>
+        <DialogContent className="max-w-lg max-h-[85vh] overflow-y-auto">
+          <DialogHeader>
+            <DialogTitle>{editingModule ? "Edit Module" : "Create New Module"}</DialogTitle>
+            <DialogDescription>
+              {editingModule ? "Update the module details." : "Add a new module to this course."}
+            </DialogDescription>
+          </DialogHeader>
+
+          <div className="space-y-4 py-2">
+            <div className="space-y-1.5">
+              <Label htmlFor="module-title">Title *</Label>
+              <Input
+                id="module-title"
+                value={moduleForm.title}
+                onChange={(e) => {
+                  setModuleForm((f) => ({ ...f, title: e.target.value }));
+                  setFormErrors((er) => ({ ...er, title: "" }));
+                }}
+                placeholder="Module title"
+              />
+              {formErrors.title && <p className="text-xs text-destructive">{formErrors.title}</p>}
+            </div>
+
+            <div className="space-y-1.5">
+              <Label htmlFor="module-desc">Description</Label>
+              <Textarea
+                id="module-desc"
+                value={moduleForm.description}
+                onChange={(e) => setModuleForm((f) => ({ ...f, description: e.target.value }))}
+                placeholder="Module description"
+                rows={2}
+              />
+            </div>
+
+            <div className="space-y-1.5">
+              <Label htmlFor="module-order">Display Order</Label>
+              <Input
+                id="module-order"
+                type="number"
+                min={1}
+                value={moduleForm.order_index}
+                onChange={(e) => setModuleForm((f) => ({ ...f, order_index: parseInt(e.target.value) || 1 }))}
+              />
+            </div>
+          </div>
+
+          <DialogFooter>
+            <DialogClose asChild>
+              <Button variant="outline">Cancel</Button>
+            </DialogClose>
+            <Button onClick={handleSaveModule} className="bg-[hsl(174,62%,32%)] hover:bg-[hsl(174,62%,26%)]">
+              {editingModule ? "Save Changes" : "Create Module"}
+            </Button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
+
+      {/* ── Lesson Dialog ─────────────────────────────────────────────── */}
+      <Dialog open={showLessonDialog} onOpenChange={setShowLessonDialog}>
+        <DialogContent className="max-w-lg">
+          <DialogHeader>
+            <DialogTitle>{editingLesson ? "Edit Lesson" : "Create New Lesson"}</DialogTitle>
+            <DialogDescription>
+              {editingLesson ? "Update the lesson details." : "Add a new lesson to this module."}
+            </DialogDescription>
+          </DialogHeader>
+
+          <div className="space-y-4 py-2">
+            <div className="space-y-1.5">
+              <Label htmlFor="lesson-title">Title *</Label>
+              <Input
+                id="lesson-title"
+                value={lessonForm.title}
+                onChange={(e) => {
+                  setLessonForm((f) => ({ ...f, title: e.target.value }));
+                  setFormErrors((er) => ({ ...er, title: "" }));
+                }}
+                placeholder="Lesson title"
+              />
+              {formErrors.title && <p className="text-xs text-destructive">{formErrors.title}</p>}
+            </div>
+
+            <div className="grid grid-cols-2 gap-4">
+              <div className="space-y-1.5">
+                <Label htmlFor="lesson-duration">Duration (minutes)</Label>
+                <Input
+                  id="lesson-duration"
+                  type="number"
+                  min={1}
+                  value={lessonForm.duration_minutes}
+                  onChange={(e) => setLessonForm((f) => ({ ...f, duration_minutes: parseInt(e.target.value) || 15 }))}
+                  placeholder="15"
+                />
+              </div>
+              <div className="space-y-1.5">
+                <Label htmlFor="lesson-order">Display Order</Label>
+                <Input
+                  id="lesson-order"
+                  type="number"
+                  min={1}
+                  value={lessonForm.order_index}
+                  onChange={(e) => setLessonForm((f) => ({ ...f, order_index: parseInt(e.target.value) || 1 }))}
+                />
+              </div>
+            </div>
+          </div>
+
+          <DialogFooter>
+            <DialogClose asChild>
+              <Button variant="outline">Cancel</Button>
+            </DialogClose>
+            <Button onClick={handleSaveLesson} className="bg-[hsl(174,62%,32%)] hover:bg-[hsl(174,62%,26%)]">
+              {editingLesson ? "Save Changes" : "Create Lesson"}
+            </Button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
+
+      {/* ── Quiz Question Dialog ──────────────────────────────────────── */}
+      <Dialog open={showQuizDialog} onOpenChange={setShowQuizDialog}>
+        <DialogContent className="max-w-lg max-h-[85vh] overflow-y-auto">
+          <DialogHeader>
+            <DialogTitle>{editingQuiz ? "Edit Quiz Question" : "Create Quiz Question"}</DialogTitle>
+            <DialogDescription>
+              {editingQuiz ? "Update the quiz question." : "Add a new quiz question to this module."}
+            </DialogDescription>
+          </DialogHeader>
+
+          <div className="space-y-4 py-2">
+            <div className="space-y-1.5">
+              <Label htmlFor="quiz-question">Question *</Label>
+              <Textarea
+                id="quiz-question"
+                value={quizForm.question}
+                onChange={(e) => {
+                  setQuizForm((f) => ({ ...f, question: e.target.value }));
+                  setFormErrors((er) => ({ ...er, question: "" }));
+                }}
+                placeholder="Enter the question..."
+                rows={2}
+              />
+              {formErrors.question && <p className="text-xs text-destructive">{formErrors.question}</p>}
+            </div>
+
+            <div className="space-y-2">
+              <Label>Options *</Label>
+              {quizForm.options.map((opt, idx) => (
+                <div key={idx} className="flex items-center gap-2">
+                  <input
+                    type="radio"
+                    name="correct-answer"
+                    checked={quizForm.correct_answer === idx}
+                    onChange={() => setQuizForm((f) => ({ ...f, correct_answer: idx }))}
+                    className="accent-[hsl(174,62%,32%)]"
+                  />
+                  <Input
+                    value={opt}
+                    onChange={(e) => {
+                      const arr = [...quizForm.options];
+                      arr[idx] = e.target.value;
+                      setQuizForm((f) => ({ ...f, options: arr }));
+                      setFormErrors((er) => ({ ...er, options: "" }));
+                    }}
+                    placeholder={`Option ${idx + 1}`}
+                  />
+                </div>
+              ))}
+              {formErrors.options && <p className="text-xs text-destructive">{formErrors.options}</p>}
+              <p className="text-xs text-muted-foreground">Select the radio button for the correct answer.</p>
+            </div>
+
+            <div className="space-y-1.5">
+              <Label htmlFor="quiz-explanation">Explanation</Label>
+              <Textarea
+                id="quiz-explanation"
+                value={quizForm.explanation}
+                onChange={(e) => setQuizForm((f) => ({ ...f, explanation: e.target.value }))}
+                placeholder="Explain why this is the correct answer..."
+                rows={2}
+              />
+            </div>
+          </div>
+
+          <DialogFooter>
+            <DialogClose asChild>
+              <Button variant="outline">Cancel</Button>
+            </DialogClose>
+            <Button onClick={handleSaveQuiz} className="bg-[hsl(174,62%,32%)] hover:bg-[hsl(174,62%,26%)]">
+              {editingQuiz ? "Save Changes" : "Create Question"}
+            </Button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
+
+      {/* ── Delete Confirmation Dialog ────────────────────────────────── */}
+      <Dialog open={showDeleteDialog} onOpenChange={setShowDeleteDialog}>
+        <DialogContent className="max-w-sm">
+          <DialogHeader>
+            <DialogTitle>Confirm Delete</DialogTitle>
+            <DialogDescription>
+              Are you sure you want to delete this {deleteTarget?.type}? This action cannot be undone.
+              {deleteTarget?.type === "course" && " All modules and lessons within this course will also be deleted."}
+              {deleteTarget?.type === "module" && " All lessons within this module will also be deleted."}
+            </DialogDescription>
+          </DialogHeader>
+          <div className="py-2">
+            <p className="text-sm font-medium text-foreground">"{deleteTarget?.name}"</p>
+          </div>
+          <DialogFooter>
+            <DialogClose asChild>
+              <Button variant="outline">Cancel</Button>
+            </DialogClose>
+            <Button variant="destructive" onClick={handleDelete}>
+              Delete {deleteTarget?.type}
+            </Button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
+
+      {/* ── Student Detail Dialog ─────────────────────────────────────── */}
+      <Dialog open={!!selectedStudent} onOpenChange={(open) => { if (!open) setSelectedStudent(null); }}>
+        <DialogContent className="max-w-2xl max-h-[85vh] overflow-y-auto">
+          <DialogHeader>
+            <DialogTitle>Student Details</DialogTitle>
+            <DialogDescription>{selectedStudent?.full_name}</DialogDescription>
+          </DialogHeader>
+
+          {selectedStudent && (
+            <div className="space-y-4 py-2">
+              {/* Profile Info */}
+              <div className="grid grid-cols-2 gap-4 text-sm">
+                <div>
+                  <Label className="text-xs text-muted-foreground">Name</Label>
+                  <p className="font-medium">{selectedStudent.full_name}</p>
+                </div>
+                <div>
+                  <Label className="text-xs text-muted-foreground">Island</Label>
+                  <p className="font-medium">{selectedStudent.island ?? "Not set"}</p>
+                </div>
+                <div>
+                  <Label className="text-xs text-muted-foreground">Joined</Label>
+                  <p className="font-medium">{selectedStudent.created_at ? new Date(selectedStudent.created_at).toLocaleDateString() : "N/A"}</p>
+                </div>
+                <div>
+                  <Label className="text-xs text-muted-foreground">Enrolled Courses</Label>
+                  <p className="font-medium">{selectedStudent.enrollments?.length ?? 0}</p>
+                </div>
+              </div>
+
+              <Separator />
+
+              {/* Per-Course Progress */}
+              <div>
+                <h4 className="text-sm font-semibold mb-3">Course Progress</h4>
+                {!selectedStudent.progress?.length ? (
+                  <p className="text-sm text-muted-foreground">No course progress data available.</p>
+                ) : (
+                  <div className="space-y-3">
+                    {selectedStudent.progress.map((p) => {
+                      const course = courses.find((c) => c.id === p.course_id);
+                      const completedCount = p.completed_lessons?.length ?? 0;
+                      const pct = Math.min(100, Math.round((completedCount / 30) * 100));
+                      const quizEntries = Object.entries(p.quiz_scores ?? {});
+                      const avgQuizScore = quizEntries.length > 0
+                        ? Math.round(quizEntries.reduce((sum, [, s]) => sum + (s.score / Math.max(1, s.total)) * 100, 0) / quizEntries.length)
+                        : 0;
+
+                      return (
+                        <Card key={p.course_id} className="p-3">
+                          <div className="flex items-center justify-between mb-2">
+                            <h5 className="text-sm font-medium">{course?.title ?? p.course_id}</h5>
+                            <span className="text-xs text-muted-foreground">{pct}% complete</span>
+                          </div>
+                          <Progress value={pct} className="h-1.5 mb-2" />
+                          <div className="flex gap-4 text-xs text-muted-foreground">
+                            <span>{completedCount} lessons completed</span>
+                            <span>{quizEntries.length} quizzes taken</span>
+                            {quizEntries.length > 0 && <span>Avg score: {avgQuizScore}%</span>}
+                          </div>
+                        </Card>
+                      );
+                    })}
+                  </div>
+                )}
+              </div>
+            </div>
+          )}
+
+          <DialogFooter>
+            <DialogClose asChild>
+              <Button variant="outline">Close</Button>
+            </DialogClose>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
+    </div>
+  );
+}
+
+// ============================================================================
+// MODULE CARD SUB-COMPONENT
+// ============================================================================
+
+interface ModuleCardProps {
+  mod: Module & { lessons: Lesson[]; quiz_questions: QuizQuestion[] };
+  onEditModule: () => void;
+  onDeleteModule: () => void;
+  onAddLesson: () => void;
+  onEditLesson: (l: Lesson) => void;
+  onDeleteLesson: (l: Lesson) => void;
+  onAddQuiz: () => void;
+  onEditQuiz: (q: QuizQuestion) => void;
+  onDeleteQuiz: (q: QuizQuestion) => void;
+}
+
+function ModuleCard({
+  mod,
+  onEditModule,
+  onDeleteModule,
+  onAddLesson,
+  onEditLesson,
+  onDeleteLesson,
+  onAddQuiz,
+  onEditQuiz,
+  onDeleteQuiz,
+}: ModuleCardProps) {
+  const [expanded, setExpanded] = useState(false);
+
+  return (
+    <div className="border rounded-lg bg-white overflow-hidden">
+      {/* Module Header */}
+      <div
+        className="flex items-center gap-3 px-3 py-2.5 cursor-pointer hover:bg-muted/30 transition-colors"
+        onClick={() => setExpanded(!expanded)}
+      >
+        <div className={`transition-transform ${expanded ? "rotate-90" : ""}`}>
+          <IconChevronRight />
+        </div>
+        <div className="flex-1 min-w-0">
+          <div className="flex items-center gap-2">
+            <span className="text-xs font-semibold text-muted-foreground">M{mod.order_index}</span>
+            <h4 className="text-sm font-medium text-foreground truncate">{mod.title}</h4>
+          </div>
+          <p className="text-xs text-muted-foreground">
+            {mod.lessons?.length ?? 0} lessons &middot; {mod.quiz_questions?.length ?? 0} quiz questions
+          </p>
+        </div>
+        <div className="flex items-center gap-1 shrink-0">
+          <Button size="sm" variant="ghost" className="h-7 w-7 p-0" onClick={(e) => { e.stopPropagation(); onEditModule(); }}>
+            <IconEdit />
+          </Button>
+          <Button size="sm" variant="ghost" className="h-7 w-7 p-0 text-destructive hover:text-destructive" onClick={(e) => { e.stopPropagation(); onDeleteModule(); }}>
+            <IconTrash />
+          </Button>
+        </div>
+      </div>
+
+      {/* Expanded Content */}
+      {expanded && (
+        <div className="border-t px-3 py-3 space-y-3">
+          {/* Lessons */}
+          <div>
+            <div className="flex items-center justify-between mb-2">
+              <h5 className="text-xs font-semibold text-muted-foreground uppercase tracking-wide">Lessons</h5>
+              <Button size="sm" variant="ghost" className="h-6 text-xs gap-1 px-2" onClick={onAddLesson}>
+                <IconPlus /> Add
+              </Button>
+            </div>
+            {mod.lessons.length === 0 ? (
+              <p className="text-xs text-muted-foreground italic">No lessons yet.</p>
+            ) : (
+              <div className="space-y-1">
+                {mod.lessons.map((lesson) => (
+                  <div key={lesson.id} className="flex items-center gap-2 px-2 py-1.5 rounded hover:bg-muted/50 group text-sm">
+                    <span className="text-muted-foreground text-xs w-4 shrink-0">{lesson.order_index}.</span>
+                    <span className="flex-1 truncate text-foreground">{lesson.title}</span>
+                    <span className="text-xs text-muted-foreground shrink-0">{lesson.duration_minutes} min</span>
+                    <Button
+                      size="sm"
+                      variant="ghost"
+                      className="h-6 w-6 p-0 opacity-0 group-hover:opacity-100"
+                      onClick={() => onEditLesson(lesson)}
+                    >
+                      <IconEdit />
+                    </Button>
+                    <Button
+                      size="sm"
+                      variant="ghost"
+                      className="h-6 w-6 p-0 text-destructive opacity-0 group-hover:opacity-100"
+                      onClick={() => onDeleteLesson(lesson)}
+                    >
+                      <IconTrash />
+                    </Button>
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+
+          <Separator />
+
+          {/* Quiz Questions */}
+          <div>
+            <div className="flex items-center justify-between mb-2">
+              <h5 className="text-xs font-semibold text-muted-foreground uppercase tracking-wide">Quiz Questions</h5>
+              <Button size="sm" variant="ghost" className="h-6 text-xs gap-1 px-2" onClick={onAddQuiz}>
+                <IconPlus /> Add
+              </Button>
+            </div>
+            {mod.quiz_questions.length === 0 ? (
+              <p className="text-xs text-muted-foreground italic">No quiz questions yet.</p>
+            ) : (
+              <div className="space-y-1">
+                {mod.quiz_questions.map((q, idx) => (
+                  <div key={q.id} className="flex items-center gap-2 px-2 py-1.5 rounded hover:bg-muted/50 group text-sm">
+                    <span className="text-muted-foreground text-xs w-4 shrink-0">Q{idx + 1}</span>
+                    <span className="flex-1 truncate text-foreground">{q.question}</span>
+                    <Button
+                      size="sm"
+                      variant="ghost"
+                      className="h-6 w-6 p-0 opacity-0 group-hover:opacity-100"
+                      onClick={() => onEditQuiz(q)}
+                    >
+                      <IconEdit />
+                    </Button>
+                    <Button
+                      size="sm"
+                      variant="ghost"
+                      className="h-6 w-6 p-0 text-destructive opacity-0 group-hover:opacity-100"
+                      onClick={() => onDeleteQuiz(q)}
+                    >
+                      <IconTrash />
+                    </Button>
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}

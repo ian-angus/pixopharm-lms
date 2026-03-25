@@ -14,6 +14,8 @@ import { Separator } from "@/components/ui/separator";
 import CoursePlayer from "@/components/CoursePlayer";
 import AuthModal from "@/components/AuthModal";
 import { useAuth } from "@/hooks/useAuth";
+import { useAdmin } from "@/hooks/useAdmin";
+import AdminDashboard from "@/components/AdminDashboard";
 import "./App.css";
 
 /* ─── Generated Images ─── */
@@ -233,10 +235,12 @@ const plans = [
 ];
 
 /* ─── Navigation ─── */
-function Navbar({ user, onSignInClick, onSignOut }: {
+function Navbar({ user, onSignInClick, onSignOut, isAdmin, onAdminClick }: {
   user: { email?: string; user_metadata?: { full_name?: string } } | null;
   onSignInClick: () => void;
   onSignOut: () => void;
+  isAdmin?: boolean;
+  onAdminClick?: () => void;
 }) {
   const [open, setOpen] = useState(false);
   const links = [
@@ -278,6 +282,11 @@ function Navbar({ user, onSignInClick, onSignOut }: {
                     </span>
                     <span className="max-w-[120px] truncate">{user.user_metadata?.full_name || user.email}</span>
                   </span>
+                  {isAdmin && onAdminClick && (
+                    <Button variant="outline" size="sm" className="text-sm border-[hsl(174,62%,32%)]/30 text-[hsl(174,62%,32%)]" onClick={onAdminClick}>
+                      Admin
+                    </Button>
+                  )}
                   <Button variant="ghost" size="sm" className="text-sm" onClick={onSignOut}>
                     Sign Out
                   </Button>
@@ -1367,8 +1376,15 @@ function Footer() {
 /* ─── Main App ─── */
 function App() {
   const [activeCourse, setActiveCourse] = useState<string | null>(null);
+  const [showAdmin, setShowAdmin] = useState(false);
   const [authOpen, setAuthOpen] = useState(false);
   const { user, loading, signIn, signUp, signOut } = useAuth();
+  const { isAdmin } = useAdmin(user);
+
+  // If admin dashboard is active, show it
+  if (showAdmin && user && isAdmin) {
+    return <AdminDashboard user={user} onExit={() => setShowAdmin(false)} />;
+  }
 
   // If a course is active, show the course player
   if (activeCourse === "foundations-pharmacy-practice") {
@@ -1388,7 +1404,7 @@ function App() {
 
   return (
     <div className="min-h-screen">
-      <Navbar user={user} onSignInClick={() => setAuthOpen(true)} onSignOut={signOut} />
+      <Navbar user={user} onSignInClick={() => setAuthOpen(true)} onSignOut={signOut} isAdmin={isAdmin} onAdminClick={() => setShowAdmin(true)} />
       <AuthModal open={authOpen} onClose={() => setAuthOpen(false)} onSignIn={signIn} onSignUp={signUp} />
       <Hero />
       <StatsBar />
