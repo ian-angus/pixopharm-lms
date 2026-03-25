@@ -1,4 +1,5 @@
 import { useState, useRef } from "react";
+import type { User } from "@supabase/supabase-js";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -14,6 +15,7 @@ import type {
   Module,
   ContentBlock,
 } from "@/data/foundationsCourse";
+import { useProgress } from "@/hooks/useProgress";
 
 // ── SVG Icons ───────────────────────────────────────────────────────────────
 
@@ -82,11 +84,6 @@ type View =
   | { page: "lesson"; moduleIndex: number; lessonIndex: number }
   | { page: "quiz"; moduleIndex: number }
   | { page: "certificate" };
-
-interface CompletionState {
-  lessons: Set<string>;
-  quizScores: Record<string, { score: number; total: number }>;
-}
 
 // ── Content Renderers ───────────────────────────────────────────────────────
 
@@ -508,16 +505,22 @@ function CertificateView({ onBack }: { onBack: () => void }) {
 
 // ── Main Course Player ──────────────────────────────────────────────────────
 
-export default function CoursePlayer({ onExit }: { onExit: () => void }) {
+export default function CoursePlayer({ user, onExit }: { user: User | null; onExit: () => void }) {
   const [view, setView] = useState<View>({ page: "overview" });
-  const [completion, setCompletion] = useState<CompletionState>({
-    lessons: new Set(),
-    quizScores: {},
-  });
+  const { completion, loaded, markLessonComplete, saveQuizScore } = useProgress(user, "foundations-pharmacy-practice");
   const [sidebarOpen, setSidebarOpen] = useState(true);
   const contentRef = useRef<HTMLDivElement>(null);
 
   const course = foundationsCourse;
+
+  // Wait for progress to load from Supabase/localStorage
+  if (!loaded) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-slate-50">
+        <p className="text-slate-500">Loading your progress...</p>
+      </div>
+    );
+  }
 
   // Progress calculation
   const totalItems = course.modules.length + totalLessons; // quizzes + lessons
@@ -528,22 +531,6 @@ export default function CoursePlayer({ onExit }: { onExit: () => void }) {
     completion.lessons.size === totalLessons &&
     Object.keys(completion.quizScores).length === course.modules.length &&
     Object.values(completion.quizScores).every((s) => Math.round((s.score / s.total) * 100) >= 70);
-
-  // Mark lesson complete
-  const markLessonComplete = (lessonId: string) => {
-    setCompletion((prev) => ({
-      ...prev,
-      lessons: new Set([...prev.lessons, lessonId]),
-    }));
-  };
-
-  // Save quiz score
-  const saveQuizScore = (moduleId: string, score: number, total: number) => {
-    setCompletion((prev) => ({
-      ...prev,
-      quizScores: { ...prev.quizScores, [moduleId]: { score, total } },
-    }));
-  };
 
   // Navigation
   const navigateTo = (v: View) => {

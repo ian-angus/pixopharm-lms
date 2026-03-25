@@ -12,6 +12,8 @@ import { Label } from "@/components/ui/label";
 import { Progress } from "@/components/ui/progress";
 import { Separator } from "@/components/ui/separator";
 import CoursePlayer from "@/components/CoursePlayer";
+import AuthModal from "@/components/AuthModal";
+import { useAuth } from "@/hooks/useAuth";
 import "./App.css";
 
 /* ─── Generated Images ─── */
@@ -231,7 +233,11 @@ const plans = [
 ];
 
 /* ─── Navigation ─── */
-function Navbar() {
+function Navbar({ user, onSignInClick, onSignOut }: {
+  user: { email?: string; user_metadata?: { full_name?: string } } | null;
+  onSignInClick: () => void;
+  onSignOut: () => void;
+}) {
   const [open, setOpen] = useState(false);
   const links = [
     { label: "About", href: "#about" },
@@ -264,12 +270,28 @@ function Navbar() {
               </a>
             ))}
             <div className="ml-3 flex gap-2">
-              <Button variant="ghost" size="sm" className="text-sm">
-                Sign In
-              </Button>
-              <Button size="sm" className="bg-[hsl(174,62%,32%)] hover:bg-[hsl(174,62%,26%)] text-sm">
-                Get Started
-              </Button>
+              {user ? (
+                <>
+                  <span className="text-sm text-slate-600 flex items-center gap-1.5 px-2">
+                    <span className="w-6 h-6 rounded-full bg-[hsl(174,62%,32%)] text-white flex items-center justify-center text-xs font-bold">
+                      {(user.user_metadata?.full_name || user.email || "U")[0].toUpperCase()}
+                    </span>
+                    <span className="max-w-[120px] truncate">{user.user_metadata?.full_name || user.email}</span>
+                  </span>
+                  <Button variant="ghost" size="sm" className="text-sm" onClick={onSignOut}>
+                    Sign Out
+                  </Button>
+                </>
+              ) : (
+                <>
+                  <Button variant="ghost" size="sm" className="text-sm" onClick={onSignInClick}>
+                    Sign In
+                  </Button>
+                  <Button size="sm" className="bg-[hsl(174,62%,32%)] hover:bg-[hsl(174,62%,26%)] text-sm" onClick={onSignInClick}>
+                    Get Started
+                  </Button>
+                </>
+              )}
             </div>
           </div>
           <button onClick={() => setOpen(!open)} className="md:hidden p-2">
@@ -1345,15 +1367,29 @@ function Footer() {
 /* ─── Main App ─── */
 function App() {
   const [activeCourse, setActiveCourse] = useState<string | null>(null);
+  const [authOpen, setAuthOpen] = useState(false);
+  const { user, loading, signIn, signUp, signOut } = useAuth();
 
   // If a course is active, show the course player
   if (activeCourse === "foundations-pharmacy-practice") {
-    return <CoursePlayer onExit={() => setActiveCourse(null)} />;
+    return <CoursePlayer user={user} onExit={() => setActiveCourse(null)} />;
+  }
+
+  if (loading) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <div className="text-center">
+          <PixopharmLogo size={48} className="mx-auto mb-4" />
+          <p className="text-slate-500 text-sm">Loading...</p>
+        </div>
+      </div>
+    );
   }
 
   return (
     <div className="min-h-screen">
-      <Navbar />
+      <Navbar user={user} onSignInClick={() => setAuthOpen(true)} onSignOut={signOut} />
+      <AuthModal open={authOpen} onClose={() => setAuthOpen(false)} onSignIn={signIn} onSignUp={signUp} />
       <Hero />
       <StatsBar />
       <About />
