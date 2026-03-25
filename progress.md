@@ -2,6 +2,117 @@
 
 ---
 
+## 2026-03-24: Pharmaceutical Calculations Course — FULL CONTENT SEEDED TO DATABASE
+
+### Completed
+- Seeded complete lesson content and quiz questions into Supabase for the "Pharmaceutical Calculations & Dosage" course (UUID: dd25fa41-616e-4c83-88bf-fbb574512ada)
+- **22 lessons** across 7 modules with rich JSONB content blocks (8-15 blocks per lesson)
+- **52 quiz questions** across 7 modules with 4 options each, correct answers, and detailed explanations
+- Each lesson includes: headings, introductory text, callouts (info/tip/warning/example), worked examples with Caribbean drug names, tables, and key terms
+- Caribbean-specific content throughout: CDAP (Trinidad), NHF (Jamaica), Barbados Drug Service, TT$/JA$/BDS$ currencies
+- Drug examples: Panadol, Amoxil, Ventolin, Glucophage, Lasix, Renitec, Voltaren, Brufen, etc.
+
+### Module Breakdown (Lessons / Quiz Questions)
+| Module | Lessons | Quizzes |
+|--------|---------|---------|
+| 1. Pharmacy Math Fundamentals | 3 | 8 |
+| 2. Systems of Measurement | 3 | 7 |
+| 3. Dosage Calculations | 4 | 8 |
+| 4. Pediatric Dosing | 3 | 7 |
+| 5. IV Flow Rates | 3 | 7 |
+| 6. Compounding Calculations | 3 | 8 |
+| 7. Business Math | 3 | 7 |
+| **TOTAL** | **22** | **52** |
+
+### Lesson Titles
+**Module 1:** Fractions & Decimals in Pharmacy | Ratios, Proportions & Percentages | Roman Numerals & Prescription Notation
+**Module 2:** The Metric System | Apothecary & Household Measurements | Converting Between Systems
+**Module 3:** Desired Over Have Method | Ratio & Proportion Method | Injectable Dosage Calculations | Days' Supply Calculations
+**Module 4:** Weight-Based Dosing (mg/kg Method) | Age-Based Formulas (Young's, Clark's, Fried's Rules) | Safe Dose Verification
+**Module 5:** Basic IV Flow Rate Calculations | Drip Rate Calculations | Infusion Time & Volume Calculations
+**Module 6:** Concentration Expressions (w/v, v/v, w/w, Ratio Strength) | Dilution Calculations (C1V1=C2V2) | Alligation Method
+**Module 7:** Drug Pricing & Markup | Insurance & Government Programmes | Inventory Management Math
+
+---
+
+## 2026-03-24: Pharmaceutical Calculations & Dosage Course Research
+
+### Completed
+- Comprehensive research for 7-module "Pharmaceutical Calculations & Dosage" course
+- Research saved to `pharma_calculations_research.md`
+- Covers all 7 modules with key concepts, formulas, lessons, practice problems, quiz questions, tables, and callouts
+- Caribbean-specific context throughout: CDAP (Trinidad), NHF (Jamaica), Barbados Drug Service
+- Complete CDAP drug list with 47 medications across 12 chronic conditions documented
+- NHF Jamaica details: 22 conditions, 600+ drug items, subsidy model
+- Barbados Drug Service: National Drug Formulary, free medications for eligible persons
+- Common Caribbean drug brands mapped (Panadol, Amoxil, Ventolin, Glucophage, etc.)
+- 5 detailed Caribbean pharmacy practice scenarios
+- 52 quiz questions total across all modules with explanations
+- 26 lessons outlined across 7 modules
+- All formulas documented: D/H x Q, Clark's Rule, Young's Rule, Fried's Rule, BSA method, IV drip rate, alligation, C1V1=C2V2, markup, turnover, AWP reimbursement
+
+### Research Sources Used
+- ASHP/ACPE curriculum standards
+- StatPearls medical references
+- PTCB exam preparation resources
+- Trinidad Ministry of Health (CDAP programme)
+- Jamaica National Health Fund (NHF)
+- Barbados Drug Service / QEH Pharmacy
+- PAHO Caribbean pharmaceutical profiles
+- CARPHA Caribbean Pharmaceutical Policy
+- Multiple pharmacy education textbooks and online resources
+
+---
+
+## 2026-03-24: Admin Dashboard Enhancement — Content Block Editor & Draft/Publish Workflow
+
+### Completed
+1. **Content Block Editor** (`src/components/ContentBlockEditor.tsx`) — NEW FILE
+   - Structured form-based editor for lesson JSONB content blocks
+   - Supports 7 block types: heading (h2/h3/h4), text, callout (info/warning/tip/example), list (ordered/unordered), table (dynamic cols/rows), key-term, divider
+   - Each block type has its own form fields (not WYSIWYG)
+   - Block list with type icons, content preview, and action buttons
+   - "Add Block" dropdown menu to select block type
+   - Click to edit blocks in a sub-dialog
+   - Up/down arrow buttons to reorder blocks
+   - Delete block button
+   - Dividers are added directly without editing dialog
+
+2. **Enhanced Lesson Dialog** (in AdminDashboard.tsx)
+   - Lesson form now stores `content: ContentBlockType[]` alongside title/duration/order
+   - Content block editor integrated below the title/duration fields with a separator
+   - Dialog widened to `max-w-2xl` with scrollable content
+   - Content saved as JSONB to the `content` column via `updateLesson`/`createLesson`
+
+3. **Draft/Publish Workflow Improvements** (in AdminDashboard.tsx)
+   - **Course row left border**: draft = amber, published = emerald/green, archived = gray
+   - **Status toggle dropdown** on each course row (not just in edit dialog)
+     - Dropdown shows available transitions (e.g., Published course can Move to Draft or Archive)
+     - Each option has a colored dot indicator
+   - **Confirmation dialog** for status changes:
+     - Publish: "This will make the course visible to all students. Continue?"
+     - Unpublish: "This will hide the course from students. Continue?"
+     - Archive: "This will archive the course. Students will no longer be able to access it."
+   - **Publish/Unpublish button** added to course edit dialog footer (left side)
+     - Shows "Unpublish" (amber) when course is published, "Publish" (green) when draft
+
+4. **Course Detail View Improvements** (in AdminDashboard.tsx - ModuleCard)
+   - Lessons now show a content preview below the title:
+     - First text block truncated to 60 chars, OR "X content blocks" count
+     - "No content" if no blocks exist
+   - Quiz questions now show the correct answer with a green checkmark indicator
+   - Both lessons and quizzes use a 2-line layout (title + metadata/preview)
+
+### Files Modified
+- `src/components/AdminDashboard.tsx` — Enhanced lesson dialog, status workflow, course detail view
+- `src/components/ContentBlockEditor.tsx` — NEW: full content block editor component
+
+### Build Status
+- TypeScript: PASSES (zero errors)
+- Vite build: PASSES
+
+---
+
 ## 2026-03-24: Database Seeding — All Course Data
 
 ### Completed

@@ -83,6 +83,18 @@ import type {
 // ── CoursePlayer for Preview ─────────────────────────────────────────────────
 import CoursePlayer from "@/components/CoursePlayer";
 
+// ── Content Block Editor ────────────────────────────────────────────────────
+import ContentBlockEditor from "@/components/ContentBlockEditor";
+import type { ContentBlockType } from "@/components/ContentBlockEditor";
+
+// ── Dropdown Menu (for status toggle) ───────────────────────────────────────
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+
 // ============================================================================
 // TYPES
 // ============================================================================
@@ -344,6 +356,14 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
   const [showDeleteDialog, setShowDeleteDialog] = useState(false);
   const [deleteTarget, setDeleteTarget] = useState<{ type: string; id: string; name: string } | null>(null);
 
+  // ── Status Change Confirmation State ────────────────────────────────────
+  const [showStatusDialog, setShowStatusDialog] = useState(false);
+  const [statusChangeTarget, setStatusChangeTarget] = useState<{
+    courseId: string;
+    courseName: string;
+    newStatus: "draft" | "published" | "archived";
+  } | null>(null);
+
   // ── Student Detail State ─────────────────────────────────────────────────
   const [selectedStudent, setSelectedStudent] = useState<StudentProfile | null>(null);
   const [studentSearch, setStudentSearch] = useState("");
@@ -375,6 +395,7 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
     title: "",
     duration_minutes: 15,
     order_index: 99,
+    content: [] as ContentBlockType[],
   });
   const [quizForm, setQuizForm] = useState({
     question: "",
@@ -472,6 +493,7 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
         setShowLessonDialog(false);
         setShowQuizDialog(false);
         setShowDeleteDialog(false);
+        setShowStatusDialog(false);
         setSelectedStudent(null);
         setPreviewCourseId(null);
       }
@@ -609,7 +631,7 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
   function openNewLesson(moduleId: string) {
     setEditingLesson(null);
     setLessonParentModuleId(moduleId);
-    setLessonForm({ title: "", duration_minutes: 15, order_index: 99 });
+    setLessonForm({ title: "", duration_minutes: 15, order_index: 99, content: [] });
     setFormErrors({});
     setShowLessonDialog(true);
   }
@@ -617,7 +639,13 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
   function openEditLesson(lesson: Lesson) {
     setEditingLesson(lesson);
     setLessonParentModuleId(lesson.module_id);
-    setLessonForm({ title: lesson.title, duration_minutes: lesson.duration_minutes, order_index: lesson.order_index });
+    const contentBlocks = Array.isArray(lesson.content) ? (lesson.content as ContentBlockType[]) : [];
+    setLessonForm({
+      title: lesson.title,
+      duration_minutes: lesson.duration_minutes,
+      order_index: lesson.order_index,
+      content: contentBlocks,
+    });
     setFormErrors({});
     setShowLessonDialog(true);
   }
@@ -630,12 +658,19 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
       return;
     }
 
+    const payload = {
+      title: lessonForm.title,
+      duration_minutes: lessonForm.duration_minutes,
+      order_index: lessonForm.order_index,
+      content: lessonForm.content,
+    };
+
     try {
       if (editingLesson) {
-        await updateLesson(editingLesson.id, lessonForm);
+        await updateLesson(editingLesson.id, payload);
         toast({ title: "Lesson updated", description: `"${lessonForm.title}" has been updated.` });
       } else {
-        await createLesson(lessonParentModuleId, lessonForm);
+        await createLesson(lessonParentModuleId, payload);
         toast({ title: "Lesson created", description: `"${lessonForm.title}" has been created.` });
       }
       setShowLessonDialog(false);
@@ -734,6 +769,38 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
       setShowDeleteDialog(false);
       setDeleteTarget(null);
     }
+  }
+
+  // ── Status Change Handler ───────────────────────────────────────────────
+
+  function requestStatusChange(courseId: string, courseName: string, newStatus: "draft" | "published" | "archived") {
+    setStatusChangeTarget({ courseId, courseName, newStatus });
+    setShowStatusDialog(true);
+  }
+
+  async function handleStatusChange() {
+    if (!statusChangeTarget) return;
+    try {
+      await updateCourse(statusChangeTarget.courseId, { status: statusChangeTarget.newStatus });
+      toast({
+        title: "Status updated",
+        description: `"${statusChangeTarget.courseName}" is now ${statusChangeTarget.newStatus}.`,
+      });
+      loadCourses();
+    } catch (err) {
+      toast({ title: "Error changing status", description: String(err), variant: "destructive" });
+    } finally {
+      setShowStatusDialog(false);
+      setStatusChangeTarget(null);
+    }
+  }
+
+  // ── Course Publish/Unpublish from Dialog ──────────────────────────────
+
+  async function handlePublishToggle() {
+    if (!editingCourse) return;
+    const newStatus = editingCourse.status === "published" ? "draft" : "published";
+    requestStatusChange(editingCourse.id, editingCourse.title, newStatus);
   }
 
   // ── Student CSV Export ───────────────────────────────────────────────────
@@ -1091,8 +1158,15 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
                 />
               ) : (
                 <div className="space-y-2">
-                  {courses.map((course) => (
-                    <Card key={course.id} className="overflow-hidden">
+                  {courses.map((course) => {
+                    const borderColor =
+                      course.status === "published"
+                        ? "border-l-emerald-500"
+                        : course.status === "archived"
+                          ? "border-l-gray-400"
+                          : "border-l-amber-400";
+                    return (
+                    <Card key={course.id} className={`overflow-hidden border-l-4 ${borderColor}`}>
                       {/* Course Row */}
                       <div
                         className="flex items-center gap-4 px-4 py-3 cursor-pointer hover:bg-muted/50 transition-colors"
@@ -1111,6 +1185,51 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
                           </p>
                         </div>
                         <div className="flex items-center gap-1 shrink-0">
+                          {/* Status Toggle Dropdown */}
+                          <DropdownMenu>
+                            <DropdownMenuTrigger asChild>
+                              <Button
+                                size="sm"
+                                variant="outline"
+                                className="h-8 text-xs gap-1 px-2"
+                                onClick={(e) => e.stopPropagation()}
+                              >
+                                {course.status === "published" ? "Published" : course.status === "archived" ? "Archived" : "Draft"}
+                                <svg viewBox="0 0 24 24" className="w-3 h-3 ml-0.5" fill="none" stroke="currentColor" strokeWidth="2">
+                                  <polyline points="6 9 12 15 18 9" />
+                                </svg>
+                              </Button>
+                            </DropdownMenuTrigger>
+                            <DropdownMenuContent align="end" onClick={(e) => e.stopPropagation()}>
+                              {course.status !== "published" && (
+                                <DropdownMenuItem
+                                  className="cursor-pointer text-emerald-700"
+                                  onClick={() => requestStatusChange(course.id, course.title, "published")}
+                                >
+                                  <div className="w-2 h-2 rounded-full bg-emerald-500 mr-2" />
+                                  Publish
+                                </DropdownMenuItem>
+                              )}
+                              {course.status !== "draft" && (
+                                <DropdownMenuItem
+                                  className="cursor-pointer text-amber-700"
+                                  onClick={() => requestStatusChange(course.id, course.title, "draft")}
+                                >
+                                  <div className="w-2 h-2 rounded-full bg-amber-400 mr-2" />
+                                  Move to Draft
+                                </DropdownMenuItem>
+                              )}
+                              {course.status !== "archived" && (
+                                <DropdownMenuItem
+                                  className="cursor-pointer text-gray-600"
+                                  onClick={() => requestStatusChange(course.id, course.title, "archived")}
+                                >
+                                  <div className="w-2 h-2 rounded-full bg-gray-400 mr-2" />
+                                  Archive
+                                </DropdownMenuItem>
+                              )}
+                            </DropdownMenuContent>
+                          </DropdownMenu>
                           <Button
                             size="sm"
                             variant="ghost"
@@ -1178,7 +1297,8 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
                         </div>
                       )}
                     </Card>
-                  ))}
+                    );
+                  })}
                 </div>
               )}
             </div>
@@ -1713,13 +1833,30 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
             </div>
           </div>
 
-          <DialogFooter>
-            <DialogClose asChild>
-              <Button variant="outline">Cancel</Button>
-            </DialogClose>
-            <Button onClick={handleSaveCourse} className="bg-[hsl(174,62%,32%)] hover:bg-[hsl(174,62%,26%)]">
-              {editingCourse ? "Save Changes" : "Create Course"}
-            </Button>
+          <DialogFooter className="flex items-center justify-between sm:justify-between">
+            <div>
+              {editingCourse && (
+                <Button
+                  variant="outline"
+                  onClick={handlePublishToggle}
+                  className={
+                    editingCourse.status === "published"
+                      ? "text-amber-700 border-amber-300 hover:bg-amber-50"
+                      : "text-emerald-700 border-emerald-300 hover:bg-emerald-50"
+                  }
+                >
+                  {editingCourse.status === "published" ? "Unpublish" : "Publish"}
+                </Button>
+              )}
+            </div>
+            <div className="flex items-center gap-2">
+              <DialogClose asChild>
+                <Button variant="outline">Cancel</Button>
+              </DialogClose>
+              <Button onClick={handleSaveCourse} className="bg-[hsl(174,62%,32%)] hover:bg-[hsl(174,62%,26%)]">
+                {editingCourse ? "Save Changes" : "Create Course"}
+              </Button>
+            </div>
           </DialogFooter>
         </DialogContent>
       </Dialog>
@@ -1783,13 +1920,13 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
         </DialogContent>
       </Dialog>
 
-      {/* ── Lesson Dialog ─────────────────────────────────────────────── */}
+      {/* ── Lesson Dialog (with Content Block Editor) ──────────────── */}
       <Dialog open={showLessonDialog} onOpenChange={setShowLessonDialog}>
-        <DialogContent className="max-w-lg">
+        <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto">
           <DialogHeader>
             <DialogTitle>{editingLesson ? "Edit Lesson" : "Create New Lesson"}</DialogTitle>
             <DialogDescription>
-              {editingLesson ? "Update the lesson details." : "Add a new lesson to this module."}
+              {editingLesson ? "Update the lesson details and content." : "Add a new lesson with content blocks."}
             </DialogDescription>
           </DialogHeader>
 
@@ -1831,6 +1968,14 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
                 />
               </div>
             </div>
+
+            <Separator />
+
+            {/* Content Block Editor */}
+            <ContentBlockEditor
+              blocks={lessonForm.content}
+              onChange={(blocks) => setLessonForm((f) => ({ ...f, content: blocks }))}
+            />
           </div>
 
           <DialogFooter>
@@ -1940,6 +2085,44 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
             </DialogClose>
             <Button variant="destructive" onClick={handleDelete}>
               Delete {deleteTarget?.type}
+            </Button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
+
+      {/* ── Status Change Confirmation Dialog ────────────────────────── */}
+      <Dialog open={showStatusDialog} onOpenChange={setShowStatusDialog}>
+        <DialogContent className="max-w-sm">
+          <DialogHeader>
+            <DialogTitle>
+              {statusChangeTarget?.newStatus === "published" ? "Publish Course" : statusChangeTarget?.newStatus === "draft" ? "Unpublish Course" : "Archive Course"}
+            </DialogTitle>
+            <DialogDescription>
+              {statusChangeTarget?.newStatus === "published"
+                ? "This will make the course visible to all students. Continue?"
+                : statusChangeTarget?.newStatus === "draft"
+                  ? "This will hide the course from students. Continue?"
+                  : "This will archive the course. Students will no longer be able to access it."}
+            </DialogDescription>
+          </DialogHeader>
+          <div className="py-2">
+            <p className="text-sm font-medium text-foreground">"{statusChangeTarget?.courseName}"</p>
+          </div>
+          <DialogFooter>
+            <DialogClose asChild>
+              <Button variant="outline">Cancel</Button>
+            </DialogClose>
+            <Button
+              onClick={handleStatusChange}
+              className={
+                statusChangeTarget?.newStatus === "published"
+                  ? "bg-emerald-600 hover:bg-emerald-700"
+                  : statusChangeTarget?.newStatus === "draft"
+                    ? "bg-amber-600 hover:bg-amber-700"
+                    : "bg-gray-600 hover:bg-gray-700"
+              }
+            >
+              {statusChangeTarget?.newStatus === "published" ? "Publish" : statusChangeTarget?.newStatus === "draft" ? "Move to Draft" : "Archive"}
             </Button>
           </DialogFooter>
         </DialogContent>
@@ -2098,29 +2281,47 @@ function ModuleCard({
               <p className="text-xs text-muted-foreground italic">No lessons yet.</p>
             ) : (
               <div className="space-y-1">
-                {mod.lessons.map((lesson) => (
-                  <div key={lesson.id} className="flex items-center gap-2 px-2 py-1.5 rounded hover:bg-muted/50 group text-sm">
-                    <span className="text-muted-foreground text-xs w-4 shrink-0">{lesson.order_index}.</span>
-                    <span className="flex-1 truncate text-foreground">{lesson.title}</span>
-                    <span className="text-xs text-muted-foreground shrink-0">{lesson.duration_minutes} min</span>
-                    <Button
-                      size="sm"
-                      variant="ghost"
-                      className="h-6 w-6 p-0 opacity-0 group-hover:opacity-100"
-                      onClick={() => onEditLesson(lesson)}
-                    >
-                      <IconEdit />
-                    </Button>
-                    <Button
-                      size="sm"
-                      variant="ghost"
-                      className="h-6 w-6 p-0 text-destructive opacity-0 group-hover:opacity-100"
-                      onClick={() => onDeleteLesson(lesson)}
-                    >
-                      <IconTrash />
-                    </Button>
-                  </div>
-                ))}
+                {mod.lessons.map((lesson) => {
+                  const contentBlocks = Array.isArray(lesson.content) ? (lesson.content as ContentBlockType[]) : [];
+                  const firstTextBlock = contentBlocks.find(
+                    (b): b is Extract<ContentBlockType, { type: "text" }> => b.type === "text"
+                  );
+                  const contentPreview = firstTextBlock
+                    ? firstTextBlock.body.slice(0, 60) + (firstTextBlock.body.length > 60 ? "..." : "")
+                    : contentBlocks.length > 0
+                      ? `${contentBlocks.length} content block${contentBlocks.length !== 1 ? "s" : ""}`
+                      : "No content";
+                  return (
+                    <div key={lesson.id} className="flex items-start gap-2 px-2 py-1.5 rounded hover:bg-muted/50 group text-sm">
+                      <span className="text-muted-foreground text-xs w-4 shrink-0 mt-0.5">{lesson.order_index}.</span>
+                      <div className="flex-1 min-w-0">
+                        <div className="flex items-center gap-2">
+                          <span className="truncate text-foreground font-medium">{lesson.title}</span>
+                          <span className="text-xs text-muted-foreground shrink-0">{lesson.duration_minutes} min</span>
+                        </div>
+                        <p className="text-xs text-muted-foreground truncate mt-0.5">{contentPreview}</p>
+                      </div>
+                      <div className="flex items-center gap-0.5 shrink-0 opacity-0 group-hover:opacity-100">
+                        <Button
+                          size="sm"
+                          variant="ghost"
+                          className="h-6 w-6 p-0"
+                          onClick={() => onEditLesson(lesson)}
+                        >
+                          <IconEdit />
+                        </Button>
+                        <Button
+                          size="sm"
+                          variant="ghost"
+                          className="h-6 w-6 p-0 text-destructive"
+                          onClick={() => onDeleteLesson(lesson)}
+                        >
+                          <IconTrash />
+                        </Button>
+                      </div>
+                    </div>
+                  );
+                })}
               </div>
             )}
           </div>
@@ -2139,28 +2340,43 @@ function ModuleCard({
               <p className="text-xs text-muted-foreground italic">No quiz questions yet.</p>
             ) : (
               <div className="space-y-1">
-                {mod.quiz_questions.map((q, idx) => (
-                  <div key={q.id} className="flex items-center gap-2 px-2 py-1.5 rounded hover:bg-muted/50 group text-sm">
-                    <span className="text-muted-foreground text-xs w-4 shrink-0">Q{idx + 1}</span>
-                    <span className="flex-1 truncate text-foreground">{q.question}</span>
-                    <Button
-                      size="sm"
-                      variant="ghost"
-                      className="h-6 w-6 p-0 opacity-0 group-hover:opacity-100"
-                      onClick={() => onEditQuiz(q)}
-                    >
-                      <IconEdit />
-                    </Button>
-                    <Button
-                      size="sm"
-                      variant="ghost"
-                      className="h-6 w-6 p-0 text-destructive opacity-0 group-hover:opacity-100"
-                      onClick={() => onDeleteQuiz(q)}
-                    >
-                      <IconTrash />
-                    </Button>
-                  </div>
-                ))}
+                {mod.quiz_questions.map((q, idx) => {
+                  const correctOption = q.options?.[q.correct_answer] ?? "";
+                  return (
+                    <div key={q.id} className="flex items-start gap-2 px-2 py-1.5 rounded hover:bg-muted/50 group text-sm">
+                      <span className="text-muted-foreground text-xs w-6 shrink-0 mt-0.5">Q{idx + 1}</span>
+                      <div className="flex-1 min-w-0">
+                        <span className="text-foreground">{q.question}</span>
+                        {correctOption && (
+                          <div className="flex items-center gap-1 mt-0.5">
+                            <svg viewBox="0 0 24 24" className="w-3 h-3 text-emerald-600 shrink-0" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                              <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                            <span className="text-xs text-emerald-700 truncate">{correctOption}</span>
+                          </div>
+                        )}
+                      </div>
+                      <div className="flex items-center gap-0.5 shrink-0 opacity-0 group-hover:opacity-100">
+                        <Button
+                          size="sm"
+                          variant="ghost"
+                          className="h-6 w-6 p-0"
+                          onClick={() => onEditQuiz(q)}
+                        >
+                          <IconEdit />
+                        </Button>
+                        <Button
+                          size="sm"
+                          variant="ghost"
+                          className="h-6 w-6 p-0 text-destructive"
+                          onClick={() => onDeleteQuiz(q)}
+                        >
+                          <IconTrash />
+                        </Button>
+                      </div>
+                    </div>
+                  );
+                })}
               </div>
             )}
           </div>
