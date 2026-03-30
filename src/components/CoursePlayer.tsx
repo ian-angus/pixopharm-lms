@@ -13,14 +13,13 @@ import type {
   QuizQuestion,
   QuestionType,
 } from "@/data/types";
-import { loadCourse } from "@/data/courseIndex";
 import { useProgress } from "@/hooks/useProgress";
 import FlashcardReview from "@/components/FlashcardReview";
 import {
   knowledgeChecks,
   branchingScenarios,
 } from "@/data/interactiveContent";
-import { fetchCourse } from "@/lib/admin-api";
+import { fetchCourseBySlug } from "@/lib/admin-api";
 import type {
   Course as DbCourse,
   Module as DbModule,
@@ -1392,7 +1391,7 @@ export default function CoursePlayer({
   const [sidebarOpen, setSidebarOpen] = useState(true);
   const contentRef = useRef<HTMLDivElement>(null);
 
-  // Dynamic course loading — tries static file first, then DB fallback
+  // Load course from Supabase
   const [dynamicCourse, setDynamicCourse] = useState<FullCourse | null>(null);
   const [courseLoading, setCourseLoading] = useState(true);
 
@@ -1401,24 +1400,14 @@ export default function CoursePlayer({
     let cancelled = false;
     setCourseLoading(true);
 
-    // Try loading from static course files first
-    loadCourse(slug).then((staticCourse) => {
+    fetchCourseBySlug(slug).then((data) => {
       if (cancelled) return;
-      if (staticCourse) {
-        setDynamicCourse(staticCourse);
-        setCourseLoading(false);
-        return;
-      }
-      // Fallback to DB if no static file exists
-      fetchCourse(slug).then((data) => {
-        if (cancelled) return;
-        setDynamicCourse(transformDbCourse(data.course, data.modules));
-        setCourseLoading(false);
-      }).catch((err) => {
-        if (cancelled) return;
-        console.error("Failed to load course:", err);
-        setCourseLoading(false);
-      });
+      setDynamicCourse(transformDbCourse(data.course, data.modules));
+      setCourseLoading(false);
+    }).catch((err) => {
+      if (cancelled) return;
+      console.error("Failed to load course from Supabase:", err);
+      setCourseLoading(false);
     });
 
     return () => { cancelled = true; };

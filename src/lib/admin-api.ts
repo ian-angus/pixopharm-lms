@@ -174,30 +174,38 @@ export async function fetchCourses(): Promise<Course[]> {
   }));
 }
 
-/** Fetch a single course with full module/lesson/quiz tree. */
-export async function fetchCourse(id: string): Promise<{
+/** Fetch a single course by slug with full module/lesson/quiz tree. */
+export async function fetchCourseBySlug(slug: string): Promise<{
   course: Course;
   modules: (Module & { lessons: Lesson[]; quiz_questions: QuizQuestion[] })[];
 }> {
   const { data: course, error: cErr } = await supabase
     .from("courses")
     .select("*")
-    .eq("id", id)
+    .eq("slug", slug)
     .single();
 
-  if (cErr) handleError(cErr, "fetchCourse");
+  if (cErr) handleError(cErr, "fetchCourseBySlug");
+  return fetchCourseTree(course);
+}
+
+/** Shared: given a course row, fetch its full module/lesson/quiz tree. */
+async function fetchCourseTree(course: Record<string, unknown>): Promise<{
+  course: Course;
+  modules: (Module & { lessons: Lesson[]; quiz_questions: QuizQuestion[] })[];
+}> {
+  const courseId = course.id as string;
 
   const { data: modules, error: mErr } = await supabase
     .from("modules")
     .select("*")
-    .eq("course_id", id)
+    .eq("course_id", courseId)
     .order("order_index", { ascending: true });
 
-  if (mErr) handleError(mErr, "fetchCourse.modules");
+  if (mErr) handleError(mErr, "fetchCourseTree.modules");
 
   const moduleIds = (modules ?? []).map((m) => m.id);
 
-  // Fetch lessons and quizzes for all modules in the course
   const [lessonsRes, quizRes] = await Promise.all([
     moduleIds.length > 0
       ? supabase
@@ -218,7 +226,6 @@ export async function fetchCourse(id: string): Promise<{
   if (lessonsRes.error) console.warn("Could not fetch lessons:", lessonsRes.error);
   if (quizRes.error) console.warn("Could not fetch quiz questions:", quizRes.error);
 
-  // Group by module
   const lessonsByModule = new Map<string, Lesson[]>();
   (lessonsRes.data ?? []).forEach((l) => {
     const arr = lessonsByModule.get(l.module_id) ?? [];
@@ -244,11 +251,26 @@ export async function fetchCourse(id: string): Promise<{
   return {
     course: {
       ...course,
-      prerequisites: course.prerequisites ?? [],
-      what_youll_learn: course.what_youll_learn ?? [],
+      prerequisites: (course.prerequisites as string[]) ?? [],
+      what_youll_learn: (course.what_youll_learn as string[]) ?? [],
     } as Course,
     modules: enrichedModules,
   };
+}
+
+/** Fetch a single course by ID with full module/lesson/quiz tree. */
+export async function fetchCourse(id: string): Promise<{
+  course: Course;
+  modules: (Module & { lessons: Lesson[]; quiz_questions: QuizQuestion[] })[];
+}> {
+  const { data: course, error: cErr } = await supabase
+    .from("courses")
+    .select("*")
+    .eq("id", id)
+    .single();
+
+  if (cErr) handleError(cErr, "fetchCourse");
+  return fetchCourseTree(course);
 }
 
 /** Create a new course. */
