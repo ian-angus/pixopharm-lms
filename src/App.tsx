@@ -66,6 +66,21 @@ function IconChat() {
 function IconShield() {
   return <svg viewBox="0 0 24 24" className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /><path d="M9 12l2 2 4-4" /></svg>;
 }
+function IconStethoscope() {
+  return <svg viewBox="0 0 24 24" className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M4.8 2.3A.3.3 0 105 2H4a2 2 0 00-2 2v5a6 6 0 0012 0V4a2 2 0 00-2-2h-1a.2.2 0 10.3.3" /><path d="M8 15v1a6 6 0 006 6 6 6 0 006-6v-4" /><circle cx="20" cy="10" r="2" /></svg>;
+}
+function IconFlask() {
+  return <svg viewBox="0 0 24 24" className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M10 2v7.527a2 2 0 01-.211.896L4.72 20.55a1 1 0 00.9 1.45h12.76a1 1 0 00.9-1.45l-5.069-10.127A2 2 0 0114 9.527V2" /><path d="M8.5 2h7M7 16h10" /></svg>;
+}
+function IconUsers() {
+  return <svg viewBox="0 0 24 24" className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M16 21v-2a4 4 0 00-4-4H6a4 4 0 00-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="M22 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" /></svg>;
+}
+function IconBuilding() {
+  return <svg viewBox="0 0 24 24" className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M6 22V4a2 2 0 012-2h8a2 2 0 012 2v18zM6 12H4a2 2 0 00-2 2v6a2 2 0 002 2h2M18 9h2a2 2 0 012 2v9a2 2 0 01-2 2h-2" /><path d="M10 6h4M10 10h4M10 14h4M10 18h4" /></svg>;
+}
+function IconGlobe() {
+  return <svg viewBox="0 0 24 24" className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="1.5"><circle cx="12" cy="12" r="10" /><path d="M12 2a14.5 14.5 0 000 20 14.5 14.5 0 000-20" /><path d="M2 12h20" /></svg>;
+}
 
 const courseIcons: Record<string, () => React.JSX.Element> = {
   GraduationCap: IconGradCap,
@@ -76,6 +91,11 @@ const courseIcons: Record<string, () => React.JSX.Element> = {
   BrainCircuit: IconBrain,
   MessageCircleHeart: IconChat,
   ShieldCheck: IconShield,
+  Stethoscope: IconStethoscope,
+  FlaskConical: IconFlask,
+  Users: IconUsers,
+  Building2: IconBuilding,
+  Globe: IconGlobe,
 };
 
 const colorMap: Record<string, string> = {
@@ -87,6 +107,11 @@ const colorMap: Record<string, string> = {
   cyan: "bg-cyan-50 text-cyan-700 border-cyan-200",
   teal: "bg-teal-50 text-teal-700 border-teal-200",
   orange: "bg-orange-50 text-orange-700 border-orange-200",
+  indigo: "bg-indigo-50 text-indigo-700 border-indigo-200",
+  purple: "bg-purple-50 text-purple-700 border-purple-200",
+  pink: "bg-pink-50 text-pink-700 border-pink-200",
+  slate: "bg-slate-50 text-slate-700 border-slate-200",
+  sky: "bg-sky-50 text-sky-700 border-sky-200",
 };
 
 /* ─── Course Image Mapping ─── */
@@ -104,6 +129,11 @@ const iconBgMap: Record<string, string> = {
   cyan: "bg-cyan-100 text-cyan-600",
   teal: "bg-teal-100 text-teal-600",
   orange: "bg-orange-100 text-orange-600",
+  indigo: "bg-indigo-100 text-indigo-600",
+  purple: "bg-purple-100 text-purple-600",
+  pink: "bg-pink-100 text-pink-600",
+  slate: "bg-slate-100 text-slate-600",
+  sky: "bg-sky-100 text-sky-600",
 };
 
 /* ─── Testimonial Data ─── */
@@ -150,7 +180,7 @@ const faqs = [
   },
   {
     q: "How long does it take to complete the full program?",
-    a: `The complete 8-course program spans ${catalogStats.totalWeeks} weeks of content. However, courses are self-paced, so you can take longer if needed. Most students complete individual courses within the listed timeframe when studying 8-10 hours per week. You can also take courses individually rather than completing the full program.`,
+    a: `The complete 13-course programme spans ${catalogStats.totalWeeks} weeks of content across 4 levels (Beginner, Intermediate, Advanced, Regional). However, courses are self-paced, so you can take longer if needed. Most students complete individual courses within the listed timeframe when studying 8-10 hours per week. You can also take courses individually or focus on a single level.`,
   },
   {
     q: "Can I access courses on my phone or tablet?",
@@ -186,7 +216,7 @@ const plans = [
     period: "/month",
     description: "Perfect for individual learners beginning their pharmacy career",
     features: [
-      "Access to 2 Foundation courses",
+      "Access to 3 Beginner courses",
       "Self-paced learning",
       "Course completion certificates",
       "Mobile-friendly access",
@@ -202,14 +232,14 @@ const plans = [
     period: "/month",
     description: "Full access for serious pharmacy professionals",
     features: [
-      "All 8 courses included",
+      "All 13 courses across 4 levels",
       "Island Regulatory Navigator tool",
       "Drug scheduling comparison database",
-      "AI in Pharmacy Practice module",
-      "Practice exams & quizzes",
-      "Certificate of completion",
+      "AI in Pharmacy Practice course",
+      "Practice exams & quizzes (800+ questions)",
+      "Level certificates (Beginner → Regional)",
       "Priority email & chat support",
-      "Offline video downloads",
+      "Spaced repetition flashcards",
     ],
     cta: "Go Professional",
     popular: true,
@@ -510,10 +540,10 @@ function About() {
                   <Progress value={75} className="mt-2 h-2" />
                 </div>
                 <div className="bg-white rounded-xl p-4 shadow-sm text-center">
-                  <div className="text-2xl font-bold text-[hsl(174,62%,32%)]">3</div>
+                  <div className="text-2xl font-bold text-[hsl(174,62%,32%)]">4</div>
                   <div className="text-xs text-slate-600 mt-1">Skill Levels</div>
                   <div className="flex justify-center gap-1 mt-2">
-                    {["bg-emerald-500", "bg-blue-500", "bg-violet-500"].map((c) => (
+                    {["bg-emerald-500", "bg-blue-500", "bg-violet-500", "bg-sky-500"].map((c) => (
                       <div key={c} className={`w-3 h-3 rounded-full ${c}`} />
                     ))}
                   </div>
@@ -783,7 +813,7 @@ function Courses({ onStartCourse }: { onStartCourse?: (courseId: string) => void
         {/* Filter tabs */}
         <div className="flex justify-center mb-10">
           <div className="inline-flex bg-white rounded-lg border border-slate-200 p-1 shadow-sm">
-            {["All", "Beginner", "Intermediate", "Advanced"].map((f) => (
+            {["All", "Beginner", "Intermediate", "Advanced", "Regional"].map((f) => (
               <button
                 key={f}
                 onClick={() => setFilter(f)}
@@ -891,7 +921,7 @@ function Courses({ onStartCourse }: { onStartCourse?: (courseId: string) => void
                   </ol>
                 </div>
                 <div className="mt-6">
-                  {selectedCourse.id === "foundations-pharmacy-practice" && onStartCourse ? (
+                  {onStartCourse ? (
                     <Button
                       className="w-full bg-[hsl(174,62%,32%)] hover:bg-[hsl(174,62%,26%)]"
                       onClick={() => {
@@ -1361,7 +1391,7 @@ function Footer() {
         </div>
         <Separator className="my-8 bg-white/10" />
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-white/40" style={{ fontFamily: "'DM Sans', sans-serif" }}>
-          <span>&copy; 2026 PIXOPHARM. All rights reserved. Serving the Caribbean with pride.</span>
+          <span>&copy; 2026 PIXOPHARM. Developed by Melyn Management Inc. All rights reserved.</span>
           <div className="flex gap-4">
             <a href="#" className="hover:text-white/70">Privacy</a>
             <a href="#" className="hover:text-white/70">Terms</a>
@@ -1387,8 +1417,8 @@ function App() {
   }
 
   // If a course is active, show the course player
-  if (activeCourse === "foundations-pharmacy-practice") {
-    return <CoursePlayer user={user} onExit={() => setActiveCourse(null)} />;
+  if (activeCourse) {
+    return <CoursePlayer user={user} onExit={() => setActiveCourse(null)} courseId={activeCourse} />;
   }
 
   if (loading) {

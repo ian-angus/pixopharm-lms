@@ -76,6 +76,7 @@ import type {
   Module,
   Lesson,
   QuizQuestion,
+  QuestionType,
   StudentProfile,
   AnalyticsData,
 } from "@/lib/admin-api";
@@ -403,6 +404,10 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
     correct_answer: 0,
     explanation: "",
     order_index: 99,
+    question_type: "multiple_choice" as QuestionType,
+    question_data: {} as QuizQuestion["question_data"],
+    difficulty: "" as string,
+    blooms_level: "" as string,
   });
   const [formErrors, setFormErrors] = useState<Record<string, string>>({});
 
@@ -685,7 +690,17 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
   function openNewQuiz(moduleId: string) {
     setEditingQuiz(null);
     setQuizParentModuleId(moduleId);
-    setQuizForm({ question: "", options: ["", "", "", ""], correct_answer: 0, explanation: "", order_index: 99 });
+    setQuizForm({
+      question: "",
+      options: ["", "", "", ""],
+      correct_answer: 0,
+      explanation: "",
+      order_index: 99,
+      question_type: "multiple_choice",
+      question_data: {},
+      difficulty: "",
+      blooms_level: "",
+    });
     setFormErrors({});
     setShowQuizDialog(true);
   }
@@ -699,6 +714,10 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
       correct_answer: q.correct_answer,
       explanation: q.explanation,
       order_index: q.order_index,
+      question_type: q.question_type ?? "multiple_choice",
+      question_data: q.question_data ?? {},
+      difficulty: q.difficulty ?? "",
+      blooms_level: q.blooms_level ?? "",
     });
     setFormErrors({});
     setShowQuizDialog(true);
@@ -707,19 +726,59 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
   async function handleSaveQuiz() {
     const errors: Record<string, string> = {};
     if (!quizForm.question.trim()) errors.question = "Question is required";
-    const filledOptions = quizForm.options.filter((o) => o.trim());
-    if (filledOptions.length < 2) errors.options = "At least 2 options are required";
+    const qt = quizForm.question_type;
+    // Validate based on question type
+    if (qt === "multiple_choice" || qt === "scenario") {
+      const filledOptions = quizForm.options.filter((o) => o.trim());
+      if (filledOptions.length < 2) errors.options = "At least 2 options are required";
+    }
+    if (qt === "multiple_select") {
+      const filledOptions = quizForm.options.filter((o) => o.trim());
+      if (filledOptions.length < 2) errors.options = "At least 2 options are required";
+      if (!quizForm.question_data?.correct_indices?.length) errors.correct = "Select at least one correct option";
+    }
+    if (qt === "ordering") {
+      const filledOptions = quizForm.options.filter((o) => o.trim());
+      if (filledOptions.length < 2) errors.options = "At least 2 items are required";
+    }
+    if (qt === "matching") {
+      if (!quizForm.question_data?.pairs?.length || quizForm.question_data.pairs.length < 2)
+        errors.pairs = "At least 2 pairs are required";
+    }
+    if (qt === "fill_in_blank") {
+      if (!quizForm.question_data?.acceptable_answers?.length || !quizForm.question_data.acceptable_answers.some((a) => a.trim()))
+        errors.answers = "At least one acceptable answer is required";
+    }
+    if (qt === "scenario" && !quizForm.question_data?.context?.trim()) {
+      errors.context = "Scenario context is required";
+    }
     if (Object.keys(errors).length > 0) {
       setFormErrors(errors);
       return;
     }
 
     try {
+      const payload: Record<string, unknown> = {
+        question: quizForm.question,
+        options: quizForm.options,
+        correct_answer: quizForm.correct_answer,
+        explanation: quizForm.explanation,
+        order_index: quizForm.order_index,
+      };
+      if (quizForm.question_type !== "multiple_choice") {
+        payload.question_type = quizForm.question_type;
+      }
+      if (quizForm.question_data && Object.keys(quizForm.question_data).length > 0) {
+        payload.question_data = quizForm.question_data;
+      }
+      if (quizForm.difficulty) payload.difficulty = quizForm.difficulty;
+      if (quizForm.blooms_level) payload.blooms_level = quizForm.blooms_level;
+
       if (editingQuiz) {
-        await updateQuizQuestion(editingQuiz.id, quizForm);
+        await updateQuizQuestion(editingQuiz.id, payload);
         toast({ title: "Quiz question updated" });
       } else {
-        await createQuizQuestion(quizParentModuleId, quizForm);
+        await createQuizQuestion(quizParentModuleId, payload);
         toast({ title: "Quiz question created" });
       }
       setShowQuizDialog(false);
@@ -915,7 +974,7 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
             Exit Preview
           </Button>
         </div>
-        <CoursePlayer user={user} onExit={() => setPreviewCourseId(null)} />
+        <CoursePlayer user={user} onExit={() => setPreviewCourseId(null)} courseId={previewCourseId} />
       </div>
     );
   }
@@ -1863,7 +1922,7 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
 
       {/* ── Module Dialog ─────────────────────────────────────────────── */}
       <Dialog open={showModuleDialog} onOpenChange={setShowModuleDialog}>
-        <DialogContent className="max-w-lg max-h-[85vh] overflow-y-auto">
+        <DialogContent className="max-w-2xl max-h-[85vh] overflow-y-auto">
           <DialogHeader>
             <DialogTitle>{editingModule ? "Edit Module" : "Create New Module"}</DialogTitle>
             <DialogDescription>
@@ -1991,7 +2050,7 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
 
       {/* ── Quiz Question Dialog ──────────────────────────────────────── */}
       <Dialog open={showQuizDialog} onOpenChange={setShowQuizDialog}>
-        <DialogContent className="max-w-lg max-h-[85vh] overflow-y-auto">
+        <DialogContent className="max-w-2xl max-h-[85vh] overflow-y-auto">
           <DialogHeader>
             <DialogTitle>{editingQuiz ? "Edit Quiz Question" : "Create Quiz Question"}</DialogTitle>
             <DialogDescription>
@@ -2000,6 +2059,77 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
           </DialogHeader>
 
           <div className="space-y-4 py-2">
+            {/* Question Type Selector */}
+            <div className="grid grid-cols-3 gap-3">
+              <div className="space-y-1.5">
+                <Label>Question Type</Label>
+                <Select
+                  value={quizForm.question_type}
+                  onValueChange={(val) => {
+                    const qt = val as QuestionType;
+                    setQuizForm((f) => ({
+                      ...f,
+                      question_type: qt,
+                      question_data: qt === "true_false" ? { correct_answer: true } :
+                        qt === "matching" ? { pairs: [{ left: "", right: "" }, { left: "", right: "" }] } :
+                        qt === "fill_in_blank" ? { acceptable_answers: [""] } :
+                        qt === "multiple_select" ? { correct_indices: [] } :
+                        qt === "ordering" ? { correct_order: [] } :
+                        qt === "scenario" ? { context: "" } : {},
+                    }));
+                  }}
+                >
+                  <SelectTrigger><SelectValue /></SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="multiple_choice">Multiple Choice</SelectItem>
+                    <SelectItem value="multiple_select">Multiple Select</SelectItem>
+                    <SelectItem value="ordering">Ordering</SelectItem>
+                    <SelectItem value="matching">Matching</SelectItem>
+                    <SelectItem value="fill_in_blank">Fill in the Blank</SelectItem>
+                    <SelectItem value="true_false">True / False</SelectItem>
+                    <SelectItem value="scenario">Scenario</SelectItem>
+                  </SelectContent>
+                </Select>
+              </div>
+
+              <div className="space-y-1.5">
+                <Label>Difficulty</Label>
+                <Select
+                  value={quizForm.difficulty || "_none"}
+                  onValueChange={(val) => setQuizForm((f) => ({ ...f, difficulty: val === "_none" ? "" : val }))}
+                >
+                  <SelectTrigger><SelectValue placeholder="None" /></SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="_none">None</SelectItem>
+                    <SelectItem value="easy">Easy</SelectItem>
+                    <SelectItem value="medium">Medium</SelectItem>
+                    <SelectItem value="hard">Hard</SelectItem>
+                    <SelectItem value="expert">Expert</SelectItem>
+                  </SelectContent>
+                </Select>
+              </div>
+
+              <div className="space-y-1.5">
+                <Label>Bloom&apos;s Level</Label>
+                <Select
+                  value={quizForm.blooms_level || "_none"}
+                  onValueChange={(val) => setQuizForm((f) => ({ ...f, blooms_level: val === "_none" ? "" : val }))}
+                >
+                  <SelectTrigger><SelectValue placeholder="None" /></SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="_none">None</SelectItem>
+                    <SelectItem value="remember">Remember</SelectItem>
+                    <SelectItem value="understand">Understand</SelectItem>
+                    <SelectItem value="apply">Apply</SelectItem>
+                    <SelectItem value="analyze">Analyze</SelectItem>
+                    <SelectItem value="evaluate">Evaluate</SelectItem>
+                    <SelectItem value="create">Create</SelectItem>
+                  </SelectContent>
+                </Select>
+              </div>
+            </div>
+
+            {/* Question text */}
             <div className="space-y-1.5">
               <Label htmlFor="quiz-question">Question *</Label>
               <Textarea
@@ -2015,33 +2145,319 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
               {formErrors.question && <p className="text-xs text-destructive">{formErrors.question}</p>}
             </div>
 
-            <div className="space-y-2">
-              <Label>Options *</Label>
-              {quizForm.options.map((opt, idx) => (
-                <div key={idx} className="flex items-center gap-2">
+            {/* Scenario context textarea */}
+            {quizForm.question_type === "scenario" && (
+              <div className="space-y-1.5">
+                <Label>Scenario Context *</Label>
+                <Textarea
+                  value={quizForm.question_data?.context ?? ""}
+                  onChange={(e) =>
+                    setQuizForm((f) => ({
+                      ...f,
+                      question_data: { ...f.question_data, context: e.target.value },
+                    }))
+                  }
+                  placeholder="Describe the case scenario..."
+                  rows={4}
+                />
+                {formErrors.context && <p className="text-xs text-destructive">{formErrors.context}</p>}
+              </div>
+            )}
+
+            {/* Multiple Choice: options + radio for correct */}
+            {(quizForm.question_type === "multiple_choice" || quizForm.question_type === "scenario") && (
+              <div className="space-y-2">
+                <Label>Options * <span className="text-xs text-muted-foreground font-normal">(select the correct answer)</span></Label>
+                {quizForm.options.map((opt, idx) => (
+                  <div key={idx} className="flex items-center gap-2">
+                    <input
+                      type="radio"
+                      name="correct-answer"
+                      checked={quizForm.correct_answer === idx}
+                      onChange={() => setQuizForm((f) => ({ ...f, correct_answer: idx }))}
+                      className="accent-[hsl(174,62%,32%)]"
+                    />
+                    <Input
+                      value={opt}
+                      onChange={(e) => {
+                        const arr = [...quizForm.options];
+                        arr[idx] = e.target.value;
+                        setQuizForm((f) => ({ ...f, options: arr }));
+                        setFormErrors((er) => ({ ...er, options: "" }));
+                      }}
+                      placeholder={`Option ${idx + 1}`}
+                    />
+                  </div>
+                ))}
+                {formErrors.options && <p className="text-xs text-destructive">{formErrors.options}</p>}
+              </div>
+            )}
+
+            {/* Multiple Select: options + checkboxes for correct ones */}
+            {quizForm.question_type === "multiple_select" && (
+              <div className="space-y-2">
+                <Label>Options * <span className="text-xs text-muted-foreground font-normal">(check all correct answers)</span></Label>
+                {quizForm.options.map((opt, idx) => (
+                  <div key={idx} className="flex items-center gap-2">
+                    <input
+                      type="checkbox"
+                      checked={quizForm.question_data?.correct_indices?.includes(idx) ?? false}
+                      onChange={(e) => {
+                        const current = quizForm.question_data?.correct_indices ?? [];
+                        const next = e.target.checked
+                          ? [...current, idx]
+                          : current.filter((i) => i !== idx);
+                        setQuizForm((f) => ({
+                          ...f,
+                          question_data: { ...f.question_data, correct_indices: next },
+                        }));
+                        setFormErrors((er) => ({ ...er, correct: "" }));
+                      }}
+                      className="accent-[hsl(174,62%,32%)] w-4 h-4"
+                    />
+                    <Input
+                      value={opt}
+                      onChange={(e) => {
+                        const arr = [...quizForm.options];
+                        arr[idx] = e.target.value;
+                        setQuizForm((f) => ({ ...f, options: arr }));
+                        setFormErrors((er) => ({ ...er, options: "" }));
+                      }}
+                      placeholder={`Option ${idx + 1}`}
+                    />
+                  </div>
+                ))}
+                <Button
+                  type="button"
+                  variant="ghost"
+                  size="sm"
+                  className="text-xs gap-1"
+                  onClick={() => setQuizForm((f) => ({ ...f, options: [...f.options, ""] }))}
+                >
+                  <IconPlus /> Add Option
+                </Button>
+                {formErrors.options && <p className="text-xs text-destructive">{formErrors.options}</p>}
+                {formErrors.correct && <p className="text-xs text-destructive">{formErrors.correct}</p>}
+              </div>
+            )}
+
+            {/* Ordering: items list (correct order = the order entered) */}
+            {quizForm.question_type === "ordering" && (
+              <div className="space-y-2">
+                <Label>Items <span className="text-xs text-muted-foreground font-normal">(enter in the correct order)</span></Label>
+                {quizForm.options.map((opt, idx) => (
+                  <div key={idx} className="flex items-center gap-2">
+                    <span className="text-xs text-muted-foreground w-6 text-center">{idx + 1}.</span>
+                    <Input
+                      value={opt}
+                      onChange={(e) => {
+                        const arr = [...quizForm.options];
+                        arr[idx] = e.target.value;
+                        setQuizForm((f) => ({ ...f, options: arr }));
+                        setFormErrors((er) => ({ ...er, options: "" }));
+                      }}
+                      placeholder={`Item ${idx + 1}`}
+                    />
+                    {quizForm.options.length > 2 && (
+                      <Button
+                        type="button"
+                        variant="ghost"
+                        size="sm"
+                        className="h-8 w-8 p-0 text-destructive"
+                        onClick={() => {
+                          const arr = quizForm.options.filter((_, i) => i !== idx);
+                          setQuizForm((f) => ({ ...f, options: arr }));
+                        }}
+                      >
+                        <IconTrash />
+                      </Button>
+                    )}
+                  </div>
+                ))}
+                <Button
+                  type="button"
+                  variant="ghost"
+                  size="sm"
+                  className="text-xs gap-1"
+                  onClick={() => setQuizForm((f) => ({ ...f, options: [...f.options, ""] }))}
+                >
+                  <IconPlus /> Add Item
+                </Button>
+                {formErrors.options && <p className="text-xs text-destructive">{formErrors.options}</p>}
+                <p className="text-xs text-muted-foreground">The correct order is the order you enter them in. They will be shuffled when displayed to the student.</p>
+              </div>
+            )}
+
+            {/* Matching: pairs editor */}
+            {quizForm.question_type === "matching" && (
+              <div className="space-y-2">
+                <Label>Matching Pairs *</Label>
+                <div className="grid grid-cols-[1fr_auto_1fr_auto] gap-2 items-center">
+                  <span className="text-xs text-muted-foreground font-semibold">Left</span>
+                  <span />
+                  <span className="text-xs text-muted-foreground font-semibold">Right</span>
+                  <span />
+                  {(quizForm.question_data?.pairs ?? []).map((pair, idx) => (
+                    <>
+                      <Input
+                        key={`left-${idx}`}
+                        value={pair.left}
+                        onChange={(e) => {
+                          const pairs = [...(quizForm.question_data?.pairs ?? [])];
+                          pairs[idx] = { ...pairs[idx], left: e.target.value };
+                          setQuizForm((f) => ({ ...f, question_data: { ...f.question_data, pairs } }));
+                          setFormErrors((er) => ({ ...er, pairs: "" }));
+                        }}
+                        placeholder={`Left ${idx + 1}`}
+                      />
+                      <span className="text-muted-foreground text-xs text-center">→</span>
+                      <Input
+                        key={`right-${idx}`}
+                        value={pair.right}
+                        onChange={(e) => {
+                          const pairs = [...(quizForm.question_data?.pairs ?? [])];
+                          pairs[idx] = { ...pairs[idx], right: e.target.value };
+                          setQuizForm((f) => ({ ...f, question_data: { ...f.question_data, pairs } }));
+                          setFormErrors((er) => ({ ...er, pairs: "" }));
+                        }}
+                        placeholder={`Right ${idx + 1}`}
+                      />
+                      {(quizForm.question_data?.pairs?.length ?? 0) > 2 && (
+                        <Button
+                          key={`del-${idx}`}
+                          type="button"
+                          variant="ghost"
+                          size="sm"
+                          className="h-8 w-8 p-0 text-destructive"
+                          onClick={() => {
+                            const pairs = (quizForm.question_data?.pairs ?? []).filter((_, i) => i !== idx);
+                            setQuizForm((f) => ({ ...f, question_data: { ...f.question_data, pairs } }));
+                          }}
+                        >
+                          <IconTrash />
+                        </Button>
+                      )}
+                      {(quizForm.question_data?.pairs?.length ?? 0) <= 2 && <span key={`spacer-${idx}`} />}
+                    </>
+                  ))}
+                </div>
+                <Button
+                  type="button"
+                  variant="ghost"
+                  size="sm"
+                  className="text-xs gap-1"
+                  onClick={() => {
+                    const pairs = [...(quizForm.question_data?.pairs ?? []), { left: "", right: "" }];
+                    setQuizForm((f) => ({ ...f, question_data: { ...f.question_data, pairs } }));
+                  }}
+                >
+                  <IconPlus /> Add Pair
+                </Button>
+                {formErrors.pairs && <p className="text-xs text-destructive">{formErrors.pairs}</p>}
+                <p className="text-xs text-muted-foreground">The right column will be shuffled when displayed to the student.</p>
+              </div>
+            )}
+
+            {/* Fill in the Blank: acceptable answers list */}
+            {quizForm.question_type === "fill_in_blank" && (
+              <div className="space-y-2">
+                <Label>Acceptable Answers *</Label>
+                {(quizForm.question_data?.acceptable_answers ?? [""]).map((ans, idx) => (
+                  <div key={idx} className="flex items-center gap-2">
+                    <Input
+                      value={ans}
+                      onChange={(e) => {
+                        const answers = [...(quizForm.question_data?.acceptable_answers ?? [""])];
+                        answers[idx] = e.target.value;
+                        setQuizForm((f) => ({
+                          ...f,
+                          question_data: { ...f.question_data, acceptable_answers: answers },
+                        }));
+                        setFormErrors((er) => ({ ...er, answers: "" }));
+                      }}
+                      placeholder={`Answer variant ${idx + 1}`}
+                    />
+                    {(quizForm.question_data?.acceptable_answers?.length ?? 1) > 1 && (
+                      <Button
+                        type="button"
+                        variant="ghost"
+                        size="sm"
+                        className="h-8 w-8 p-0 text-destructive"
+                        onClick={() => {
+                          const answers = (quizForm.question_data?.acceptable_answers ?? []).filter((_, i) => i !== idx);
+                          setQuizForm((f) => ({
+                            ...f,
+                            question_data: { ...f.question_data, acceptable_answers: answers },
+                          }));
+                        }}
+                      >
+                        <IconTrash />
+                      </Button>
+                    )}
+                  </div>
+                ))}
+                <Button
+                  type="button"
+                  variant="ghost"
+                  size="sm"
+                  className="text-xs gap-1"
+                  onClick={() => {
+                    const answers = [...(quizForm.question_data?.acceptable_answers ?? []), ""];
+                    setQuizForm((f) => ({
+                      ...f,
+                      question_data: { ...f.question_data, acceptable_answers: answers },
+                    }));
+                  }}
+                >
+                  <IconPlus /> Add Variant
+                </Button>
+                <div className="flex items-center gap-2 mt-1">
                   <input
-                    type="radio"
-                    name="correct-answer"
-                    checked={quizForm.correct_answer === idx}
-                    onChange={() => setQuizForm((f) => ({ ...f, correct_answer: idx }))}
+                    type="checkbox"
+                    checked={quizForm.question_data?.case_sensitive ?? false}
+                    onChange={(e) =>
+                      setQuizForm((f) => ({
+                        ...f,
+                        question_data: { ...f.question_data, case_sensitive: e.target.checked },
+                      }))
+                    }
                     className="accent-[hsl(174,62%,32%)]"
                   />
-                  <Input
-                    value={opt}
-                    onChange={(e) => {
-                      const arr = [...quizForm.options];
-                      arr[idx] = e.target.value;
-                      setQuizForm((f) => ({ ...f, options: arr }));
-                      setFormErrors((er) => ({ ...er, options: "" }));
-                    }}
-                    placeholder={`Option ${idx + 1}`}
-                  />
+                  <span className="text-xs text-muted-foreground">Case sensitive</span>
                 </div>
-              ))}
-              {formErrors.options && <p className="text-xs text-destructive">{formErrors.options}</p>}
-              <p className="text-xs text-muted-foreground">Select the radio button for the correct answer.</p>
-            </div>
+                {formErrors.answers && <p className="text-xs text-destructive">{formErrors.answers}</p>}
+              </div>
+            )}
 
+            {/* True / False: toggle */}
+            {quizForm.question_type === "true_false" && (
+              <div className="space-y-2">
+                <Label>Correct Answer</Label>
+                <div className="flex gap-3">
+                  {[true, false].map((val) => (
+                    <button
+                      key={String(val)}
+                      type="button"
+                      onClick={() =>
+                        setQuizForm((f) => ({
+                          ...f,
+                          question_data: { ...f.question_data, correct_answer: val },
+                        }))
+                      }
+                      className={`flex-1 px-4 py-3 rounded-lg border-2 text-sm font-bold transition-all ${
+                        quizForm.question_data?.correct_answer === val
+                          ? "border-[hsl(174,62%,32%)] bg-[hsl(174,45%,96%)] text-[hsl(174,62%,32%)]"
+                          : "border-slate-200 bg-white text-slate-500 hover:border-slate-300"
+                      }`}
+                    >
+                      {val ? "TRUE" : "FALSE"}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Explanation (shown for all types) */}
             <div className="space-y-1.5">
               <Label htmlFor="quiz-explanation">Explanation</Label>
               <Textarea
@@ -2341,12 +2757,45 @@ function ModuleCard({
             ) : (
               <div className="space-y-1">
                 {mod.quiz_questions.map((q, idx) => {
-                  const correctOption = q.options?.[q.correct_answer] ?? "";
+                  const qt = q.question_type ?? "multiple_choice";
+                  const typeLabels: Record<string, string> = {
+                    multiple_choice: "MC",
+                    multiple_select: "MS",
+                    ordering: "ORD",
+                    matching: "MATCH",
+                    fill_in_blank: "FIB",
+                    true_false: "T/F",
+                    scenario: "SCEN",
+                  };
+                  const correctOption = qt === "multiple_choice" || qt === "scenario"
+                    ? q.options?.[q.correct_answer] ?? ""
+                    : qt === "true_false"
+                    ? String(q.question_data?.correct_answer ?? "")
+                    : qt === "fill_in_blank"
+                    ? (q.question_data?.acceptable_answers ?? []).join(" / ")
+                    : "";
                   return (
                     <div key={q.id} className="flex items-start gap-2 px-2 py-1.5 rounded hover:bg-muted/50 group text-sm">
                       <span className="text-muted-foreground text-xs w-6 shrink-0 mt-0.5">Q{idx + 1}</span>
                       <div className="flex-1 min-w-0">
-                        <span className="text-foreground">{q.question}</span>
+                        <div className="flex items-center gap-1.5 flex-wrap">
+                          <span className="text-foreground">{q.question}</span>
+                          {qt !== "multiple_choice" && (
+                            <span className="inline-flex items-center px-1.5 py-0.5 rounded text-[9px] font-bold bg-slate-100 text-slate-600 border border-slate-200">
+                              {typeLabels[qt] ?? qt}
+                            </span>
+                          )}
+                          {q.difficulty && (
+                            <span className={`inline-flex items-center px-1.5 py-0.5 rounded text-[9px] font-bold border ${
+                              q.difficulty === "easy" ? "bg-emerald-50 text-emerald-700 border-emerald-200" :
+                              q.difficulty === "medium" ? "bg-blue-50 text-blue-700 border-blue-200" :
+                              q.difficulty === "hard" ? "bg-amber-50 text-amber-700 border-amber-200" :
+                              "bg-red-50 text-red-700 border-red-200"
+                            }`}>
+                              {q.difficulty}
+                            </span>
+                          )}
+                        </div>
                         {correctOption && (
                           <div className="flex items-center gap-1 mt-0.5">
                             <svg viewBox="0 0 24 24" className="w-3 h-3 text-emerald-600 shrink-0" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">

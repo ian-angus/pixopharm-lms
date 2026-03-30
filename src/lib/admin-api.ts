@@ -51,6 +51,15 @@ export interface Lesson {
   updated_at: string;
 }
 
+export type QuestionType =
+  | 'multiple_choice'
+  | 'multiple_select'
+  | 'ordering'
+  | 'matching'
+  | 'fill_in_blank'
+  | 'true_false'
+  | 'scenario';
+
 export interface QuizQuestion {
   id: string;
   module_id: string;
@@ -59,6 +68,18 @@ export interface QuizQuestion {
   correct_answer: number;
   explanation: string;
   order_index: number;
+  question_type?: QuestionType;
+  question_data?: {
+    correct_indices?: number[];
+    correct_order?: number[];
+    pairs?: { left: string; right: string }[];
+    acceptable_answers?: string[];
+    case_sensitive?: boolean;
+    correct_answer?: boolean;
+    context?: string;
+  };
+  difficulty?: 'easy' | 'medium' | 'hard' | 'expert';
+  blooms_level?: 'remember' | 'understand' | 'apply' | 'analyze' | 'evaluate' | 'create';
   created_at: string;
 }
 
@@ -382,16 +403,22 @@ export async function createQuizQuestion(
     Omit<QuizQuestion, "id" | "module_id" | "created_at">
   >
 ): Promise<QuizQuestion> {
+  const insertData: Record<string, unknown> = {
+    module_id: moduleId,
+    question: data.question ?? "",
+    options: data.options ?? ["", "", "", ""],
+    correct_answer: data.correct_answer ?? 0,
+    explanation: data.explanation ?? "",
+    order_index: data.order_index ?? 99,
+  };
+  if (data.question_type) insertData.question_type = data.question_type;
+  if (data.question_data) insertData.question_data = data.question_data;
+  if (data.difficulty) insertData.difficulty = data.difficulty;
+  if (data.blooms_level) insertData.blooms_level = data.blooms_level;
+
   const { data: q, error } = await supabase
     .from("quiz_questions")
-    .insert({
-      module_id: moduleId,
-      question: data.question ?? "",
-      options: data.options ?? ["", "", "", ""],
-      correct_answer: data.correct_answer ?? 0,
-      explanation: data.explanation ?? "",
-      order_index: data.order_index ?? 99,
-    })
+    .insert(insertData)
     .select()
     .single();
 

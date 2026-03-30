@@ -2,6 +2,192 @@
 
 ---
 
+## 2026-03-28: Content Block Editor Bug Fix — DEPLOYED
+
+### Bug Fixed: Editing any block always showed heading form
+- **Root cause**: `BlockEditDialog` had stale internal state. It initialized `editingBlock` with `useState(block)` (only sets initial value), and the sync logic on re-renders only fired when `isNew === true`. So clicking any existing block to edit always displayed the form from the first block ever opened.
+- **Fix**: Replaced the broken sync logic (3 separate conditional checks) with a clean `useEffect` that properly syncs `editingBlock` whenever the `open` prop or `block` prop changes, and clears state on close.
+- **File changed**: `src/components/ContentBlockEditor.tsx`
+
+### Deployed to Vercel
+- Production: https://pixopharm-lms.vercel.app
+
+---
+
+## 2026-03-24: E-Learning Engagement Research — COMPLETE
+
+### What was done
+- Researched modern e-learning engagement techniques for 2025-2026
+- Analyzed engagement patterns from Duolingo, Brilliant.org, Khan Academy, Codecademy
+- Evaluated gamification techniques for professional adult training (pharmacy context)
+- Compiled evidence-based learning retention research
+- Ranked 15 techniques by impact, React implementation complexity, and pharmacy training fit
+
+### Output
+- Full research document: `elearning-engagement-research.md`
+
+### Top 5 Techniques (by combined impact + fit score)
+1. **Inline Knowledge Checks** — mid-lesson active recall questions (Impact: 9, Complexity: 4)
+2. **Spaced Repetition Review** — SM-2/FSRS flashcard scheduling (Impact: 9, Complexity: 5)
+3. **Branching Scenario Simulations** — pharmacy decision trees (Impact: 9, Complexity: 6)
+4. **Interactive Calculation Workspace** — step-by-step problem solving (Impact: 9, Complexity: 7)
+5. **Microlearning Lesson Structure** — 3-7 minute focused segments (Impact: 8, Complexity: 3)
+
+### Key Research Finding
+- Active recall produces 57% retention vs. 29% for passive reading
+- Spaced repetition yields 150% better retention
+- Formative assessment with feedback doubles learning progress (600-study meta-analysis)
+
+---
+
+## 2026-03-24: Tier 1 Interactive Learning Features — DEPLOYED
+
+### What was implemented
+All three Tier 1 features from the e-learning engagement research are now live:
+
+#### 1. Inline Knowledge Checks
+- `InlineKnowledgeCheck` component in CoursePlayer — interactive MCQ with option selection, submit, instant feedback, hint support, and correct/incorrect styling
+- `enrichLessonContent()` function injects checks at natural break points (before headings, after content sections) from `interactiveContent.ts` data
+- Knowledge checks created for Modules 1-4 (10+ lessons covered)
+
+#### 2. Spaced Repetition Flashcards (SM-2 Algorithm)
+- `useSpacedRepetition` hook implementing the SM-2 algorithm (quality 0-5 → ease factor, interval, repetitions)
+- `FlashcardReview` component with 3D card flip animation, rating buttons (Again/Hard/Good/Easy), session progress tracking
+- "Generate from Lessons" capability via `syncKeyTerms` — auto-creates cards from key-term content blocks
+- Supabase `flashcard_reviews` table with full SM-2 state (ease_factor, interval_days, repetitions, next_review)
+- Accessible from sidebar "Study Tools" and course overview
+
+#### 3. Branching Scenario Simulations
+- `InlineScenarioSimulation` component — multi-node decision trees with choice feedback, score tracking, and outcome summaries
+- 2 comprehensive scenarios created:
+  - "The Suspicious Prescription" (Module 3 — prescription verification, controlled substances)
+  - "Patient Counselling Challenge" (Module 4 — pharmacy law scenario)
+- Scenarios injected at end of relevant lesson content
+
+#### Admin Support
+- `KnowledgeCheckForm` in ContentBlockEditor — admin can create knowledge checks with question, options (radio for correct answer), explanation, hint
+
+### Content Data
+- `src/data/interactiveContent.ts` (1513 lines) — knowledge checks for 10+ lessons, 2 branching scenarios, flashcard decks for Modules 1-4
+
+### Files changed
+- `src/components/CoursePlayer.tsx` — InlineKnowledgeCheck, InlineScenarioSimulation renderers, enrichLessonContent, flashcard view routing
+- `src/components/FlashcardReview.tsx` — NEW: card review UI with SM-2 integration
+- `src/hooks/useSpacedRepetition.ts` — NEW: SM-2 hook with Supabase persistence
+- `src/data/interactiveContent.ts` — NEW: all interactive content data
+- `src/data/foundationsCourse.ts` — added knowledge-check and scenario-simulation ContentBlock types
+- `src/components/ContentBlockEditor.tsx` — added KnowledgeCheckForm for admin
+
+### Deployed to Vercel
+- Production: https://pixopharm-lms.vercel.app
+
+---
+
+## 2026-03-24: Course Preview Fix + Module Dialog Width — DEPLOYED
+
+### Bug Fixed: Preview always showing first course
+- **Root cause**: `CoursePlayer` was hardcoded to always use `foundationsCourse` from the data file. The `previewCourseId` from the admin was set but never passed to the player.
+- **Fix**: Added `courseId` prop to `CoursePlayer`. When provided, it fetches the course from Supabase via `fetchCourse()` and transforms DB data (modules, lessons, quiz_questions) into the `FullCourse` format. Without `courseId`, it falls back to the hardcoded data for regular students.
+- **Files changed**: `CoursePlayer.tsx` (added DB fetch + transform, updated CertificateView to accept dynamic props), `AdminDashboard.tsx` (pass `previewCourseId` to CoursePlayer)
+
+### Bug Fixed: Module edit dialog too narrow
+- Changed module dialog from `max-w-lg` to `max-w-2xl` in `AdminDashboard.tsx`
+
+### Deployed to Vercel
+- Production: https://pixopharm-lms.vercel.app
+
+---
+
+## 2026-03-24: Quiz Questions Rewritten — ALL 108 QUESTIONS REPLACED
+
+### What was done
+- Deleted all 95 existing quiz questions across both courses
+- Inserted 108 new, harder quiz questions following Bloom's Taxonomy
+- **Foundations of Pharmacy Practice**: 56 questions across 8 modules (7 per module)
+- **Pharmaceutical Calculations & Dosage**: 52 questions across 7 modules (7-8 per module)
+
+### Question Type Distribution (per module)
+- 1-2 multiple_choice (application-level, not recall)
+- 1 multiple_select ("Select ALL that apply")
+- 1 ordering OR matching (alternated between modules)
+- 1 scenario-based (case study with Caribbean context)
+- 1 fill_in_blank OR true_false
+- All 7 question types used: multiple_choice, multiple_select, ordering, matching, scenario, fill_in_blank, true_false
+
+### Difficulty Distribution
+- easy, medium, hard, expert — all 4 levels represented
+- Each module includes 1-2 easy (warmup), 2-3 medium (core), 1-2 hard (application), 0-1 expert (evaluation)
+
+### Bloom's Taxonomy Coverage
+- All 5 higher levels used: remember, understand, apply, analyze, evaluate
+- Emphasis on apply, analyze, and evaluate (not just memorization)
+
+### Content Highlights
+- Caribbean-specific scenarios: CDAP/NHF programmes, Dangerous Drugs Act, cross-island prescriptions
+- Real-world pharmacy dilemmas: scope of practice, confidentiality in small communities, dosing errors
+- Calculation questions with worked-out explanations: D/H×Q, alligation, drip rates, pediatric dosing
+- Business math with TT$/JA$ currency, markup/margin, government reimbursement analysis
+
+---
+
+## 2026-03-24: Multi-Question-Type Quiz System — COMPLETE
+
+### What was done
+Rewrote the quiz system across 4 files to support 7 question types instead of only multiple choice.
+
+### Files Changed
+1. **`src/data/foundationsCourse.ts`** — Added `QuestionType` union type and expanded `QuizQuestion` interface with `questionType`, `questionData`, `difficulty`, `bloomsLevel` fields
+2. **`src/components/CoursePlayer.tsx`** — Complete rewrite of `QuizView` component (was ~156 lines, now ~380 lines) supporting all 7 types: multiple_choice, multiple_select, ordering, matching, fill_in_blank, true_false, scenario
+3. **`src/lib/admin-api.ts`** — Added `QuestionType` union type and extended `QuizQuestion` interface with `question_type`, `question_data`, `difficulty`, `blooms_level`. Updated `createQuizQuestion` to pass new fields
+4. **`src/components/AdminDashboard.tsx`** — Updated quiz dialog with: question type dropdown, difficulty dropdown, Bloom's level dropdown, and type-specific form fields for each question type. Updated quiz list display with type/difficulty badges
+
+### Question Types Supported
+| Type | Student UI | Admin Editor |
+|------|-----------|-------------|
+| Multiple Choice | Radio buttons (existing) | Options + radio for correct |
+| Multiple Select | Checkboxes, "Select all that apply" | Options + checkboxes for correct |
+| Ordering | Up/down arrow buttons, shuffled | Items list (correct = entry order) |
+| Matching | Left column + dropdown selects | Pairs editor (left + right) |
+| Fill in the Blank | Text input field | Acceptable answers list + case-sensitivity toggle |
+| True/False | Two large TRUE/FALSE buttons | True/false toggle |
+| Scenario | Context card + MC answers | Context textarea + options + radio |
+
+### Key Design Decisions
+- Backward compatible: `questionType` is optional, defaults to `multiple_choice`
+- All types score 1 point (correct) or 0 (incorrect)
+- 70% pass threshold unchanged
+- Difficulty badges: easy=green, medium=blue, hard=amber, expert=red
+- Bloom's level badge: purple
+- Question type badge shown in both student and admin views
+- Ordering uses Fisher-Yates shuffle; matching uses deterministic shuffle based on question ID
+- TypeScript compiles cleanly, Vite build succeeds
+
+---
+
+## 2026-03-24: Quiz & Assessment Design Research — COMPLETE
+
+### Completed
+- Comprehensive research on quiz/assessment design best practices for online learning
+- Research saved to `quiz_assessment_research.md`
+- **13 question types** identified and prioritized across 3 tiers (Tier 1: MCQ Enhanced, T/F with Justification, Calculation, Fill-in-Blank, Scenario-Based; Tier 2: Ordering, Matching, Hotspot, Categorization; Tier 3: Multi-Step Calc, Error ID, Decision Tree, Short Answer)
+- **Bloom's Taxonomy mapping** for all question types with pharmacy-specific question stems at all 6 levels
+- **Active learning research** summarized: testing effect, desirable difficulties, elaborative interrogation, productive failure, authentic assessment
+- **Database schema designed** (`quiz_questions_v2`) using Moodle-inspired JSONB approach with `answer_config` varying by question type
+- **Full TypeScript types** for all 11 answer config interfaces (discriminated union pattern)
+- **Quiz attempts + responses tables** designed for tracking student performance with per-question analytics
+- **Pharmacy calculation strategies**: anti-memorization techniques (randomized values, question pooling, reverse questions), tolerance-based grading, Caribbean-specific drug/currency context
+- **React component architecture** planned: custom components using existing Radix/shadcn stack + @dnd-kit for drag-and-drop question types
+- **4-phase migration strategy** from current simple MCQ schema to full multi-type assessment system
+- **2026 PTCB exam updates** noted: alligation calculations removed, compounding no longer tested, domain weights rebalanced
+
+### Key Decisions
+- Build custom quiz components (not use pre-built libraries) for pharmacy-specific needs
+- Use @dnd-kit/react for drag-and-drop question types (Ordering, Matching, Categorization)
+- JSONB `answer_config` column for flexible type-specific data (vs. separate tables per type)
+- Backward-compatible migration: `quiz_questions_v2` alongside existing `quiz_questions`
+
+---
+
 ## 2026-03-24: Pharmaceutical Calculations Course — FULL CONTENT SEEDED TO DATABASE
 
 ### Completed
@@ -596,3 +782,42 @@ All images generated using Google Flow at https://labs.google/fx/tools/flow with
 - Content blocks are rendered by a polymorphic `RenderContent` component
 - Progress state is managed in CoursePlayer via React useState (lessons Set + quizScores Record)
 - Module unlocking is sequential — must pass previous module's quiz at 70%+ to access next module
+
+---
+
+## 2026-03-24: Spaced Repetition Flashcard System — COMPLETE
+
+### What was done
+
+1. **Supabase Migration: `create_flashcard_reviews_table`**
+   - Created `flashcard_reviews` table with SM-2 algorithm fields (ease_factor, interval_days, repetitions, next_review)
+   - Enabled Row Level Security with policy "Users manage own flashcards"
+   - Added composite index on (user_id, next_review) for efficient review queries
+   - Foreign key to auth.users with CASCADE delete
+
+2. **Hook: `src/hooks/useSpacedRepetition.ts`**
+   - Full SM-2 algorithm implementation
+   - `reviewCard(cardId, quality)` — updates card scheduling based on quality 0-5
+   - `addCards(cards)` — manually add new flashcards
+   - `syncKeyTerms(courseId, keyTerms)` — deduplicates and bulk-inserts key-terms from lesson content
+   - `refreshCards()` — re-fetches due cards from Supabase
+   - Returns: dueCards, totalCards, dueCount, loading state
+
+3. **Component: `src/components/FlashcardReview.tsx`**
+   - Full-screen modal overlay with CSS 3D card flip animation
+   - Four rating buttons: Again (1), Hard (3), Good (4), Easy (5)
+   - Progress bar showing session progress
+   - Session summary screen with cards reviewed count and accuracy percentage
+   - Empty state with "Generate from Lessons" button for syncing key-terms
+   - "All caught up" state when no cards are due
+   - Uses PIXOPHARM design system (teal primary, dark navy background, DM Sans font)
+   - Uses shadcn/ui components: Button, Card, CardContent, Badge, Progress
+
+### Key Files
+- `src/hooks/useSpacedRepetition.ts` — SM-2 hook with Supabase persistence
+- `src/components/FlashcardReview.tsx` — Flashcard review UI component
+
+### Not Yet Done (integration tasks for later)
+- Wire FlashcardReview into CoursePlayer (button to open the review modal)
+- Extract key-terms from course data and pass as `keyTerms` prop
+- Add flashcard count badge to course dashboard/sidebar

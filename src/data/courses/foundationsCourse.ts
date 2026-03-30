@@ -4,130 +4,7 @@
 // Focus Islands: Trinidad & Tobago, Jamaica, Barbados
 // ============================================================================
 
-// ── Content Block Types ─────────────────────────────────────────────────────
-
-export type ContentBlock =
-  | { type: "heading"; level: 2 | 3 | 4; text: string }
-  | { type: "text"; body: string }
-  | { type: "callout"; variant: "info" | "warning" | "tip" | "danger"; title: string; body: string }
-  | { type: "list"; ordered?: boolean; items: string[] }
-  | {
-      type: "table";
-      caption?: string;
-      headers: string[];
-      rows: string[][];
-    }
-  | {
-      type: "island-comparison";
-      title: string;
-      description?: string;
-      islands: {
-        name: string;
-        flag: string;
-        details: string[];
-      }[];
-    }
-  | { type: "key-term"; term: string; definition: string }
-  | {
-      type: "case-study";
-      title: string;
-      scenario: string;
-      questions: string[];
-      discussion: string;
-    }
-  | { type: "video-placeholder"; title: string; duration: string; description: string }
-  | { type: "image-placeholder"; alt: string; caption?: string }
-  | { type: "divider" }
-  | {
-      type: "knowledge-check";
-      question: string;
-      options: string[];
-      correctIndex: number;
-      explanation: string;
-      hint?: string;
-    }
-  | {
-      type: "scenario-simulation";
-      title: string;
-      description: string;
-      nodes: ScenarioNode[];
-    };
-
-// ── Scenario Simulation Types ─────────────────────────────────────────────
-
-export interface ScenarioChoice {
-  label: string;
-  nextNodeId: string;
-  feedback: string;
-  isOptimal?: boolean;
-}
-
-export interface ScenarioNode {
-  id: string;
-  text: string;
-  image?: string;
-  choices?: ScenarioChoice[];
-  isEnd?: boolean;
-  outcome?: "success" | "partial" | "failure";
-  summary?: string;
-}
-
-// ── Quiz Types ──────────────────────────────────────────────────────────────
-
-export type QuestionType =
-  | 'multiple_choice'    // Select one correct answer
-  | 'multiple_select'    // Select ALL that apply
-  | 'ordering'           // Arrange items in correct order
-  | 'matching'           // Match items from two columns
-  | 'fill_in_blank'      // Type the answer
-  | 'true_false'         // True/false with justification
-  | 'scenario';          // Case-based with context paragraph
-
-export interface QuizQuestion {
-  id: string;
-  question: string;
-  options: string[];
-  correctIndex: number;  // Keep for backward compat with multiple_choice
-  explanation: string;
-  questionType?: QuestionType;  // Optional, defaults to 'multiple_choice'
-  questionData?: {
-    correct_indices?: number[];       // multiple_select
-    correct_order?: number[];         // ordering
-    pairs?: { left: string; right: string }[];  // matching
-    acceptable_answers?: string[];    // fill_in_blank
-    case_sensitive?: boolean;         // fill_in_blank
-    correct_answer?: boolean;         // true_false
-    context?: string;                 // scenario
-  };
-  difficulty?: 'easy' | 'medium' | 'hard' | 'expert';
-  bloomsLevel?: 'remember' | 'understand' | 'apply' | 'analyze' | 'evaluate' | 'create';
-}
-
-// ── Lesson & Module Types ───────────────────────────────────────────────────
-
-export interface Lesson {
-  id: string;
-  title: string;
-  duration: string;
-  content: ContentBlock[];
-}
-
-export interface Module {
-  id: string;
-  number: number;
-  title: string;
-  description: string;
-  learningObjectives: string[];
-  lessons: Lesson[];
-  quiz: QuizQuestion[];
-}
-
-export interface FullCourse {
-  courseId: string;
-  title: string;
-  tagline: string;
-  modules: Module[];
-}
+import type { Module, FullCourse } from '../types';
 
 // ============================================================================
 // MODULE 1 — Introduction to Pharmacy: History, Roles & the Caribbean Context
@@ -3033,3 +2910,5 @@ export const totalQuizQuestions = foundationsCourse.modules.reduce(
   (sum, m) => sum + m.quiz.length,
   0,
 );
+
+export default foundationsCourse;

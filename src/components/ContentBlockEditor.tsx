@@ -4,7 +4,7 @@
 // Each block type has its own form fields — not a WYSIWYG editor.
 // ============================================================================
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -51,7 +51,15 @@ export type ContentBlock =
       rows: string[][];
     }
   | { type: "key-term"; term: string; definition: string }
-  | { type: "divider" };
+  | { type: "divider" }
+  | {
+      type: "knowledge-check";
+      question: string;
+      options: string[];
+      correctIndex: number;
+      explanation: string;
+      hint?: string;
+    };
 
 // Type guard helpers
 function isHeadingBlock(
@@ -92,6 +100,11 @@ function isKeyTermBlock(
 ): b is { type: "key-term"; term: string; definition: string } {
   return b.type === "key-term";
 }
+function isKnowledgeCheckBlock(
+  b: ContentBlock
+): b is Extract<ContentBlock, { type: "knowledge-check" }> {
+  return b.type === "knowledge-check";
+}
 
 // ── Block Type Labels & Icons ───────────────────────────────────────────────
 
@@ -109,6 +122,7 @@ const BLOCK_TYPES: Record<ContentBlock["type"], BlockTypeInfo> = {
   table: { label: "Table", icon: "#", description: "Data table with headers and rows" },
   "key-term": { label: "Key Term", icon: "K", description: "Term with definition" },
   divider: { label: "Divider", icon: "-", description: "Horizontal separator" },
+  "knowledge-check": { label: "Knowledge Check", icon: "?", description: "Inline comprehension question" },
 };
 
 // ── Block Preview Helpers ───────────────────────────────────────────────────
@@ -129,6 +143,8 @@ function getBlockPreview(block: ContentBlock): string {
       return `${block.term}: ${block.definition.slice(0, 50)}${block.definition.length > 50 ? "..." : ""}`;
     case "divider":
       return "--- divider ---";
+    case "knowledge-check":
+      return `❓ ${block.question.slice(0, 60)}${block.question.length > 60 ? "..." : ""}`;
     default:
       return "Unknown block";
   }
@@ -150,6 +166,8 @@ function getBlockIconBg(type: ContentBlock["type"]): string {
       return "bg-teal-100 text-teal-700";
     case "divider":
       return "bg-gray-100 text-gray-500";
+    case "knowledge-check":
+      return "bg-orange-100 text-orange-700";
     default:
       return "bg-gray-100 text-gray-500";
   }
@@ -173,6 +191,8 @@ function createDefaultBlock(type: ContentBlock["type"]): ContentBlock {
       return { type: "key-term", term: "", definition: "" };
     case "divider":
       return { type: "divider" };
+    case "knowledge-check":
+      return { type: "knowledge-check", question: "", options: ["", "", "", ""], correctIndex: 0, explanation: "" };
     default:
       return { type: "divider" };
   }
@@ -540,6 +560,97 @@ function KeyTermForm({ block, onChange }: BlockFormProps<Extract<ContentBlock, {
   );
 }
 
+function KnowledgeCheckForm({ block, onChange }: BlockFormProps<Extract<ContentBlock, { type: "knowledge-check" }>>) {
+  return (
+    <div className="space-y-3">
+      <div className="space-y-1.5">
+        <Label htmlFor="kc-question">Question *</Label>
+        <Textarea
+          id="kc-question"
+          value={block.question}
+          onChange={(e) => onChange({ ...block, question: e.target.value })}
+          placeholder="What concept should the student understand at this point?"
+          rows={2}
+        />
+      </div>
+
+      <div className="space-y-1.5">
+        <Label>Answer Options</Label>
+        {block.options.map((opt, idx) => (
+          <div key={idx} className="flex items-center gap-2">
+            <input
+              type="radio"
+              name="kc-correct"
+              checked={block.correctIndex === idx}
+              onChange={() => onChange({ ...block, correctIndex: idx })}
+              className="accent-[hsl(174,62%,32%)]"
+            />
+            <Input
+              value={opt}
+              onChange={(e) => {
+                const options = [...block.options];
+                options[idx] = e.target.value;
+                onChange({ ...block, options });
+              }}
+              placeholder={`Option ${String.fromCharCode(65 + idx)}`}
+            />
+            {block.options.length > 2 && (
+              <Button
+                type="button"
+                size="sm"
+                variant="ghost"
+                className="h-8 w-8 p-0 text-destructive shrink-0"
+                onClick={() => {
+                  const options = block.options.filter((_, i) => i !== idx);
+                  const correctIndex = block.correctIndex >= idx && block.correctIndex > 0
+                    ? block.correctIndex - 1
+                    : block.correctIndex;
+                  onChange({ ...block, options, correctIndex });
+                }}
+              >
+                ×
+              </Button>
+            )}
+          </div>
+        ))}
+        {block.options.length < 6 && (
+          <Button
+            type="button"
+            size="sm"
+            variant="outline"
+            className="text-xs mt-1"
+            onClick={() => onChange({ ...block, options: [...block.options, ""] })}
+          >
+            + Add Option
+          </Button>
+        )}
+        <p className="text-xs text-muted-foreground">Select the radio button next to the correct answer.</p>
+      </div>
+
+      <div className="space-y-1.5">
+        <Label htmlFor="kc-explanation">Explanation *</Label>
+        <Textarea
+          id="kc-explanation"
+          value={block.explanation}
+          onChange={(e) => onChange({ ...block, explanation: e.target.value })}
+          placeholder="Explain why this is the correct answer..."
+          rows={2}
+        />
+      </div>
+
+      <div className="space-y-1.5">
+        <Label htmlFor="kc-hint">Hint (optional)</Label>
+        <Input
+          id="kc-hint"
+          value={block.hint ?? ""}
+          onChange={(e) => onChange({ ...block, hint: e.target.value || undefined })}
+          placeholder="Optional hint for students..."
+        />
+      </div>
+    </div>
+  );
+}
+
 // ============================================================================
 // BLOCK EDIT DIALOG — renders the appropriate form for the block type
 // ============================================================================
@@ -553,27 +664,16 @@ interface BlockEditDialogProps {
 }
 
 function BlockEditDialog({ block, open, onOpenChange, onSave, isNew }: BlockEditDialogProps) {
-  const [editingBlock, setEditingBlock] = useState<ContentBlock | null>(block);
+  const [editingBlock, setEditingBlock] = useState<ContentBlock | null>(null);
 
-  // Sync when block changes from parent
-  const blockRef = block;
-  if (open && blockRef && editingBlock !== blockRef && isNew) {
-    setEditingBlock(blockRef);
-  }
-
-  // Reset when dialog opens with a block
-  const handleOpenChange = (newOpen: boolean) => {
-    if (newOpen && block) {
-      setEditingBlock({ ...block } as ContentBlock);
+  // Sync internal state whenever the dialog opens or the block prop changes
+  useEffect(() => {
+    if (open && block) {
+      setEditingBlock(structuredClone(block));
+    } else if (!open) {
+      setEditingBlock(null);
     }
-    onOpenChange(newOpen);
-  };
-
-  // We need to track the block externally
-  // When opening, set internal state
-  if (open && block && !editingBlock) {
-    setEditingBlock(structuredClone(block));
-  }
+  }, [open, block]);
 
   function handleSave() {
     if (editingBlock) {
@@ -585,7 +685,7 @@ function BlockEditDialog({ block, open, onOpenChange, onSave, isNew }: BlockEdit
   const typeInfo = editingBlock ? BLOCK_TYPES[editingBlock.type] : null;
 
   return (
-    <Dialog open={open} onOpenChange={handleOpenChange}>
+    <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent className="max-w-lg max-h-[80vh] overflow-y-auto">
         <DialogHeader>
           <DialogTitle>
@@ -614,6 +714,9 @@ function BlockEditDialog({ block, open, onOpenChange, onSave, isNew }: BlockEdit
           )}
           {editingBlock && editingBlock.type === "key-term" && isKeyTermBlock(editingBlock) && (
             <KeyTermForm block={editingBlock} onChange={(b) => setEditingBlock(b)} />
+          )}
+          {editingBlock && editingBlock.type === "knowledge-check" && isKnowledgeCheckBlock(editingBlock) && (
+            <KnowledgeCheckForm block={editingBlock} onChange={(b) => setEditingBlock(b)} />
           )}
           {editingBlock && editingBlock.type === "divider" && (
             <p className="text-sm text-muted-foreground italic">
@@ -714,6 +817,7 @@ export default function ContentBlockEditor({ blocks, onChange }: ContentBlockEdi
     "list",
     "table",
     "key-term",
+    "knowledge-check",
     "divider",
   ];
 
