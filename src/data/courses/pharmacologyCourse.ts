@@ -452,6 +452,10 @@ const module2: Module = {
           body: "Calcium channel blockers (CCBs) and diuretics are the backbone of hypertension treatment in the Caribbean. CCBs like amlodipine are particularly effective in Black patients, who make up the majority of the Caribbean population. Diuretics — especially thiazides like hydrochlorothiazide — are often the cheapest antihypertensive option and are widely available across the region.",
         },
         {
+          type: "text",
+          body: "The landmark ALLHAT trial (2002) — the largest antihypertensive trial ever conducted — demonstrated that in Black patients, CCBs and thiazide diuretics provided better blood pressure control than ACE inhibitors as monotherapy. This evidence directly informs Caribbean prescribing guidelines, where CCBs and diuretics are often recommended as first-line monotherapy, especially in patients of African descent.",
+        },
+        {
           type: "key-term",
           term: "Calcium Channel Blocker (CCB)",
           definition: "A drug that blocks L-type calcium channels in vascular smooth muscle and/or cardiac muscle, causing vasodilation and reduced blood pressure. Dihydropyridines (e.g., amlodipine, nifedipine) primarily affect blood vessels; non-dihydropyridines (e.g., verapamil, diltiazem) also slow heart rate.",
@@ -501,6 +505,15 @@ const module2: Module = {
           body: "Beta-blockers reduce blood pressure by blocking beta-1 adrenergic receptors in the heart, decreasing heart rate, contractility, and cardiac output. They also reduce renin release from the kidneys. While no longer recommended as first-line monotherapy for uncomplicated hypertension, beta-blockers remain essential for patients with heart failure, post-myocardial infarction, angina, and certain arrhythmias.",
         },
         {
+          type: "key-term",
+          term: "Cardioselective Beta-Blocker",
+          definition: "A beta-blocker that preferentially blocks beta-1 receptors (heart) over beta-2 receptors (lungs, peripheral vessels). Examples: atenolol, bisoprolol, metoprolol. Safer in patients with asthma or COPD compared to non-selective agents, though caution is still warranted.",
+        },
+        {
+          type: "text",
+          body: "In Caribbean pharmacy practice, atenolol is the most commonly dispensed beta-blocker and is available on both CDAP and NHF formularies. Propranolol (non-selective) is widely used for performance anxiety, essential tremor, and migraine prophylaxis. For heart failure specifically, only bisoprolol, carvedilol, and metoprolol succinate have evidence for mortality reduction — other beta-blockers should not be substituted without prescriber direction.",
+        },
+        {
           type: "table",
           caption: "Cardioselective vs Non-Selective Beta-Blockers",
           headers: ["Feature", "Cardioselective (Beta-1)", "Non-Selective (Beta-1 & 2)"],
@@ -544,6 +557,21 @@ const module2: Module = {
         {
           type: "text",
           body: "Heart failure is a growing problem in the Caribbean, driven by poorly controlled hypertension, rheumatic heart disease, and cardiomyopathy. Treatment aims to reduce symptoms (congestion, breathlessness), slow disease progression, and reduce mortality. The mainstay medications are ACE inhibitors (or ARBs), beta-blockers, diuretics, and mineralocorticoid receptor antagonists (MRAs).",
+        },
+        {
+          type: "key-term",
+          term: "Ejection Fraction (EF)",
+          definition: "The percentage of blood pumped out of the left ventricle with each heartbeat. Normal EF is 55-70%. Heart failure with reduced EF (HFrEF, EF < 40%) responds best to standard medical therapy. Heart failure with preserved EF (HFpEF, EF >= 50%) has fewer proven treatments.",
+        },
+        {
+          type: "text",
+          body: "In the Caribbean, heart failure presentation is often late — patients may present with severe fluid overload, requiring urgent diuresis with furosemide before optimising long-term medications. Rheumatic heart disease, a legacy of untreated streptococcal infections, remains a more common cause of heart failure in the Caribbean than in developed nations, particularly affecting younger patients.",
+        },
+        {
+          type: "callout",
+          variant: "info",
+          title: "SGLT2 Inhibitors: A New Pillar",
+          body: "Dapagliflozin and empagliflozin (originally diabetes drugs) have shown remarkable mortality benefits in heart failure — even in patients WITHOUT diabetes. They are now considered a fourth pillar of HFrEF treatment alongside ACEi/ARB, beta-blockers, and MRAs. Availability and cost remain challenges in the Caribbean.",
         },
         {
           type: "table",
@@ -603,10 +631,66 @@ const module2: Module = {
           ],
         },
         {
+          type: "text",
+          body: "Anticoagulant and antiplatelet medications are also essential in cardiovascular practice. Warfarin remains the most widely used oral anticoagulant in the Caribbean, though DOACs (rivaroxaban, apixaban) are increasingly prescribed in private practice. Aspirin and clopidogrel are used for antiplatelet therapy in patients with coronary artery disease, post-stent placement, or after stroke. The pharmacy technician must be aware of the significant interaction between warfarin and many other drugs.",
+        },
+        {
           type: "callout",
           variant: "tip",
           title: "Statins: Evening Dosing Matters for Some",
           body: "Simvastatin and lovastatin should be taken in the evening because cholesterol synthesis peaks overnight. Atorvastatin and rosuvastatin have long half-lives and can be taken at any time. This is a common counselling point at the dispensing counter.",
+        },
+        {
+          type: "scenario-simulation",
+          title: "Statin Counselling at a San Fernando Pharmacy",
+          description: "Mrs. Rampersad, a 55-year-old woman, is picking up her new prescription for simvastatin 40 mg daily. She also takes amlodipine 10 mg for blood pressure. She mentions she drinks grapefruit juice every morning for 'health.'",
+          nodes: [
+            {
+              id: "start",
+              text: "Mrs. Rampersad has simvastatin 40 mg with amlodipine 10 mg, and she drinks grapefruit juice daily. You notice two potential interaction concerns. What do you do?",
+              choices: [
+                {
+                  label: "Dispense the simvastatin without comment — the pharmacist already checked it",
+                  nextNodeId: "missed",
+                  feedback: "Even after pharmacist review, technicians should flag interaction concerns. Multiple safety checks prevent errors.",
+                  isOptimal: false,
+                },
+                {
+                  label: "Flag both the simvastatin dose (max 20 mg with amlodipine) and the grapefruit interaction to the pharmacist before dispensing",
+                  nextNodeId: "correct",
+                  feedback: "Excellent! You identified two important interactions: simvastatin dose limit with amlodipine and grapefruit's CYP3A4 inhibition.",
+                  isOptimal: true,
+                },
+                {
+                  label: "Tell the patient to stop taking amlodipine",
+                  nextNodeId: "wrong",
+                  feedback: "A pharmacy technician should never advise stopping a prescribed medication. Refer concerns to the pharmacist.",
+                  isOptimal: false,
+                },
+              ],
+            },
+            {
+              id: "correct",
+              text: "The pharmacist contacts the prescriber, who reduces the simvastatin to 20 mg (the maximum safe dose with amlodipine) and counsels the patient to avoid grapefruit juice or switch to atorvastatin. Mrs. Rampersad thanks you for looking out for her.",
+              isEnd: true,
+              outcome: "success",
+              summary: "Your vigilance caught a dose-interaction error and a drug-food interaction. The simvastatin dose was corrected and the patient was counselled about grapefruit.",
+            },
+            {
+              id: "missed",
+              text: "Mrs. Rampersad takes the simvastatin 40 mg with daily grapefruit juice. Two weeks later, she presents with severe muscle pain and dark urine — signs of rhabdomyolysis. She is hospitalised.",
+              isEnd: true,
+              outcome: "failure",
+              summary: "The combination of simvastatin 40 mg + amlodipine + grapefruit juice significantly increased her myopathy risk. Catching either interaction could have prevented this.",
+            },
+            {
+              id: "wrong",
+              text: "The patient is confused and upset. Advising patients to stop prescribed medications is outside the technician's scope and could cause harm (uncontrolled hypertension).",
+              isEnd: true,
+              outcome: "failure",
+              summary: "Never advise a patient to discontinue prescribed medication. Always refer concerns to the pharmacist for clinical decision-making.",
+            },
+          ],
         },
         {
           type: "knowledge-check",
@@ -666,6 +750,15 @@ const module3: Module = {
           body: "Insulin is a life-saving hormone replacement for patients with type 1 diabetes and many patients with advanced type 2 diabetes. In the Caribbean, where diabetes prevalence is among the highest in the Americas, pharmacy technicians dispense insulin daily. Understanding insulin types, storage requirements, and patient counselling points is essential.",
         },
         {
+          type: "text",
+          body: "The Caribbean has one of the highest diabetes burdens in the Americas. The International Diabetes Federation estimates that nearly 15% of adults in Trinidad and Tobago have diabetes, with similarly high rates across Barbados, Jamaica, and the Eastern Caribbean. Insulin therapy is essential for all type 1 diabetic patients and is increasingly required for type 2 patients as the disease progresses. The pharmacy technician's role in proper insulin dispensing, storage education, and injection technique counselling is critical to patient outcomes.",
+        },
+        {
+          type: "key-term",
+          term: "Insulin",
+          definition: "A peptide hormone produced by the beta cells of the pancreatic islets of Langerhans. It promotes cellular uptake of glucose, lowering blood sugar. In diabetes, either no insulin is produced (type 1) or cells become resistant to it (type 2). Exogenous insulin is administered by subcutaneous injection or insulin pump.",
+        },
+        {
           type: "table",
           caption: "Insulin Types: Onset, Peak, and Duration",
           headers: ["Category", "Example", "Onset", "Peak", "Duration"],
@@ -711,6 +804,10 @@ const module3: Module = {
         {
           type: "text",
           body: "Most patients with type 2 diabetes in the Caribbean begin treatment with lifestyle modifications and metformin, the first-line oral hypoglycaemic worldwide. If metformin alone is insufficient, a second agent is added — commonly a sulfonylurea in the Caribbean due to cost and availability. Newer agents like DPP-4 inhibitors and SGLT2 inhibitors are increasingly available but often at higher cost.",
+        },
+        {
+          type: "text",
+          body: "The choice of second-line agent in the Caribbean is heavily influenced by cost and formulary availability. Glibenclamide and glimepiride (sulfonylureas) are inexpensive and widely available through CDAP and NHF programmes, making them the most common second-line agents. However, their significant hypoglycaemia risk — especially in elderly patients and those with irregular eating patterns — is a major safety concern. SGLT2 inhibitors, while more expensive, offer the additional benefits of cardiovascular protection, renal protection, and weight loss, making them increasingly attractive when affordable.",
         },
         {
           type: "key-term",
@@ -766,6 +863,10 @@ const module3: Module = {
           body: "Thyroid disorders are common in the Caribbean, with hypothyroidism being far more prevalent than hyperthyroidism. Levothyroxine — a synthetic form of the thyroid hormone T4 — is the standard treatment for hypothyroidism and one of the most prescribed medications globally. Proper dispensing requires attention to timing, interactions, and narrow therapeutic dosing.",
         },
         {
+          type: "text",
+          body: "Hypothyroidism presents with fatigue, weight gain, cold intolerance, dry skin, and constipation — symptoms often attributed to other causes, leading to delayed diagnosis. Hyperthyroidism (overactive thyroid) is treated with methimazole or propylthiouracil (PTU), though these are less commonly dispensed. Hormonal therapies including oral contraceptives and hormone replacement therapy (HRT) are also covered in this lesson, as they represent a significant portion of Caribbean pharmacy dispensing volume, particularly in women's health.",
+        },
+        {
           type: "key-term",
           term: "Levothyroxine",
           definition: "A synthetic thyroid hormone (T4) used to treat hypothyroidism. It has a narrow therapeutic window and should be taken on an empty stomach, 30-60 minutes before breakfast, with a full glass of water. Many drugs and foods interfere with its absorption.",
@@ -816,6 +917,15 @@ const module3: Module = {
           body: "Pharmacy technicians in the Caribbean must recognise the signs of diabetic emergencies because patients experiencing them may walk into the pharmacy before reaching a hospital. The two major emergencies are severe hypoglycaemia (blood glucose critically low) and diabetic ketoacidosis (DKA — blood glucose critically high with ketone production).",
         },
         {
+          type: "key-term",
+          term: "Diabetic Ketoacidosis (DKA)",
+          definition: "A life-threatening emergency most common in type 1 diabetes, characterised by hyperglycaemia (>14 mmol/L), ketosis, and metabolic acidosis. Triggered by insulin omission, infection, or physiological stress. Requires emergency IV fluids, insulin, and electrolyte replacement. The fruity breath odour (acetone) is a classic diagnostic clue.",
+        },
+        {
+          type: "text",
+          body: "In the Caribbean, diabetic emergencies are often precipitated by medication non-adherence (cannot afford insulin, ran out of tablets), acute infections (which increase blood glucose), dehydration from tropical heat, and cultural fasting practices. Pharmacy technicians should also be aware of the SGLT2 inhibitor risk of euglycaemic DKA — where ketoacidosis occurs with near-normal blood glucose levels, making diagnosis more challenging.",
+        },
+        {
           type: "table",
           caption: "Hypoglycaemia vs Diabetic Ketoacidosis",
           headers: ["Feature", "Hypoglycaemia", "Diabetic Ketoacidosis (DKA)"],
@@ -832,6 +942,12 @@ const module3: Module = {
           variant: "danger",
           title: "Ramadan and Diabetic Fasting",
           body: "The Caribbean has significant Muslim populations, particularly in Trinidad and Tobago and Guyana. During Ramadan, Muslim patients with diabetes may fast from sunrise to sunset. This dramatically increases the risk of hypoglycaemia (especially with sulfonylureas and insulin) and hyperglycaemia (when breaking fast). Medication timing adjustments are essential — always refer to the pharmacist.",
+        },
+        {
+          type: "callout",
+          variant: "tip",
+          title: "Glucagon Emergency Kit",
+          body: "For patients on insulin, a glucagon emergency kit should be recommended. Glucagon is a hormone that raises blood glucose by stimulating the liver to release stored glycogen. It is administered by intramuscular injection when a patient is unconscious or unable to swallow. Family members and caregivers of insulin-using patients should be trained in its use. Some newer intranasal glucagon formulations are also available.",
         },
         {
           type: "knowledge-check",
@@ -887,7 +1003,9 @@ const module4: Module = {
       content: [
         { type: "heading", level: 2, text: "The Beta-Lactam Family" },
         { type: "text", body: "Beta-lactam antibiotics — including penicillins, cephalosporins, and carbapenems — are the most widely used antibiotics worldwide and in the Caribbean. They work by inhibiting bacterial cell wall synthesis, causing the bacteria to lyse (burst) and die. Amoxicillin, a broad-spectrum penicillin, is the single most dispensed antibiotic in Caribbean pharmacies." },
+        { type: "text", body: "Understanding the beta-lactam family is essential because these drugs form the backbone of outpatient antibiotic therapy across CARICOM territories. In Trinidad, amoxicillin is dispensed through CDAP for respiratory tract infections, urinary tract infections, and dental infections. In Jamaica, both amoxicillin and the combination product amoxicillin/clavulanate (Augmentin) are frequently prescribed. Pharmacy technicians should be familiar with the different generations of cephalosporins and their clinical applications." },
         { type: "key-term", term: "Beta-lactam ring", definition: "A four-membered ring structure shared by penicillins, cephalosporins, and carbapenems. This ring is essential for antibacterial activity — it binds to penicillin-binding proteins (PBPs) and inhibits cell wall synthesis. Bacteria that produce beta-lactamase enzymes can destroy this ring, causing resistance." },
+        { type: "key-term", term: "Beta-Lactamase Inhibitor", definition: "A drug that inhibits beta-lactamase enzymes produced by resistant bacteria, restoring the effectiveness of the partner beta-lactam antibiotic. Example: clavulanate (combined with amoxicillin as Augmentin). This combination extends amoxicillin's spectrum to include many beta-lactamase-producing organisms." },
         {
           type: "table",
           caption: "Common Beta-Lactam Antibiotics in Caribbean Practice",
@@ -910,6 +1028,7 @@ const module4: Module = {
       content: [
         { type: "heading", level: 2, text: "Beyond the Beta-Lactams" },
         { type: "text", body: "When beta-lactams are inappropriate (allergy, resistance, or specific pathogen requirements), other antibiotic classes step in. Macrolides (azithromycin, erythromycin), fluoroquinolones (ciprofloxacin, levofloxacin), and others play important roles in Caribbean antibiotic therapy." },
+        { type: "text", body: "Azithromycin has become one of the most popular antibiotics in Caribbean practice due to its convenient dosing (3-day or 5-day courses), broad spectrum, and good tissue penetration. Ciprofloxacin is the go-to fluoroquinolone for urinary tract infections and gastroenteritis. Metronidazole is indispensable for anaerobic infections and amoebic dysentery — both common Caribbean presentations. Each class has distinct mechanisms, spectra, and side effect profiles that pharmacy technicians must understand." },
         { type: "key-term", term: "Macrolide", definition: "An antibiotic class that inhibits bacterial protein synthesis by binding to the 50S ribosomal subunit. Examples: azithromycin (Z-pack), erythromycin, clarithromycin. Azithromycin's convenient 3-5 day course makes it popular in Caribbean practice." },
         {
           type: "table",
@@ -924,6 +1043,7 @@ const module4: Module = {
           ],
         },
         { type: "callout", variant: "warning", title: "Metronidazole and Alcohol: The Disulfiram Reaction", body: "Metronidazole causes a severe reaction with alcohol — nausea, vomiting, flushing, headache, and tachycardia. This 'disulfiram-like' reaction can occur up to 48 hours after the last dose. In the Caribbean social context where alcohol consumption is common, this counselling point is critical. Always warn patients explicitly." },
+        { type: "callout", variant: "tip", title: "Fluoroquinolone Restrictions — Caribbean Practice", body: "Fluoroquinolones (ciprofloxacin, levofloxacin) carry black box warnings for tendon rupture, peripheral neuropathy, and CNS effects. They should be reserved for infections where no safer alternative exists. In Caribbean practice, ciprofloxacin remains widely used for UTIs and gastroenteritis, but prescribers are increasingly guided to use narrower-spectrum alternatives where possible." },
         { type: "knowledge-check", question: "A patient is prescribed metronidazole for a dental infection. What is the most important counselling point?", options: ["Take with food only", "Avoid sunlight exposure", "Avoid ALL alcohol during treatment and for 48 hours after completing the course", "Take at bedtime only"], correctIndex: 2, explanation: "Metronidazole causes a disulfiram-like reaction with alcohol: severe nausea, vomiting, flushing, and tachycardia. Patients must avoid alcohol completely during and for 48 hours after treatment." },
       ],
     },
@@ -934,7 +1054,9 @@ const module4: Module = {
       content: [
         { type: "heading", level: 2, text: "Fighting Viruses and Fungi in the Caribbean" },
         { type: "text", body: "The Caribbean has the second-highest HIV prevalence rate in the world outside sub-Saharan Africa. Antiretroviral (ARV) therapy has transformed HIV from a death sentence to a manageable chronic condition. Pharmacy technicians play a key role in dispensing ARVs and supporting adherence. Antifungals are also commonly dispensed for the dermatological fungal infections that thrive in the region's tropical climate." },
+        { type: "text", body: "Common antiviral medications dispensed in Caribbean pharmacies beyond ARVs include acyclovir (for herpes simplex and varicella-zoster), oseltamivir (for influenza), and various hepatitis B and C treatments. For antifungals, the tropical climate of the Caribbean promotes fungal skin infections — tinea pedis (athlete's foot), tinea corporis (ringworm), and vaginal candidiasis are among the most common presentations at the pharmacy counter." },
         { type: "key-term", term: "Antiretroviral therapy (ART)", definition: "Combination drug therapy for HIV, typically involving 2-3 drugs from different classes to suppress viral replication. Modern regimens use fixed-dose combinations (e.g., tenofovir/emtricitabine/efavirenz or dolutegravir-based regimens) taken as a single daily tablet." },
+        { type: "key-term", term: "Azole Antifungal", definition: "A class of antifungal drugs that inhibit the enzyme lanosterol 14-alpha demethylase, blocking the synthesis of ergosterol (an essential component of the fungal cell membrane). Examples: fluconazole (systemic), clotrimazole (topical), ketoconazole, itraconazole. Identified by the -azole ending." },
         {
           type: "table",
           caption: "Common Antifungal Agents in Caribbean Practice",
@@ -957,7 +1079,9 @@ const module4: Module = {
       content: [
         { type: "heading", level: 2, text: "When Antibiotics Stop Working" },
         { type: "text", body: "Antimicrobial resistance (AMR) is a growing crisis in the Caribbean. Factors driving resistance in the region include over-the-counter antibiotic sales (still permitted in some jurisdictions), incomplete courses of therapy, self-medication with leftover antibiotics, and agricultural antibiotic use. CARPHA (Caribbean Public Health Agency) has identified AMR as a regional health security threat." },
+        { type: "text", body: "CARPHA's antimicrobial resistance surveillance data reveals increasing resistance rates in the Caribbean, particularly among E. coli (causing UTIs), Staphylococcus aureus (skin infections), and Klebsiella pneumoniae (hospital infections). Methicillin-resistant Staphylococcus aureus (MRSA) has been documented across Trinidad, Jamaica, Barbados, and other territories. The economic burden of resistant infections is particularly severe in small island developing states with limited healthcare budgets." },
         { type: "key-term", term: "Antimicrobial Resistance (AMR)", definition: "The ability of microorganisms to survive exposure to antimicrobial drugs that would normally kill them or inhibit their growth. Resistant infections are harder and more expensive to treat, lead to longer hospital stays, and increase mortality." },
+        { type: "key-term", term: "Antimicrobial Stewardship", definition: "A coordinated programme of interventions designed to optimise antimicrobial use: choosing the right drug, dose, route, and duration to cure infections while minimising resistance development, toxicity, and cost. Pharmacy technicians support stewardship through patient education and flagging inappropriate prescriptions." },
         {
           type: "list",
           ordered: false,
@@ -973,6 +1097,62 @@ const module4: Module = {
         { type: "knowledge-check", question: "A patient asks you for amoxicillin for their cold without a prescription. What is the most appropriate response?", options: ["Dispense it — a cold might become a bacterial infection", "Explain that antibiotics do not treat viral infections like colds and recommend rest, fluids, and paracetamol for symptoms", "Give a half-course to be safe", "Suggest they buy azithromycin instead"], correctIndex: 1, explanation: "Colds are caused by viruses. Antibiotics are ineffective against viruses and contribute to antimicrobial resistance when used inappropriately. Recommend symptomatic relief and advise the patient to see a doctor if symptoms worsen or persist beyond 10 days." },
       ],
     },
+    {
+      id: "m4-l5",
+      title: "Tuberculosis & Neglected Tropical Infections in the Caribbean",
+      duration: "6 min",
+      content: [
+        { type: "heading", level: 2, text: "TB and Parasitic Infections: Still Present in the Caribbean" },
+        {
+          type: "text",
+          body: "While tuberculosis (TB) rates in the Caribbean are lower than in sub-Saharan Africa or Southeast Asia, TB has not been eliminated from the region. Haiti has the highest TB burden in the Caribbean, and cases occur throughout CARICOM territories, particularly among immunocompromised individuals (HIV co-infection), migrants, and people experiencing poverty. Parasitic infections — including intestinal helminths and schistosomiasis — also remain prevalent in parts of the Caribbean.",
+        },
+        {
+          type: "key-term",
+          term: "DOTS (Directly Observed Therapy, Short-course)",
+          definition: "The WHO-recommended strategy for TB treatment, where a healthcare worker directly observes the patient swallowing each dose of medication to ensure adherence. This is critical because incomplete TB treatment leads to drug-resistant TB. DOTS programmes operate across the Caribbean.",
+        },
+        {
+          type: "table",
+          caption: "First-Line Anti-TB Medications (RIPE Regimen)",
+          headers: ["Drug", "Abbreviation", "Mechanism", "Key Side Effect"],
+          rows: [
+            ["Rifampicin", "R", "Inhibits bacterial RNA polymerase", "Orange discolouration of body fluids; potent CYP450 inducer (many drug interactions)"],
+            ["Isoniazid", "I/H", "Inhibits mycolic acid synthesis", "Peripheral neuropathy (prevent with pyridoxine/vitamin B6); hepatotoxicity"],
+            ["Pyrazinamide", "Z", "Disrupts membrane function (acidic pH)", "Hepatotoxicity; hyperuricaemia (gout risk)"],
+            ["Ethambutol", "E", "Inhibits cell wall synthesis", "Optic neuritis (visual impairment) — requires baseline eye exam"],
+          ],
+        },
+        {
+          type: "callout",
+          variant: "warning",
+          title: "Rifampicin Turns Everything Orange",
+          body: "Rifampicin colours urine, tears, sweat, and saliva orange-red. Patients MUST be warned about this or they will panic and stop treatment. It also stains contact lenses permanently. Additionally, rifampicin is one of the most powerful CYP450 inducers — it reduces the effectiveness of oral contraceptives, warfarin, many ARVs, and numerous other drugs. Always check for interactions.",
+        },
+        {
+          type: "callout",
+          variant: "info",
+          title: "TB Treatment Duration",
+          body: "Standard TB treatment lasts 6 months: 2 months of RIPE (all four drugs), followed by 4 months of rifampicin and isoniazid alone. Directly observed therapy (DOTS) is the recommended approach to ensure adherence. Patients must be counselled that stopping treatment early — even if they feel better — risks relapse and the development of multidrug-resistant TB (MDR-TB), which is far harder and more expensive to treat.",
+        },
+        {
+          type: "text",
+          body: "For intestinal parasites, albendazole (400 mg single dose for roundworm, hookworm, and whipworm) and mebendazole are the standard treatments in the Caribbean. Mass deworming programmes in schools, once common across the region, have reduced prevalence. Praziquantel is used for schistosomiasis and tapeworm infections. These anti-helminthic drugs are generally well tolerated with minimal side effects.",
+        },
+        {
+          type: "knowledge-check",
+          question: "A patient starting TB treatment asks why their urine has turned orange. What should you explain?",
+          options: [
+            "They are having an allergic reaction and should stop treatment immediately",
+            "This is a normal and harmless effect of rifampicin — it colours body fluids orange-red",
+            "Their kidneys are failing and they need to go to hospital",
+            "The medication has expired and should be returned",
+          ],
+          correctIndex: 1,
+          explanation: "Orange discolouration of urine, tears, sweat, and saliva is a well-known and harmless effect of rifampicin. Patients must be warned about this before starting treatment to prevent unnecessary alarm and treatment discontinuation.",
+        },
+      ],
+    },
   ],
   quiz: [
     { id: "m4-q1", question: "Amoxicillin works by:", options: ["Inhibiting bacterial protein synthesis", "Inhibiting bacterial cell wall synthesis", "Disrupting bacterial DNA", "Blocking bacterial folic acid synthesis"], correctIndex: 1, explanation: "Amoxicillin is a beta-lactam antibiotic that inhibits bacterial cell wall synthesis by binding to penicillin-binding proteins.", difficulty: "easy", bloomsLevel: "remember" },
@@ -985,6 +1165,8 @@ const module4: Module = {
     { id: "m4-q8", question: "Antibiotics are ineffective against:", options: ["Bacterial pneumonia", "Urinary tract infections", "The common cold (viral)", "Strep throat"], correctIndex: 2, explanation: "The common cold is caused by viruses (rhinoviruses). Antibiotics only work against bacteria and should not be used for viral infections.", difficulty: "easy", bloomsLevel: "understand" },
     { id: "m4-q9", question: "Doxycycline is used for malaria prophylaxis in the Caribbean. It belongs to which class?", options: ["Macrolide", "Beta-lactam", "Tetracycline", "Aminoglycoside"], correctIndex: 2, explanation: "Doxycycline is a tetracycline antibiotic that also has antimalarial activity. It is used for malaria prophylaxis in travellers and for treating various bacterial infections.", difficulty: "easy", bloomsLevel: "remember" },
     { id: "m4-q10", question: "A pharmacy technician's most important role in antimicrobial stewardship is:", options: ["Prescribing antibiotics when needed", "Counselling patients on proper antibiotic use and completing full courses", "Selling antibiotics without prescriptions to increase revenue", "Recommending antibiotics for all sore throats"], correctIndex: 1, explanation: "Pharmacy technicians support stewardship by educating patients on appropriate use, emphasising course completion, and discouraging self-medication with antibiotics.", difficulty: "medium", bloomsLevel: "evaluate" },
+    { id: "m4-q11", question: "Rifampicin is a potent CYP450 inducer. This means it can:", options: ["Increase the blood levels of other drugs", "Reduce the effectiveness of oral contraceptives, warfarin, and many ARVs", "Have no effect on other medications", "Only interact with other antibiotics"], correctIndex: 1, explanation: "Rifampicin is one of the most powerful CYP450 inducers. It accelerates the metabolism of many drugs, reducing their effectiveness. This includes oral contraceptives, warfarin, HIV antiretrovirals, and many others.", difficulty: "medium", bloomsLevel: "understand" },
+    { id: "m4-q12", question: "The standard first-line TB treatment regimen (RIPE) consists of:", options: ["Rifampicin, Isoniazid, Pyrazinamide, Ethambutol", "Rifampicin, Ibuprofen, Penicillin, Erythromycin", "Ranitidine, Isoniazid, Paracetamol, Enalapril", "Rifampicin, Insulin, Prednisolone, Enalapril"], correctIndex: 0, explanation: "RIPE = Rifampicin, Isoniazid, Pyrazinamide, Ethambutol. This four-drug regimen is used for the initial 2 months of TB treatment, followed by rifampicin and isoniazid for a further 4 months.", difficulty: "medium", bloomsLevel: "remember" },
   ],
 };
 
@@ -1013,6 +1195,7 @@ const module5: Module = {
       content: [
         { type: "heading", level: 2, text: "Dengue: The Caribbean's Most Common Vector-Borne Disease" },
         { type: "text", body: "Dengue fever is endemic across the Caribbean, with periodic epidemics causing significant morbidity and mortality. The disease is caused by four serotypes of dengue virus transmitted by Aedes aegypti mosquitoes. Most cases are self-limiting, but severe dengue (dengue haemorrhagic fever) can be fatal. For pharmacy technicians, the critical pharmacological knowledge is what NOT to give." },
+        { type: "text", body: "The Caribbean experiences dengue outbreaks cyclically, with major epidemics in 2006, 2010, 2014, and 2019-2020 affecting Trinidad, Jamaica, Barbados, Grenada, and across the OECS territories. Dengue has four serotypes (DENV-1 through DENV-4). Infection with one serotype provides lifelong immunity to that serotype but increases the risk of severe dengue upon subsequent infection with a different serotype. This sequential infection risk is particularly relevant in the Caribbean where all four serotypes circulate." },
         { type: "key-term", term: "Dengue fever", definition: "An acute viral infection transmitted by Aedes aegypti mosquitoes, causing high fever, severe headache, retro-orbital pain, muscle/joint pain ('breakbone fever'), and rash. There is no specific antiviral treatment. Management is supportive: rest, fluids, and paracetamol for fever and pain." },
         { type: "callout", variant: "danger", title: "NEVER Dispense NSAIDs or Aspirin for Suspected Dengue", body: "Aspirin, ibuprofen, diclofenac, and all other NSAIDs are CONTRAINDICATED in dengue because they impair platelet function and increase bleeding risk. Dengue causes thrombocytopenia (low platelet count), and adding an antiplatelet/anti-inflammatory drug can trigger life-threatening haemorrhage. ONLY paracetamol should be used for fever and pain in suspected dengue." },
         {
@@ -1026,6 +1209,17 @@ const module5: Module = {
             ["Refer immediately if warning signs appear", "Dismiss a returning patient as 'just dengue'"],
           ],
         },
+        {
+          type: "case-study",
+          title: "Case Study: The Wrong Analgesic During Dengue Season in Arima",
+          scenario: "During a dengue outbreak in Arima, Trinidad, a mother brings her 14-year-old son to the pharmacy. He has had fever for 2 days, severe headache, and body aches. She asks for 'something stronger than paracetamol' because 'the Panadol not working.' She specifically requests diclofenac tablets, which she has at home from a previous prescription.",
+          questions: [
+            "Why is diclofenac dangerous in this scenario?",
+            "What should the pharmacy technician advise the mother?",
+            "What warning signs should the mother watch for that require hospital referral?",
+          ],
+          discussion: "Diclofenac is an NSAID that inhibits platelet function. In suspected dengue, where thrombocytopenia (low platelet count) is common, NSAIDs can trigger life-threatening haemorrhage. The technician should firmly but kindly explain that only paracetamol is safe during dengue season, ensure the correct paracetamol dose is being used (up to 4g/day for adults, weight-based dosing for children), encourage oral rehydration, and advise the mother to seek medical attention if the boy develops abdominal pain, persistent vomiting, bleeding from gums or nose, or becomes unusually drowsy — these are dengue warning signs.",
+        },
         { type: "knowledge-check", question: "A patient presents at your pharmacy in Port of Spain with fever, headache, and body aches during dengue season. They ask for ibuprofen. What should you do?", options: ["Dispense ibuprofen as requested", "Offer paracetamol instead and explain that ibuprofen is dangerous in suspected dengue due to bleeding risk", "Give aspirin as an alternative to ibuprofen", "Suggest they take both paracetamol and ibuprofen together"], correctIndex: 1, explanation: "During dengue season, any febrile patient should be assumed to potentially have dengue. NSAIDs (including ibuprofen) and aspirin are contraindicated due to increased bleeding risk. Paracetamol is the only safe analgesic/antipyretic." },
       ],
     },
@@ -1037,7 +1231,19 @@ const module5: Module = {
         { type: "heading", level: 2, text: "Managing the Other Aedes-Borne Viruses" },
         { type: "text", body: "Chikungunya and Zika are also transmitted by Aedes aegypti mosquitoes and have caused major Caribbean epidemics. Like dengue, there are no specific antiviral treatments — management is supportive. Chikungunya is characterised by severe joint pain that can persist for months, while Zika's primary concern is its association with birth defects (microcephaly) in pregnant women." },
         { type: "key-term", term: "Chikungunya", definition: "A viral disease causing fever and severe joint pain (arthralgia) that can last weeks to months. The name means 'that which bends up' in Kimakonde, describing the stooped posture of affected patients. Treatment is symptomatic: paracetamol, NSAIDs (once dengue is excluded), and rest." },
-        { type: "text", body: "An important clinical distinction: NSAIDs CAN be used for chikungunya joint pain ONLY if dengue has been ruled out. Since dengue and chikungunya have overlapping symptoms and are transmitted by the same mosquito in the same region, laboratory confirmation may be needed before NSAIDs are safe. In practice, paracetamol is the safest initial choice until dengue is excluded." },
+        {
+          type: "text",
+          body: "An important clinical distinction: NSAIDs CAN be used for chikungunya joint pain ONLY if dengue has been ruled out. Since dengue and chikungunya have overlapping symptoms and are transmitted by the same mosquito in the same region, laboratory confirmation may be needed before NSAIDs are safe. In practice, paracetamol is the safest initial choice until dengue is excluded.",
+        },
+        {
+          type: "text",
+          body: "Chronic chikungunya arthralgia can persist for months to years after the acute infection resolves. In Jamaica and Trinidad, many patients who contracted chikungunya during the 2014 epidemic still experience joint pain. Long-term management may include NSAIDs, physiotherapy, and in some cases, methotrexate or hydroxychloroquine under rheumatology supervision. Pharmacy technicians should be aware that a patient requesting chronic pain medication may be dealing with post-chikungunya arthralgia.",
+        },
+        {
+          type: "key-term",
+          term: "Zika Virus",
+          definition: "A flavivirus transmitted by Aedes aegypti mosquitoes that usually causes mild illness (fever, rash, conjunctivitis, joint pain) but is dangerous in pregnancy due to its association with microcephaly and other congenital anomalies. There is no specific antiviral treatment or vaccine.",
+        },
         { type: "callout", variant: "warning", title: "Zika and Pregnancy", body: "Zika virus infection during pregnancy can cause microcephaly and other severe birth defects. There is no specific treatment or vaccine. Prevention through mosquito control is critical. Pregnant women in Caribbean endemic areas should use DEET-based insect repellent (safe in pregnancy), wear long sleeves, and sleep under bed nets." },
         { type: "knowledge-check", question: "When can NSAIDs be safely used for a patient with suspected chikungunya joint pain?", options: ["Immediately upon presentation", "Only after dengue has been ruled out, as NSAIDs are dangerous in dengue", "Never — NSAIDs are always contraindicated in vector-borne diseases", "Only if the patient is also taking paracetamol"], correctIndex: 1, explanation: "NSAIDs are effective for chikungunya arthralgia but contraindicated in dengue. Since the diseases overlap geographically and symptomatically, dengue must be excluded first. Paracetamol is the safe initial choice." },
       ],
@@ -1049,6 +1255,7 @@ const module5: Module = {
       content: [
         { type: "heading", level: 2, text: "Malaria: Still a Caribbean Concern" },
         { type: "text", body: "While most Caribbean islands are malaria-free, cases still occur in Haiti, parts of the Dominican Republic, Guyana, and Suriname. Travellers from other Caribbean nations visiting these countries may need prophylaxis. Additionally, Caribbean pharmacists may encounter malaria in patients arriving from Africa or South Asia." },
+        { type: "key-term", term: "Antimalarial Prophylaxis", definition: "The use of medications to prevent malaria infection in travellers or residents of endemic areas. Drugs are started before entering the malaria zone, continued during the stay, and for a specified period after leaving. Options include chloroquine (for sensitive areas), atovaquone/proguanil (Malarone), doxycycline, and mefloquine." },
         {
           type: "table",
           caption: "Antimalarial Drugs Used in Caribbean Practice",
@@ -1060,7 +1267,42 @@ const module5: Module = {
             ["Artemether/lumefantrine (Coartem)", "Treatment of P. falciparum", "First-line ACT for uncomplicated malaria; take with fatty food"],
           ],
         },
+        { type: "text", body: "When counselling travellers about malaria prophylaxis, timing is important. Chloroquine should be started 1-2 weeks before travel to allow blood levels to reach protective concentrations and to identify any side effects before departure. Atovaquone/proguanil (Malarone) is started 1-2 days before travel. Doxycycline is started 1-2 days before. All prophylactic agents must be continued for a specific period after leaving the endemic area: chloroquine for 4 weeks, Malarone for 1 week, and doxycycline for 4 weeks." },
         { type: "callout", variant: "warning", title: "Doxycycline and Caribbean Sun", body: "Doxycycline causes significant photosensitivity. Travellers and workers in the Caribbean taking doxycycline for malaria prophylaxis must use high-SPF sunscreen and protective clothing. Severe sunburn is a common and preventable adverse effect." },
+        {
+          type: "island-comparison",
+          title: "Malaria Status Across the Caribbean",
+          description: "The malaria situation varies significantly across the Caribbean",
+          islands: [
+            {
+              name: "Trinidad & Tobago",
+              flag: "\ud83c\uddf9\ud83c\uddf9",
+              details: [
+                "Malaria-free since 1965 (WHO certified)",
+                "Travellers to Haiti, Guyana, or Africa need prophylaxis",
+                "Chloroquine and atovaquone/proguanil available at pharmacies",
+              ],
+            },
+            {
+              name: "Jamaica",
+              flag: "\ud83c\uddef\ud83c\uddf2",
+              details: [
+                "Experienced a malaria outbreak in 2006; mostly malaria-free",
+                "Imported cases from Haiti and Guyana still occur",
+                "Public health surveillance active through the Ministry of Health",
+              ],
+            },
+            {
+              name: "Guyana",
+              flag: "\ud83c\uddec\ud83c\uddfe",
+              details: [
+                "Active malaria transmission in interior/mining regions",
+                "P. vivax and P. falciparum both present",
+                "ACT (artemether/lumefantrine) used for treatment; chloroquine for P. vivax",
+              ],
+            },
+          ],
+        },
         { type: "knowledge-check", question: "A Trinidadian tourist travelling to Haiti asks about malaria prophylaxis. Which drug is appropriate for chloroquine-sensitive areas like Haiti?", options: ["No prophylaxis needed — the Caribbean is malaria-free", "Chloroquine, started 1-2 weeks before travel", "Artemether/lumefantrine (treatment, not prophylaxis)", "Fluconazole"], correctIndex: 1, explanation: "Haiti still has chloroquine-sensitive P. falciparum malaria. Chloroquine is appropriate for prophylaxis, started 1-2 weeks before travel, continued during the stay, and for 4 weeks after return." },
       ],
     },
@@ -1071,7 +1313,9 @@ const module5: Module = {
       content: [
         { type: "heading", level: 2, text: "Other Infections of Caribbean Significance" },
         { type: "text", body: "Beyond vector-borne diseases, the Caribbean faces unique infection challenges including leptospirosis (spread through water contaminated with animal urine, especially after flooding), gastroenteritis (common in areas with inconsistent water treatment), and parasitic infections. Understanding the pharmacological treatments helps pharmacy technicians provide better care." },
+        { type: "text", body: "Caribbean hurricanes, tropical storms, and heavy rainfall create conditions that promote waterborne and vector-borne disease outbreaks. Leptospirosis cases spike dramatically after flooding events — Trinidad reported a significant increase following the 2018 floods. Gastroenteritis outbreaks from contaminated water supplies occur periodically across the region. Parasitic infections, while declining with improved sanitation, still affect vulnerable populations, particularly in rural areas and lower-income communities." },
         { type: "key-term", term: "Leptospirosis", definition: "A bacterial infection (Leptospira species) transmitted through water or soil contaminated with infected animal urine. Common after Caribbean flooding events. Symptoms include high fever, headache, muscle pain, and jaundice. Treated with doxycycline or penicillin." },
+        { type: "key-term", term: "Oral Rehydration Salts (ORS)", definition: "A precisely formulated mixture of glucose, sodium chloride, potassium chloride, and trisodium citrate dissolved in water. ORS replaces fluids and electrolytes lost through diarrhoea and vomiting. The WHO-UNICEF formula is the standard used worldwide and is a critical pharmacy stock item in the Caribbean." },
         { type: "text", body: "Oral rehydration therapy (ORT) remains the most important pharmacological intervention for gastroenteritis in the Caribbean. ORS packets are among the most dispensed items in Caribbean pharmacies. For parasitic infections, albendazole and mebendazole (anti-helminthics) are used for roundworm, hookworm, and threadworm — infections that remain common in parts of the region." },
         { type: "callout", variant: "tip", title: "After the Floods: Pharmacy Preparedness", body: "Caribbean hurricanes and heavy rains cause flooding that increases leptospirosis risk. Pharmacies should stock doxycycline and ensure ORS availability during and after flood events. Prophylactic doxycycline 200 mg weekly may be recommended for high-risk exposed individuals." },
         { type: "knowledge-check", question: "After major flooding in Trinidad, a construction worker develops fever, muscle pain, and jaundice. Which antibiotic is first-line for suspected leptospirosis?", options: ["Azithromycin", "Ciprofloxacin", "Doxycycline or penicillin", "Fluconazole"], correctIndex: 2, explanation: "Leptospirosis is treated with doxycycline (mild cases) or IV penicillin (severe cases). Post-flood exposure is a classic risk scenario in the Caribbean." },
@@ -1087,6 +1331,8 @@ const module5: Module = {
     { id: "m5-q6", question: "Why is dengue fever sometimes called 'breakbone fever'?", options: ["It causes actual bone fractures", "The severe muscle and joint pain feels like bones are breaking", "It affects the skeletal system directly", "It was first described in a bone specialist's clinic"], correctIndex: 1, explanation: "The severe myalgia and arthralgia of dengue are so intense that patients historically described it as feeling like their bones were breaking. The name reflects symptom severity, not actual bone damage.", difficulty: "easy", bloomsLevel: "understand" },
     { id: "m5-q7", question: "Artemether/lumefantrine (Coartem) should be taken with:", options: ["Water only", "An empty stomach", "A fatty meal to improve absorption", "Alcohol to enhance effects"], correctIndex: 2, explanation: "Lumefantrine absorption increases 2-3 fold when taken with a fatty meal. Patients should be counselled to take Coartem with food containing fat.", difficulty: "medium", bloomsLevel: "apply" },
     { id: "m5-q8", question: "The most important pharmacological intervention for gastroenteritis in the Caribbean is:", options: ["Antibiotics for all cases", "Anti-diarrhoeal drugs like loperamide", "Oral rehydration salts (ORS)", "IV fluids at home"], correctIndex: 2, explanation: "Oral rehydration therapy (ORS) is the cornerstone of gastroenteritis management, preventing dehydration which is the primary cause of morbidity and mortality.", difficulty: "easy", bloomsLevel: "remember" },
+    { id: "m5-q9", question: "In dengue fever, the period AFTER the fever breaks is particularly dangerous because:", options: ["The patient is dehydrated", "This is when severe dengue (plasma leakage, haemorrhage) can develop", "The virus is at its most contagious", "Antibiotics are needed at this stage"], correctIndex: 1, explanation: "The critical phase of dengue occurs around the time of defervescence (when fever drops). This is when plasma leakage, haemorrhage, and organ impairment can develop in severe dengue. Patients and caregivers must be warned not to assume the patient is improving just because the fever has broken.", difficulty: "hard", bloomsLevel: "analyze" },
+    { id: "m5-q10", question: "Albendazole 400 mg single dose is the standard treatment for which Caribbean infections?", options: ["Malaria and dengue", "Roundworm, hookworm, and whipworm (intestinal helminths)", "HIV and tuberculosis", "Fungal skin infections"], correctIndex: 1, explanation: "Albendazole is a broad-spectrum anti-helminthic effective against roundworm (Ascaris), hookworm (Necator/Ancylostoma), and whipworm (Trichuris) with a convenient single-dose regimen.", difficulty: "easy", bloomsLevel: "remember" },
   ],
 };
 
@@ -1115,7 +1361,9 @@ const module6: Module = {
       content: [
         { type: "heading", level: 2, text: "The Analgesic Toolkit" },
         { type: "text", body: "Pain management is one of the most common reasons patients visit a Caribbean pharmacy. The WHO analgesic ladder provides a stepwise approach: Step 1 (mild pain) uses non-opioid analgesics (paracetamol, NSAIDs); Step 2 (moderate pain) adds weak opioids (codeine, tramadol); Step 3 (severe pain) uses strong opioids (morphine, oxycodone)." },
+        { type: "text", body: "In the Caribbean, paracetamol (Panadol is the dominant brand name) and ibuprofen are the most purchased OTC analgesics. Diclofenac (both oral and topical) is extensively used for musculoskeletal pain. Codeine-paracetamol combinations are available in some territories without a prescription, which raises concerns about misuse and dependence. Understanding the pharmacology, dosing limits, and risks of each analgesic class is fundamental to safe pharmacy practice." },
         { type: "key-term", term: "Paracetamol (Acetaminophen)", definition: "The most commonly used analgesic and antipyretic worldwide. Works centrally to reduce pain and fever. Safe at therapeutic doses (max 4g/day in adults) but causes fatal hepatotoxicity in overdose. Has NO anti-inflammatory effect." },
+        { type: "key-term", term: "NSAID (Non-Steroidal Anti-Inflammatory Drug)", definition: "A class of drugs that inhibit cyclooxygenase (COX) enzymes, reducing prostaglandin synthesis. This provides analgesic, anti-inflammatory, and antipyretic effects. Examples: ibuprofen, diclofenac, naproxen. Risks include GI bleeding, renal impairment, and cardiovascular events." },
         { type: "callout", variant: "danger", title: "Paracetamol Overdose: A Caribbean Emergency", body: "Paracetamol is available OTC and in dozens of combination products (cold remedies, pain formulas). Accidental overdose occurs when patients take multiple products containing paracetamol without realising it. Hepatotoxicity can be fatal. ALWAYS counsel patients to check ALL their medications for paracetamol content and not exceed 4g daily." },
         {
           type: "table",
@@ -1139,6 +1387,7 @@ const module6: Module = {
       content: [
         { type: "heading", level: 2, text: "Treating Depression in a Stigmatised Environment" },
         { type: "text", body: "Mental health conditions affect an estimated 1 in 4 Caribbean adults, yet treatment rates remain low due to stigma, limited access to psychiatrists, and cultural attitudes that view depression as a spiritual or personal weakness rather than a medical condition. When patients do receive antidepressants, pharmacy technicians play a crucial role in supporting adherence and providing judgement-free counselling." },
+        { type: "callout", variant: "info", title: "Mental Health Stigma in the Caribbean", body: "In many Caribbean communities, mental health conditions carry significant stigma. Patients may be embarrassed to collect antidepressants or antipsychotics and may request them by brand name to avoid saying the drug class. Some patients may wrap their medications to hide the label. Pharmacy technicians should handle all mental health prescriptions with discretion, confidentiality, and compassion — never drawing attention to the nature of the medication." },
         { type: "key-term", term: "SSRI (Selective Serotonin Reuptake Inhibitor)", definition: "A class of antidepressant that selectively blocks serotonin reuptake in the brain, increasing serotonin availability in the synaptic cleft. Examples: fluoxetine, sertraline, escitalopram. First-line treatment for depression and anxiety disorders." },
         { type: "text", body: "SSRIs take 2-4 weeks to reach full therapeutic effect. This delayed onset is a major reason for non-adherence — patients expect immediate relief and stop taking the medication when they do not feel better in the first few days. Clear counselling at the point of dispensing is essential: 'This medication takes 2-4 weeks to work fully. Do not stop taking it without speaking to your doctor, even if you feel better.'" },
         { type: "callout", variant: "warning", title: "SSRI Discontinuation Syndrome", body: "Abruptly stopping an SSRI can cause discontinuation symptoms: dizziness, nausea, anxiety, 'brain zaps' (electric shock sensations), and irritability. These symptoms are NOT a sign of addiction — they reflect the brain readjusting to the absence of the drug. SSRIs should always be tapered gradually under medical supervision." },
@@ -1163,6 +1412,7 @@ const module6: Module = {
       content: [
         { type: "heading", level: 2, text: "Managing Psychosis and Seizures" },
         { type: "text", body: "Antipsychotics are used to treat schizophrenia, bipolar disorder, and acute psychosis. They are divided into typical (first-generation: haloperidol, chlorpromazine) and atypical (second-generation: risperidone, olanzapine, quetiapine). Atypical antipsychotics generally have fewer movement-related side effects but carry metabolic risks (weight gain, diabetes)." },
+        { type: "key-term", term: "Antipsychotic", definition: "A drug used to manage psychosis (including delusions, hallucinations, and disordered thinking). Typical antipsychotics primarily block dopamine D2 receptors. Atypical antipsychotics block both D2 and serotonin 5-HT2A receptors, offering broader efficacy with generally fewer motor side effects." },
         { type: "key-term", term: "Extrapyramidal Symptoms (EPS)", definition: "Movement disorders caused by dopamine receptor blockade in the basal ganglia. Include acute dystonia (sustained muscle contractions), akathisia (restlessness), parkinsonism (tremor, rigidity), and tardive dyskinesia (involuntary facial movements). More common with typical antipsychotics." },
         { type: "text", body: "Antiepileptic drugs (AEDs) include valproate, carbamazepine, phenytoin, and newer agents like levetiracetam and lamotrigine. Many AEDs have narrow therapeutic indices and require blood level monitoring. Phenytoin is particularly challenging due to non-linear pharmacokinetics — small dose increases can cause disproportionate rises in blood levels." },
         { type: "callout", variant: "danger", title: "Valproate and Pregnancy", body: "Sodium valproate is TERATOGENIC — it causes neural tube defects and developmental problems in the foetus. It should NOT be prescribed to women of childbearing potential unless no alternative exists and the patient is on effective contraception. This is a critical dispensing alert in Caribbean practice." },
@@ -1188,7 +1438,27 @@ const module6: Module = {
         { type: "heading", level: 2, text: "Opioids in Caribbean Practice" },
         { type: "text", body: "Unlike North America, the Caribbean has not experienced an opioid epidemic on the same scale. Opioid prescribing is generally more conservative, and strong opioids are typically restricted to hospital settings. However, codeine-containing products are widely available (sometimes OTC) and tramadol prescribing has increased. Understanding controlled substance regulations and appropriate opioid dispensing is essential." },
         { type: "key-term", term: "Opioid", definition: "A class of drugs that bind to opioid receptors (mu, kappa, delta) in the CNS and GI tract to produce analgesia, euphoria, respiratory depression, and constipation. Includes natural opiates (morphine, codeine), semi-synthetic (oxycodone, hydromorphone), and synthetic (tramadol, fentanyl) agents." },
-        { type: "text", body: "Key counselling points for opioid dispensing: warn about drowsiness (no driving), constipation (recommend a laxative for regular use), risk of dependence with prolonged use, and the danger of combining opioids with alcohol or benzodiazepines. For codeine products, counsel that codeine is converted to morphine in the body — some patients are 'ultra-rapid metabolisers' who convert more codeine to morphine, increasing the risk of toxicity." },
+        {
+          type: "text",
+          body: "Key counselling points for opioid dispensing: warn about drowsiness (no driving), constipation (recommend a laxative for regular use), risk of dependence with prolonged use, and the danger of combining opioids with alcohol or benzodiazepines. For codeine products, counsel that codeine is converted to morphine in the body — some patients are 'ultra-rapid metabolisers' who convert more codeine to morphine, increasing the risk of toxicity.",
+        },
+        {
+          type: "table",
+          caption: "Controlled Substance Schedules in the Caribbean",
+          headers: ["Category", "Examples", "Dispensing Requirements"],
+          rows: [
+            ["Schedule 1 (most restricted)", "Heroin, LSD, cannabis (in most territories)", "No legitimate medical use; cannot be dispensed"],
+            ["Schedule 2 (high potential for abuse)", "Morphine, fentanyl, oxycodone, methylphenidate", "Written prescription only; locked storage; register entry required"],
+            ["Schedule 3 (moderate potential)", "Codeine combinations (e.g., codeine/paracetamol), tramadol", "Prescription required in most territories; some OTC restrictions"],
+            ["Schedule 4 (lower potential)", "Benzodiazepines (diazepam, alprazolam)", "Prescription required; refill limits may apply"],
+          ],
+        },
+        {
+          type: "callout",
+          variant: "warning",
+          title: "Codeine and CYP2D6 Ultra-Rapid Metabolisers",
+          body: "Codeine is a prodrug that requires CYP2D6 to convert it to morphine. Approximately 1-2% of Caribbean populations are ultra-rapid CYP2D6 metabolisers who convert codeine to morphine much faster and more extensively than normal. These individuals are at increased risk of morphine toxicity even at standard doses. This is particularly dangerous in breastfeeding mothers and children.",
+        },
         { type: "callout", variant: "info", title: "Controlled Substance Record-Keeping", body: "Caribbean pharmacy laws require strict documentation for controlled substances. Every dispensing must be recorded in the controlled drugs register: patient name, prescriber details, drug name, strength, quantity, and date. The pharmacy technician is often responsible for maintaining these records accurately." },
         { type: "knowledge-check", question: "When dispensing tramadol, which drug interaction should be flagged to the pharmacist?", options: ["Tramadol with paracetamol", "Tramadol with an SSRI (risk of serotonin syndrome)", "Tramadol with amlodipine", "Tramadol with metformin"], correctIndex: 1, explanation: "Tramadol has serotonergic activity and combining it with SSRIs or SNRIs increases the risk of serotonin syndrome — a potentially fatal condition characterised by agitation, tremor, hyperthermia, and hyperreflexia." },
       ],
@@ -1203,6 +1473,8 @@ const module6: Module = {
     { id: "m6-q6", question: "A patient buying a cold remedy and separate paracetamol tablets should be warned about:", options: ["Allergic cross-reactivity", "Potential paracetamol overdose from duplicate dosing", "Reduced cold remedy efficacy", "Caffeine interaction"], correctIndex: 1, explanation: "Many cold remedies contain paracetamol. Taking additional paracetamol on top risks exceeding the 4g daily limit and causing hepatotoxicity.", difficulty: "easy", bloomsLevel: "apply" },
     { id: "m6-q7", question: "Phenytoin requires careful dose adjustment because it has:", options: ["Linear pharmacokinetics", "Non-linear (saturation) pharmacokinetics — small dose changes cause large blood level changes", "No side effects", "A very wide therapeutic index"], correctIndex: 1, explanation: "Phenytoin follows zero-order kinetics at therapeutic doses. Once metabolic enzymes are saturated, small dose increases cause disproportionately large rises in blood levels.", difficulty: "hard", bloomsLevel: "analyze" },
     { id: "m6-q8", question: "SSRI discontinuation syndrome includes all of the following EXCEPT:", options: ["Dizziness", "Brain zaps (electric shock sensations)", "Hepatotoxicity", "Anxiety and irritability"], correctIndex: 2, explanation: "SSRI discontinuation causes dizziness, brain zaps, anxiety, nausea, and irritability. It does not cause hepatotoxicity. These symptoms reflect neurochemical readjustment, not organ damage.", difficulty: "medium", bloomsLevel: "understand" },
+    { id: "m6-q9", question: "Codeine is converted to its active metabolite (morphine) by which CYP450 enzyme?", options: ["CYP3A4", "CYP2D6", "CYP1A2", "CYP2C9"], correctIndex: 1, explanation: "CYP2D6 converts codeine to morphine. Ultra-rapid CYP2D6 metabolisers convert more codeine to morphine, increasing toxicity risk. Poor metabolisers get little analgesic benefit from codeine.", difficulty: "hard", bloomsLevel: "remember" },
+    { id: "m6-q10", question: "The WHO analgesic ladder Step 1 recommends which type of medication for mild pain?", options: ["Strong opioids (morphine)", "Weak opioids (codeine, tramadol)", "Non-opioid analgesics (paracetamol, NSAIDs)", "Nerve blocks"], correctIndex: 2, explanation: "The WHO analgesic ladder Step 1 uses non-opioid analgesics (paracetamol and/or NSAIDs) for mild pain. Step 2 adds weak opioids for moderate pain, and Step 3 uses strong opioids for severe pain.", difficulty: "easy", bloomsLevel: "remember" },
   ],
 };
 
@@ -1246,6 +1518,17 @@ const module7: Module = {
         { type: "key-term", term: "Enzyme Induction", definition: "When a drug increases the activity of metabolic enzymes (especially CYP450), causing other drugs to be metabolised faster and reducing their effectiveness. Example: carbamazepine induces CYP3A4, reducing oral contraceptive effectiveness." },
         { type: "key-term", term: "Enzyme Inhibition", definition: "When a drug decreases the activity of metabolic enzymes, causing other drugs to be metabolised slower and increasing their blood levels (potentially to toxic levels). Example: grapefruit juice inhibits CYP3A4." },
         { type: "callout", variant: "warning", title: "Carbamazepine and Oral Contraceptives", body: "Carbamazepine is a potent CYP450 inducer that reduces the effectiveness of oral contraceptives. Women taking carbamazepine need alternative or additional contraception. This interaction is critically important in Caribbean practice, where both drugs are commonly prescribed." },
+        {
+          type: "case-study",
+          title: "Case Study: Polypharmacy Interaction in a Bridgetown Community Pharmacy",
+          scenario: "Mr. Williams, a 72-year-old retired fisherman in Bridgetown, Barbados, collects his monthly medications: warfarin 5 mg daily, amlodipine 10 mg daily, simvastatin 40 mg daily, and metformin 1000 mg twice daily. Today he also asks for ibuprofen 400 mg for his arthritic knee, and mentions he started drinking noni juice 'for energy' on his neighbour's recommendation.",
+          questions: [
+            "How many potential drug interactions can you identify in this scenario?",
+            "Which interaction poses the most immediate danger?",
+            "What would you recommend as an action plan?",
+          ],
+          discussion: "Multiple significant interactions exist: (1) Warfarin + ibuprofen = high bleeding risk (most immediately dangerous); (2) Simvastatin 40 mg + amlodipine = exceeds the safe simvastatin limit of 20 mg with amlodipine (CYP3A4 interaction); (3) Noni juice has high potassium content — a concern with age-related renal decline and potentially with warfarin; (4) Warfarin + noni = possible INR alteration. The pharmacy technician should flag ALL of these to the pharmacist. Paracetamol should be recommended instead of ibuprofen, the simvastatin dose should be reviewed, and the noni juice interaction should be discussed with the prescriber.",
+        },
         { type: "knowledge-check", question: "A patient takes warfarin for atrial fibrillation and asks for ibuprofen for knee pain. What should you do?", options: ["Dispense ibuprofen — there is no interaction", "Flag the interaction to the pharmacist — NSAIDs significantly increase bleeding risk with warfarin", "Give a lower dose of ibuprofen", "Suggest the patient stop warfarin temporarily"], correctIndex: 1, explanation: "NSAIDs inhibit platelet function and can cause GI bleeding. Combined with warfarin's anticoagulant effect, the bleeding risk is dramatically increased. Paracetamol is the safer analgesic for warfarin patients." },
       ],
     },
@@ -1256,6 +1539,8 @@ const module7: Module = {
       content: [
         { type: "heading", level: 2, text: "Food, Drink & Drug Safety" },
         { type: "text", body: "Drug-food interactions are particularly relevant in the Caribbean, where tropical fruits (grapefruit, soursop), herbal teas (bush teas), and social alcohol consumption can significantly affect medication safety and efficacy. Pharmacy technicians who understand these interactions provide vital patient counselling at the dispensing counter." },
+        { type: "key-term", term: "Drug-Food Interaction", definition: "An alteration in a drug's absorption, distribution, metabolism, or effect caused by food or drink. Interactions can reduce drug effectiveness (e.g., calcium reducing tetracycline absorption) or increase toxicity (e.g., grapefruit increasing statin levels). Timing of food relative to medication is a key counselling point." },
+        { type: "text", body: "The Caribbean diet and lifestyle create unique drug-food interaction risks. Grapefruit is widely consumed as juice and fresh fruit. Alcohol consumption (rum, beer, stout) is a significant social activity across the region. Caribbean cuisine incorporates calcium-rich foods, vitamin K-rich greens (callaloo, spinach), and tyramine-containing foods (aged cheese, salt fish). Each of these can interact with specific medications in clinically meaningful ways." },
         {
           type: "table",
           caption: "Important Drug-Food Interactions in Caribbean Context",
@@ -1280,6 +1565,7 @@ const module7: Module = {
       content: [
         { type: "heading", level: 2, text: "When Drugs Cause Harm" },
         { type: "text", body: "Adverse drug reactions (ADRs) are unwanted, harmful effects of medications occurring at normal therapeutic doses. ADRs range from mild (nausea, headache) to severe (anaphylaxis, organ damage, death). In the Caribbean, ADR reporting is coordinated through national pharmacovigilance centres and CARPHA at the regional level." },
+        { type: "text", body: "ADR reporting is underutilised across the Caribbean. Many adverse events go unreported because healthcare professionals are unaware of reporting mechanisms, believe the ADR is already well-known, or lack time to complete reports. However, every report contributes to the regional safety database maintained by CARPHA. In Trinidad and Tobago, the Chemistry, Food and Drugs Division (CFDD) accepts ADR reports. In Jamaica, the Pharmacovigilance Centre at the Ministry of Health coordinates reporting. Pharmacy technicians can champion ADR reporting by documenting patient complaints and assisting pharmacists with report submission." },
         { type: "key-term", term: "Type A ADR (Augmented)", definition: "Dose-dependent, predictable reactions related to the drug's known pharmacology. Examples: hypotension from antihypertensives, hypoglycaemia from insulin. These are the most common ADRs and are usually manageable with dose adjustment." },
         { type: "key-term", term: "Type B ADR (Bizarre)", definition: "Dose-independent, unpredictable reactions unrelated to the drug's normal pharmacology. Examples: penicillin anaphylaxis, Stevens-Johnson syndrome. These are rare but potentially fatal and usually require drug discontinuation." },
         { type: "text", body: "Pharmacy technicians should be alert to patients reporting new symptoms after starting a medication. Common signs of ADRs include rash, unexplained bleeding, severe GI symptoms, breathing difficulty, or significant changes in mood or behaviour. All suspected ADRs should be reported to the pharmacist and documented." },
@@ -1304,6 +1590,8 @@ const module7: Module = {
       content: [
         { type: "heading", level: 2, text: "The Most Dangerous Drug Warnings" },
         { type: "text", body: "Black box warnings (or boxed warnings) are the most serious drug safety warnings issued by regulatory authorities. They highlight risks of death, serious organ damage, or severe adverse effects. While the term 'black box' originates from the US FDA, the warnings apply globally and are relevant to Caribbean prescribing and dispensing practice." },
+        { type: "key-term", term: "Black Box Warning", definition: "The most serious safety warning that can be placed on a medication's prescribing information, indicating that the drug carries significant risks of serious or life-threatening adverse effects. Named for the black border that surrounds the warning text in US FDA labelling. Caribbean drug regulatory authorities apply equivalent warnings." },
+        { type: "text", body: "Pharmacy technicians must be familiar with black box warnings for commonly dispensed medications. When dispensing a drug with a black box warning, ensure the patient has received appropriate counselling and monitoring is in place. Some pharmacies flag these medications with auxiliary stickers or computer alerts as additional safety measures." },
         {
           type: "table",
           caption: "Key Black Box Warnings Relevant to Caribbean Practice",
@@ -1317,6 +1605,7 @@ const module7: Module = {
           ],
         },
         { type: "callout", variant: "info", title: "High-Alert Medications (ISMP List)", body: "The Institute for Safe Medication Practices (ISMP) identifies high-alert medications that carry heightened risk of harm when used in error. These include insulin, anticoagulants (warfarin, heparin), opioids, and chemotherapy agents. Extra verification steps should be applied when dispensing these drugs." },
+        { type: "text", body: "In Caribbean pharmacy practice, the most commonly encountered black box warning situations involve NSAIDs (dispensed in very high volumes OTC and by prescription), fluoroquinolones (ciprofloxacin for UTIs and GI infections), and metformin (the most dispensed diabetes drug). Pharmacy technicians should maintain awareness of these warnings and ensure patients are appropriately counselled when dispensing these medications." },
         { type: "knowledge-check", question: "Fluoroquinolone antibiotics carry a black box warning for:", options: ["Liver failure", "Tendon rupture, peripheral neuropathy, and CNS effects", "Renal toxicity", "Bone marrow suppression"], correctIndex: 1, explanation: "Fluoroquinolones can cause tendon rupture (especially Achilles tendon), peripheral neuropathy, and CNS effects. Risk is highest in elderly patients and those taking corticosteroids." },
       ],
     },
@@ -1360,6 +1649,8 @@ const module8: Module = {
       content: [
         { type: "heading", level: 2, text: "The OTC Counter: Where Most Pharmacy Interactions Begin" },
         { type: "text", body: "In Caribbean pharmacies, OTC sales often exceed prescription volume. Patients self-treat headaches, heartburn, allergies, colds, and minor infections. While many OTC medications are safe when used correctly, the pharmacy technician must identify situations where referral to the pharmacist or a doctor is needed — particularly when OTC medications may interact with existing prescriptions." },
+        { type: "key-term", term: "Over-the-Counter (OTC) Medication", definition: "A medication that can be sold directly to a consumer without a prescription. OTC status is granted by drug regulatory authorities based on a drug's safety profile when used as directed. In the Caribbean, OTC availability varies by territory — some drugs that are OTC in one island may require a prescription in another." },
+        { type: "text", body: "The top five OTC categories by volume in Caribbean pharmacies are analgesics (paracetamol, NSAIDs), cough and cold remedies (pseudoephedrine, dextromethorphan, antihistamines), antacids and acid reducers (aluminium hydroxide, omeprazole), anti-diarrhoeals (loperamide, ORS), and antihistamines (cetirizine, loratadine). Each category carries specific safety concerns that a pharmacy technician must understand." },
         {
           type: "table",
           caption: "Common OTC Categories in Caribbean Pharmacies",
@@ -1373,6 +1664,7 @@ const module8: Module = {
           ],
         },
         { type: "callout", variant: "warning", title: "Pseudoephedrine and Hypertension", body: "Pseudoephedrine (found in many cold/sinus products) raises blood pressure. In the Caribbean, where hypertension prevalence exceeds 30%, always ask OTC cold remedy buyers whether they have high blood pressure. Suggest non-decongestant alternatives (saline spray, steam inhalation, antihistamines) for hypertensive patients." },
+        { type: "callout", variant: "tip", title: "Aspirin and Children: The Reye's Syndrome Risk", body: "Aspirin should NEVER be given to children under 16 years of age (except in specific circumstances like Kawasaki disease) due to the risk of Reye's syndrome — a rare but potentially fatal condition causing liver and brain damage. In Caribbean pharmacies, always recommend paracetamol or ibuprofen (where appropriate) for fever and pain in children. If a parent requests aspirin for a child, explain the Reye's syndrome risk and suggest safer alternatives." },
         { type: "knowledge-check", question: "A patient with known hypertension asks for a pseudoephedrine-containing decongestant. What should you recommend?", options: ["Dispense it — OTC products are safe for everyone", "Suggest a non-decongestant alternative and refer to the pharmacist, as pseudoephedrine can raise blood pressure", "Tell them to take double their blood pressure medication", "Recommend aspirin instead"], correctIndex: 1, explanation: "Pseudoephedrine is a sympathomimetic that raises blood pressure. Hypertensive patients should avoid it. Alternatives include saline nasal sprays, steam inhalation, and antihistamines for allergy-related congestion." },
       ],
     },
@@ -1383,6 +1675,8 @@ const module8: Module = {
       content: [
         { type: "heading", level: 2, text: "Traditional Medicine Meets Modern Pharmacy" },
         { type: "text", body: "Herbal and traditional remedies are deeply woven into Caribbean healthcare culture. From soursop (graviola) tea in Trinidad to moringa (saijan) in Jamaica, noni juice in Barbados, and countless bush teas prepared by family elders, these remedies are used alongside — and sometimes instead of — prescription medications. A pharmacy technician who understands these remedies can provide safer, more culturally sensitive care." },
+        { type: "key-term", term: "Bush Tea", definition: "A Caribbean term for herbal teas brewed from locally grown plants, often prepared according to traditional family recipes passed down through generations. Common bush teas include fever grass (lemongrass), soursop leaf, shadon beni (culantro), and cerasee (bitter melon). Many patients use bush teas as primary or complementary medicine without disclosing this to their healthcare providers." },
+        { type: "text", body: "A 2018 survey in Trinidad and Tobago found that over 60% of patients used herbal remedies alongside their prescription medications, but fewer than 20% had discussed this with their pharmacist or doctor. This gap between actual use and healthcare provider awareness represents a significant patient safety concern — especially when herb-drug interactions are possible." },
         {
           type: "table",
           caption: "Popular Caribbean Herbal Remedies",
@@ -1397,6 +1691,7 @@ const module8: Module = {
           ],
         },
         { type: "callout", variant: "info", title: "Never Dismiss Traditional Medicine", body: "Dismissing bush tea or herbal remedies as 'not real medicine' is culturally insensitive and counterproductive. Instead, ask respectful questions about what the patient is taking, explain potential interactions without judgement, and document herbal use in the patient profile. Many patients will hide herbal use if they feel judged." },
+        { type: "text", body: "The key principle for pharmacy technicians is documentation and disclosure. When a patient mentions herbal remedy use, note it in the patient profile so the pharmacist can check for interactions. Encourage patients to bring their herbal products to the pharmacy for review. Some Caribbean pharmacies now include a 'herbal/traditional remedies' field on their patient intake forms — a simple but effective tool for improving safety." },
         { type: "knowledge-check", question: "A diabetic patient in Jamaica drinks moringa tea daily for 'sugar control' alongside metformin. What is the concern?", options: ["No concern — moringa has no effect on blood sugar", "Moringa may have blood sugar-lowering effects that could add to metformin's action, increasing hypoglycaemia risk", "Moringa blocks metformin absorption", "Moringa causes liver damage"], correctIndex: 1, explanation: "Moringa has documented blood glucose-lowering properties. Combined with metformin, this could potentiate hypoglycaemic effects. The patient should be counselled to monitor blood sugar more frequently and inform their doctor about their moringa use." },
       ],
     },
@@ -1407,6 +1702,8 @@ const module8: Module = {
       content: [
         { type: "heading", level: 2, text: "When Natural and Prescribed Don't Mix" },
         { type: "text", body: "Drug-herb interactions are a significant but underrecognised safety concern in the Caribbean. Patients often assume that 'natural' means safe and do not consider that herbal products can interact with prescription drugs. St. John's Wort, garlic supplements, ginkgo biloba, and even common foods like grapefruit can cause clinically significant interactions." },
+        { type: "key-term", term: "Pharmacovigilance of Herbal Products", definition: "The monitoring and assessment of the safety of herbal and traditional medicine products. Unlike prescription drugs, many herbal products are not standardised in dosage or composition, making interaction prediction difficult. Reporting suspected herb-drug adverse events helps build the evidence base for safer use." },
+        { type: "text", body: "The challenge in the Caribbean is that many herbal products are not standardised — a cup of bush tea brewed at home may vary dramatically in concentration from one preparation to the next. Commercially available supplements may also vary between manufacturers. This variability makes it difficult to predict the magnitude of a herb-drug interaction, but the potential for interaction should still be flagged whenever a patient discloses herbal use alongside prescription medications." },
         {
           type: "table",
           caption: "Clinically Significant Drug-Herb Interactions",
@@ -1434,6 +1731,7 @@ const module8: Module = {
             { id: "wrong", text: "Two weeks later, the patient is admitted to hospital with a GI bleed. The combined effect of warfarin, garlic, and turmeric contributed to excessive anticoagulation.", isEnd: true, outcome: "failure", summary: "Drug-herb interactions can have serious clinical consequences. Always flag potential interactions." },
           ],
         },
+        { type: "callout", variant: "tip", title: "A Simple Question That Saves Lives", body: "The most effective tool for identifying drug-herb interactions is simply asking: 'Are you taking any herbal remedies, bush teas, vitamins, or supplements alongside your medications?' This one question, asked consistently at every prescription counselling interaction, can uncover interactions that would otherwise remain hidden. Make it a habit — it costs nothing and can prevent serious harm." },
         { type: "knowledge-check", question: "St. John's Wort is dangerous when combined with oral contraceptives because it:", options: ["Causes nausea", "Induces CYP450 enzymes, reducing contraceptive hormone levels and risking unplanned pregnancy", "Blocks the hormones from binding to receptors", "Causes the contraceptive to be excreted faster by the kidneys"], correctIndex: 1, explanation: "St. John's Wort is a potent CYP450 inducer that accelerates metabolism of ethinylestradiol and progestogens, significantly reducing their blood levels and contraceptive effectiveness." },
       ],
     },
@@ -1444,6 +1742,8 @@ const module8: Module = {
       content: [
         { type: "heading", level: 2, text: "The Limits of OTC Treatment" },
         { type: "text", body: "Not every patient who approaches the OTC counter can be safely managed without a doctor. Pharmacy technicians must recognise 'red flag' symptoms that require medical referral. Knowing when to say 'I think you should see a doctor' is as important as knowing which OTC product to recommend." },
+        { type: "key-term", term: "Red Flag Symptoms", definition: "Signs or symptoms that suggest a serious underlying condition requiring medical evaluation rather than OTC self-treatment. Red flags include chest pain, unexplained weight loss, blood in bodily fluids, sudden severe headache, high persistent fever, and symptoms that worsen despite treatment." },
+        { type: "text", body: "In Caribbean pharmacy practice, the technician is often the first healthcare professional a patient consults. Many patients visit the pharmacy instead of a doctor due to cost, convenience, or clinic wait times. This places a particular responsibility on the pharmacy team to triage effectively — helping those who can be safely self-treated while identifying those who need medical referral." },
         {
           type: "list",
           ordered: false,
@@ -1459,6 +1759,7 @@ const module8: Module = {
           ],
         },
         { type: "callout", variant: "tip", title: "The 'WWHAM' Approach to OTC Counselling", body: "Use WWHAM to structure OTC consultations: Who is the patient? What are the symptoms? How long have they had symptoms? Action already taken? Medications currently taking? This framework ensures you gather enough information to recommend safely or refer appropriately." },
+        { type: "text", body: "Caribbean pharmacy technicians should err on the side of caution when triaging OTC requests. If there is any doubt about whether a patient's condition is appropriate for self-treatment, refer to the pharmacist. It is better to delay an OTC sale by a few minutes for professional advice than to dispense a product that masks a serious underlying condition. Building a reputation for safe, thoughtful OTC counselling strengthens patient trust in your pharmacy." },
         { type: "knowledge-check", question: "A customer asks for loperamide for diarrhoea that contains blood. What should you do?", options: ["Dispense loperamide — it stops diarrhoea", "Refer to the pharmacist or doctor — bloody diarrhoea is a red flag requiring medical assessment", "Recommend a stronger dose of loperamide", "Suggest they also take an antibiotic"], correctIndex: 1, explanation: "Bloody diarrhoea may indicate bacterial dysentery, inflammatory bowel disease, or other serious conditions. Loperamide is contraindicated in dysentery as it can worsen the infection by preventing pathogen clearance. Medical referral is essential." },
       ],
     },

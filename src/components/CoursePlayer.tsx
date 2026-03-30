@@ -1188,12 +1188,16 @@ function CertificateView({
   moduleCount,
   lessonCount,
   quizCount,
+  skillLevel,
+  durationWeeks,
 }: {
   onBack: () => void;
   courseTitle: string;
   moduleCount: number;
   lessonCount: number;
   quizCount: number;
+  skillLevel: string;
+  durationWeeks: number;
 }) {
   return (
     <div className="max-w-3xl mx-auto py-12">
@@ -1224,11 +1228,11 @@ function CertificateView({
 
           <div className="grid grid-cols-3 gap-4 max-w-md mx-auto my-8">
             <div>
-              <p className="text-2xl font-bold text-[hsl(174,62%,32%)]">6</p>
+              <p className="text-2xl font-bold text-[hsl(174,62%,32%)]">{durationWeeks}</p>
               <p className="text-xs text-slate-500" style={{ fontFamily: "'DM Sans', sans-serif" }}>Weeks</p>
             </div>
             <div>
-              <p className="text-2xl font-bold text-[hsl(174,62%,32%)]">Beginner</p>
+              <p className="text-2xl font-bold text-[hsl(174,62%,32%)]">{skillLevel}</p>
               <p className="text-xs text-slate-500" style={{ fontFamily: "'DM Sans', sans-serif" }}>Level</p>
             </div>
             <div>
@@ -1372,6 +1376,8 @@ function transformDbCourse(
     courseId: dbCourse.slug ?? dbCourse.id,
     title: dbCourse.title,
     tagline: dbCourse.description ?? "",
+    skillLevel: dbCourse.skill_level ?? "Beginner",
+    durationWeeks: dbCourse.duration_weeks ?? 6,
     modules,
   };
 }
@@ -1473,7 +1479,7 @@ export default function CoursePlayer({
         <div className="p-4">
           {/* Course header */}
           <button onClick={() => navigateTo({ page: "overview" })} className="text-left w-full group mb-4">
-            <Badge className="mb-2 bg-blue-50 text-blue-700 border-blue-200 text-[10px]">Beginner · 6 Weeks</Badge>
+            <Badge className="mb-2 bg-blue-50 text-blue-700 border-blue-200 text-[10px]">{course.skillLevel ?? "Beginner"} · {course.durationWeeks ?? 6} Weeks</Badge>
             <h3 className="text-sm font-bold text-[hsl(213,50%,16%)] group-hover:text-[hsl(174,62%,32%)] transition-colors leading-snug">
               {course.title}
             </h3>
@@ -1621,7 +1627,7 @@ export default function CoursePlayer({
       return (
         <div className="max-w-4xl mx-auto py-8 px-6">
           <div className="mb-8">
-            <Badge className="mb-3 bg-blue-50 text-blue-700 border-blue-200">Beginner · 6 Weeks · 8 Modules</Badge>
+            <Badge className="mb-3 bg-blue-50 text-blue-700 border-blue-200">{course.skillLevel ?? "Beginner"} · {course.durationWeeks ?? 6} Weeks · {course.modules.length} Modules</Badge>
             <h1 className="text-3xl font-bold text-[hsl(213,50%,16%)] mb-3">{course.title}</h1>
             <p className="text-lg text-slate-600 leading-relaxed" style={{ fontFamily: "'DM Sans', sans-serif" }}>
               {course.tagline}
@@ -1922,6 +1928,8 @@ export default function CoursePlayer({
           moduleCount={course.modules.length}
           lessonCount={totalLessons}
           quizCount={totalQuizQuestions}
+          skillLevel={course.skillLevel ?? "Beginner"}
+          durationWeeks={course.durationWeeks ?? 6}
         />
       );
     }

@@ -125,5 +125,7 @@ export interface FullCourse {
   courseId: string;
   title: string;
   tagline: string;
+  skillLevel?: string;
+  durationWeeks?: number;
   modules: Module[];
 }
