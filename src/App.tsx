@@ -19,10 +19,7 @@ import AdminDashboard from "@/components/AdminDashboard";
 import "./App.css";
 
 /* ─── Generated Images ─── */
-import heroImg from "@/assets/generated/hero.png";
 import aboutClassroomImg from "@/assets/generated/about-classroom.png";
-import courseDispensingImg from "@/assets/generated/course-dispensing.png";
-import courseAiImg from "@/assets/generated/course-ai.png";
 import caribbeanAerialImg from "@/assets/generated/caribbean-aerial.png";
 // logo-concept.png available at @/assets/generated/logo-concept.png
 
@@ -112,12 +109,6 @@ const colorMap: Record<string, string> = {
   pink: "bg-pink-50 text-pink-700 border-pink-200",
   slate: "bg-slate-50 text-slate-700 border-slate-200",
   sky: "bg-sky-50 text-sky-700 border-sky-200",
-};
-
-/* ─── Course Image Mapping ─── */
-const courseImages: Record<string, string> = {
-  "foundations-pharmacy-practice": courseDispensingImg,
-  "ai-in-pharmacy-practice": courseAiImg,
 };
 
 const iconBgMap: Record<string, string> = {
@@ -387,9 +378,6 @@ function Hero() {
               <Button size="lg" className="bg-white text-[hsl(213,50%,16%)] hover:bg-white/90 font-semibold shadow-lg shadow-black/10 h-12 px-7">
                 Start Free Trial
               </Button>
-              <Button size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10 h-12 px-7">
-                View Courses
-              </Button>
             </div>
             <div className="mt-10 flex items-center gap-6 text-white/60 text-sm" style={{ fontFamily: "'DM Sans', sans-serif" }}>
               <span className="flex items-center gap-2">
@@ -404,37 +392,6 @@ function Hero() {
                 <svg viewBox="0 0 20 20" className="w-4 h-4 fill-[hsl(174,70%,70%)]"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" /></svg>
                 AI-Enhanced
               </span>
-            </div>
-          </div>
-          {/* Hero visual — pharmacy image */}
-          <div className="hidden lg:flex justify-center">
-            <div className="relative w-[480px]">
-              <img
-                src={heroImg}
-                alt="Caribbean pharmacy professionals"
-                className="rounded-2xl shadow-2xl shadow-black/20 border border-white/10 w-full"
-              />
-              {/* Floating notification */}
-              <div className="absolute -right-4 top-8 bg-white rounded-xl shadow-2xl px-4 py-3 flex items-center gap-3 animate-pulse">
-                <div className="w-8 h-8 bg-emerald-100 rounded-full flex items-center justify-center text-emerald-600 text-sm">
-                  ✓
-                </div>
-                <div>
-                  <div className="text-xs font-semibold text-slate-800">Module Complete!</div>
-                  <div className="text-[10px] text-slate-500">Pharmaceutical Calculations</div>
-                </div>
-              </div>
-              {/* Floating badge */}
-              <div className="absolute -left-4 bottom-12 bg-white rounded-xl shadow-2xl px-4 py-3">
-                <div className="text-[10px] text-slate-500 mb-1">Next Milestone</div>
-                <div className="text-xs font-semibold text-slate-800">CARICOM Certification Ready</div>
-                <div className="flex mt-2 -space-x-1">
-                  {["bg-teal-400", "bg-blue-400", "bg-violet-400", "bg-rose-400"].map((c, i) => (
-                    <div key={i} className={`w-5 h-5 rounded-full ${c} border-2 border-white`} />
-                  ))}
-                  <div className="w-5 h-5 rounded-full bg-slate-200 border-2 border-white flex items-center justify-center text-[8px] text-slate-600">+5</div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -839,15 +796,6 @@ function Courses({ onStartCourse }: { onStartCourse?: (courseId: string) => void
                 className="group hover:shadow-lg transition-all duration-300 cursor-pointer border-slate-200/80 hover:border-[hsl(174,62%,32%)]/30 bg-white"
                 onClick={() => setSelectedCourse(course)}
               >
-                {courseImages[course.id] && (
-                  <div className="overflow-hidden rounded-t-lg -mx-[1px] -mt-[1px]">
-                    <img
-                      src={courseImages[course.id]}
-                      alt={course.title}
-                      className="w-full h-32 object-cover group-hover:scale-105 transition-transform duration-300"
-                    />
-                  </div>
-                )}
                 <CardHeader className="pb-3">
                   <div className={`w-11 h-11 rounded-lg flex items-center justify-center mb-3 ${iconBgMap[course.color]}`}>
                     <IconComp />
