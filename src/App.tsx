@@ -424,7 +424,7 @@ function Hero() {
                   <div key={item.level} className="space-y-2">
                     <div className="flex items-center justify-between text-xs">
                       <span className="text-white/70 font-medium">{item.level}</span>
-                      <span className="text-white/40">{item.courses} courses</span>
+                      <span className="text-white/40">{item.courses} {item.courses === 1 ? "course" : "courses"}</span>
                     </div>
                     <div className="h-2 bg-white/[0.06] rounded-full overflow-hidden">
                       {item.progress > 0 && (
