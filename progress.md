@@ -2,6 +2,42 @@
 
 ---
 
+## 2026-03-30: CoursePlayer Supabase-Only + Dynamic Badges — DEPLOYED
+
+### Architecture Change: CoursePlayer now 100% Supabase-powered
+- **Before**: CoursePlayer loaded from static TypeScript course files with Supabase as fallback
+- **After**: CoursePlayer fetches ALL content exclusively from Supabase via `fetchCourseBySlug()`
+- No static course file imports remain in the player path
+- `transformDbCourse()` maps Supabase snake_case format to TypeScript FullCourse format
+
+### Dynamic Badges (3 locations fixed)
+- Overview header badge: `{skillLevel} · {durationWeeks} Weeks · {modules.length} Modules`
+- Sidebar badge: `{skillLevel} · {durationWeeks} Weeks`
+- Certificate section: `{durationWeeks}` and `{skillLevel}` from Supabase data
+- Added `skillLevel` and `durationWeeks` to `FullCourse` interface in `types.ts`
+- Updated `CertificateView` component props
+
+### Supabase Data (verified)
+- 13 courses, 90 modules, 334 lessons, 833 quiz questions
+- All synced via `scripts/sync-lessons-to-supabase.ts`
+
+### Live Site Verification (pixopharm-lms.vercel.app)
+- Foundations (Beginner, 6 weeks): 8 modules, 28 lessons, 43 quizzes ✓
+- Pharmacology (Intermediate, 10 weeks): 8 modules, 34 lessons, 80 quizzes ✓
+- Caribbean Island (Regional, 4 weeks): 4 modules, 23 lessons, 40 quizzes ✓
+- Lesson content renders: headings, paragraphs, callouts, key terms, video placeholders ✓
+- Zero console errors ✓
+
+### Stale Vercel Deploy Fix
+- Previous git push auto-deploy silently failed; deployed bundle was missing `fetchCourseBySlug`
+- Fixed with manual `npx vercel --prod` — confirmed by comparing bundle hash
+
+### Commits
+- `fcc19a9` — Switch CoursePlayer to Supabase-only
+- `3d482c8` — Make CoursePlayer badges dynamic
+
+---
+
 ## 2026-03-28: Content Block Editor Bug Fix — DEPLOYED
 
 ### Bug Fixed: Editing any block always showed heading form

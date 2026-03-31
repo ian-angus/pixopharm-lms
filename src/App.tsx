@@ -394,6 +394,97 @@ function Hero() {
               </span>
             </div>
           </div>
+
+          {/* Hero right — platform preview */}
+          <div className="hidden lg:block">
+            <div className="relative">
+              {/* Main card — course progress mockup */}
+              <div className="bg-white/[0.07] backdrop-blur-sm border border-white/[0.12] rounded-2xl p-6 space-y-5">
+                {/* Header */}
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 rounded-xl bg-[hsl(174,60%,45%)]/20 flex items-center justify-center">
+                      <svg viewBox="0 0 24 24" className="w-5 h-5 text-[hsl(174,70%,70%)]" fill="none" stroke="currentColor" strokeWidth={2}><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg>
+                    </div>
+                    <div>
+                      <div className="text-white/90 text-sm font-semibold">Your Learning Path</div>
+                      <div className="text-white/40 text-xs">4 levels &middot; 13 courses</div>
+                    </div>
+                  </div>
+                  <div className="text-[hsl(174,70%,70%)] text-xs font-medium bg-[hsl(174,60%,45%)]/10 px-2.5 py-1 rounded-full border border-[hsl(174,60%,45%)]/20">Active</div>
+                </div>
+
+                {/* Progress bars for levels */}
+                {[
+                  { level: "Beginner", courses: 3, color: "hsl(174,60%,45%)", progress: 65 },
+                  { level: "Intermediate", courses: 6, color: "hsl(199,80%,55%)", progress: 30 },
+                  { level: "Advanced", courses: 3, color: "hsl(262,60%,60%)", progress: 0 },
+                  { level: "Regional", courses: 1, color: "hsl(40,85%,55%)", progress: 0 },
+                ].map((item) => (
+                  <div key={item.level} className="space-y-2">
+                    <div className="flex items-center justify-between text-xs">
+                      <span className="text-white/70 font-medium">{item.level}</span>
+                      <span className="text-white/40">{item.courses} courses</span>
+                    </div>
+                    <div className="h-2 bg-white/[0.06] rounded-full overflow-hidden">
+                      {item.progress > 0 && (
+                        <div
+                          className="h-full rounded-full transition-all duration-1000"
+                          style={{ width: `${item.progress}%`, backgroundColor: item.color }}
+                        />
+                      )}
+                    </div>
+                  </div>
+                ))}
+
+                {/* Divider */}
+                <div className="border-t border-white/[0.08]" />
+
+                {/* Stats row */}
+                <div className="grid grid-cols-3 gap-4">
+                  <div className="text-center">
+                    <div className="text-2xl font-bold text-white/90">90</div>
+                    <div className="text-[10px] text-white/40 mt-0.5">Modules</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-2xl font-bold text-[hsl(174,70%,70%)]">833</div>
+                    <div className="text-[10px] text-white/40 mt-0.5">Quiz Questions</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-2xl font-bold text-white/90">15</div>
+                    <div className="text-[10px] text-white/40 mt-0.5">Islands</div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Floating card — top right */}
+              <div className="absolute -top-4 -right-4 bg-white rounded-xl shadow-2xl shadow-black/20 px-4 py-3 flex items-center gap-3">
+                <div className="w-8 h-8 bg-emerald-100 rounded-full flex items-center justify-center text-emerald-600 text-sm font-bold">
+                  A+
+                </div>
+                <div>
+                  <div className="text-[11px] font-semibold text-slate-800">Quiz Passed</div>
+                  <div className="text-[10px] text-slate-500">Pharmacology Module 2</div>
+                </div>
+              </div>
+
+              {/* Floating card — bottom left */}
+              <div className="absolute -bottom-3 -left-4 bg-white rounded-xl shadow-2xl shadow-black/20 px-4 py-3">
+                <div className="flex items-center gap-2">
+                  <div className="flex -space-x-1.5">
+                    <span className="text-base">🇹🇹</span>
+                    <span className="text-base">🇯🇲</span>
+                    <span className="text-base">🇧🇧</span>
+                    <span className="text-base">🇬🇩</span>
+                  </div>
+                  <div className="ml-1">
+                    <div className="text-[11px] font-semibold text-slate-800">Island Coverage</div>
+                    <div className="text-[10px] text-slate-500">4 regulatory frameworks</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
