@@ -16,6 +16,7 @@ import AuthModal from "@/components/AuthModal";
 import { useAuth } from "@/hooks/useAuth";
 import { useAdmin } from "@/hooks/useAdmin";
 import AdminDashboard from "@/components/AdminDashboard";
+import DebugPanel from "@/components/DebugPanel";
 import "./App.css";
 
 /* ─── Generated Images ─── */
@@ -1450,8 +1451,15 @@ function App() {
   const { user, loading, signIn, signUp, signOut } = useAuth();
   const { isAdmin } = useAdmin(user);
 
+  // Production debug: ?debug=slug shows step-by-step Supabase query diagnostics
+  const urlParams = new URLSearchParams(window.location.search);
+  const urlDebug = urlParams.get("debug");
+  if (urlDebug) {
+    return <DebugPanel slug={urlDebug} />;
+  }
+
   // Test backdoor: ?preview=slug opens CoursePlayer directly (for Playwright testing)
-  const urlPreview = new URLSearchParams(window.location.search).get("preview");
+  const urlPreview = urlParams.get("preview");
   if (urlPreview) {
     return <CoursePlayer user={user} onExit={() => { window.history.replaceState({}, "", "/"); window.location.reload(); }} courseId={urlPreview} />;
   }
