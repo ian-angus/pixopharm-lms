@@ -1450,6 +1450,12 @@ function App() {
   const { user, loading, signIn, signUp, signOut } = useAuth();
   const { isAdmin } = useAdmin(user);
 
+  // Test backdoor: ?preview=slug opens CoursePlayer directly (for Playwright testing)
+  const urlPreview = new URLSearchParams(window.location.search).get("preview");
+  if (urlPreview) {
+    return <CoursePlayer user={user} onExit={() => { window.history.replaceState({}, "", "/"); window.location.reload(); }} courseId={urlPreview} />;
+  }
+
   // If admin dashboard is active, show it
   if (showAdmin && user && isAdmin) {
     return <AdminDashboard user={user} onExit={() => setShowAdmin(false)} />;

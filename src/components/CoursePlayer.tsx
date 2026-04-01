@@ -1400,11 +1400,13 @@ export default function CoursePlayer({
   // Load course from Supabase
   const [dynamicCourse, setDynamicCourse] = useState<FullCourse | null>(null);
   const [courseLoading, setCourseLoading] = useState(true);
+  const [courseError, setCourseError] = useState<string | null>(null);
 
   useEffect(() => {
     const slug = courseId ?? "foundations-pharmacy-practice";
     let cancelled = false;
     setCourseLoading(true);
+    setCourseError(null);
 
     fetchCourseBySlug(slug).then((data) => {
       if (cancelled) return;
@@ -1413,6 +1415,7 @@ export default function CoursePlayer({
     }).catch((err) => {
       if (cancelled) return;
       console.error("Failed to load course from Supabase:", err);
+      setCourseError(err instanceof Error ? err.message : String(err));
       setCourseLoading(false);
     });
 
@@ -1425,10 +1428,27 @@ export default function CoursePlayer({
   const { completion, loaded, markLessonComplete, saveQuizScore } = useProgress(user, progressSlug);
 
   // Wait for course + progress to load
-  if (courseLoading || !loaded || !course) {
+  if (courseLoading || (!courseError && !loaded)) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-slate-50">
         <p className="text-slate-500">Loading course...</p>
+      </div>
+    );
+  }
+
+  if (courseError || !course) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-slate-50">
+        <div className="text-center max-w-md">
+          <p className="text-red-600 font-medium mb-2">Failed to load course</p>
+          <p className="text-slate-500 text-sm mb-4">{courseError ?? `Course "${courseId}" not found`}</p>
+          <button
+            onClick={onExit}
+            className="px-4 py-2 bg-slate-200 hover:bg-slate-300 rounded-md text-sm text-slate-700"
+          >
+            Go Back
+          </button>
+        </div>
       </div>
     );
   }
