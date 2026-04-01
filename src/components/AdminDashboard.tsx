@@ -50,6 +50,9 @@ import {
 import { Skeleton } from "@/components/ui/skeleton";
 import { useToast } from "@/hooks/use-toast";
 
+// ── Tutorial ─────────────────────────────────────────────────────────────────
+import AdminTutorial from "@/components/AdminTutorial";
+
 // ── Admin API ────────────────────────────────────────────────────────────────
 import { useAdmin } from "@/hooks/useAdmin";
 import type { AdminProfile } from "@/hooks/useAdmin";
@@ -105,7 +108,7 @@ interface AdminDashboardProps {
   onExit: () => void;
 }
 
-type AdminPage = "dashboard" | "courses" | "students" | "analytics" | "settings";
+type AdminPage = "dashboard" | "courses" | "students" | "analytics" | "settings" | "help";
 
 // ============================================================================
 // SVG ICONS (inline to avoid Lucide dependency bloat)
@@ -215,6 +218,9 @@ function IconLogOut() {
       <line x1="21" y1="12" x2="9" y2="12" />
     </svg>
   );
+}
+function IconHelp() {
+  return <svg viewBox="0 0 24 24" className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10" /><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3" /><line x1="12" y1="17" x2="12.01" y2="17" /></svg>;
 }
 function IconAward() {
   return (
@@ -1006,6 +1012,7 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
             { id: "students" as AdminPage, label: "Students", icon: <IconStudents /> },
             { id: "analytics" as AdminPage, label: "Analytics", icon: <IconAnalytics /> },
             { id: "settings" as AdminPage, label: "Settings", icon: <IconSettings /> },
+            { id: "help" as AdminPage, label: "Help & Guide", icon: <IconHelp /> },
           ]).map((item) => (
             <button
               key={item.id}
@@ -1671,6 +1678,13 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
                 </CardContent>
               </Card>
             </div>
+          )}
+
+          {/* ════════════════════════════════════════════════════════════════ */}
+          {/* F. HELP & GUIDE                                                */}
+          {/* ════════════════════════════════════════════════════════════════ */}
+          {activePage === "help" && (
+            <AdminTutorial />
           )}
         </main>
       </div>
