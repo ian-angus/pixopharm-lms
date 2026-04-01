@@ -1,0 +1,113 @@
+{
+  "id": "8ed3781e-f2ea-4a41-bdd3-d4129bef66db",
+  "module_id": "3222ebc2-0078-4915-a18c-97e78b0bcad5",
+  "title": "The Endocrine System: Glands, Hormones & Feedback Loops",
+  "content": [
+    {
+      "text": "The Endocrine System: Chemical Messengers",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "The endocrine system is a network of glands that produce, store, and secrete hormones — chemical messengers that travel through the bloodstream to regulate virtually every bodily function, from metabolism and growth to reproduction and mood. Unlike the nervous system, which sends rapid electrical signals, the endocrine system communicates through slower but longer-lasting hormonal signals. The two systems work together to maintain homeostasis.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Hypothalamus",
+          "Base of brain",
+          "Releasing and inhibiting hormones",
+          "Master regulator — controls pituitary gland"
+        ],
+        [
+          "Pituitary (anterior)",
+          "Below hypothalamus",
+          "TSH, ACTH, GH, FSH, LH, prolactin",
+          "Stimulates other endocrine glands; 'master gland'"
+        ],
+        [
+          "Pituitary (posterior)",
+          "Below hypothalamus",
+          "ADH (vasopressin), oxytocin",
+          "Water balance (ADH); uterine contraction and milk ejection (oxytocin)"
+        ],
+        [
+          "Thyroid",
+          "Anterior neck",
+          "T3, T4 (thyroxine), calcitonin",
+          "Metabolic rate regulation; calcium homeostasis"
+        ],
+        [
+          "Parathyroids",
+          "Behind thyroid (4 small glands)",
+          "Parathyroid hormone (PTH)",
+          "Raises blood calcium levels"
+        ],
+        [
+          "Adrenal cortex",
+          "Above kidneys",
+          "Cortisol, aldosterone, androgens",
+          "Stress response; fluid/electrolyte balance; secondary sex hormones"
+        ],
+        [
+          "Adrenal medulla",
+          "Centre of adrenal glands",
+          "Adrenaline (epinephrine), noradrenaline",
+          "Fight-or-flight response"
+        ],
+        [
+          "Pancreas (islets of Langerhans)",
+          "Behind stomach",
+          "Insulin (beta cells), glucagon (alpha cells)",
+          "Blood glucose regulation — critical for diabetes management"
+        ],
+        [
+          "Ovaries",
+          "Female pelvis",
+          "Oestrogen, progesterone",
+          "Female reproductive function; menstrual cycle"
+        ],
+        [
+          "Testes",
+          "Male scrotum",
+          "Testosterone",
+          "Male reproductive function; muscle mass"
+        ]
+      ],
+      "type": "table",
+      "caption": "Major Endocrine Glands and Their Hormones",
+      "headers": [
+        "Gland",
+        "Location",
+        "Key Hormones",
+        "Function"
+      ]
+    },
+    {
+      "term": "Negative Feedback Loop",
+      "type": "key-term",
+      "definition": "The primary mechanism by which the endocrine system maintains homeostasis. When a hormone reaches a sufficient level, it signals the gland to stop producing more. For example, when thyroid hormones (T3/T4) rise to adequate levels, the hypothalamus and pituitary reduce TSH secretion, which in turn reduces thyroid hormone production. This self-regulating cycle prevents hormonal excess. Disruption of negative feedback causes endocrine disorders such as hyperthyroidism or Cushing syndrome."
+    },
+    {
+      "body": "Thyroid disorders, particularly hypothyroidism, are commonly encountered in Caribbean pharmacies. Levothyroxine (synthetic T4) is a high-volume dispensing item. Pharmacy technicians should know that levothyroxine has a narrow therapeutic index, meaning small dose changes can have significant clinical effects. It should be taken on an empty stomach, 30-60 minutes before breakfast, and kept away from calcium, iron, and antacids which reduce absorption.",
+      "type": "callout",
+      "title": "The Thyroid in Caribbean Practice",
+      "variant": "info"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Hypothalamus",
+        "Pituitary gland",
+        "Thyroid gland",
+        "Adrenal gland"
+      ],
+      "question": "Which gland is often called the 'master gland' because it controls the function of many other endocrine glands?",
+      "explanation": "The pituitary gland (particularly the anterior pituitary) is called the 'master gland' because it secretes hormones (TSH, ACTH, GH, FSH, LH) that stimulate and regulate other endocrine glands. However, the pituitary itself is controlled by the hypothalamus, which is sometimes called the 'master of the master gland'.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 15
+}

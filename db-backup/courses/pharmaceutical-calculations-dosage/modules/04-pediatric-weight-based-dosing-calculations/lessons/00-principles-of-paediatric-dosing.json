@@ -1,0 +1,102 @@
+{
+  "id": "50a55ab5-e7eb-4455-a62e-59ae4bacb3c2",
+  "module_id": "026af364-0a48-4e14-b54f-e7a0e6483591",
+  "title": "Principles of Paediatric Dosing",
+  "content": [
+    {
+      "text": "Why Children Need Special Dosing",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Paediatric patients have fundamentally different pharmacokinetics compared to adults. Their immature liver and kidney function, higher percentage of body water, lower protein binding, and rapidly changing body weight mean that adult doses simply scaled down would be dangerous. In the Caribbean, where infectious diseases, asthma, and febrile illnesses are leading reasons for paediatric pharmacy visits, accurate weight-based dosing is a daily critical skill.",
+      "type": "text"
+    },
+    {
+      "term": "mg/kg/dose",
+      "type": "key-term",
+      "definition": "The standard expression for weight-based dosing, meaning milligrams of drug per kilogram of body weight per single dose. For example, paracetamol 15 mg/kg/dose means a 20 kg child receives 15 × 20 = 300 mg per dose. This is different from mg/kg/day, which is the total daily dose divided across all administrations."
+    },
+    {
+      "text": "Age-Based Weight Estimates",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "While actual weight should always be used when available, there are times — particularly in emergency situations — when weight must be estimated. The APLS (Advanced Paediatric Life Support) formula provides a quick estimate: Weight (kg) = (Age in years + 4) × 2 for ages 1-5, or (Age in years × 3) + 7 for ages 6-12. These are estimates only — always weigh the child when possible.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Neonate",
+          "0-28 days",
+          "2.5-4.5 kg",
+          "Immature liver/kidneys; doses highly weight-specific"
+        ],
+        [
+          "Infant",
+          "1-12 months",
+          "4-10 kg",
+          "Rapid growth; reweigh frequently"
+        ],
+        [
+          "Toddler",
+          "1-3 years",
+          "10-15 kg",
+          "Liquid formulations essential; taste matters for adherence"
+        ],
+        [
+          "Pre-school",
+          "3-5 years",
+          "15-20 kg",
+          "May start accepting chewable tablets"
+        ],
+        [
+          "School-age",
+          "6-12 years",
+          "20-40 kg",
+          "Some can swallow small tablets/capsules"
+        ],
+        [
+          "Adolescent",
+          "12-18 years",
+          "40-70 kg",
+          "May use adult doses for some medications"
+        ]
+      ],
+      "type": "table",
+      "caption": "Paediatric Age Groups and Typical Weights",
+      "headers": [
+        "Age Group",
+        "Age Range",
+        "Typical Weight Range",
+        "Key Dosing Consideration"
+      ]
+    },
+    {
+      "body": "Even when a weight-based calculation produces a dose that exceeds the normal adult dose, the paediatric dose should generally be CAPPED at the adult maximum. Example: A 60 kg teenager prescribed amoxicillin at 50 mg/kg/day = 3000 mg/day. The normal adult maximum is 3 g/day, so this dose is at the limit. For an 80 kg teenager, 50 mg/kg = 4000 mg — this exceeds the usual adult max and should be capped at 3 g/day unless the prescriber specifies otherwise for a severe infection.",
+      "type": "callout",
+      "title": "Never Exceed the Adult Maximum Dose",
+      "variant": "danger"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "100 mg",
+        "120 mg",
+        "140 mg",
+        "420 mg"
+      ],
+      "question": "A 3-year-old child weighing 14 kg needs ibuprofen at a dose of 10 mg/kg/dose, three times daily. What is the dose per administration?",
+      "explanation": "Dose = 10 mg/kg × 14 kg = 140 mg per dose. The total daily dose = 140 × 3 = 420 mg. Using ibuprofen 100 mg/5 mL: volume per dose = (140/100) × 5 = 7 mL. This is within the safe paediatric range for a 14 kg child.",
+      "correctIndex": 2
+    },
+    {
+      "body": "In Caribbean paediatric practice, the most commonly calculated weight-based doses are for paracetamol (15 mg/kg/dose), ibuprofen (5-10 mg/kg/dose), amoxicillin (25-50 mg/kg/day), and oral rehydration salts (for the frequent gastroenteritis presentations in tropical climates). Master these calculations and you will handle the majority of paediatric prescriptions with confidence.",
+      "type": "text"
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 25
+}

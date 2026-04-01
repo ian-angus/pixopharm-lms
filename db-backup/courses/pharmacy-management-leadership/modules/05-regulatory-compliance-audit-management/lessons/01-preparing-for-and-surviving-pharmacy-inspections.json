@@ -1,0 +1,101 @@
+{
+  "id": "8581ad51-ec49-4677-a92f-59a4b14982de",
+  "module_id": "94dfa46a-cb95-4f47-8ba2-3ecf482dbc13",
+  "title": "Preparing for and Surviving Pharmacy Inspections",
+  "content": [
+    {
+      "text": "Inspection Readiness: Be Prepared Every Day",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "The best way to prepare for a pharmacy inspection is to operate every day as if the inspector will arrive tomorrow. This is not paranoia — it is professional practice. In the Caribbean, pharmacy inspections can be announced (scheduled in advance) or unannounced (triggered by a complaint, routine surveillance, or random selection). A pharmacy that scrambles to 'clean up' before an inspection likely has systemic compliance gaps that put patients at risk daily.",
+      "type": "text"
+    },
+    {
+      "text": "What Inspectors Look For",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "rows": [
+        [
+          "Premises & Storage",
+          "Temperature control, cleanliness, adequate space, separate storage for controlled substances, cold chain integrity",
+          "No temperature monitoring logs, refrigerator without thermometer, controlled substance cabinet not locked"
+        ],
+        [
+          "Dispensing Practices",
+          "Prescription records, labelling accuracy, pharmacist supervision, patient counselling",
+          "Incomplete prescription records, labels missing required information, dispensing without pharmacist present"
+        ],
+        [
+          "Controlled Substances",
+          "DDR accuracy, stock-to-register reconciliation, storage security, expiry management",
+          "DDR discrepancies (stock does not match register), unsigned entries, expired controlled substances still in stock"
+        ],
+        [
+          "Staff Qualifications",
+          "Pharmacist registration current, technician training documentation, staff roles documented",
+          "Lapsed pharmacist registration, no documented training for technicians, unclear role delineation"
+        ],
+        [
+          "Documentation & Records",
+          "SOP manual, prescription records retention, temperature logs, equipment maintenance records",
+          "No written SOPs, gaps in temperature logs, prescription records not retained for the required period"
+        ]
+      ],
+      "type": "table",
+      "caption": "Common Pharmacy Inspection Focus Areas",
+      "headers": [
+        "Area",
+        "What They Check",
+        "Common Deficiencies Found"
+      ]
+    },
+    {
+      "body": "Conduct a monthly self-inspection using the same checklist that regulators use. Walk through your pharmacy as if you were the inspector. Check temperature logs, verify controlled substance counts against the DDR, review prescription records for completeness, confirm pharmacist registration is displayed and current. Fix any deficiency immediately. A monthly self-inspection takes 1–2 hours and can prevent catastrophic findings during an official inspection.",
+      "type": "callout",
+      "title": "The Self-Inspection Habit",
+      "variant": "tip"
+    },
+    {
+      "text": "During the Inspection",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "type": "list",
+      "items": [
+        "Welcome the inspector professionally — do not be defensive or hostile",
+        "Ask to see their identification and note the inspection reference number",
+        "Assign a senior staff member to accompany the inspector throughout the visit",
+        "Answer questions honestly — do not volunteer information beyond what is asked, but never lie or conceal",
+        "If the inspector identifies a deficiency, acknowledge it and ask for clarification on the required standard",
+        "Take notes on all findings — you will need them for your corrective action plan",
+        "After the inspection, obtain a copy of the inspection report and review it carefully",
+        "Implement corrective actions promptly and document everything you have done to address each finding"
+      ],
+      "ordered": true
+    },
+    {
+      "term": "Corrective and Preventive Action (CAPA)",
+      "type": "key-term",
+      "definition": "A systematic approach to identifying, correcting, and preventing the recurrence of quality or compliance problems. 'Corrective action' fixes the immediate issue. 'Preventive action' addresses the root cause to prevent recurrence. Regulators expect to see both when following up on inspection findings."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Explain that the pharmacy was closed for those three days",
+        "Fill in the missing entries with approximate temperatures before the inspector notices",
+        "Acknowledge the gap honestly, explain the cause, and describe the corrective measures you will implement to prevent future gaps",
+        "Tell the inspector the log is kept elsewhere and you will send it later"
+      ],
+      "question": "During a pharmacy inspection, the inspector finds that the temperature monitoring log has a 3-day gap from the previous week. What is the BEST response?",
+      "explanation": "Honesty is always the correct approach during an inspection. Acknowledge the gap, explain the root cause (staff absence, oversight, or system failure), and immediately describe the corrective action you will take — for example, implementing a daily checklist with sign-off, or assigning backup responsibility. Fabricating entries or making excuses can lead to more serious findings and loss of trust.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 25
+}

@@ -1,0 +1,161 @@
+{
+  "id": "86c0cd9c-ee98-4c95-bd13-2b5dd3682b05",
+  "module_id": "7eafe19e-77af-463c-a1e3-e9dcaada4e10",
+  "title": "What Is a Medication Error? Definitions, Classification & the NCC MERP Index",
+  "content": [
+    {
+      "text": "Defining Medication Errors",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "A medication error is any preventable event that may cause or lead to inappropriate medication use or patient harm while the medication is in the control of the healthcare professional, patient, or consumer. This definition, established by the National Coordinating Council for Medication Error Reporting and Prevention (NCC MERP), is deliberately broad — it encompasses errors at every stage, from prescribing to dispensing to administration, and includes near-misses where the error was caught before reaching the patient.",
+      "type": "text"
+    },
+    {
+      "term": "Medication Error",
+      "type": "key-term",
+      "definition": "Any preventable event that may cause or lead to inappropriate medication use or patient harm while the medication is in the control of a healthcare professional, patient, or consumer. The key word is 'preventable' — adverse drug reactions that occur despite correct use are not medication errors."
+    },
+    {
+      "body": "Understanding what constitutes a medication error requires careful distinction from related concepts. An adverse drug reaction (ADR) is harm caused by a drug at normal doses during normal use — this is not an error. An adverse drug event (ADE) is any harm associated with medication use, whether caused by an error or not. A medication error may or may not cause an ADE. A near-miss (or close call) is an error that was caught before it reached the patient. These distinctions matter because they determine how incidents are categorised, reported, and addressed.",
+      "type": "text"
+    },
+    {
+      "body": "The World Health Organisation estimates that medication errors cost US$42 billion globally each year. In the Caribbean, limited reporting infrastructure means the true extent of medication errors is likely significantly underestimated. Building robust reporting systems is a regional priority — and starts with every pharmacy technician understanding what constitutes an error.",
+      "type": "callout",
+      "title": "Caribbean Context",
+      "variant": "info"
+    },
+    {
+      "text": "Classifying Errors by Stage",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Medication errors can occur at any point in the medication use process. Each stage presents distinct risks, and the pharmacy technician's role intersects primarily with the dispensing, preparation, and storage stages — though awareness of all stages is essential for effective error prevention.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Prescribing",
+          "Wrong drug, wrong dose, drug interactions missed, illegible handwriting",
+          "Physician writes 'methotrexate daily' instead of 'methotrexate weekly'",
+          "Prescriber (physician, nurse practitioner)"
+        ],
+        [
+          "Transcribing",
+          "Misread prescription, data entry error, wrong patient record",
+          "Technician enters amLODIPine 10 mg but prescription reads 5 mg",
+          "Pharmacy technician, data entry staff"
+        ],
+        [
+          "Dispensing",
+          "Wrong drug selected, wrong strength, wrong quantity, wrong label",
+          "Technician picks losartan 50 mg instead of losartan 100 mg from the shelf",
+          "Pharmacy technician, pharmacist (final check)"
+        ],
+        [
+          "Administration",
+          "Wrong route, wrong time, wrong patient, missed dose",
+          "Nurse administers IV medication that was intended for oral use",
+          "Nurse, patient (self-administration)"
+        ],
+        [
+          "Monitoring",
+          "Failure to monitor drug levels, renal function, or therapeutic response",
+          "Patient on warfarin not tested for INR for three months",
+          "Pharmacist, physician"
+        ]
+      ],
+      "type": "table",
+      "caption": "Medication Error Types by Stage",
+      "headers": [
+        "Stage",
+        "Error Type",
+        "Example",
+        "Who Is Primarily Involved"
+      ]
+    },
+    {
+      "text": "The NCC MERP Severity Index",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "The NCC MERP Index categorises medication errors by severity of outcome on a scale from A to I. This standardised classification helps healthcare systems track and compare error data, prioritise interventions, and communicate risk effectively. Every pharmacy technician should be familiar with this index.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "A",
+          "Circumstances or events that have the capacity to cause error",
+          "No error reached the patient"
+        ],
+        [
+          "B",
+          "An error occurred but did not reach the patient (near-miss)",
+          "No harm"
+        ],
+        [
+          "C",
+          "An error reached the patient but caused no harm",
+          "No harm"
+        ],
+        [
+          "D",
+          "An error reached the patient, required monitoring to confirm no harm",
+          "Monitoring required"
+        ],
+        [
+          "E",
+          "An error that contributed to temporary harm requiring intervention",
+          "Temporary harm"
+        ],
+        [
+          "F",
+          "An error that contributed to temporary harm requiring hospitalisation",
+          "Hospitalisation"
+        ],
+        [
+          "G",
+          "An error that contributed to permanent patient harm",
+          "Permanent harm"
+        ],
+        [
+          "H",
+          "An error that required intervention to sustain life",
+          "Life-threatening"
+        ],
+        [
+          "I",
+          "An error that contributed to or resulted in the patient's death",
+          "Death"
+        ]
+      ],
+      "type": "table",
+      "caption": "NCC MERP Medication Error Severity Index",
+      "headers": [
+        "Category",
+        "Description",
+        "Patient Outcome"
+      ]
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Category A — capacity to cause error",
+        "Category B — error occurred but did not reach the patient",
+        "Category C — error reached the patient but caused no harm",
+        "Category D — error reached the patient, monitoring required"
+      ],
+      "question": "A pharmacy technician catches a wrong-strength error during the labelling step before the medication reaches the pharmacist for final check. What NCC MERP category is this?",
+      "explanation": "This is a Category B near-miss. The error occurred (wrong strength was selected) but was caught before the medication reached the patient. Near-misses are extremely valuable learning opportunities and should always be reported — they reveal system weaknesses without patient harm.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 30
+}

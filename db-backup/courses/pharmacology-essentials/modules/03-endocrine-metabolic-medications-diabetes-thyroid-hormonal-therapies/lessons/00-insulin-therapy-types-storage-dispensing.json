@@ -1,0 +1,98 @@
+{
+  "id": "740404cc-d3e5-465c-a1a5-0434395d779e",
+  "module_id": "5f319f26-d171-487f-81fd-34146941df05",
+  "title": "Insulin Therapy: Types, Storage & Dispensing",
+  "content": [
+    {
+      "text": "Understanding Insulin in Caribbean Practice",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Insulin is a life-saving hormone replacement for patients with type 1 diabetes and many patients with advanced type 2 diabetes. In the Caribbean, where diabetes prevalence is among the highest in the Americas, pharmacy technicians dispense insulin daily. Understanding insulin types, storage requirements, and patient counselling points is essential.",
+      "type": "text"
+    },
+    {
+      "body": "The Caribbean has one of the highest diabetes burdens in the Americas. The International Diabetes Federation estimates that nearly 15% of adults in Trinidad and Tobago have diabetes, with similarly high rates across Barbados, Jamaica, and the Eastern Caribbean. Insulin therapy is essential for all type 1 diabetic patients and is increasingly required for type 2 patients as the disease progresses. The pharmacy technician's role in proper insulin dispensing, storage education, and injection technique counselling is critical to patient outcomes.",
+      "type": "text"
+    },
+    {
+      "term": "Insulin",
+      "type": "key-term",
+      "definition": "A peptide hormone produced by the beta cells of the pancreatic islets of Langerhans. It promotes cellular uptake of glucose, lowering blood sugar. In diabetes, either no insulin is produced (type 1) or cells become resistant to it (type 2). Exogenous insulin is administered by subcutaneous injection or insulin pump."
+    },
+    {
+      "rows": [
+        [
+          "Rapid-acting",
+          "Insulin lispro (Humalog), aspart (NovoRapid)",
+          "10-20 min",
+          "1-3 hours",
+          "3-5 hours"
+        ],
+        [
+          "Short-acting",
+          "Regular insulin (Humulin R, Actrapid)",
+          "30-60 min",
+          "2-4 hours",
+          "5-8 hours"
+        ],
+        [
+          "Intermediate-acting",
+          "NPH insulin (Humulin N, Insulatard)",
+          "1-3 hours",
+          "4-12 hours",
+          "12-18 hours"
+        ],
+        [
+          "Long-acting",
+          "Insulin glargine (Lantus), detemir (Levemir)",
+          "1-2 hours",
+          "No pronounced peak",
+          "18-24+ hours"
+        ],
+        [
+          "Pre-mixed",
+          "70/30 (NPH/Regular)",
+          "30-60 min",
+          "Dual peaks",
+          "12-18 hours"
+        ]
+      ],
+      "type": "table",
+      "caption": "Insulin Types: Onset, Peak, and Duration",
+      "headers": [
+        "Category",
+        "Example",
+        "Onset",
+        "Peak",
+        "Duration"
+      ]
+    },
+    {
+      "body": "Insulin MUST be stored at 2-8°C (refrigerator) until opened. Once in use, most insulin pens/vials can be kept at room temperature (below 30°C) for 28 days. In the Caribbean's tropical heat, 'room temperature' can easily exceed 30°C. Counsel patients to NEVER leave insulin in a car, in direct sunlight, or near a window. A cool bag with ice packs is recommended for transport.",
+      "type": "callout",
+      "title": "Cold Chain Management in Tropical Climates",
+      "variant": "danger"
+    },
+    {
+      "term": "Hypoglycaemia",
+      "type": "key-term",
+      "definition": "Abnormally low blood glucose (typically below 4 mmol/L or 70 mg/dL). Symptoms include sweating, trembling, confusion, and in severe cases, loss of consciousness. Insulin-using patients must be counselled on recognising and treating hypoglycaemia with fast-acting carbohydrates."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "It is fine — insulin is not affected by heat",
+        "The insulin may have lost potency if exposed to temperatures above 30°C for a prolonged period and should be replaced",
+        "Put it in the freezer for 30 minutes to cool it down",
+        "Shake the pen vigorously to reactivate the insulin"
+      ],
+      "question": "A patient in Trinidad brings their insulin to the pharmacy counter on a hot day. The insulin pen feels warm to the touch. What should you advise?",
+      "explanation": "Insulin degrades when exposed to temperatures above 30°C. In tropical Caribbean conditions, insulin left in a hot car or bag can lose potency rapidly. The patient should discard the warm pen and use a properly stored replacement. Never freeze insulin.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 20
+}

@@ -1,0 +1,147 @@
+[
+  {
+    "id": "27d3d29c-3fbd-4033-90b6-2f4780df5cbf",
+    "module_id": "18161038-99b9-459d-a298-2c76b434f57d",
+    "question": "What is the primary advantage of AI-powered demand forecasting over traditional min/max inventory systems?",
+    "options": [
+      "It is cheaper to implement",
+      "It dynamically adjusts to seasonal patterns, external factors, and changing demand trends",
+      "It eliminates the need for pharmacy technicians to manage inventory",
+      "It guarantees zero stock-outs"
+    ],
+    "correct_answer": 1,
+    "explanation": "AI-powered forecasting dynamically adjusts predictions based on historical patterns, seasonal trends, external factors (weather, events, disease outbreaks), and real-time data. Traditional min/max systems use fixed thresholds that do not adapt to changing conditions.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "40ce250b-6d39-4e1e-bf91-ac30e662aef5",
+    "module_id": "18161038-99b9-459d-a298-2c76b434f57d",
+    "question": "During which period should Caribbean pharmacies increase stock of albuterol inhalers and antihistamines?",
+    "options": [
+      "Christmas season (November–December)",
+      "Carnival season (February–April)",
+      "Saharan dust season (June–August)",
+      "Back-to-school period (August–September)"
+    ],
+    "correct_answer": 2,
+    "explanation": "The Saharan dust season (June–August) brings African dust plumes to the Caribbean, causing respiratory irritation and allergic reactions. This drives increased demand for albuterol inhalers, antihistamines, nasal sprays, and eye drops.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "668394d2-7dcc-4ec4-a07c-1456d14e09ef",
+    "module_id": "18161038-99b9-459d-a298-2c76b434f57d",
+    "question": "Why is aspirin contraindicated during dengue outbreaks?",
+    "options": [
+      "Aspirin is less effective than paracetamol for fever",
+      "Aspirin increases the risk of haemorrhage in dengue haemorrhagic fever",
+      "Aspirin interacts with insect repellent",
+      "There is no specific contraindication; either analgesic is fine"
+    ],
+    "correct_answer": 1,
+    "explanation": "Aspirin and NSAIDs are contraindicated in suspected dengue because they inhibit platelet function and increase bleeding risk, which is particularly dangerous in dengue haemorrhagic fever. Paracetamol is the recommended analgesic/antipyretic for dengue patients.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "a4159f5d-e493-4451-b7de-28315071b7c8",
+    "module_id": "18161038-99b9-459d-a298-2c76b434f57d",
+    "question": "A pharmacy's AI system shows a forecast accuracy of 55% for a product category. What does this suggest?",
+    "options": [
+      "The system is performing well",
+      "The system may need recalibration, more training data, or the product has highly unpredictable demand",
+      "The product should be removed from the formulary",
+      "The AI system should be immediately replaced"
+    ],
+    "correct_answer": 1,
+    "explanation": "A forecast accuracy below 70% suggests the model may need recalibration, additional training data, or that the product genuinely has unpredictable demand patterns. It does not necessarily mean the system is faulty — some products are inherently harder to forecast.",
+    "order_index": 3,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "hard",
+    "blooms_level": "evaluate"
+  },
+  {
+    "id": "c72dc496-d674-46fe-991e-334e5e526fd1",
+    "module_id": "18161038-99b9-459d-a298-2c76b434f57d",
+    "question": "Match each inventory metric with its correct description.",
+    "options": [
+      "Days of Stock Remaining",
+      "Stock Turn Rate",
+      "Expiry Risk Score",
+      "Confidence Interval"
+    ],
+    "correct_answer": 0,
+    "explanation": "Days of Stock Remaining tells you how long current stock will last at predicted demand; Stock Turn Rate measures how often inventory cycles per year; Expiry Risk Score flags products likely to expire before being sold; Confidence Interval gives the range of predicted demand with a stated probability.",
+    "order_index": 4,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "f84e894e-abef-4e05-9dfc-38f17729d6e1",
+    "module_id": "18161038-99b9-459d-a298-2c76b434f57d",
+    "question": "Why do government programme medications (CDAP, NHF) show demand spikes at the beginning of each month?",
+    "options": [
+      "Suppliers offer monthly discounts",
+      "Patients typically collect their programme medications at month start when benefits reset",
+      "Pharmacies only stock these medications at month start",
+      "Government programmes only operate during the first week of each month"
+    ],
+    "correct_answer": 1,
+    "explanation": "Government programmes like Trinidad's CDAP and Jamaica's NHF typically have monthly benefit cycles. Patients tend to collect their chronic disease medications at the beginning of the month when their benefits reset, creating predictable demand spikes that AI systems can plan for.",
+    "order_index": 5,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "3a2e2838-240c-467c-be9d-924ee68fe09b",
+    "module_id": "18161038-99b9-459d-a298-2c76b434f57d",
+    "question": "Which of the following factors should an AI inventory system consider when forecasting demand for a Caribbean pharmacy? Select ALL that apply.",
+    "options": [
+      "Historical sales data",
+      "Weather and hurricane forecasts",
+      "Disease surveillance data from CARPHA",
+      "Public holiday and event calendars",
+      "The pharmacy owner's favourite colour"
+    ],
+    "correct_answer": 0,
+    "explanation": "Effective Caribbean pharmacy AI forecasting should consider historical sales data, weather forecasts (especially hurricane and Saharan dust season), disease surveillance data from CARPHA (dengue, chikungunya outbreaks), and public holiday/event calendars (Carnival, Christmas, back-to-school). The owner's colour preference is obviously irrelevant.",
+    "order_index": 6,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "ca652ec4-817b-48b7-93c9-88332e512c90",
+    "module_id": "18161038-99b9-459d-a298-2c76b434f57d",
+    "question": "For essential chronic disease medications, where in the confidence interval should you typically place your order?",
+    "options": [
+      "Below the lower bound to save costs",
+      "At the midpoint for balanced risk",
+      "Toward the upper bound because stock-outs cause patient harm",
+      "Above the upper bound for maximum safety"
+    ],
+    "correct_answer": 2,
+    "explanation": "For essential medications, ordering toward the upper end of the confidence interval is best practice. The cost of running out (patient harm, loss of trust, potential emergency) far outweighs the cost of slight overstocking of medications with long shelf lives.",
+    "order_index": 7,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  }
+]

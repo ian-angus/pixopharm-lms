@@ -1,0 +1,143 @@
+[
+  {
+    "id": "129345aa-7fe8-477d-a475-5c0500fbf3fa",
+    "module_id": "30df726a-ab1c-402b-a4fd-52861a29b89b",
+    "question": "What does FEFO stand for?",
+    "options": [
+      "First Entry, First Out",
+      "First Expiry, First Out",
+      "First Examined, First Ordered",
+      "Fast Exit, Fast Order"
+    ],
+    "correct_answer": 1,
+    "explanation": "FEFO stands for First Expiry, First Out — a stock rotation method that ensures products with the earliest expiry date are dispensed first, minimising wastage due to expiry.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "8258b8b4-7d91-48a6-8984-20ebcb1b3961",
+    "module_id": "30df726a-ab1c-402b-a4fd-52861a29b89b",
+    "question": "True or False: A medication becomes immediately toxic on the day after its printed expiry date.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": 1,
+    "explanation": "False. An expiry date is not a cliff edge — the medication does not suddenly become toxic. However, the manufacturer's guarantee of potency and purity no longer applies, and dispensing expired medications is illegal in all Caribbean jurisdictions.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "d2b30804-211b-4b23-9579-9e9d6c40f630",
+    "module_id": "30df726a-ab1c-402b-a4fd-52861a29b89b",
+    "question": "A beyond-use date is typically assigned to which of the following products?",
+    "options": [
+      "A sealed box of manufacturer-packaged tablets",
+      "Reconstituted amoxicillin suspension prepared at the pharmacy",
+      "An unopened bottle of OTC paracetamol",
+      "A sealed blister pack of metformin tablets"
+    ],
+    "correct_answer": 1,
+    "explanation": "Beyond-use dates are assigned by the dispensing pharmacy to products that have been opened, reconstituted, compounded, or repackaged. Reconstituted amoxicillin suspension, which has a limited shelf life of 7–14 days, is a classic example requiring a BUD.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "a6f36203-6cec-428e-99cd-b511066b55be",
+    "module_id": "30df726a-ab1c-402b-a4fd-52861a29b89b",
+    "question": "In what scenario does FEFO produce a different result than FIFO?",
+    "options": [
+      "When all shipments arrive with identical expiry dates",
+      "When a newer shipment arrives with a shorter expiry date than existing stock",
+      "When the pharmacy only stocks one brand of each medication",
+      "When stock is dispensed on the same day it arrives"
+    ],
+    "correct_answer": 1,
+    "explanation": "FEFO and FIFO differ when a newer shipment has a shorter expiry date than existing stock. Under FIFO, the older (longer-dated) stock would be dispensed first based on receipt date. Under FEFO, the newer (shorter-dated) stock would be prioritised based on expiry date, preventing it from expiring unused.",
+    "order_index": 3,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "analyze"
+  },
+  {
+    "id": "028604f1-1882-4bcc-bac7-be610064b900",
+    "module_id": "30df726a-ab1c-402b-a4fd-52861a29b89b",
+    "question": "Arrange the three-tier expiry alert levels from LEAST urgent to MOST urgent.",
+    "options": [
+      "Red Alert (under 3 months)",
+      "Amber Alert (3–6 months)",
+      "Green Alert (6+ months)"
+    ],
+    "correct_answer": 0,
+    "explanation": "From least to most urgent: Green Alert (6+ months — normal dispensing), Amber Alert (3–6 months — increase priority, consider transfers), Red Alert (under 3 months — immediate action required).",
+    "order_index": 4,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "d389efa2-fd47-47e3-9b0c-e872698b17f1",
+    "module_id": "30df726a-ab1c-402b-a4fd-52861a29b89b",
+    "question": "A well-managed Caribbean pharmacy should aim for a pharmaceutical wastage rate below what percentage of total inventory value?",
+    "options": [
+      "10%",
+      "5%",
+      "2%",
+      "0% — no wastage is acceptable"
+    ],
+    "correct_answer": 2,
+    "explanation": "A well-managed Caribbean pharmacy should aim for a wastage rate below 2% of total inventory value. While zero wastage is an ideal, some wastage is inevitable due to patient returns, damaged stock, and unavoidable short-dated receipts. Rates above 5% indicate systemic failures.",
+    "order_index": 5,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "58d12bc5-2bbe-44b6-9fd4-6a5faf69e7b7",
+    "module_id": "30df726a-ab1c-402b-a4fd-52861a29b89b",
+    "question": "Why might a manufacturer's printed expiry date overstate the true shelf life of a medication stored in a Caribbean pharmacy?",
+    "options": [
+      "Because Caribbean patients use medications faster",
+      "Because expiry dates are calculated for European markets where storage conditions are cooler",
+      "If storage temperatures have exceeded the labelled conditions, degradation may have been accelerated",
+      "Because Caribbean pharmacies use different calendars"
+    ],
+    "correct_answer": 2,
+    "explanation": "Expiry dates are based on stability testing at specific controlled conditions (25°C/60% RH or 30°C/65% RH). If a medication has been exposed to temperatures above these conditions — which is common in Caribbean pharmacies without adequate climate control — degradation occurs faster than predicted, and the true shelf life may be shorter than the printed date.",
+    "order_index": 6,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "hard",
+    "blooms_level": "analyze"
+  },
+  {
+    "id": "5723af66-e06d-4096-afbd-ebc90bdb241a",
+    "module_id": "30df726a-ab1c-402b-a4fd-52861a29b89b",
+    "question": "Match each stock management action with the appropriate alert level.",
+    "options": [
+      "Normal dispensing, FEFO rotation → Green Alert",
+      "Move to front of shelf, consider transfers → Amber Alert",
+      "Contact supplier for returns, begin destruction documentation → Red Alert",
+      "All matches are correct"
+    ],
+    "correct_answer": 3,
+    "explanation": "All matches are correct. Green Alert (6+ months) requires only normal FEFO rotation. Amber Alert (3–6 months) escalates to increased dispensing priority and transfer consideration. Red Alert (under 3 months) requires immediate action including supplier return requests and destruction documentation.",
+    "order_index": 7,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  }
+]

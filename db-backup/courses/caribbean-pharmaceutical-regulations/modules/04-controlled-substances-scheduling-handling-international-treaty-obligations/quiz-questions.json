@@ -1,0 +1,179 @@
+[
+  {
+    "id": "de7b96e0-8817-4160-8186-64f2cbe5e132",
+    "module_id": "ec614d8d-d8c6-43ec-ba3c-eecdee20cbb6",
+    "question": "Which international treaty specifically controls narcotic drugs such as morphine and codeine?",
+    "options": [
+      "Convention on Psychotropic Substances (1971)",
+      "Single Convention on Narcotic Drugs (1961)",
+      "Convention Against Illicit Traffic (1988)",
+      "The Geneva Convention"
+    ],
+    "correct_answer": 1,
+    "explanation": "The Single Convention on Narcotic Drugs (1961, amended 1972) specifically controls narcotic drugs including opium, morphine, codeine, and cannabis. The 1971 Convention covers psychotropic substances, and the 1988 Convention targets drug trafficking.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "dcac02eb-5181-4c8f-808b-08e161dcd589",
+    "module_id": "ec614d8d-d8c6-43ec-ba3c-eecdee20cbb6",
+    "question": "In Jamaica, low-dose codeine cough preparations are available over-the-counter without a prescription.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": 1,
+    "explanation": "False. Jamaica requires a prescription for ALL codeine-containing products. This is stricter than Trinidad & Tobago and Barbados, where some low-dose codeine preparations have historically been available OTC.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "ad31bad6-7c67-48cf-b6c6-7433c06d81e4",
+    "module_id": "ec614d8d-d8c6-43ec-ba3c-eecdee20cbb6",
+    "question": "Arrange the correct sequence for receiving a controlled substance delivery at a pharmacy.",
+    "options": [
+      "Record receipt in the Controlled Substance Register",
+      "Verify delivery against purchase order and invoice",
+      "Place items in the controlled substance safe",
+      "Count or weigh every item received",
+      "Inspect packages for tampering or damage"
+    ],
+    "correct_answer": 0,
+    "explanation": "The correct sequence is: (1) Verify against purchase order and invoice, (2) Inspect packages for tampering, (3) Count/weigh every item, (4) Record in the register, (5) Place in the controlled substance safe.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "hard",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "70f36f33-9947-4473-b2fa-2086b8acc95e",
+    "module_id": "ec614d8d-d8c6-43ec-ba3c-eecdee20cbb6",
+    "question": "Which of the following elements must appear on a controlled substance prescription in most Caribbean jurisdictions?",
+    "options": [
+      "Patient's name and address",
+      "Quantity in words and figures",
+      "Prescriber's signature and registration number",
+      "Patient's favourite colour",
+      "Date of prescription"
+    ],
+    "correct_answer": 0,
+    "explanation": "Controlled substance prescriptions in most Caribbean jurisdictions must include: patient name and address, quantity in words and figures, prescriber's signature and registration number, and date. Patient's favourite colour is obviously not required.",
+    "order_index": 3,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "0909868d-93a8-444c-bc01-9e915e455874",
+    "module_id": "ec614d8d-d8c6-43ec-ba3c-eecdee20cbb6",
+    "question": "Errors in a Controlled Substance Register should be corrected using correction fluid (white-out).",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": 1,
+    "explanation": "False. Correction fluid is strictly prohibited in Controlled Substance Registers. Errors must be corrected by single-line strikethrough (preserving the original entry's legibility), accompanied by initials, date, and the correct information written alongside.",
+    "order_index": 4,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "b4b7f9e2-ccde-4955-abe3-811a47573891",
+    "module_id": "ec614d8d-d8c6-43ec-ba3c-eecdee20cbb6",
+    "question": "What does the term 'diversion' mean in the context of controlled substances?",
+    "options": [
+      "The legal transfer of controlled substances between pharmacies",
+      "The illegal channelling of controlled substances from legitimate use to illicit use",
+      "The process of reclassifying a controlled substance to OTC status",
+      "The transportation of controlled substances between islands"
+    ],
+    "correct_answer": 1,
+    "explanation": "Diversion refers to the illegal channelling of controlled substances from their legitimate pharmaceutical or medical purpose to illicit use. It can occur through theft, forged prescriptions, 'doctor shopping,' or manipulation of records.",
+    "order_index": 5,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "8a017590-debd-4364-98f6-b07b7b96e4f2",
+    "module_id": "ec614d8d-d8c6-43ec-ba3c-eecdee20cbb6",
+    "question": "Match each international treaty with its primary focus area.",
+    "options": [
+      "Single Convention (1961)",
+      "Psychotropic Convention (1971)",
+      "Traffic Convention (1988)"
+    ],
+    "correct_answer": 0,
+    "explanation": "The 1961 Convention controls narcotics, the 1971 Convention controls psychotropic substances, and the 1988 Convention targets trafficking and related criminal activity. Together, they form the international legal framework for drug control.",
+    "order_index": 6,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "5d82c0ab-21d4-46ce-aa9b-84971163416a",
+    "module_id": "ec614d8d-d8c6-43ec-ba3c-eecdee20cbb6",
+    "question": "A patient from Trinidad visits a pharmacy in Kingston, Jamaica and asks to purchase codeine cough syrup without a prescription, explaining that it is available OTC in Trinidad. As the pharmacy technician, what should you do?",
+    "options": [
+      "Sell it — the patient's home country allows OTC purchase",
+      "Politely explain that all codeine products require a prescription in Jamaica and suggest the patient consult a local doctor",
+      "Sell it but record the patient's passport number",
+      "Refer the patient to a pharmacy in Trinidad"
+    ],
+    "correct_answer": 1,
+    "explanation": "The scheduling rules of the jurisdiction where you are practising always apply, regardless of the patient's home country. In Jamaica, all codeine products require a prescription. The technician should politely explain this and suggest the patient consult a local doctor if the medication is needed.",
+    "order_index": 7,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "hard",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "a27392d2-1643-4dd0-9f64-9be58f103485",
+    "module_id": "ec614d8d-d8c6-43ec-ba3c-eecdee20cbb6",
+    "question": "How soon must an unresolved controlled substance discrepancy typically be reported to the regulatory authority in most Caribbean jurisdictions?",
+    "options": [
+      "Within 1 week",
+      "Within 24-48 hours",
+      "Within 30 days",
+      "At the next scheduled inspection"
+    ],
+    "correct_answer": 1,
+    "explanation": "Most Caribbean jurisdictions require unresolved controlled substance discrepancies to be reported to the regulatory authority within 24-48 hours. Delays in reporting can be treated as evidence of non-compliance or cover-up.",
+    "order_index": 8,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "ea036d63-4a28-4d96-803c-b5ee581a1dbe",
+    "module_id": "ec614d8d-d8c6-43ec-ba3c-eecdee20cbb6",
+    "question": "The Controlled Substance Register must be maintained in _____ format in most Caribbean jurisdictions.",
+    "options": [
+      "loose-leaf binder",
+      "bound-book",
+      "digital spreadsheet",
+      "any convenient"
+    ],
+    "correct_answer": 1,
+    "explanation": "Most Caribbean jurisdictions require the Controlled Substance Register to be maintained in bound-book format (not loose-leaf or digital). This prevents page removal or substitution, which could be used to conceal diversion or other irregularities.",
+    "order_index": 9,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  }
+]

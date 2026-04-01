@@ -1,0 +1,99 @@
+{
+  "id": "5e753d58-7d0b-4f21-9853-be0b5bda1ea6",
+  "module_id": "2e20b351-7665-40a0-840d-62c0eebb01a2",
+  "title": "Customs, Import Licences & Regulatory Compliance",
+  "content": [
+    {
+      "text": "Getting Medications Through the Gate",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Importing pharmaceuticals into any Caribbean nation requires compliance with a complex web of regulations designed to ensure that only safe, effective, and properly documented medications enter the country. The pharmacy technician may not be directly responsible for customs clearance, but understanding the process helps you anticipate delays, communicate with patients about supply timelines, and appreciate why certain medications are sometimes temporarily unavailable.",
+      "type": "text"
+    },
+    {
+      "text": "Key Regulatory Requirements",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "type": "list",
+      "items": [
+        "Drug registration: The medication must be registered with the national drug regulatory authority before it can be imported. Unregistered drugs require special import permits.",
+        "Import licence: The importing entity (wholesaler, pharmacy, or hospital) must hold a valid import licence issued by the national pharmacy or health authority.",
+        "Good Distribution Practice (GDP) compliance: The supply chain must demonstrate compliance with GDP standards, including temperature monitoring during shipping.",
+        "Certificate of Pharmaceutical Product (CPP): An internationally recognised document confirming that the product meets the regulatory requirements of the exporting country.",
+        "Batch documentation: Each shipment must include batch numbers, manufacturing dates, expiry dates, and certificates of analysis from the manufacturer.",
+        "Customs declaration: Standard customs documentation including commercial invoice, bill of lading, and applicable duties and taxes.",
+        "Controlled substance permits: Additional permits and documentation are required for importing narcotics and psychotropic substances, issued by the relevant national authority."
+      ],
+      "ordered": true
+    },
+    {
+      "type": "island-comparison",
+      "title": "Drug Registration Authorities by Island",
+      "islands": [
+        {
+          "flag": "🇹🇹",
+          "name": "Trinidad & Tobago",
+          "details": [
+            "Chemistry, Food and Drugs Division (CFDD) under the Ministry of Health",
+            "Drug registration under the Food and Drugs Act (Chapter 30:01)",
+            "NIPDEC handles bulk procurement for the public sector",
+            "Private sector imports through licenced wholesalers with CFDD approval",
+            "Controlled substances require additional permits from the Dangerous Drugs Inspectorate"
+          ]
+        },
+        {
+          "flag": "🇯🇲",
+          "name": "Jamaica",
+          "details": [
+            "Standards and Regulation Division of the Ministry of Health",
+            "Drug registration under the Food and Drugs Act (1964, amended)",
+            "NHF procures medications for subsidised programmes",
+            "Government Pharmaceutical Supplies Division manages public sector procurement",
+            "The Dangerous Drugs Act governs controlled substance imports"
+          ]
+        },
+        {
+          "flag": "🇬🇩",
+          "name": "Grenada",
+          "details": [
+            "Grenada Bureau of Standards and the Ministry of Health",
+            "As an OECS member, Grenada benefits from the OECS PPS pooled procurement",
+            "Drug registration requirements are being aligned with the CRS framework",
+            "Smaller market size means longer lead times for niche medications",
+            "Strong reliance on regional wholesalers based in Trinidad and Barbados"
+          ]
+        }
+      ],
+      "description": "Each Caribbean nation maintains its own drug registration authority, though regional harmonisation efforts are progressing through the CARICOM Caribbean Regulatory System (CRS)."
+    },
+    {
+      "body": "The Caribbean is not immune to the global threat of counterfeit and substandard medications. Weak regulatory enforcement in some jurisdictions, combined with complex multi-country supply chains, creates vulnerabilities. CARPHA and PAHO have implemented regional quality monitoring programmes, but pharmacy technicians must remain vigilant — check packaging integrity, verify batch numbers against certificates of analysis, and report any suspicious products to the authorities immediately.",
+      "type": "callout",
+      "title": "Counterfeit Medications — A Regional Threat",
+      "variant": "warning"
+    },
+    {
+      "term": "Certificate of Pharmaceutical Product (CPP)",
+      "type": "key-term",
+      "definition": "A document issued by the drug regulatory authority of the exporting country, certifying that a pharmaceutical product is authorised for sale in that country and that the manufacturing facility has been inspected and meets Good Manufacturing Practice (GMP) standards. The CPP is a WHO-recommended scheme used internationally to facilitate drug trade."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Certificate of Pharmaceutical Product (CPP)",
+        "Bill of Lading",
+        "Pharmacy Board Registration Certificate",
+        "Patient Information Leaflet"
+      ],
+      "question": "Which document certifies that a pharmaceutical product meets the regulatory requirements of the exporting country and that its manufacturer operates under GMP?",
+      "explanation": "The Certificate of Pharmaceutical Product (CPP) is issued by the exporting country's regulatory authority, confirming that the product is authorised for sale there and that the manufacturing facility meets GMP standards. It is a key document in international pharmaceutical trade.",
+      "correctIndex": 0
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 20
+}

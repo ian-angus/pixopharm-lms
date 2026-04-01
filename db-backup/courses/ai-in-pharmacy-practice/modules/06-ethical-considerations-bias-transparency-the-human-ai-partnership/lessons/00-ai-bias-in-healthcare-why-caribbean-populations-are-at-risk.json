@@ -1,0 +1,81 @@
+{
+  "id": "8a8c3bfb-61e3-449e-a72a-c7935772b8a6",
+  "module_id": "de3922e4-c680-4c74-9283-4ffb9c806bc5",
+  "title": "AI Bias in Healthcare: Why Caribbean Populations Are at Risk",
+  "content": [
+    {
+      "text": "When AI Learns the Wrong Lessons",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "AI systems learn from data, and data reflects the world that created it — including its biases. If an AI system is trained primarily on data from North American and European populations, it may not perform well for Caribbean patients who have different genetic profiles, disease prevalence patterns, dietary habits, and medication responses. This is not a theoretical concern — it is a documented, measurable problem that directly affects patient care.",
+      "type": "text"
+    },
+    {
+      "term": "Algorithmic Bias",
+      "type": "key-term",
+      "definition": "Systematic errors in AI outputs that arise from biased assumptions in the training data, algorithm design, or development process. In healthcare AI, bias can lead to diagnostic errors, inappropriate treatment recommendations, or unequal quality of care for underrepresented populations."
+    },
+    {
+      "rows": [
+        [
+          "Training data bias",
+          "AI dosing algorithms trained predominantly on Caucasian patients",
+          "May recommend incorrect doses for Afro-Caribbean patients with different genetic polymorphisms affecting drug metabolism (e.g., CYP2D6 variants)"
+        ],
+        [
+          "Representation bias",
+          "Clinical trial data predominantly from developed countries",
+          "Tropical disease presentations, herbal-drug interactions with Caribbean bush medicines, and multi-morbidity patterns common in the Caribbean may not be captured"
+        ],
+        [
+          "Measurement bias",
+          "Pulse oximeters less accurate on darker skin tones",
+          "AI systems using pulse oximetry data may underestimate hypoxia in Afro-Caribbean patients, as documented in multiple studies"
+        ],
+        [
+          "Label bias",
+          "AI trained on data where certain populations received different levels of care",
+          "Historical healthcare disparities become embedded in AI predictions, perpetuating rather than reducing inequality"
+        ],
+        [
+          "Language bias",
+          "NLP models trained primarily on American/British English",
+          "May misinterpret Caribbean English, Creole terms for symptoms, or local medication names"
+        ]
+      ],
+      "type": "table",
+      "caption": "Examples of AI Bias Relevant to Caribbean Healthcare",
+      "headers": [
+        "Bias Type",
+        "Example",
+        "Caribbean Impact"
+      ]
+    },
+    {
+      "body": "Approximately 29% of people of African descent are CYP2D6 ultra-rapid metabolisers (compared to ~1-2% of Caucasians). This means they metabolise certain drugs (codeine, tramadol, some antidepressants) much faster, potentially reducing efficacy or — in the case of codeine — increasing risk of toxicity through rapid conversion to morphine. AI dosing tools trained on predominantly Caucasian data may not flag this. Caribbean pharmacy technicians must be aware that AI recommendations may not account for the genetic diversity of their patient population.",
+      "type": "callout",
+      "title": "The CYP2D6 Problem",
+      "variant": "danger"
+    },
+    {
+      "body": "The Caribbean's diverse genetic heritage — African, Indian, European, Chinese, Indigenous, and the many combinations thereof — means that one-size-fits-all AI tools will inevitably underserve some patients. This is not a reason to reject AI, but a reason to use it critically and to advocate for AI tools that are validated on diverse populations.",
+      "type": "text"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Afro-Caribbean patients do not need medication dosing",
+        "Genetic differences in drug metabolism enzymes (e.g., CYP2D6 variants) can significantly affect how drugs are processed",
+        "AI algorithms cannot calculate doses for any population",
+        "All populations metabolise drugs identically"
+      ],
+      "question": "Why might an AI dosing algorithm trained primarily on Caucasian patients give inappropriate recommendations for Afro-Caribbean patients?",
+      "explanation": "Genetic polymorphisms in drug metabolism enzymes like CYP2D6 are more common in certain populations. Approximately 29% of people of African descent are CYP2D6 ultra-rapid metabolisers, which significantly affects the metabolism of many common drugs. AI tools trained on populations where this variant is rare may not account for it.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 20
+}

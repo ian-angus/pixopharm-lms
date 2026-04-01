@@ -1,0 +1,106 @@
+{
+  "id": "620f1f1c-59c2-46e7-b0bd-025809dc105b",
+  "module_id": "d3795a17-60e6-4ead-89e6-9c00001165e0",
+  "title": "IV Medication Dose Rate Calculations",
+  "content": [
+    {
+      "text": "Calculating Drug Delivery Rates for IV Medications",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Some IV medications are ordered by the dose rate rather than simple volume — for example, 'dopamine 5 mcg/kg/min' or 'heparin 1000 units/hr'. In these cases, you must calculate the flow rate (mL/hr) that delivers the correct drug amount based on the concentration of the prepared solution. These calculations are common in intensive care units and emergency departments at Caribbean hospitals.",
+      "type": "text"
+    },
+    {
+      "term": "Dose Rate",
+      "type": "key-term",
+      "definition": "The amount of drug delivered per unit time, often expressed as mcg/min, mg/hr, units/hr, or mcg/kg/min. To set an infusion pump, the dose rate must be converted to a volume rate (mL/hr) using the known drug concentration in the IV bag."
+    },
+    {
+      "text": "The Dose-Rate-to-Flow-Rate Formula",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Flow rate (mL/hr) = Dose rate (mg/hr) ÷ Concentration (mg/mL). For mcg/kg/min orders: Step 1: Calculate dose in mcg/min = dose rate × patient weight. Step 2: Convert to mg/hr = mcg/min × 60 ÷ 1000. Step 3: Flow rate (mL/hr) = mg/hr ÷ concentration (mg/mL).",
+      "type": "text"
+    },
+    {
+      "body": "Worked example 1 — Heparin: Order: heparin 1000 units/hr. The IV bag contains heparin 25,000 units in 500 mL D5W. Concentration = 25,000 ÷ 500 = 50 units/mL. Flow rate = 1000 units/hr ÷ 50 units/mL = 20 mL/hr. Set the pump to 20 mL/hr.",
+      "type": "text"
+    },
+    {
+      "body": "Worked example 2 — Dopamine: Order: dopamine 5 mcg/kg/min for a 70 kg patient. The IV bag contains dopamine 400 mg in 250 mL D5W. Step 1: Dose = 5 × 70 = 350 mcg/min. Step 2: Convert = 350 × 60 / 1000 = 21 mg/hr. Step 3: Concentration = 400 / 250 = 1.6 mg/mL. Step 4: Flow rate = 21 / 1.6 = 13.125 mL/hr → round to 13 mL/hr.",
+      "type": "text"
+    },
+    {
+      "body": "Medications like heparin, insulin, dopamine, and potassium chloride are classified as 'high alert' by ISMP because errors frequently cause patient harm. In Caribbean hospitals, these medications require independent double-checks — two qualified personnel must independently verify the concentration, dose calculation, and pump rate. Never prepare or verify a high-alert IV medication alone.",
+      "type": "callout",
+      "title": "High-Alert IV Medications",
+      "variant": "danger"
+    },
+    {
+      "rows": [
+        [
+          "Heparin",
+          "25,000 units in 500 mL",
+          "50 units/mL",
+          "500-2000 units/hr"
+        ],
+        [
+          "Insulin (regular)",
+          "50 units in 50 mL NS",
+          "1 unit/mL",
+          "1-10 units/hr"
+        ],
+        [
+          "Dopamine",
+          "400 mg in 250 mL D5W",
+          "1600 mcg/mL",
+          "2-20 mcg/kg/min"
+        ],
+        [
+          "Dobutamine",
+          "250 mg in 250 mL D5W",
+          "1000 mcg/mL",
+          "2-20 mcg/kg/min"
+        ],
+        [
+          "Morphine PCA",
+          "50 mg in 50 mL NS",
+          "1 mg/mL",
+          "1-2 mg bolus, 0.5-2 mg/hr background"
+        ],
+        [
+          "KCl (potassium)",
+          "40 mEq in 1000 mL NS",
+          "0.04 mEq/mL",
+          "10-20 mEq/hr max"
+        ]
+      ],
+      "type": "table",
+      "caption": "Common IV Medication Concentrations — Caribbean Hospital Practice",
+      "headers": [
+        "Medication",
+        "Standard Preparation",
+        "Concentration",
+        "Typical Dose Range"
+      ]
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "8 mL/hr",
+        "16 mL/hr",
+        "32 mL/hr",
+        "40 mL/hr"
+      ],
+      "question": "A heparin infusion is ordered at 800 units/hr. The preparation is 25,000 units in 500 mL. What pump rate (mL/hr) should be set?",
+      "explanation": "Concentration = 25,000 units / 500 mL = 50 units/mL. Flow rate = 800 units/hr ÷ 50 units/mL = 16 mL/hr.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 25
+}

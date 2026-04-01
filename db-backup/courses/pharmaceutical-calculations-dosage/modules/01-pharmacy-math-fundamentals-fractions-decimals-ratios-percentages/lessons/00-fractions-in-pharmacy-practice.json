@@ -1,0 +1,108 @@
+{
+  "id": "87e12c51-4deb-499e-9be5-c25cb7030a5e",
+  "module_id": "a10da8b5-6ddf-4b8e-9a92-c4055fb72eed",
+  "title": "Fractions in Pharmacy Practice",
+  "content": [
+    {
+      "text": "Why Fractions Matter in Pharmacy",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Fractions are everywhere in pharmacy practice. From tablet splitting (½ tablet, ¼ tablet) to concentration expressions (1/1000 adrenaline) and measurement conversions, a confident grasp of fractions is non-negotiable for safe dispensing. In Caribbean community pharmacies, you will encounter fractions daily — whether you are calculating a partial supply for a patient on the Chronic Disease Assistance Programme (CDAP) in Trinidad or splitting a box of tablets at a polyclinic in Barbados.",
+      "type": "text"
+    },
+    {
+      "term": "Fraction",
+      "type": "key-term",
+      "definition": "A numerical expression representing part of a whole, written as a numerator (top number) over a denominator (bottom number), separated by a line. In pharmacy, fractions express drug concentrations, dosage portions, and measurement relationships."
+    },
+    {
+      "text": "Types of Fractions Used in Pharmacy",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "There are three main types of fractions you will encounter. Proper fractions have a numerator smaller than the denominator (e.g., ½, ¾) — these appear when expressing tablet portions or dilution ratios. Improper fractions have a numerator larger than the denominator (e.g., 5/4, 7/2) — these arise during intermediate calculation steps. Mixed numbers combine a whole number with a fraction (e.g., 2½) — you will see these in dosage instructions such as 'take 1½ tablets twice daily'.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "½",
+          "0.5",
+          "Half-tablet dose: metoprolol 25 mg (half of a 50 mg tablet)"
+        ],
+        [
+          "¼",
+          "0.25",
+          "Quarter-tablet dose or 1:4 dilution"
+        ],
+        [
+          "¾",
+          "0.75",
+          "Three-quarter teaspoon for paediatric liquid dosing"
+        ],
+        [
+          "1/1000",
+          "0.001",
+          "Adrenaline (epinephrine) 1:1000 injection concentration"
+        ],
+        [
+          "1/10,000",
+          "0.0001",
+          "Adrenaline 1:10,000 for cardiac resuscitation"
+        ],
+        [
+          "1/100",
+          "0.01",
+          "1% w/v solution (1 g per 100 mL)"
+        ]
+      ],
+      "type": "table",
+      "caption": "Common Pharmacy Fractions and Their Uses",
+      "headers": [
+        "Fraction",
+        "Decimal",
+        "Pharmacy Example"
+      ]
+    },
+    {
+      "text": "Adding and Subtracting Fractions",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "To add or subtract fractions, you must first find a common denominator. This skill is essential when combining partial quantities or adjusting dosages. Step 1: Find the lowest common denominator (LCD). Step 2: Convert each fraction to an equivalent fraction with the LCD. Step 3: Add or subtract the numerators. Step 4: Simplify the result if possible.",
+      "type": "text"
+    },
+    {
+      "body": "Worked example: A patient takes ½ tablet in the morning and ¼ tablet at night. What is the total daily dose in fractions of a tablet? LCD of 2 and 4 is 4. Convert ½ to 2/4. Now add: 2/4 + 1/4 = 3/4. The patient takes ¾ of a tablet per day. If each tablet contains 10 mg, the daily dose is 10 × ¾ = 7.5 mg.",
+      "type": "text"
+    },
+    {
+      "body": "When comparing two fractions (e.g., checking whether a dose is larger or smaller than another), cross-multiply: for a/b vs c/d, compare a×d with b×c. If a×d > b×c, then a/b > c/d. This is faster than converting to common denominators and is especially useful during busy dispensing shifts.",
+      "type": "callout",
+      "title": "Cross-Multiplication Shortcut",
+      "variant": "tip"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "21 tablets",
+        "31.5 tablets (dispense 32)",
+        "10.5 tablets (dispense 11)",
+        "28 tablets"
+      ],
+      "question": "A prescription reads: 'Take 1½ tablets three times daily.' How many tablets does the patient need for a 7-day supply?",
+      "explanation": "1½ tablets × 3 times daily = 4½ tablets per day. For 7 days: 4½ × 7 = 31½ tablets. Since you cannot dispense half a tablet from stock, you would dispense 32 tablets. Always round up when calculating supply quantities to ensure the patient has enough medication.",
+      "correctIndex": 1
+    },
+    {
+      "body": "Multiplying fractions is straightforward: multiply numerator by numerator and denominator by denominator. Dividing fractions requires the 'invert and multiply' rule — flip the second fraction and multiply. These operations appear constantly when converting between units and calculating proportional doses.",
+      "type": "text"
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 30
+}

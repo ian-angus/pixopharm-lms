@@ -1,0 +1,101 @@
+{
+  "id": "e02ee2bf-2a5a-4cee-b131-9afbc6620541",
+  "module_id": "3f5fc7a2-b1cf-4c21-830b-56e7b7de19bf",
+  "title": "Understanding Your Role Alongside the Pharmacist",
+  "content": [
+    {
+      "text": "You Are Not a Mini-Pharmacist — and That Is a Good Thing",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "One of the most common mistakes new pharmacy technicians make is trying to be a pharmacist. You are not. Your role is distinct, vital, and legally defined. Understanding the boundary between your work and the pharmacist's work is not a limitation — it is the foundation of patient safety and your own professional protection.",
+      "type": "text"
+    },
+    {
+      "body": "The pharmacist carries ultimate legal responsibility for every prescription that leaves the pharmacy. They verify clinical appropriateness, check for interactions, counsel patients on complex therapies, and sign off on dispensed medications. Your role is to ensure the operational machinery runs smoothly so the pharmacist can focus on those clinical tasks. When the technician does their job well, the pharmacist can do theirs. When the technician tries to do the pharmacist's job, everyone is at risk.",
+      "type": "text"
+    },
+    {
+      "term": "Scope of Practice",
+      "type": "key-term",
+      "definition": "The legally defined boundaries of what a healthcare professional can and cannot do. For pharmacy technicians in the Caribbean, this typically includes prescription data entry, medication preparation, inventory management, and customer service — but excludes clinical verification, independent counselling on prescription medications, and final dispensing checks."
+    },
+    {
+      "rows": [
+        [
+          "Receiving and entering prescriptions into the system",
+          "Verifying prescription legitimacy and clinical appropriateness",
+          "Calling a prescriber to clarify handwriting or missing information"
+        ],
+        [
+          "Counting, measuring, and preparing medications",
+          "Final check of prepared medications against the prescription",
+          "Suggesting a generic substitution to a patient"
+        ],
+        [
+          "Managing inventory and placing orders",
+          "Approving special orders for controlled substances",
+          "Deciding whether to accept a prescription that looks altered"
+        ],
+        [
+          "Handling OTC product queries within your knowledge",
+          "Counselling patients on new prescription medications",
+          "Advising on OTC drug interactions with prescribed medicines"
+        ],
+        [
+          "Processing payments and insurance claims",
+          "Resolving clinical insurance rejections (e.g. therapeutic duplication)",
+          "Contacting insurance about prior authorisation requirements"
+        ]
+      ],
+      "type": "table",
+      "caption": "What You Handle vs. What the Pharmacist Handles",
+      "headers": [
+        "Technician's Domain",
+        "Pharmacist's Domain",
+        "Grey Zone — Ask First"
+      ]
+    },
+    {
+      "body": "If a patient asks you a clinical question you cannot answer, say: 'That is a great question — let me get the pharmacist for you.' Never guess. Never say 'I think...' about drug interactions, side effects, or dosing. One wrong answer can cause harm, and you carry no legal protection for advice outside your scope.",
+      "type": "callout",
+      "title": "Legal Protection",
+      "variant": "warning"
+    },
+    {
+      "text": "Building a Strong Working Relationship",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "The best pharmacy teams operate like a well-rehearsed band. The pharmacist leads, but the technician keeps the rhythm. Communication is everything. A good pharmacist will appreciate a technician who flags potential issues before they escalate — a prescription that does not look right, an insurance rejection that keeps recurring, a patient who seems confused about their medication. You are the pharmacist's eyes and ears on the front line.",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Anticipate needs: if you see the pharmacist is deep in a clinical consultation, hold non-urgent questions",
+        "Flag, do not fix: bring concerns to the pharmacist rather than attempting to resolve clinical issues yourself",
+        "Communicate clearly: 'Mrs. Rampersad is asking about mixing her blood pressure medication with bush tea — can you speak with her?' is better than 'A lady has a question'",
+        "Own your domain: keep the dispensary organised, inventory current, and workflow smooth without being asked",
+        "Respect the hierarchy without being passive: professional respect does not mean staying silent when you notice a problem"
+      ],
+      "ordered": true
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Tell them it should be fine since herbal supplements are natural",
+        "Look it up on your phone and share what you find",
+        "Explain that you will get the pharmacist to answer that question properly",
+        "Tell them to stop taking the herbal supplement to be safe"
+      ],
+      "question": "A patient asks you whether their new blood pressure medication will interact with the herbal supplement they take. What should you do?",
+      "explanation": "Drug-supplement interactions are a clinical question that falls within the pharmacist's scope of practice. Referring the patient to the pharmacist protects the patient from potentially incorrect information and protects you legally. Never guess on clinical matters.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 25
+}

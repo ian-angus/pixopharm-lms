@@ -1,0 +1,49 @@
+{
+  "id": "17412185-795f-4497-8c34-f6d2a0828f11",
+  "module_id": "e41c6408-ecd5-4edc-b518-e7ac682ec96d",
+  "title": "Patient Counselling & Handoff",
+  "content": [
+    {
+      "text": "The Final — and Most Important — Step",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "The patient counselling and handoff is where pharmacy practice becomes truly patient-centred. This is your opportunity to ensure the patient understands their medication and will use it safely and effectively. While detailed clinical counselling is the pharmacist's role, pharmacy technicians play a vital role in reinforcing key messages and ensuring the patient leaves with their questions answered.",
+      "type": "text"
+    },
+    {
+      "text": "Key Counselling Points for Every Prescription",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "type": "list",
+      "items": [
+        "What the medication is for (in plain language — 'This is for your blood pressure')",
+        "How to take it (with food? Before bed? With a full glass of water?)",
+        "How often and for how long ('Twice a day for 7 days — finish the whole course')",
+        "Common side effects to expect ('You might feel drowsy at first')",
+        "What to avoid ('Don't drink alcohol while taking this')",
+        "Storage instructions ('Keep this in the fridge' — critical in Caribbean climate)",
+        "What to do if a dose is missed ('Take it as soon as you remember, unless it's almost time for the next dose')",
+        "When to seek medical attention ('If you develop a rash or difficulty breathing, go to A&E immediately')"
+      ],
+      "ordered": true
+    },
+    {
+      "body": "After counselling, ask the patient: 'Just to make sure I explained it clearly, can you tell me how you're going to take this medication?' This technique — called teach-back — verifies comprehension without making the patient feel tested. If they cannot accurately describe how to take the medication, re-explain using simpler language.",
+      "type": "callout",
+      "title": "The Teach-Back Method",
+      "variant": "tip"
+    },
+    {
+      "type": "video-placeholder",
+      "title": "Role Play: Dispensing Counselling",
+      "duration": "12 min",
+      "description": "Watch and practise a complete dispensing counselling scenario: a pharmacy technician hands off a new antihypertensive medication to an elderly patient, demonstrating clear communication, teach-back, and sensitivity to health literacy."
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 15
+}

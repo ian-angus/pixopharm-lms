@@ -1,0 +1,106 @@
+{
+  "id": "b4c701f4-c985-426b-ab13-198461451666",
+  "module_id": "685e9959-38ea-4718-aa13-af91470fd76f",
+  "title": "Oral Solid Dosage Calculations: Tablets & Capsules",
+  "content": [
+    {
+      "text": "Calculating Tablets and Capsules",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Oral solid dosage forms — tablets and capsules — are the most commonly dispensed medications in Caribbean community pharmacies. The calculation for tablet/capsule quantity is straightforward but must be performed accurately every time. Errors in quantity dispensed can lead to patients running out of medication early (underdispensing) or having leftover medication that may be misused (overdispensing).",
+      "type": "text"
+    },
+    {
+      "term": "Desired Over Have (D/H) Formula",
+      "type": "key-term",
+      "definition": "The fundamental formula for dosage calculation: Dose to give = (Desired dose / Have on hand) × Quantity of dosage form. For tablets: Number of tablets = (Prescribed dose / Strength per tablet). For liquids: Volume = (Prescribed dose / Concentration) × Volume of stock."
+    },
+    {
+      "text": "Step-by-Step Tablet Calculation",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Step 1: Identify the prescribed dose (e.g., 500 mg). Step 2: Identify the available strength (e.g., 250 mg tablets). Step 3: Calculate tablets per dose: 500 mg ÷ 250 mg = 2 tablets. Step 4: Determine the frequency (e.g., TDS = three times daily = 3 doses/day). Step 5: Determine the duration (e.g., 7 days). Step 6: Calculate total supply: 2 × 3 × 7 = 42 tablets.",
+      "type": "text"
+    },
+    {
+      "body": "Worked example: A CDAP prescription in Trinidad reads: 'Amlodipine 10 mg OD × 90 days.' The pharmacy stocks amlodipine 5 mg tablets. Tablets per dose: 10 mg ÷ 5 mg = 2 tablets. Daily tablets: 2 × 1 (OD = once daily) = 2. Total for 90 days: 2 × 90 = 180 tablets. Verify: Is amlodipine 10 mg a reasonable dose? Yes — the usual range is 5-10 mg daily for hypertension. Dispense 180 tablets with 90 days' supply labelling.",
+      "type": "text"
+    },
+    {
+      "body": "Not all tablets can be halved or quartered. Only scored tablets should be split — and even then, accuracy is limited. NEVER split enteric-coated tablets (the coating protects the stomach or prevents drug degradation), sustained-release/modified-release tablets (splitting destroys the release mechanism, potentially causing dose dumping), or capsules. If a prescribed dose requires splitting an unscored tablet, contact the pharmacist to discuss alternative strengths or formulations.",
+      "type": "callout",
+      "title": "Can This Tablet Be Split?",
+      "variant": "warning"
+    },
+    {
+      "rows": [
+        [
+          "Metformin",
+          "1000 mg",
+          "500 mg tablets",
+          "2 tablets"
+        ],
+        [
+          "Amlodipine",
+          "7.5 mg",
+          "5 mg tablets",
+          "1½ tablets (if scored)"
+        ],
+        [
+          "Amoxicillin",
+          "500 mg",
+          "250 mg capsules",
+          "2 capsules"
+        ],
+        [
+          "Atorvastatin",
+          "20 mg",
+          "10 mg tablets",
+          "2 tablets"
+        ],
+        [
+          "Metoprolol",
+          "25 mg",
+          "50 mg tablets (scored)",
+          "½ tablet"
+        ],
+        [
+          "Omeprazole",
+          "20 mg",
+          "20 mg capsules",
+          "1 capsule"
+        ]
+      ],
+      "type": "table",
+      "caption": "Common Oral Solid Dose Calculations — Caribbean Practice",
+      "headers": [
+        "Medication",
+        "Prescribed Dose",
+        "Available Strength",
+        "Tablets per Dose"
+      ]
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "30 tablets",
+        "60 tablets",
+        "90 tablets",
+        "120 tablets"
+      ],
+      "question": "A prescription reads: 'Metformin 850 mg BD × 30 days.' The pharmacy stocks metformin 850 mg tablets. How many tablets should be dispensed?",
+      "explanation": "850 mg ÷ 850 mg = 1 tablet per dose. BD = twice daily = 2 doses/day. Total: 1 × 2 × 30 = 60 tablets. When the prescribed strength matches the stock strength, the tablets-per-dose calculation is 1:1, and you simply multiply doses per day by number of days.",
+      "correctIndex": 1
+    },
+    {
+      "body": "Always verify that the calculated dose makes clinical sense. If your calculation results in 10 tablets per dose for an oral medication, that should raise a red flag — most oral doses involve 1-3 tablets. Check the prescription again and consult the pharmacist if anything seems unusual.",
+      "type": "text"
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 25
+}

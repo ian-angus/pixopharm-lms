@@ -1,0 +1,109 @@
+{
+  "id": "ca2afc87-908d-411a-8cc3-277a09e54dd3",
+  "module_id": "518e49f7-db26-4701-a332-4928c74d9aa0",
+  "title": "Classifying ADRs: Types A Through F & the Rawlins-Thompson System",
+  "content": [
+    {
+      "text": "Not All Adverse Reactions Are the Same",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Adverse drug reactions (ADRs) vary enormously in their nature, severity, predictability, and mechanism. Classifying ADRs is essential for understanding their causes, predicting their likelihood, and determining the appropriate response. The most widely used classification system is the Rawlins-Thompson system, which categorises ADRs as Type A (augmented) or Type B (bizarre), with later extensions adding Types C through F.",
+      "type": "text"
+    },
+    {
+      "term": "Adverse Drug Reaction (ADR)",
+      "type": "key-term",
+      "definition": "A response to a medicine that is noxious and unintended, occurring at doses normally used in humans for prophylaxis, diagnosis, or therapy. Unlike medication errors, ADRs can occur even when the drug is used correctly — they are an inherent risk of pharmacotherapy."
+    },
+    {
+      "rows": [
+        [
+          "A",
+          "Augmented",
+          "Predictable, dose-dependent, related to the drug's known pharmacology; usually common and mild",
+          "Drowsiness with antihistamines; hypoglycaemia with insulin",
+          "Yes"
+        ],
+        [
+          "B",
+          "Bizarre",
+          "Unpredictable, not dose-dependent, not related to known pharmacology; often serious; includes allergies and idiosyncratic reactions",
+          "Anaphylaxis with penicillin; Stevens-Johnson syndrome with carbamazepine",
+          "No"
+        ],
+        [
+          "C",
+          "Chronic",
+          "Related to cumulative dose over prolonged use",
+          "Osteoporosis with long-term corticosteroid use",
+          "Cumulative"
+        ],
+        [
+          "D",
+          "Delayed",
+          "Occurs after prolonged exposure; may appear years later",
+          "Tardive dyskinesia with long-term antipsychotic use",
+          "Time-related"
+        ],
+        [
+          "E",
+          "End-of-use",
+          "Occurs on withdrawal of the drug",
+          "Rebound hypertension after stopping clonidine; seizures after abrupt benzodiazepine withdrawal",
+          "Withdrawal"
+        ],
+        [
+          "F",
+          "Failure",
+          "Therapeutic failure; the drug does not produce the expected effect",
+          "Reduced efficacy of oral contraceptives when taken with enzyme-inducing drugs",
+          "Interaction"
+        ]
+      ],
+      "type": "table",
+      "caption": "Rawlins-Thompson Classification of Adverse Drug Reactions",
+      "headers": [
+        "Type",
+        "Name",
+        "Characteristics",
+        "Example",
+        "Dose-Related?"
+      ]
+    },
+    {
+      "body": "For the pharmacy technician, the most important distinction is between Type A (predictable, dose-related) and Type B (unpredictable, potentially life-threatening). Type A reactions are common and usually manageable by dose adjustment. Type B reactions are rare but can be fatal and are the primary target of pharmacovigilance reporting — because they are difficult to predict from clinical trials and may only become apparent when millions of patients use the drug.",
+      "type": "text"
+    },
+    {
+      "body": "The WHO estimates that only 6-10% of all ADRs are reported worldwide. In the Caribbean, reporting rates are believed to be even lower due to lack of awareness, complex reporting procedures, and the misconception that only serious or unexpected reactions need to be reported. Every ADR — no matter how mild — contributes valuable safety data. Pharmacy technicians are ideally positioned to identify and initiate ADR reports because they interact with patients daily.",
+      "type": "callout",
+      "title": "Caribbean ADR Reporting Gap",
+      "variant": "warning"
+    },
+    {
+      "text": "What Should Be Reported?",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "All suspected ADRs should ideally be reported, but national pharmacovigilance centres particularly prioritise: reactions to newly marketed drugs (those on the market for fewer than five years), serious reactions (hospitalisation, life-threatening, death, disability, or birth defects), unexpected reactions (not listed in the drug's product information), and reactions involving drug-drug or drug-food interactions.",
+      "type": "text"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Type A (Augmented) — predictable and dose-related",
+        "Type B (Bizarre) — unpredictable and not dose-related",
+        "Type C (Chronic) — related to cumulative dose",
+        "Type E (End-of-use) — occurs on drug withdrawal"
+      ],
+      "question": "A patient taking carbamazepine for epilepsy develops Stevens-Johnson syndrome — a severe, life-threatening skin reaction. This is classified as a Type _____ ADR.",
+      "explanation": "Stevens-Johnson syndrome is a Type B (Bizarre) ADR — it is unpredictable, not dose-related, not related to the drug's known pharmacological action, and can be life-threatening. Type B reactions are the primary targets of pharmacovigilance reporting because they cannot be anticipated from the drug's mechanism of action.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 25
+}

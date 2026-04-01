@@ -1,0 +1,194 @@
+{
+  "id": "d6b8c779-839c-45b7-83d4-d4f55874b5e4",
+  "module_id": "1c340831-e751-43c4-9ea1-7c290cc7cbc6",
+  "title": "Essential Prefixes and Suffixes for Pharmacy",
+  "content": [
+    {
+      "text": "Mastering the Most Common Prefixes",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Prefixes modify the meaning of a medical root. They can indicate location, quantity, size, colour, time, or negation. As a pharmacy technician, you will encounter these prefixes daily — on prescription orders, drug information leaflets, and clinical notes from physicians.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "hyper-",
+          "Above / excessive",
+          "Hyperglycaemia",
+          "Elevated blood glucose — extremely common in Caribbean populations"
+        ],
+        [
+          "hypo-",
+          "Below / deficient",
+          "Hypotension",
+          "Low blood pressure — a side effect of many antihypertensives"
+        ],
+        [
+          "tachy-",
+          "Fast / rapid",
+          "Tachycardia",
+          "Heart rate above 100 bpm — seen with salbutamol overuse"
+        ],
+        [
+          "brady-",
+          "Slow",
+          "Bradycardia",
+          "Heart rate below 60 bpm — side effect of beta-blockers"
+        ],
+        [
+          "anti-",
+          "Against",
+          "Antiemetic",
+          "A drug that prevents nausea and vomiting"
+        ],
+        [
+          "sub-",
+          "Under / below",
+          "Sublingual",
+          "Under the tongue — route for nitroglycerin tablets"
+        ],
+        [
+          "intra-",
+          "Within",
+          "Intravenous (IV)",
+          "Within the vein — common hospital administration route"
+        ],
+        [
+          "poly-",
+          "Many",
+          "Polypharmacy",
+          "Taking many medications simultaneously — common in elderly Caribbean patients"
+        ],
+        [
+          "dys-",
+          "Difficult / painful",
+          "Dyspnoea",
+          "Difficulty breathing"
+        ],
+        [
+          "a- / an-",
+          "Without",
+          "Anaemia",
+          "Without adequate red blood cells — linked to sickle cell in the Caribbean"
+        ]
+      ],
+      "type": "table",
+      "caption": "High-Yield Prefixes for Pharmacy Technicians",
+      "headers": [
+        "Prefix",
+        "Meaning",
+        "Pharmacy Example",
+        "Context"
+      ]
+    },
+    {
+      "text": "Critical Suffixes for Pharmacy Practice",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Suffixes tell you what category a medical term falls into — whether it describes a condition, a diagnostic procedure, a surgical intervention, or a speciality. Some suffixes are so common in pharmacy that you will use them dozens of times each day.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "-itis",
+          "Inflammation",
+          "Dermatitis",
+          "Many prescriptions treat inflammatory conditions"
+        ],
+        [
+          "-osis",
+          "Abnormal condition",
+          "Thrombosis",
+          "Blood clot formation — treated with anticoagulants"
+        ],
+        [
+          "-ectomy",
+          "Surgical removal",
+          "Appendectomy",
+          "Post-surgical patients often need pain management"
+        ],
+        [
+          "-pathy",
+          "Disease",
+          "Nephropathy",
+          "Kidney disease — common complication of uncontrolled diabetes"
+        ],
+        [
+          "-algia",
+          "Pain",
+          "Neuralgia",
+          "Nerve pain — treated with gabapentin, pregabalin"
+        ],
+        [
+          "-aemia",
+          "Blood condition",
+          "Anaemia",
+          "Sickle cell anaemia prevalent in Caribbean populations"
+        ],
+        [
+          "-uria",
+          "Urine condition",
+          "Glycosuria",
+          "Glucose in urine — sign of uncontrolled diabetes"
+        ],
+        [
+          "-pnoea",
+          "Breathing",
+          "Dyspnoea",
+          "Difficulty breathing — common in asthma and COPD"
+        ],
+        [
+          "-megaly",
+          "Enlargement",
+          "Hepatomegaly",
+          "Liver enlargement — may indicate disease"
+        ],
+        [
+          "-scopy",
+          "Visual examination",
+          "Endoscopy",
+          "Requires bowel preparation medications"
+        ]
+      ],
+      "type": "table",
+      "caption": "Essential Suffixes for Pharmacy Technicians",
+      "headers": [
+        "Suffix",
+        "Meaning",
+        "Example",
+        "Pharmacy Relevance"
+      ]
+    },
+    {
+      "body": "Several prefix pairs are dangerously similar and are a common source of medication errors. 'hyper-' (excessive) vs 'hypo-' (deficient) is the most critical: confusing hyperglycaemia with hypoglycaemia could lead to a life-threatening dispensing error. Similarly, watch for 'inter-' (between) vs 'intra-' (within), and 'ante-' (before) vs 'anti-' (against). Always double-check when these prefixes appear on prescriptions.",
+      "type": "callout",
+      "title": "Confusing Pairs — Be Careful!",
+      "variant": "warning"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Excessive urination",
+        "Blood in the urine",
+        "Painful or difficult urination",
+        "Absence of urination"
+      ],
+      "question": "A patient's chart reads 'dysuria'. What does this term mean?",
+      "explanation": "The prefix 'dys-' means difficult or painful, and the suffix '-uria' relates to urine. Therefore 'dysuria' means painful or difficult urination. This is a common symptom of urinary tract infections (UTIs), which are frequently presented at Caribbean community pharmacies.",
+      "correctIndex": 2
+    },
+    {
+      "term": "Polypharmacy",
+      "type": "key-term",
+      "definition": "The concurrent use of multiple medications by a single patient, typically defined as five or more regular medicines. Polypharmacy is particularly common among elderly Caribbean patients managing multiple chronic conditions such as hypertension, diabetes, and arthritis. It increases the risk of drug interactions and adverse effects."
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 25
+}

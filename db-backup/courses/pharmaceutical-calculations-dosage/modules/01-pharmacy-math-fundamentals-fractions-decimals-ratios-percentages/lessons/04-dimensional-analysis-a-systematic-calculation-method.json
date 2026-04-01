@@ -1,0 +1,80 @@
+{
+  "id": "6d171a36-1865-4d6e-a4fc-cfefd8fb072e",
+  "module_id": "a10da8b5-6ddf-4b8e-9a92-c4055fb72eed",
+  "title": "Dimensional Analysis: A Systematic Calculation Method",
+  "content": [
+    {
+      "text": "Dimensional Analysis: One Method for All Calculations",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Dimensional analysis (also called factor-label method or unit-factor method) is a powerful, systematic approach to pharmaceutical calculations. Instead of memorising separate formulas for each type of problem, you set up a chain of conversion factors that cancel unwanted units and leave only the desired unit. This method is favoured by pharmacy programmes across the Caribbean, including those at COSTAATT in Trinidad and the University of Technology Jamaica.",
+      "type": "text"
+    },
+    {
+      "term": "Dimensional Analysis",
+      "type": "key-term",
+      "definition": "A problem-solving method that uses conversion factors arranged so that unwanted units cancel out, leaving only the desired unit. Each conversion factor is a fraction equal to 1 (e.g., 1000 mg / 1 g). The method is systematic, auditable, and reduces errors in multi-step calculations."
+    },
+    {
+      "text": "The Five Steps of Dimensional Analysis",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "type": "list",
+      "items": [
+        "Identify what you are solving for (desired unit)",
+        "Identify what you are given (starting value and unit)",
+        "Identify the conversion factors needed to get from given units to desired units",
+        "Set up the equation so units cancel diagonally",
+        "Multiply across the top, divide by the bottom, and check that only the desired unit remains"
+      ],
+      "ordered": true
+    },
+    {
+      "body": "Worked example: A doctor prescribes 0.5 g of amoxicillin. The pharmacy stocks amoxicillin 250 mg capsules. How many capsules do you dispense per dose?",
+      "type": "text"
+    },
+    {
+      "body": "Step 1: Desired unit = capsules. Step 2: Given = 0.5 g. Step 3: Conversion factors needed: g → mg, then mg → capsules. Step 4: Set up: 0.5 g × (1000 mg / 1 g) × (1 capsule / 250 mg). Step 5: Calculate: 0.5 × 1000 / 250 = 2 capsules. Units check: g cancels, mg cancels, leaving capsules ✓.",
+      "type": "text"
+    },
+    {
+      "body": "More complex example: A prescription reads 'erythromycin 400 mg PO QDS × 10 days'. Stock available: erythromycin 200 mg/5 mL suspension. How many millilitres total are needed for the full course? Using dimensional analysis: 400 mg/dose × 4 doses/day × 10 days × (5 mL / 200 mg) = 400 × 4 × 10 × 5 / 200 = 400 mL. You would dispense one 400 mL bottle (or two 200 mL bottles if that is the available pack size).",
+      "type": "text"
+    },
+    {
+      "body": "The beauty of dimensional analysis is that if your units do not cancel correctly, you know you have set up the problem wrong BEFORE you get the wrong answer. This built-in error-checking makes it the safest calculation method. In high-pressure situations — a busy Saturday morning at a Port of Spain pharmacy, a hospital night shift at QEH — dimensional analysis keeps you systematic when fatigue might cause shortcuts.",
+      "type": "callout",
+      "title": "Why Dimensional Analysis Is Your Best Friend",
+      "variant": "tip"
+    },
+    {
+      "type": "case-study",
+      "title": "Case Study: The CDAP Partial Supply Calculation",
+      "scenario": "Mrs. Doreen Rampersad presents at your pharmacy in San Fernando, Trinidad, with a CDAP prescription for metformin 500 mg BD × 90 days. The CDAP programme covers a 90-day supply. However, your current stock only has 120 tablets of metformin 500 mg. The patient needs to be given a partial supply now and return for the remainder.",
+      "questions": [
+        "How many tablets are needed for the full 90-day supply?",
+        "If you dispense 120 tablets, how many days does that cover?",
+        "How many tablets remain to be collected on the patient's return?"
+      ],
+      "discussion": "Full supply: 1 tablet × 2 times daily × 90 days = 180 tablets. Partial supply of 120 tablets: 120 ÷ 2 = 60 days' supply. Remaining: 180 - 120 = 60 tablets. You would document the partial supply on the prescription, note the balance owing, and advise Mrs. Rampersad to return before day 60. Under CDAP rules, partial supplies are permitted and the balance must be dispensed from the same pharmacy. This is a common real-world scenario in Trinidad when stock of high-demand CDAP medications runs low."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "21 capsules",
+        "42 capsules",
+        "6 capsules",
+        "84 capsules"
+      ],
+      "question": "Using dimensional analysis, how many 250 mg capsules are needed to provide amoxicillin 1.5 g per day for 7 days?",
+      "explanation": "Set up: 1.5 g/day × 7 days × (1000 mg / 1 g) × (1 capsule / 250 mg) = 1.5 × 7 × 1000 / 250 = 42 capsules. Units: g cancels, mg cancels, days cancels, leaving capsules ✓. This is a standard high-dose amoxicillin course that might be prescribed for a dental infection — common in Caribbean practice.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 4,
+  "duration_minutes": 30
+}

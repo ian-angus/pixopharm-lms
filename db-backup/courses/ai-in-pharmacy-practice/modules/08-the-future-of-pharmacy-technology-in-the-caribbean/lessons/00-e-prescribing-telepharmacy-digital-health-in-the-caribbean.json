@@ -1,0 +1,128 @@
+{
+  "id": "678311ec-42b0-4e5e-a2d1-c5de81b63359",
+  "module_id": "5f78ea4a-5416-4877-9c32-764e4bb0ecb3",
+  "title": "E-Prescribing, Telepharmacy & Digital Health in the Caribbean",
+  "content": [
+    {
+      "text": "The Digital Transformation of Caribbean Pharmacy",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "The Caribbean is in the early stages of a digital health transformation that will fundamentally change how pharmacy services are delivered. E-prescribing, telepharmacy, electronic health records, and digital payment systems are all emerging across the region, driven by government initiatives, COVID-19 lessons, and increasing patient expectations. For pharmacy technicians, understanding these trends is not optional — it is essential for career survival.",
+      "type": "text"
+    },
+    {
+      "term": "E-Prescribing (Electronic Prescribing)",
+      "type": "key-term",
+      "definition": "A system where prescribers create and send prescriptions electronically directly to the pharmacy's dispensing system, eliminating paper prescriptions. Benefits include reduced transcription errors, faster processing, automatic interaction checking at the point of prescribing, and better audit trails."
+    },
+    {
+      "rows": [
+        [
+          "CDAP Digitisation",
+          "Trinidad & Tobago",
+          "Phased implementation ongoing",
+          "Electronic tracking of chronic disease medication dispensing; reduced fraud; improved patient outcomes monitoring"
+        ],
+        [
+          "E-Prescribing Pilots",
+          "Jamaica",
+          "Pilot programmes at select health centres",
+          "Direct electronic prescription transmission; reduced paper handling; faster dispensing turnaround"
+        ],
+        [
+          "Electronic Drug Service",
+          "Barbados",
+          "Digital formulary and procurement in place",
+          "Standardised formulary access; streamlined procurement; data-driven stock management"
+        ],
+        [
+          "CARICOM e-Health Strategy",
+          "Regional",
+          "Strategic framework under development",
+          "Harmonised electronic health records; cross-border patient data portability; regional disease surveillance integration"
+        ],
+        [
+          "Telepharmacy Expansion",
+          "Multiple islands",
+          "COVID-19 accelerated adoption",
+          "Remote counselling, medication review, and dispensing verification for patients on smaller islands or in rural areas"
+        ]
+      ],
+      "type": "table",
+      "caption": "Digital Health Initiatives Across the Caribbean",
+      "headers": [
+        "Initiative",
+        "Country/Region",
+        "Status",
+        "Pharmacy Impact"
+      ]
+    },
+    {
+      "term": "Telepharmacy",
+      "type": "key-term",
+      "definition": "The delivery of pharmaceutical care via telecommunications technology, allowing pharmacists to verify prescriptions, counsel patients, and oversee dispensing remotely. Particularly valuable in the Caribbean where some islands lack resident pharmacists and where patients in rural areas have limited access to pharmacy services."
+    },
+    {
+      "type": "island-comparison",
+      "title": "Digital Health Readiness: Current State",
+      "islands": [
+        {
+          "flag": "🇹🇹",
+          "name": "Trinidad & Tobago",
+          "details": [
+            "CDAP digitisation is the most significant current initiative for pharmacy",
+            "Several major pharmacy chains have adopted cloud-based dispensing systems",
+            "iGovTT provides digital infrastructure for government health services",
+            "Internet penetration is approximately 77%, supporting digital health adoption",
+            "Challenges remain with interoperability between different health systems"
+          ]
+        },
+        {
+          "flag": "🇯🇲",
+          "name": "Jamaica",
+          "details": [
+            "The National Health Fund (NHF) electronic claims system is well established",
+            "E-prescribing pilots are generating valuable implementation data",
+            "Jamaica's Health Information System (JAMHIS) is building toward integrated health records",
+            "Rural connectivity remains a challenge for telemedicine and telepharmacy",
+            "The government has committed to a digital health strategy as part of Vision 2030"
+          ]
+        },
+        {
+          "flag": "🇧🇧",
+          "name": "Barbados",
+          "details": [
+            "Small island size makes comprehensive digital health coverage more achievable",
+            "The Barbados Drug Service's digital systems provide a foundation for broader e-health",
+            "Queen Elizabeth Hospital has implemented electronic modules for prescribing",
+            "High internet penetration (over 80%) supports digital service delivery",
+            "The government has articulated a Smart Barbados strategy including health technology"
+          ]
+        }
+      ],
+      "description": "Where each island stands on the digital health journey, and what this means for pharmacy technicians."
+    },
+    {
+      "body": "Imagine a pharmacy technician on Tobago dispensing a prescription verified in real-time by a pharmacist in Port of Spain via a secure video link. Or a patient on a small island like Bequia receiving medication counselling from a pharmacist in Bridgetown without making a four-hour ferry trip. Telepharmacy has the potential to dramatically improve access to pharmaceutical care across the Caribbean's fragmented island geography. The COVID-19 pandemic accelerated adoption, and the trend is expected to continue.",
+      "type": "callout",
+      "title": "Telepharmacy: A Caribbean Game-Changer",
+      "variant": "info"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "E-prescriptions are free while paper prescriptions cost money",
+        "E-prescribing eliminates transcription errors, enables automatic interaction checking, and creates better audit trails",
+        "E-prescribing eliminates the need for pharmacist review",
+        "Paper prescriptions are illegal in the Caribbean"
+      ],
+      "question": "What is the primary advantage of e-prescribing over traditional paper prescriptions?",
+      "explanation": "E-prescribing reduces transcription errors (no more misread handwriting), enables automatic drug interaction checking at the point of prescribing, speeds up dispensing, and creates comprehensive audit trails. It does not eliminate the need for pharmacist review — it enhances the review process with better data.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 20
+}

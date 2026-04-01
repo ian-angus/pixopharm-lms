@@ -1,0 +1,182 @@
+[
+  {
+    "id": "0870479d-01fa-41ba-8b13-403497e26b67",
+    "module_id": "0bff4891-735a-41be-b0c3-a8bac8ddd17a",
+    "question": "Which of the following is NOT a mandatory element on a Caribbean prescription?",
+    "options": [
+      "Patient's full name",
+      "Date the prescription was written",
+      "Patient's blood type",
+      "Prescriber's registration number"
+    ],
+    "correct_answer": 2,
+    "explanation": "A patient's blood type is not required on a prescription. Mandatory elements include the patient's name, address, date, drug details (name, strength, dose, quantity), directions, and prescriber identification (name, qualification, registration number, signature).",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "63ee14d5-c96a-48f3-ba0f-9dff124178dd",
+    "module_id": "0bff4891-735a-41be-b0c3-a8bac8ddd17a",
+    "question": "The 'Five Rights' of medication dispensing include Right Patient, Right Drug, Right Dose, Right Route, and what fifth element?",
+    "options": [
+      "Right Price",
+      "Right Time",
+      "Right Pharmacy",
+      "Right Insurance"
+    ],
+    "correct_answer": 1,
+    "explanation": "The Five Rights are: Right Patient, Right Drug, Right Dose, Right Route, and Right Time. These five elements must be verified at every checkpoint in the dispensing process to prevent errors.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "3526e246-6984-44cc-b0bc-934fe7010b1e",
+    "module_id": "0bff4891-735a-41be-b0c3-a8bac8ddd17a",
+    "question": "True or False: In most Caribbean jurisdictions, a pharmacy technician can perform the final verification check on a prescription without pharmacist oversight.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": 1,
+    "explanation": "False. In Trinidad & Tobago, Jamaica, Barbados, and most Caribbean jurisdictions, the final verification (Check 3) must be performed by a registered pharmacist. Technicians prepare and assist, but the pharmacist provides the legal final check before the medication is released to the patient.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "cc3bddd1-bda5-4190-8727-7c23a9c0531e",
+    "module_id": "0bff4891-735a-41be-b0c3-a8bac8ddd17a",
+    "question": "A patient presents a prescription written by a general practitioner six months ago for metformin 500 mg. Your jurisdiction allows prescriptions to be valid for up to 6 months. The prescription is illegible in the 'quantity' field. What should you do?",
+    "options": [
+      "Dispense a standard 30-day supply since that is most common",
+      "Ask the patient how many tablets they usually receive",
+      "Contact the prescriber to clarify the illegible quantity before dispensing",
+      "Dispense the full bottle and note the discrepancy on file"
+    ],
+    "correct_answer": 2,
+    "explanation": "When any part of a prescription is illegible, the only safe and legal course of action is to contact the prescriber for clarification. Never guess, assume a standard quantity, or rely on the patient's recollection — the prescriber's intent must be confirmed directly.",
+    "order_index": 3,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "423d212c-30f4-4134-8b7b-44251e82d09c",
+    "module_id": "0bff4891-735a-41be-b0c3-a8bac8ddd17a",
+    "question": "Which of the following are examples of Look-Alike, Sound-Alike (LASA) medication pairs? Select ALL that apply.",
+    "options": [
+      "Metformin and Metoprolol",
+      "Paracetamol and Ibuprofen",
+      "Losartan and Lisinopril",
+      "Hydroxyzine and Hydralazine",
+      "Amoxicillin and Doxycycline"
+    ],
+    "correct_answer": 0,
+    "explanation": "Metformin/Metoprolol, Losartan/Lisinopril, and Hydroxyzine/Hydralazine are all well-known LASA pairs because their names look or sound similar. Paracetamol/Ibuprofen and Amoxicillin/Doxycycline are not LASA pairs — their names are sufficiently distinct.",
+    "order_index": 4,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "analyze"
+  },
+  {
+    "id": "75e7dd10-0154-428f-ab73-1fb691356870",
+    "module_id": "0bff4891-735a-41be-b0c3-a8bac8ddd17a",
+    "question": "Which labelling practice is MOST appropriate for a patient with limited health literacy?",
+    "options": [
+      "Writing directions as 'i tab po bd pc' to save label space",
+      "Using 'Take ONE tablet by mouth TWICE daily AFTER meals' with capitalised key words",
+      "Printing 'As directed' since the doctor already explained the medication",
+      "Writing in the patient's first language regardless of official pharmacy language requirements"
+    ],
+    "correct_answer": 1,
+    "explanation": "Plain language with capitalised key words is the gold standard for patient-facing labels. Latin abbreviations should never appear on patient labels. 'As directed' provides no guidance. While linguistic accommodation is important, labels should comply with local regulatory requirements, with verbal counselling in the patient's preferred language.",
+    "order_index": 5,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "evaluate"
+  },
+  {
+    "id": "83ee48bc-cd53-4d53-8ac3-1f9686cd0c67",
+    "module_id": "0bff4891-735a-41be-b0c3-a8bac8ddd17a",
+    "question": "Arrange the following dispensing steps in the correct order.",
+    "options": [
+      "Pharmacist performs final verification",
+      "Technician selects medication from shelf and verifies against prescription",
+      "Receive and triage the prescription at the window",
+      "Prepare, count, and label the medication",
+      "Hand off medication to patient with counselling"
+    ],
+    "correct_answer": 0,
+    "explanation": "The correct order is: (1) Receive and triage the prescription, (2) Select medication from shelf and verify, (3) Prepare, count, and label, (4) Pharmacist performs final verification, (5) Hand off to patient with counselling.",
+    "order_index": 6,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "8612c81c-531b-4f86-86da-e8be29770cff",
+    "module_id": "0bff4891-735a-41be-b0c3-a8bac8ddd17a",
+    "question": "Under Trinidad & Tobago's CDAP programme, what special labelling requirement applies to dispensed medications?",
+    "options": [
+      "Labels must be printed in red ink",
+      "Labels must include CDAP programme identifiers",
+      "Labels must include the patient's National ID number",
+      "Labels must be in both English and Spanish"
+    ],
+    "correct_answer": 1,
+    "explanation": "CDAP (Chronic Disease Assistance Programme) medications dispensed in Trinidad & Tobago carry specific programme identifiers on their labels. This helps track programme utilisation and ensures accountability in the provision of free chronic disease medications.",
+    "order_index": 7,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "8f6377e5-14fb-4b5e-9083-1e59ff6d2664",
+    "module_id": "0bff4891-735a-41be-b0c3-a8bac8ddd17a",
+    "question": "Match each dispensing checkpoint with its primary purpose.",
+    "options": [
+      "Check 1 → Correct drug selected from shelf",
+      "Check 2 → Correct quantity counted and label accurate",
+      "Check 3 → Independent pharmacist verification before release",
+      "All of the above are correct matches"
+    ],
+    "correct_answer": 3,
+    "explanation": "All three matches are correct. Check 1 verifies the correct drug is selected from the shelf. Check 2 verifies the count and label accuracy during preparation. Check 3 is the pharmacist's independent final verification before the medication is released to the patient.",
+    "order_index": 8,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "f2cbe423-2d6e-4052-98c0-4fb321213cdb",
+    "module_id": "0bff4891-735a-41be-b0c3-a8bac8ddd17a",
+    "question": "The teach-back method involves asking the patient to _______________ in their own words.",
+    "options": [
+      "explain how they will take their medication",
+      "spell the name of their medication",
+      "list all their allergies",
+      "describe the colour of each tablet"
+    ],
+    "correct_answer": 0,
+    "explanation": "The teach-back method asks the patient to explain, in their own words, how they will take the medication. This confirms comprehension while placing the responsibility on the counsellor ('Let me make sure I explained it clearly') rather than testing the patient.",
+    "order_index": 9,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "understand"
+  }
+]

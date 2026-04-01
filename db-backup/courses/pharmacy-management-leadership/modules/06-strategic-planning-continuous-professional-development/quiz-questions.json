@@ -1,0 +1,181 @@
+[
+  {
+    "id": "a3864ff8-49e6-4758-896e-4b2491cf01af",
+    "module_id": "239c1c0d-6b4a-4c93-8a9f-a6dedc1deb6f",
+    "question": "In a SWOT analysis, which quadrant contains factors that are INTERNAL to the pharmacy and FAVOURABLE?",
+    "options": [
+      "Strengths",
+      "Weaknesses",
+      "Opportunities",
+      "Threats"
+    ],
+    "correct_answer": 0,
+    "explanation": "Strengths are internal (within the pharmacy's control) and favourable (advantageous). Examples include an experienced team, strong community reputation, or efficient processes. Weaknesses are internal but unfavourable. Opportunities and threats are both external factors.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "4c518356-0ac9-49c6-93e9-b6ac8428fe12",
+    "module_id": "239c1c0d-6b4a-4c93-8a9f-a6dedc1deb6f",
+    "question": "A Caribbean community pharmacy completes a SWOT analysis and identifies that its strength is 'trusted community reputation' and an opportunity is 'growing demand for clinical screening services'. The BEST strategic action is:",
+    "options": [
+      "Reduce staff to cut costs",
+      "Leverage the trusted reputation to introduce blood pressure and glucose screening services",
+      "Focus solely on prescription dispensing and ignore clinical services",
+      "Wait until competitors offer clinical services first, then copy their approach"
+    ],
+    "correct_answer": 1,
+    "explanation": "Strategic planning involves matching strengths to opportunities. A trusted community reputation (strength) is the perfect foundation for introducing clinical screening services (opportunity) — patients are more likely to use these services at a pharmacy they already trust. Waiting for competitors to act first cedes the market advantage.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "888b6116-5ca8-44d2-8a6a-c38427620e41",
+    "module_id": "239c1c0d-6b4a-4c93-8a9f-a6dedc1deb6f",
+    "question": "Which Caribbean country currently has the MOST formalised mandatory CPD requirements for pharmacist re-registration?",
+    "options": [
+      "Trinidad & Tobago",
+      "Jamaica",
+      "Barbados",
+      "All three have identical CPD requirements"
+    ],
+    "correct_answer": 1,
+    "explanation": "Jamaica currently has the most formalised CPD requirements, with the Pharmacy Council of Jamaica requiring pharmacists to accumulate CPD credits for re-registration. Trinidad & Tobago and Barbados are developing their mandatory CPD frameworks but are not as far advanced in implementation.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "ef631489-674d-41b6-93fc-1a0d6cc86fb0",
+    "module_id": "239c1c0d-6b4a-4c93-8a9f-a6dedc1deb6f",
+    "question": "A pharmacy that does not have a written strategic plan can still be successful in the long term by reacting effectively to daily challenges.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": 1,
+    "explanation": "False. While reactive management can keep a pharmacy operating day-to-day, long-term success requires intentional strategic planning. Pharmacies without strategic plans are vulnerable to competitive threats, regulatory changes, and market shifts that they did not anticipate. Strategic planning shifts the pharmacy from survival mode to growth mode.",
+    "order_index": 3,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "evaluate"
+  },
+  {
+    "id": "b6d81e51-01e8-49ab-8431-3a23682e2aad",
+    "module_id": "239c1c0d-6b4a-4c93-8a9f-a6dedc1deb6f",
+    "question": "Which of the following is an example of a SMART professional development goal for a pharmacy technician?",
+    "options": [
+      "Get better at my job this year",
+      "Learn everything about pharmacy management",
+      "Complete the PIXOPHARM Management course with 80% or higher by December 2027",
+      "Become the best technician in the Caribbean"
+    ],
+    "correct_answer": 2,
+    "explanation": "A SMART goal is Specific (PIXOPHARM Management course), Measurable (80% or higher), Achievable (realistic for a working technician), Relevant (management course for aspiring supervisor), and Time-bound (by December 2027). The other options are vague, unmeasurable, or unrealistic.",
+    "order_index": 4,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "4c00b02f-efe8-48b9-80e2-95a0f4b0088f",
+    "module_id": "239c1c0d-6b4a-4c93-8a9f-a6dedc1deb6f",
+    "question": "Which of the following are recognised CPD activity categories in the Caribbean? (Select all that apply)",
+    "options": [
+      "Formal learning (accredited courses, workshops, conferences)",
+      "Practice-based learning (clinical audits, journal clubs, quality improvement projects)",
+      "Social media browsing of pharmacy-related content",
+      "Self-directed learning (professional reading, reflective practice)",
+      "Teaching and mentoring (precepting students, training new staff)"
+    ],
+    "correct_answer": 0,
+    "explanation": "The four recognised CPD categories are formal learning, practice-based learning, self-directed learning, and teaching/mentoring. While social media may occasionally contain useful pharmacy information, casual browsing is not a structured CPD activity and would not be recognised for CPD credit unless part of a deliberate, documented learning plan.",
+    "order_index": 5,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "68f3be10-a4d8-45ea-bace-5d58e60f0043",
+    "module_id": "239c1c0d-6b4a-4c93-8a9f-a6dedc1deb6f",
+    "question": "Telepharmacy — remote prescription verification and patient counselling — represents an opportunity for Caribbean pharmacies primarily because:",
+    "options": [
+      "It allows pharmacies to operate without any licensed pharmacists",
+      "It can extend pharmacy services to underserved rural communities and smaller islands with limited pharmacy access",
+      "It eliminates the need for physical pharmacy premises",
+      "It is cheaper than hiring pharmacy staff"
+    ],
+    "correct_answer": 1,
+    "explanation": "Telepharmacy's primary value in the Caribbean is extending pharmacy services to underserved populations — rural communities, smaller islands, and areas where pharmacist access is limited. It does not replace the need for licensed pharmacists (they provide the remote service) or physical premises, but it overcomes geographic barriers to care.",
+    "order_index": 6,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "260cfd98-6d99-4a38-ad4f-67d1b5b87048",
+    "module_id": "239c1c0d-6b4a-4c93-8a9f-a6dedc1deb6f",
+    "question": "How often should a personal professional development plan (PDP) be reviewed?",
+    "options": [
+      "Only when applying for a new job",
+      "Annually",
+      "Quarterly, with a full annual review",
+      "Every five years, in line with major career milestones"
+    ],
+    "correct_answer": 2,
+    "explanation": "A PDP should be reviewed quarterly to track progress, adjust timelines, and respond to changing circumstances. A full annual review allows for goal resetting and strategic realignment. Reviewing only annually or less frequently allows the plan to drift and become irrelevant to current needs.",
+    "order_index": 7,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "c801d3dc-da06-4bab-82af-95ca757bd652",
+    "module_id": "239c1c0d-6b4a-4c93-8a9f-a6dedc1deb6f",
+    "question": "A pharmacy supervisor notices that daily operations consume all her time, leaving no space for strategic planning. The MOST appropriate response is:",
+    "options": [
+      "Accept that strategic planning is a luxury for larger pharmacies",
+      "Delegate operational tasks to capable team members to free up management time for strategic work",
+      "Hire a consultant to write the strategic plan without any input from the team",
+      "Plan to do strategic planning during the holiday season when the pharmacy is less busy"
+    ],
+    "correct_answer": 1,
+    "explanation": "The solution is delegation — using the leadership and delegation skills from Module 3 to empower capable team members with operational responsibilities, freeing the supervisor to focus on strategic work. Strategic planning is not a luxury; it is a responsibility of management. A consultant-written plan without team input will lack ownership, and waiting for 'quiet times' means it will never happen.",
+    "order_index": 8,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "evaluate"
+  },
+  {
+    "id": "f6e430c9-411d-4e43-ba2c-3ed96b7ab3de",
+    "module_id": "239c1c0d-6b4a-4c93-8a9f-a6dedc1deb6f",
+    "question": "Match each SWOT category with its correct definition:",
+    "options": [
+      "Strengths → Internal favourable factors",
+      "Weaknesses → Internal unfavourable factors",
+      "Opportunities → External favourable factors",
+      "Threats → External unfavourable factors"
+    ],
+    "correct_answer": 0,
+    "explanation": "SWOT analysis organises factors along two dimensions: internal vs. external, and favourable vs. unfavourable. Strengths are internal + favourable, Weaknesses are internal + unfavourable, Opportunities are external + favourable, and Threats are external + unfavourable. Understanding this framework is essential for strategic analysis.",
+    "order_index": 9,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "understand"
+  }
+]

@@ -1,0 +1,115 @@
+{
+  "id": "e309b003-44ff-4ce0-a46b-5dc47cb7d67b",
+  "module_id": "3a33feeb-8c13-4005-b26d-ef01da03aae6",
+  "title": "Tropical Skin Conditions & Dermatological Pharmacy",
+  "content": [
+    {
+      "text": "Skin Conditions in Tropical Caribbean Climates",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "The Caribbean's tropical climate — characterised by high temperatures, high humidity, intense UV radiation, and abundant fungal/microbial life — creates a unique spectrum of skin conditions that pharmacy technicians encounter daily. Fungal infections thrive in warm, moist environments. UV exposure drives photoageing and skin cancers (even in darker-skinned individuals). Insect-borne diseases (dengue, chikungunya) often present with characteristic skin rashes. Understanding these conditions helps pharmacy technicians assist patients with appropriate OTC recommendations and recognise presentations that require pharmacist or physician referral.",
+      "type": "text"
+    },
+    {
+      "text": "Fungal Skin Infections",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Fungal skin infections (dermatophytoses or 'ringworm') are extremely common in the Caribbean. The main types include tinea pedis (athlete's foot — affecting the feet), tinea corporis (ringworm of the body), tinea cruris (jock itch — affecting the groin), and tinea versicolor (pityriasis versicolor — causing hypopigmented or hyperpigmented patches, very common in tropical climates). Treatment involves topical antifungals such as clotrimazole, miconazole, terbinafine cream, or ketoconazole shampoo. Severe or widespread infections may require oral antifungals (fluconazole, terbinafine tablets, griseofulvin).",
+      "type": "text"
+    },
+    {
+      "text": "Other Common Tropical Skin Conditions",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "type": "list",
+      "items": [
+        "Eczema / Atopic dermatitis: Common in Caribbean children; managed with emollients, topical corticosteroids, and antihistamines. Tropical heat and sweating can exacerbate symptoms.",
+        "Prickly heat (miliaria): Blocked sweat glands causing an itchy rash; very common in hot, humid conditions. Calamine lotion and cool environments provide relief.",
+        "Insect bite reactions: Mosquito bites can cause significant local reactions; topical hydrocortisone and oral antihistamines (cetirizine, loratadine) are frequently dispensed.",
+        "Sun-related conditions: Even in darker-skinned individuals, chronic UV exposure causes photoageing and increases skin cancer risk. Sunscreen (SPF 30+) is recommended for all skin types.",
+        "Scabies: Caused by the Sarcoptes scabiei mite; outbreaks occur in close-contact settings. Treated with permethrin 5% cream or oral ivermectin.",
+        "Cutaneous leishmaniasis: Rare in the Caribbean but reported in some South American border areas; causes skin ulcers."
+      ],
+      "ordered": false
+    },
+    {
+      "rows": [
+        [
+          "Clotrimazole cream 1%",
+          "Azole antifungal",
+          "Tinea pedis, tinea corporis, candidiasis",
+          "OTC; apply twice daily for 2-4 weeks"
+        ],
+        [
+          "Hydrocortisone cream 1%",
+          "Mild corticosteroid",
+          "Eczema, insect bites, mild dermatitis",
+          "OTC; should not be used on the face for prolonged periods"
+        ],
+        [
+          "Betamethasone valerate 0.1%",
+          "Potent corticosteroid",
+          "Moderate-to-severe eczema, psoriasis",
+          "Prescription only; avoid prolonged use — risk of skin thinning"
+        ],
+        [
+          "Permethrin cream 5%",
+          "Antiparasitic",
+          "Scabies",
+          "Apply to entire body from neck down; wash off after 8-14 hours"
+        ],
+        [
+          "Calamine lotion",
+          "Skin protectant",
+          "Prickly heat, mild sunburn, insect bites",
+          "OTC; cooling and soothing; no significant side effects"
+        ],
+        [
+          "Mupirocin ointment 2%",
+          "Topical antibiotic",
+          "Impetigo, infected wounds",
+          "Prescription; important for treating bacterial skin infections"
+        ]
+      ],
+      "type": "table",
+      "caption": "Common Topical Dermatological Medications in Caribbean Pharmacies",
+      "headers": [
+        "Medication",
+        "Class",
+        "Common Uses",
+        "Notes"
+      ]
+    },
+    {
+      "body": "Skin bleaching (skin lightening) is a significant public health concern across the Caribbean. Products containing hydroquinone, mercury, or high-potency corticosteroids are used cosmetically to lighten skin tone. Mercury-containing products cause nephrotoxicity, neurotoxicity, and skin damage. Prolonged use of potent corticosteroids on the face causes skin atrophy, telangiectasia, and steroid rosacea. Pharmacy technicians should be aware that patients requesting these products may not disclose their true use; education and referral to a dermatologist are appropriate responses.",
+      "type": "callout",
+      "title": "Skin Bleaching Products — A Caribbean Concern",
+      "variant": "warning"
+    },
+    {
+      "term": "Dermatophyte",
+      "type": "key-term",
+      "definition": "A type of fungus that infects the skin, hair, or nails by digesting keratin — the structural protein in these tissues. Common dermatophyte genera include Trichophyton, Microsporum, and Epidermophyton. Dermatophyte infections are named by the body site affected: tinea pedis (feet), tinea capitis (scalp), tinea corporis (body), tinea cruris (groin), tinea unguium (nails, also called onychomycosis)."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Caribbean populations lack melanin protection",
+        "The fungus thrives in the tropical warm, humid climate",
+        "Antifungal medications are not available in the region",
+        "It is spread by contaminated water supplies"
+      ],
+      "question": "Tinea versicolor is particularly common in the Caribbean because:",
+      "explanation": "Tinea versicolor (pityriasis versicolor) is caused by Malassezia fungi, which are normal skin commensals but overgrow in warm, humid conditions — exactly the climate of the Caribbean. The infection causes characteristic hypo- or hyperpigmented patches on the trunk and is one of the most common dermatological conditions seen in tropical pharmacies.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 25
+}

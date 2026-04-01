@@ -1,0 +1,59 @@
+{
+  "id": "e034dfbd-baa1-4e12-a30d-7b9f9325af9b",
+  "module_id": "34141bea-36cb-4e91-9ba8-8579bff2a291",
+  "title": "When to Refer: Recognising Red Flags in Self-Medication",
+  "content": [
+    {
+      "text": "The Limits of OTC Treatment",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Not every patient who approaches the OTC counter can be safely managed without a doctor. Pharmacy technicians must recognise 'red flag' symptoms that require medical referral. Knowing when to say 'I think you should see a doctor' is as important as knowing which OTC product to recommend.",
+      "type": "text"
+    },
+    {
+      "term": "Red Flag Symptoms",
+      "type": "key-term",
+      "definition": "Signs or symptoms that suggest a serious underlying condition requiring medical evaluation rather than OTC self-treatment. Red flags include chest pain, unexplained weight loss, blood in bodily fluids, sudden severe headache, high persistent fever, and symptoms that worsen despite treatment."
+    },
+    {
+      "body": "In Caribbean pharmacy practice, the technician is often the first healthcare professional a patient consults. Many patients visit the pharmacy instead of a doctor due to cost, convenience, or clinic wait times. This places a particular responsibility on the pharmacy team to triage effectively — helping those who can be safely self-treated while identifying those who need medical referral.",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Chest pain or difficulty breathing — refer immediately (potential cardiac or pulmonary emergency)",
+        "Blood in stool, urine, or vomit — refer urgently (GI bleeding, UTI, or other serious cause)",
+        "Symptoms lasting more than 7-10 days without improvement — refer for diagnosis",
+        "High fever (>39°C / 102°F) in adults or any fever in children under 3 months — refer",
+        "Sudden severe headache ('worst headache of my life') — refer urgently (possible subarachnoid haemorrhage)",
+        "Suspected allergic reaction (swelling, hives, difficulty breathing) — refer immediately",
+        "Patient already taking 3+ prescription medications — consult pharmacist before recommending OTC",
+        "Recurrent symptoms requiring repeated OTC treatment — refer for underlying cause investigation"
+      ],
+      "ordered": false
+    },
+    {
+      "body": "Use WWHAM to structure OTC consultations: Who is the patient? What are the symptoms? How long have they had symptoms? Action already taken? Medications currently taking? This framework ensures you gather enough information to recommend safely or refer appropriately.",
+      "type": "callout",
+      "title": "The 'WWHAM' Approach to OTC Counselling",
+      "variant": "tip"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Dispense loperamide — it stops diarrhoea",
+        "Refer to the pharmacist or doctor — bloody diarrhoea is a red flag requiring medical assessment",
+        "Recommend a stronger dose of loperamide",
+        "Suggest they also take an antibiotic"
+      ],
+      "question": "A customer asks for loperamide for diarrhoea that contains blood. What should you do?",
+      "explanation": "Bloody diarrhoea may indicate bacterial dysentery, inflammatory bowel disease, or other serious conditions. Loperamide is contraindicated in dysentery as it can worsen the infection by preventing pathogen clearance. Medical referral is essential.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 3,
+  "duration_minutes": 20
+}

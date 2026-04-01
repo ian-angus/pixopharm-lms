@@ -1,0 +1,76 @@
+{
+  "id": "0468d2b0-ead6-47b1-9723-31556382ce95",
+  "module_id": "30df726a-ab1c-402b-a4fd-52861a29b89b",
+  "title": "Understanding Expiry Dates & Beyond-Use Dates",
+  "content": [
+    {
+      "text": "What Expiry Dates Really Mean",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Every pharmaceutical product carries an expiry date assigned by the manufacturer based on stability testing under controlled conditions (typically 25°C/60% RH for temperate markets or 30°C/65% RH for tropical zones). The expiry date indicates the last date the manufacturer guarantees the product meets its labelled potency and purity specifications — provided it has been stored correctly. After this date, the product's safety and efficacy can no longer be assured.",
+      "type": "text"
+    },
+    {
+      "body": "It is critical to understand that an expiry date is not a cliff edge — a medication does not suddenly become toxic on the day after expiry. Rather, it is the point beyond which the manufacturer's guarantee no longer applies. However, dispensing expired medications is illegal in all Caribbean jurisdictions and constitutes professional misconduct. The risk is not only legal but clinical: degraded medications may have reduced potency (undertreating the patient) or contain harmful breakdown products.",
+      "type": "text"
+    },
+    {
+      "term": "Beyond-Use Date (BUD)",
+      "type": "key-term",
+      "definition": "The date after which a compounded preparation or a repackaged medication should not be used. Unlike manufacturer expiry dates, BUDs are assigned by the dispensing pharmacy based on the product's stability after opening, reconstitution, or compounding. For example, reconstituted amoxicillin suspension has a BUD of 7–14 days depending on storage conditions."
+    },
+    {
+      "rows": [
+        [
+          "Set by",
+          "Manufacturer (based on stability studies)",
+          "Dispensing pharmacy (based on product-specific data)"
+        ],
+        [
+          "Applies to",
+          "Commercially manufactured products in original packaging",
+          "Compounded preparations, reconstituted medications, repackaged products"
+        ],
+        [
+          "Typical timeframe",
+          "1–5 years from manufacture",
+          "Hours to months depending on the product"
+        ],
+        [
+          "Caribbean relevance",
+          "May overstate stability if stored above labelled conditions",
+          "Critical for reconstituted antibiotics in tropical heat"
+        ]
+      ],
+      "type": "table",
+      "caption": "Expiry Date vs. Beyond-Use Date",
+      "headers": [
+        "Feature",
+        "Expiry Date",
+        "Beyond-Use Date (BUD)"
+      ]
+    },
+    {
+      "body": "Manufacturer expiry dates are based on storage at controlled conditions (25°C or 30°C for Zone IVa/IVb tropical formulations). If a medication has been stored at higher temperatures — even briefly — its true shelf life may be shorter than the printed expiry date. This is why Caribbean pharmacies must maintain and document temperature control: to ensure that expiry dates remain valid.",
+      "type": "callout",
+      "title": "Tropical Storage and Effective Expiry",
+      "variant": "warning"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "There is no difference — they are interchangeable terms",
+        "Expiry dates are set by the manufacturer; beyond-use dates are assigned by the dispensing pharmacy for opened, reconstituted, or compounded products",
+        "Beyond-use dates are always longer than expiry dates",
+        "Expiry dates apply only to controlled substances"
+      ],
+      "question": "What is the key difference between an expiry date and a beyond-use date?",
+      "explanation": "Expiry dates are assigned by the manufacturer based on stability studies of the product in its original sealed packaging. Beyond-use dates are assigned by the pharmacy and apply to products that have been opened, reconstituted, repackaged, or compounded — situations where the manufacturer's original stability data no longer fully applies.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 20
+}

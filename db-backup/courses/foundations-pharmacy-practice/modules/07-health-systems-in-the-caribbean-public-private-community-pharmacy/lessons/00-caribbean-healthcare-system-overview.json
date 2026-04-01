@@ -1,0 +1,66 @@
+{
+  "id": "df24817f-7639-450f-a687-7b6ba5eb36e8",
+  "module_id": "40f9b245-60bf-4e97-bc70-fb4b58fcd290",
+  "title": "Caribbean Healthcare System Overview",
+  "content": [
+    {
+      "text": "How Caribbean Healthcare Is Organised",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Caribbean healthcare systems are predominantly mixed public-private models, where the government provides a basic level of healthcare to all citizens through public facilities, while private healthcare offers additional options for those who can afford it. The balance between public and private sectors varies significantly between islands, and the pharmacy sector mirrors these differences.",
+      "type": "text"
+    },
+    {
+      "type": "island-comparison",
+      "title": "Healthcare System Structure",
+      "islands": [
+        {
+          "flag": "🇹🇹",
+          "name": "Trinidad & Tobago",
+          "details": [
+            "Public healthcare is free at point of use through Regional Health Authorities (RHAs)",
+            "Five RHAs manage public hospitals, health centres, and district health facilities",
+            "Public pharmacies dispense medications at no charge to patients treated within the system",
+            "Robust private healthcare sector with private hospitals, clinics, and pharmacies",
+            "The Chronic Disease Assistance Programme (CDAP) provides free medications for specified chronic conditions through both public and participating private pharmacies",
+            "National Insurance system (NIS) provides some healthcare coverage"
+          ]
+        },
+        {
+          "flag": "🇯🇲",
+          "name": "Jamaica",
+          "details": [
+            "Public healthcare through Regional Health Authorities and the University Hospital of the West Indies",
+            "Public hospital pharmacies dispense medications to inpatients and outpatients",
+            "National Health Fund (NHF) subsidises medications for 15 chronic conditions through registered private pharmacies",
+            "Jamaica Drug for the Elderly Programme (JADEP) provides free medications to qualifying seniors",
+            "Private sector includes pharmacies, clinics, and hospitals",
+            "Community pharmacies serve as critical primary healthcare access points, especially in rural parishes"
+          ]
+        },
+        {
+          "flag": "🇧🇧",
+          "name": "Barbados",
+          "details": [
+            "Universal public healthcare through the Queen Elizabeth Hospital and 8 polyclinics",
+            "The Barbados Drug Service manages all public sector pharmaceutical procurement and distribution",
+            "Medications dispensed at no charge in public facilities",
+            "Barbados Drug Benefit programme provides certain medications through the public system",
+            "Active private pharmacy sector, particularly in Bridgetown and tourist areas",
+            "Compact geography means most residents are within 30 minutes of a pharmacy"
+          ]
+        }
+      ]
+    },
+    {
+      "body": "Caribbean islands, despite their resource constraints, often achieve healthcare access rates that rival much larger countries. The compact geography of islands like Barbados means that nearly every citizen lives within reasonable distance of a health facility and a pharmacy. This geographical advantage, combined with community trust in local pharmacists, makes pharmacy a cornerstone of Caribbean healthcare.",
+      "type": "callout",
+      "title": "The Caribbean Advantage",
+      "variant": "info"
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 10
+}

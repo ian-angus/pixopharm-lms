@@ -1,0 +1,101 @@
+{
+  "id": "17a2b747-f484-47e9-b8a1-f0e51f7ef638",
+  "module_id": "28473813-1710-4ced-a35f-28e0d84766a0",
+  "title": "Understanding Pharmacy Financial Statements",
+  "content": [
+    {
+      "text": "The Language of Pharmacy Business",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "A pharmacy is both a healthcare institution and a business. Without financial sustainability, even the most dedicated pharmacy team cannot serve patients. As a pharmacy supervisor or aspiring manager, you need to read and understand the core financial documents that reveal the health of your business — just as you read patient charts to assess clinical health.",
+      "type": "text"
+    },
+    {
+      "body": "In the Caribbean, pharmacy businesses face a unique set of financial pressures: import-dependent supply chains that expose you to currency fluctuations, government-regulated markup ceilings on essential medicines, insurance schemes with delayed reimbursement timelines, and the constant tension between serving your community's health needs and keeping the doors open. Financial literacy is not optional — it is a survival skill.",
+      "type": "text"
+    },
+    {
+      "term": "Income Statement (Profit & Loss)",
+      "type": "key-term",
+      "definition": "A financial statement that summarises revenue, cost of goods sold (COGS), gross profit, operating expenses, and net profit over a specific period. For pharmacies, COGS represents the wholesale cost of medications purchased, and gross profit is the difference between what you sell medications for and what you paid for them."
+    },
+    {
+      "text": "The Three Core Financial Statements",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "rows": [
+        [
+          "Income Statement (P&L)",
+          "Profitability over a period",
+          "Revenue, COGS, Gross Profit, Operating Expenses, Net Profit",
+          "Monthly and annually"
+        ],
+        [
+          "Balance Sheet",
+          "Financial position at a point in time",
+          "Assets (inventory, cash, receivables), Liabilities (payables, loans), Equity",
+          "Quarterly and annually"
+        ],
+        [
+          "Cash Flow Statement",
+          "Where cash comes from and goes",
+          "Operating cash flow, investing activities, financing activities",
+          "Monthly (critical for pharmacies)"
+        ]
+      ],
+      "type": "table",
+      "caption": "Key Financial Statements for Pharmacy Operations",
+      "headers": [
+        "Statement",
+        "What It Shows",
+        "Key Line Items",
+        "How Often"
+      ]
+    },
+    {
+      "body": "In many Caribbean pharmacies, the cash flow statement is the most important document. Government insurance schemes like Trinidad's CDAP or Jamaica's NHF may take 30–90 days to reimburse, while your wholesaler expects payment in 14–30 days. This timing gap is the single biggest financial stress point for Caribbean pharmacy owners.",
+      "type": "callout",
+      "title": "Caribbean Cash Flow Reality",
+      "variant": "info"
+    },
+    {
+      "body": "Pharmacy technicians moving into supervisory roles must understand that a pharmacy can be profitable on paper (positive net income) while simultaneously running out of cash. This happens when you have dispensed thousands of dollars of medication under government programmes but have not yet been reimbursed. Managing this gap — through credit terms with suppliers, maintaining cash reserves, and timely claim submissions — is a core management responsibility.",
+      "type": "text"
+    },
+    {
+      "text": "Key Performance Indicators (KPIs) for Pharmacy",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "type": "list",
+      "items": [
+        "Gross Profit Margin: (Revenue - COGS) / Revenue x 100 — target 25-35% for Caribbean community pharmacies",
+        "Net Profit Margin: Net Profit / Revenue x 100 — target 5-12% after all expenses",
+        "Inventory Turnover: COGS / Average Inventory — how many times you sell and replace stock per year (target 8-12 turns)",
+        "Days Sales Outstanding (DSO): Average time to collect insurance/government reimbursements",
+        "Prescription Volume: Number of prescriptions dispensed per day/week/month",
+        "Average Basket Value: Average spend per customer transaction"
+      ],
+      "ordered": false
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "25%",
+        "30%",
+        "35%",
+        "70%"
+      ],
+      "question": "A pharmacy has monthly revenue of $120,000 and COGS of $84,000. What is the gross profit margin?",
+      "explanation": "Gross Profit = $120,000 - $84,000 = $36,000. Gross Profit Margin = ($36,000 / $120,000) x 100 = 30%. This is within the healthy range for a Caribbean community pharmacy.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 30
+}

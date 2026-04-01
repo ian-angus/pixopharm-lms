@@ -1,0 +1,101 @@
+{
+  "id": "b578f087-6e65-4199-a08d-69707f3918f2",
+  "module_id": "a990037d-ba04-45d0-ae91-bab492ae6c2b",
+  "title": "Implementing Technology Change in Your Pharmacy",
+  "content": [
+    {
+      "text": "From Selection to Go-Live: Managing a Technology Transition",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Implementing a new pharmacy management system — or any significant technology change — is one of the most disruptive events a pharmacy can undergo. Prescriptions must be dispensed without interruption throughout the transition, patient safety cannot be compromised, and staff must learn new workflows while maintaining their current workload. A poorly managed technology implementation can cost months of productivity and significant financial loss.",
+      "type": "text"
+    },
+    {
+      "text": "The Implementation Roadmap",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "type": "list",
+      "items": [
+        "Needs assessment: Document your current pain points, must-have features, and nice-to-have features before talking to vendors",
+        "Vendor evaluation: Demo at least three systems; involve frontline staff in the evaluation — they will use it daily",
+        "Data migration planning: How will existing patient records, inventory data, and financial history be transferred? This is often the most complex and risky step",
+        "Staff training: Train all staff BEFORE go-live, not during. Allow practice time on the new system using test data",
+        "Parallel running: Run both old and new systems simultaneously for a defined period (typically 2–4 weeks) to catch discrepancies",
+        "Go-live: Choose a low-volume period (avoid month-end, public holidays). Have vendor support on-site or on-call",
+        "Post-implementation review: After 30, 60, and 90 days, review what is working and what needs adjustment"
+      ],
+      "ordered": true
+    },
+    {
+      "body": "Identify one or two 'technology champions' within your team — staff members who are comfortable with technology and enthusiastic about the change. Train them first and deeply. During the transition, they become the first point of support for colleagues. In Caribbean workplaces, people are more likely to ask a peer for help than to admit confusion to a supervisor or external trainer.",
+      "type": "callout",
+      "title": "The Champion Approach",
+      "variant": "tip"
+    },
+    {
+      "rows": [
+        [
+          "Insufficient training time",
+          "Staff revert to old methods or make errors on the new system",
+          "Allocate minimum 2 weeks of training before go-live; include hands-on practice"
+        ],
+        [
+          "No data migration plan",
+          "Patient histories lost; inventory counts inaccurate; financial records incomplete",
+          "Map every data field from old system to new; validate migrated data before go-live"
+        ],
+        [
+          "Going live on a busy day",
+          "System issues compound with high patient volume, creating chaos",
+          "Schedule go-live for a Tuesday or Wednesday in a quiet period; have extra staff rostered"
+        ],
+        [
+          "No rollback plan",
+          "If the new system fails, there is no way to revert to the old system quickly",
+          "Maintain the old system in parallel for at least 2 weeks; keep manual dispensing backup procedures ready"
+        ],
+        [
+          "Ignoring staff resistance",
+          "Passive non-adoption; staff find workarounds that bypass the system",
+          "Involve staff early; address concerns; demonstrate benefits; celebrate early adopters"
+        ]
+      ],
+      "type": "table",
+      "caption": "Common Technology Implementation Pitfalls",
+      "headers": [
+        "Pitfall",
+        "Consequence",
+        "Prevention"
+      ]
+    },
+    {
+      "type": "case-study",
+      "title": "Case Study: The Digital Transition at Heritage Pharmacy",
+      "scenario": "Heritage Pharmacy in Bridgetown, Barbados, has been using a paper-based dispensing system for 22 years. The owner decides to implement a digital pharmacy management system after repeated insurance claim delays and inventory discrepancies. The two senior technicians, both with 15+ years of experience, are resistant — they know the paper system inside out and do not trust computers. The junior technician, recently qualified from a training programme, is enthusiastic about the change.",
+      "questions": [
+        "How should the pharmacy manager address the resistance of the senior technicians?",
+        "What role could the junior technician play in the implementation?",
+        "How long should the parallel-running period be for a pharmacy transitioning from paper to digital for the first time?"
+      ],
+      "discussion": "The senior technicians' resistance is rooted in legitimate concerns: they are competent in the current system and fear becoming incompetent in the new one. The manager should: (1) acknowledge their expertise and reassure them that their knowledge of pharmacy practice is invaluable regardless of the system, (2) involve them in vendor evaluation so they feel ownership, (3) provide generous, unhurried training with plenty of hands-on practice, and (4) assign the junior technician as the 'technology champion' who supports colleagues during the transition. For a first-time paper-to-digital transition, a 4-week parallel-running period is advisable — longer than the typical 2 weeks for system-to-system transitions, because the team is learning entirely new workflows."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Running two different pharmacies at the same time",
+        "Operating both the old and new systems simultaneously to verify accuracy and catch discrepancies",
+        "Having two technicians do the same task independently to increase speed",
+        "Running the new system on two different computers to test reliability"
+      ],
+      "question": "During a pharmacy management system implementation, what is the purpose of 'parallel running'?",
+      "explanation": "Parallel running means operating both the old and new systems simultaneously for a defined period (typically 2–4 weeks). Every transaction is processed on both systems, and the results are compared. This catches data migration errors, workflow gaps, and system bugs before the old system is retired.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 3,
+  "duration_minutes": 20
+}

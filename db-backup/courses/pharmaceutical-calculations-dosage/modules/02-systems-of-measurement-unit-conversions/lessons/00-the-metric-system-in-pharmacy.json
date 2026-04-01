@@ -1,0 +1,100 @@
+{
+  "id": "2437b297-6106-49ed-b4e4-4d958288191f",
+  "module_id": "3531eb1a-a44a-4c50-bf40-ac897e98251f",
+  "title": "The Metric System in Pharmacy",
+  "content": [
+    {
+      "text": "The Metric System: Pharmacy's Primary Language",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "The metric system is the standard system of measurement for pharmacy worldwide, and the Caribbean is no exception. All drug dosages, concentrations, and volumes in professional pharmacy practice are expressed in metric units. Caribbean pharmacy legislation, drug formularies, and prescribing guidelines — from Trinidad's Pharmacy Board to Jamaica's National Health Fund formulary to the Barbados National Drug Formulary — all use metric notation exclusively.",
+      "type": "text"
+    },
+    {
+      "term": "SI Units (Système International)",
+      "type": "key-term",
+      "definition": "The internationally agreed-upon system of metric units. In pharmacy, the base units most frequently used are: gram (g) for mass, litre (L) for volume, and metre (m) for length. Prefixes indicate multiples or fractions: kilo- (1000×), milli- (1/1000), micro- (1/1,000,000)."
+    },
+    {
+      "rows": [
+        [
+          "kilo-",
+          "k",
+          "1,000",
+          "1 kg = 1,000 g (patient body weight)"
+        ],
+        [
+          "(base unit)",
+          "—",
+          "1",
+          "1 g, 1 L, 1 m"
+        ],
+        [
+          "milli-",
+          "m",
+          "0.001 (1/1,000)",
+          "1 mg = 0.001 g; 1 mL = 0.001 L"
+        ],
+        [
+          "micro-",
+          "mc or μ",
+          "0.000001 (1/1,000,000)",
+          "1 mcg = 0.001 mg (levothyroxine doses)"
+        ],
+        [
+          "nano-",
+          "n",
+          "0.000000001 (1/1,000,000,000)",
+          "Used in lab assays, rarely in dispensing"
+        ]
+      ],
+      "type": "table",
+      "caption": "Essential Metric Prefixes for Pharmacy",
+      "headers": [
+        "Prefix",
+        "Symbol",
+        "Multiplier",
+        "Pharmacy Example"
+      ]
+    },
+    {
+      "text": "Critical Metric Conversions",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "The most important conversions in daily practice: 1 kg = 1000 g. 1 g = 1000 mg. 1 mg = 1000 mcg. 1 L = 1000 mL. To convert from a larger unit to a smaller unit, multiply by 1000. To convert from a smaller unit to a larger unit, divide by 1000. Example: 0.25 g = 0.25 × 1000 = 250 mg. Example: 500 mL = 500 ÷ 1000 = 0.5 L.",
+      "type": "text"
+    },
+    {
+      "body": "NEVER abbreviate micrograms as 'μg' in handwritten orders — the 'μ' symbol can be misread as 'm', turning micrograms into milligrams (a 1000-fold error). Always write 'mcg' or spell out 'micrograms'. This is especially critical for narrow therapeutic index drugs like levothyroxine (typically 25-200 mcg), digoxin (62.5-250 mcg), and fentanyl patches (12-100 mcg/hour). A 1000× error with any of these drugs can be fatal.",
+      "type": "callout",
+      "title": "The mcg/μg Confusion",
+      "variant": "danger"
+    },
+    {
+      "body": "Worked example: A doctor prescribes levothyroxine 0.1 mg. Convert to micrograms. 0.1 mg × 1000 mcg/mg = 100 mcg. The pharmacy stocks levothyroxine 100 mcg tablets. Dispense 1 tablet per dose. Note that levothyroxine doses are always expressed in micrograms on the stock bottle — recognising that 0.1 mg = 100 mcg prevents a dispensing error.",
+      "type": "text"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "0.025 mg",
+        "2.5 mg",
+        "25 mg",
+        "250 mg"
+      ],
+      "question": "Convert 0.25 g to milligrams.",
+      "explanation": "To convert grams to milligrams, multiply by 1000. 0.25 g × 1000 = 250 mg. This conversion is essential because prescriptions may use grams while stock labels use milligrams (or vice versa).",
+      "correctIndex": 3
+    },
+    {
+      "body": "Practice these conversions until they are automatic. In a busy Caribbean pharmacy, you cannot afford to pause and think about whether to multiply or divide. The direction of conversion must be instinctive: moving to smaller units = multiply; moving to larger units = divide.",
+      "type": "text"
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 25
+}

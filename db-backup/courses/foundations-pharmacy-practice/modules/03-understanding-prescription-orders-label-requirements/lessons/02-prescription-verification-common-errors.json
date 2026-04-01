@@ -1,0 +1,84 @@
+{
+  "id": "7ed7a821-7a2f-42f4-ac17-7ff2f2668d36",
+  "module_id": "c7399bfe-b4be-492b-8515-c4e4668a80df",
+  "title": "Prescription Verification & Common Errors",
+  "content": [
+    {
+      "text": "The Verification Process",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Before any prescription is processed, it must be verified for completeness, legality, and clinical appropriateness. While the pharmacist bears ultimate responsibility for clinical verification, the pharmacy technician plays a crucial frontline role in catching errors early in the workflow.",
+      "type": "text"
+    },
+    {
+      "text": "The Technician's Verification Checklist",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "type": "list",
+      "items": [
+        "Is the prescription complete? (All required elements present)",
+        "Is it legible? (If not, do NOT guess — ask the pharmacist to contact the prescriber)",
+        "Is the prescription within its validity period? (Typically 3-6 months for regular Rx, shorter for controlled substances)",
+        "Is the prescriber authorised? (Valid registration number, authorised to prescribe this medication)",
+        "Does the medication, dose, and frequency appear reasonable for the patient? (Age, weight considerations)",
+        "Are there obvious drug-drug interactions with other medications on file for this patient?",
+        "Is the quantity prescribed reasonable for the duration of therapy?",
+        "For controlled substances: Does the prescription meet all additional legal requirements?"
+      ],
+      "ordered": true
+    },
+    {
+      "rows": [
+        [
+          "Standard prescription",
+          "6 months",
+          "6 months",
+          "6 months"
+        ],
+        [
+          "Controlled substance (Schedule II)",
+          "Must be dispensed within 72 hours of issue",
+          "Must be dispensed promptly; varies by substance",
+          "Strict time limits apply; verify with pharmacist"
+        ],
+        [
+          "Repeat/refill prescriptions",
+          "As specified by prescriber, up to 6 months",
+          "As specified; not permitted for controlled substances",
+          "As specified by prescriber"
+        ],
+        [
+          "Emergency supply",
+          "72-hour supply at pharmacist's discretion",
+          "Pharmacist may supply limited quantity in emergency",
+          "Emergency provisions exist under the Pharmacy Act"
+        ]
+      ],
+      "type": "table",
+      "caption": "Prescription Validity Periods",
+      "headers": [
+        "Prescription Type",
+        "Trinidad & Tobago",
+        "Jamaica",
+        "Barbados"
+      ]
+    },
+    {
+      "type": "case-study",
+      "title": "Case Study: The Expired Prescription",
+      "scenario": "A patient presents a prescription for metformin 500 mg dated seven months ago. She explains that she's been busy and couldn't get to the pharmacy sooner. She says she's running low on her diabetes medication and really needs the refill.",
+      "questions": [
+        "Can you dispense this prescription as written?",
+        "What options does the pharmacy have to help this patient?",
+        "What are the risks of dispensing against an expired prescription?"
+      ],
+      "discussion": "A prescription older than 6 months is generally considered expired in all three jurisdictions. You cannot dispense it. However, the pharmacist can: (1) contact the prescriber for a new prescription, (2) in some jurisdictions provide an emergency supply of a small quantity to prevent treatment interruption while a new prescription is obtained. The patient should be counselled on the importance of timely prescription filling, especially for chronic disease management. Never dispense against an expired prescription — it is a legal and safety issue."
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 15
+}

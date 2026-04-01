@@ -1,0 +1,146 @@
+[
+  {
+    "id": "78f04789-5e1a-4a4f-8359-f98d3618feb3",
+    "module_id": "d3c3203a-0e54-43ca-b9a3-1bd6c00c0d63",
+    "question": "What does the medical root 'hepat/o' refer to?",
+    "options": [
+      "Heart",
+      "Kidney",
+      "Liver",
+      "Lung"
+    ],
+    "correct_answer": 2,
+    "explanation": "'Hepat/o' refers to the liver. Terms like 'hepatitis' (inflammation of the liver) and 'hepatotoxic' (toxic to the liver) use this root.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "f1b52f68-b4d5-4a66-b1ce-d5056c4494e9",
+    "module_id": "d3c3203a-0e54-43ca-b9a3-1bd6c00c0d63",
+    "question": "What does the prescription abbreviation 'PRN' mean?",
+    "options": [
+      "Before meals",
+      "As needed",
+      "After meals",
+      "Immediately"
+    ],
+    "correct_answer": 1,
+    "explanation": "PRN stands for 'pro re nata' (Latin), meaning 'as needed' or 'as the situation arises'. It instructs the patient to take the medication only when symptoms require it, rather than on a fixed schedule.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "0551cca3-24ba-44e2-9bb2-93e7397c92b2",
+    "module_id": "d3c3203a-0e54-43ca-b9a3-1bd6c00c0d63",
+    "question": "Why is the abbreviation 'U' (for units) considered dangerous?",
+    "options": [
+      "It is not a valid Latin abbreviation",
+      "It can be misread as '0', '4', or 'cc', leading to a tenfold overdose",
+      "It is not recognised in Caribbean pharmacy practice",
+      "It is only used in veterinary medicine"
+    ],
+    "correct_answer": 1,
+    "explanation": "The abbreviation 'U' for units has been involved in serious medication errors when misread as '0' (zero), '4', or 'cc'. For example, '6U' of insulin could be misread as '60' units — a potentially fatal tenfold overdose. Always write out 'units' in full.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "9ffc6687-06d3-46e2-9ef1-d85a8af03fb1",
+    "module_id": "d3c3203a-0e54-43ca-b9a3-1bd6c00c0d63",
+    "question": "Translate the sig code: '1 tab PO BID AC'",
+    "options": [
+      "Take one tablet by mouth twice daily after meals",
+      "Take one tablet by mouth twice daily before meals",
+      "Take one tablet by mouth at bedtime before food",
+      "Take one tablet by mouth every two days with food"
+    ],
+    "correct_answer": 1,
+    "explanation": "PO = by mouth, BID = twice daily, AC = before meals (ante cibum). The full translation is: 'Take one tablet by mouth twice daily before meals.'",
+    "order_index": 3,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "d383de94-db7b-417d-8ea9-b684e849166c",
+    "module_id": "d3c3203a-0e54-43ca-b9a3-1bd6c00c0d63",
+    "question": "In Caribbean prescriptions, what does the notation 'x 7/7' typically mean?",
+    "options": [
+      "Take 7 tablets in total",
+      "For 7 days",
+      "Seven times per week",
+      "Every 7 hours"
+    ],
+    "correct_answer": 1,
+    "explanation": "The notation 'x 7/7' (or '× 7/7') is a common British/Caribbean convention meaning 'for 7 days'. Similarly, '5/7' means 'for 5 days' and '14/7' means 'for 14 days' (or 2 weeks).",
+    "order_index": 4,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "795be91f-4077-4f0d-bceb-29fa996929ff",
+    "module_id": "d3c3203a-0e54-43ca-b9a3-1bd6c00c0d63",
+    "question": "A prescription reads 'Losartan 50 mg'. Based on the drug name stem '-sartan', what class of medication is this?",
+    "options": [
+      "Beta-blocker",
+      "ACE inhibitor",
+      "Angiotensin II receptor blocker (ARB)",
+      "Calcium channel blocker"
+    ],
+    "correct_answer": 2,
+    "explanation": "The stem '-sartan' identifies Angiotensin II Receptor Blockers (ARBs). Other ARBs include valsartan, irbesartan, and telmisartan. ARBs are commonly prescribed for hypertension and are often used when patients cannot tolerate ACE inhibitors ('-pril') due to cough.",
+    "order_index": 5,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "dd055477-aaae-45b6-9571-e0a0263803ff",
+    "module_id": "d3c3203a-0e54-43ca-b9a3-1bd6c00c0d63",
+    "question": "You see a prescription for fluconazole. The '-azole' suffix tells you this medication is:",
+    "options": [
+      "A proton pump inhibitor for acid reflux",
+      "An antifungal medication",
+      "A benzodiazepine for anxiety",
+      "An antibiotic"
+    ],
+    "correct_answer": 1,
+    "explanation": "The '-azole' stem identifies azole antifungal medications. Fluconazole, ketoconazole, clotrimazole, and miconazole are all antifungals. These are particularly high-volume in Caribbean pharmacies due to the tropical climate favouring fungal infections.",
+    "order_index": 6,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "4eaac3e8-19bc-473f-93ca-d0b9f12404a4",
+    "module_id": "d3c3203a-0e54-43ca-b9a3-1bd6c00c0d63",
+    "question": "Which drug name stem should immediately trigger your controlled substance handling protocols?",
+    "options": [
+      "'-prazole' (e.g., omeprazole)",
+      "'-pril' (e.g., enalapril)",
+      "'-pam' (e.g., diazepam)",
+      "'-statin' (e.g., atorvastatin)"
+    ],
+    "correct_answer": 2,
+    "explanation": "The '-pam' and '-lam' stems identify benzodiazepines (diazepam, lorazepam, clonazepam, alprazolam), which are controlled substances in ALL Caribbean jurisdictions. When you see these stems, special prescribing, dispensing, storage, and record-keeping requirements apply.",
+    "order_index": 7,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  }
+]

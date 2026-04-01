@@ -1,0 +1,92 @@
+{
+  "id": "54de02f6-c80b-44fa-add8-aa4ca96c171e",
+  "module_id": "de02aa8f-49a7-4ad1-92e5-bc0b16c14f1c",
+  "title": "Translating Between Patient Language and Medical Terminology",
+  "content": [
+    {
+      "text": "You Are the Bridge Between Two Worlds",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "When a patient describes their symptoms in Caribbean vernacular, and a pharmacist needs medical terminology to respond, you are the bridge. This translation skill operates in both directions: you convert patient language into information the pharmacist can use, and you convert the pharmacist's clinical language into terms the patient can understand. Both translations are equally important.",
+      "type": "text"
+    },
+    {
+      "body": "The risk of mistranslation is real. 'Meh belly hot' could mean heartburn (upper GI) or it could mean a urinary tract infection (lower abdominal burning). 'Meh head spinning' could mean vertigo or it could mean anxiety. Getting the translation wrong can lead to the wrong recommendation. This is why asking follow-up questions is critical — you are not just translating words, you are clarifying meaning.",
+      "type": "text"
+    },
+    {
+      "text": "The Two-Way Translation Process",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "type": "list",
+      "items": [
+        "Receive the patient's description in their own words: listen fully, do not interrupt",
+        "Mirror their language to confirm understanding: 'So your belly is hot — especially after eating, you said?'",
+        "Ask targeted follow-up questions to narrow the meaning: location, duration, triggers, severity",
+        "Translate to medical context in your head: 'postprandial epigastric burning — likely dyspepsia'",
+        "Relay to the pharmacist in clinical terms if a referral is needed: 'Mrs. Charles is describing postprandial upper abdominal burning — sounds like dyspepsia'",
+        "Translate the pharmacist's recommendation back to patient language: not 'take this antacid for your dyspepsia' but 'take this before you eat — it will cool down that burning in your belly'"
+      ],
+      "ordered": true
+    },
+    {
+      "body": "The biggest translation error is assuming you know what the patient means without verifying. 'Meh belly hot' has at least five possible clinical meanings. Always ask follow-up questions before translating. A wrong assumption can lead to the wrong treatment.",
+      "type": "callout",
+      "title": "Danger: Assuming Instead of Asking",
+      "variant": "warning"
+    },
+    {
+      "rows": [
+        [
+          "'Take this medication on an empty stomach'",
+          "'Take this before you eat anything in the morning — at least 30 minutes before breakfast'"
+        ],
+        [
+          "'This medication may cause drowsiness'",
+          "'This might make you sleepy, so do not drive or operate machinery after taking it'"
+        ],
+        [
+          "'Avoid alcohol while on this medication'",
+          "'No drinks while you are taking these tablets — not even one beer. It can make you very sick.'"
+        ],
+        [
+          "'Apply topically twice daily'",
+          "'Rub it on the area morning and night — a thin layer, do not pile it on'"
+        ],
+        [
+          "'This is an antibiotic — complete the full course'",
+          "'Take every single tablet, even after you start feeling better. If you stop early, the infection can come back stronger.'"
+        ]
+      ],
+      "type": "table",
+      "caption": "Translating Pharmacist Language to Patient Language",
+      "headers": [
+        "Pharmacist Says",
+        "Patient-Friendly Translation"
+      ]
+    },
+    {
+      "term": "Health Literacy Translation",
+      "type": "key-term",
+      "definition": "The skill of converting clinical or medical language into terms that patients with varying levels of health literacy can understand. Effective translation preserves the accuracy of the medical information while making it accessible and actionable for the patient."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Repeat the patient's exact words: 'She says something eating her inside'",
+        "Make your own diagnosis: 'She has an ulcer'",
+        "Translate to clinical context: 'She is describing persistent internal abdominal pain — worth investigating'",
+        "Tell the pharmacist to speak to the patient directly"
+      ],
+      "question": "How should you relay a patient's complaint to the pharmacist?",
+      "explanation": "The most valuable relay combines the patient's description with your clinical translation. This gives the pharmacist both the raw information and your contextual interpretation, allowing them to assess more quickly. Repeating verbatim is less helpful; diagnosing is outside your scope; and directing every query to the pharmacist is inefficient.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 25
+}

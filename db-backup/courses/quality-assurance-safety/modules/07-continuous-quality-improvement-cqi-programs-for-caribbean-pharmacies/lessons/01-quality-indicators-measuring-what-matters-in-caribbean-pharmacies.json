@@ -1,0 +1,97 @@
+{
+  "id": "3349feac-fe3e-4119-9108-e033f0562132",
+  "module_id": "422a447f-ed9b-4281-abdb-94d3a9124d6c",
+  "title": "Quality Indicators: Measuring What Matters in Caribbean Pharmacies",
+  "content": [
+    {
+      "text": "If You Cannot Measure It, You Cannot Improve It",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Quality indicators are specific, measurable metrics that reflect the performance of pharmacy processes. They provide the data needed to identify problems, set improvement targets, measure the impact of changes, and demonstrate accountability to regulators, patients, and stakeholders. Without quality indicators, improvement efforts are guesswork.",
+      "type": "text"
+    },
+    {
+      "term": "Quality Indicator",
+      "type": "key-term",
+      "definition": "A specific, measurable metric used to monitor the performance of a process against an established standard or benchmark. Effective quality indicators are relevant, measurable, actionable, and time-bound. Example: 'Dispensing error rate per 1,000 prescriptions per month.'"
+    },
+    {
+      "body": "Selecting the right quality indicators is critical — measuring too many things dilutes focus, while measuring the wrong things drives unintended behaviour. For Caribbean community pharmacies, a practical starting set of quality indicators might include: dispensing error rate (errors per 1,000 prescriptions), near-miss capture rate (near-misses caught per month), prescription turnaround time (minutes from receipt to patient handoff), temperature excursion incidents (number of days with out-of-range temperatures), and patient counselling compliance (percentage of prescriptions accompanied by counselling).",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Dispensing error rate",
+          "Number of confirmed errors ÷ total prescriptions dispensed × 1,000",
+          "< 1 per 1,000 prescriptions",
+          "Directly measures the safety of the dispensing process"
+        ],
+        [
+          "Near-miss capture rate",
+          "Number of near-misses reported per month",
+          "Increasing trend (indicates improving safety culture)",
+          "Measures willingness to report and effectiveness of safety barriers"
+        ],
+        [
+          "Prescription turnaround time",
+          "Average minutes from prescription receipt to patient handoff",
+          "< 15 minutes for routine prescriptions",
+          "Measures efficiency and patient satisfaction"
+        ],
+        [
+          "Temperature excursions",
+          "Number of days with temperature readings outside acceptable range",
+          "Zero excursion days per month",
+          "Measures medication storage quality"
+        ],
+        [
+          "Expired stock rate",
+          "Number of expired items found during monthly checks ÷ total items",
+          "< 0.5% of inventory",
+          "Measures stock rotation and waste management"
+        ],
+        [
+          "Patient counselling rate",
+          "Prescriptions with documented counselling ÷ total prescriptions × 100",
+          "> 90%",
+          "Measures patient education and medication adherence support"
+        ]
+      ],
+      "type": "table",
+      "caption": "Practical Quality Indicators for Caribbean Pharmacies",
+      "headers": [
+        "Indicator",
+        "How to Measure",
+        "Target",
+        "Why It Matters"
+      ]
+    },
+    {
+      "body": "Consider creating a simple quality dashboard — even a whiteboard in the dispensary — that displays the pharmacy's key quality indicators monthly. Visual display makes data visible to the entire team, creates shared accountability, and celebrates improvements. In a small Caribbean pharmacy, a whiteboard with four or five metrics updated monthly is more effective than a complex spreadsheet no one looks at.",
+      "type": "callout",
+      "title": "The Dashboard Approach",
+      "variant": "info"
+    },
+    {
+      "body": "Benchmarking — comparing your pharmacy's performance against national or regional standards — is a powerful CQI tool. However, Caribbean-specific pharmacy benchmarks are still developing. In the interim, pharmacies can benchmark internally (comparing current performance to their own historical data), across branches (for pharmacy chains), or against published international standards adapted for the Caribbean context.",
+      "type": "text"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Patient safety has dramatically worsened",
+        "Staff are becoming more careless",
+        "The safety culture has improved — staff feel safe reporting near-misses that were previously hidden",
+        "The pharmacy has too many technicians"
+      ],
+      "question": "A pharmacy's near-miss reporting rate increases from 2 per month to 12 per month after implementing a just culture programme. This increase most likely indicates:",
+      "explanation": "An increase in near-miss reporting is a positive indicator of improving safety culture. Near-misses were always occurring — they were simply not being reported. The increase means staff now feel safe enough to report, providing the pharmacy with valuable data to identify and fix system weaknesses before they cause patient harm.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 20
+}

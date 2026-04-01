@@ -1,0 +1,178 @@
+[
+  {
+    "id": "0d3d958e-93b9-452f-8a31-a4d051d5088a",
+    "module_id": "09de5c32-b893-4b01-812f-12f4b6b92bc3",
+    "question": "What is the purpose of geometric dilution in compounding?",
+    "options": [
+      "To increase the potency of the active ingredient",
+      "To ensure a small quantity of drug is uniformly distributed throughout a larger quantity of base",
+      "To sterilise the preparation",
+      "To reduce the cost of compounding ingredients"
+    ],
+    "correct_answer": 1,
+    "explanation": "Geometric dilution is a mixing technique that ensures the uniform distribution of a small quantity of potent drug throughout a larger quantity of base or diluent. By incrementally doubling the amount of base mixed with the drug at each step, the technique prevents concentration hot spots and ensures every portion of the finished product contains the same amount of drug.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "a5389d56-2290-489a-b2a1-81d8db58b3dc",
+    "module_id": "09de5c32-b893-4b01-812f-12f4b6b92bc3",
+    "question": "A levigating agent is used in compounding to:",
+    "options": [
+      "Flavour the preparation",
+      "Preserve the preparation against microbial growth",
+      "Wet and reduce the particle size of insoluble powders before incorporating them into a base",
+      "Increase the viscosity of a liquid preparation"
+    ],
+    "correct_answer": 2,
+    "explanation": "A levigating agent (e.g., mineral oil, glycerin, propylene glycol) is a liquid used to wet insoluble drug particles and reduce their size by trituration on an ointment slab. This creates a smooth paste that can be easily and uniformly incorporated into the final cream or ointment base, producing a more elegant product.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "cdfe1f68-6f11-478d-8eeb-8a2b91f49e29",
+    "module_id": "09de5c32-b893-4b01-812f-12f4b6b92bc3",
+    "question": "How many 5 mg enalapril tablets are needed to compound 150 mL of a 1 mg/mL oral suspension?",
+    "options": [
+      "30"
+    ],
+    "correct_answer": 0,
+    "explanation": "The total amount of enalapril needed is: 150 mL × 1 mg/mL = 150 mg. Each tablet contains 5 mg, so: 150 mg ÷ 5 mg/tablet = 30 tablets. Calculation accuracy is critical in compounding — an error at this stage carries through the entire preparation.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "12eec140-1a3a-4b5d-b1c3-9c0f05e45e86",
+    "module_id": "09de5c32-b893-4b01-812f-12f4b6b92bc3",
+    "question": "According to USP <795>, what is the default beyond-use date for a non-preserved aqueous compounded preparation stored under refrigeration?",
+    "options": [
+      "7 days",
+      "14 days",
+      "30 days",
+      "90 days"
+    ],
+    "correct_answer": 1,
+    "explanation": "USP <795> assigns a default BUD of 14 days refrigerated (2–8°C) for non-preserved aqueous preparations. This conservative timeline reflects the inherent risk of microbial contamination in water-containing preparations without preservatives. In tropical Caribbean conditions, this timeline should be considered a maximum, not a minimum.",
+    "order_index": 3,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "1bfaff46-656c-4a85-9957-f133d0e7374a",
+    "module_id": "09de5c32-b893-4b01-812f-12f4b6b92bc3",
+    "question": "Why might a Caribbean pharmacy technician shorten the beyond-use date of a compounded preparation below the USP <795> default?",
+    "options": [
+      "To sell more frequent refills and increase revenue",
+      "Because Caribbean pharmacies are not required to follow USP guidelines",
+      "Because the patient's storage conditions (ambient temperatures >30°C, high humidity, unreliable refrigeration) may accelerate degradation",
+      "Because Caribbean patients use medications faster"
+    ],
+    "correct_answer": 2,
+    "explanation": "USP <795> default BUDs assume controlled room temperature (20–25°C). In the Caribbean, ambient temperatures regularly exceed 30°C, and humidity exceeds 80%. Under the Arrhenius principle, degradation rates approximately double for every 10°C increase. If a patient lacks reliable refrigeration or climate-controlled storage, the pharmacy technician and pharmacist should assign a shorter BUD to ensure the patient receives effective medication.",
+    "order_index": 4,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "evaluate"
+  },
+  {
+    "id": "2f165e83-baf6-41cd-b72d-b9bc50f92096",
+    "module_id": "09de5c32-b893-4b01-812f-12f4b6b92bc3",
+    "question": "Which of the following are essential components of a compounding log entry? Select ALL that apply.",
+    "options": [
+      "Date of compounding and beyond-use date assigned",
+      "Ingredients used with lot numbers and expiry dates",
+      "Identity of the compounder and checking pharmacist",
+      "Patient's mobile phone number",
+      "Final weight or volume of the preparation"
+    ],
+    "correct_answer": 0,
+    "explanation": "A complete compounding log entry must include the date of compounding, beyond-use date, all ingredients used (with lot numbers and expiry dates for traceability), the identity of the compounder and the pharmacist who performed the final check, and the final weight or volume. The patient's mobile phone number is part of the prescription record, not the compounding log.",
+    "order_index": 5,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "f32ea9e1-d76f-4283-9518-1edd0784afc7",
+    "module_id": "09de5c32-b893-4b01-812f-12f4b6b92bc3",
+    "question": "The Arrhenius equation predicts that for every 10°C increase in temperature, the rate of chemical degradation approximately:",
+    "options": [
+      "Stays the same",
+      "Doubles",
+      "Triples",
+      "Quadruples"
+    ],
+    "correct_answer": 1,
+    "explanation": "The Arrhenius equation describes the relationship between temperature and reaction rate. A practical rule of thumb derived from this equation is that the rate of chemical degradation approximately doubles for every 10°C increase in temperature. This is particularly significant in the Caribbean, where ambient temperatures are 5–15°C above the standard reference temperature of 25°C.",
+    "order_index": 6,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "acdae776-0808-4343-ae11-2df1ceddebef",
+    "module_id": "09de5c32-b893-4b01-812f-12f4b6b92bc3",
+    "question": "A pharmacy technician needs to compound an oral suspension from tablets. The tablets are labelled 'SR' (sustained-release). Is it safe to crush these tablets for compounding?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": 1,
+    "explanation": "Sustained-release (SR) tablets must NEVER be crushed for compounding. Crushing destroys the rate-controlling mechanism and can cause dose dumping — the immediate release of the entire dose. Only immediate-release tablets should be used for compounding oral suspensions. The technician must find an immediate-release alternative or consult the pharmacist and prescriber for an alternative formulation.",
+    "order_index": 7,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "7026258b-41b3-4d25-89fd-296b29cc5523",
+    "module_id": "09de5c32-b893-4b01-812f-12f4b6b92bc3",
+    "question": "Which vehicle combination is widely used in compounding pharmacies for paediatric oral suspensions?",
+    "options": [
+      "Normal saline and dextrose",
+      "Ora-Plus and Ora-Sweet (1:1 combination)",
+      "Ethanol and water (50:50)",
+      "Mineral oil and glycerin"
+    ],
+    "correct_answer": 1,
+    "explanation": "The Ora-Plus (suspending vehicle) and Ora-Sweet (sweetening vehicle) 1:1 combination is a widely used and well-documented vehicle system for compounding oral suspensions in pharmacies internationally and across the Caribbean. It provides good suspending properties and acceptable taste, particularly important for paediatric patients. However, it must be imported and can be expensive in Caribbean markets.",
+    "order_index": 8,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "3bd225d3-53b0-4b3e-b0b2-81845ba90b1c",
+    "module_id": "09de5c32-b893-4b01-812f-12f4b6b92bc3",
+    "question": "What is the key distinction between compounding and manufacturing in Caribbean pharmacy law?",
+    "options": [
+      "Compounding is cheaper than manufacturing",
+      "Compounding is for individual patients based on prescriptions; manufacturing is large-scale production for general distribution",
+      "Compounding does not require quality control; manufacturing does",
+      "Compounding can only be done in hospitals; manufacturing can be done anywhere"
+    ],
+    "correct_answer": 1,
+    "explanation": "The fundamental legal distinction is that compounding involves preparing a customised medication for an individual patient in response to a specific prescription, while manufacturing involves large-scale production for general distribution. This distinction determines the applicable regulatory framework. In Trinidad and Tobago, the Chemistry, Food and Drugs Act and its regulations govern this boundary.",
+    "order_index": 9,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  }
+]

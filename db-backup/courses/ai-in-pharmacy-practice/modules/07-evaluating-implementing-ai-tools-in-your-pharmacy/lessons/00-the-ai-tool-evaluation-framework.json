@@ -1,0 +1,87 @@
+{
+  "id": "88905f8f-4212-4eca-a1b2-90bc4489e796",
+  "module_id": "308ad89e-b876-443b-9c03-ccfdc77305ef",
+  "title": "The AI Tool Evaluation Framework",
+  "content": [
+    {
+      "text": "A Systematic Approach to AI Tool Selection",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "The market is flooded with AI tools claiming to transform pharmacy practice. How do you separate genuine value from marketing hype? You need a structured evaluation framework that considers clinical safety, operational fit, regulatory compliance, cost, and Caribbean-specific factors. This lesson provides that framework.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Clinical Safety",
+          "Is the tool validated for clinical use? What is the error rate? Is there clinical evidence supporting its claims? Does it explain its reasoning?",
+          "Critical — any tool that cannot demonstrate clinical safety is disqualified"
+        ],
+        [
+          "Data Privacy & Security",
+          "Where is data processed? Is there a data processing agreement? Does it comply with Caribbean data protection acts? Can patient data be kept within the Caribbean?",
+          "Critical — non-compliance is a legal risk"
+        ],
+        [
+          "Caribbean Suitability",
+          "Was it trained on or validated with Caribbean population data? Does it understand Caribbean drug names, formularies, and prescribing patterns? Does it support Caribbean English?",
+          "High — tools designed for North American markets may not fit Caribbean practice"
+        ],
+        [
+          "Integration",
+          "Does it integrate with your existing dispensing software? Does it work with your internet connectivity (often unreliable in the Caribbean)? Is there an offline mode?",
+          "High — a tool that does not integrate creates workflow friction"
+        ],
+        [
+          "Cost & ROI",
+          "What is the total cost of ownership (licence + training + implementation)? What is the expected return (time saved, errors prevented, revenue gained)?",
+          "Medium — cost matters but should not override safety considerations"
+        ],
+        [
+          "Vendor Reliability",
+          "How long has the vendor been in business? Do they have Caribbean customers? What is their support response time for Caribbean time zones?",
+          "Medium — vendor stability affects long-term viability"
+        ],
+        [
+          "User Experience",
+          "Is the interface intuitive? Can your staff learn it quickly? Is training provided?",
+          "Medium — the best tool is worthless if your team cannot use it"
+        ]
+      ],
+      "type": "table",
+      "caption": "AI Tool Evaluation Criteria for Caribbean Pharmacies",
+      "headers": [
+        "Criterion",
+        "Key Questions",
+        "Weight"
+      ]
+    },
+    {
+      "body": "Many AI tools require reliable, high-speed internet to function. In parts of the Caribbean, internet connectivity is intermittent, slow, or expensive. Any AI tool evaluation must include: (1) Can it work offline or with limited connectivity? (2) What happens to patient safety if the tool goes down? (3) Is there a manual fallback process? A tool that stops working during a power outage or internet disruption in hurricane season is a liability, not an asset.",
+      "type": "callout",
+      "title": "The Caribbean Connectivity Factor",
+      "variant": "info"
+    },
+    {
+      "term": "Total Cost of Ownership (TCO)",
+      "type": "key-term",
+      "definition": "The complete cost of a technology tool over its lifetime, including not just the purchase or subscription price, but also implementation, training, integration, maintenance, support, and eventual decommissioning costs. TCO often reveals that the cheapest option upfront is the most expensive in the long run."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Cost exceeding a set budget",
+        "Lack of clinical safety validation",
+        "The tool not having a mobile app",
+        "The vendor being based outside the Caribbean"
+      ],
+      "question": "Which evaluation criterion should be treated as an absolute disqualifier for AI tools in pharmacy?",
+      "explanation": "Clinical safety is the one criterion that should be treated as an absolute disqualifier. A tool that cannot demonstrate clinical safety — regardless of how impressive its other features are — cannot be used in a setting where errors can harm patients. Cost, mobile availability, and vendor location are important but not disqualifying on their own.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 15
+}

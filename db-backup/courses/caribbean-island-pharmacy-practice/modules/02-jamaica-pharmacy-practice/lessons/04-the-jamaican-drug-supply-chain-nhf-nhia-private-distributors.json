@@ -1,0 +1,100 @@
+{
+  "id": "239ac58d-fc51-432f-a082-6072d3f165c7",
+  "module_id": "dfb48101-2356-4d0d-9a97-2396820bb069",
+  "title": "The Jamaican Drug Supply Chain: NHF, NHIA & Private Distributors",
+  "content": [
+    {
+      "text": "How Medications Reach Jamaican Pharmacies",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Jamaica's pharmaceutical supply chain is a multi-layered system involving government agencies, quasi-governmental bodies, private distributors, and international suppliers. Understanding this chain is important for pharmacy technicians because stock availability, pricing, and even the brands available on your shelves depend on how efficiently these supply channels operate.",
+      "type": "text"
+    },
+    {
+      "text": "Key Players in the Supply Chain",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "term": "NHIA (National Health Insurance Authority — proposed)",
+      "type": "key-term",
+      "definition": "Jamaica has been working toward establishing a National Health Insurance Authority to coordinate health financing and pharmaceutical procurement at a national level. While not yet fully operational as of 2025, the NHIA concept represents Jamaica's vision for a more integrated and equitable health system."
+    },
+    {
+      "rows": [
+        [
+          "National Health Fund (NHF)",
+          "Negotiates drug prices, maintains the NHF formulary, subsidises patient medication costs",
+          "Determines which medications are subsidised and at what price; affects dispensing decisions daily"
+        ],
+        [
+          "Health Corporation Limited (HCL)",
+          "Procures and distributes pharmaceuticals for the public sector (government hospitals and health centres)",
+          "Supplies public-sector pharmacies; technicians in government facilities receive stock through HCL channels"
+        ],
+        [
+          "Private Distributors (e.g. Kirk Distributors, AJAS Pharma, Medical Disposables & Supplies)",
+          "Import and distribute pharmaceuticals to private pharmacies across Jamaica",
+          "Primary supply source for community pharmacies; pricing, availability, and delivery speed vary by distributor"
+        ],
+        [
+          "International Manufacturers / Exporters",
+          "Produce medications (generics and brands) for the Jamaican market; must be approved by the regulatory authorities",
+          "Product availability depends on import approvals, shipping logistics, and foreign exchange rates"
+        ]
+      ],
+      "type": "table",
+      "caption": "Jamaica's Pharmaceutical Supply Chain — Key Entities",
+      "headers": [
+        "Entity",
+        "Role",
+        "Impact on Pharmacy Technicians"
+      ]
+    },
+    {
+      "text": "Supply Chain Challenges Specific to Jamaica",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "type": "list",
+      "items": [
+        "Foreign exchange volatility: Jamaica imports nearly all medications in USD; J$ depreciation increases costs and can cause sudden price spikes",
+        "Port clearance delays: Medications can sit in customs at Kingston Harbour for weeks if documentation is incomplete or duties disputed",
+        "Limited cold chain infrastructure: Maintaining temperature-controlled logistics from port to pharmacy is challenging, especially for rural parishes",
+        "Single-source dependency: Some medications are sourced from a single supplier — if that supplier has issues, the entire island is affected",
+        "Hurricane disruption: Jamaica sits in the hurricane belt; major storms can disrupt supply chains for weeks",
+        "Generic availability gaps: Not all generics approved internationally are registered for sale in Jamaica, limiting substitution options"
+      ],
+      "ordered": false
+    },
+    {
+      "body": "HCL is Jamaica's equivalent of NIPDEC in T&T. It is the government entity responsible for procuring and distributing pharmaceuticals and medical supplies to public health facilities. If you work in a public hospital or health centre pharmacy in Jamaica, your medications come through HCL. Like NIPDEC, HCL faces challenges with procurement timelines, budget constraints, and occasional stock-outs.",
+      "type": "callout",
+      "title": "The Role of Health Corporation Limited (HCL)",
+      "variant": "info"
+    },
+    {
+      "body": "In Jamaica's private pharmacy sector, maintaining good relationships with multiple distributors is essential for ensuring medication availability. Experienced pharmacy managers typically order from 2-3 distributors to avoid single-source dependency. As a pharmacy technician managing inventory, you should maintain contact details for all your pharmacy's approved suppliers and know their typical delivery schedules and minimum order requirements.",
+      "type": "callout",
+      "title": "Distributor Relationships Matter",
+      "variant": "tip"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "National Health Fund (NHF)",
+        "Health Corporation Limited (HCL)",
+        "Pharmacy Council of Jamaica (PCJ)",
+        "Jamaica Pharmaceutical Association (JPA)"
+      ],
+      "question": "What is the primary government entity responsible for procuring and distributing pharmaceuticals to public health facilities in Jamaica?",
+      "explanation": "Health Corporation Limited (HCL) is the government entity responsible for procuring and distributing pharmaceuticals and medical supplies to public health facilities in Jamaica. The NHF focuses on subsidising medication costs for individuals, while the PCJ regulates the profession.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 4,
+  "duration_minutes": 25
+}

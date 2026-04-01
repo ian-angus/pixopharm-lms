@@ -1,0 +1,182 @@
+[
+  {
+    "id": "be74c9dd-805a-4730-936a-e0d693caba00",
+    "module_id": "28473813-1710-4ced-a35f-28e0d84766a0",
+    "question": "Which financial statement is most critical for a Caribbean pharmacy participating in government insurance programmes like CDAP?",
+    "options": [
+      "Balance Sheet",
+      "Income Statement",
+      "Cash Flow Statement",
+      "Statement of Shareholders' Equity"
+    ],
+    "correct_answer": 2,
+    "explanation": "The Cash Flow Statement is most critical because government programmes often reimburse 30–90 days after dispensing, creating a significant gap between when the pharmacy pays for medications and when it receives payment. A pharmacy can be profitable on paper but run out of cash.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "evaluate"
+  },
+  {
+    "id": "26a5b4ba-b0ea-4cea-82d7-60a8c4afb31f",
+    "module_id": "28473813-1710-4ced-a35f-28e0d84766a0",
+    "question": "A pharmacy purchases a product for $50 and sells it for $70. What is the markup percentage?",
+    "options": [
+      "20%",
+      "28.6%",
+      "40%",
+      "71.4%"
+    ],
+    "correct_answer": 2,
+    "explanation": "Markup = (Selling Price - Cost Price) / Cost Price x 100 = ($70 - $50) / $50 x 100 = 40%. The margin would be ($70 - $50) / $70 x 100 = 28.6%. Markup is calculated on cost; margin is calculated on selling price.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "ee3b3ee6-1386-433d-b5f0-cba9e5ce8423",
+    "module_id": "28473813-1710-4ced-a35f-28e0d84766a0",
+    "question": "In Trinidad & Tobago, patients are required to pay a co-payment for medications dispensed under the CDAP programme.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": 1,
+    "explanation": "False. The Chronic Disease Assistance Programme (CDAP) provides free medications to patients — there is no co-payment. The programme reimburses participating pharmacies at a fixed rate per item. In contrast, Jamaica's NHF programme does require a co-payment from the patient.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "862c18e5-0872-4862-a8be-3158e5324112",
+    "module_id": "28473813-1710-4ced-a35f-28e0d84766a0",
+    "question": "Which inventory valuation method typically produces higher reported profits during periods of rising medication costs?",
+    "options": [
+      "FIFO (First In, First Out)",
+      "LIFO (Last In, First Out)",
+      "Weighted Average Cost",
+      "All methods produce the same profit"
+    ],
+    "correct_answer": 0,
+    "explanation": "FIFO assigns the older, lower costs to COGS and the newer, higher costs to ending inventory. During periods of rising prices, this results in lower COGS and therefore higher reported profits compared to LIFO or Weighted Average.",
+    "order_index": 3,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "analyze"
+  },
+  {
+    "id": "78d9ea60-24f1-4ff3-b335-7e9d3d99e9f6",
+    "module_id": "28473813-1710-4ced-a35f-28e0d84766a0",
+    "question": "GreenLeaf Pharmacy has annual COGS of $480,000 and an average inventory value of $48,000. What is the inventory turnover rate?",
+    "options": [
+      "5 turns per year",
+      "10 turns per year",
+      "12 turns per year",
+      "48 turns per year"
+    ],
+    "correct_answer": 1,
+    "explanation": "Inventory Turnover = COGS / Average Inventory = $480,000 / $48,000 = 10 turns per year. This means the pharmacy sells and replaces its entire inventory approximately 10 times per year, which is within the healthy range of 8–12 for Caribbean community pharmacies.",
+    "order_index": 4,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "6184d55f-a3bc-41d1-8f36-a7c6d3ece1ac",
+    "module_id": "28473813-1710-4ced-a35f-28e0d84766a0",
+    "question": "Which of the following are strategies to manage the cash flow gap created by delayed government programme reimbursement? (Select all that apply)",
+    "options": [
+      "Negotiate extended payment terms with wholesalers to match reimbursement timelines",
+      "Stop participating in government programmes entirely",
+      "Maintain a cash reserve equivalent to 2 months of government programme dispensing value",
+      "Submit claims more frequently to shorten the reimbursement cycle",
+      "Charge patients an additional fee above the programme reimbursement rate"
+    ],
+    "correct_answer": 0,
+    "explanation": "Negotiating extended payment terms, maintaining adequate cash reserves, and submitting claims more frequently are all legitimate strategies. Stopping programme participation abandons patients and a significant revenue stream. Charging patients above the programme rate is prohibited under CDAP and NHF rules.",
+    "order_index": 5,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "hard",
+    "blooms_level": "evaluate"
+  },
+  {
+    "id": "409c6a56-eb9d-42d0-8b73-0a165dbfbe25",
+    "module_id": "28473813-1710-4ced-a35f-28e0d84766a0",
+    "question": "In Jamaica, the General Consumption Tax (GCT) treatment of prescription medications is:",
+    "options": [
+      "Taxed at the standard 15% rate",
+      "Taxed at a reduced 5% rate",
+      "Exempt from GCT",
+      "Taxed only if purchased from a private pharmacy"
+    ],
+    "correct_answer": 2,
+    "explanation": "Prescription medications in Jamaica are exempt from GCT. This exemption helps keep essential medicines affordable for the population. Over-the-counter products, however, may be subject to GCT at the standard 15% rate.",
+    "order_index": 6,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "cf978794-86ae-4e56-9527-389605918e4b",
+    "module_id": "28473813-1710-4ced-a35f-28e0d84766a0",
+    "question": "What is the target expiry waste benchmark for a well-managed pharmacy?",
+    "options": [
+      "Less than 1% of total inventory value",
+      "Less than 5% of total inventory value",
+      "Less than 10% of total inventory value",
+      "Zero waste is the only acceptable target"
+    ],
+    "correct_answer": 0,
+    "explanation": "Industry benchmarks suggest expiry waste should be less than 1% of total inventory value. While zero waste is ideal, it is practically unachievable because some products have unpredictable demand. Many Caribbean pharmacies experience 2–5% waste, indicating room for improvement through better stock rotation, expiry monitoring, and return-to-vendor agreements.",
+    "order_index": 7,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "67ffeb2e-e54b-44ec-8113-a6191d1ae65e",
+    "module_id": "28473813-1710-4ced-a35f-28e0d84766a0",
+    "question": "Place the pharmacy claims processing steps in the correct order:",
+    "options": [
+      "Verify patient eligibility",
+      "Validate the prescription against the programme formulary",
+      "Dispense the medication",
+      "Submit the claim electronically or on paper",
+      "Reconcile payments received against claims submitted"
+    ],
+    "correct_answer": 0,
+    "explanation": "The correct workflow is: (1) verify eligibility, (2) validate the prescription against the formulary, (3) dispense the medication, (4) submit the claim, (5) reconcile payments. Skipping or misordering steps — especially dispensing before verifying eligibility — is the leading cause of claim rejections.",
+    "order_index": 8,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "4d55873e-703b-4ea0-8e7a-d764ef0aa338",
+    "module_id": "28473813-1710-4ced-a35f-28e0d84766a0",
+    "question": "A pharmacy's gross profit margin has fallen from 32% to 24% over the past year, while prescription volume has remained stable. The MOST likely cause is:",
+    "options": [
+      "Staff wages have increased significantly",
+      "Wholesale medication costs have risen while selling prices have not been adjusted",
+      "The pharmacy has reduced its operating hours",
+      "Rent has increased dramatically"
+    ],
+    "correct_answer": 1,
+    "explanation": "Gross profit margin is Revenue minus COGS divided by Revenue. Staff wages, rent, and operating hours affect operating expenses (which impact net profit margin, not gross). A falling gross margin with stable volume strongly indicates that COGS has risen (wholesale costs up) while selling prices have not kept pace — a common issue in Caribbean pharmacies where government-programme reimbursement rates are fixed.",
+    "order_index": 9,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "hard",
+    "blooms_level": "analyze"
+  }
+]

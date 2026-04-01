@@ -1,0 +1,115 @@
+{
+  "id": "489374f0-bced-4986-8055-a509866b1783",
+  "module_id": "026af364-0a48-4e14-b54f-e7a0e6483591",
+  "title": "Paediatric Dose Verification and Safety Limits",
+  "content": [
+    {
+      "text": "The Final Safety Check: Is This Dose Right for This Child?",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Paediatric dosing errors are more common and more dangerous than adult dosing errors. A 10-fold error that would make an adult unwell could kill a child. This lesson covers the verification process that must follow every paediatric dose calculation. In Caribbean pharmacies, where high patient volumes during dengue season, flu season, or back-to-school periods can create time pressure, systematic verification is your last line of defence.",
+      "type": "text"
+    },
+    {
+      "text": "The Paediatric Dose Verification Workflow",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "type": "list",
+      "items": [
+        "Confirm the child's weight in kg (convert from lb if needed: ÷ 2.2)",
+        "Calculate the dose using the prescribed mg/kg",
+        "Check: Is this dose within the usual range for this drug, indication, and age group?",
+        "Check: Does the total daily dose exceed the maximum daily dose for this weight?",
+        "Check: Does the total daily dose exceed the adult maximum dose? (Cap if so, unless prescriber specifies otherwise)",
+        "Calculate the volume or quantity from available stock",
+        "Check: Is the volume reasonable for the child's age? (Infants: max ~5 mL/dose; toddlers: max ~10 mL; school-age: max ~15-20 mL)",
+        "If anything is outside expected ranges, consult the pharmacist before dispensing"
+      ],
+      "ordered": true
+    },
+    {
+      "type": "case-study",
+      "title": "Case Study: Dengue Fever Season at a Kingston Pharmacy",
+      "scenario": "It is September — peak dengue season in Jamaica. A mother brings her 4-year-old daughter, Amara (weight: 16 kg), to your NHF pharmacy in Kingston with a prescription for paracetamol 250 mg/5 mL, 10 mL (500 mg) QDS PRN. The child has been diagnosed with dengue fever. The standard paediatric paracetamol dose is 15 mg/kg/dose, maximum 60-75 mg/kg/day.",
+      "questions": [
+        "What is the weight-appropriate single dose for this child?",
+        "Is the prescribed dose (500 mg) within the safe range?",
+        "Why is paracetamol — and NOT ibuprofen — used in dengue fever?"
+      ],
+      "discussion": "Weight-appropriate dose: 15 mg/kg × 16 kg = 240 mg per dose. The prescribed dose of 500 mg is 31.25 mg/kg — MORE THAN DOUBLE the standard dose. Daily total at 500 mg QDS = 2000 mg = 125 mg/kg/day — significantly exceeding the maximum of 75 mg/kg/day. This prescription should NOT be dispensed as written. The pharmacist must contact the prescriber. Additionally, NSAIDs (ibuprofen, aspirin) are CONTRAINDICATED in dengue because they impair platelet function and can worsen the haemorrhagic complications of dengue. Only paracetamol is safe for pain and fever management in dengue — making the correct dose even more critical, as there is no alternative analgesic."
+    },
+    {
+      "body": "Dengue fever is endemic across the Caribbean, with peak seasons during the rainy months (June-November). During outbreaks, paediatric paracetamol demand surges. Pharmacy technicians must be vigilant about dose accuracy during these busy periods. Remember: NEVER dispense ibuprofen or aspirin for suspected dengue — paracetamol only. This is a life-saving counselling point.",
+      "type": "callout",
+      "title": "Dengue Season in the Caribbean",
+      "variant": "warning"
+    },
+    {
+      "type": "island-comparison",
+      "title": "Paediatric Formulary Access Across the Caribbean",
+      "islands": [
+        {
+          "flag": "🇹🇹",
+          "name": "Trinidad & Tobago",
+          "details": [
+            "CDAP covers paediatric formulations of essential medications",
+            "Most community pharmacies stock paracetamol 120 mg/5 mL and 250 mg/5 mL",
+            "Amoxicillin suspension widely available in 125 and 250 mg/5 mL",
+            "Eric Williams Medical Sciences Complex has a dedicated paediatric pharmacy",
+            "Paediatric doses verified against BNF for Children and local formulary"
+          ]
+        },
+        {
+          "flag": "🇯🇲",
+          "name": "Jamaica",
+          "details": [
+            "NHF subsidises certain paediatric formulations",
+            "Bustamante Hospital for Children has specialised paediatric pharmacy services",
+            "Generic paediatric suspensions widely available",
+            "Some rural pharmacies may have limited stock requiring improvised doses from adult formulations",
+            "National Treatment Guidelines include paediatric dosing tables"
+          ]
+        },
+        {
+          "flag": "🇧🇧",
+          "name": "Barbados",
+          "details": [
+            "QEH paediatric ward pharmacy provides specialised compounding",
+            "Barbados Drug Service supplies paediatric formulations to polyclinics",
+            "Community pharmacies generally well-stocked for common paediatric needs",
+            "Paediatric oral syringes dispensed with all liquid medications as standard"
+          ]
+        },
+        {
+          "flag": "🇬🇩",
+          "name": "Grenada",
+          "details": [
+            "OECS Pharmaceutical Procurement Service supplies paediatric formulations",
+            "General Hospital St. George's provides paediatric pharmacy services",
+            "Some specialty paediatric formulations may need to be sourced from Trinidad or Miami",
+            "Pharmacy technicians may need to calculate doses from adult-strength preparations"
+          ]
+        }
+      ],
+      "description": "Access to paediatric formulations varies across Caribbean islands, affecting how technicians calculate and prepare doses."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Yes — 10 mg/kg TDS = 30 mg/kg/day, which is within the 40 mg/kg/day limit",
+        "No — the dose exceeds the maximum daily dose",
+        "Cannot determine without the child's height",
+        "Yes — but only if the child is older than 6"
+      ],
+      "question": "A 7-year-old child weighing 25 kg is prescribed ibuprofen 10 mg/kg TDS. The maximum daily dose is 40 mg/kg/day. Is this prescription within safe limits?",
+      "explanation": "10 mg/kg/dose × 3 doses/day = 30 mg/kg/day. The maximum is 40 mg/kg/day. Since 30 < 40, this prescription is within safe limits. Single dose: 10 × 25 = 250 mg. Daily total: 750 mg. Adult max is 2400 mg/day — 750 mg is well below this cap.",
+      "correctIndex": 0
+    }
+  ],
+  "order_index": 3,
+  "duration_minutes": 20
+}

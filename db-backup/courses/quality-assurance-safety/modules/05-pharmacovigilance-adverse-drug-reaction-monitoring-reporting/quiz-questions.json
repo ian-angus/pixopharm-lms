@@ -1,0 +1,180 @@
+[
+  {
+    "id": "377e78b4-a9ee-4ecf-b16b-0b0933d5334a",
+    "module_id": "518e49f7-db26-4701-a332-4928c74d9aa0",
+    "question": "What is the primary function of pharmacovigilance?",
+    "options": [
+      "To market new drugs to healthcare professionals",
+      "To detect, assess, understand, and prevent adverse effects of medicines",
+      "To determine drug pricing in the Caribbean",
+      "To replace clinical trials for drug approval"
+    ],
+    "correct_answer": 1,
+    "explanation": "Pharmacovigilance is the science and activities relating to the detection, assessment, understanding, and prevention of adverse effects or any other medicine-related problems. It is the healthcare system's ongoing safety monitoring of drugs after they reach the market.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "41657c1c-6a89-4c90-b1a8-0dad562fa258",
+    "module_id": "518e49f7-db26-4701-a332-4928c74d9aa0",
+    "question": "A patient taking metformin for diabetes experiences dose-dependent gastrointestinal upset (nausea, diarrhoea). This is classified as a Type _____ ADR.",
+    "options": [
+      "Type A (Augmented)",
+      "Type B (Bizarre)",
+      "Type D (Delayed)",
+      "Type F (Failure)"
+    ],
+    "correct_answer": 0,
+    "explanation": "GI upset from metformin is a Type A (Augmented) ADR — it is predictable, dose-dependent, related to the drug's known pharmacology, common, and usually manageable by dose adjustment (starting low and titrating slowly). Type A reactions are the most common type of ADR.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "95a82c79-6b1a-41ff-b994-f3b95fc21428",
+    "module_id": "518e49f7-db26-4701-a332-4928c74d9aa0",
+    "question": "The WHO's global database of adverse drug reaction reports is called:",
+    "options": [
+      "PharmaWatch",
+      "DrugSafe Global",
+      "VigiBase",
+      "MedMonitor"
+    ],
+    "correct_answer": 2,
+    "explanation": "VigiBase is the WHO's global database of individual case safety reports (ICSRs), maintained by the Uppsala Monitoring Centre in Sweden. It contains over 30 million ADR reports from more than 170 member countries and is the world's largest pharmacovigilance database.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "7ed65494-6277-42c5-bf68-644f9f6eae22",
+    "module_id": "518e49f7-db26-4701-a332-4928c74d9aa0",
+    "question": "Why is pharmacovigilance particularly important for Caribbean populations?",
+    "options": [
+      "Caribbean populations are identical to those studied in clinical trials",
+      "There are no adverse drug reactions in tropical climates",
+      "Caribbean populations have unique genetic, environmental, and dietary factors that affect drug metabolism and ADR profiles",
+      "Caribbean pharmacovigilance data is not shared internationally"
+    ],
+    "correct_answer": 2,
+    "explanation": "Caribbean populations are ethnically diverse (mixed African, Indian, European, and indigenous heritage), use herbal supplements that may interact with drugs, and face unique environmental conditions. These factors create a pharmacovigilance landscape that cannot be extrapolated from North American or European clinical trial data — making local ADR reporting essential.",
+    "order_index": 3,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "60e6373f-6fad-4866-90cc-ea2d532bc173",
+    "module_id": "518e49f7-db26-4701-a332-4928c74d9aa0",
+    "question": "The WHO estimates that only _____ of all adverse drug reactions are reported worldwide.",
+    "options": [
+      "1-2%",
+      "6-10%",
+      "25-30%",
+      "50-60%"
+    ],
+    "correct_answer": 1,
+    "explanation": "The WHO estimates that only 6-10% of all ADRs are reported worldwide, a phenomenon known as under-reporting. In the Caribbean, reporting rates are believed to be even lower. This massive under-reporting means that the true burden of ADRs is far greater than available data suggests, making every report a valuable contribution to drug safety knowledge.",
+    "order_index": 4,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "b1b30724-b5c7-49c7-9936-56788216bfbd",
+    "module_id": "518e49f7-db26-4701-a332-4928c74d9aa0",
+    "question": "Only serious or life-threatening adverse drug reactions need to be reported to national pharmacovigilance centres.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": 1,
+    "explanation": "False. While serious and unexpected ADRs are prioritised, ALL suspected ADRs should ideally be reported. Even mild reactions contribute to the cumulative safety profile of a drug. Multiple reports of a 'mild' reaction may collectively reveal a significant safety signal that would be missed if individual reporters assumed their case was too minor to report.",
+    "order_index": 5,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "2066a6aa-b649-4d5d-8330-aecaae36d3cd",
+    "module_id": "518e49f7-db26-4701-a332-4928c74d9aa0",
+    "question": "In Trinidad & Tobago, ADR reports should be submitted to:",
+    "options": [
+      "The Pharmacy Board of Trinidad and Tobago",
+      "The Chemistry, Food and Drugs Division (CFDD) under the Ministry of Health",
+      "The University of the West Indies Department of Pharmacology",
+      "The Trinidad and Tobago Medical Association"
+    ],
+    "correct_answer": 1,
+    "explanation": "In Trinidad & Tobago, ADR reports are submitted to the Chemistry, Food and Drugs Division (CFDD) under the Ministry of Health. The CFDD serves as the national pharmacovigilance centre and submits reports to the WHO Collaborating Centre in Uppsala, Sweden, for inclusion in the global VigiBase database.",
+    "order_index": 6,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "b60ce97d-10df-421e-a6cb-ccc404fb4d6c",
+    "module_id": "518e49f7-db26-4701-a332-4928c74d9aa0",
+    "question": "A pharmacy technician notices that three different patients taking the same new generic brand of metformin have complained of unusual headaches over the past month. What should the technician do?",
+    "options": [
+      "Ignore it — headaches are common and probably unrelated",
+      "Tell the patients to take paracetamol for the headaches",
+      "Alert the supervising pharmacist and recommend filing ADR reports for all three cases, noting the specific generic manufacturer and lot numbers",
+      "Switch all patients to the brand-name product without consulting the pharmacist"
+    ],
+    "correct_answer": 2,
+    "explanation": "Three patients reporting the same unusual symptom with the same generic product is a potential safety signal that warrants ADR reporting. The technician should alert the pharmacist and ensure reports are filed for all three cases, including the specific generic manufacturer, lot numbers, and excipient information. This pattern may indicate a formulation-specific issue.",
+    "order_index": 7,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "hard",
+    "blooms_level": "evaluate"
+  },
+  {
+    "id": "9eae6ce8-504a-4d20-ab7d-3d9e1f592a77",
+    "module_id": "518e49f7-db26-4701-a332-4928c74d9aa0",
+    "question": "Match each ADR type with its correct classification:",
+    "options": [
+      "Type A — Augmented",
+      "Type B — Bizarre",
+      "Type C — Chronic",
+      "Type E — End-of-use"
+    ],
+    "correct_answer": 0,
+    "explanation": "Drowsiness from antihistamines is Type A (predictable, dose-related). Anaphylaxis from penicillin is Type B (unpredictable, not dose-related). Osteoporosis from long-term steroids is Type C (cumulative dose). Rebound hypertension after stopping clonidine is Type E (end-of-use/withdrawal).",
+    "order_index": 8,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "66a98762-86a1-4011-b304-c33837f2bc25",
+    "module_id": "518e49f7-db26-4701-a332-4928c74d9aa0",
+    "question": "What role does dechallenge/rechallenge play in ADR causality assessment?",
+    "options": [
+      "It is a marketing strategy used by pharmaceutical companies",
+      "It determines the financial cost of the ADR",
+      "It provides the strongest clinical evidence of a causal relationship between a drug and an adverse reaction",
+      "It is used to calculate the drug's efficacy in clinical trials"
+    ],
+    "correct_answer": 2,
+    "explanation": "Dechallenge (stopping the suspected drug to see if the reaction resolves) and rechallenge (restarting the drug to see if the reaction recurs) provide the strongest evidence of causality. If a reaction resolves on dechallenge and recurs on rechallenge, the causal link is very strong. However, rechallenge is not always ethical or safe — it depends on the severity of the reaction.",
+    "order_index": 9,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "hard",
+    "blooms_level": "analyze"
+  }
+]

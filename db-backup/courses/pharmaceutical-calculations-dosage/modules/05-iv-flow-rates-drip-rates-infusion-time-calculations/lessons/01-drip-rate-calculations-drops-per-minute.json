@@ -1,0 +1,94 @@
+{
+  "id": "82813619-69e6-464d-8879-e31dcc0a6e7c",
+  "module_id": "d3795a17-60e6-4ead-89e6-9c00001165e0",
+  "title": "Drip Rate Calculations: Drops per Minute",
+  "content": [
+    {
+      "text": "From mL/hr to Drops per Minute",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "While modern infusion pumps control flow in mL/hr, there are situations — power outages, equipment shortages, rural health centres without pumps — where IV fluids must be regulated manually using gravity and a roller clamp. In these situations, you count drops per minute (gtt/min) to achieve the desired flow rate. This is particularly relevant in Caribbean settings where hospital resources can be stretched, especially during hurricane season or surge periods.",
+      "type": "text"
+    },
+    {
+      "term": "Drop Factor",
+      "type": "key-term",
+      "definition": "The number of drops (gtt) that equal 1 mL, determined by the IV administration set being used. Standard (macrodrip) sets: 10, 15, or 20 gtt/mL (varies by manufacturer). Microdrip (paediatric) sets: 60 gtt/mL. The drop factor is printed on the packaging of the IV tubing."
+    },
+    {
+      "text": "The Drip Rate Formula",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Drip rate (gtt/min) = [Volume (mL) × Drop factor (gtt/mL)] ÷ Time (minutes). Alternatively: Drip rate = Flow rate (mL/hr) × Drop factor ÷ 60. Remember to convert hours to minutes (multiply by 60) when using the first formula.",
+      "type": "text"
+    },
+    {
+      "body": "Worked example: Order: 1000 mL Normal Saline over 8 hours using a 20 gtt/mL administration set. Step 1: Convert 8 hours to minutes: 8 × 60 = 480 minutes. Step 2: Drip rate = (1000 × 20) ÷ 480 = 20,000 ÷ 480 = 41.67. Round to 42 gtt/min. Alternatively: Flow rate = 1000 ÷ 8 = 125 mL/hr. Drip rate = 125 × 20 ÷ 60 = 41.67 → 42 gtt/min.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Macrodrip (standard)",
+          "10 gtt/mL",
+          "Large-volume adult infusions",
+          "Larger drip chamber"
+        ],
+        [
+          "Macrodrip (standard)",
+          "15 gtt/mL",
+          "General adult infusions",
+          "Medium drip chamber"
+        ],
+        [
+          "Macrodrip (standard)",
+          "20 gtt/mL",
+          "General adult infusions",
+          "Common in Caribbean hospitals"
+        ],
+        [
+          "Microdrip (paediatric)",
+          "60 gtt/mL",
+          "Paediatric and precise medication infusions",
+          "Smaller drip chamber, finer drops"
+        ]
+      ],
+      "type": "table",
+      "caption": "Drop Factors by Administration Set Type",
+      "headers": [
+        "Set Type",
+        "Drop Factor",
+        "When Used",
+        "Tubing Feature"
+      ]
+    },
+    {
+      "body": "When using a 60 gtt/mL (microdrip) set, the drip rate in gtt/min equals the flow rate in mL/hr. This is because: gtt/min = mL/hr × 60 gtt/mL ÷ 60 min/hr = mL/hr. So if the flow rate is 50 mL/hr, the drip rate with a microdrip set is simply 50 gtt/min. This shortcut eliminates calculation for microdrip sets and is widely used in Caribbean hospital wards.",
+      "type": "callout",
+      "title": "The 60 gtt/mL Shortcut",
+      "variant": "tip"
+    },
+    {
+      "body": "Worked example: Order: 250 mL of antibiotic solution over 30 minutes using a 15 gtt/mL set. Drip rate = (250 × 15) ÷ 30 = 3750 ÷ 30 = 125 gtt/min. This is a very fast drip — about 2 drops per second. In practice, many antibiotics infused over 30 minutes would be run on a pump. If no pump is available, the nurse must monitor this infusion closely.",
+      "type": "text"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "17 gtt/min",
+        "28 gtt/min",
+        "42 gtt/min",
+        "56 gtt/min"
+      ],
+      "question": "Order: 500 mL D5W over 6 hours using a 20 gtt/mL set. What is the drip rate?",
+      "explanation": "Convert 6 hours to 360 minutes. Drip rate = (500 × 20) ÷ 360 = 10,000 ÷ 360 = 27.78 → 28 gtt/min. Alternatively: Flow rate = 500/6 = 83.3 mL/hr. Drip rate = 83.3 × 20/60 = 27.78 → 28 gtt/min.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 25
+}

@@ -1,0 +1,138 @@
+{
+  "id": "dbd15d88-7900-4dfc-a65d-39502ba95039",
+  "module_id": "ec614d8d-d8c6-43ec-ba3c-eecdee20cbb6",
+  "title": "Handling Protocols: Receipt, Storage, Dispensing & Documentation",
+  "content": [
+    {
+      "text": "The Controlled Substance Chain of Custody",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Controlled substances demand a level of procedural rigour that far exceeds standard pharmacy operations. Every tablet, every millilitre, must be accounted for from the moment it enters the pharmacy to the moment it leaves — whether dispensed to a patient, returned to a distributor, or destroyed. This chain of custody is legally mandated and operationally critical.",
+      "type": "text"
+    },
+    {
+      "text": "Receipt of Controlled Substances",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "type": "list",
+      "items": [
+        "Verify the delivery against the purchase order and the supplier's invoice",
+        "Check that the supplier holds a valid wholesale drug dealer's licence",
+        "Inspect all packages for signs of tampering, damage, or seal breakage",
+        "Count or weigh every item received — do not accept delivery quantities on trust",
+        "Record receipt in the Controlled Substance Register immediately, noting: date, product name, strength, quantity, batch number, supplier name, and the name of the person receiving",
+        "Place items in the controlled substance safe/cabinet immediately after documentation",
+        "Retain copies of all delivery documents for the legally mandated period (typically 2-5 years, depending on jurisdiction)"
+      ],
+      "ordered": true
+    },
+    {
+      "text": "Storage Requirements",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Controlled substances must be stored in a locked safe or cabinet that meets regulatory specifications. In most Caribbean jurisdictions, the safe must be securely fixed to a wall or floor, constructed of metal or reinforced material, and fitted with a lock to which only the pharmacist and designated staff hold keys. Access must be logged, and the safe must be located in an area not accessible to the public.",
+      "type": "text"
+    },
+    {
+      "body": "A controlled substance safe that is left unlocked — even momentarily — constitutes a serious regulatory violation. If discovered during an inspection, it can result in immediate suspension of the pharmacy's licence, criminal charges against the pharmacist, and personal liability for any pharmacy staff involved. Always verify that the safe is locked after every access.",
+      "type": "callout",
+      "title": "Security Is Non-Negotiable",
+      "variant": "danger"
+    },
+    {
+      "text": "Dispensing Controlled Substances",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "type": "list",
+      "items": [
+        "Verify that the prescription is written on the correct form (many jurisdictions require specific controlled substance prescription forms)",
+        "Confirm the prescriber is authorised to prescribe the specific controlled substance",
+        "Check patient identity — some jurisdictions require photo identification for controlled substance prescriptions",
+        "Verify the prescription includes all legally required elements: date, patient name and address, prescriber name and registration number, drug name and strength, quantity in words and figures, directions for use, prescriber's signature",
+        "Count or measure the exact quantity prescribed, witnessed by a second person where required",
+        "Record the dispensing in the Controlled Substance Register: date, patient name, prescriber name, product, quantity, and the name of the dispensing pharmacist",
+        "The pharmacist must perform the final check and authorise release to the patient",
+        "Retain the original prescription for the mandated period"
+      ],
+      "ordered": true
+    },
+    {
+      "term": "Controlled Substance Register",
+      "type": "key-term",
+      "definition": "A legally mandated written record of all controlled substance transactions in a pharmacy, including receipts, dispensings, returns, and destructions. The register must be maintained in bound-book format (not loose-leaf) in most Caribbean jurisdictions, with entries made in ink and errors corrected by single-line strikethrough — never by erasure or correction fluid."
+    },
+    {
+      "rows": [
+        [
+          "Date",
+          "Date of receipt",
+          "Date of dispensing"
+        ],
+        [
+          "Product",
+          "Name, strength, dosage form",
+          "Name, strength, dosage form"
+        ],
+        [
+          "Quantity",
+          "Quantity received",
+          "Quantity dispensed"
+        ],
+        [
+          "Source/Destination",
+          "Supplier name and licence number",
+          "Patient name and address"
+        ],
+        [
+          "Batch Number",
+          "Supplier's batch/lot number",
+          "Batch from which dispensed"
+        ],
+        [
+          "Prescriber",
+          "N/A",
+          "Prescriber name and registration number"
+        ],
+        [
+          "Staff",
+          "Name of person receiving",
+          "Name of dispensing pharmacist"
+        ],
+        [
+          "Running Balance",
+          "Updated balance after receipt",
+          "Updated balance after dispensing"
+        ]
+      ],
+      "type": "table",
+      "caption": "Controlled Substance Register — Required Entry Fields",
+      "headers": [
+        "Field",
+        "For Receipt Entries",
+        "For Dispensing Entries"
+      ]
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Using correction fluid (white-out) to cover the error",
+        "Erasing the error and rewriting the correct information",
+        "Single-line strikethrough with initials, date, and the correct entry alongside",
+        "Removing the page and rewriting it entirely"
+      ],
+      "question": "How should errors in a Controlled Substance Register be corrected?",
+      "explanation": "Errors in a Controlled Substance Register must be corrected by a single-line strikethrough (so the original entry remains legible), accompanied by the initials and date of the person making the correction, with the correct information written alongside. Correction fluid, erasure, and page removal are all prohibited as they suggest potential tampering.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 30
+}

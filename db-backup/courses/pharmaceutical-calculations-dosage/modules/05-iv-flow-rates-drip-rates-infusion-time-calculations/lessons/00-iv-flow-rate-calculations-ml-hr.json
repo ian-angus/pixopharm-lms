@@ -1,0 +1,106 @@
+{
+  "id": "a152a23c-3254-47ba-bb2e-abfe1ba80ccf",
+  "module_id": "d3795a17-60e6-4ead-89e6-9c00001165e0",
+  "title": "IV Flow Rate Calculations: mL/hr",
+  "content": [
+    {
+      "text": "Intravenous Flow Rates: The Foundation of IV Therapy",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Intravenous (IV) therapy delivers fluids and medications directly into the bloodstream. Because the drug enters the systemic circulation immediately — bypassing the absorption barriers of oral administration — precise rate control is essential. Flow rate errors can cause fluid overload, drug toxicity, or subtherapeutic dosing. In Caribbean hospitals such as POS General Hospital, QEH Barbados, and UHWI Jamaica, pharmacy technicians help prepare IV medications and verify rate calculations.",
+      "type": "text"
+    },
+    {
+      "term": "Flow Rate (mL/hr)",
+      "type": "key-term",
+      "definition": "The volume of IV fluid delivered per hour, expressed in millilitres per hour (mL/hr). This is the rate programmed into an IV infusion pump. Formula: Flow rate (mL/hr) = Total volume (mL) ÷ Infusion time (hours)."
+    },
+    {
+      "text": "The Basic Flow Rate Formula",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Flow rate (mL/hr) = Total volume (mL) ÷ Time (hours). This is the simplest IV calculation and the one you will use most often. Example: A doctor orders 1000 mL of Normal Saline (0.9% NaCl) to be infused over 8 hours. Flow rate = 1000 ÷ 8 = 125 mL/hr. Set the infusion pump to 125 mL/hr.",
+      "type": "text"
+    },
+    {
+      "body": "Worked example: A post-surgical patient at QEH Barbados requires 500 mL of Dextrose 5% over 4 hours. Flow rate = 500 ÷ 4 = 125 mL/hr. If the order then changes to 'complete the remaining 250 mL over 3 hours': new flow rate = 250 ÷ 3 = 83.3 mL/hr. Round to 83 mL/hr on the pump.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Normal Saline (0.9% NaCl)",
+          "1000 mL",
+          "8 hours",
+          "125 mL/hr"
+        ],
+        [
+          "Normal Saline (0.9% NaCl)",
+          "1000 mL",
+          "12 hours",
+          "83 mL/hr"
+        ],
+        [
+          "Dextrose 5% in Water (D5W)",
+          "500 mL",
+          "6 hours",
+          "83 mL/hr"
+        ],
+        [
+          "Ringer's Lactate",
+          "1000 mL",
+          "6 hours",
+          "167 mL/hr"
+        ],
+        [
+          "Half-Normal Saline (0.45% NaCl)",
+          "1000 mL",
+          "24 hours",
+          "42 mL/hr"
+        ],
+        [
+          "Normal Saline KVO (keep vein open)",
+          "500 mL",
+          "24 hours",
+          "21 mL/hr"
+        ]
+      ],
+      "type": "table",
+      "caption": "Common IV Fluid Orders in Caribbean Hospitals",
+      "headers": [
+        "IV Fluid",
+        "Common Volume",
+        "Typical Infusion Time",
+        "Calculated Rate"
+      ]
+    },
+    {
+      "body": "KVO (keep vein open) is a common order in Caribbean hospitals. It means running the IV at the minimum rate needed to prevent the catheter from clotting — typically 20-30 mL/hr. This maintains IV access without adding significant fluid volume. You will see KVO orders on patients who have completed their IV therapy but may need IV access again soon.",
+      "type": "callout",
+      "title": "KVO — Keep Vein Open",
+      "variant": "info"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "50 mL/hr",
+        "100 mL/hr",
+        "125 mL/hr",
+        "200 mL/hr"
+      ],
+      "question": "A doctor orders 1000 mL of Ringer's Lactate to infuse over 10 hours. What is the flow rate?",
+      "explanation": "Flow rate = Total volume ÷ Time = 1000 mL ÷ 10 hr = 100 mL/hr. Set the infusion pump to 100 mL/hr.",
+      "correctIndex": 1
+    },
+    {
+      "body": "Rearranging the formula: If you need to find the time, use Time = Volume ÷ Rate. If you need to find the volume, use Volume = Rate × Time. These rearrangements are used when checking whether an IV bag will last through a shift, or when a nurse asks 'when will this bag finish?'",
+      "type": "text"
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 25
+}

@@ -1,0 +1,190 @@
+{
+  "id": "dd854989-023d-4d1d-b0ef-c34062b0279c",
+  "module_id": "9535926c-b2f6-4855-a3c2-5d2fb75018fb",
+  "title": "Counselling for New Prescriptions, Refills & OTC Sales",
+  "content": [
+    {
+      "text": "Different Situations, Different Approaches",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Not every patient interaction requires the same depth of counselling. A patient collecting a new prescription for the first time has very different information needs than a patient refilling a medication they have taken for years. And a patient purchasing an over-the-counter (OTC) product may need intervention that they did not expect. Skilled pharmacy technicians calibrate their counselling approach to the situation.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "New prescription (first fill)",
+          "Full STA method: purpose, dosing, side effects, storage, follow-up",
+          "5-8 minutes",
+          "Show-Tell-Ask with all five TELL points"
+        ],
+        [
+          "Refill (stable patient)",
+          "Check for adherence issues, side effects, and changes",
+          "2-3 minutes",
+          "IHS prime questions (abbreviated): 'How is it going with this medication?'"
+        ],
+        [
+          "Changed dose or medication",
+          "Focus on what is different and why",
+          "3-5 minutes",
+          "SHOW: 'This tablet looks different because...' TELL: 'The new dose is...'"
+        ],
+        [
+          "OTC purchase",
+          "Assess appropriateness, check for interactions with existing medications",
+          "1-3 minutes",
+          "'Are you taking any other medications? Have you used this before?'"
+        ],
+        [
+          "Caregiver collection",
+          "Verify caregiver understands, provide written instructions",
+          "4-6 minutes",
+          "Full STA — the actual patient is not present, so written backup is critical"
+        ]
+      ],
+      "type": "table",
+      "caption": "Counselling Intensity by Interaction Type",
+      "headers": [
+        "Interaction Type",
+        "Counselling Focus",
+        "Time Investment",
+        "Key Technique"
+      ]
+    },
+    {
+      "body": "It is extremely common in the Caribbean for family members to collect medications on behalf of patients — grandchildren collecting for elderly grandparents, neighbours collecting during work hours, or parents collecting for adult children. This creates a counselling gap: the person receiving the information is not the person taking the medication. Always provide clear written or illustrated instructions when a caregiver collects, and encourage them to have the patient call the pharmacy if they have questions.",
+      "type": "callout",
+      "title": "Caregiver Collections in the Caribbean",
+      "variant": "info"
+    },
+    {
+      "term": "Caregiver Counselling Gap",
+      "type": "key-term",
+      "definition": "The information deficit that occurs when a medication is collected by a caregiver (family member, friend, or neighbour) rather than the patient themselves. The caregiver receives verbal counselling but the patient does not, creating a risk of misunderstood or lost information. Bridging this gap with written or illustrated instructions is a critical safety measure in Caribbean pharmacy, where proxy collection is common."
+    },
+    {
+      "text": "The OTC Intervention Opportunity",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "OTC sales represent an underutilised counselling opportunity. When a patient picks up an antacid, a painkiller, or a cold remedy, they may not think they need professional advice. But a skilled technician can prevent harm: 'I see you are buying ibuprofen. Are you taking any blood pressure medication? Ibuprofen can raise blood pressure and reduce the effectiveness of some antihypertensives.' In the Caribbean, where self-medication is common and OTC products are widely available, this screening function is especially important.",
+      "type": "text"
+    },
+    {
+      "type": "scenario-simulation",
+      "nodes": [
+        {
+          "id": "start",
+          "text": "Mrs. Williams, 72, arrives at your Bridgetown pharmacy with a new prescription for amlodipine 5 mg for hypertension. She has never taken blood pressure medication before and looks nervous. What is your first step?",
+          "choices": [
+            {
+              "label": "Begin the SHOW step — open the medication and show her the tablet",
+              "feedback": "Good. Starting with SHOW helps the patient connect visually with their medication and calms initial anxiety.",
+              "isOptimal": true,
+              "nextNodeId": "show-step"
+            },
+            {
+              "label": "Hand her the bag and wish her well — she seems in a hurry",
+              "feedback": "This is a new prescription for a first-time patient. Skipping counselling is both unsafe and a missed opportunity to build adherence from day one.",
+              "nextNodeId": "skip-counsel"
+            },
+            {
+              "label": "Launch into a detailed explanation of calcium channel blocker pharmacology",
+              "feedback": "Medical jargon will overwhelm a nervous first-time patient. Start with the basics in plain language.",
+              "nextNodeId": "too-technical"
+            }
+          ]
+        },
+        {
+          "id": "show-step",
+          "text": "You show Mrs. Williams the tablet: 'This is amlodipine — your new blood pressure tablet.' She nods but looks uncertain. Now you move to TELL. Which information is MOST critical to share first?",
+          "choices": [
+            {
+              "label": "What the medication is for and how to take it — 'This helps keep your blood pressure at a safe level. Take one tablet every morning with your breakfast.'",
+              "feedback": "Perfect. Purpose and dosing are the two most critical TELL points for a new prescription. Clear, simple, actionable.",
+              "isOptimal": true,
+              "nextNodeId": "tell-step"
+            },
+            {
+              "label": "A complete list of all possible side effects",
+              "feedback": "While side effects must be covered, leading with a long list can frighten a nervous patient into non-adherence. Start with purpose and dosing.",
+              "nextNodeId": "side-effects-first"
+            }
+          ]
+        },
+        {
+          "id": "tell-step",
+          "text": "Mrs. Williams is nodding along. You mention that she may notice swollen ankles initially, which usually settles. Now for the ASK step. How do you verify her understanding?",
+          "choices": [
+            {
+              "label": "'Mrs. Williams, just to make sure I explained it clearly — can you tell me how you plan to take this tablet?'",
+              "feedback": "Excellent. You framed the teach-back as YOUR responsibility ('so I know I explained it clearly'), which feels respectful rather than patronising.",
+              "isOptimal": true,
+              "nextNodeId": "success"
+            },
+            {
+              "label": "'Do you understand?' and wait for a yes/no",
+              "feedback": "Most patients will say 'yes' even when they do not understand. A closed yes/no question does not verify genuine comprehension. Use teach-back instead.",
+              "nextNodeId": "partial-end"
+            }
+          ]
+        },
+        {
+          "id": "skip-counsel",
+          "text": "Mrs. Williams goes home and takes two tablets because she thought 'one was not enough for a serious condition.' She develops low blood pressure, dizziness, and falls. She is taken to Queen Elizabeth Hospital. This was preventable.",
+          "isEnd": true,
+          "outcome": "failure",
+          "summary": "New prescriptions ALWAYS require counselling. The 5-8 minutes you invest in Show-Tell-Ask can prevent serious adverse events. Never assume a patient will figure it out on their own."
+        },
+        {
+          "id": "too-technical",
+          "text": "Mrs. Williams's eyes glaze over as you explain calcium channel mechanisms. She nods politely, takes the bag, and leaves. At home, she puts the medication in her drawer and does not take it — she felt too embarrassed to admit she did not understand.",
+          "isEnd": true,
+          "outcome": "failure",
+          "summary": "Technical language creates a barrier, not an education. Use plain language, analogies, and the STA method to ensure genuine understanding."
+        },
+        {
+          "id": "side-effects-first",
+          "text": "After hearing about dizziness, swelling, and headaches, Mrs. Williams looks terrified. She takes the medication home but is too scared to start it for two weeks. When she finally calls the pharmacy, she has had dangerously high blood pressure readings.",
+          "isEnd": true,
+          "outcome": "partial",
+          "summary": "Side effect information is important but should be contextualised: 'Some patients notice mild ankle swelling at first — this usually settles within a week.' Leading with benefits and purpose builds confidence before introducing potential effects."
+        },
+        {
+          "id": "partial-end",
+          "text": "Mrs. Williams says 'yes' and leaves. She actually misunderstood and takes the tablet at bedtime instead of morning, experiences nocturnal dizziness, and falls in her bathroom. The error is caught at her one-month refill when you use proper teach-back.",
+          "isEnd": true,
+          "outcome": "partial",
+          "summary": "'Do you understand?' almost always gets 'yes' — even when the answer should be 'no.' The teach-back method is the only reliable way to verify genuine understanding."
+        },
+        {
+          "id": "success",
+          "text": "Mrs. Williams repeats back: 'I take one tablet with my breakfast every morning, and if my ankles swell, I should not stop — it will settle.' She smiles, thanks you, and leaves feeling confident. At her one-month refill, she reports perfect adherence and normal blood pressure readings.",
+          "isEnd": true,
+          "outcome": "success",
+          "summary": "Excellent counselling. You used the full Show-Tell-Ask method, plain language, and teach-back verification. Mrs. Williams understood her medication, felt respected, and achieved good outcomes."
+        }
+      ],
+      "title": "Medication Counselling Decision Simulator",
+      "description": "A patient arrives at your pharmacy counter. Practice selecting the right counselling approach for different situations."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Refuse to dispense — only the patient can collect their own medication",
+        "Provide clear written or illustrated instructions since the actual patient is not present for verbal counselling",
+        "Tell the caregiver to have the patient visit the pharmacy next time",
+        "Skip counselling entirely — the caregiver will pass on the information"
+      ],
+      "question": "When a caregiver (e.g., a grandchild) collects a prescription on behalf of an elderly patient, what additional step should the technician always take?",
+      "explanation": "When the person collecting is not the person taking the medication, there is a counselling gap. Written or illustrated instructions bridge this gap and give the patient a reference. Refusing to dispense to caregivers is impractical in the Caribbean context where family-based medication collection is extremely common.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 3,
+  "duration_minutes": 25
+}

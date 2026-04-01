@@ -1,0 +1,119 @@
+{
+  "id": "402bc9ef-3b63-45d9-928d-79d2bfc93e30",
+  "module_id": "eeaefebc-259f-42ce-824a-77332e5f4432",
+  "title": "Barbados Pharmacy Registration & Licensing Framework",
+  "content": [
+    {
+      "text": "Pharmacy Regulation in Barbados",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Pharmacy practice in Barbados is regulated through a combination of the Pharmacy Act (Cap. 372D), the Drug Service Act, and oversight by the Chief Medical Officer (CMO) and the Barbados Drug Service. While Barbados does not have a standalone Pharmacy Council in the same way that Jamaica does, the regulatory framework is comprehensive and pharmacy practitioners must comply with registration, premises licensing, and professional conduct requirements.",
+      "type": "text"
+    },
+    {
+      "term": "Pharmacy Act (Cap. 372D)",
+      "type": "key-term",
+      "definition": "The primary legislation governing pharmacy practice in Barbados. It regulates who may practise pharmacy, the registration of pharmacists, the licensing of pharmacy premises, and the standards of professional conduct expected of pharmacy practitioners. Enforced in conjunction with the Drug Service Act and the Misuse of Drugs Act."
+    },
+    {
+      "text": "Pharmacist Registration in Barbados",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "To practise as a pharmacist in Barbados, an individual must hold a recognised pharmacy degree, complete the required pre-registration training, and be registered under the Pharmacy Act. The registration process involves submission of qualifications to the Barbados authorities for verification, a period of supervised practice, and entry onto the register of pharmacists. The University of the West Indies at Cave Hill does not currently offer a full pharmacy degree, so most Barbadian pharmacists are trained at UWI St. Augustine (Trinidad) or internationally.",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Obtain a recognised pharmacy degree (commonly UWI St. Augustine B.Sc. Pharmacy, or approved international equivalent)",
+        "Submit application with certified copies of qualifications, transcripts, and character references",
+        "Qualifications are assessed for equivalence by the Barbados authorities",
+        "Complete any required supervised practice period in a Barbados pharmacy",
+        "Registration is granted and the pharmacist is added to the register",
+        "Annual renewal of practising licence required"
+      ],
+      "ordered": true
+    },
+    {
+      "text": "Pharmacy Technicians in Barbados",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Similar to Trinidad & Tobago, Barbados does not currently have a separate statutory registration category for pharmacy technicians. Technicians work under the direct supervision of a registered pharmacist and their practice is covered by the pharmacist's registration. However, the Barbados health system increasingly recognises the value of trained technicians, particularly in the high-volume public-sector settings like QEH and the polyclinics. PIXOPHARM certification will position you as a qualified, professional technician in a market that is moving toward formal recognition.",
+      "type": "text"
+    },
+    {
+      "body": "Barbados has a well-regulated health system with relatively high standards of practice. The island's small size means that the pharmacy community is tight-knit — reputation matters enormously. Professional conduct, accuracy, and continuing education are not just requirements but cultural expectations. This makes Barbados an excellent environment for a pharmacy technician who takes their career seriously.",
+      "type": "callout",
+      "title": "The Barbados Advantage",
+      "variant": "info"
+    },
+    {
+      "rows": [
+        [
+          "Primary Legislation",
+          "Pharmacy Act (Cap. 372D)",
+          "Pharmacy Board Act (Ch. 29:52)",
+          "Pharmacy Act (1975)"
+        ],
+        [
+          "Regulatory Body",
+          "CMO / BDS / Ministry of Health",
+          "Pharmacy Board of T&T",
+          "Pharmacy Council of Jamaica"
+        ],
+        [
+          "Registration Exam",
+          "Not always required for UWI graduates",
+          "Yes — Board examination required",
+          "Yes — PCJ examination required"
+        ],
+        [
+          "Technician Registration",
+          "No separate category",
+          "No separate category",
+          "Increasingly recognised; distinct from 'qualified dispenser'"
+        ],
+        [
+          "CPD Requirement",
+          "Encouraged but not yet mandatory",
+          "Encouraged but not yet mandatory",
+          "Moving toward mandatory CPD"
+        ],
+        [
+          "Annual Renewal",
+          "Yes",
+          "Yes — before 31 January",
+          "Yes"
+        ]
+      ],
+      "type": "table",
+      "caption": "Pharmacy Registration — Barbados vs. Regional Comparison",
+      "headers": [
+        "Aspect",
+        "Barbados",
+        "Trinidad & Tobago",
+        "Jamaica"
+      ]
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "University of the West Indies (UWI) Cave Hill, Barbados",
+        "University of Technology, Jamaica (UTech)",
+        "University of the West Indies (UWI) St. Augustine, Trinidad",
+        "St. George's University, Grenada"
+      ],
+      "question": "Where do most Barbadian pharmacists complete their pharmacy education?",
+      "explanation": "Since UWI Cave Hill in Barbados does not currently offer a full pharmacy degree, most Barbadian pharmacists are trained at UWI St. Augustine in Trinidad, which offers the B.Sc. Pharmacy programme. Some also obtain their qualifications internationally.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 30
+}

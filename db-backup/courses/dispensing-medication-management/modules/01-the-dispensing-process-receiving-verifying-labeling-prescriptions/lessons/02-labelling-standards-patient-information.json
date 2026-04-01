@@ -1,0 +1,107 @@
+{
+  "id": "9e4e6abf-4e5c-42ce-874d-bbaeb661748a",
+  "module_id": "0bff4891-735a-41be-b0c3-a8bac8ddd17a",
+  "title": "Labelling Standards & Patient Information",
+  "content": [
+    {
+      "text": "The Label as a Patient Safety Tool",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "The prescription label is the primary source of medication information for the patient after they leave the pharmacy. A well-designed, accurate label can prevent misuse, improve adherence, and save lives. A poorly prepared label — with incorrect directions, missing warnings, or confusing language — can cause serious harm. In the Caribbean, where health literacy varies widely, clear labelling is especially important.",
+      "type": "text"
+    },
+    {
+      "text": "Mandatory Label Elements",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "type": "list",
+      "items": [
+        "Pharmacy name, address, and telephone number",
+        "Patient's full name",
+        "Date of dispensing",
+        "Prescription number (for tracking and refills)",
+        "Drug name (generic and/or brand) and strength",
+        "Quantity dispensed",
+        "Directions for use in plain language (not Latin abbreviations)",
+        "Prescriber's name",
+        "Expiry date or beyond-use date",
+        "Auxiliary warnings (e.g., 'Take with food', 'May cause drowsiness', 'Keep refrigerated')",
+        "Dispensing pharmacist's initials or identification"
+      ],
+      "ordered": false
+    },
+    {
+      "body": "Always translate sig codes into plain, patient-friendly language on the label. For example, 'i tab po bd pc' should appear on the label as 'Take ONE tablet by mouth TWICE daily AFTER meals.' Use uppercase for emphasis on key words. Remember that many Caribbean patients may have limited health literacy — clarity saves lives.",
+      "type": "callout",
+      "title": "Plain Language Directions",
+      "variant": "tip"
+    },
+    {
+      "term": "Auxiliary Label",
+      "type": "key-term",
+      "definition": "A supplementary warning label affixed to a medication container to alert the patient to important precautions, such as 'Do not drink alcohol while taking this medication,' 'Keep refrigerated,' or 'May cause drowsiness — avoid driving.' These are colour-coded in many pharmacies (e.g., red for critical warnings, yellow for cautions)."
+    },
+    {
+      "type": "island-comparison",
+      "title": "Labelling Regulations by Island",
+      "islands": [
+        {
+          "flag": "🇹🇹",
+          "name": "Trinidad & Tobago",
+          "details": [
+            "Labels must include the pharmacy's registered name and address",
+            "The Chemistry, Food and Drugs Division oversees labelling compliance",
+            "Controlled substance labels must include additional tracking information",
+            "Labels should be in English, the official language",
+            "CDAP (Chronic Disease Assistance Programme) medications carry specific labelling identifiers"
+          ]
+        },
+        {
+          "flag": "🇯🇲",
+          "name": "Jamaica",
+          "details": [
+            "The Pharmacy Council of Jamaica sets labelling standards under the Pharmacy Act",
+            "NHF (National Health Fund) subsidised medications require NHF programme identifiers on the label",
+            "Labels must clearly state generic name when a brand product is dispensed",
+            "Patient directions must be in plain English, not abbreviations",
+            "Poison Schedule medications require specific warning labels as per the Dangerous Drugs Act"
+          ]
+        },
+        {
+          "flag": "🇧🇧",
+          "name": "Barbados",
+          "details": [
+            "The Barbados Drug Service oversees labelling in the public health system",
+            "Labels must include the Barbados National Drug Formulary (BNDF) code where applicable",
+            "Patient information leaflets are encouraged alongside the dispensing label",
+            "Queen Elizabeth Hospital pharmacy uses standardised electronic labelling",
+            "Auxiliary warning labels are mandatory for medications with significant side effects"
+          ]
+        }
+      ],
+      "description": "While the core elements are similar, specific labelling requirements vary between Caribbean jurisdictions."
+    },
+    {
+      "body": "Accurate labelling also serves a legal protection function. If a patient experiences an adverse event, the label provides documentation of exactly what was dispensed and what instructions were given. In medicolegal proceedings, a correctly prepared label demonstrates due diligence. Conversely, a missing or inaccurate label can expose the pharmacy and its staff to liability.",
+      "type": "text"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "i tab po tds pc",
+        "1T PO 3x daily after food",
+        "Take ONE tablet by mouth THREE times daily AFTER meals",
+        "As directed by your doctor"
+      ],
+      "question": "Which of the following is the BEST way to write directions on a patient's medication label?",
+      "explanation": "Option C uses plain, patient-friendly language with key words capitalised for emphasis. Latin abbreviations (option A) should never appear on patient-facing labels. Shorthand (option B) may be misunderstood. 'As directed' (option D) provides no actual guidance to the patient and should be avoided unless accompanied by verbal counselling and documented appropriately.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 25
+}

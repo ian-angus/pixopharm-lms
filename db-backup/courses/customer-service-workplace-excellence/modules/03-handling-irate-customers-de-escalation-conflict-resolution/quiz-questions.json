@@ -1,0 +1,217 @@
+[
+  {
+    "id": "6bb3d7d5-83c9-41df-a28c-8776b7da2e68",
+    "module_id": "1b66b300-d870-483b-ad7a-89886af4eca1",
+    "question": "What does the acronym LEAP stand for in the context of de-escalation?",
+    "options": [
+      "Listen, Explain, Apologise, Promise",
+      "Listen, Empathise, Ask, Propose",
+      "Look, Evaluate, Act, Prevent",
+      "Listen, Engage, Assess, Placate"
+    ],
+    "correct_answer": 1,
+    "explanation": "LEAP stands for Listen, Empathise, Ask, Propose. The method works because it addresses the emotional dimension of conflict (through listening and empathising) before moving to problem-solving (through asking and proposing).",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "ca4a5e0f-5583-46d8-a6f1-9c975e1f0a4c",
+    "module_id": "1b66b300-d870-483b-ad7a-89886af4eca1",
+    "question": "When a customer begins shouting about a stock-out, what is the FIRST thing you should do?",
+    "options": [
+      "Explain the supply chain issue",
+      "Offer to check another branch",
+      "Listen without interrupting until they finish",
+      "Ask them to lower their voice"
+    ],
+    "correct_answer": 2,
+    "explanation": "The first step of the LEAP method is Listen. Let the customer express their frustration fully before attempting any response. Interrupting, explaining, or asking them to calm down all tend to escalate the situation.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "5ba01839-8e3f-409d-b3e6-b9d66bb27521",
+    "module_id": "1b66b300-d870-483b-ad7a-89886af4eca1",
+    "question": "What is the emotional root behind most customer anger about medication stock-outs?",
+    "options": [
+      "Desire to cause problems for pharmacy staff",
+      "Habit of being difficult with service workers",
+      "Fear about their health and what happens without their medication",
+      "Expectation of a discount or compensation"
+    ],
+    "correct_answer": 2,
+    "explanation": "When a patient cannot get medication they depend on, the underlying emotion is almost always fear — about their health, their ability to manage their condition, and the uncertainty of when they will get their medication. Understanding this helps you respond with empathy rather than defensiveness.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "analyze"
+  },
+  {
+    "id": "e16fedb4-bbc3-4126-9364-de72e62490ea",
+    "module_id": "1b66b300-d870-483b-ad7a-89886af4eca1",
+    "question": "Which of the following situations should be escalated to the pharmacist immediately?",
+    "options": [
+      "A customer is upset about a 15-minute wait time",
+      "A customer says they received the wrong number of tablets last month",
+      "A customer is asking about the price of a generic medication",
+      "A customer is frustrated because the pharmacy is closing soon"
+    ],
+    "correct_answer": 1,
+    "explanation": "A claim of receiving the wrong quantity is a potential dispensing error — a serious matter that requires pharmacist investigation, documentation, and possible reporting. Wait time complaints, pricing queries, and closing time frustrations are within the technician's scope to address.",
+    "order_index": 3,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "evaluate"
+  },
+  {
+    "id": "3a0a85ba-9a97-4330-9852-ba5a95488c23",
+    "module_id": "1b66b300-d870-483b-ad7a-89886af4eca1",
+    "question": "What is the key difference between an angry customer and an abusive customer?",
+    "options": [
+      "An angry customer speaks loudly; an abusive customer speaks quietly",
+      "An angry customer is frustrated about a situation; an abusive customer is attacking you as a person",
+      "An angry customer leaves; an abusive customer stays",
+      "An angry customer wants a refund; an abusive customer wants to cause harm"
+    ],
+    "correct_answer": 1,
+    "explanation": "The distinction is between situational frustration (anger at a stock-out, wait time, or cost) and personal attacks (insults, racial slurs, threats, intimidation). A customer can be very angry without being abusive. The line is crossed when the target shifts from the problem to the person.",
+    "order_index": 4,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "analyze"
+  },
+  {
+    "id": "e7629f5c-b3da-42c2-8c1b-3247d164cd0c",
+    "module_id": "1b66b300-d870-483b-ad7a-89886af4eca1",
+    "question": "When setting a boundary with an abusive customer, which approach is MOST appropriate?",
+    "options": [
+      "Shout louder than them to establish authority",
+      "Silently walk away to the back of the pharmacy",
+      "Calmly name the behaviour, state the boundary, and offer a choice",
+      "Threaten to call the police immediately"
+    ],
+    "correct_answer": 2,
+    "explanation": "Professional boundary enforcement involves three steps: name the specific behaviour ('calling me names is not acceptable'), state the boundary ('I need you to speak respectfully'), and offer a choice ('we can continue respectfully, or I will ask the pharmacist to assist you'). This is firm without being aggressive.",
+    "order_index": 5,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "8498e45c-9155-4b60-900c-958f92674e1c",
+    "module_id": "1b66b300-d870-483b-ad7a-89886af4eca1",
+    "question": "Why is telling a customer 'calm down' generally counterproductive during a confrontation?",
+    "options": [
+      "It is too polite and they will not take you seriously",
+      "It invalidates their emotions and often increases their frustration",
+      "It is technically outside your scope of practice",
+      "It is only effective when said loudly"
+    ],
+    "correct_answer": 1,
+    "explanation": "Telling someone to 'calm down' implies their emotional response is unreasonable, which invalidates their feelings and typically escalates the situation. It is perceived as dismissive — the opposite of what an upset person needs to hear.",
+    "order_index": 6,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "25820213-6ffc-46d8-bea3-5d26b338e6c1",
+    "module_id": "1b66b300-d870-483b-ad7a-89886af4eca1",
+    "question": "A customer has been waiting 30 minutes for a prescription that was promised in 15. They approach the counter angrily: 'This is ridiculous! I have been waiting forever!' Which response best follows the LEAP method?",
+    "options": [
+      "'Your prescription is almost ready, just two more minutes.'",
+      "'I understand your frustration — you were told 15 minutes and it has been much longer. Let me check exactly where your prescription is right now.'",
+      "'I am sorry, but we are very busy today. You will just have to wait.'",
+      "'The pharmacist is behind schedule, not me. I already entered your prescription.'"
+    ],
+    "correct_answer": 1,
+    "explanation": "This response follows LEAP: it empathises with the customer's frustration, acknowledges the specific issue (promised 15 minutes, waited 30), and proposes an immediate action (checking the status). It does not make excuses, blame others, or dismiss the concern.",
+    "order_index": 7,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "0b2a9c9d-632a-45c6-b573-96bba7653eae",
+    "module_id": "1b66b300-d870-483b-ad7a-89886af4eca1",
+    "question": "If a customer uses racial slurs while complaining, you should ignore the language and focus on resolving their pharmacy issue.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": 1,
+    "explanation": "Racial slurs constitute verbal abuse, not merely strong language. Ignoring them normalises the behaviour and harms both you and the professional environment. The correct response is to calmly set a boundary: name the behaviour as unacceptable and state that respectful communication is required to continue.",
+    "order_index": 8,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "evaluate"
+  },
+  {
+    "id": "75c7be33-a460-401b-b132-fde8b8f50b73",
+    "module_id": "1b66b300-d870-483b-ad7a-89886af4eca1",
+    "question": "Arrange the LEAP de-escalation steps in the correct order:",
+    "options": [
+      "Propose a solution or next step",
+      "Empathise with the customer's feelings",
+      "Ask clarifying questions to understand the specific issue",
+      "Listen without interrupting"
+    ],
+    "correct_answer": 0,
+    "explanation": "The correct LEAP order is: (1) Listen — give full attention without interrupting, (2) Empathise — acknowledge their feelings, (3) Ask — clarify the specific problem with open questions, (4) Propose — offer a concrete solution or next step.",
+    "order_index": 9,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "d7729909-986c-4aaa-8542-d607e571cfbf",
+    "module_id": "1b66b300-d870-483b-ad7a-89886af4eca1",
+    "question": "How should you frame the escalation when involving the pharmacist in a customer complaint?",
+    "options": [
+      "'I cannot deal with this — you need to talk to someone else.'",
+      "'I want to make sure you get the best possible help. Let me bring our pharmacist in — they have the authority to resolve this.'",
+      "'The pharmacist will tell you the same thing I just said.'",
+      "'Fine, I will get my manager since you refuse to listen to me.'"
+    ],
+    "correct_answer": 1,
+    "explanation": "Framing the escalation as an upgrade in service — rather than a retreat or a dismissal — maintains the customer's dignity and your professionalism. It positions the pharmacist's involvement as additional help, not a sign of your failure.",
+    "order_index": 10,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "1711a4aa-43a8-497a-a143-b50698067640",
+    "module_id": "1b66b300-d870-483b-ad7a-89886af4eca1",
+    "question": "Which of the following are appropriate actions after a verbally abusive interaction? (Select all that apply)",
+    "options": [
+      "Document the incident with details of what was said and who was present",
+      "Post about the experience on social media to warn others",
+      "Inform the pharmacist about what happened",
+      "Take a brief break to recover emotionally",
+      "Refuse to serve the customer if they return"
+    ],
+    "correct_answer": 0,
+    "explanation": "After a verbally abusive interaction, you should document the incident, inform the pharmacist, and take a break to recover. Posting on social media is unprofessional and potentially a confidentiality breach. Refusing future service is a management decision, not yours to make unilaterally.",
+    "order_index": 11,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "evaluate"
+  }
+]

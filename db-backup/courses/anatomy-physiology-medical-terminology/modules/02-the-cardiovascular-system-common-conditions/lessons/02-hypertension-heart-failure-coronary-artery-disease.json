@@ -1,0 +1,115 @@
+{
+  "id": "17820cb4-3b7c-4460-8186-b6cf102a777c",
+  "module_id": "0464175f-5c7e-4bcb-b01a-6fe45e50d244",
+  "title": "Hypertension, Heart Failure & Coronary Artery Disease",
+  "content": [
+    {
+      "text": "The Big Three: Cardiovascular Conditions in the Caribbean",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Three cardiovascular conditions dominate Caribbean healthcare: hypertension, heart failure, and coronary artery disease. Together, they account for the majority of cardiovascular prescriptions that pass through Caribbean pharmacies. Understanding the pathophysiology of each condition helps pharmacy technicians appreciate why specific drug classes are prescribed, why combination therapy is often necessary, and why medication adherence is literally a life-or-death matter for these patients.",
+      "type": "text"
+    },
+    {
+      "text": "Hypertension (High Blood Pressure)",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Hypertension is defined as persistently elevated blood pressure (≥ 140/90 mmHg by most Caribbean guidelines, or ≥ 130/80 mmHg by newer ACC/AHA guidelines). It is classified as either primary (essential) hypertension — which accounts for 90-95% of cases and has no identifiable cause — or secondary hypertension, caused by an underlying condition such as renal artery stenosis, pheochromocytoma, or Cushing syndrome. In the Caribbean, primary hypertension is overwhelmingly predominant, driven by genetic predisposition, high-sodium diets, obesity, physical inactivity, and psychosocial stress.",
+      "type": "text"
+    },
+    {
+      "type": "island-comparison",
+      "title": "Hypertension Prevalence Across the Caribbean",
+      "islands": [
+        {
+          "flag": "🇹🇹",
+          "name": "Trinidad & Tobago",
+          "details": [
+            "Hypertension prevalence estimated at 26-30% of adults (PAHO/CARPHA data)",
+            "CDAP provides free antihypertensives: amlodipine, enalapril, atenolol, hydrochlorothiazide",
+            "Strong Indo-Trinidadian genetic predisposition contributes to high rates",
+            "High dietary salt intake from traditional foods (doubles, pelau, stewed meats)"
+          ]
+        },
+        {
+          "flag": "🇯🇲",
+          "name": "Jamaica",
+          "details": [
+            "Hypertension prevalence among the highest in the Americas at 25-35%",
+            "NHF (National Health Fund) subsidises antihypertensives through the individual benefits programme",
+            "African-Caribbean genetic factors contribute significantly",
+            "Jamaica Health and Lifestyle Survey data drives national policy"
+          ]
+        },
+        {
+          "flag": "🇧🇧",
+          "name": "Barbados",
+          "details": [
+            "Hypertension prevalence estimated at 30-40% in adults",
+            "Barbados Drug Service supplies medications through polyclinics and Queen Elizabeth Hospital",
+            "Barbados National Registry of Chronic Non-Communicable Diseases tracks prevalence",
+            "Small island size enables relatively good screening coverage"
+          ]
+        },
+        {
+          "flag": "🇬🇩",
+          "name": "Grenada",
+          "details": [
+            "Hypertension increasingly recognised as a major health challenge",
+            "Limited local pharmaceutical manufacturing — relies on OECS Pharmaceutical Procurement",
+            "St. George's University Medical School contributes to local health research",
+            "Community health centres are primary access points for medication"
+          ]
+        }
+      ],
+      "description": "Hypertension rates vary across CARICOM nations but are universally high. This comparison illustrates the scale of the public health challenge that pharmacy technicians help address daily."
+    },
+    {
+      "text": "Heart Failure",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Heart failure occurs when the heart cannot pump blood efficiently enough to meet the body's demands. It is not a sudden event but a chronic, progressive condition — often the end result of years of poorly controlled hypertension or coronary artery disease. In left-sided heart failure, fluid backs up into the lungs (pulmonary oedema), causing dyspnoea. In right-sided heart failure, fluid accumulates in the peripheral tissues, causing oedema in the ankles and legs. Heart failure treatment typically involves ACE inhibitors or ARBs, beta-blockers (specifically carvedilol, bisoprolol, or metoprolol succinate), diuretics (furosemide), and in some cases digoxin or spironolactone.",
+      "type": "text"
+    },
+    {
+      "text": "Coronary Artery Disease (CAD)",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Coronary artery disease results from atherosclerosis — the buildup of fatty plaques within the coronary arteries that supply blood to the heart muscle. As plaques narrow the arteries, blood flow to the myocardium is reduced, causing angina (chest pain on exertion). If a plaque ruptures and a blood clot forms, it can completely occlude the artery, causing a myocardial infarction (heart attack). Long-term management of CAD includes aspirin (antiplatelet), statins (cholesterol-lowering), beta-blockers, ACE inhibitors, and nitroglycerin (for acute angina relief).",
+      "type": "text"
+    },
+    {
+      "body": "Caribbean patients with cardiovascular disease are rarely on a single medication. A typical patient might take: amlodipine 10 mg (calcium channel blocker) + losartan 50 mg (ARB) + hydrochlorothiazide 25 mg (thiazide diuretic) + atorvastatin 20 mg (statin) + aspirin 81 mg (antiplatelet). Understanding why each drug is present — and which body system it targets — is fundamental to safe dispensing.",
+      "type": "callout",
+      "title": "The Caribbean Combination",
+      "variant": "tip"
+    },
+    {
+      "term": "Atherosclerosis",
+      "type": "key-term",
+      "definition": "A chronic disease characterised by the buildup of fatty plaques (atheromas) within the walls of arteries, leading to narrowing, reduced blood flow, and risk of thrombus formation. Atherosclerosis is the underlying cause of most myocardial infarctions and many strokes. Risk factors highly prevalent in the Caribbean include hypertension, diabetes, hyperlipidaemia, smoking, and obesity."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "To strengthen the heart muscle contraction",
+        "To remove excess fluid from the body",
+        "To lower cholesterol levels",
+        "To prevent blood clot formation"
+      ],
+      "question": "A patient with heart failure is prescribed furosemide. What is the primary purpose of this medication in heart failure?",
+      "explanation": "Furosemide is a loop diuretic. In heart failure, the heart's reduced pumping efficiency causes fluid retention (oedema). Furosemide acts on the kidneys to increase urine output, removing excess fluid and reducing the workload on the heart. It provides symptomatic relief of dyspnoea and peripheral oedema.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 30
+}

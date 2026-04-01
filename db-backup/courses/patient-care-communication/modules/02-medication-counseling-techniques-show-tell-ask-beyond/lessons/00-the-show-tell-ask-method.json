@@ -1,0 +1,98 @@
+{
+  "id": "4a7c7799-90d2-4f78-9a40-65ebe54c5ce6",
+  "module_id": "9535926c-b2f6-4855-a3c2-5d2fb75018fb",
+  "title": "The Show-Tell-Ask Method",
+  "content": [
+    {
+      "text": "Show-Tell-Ask: The Gold Standard of Medication Counselling",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "The Show-Tell-Ask method is one of the most effective and widely recommended approaches to medication counselling. Developed to improve patient understanding and adherence, it transforms the medication handover from a passive transaction into an active learning experience. For Caribbean pharmacy technicians, this method is particularly valuable because it works across literacy levels and can be adapted for any language.",
+      "type": "text"
+    },
+    {
+      "term": "Show-Tell-Ask (STA)",
+      "type": "key-term",
+      "definition": "A three-step medication counselling method where the pharmacy professional SHOWS the medication to the patient, TELLS them essential information about it, and ASKS questions to verify understanding and uncover concerns. It is recommended by the WHO and multiple pharmacy professional bodies worldwide."
+    },
+    {
+      "text": "Step 1: SHOW",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Hold the medication so the patient can see it clearly. Open the container if appropriate so they can see the tablet or capsule. If the patient is collecting a refill, show them the medication and ask: 'Does this look the same as what you have been taking?' This simple visual check catches dispensing errors, generic substitutions the patient was not expecting, and dosage changes. In the Caribbean, where generic substitution is common due to cost pressures, patients frequently receive different-looking tablets for the same medication — causing confusion and non-adherence.",
+      "type": "text"
+    },
+    {
+      "text": "Step 2: TELL",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Provide essential information in plain language. Cover these five points — no more, no less — during a standard counselling interaction: (1) What the medication is for, (2) How to take it, (3) When to take it, (4) Common side effects to expect, and (5) What to do if a problem occurs. Avoid medical jargon. Instead of 'take orally twice daily with food,' say 'swallow one tablet with your breakfast and one with your dinner.'",
+      "type": "text"
+    },
+    {
+      "text": "Step 3: ASK",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "This is the most important and most frequently skipped step. Ask the patient to tell you, in their own words, how they will take the medication. This is not a test — it is a verification that your communication was effective. Use phrases like: 'Just so I know I explained it clearly, can you tell me how you plan to take this?' If the patient cannot accurately describe the regimen, you know you need to re-explain — not that the patient is 'stupid.'",
+      "type": "text"
+    },
+    {
+      "body": "In Jamaica, you might say: 'Jus fi mek sure mi explain it good, tell mi how yuh ago tek di tablet dem.' In Trinidad: 'Just to make sure I break it down proper, tell me back how you go take this nah.' The key is to frame the Ask step as YOUR responsibility ('so I know I explained it well') — never as the patient's failure to understand.",
+      "type": "callout",
+      "title": "The Ask Step in Creole/Patois",
+      "variant": "tip"
+    },
+    {
+      "rows": [
+        [
+          "SHOW",
+          "Display the medication visually",
+          "'This is your [medication name].' 'Does this look the same as before?'",
+          "Patient recognition, confusion about appearance, generic substitution reactions"
+        ],
+        [
+          "TELL",
+          "Explain 5 key points in plain language",
+          "'This is for your blood pressure.' 'Take one with breakfast.'",
+          "Patient facial expressions — confusion, worry, disengagement"
+        ],
+        [
+          "ASK",
+          "Verify understanding via teach-back",
+          "'Can you tell me how you will take this?' 'What will you do if you miss a dose?'",
+          "Accuracy of patient's repeat, hesitation, parroting vs. genuine understanding"
+        ]
+      ],
+      "type": "table",
+      "caption": "Show-Tell-Ask Quick Reference Card",
+      "headers": [
+        "Step",
+        "Action",
+        "Key Phrases",
+        "Watch For"
+      ]
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "It allows the technician to test the patient's intelligence",
+        "It verifies that the communication was effective and identifies gaps in understanding",
+        "It provides legal documentation that counselling occurred",
+        "It gives the patient a chance to negotiate a lower price"
+      ],
+      "question": "In the Show-Tell-Ask method, why is the ASK step considered the most critical?",
+      "explanation": "The Ask step is critical because it is the only way to verify that the information was actually understood by the patient. Without it, the technician has no way of knowing whether the SHOW and TELL steps were effective. It should always be framed as verifying the quality of the explanation, not testing the patient.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 30
+}

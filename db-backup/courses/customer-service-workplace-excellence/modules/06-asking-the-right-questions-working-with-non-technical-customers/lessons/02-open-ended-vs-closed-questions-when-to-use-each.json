@@ -1,0 +1,97 @@
+{
+  "id": "ab2829d7-5f7c-4360-95a1-a8c3cdf2cd5e",
+  "module_id": "de02aa8f-49a7-4ad1-92e5-bc0b16c14f1c",
+  "title": "Open-Ended vs. Closed Questions — When to Use Each",
+  "content": [
+    {
+      "text": "The Art of Asking the Right Question",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "The questions you ask determine the quality of the information you receive. Ask the wrong type of question and you get incomplete, misleading, or useless answers. Ask the right type and the patient gives you exactly what you need. There are two fundamental types of questions, and knowing when to use each is a critical pharmacy communication skill.",
+      "type": "text"
+    },
+    {
+      "term": "Open-Ended Question",
+      "type": "key-term",
+      "definition": "A question that cannot be answered with 'yes' or 'no' and requires the respondent to elaborate. Examples: 'How have you been feeling since you started this medication?' or 'What brings you in today?' Open-ended questions are used to gather broad information and encourage patients to share their experience in their own words."
+    },
+    {
+      "term": "Closed Question",
+      "type": "key-term",
+      "definition": "A question that can be answered with a specific, limited response — typically 'yes' or 'no' or a specific fact. Examples: 'Did you take your medication this morning?' or 'Which arm is the pain in?' Closed questions are used to confirm specific details or narrow down information."
+    },
+    {
+      "rows": [
+        [
+          "Patient describes a new symptom",
+          "'Tell me more about what you are experiencing.'",
+          "'Is the pain sharp or dull?'"
+        ],
+        [
+          "Checking medication adherence",
+          "'How have you been managing with your tablets?'",
+          "'Did you take your medication this morning?'"
+        ],
+        [
+          "Understanding patient concerns",
+          "'What worries you most about this medication?'",
+          "'Are you worried about side effects specifically?'"
+        ],
+        [
+          "Gathering allergy information",
+          "'Do you have any allergies or reactions to medications?'",
+          "'Are you allergic to penicillin?'"
+        ],
+        [
+          "Assessing a vague complaint",
+          "'Can you describe what you are feeling?'",
+          "'Does the pain get worse when you eat?'"
+        ]
+      ],
+      "type": "table",
+      "caption": "Open vs. Closed Questions — When to Use Each",
+      "headers": [
+        "Situation",
+        "Open-Ended (Exploring)",
+        "Closed (Confirming)"
+      ]
+    },
+    {
+      "body": "The ideal patient interaction uses both types in sequence: start with open-ended questions to understand the big picture, then narrow down with closed questions to confirm specifics. Think of it as a funnel — wide at the top, narrow at the bottom. You start broad and focus in.",
+      "type": "text"
+    },
+    {
+      "body": "Start broad: 'What brings you in today?' Then narrow: 'Is the pain in your chest or your stomach?' Then confirm: 'So, a burning feeling in your upper belly after meals — is that right?' This funnel approach gives the patient space to explain while ensuring you get the specific information you need.",
+      "type": "callout",
+      "title": "The Funnel Technique",
+      "variant": "tip"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Begin with open questions when you know little about the patient's concern",
+        "Switch to closed questions when you need to confirm specific details",
+        "Avoid leading questions that suggest a specific answer: 'You do not have any allergies, do you?' encourages a 'no' even if they do",
+        "Give the patient time to answer — silence after a question is not awkward, it is space for thinking",
+        "Repeat back what you heard to confirm understanding: 'So you are saying the pain is worse at night — is that right?'"
+      ],
+      "ordered": false
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "A closed question: 'Do you have a headache?'",
+        "A leading question: 'You probably just need some paracetamol, right?'",
+        "An open-ended question: 'Can you tell me what you are experiencing?'",
+        "A multiple-choice question: 'Is it your head, your stomach, or your chest?'"
+      ],
+      "question": "A patient approaches with a vague complaint. What type of question should you start with?",
+      "explanation": "Open-ended questions are the best starting point for vague complaints because they give the patient space to describe their experience in their own words. Closed questions can come later to narrow down specifics, but starting with them risks missing important information.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 25
+}

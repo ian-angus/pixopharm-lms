@@ -1,0 +1,70 @@
+{
+  "id": "bfe7d0db-6dbe-46f0-ac3d-15226aa909bb",
+  "module_id": "260b3cfa-6a8e-4515-a5c7-46be02561533",
+  "title": "Jamaica: Pharmacy Law in Detail",
+  "content": [
+    {
+      "text": "Pharmacy Practice Law in Jamaica",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Jamaica's pharmacy practice is governed by the Pharmacy Act (1975, with subsequent amendments) and overseen by the Pharmacy Council of Jamaica. Jamaica has one of the more developed pharmacy regulatory systems in the English-speaking Caribbean, with clear distinctions in drug scheduling and a growing emphasis on formal pharmacy technician training.",
+      "type": "text"
+    },
+    {
+      "text": "The Pharmacy Council of Jamaica",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "type": "list",
+      "items": [
+        "Statutory body responsible for regulating pharmacy practice in Jamaica",
+        "Maintains the register of pharmacists",
+        "Approves pharmacy training programmes and sets educational standards",
+        "Conducts inspections of pharmacy premises",
+        "Investigates complaints and takes disciplinary action against registrants",
+        "Advises the Minister of Health on pharmacy-related policy matters"
+      ],
+      "ordered": false
+    },
+    {
+      "text": "Jamaica's Dangerous Drugs Act & Cannabis",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Jamaica's Dangerous Drugs Act (1948, amended) governs controlled substances. A landmark amendment in 2015 (the Dangerous Drugs Amendment Act) decriminalised the possession of small quantities of cannabis (up to 2 ounces) for personal use and created a legal framework for medical marijuana. This has significant implications for pharmacy practice.",
+      "type": "text"
+    },
+    {
+      "body": "The 2015 amendments decriminalised small possession and legalised medical marijuana with a doctor's recommendation. However, cannabis is NOT available through regular pharmacies — it is dispensed through licensed herb houses and dispensaries regulated by the Cannabis Licensing Authority (CLA). As a pharmacy technician, you should be aware that patients may be using cannabis alongside their prescribed medications, which creates potential drug interaction concerns. Always ask about cannabis use when screening for drug interactions.",
+      "type": "callout",
+      "title": "Cannabis in Jamaica — What Pharmacy Technicians Need to Know",
+      "variant": "info"
+    },
+    {
+      "text": "Jamaica National Health Fund (NHF)",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "The National Health Fund is Jamaica's government programme providing subsidies for essential medications to qualifying individuals. Under the NHF, registered pharmacies can dispense subsidised medications for chronic diseases including diabetes, hypertension, arthritis, asthma, and mental health conditions. Understanding NHF procedures is essential for any pharmacy technician working in Jamaica.",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "NHF covers medications for 15 specified chronic conditions",
+        "Patients must be registered NHF beneficiaries with a valid NHF card",
+        "Pharmacies submit claims electronically for reimbursement",
+        "Generic prescribing is strongly encouraged under NHF",
+        "The NHF formulary determines which medications are subsidised and at what level"
+      ],
+      "ordered": false
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 25
+}

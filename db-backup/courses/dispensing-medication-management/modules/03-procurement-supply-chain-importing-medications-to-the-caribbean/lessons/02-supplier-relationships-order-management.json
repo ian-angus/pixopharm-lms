@@ -1,0 +1,95 @@
+{
+  "id": "aec58e30-8662-45d6-8db0-e342c0b9f093",
+  "module_id": "2e20b351-7665-40a0-840d-62c0eebb01a2",
+  "title": "Supplier Relationships & Order Management",
+  "content": [
+    {
+      "text": "Building Reliable Supply Partnerships",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "In the Caribbean, where supply chain disruptions are an annual certainty rather than a rare exception, the strength of your supplier relationships can mean the difference between continuous medication availability and damaging stockouts. Effective supplier management involves more than placing orders — it requires building partnerships based on trust, clear communication, and mutual accountability.",
+      "type": "text"
+    },
+    {
+      "body": "Caribbean pharmacies typically work with a mix of suppliers: one or two primary wholesalers for the bulk of their regular stock, specialist suppliers for cold chain or niche products, and backup suppliers for emergency situations. Diversifying your supplier base reduces the risk of being entirely dependent on a single source that may itself be affected by the same disruptions as your pharmacy.",
+      "type": "text"
+    },
+    {
+      "text": "Supplier Evaluation Criteria",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "rows": [
+        [
+          "Reliability",
+          "On-time delivery rate, order accuracy, stockout frequency",
+          "Can the supplier deliver consistently despite Caribbean shipping challenges?"
+        ],
+        [
+          "Product quality",
+          "GMP compliance, batch documentation, cold chain capability",
+          "Does the supplier provide CPPs and certificates of analysis with every shipment?"
+        ],
+        [
+          "Pricing",
+          "Unit cost, volume discounts, payment terms",
+          "Are prices competitive with regional alternatives? Is pricing in local or foreign currency?"
+        ],
+        [
+          "Range",
+          "Breadth of product catalogue, availability of generics",
+          "Does the supplier carry the full formulary your pharmacy needs?"
+        ],
+        [
+          "Communication",
+          "Responsiveness to queries, proactive stockout alerts",
+          "Will the supplier notify you in advance of delays or shortages?"
+        ],
+        [
+          "Emergency support",
+          "Ability to provide emergency stock on short notice",
+          "Can they air-freight critical items if needed during a hurricane disruption?"
+        ]
+      ],
+      "type": "table",
+      "caption": "Key Criteria for Evaluating Pharmaceutical Suppliers",
+      "headers": [
+        "Criterion",
+        "What to Assess",
+        "Caribbean Consideration"
+      ]
+    },
+    {
+      "body": "For many small Caribbean pharmacies, cash flow is a significant constraint. Negotiate payment terms that align with your revenue cycle — for example, 30–60 day terms rather than cash-on-delivery. Building a track record of prompt payment strengthens your negotiating position and may unlock better pricing or priority allocation during shortages.",
+      "type": "callout",
+      "title": "Negotiating Payment Terms",
+      "variant": "tip"
+    },
+    {
+      "body": "Order management involves more than sending purchase orders. Effective technicians track orders from placement to delivery, maintain records of lead times by supplier, flag delays early, follow up on partial shipments, verify deliveries against purchase orders and invoices, and document any discrepancies. This documentation is essential for supplier performance reviews and for identifying systemic issues in the supply chain.",
+      "type": "text"
+    },
+    {
+      "term": "Good Distribution Practice (GDP)",
+      "type": "key-term",
+      "definition": "A set of quality standards governing the proper distribution of pharmaceutical products. GDP covers storage, transportation, documentation, and traceability throughout the distribution chain. Compliance ensures that medications reach the pharmacy in the same condition as when they left the manufacturer."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "To increase administrative workload and paperwork",
+        "To ensure competitive pricing through supplier rivalry only",
+        "To reduce the risk of complete supply disruption if one supplier is affected by the same event",
+        "Because Caribbean law prohibits exclusive supplier agreements"
+      ],
+      "question": "Why is it important for a Caribbean pharmacy to maintain relationships with multiple suppliers rather than relying on a single source?",
+      "explanation": "Supplier diversification is a risk management strategy. In the Caribbean, a single event — a hurricane, a shipping line disruption, a customs hold — can affect one supplier's entire operation. Having alternative suppliers ensures that the pharmacy can continue to source medications even when one supply channel is compromised.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 25
+}

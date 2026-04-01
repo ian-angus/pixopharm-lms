@@ -1,0 +1,112 @@
+{
+  "id": "4096e0ba-d887-40e7-95ab-76a65bda5e34",
+  "module_id": "3531eb1a-a44a-4c50-bf40-ac897e98251f",
+  "title": "Temperature Conversions and Drug Storage Requirements",
+  "content": [
+    {
+      "text": "Temperature in Pharmacy: Storage, Stability, and Patient Care",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Temperature management is critical in Caribbean pharmacy practice. The tropical climate — with average temperatures of 28-33°C across the region — poses particular challenges for drug storage. Many medications require storage below 25°C ('room temperature' in temperate countries) or under refrigeration (2-8°C). A pharmacy technician must understand temperature conversions and the storage requirements that protect medication efficacy.",
+      "type": "text"
+    },
+    {
+      "term": "Cold Chain",
+      "type": "key-term",
+      "definition": "The unbroken series of refrigerated storage and transport links that maintains a product within a specified low-temperature range from manufacture to patient. Critical for vaccines, insulin, and certain biologics. Breaks in the cold chain can render these medications ineffective or dangerous."
+    },
+    {
+      "text": "Celsius-Fahrenheit Conversions",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "The conversion formulas: °C = (°F - 32) × 5/9. °F = (°C × 9/5) + 32. In Caribbean pharmacy practice, Celsius is standard for drug storage monitoring, but some imported thermometers and patient discussions may reference Fahrenheit.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Freezer storage",
+          "-20 to -10°C",
+          "-4 to 14°F",
+          "Some vaccines, plasma products"
+        ],
+        [
+          "Refrigerator storage",
+          "2-8°C",
+          "36-46°F",
+          "Insulin, eye drops, many antibiotics reconstituted"
+        ],
+        [
+          "Cool storage",
+          "8-15°C",
+          "46-59°F",
+          "Suppositories, some creams"
+        ],
+        [
+          "Controlled room temperature",
+          "20-25°C",
+          "68-77°F",
+          "Most oral medications, tablets, capsules"
+        ],
+        [
+          "Typical Caribbean ambient",
+          "28-33°C",
+          "82-91°F",
+          "EXCEEDS controlled room temperature!"
+        ],
+        [
+          "Normal body temperature",
+          "37°C",
+          "98.6°F",
+          "Patient fever assessment"
+        ],
+        [
+          "Fever threshold",
+          "38°C",
+          "100.4°F",
+          "Above this = fever; counsel appropriately"
+        ]
+      ],
+      "type": "table",
+      "caption": "Key Pharmacy Temperature Reference Points",
+      "headers": [
+        "Condition",
+        "Celsius",
+        "Fahrenheit",
+        "Pharmacy Relevance"
+      ]
+    },
+    {
+      "body": "Standard 'room temperature' storage (20-25°C) is BELOW typical Caribbean ambient temperature (28-33°C). This means that air conditioning is not a luxury but a pharmaceutical necessity for any medication labelled 'store below 25°C'. Pharmacies across Trinidad, Jamaica, Barbados, and Grenada MUST maintain climate-controlled environments. Loss of air conditioning — due to power outages during hurricane season, for example — requires immediate action to protect stock. Insulin, suppositories, and reconstituted antibiotics are especially vulnerable.",
+      "type": "callout",
+      "title": "The Caribbean Temperature Challenge",
+      "variant": "danger"
+    },
+    {
+      "body": "Worked example: A patient in Grenada calls to say their home thermometer reads 82°F and they are worried about their insulin. Convert to Celsius: (82 - 32) × 5/9 = 50 × 5/9 = 27.8°C. Since insulin should be stored at 2-8°C (refrigerated) or below 25°C (in-use pens), 27.8°C exceeds the storage limit. Advise the patient that in-use insulin pens at this temperature should be used within 28 days (not the usual 28-42 days depending on product) and that unopened insulin must be refrigerated immediately.",
+      "type": "text"
+    },
+    {
+      "body": "Monitoring tip: Pharmacies must log refrigerator temperatures twice daily (morning and afternoon). Digital min/max thermometers are preferred as they record the highest and lowest temperatures reached since the last reset. Any reading outside 2-8°C must be investigated, documented, and reported to the pharmacist. In public sector pharmacies under the Barbados Drug Service or Jamaica's NHF, temperature excursions may require stock quarantine and reporting.",
+      "type": "text"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "This is within the acceptable 2-8°C range",
+        "This is too warm; refrigerated medications may be compromised",
+        "This is too cold; medications may freeze",
+        "This is acceptable for vaccines but not insulin"
+      ],
+      "question": "A pharmacy refrigerator thermometer reads 10°C. Which statement is correct?",
+      "explanation": "The acceptable refrigerator range for pharmaceutical storage is 2-8°C. At 10°C, the refrigerator is too warm. This could compromise insulin, vaccines, reconstituted antibiotics, eye drops, and other refrigerated products. The pharmacist must be notified immediately, and affected stock must be quarantined pending assessment.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 3,
+  "duration_minutes": 25
+}

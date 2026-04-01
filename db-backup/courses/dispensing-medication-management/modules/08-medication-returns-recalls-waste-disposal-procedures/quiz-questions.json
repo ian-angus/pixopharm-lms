@@ -1,0 +1,146 @@
+[
+  {
+    "id": "10670cf7-5638-4866-8fc7-c586b5c29abb",
+    "module_id": "9ea63d27-8c24-4427-8db7-c949b7266bf5",
+    "question": "Can a returned prescription medication be redispensed if it is in an unopened, sealed package?",
+    "options": [
+      "Yes — sealed packaging guarantees integrity",
+      "Yes — but only with pharmacist approval",
+      "No — returned prescription medications must never be redispensed",
+      "Yes — but only within 24 hours of the original dispensing"
+    ],
+    "correct_answer": 2,
+    "explanation": "Returned prescription medications must never be redispensed, regardless of apparent condition. Once a medication has left the pharmacy's controlled environment, storage conditions cannot be verified, tampering cannot be ruled out, and contamination is possible.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "75ccca6e-62e7-4e71-aef5-5b55415aee69",
+    "module_id": "9ea63d27-8c24-4427-8db7-c949b7266bf5",
+    "question": "A Class I medication recall means the product poses:",
+    "options": [
+      "A minor labelling issue unlikely to cause harm",
+      "A moderate risk of temporary, reversible health effects",
+      "A reasonable probability of causing serious adverse health consequences or death",
+      "No health risk — it's a voluntary quality improvement"
+    ],
+    "correct_answer": 2,
+    "explanation": "A Class I recall is the most serious category, indicating that the product poses a reasonable probability of causing serious adverse health consequences or death. It requires immediate action: pull all affected stock, contact affected patients, and follow manufacturer/regulatory instructions.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "9cee12de-4f57-49eb-a299-0b01ebe60f65",
+    "module_id": "9ea63d27-8c24-4427-8db7-c949b7266bf5",
+    "question": "Arrange the following recall response steps in the correct order.",
+    "options": [
+      "Quarantine affected stock in a labelled quarantine zone",
+      "Identify the affected drug, batch numbers, and expiry dates from the recall notice",
+      "Search all pharmacy stock areas for the affected product",
+      "Contact patients who received affected batches (Class I/II)",
+      "File recall documentation for regulatory inspection"
+    ],
+    "correct_answer": 0,
+    "explanation": "The correct order is: (1) Identify affected product details from the recall notice, (2) Search all stock areas, (3) Quarantine affected stock, (4) Contact affected patients (Class I/II), (5) File documentation.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "f4e3f5bd-309d-49de-99f2-fe0c58a3dd48",
+    "module_id": "9ea63d27-8c24-4427-8db7-c949b7266bf5",
+    "question": "True or False: Expired medications can be safely disposed of by flushing them down the drain in a Caribbean pharmacy.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": 1,
+    "explanation": "False. Flushing medications down the drain is particularly harmful in Caribbean island nations, where it can contaminate fragile marine ecosystems and limited freshwater sources. WHO and CARPHA guidelines recommend high-temperature incineration, encapsulation, or other approved methods — never drain disposal.",
+    "order_index": 3,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "5bd592db-30e0-4081-99a8-0d6fca264fbe",
+    "module_id": "9ea63d27-8c24-4427-8db7-c949b7266bf5",
+    "question": "What is the pharmaceutical waste disposal method where medications are mixed with cement in a sealed container for controlled landfill disposal?",
+    "options": [
+      "Incineration",
+      "Autoclaving",
+      "Encapsulation",
+      "Hydrolysis"
+    ],
+    "correct_answer": 2,
+    "explanation": "Encapsulation involves mixing expired medications with cement, lime, or another immobilising material in a sealed container before controlled landfill disposal. The matrix prevents the medications from leaching into groundwater. It is recommended by WHO for resource-limited settings where incineration is not available.",
+    "order_index": 4,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "0b38ef3f-b4db-41ea-933a-37cab0194c89",
+    "module_id": "9ea63d27-8c24-4427-8db7-c949b7266bf5",
+    "question": "Which of the following are valid reasons for a patient to return medication to a pharmacy? Select ALL that apply.",
+    "options": [
+      "Prescriber changed the patient's medication",
+      "Patient experienced an adverse drug reaction",
+      "Bereavement — returning a deceased relative's medications",
+      "Patient wants a refund because the medication is too expensive",
+      "Patient noticed a dispensing error"
+    ],
+    "correct_answer": 0,
+    "explanation": "Options A, B, C, and E are all valid reasons for medication returns. A change in therapy, adverse reactions, bereavement, and dispensing errors are all common and appropriate reasons. While cost is a patient concern, it doesn't typically constitute a pharmacy return scenario for prescription medications — the patient should discuss affordability with their prescriber.",
+    "order_index": 5,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "analyze"
+  },
+  {
+    "id": "3ab579a6-4ae2-4280-ba45-164e91f2ab73",
+    "module_id": "9ea63d27-8c24-4427-8db7-c949b7266bf5",
+    "question": "Match each recall class with its appropriate response urgency.",
+    "options": [
+      "Class I → Immediate action",
+      "Class II → Urgent action within 24–48 hours",
+      "Class III → Standard action during routine operations",
+      "All matches are correct"
+    ],
+    "correct_answer": 3,
+    "explanation": "All matches are correct. Class I (serious risk/death) requires immediate action. Class II (moderate risk) requires urgent action within 24–48 hours. Class III (low risk) is handled during standard routine operations.",
+    "order_index": 6,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "fb5d3bea-09a8-43ee-823a-a1322e9e26f4",
+    "module_id": "9ea63d27-8c24-4427-8db7-c949b7266bf5",
+    "question": "Cytotoxic pharmaceutical waste (e.g., chemotherapy agents) should be disposed of by which method?",
+    "options": [
+      "Regular municipal landfill",
+      "Flushing down the drain with large volumes of water",
+      "High-temperature incineration at a licenced facility",
+      "Encapsulation in cement"
+    ],
+    "correct_answer": 2,
+    "explanation": "Cytotoxic waste — including chemotherapy agents — is classified as hazardous and must be disposed of by high-temperature incineration at a licenced facility. It should never be placed in regular landfill, flushed, or handled by encapsulation due to the risk of environmental contamination and human exposure.",
+    "order_index": 7,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  }
+]

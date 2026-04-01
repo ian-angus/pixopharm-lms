@@ -1,0 +1,109 @@
+{
+  "id": "5533009a-5902-4967-9fbc-ab72422e6b34",
+  "module_id": "d1a5c2a4-b317-4ac6-8cd0-1637e571461c",
+  "title": "Root Cause Analysis: The 5 Whys & the Fishbone Diagram",
+  "content": [
+    {
+      "text": "Digging Beneath the Surface",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "When a medication error occurs, the instinctive response is to ask 'who' — who made the mistake? But this question leads to blame, not solutions. Root cause analysis (RCA) asks 'why' instead: why did the error occur, why were the safeguards insufficient, and why did the system allow the error to reach the patient? RCA is a systematic process for identifying the underlying causes of adverse events or near-misses, with the goal of implementing changes that prevent recurrence.",
+      "type": "text"
+    },
+    {
+      "term": "Root Cause Analysis (RCA)",
+      "type": "key-term",
+      "definition": "A systematic investigation method that looks beyond the immediate cause of an incident to identify the underlying system failures, process gaps, and contributing factors that made the error possible. RCA focuses on 'why' rather than 'who,' seeking systemic solutions rather than individual punishment."
+    },
+    {
+      "text": "The 5 Whys Method",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "The 5 Whys is the simplest RCA technique — you repeatedly ask 'why?' until you reach a root cause that can be addressed with a system change. The number five is a guideline, not a rigid rule; you continue asking until you reach an actionable root cause. The key discipline is resisting the temptation to stop at the first 'why' (which typically identifies the individual) and pushing deeper to the system level.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Why 1",
+          "Why did the patient receive the wrong drug?",
+          "The technician selected hydrALAZINE instead of hydrOXYzine"
+        ],
+        [
+          "Why 2",
+          "Why did the technician select the wrong drug?",
+          "The two drugs were stored next to each other on the 'H' shelf"
+        ],
+        [
+          "Why 3",
+          "Why were they stored next to each other?",
+          "The pharmacy uses strict alphabetical shelving with no LASA separation policy"
+        ],
+        [
+          "Why 4",
+          "Why is there no LASA separation policy?",
+          "The pharmacy has never conducted a LASA risk assessment of its shelving layout"
+        ],
+        [
+          "Why 5",
+          "Why has no LASA risk assessment been done?",
+          "There is no SOP requiring regular safety audits of drug storage arrangements"
+        ]
+      ],
+      "type": "table",
+      "caption": "The 5 Whys Applied to a Dispensing Error",
+      "headers": [
+        "Level",
+        "Question",
+        "Answer"
+      ]
+    },
+    {
+      "body": "Notice how the 5 Whys progresses from the individual act (technician picked the wrong drug) to the root cause (no SOP for safety audits). The solution is not to punish the technician — it is to implement a LASA separation policy and regular safety audits. This is the fundamental shift from blame culture to learning culture.",
+      "type": "text"
+    },
+    {
+      "text": "The Fishbone (Ishikawa) Diagram",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "The fishbone diagram, also called the Ishikawa diagram or cause-and-effect diagram, is a visual tool for organising the multiple contributing factors that led to an error. The 'head' of the fish is the error or adverse event. The 'bones' represent categories of contributing factors. For pharmacy errors, the standard categories are: People, Procedures, Equipment, Environment, Materials, and Management.",
+      "type": "text"
+    },
+    {
+      "term": "Fishbone (Ishikawa) Diagram",
+      "type": "key-term",
+      "definition": "A visual root cause analysis tool shaped like a fish skeleton, where the 'head' represents the problem or error and the 'bones' represent categories of contributing causes. Named after Kaoru Ishikawa, who popularised its use in quality improvement in Japan in the 1960s."
+    },
+    {
+      "body": "To construct a fishbone diagram: (1) Write the error or event at the head. (2) Draw the main spine. (3) Add branches for each category: People, Procedures, Equipment, Environment, Materials, Management. (4) Under each category, brainstorm all contributing factors. (5) Identify which factors are root causes versus symptoms. A fishbone diagram for a single error typically reveals 10-20 contributing factors across multiple categories.",
+      "type": "callout",
+      "title": "Building a Fishbone Diagram",
+      "variant": "tip"
+    },
+    {
+      "alt": "Fishbone diagram showing six cause categories (People, Procedures, Equipment, Environment, Materials, Management) leading to a dispensing error at the head",
+      "type": "image-placeholder",
+      "caption": "Example fishbone diagram for a wrong-drug dispensing error in a Caribbean community pharmacy"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "The technician selected the wrong drug",
+        "The two drugs were stored next to each other",
+        "The pharmacy uses alphabetical shelving",
+        "There is no SOP requiring regular safety audits of drug storage"
+      ],
+      "question": "In the 5 Whys example above, what is the root cause of the dispensing error?",
+      "explanation": "The root cause is the absence of a standard operating procedure (SOP) for regular safety audits of drug storage. This is the deepest systemic gap identified by the 5 Whys. Each earlier 'why' answer is a contributing factor, but the root cause is the one that, if addressed, would prevent the entire chain from occurring.",
+      "correctIndex": 3
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 35
+}

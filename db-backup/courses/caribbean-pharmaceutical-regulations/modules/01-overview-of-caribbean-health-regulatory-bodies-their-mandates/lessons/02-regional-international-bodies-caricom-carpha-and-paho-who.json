@@ -1,0 +1,97 @@
+{
+  "id": "cf7c9552-31ae-461d-a7c9-02ae24de67c0",
+  "module_id": "91889a52-a6a7-4e25-af1f-f63baba022fd",
+  "title": "Regional & International Bodies: CARICOM, CARPHA, and PAHO/WHO",
+  "content": [
+    {
+      "text": "The Regional Layer of Pharmaceutical Governance",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "No Caribbean island is an island when it comes to pharmaceutical regulation — at least, not entirely. Regional and international organisations provide a critical layer of governance that complements national systems. These bodies promote harmonisation, pool resources, and provide technical assistance that small island developing states could not sustain alone.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "CARICOM",
+          "1973",
+          "Drives regional integration including the CARICOM Regional Standard (CRS) for pharmaceutical harmonisation; the CSME (CARICOM Single Market and Economy) framework facilitates pharmaceutical trade"
+        ],
+        [
+          "CARPHA",
+          "2013",
+          "Regional public health agency headquartered in Port of Spain; operates the Caribbean Medicines Evaluation & Testing (CaMET) laboratory; conducts post-market surveillance and quality testing"
+        ],
+        [
+          "PAHO/WHO",
+          "1902/1948",
+          "Provides technical cooperation on pharmaceutical policy, essential medicines lists, and regulatory strengthening; the WHO Prequalification Programme assures product quality for international procurement"
+        ],
+        [
+          "OECS PPS",
+          "1986",
+          "Pooled pharmaceutical procurement for 9 Eastern Caribbean states; achieves 30-50% cost savings through bulk purchasing; essential for small islands with limited negotiating power"
+        ],
+        [
+          "CAP",
+          "1961",
+          "Caribbean Association of Pharmacists; professional body promoting standards, continuing education, and advocacy for the pharmacy profession across the region"
+        ]
+      ],
+      "type": "table",
+      "caption": "Key Regional and International Organisations",
+      "headers": [
+        "Organisation",
+        "Established",
+        "Role in Pharmaceutical Governance"
+      ]
+    },
+    {
+      "body": "CARPHA deserves special attention. Formed in 2013 by merging five existing regional health institutions, CARPHA serves as the Caribbean's public health watchdog. Its CaMET laboratory in Trinidad tests pharmaceutical products circulating in the region, identifying substandard and falsified medicines before they can cause harm. When a batch of medications fails quality testing, CARPHA issues regional alerts that national regulatory agencies use to initiate recalls and import bans.",
+      "type": "text"
+    },
+    {
+      "body": "Pharmacy technicians should be aware that CARPHA periodically issues pharmaceutical quality alerts. These alerts notify pharmacies and health facilities across the region when a product has been found to be substandard, falsified, or subject to recall. Ensure your pharmacy has a system to receive and act on these alerts promptly.",
+      "type": "callout",
+      "title": "CARPHA Alerts",
+      "variant": "tip"
+    },
+    {
+      "term": "OECS Pharmaceutical Procurement Service (PPS)",
+      "type": "key-term",
+      "definition": "A pooled procurement mechanism through which nine Eastern Caribbean states (Antigua & Barbuda, Dominica, Grenada, Montserrat, St. Kitts & Nevis, St. Lucia, St. Vincent & the Grenadines, Anguilla, and the British Virgin Islands) jointly purchase essential medicines at negotiated bulk prices, achieving savings of 30-50% compared to individual country purchasing."
+    },
+    {
+      "body": "The Pan American Health Organisation (PAHO), as the regional office of WHO for the Americas, provides extensive pharmaceutical sector support to Caribbean nations. This includes technical assistance for developing national essential medicines lists, strengthening regulatory capacity, and implementing rational drug use policies. The PAHO Strategic Fund allows countries to purchase quality-assured medicines at reduced prices — a vital resource for Caribbean nations seeking affordable access to essential medicines.",
+      "type": "text"
+    },
+    {
+      "type": "case-study",
+      "title": "Case Study: CARPHA Quality Alert — Substandard Antihypertensive",
+      "scenario": "In early 2023, CARPHA's CaMET laboratory identified a batch of amlodipine tablets distributed across three Caribbean islands that contained only 62% of the stated active ingredient. The product had been imported from a manufacturer not prequalified by WHO. CARPHA issued an immediate alert to all CARICOM member states, recommending recall of the affected batch and suspension of imports from the manufacturer pending investigation.",
+      "questions": [
+        "What steps should a pharmacy technician take upon receiving this alert?",
+        "How would you identify the affected batch in your pharmacy's inventory?",
+        "What should you tell patients who have been dispensed medication from the recalled batch?",
+        "What systemic improvements could prevent this situation from recurring?"
+      ],
+      "discussion": "This scenario demonstrates the critical role of post-market surveillance and regional cooperation. The technician should immediately quarantine the affected batch (checking lot numbers against the alert), document all actions taken, notify the supervising pharmacist, and assist in contacting patients who received the affected product. Systemically, this case highlights the importance of sourcing from WHO-prequalified manufacturers and maintaining robust batch tracking systems."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Manufacturing generic medicines for CARICOM member states",
+        "Testing pharmaceutical products circulating in the region for quality and identifying substandard or falsified medicines",
+        "Training pharmacy technicians for Caribbean practice",
+        "Negotiating pharmaceutical prices with international manufacturers"
+      ],
+      "question": "What is the primary function of CARPHA's CaMET laboratory?",
+      "explanation": "CARPHA's Caribbean Medicines Evaluation & Testing (CaMET) laboratory tests pharmaceutical products circulating in the region to ensure they meet quality standards. When products fail testing, CARPHA issues alerts to national regulatory agencies, triggering recalls and import bans to protect public health.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 25
+}

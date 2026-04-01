@@ -1,0 +1,87 @@
+{
+  "id": "51cba365-a344-4d39-b633-c83c22bf9d09",
+  "module_id": "de3922e4-c680-4c74-9283-4ffb9c806bc5",
+  "title": "Human-AI Partnership: Drawing the Line",
+  "content": [
+    {
+      "text": "The AI Partnership Model for Pharmacy",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "The most productive relationship between pharmacy professionals and AI is a partnership where each contributes what they do best. AI excels at processing large amounts of data quickly, identifying patterns, performing calculations, and maintaining consistency. Humans excel at contextual judgement, empathy, ethical reasoning, cultural sensitivity, and handling novel situations. The goal is not to replace one with the other but to combine them effectively.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Drug interaction checking",
+          "Checks thousands of interactions instantly against comprehensive databases",
+          "Understands patient context, assesses clinical significance",
+          "AI screens all interactions; human assesses flagged ones for clinical relevance"
+        ],
+        [
+          "Dosage calculations",
+          "Performs complex calculations without arithmetic errors",
+          "Verifies reasonableness; considers patient-specific factors",
+          "AI calculates; human verifies the result makes clinical sense"
+        ],
+        [
+          "Patient counselling",
+          "Can generate consistent, accurate drug information",
+          "Reads body language, adjusts communication, shows empathy, understands cultural context",
+          "AI helps prepare information; human delivers it with empathy and cultural sensitivity"
+        ],
+        [
+          "Inventory ordering",
+          "Analyses demand patterns, forecasts needs",
+          "Knows local community factors AI cannot see",
+          "AI recommends order quantities; human adjusts based on local knowledge"
+        ],
+        [
+          "Error detection",
+          "Never gets tired or distracted; consistent checking",
+          "Can spot errors that fall outside AI's training (unusual circumstances)",
+          "AI provides continuous monitoring; human provides judgement for edge cases"
+        ]
+      ],
+      "type": "table",
+      "caption": "AI vs. Human Strengths in Pharmacy Practice",
+      "headers": [
+        "Task",
+        "AI Strength",
+        "Human Strength",
+        "Best Approach"
+      ]
+    },
+    {
+      "body": "In Caribbean pharmacy culture, the relationship between the pharmacy team and patients is deeply personal. Patients expect to be greeted by name, asked about their family, and treated as whole people — not transaction numbers. No AI can replicate this. The human-AI partnership in Caribbean pharmacy must preserve and enhance this personal connection, not replace it. Use AI for the technical work behind the counter so you have more time and energy for the human work at the counter.",
+      "type": "callout",
+      "title": "The Caribbean Human Touch",
+      "variant": "tip"
+    },
+    {
+      "body": "The ethical line is clear: AI informs, humans decide. In any clinical situation, the final decision must rest with a qualified human professional — the pharmacist for clinical decisions, the technician for technical processes within their scope. An AI recommendation is an input to the decision, never the decision itself. This principle must be maintained regardless of how accurate AI becomes, because accountability for patient outcomes must remain with identifiable human professionals.",
+      "type": "text"
+    },
+    {
+      "term": "Human-in-the-Loop (HITL)",
+      "type": "key-term",
+      "definition": "A model of AI deployment where human professionals remain actively involved in the decision-making process rather than deferring entirely to AI. In pharmacy, this means AI assists with information gathering and analysis, but qualified humans make and are accountable for clinical decisions."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "The AI system",
+        "The software vendor",
+        "The qualified human professional (pharmacist or technician within scope)",
+        "Accountability is shared equally between AI and human"
+      ],
+      "question": "In the human-AI partnership model for pharmacy, who holds final accountability for clinical decisions?",
+      "explanation": "In the human-AI partnership model, the qualified human professional always holds final accountability for clinical decisions. AI provides information and recommendations, but the decision to act — and the responsibility for patient outcomes — rests with the pharmacist (for clinical decisions) or the technician (for technical processes within their scope).",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 20
+}

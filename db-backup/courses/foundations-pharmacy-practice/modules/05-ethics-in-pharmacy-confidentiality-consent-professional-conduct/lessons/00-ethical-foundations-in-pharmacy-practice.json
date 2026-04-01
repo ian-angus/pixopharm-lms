@@ -1,0 +1,73 @@
+{
+  "id": "b201268a-9154-4f20-8311-9ab9cda3acca",
+  "module_id": "dc1f1623-87c0-4bbe-bfb2-9ba9f226430b",
+  "title": "Ethical Foundations in Pharmacy Practice",
+  "content": [
+    {
+      "text": "Why Ethics Matter in Pharmacy",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Every day in pharmacy practice, you make decisions that affect people's health, privacy, and wellbeing. Ethics provides the framework for making these decisions correctly — not just legally, but morally. While the law sets the minimum standard of behaviour, professional ethics calls you to a higher standard. The difference between a competent pharmacy technician and an excellent one often comes down to ethical judgement.",
+      "type": "text"
+    },
+    {
+      "text": "The Four Principles of Biomedical Ethics",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "The Beauchamp and Childress framework of four principles provides the foundation for healthcare ethics worldwide, including in pharmacy practice. Every ethical dilemma you encounter can be analysed through these four lenses.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Autonomy",
+          "Respecting the patient's right to make their own informed decisions",
+          "A patient has the right to refuse a medication or choose not to follow your advice. Your role is to inform, not coerce."
+        ],
+        [
+          "Beneficence",
+          "Acting in the patient's best interest",
+          "Recommending a more affordable generic equivalent when the patient cannot afford the brand medication, without compromising therapeutic efficacy."
+        ],
+        [
+          "Non-Maleficence",
+          "Do no harm — avoiding actions that could hurt the patient",
+          "Refusing to dispense a medication when you suspect a dangerous drug interaction, even if the patient insists they 'always take it together'."
+        ],
+        [
+          "Justice",
+          "Treating all patients fairly and equitably",
+          "Providing the same standard of care and attention to every patient regardless of their socioeconomic status, appearance, nationality, or personal lifestyle choices."
+        ]
+      ],
+      "type": "table",
+      "caption": "The Four Principles of Biomedical Ethics",
+      "headers": [
+        "Principle",
+        "Meaning",
+        "Pharmacy Example"
+      ]
+    },
+    {
+      "text": "The FIP Code of Ethics",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "The International Pharmaceutical Federation (FIP) publishes a code of ethics that serves as a global benchmark. While each Caribbean island has its own professional standards, the FIP principles underpin them all. Key commitments include: placing the wellbeing of every patient above commercial interests, maintaining professional competence through lifelong learning, respecting patient privacy and confidentiality, acting with honesty and integrity, and cooperating with other healthcare professionals for optimal patient outcomes.",
+      "type": "text"
+    },
+    {
+      "body": "When facing an ethical dilemma, ask yourself: 'Would I be comfortable if my decision was published in tomorrow's newspaper? Would I be comfortable explaining this decision to the Pharmacy Board?' If the answer to either question is 'no', reconsider your course of action.",
+      "type": "callout",
+      "title": "The Ethical Litmus Test",
+      "variant": "tip"
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 20
+}

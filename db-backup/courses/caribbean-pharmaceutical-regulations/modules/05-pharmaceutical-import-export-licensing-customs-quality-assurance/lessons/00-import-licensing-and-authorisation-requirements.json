@@ -1,0 +1,95 @@
+{
+  "id": "0ae0957d-5a47-4247-b046-0a523535077c",
+  "module_id": "b9e56c17-da7d-48e1-93c3-f737c5c8ff4c",
+  "title": "Import Licensing and Authorisation Requirements",
+  "content": [
+    {
+      "text": "Who Can Import Pharmaceuticals Into the Caribbean?",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Pharmaceutical importation in the Caribbean is a tightly regulated activity. Not just anyone can bring medicines into a country — importers must hold specific licences, the products must be registered, and every shipment must be accompanied by proper documentation. These requirements exist to prevent substandard, falsified, and unregistered products from entering the pharmaceutical supply chain.",
+      "type": "text"
+    },
+    {
+      "body": "In most Caribbean jurisdictions, a pharmaceutical import licence is required before any medicinal product can be brought into the country. This licence is typically issued by the Ministry of Health or the national drug regulatory authority and specifies the types of products the licence holder is authorised to import. The application process usually requires evidence of the importer's storage facilities, quality management systems, and qualified personnel.",
+      "type": "text"
+    },
+    {
+      "term": "Pharmaceutical Import Licence",
+      "type": "key-term",
+      "definition": "A government-issued authorisation permitting a company or institution to import pharmaceutical products into a specific jurisdiction. The licence specifies the categories of products that may be imported and imposes conditions related to storage, quality management, and record-keeping."
+    },
+    {
+      "rows": [
+        [
+          "Import Licence Required?",
+          "Yes — issued by the CFDD",
+          "Yes — issued by the Ministry of Health",
+          "Yes — through the Drug Service and Ministry of Health"
+        ],
+        [
+          "Product Registration Required?",
+          "Yes — products must be registered with CFDD before importation",
+          "Yes — products must hold marketing authorisation",
+          "Yes — must appear on approved product list or BNDF for public sector"
+        ],
+        [
+          "GMP Certificate Required?",
+          "Yes — from the manufacturing country's regulatory authority",
+          "Yes — WHO GMP or equivalent",
+          "Yes — GMP compliance documentation required"
+        ],
+        [
+          "Controlled Substances",
+          "Separate import permit per shipment from Ministry of Health; INCB authorisation required",
+          "Separate import permit per shipment; INCB authorisation",
+          "Separate authorisation for each controlled substance shipment"
+        ],
+        [
+          "Import Documentation",
+          "Bill of lading, commercial invoice, Certificate of Pharmaceutical Product (CPP), Certificate of Analysis (CoA)",
+          "Similar documentation plus FDA-style regulatory filing",
+          "Similar documentation through BDS for public sector"
+        ]
+      ],
+      "type": "table",
+      "caption": "Pharmaceutical Import Requirements by Jurisdiction",
+      "headers": [
+        "Requirement",
+        "Trinidad & Tobago",
+        "Jamaica",
+        "Barbados"
+      ]
+    },
+    {
+      "body": "The CPP is a WHO-developed document that certifies the registration status and manufacturing compliance of a pharmaceutical product in the exporting country. Caribbean regulators rely heavily on the CPP as part of their import evaluation because many islands lack the resources to independently inspect overseas manufacturing sites. The CPP provides assurance that the product meets the exporting country's regulatory standards.",
+      "type": "callout",
+      "title": "Certificate of Pharmaceutical Product (CPP)",
+      "variant": "info"
+    },
+    {
+      "body": "For controlled substances, the import process is even more stringent. Each shipment requires a separate import permit issued by the national competent authority, and the INCB in Vienna must be notified. The exporting country's regulatory authority issues a corresponding export permit, and both permits must accompany the shipment. This double-lock system ensures that controlled substances moving across international borders are fully documented and authorised.",
+      "type": "text"
+    },
+    {
+      "body": "Pharmacy technicians working in hospital pharmacies, procurement departments, or wholesale distribution centres may be directly involved in goods receipt processes that include verifying import documentation. Even in community pharmacy settings, technicians should understand these requirements because they underpin the legitimacy of every product on the shelf.",
+      "type": "text"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "To set the retail price of the medicine in the importing country",
+        "To certify the registration status and manufacturing compliance of the product in the exporting country",
+        "To provide patient information in multiple languages",
+        "To confirm that the product has been tested by CARPHA"
+      ],
+      "question": "What is the primary purpose of the WHO Certificate of Pharmaceutical Product (CPP)?",
+      "explanation": "The CPP certifies that a pharmaceutical product is registered and its manufacturing site complies with GMP standards in the exporting country. Caribbean regulators rely on the CPP because most islands cannot independently inspect overseas manufacturing facilities.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 25
+}

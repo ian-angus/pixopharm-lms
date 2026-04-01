@@ -1,0 +1,86 @@
+{
+  "id": "64769a38-b7c0-46d3-9c20-b4bc14cbff3e",
+  "module_id": "c354ee80-fb9f-423b-864a-2b0454f2bd54",
+  "title": "Antivirals, ARVs for HIV & Antifungals",
+  "content": [
+    {
+      "text": "Fighting Viruses and Fungi in the Caribbean",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "The Caribbean has the second-highest HIV prevalence rate in the world outside sub-Saharan Africa. Antiretroviral (ARV) therapy has transformed HIV from a death sentence to a manageable chronic condition. Pharmacy technicians play a key role in dispensing ARVs and supporting adherence. Antifungals are also commonly dispensed for the dermatological fungal infections that thrive in the region's tropical climate.",
+      "type": "text"
+    },
+    {
+      "body": "Common antiviral medications dispensed in Caribbean pharmacies beyond ARVs include acyclovir (for herpes simplex and varicella-zoster), oseltamivir (for influenza), and various hepatitis B and C treatments. For antifungals, the tropical climate of the Caribbean promotes fungal skin infections — tinea pedis (athlete's foot), tinea corporis (ringworm), and vaginal candidiasis are among the most common presentations at the pharmacy counter.",
+      "type": "text"
+    },
+    {
+      "term": "Antiretroviral therapy (ART)",
+      "type": "key-term",
+      "definition": "Combination drug therapy for HIV, typically involving 2-3 drugs from different classes to suppress viral replication. Modern regimens use fixed-dose combinations (e.g., tenofovir/emtricitabine/efavirenz or dolutegravir-based regimens) taken as a single daily tablet."
+    },
+    {
+      "term": "Azole Antifungal",
+      "type": "key-term",
+      "definition": "A class of antifungal drugs that inhibit the enzyme lanosterol 14-alpha demethylase, blocking the synthesis of ergosterol (an essential component of the fungal cell membrane). Examples: fluconazole (systemic), clotrimazole (topical), ketoconazole, itraconazole. Identified by the -azole ending."
+    },
+    {
+      "rows": [
+        [
+          "Fluconazole",
+          "Oral/IV",
+          "Yeasts (Candida, Cryptococcus)",
+          "Vaginal candidiasis, oral thrush, systemic fungal infections"
+        ],
+        [
+          "Clotrimazole",
+          "Topical",
+          "Dermatophytes and yeasts",
+          "Athlete's foot, ringworm, vaginal thrush (pessaries)"
+        ],
+        [
+          "Terbinafine",
+          "Oral/topical",
+          "Dermatophytes",
+          "Onychomycosis (nail fungus), tinea infections"
+        ],
+        [
+          "Nystatin",
+          "Topical/oral suspension",
+          "Candida species",
+          "Oral thrush (common in immunocompromised patients)"
+        ]
+      ],
+      "type": "table",
+      "caption": "Common Antifungal Agents in Caribbean Practice",
+      "headers": [
+        "Drug",
+        "Route",
+        "Spectrum",
+        "Common Caribbean Use"
+      ]
+    },
+    {
+      "body": "For ARV therapy to effectively suppress HIV, adherence must exceed 95%. Missing even a few doses can allow the virus to develop resistance. Caribbean pharmacies should support adherence through pill reminders, clear counselling, and non-judgemental patient interactions. Confidentiality around HIV status is paramount.",
+      "type": "callout",
+      "title": "ARV Adherence: Greater Than 95% Required",
+      "variant": "info"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "To prevent side effects",
+        "To reduce cost",
+        "Sub-optimal adherence allows HIV to develop drug resistance, leading to treatment failure",
+        "To keep the medication at room temperature"
+      ],
+      "question": "Why is >95% adherence critical for antiretroviral therapy?",
+      "explanation": "HIV replicates rapidly and has a high mutation rate. Sub-optimal drug levels (from missed doses) create selective pressure for resistant viral strains, which can lead to treatment failure and limit future drug options.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 20
+}

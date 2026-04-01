@@ -1,0 +1,97 @@
+{
+  "id": "56605d16-3935-4bd5-af58-773f455cbb59",
+  "module_id": "dabd4858-ddf1-4ea7-9bb0-b04d4ba460d5",
+  "title": "Jamaica: The Pharmacy Act and the Pharmacy Council",
+  "content": [
+    {
+      "text": "Jamaica's Comprehensive Regulatory Framework",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Jamaica boasts one of the most comprehensive and well-developed pharmacy regulatory frameworks in the English-speaking Caribbean. The Pharmacy Act of 1975, significantly amended in 2013, establishes the Pharmacy Council of Jamaica (PCJ) as the principal regulatory body and provides a detailed legal framework for all aspects of pharmacy practice.",
+      "type": "text"
+    },
+    {
+      "body": "The 2013 amendments modernised the Act to address contemporary challenges: expanded scope of practice considerations, updated educational requirements, and strengthened enforcement provisions. The PCJ maintains active registers of pharmacists, approved training programmes, and licensed pharmacy premises — creating a transparent system of professional accountability.",
+      "type": "text"
+    },
+    {
+      "term": "Pharmacy Council of Jamaica (PCJ)",
+      "type": "key-term",
+      "definition": "The statutory regulatory body established under the Jamaica Pharmacy Act (1975, amended 2013) responsible for registering pharmacists, licensing pharmacy premises, accrediting pharmacy education programmes, and enforcing professional standards across the island."
+    },
+    {
+      "text": "PCJ Powers and Functions",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "type": "list",
+      "items": [
+        "Maintains the register of pharmacists and determines eligibility for registration",
+        "Approves and monitors pharmacy education and training programmes",
+        "Licenses pharmacy premises, including community, hospital, and internet pharmacies",
+        "Sets and enforces Codes of Ethics and Standards of Practice",
+        "Investigates complaints and conducts disciplinary proceedings",
+        "Advises the Minister of Health on pharmacy policy and legislation",
+        "Issues practice guidelines and continuing professional development requirements"
+      ],
+      "ordered": false
+    },
+    {
+      "body": "One notable feature of Jamaica's system is its relatively clear distinction between 'qualified assistants' and 'pharmacy technicians.' The PCJ recognises specific training programmes for pharmacy support staff and maintains standards for their supervision. This provides a more structured career pathway for pharmacy technicians than exists in some other Caribbean jurisdictions.",
+      "type": "text"
+    },
+    {
+      "body": "Jamaica's National Health Fund is a significant player in pharmaceutical access. The NHF provides subsidised medicines for chronic diseases including diabetes, hypertension, and asthma through its NHF Card Programme. Pharmacy technicians working in participating pharmacies must understand NHF procedures, including eligibility verification, claims processing, and formulary restrictions.",
+      "type": "callout",
+      "title": "The National Health Fund (NHF)",
+      "variant": "info"
+    },
+    {
+      "rows": [
+        [
+          "Community Pharmacy",
+          "Registered pharmacist on premises during operating hours; approved premises layout; adequate storage and record-keeping systems",
+          "Dispensing prescriptions, OTC sales, patient counselling"
+        ],
+        [
+          "Hospital Pharmacy",
+          "Registered pharmacist-in-charge; compliance with institutional standards; formulary management capability",
+          "Inpatient dispensing, ward supply, clinical pharmacy services"
+        ],
+        [
+          "Wholesale Drug Dealer",
+          "Separate licence category; approved storage facilities; distribution records required",
+          "Wholesale distribution of pharmaceuticals to licensed pharmacies"
+        ]
+      ],
+      "type": "table",
+      "caption": "Jamaica Pharmacy Licensing Categories",
+      "headers": [
+        "Category",
+        "Requirements",
+        "Scope"
+      ]
+    },
+    {
+      "body": "Jamaica's enforcement framework is notably robust. The PCJ has the power to conduct unannounced inspections, suspend or revoke licences, and refer criminal matters to the Director of Public Prosecutions. Penalties under the Act include substantial fines and imprisonment for serious offences such as operating an unlicensed pharmacy or practising without registration.",
+      "type": "text"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "The OECS Pharmaceutical Procurement Service",
+        "The NHF Card Programme",
+        "The CARICOM Regional Standard",
+        "The Barbados Drug Service formulary"
+      ],
+      "question": "What programme does Jamaica's National Health Fund (NHF) operate to provide subsidised chronic disease medicines?",
+      "explanation": "Jamaica's National Health Fund operates the NHF Card Programme, which provides subsidised medicines for chronic diseases including diabetes, hypertension, and asthma. Participating pharmacies must follow specific NHF procedures for eligibility verification and claims processing.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 30
+}

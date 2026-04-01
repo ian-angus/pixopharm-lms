@@ -1,0 +1,100 @@
+{
+  "id": "383d64b3-973b-4481-909c-674a901701df",
+  "module_id": "3531eb1a-a44a-4c50-bf40-ac897e98251f",
+  "title": "Weight Conversions: Pounds to Kilograms and Beyond",
+  "content": [
+    {
+      "text": "Converting Body Weight for Dosage Calculations",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Many dosage calculations — particularly for paediatric patients, chemotherapy, and anticoagulants — require the patient's weight in kilograms. However, many Caribbean patients know their weight only in pounds. The pharmacy technician must be able to convert quickly and accurately. The standard conversion factor is: 1 kg = 2.2 lb (or equivalently, 1 lb = 0.454 kg).",
+      "type": "text"
+    },
+    {
+      "term": "Weight-Based Dosing",
+      "type": "key-term",
+      "definition": "A dosing method where the dose is calculated based on the patient's body weight, typically expressed as mg/kg. This ensures that the dose is appropriate for the individual patient's size. Used routinely for paediatric dosing, antimicrobials, anticoagulants, and chemotherapy."
+    },
+    {
+      "body": "Worked example: A child's mother reports that her child weighs 44 pounds. Convert to kilograms: 44 lb ÷ 2.2 lb/kg = 20 kg. If the prescribed dose is amoxicillin 25 mg/kg/day in 3 divided doses: Total daily dose = 25 × 20 = 500 mg/day. Each dose = 500 ÷ 3 = 166.7 mg per dose (round to 167 mg). Using amoxicillin 125 mg/5 mL: Volume per dose = 167 / 125 × 5 = 6.7 mL.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "10 lb",
+          "4.5 kg",
+          "Newborn infant (large)"
+        ],
+        [
+          "22 lb",
+          "10 kg",
+          "Infant ~1 year"
+        ],
+        [
+          "33 lb",
+          "15 kg",
+          "Toddler ~2-3 years"
+        ],
+        [
+          "44 lb",
+          "20 kg",
+          "Child ~5-6 years"
+        ],
+        [
+          "66 lb",
+          "30 kg",
+          "Older child ~8-10 years"
+        ],
+        [
+          "110 lb",
+          "50 kg",
+          "Adolescent / small adult"
+        ],
+        [
+          "154 lb",
+          "70 kg",
+          "'Standard' adult reference weight"
+        ],
+        [
+          "220 lb",
+          "100 kg",
+          "Large adult"
+        ]
+      ],
+      "type": "table",
+      "caption": "Quick Pound-to-Kilogram Reference",
+      "headers": [
+        "Pounds (lb)",
+        "Kilograms (kg)",
+        "Common Context"
+      ]
+    },
+    {
+      "body": "To quickly estimate kg from pounds: divide by 2 and subtract 10%. Example: 150 lb ÷ 2 = 75, subtract 10% (7.5) = 67.5 kg. Actual: 150 ÷ 2.2 = 68.2 kg. Close enough for a quick check! Always use the exact calculation (÷ 2.2) for the final answer, but this mental shortcut helps you catch gross errors.",
+      "type": "callout",
+      "title": "Quick Mental Estimation",
+      "variant": "tip"
+    },
+    {
+      "body": "Height conversions are less common in pharmacy but are needed for Body Surface Area (BSA) calculations used in oncology dosing. The conversion: 1 inch = 2.54 cm. Caribbean patients may give height in feet and inches. Convert: multiply feet by 12 to get total inches, then multiply by 2.54 to get centimetres. Example: 5 feet 8 inches = 68 inches × 2.54 = 172.7 cm.",
+      "type": "text"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "70 kg",
+        "80 kg",
+        "88 kg",
+        "90 kg"
+      ],
+      "question": "A patient reports weighing 176 pounds. What is their weight in kilograms?",
+      "explanation": "176 lb ÷ 2.2 lb/kg = 80 kg. This is a common adult weight, and this exact conversion (176 lb = 80 kg) is worth memorising as a reference point for quick mental estimation.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 20
+}

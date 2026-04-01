@@ -1,0 +1,93 @@
+{
+  "id": "a9c412dd-9a40-4a4d-929c-096c10258b8a",
+  "module_id": "a385e5c9-29c8-445d-af9a-42d9ce480f76",
+  "title": "Heart Failure Medications",
+  "content": [
+    {
+      "text": "Supporting the Failing Heart",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Heart failure is a growing problem in the Caribbean, driven by poorly controlled hypertension, rheumatic heart disease, and cardiomyopathy. Treatment aims to reduce symptoms (congestion, breathlessness), slow disease progression, and reduce mortality. The mainstay medications are ACE inhibitors (or ARBs), beta-blockers, diuretics, and mineralocorticoid receptor antagonists (MRAs).",
+      "type": "text"
+    },
+    {
+      "term": "Ejection Fraction (EF)",
+      "type": "key-term",
+      "definition": "The percentage of blood pumped out of the left ventricle with each heartbeat. Normal EF is 55-70%. Heart failure with reduced EF (HFrEF, EF < 40%) responds best to standard medical therapy. Heart failure with preserved EF (HFpEF, EF >= 50%) has fewer proven treatments."
+    },
+    {
+      "body": "In the Caribbean, heart failure presentation is often late — patients may present with severe fluid overload, requiring urgent diuresis with furosemide before optimising long-term medications. Rheumatic heart disease, a legacy of untreated streptococcal infections, remains a more common cause of heart failure in the Caribbean than in developed nations, particularly affecting younger patients.",
+      "type": "text"
+    },
+    {
+      "body": "Dapagliflozin and empagliflozin (originally diabetes drugs) have shown remarkable mortality benefits in heart failure — even in patients WITHOUT diabetes. They are now considered a fourth pillar of HFrEF treatment alongside ACEi/ARB, beta-blockers, and MRAs. Availability and cost remain challenges in the Caribbean.",
+      "type": "callout",
+      "title": "SGLT2 Inhibitors: A New Pillar",
+      "variant": "info"
+    },
+    {
+      "rows": [
+        [
+          "ACE inhibitor",
+          "Enalapril",
+          "Reduces preload and afterload; slows progression",
+          "Renal function, potassium"
+        ],
+        [
+          "Beta-blocker",
+          "Bisoprolol, carvedilol",
+          "Reduces heart rate; improves survival",
+          "Heart rate, blood pressure"
+        ],
+        [
+          "Loop diuretic",
+          "Furosemide",
+          "Relieves fluid overload and congestion",
+          "Weight, electrolytes, renal function"
+        ],
+        [
+          "MRA",
+          "Spironolactone",
+          "Reduces mortality in severe HF",
+          "Potassium (risk of hyperkalaemia)"
+        ],
+        [
+          "Digoxin",
+          "Lanoxin",
+          "Controls rate in AF; improves symptoms",
+          "Drug levels (NTI), renal function, potassium"
+        ]
+      ],
+      "type": "table",
+      "caption": "Heart Failure Drug Classes and Their Roles",
+      "headers": [
+        "Drug Class",
+        "Example",
+        "Role in Heart Failure",
+        "Key Monitoring"
+      ]
+    },
+    {
+      "body": "Digoxin has a very narrow therapeutic index (therapeutic range 0.5-2.0 ng/mL). Toxicity causes nausea, visual disturbances (yellow-green halos), and life-threatening arrhythmias. Hypokalaemia (from diuretics) increases digoxin toxicity risk. In the Caribbean, where furosemide and digoxin are commonly co-prescribed, always flag this interaction.",
+      "type": "callout",
+      "title": "Digoxin: A Narrow Therapeutic Index Drug",
+      "variant": "warning"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Furosemide increases potassium, which reduces digoxin absorption",
+        "Furosemide causes potassium loss, and hypokalaemia increases the risk of digoxin toxicity",
+        "Digoxin causes hyperkalaemia, and furosemide corrects it",
+        "There is no interaction between these drugs"
+      ],
+      "question": "Why is monitoring potassium levels particularly important in a heart failure patient taking both furosemide and digoxin?",
+      "explanation": "Furosemide (a loop diuretic) causes potassium excretion. Low potassium levels increase digoxin binding to cardiac Na+/K+ ATPase, amplifying its toxic effects on the heart. This combination requires regular monitoring of serum potassium and digoxin levels.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 3,
+  "duration_minutes": 20
+}

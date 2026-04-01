@@ -1,0 +1,117 @@
+{
+  "id": "8fd86dc0-5e70-405a-a0e7-974863e1c057",
+  "module_id": "dabd4858-ddf1-4ea7-9bb0-b04d4ba460d5",
+  "title": "Comparing Frameworks: Key Differences and Common Themes",
+  "content": [
+    {
+      "text": "A Comparative Analysis of Caribbean Pharmacy Legislation",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Despite their shared colonial heritage and regional proximity, Caribbean nations have developed distinct approaches to pharmaceutical regulation. Understanding these differences is crucial for pharmacy technicians who may work across jurisdictions, and for appreciating the challenges of regional harmonisation under the CRS.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Primary Legislation",
+          "Pharmacy Board Act (Ch. 29:52)",
+          "Pharmacy Act (1975, amended 2013)",
+          "Pharmacy Act (Cap. 372D)",
+          "Pharmacy Act"
+        ],
+        [
+          "Regulatory Body",
+          "Pharmacy Board",
+          "Pharmacy Council of Jamaica (PCJ)",
+          "Chief Pharmacist's Office / BDS",
+          "Pharmacy Council of Grenada"
+        ],
+        [
+          "Pharmacist Ownership Required?",
+          "Yes",
+          "No — corporate ownership permitted",
+          "No — but pharmacist must be on premises",
+          "Varies by licence type"
+        ],
+        [
+          "Technician Registration",
+          "No separate register",
+          "Distinguished roles for assistants and technicians",
+          "Operating under pharmacist supervision",
+          "Under development"
+        ],
+        [
+          "Drug Procurement (Public)",
+          "NIPDEC",
+          "NHF / Ministry of Health",
+          "Barbados Drug Service",
+          "OECS PPS"
+        ],
+        [
+          "Enforcement",
+          "Drug inspectors under the Act",
+          "PCJ inspectors; referral to DPP for criminal matters",
+          "Drug Service inspections",
+          "Pharmacist Inspector's Office"
+        ]
+      ],
+      "type": "table",
+      "caption": "Comparative Overview: Caribbean Pharmacy Acts",
+      "headers": [
+        "Feature",
+        "Trinidad & Tobago",
+        "Jamaica",
+        "Barbados",
+        "Grenada"
+      ]
+    },
+    {
+      "text": "Common Themes Across Jurisdictions",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Despite the differences, several themes are consistent across all Caribbean pharmaceutical frameworks. Every jurisdiction requires that only registered pharmacists may practise pharmacy. Every jurisdiction requires pharmacy premises to be licensed. Every jurisdiction has provisions for inspection and enforcement. And every jurisdiction imposes penalties for unlicensed practice. These common threads provide a foundation for regional harmonisation.",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "All jurisdictions require pharmacist registration as a prerequisite for practice",
+        "All jurisdictions mandate pharmacy premises licensing with periodic renewal",
+        "All jurisdictions have inspection powers vested in regulatory authorities",
+        "All jurisdictions classify controlled substances under their own Dangerous Drugs Act",
+        "All jurisdictions are influenced by British common law tradition in their pharmacy legislation",
+        "All jurisdictions are moving toward stronger technician recognition, though at different paces"
+      ],
+      "ordered": false
+    },
+    {
+      "body": "The pharmacy laws of Trinidad & Tobago, Jamaica, Barbados, and Grenada all descend from British colonial legislation. The original Pharmacy Acts were modelled on the United Kingdom's pharmacy laws of the 19th and early 20th centuries. While each country has amended and updated its legislation since independence, the fundamental structure — a statutory board, a professional register, premises licensing, and disciplinary powers — reflects this shared British heritage.",
+      "type": "callout",
+      "title": "Colonial Legal Heritage",
+      "variant": "info"
+    },
+    {
+      "term": "Scope of Practice",
+      "type": "key-term",
+      "definition": "The range of professional activities that a healthcare practitioner is authorised to perform under the law. For pharmacy technicians, scope of practice defines what tasks they may carry out, typically under the supervision of a registered pharmacist, and varies by jurisdiction across the Caribbean."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Jamaica",
+        "Barbados",
+        "Trinidad & Tobago",
+        "Grenada"
+      ],
+      "question": "Which Caribbean country requires that pharmacies be owned by registered pharmacists?",
+      "explanation": "Trinidad & Tobago maintains a 'pharmacist-only' ownership model, where only registered pharmacists may own and operate pharmacy businesses. Jamaica, by contrast, permits corporate ownership of pharmacies, provided a registered pharmacist is present during operating hours.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 3,
+  "duration_minutes": 25
+}

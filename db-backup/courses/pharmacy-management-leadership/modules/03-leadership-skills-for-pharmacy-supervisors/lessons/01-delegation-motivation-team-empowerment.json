@@ -1,0 +1,102 @@
+{
+  "id": "3309b1a7-c219-44c5-aab6-6dca9fe98736",
+  "module_id": "1c98523a-3a03-4cdf-a2ab-8b97e13644f8",
+  "title": "Delegation, Motivation & Team Empowerment",
+  "content": [
+    {
+      "text": "The Art of Delegation in a Regulated Profession",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Delegation in pharmacy is unlike delegation in most other professions because it operates within strict legal boundaries. A pharmacy supervisor cannot delegate the final check on a prescription to a technician, regardless of how experienced that technician is. However, within these legal constraints, effective delegation is essential — a supervisor who tries to do everything themselves will burn out, make errors, and demoralise their team.",
+      "type": "text"
+    },
+    {
+      "body": "The key principle is: delegate authority for tasks, but never abdicate responsibility. When you delegate inventory ordering to a senior technician, you are giving them authority to place orders — but you remain responsible for ensuring inventory levels are adequate. When you delegate opening procedures to the morning technician, you trust them to follow the checklist — but you are accountable if something is missed.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Inventory ordering and receiving",
+          "Senior technician",
+          "Review orders before submission; audit receiving records weekly"
+        ],
+        [
+          "Opening and closing procedures",
+          "Trained technician or assistant",
+          "Verify checklist is followed; spot-check periodically"
+        ],
+        [
+          "Insurance claims documentation",
+          "Technician trained in programme procedures",
+          "Review claims before submission; reconcile payments"
+        ],
+        [
+          "Expiry date monitoring",
+          "Any trained staff member",
+          "Review expiry reports monthly; make write-off decisions"
+        ],
+        [
+          "Prescription dispensing (preparation)",
+          "Certified pharmacy technician",
+          "Final verification must be by the pharmacist — this cannot be delegated"
+        ],
+        [
+          "Staff scheduling (draft)",
+          "Senior technician",
+          "Review and approve final schedule; ensure pharmacist coverage"
+        ]
+      ],
+      "type": "table",
+      "caption": "Delegation Framework for Pharmacy Supervisors",
+      "headers": [
+        "Task Category",
+        "Can Delegate To",
+        "Supervisor Must"
+      ]
+    },
+    {
+      "text": "Motivating Your Team",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Motivation in Caribbean pharmacy teams comes from a blend of intrinsic and extrinsic factors. Research consistently shows that beyond a fair base salary, the most powerful motivators are: recognition for good work, opportunities to learn and grow, autonomy in their role, and a sense of purpose — the knowledge that their work directly helps patients. Financial bonuses matter, but they are rarely the primary motivator for pharmacy professionals.",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Verbal recognition: A sincere 'Good work on catching that interaction' is powerful in Caribbean culture where verbal affirmation is highly valued",
+        "Development opportunities: Fund CPD courses, conference attendance, or cross-training in new areas",
+        "Autonomy: Give experienced staff ownership of specific areas (e.g., 'You are in charge of our diabetic patient counselling materials')",
+        "Purpose: Regularly connect daily tasks to patient outcomes — remind the team why accuracy matters",
+        "Team celebrations: Acknowledge milestones — pharmacy anniversary, individual work anniversaries, team achievements",
+        "Fair compensation: Review salaries annually against market rates; do not assume loyalty alone will retain staff"
+      ],
+      "ordered": false
+    },
+    {
+      "body": "Herzberg's theory distinguishes between 'hygiene factors' (salary, working conditions, job security) that prevent dissatisfaction, and 'motivators' (achievement, recognition, growth) that drive satisfaction. A pharmacy with good pay but no recognition will have staff who are not dissatisfied but not motivated either. True engagement requires both — fair hygiene factors PLUS genuine motivators.",
+      "type": "callout",
+      "title": "Herzberg's Two-Factor Theory in Pharmacy",
+      "variant": "info"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "The technician who placed the order",
+        "The wholesaler who accepted the large order",
+        "The pharmacy supervisor who delegated the task",
+        "The pharmacy owner"
+      ],
+      "question": "A pharmacy supervisor delegates inventory ordering to a senior technician. The technician over-orders, resulting in excess stock and cash flow pressure. Who is ultimately responsible?",
+      "explanation": "When a supervisor delegates a task, they delegate authority but retain responsibility. The supervisor should have established order limits, review processes, and approval thresholds. Ultimate accountability for the delegation — including its outcomes — rests with the person who delegated.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 25
+}

@@ -1,0 +1,99 @@
+{
+  "id": "e6e11873-f637-41b0-acd1-17cf03bb95ca",
+  "module_id": "e0506ad3-0af5-4df8-a4be-e6430624b383",
+  "title": "Dispensing Quality Control: Double-Checks, Label Accuracy & Final Verification",
+  "content": [
+    {
+      "text": "Quality at the Dispensing Bench",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Dispensing quality control is the systematic process of verifying that every prescription is filled accurately — with the right drug, right strength, right quantity, right form, correct labelling, and appropriate patient counselling information. In a Caribbean community pharmacy, where a single technician may prepare dozens of prescriptions per shift, quality control measures must be embedded into the workflow, not added as an afterthought.",
+      "type": "text"
+    },
+    {
+      "body": "The dispensing QC process begins the moment a prescription is received and does not end until the patient walks out with the correct medication and understands how to take it. Every step — prescription interpretation, product selection, counting, labelling, and final verification — is a QC checkpoint. Missing any checkpoint creates a gap through which an error can pass.",
+      "type": "text"
+    },
+    {
+      "term": "Final Verification",
+      "type": "key-term",
+      "definition": "The pharmacist's comprehensive check of a dispensed prescription before it reaches the patient. This includes verifying drug identity, strength, quantity, label accuracy, drug interactions, allergy status, and appropriateness of therapy. In most Caribbean jurisdictions, final verification is a legal requirement that cannot be delegated to technicians."
+    },
+    {
+      "rows": [
+        [
+          "1. Prescription Receipt",
+          "Read the full prescription before beginning",
+          "Legibility, completeness, prescriber identity, patient identity",
+          "Technician"
+        ],
+        [
+          "2. Clinical Screening",
+          "Check for drug interactions, allergies, dose appropriateness",
+          "Patient profile, allergy records, interaction databases",
+          "Pharmacist (technician flags concerns)"
+        ],
+        [
+          "3. Product Selection",
+          "Select the correct drug from the shelf",
+          "Drug name, strength, dosage form, expiry date, manufacturer",
+          "Technician"
+        ],
+        [
+          "4. Counting/Measuring",
+          "Dispense the correct quantity",
+          "Quantity matches prescription; count is accurate",
+          "Technician"
+        ],
+        [
+          "5. Labelling",
+          "Generate and apply the prescription label",
+          "Patient name, drug name, directions, warnings, date, pharmacy details",
+          "Technician"
+        ],
+        [
+          "6. Final Verification",
+          "Comprehensive pharmacist check before patient handoff",
+          "All of the above, plus clinical appropriateness",
+          "Pharmacist"
+        ],
+        [
+          "7. Patient Counselling",
+          "Counsel the patient on proper use",
+          "Dose, frequency, route, storage, common side effects, what to report",
+          "Pharmacist (technician may assist)"
+        ]
+      ],
+      "type": "table",
+      "caption": "Dispensing QC Checkpoints",
+      "headers": [
+        "Checkpoint",
+        "Action",
+        "What to Verify",
+        "Who Is Responsible"
+      ]
+    },
+    {
+      "body": "The prescription label is the patient's primary source of medication information at home. A label error — wrong dose directions, missing warnings, wrong drug name — can cause harm even if the correct drug was dispensed. Always verify the label against the original prescription BEFORE attaching it to the medication container. Never assume the computer-generated label is correct — data entry errors are among the most common dispensing errors.",
+      "type": "callout",
+      "title": "The Label Is the Last Defence",
+      "variant": "warning"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Prescription receipt and initial reading",
+        "Product selection from the shelf",
+        "Counting tablets",
+        "Final verification before patient handoff"
+      ],
+      "question": "At which step in the dispensing process is the pharmacist legally required to be involved in most Caribbean jurisdictions?",
+      "explanation": "In most Caribbean jurisdictions, the pharmacist must perform the final verification — the comprehensive check of the dispensed prescription before it reaches the patient. While technicians perform the preparation steps, the pharmacist's final check is the legal and professional safeguard that ensures accuracy and clinical appropriateness.",
+      "correctIndex": 3
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 20
+}

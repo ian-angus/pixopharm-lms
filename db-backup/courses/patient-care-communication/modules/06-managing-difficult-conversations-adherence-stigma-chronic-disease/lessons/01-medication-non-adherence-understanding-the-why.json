@@ -1,0 +1,97 @@
+{
+  "id": "fda0d27d-3e51-4b2c-951d-2a5dd62692e0",
+  "module_id": "17041265-a6b2-423a-b63e-694a6ecc358e",
+  "title": "Medication Non-Adherence: Understanding the 'Why'",
+  "content": [
+    {
+      "text": "Why Patients Do Not Take Their Medications",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Non-adherence to prescribed medications is one of the greatest challenges in global healthcare, and the Caribbean is no exception. The WHO estimates that adherence to chronic disease medications averages just 50% worldwide. In the Caribbean, where chronic diseases (diabetes, hypertension, HIV) are leading causes of death and disability, non-adherence has devastating consequences.",
+      "type": "text"
+    },
+    {
+      "body": "It is tempting to label non-adherent patients as 'difficult' or 'non-compliant.' But this judgement is both unhelpful and usually wrong. Non-adherence is almost always a rational response to the patient's circumstances — when you understand the 'why,' you can address the root cause rather than repeating the same ineffective instruction.",
+      "type": "text"
+    },
+    {
+      "term": "Medication Non-Adherence",
+      "type": "key-term",
+      "definition": "The failure to take medications as prescribed. This includes not filling prescriptions, skipping doses, taking incorrect doses, stopping medications prematurely, and taking medications at wrong times. It is categorised as intentional (conscious decision not to take) or unintentional (forgetting, misunderstanding, or inability to access)."
+    },
+    {
+      "rows": [
+        [
+          "Economic",
+          "Cannot afford the medication",
+          "Many Caribbean patients pay out-of-pocket; insurance coverage is limited outside government programmes",
+          "Explore generic alternatives; check eligibility for CDAP (T&T), NHF (Jamaica), Drug Service (Barbados)"
+        ],
+        [
+          "Knowledge",
+          "Does not understand why the medication is needed",
+          "40% of antihypertensive patients believe they can stop when they 'feel fine'",
+          "Use STA counselling; develop discrepancy ('The tablet keeps your pressure down — it is working BECAUSE you take it')"
+        ],
+        [
+          "Side effects",
+          "Experiences unpleasant effects",
+          "Caribbean patients may not report side effects, instead quietly stopping the medication",
+          "Ask about side effects at every refill; offer management strategies; consult pharmacist about alternatives"
+        ],
+        [
+          "Complexity",
+          "Too many medications at too many different times",
+          "Polypharmacy is common in elderly Caribbean patients with multiple chronic conditions",
+          "Create simplified dosing schedules; use pictogram labels; suggest pill organisers"
+        ],
+        [
+          "Cultural",
+          "Prefers traditional remedies; distrust of 'foreign' medicine",
+          "Bush medicine tradition provides a familiar, culturally endorsed alternative",
+          "Integrate — do not oppose — traditional remedies; assess for interactions; negotiate combined approaches"
+        ],
+        [
+          "Stigma",
+          "Does not want to be seen taking the medication",
+          "Particularly severe for HIV, mental health, and STI medications",
+          "Discreet packaging; private dispensing; normalised routine"
+        ]
+      ],
+      "type": "table",
+      "caption": "Root Causes of Non-Adherence in Caribbean Patients",
+      "headers": [
+        "Category",
+        "Specific Cause",
+        "Caribbean Context",
+        "Pharmacy Intervention"
+      ]
+    },
+    {
+      "body": "Unintentional non-adherence (forgetting, confusion, physical inability) responds well to practical solutions: reminders, simplified regimens, pill organisers. Intentional non-adherence (choosing not to take, stopping due to beliefs or side effects) requires motivational interviewing and patient-centred counselling. The pharmacy technician must determine which type they are dealing with before intervening.",
+      "type": "callout",
+      "title": "Intentional vs. Unintentional Non-Adherence",
+      "variant": "info"
+    },
+    {
+      "body": "In the Caribbean, economic barriers deserve special attention. Unlike many developed countries where insurance covers most prescription costs, many Caribbean patients pay fully or partially out-of-pocket. When a patient must choose between buying their blood pressure medication and buying food for their family, the medication often loses. Understanding this reality — and being prepared to explore cost-reducing alternatives — is essential for any Caribbean pharmacy professional.",
+      "type": "text"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Unintentional non-adherence — he forgot to take it",
+        "Intentional non-adherence due to side effects — a rational response to an unpleasant experience",
+        "Medication abuse",
+        "Patient non-compliance due to laziness"
+      ],
+      "question": "A patient tells you he stopped his statin medication because 'it was giving him muscle pain.' This is an example of:",
+      "explanation": "This is intentional non-adherence driven by side effects. The patient made a conscious, rational decision to stop a medication that was causing him pain. The appropriate response is to validate his experience ('Muscle pain is a known side effect of statins'), consult the pharmacist about alternative statins or dose adjustments, and work with him to find a tolerable option — not to lecture about compliance.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 20
+}

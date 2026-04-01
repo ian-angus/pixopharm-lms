@@ -1,0 +1,85 @@
+{
+  "id": "60aa37f1-43fb-4c3c-bdbf-57ec54312acf",
+  "module_id": "8759d1cb-8aee-41fa-bb18-ddb11b629779",
+  "title": "Point-of-Sale Systems & Electronic Record-Keeping",
+  "content": [
+    {
+      "text": "Where Dispensing Meets Commerce",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "The point-of-sale (POS) system is where the pharmacy's clinical workflow intersects with its commercial operations. A modern pharmacy POS does far more than process payments — it integrates with the dispensing software to record transactions, calculate co-payments for subsidised programme patients (CDAP, NHF), process insurance claims, manage customer loyalty programmes, and generate financial reports.",
+      "type": "text"
+    },
+    {
+      "body": "In the Caribbean context, POS integration with government subsidy programmes is particularly important. When a CDAP patient in Trinidad collects their free chronic disease medication, the POS system records the transaction, captures the patient's CDAP registration number, and generates the data needed for the pharmacy to claim reimbursement from the government. Similarly, in Jamaica, NHF co-payment calculations are processed through the POS. Errors in POS transactions can result in rejected reimbursement claims and revenue loss for the pharmacy.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Dispensing software",
+          "Links prescriptions to transactions",
+          "Ensures every dispensed item is billed or recorded for subsidy claims"
+        ],
+        [
+          "Government programmes",
+          "CDAP, NHF, Barbados Drug Service",
+          "Processes subsidised medications and generates reimbursement claims"
+        ],
+        [
+          "Insurance companies",
+          "Real-time eligibility check and claims processing",
+          "Verifies patient coverage and calculates co-payments at the point of sale"
+        ],
+        [
+          "Inventory system",
+          "Decrements stock in real time",
+          "Maintains accurate stock levels and triggers reorder alerts"
+        ],
+        [
+          "Financial reporting",
+          "Daily sales, margins, programme reimbursements",
+          "Enables pharmacy financial management and audit readiness"
+        ]
+      ],
+      "type": "table",
+      "caption": "POS System Integration Points in Caribbean Pharmacies",
+      "headers": [
+        "Integration",
+        "Function",
+        "Caribbean Application"
+      ]
+    },
+    {
+      "term": "Point of Sale (POS)",
+      "type": "key-term",
+      "definition": "The system — hardware and software — at which a retail transaction is completed. In a pharmacy, the POS integrates with the dispensing management system to link clinical transactions (prescriptions dispensed) with financial transactions (payments received, co-payments calculated, subsidy claims generated). Modern POS systems include touchscreens, barcode scanners, receipt printers, and electronic payment terminals."
+    },
+    {
+      "body": "Pharmacy POS and management systems contain sensitive patient health information — medication histories, diagnoses implied by prescribed medications, and personal identification data. All pharmacy staff must follow data protection practices: strong passwords (changed regularly), automatic screen locks, no sharing of login credentials, and secure backup of all data. In jurisdictions with data protection legislation, breaches can result in significant penalties.",
+      "type": "callout",
+      "title": "Data Security & Patient Privacy",
+      "variant": "warning"
+    },
+    {
+      "body": "Electronic record-keeping offers significant advantages over paper-based systems: instant search and retrieval, automatic backup, reduced physical storage requirements, and comprehensive audit trails. However, electronic systems require reliable power (with UPS backup), regular data backup (cloud and local), software updates, and staff training on proper use. The transition from paper to electronic should be planned carefully, with a parallel running period where both systems are maintained simultaneously.",
+      "type": "text"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "To charge the patient the correct retail price",
+        "To generate the reimbursement claim data that the pharmacy needs to get paid by the government",
+        "To track the patient's medication for marketing purposes",
+        "POS recording is not important for CDAP transactions"
+      ],
+      "question": "A CDAP patient in Trinidad presents a prescription for their chronic disease medication. Why is accurate POS transaction recording important in this scenario?",
+      "explanation": "CDAP medications are provided free to the patient, but the pharmacy is reimbursed by the government. Accurate POS transaction recording — including the patient's CDAP registration number and the medication dispensed — generates the data needed for the pharmacy to submit its reimbursement claim. Errors or omissions result in rejected claims and lost revenue.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 20
+}

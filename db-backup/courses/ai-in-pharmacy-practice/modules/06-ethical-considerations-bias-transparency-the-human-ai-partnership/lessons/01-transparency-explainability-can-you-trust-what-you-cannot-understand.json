@@ -1,0 +1,56 @@
+{
+  "id": "a1af1e7f-5759-4ae1-bed7-c91b7c026039",
+  "module_id": "de3922e4-c680-4c74-9283-4ffb9c806bc5",
+  "title": "Transparency & Explainability: Can You Trust What You Cannot Understand?",
+  "content": [
+    {
+      "text": "The Black Box Problem in Pharmacy AI",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "When your dispensing software flags a drug interaction, you can usually see exactly why: Drug A interacts with Drug B through Mechanism X. This is explainable AI — you can trace the reasoning. But many modern AI systems, particularly deep learning models, are 'black boxes': they produce outputs without being able to explain how they arrived at them. In pharmacy, where every decision affects patient safety, this lack of transparency is a serious concern.",
+      "type": "text"
+    },
+    {
+      "term": "Explainable AI (XAI)",
+      "type": "key-term",
+      "definition": "AI systems designed to provide human-understandable explanations for their outputs and decisions. In healthcare, explainability is crucial because clinicians need to understand why an AI recommends a particular action in order to assess its validity and accept or reject it."
+    },
+    {
+      "body": "Consider two scenarios: (1) Your DIS flags Warfarin + Clarithromycin and explains: 'Clarithromycin inhibits CYP3A4, increasing Warfarin plasma levels and INR. Risk of haemorrhage.' You can evaluate this reasoning. (2) An AI system recommends changing a patient's antihypertensive but says only: 'Recommendation confidence: 78%.' You cannot evaluate the reasoning because there is none visible. Which recommendation would you — or the pharmacist — feel comfortable acting on?",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Always prefer AI tools that explain their reasoning, especially for clinical decisions",
+        "If an AI tool cannot explain why it flagged or recommended something, treat its output with extra scepticism",
+        "Discuss unexplained AI recommendations with the pharmacist before acting on them",
+        "When evaluating new AI tools for your pharmacy, 'explainability' should be a key selection criterion",
+        "Document when you follow or override AI recommendations, including your reasoning"
+      ],
+      "ordered": false
+    },
+    {
+      "body": "Globally, regulators are moving toward requiring explainability in healthcare AI. The EU AI Act (2024) classifies healthcare AI as 'high-risk' and mandates transparency requirements. While Caribbean nations have not yet enacted AI-specific legislation, the trend toward requiring explainability in clinical AI tools is clear. Pharmacy technicians who understand this principle now will be prepared for future regulatory requirements.",
+      "type": "callout",
+      "title": "The Regulatory Direction",
+      "variant": "info"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "It makes the AI run faster",
+        "It allows clinicians to evaluate the reasoning behind AI recommendations and determine whether to act on them",
+        "It is only important for marketing purposes",
+        "Explainability has no relevance to pharmacy practice"
+      ],
+      "question": "Why is 'explainability' important in AI tools used for clinical pharmacy decisions?",
+      "explanation": "Explainability allows pharmacy professionals to evaluate the reasoning behind AI recommendations — understanding why an AI suggests something is essential for determining whether the recommendation is appropriate for a specific patient. Without explainability, clinicians must either blindly trust or blindly reject AI outputs.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 20
+}

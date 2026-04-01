@@ -1,0 +1,130 @@
+{
+  "id": "64ae76c6-ada2-4f90-ad6b-1020bfce3e29",
+  "module_id": "28473813-1710-4ced-a35f-28e0d84766a0",
+  "title": "Pricing, Markups & Caribbean Regulatory Frameworks",
+  "content": [
+    {
+      "text": "How Caribbean Pharmacies Price Medications",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Unlike many other retail businesses, Caribbean pharmacies cannot simply set whatever price they wish. Governments across the region regulate medication pricing to varying degrees — from outright price controls on essential medicines to maximum markup percentages. Understanding these frameworks is essential because pricing errors can result in regulatory penalties, while underpricing threatens your pharmacy's viability.",
+      "type": "text"
+    },
+    {
+      "term": "Markup vs. Margin",
+      "type": "key-term",
+      "definition": "Markup is the percentage added to the cost price to arrive at the selling price (calculated on cost). Margin is the profit expressed as a percentage of the selling price (calculated on revenue). A 50% markup equals a 33% margin. These terms are frequently confused, but the distinction matters for regulatory compliance — some Caribbean regulations specify markup ceilings, others specify margin ceilings."
+    },
+    {
+      "type": "island-comparison",
+      "title": "Medication Pricing & Tax Regimes Across the Caribbean",
+      "islands": [
+        {
+          "flag": "🇹🇹",
+          "name": "Trinidad & Tobago",
+          "details": [
+            "VAT rate: 12.5% — but most prescription medications and medical supplies are zero-rated or exempt",
+            "The Chronic Disease Assistance Programme (CDAP) provides free medications for specified chronic conditions through participating pharmacies",
+            "CDAP reimburses pharmacies at a fixed rate per item — the pharmacy cannot charge the patient any additional amount for CDAP-listed drugs",
+            "Non-CDAP medications: pharmacies typically apply a 30-50% markup on wholesale cost, varying by product category",
+            "The Chemistry, Food & Drugs Division regulates drug pricing indirectly through import approvals and formulary management"
+          ]
+        },
+        {
+          "flag": "🇯🇲",
+          "name": "Jamaica",
+          "details": [
+            "General Consumption Tax (GCT) rate: 15% — prescription medications are exempt from GCT",
+            "The National Health Fund (NHF) subsidises medications for 17 specified chronic conditions through NHF cards",
+            "NHF pays a fixed subsidy per item; the patient pays the co-payment (difference between the pharmacy's price and the NHF subsidy)",
+            "Jamaica Drugs for the Elderly Programme (JADEP) provides additional coverage for persons over 60",
+            "No formal government-mandated maximum markup, but the Fair Trading Commission monitors for price gouging, especially during emergencies"
+          ]
+        },
+        {
+          "flag": "🇧🇧",
+          "name": "Barbados",
+          "details": [
+            "VAT rate: 17.5% — prescription drugs dispensed by a pharmacy are zero-rated",
+            "The Barbados Drug Service (BDS) provides medications through public health facilities and the Drug Benefit Card programme",
+            "The Barbados National Drug Formulary lists all medications approved for use in the public sector",
+            "Private pharmacies set their own prices for non-BDS items, though the Fair Trading Commission Act provides oversight",
+            "The Drug Service Division centrally procures medications for the public health system, achieving economies of scale"
+          ]
+        }
+      ],
+      "description": "Pricing regulations, tax treatment of medicines, and reimbursement frameworks vary significantly by jurisdiction. Pharmacy managers must know the rules for their specific island."
+    },
+    {
+      "text": "Calculating Markups and Margins",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "A pharmacy purchases metformin 500 mg (100 tablets) from a wholesaler at a cost of $45.00. The pharmacy applies a 40% markup. The selling price is: $45.00 x 1.40 = $63.00. The margin on this sale is: ($63.00 - $45.00) / $63.00 x 100 = 28.6%. Notice how a 40% markup translates to only a 28.6% margin — this is a critical distinction when evaluating profitability.",
+      "type": "text"
+    },
+    {
+      "body": "Government insurance reimbursement rates do not always cover the pharmacy's full cost plus a reasonable margin. Some CDAP and NHF reimbursement rates have not been updated in years, while wholesale costs have risen. Smart pharmacy managers track the actual margin on every government-programme item and negotiate with their wholesalers accordingly. Losing money on every government prescription is not sustainable.",
+      "type": "callout",
+      "title": "CDAP & NHF Reimbursement Realities",
+      "variant": "warning"
+    },
+    {
+      "rows": [
+        [
+          "25%",
+          "20%",
+          "$125.00"
+        ],
+        [
+          "33%",
+          "25%",
+          "$133.00"
+        ],
+        [
+          "40%",
+          "28.6%",
+          "$140.00"
+        ],
+        [
+          "50%",
+          "33.3%",
+          "$150.00"
+        ],
+        [
+          "100%",
+          "50%",
+          "$200.00"
+        ]
+      ],
+      "type": "table",
+      "caption": "Markup vs. Margin Quick Reference",
+      "headers": [
+        "Markup %",
+        "Margin %",
+        "Cost Price $100 → Selling Price"
+      ]
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "28.6%",
+        "33%",
+        "40%",
+        "44.8%"
+      ],
+      "question": "A pharmacy buys amoxicillin capsules at $32.00 per box and sells them at $44.80. What is the markup percentage?",
+      "explanation": "Markup = (Selling Price - Cost Price) / Cost Price x 100 = ($44.80 - $32.00) / $32.00 x 100 = $12.80 / $32.00 x 100 = 40%. The margin would be $12.80 / $44.80 x 100 = 28.6%.",
+      "correctIndex": 2
+    },
+    {
+      "body": "Currency fluctuation adds another layer of complexity. Most Caribbean pharmacies import medications priced in US dollars, but sell in local currency. When the local currency weakens — as has happened periodically with the Jamaican dollar — the cost of imported medications rises but selling prices cannot always be adjusted immediately, especially for government-subsidised items. Hedging this risk through forward purchasing or maintaining US dollar accounts is a sophisticated but increasingly necessary management strategy.",
+      "type": "text"
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 25
+}

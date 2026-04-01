@@ -1,0 +1,105 @@
+{
+  "id": "6b436b40-ff18-49c1-bbbb-696d77b6e26b",
+  "module_id": "0464175f-5c7e-4bcb-b01a-6fe45e50d244",
+  "title": "Blood Pressure, the Cardiac Cycle & Electrical Conduction",
+  "content": [
+    {
+      "text": "The Cardiac Cycle: Systole and Diastole",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Each heartbeat represents one complete cardiac cycle — a coordinated sequence of contraction (systole) and relaxation (diastole). During systole, the ventricles contract, forcing blood into the pulmonary artery and aorta. During diastole, the ventricles relax and fill with blood from the atria. A normal resting heart rate of 60-100 beats per minute means this cycle repeats about 100,000 times per day.",
+      "type": "text"
+    },
+    {
+      "term": "Blood Pressure",
+      "type": "key-term",
+      "definition": "The force exerted by circulating blood on the walls of blood vessels, measured in millimetres of mercury (mmHg). It is expressed as systolic pressure (during ventricular contraction) over diastolic pressure (during ventricular relaxation). Normal blood pressure is approximately 120/80 mmHg. Persistent readings above 140/90 mmHg indicate hypertension."
+    },
+    {
+      "text": "Blood Pressure Regulation",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Blood pressure is determined by two main factors: cardiac output (the volume of blood the heart pumps per minute) and peripheral vascular resistance (the resistance to blood flow in the arterial system). The body regulates blood pressure through multiple mechanisms: the autonomic nervous system (sympathetic stimulation increases heart rate and vasoconstriction), the renin-angiotensin-aldosterone system (RAAS — controls fluid volume and vessel tone), and local factors like nitric oxide (a vasodilator). Antihypertensive drugs target one or more of these regulatory systems.",
+      "type": "text"
+    },
+    {
+      "body": "The renin-angiotensin-aldosterone system (RAAS) is particularly important for Caribbean pharmacy practice because the three most commonly prescribed antihypertensive drug classes — ACE inhibitors (-pril), ARBs (-sartan), and thiazide diuretics — all interact with this system. When the kidneys detect low blood pressure, they release renin, which converts angiotensinogen to angiotensin I. ACE then converts angiotensin I to angiotensin II, a potent vasoconstrictor. ACE inhibitors block this conversion; ARBs block the angiotensin II receptor directly.",
+      "type": "text"
+    },
+    {
+      "text": "The Electrical Conduction System",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "The heart generates its own electrical impulses. The sinoatrial (SA) node, located in the right atrium, acts as the natural pacemaker, initiating each heartbeat at 60-100 impulses per minute. The electrical signal travels through the atria to the atrioventricular (AV) node, which briefly delays the signal (allowing the atria to finish contracting), then passes through the bundle of His and Purkinje fibres to trigger ventricular contraction. Disturbances in this conduction system cause arrhythmias — irregular heart rhythms that may require antiarrhythmic medications such as amiodarone, digoxin, or verapamil.",
+      "type": "text"
+    },
+    {
+      "body": "Hypertension often produces no symptoms until it causes organ damage. In the Caribbean, many patients only discover their hypertension when they present with a stroke, heart failure, or kidney disease. PAHO estimates that hypertension prevalence exceeds 30% in most CARICOM nations, with Trinidad & Tobago and Barbados among the worst affected. This is why blood pressure screening at community pharmacies is a critical public health intervention.",
+      "type": "callout",
+      "title": "Hypertension: The 'Silent Killer' in the Caribbean",
+      "variant": "warning"
+    },
+    {
+      "rows": [
+        [
+          "Normal",
+          "< 120",
+          "< 80",
+          "Reassess in 1-2 years"
+        ],
+        [
+          "Elevated",
+          "120-129",
+          "< 80",
+          "Lifestyle modification"
+        ],
+        [
+          "Stage 1 Hypertension",
+          "130-139",
+          "80-89",
+          "Lifestyle modification ± medication"
+        ],
+        [
+          "Stage 2 Hypertension",
+          "≥ 140",
+          "≥ 90",
+          "Medication + lifestyle modification"
+        ],
+        [
+          "Hypertensive Crisis",
+          "> 180",
+          "> 120",
+          "Immediate medical attention required"
+        ]
+      ],
+      "type": "table",
+      "caption": "Blood Pressure Classification (JNC/PAHO Guidelines)",
+      "headers": [
+        "Category",
+        "Systolic (mmHg)",
+        "Diastolic (mmHg)",
+        "Action"
+      ]
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Beta-blockers and calcium channel blockers",
+        "ACE inhibitors and ARBs",
+        "Statins and fibrates",
+        "Diuretics and anticoagulants"
+      ],
+      "question": "The renin-angiotensin-aldosterone system (RAAS) is targeted by which of the following drug classes?",
+      "explanation": "ACE inhibitors (e.g. enalapril, lisinopril) block the enzyme that converts angiotensin I to angiotensin II. ARBs (e.g. losartan, valsartan) block the angiotensin II receptor. Both classes directly target the RAAS pathway. While thiazide diuretics also interact with RAAS indirectly, ACE inhibitors and ARBs are the primary RAAS-targeting drugs.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 30
+}

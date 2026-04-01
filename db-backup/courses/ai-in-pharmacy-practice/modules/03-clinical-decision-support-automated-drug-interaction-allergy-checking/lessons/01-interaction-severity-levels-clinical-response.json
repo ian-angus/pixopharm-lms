@@ -1,0 +1,87 @@
+{
+  "id": "8d023f93-9d3c-44bb-a848-96a37e3f7497",
+  "module_id": "82cf2650-5f9f-4f8f-9460-cd77a32d431e",
+  "title": "Interaction Severity Levels & Clinical Response",
+  "content": [
+    {
+      "text": "Not All Interactions Are Created Equal",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Drug interaction screening systems classify interactions by severity to help pharmacy staff prioritise their response. Understanding these severity levels and knowing the appropriate clinical action for each is a critical skill for pharmacy technicians. Not every flagged interaction requires stopping the prescription — many are manageable with monitoring or dose adjustments. The skill is knowing the difference.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Contraindicated",
+          "Red / Level 1",
+          "Combination should never be used — risk of severe harm or death",
+          "STOP. Do not dispense. Alert pharmacist immediately. Contact prescriber."
+        ],
+        [
+          "Major",
+          "Orange / Level 2",
+          "Combination may cause significant harm; alternative therapy usually available",
+          "Alert pharmacist. Hold dispensing until pharmacist reviews. Document."
+        ],
+        [
+          "Moderate",
+          "Yellow / Level 3",
+          "Combination may alter drug effect; monitoring may be needed",
+          "Inform pharmacist. May dispense if pharmacist approves. Note for patient counselling."
+        ],
+        [
+          "Minor",
+          "Green / Level 4",
+          "Interaction is clinically insignificant in most patients",
+          "Note for records. No immediate action usually required. Dispense normally."
+        ],
+        [
+          "Unknown",
+          "Grey",
+          "Insufficient data to classify; may be a novel combination",
+          "Alert pharmacist for clinical review. Do not dismiss — absence of evidence is not evidence of absence."
+        ]
+      ],
+      "type": "table",
+      "caption": "Drug Interaction Severity Classification",
+      "headers": [
+        "Severity Level",
+        "Colour Code",
+        "Clinical Significance",
+        "Required Action"
+      ]
+    },
+    {
+      "body": "Some drug interactions are so dangerous that they should be memorised, not merely relied upon software to catch: Methotrexate + Trimethoprim (bone marrow suppression), Warfarin + Miconazole oral gel (haemorrhage), MAOIs + SSRIs (serotonin syndrome), Simvastatin + Clarithromycin (rhabdomyolysis), Metformin + IV contrast dye (lactic acidosis). These combinations arise regularly in Caribbean prescribing and require immediate pharmacist escalation.",
+      "type": "callout",
+      "title": "Critical Contraindicated Combinations",
+      "variant": "danger"
+    },
+    {
+      "term": "Alert Fatigue",
+      "type": "key-term",
+      "definition": "The phenomenon where pharmacy staff become desensitised to drug interaction alerts due to the sheer volume of warnings, many of which are minor or clinically irrelevant. Alert fatigue can lead to critical alerts being overridden or dismissed, potentially causing patient harm."
+    },
+    {
+      "body": "Studies show that up to 95% of drug interaction alerts are overridden by pharmacy staff in busy settings. This is the paradox of clinical decision support: too few alerts and you miss dangerous interactions; too many and staff become desensitised and override everything, including critical alerts. Effective use of DIS means understanding severity levels so well that you can quickly triage alerts rather than reflexively dismissing them.",
+      "type": "text"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Override the alert and dispense the medication",
+        "Alert the pharmacist and hold dispensing until they review",
+        "Refuse to fill the prescription entirely",
+        "Ignore it — major alerts are usually false positives"
+      ],
+      "question": "A 'Major' (Level 2) drug interaction alert appears on screen. What is the correct first action?",
+      "explanation": "For a Major (Level 2) interaction, the correct first action is to alert the pharmacist and hold dispensing until they have reviewed the interaction. The pharmacist may decide to proceed with monitoring, adjust the dose, or contact the prescriber for an alternative.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 20
+}

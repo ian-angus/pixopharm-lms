@@ -1,0 +1,116 @@
+{
+  "id": "6db1182f-e40e-4b30-a810-4ab47c067b77",
+  "module_id": "dfb48101-2356-4d0d-9a97-2396820bb069",
+  "title": "Jamaica's Dangerous Drugs Act & Controlled Substance Framework",
+  "content": [
+    {
+      "text": "Controlled Substances in Jamaica",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Jamaica's controlled substance framework is governed primarily by the Dangerous Drugs Act and the Food and Drugs Act. These laws classify substances into schedules based on their potential for abuse, medical utility, and risk of harm. For pharmacy technicians, understanding this framework is not optional — mishandling controlled substances can result in criminal charges, imprisonment, and the permanent end of your pharmacy career.",
+      "type": "text"
+    },
+    {
+      "term": "Dangerous Drugs Act (Jamaica)",
+      "type": "key-term",
+      "definition": "The primary legislation governing the import, export, manufacture, sale, distribution, and possession of dangerous drugs in Jamaica. It classifies substances into schedules and prescribes penalties for breaches, including mandatory minimum sentences for trafficking offences. The Act is enforced by the Jamaica Constabulary Force in collaboration with the Pharmacy Council."
+    },
+    {
+      "text": "Drug Schedules in Jamaica",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Jamaica's scheduling system classifies substances based on their potential for abuse, accepted medical use, and safety profile. The most restricted substances are in Schedule 1 (no accepted medical use), while commonly prescribed but still-controlled medications appear in lower schedules. As a pharmacy technician, you will most frequently handle Schedule 4 and Schedule 5 substances in daily practice.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Schedule 1",
+          "Highest restriction; no accepted medical use",
+          "Heroin, LSD, MDMA",
+          "You will never handle these in a pharmacy setting"
+        ],
+        [
+          "Schedule 2",
+          "High abuse potential; accepted medical use with restrictions",
+          "Morphine, Oxycodone, Fentanyl, Methylphenidate",
+          "Handled only in hospital pharmacy under strict pharmacist supervision; requires double-lock storage"
+        ],
+        [
+          "Schedule 3",
+          "Moderate abuse potential",
+          "Codeine (high-strength), Buprenorphine",
+          "May be dispensed in community pharmacy; requires pharmacist verification and controlled drug register entry"
+        ],
+        [
+          "Schedule 4",
+          "Lower abuse potential; widely prescribed",
+          "Diazepam, Tramadol, Phenobarbital, Zopiclone",
+          "Commonly dispensed; requires prescription; recorded in controlled substance register"
+        ],
+        [
+          "Schedule 5",
+          "Lowest restriction; preparations containing small quantities of controlled substances",
+          "Codeine-containing cough syrups (low-dose), Kaolin & morphine mixture",
+          "Available in some cases with pharmacist judgment; must still be recorded"
+        ]
+      ],
+      "type": "table",
+      "caption": "Jamaica's Drug Schedules — Simplified Overview",
+      "headers": [
+        "Schedule",
+        "Description",
+        "Examples",
+        "Pharmacy Technician Relevance"
+      ]
+    },
+    {
+      "text": "Controlled Substance Dispensing Protocols",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "type": "list",
+      "items": [
+        "Receive the prescription and verify it is written by a registered medical practitioner (check the prescriber's registration number)",
+        "Confirm the prescription includes: patient's full name, address, date, drug name, strength, quantity, directions, and prescriber's signature",
+        "Check that the controlled substance quantity is reasonable for the prescribed duration (red flag: unusually large quantities or early refills)",
+        "Enter the dispensing details in the Controlled Drug Register (CDR): date, patient name, prescriber, drug, quantity, balance",
+        "Pharmacist must personally verify the entry and co-sign the CDR",
+        "Store remaining controlled substance stock in the designated safe immediately after dispensing",
+        "Retain the original prescription on file — controlled substance prescriptions cannot be returned to the patient"
+      ],
+      "ordered": true
+    },
+    {
+      "body": "In 2015, Jamaica decriminalised the possession of small quantities of cannabis (up to 2 ounces) through amendments to the Dangerous Drugs Act. However, cannabis remains a controlled substance. It is NOT legal for pharmacy dispensing and has no place in pharmacy practice unless and until specific pharmaceutical cannabis products receive formal approval through the regulatory pathway. Do not advise patients on cannabis use in a pharmacy setting.",
+      "type": "callout",
+      "title": "Cannabis in Jamaica — Legal Nuance",
+      "variant": "danger"
+    },
+    {
+      "body": "Tramadol has become one of the most problematic controlled substances in Jamaica and across the Caribbean. Originally considered lower-risk, it has seen increasing misuse and diversion. Jamaican authorities have tightened controls on Tramadol prescribing and dispensing. As a pharmacy technician, be alert for red flags: multiple Tramadol prescriptions from different doctors, requests for early refills, prescriptions for unusually high doses (above 400mg/day), and patients who become agitated when questioned about their Tramadol use.",
+      "type": "callout",
+      "title": "Tramadol Alert",
+      "variant": "warning"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Schedule 5",
+        "Schedule 3",
+        "Schedule 1",
+        "Schedule 4"
+      ],
+      "question": "Under Jamaica's Dangerous Drugs Act, which schedule includes substances with no accepted medical use?",
+      "explanation": "Schedule 1 of Jamaica's Dangerous Drugs Act includes substances with the highest restriction — those with no accepted medical use and a high potential for abuse. Examples include heroin, LSD, and MDMA. These substances should never appear in a pharmacy setting.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 30
+}

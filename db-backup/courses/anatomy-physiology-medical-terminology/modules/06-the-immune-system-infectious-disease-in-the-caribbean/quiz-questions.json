@@ -1,0 +1,180 @@
+[
+  {
+    "id": "180f0893-de71-4d5b-a029-3250124633e7",
+    "module_id": "bfda189c-515f-4915-b7c9-01dc35e6f45b",
+    "question": "What is the key difference between innate and adaptive immunity?",
+    "options": [
+      "Innate immunity is specific; adaptive immunity is non-specific",
+      "Innate immunity provides immediate, non-specific defence; adaptive immunity provides targeted, memory-based defence",
+      "Innate immunity only works against bacteria; adaptive immunity only works against viruses",
+      "Innate immunity requires vaccination; adaptive immunity is present from birth"
+    ],
+    "correct_answer": 1,
+    "explanation": "Innate immunity provides immediate, non-specific defence against a broad range of pathogens. Adaptive immunity develops over time, targets specific pathogens with precision, and generates immunological memory for faster responses upon re-exposure. Both systems work together to provide comprehensive immune protection.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "7a44cbd2-9580-4271-8438-5b11c9ba188d",
+    "module_id": "bfda189c-515f-4915-b7c9-01dc35e6f45b",
+    "question": "Which analgesic is contraindicated in suspected dengue fever?",
+    "options": [
+      "Paracetamol",
+      "Ibuprofen",
+      "Codeine",
+      "Tramadol"
+    ],
+    "correct_answer": 1,
+    "explanation": "Ibuprofen (and all NSAIDs, plus aspirin) is contraindicated in suspected dengue because it inhibits platelet function and increases bleeding risk. Dengue already causes thrombocytopenia and vascular permeability — adding NSAIDs can precipitate dengue haemorrhagic fever. Paracetamol is the only safe antipyretic/analgesic for dengue.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "d97fdc75-aa55-44df-bd49-6f02c493d639",
+    "module_id": "bfda189c-515f-4915-b7c9-01dc35e6f45b",
+    "question": "The Caribbean has the second-highest HIV prevalence rate of any region in the world, after:",
+    "options": [
+      "South-East Asia",
+      "Eastern Europe",
+      "Sub-Saharan Africa",
+      "Central America"
+    ],
+    "correct_answer": 2,
+    "explanation": "The Caribbean has the second-highest HIV prevalence rate globally, after sub-Saharan Africa. This underscores the importance of pharmacy technicians understanding antiretroviral therapy, ensuring accurate dispensing of ARV regimens, and supporting medication adherence in their communities.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "62f9cea2-8ef1-4b71-898e-06edddd7c34a",
+    "module_id": "bfda189c-515f-4915-b7c9-01dc35e6f45b",
+    "question": "Standard tuberculosis treatment requires a minimum of 6 months with multiple drugs.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": 0,
+    "explanation": "True. Standard TB treatment requires a minimum of 6 months: a 2-month intensive phase with four drugs (isoniazid, rifampicin, pyrazinamide, ethambutol) followed by a 4-month continuation phase with two drugs (isoniazid, rifampicin). Incomplete treatment is the primary driver of drug-resistant TB.",
+    "order_index": 3,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "f30fc9b6-ea3c-4c92-a89a-23d572089bc5",
+    "module_id": "bfda189c-515f-4915-b7c9-01dc35e6f45b",
+    "question": "Which of the following are drivers of antimicrobial resistance in the Caribbean? Select ALL that apply.",
+    "options": [
+      "Over-the-counter access to antibiotics without prescription",
+      "Patients not completing their full antibiotic course",
+      "Inappropriate prescribing by clinicians",
+      "Excessive hand washing",
+      "Use of antibiotics in agriculture"
+    ],
+    "correct_answer": 0,
+    "explanation": "OTC antibiotic access, incomplete antibiotic courses, inappropriate prescribing, and agricultural antibiotic use are all recognised drivers of AMR in the Caribbean. Excessive hand washing is not a driver of AMR — in fact, good hand hygiene helps prevent infections and reduces the need for antibiotics.",
+    "order_index": 4,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "analyze"
+  },
+  {
+    "id": "d6dd8fe9-9f25-4b16-baa7-207ed94885ed",
+    "module_id": "bfda189c-515f-4915-b7c9-01dc35e6f45b",
+    "question": "Match each arboviral disease with its most distinctive clinical feature.",
+    "options": [
+      "Dengue → Retro-orbital pain and risk of haemorrhagic complications",
+      "Chikungunya → Severe, often prolonged joint pain",
+      "Zika → Microcephaly risk in babies of infected pregnant women"
+    ],
+    "correct_answer": 0,
+    "explanation": "All matches are correct: Dengue is characterised by retro-orbital pain and risk of haemorrhagic fever; Chikungunya causes severe, often debilitating joint pain that can persist for months; Zika's most serious complication is microcephaly and other birth defects in babies born to infected mothers.",
+    "order_index": 5,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "414ecda8-58ce-4341-a81c-00ae6f898b75",
+    "module_id": "bfda189c-515f-4915-b7c9-01dc35e6f45b",
+    "question": "A patient in your pharmacy asks for amoxicillin to treat a cold. The most appropriate response is:",
+    "options": [
+      "Sell the amoxicillin — colds are serious infections",
+      "Explain that colds are caused by viruses, and antibiotics only work against bacteria; suggest they speak with the pharmacist about symptomatic relief",
+      "Recommend a stronger antibiotic like ciprofloxacin instead",
+      "Refuse to speak to the patient and ignore their request"
+    ],
+    "correct_answer": 1,
+    "explanation": "Colds are caused by viruses and do not respond to antibiotics. Dispensing amoxicillin for a viral infection contributes to antimicrobial resistance. The correct response is to explain that antibiotics are not effective against viruses and to direct the patient to the pharmacist for appropriate symptomatic treatment (paracetamol, decongestants, etc.). This is antimicrobial stewardship in action.",
+    "order_index": 6,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "evaluate"
+  },
+  {
+    "id": "b41f8f51-9b70-4eac-82a4-bf6c21fa738d",
+    "module_id": "bfda189c-515f-4915-b7c9-01dc35e6f45b",
+    "question": "Place the following events of the adaptive immune response in the correct order.",
+    "options": [
+      "Pathogen enters the body and is detected by antigen-presenting cells",
+      "Antigen is presented to T helper cells",
+      "B cells are activated and produce specific antibodies",
+      "Memory cells are formed for future rapid response"
+    ],
+    "correct_answer": 0,
+    "explanation": "The adaptive immune response follows this sequence: (1) pathogen entry and detection by antigen-presenting cells (dendritic cells, macrophages), (2) antigen presentation to T helper cells, (3) activation of B cells and antibody production, (4) formation of memory cells for faster future responses. This cascade is the basis for how vaccines work.",
+    "order_index": 7,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "hard",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "cb3ed834-ba3a-4b20-afe7-58d4f02b75f6",
+    "module_id": "bfda189c-515f-4915-b7c9-01dc35e6f45b",
+    "question": "All three major Caribbean arboviral diseases (dengue, chikungunya, Zika) are transmitted by the same mosquito genus:",
+    "options": [
+      "Anopheles",
+      "Culex",
+      "Aedes",
+      "Mansonia"
+    ],
+    "correct_answer": 2,
+    "explanation": "Dengue, chikungunya, and Zika are all transmitted primarily by Aedes aegypti mosquitoes (and to a lesser extent Aedes albopictus). This is why vector control measures targeting Aedes mosquitoes — eliminating standing water, using insect repellent, and using bed nets — simultaneously reduce the risk of all three diseases.",
+    "order_index": 8,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "37c463db-dcf9-451a-bc51-3dceef51b51a",
+    "module_id": "bfda189c-515f-4915-b7c9-01dc35e6f45b",
+    "question": "Vaccines work by stimulating which component of the immune system?",
+    "options": [
+      "Innate immunity only",
+      "Adaptive immunity, specifically immunological memory",
+      "The inflammatory response only",
+      "Physical barrier defences like the skin"
+    ],
+    "correct_answer": 1,
+    "explanation": "Vaccines stimulate adaptive immunity by exposing the immune system to a weakened, inactivated, or subunit form of a pathogen. This triggers the production of memory B and T cells without causing disease. Upon future exposure to the real pathogen, these memory cells mount a rapid, effective immune response. While vaccines may also activate some innate immune responses, their primary mechanism is through adaptive immune memory.",
+    "order_index": 9,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "understand"
+  }
+]

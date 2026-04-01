@@ -1,0 +1,92 @@
+[
+  {
+    "id": "4f8451b7-9714-4f42-849a-3d61060a2baa",
+    "module_id": "260b3cfa-6a8e-4515-a5c7-46be02561533",
+    "question": "Which Act governs controlled substances (dangerous drugs) in Trinidad & Tobago?",
+    "options": [
+      "The Pharmacy Board Act (Ch. 29:52)",
+      "The Dangerous Drugs Act (Ch. 11:25)",
+      "The Food and Drugs Act (Ch. 30:01)",
+      "The Controlled Substances Act"
+    ],
+    "correct_answer": 1,
+    "explanation": "The Dangerous Drugs Act (Chapter 11:25) governs controlled substances in Trinidad & Tobago, implementing the country's obligations under UN drug conventions.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "d98f1c27-2a7a-4610-a8be-ff9d229b8c2f",
+    "module_id": "260b3cfa-6a8e-4515-a5c7-46be02561533",
+    "question": "In Jamaica, can cannabis be dispensed from a regular community pharmacy?",
+    "options": [
+      "Yes, since the 2015 amendment legalised it",
+      "No — medical cannabis is dispensed through licensed herb houses/dispensaries, not regular pharmacies",
+      "Yes, but only with a prescription from a specialist",
+      "Only in pharmacies within hospitals"
+    ],
+    "correct_answer": 1,
+    "explanation": "Despite decriminalisation, medical cannabis in Jamaica is dispensed through facilities licensed by the Cannabis Licensing Authority (CLA), not regular community pharmacies. However, pharmacy technicians should be aware of patients using cannabis alongside prescribed medications due to potential interactions.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "ec191ee2-5307-45a0-8578-d00ed5d175e7",
+    "module_id": "260b3cfa-6a8e-4515-a5c7-46be02561533",
+    "question": "A patient travelling from Trinidad visits a pharmacy in Jamaica and asks to buy a codeine-based cough syrup without a prescription, saying 'I can buy this at home without a script.' What is the correct response?",
+    "options": [
+      "Sell it — if it's legal in Trinidad, it's fine",
+      "Refuse and explain that ALL codeine products require a prescription in Jamaica, regardless of the rules in other Caribbean islands",
+      "Sell a limited quantity as a courtesy to a fellow Caribbean citizen",
+      "Ask the patient to provide a Trinidadian prescription"
+    ],
+    "correct_answer": 1,
+    "explanation": "Jamaica classifies ALL codeine products as prescription-only. The rules of the island where you are physically dispensing apply — not the patient's home island. A Trinidadian prescription is also not valid in Jamaica. The patient would need a prescription from a Jamaica-registered prescriber.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "6d98acdc-a046-426d-b91f-1d2b875d0954",
+    "module_id": "260b3cfa-6a8e-4515-a5c7-46be02561533",
+    "question": "What is the primary role of the Barbados Drug Service?",
+    "options": [
+      "Prosecuting drug offences",
+      "Registering pharmacists",
+      "Central procurement, storage, and distribution of pharmaceuticals for the public health system",
+      "Regulating private pharmacy pricing"
+    ],
+    "correct_answer": 2,
+    "explanation": "The Barbados Drug Service centrally procures medications for the public health system, maintains the National Drug Formulary, operates the pharmaceutical warehouse, and distributes medications to Queen Elizabeth Hospital and polyclinics across the island.",
+    "order_index": 3,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "7c89c6ae-4aa6-4dd6-9dcd-e418c4ae7988",
+    "module_id": "260b3cfa-6a8e-4515-a5c7-46be02561533",
+    "question": "What is the Jamaica National Health Fund (NHF)?",
+    "options": [
+      "A private insurance company for pharmacists",
+      "A government programme providing subsidies for essential medications for qualifying chronic disease patients",
+      "A fund that pays for pharmacy technician training",
+      "An international aid programme for Caribbean pharmaceuticals"
+    ],
+    "correct_answer": 1,
+    "explanation": "The NHF is Jamaica's government programme that subsidises essential medications for qualifying patients with chronic conditions including diabetes, hypertension, arthritis, and asthma. Pharmacies claim reimbursement electronically, and generic prescribing is strongly encouraged under the programme.",
+    "order_index": 4,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  }
+]

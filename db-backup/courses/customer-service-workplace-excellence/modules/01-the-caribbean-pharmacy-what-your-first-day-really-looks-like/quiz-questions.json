@@ -1,0 +1,182 @@
+[
+  {
+    "id": "ce7cce3d-79f3-4342-b66b-0309f05b4662",
+    "module_id": "3f5fc7a2-b1cf-4c21-830b-56e7b7de19bf",
+    "question": "What is the primary focus for a pharmacy technician on their first day?",
+    "options": [
+      "Speed — fill as many prescriptions as possible",
+      "Accuracy — take your time and ask questions when unsure",
+      "Independence — show you can work without supervision",
+      "Sales — upsell OTC products to customers"
+    ],
+    "correct_answer": 1,
+    "explanation": "Accuracy must be the priority for new technicians. Speed develops naturally with experience and familiarity with the pharmacy's systems, but errors on early shifts can harm patients and severely damage a new technician's confidence.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "ac55477d-5d70-471a-841d-8fc35e99dd6b",
+    "module_id": "3f5fc7a2-b1cf-4c21-830b-56e7b7de19bf",
+    "question": "A patient asks you whether they can take ibuprofen with their prescribed warfarin. What should you do?",
+    "options": [
+      "Tell them it is fine since ibuprofen is over-the-counter",
+      "Advise them to take a lower dose of ibuprofen",
+      "Refer them to the pharmacist for clinical advice",
+      "Look up the interaction online and share the result"
+    ],
+    "correct_answer": 2,
+    "explanation": "Drug interactions — even involving OTC products — are clinical questions that fall within the pharmacist's scope of practice. Ibuprofen and warfarin is actually a significant interaction that increases bleeding risk. Referring to the pharmacist protects the patient and you.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "b4ac9952-c453-4b56-adfd-144fece3a248",
+    "module_id": "3f5fc7a2-b1cf-4c21-830b-56e7b7de19bf",
+    "question": "During a quiet period between customer rushes, which activity is MOST productive for a pharmacy technician?",
+    "options": [
+      "Taking an extended lunch break",
+      "Catching up on personal phone messages",
+      "Restocking shelves, cleaning equipment, and preparing for the next rush",
+      "Leaving early if the pharmacist agrees"
+    ],
+    "correct_answer": 2,
+    "explanation": "The dead zone between rushes is valuable preparation time. Restocking, reorganising, and cleaning during quiet periods prevents bottlenecks and stock issues during peak hours. Experienced technicians treat this time as essential, not optional.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "86c2a8d8-3757-430a-bbf7-2871e28a65a9",
+    "module_id": "3f5fc7a2-b1cf-4c21-830b-56e7b7de19bf",
+    "question": "Why should a new pharmacy technician wait approximately 30 days before suggesting process changes?",
+    "options": [
+      "Because it takes 30 days to pass probation",
+      "Because existing processes may have reasons that are not immediately obvious",
+      "Because the pharmacist will not listen to a new employee",
+      "Because suggesting changes is not part of a technician's role"
+    ],
+    "correct_answer": 1,
+    "explanation": "Established pharmacy processes often exist for reasons that are not immediately apparent to newcomers. Observing for 30 days allows you to understand the full context — including staffing patterns, supplier schedules, and patient needs — before proposing improvements.",
+    "order_index": 3,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "analyze"
+  },
+  {
+    "id": "232a001d-6bc9-43d0-afdd-0cc719482359",
+    "module_id": "3f5fc7a2-b1cf-4c21-830b-56e7b7de19bf",
+    "question": "Which of the following is a breach of patient confidentiality?",
+    "options": [
+      "Telling a colleague pharmacist about a drug interaction concern for a shared patient",
+      "Discussing a patient's prescription with their spouse who has written authorisation",
+      "Mentioning to a customer what medication another patient was collecting",
+      "Documenting a dispensing note in the patient's pharmacy record"
+    ],
+    "correct_answer": 2,
+    "explanation": "Sharing any patient's medication information with another customer — regardless of their relationship — is a clear breach of confidentiality. Even well-intentioned enquiries from neighbours or friends must be declined. The other options describe appropriate information sharing within care or with proper authorisation.",
+    "order_index": 4,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "ab46079c-f7f1-43b4-a4a3-601c3d2b13b9",
+    "module_id": "3f5fc7a2-b1cf-4c21-830b-56e7b7de19bf",
+    "question": "What is a common cause of bottlenecks at the prescription pick-up stage?",
+    "options": [
+      "Too many pharmacists on duty",
+      "Prescriptions not clearly labelled or stored systematically",
+      "Patients arriving too early",
+      "The pharmacy being too large"
+    ],
+    "correct_answer": 1,
+    "explanation": "Pick-up confusion is one of the most common bottlenecks in pharmacy workflow. When prescriptions are not systematically labelled, bagged, and stored (alphabetically, by number, or by colour code), staff waste time searching for the right order while customers wait.",
+    "order_index": 5,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "9a66a945-766a-4528-82bd-bd54a24507f3",
+    "module_id": "3f5fc7a2-b1cf-4c21-830b-56e7b7de19bf",
+    "question": "A busy Caribbean community pharmacy in Trinidad might handle how many prescriptions per day?",
+    "options": [
+      "20–50",
+      "50–100",
+      "200–300",
+      "500–1000"
+    ],
+    "correct_answer": 2,
+    "explanation": "A busy community pharmacy in Trinidad — such as those in the Hi-Lo or Pennywise chains — can handle 200–300 prescriptions per day. This high volume demands efficient workflow, strong teamwork, and well-maintained inventory systems.",
+    "order_index": 6,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "055a705f-51db-484b-9fa7-6b472893b6f4",
+    "module_id": "3f5fc7a2-b1cf-4c21-830b-56e7b7de19bf",
+    "question": "Which of the following BEST describes the relationship between a pharmacy technician and the pharmacist?",
+    "options": [
+      "The technician works independently and consults the pharmacist only for emergencies",
+      "The technician handles operational tasks so the pharmacist can focus on clinical responsibilities",
+      "The technician and pharmacist have identical roles but different pay grades",
+      "The technician supervises front-of-house while the pharmacist stays in the back"
+    ],
+    "correct_answer": 1,
+    "explanation": "The pharmacy technician's role is to manage the operational workflow — data entry, preparation, inventory, customer service — so the pharmacist can focus on clinical tasks like verification, counselling, and interaction checking. This complementary relationship is the foundation of a well-functioning pharmacy.",
+    "order_index": 7,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "457f5aa8-a891-443d-8a69-4831732f772c",
+    "module_id": "3f5fc7a2-b1cf-4c21-830b-56e7b7de19bf",
+    "question": "It is acceptable to discuss a patient's medications with their family member as long as the family member seems genuinely concerned.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": 1,
+    "explanation": "Patient confidentiality cannot be breached based on perceived good intentions. Information can only be shared with family members if the patient has given explicit consent. Concern from a relative does not override the patient's right to privacy.",
+    "order_index": 8,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "d6fdd930-b740-41c3-87cc-dad904e4fd00",
+    "module_id": "3f5fc7a2-b1cf-4c21-830b-56e7b7de19bf",
+    "question": "Arrange the prescription workflow steps in the correct order:",
+    "options": [
+      "Pharmacist verification",
+      "Prescription drop-off and intake",
+      "Data entry into pharmacy system",
+      "Bagging, storage, and patient pick-up",
+      "Medication filling and preparation",
+      "Insurance adjudication"
+    ],
+    "correct_answer": 0,
+    "explanation": "The correct prescription workflow is: (1) Drop-off and intake, (2) Data entry, (3) Insurance adjudication, (4) Filling and preparation, (5) Pharmacist verification, (6) Bagging, storage, and pick-up. Each step is sequential, and skipping or reordering can cause errors.",
+    "order_index": 9,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  }
+]

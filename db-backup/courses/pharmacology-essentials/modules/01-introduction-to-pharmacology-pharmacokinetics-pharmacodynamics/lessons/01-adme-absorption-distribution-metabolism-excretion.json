@@ -1,0 +1,113 @@
+{
+  "id": "507f06d2-31aa-4ae4-8ed4-106e46e216e6",
+  "module_id": "9ac6450c-aeb9-430c-9763-10a0ce1064e5",
+  "title": "ADME: Absorption, Distribution, Metabolism & Excretion",
+  "content": [
+    {
+      "text": "The Journey of a Drug Through the Body",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "From the moment a patient swallows a tablet at a pharmacy in Bridgetown, Barbados, to the moment that drug is eliminated from their body, it undergoes four major processes: Absorption, Distribution, Metabolism, and Excretion — collectively known as ADME. Understanding these processes explains why drugs are formulated differently, why dosing intervals vary, and why certain patient populations need dose adjustments.",
+      "type": "text"
+    },
+    {
+      "text": "Absorption",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Absorption is the process by which a drug moves from its site of administration into the bloodstream. For oral medications — the most common form dispensed in Caribbean pharmacies — absorption occurs primarily in the small intestine. Factors affecting absorption include the drug's solubility, the formulation (tablet vs liquid vs capsule), gastric pH, food in the stomach, and intestinal blood flow.",
+      "type": "text"
+    },
+    {
+      "term": "Bioavailability",
+      "type": "key-term",
+      "definition": "The fraction of an administered drug that reaches the systemic circulation in unchanged form. Intravenous drugs have 100% bioavailability. Oral drugs have lower bioavailability due to incomplete absorption and first-pass metabolism in the liver."
+    },
+    {
+      "text": "Distribution",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Once in the bloodstream, the drug is distributed to tissues and organs throughout the body. Distribution depends on blood flow to the tissue, the drug's ability to cross cell membranes, and protein binding. Highly protein-bound drugs (like warfarin, which is 99% bound to albumin) have a small free fraction available to produce effects. This is why drug interactions that displace protein-bound drugs can be dangerous.",
+      "type": "text"
+    },
+    {
+      "text": "Metabolism (Biotransformation)",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "The liver is the primary site of drug metabolism, using enzyme systems — particularly the cytochrome P450 (CYP450) family — to convert drugs into metabolites that are usually more water-soluble and easier to excrete. Some drugs are prodrugs that must be metabolised to their active form (e.g., enalapril is converted to enalaprilat). Others are deactivated by metabolism.",
+      "type": "text"
+    },
+    {
+      "body": "Grapefruit juice inhibits the CYP3A4 enzyme in the gut wall and liver. This is particularly relevant in the Caribbean where citrus fruits are abundant. Patients on simvastatin, amlodipine, or cyclosporine should be warned about grapefruit interaction. A single glass of grapefruit juice can increase drug levels by 200-400%.",
+      "type": "callout",
+      "title": "Grapefruit and CYP3A4",
+      "variant": "warning"
+    },
+    {
+      "text": "Excretion",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Most drugs and their metabolites are excreted by the kidneys in urine. Other routes include bile (faeces), lungs (exhaled gases), sweat, and breast milk. Renal function directly affects drug clearance, which is why elderly patients and those with kidney disease often need lower doses. In the Caribbean, where chronic kidney disease is prevalent (especially in patients with longstanding hypertension and diabetes), dose adjustments are a daily consideration.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Absorption",
+          "Small intestine (oral)",
+          "Formulation, food, pH",
+          "Metformin taken with food to reduce GI upset and improve tolerability"
+        ],
+        [
+          "Distribution",
+          "Bloodstream → tissues",
+          "Protein binding, lipid solubility",
+          "Warfarin is 99% protein-bound — displacement interactions are common"
+        ],
+        [
+          "Metabolism",
+          "Liver (CYP450 enzymes)",
+          "Enzyme induction/inhibition",
+          "Grapefruit juice inhibits CYP3A4, affecting simvastatin levels"
+        ],
+        [
+          "Excretion",
+          "Kidneys (urine)",
+          "Renal function (GFR)",
+          "Metformin dose reduced in patients with CKD (common in Caribbean diabetics)"
+        ]
+      ],
+      "type": "table",
+      "caption": "ADME Summary with Caribbean Examples",
+      "headers": [
+        "Process",
+        "Primary Site",
+        "Key Factor",
+        "Caribbean Example"
+      ]
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Because gentamicin is poorly absorbed in patients with kidney disease",
+        "Because the kidneys are the primary route of gentamicin excretion, and impaired renal function slows clearance",
+        "Because kidney disease increases gentamicin metabolism in the liver",
+        "Because kidney disease reduces gentamicin distribution to infected tissues"
+      ],
+      "question": "A patient with chronic kidney disease in Jamaica is prescribed gentamicin. Why might the prescriber reduce the dose or extend the dosing interval?",
+      "explanation": "Gentamicin is almost entirely excreted by the kidneys. In patients with impaired renal function, the drug accumulates to potentially toxic levels if the standard dose is used. Dose reduction or extended intervals are necessary to prevent nephrotoxicity and ototoxicity.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 35
+}

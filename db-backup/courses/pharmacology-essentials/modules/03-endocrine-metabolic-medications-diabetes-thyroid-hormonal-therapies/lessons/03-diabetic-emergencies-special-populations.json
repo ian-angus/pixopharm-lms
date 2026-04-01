@@ -1,0 +1,81 @@
+{
+  "id": "bac0ec4e-5172-4f96-a416-178d5e3392c9",
+  "module_id": "5f319f26-d171-487f-81fd-34146941df05",
+  "title": "Diabetic Emergencies & Special Populations",
+  "content": [
+    {
+      "text": "When Blood Sugar Goes Critical",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Pharmacy technicians in the Caribbean must recognise the signs of diabetic emergencies because patients experiencing them may walk into the pharmacy before reaching a hospital. The two major emergencies are severe hypoglycaemia (blood glucose critically low) and diabetic ketoacidosis (DKA — blood glucose critically high with ketone production).",
+      "type": "text"
+    },
+    {
+      "term": "Diabetic Ketoacidosis (DKA)",
+      "type": "key-term",
+      "definition": "A life-threatening emergency most common in type 1 diabetes, characterised by hyperglycaemia (>14 mmol/L), ketosis, and metabolic acidosis. Triggered by insulin omission, infection, or physiological stress. Requires emergency IV fluids, insulin, and electrolyte replacement. The fruity breath odour (acetone) is a classic diagnostic clue."
+    },
+    {
+      "body": "In the Caribbean, diabetic emergencies are often precipitated by medication non-adherence (cannot afford insulin, ran out of tablets), acute infections (which increase blood glucose), dehydration from tropical heat, and cultural fasting practices. Pharmacy technicians should also be aware of the SGLT2 inhibitor risk of euglycaemic DKA — where ketoacidosis occurs with near-normal blood glucose levels, making diagnosis more challenging.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Blood glucose",
+          "Below 4 mmol/L (70 mg/dL)",
+          "Above 14 mmol/L (250 mg/dL)"
+        ],
+        [
+          "Onset",
+          "Rapid (minutes)",
+          "Gradual (hours to days)"
+        ],
+        [
+          "Symptoms",
+          "Sweating, trembling, confusion, seizures",
+          "Thirst, frequent urination, nausea, fruity breath, confusion"
+        ],
+        [
+          "Immediate action",
+          "Fast-acting sugar (glucose tablets, juice)",
+          "Emergency medical referral — IV fluids and insulin needed"
+        ],
+        [
+          "Common cause",
+          "Missed meal, excess insulin/sulfonylurea",
+          "Insulin omission, infection, illness"
+        ]
+      ],
+      "type": "table",
+      "caption": "Hypoglycaemia vs Diabetic Ketoacidosis",
+      "headers": [
+        "Feature",
+        "Hypoglycaemia",
+        "Diabetic Ketoacidosis (DKA)"
+      ]
+    },
+    {
+      "body": "The Caribbean has significant Muslim populations, particularly in Trinidad and Tobago and Guyana. During Ramadan, Muslim patients with diabetes may fast from sunrise to sunset. This dramatically increases the risk of hypoglycaemia (especially with sulfonylureas and insulin) and hyperglycaemia (when breaking fast). Medication timing adjustments are essential — always refer to the pharmacist.",
+      "type": "callout",
+      "title": "Ramadan and Diabetic Fasting",
+      "variant": "danger"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "DKA — give insulin immediately",
+        "Hypoglycaemia — give fast-acting carbohydrate (juice or glucose) and monitor",
+        "Drug allergy — give an antihistamine",
+        "Dehydration — give water and salt"
+      ],
+      "question": "A diabetic patient walks into your pharmacy in Grenada appearing confused with sweaty palms. Which emergency is most likely and what should you do first?",
+      "explanation": "Confusion with sweating in a diabetic patient strongly suggests hypoglycaemia. The immediate response is to give a fast-acting carbohydrate. If the patient cannot swallow safely, call emergency services. Never give insulin to a hypoglycaemic patient.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 3,
+  "duration_minutes": 20
+}

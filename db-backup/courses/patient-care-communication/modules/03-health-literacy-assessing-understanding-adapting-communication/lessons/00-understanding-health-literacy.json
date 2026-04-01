@@ -1,0 +1,79 @@
+{
+  "id": "48d05221-4687-4d8f-90f6-72f02b7ebb66",
+  "module_id": "f2c4ca68-e98b-42d1-8711-b24c619e1e6b",
+  "title": "Understanding Health Literacy",
+  "content": [
+    {
+      "text": "The Hidden Challenge: When Patients Cannot Understand Their Own Care",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Health literacy is not the same as general literacy. A person may be able to read a newspaper but unable to interpret a medication label, calculate a dosage from a chart, or navigate the healthcare system. Health literacy is defined by the WHO as 'the cognitive and social skills which determine the motivation and ability of individuals to gain access to, understand, and use information in ways which promote and maintain good health.'",
+      "type": "text"
+    },
+    {
+      "body": "In the Caribbean, health literacy presents unique challenges. While overall adult literacy rates are high — Barbados at 99.6%, Trinidad & Tobago at 99.0%, Jamaica at 88.7% — health literacy is significantly lower. A patient who can read a cricket scorecard may struggle with the instructions 'Take 500 mg PO BID with food PRN for pain.' The gap between general literacy and health literacy is a major, underrecognised cause of medication errors, hospital readmissions, and poor chronic disease outcomes.",
+      "type": "text"
+    },
+    {
+      "term": "Health Literacy",
+      "type": "key-term",
+      "definition": "The degree to which individuals have the capacity to obtain, process, and understand basic health information and services needed to make appropriate health decisions. It encompasses reading medication labels, understanding dosing instructions, navigating appointment systems, and interpreting health information from various sources."
+    },
+    {
+      "body": "Studies suggest that 40-50% of adults in the Caribbean have inadequate or marginal health literacy. This means nearly half of all patients who visit your pharmacy may not fully understand their medication instructions, even if they can read the words on the label. Low health literacy is associated with 50% higher hospitalisation rates, 30% higher emergency room visits, and significantly poorer chronic disease outcomes.",
+      "type": "callout",
+      "title": "The Scale of the Problem",
+      "variant": "danger"
+    },
+    {
+      "rows": [
+        [
+          "Can read a newspaper article",
+          "Can interpret a medication information leaflet"
+        ],
+        [
+          "Can write a shopping list",
+          "Can fill out a health insurance form correctly"
+        ],
+        [
+          "Can do basic arithmetic",
+          "Can calculate how many tablets to take if prescribed 'one tablet TDS'"
+        ],
+        [
+          "Can follow a recipe",
+          "Can follow a complex medication regimen with multiple drugs at different times"
+        ],
+        [
+          "Can use a telephone",
+          "Can navigate an automated pharmacy refill system"
+        ]
+      ],
+      "type": "table",
+      "caption": "General Literacy vs. Health Literacy",
+      "headers": [
+        "General Literacy",
+        "Health Literacy"
+      ]
+    },
+    {
+      "body": "The consequences of low health literacy are not abstract: they show up every day in Caribbean pharmacies as missed doses, doubled doses, medications taken at the wrong time, medications stored incorrectly, and patients who simply stop taking their medications because they were confused and too embarrassed to ask for help.",
+      "type": "text"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "The patient is intentionally non-adherent",
+        "The prescription is written incorrectly",
+        "The gap between general literacy and health literacy — the patient can read but cannot interpret medical abbreviations or connect dosing to meals",
+        "The patient needs a different medication"
+      ],
+      "question": "A patient with a high school education receives a prescription for metformin 500 mg to be taken 'PO BID with meals.' They take one tablet in the morning without food and skip the evening dose because they 'do not eat at night.' What does this scenario illustrate?",
+      "explanation": "This patient can read but does not understand the medical abbreviations 'PO' (by mouth) and 'BID' (twice daily), nor do they connect 'with meals' to their actual eating pattern. This is a classic health literacy gap: the patient is literate but not health literate. Clear, plain-language instructions ('Swallow one tablet with your breakfast and one with your dinner') would have prevented this error.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 20
+}

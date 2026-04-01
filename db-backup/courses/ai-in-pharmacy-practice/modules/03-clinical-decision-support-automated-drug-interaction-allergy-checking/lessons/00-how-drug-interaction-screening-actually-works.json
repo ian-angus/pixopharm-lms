@@ -1,0 +1,86 @@
+{
+  "id": "2c91f180-5a15-4cd0-8f97-9fa47ff645df",
+  "module_id": "82cf2650-5f9f-4f8f-9460-cd77a32d431e",
+  "title": "How Drug Interaction Screening Actually Works",
+  "content": [
+    {
+      "text": "Inside the Black Box: DIS Technology Explained",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Every time you enter a prescription into your pharmacy's dispensing software and the system flags a drug interaction, you are witnessing a clinical decision support system in action. But how does it actually work? Understanding the technology behind these alerts makes you a more effective user — you will know why some alerts are more reliable than others, why false positives occur, and when to trust the system versus when to dig deeper.",
+      "type": "text"
+    },
+    {
+      "body": "Drug interaction screening systems typically work in one of two ways, or a combination of both. Rule-based systems use a database of known interactions, coded by experts, that the software checks against whenever a new medication is entered. Machine learning-based systems analyse patterns in large datasets of patient records, prescriptions, and adverse event reports to identify potential interactions, including ones not yet documented in the literature.",
+      "type": "text"
+    },
+    {
+      "term": "Drug Interaction Screening (DIS)",
+      "type": "key-term",
+      "definition": "An automated system that checks whether two or more medications prescribed to the same patient have the potential to interact, causing altered drug effects, increased toxicity, or reduced efficacy. DIS is a core function of clinical decision support in pharmacy software."
+    },
+    {
+      "rows": [
+        [
+          "Knowledge source",
+          "Expert-curated database of known interactions",
+          "Learned from large datasets of patient records and adverse events"
+        ],
+        [
+          "Coverage",
+          "Only detects interactions already catalogued",
+          "Can potentially identify novel interactions not yet in the literature"
+        ],
+        [
+          "Accuracy",
+          "High for known interactions; misses unknown ones",
+          "May catch novel interactions but also generates more false positives"
+        ],
+        [
+          "Update frequency",
+          "Updated when experts add new entries (often quarterly)",
+          "Continuously learns from new data (if designed to do so)"
+        ],
+        [
+          "Explainability",
+          "Clear — can show exactly which rule triggered the alert",
+          "Often a 'black box' — harder to explain why an alert was generated"
+        ],
+        [
+          "Caribbean relevance",
+          "Well-suited; interactions are universal chemistry",
+          "Potentially less accurate if trained primarily on non-Caribbean populations"
+        ]
+      ],
+      "type": "table",
+      "caption": "Rule-Based vs. ML-Based Interaction Detection",
+      "headers": [
+        "Feature",
+        "Rule-Based",
+        "Machine Learning-Based"
+      ]
+    },
+    {
+      "body": "The most common DIS databases used in Caribbean pharmacies include Lexicomp, First Databank (FDB), Micromedex (Truven Health Analytics), and the British National Formulary (BNF) interaction checker. Locally developed pharmacy software in Trinidad, Jamaica, and Barbados typically integrates with one of these databases for interaction checking. The choice of database can affect which interactions are flagged and how they are classified.",
+      "type": "callout",
+      "title": "Systems Used in the Caribbean",
+      "variant": "info"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "ML systems never produce false positives",
+        "ML systems can potentially identify novel interactions not yet catalogued by experts",
+        "ML systems are always more accurate",
+        "ML systems do not require any data to function"
+      ],
+      "question": "What is a key advantage of ML-based drug interaction screening over rule-based systems?",
+      "explanation": "The key advantage of ML-based DIS is the potential to identify novel drug interactions by analysing patterns in patient data that have not yet been formally catalogued. However, this comes at the cost of more false positives and less explainable alerts.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 20
+}

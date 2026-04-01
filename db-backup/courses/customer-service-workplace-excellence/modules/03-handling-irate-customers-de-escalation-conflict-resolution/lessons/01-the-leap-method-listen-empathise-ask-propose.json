@@ -1,0 +1,120 @@
+{
+  "id": "bcc5d4aa-3096-4244-abd9-d1706704b09d",
+  "module_id": "1b66b300-d870-483b-ad7a-89886af4eca1",
+  "title": "The LEAP Method: Listen, Empathise, Ask, Propose",
+  "content": [
+    {
+      "text": "A Four-Step Framework for De-escalation",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "When a customer is angry, your instinct will be to defend yourself, explain the situation, or fix the problem immediately. All three of those instincts are wrong — at least as a first response. An angry person does not want explanations. They want to be heard. The LEAP method gives you a structured approach to de-escalation that works because it addresses the emotional need before the practical one.",
+      "type": "text"
+    },
+    {
+      "term": "LEAP Method",
+      "type": "key-term",
+      "definition": "A four-step de-escalation framework: Listen (give the person your full attention without interrupting), Empathise (acknowledge their feelings), Ask (clarify the specific issue with open-ended questions), and Propose (offer a solution or next step). The method works because it addresses the emotional dimension of the conflict before attempting a practical resolution."
+    },
+    {
+      "text": "Step 1: Listen",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "When someone is angry, the most powerful thing you can do is shut up and listen. Not the distracted 'uh-huh' kind of listening — real, focused, I-am-giving-you-my-full-attention listening. Put down what you are working on. Make eye contact. Let them talk. Do not interrupt, even if they are saying something factually wrong. Let the storm pass. Most angry outbursts burn themselves out within 30–60 seconds if the person feels heard.",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Stop what you are doing and face the customer fully",
+        "Make natural eye contact — not a stare, but engaged attention",
+        "Do not interrupt, even if they are wrong about something",
+        "Nod to show you are following",
+        "Avoid defensive body language — no crossed arms, no stepping back, no eye-rolling",
+        "Let them finish completely before you speak"
+      ],
+      "ordered": false
+    },
+    {
+      "text": "Step 2: Empathise",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Once they have finished, your first words should acknowledge their feelings — not justify the situation, not explain what happened, not offer a solution. Just acknowledge. 'I can see how frustrating this is.' 'I understand that this is not what you expected.' 'You are right to be upset about this.' These sentences are not admissions of fault — they are emotional bridges that tell the customer you have heard them as a human being.",
+      "type": "text"
+    },
+    {
+      "body": "Memorise three or four empathy phrases and use them genuinely: 'I understand how frustrating this must be.' 'I can see this is important to you.' 'I would feel the same way in your situation.' 'That sounds really stressful.' These are not scripts — they are emotional tools. Mean them when you say them.",
+      "type": "callout",
+      "title": "Empathy Phrases That Work",
+      "variant": "tip"
+    },
+    {
+      "text": "Step 3: Ask",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "After listening and empathising, you need to understand the specific problem — because angry customers often mix multiple issues together. Ask open-ended questions: 'Can you tell me exactly what happened with the insurance?' 'What did the doctor say about the medication change?' 'What would the best outcome look like for you?' These questions shift the interaction from emotional venting to problem-solving.",
+      "type": "text"
+    },
+    {
+      "text": "Step 4: Propose",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Only after listening, empathising, and asking do you propose a solution. The proposal should be concrete, realistic, and framed as a collaborative step: 'Here is what I can do for you right now...' 'Let me check with the pharmacist about...' 'I can call the other branch to see if they have it in stock.' If you cannot solve the problem yourself, explain clearly what the next steps are and who will handle them.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Listen",
+          "Full attention, no interruption, eye contact",
+          "(Nothing — just listen. Nod. Show you are present.)"
+        ],
+        [
+          "Empathise",
+          "Acknowledge their feeling, validate their frustration",
+          "'I completely understand your frustration. This should not have happened.'"
+        ],
+        [
+          "Ask",
+          "Clarify the specific issue with open questions",
+          "'Can you tell me exactly what happened when you tried to collect the prescription?'"
+        ],
+        [
+          "Propose",
+          "Offer a concrete next step",
+          "'Here is what I can do: I am going to call the other branch right now to check their stock. If they have it, I can arrange a transfer by this afternoon.'"
+        ]
+      ],
+      "type": "table",
+      "caption": "LEAP Method in Action",
+      "headers": [
+        "Step",
+        "What You Do",
+        "What You Say"
+      ]
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Explain why the medication is out of stock",
+        "Offer to check other branches immediately",
+        "Listen silently with full attention until they finish",
+        "Ask them to calm down"
+      ],
+      "question": "What should be your FIRST response when a customer begins shouting about a stock-out?",
+      "explanation": "The first step of the LEAP method is Listen. An angry person needs to be heard before they can hear you. Jumping to explanations or solutions before they have finished venting is counterproductive. Asking them to calm down almost always makes things worse.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 40
+}

@@ -1,0 +1,124 @@
+{
+  "id": "fadaa0be-75e4-4f0c-9807-eb4139385dbe",
+  "module_id": "d1a5c2a4-b317-4ac6-8cd0-1637e571461c",
+  "title": "Incident Reporting: Systems, Forms & Building a Reporting Culture",
+  "content": [
+    {
+      "text": "Capturing Incidents to Drive Improvement",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "An incident reporting system is the foundation of organisational learning from errors. Without systematic reporting, errors remain isolated events — known only to those directly involved and lost as soon as memories fade. With reporting, errors become data: data that can be analysed, trended, and used to identify systemic weaknesses and drive targeted improvements. The goal is not to compile a record of failures but to build a living knowledge base that makes the pharmacy safer over time.",
+      "type": "text"
+    },
+    {
+      "body": "An effective medication incident report captures several essential elements: what happened (factual description of the error), when it happened (date, time, shift conditions), who was involved (without assigning blame), what medications were involved (drug name, strength, dosage form), the outcome (patient harm category using NCC MERP), contributing factors (system, environment, human), actions taken (immediate corrections), and recommended system changes (prevention strategies).",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Date/Time",
+          "When the error occurred or was discovered",
+          "15 March 2026, 14:30 hrs"
+        ],
+        [
+          "Reporter",
+          "Person reporting (may differ from person involved)",
+          "Pharmacy Technician, initials JM"
+        ],
+        [
+          "Event Description",
+          "Factual, non-judgmental narrative of what happened",
+          "Patient received enalapril 20 mg instead of prescribed enalapril 5 mg"
+        ],
+        [
+          "Medications Involved",
+          "Drug name, strength, dosage form, manufacturer",
+          "Enalapril 20 mg tablets, manufactured by Generic Pharma Ltd, Lot #GP2025-1102"
+        ],
+        [
+          "Patient Outcome",
+          "NCC MERP category and description",
+          "Category E — patient experienced hypotension requiring GP visit"
+        ],
+        [
+          "Contributing Factors",
+          "System, environment, and human factors identified",
+          "Similar packaging for different strengths; interruption during dispensing; no barcode verification"
+        ],
+        [
+          "Immediate Action",
+          "What was done to address the immediate situation",
+          "Patient contacted, correct medication dispensed, GP notified"
+        ],
+        [
+          "Recommended Changes",
+          "System improvements to prevent recurrence",
+          "Separate storage of different strengths; colour-coded labels; interruption-free zone during dispensing"
+        ]
+      ],
+      "type": "table",
+      "caption": "Essential Elements of a Medication Incident Report",
+      "headers": [
+        "Element",
+        "Description",
+        "Example"
+      ]
+    },
+    {
+      "body": "Most Caribbean pharmacies do not yet have formal electronic incident reporting systems. Paper-based reporting using standardised forms is a practical starting point. The form should be kept at the dispensing bench, completed immediately after the event, and reviewed by the pharmacist-in-charge within 24 hours. Even a simple logbook — if consistently used and regularly reviewed — provides valuable safety data.",
+      "type": "callout",
+      "title": "Caribbean Reporting Infrastructure",
+      "variant": "info"
+    },
+    {
+      "text": "Building a Reporting Culture",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "A reporting system is only as good as the willingness of staff to use it. Research consistently shows that fear of punishment is the single greatest barrier to incident reporting. Building a reporting culture requires: leadership commitment to just culture principles, visible evidence that reports lead to system changes (not individual punishment), feedback loops that show reporters how their reports were used, celebration of near-miss reporting as a proactive safety behaviour, and regular team meetings to review trends and implement improvements.",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Make reporting easy — a simple, one-page form available at the dispensing bench",
+        "Make reporting safe — guarantee no punishment for honest error reports",
+        "Make reporting worthwhile — share aggregated data and resulting improvements with the team monthly",
+        "Report near-misses, not just actual errors — near-misses are free lessons without patient harm",
+        "Set a team target — aim for increasing reports (more reports = better safety culture, not worse safety)",
+        "Review reports as a team — monthly safety meetings build collective learning and accountability"
+      ],
+      "ordered": false
+    },
+    {
+      "type": "case-study",
+      "title": "Case Study: Building a Reporting Culture in a Bridgetown Pharmacy",
+      "scenario": "A community pharmacy in Bridgetown, Barbados, has operated for 15 years with no formal incident reporting system. The pharmacist-owner recognises that errors occur but are never documented or discussed. After attending a Caribbean Association of Pharmacists workshop on patient safety, she decides to implement an incident reporting system. In the first month, zero reports are filed — the two technicians are afraid that reporting errors will lead to termination. The pharmacist realises she must address the cultural barrier before the system can function.",
+      "questions": [
+        "What specific steps should the pharmacist take to overcome the fear barrier?",
+        "How can she demonstrate that reports will lead to system improvements, not punishment?",
+        "What would a realistic incident reporting target look like for the first year?",
+        "How should she handle a situation where a reported error reveals at-risk behaviour by a technician?"
+      ],
+      "discussion": "The pharmacist should begin by openly acknowledging her own errors (normalising mistake acknowledgment), committing in writing to a just culture policy, and sharing the first report herself. She might implement anonymous reporting initially and transition to named reports as trust builds. When the first report leads to a visible system change (e.g., rearranging a shelf, adding a label), she should publicise this as evidence that reporting works. A realistic first-year target might be 1-2 reports per month, with near-misses actively encouraged. If at-risk behaviour is revealed, she should coach privately, not punish — following the just culture framework."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Lack of standardised reporting forms",
+        "Insufficient time during busy shifts",
+        "Fear of punishment for reporting errors",
+        "Belief that errors are too rare to warrant reporting"
+      ],
+      "question": "What is the single greatest barrier to incident reporting in pharmacy settings?",
+      "explanation": "Research consistently identifies fear of punishment as the single greatest barrier to medication incident reporting. When staff believe that reporting an error will lead to blame, reprimand, or job loss, they will hide errors rather than report them — eliminating the opportunity for organisational learning and systemic improvement.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 25
+}

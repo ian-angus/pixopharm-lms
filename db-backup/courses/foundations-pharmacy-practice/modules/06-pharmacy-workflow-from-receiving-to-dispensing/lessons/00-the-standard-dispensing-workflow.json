@@ -1,0 +1,89 @@
+{
+  "id": "fb24a9c6-53ef-481d-9292-ca54f457a81a",
+  "module_id": "e41c6408-ecd5-4edc-b518-e7ac682ec96d",
+  "title": "The Standard Dispensing Workflow",
+  "content": [
+    {
+      "text": "From Prescription to Patient: A Step-by-Step Process",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "The dispensing workflow is the backbone of pharmacy practice. Every prescription that enters the pharmacy follows a structured sequence of steps designed to ensure safety and accuracy. Skipping steps, rushing, or taking shortcuts is how medication errors happen. In a well-run Caribbean pharmacy, this workflow is followed consistently for every single prescription — whether it is the first of the day or the five-hundredth.",
+      "type": "text"
+    },
+    {
+      "text": "The 5 Rights of Medication Dispensing",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Before any medication leaves the pharmacy, verify these five critical elements. They are your final safety net.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Right Patient",
+          "Is this medication for the correct patient? (Verify name, date of birth)"
+        ],
+        [
+          "Right Drug",
+          "Is this the correct medication? (Verify generic/brand name, check for look-alike/sound-alike)"
+        ],
+        [
+          "Right Dose",
+          "Is the dose correct for this patient? (Check strength, quantity, frequency)"
+        ],
+        [
+          "Right Route",
+          "Is this the correct route of administration? (Oral, topical, injection, inhaled)"
+        ],
+        [
+          "Right Time",
+          "Are the timing instructions clear and correct? (Frequency, duration, meal-related timing)"
+        ]
+      ],
+      "type": "table",
+      "caption": "The 5 Rights",
+      "headers": [
+        "Right",
+        "Question to Ask"
+      ]
+    },
+    {
+      "text": "The 10-Step Dispensing Workflow",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "type": "list",
+      "items": [
+        "RECEIVE: Accept the prescription, greet the patient, check if it's new or a refill",
+        "VERIFY: Check prescription for completeness, legality, and validity (refer to Module 3)",
+        "ENTER: Input prescription data into the pharmacy management system; check patient profile for allergies and drug interactions",
+        "CLINICAL CHECK: Pharmacist reviews for clinical appropriateness (dose, interactions, contraindications)",
+        "PREPARE: Select the correct medication from the shelf; check the label THREE times (when removing from shelf, when counting/measuring, when returning to shelf)",
+        "COUNT/MEASURE: Accurately count tablets or measure liquid; use a counting tray and spatula for tablets",
+        "LABEL: Generate and affix the dispensing label with all required information per your island's regulations",
+        "FINAL CHECK: Pharmacist performs final verification — compares original prescription against prepared medication and label",
+        "DISPENSE: Package medication appropriately; add auxiliary warning labels; include patient information leaflets",
+        "COUNSEL: Hand medication to patient with key counselling points; use teach-back to confirm understanding"
+      ],
+      "ordered": true
+    },
+    {
+      "alt": "Flowchart showing the 10-step dispensing workflow with decision points",
+      "type": "image-placeholder",
+      "caption": "Figure 6.1 — The 10-Step Dispensing Workflow"
+    },
+    {
+      "body": "When selecting medication from the shelf, check the label THREE separate times: (1) When picking up the bottle/box. (2) When counting or measuring the medication. (3) When returning the stock bottle to the shelf. This simple habit prevents the majority of 'wrong drug' dispensing errors.",
+      "type": "callout",
+      "title": "The Triple Check",
+      "variant": "tip"
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 25
+}

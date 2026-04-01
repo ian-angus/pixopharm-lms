@@ -1,0 +1,101 @@
+{
+  "id": "1025ca56-352e-4b28-aec4-0d61b4ad30ef",
+  "module_id": "b375a985-9529-414f-9f08-bf0d39bb4eef",
+  "title": "Self-Awareness: Recognising Your Triggers Under Pressure",
+  "content": [
+    {
+      "text": "The Person You Need to Understand First Is Yourself",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Before you can manage the emotions of customers and colleagues, you need to understand your own. Self-awareness — the ability to recognise your emotions as they arise and understand how they influence your behaviour — is the foundation of emotional intelligence. In a pharmacy setting, where stress is constant and interactions are intense, self-awareness is the difference between responding professionally and reacting impulsively.",
+      "type": "text"
+    },
+    {
+      "body": "Everyone has emotional triggers — specific situations, behaviours, or words that provoke a disproportionate emotional reaction. Maybe it is when a customer talks down to you. Maybe it is when you make a mistake in front of a colleague. Maybe it is when someone questions your competence. These triggers are not weaknesses — they are information. Understanding them gives you power over them.",
+      "type": "text"
+    },
+    {
+      "term": "Emotional Trigger",
+      "type": "key-term",
+      "definition": "A specific stimulus — a situation, behaviour, tone of voice, or phrase — that provokes a strong emotional reaction, often disproportionate to the objective severity of the event. Triggers are shaped by personal history, cultural background, and past experiences. Recognising them allows conscious choice over response rather than automatic reaction."
+    },
+    {
+      "text": "Common Pharmacy Triggers",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "rows": [
+        [
+          "Being spoken to rudely by a customer",
+          "Anger, defensiveness, desire to snap back",
+          "The rudeness threatens your sense of dignity and respect"
+        ],
+        [
+          "Making an error in front of the pharmacist",
+          "Shame, anxiety, desire to hide or minimise",
+          "Fear of being judged as incompetent"
+        ],
+        [
+          "Being rushed when you need to concentrate",
+          "Irritation, frustration, mistakes increase",
+          "Feeling that accuracy is being sacrificed for speed"
+        ],
+        [
+          "A colleague taking credit for your work",
+          "Resentment, withdrawal, passive aggression",
+          "Perceived unfairness and lack of recognition"
+        ],
+        [
+          "Dealing with a patient's suffering that mirrors your own life",
+          "Sadness, over-involvement, emotional exhaustion",
+          "Personal resonance — their pain activates your own"
+        ]
+      ],
+      "type": "table",
+      "caption": "Common Emotional Triggers for Pharmacy Technicians",
+      "headers": [
+        "Trigger",
+        "Typical Reaction",
+        "What Is Really Happening"
+      ]
+    },
+    {
+      "body": "For one week, keep a small notebook in your pocket. Every time you have a strong emotional reaction at work, jot down three things: (1) what happened, (2) what you felt, (3) what you did. After a week, review your notes. Patterns will emerge. Those patterns are your triggers, and naming them is the first step to managing them.",
+      "type": "callout",
+      "title": "The Trigger Journal",
+      "variant": "tip"
+    },
+    {
+      "body": "Self-awareness also means understanding your baseline emotional state. Did you sleep badly? Are you hungry? Did you argue with someone before work? These factors affect your emotional resilience. On days when your baseline is low, you are more likely to react to triggers. Acknowledging this — 'I am running on four hours of sleep, so I need to be extra careful with my patience today' — is not weakness. It is strategic self-management.",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Check in with yourself at the start of each shift: how am I feeling today? What is my energy level?",
+        "Notice physical cues: tight jaw, clenched fists, shallow breathing, and racing heartbeat all signal rising emotion",
+        "Name the emotion: 'I am feeling frustrated' is more useful than just feeling frustrated without labelling it",
+        "Recognise the difference between a reaction and a response: a reaction is automatic; a response is chosen",
+        "Accept that some days will be harder than others — and plan accordingly"
+      ],
+      "ordered": false
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "You can avoid all stressful situations at work",
+        "You can consciously choose your response instead of reacting automatically",
+        "You can prove that difficult customers are the problem, not you",
+        "You can request not to serve certain types of customers"
+      ],
+      "question": "What is the primary benefit of identifying your emotional triggers?",
+      "explanation": "Identifying triggers does not eliminate them — it gives you the space between stimulus and response to make a conscious choice. Instead of reacting automatically (snapping, withdrawing, getting defensive), you can choose a professional response because you recognise what is happening inside you.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 25
+}

@@ -1,0 +1,100 @@
+{
+  "id": "4defc6d3-647f-4238-af4c-2a63f26275d9",
+  "module_id": "8da2e0ca-0c98-417f-86ed-27157562e5f6",
+  "title": "Barcode Verification & Technology-Assisted Safety",
+  "content": [
+    {
+      "text": "Technology as a Safety Barrier",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Barcode medication verification is a technology-based safety strategy that uses scanning to confirm that the correct drug, strength, and dosage form are being dispensed. When a barcode is scanned, the system matches the product's unique identifier against the prescription record and alerts the user to any discrepancy. This technology adds a critical defence layer that does not depend on human visual recognition — which, as we have seen, is fallible, especially under pressure.",
+      "type": "text"
+    },
+    {
+      "term": "Barcode Medication Administration (BCMA)",
+      "type": "key-term",
+      "definition": "A technology system that uses barcode scanning to verify patient identity, medication identity, dose, route, and time at the point of administration. Originally developed for hospital inpatient settings, the principles are increasingly adapted for outpatient dispensing."
+    },
+    {
+      "body": "In well-resourced hospital settings, barcode verification can reduce dispensing errors by up to 85%. However, the Caribbean faces significant barriers to widespread adoption: the upfront cost of scanners and software, the need for reliable internet or network connectivity, the lack of standardised barcoding on products from some generic manufacturers, and the training required for staff who may have limited technology experience.",
+      "type": "text"
+    },
+    {
+      "body": "While barcode verification remains uncommon in Caribbean community pharmacies, larger hospital pharmacies in Trinidad, Jamaica, and Barbados are beginning to implement scanning technology. The OECS Pharmaceutical Procurement Service has been working with suppliers to ensure barcode standardisation on products procured for the Eastern Caribbean. Community pharmacies can begin with simple, affordable USB barcode scanners connected to their dispensing software.",
+      "type": "callout",
+      "title": "Caribbean Technology Adoption",
+      "variant": "info"
+    },
+    {
+      "text": "Beyond Barcodes: Other Technology Solutions",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Barcode scanning is just one element of the technology safety toolkit. Caribbean pharmacies can also benefit from automated dispensing cabinets (which restrict access to specific drugs based on the entered prescription), clinical decision support systems (which alert to drug interactions, allergies, and dose limits), electronic prescribing (which eliminates handwriting legibility issues), and inventory management software (which tracks expiry dates and lot numbers).",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Barcode scanning at dispensing",
+          "Verifies correct drug, strength, and form",
+          "Low–moderate (USB scanners from US$50)",
+          "High — most practical first step for community pharmacies"
+        ],
+        [
+          "Automated dispensing cabinets",
+          "Restricts drug access; tracks quantities",
+          "High (US$50,000+)",
+          "Low — only viable for large hospital pharmacies"
+        ],
+        [
+          "Electronic prescribing (e-prescribing)",
+          "Eliminates handwriting errors; enables interaction checking",
+          "Moderate",
+          "Growing — several Caribbean health systems piloting"
+        ],
+        [
+          "Clinical decision support (CDS)",
+          "Alerts for interactions, allergies, dose limits",
+          "Moderate (software-dependent)",
+          "Moderate — requires integration with dispensing software"
+        ],
+        [
+          "Inventory management software",
+          "Tracks expiry dates, reorder points, lot numbers",
+          "Low–moderate",
+          "High — many affordable cloud-based options available"
+        ]
+      ],
+      "type": "table",
+      "caption": "Technology-Based Error Prevention: Feasibility for Caribbean Pharmacies",
+      "headers": [
+        "Technology",
+        "Error Prevention Capability",
+        "Cost",
+        "Caribbean Feasibility"
+      ]
+    },
+    {
+      "body": "It is critical to understand that technology is a safety barrier, not a replacement for professional vigilance. Every technology system has limitations: scanners may misread damaged barcodes, clinical decision support systems may generate excessive alerts that are ignored ('alert fatigue'), and electronic systems can go offline. Technology supplements, but never replaces, the trained human judgment of the pharmacy professional.",
+      "type": "text"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Pharmacy professionals refuse to learn new technology",
+        "Barcodes are not available on any generic medications",
+        "Upfront cost, connectivity requirements, and non-standardised barcoding from some manufacturers",
+        "Caribbean regulatory bodies have banned barcode scanning in pharmacies"
+      ],
+      "question": "What is the primary barrier to widespread barcode verification adoption in Caribbean community pharmacies?",
+      "explanation": "The primary barriers include upfront cost of equipment, the need for reliable internet or network connectivity (which can be inconsistent in some Caribbean locations), and the lack of standardised barcoding on products from all generic manufacturers — particularly those imported from developing countries. These are practical, not attitudinal, barriers.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 25
+}

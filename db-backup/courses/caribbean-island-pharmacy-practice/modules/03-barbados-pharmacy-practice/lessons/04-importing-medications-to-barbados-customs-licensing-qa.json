@@ -1,0 +1,103 @@
+{
+  "id": "49963762-295a-4e72-83dd-cac45039fbd6",
+  "module_id": "eeaefebc-259f-42ce-824a-77332e5f4432",
+  "title": "Importing Medications to Barbados: Customs, Licensing & QA",
+  "content": [
+    {
+      "text": "Barbados's Import-Dependent Pharmaceutical Supply",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Barbados imports virtually 100% of its pharmaceutical products. The island has no domestic pharmaceutical manufacturing capacity, meaning every tablet, capsule, inhaler, and injectable that you dispense has been produced overseas, shipped across the ocean, cleared through customs, and transported to your pharmacy. Understanding this import process is important for pharmacy technicians because it directly affects medication availability, cost, and the quality assurance measures you must follow.",
+      "type": "text"
+    },
+    {
+      "text": "The Import Process — From Manufacturer to Pharmacy",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "type": "list",
+      "items": [
+        "Manufacturer (typically India, Europe, USA, or other CARICOM countries) produces the medication to GMP standards",
+        "The product must be registered with the Barbados Drug Service for public-sector use, or approved by the relevant authority for private-sector importation",
+        "Importer (BDS for public sector; licensed pharmaceutical importers for private sector) places the order",
+        "Medications are shipped to Barbados, typically by sea (bulk orders) or air (urgent/cold-chain items)",
+        "Arrival at the Bridgetown Port or Grantley Adams International Airport — Barbados Customs and Excise inspects documentation",
+        "Pharmaceutical imports require: Import licence, Certificate of Pharmaceutical Product (CPP), batch certificates, proof of GMP compliance",
+        "BDS or the licensed importer arranges transport to storage facilities (temperature-controlled where required)",
+        "Quality assurance checks: visual inspection, temperature log review, batch number verification, expiry date confirmation",
+        "Distribution to pharmacies, polyclinics, QEH, and contracted dispensing sites"
+      ],
+      "ordered": true
+    },
+    {
+      "body": "In Barbados's tropical climate (average temperature 26-30°C), maintaining cold chain integrity for temperature-sensitive medications is a constant challenge. Insulin, certain biologics, some eye drops, and vaccines must be kept at 2-8°C from manufacturer to patient. As a pharmacy technician, always check the temperature monitor on incoming deliveries. If a cold-chain item arrives with a temperature excursion (the monitor shows it exceeded the acceptable range), do NOT accept it — report it to the pharmacist immediately.",
+      "type": "callout",
+      "title": "Cold Chain Integrity",
+      "variant": "warning"
+    },
+    {
+      "text": "Key Regulatory Requirements for Pharmaceutical Imports",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "rows": [
+        [
+          "Import Licence",
+          "Required for all pharmaceutical imports; specifies products, quantities, and importer details",
+          "Barbados Ministry of Health / CMO"
+        ],
+        [
+          "Certificate of Pharmaceutical Product (CPP)",
+          "Confirms the product is approved in the country of origin and manufactured to GMP standards",
+          "Regulatory authority in the manufacturing country"
+        ],
+        [
+          "Batch Certificate / Certificate of Analysis",
+          "Provides quality specifications for the specific batch being imported (potency, purity, dissolution, etc.)",
+          "Manufacturer or independent testing laboratory"
+        ],
+        [
+          "GMP Certificate",
+          "Confirms the manufacturing facility meets Good Manufacturing Practice standards",
+          "Regulatory authority in the manufacturing country"
+        ],
+        [
+          "Controlled Substance Permit",
+          "Additional permit required for importing any controlled or scheduled substance",
+          "Barbados Ministry of Health / Drug Regulatory Authority"
+        ]
+      ],
+      "type": "table",
+      "caption": "Pharmaceutical Import Requirements for Barbados",
+      "headers": [
+        "Requirement",
+        "Description",
+        "Who Issues It"
+      ]
+    },
+    {
+      "body": "As part of CARICOM, Barbados participates in the Caribbean Regulatory System (CRS), which aims to streamline drug registration across member states. Under the CRS, a medication approved and registered in one CARICOM country may receive expedited review in another. This reduces duplication of regulatory effort and can speed up the availability of new medications in Barbados. However, the CRS is still evolving and full mutual recognition is not yet achieved.",
+      "type": "callout",
+      "title": "CARICOM Advantage — Caribbean Regulatory System",
+      "variant": "info"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Accept the delivery but place the medication in the refrigerator immediately",
+        "Do NOT accept the delivery — report the temperature excursion to the pharmacist",
+        "Accept the delivery and make a note in the inventory log",
+        "Return the medication to the delivery driver without informing anyone"
+      ],
+      "question": "What should a pharmacy technician do if a cold-chain delivery arrives and the temperature monitor shows the medication exceeded 8°C during transit?",
+      "explanation": "A temperature excursion means the cold-chain has been broken and the medication's stability, efficacy, and safety may be compromised. The technician should refuse the delivery and immediately report the issue to the pharmacist, who will determine the appropriate course of action (which may include contacting the supplier for replacement and filing a quality incident report).",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 4,
+  "duration_minutes": 25
+}

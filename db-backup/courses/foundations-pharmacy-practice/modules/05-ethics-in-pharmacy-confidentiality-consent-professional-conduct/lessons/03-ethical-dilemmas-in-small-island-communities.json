@@ -1,0 +1,69 @@
+{
+  "id": "1669e842-499a-4eb1-9a7b-90511147ab89",
+  "module_id": "dc1f1623-87c0-4bbe-bfb2-9ba9f226430b",
+  "title": "Ethical Dilemmas in Small Island Communities",
+  "content": [
+    {
+      "text": "When Everyone Knows Everyone",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Practising pharmacy in a small Caribbean community presents ethical challenges that mainland practitioners rarely face. On an island where the pharmacy technician may attend the same church, lime at the same spots, and have children at the same school as their patients, the boundaries between professional and personal life become blurred. This section addresses the unique ethical tensions that arise when the pharmacy professional is also a neighbour, friend, or community member of their patients.",
+      "type": "text"
+    },
+    {
+      "text": "Common Ethical Dilemmas",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "type": "case-study",
+      "title": "Dilemma 1: The Neighbour's HIV Medication",
+      "scenario": "You are working at the pharmacy counter when your next-door neighbour comes in to collect their prescription. You process it and see that it includes antiretroviral medications for HIV. You had no idea your neighbour was HIV-positive. Later that evening, your spouse asks, 'I saw Ms. James at the pharmacy today — everything okay with her?'",
+      "questions": [
+        "Can you tell your spouse what medication Ms. James was collecting?",
+        "Can you tell your spouse that Ms. James was even at the pharmacy?",
+        "How do you handle the ongoing social relationship knowing this confidential information?",
+        "What if you are concerned that your neighbour's partner may be at risk?"
+      ],
+      "discussion": "You cannot share ANY information — not the medication, not the condition, not even the fact that Ms. James was at the pharmacy. Your response to your spouse should be something like, 'I can't discuss anything about patients — you know that.' The ongoing challenge of carrying confidential knowledge about people in your social circle is one of the hardest aspects of Caribbean pharmacy practice. You must create a mental separation between your professional and personal roles. Regarding the partner at risk: there are limited exceptions to confidentiality for public health purposes, but this is a pharmacist-level decision that must follow established protocols. You should raise the concern with the supervising pharmacist."
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "case-study",
+      "title": "Dilemma 2: The Teacher's Mental Health Medication",
+      "scenario": "Your child's school teacher comes in to fill a prescription for an antipsychotic medication. In your small community, mental health carries significant stigma. You know that if word got out, the teacher could face discrimination from parents, lose their job, or be socially ostracised. A few days later, another parent at the school mentions that they 'heard a rumour' about the teacher's health.",
+      "questions": [
+        "How do you respond to the other parent's fishing for information?",
+        "What additional protections might you put in place for this patient?",
+        "If you observe the teacher exhibiting concerning behaviour at school, what are your obligations as a parent vs. as a pharmacy professional?"
+      ],
+      "discussion": "You must firmly shut down any attempt to discuss the teacher's health information. A simple 'I don't discuss anyone's health matters' is sufficient. Additional protections might include: ensuring the medication is dispensed discreetly (opaque bags, no visible medication names), offering delivery services, or arranging pick-up at less busy times. As for school concerns — your observations as a parent are separate from your pharmacy knowledge. You can raise school-safety concerns through normal parent channels without referencing any pharmacy information."
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "case-study",
+      "title": "Dilemma 3: The Pastor's Request",
+      "scenario": "A well-respected community pastor comes to the pharmacy and asks you to check whether a young woman from his congregation — who he is 'concerned about' — has been prescribed any 'certain medications'. He says he is asking out of 'pastoral care'. The young woman in question is an unmarried woman in her 20s, and you suspect the pastor is trying to determine if she has obtained contraceptives.",
+      "questions": [
+        "Can you share any information about this patient with the pastor?",
+        "How do you refuse firmly while maintaining a professional relationship?",
+        "What does this scenario reveal about power dynamics and confidentiality in small communities?"
+      ],
+      "discussion": "Absolutely not. No matter how respected the person making the request, no matter the reason given, you cannot confirm or deny whether anyone is a patient or share any information about their prescriptions. A professional response: 'Pastor, I'm sure you understand that I cannot share any patient information with anyone. That's the law and my professional duty.' This scenario highlights how social power dynamics — religious authority, community standing — can be used to pressure pharmacy staff into breaching confidentiality. The patient's reproductive choices are private, period."
+    },
+    {
+      "body": "Confidentiality may only be breached in very limited circumstances, and typically only by or with the approval of the supervising pharmacist: (1) When required by law — court order, statutory reporting of certain communicable diseases, child abuse reporting obligations. (2) When there is an imminent threat to the patient or others — e.g., a patient threatens self-harm. (3) When the patient gives explicit written consent to share information with a named person. (4) For purposes directly related to the patient's ongoing healthcare — e.g., sharing medication information with a hospital if the patient is admitted. Even in these cases, disclose only the minimum information necessary.",
+      "type": "callout",
+      "title": "The Only Exceptions to Confidentiality",
+      "variant": "warning"
+    }
+  ],
+  "order_index": 3,
+  "duration_minutes": 25
+}

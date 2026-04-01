@@ -1,0 +1,139 @@
+{
+  "id": "32deb101-8cfe-4df8-8b37-11c4a9f65e41",
+  "module_id": "3fc15d29-bbc6-49e7-9434-0660669d41ee",
+  "title": "Semi-Solid and Speciality Dosage Forms",
+  "content": [
+    {
+      "text": "Creams, Ointments, Gels, and Beyond",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Semi-solid dosage forms — creams, ointments, gels, and pastes — are applied topically to the skin or mucous membranes. They are among the most frequently compounded preparations in Caribbean pharmacies because many dermatological conditions common in tropical climates (fungal infections, eczema exacerbated by sweat, sunburn, insect bites) require customised topical treatments. Understanding the differences between these semi-solid forms is essential for selecting the right base for the right clinical situation.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Ointment",
+          "Oleaginous (oil-based, e.g., white petrolatum) or absorption base",
+          "Greasy, occlusive",
+          "Dry skin conditions, protection, moisture barrier",
+          "Very stable; does not lose water; can feel uncomfortable in tropical heat"
+        ],
+        [
+          "Cream",
+          "Oil-in-water (o/w) or water-in-oil (w/o) emulsion",
+          "Light, spreadable, non-greasy (o/w) or richer (w/o)",
+          "Most dermatological conditions; cosmetically elegant",
+          "May separate in extreme heat (>35°C); requires preservatives; o/w preferred in tropics"
+        ],
+        [
+          "Gel",
+          "Aqueous or hydroalcoholic with gelling agent (e.g., carbomer)",
+          "Cool, non-greasy, transparent or translucent",
+          "Oily skin, acne, local pain relief, scalp conditions",
+          "Generally stable; cooling sensation appreciated in tropical heat; may dry out if exposed to air"
+        ],
+        [
+          "Paste",
+          "Ointment with high percentage (>20%) of powder",
+          "Stiff, thick, protective",
+          "Localised skin lesions, diaper rash (zinc oxide paste)",
+          "Very stable; adherent; protective barrier against tropical moisture"
+        ]
+      ],
+      "type": "table",
+      "caption": "Semi-Solid Dosage Forms Compared",
+      "headers": [
+        "Dosage Form",
+        "Base Type",
+        "Feel on Skin",
+        "Best For",
+        "Tropical Stability"
+      ]
+    },
+    {
+      "body": "In the Caribbean, patients generally prefer non-greasy preparations. Oil-in-water (o/w) creams and gels are better tolerated than ointments in hot, humid weather because they allow the skin to breathe and do not trap perspiration. However, ointments remain the best choice for very dry, cracked skin or when a protective moisture barrier is needed (e.g., for labourers working with irritants). Always consider the patient's lifestyle, occupation, and the ambient conditions when recommending a compounded topical preparation.",
+      "type": "callout",
+      "title": "Choosing the Right Base in the Tropics",
+      "variant": "tip"
+    },
+    {
+      "term": "Occlusive",
+      "type": "key-term",
+      "definition": "Describing a topical preparation that forms a barrier over the skin, preventing moisture loss and blocking external irritants. Ointments are the most occlusive dosage form. While beneficial for dry skin, occlusive preparations can trap heat and perspiration in tropical climates, causing discomfort or worsening certain skin conditions."
+    },
+    {
+      "text": "Speciality Dosage Forms",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Beyond the standard oral, topical, and injectable forms, pharmacy technicians should be aware of speciality dosage forms that are increasingly relevant in Caribbean practice. These include transdermal patches (delivering drug through the skin over extended periods), sublingual and buccal preparations (absorbed through the oral mucosa), vaginal and rectal preparations, and inhaled formulations. Each presents unique compounding and storage considerations in the tropical Caribbean environment.",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Transdermal patches: Adhesion can be compromised by perspiration in tropical heat; patients should be counselled to apply to clean, dry skin and avoid application before outdoor physical activity",
+        "Sublingual tablets (e.g., glyceryl trinitrate): Extremely moisture-sensitive; must be stored in the original glass container with a metal screw cap; never transfer to plastic pill organisers",
+        "Suppositories: As noted, PEG bases preferred over cocoa butter in tropical climates due to higher melting points",
+        "Nebuliser solutions: Single-dose ampoules preferred in the Caribbean to avoid contamination risk in multi-dose containers in humid environments",
+        "Troches and lozenges: Can be compounded in-pharmacy for local oral or throat conditions; must be stored in airtight containers to prevent moisture absorption"
+      ],
+      "ordered": false
+    },
+    {
+      "type": "island-comparison",
+      "title": "Compounded Dosage Forms in Caribbean Practice",
+      "islands": [
+        {
+          "flag": "🇹🇹",
+          "name": "Trinidad & Tobago",
+          "details": [
+            "Hospital pharmacies at Eric Williams Medical Sciences Complex and San Fernando General Hospital compound oral suspensions, topical preparations, and parenteral nutrition",
+            "Community pharmacies frequently compound dermatological creams and paediatric oral liquids",
+            "The Pharmacy Board does not currently require separate compounding licences, but pharmacies must comply with Good Pharmacy Practice guidelines",
+            "Chronic Disease Assistance Programme (CDAP) drives high demand for affordable compounded alternatives when commercial products are unavailable"
+          ]
+        },
+        {
+          "flag": "🇯🇲",
+          "name": "Jamaica",
+          "details": [
+            "University Hospital of the West Indies (UHWI) pharmacy has a dedicated compounding unit producing oral liquids, topical preparations, and sterile products",
+            "Community pharmacies in rural areas compound more frequently due to limited access to commercial preparations",
+            "The Pharmacy Council of Jamaica requires compounding to be performed under the supervision of a registered pharmacist",
+            "National Health Fund (NHF) formulary limitations sometimes necessitate compounding of non-formulary preparations"
+          ]
+        },
+        {
+          "flag": "🇧🇧",
+          "name": "Barbados",
+          "details": [
+            "Queen Elizabeth Hospital pharmacy compounds a wide range of preparations for inpatient use",
+            "The Barbados National Drug Formulary influences which preparations need to be compounded versus purchased commercially",
+            "Polyclinic pharmacies may compound basic preparations for the primary care population",
+            "Smaller island geography means fewer pharmacies overall, so compounding capability is concentrated in fewer locations"
+          ]
+        }
+      ],
+      "description": "The types of dosage forms most commonly compounded vary by island, influenced by local disease burden, available commercial products, and regulatory frameworks."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "An oil-in-water cream — it is non-greasy and cosmetically elegant",
+        "A gel — it provides a cooling sensation in tropical heat",
+        "An ointment — it provides an occlusive, protective moisture barrier suitable for dry, cracked skin",
+        "A lotion — it is easy to apply and absorbs quickly"
+      ],
+      "question": "A patient working outdoors in Barbados as a construction worker has dry, cracked hands and needs a protective topical preparation. Which dosage form would be MOST appropriate?",
+      "explanation": "For dry, cracked skin requiring protection and moisture retention, an ointment is the most appropriate choice. Its occlusive nature forms a protective barrier that prevents further moisture loss and shields the damaged skin from external irritants. While ointments can feel greasy and uncomfortable in tropical heat, for a construction worker with occupational dermatitis, the protection they offer outweighs the cosmetic disadvantage. The pharmacist may recommend applying it primarily at night and using a lighter preparation during work hours.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 3,
+  "duration_minutes": 25
+}

@@ -1,0 +1,86 @@
+{
+  "id": "c2372799-e9cf-4b15-beb5-54c909eb1dfc",
+  "module_id": "18355ac8-d8d2-46a7-8eb4-7df008bb62d9",
+  "title": "Respiratory Anatomy: Airways, Lungs & Gas Exchange",
+  "content": [
+    {
+      "text": "The Respiratory System: Structure and Function",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "The respiratory system is responsible for gas exchange — delivering oxygen to the blood and removing carbon dioxide. It consists of the upper respiratory tract (nose, nasal cavity, pharynx, larynx) and the lower respiratory tract (trachea, bronchi, bronchioles, and alveoli within the lungs). Air enters through the nose or mouth, travels down the trachea, which divides into the right and left main bronchi at the carina. Each bronchus subdivides into progressively smaller bronchioles, eventually terminating in clusters of alveoli — tiny air sacs where gas exchange occurs.",
+      "type": "text"
+    },
+    {
+      "body": "The lungs are paired organs located in the thoracic cavity, protected by the rib cage. The right lung has three lobes; the left lung has two lobes (accommodating the heart). The lungs are surrounded by a double-layered membrane called the pleura. Between the alveoli and the pulmonary capillaries lies an extremely thin respiratory membrane (approximately 0.5 micrometres) across which oxygen diffuses into the blood and carbon dioxide diffuses out.",
+      "type": "text"
+    },
+    {
+      "term": "Alveoli",
+      "type": "key-term",
+      "definition": "Microscopic air sacs at the terminal ends of the bronchial tree where gas exchange occurs. Each lung contains approximately 300 million alveoli, providing an enormous surface area (roughly 70 square metres — the size of a tennis court) for efficient oxygen and carbon dioxide exchange. Destruction of alveoli is the hallmark of emphysema (a form of COPD)."
+    },
+    {
+      "term": "Bronchospasm",
+      "type": "key-term",
+      "definition": "Sudden constriction of the smooth muscle in the walls of the bronchioles, causing narrowing of the airways and difficulty breathing. Bronchospasm is the primary mechanism of asthma attacks and is reversed by bronchodilator medications such as salbutamol (albuterol). The term breaks down as: bronch/o (bronchial tube) + spasm (involuntary contraction)."
+    },
+    {
+      "body": "Asthma prevalence in the Caribbean is among the highest globally. Trinidad & Tobago, Jamaica, and Barbados all report elevated asthma rates, particularly in children. Contributing factors include indoor mould exposure (tropical humidity), outdoor air pollution, and genetic predisposition. Respiratory infections are also common, exacerbated by seasonal dengue outbreaks that can present with respiratory symptoms and complicate differential diagnosis.",
+      "type": "callout",
+      "title": "Respiratory Conditions in the Caribbean",
+      "variant": "info"
+    },
+    {
+      "rows": [
+        [
+          "Nasal cavity",
+          "Warms, humidifies, and filters inhaled air",
+          "Nasal sprays (fluticasone, oxymetazoline) act here"
+        ],
+        [
+          "Pharynx & Larynx",
+          "Passageway for air; voice production",
+          "Inhaled corticosteroids can cause oral candidiasis — counsel to rinse mouth after use"
+        ],
+        [
+          "Trachea",
+          "Conducts air to the lungs; lined with ciliated mucosa",
+          "Cilia damaged by smoking — reduces mucociliary clearance"
+        ],
+        [
+          "Bronchi & Bronchioles",
+          "Branch into smaller airways; smooth muscle controls diameter",
+          "Bronchodilators (salbutamol) relax smooth muscle; anticholinergics (ipratropium) prevent constriction"
+        ],
+        [
+          "Alveoli",
+          "Site of gas exchange",
+          "Destroyed in emphysema — irreversible; oxygen therapy may be needed"
+        ]
+      ],
+      "type": "table",
+      "caption": "Key Structures of the Respiratory System",
+      "headers": [
+        "Structure",
+        "Function",
+        "Pharmacy Relevance"
+      ]
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "To produce mucus that traps inhaled particles",
+        "To warm and humidify incoming air",
+        "To exchange oxygen and carbon dioxide between air and blood",
+        "To generate the sounds used in speech"
+      ],
+      "question": "What is the primary function of the alveoli?",
+      "explanation": "The alveoli are the sites of gas exchange in the lungs. Oxygen diffuses from the alveolar air into the pulmonary capillary blood, while carbon dioxide diffuses from the blood into the alveolar air for exhalation. This exchange occurs across the extremely thin respiratory membrane.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 20
+}

@@ -1,0 +1,217 @@
+[
+  {
+    "id": "93e641cd-736c-4c71-a551-cd183b877d43",
+    "module_id": "9535926c-b2f6-4855-a3c2-5d2fb75018fb",
+    "question": "In the Show-Tell-Ask method, what does the SHOW step involve?",
+    "options": [
+      "Showing the patient the pharmacy's price list",
+      "Displaying the medication visually so the patient can see what they will be taking",
+      "Showing the patient how to use the pharmacy's app",
+      "Demonstrating how to swallow a tablet"
+    ],
+    "correct_answer": 1,
+    "explanation": "The SHOW step involves physically displaying the medication to the patient — opening the container, showing the tablet or capsule, and for refills, asking if it looks the same as before. This visual connection helps with medication identification and catches generic substitution confusion.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "8f15afb8-c207-48a8-9e68-13a8967597dc",
+    "module_id": "9535926c-b2f6-4855-a3c2-5d2fb75018fb",
+    "question": "Which of the following is an IHS prime question?",
+    "options": [
+      "How much does this medication cost?",
+      "What did your doctor tell you this medication is for?",
+      "Would you like a generic alternative?",
+      "Have you tried bush remedies for this condition?"
+    ],
+    "correct_answer": 1,
+    "explanation": "The three IHS prime questions are: (1) What did your doctor tell you this medication is for? (2) How did your doctor tell you to take it? (3) What did your doctor tell you to expect? They assess the patient's existing understanding before additional counselling is provided.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "d501d25e-645c-43a6-9258-8842086470e9",
+    "module_id": "9535926c-b2f6-4855-a3c2-5d2fb75018fb",
+    "question": "Why is 'Do you understand?' considered a poor verification question?",
+    "options": [
+      "It is grammatically incorrect",
+      "Most patients will say 'yes' regardless of their actual understanding, providing false reassurance",
+      "It is too formal for Caribbean patients",
+      "It violates patient privacy"
+    ],
+    "correct_answer": 1,
+    "explanation": "Closed yes/no questions like 'Do you understand?' almost always elicit 'yes' because patients feel embarrassed to admit confusion or do not want to appear difficult. The teach-back method ('Can you tell me how you will take this?') is the only reliable way to verify genuine comprehension.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "1f424e43-1ee5-45e7-b216-75cb3a97b1ec",
+    "module_id": "9535926c-b2f6-4855-a3c2-5d2fb75018fb",
+    "question": "A patient collecting a refill of atenolol tells you: 'I only take it on weekdays because I feel fine on weekends.' Which motivational interviewing technique is MOST appropriate?",
+    "options": [
+      "Express empathy and explore discrepancy: 'I hear you. You mentioned wanting to avoid a stroke like your father — how does skipping weekend doses fit with that goal?'",
+      "Roll with resistance: 'That is fine, take it whenever you want'",
+      "Confront the patient: 'That is wrong and dangerous — you must take it every day'",
+      "Support self-efficacy: 'Great job taking it on weekdays — keep doing what you are doing'"
+    ],
+    "correct_answer": 0,
+    "explanation": "Developing discrepancy between the patient's behaviour (skipping doses) and their own stated goals (avoiding a stroke) is the most effective MI technique here. It uses the patient's own motivation rather than external pressure. Confrontation creates resistance, while accepting the behaviour or praising it fails to address the clinical risk.",
+    "order_index": 3,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "hard",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "4f8e97b4-eb16-480f-b1dd-24bec87ca17f",
+    "module_id": "9535926c-b2f6-4855-a3c2-5d2fb75018fb",
+    "question": "How long should a first-fill counselling interaction typically last?",
+    "options": [
+      "Under 1 minute",
+      "5-8 minutes",
+      "15-20 minutes",
+      "There is no standard — spend as long as needed"
+    ],
+    "correct_answer": 1,
+    "explanation": "First-fill counselling typically requires 5-8 minutes to adequately cover all five TELL points and complete the teach-back verification. This is longer than refill counselling (2-3 minutes) but shorter than a full clinical consultation. Time-efficient technique, not time avoidance, is the goal.",
+    "order_index": 4,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "b9e2cd53-e1f5-47e3-b455-59bd99ed37cb",
+    "module_id": "9535926c-b2f6-4855-a3c2-5d2fb75018fb",
+    "question": "Place the Show-Tell-Ask steps in the correct order for counselling a patient on a new prescription.",
+    "options": [
+      "Show the medication to the patient",
+      "Tell the patient the five key points in plain language",
+      "Ask the patient to repeat back how they will take the medication"
+    ],
+    "correct_answer": 0,
+    "explanation": "The correct order is always Show (visual identification), Tell (five key points), Ask (teach-back verification). This sequence builds from recognition to education to confirmation, and should never be reordered or abbreviated for new prescriptions.",
+    "order_index": 5,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "58926a61-8041-4717-91ce-d0b6d6729f1b",
+    "module_id": "9535926c-b2f6-4855-a3c2-5d2fb75018fb",
+    "question": "Match each counselling situation with the appropriate time investment.",
+    "options": [
+      "New prescription (first fill)",
+      "Refill (stable patient)",
+      "OTC purchase",
+      "Caregiver collection"
+    ],
+    "correct_answer": 0,
+    "explanation": "New prescriptions require 5-8 minutes for full STA counselling. Refills require 2-3 minutes for adherence and side effect checks. OTC purchases need 1-3 minutes for appropriateness screening. Caregiver collections require 4-6 minutes because written instructions must be prepared.",
+    "order_index": 6,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "5e0f824f-261f-4f67-8ec5-f1c911d19bba",
+    "module_id": "9535926c-b2f6-4855-a3c2-5d2fb75018fb",
+    "question": "When using the teach-back method, how should the technician frame the request?",
+    "options": [
+      "'Let me test you on what I just said.'",
+      "'Just to make sure I explained it clearly, can you tell me how you plan to take this?'",
+      "'Repeat after me: one tablet in the morning with food.'",
+      "'Do you have any questions?'"
+    ],
+    "correct_answer": 1,
+    "explanation": "Teach-back should always be framed as verifying the quality of the technician's explanation — 'so I know I explained it well' — not as testing the patient. This removes the stigma of being 'tested' and makes the interaction feel collaborative rather than evaluative.",
+    "order_index": 7,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "1b073c9e-485f-48b0-b9ba-09192500ab8b",
+    "module_id": "9535926c-b2f6-4855-a3c2-5d2fb75018fb",
+    "question": "A patient buying ibuprofen over the counter should be asked about which of the following?",
+    "options": [
+      "Their political affiliation",
+      "Whether they are taking blood pressure medications, as ibuprofen can raise BP and reduce antihypertensive effectiveness",
+      "Their income level",
+      "Whether they prefer brand name or generic for aesthetic reasons only"
+    ],
+    "correct_answer": 1,
+    "explanation": "NSAIDs like ibuprofen can raise blood pressure and reduce the effectiveness of antihypertensives (particularly ACE inhibitors, ARBs, and diuretics). This drug-OTC interaction is common and clinically significant, making it a critical screening question during OTC sales.",
+    "order_index": 8,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "d1c3ae6a-68ec-41e2-a2c9-0680f87c9e64",
+    "module_id": "9535926c-b2f6-4855-a3c2-5d2fb75018fb",
+    "question": "Up to what percentage of Caribbean patients prescribed antihypertensives either skip doses or discontinue when feeling well?",
+    "options": [
+      "About 10%",
+      "About 25%",
+      "Up to 40%",
+      "Over 75%"
+    ],
+    "correct_answer": 2,
+    "explanation": "Studies in Trinidad & Tobago and Jamaica have found that up to 40% of patients prescribed antihypertensives skip doses or stop entirely when they feel well. This is one of the most dangerous adherence patterns because hypertension is typically asymptomatic — feeling fine does not mean blood pressure is controlled.",
+    "order_index": 9,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "f88d08a7-1388-443c-8ddd-5d7cf9b66b87",
+    "module_id": "9535926c-b2f6-4855-a3c2-5d2fb75018fb",
+    "question": "In the IHS model, the prime questions are designed to assess what BEFORE the technician provides counselling?",
+    "options": [
+      "The patient's insurance coverage",
+      "The patient's existing understanding of their medication",
+      "The patient's family medical history",
+      "The patient's preferred pharmacy location"
+    ],
+    "correct_answer": 1,
+    "explanation": "The IHS prime questions are specifically designed to assess what the patient already knows about their medication's purpose, dosing, and expected effects. This patient-first approach avoids redundant information and reveals dangerous misconceptions before additional counselling is provided.",
+    "order_index": 10,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "c8a50372-fa11-4da8-97f1-dbcc195e09cd",
+    "module_id": "9535926c-b2f6-4855-a3c2-5d2fb75018fb",
+    "question": "Which motivational interviewing principle involves exploring the gap between a patient's current behaviour and their personal health goals?",
+    "options": [
+      "Expressing empathy",
+      "Developing discrepancy",
+      "Rolling with resistance",
+      "Supporting self-efficacy"
+    ],
+    "correct_answer": 1,
+    "explanation": "Developing discrepancy involves gently highlighting the gap between where the patient is (e.g., skipping doses) and where they want to be (e.g., staying healthy for their grandchildren). This internal motivation is far more powerful than external pressure from healthcare providers.",
+    "order_index": 11,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  }
+]

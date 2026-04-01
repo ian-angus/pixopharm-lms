@@ -1,0 +1,180 @@
+[
+  {
+    "id": "3abd65d7-f81e-4d21-8b9d-7ee1722a7575",
+    "module_id": "d7b0331a-9b72-42c9-b4c4-c741bb3adcec",
+    "question": "The Spanish word 'once' means 'eleven.' Why is this relevant to pharmacy practice?",
+    "options": [
+      "It helps pharmacies stock the right number of medications",
+      "A Spanish-speaking patient could misinterpret 'take once daily' as 'take eleven daily,' causing a dangerous overdose",
+      "It is a trivia fact with no clinical relevance",
+      "It affects how pharmacies price medications for Spanish-speaking patients"
+    ],
+    "correct_answer": 1,
+    "explanation": "This is a clinically significant cross-linguistic false friend. A Spanish-speaking patient hearing 'take once daily' in English could interpret 'once' as the Spanish word for eleven, potentially taking a dangerous overdose. This illustrates why language concordance is a patient safety issue, not merely a communication convenience.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "33a06221-1407-4155-960d-c4226f29b00f",
+    "module_id": "d7b0331a-9b72-42c9-b4c4-c741bb3adcec",
+    "question": "Which of the following statements about Caribbean Creole languages is correct?",
+    "options": [
+      "Creoles are simplified, broken versions of European languages",
+      "Creoles are fully developed, rule-governed linguistic systems with their own grammar and vocabulary",
+      "Creoles are only spoken by uneducated people",
+      "Creoles are dying languages with no modern speakers"
+    ],
+    "correct_answer": 1,
+    "explanation": "Caribbean Creole languages are fully developed linguistic systems with their own grammar, phonology, and vocabulary. They arose from contact between European and African languages during colonisation. Treating them as 'broken' versions of European languages is linguistically incorrect and culturally disrespectful.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "a9713a1a-735b-47ef-bee0-9d1c2c655b69",
+    "module_id": "d7b0331a-9b72-42c9-b4c4-c741bb3adcec",
+    "question": "In Haitian Creole, 'Pran li ak manje' means:",
+    "options": [
+      "Take it at night",
+      "Keep it in the refrigerator",
+      "Take it with food",
+      "Do not take with alcohol"
+    ],
+    "correct_answer": 2,
+    "explanation": "'Pran' = take, 'li' = it, 'ak' = with, 'manje' = food. Therefore, 'Pran li ak manje' means 'Take it with food.' This is an essential phrase for any pharmacy technician serving Haitian Creole-speaking patients.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "6bd66077-93ce-4641-9256-1093b7e9f00a",
+    "module_id": "d7b0331a-9b72-42c9-b4c4-c741bb3adcec",
+    "question": "Why should children NEVER be used as interpreters for clinical medication information?",
+    "options": [
+      "Children are not permitted inside pharmacies",
+      "Children may lack medical vocabulary, and the burden of clinical responsibility is inappropriate for a child",
+      "Children's voices are too quiet for the pharmacy setting",
+      "There is no problem with using children as interpreters"
+    ],
+    "correct_answer": 1,
+    "explanation": "Children should not interpret clinical information because (1) they may lack the vocabulary and comprehension to convey medical information accurately, risking errors, and (2) placing responsibility for a family member's medication safety on a child is an inappropriate burden.",
+    "order_index": 3,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "aa514f6a-2590-456c-98b8-db65b789e3a0",
+    "module_id": "d7b0331a-9b72-42c9-b4c4-c741bb3adcec",
+    "question": "A pharmacy near the Venezuelan border in Trinidad should prepare medication instruction templates in which language(s)?",
+    "options": [
+      "English only",
+      "English and Spanish",
+      "French and Dutch",
+      "Mandarin and Hindi"
+    ],
+    "correct_answer": 1,
+    "explanation": "A pharmacy near the Venezuelan border will frequently serve Spanish-speaking patients from the Venezuelan migrant community. Having pre-prepared Spanish medication instruction templates is a practical patient safety measure that matches resources to the linguistic needs of the patient population.",
+    "order_index": 4,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "28d5ea10-9e8b-4f84-b920-9724d6fc058c",
+    "module_id": "d7b0331a-9b72-42c9-b4c4-c741bb3adcec",
+    "question": "What is language concordance in healthcare?",
+    "options": [
+      "When the patient and provider disagree about treatment",
+      "When the patient and provider share a common language, enabling direct communication",
+      "When all medications are labelled in the same language",
+      "When the pharmacy uses only one language for all signage"
+    ],
+    "correct_answer": 1,
+    "explanation": "Language concordance occurs when a healthcare provider and patient share a common language, enabling direct communication without interpretation. Research consistently shows it improves patient satisfaction, medication adherence, and health outcomes.",
+    "order_index": 5,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "761d97e3-6a34-46ce-a881-a3d40433e326",
+    "module_id": "d7b0331a-9b72-42c9-b4c4-c741bb3adcec",
+    "question": "Match each language with the Caribbean island/territory where it is predominantly spoken.",
+    "options": [
+      "Haitian Creole (Kreyòl)",
+      "Papiamentu",
+      "Sranan Tongo",
+      "Jamaican Patois"
+    ],
+    "correct_answer": 0,
+    "explanation": "Haitian Creole is the primary language of Haiti; Papiamentu is spoken in Curaçao, Aruba, and Bonaire; Sranan Tongo is a lingua franca in Suriname; and Jamaican Patois (Jamaican Creole) is the mother tongue of most Jamaicans.",
+    "order_index": 6,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "eac38194-5f55-47dd-9dd1-352eab22ecb4",
+    "module_id": "d7b0331a-9b72-42c9-b4c4-c741bb3adcec",
+    "question": "What is the MOST effective long-term solution for serving multilingual patient populations in a Caribbean pharmacy?",
+    "options": [
+      "Relying exclusively on Google Translate for all communications",
+      "Hiring bilingual staff who reflect the linguistic diversity of the patient community",
+      "Requiring all patients to learn English before filling prescriptions",
+      "Only stocking medications with multilingual packaging"
+    ],
+    "correct_answer": 1,
+    "explanation": "Hiring bilingual staff who reflect the linguistic diversity of the community is the most effective long-term solution for achieving language concordance. Technology can supplement but not replace human communication for clinical accuracy. Requiring patients to learn English is neither practical nor ethical.",
+    "order_index": 7,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "evaluate"
+  },
+  {
+    "id": "43bfbbdb-e5f9-49f7-bc48-7e05fbe73401",
+    "module_id": "d7b0331a-9b72-42c9-b4c4-c741bb3adcec",
+    "question": "Place the following steps in the correct order for counselling a patient across a language barrier when no interpreter is available.",
+    "options": [
+      "Use any shared language phrases you know to establish communication",
+      "Supplement verbal communication with pictograms and visual aids",
+      "Write key numbers (dosage, frequency, duration) clearly on the label",
+      "Use teach-back (even through gestures) to verify the patient understood"
+    ],
+    "correct_answer": 0,
+    "explanation": "The correct order builds from verbal to visual to numerical to verification: (1) Use any shared language to connect, (2) Add pictograms to reinforce meaning, (3) Write key numbers clearly for universal understanding, (4) Verify through teach-back. This layered approach maximises comprehension when formal interpretation is unavailable.",
+    "order_index": 8,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "43dd8764-9f97-479e-ae59-24157f591067",
+    "module_id": "d7b0331a-9b72-42c9-b4c4-c741bb3adcec",
+    "question": "True or false: Machine translation apps (e.g., Google Translate) can be reliably used as the sole means of communicating clinical medication information to non-English-speaking patients.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": 1,
+    "explanation": "False. Machine translation apps can assist with basic communication but must NEVER be the sole means of conveying clinical medication information. Translation errors in medical contexts can be dangerous. Always verify machine translations with a human native speaker and supplement with pictograms and written numbers.",
+    "order_index": 9,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "evaluate"
+  }
+]

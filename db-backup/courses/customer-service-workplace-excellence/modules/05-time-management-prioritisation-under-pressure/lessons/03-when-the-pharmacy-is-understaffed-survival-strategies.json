@@ -1,0 +1,106 @@
+{
+  "id": "e2bf223c-7390-41e2-845f-139853804609",
+  "module_id": "60b63fc2-8fc4-4b47-8ac7-caf737ad8b8c",
+  "title": "When the Pharmacy Is Understaffed: Survival Strategies",
+  "content": [
+    {
+      "text": "Half the Staff, Same Number of Customers",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "It will happen. Someone calls in sick. The second technician's bus did not come. The pharmacist is stuck in traffic. And the pharmacy is open, the customers are arriving, and you are it. Working understaffed is a reality of Caribbean pharmacy — especially in smaller pharmacies with lean teams. The question is not whether it will happen, but whether you are prepared for it.",
+      "type": "text"
+    },
+    {
+      "body": "Understaffed shifts test everything you have learned: triage, time management, emotional regulation, communication, and scope awareness. The key principle is this: when resources are limited, protect accuracy above all. It is better to serve 50 customers correctly than 100 customers with errors. Slow down enough to be safe, and communicate honestly with waiting customers.",
+      "type": "text"
+    },
+    {
+      "text": "Survival Strategies",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "type": "list",
+      "items": [
+        "Acknowledge the situation to customers: 'We are short-staffed today, so wait times are longer than usual. I want to make sure everyone is served correctly, so I appreciate your patience.'",
+        "Ruthlessly prioritise: urgent medical needs first, routine collections second, general enquiries last",
+        "Simplify your workflow: batch prescriptions, minimise task-switching, use notes to track incomplete tasks",
+        "Communicate with the pharmacist: agree on a plan — who handles what, what can wait, what cannot",
+        "Manage the phone strategically: if you are alone at the counter, let non-urgent calls go to voicemail and return them during lulls",
+        "Do not skip safety steps: never cut corners on verification, counting, or labelling because you are busy — errors multiply under pressure",
+        "Ask for help proactively: call the pharmacy owner or manager if understaffing is severe — document the situation",
+        "Protect your breaks: skipping meals and rest makes the afternoon worse, not better"
+      ],
+      "ordered": true
+    },
+    {
+      "body": "When you are understaffed and the queue is out the door, the pressure to cut corners is immense. Resist it. A dispensing error caused by rushing will cost far more — in patient harm, legal liability, and your professional reputation — than making a customer wait an extra 10 minutes. Safety is not negotiable, regardless of staffing levels.",
+      "type": "callout",
+      "title": "Never Compromise Safety for Speed",
+      "variant": "danger"
+    },
+    {
+      "rows": [
+        [
+          "Fill prescriptions for patients who are waiting",
+          "Restock fast-moving items",
+          "Reorganise shelves"
+        ],
+        [
+          "Handle urgent clinical queries",
+          "Return phone calls",
+          "Update promotional displays"
+        ],
+        [
+          "Process insurance rejections for waiting patients",
+          "Enter non-urgent prescriptions",
+          "Complete inventory counts"
+        ],
+        [
+          "Answer the phone for doctor call-ins",
+          "Process deliveries from suppliers",
+          "File completed paperwork"
+        ]
+      ],
+      "type": "table",
+      "caption": "What to Prioritise When Understaffed",
+      "headers": [
+        "Do First",
+        "Do When You Can",
+        "Can Wait Until Tomorrow"
+      ]
+    },
+    {
+      "type": "case-study",
+      "title": "Case Study: The Solo Shift",
+      "scenario": "It is a Monday morning at a community pharmacy in Arima, Trinidad. The other technician called in sick. The pharmacist is delayed — they will arrive in 45 minutes. You are alone with five customers already waiting, two prescriptions to fill, and the phone ringing. You know you cannot legally dispense without the pharmacist present for final verification.",
+      "questions": [
+        "What should you prioritise in the first 15 minutes?",
+        "How do you communicate the situation to waiting customers?",
+        "What can you legally do without the pharmacist present?"
+      ],
+      "discussion": "Without the pharmacist, you cannot complete the dispensing process (final verification is required). However, you CAN: greet customers and set expectations, receive prescriptions and begin data entry, handle OTC sales, answer phone calls, and process non-prescription items. For the waiting prescriptions, explain honestly: 'Our pharmacist will arrive in about 45 minutes. I can get everything prepared so it is ready the moment they arrive. I apologise for the delay.' Most customers will appreciate the honesty and the efficiency."
+    },
+    {
+      "term": "Controlled Degradation",
+      "type": "key-term",
+      "definition": "A crisis management concept where, when resources are insufficient to maintain full service, non-critical functions are deliberately reduced or paused to preserve the quality of critical functions. In an understaffed pharmacy, this means slowing non-urgent tasks to protect the accuracy and safety of dispensing."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Serve as many customers as possible, as quickly as possible",
+        "Close the pharmacy until adequate staffing arrives",
+        "Maintain accuracy and safety even if it means longer wait times",
+        "Skip the pharmacist verification step to speed things up"
+      ],
+      "question": "During an understaffed shift with a long queue, what is the MOST important principle to follow?",
+      "explanation": "Accuracy and safety must be maintained regardless of staffing levels. Rushing leads to errors that harm patients and create legal liability. Communicating honestly about wait times while maintaining careful, safe practice is always the correct approach.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 3,
+  "duration_minutes": 25
+}

@@ -1,0 +1,104 @@
+{
+  "id": "07a58a46-c6d3-4361-aa8b-ea54a20a0cac",
+  "module_id": "a990037d-ba04-45d0-ae91-bab492ae6c2b",
+  "title": "Cybersecurity & Data Protection in Caribbean Pharmacy",
+  "content": [
+    {
+      "text": "Protecting Patient Data and Pharmacy Systems",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Pharmacies hold some of the most sensitive personal data imaginable: patient names, addresses, dates of birth, medical conditions, medications, and sometimes payment information. A data breach at a pharmacy can expose intimate health details — that a patient is HIV-positive, is taking psychiatric medication, or is being treated for a sexually transmitted infection. In small Caribbean communities where privacy is already limited, such a breach could have devastating personal consequences for patients.",
+      "type": "text"
+    },
+    {
+      "body": "Caribbean pharmacies face growing cybersecurity threats: ransomware attacks that lock pharmacy systems and demand payment, phishing emails targeting staff, and the simple but common risk of stolen or lost laptops containing patient data. Many Caribbean pharmacies have no formal cybersecurity policy or training, making them attractive targets.",
+      "type": "text"
+    },
+    {
+      "type": "island-comparison",
+      "title": "Data Protection Legislation Across the Caribbean",
+      "islands": [
+        {
+          "flag": "🇹🇹",
+          "name": "Trinidad & Tobago",
+          "details": [
+            "The Data Protection Act (2011, proclaimed 2017) governs the collection, processing, and storage of personal data",
+            "Pharmacies are 'data controllers' under the Act and must register with the Office of the Information Commissioner",
+            "Patient consent is required for collecting and processing health data",
+            "Data breaches must be reported; penalties for non-compliance include fines up to TT$100,000",
+            "The Act requires 'appropriate technical and organisational measures' to protect data — this includes pharmacy IT security"
+          ]
+        },
+        {
+          "flag": "🇯🇲",
+          "name": "Jamaica",
+          "details": [
+            "The Data Protection Act (2020) establishes rights for data subjects and obligations for data controllers",
+            "The Office of the Information Commissioner oversees compliance",
+            "Pharmacies must obtain informed consent for processing personal health data",
+            "The Act requires data protection impact assessments for high-risk processing (health data qualifies)",
+            "Penalties for non-compliance include fines up to J$2 million"
+          ]
+        },
+        {
+          "flag": "🇧🇧",
+          "name": "Barbados",
+          "details": [
+            "The Data Protection Act (2019) came into effect in 2021",
+            "Establishes the Data Protection Commissioner to oversee compliance",
+            "Pharmacies handling health data must implement 'appropriate safeguards' for sensitive personal data",
+            "Patient data must not be retained longer than necessary for the purpose for which it was collected",
+            "Cross-border data transfers (e.g., cloud-based PMS servers outside Barbados) require adequate protection"
+          ]
+        }
+      ],
+      "description": "Data protection laws are evolving rapidly across the Caribbean. Pharmacy managers must understand their obligations under the legislation that applies to their jurisdiction."
+    },
+    {
+      "term": "Ransomware",
+      "type": "key-term",
+      "definition": "Malicious software that encrypts a victim's files and demands a ransom payment (typically in cryptocurrency) for the decryption key. In a pharmacy context, a ransomware attack can lock patient records, dispensing systems, and financial data, forcing the pharmacy to either pay the ransom or rebuild from backups."
+    },
+    {
+      "text": "Essential Cybersecurity Measures for Pharmacies",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "type": "list",
+      "items": [
+        "Implement strong passwords and multi-factor authentication on all pharmacy systems",
+        "Keep all software (PMS, operating system, antivirus) updated with the latest security patches",
+        "Perform daily automated backups to an offsite location (cloud or separate physical site)",
+        "Train all staff to recognise phishing emails, suspicious links, and social engineering attacks",
+        "Restrict system access based on role — a cashier does not need access to patient records",
+        "Encrypt all devices containing patient data (laptops, tablets, USB drives)",
+        "Develop and test a disaster recovery plan — know exactly what to do if systems are compromised",
+        "Lock workstations when unattended; auto-lock after 5 minutes of inactivity"
+      ],
+      "ordered": true
+    },
+    {
+      "body": "In many Caribbean pharmacies, staff use WhatsApp to communicate prescription queries, share patient information with doctors, and coordinate between branches. While convenient, WhatsApp is not a HIPAA-compliant or data-protection-compliant channel for sharing identifiable patient health information. A lost or stolen phone with patient data in WhatsApp messages is a data breach. Establish a policy: no patient-identifiable information on personal messaging apps.",
+      "type": "callout",
+      "title": "The WhatsApp Problem",
+      "variant": "danger"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Send it immediately — speed is important for patient care",
+        "Remove or cover the patient's name and any identifying information before sending, or use the pharmacy's secure communication channel",
+        "Ask the patient for permission to share the photo on WhatsApp",
+        "WhatsApp is always fine because it uses end-to-end encryption"
+      ],
+      "question": "A pharmacy technician wants to send a photo of a prescription to the pharmacist via WhatsApp for clarification. What is the correct action?",
+      "explanation": "Patient-identifiable health information should never be shared via personal messaging apps like WhatsApp without removing all identifying details. While WhatsApp has encryption, the data resides on personal devices that may be lost, stolen, or accessed by others. The ideal solution is a secure, pharmacy-approved communication channel. If WhatsApp must be used in an emergency, all patient identifiers must be removed from the image.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 25
+}

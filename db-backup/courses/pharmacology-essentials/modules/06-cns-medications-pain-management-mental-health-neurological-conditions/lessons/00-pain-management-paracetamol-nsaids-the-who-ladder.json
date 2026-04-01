@@ -1,0 +1,92 @@
+{
+  "id": "95249e61-ea7f-44ae-ba5e-1c7e3c5aa914",
+  "module_id": "8655a4bb-6786-4c6f-8c79-df8a5e077ff3",
+  "title": "Pain Management: Paracetamol, NSAIDs & the WHO Ladder",
+  "content": [
+    {
+      "text": "The Analgesic Toolkit",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Pain management is one of the most common reasons patients visit a Caribbean pharmacy. The WHO analgesic ladder provides a stepwise approach: Step 1 (mild pain) uses non-opioid analgesics (paracetamol, NSAIDs); Step 2 (moderate pain) adds weak opioids (codeine, tramadol); Step 3 (severe pain) uses strong opioids (morphine, oxycodone).",
+      "type": "text"
+    },
+    {
+      "body": "In the Caribbean, paracetamol (Panadol is the dominant brand name) and ibuprofen are the most purchased OTC analgesics. Diclofenac (both oral and topical) is extensively used for musculoskeletal pain. Codeine-paracetamol combinations are available in some territories without a prescription, which raises concerns about misuse and dependence. Understanding the pharmacology, dosing limits, and risks of each analgesic class is fundamental to safe pharmacy practice.",
+      "type": "text"
+    },
+    {
+      "term": "Paracetamol (Acetaminophen)",
+      "type": "key-term",
+      "definition": "The most commonly used analgesic and antipyretic worldwide. Works centrally to reduce pain and fever. Safe at therapeutic doses (max 4g/day in adults) but causes fatal hepatotoxicity in overdose. Has NO anti-inflammatory effect."
+    },
+    {
+      "term": "NSAID (Non-Steroidal Anti-Inflammatory Drug)",
+      "type": "key-term",
+      "definition": "A class of drugs that inhibit cyclooxygenase (COX) enzymes, reducing prostaglandin synthesis. This provides analgesic, anti-inflammatory, and antipyretic effects. Examples: ibuprofen, diclofenac, naproxen. Risks include GI bleeding, renal impairment, and cardiovascular events."
+    },
+    {
+      "body": "Paracetamol is available OTC and in dozens of combination products (cold remedies, pain formulas). Accidental overdose occurs when patients take multiple products containing paracetamol without realising it. Hepatotoxicity can be fatal. ALWAYS counsel patients to check ALL their medications for paracetamol content and not exceed 4g daily.",
+      "type": "callout",
+      "title": "Paracetamol Overdose: A Caribbean Emergency",
+      "variant": "danger"
+    },
+    {
+      "rows": [
+        [
+          "Paracetamol",
+          "Non-opioid",
+          "4g (adults)",
+          "Hepatotoxicity in overdose"
+        ],
+        [
+          "Ibuprofen",
+          "NSAID",
+          "1.2g (OTC), 2.4g (Rx)",
+          "GI bleeding, renal impairment"
+        ],
+        [
+          "Diclofenac",
+          "NSAID",
+          "150 mg",
+          "GI bleeding, cardiovascular risk"
+        ],
+        [
+          "Codeine",
+          "Weak opioid",
+          "240 mg",
+          "Constipation, dependence, respiratory depression"
+        ],
+        [
+          "Tramadol",
+          "Weak opioid",
+          "400 mg",
+          "Seizure risk, serotonin syndrome risk"
+        ]
+      ],
+      "type": "table",
+      "caption": "Common Analgesics in Caribbean Practice",
+      "headers": [
+        "Drug",
+        "Type",
+        "Max Daily Dose",
+        "Key Risk"
+      ]
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "No concern — different products cannot interact",
+        "Risk of accidental paracetamol overdose from taking both products simultaneously",
+        "The cold remedy will reduce paracetamol effectiveness",
+        "Only a concern if the patient is elderly"
+      ],
+      "question": "A patient buys paracetamol tablets AND a cold remedy containing paracetamol. What should you flag?",
+      "explanation": "Many cold remedies contain paracetamol. Taking additional paracetamol tablets on top can easily exceed the 4g/day maximum, risking fatal liver damage. Always check all products for paracetamol content.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 20
+}

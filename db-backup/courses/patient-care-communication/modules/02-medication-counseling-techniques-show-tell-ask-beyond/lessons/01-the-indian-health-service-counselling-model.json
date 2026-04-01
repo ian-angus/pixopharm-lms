@@ -1,0 +1,69 @@
+{
+  "id": "f69fab74-912c-42b0-aa9b-6e3831857052",
+  "module_id": "9535926c-b2f6-4855-a3c2-5d2fb75018fb",
+  "title": "The Indian Health Service Counselling Model",
+  "content": [
+    {
+      "text": "Three Prime Questions for Every Prescription",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "The Indian Health Service (IHS) counselling model is built around three 'prime questions' that guide every patient interaction. Unlike prescriptive scripts, these questions are open-ended — they invite the patient to share what they know and feel, allowing the technician or pharmacist to identify and fill gaps in understanding. This model was originally developed for indigenous communities in the United States but has been widely adopted internationally, including in Caribbean pharmacy training programmes, because of its cultural sensitivity and simplicity.",
+      "type": "text"
+    },
+    {
+      "term": "IHS Prime Questions",
+      "type": "key-term",
+      "definition": "Three open-ended questions forming the backbone of the Indian Health Service medication counselling model: (1) What did your doctor tell you this medication is for? (2) How did your doctor tell you to take it? (3) What did your doctor tell you to expect? These questions assess the patient's existing understanding before providing additional counselling."
+    },
+    {
+      "type": "list",
+      "items": [
+        "Prime Question 1 — 'What did your doctor tell you this medication is for?' This reveals whether the patient knows the purpose of their medication. Many patients do not.",
+        "Prime Question 2 — 'How did your doctor tell you to take it?' This uncovers whether the patient received and understood dosing instructions. Misunderstandings here are the leading cause of medication errors at home.",
+        "Prime Question 3 — 'What did your doctor tell you to expect?' This explores the patient's understanding of expected effects, side effects, and how long it will take to work. It also reveals unrealistic expectations ('The doctor said this would cure me')."
+      ],
+      "ordered": true
+    },
+    {
+      "body": "The beauty of the IHS model is that it starts with the patient's perspective. Instead of lecturing, you listen first. This respects the patient's autonomy, identifies what they already know (avoiding redundant information), and reveals dangerous misconceptions before they lead to harm.",
+      "type": "text"
+    },
+    {
+      "body": "Some Caribbean patients may not have seen a doctor at all — they may be presenting with a prescription from a clinic nurse, a repeat prescription authorised by phone, or a referral from a traditional healer. Adapt the questions accordingly: 'What were you told this medication is for?' or simply 'Do you know what this is for?' The principle is the same — start by assessing what the patient already knows.",
+      "type": "callout",
+      "title": "Adapting IHS for Caribbean Patients",
+      "variant": "info"
+    },
+    {
+      "type": "case-study",
+      "title": "Case Study: Mr. Desmond's Refill",
+      "scenario": "Mr. Desmond, a 55-year-old taxi driver in Port of Spain, comes to refill his atenolol 50 mg for hypertension. You apply the IHS prime questions. When asked 'What is this medication for?' he replies: 'The pressure tablet.' When asked 'How do you take it?' he says: 'One in the morning... sometimes I does skip it on weekends because I feeling fine.' When asked 'What do you expect from it?' he says: 'When the pressure normal, I go stop taking it.'",
+      "questions": [
+        "What dangerous misconceptions has Mr. Desmond revealed?",
+        "How would you address each misconception without making him feel lectured?",
+        "What counselling priorities would you set for this 3-minute interaction?"
+      ],
+      "discussion": "Mr. Desmond's responses reveal two critical misconceptions: (1) that it is safe to skip doses when feeling well ('weekend skipping'), and (2) that hypertension medication can be stopped once blood pressure normalises. Both are common and dangerous. A patient-centred response would be: 'Your pressure stays normal BECAUSE of the tablet — it is like a dam holding back the river. If you remove the dam, the water floods.' Using an analogy relevant to his experience as a taxi driver ('It is like oil in the engine — you don't stop using oil because the engine runs smooth') can be more impactful than clinical lectures."
+    },
+    {
+      "body": "Studies conducted in Trinidad & Tobago and Jamaica have found that up to 40% of patients prescribed antihypertensives either skip doses regularly or discontinue entirely when they feel well. The IHS questioning approach catches these misconceptions at the pharmacy counter — the last safety net before the patient goes home.",
+      "type": "text"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "What did your doctor tell you this medication is for?",
+        "How much does this medication cost?",
+        "How did your doctor tell you to take it?",
+        "What did your doctor tell you to expect?"
+      ],
+      "question": "Which of the following is NOT one of the three IHS prime questions?",
+      "explanation": "The three IHS prime questions focus on purpose, directions, and expectations — they assess the patient's clinical understanding. Cost, while important to address, is not one of the three prime questions. It is a separate consideration that may be addressed during the counselling interaction if the patient raises concerns.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 25
+}

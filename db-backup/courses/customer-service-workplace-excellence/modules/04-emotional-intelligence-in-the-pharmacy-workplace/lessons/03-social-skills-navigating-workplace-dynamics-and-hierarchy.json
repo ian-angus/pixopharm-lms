@@ -1,0 +1,127 @@
+{
+  "id": "e9471e50-04ed-4828-a721-12e5881c2fea",
+  "module_id": "b375a985-9529-414f-9f08-bf0d39bb4eef",
+  "title": "Social Skills: Navigating Workplace Dynamics and Hierarchy",
+  "content": [
+    {
+      "text": "The Pharmacy Is a Social Ecosystem",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "A pharmacy is not just a workplace — it is a social ecosystem with its own dynamics, alliances, tensions, and unwritten power structures. The pharmacist who technically supervises you but lets the senior technician run the show. The colleague who gossips about everyone. The delivery driver who expects a certain level of familiarity. Navigating these dynamics requires social intelligence — the ability to read interpersonal situations accurately and respond in ways that build positive relationships without compromising your values.",
+      "type": "text"
+    },
+    {
+      "body": "In Caribbean workplaces, hierarchy often operates differently than in textbook management theory. Respect for seniority is deeply ingrained, but so is a communal work culture where everyone looks out for everyone. Understanding both the formal hierarchy (pharmacist → senior technician → junior technician) and the informal one (who actually has influence, who the pharmacist trusts most, who the customers ask for) is essential to navigating the workplace effectively.",
+      "type": "text"
+    },
+    {
+      "term": "Social Intelligence",
+      "type": "key-term",
+      "definition": "The ability to effectively navigate social situations, understand interpersonal dynamics, and build relationships that serve both professional goals and personal wellbeing. In the workplace, social intelligence includes knowing when to speak up and when to stay quiet, how to give and receive feedback, and how to build trust with diverse colleagues."
+    },
+    {
+      "text": "Navigating Common Workplace Dynamics",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "rows": [
+        [
+          "The Gatekeeper Senior Technician",
+          "A senior colleague controls information, tasks, and access to the pharmacist",
+          "Respect their position, learn from them, and build trust slowly — but maintain direct communication with the pharmacist as well"
+        ],
+        [
+          "The Gossip Network",
+          "Colleagues frequently discuss other staff members' personal business",
+          "Listen politely but do not contribute. Change the subject. Do not share personal information with known gossips"
+        ],
+        [
+          "The Overworked Pharmacist",
+          "The pharmacist is stressed and sometimes short-tempered with staff",
+          "Do not take it personally. Anticipate their needs. Choose timing carefully for non-urgent questions"
+        ],
+        [
+          "The Clique",
+          "A group of established staff socialise together and seem to exclude newcomers",
+          "Be professional and friendly without trying to force your way in. Cliques often soften once they see you are reliable"
+        ],
+        [
+          "The Credit-Taker",
+          "A colleague takes credit for work you did",
+          "Document your contributions. Mention your work casually in conversation with the pharmacist. Do not accuse publicly — address it privately"
+        ]
+      ],
+      "type": "table",
+      "caption": "Workplace Dynamics and Smart Responses",
+      "headers": [
+        "Dynamic",
+        "Scenario",
+        "Smart Response"
+      ]
+    },
+    {
+      "body": "Caribbean pharmacies often have small teams — 3 to 8 people — which means workplace dynamics are amplified. A conflict between two people affects everyone. A misunderstanding can fester for months in a small space. Address issues early, privately, and professionally. Small-team conflict left unresolved becomes toxic quickly.",
+      "type": "callout",
+      "title": "Workplace Politics in Small Teams",
+      "variant": "warning"
+    },
+    {
+      "type": "island-comparison",
+      "title": "Workplace Culture Across the Caribbean",
+      "islands": [
+        {
+          "flag": "🇹🇹",
+          "name": "Trinidad & Tobago",
+          "details": [
+            "Strong culture of picong (good-natured teasing) — know the difference between humour and disrespect",
+            "Multi-ethnic workplaces are common — cultural sensitivity across Indo-Trinidadian, Afro-Trinidadian, mixed, and other communities is essential",
+            "Family connections matter — your colleague may be related to your customer, your neighbour, or your pharmacist",
+            "Lime culture extends to the workplace — social bonding during breaks is important for team cohesion"
+          ]
+        },
+        {
+          "flag": "🇯🇲",
+          "name": "Jamaica",
+          "details": [
+            "Respect for elders and seniority is deeply embedded in workplace culture",
+            "Direct communication style — Jamaicans tend to be upfront, which can be misread as aggression by those from more indirect cultures",
+            "Church and community connections often intersect with workplace relationships",
+            "Strong work ethic is valued — being seen as a hard worker builds social capital quickly"
+          ]
+        },
+        {
+          "flag": "🇧🇧",
+          "name": "Barbados",
+          "details": [
+            "Formality and politeness are highly valued in Bajan workplace culture",
+            "Small-island dynamics mean professional reputation travels fast — one bad workplace interaction can follow you",
+            "Public service pharmacies (polyclinics) have their own institutional culture distinct from private pharmacies",
+            "Strong emphasis on 'doing things properly' — cutting corners is noticed and judged"
+          ]
+        }
+      ],
+      "description": "Workplace social dynamics are influenced by broader cultural norms that vary across the region."
+    },
+    {
+      "body": "The golden rule of workplace social navigation is this: be excellent at your job first, and the social dynamics become much easier to navigate. Competence earns respect, and respect opens doors. No amount of social skill compensates for poor work quality, and no amount of workplace politics can undermine a genuinely excellent technician for long.",
+      "type": "text"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Confront them publicly in front of other staff",
+        "Stop working with them entirely and do everything alone",
+        "Document your contributions and address the issue privately with the colleague",
+        "Complain to other coworkers to build support for your side"
+      ],
+      "question": "A colleague consistently takes credit for work you did together. What is the MOST professional way to address this?",
+      "explanation": "Addressing the issue privately and professionally is the correct approach. Documenting your contributions creates a factual record. Public confrontation creates drama; withdrawal hurts the team; and building a coalition turns a two-person issue into a workplace-wide conflict.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 3,
+  "duration_minutes": 25
+}

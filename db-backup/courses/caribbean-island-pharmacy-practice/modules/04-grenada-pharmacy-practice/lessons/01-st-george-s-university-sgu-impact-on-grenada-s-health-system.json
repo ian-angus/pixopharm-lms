@@ -1,0 +1,78 @@
+{
+  "id": "3af8defb-10de-45fe-88ec-552b8aedf6ef",
+  "module_id": "405b2e6f-2c09-41e2-930e-8ab0b29c32ef",
+  "title": "St. George's University (SGU) Impact on Grenada's Health System",
+  "content": [
+    {
+      "text": "SGU — The University That Transformed Grenada's Health Landscape",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "St. George's University (SGU) is one of the most influential institutions in Grenada — and indeed in Caribbean health education. Founded in 1976, SGU is best known for its medical school, which trains thousands of students from around the world. While SGU is primarily a medical school (not a pharmacy school), its presence on the island has profoundly shaped Grenada's health system, including pharmacy practice. The university's affiliated clinical training sites, research programmes, and the health needs of its large student population create a unique dynamic that pharmacy technicians working in Grenada must understand.",
+      "type": "text"
+    },
+    {
+      "term": "St. George's University (SGU)",
+      "type": "key-term",
+      "definition": "A private international university located in True Blue, St. George, Grenada. Founded in 1976, SGU is best known for its School of Medicine, which is one of the largest medical schools in the Caribbean. SGU also offers programmes in veterinary medicine, public health, science, and business. The university's clinical programmes partner with local hospitals, including the General Hospital, creating a teaching-hospital dynamic."
+    },
+    {
+      "text": "How SGU Impacts Pharmacy Practice in Grenada",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "type": "list",
+      "items": [
+        "Student population: SGU brings 5,000-7,000 students to Grenada, many of whom require pharmacy services (prescriptions, OTC medications, travel health supplies)",
+        "Clinical rotations: SGU medical students do clinical rotations at the General Hospital in St. George's, increasing the hospital's activity and, consequently, its pharmacy workload",
+        "International prescriptions: SGU students from the USA, Canada, and UK sometimes present prescriptions or medication requests from their home countries — pharmacy technicians must understand when these can and cannot be honoured",
+        "Research and public health: SGU's research programmes contribute to health data that informs national prescribing patterns and disease management strategies",
+        "Economic impact: SGU is Grenada's largest private-sector employer; the economic activity it generates supports the viability of community pharmacies near the campus",
+        "Healthcare standards: The presence of an internationally accredited medical school has raised expectations for healthcare quality on the island, including pharmacy services"
+      ],
+      "ordered": false
+    },
+    {
+      "body": "If you work in a community pharmacy near SGU's campus (particularly in the True Blue or Grand Anse area), expect a significant proportion of your customers to be international students. They may have different expectations about pharmacy services, may ask for medications by unfamiliar brand names (US or Canadian brands), and may need help understanding Grenada's prescription requirements. Cultural competence, patience, and good communication skills are essential.",
+      "type": "callout",
+      "title": "Working Near SGU",
+      "variant": "tip"
+    },
+    {
+      "text": "SGU and Public Health Initiatives",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "SGU has been involved in several public health initiatives that benefit Grenada's population, including chronic disease screening programmes, health fairs, and community health education. These initiatives often identify patients who need pharmaceutical management, indirectly increasing pharmacy workload. SGU's public health programmes have also contributed to better data on Grenada's disease burden, helping to inform the national essential medicines list and procurement priorities.",
+      "type": "text"
+    },
+    {
+      "type": "case-study",
+      "title": "Case Study: The SGU Student Prescription",
+      "scenario": "An American SGU medical student comes to your community pharmacy in Grand Anse with a US prescription from their doctor back home for Adderall (amphetamine/dextroamphetamine) 20mg — a Schedule 2 controlled substance used for ADHD. The prescription appears legitimate and bears the US doctor's DEA number. The student needs a refill urgently for their studies.",
+      "questions": [
+        "Can a Grenadian pharmacy legally fill a US prescription for a Schedule 2 controlled substance?",
+        "What should the pharmacy technician say to the student?",
+        "What options does the student have to obtain their medication legally in Grenada?"
+      ],
+      "discussion": "A Grenadian pharmacy cannot legally fill a foreign prescription for a controlled substance. Adderall (amphetamine salts) is a Schedule 2 substance in Grenada under the Misuse of Drugs Act. The technician should politely explain that foreign prescriptions for controlled substances cannot be honoured in Grenada, and suggest the student consult a local doctor who, if clinically appropriate, could write a Grenadian prescription. However, the availability of Adderall specifically in Grenada may be limited — the local doctor may recommend an alternative stimulant that is available on the island. The student should also be advised to plan ahead by bringing sufficient supply or arranging with their US doctor for a supply before travelling."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "SGU directly trains pharmacy technicians for the Grenadian market",
+        "SGU's student population and clinical rotations increase demand for pharmacy services",
+        "SGU manufactures medications for the Grenadian pharmaceutical supply",
+        "SGU regulates pharmacy practice on the island"
+      ],
+      "question": "What is the primary way SGU impacts pharmacy workload in Grenada?",
+      "explanation": "SGU brings 5,000-7,000 students to Grenada who require pharmacy services, and its clinical rotations at the General Hospital increase hospital pharmacy workload. SGU is a medical school, not a pharmacy school, and does not directly train pharmacy technicians, manufacture medications, or regulate pharmacy practice.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 25
+}

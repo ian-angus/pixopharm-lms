@@ -1,0 +1,101 @@
+{
+  "id": "53ec307b-4916-4108-887c-ad402ad3875a",
+  "module_id": "b9855cb0-1519-41b9-ba8d-ce85a758b84b",
+  "title": "Paediatric Dose Calculations and Safety Checks",
+  "content": [
+    {
+      "text": "Getting the Dose Right — Every Time",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Paediatric dose calculation is one of the highest-stakes tasks a pharmacy technician performs. Unlike adults, where standard doses apply to most patients, paediatric doses are individualised based on the child's weight (mg/kg), body surface area (mg/m²), or age. Weight-based dosing (mg/kg) is the most common method in Caribbean paediatric practice and is the method pharmacy technicians must master.",
+      "type": "text"
+    },
+    {
+      "text": "Weight-Based Dosing Calculation: Worked Example",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "A paediatrician prescribes amoxicillin 25 mg/kg/day in three divided doses for a 12 kg child with otitis media. The pharmacy has amoxicillin 250 mg/5 mL oral suspension available. Calculate the dose per administration and the volume to be measured.",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Total daily dose = 25 mg/kg/day × 12 kg = 300 mg/day",
+        "Dose per administration = 300 mg ÷ 3 doses = 100 mg per dose",
+        "Volume per dose = (100 mg ÷ 250 mg) × 5 mL = 2 mL per dose",
+        "Verify: 2 mL × 3 doses = 6 mL/day × (250 mg/5 mL) = 300 mg/day ✓",
+        "Cross-check the calculated dose against the BNF for Children or another paediatric dosing reference to confirm it falls within the recommended range"
+      ],
+      "ordered": true
+    },
+    {
+      "body": "Tenfold (10×) dosing errors are the most dangerous and most common calculation errors in paediatric pharmacy. They occur when a decimal point is misplaced (e.g., 2.0 mL written as 20 mL) or when mg and mL are confused. A dose of 2 mL of amoxicillin suspension is safe; a dose of 20 mL (ten times the intended dose) could cause serious harm. ALWAYS write quantities clearly, avoid trailing zeros (write '2 mL' not '2.0 mL'), use leading zeros (write '0.5 mL' not '.5 mL'), and have every paediatric calculation independently verified by a second person.",
+      "type": "callout",
+      "title": "The Tenfold Error: A Preventable Tragedy",
+      "variant": "warning"
+    },
+    {
+      "text": "Maximum Dose Checks",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "After calculating a paediatric dose, always perform a maximum dose check. The calculated dose must not exceed the adult dose for the same drug. If a weight-based calculation produces a dose that exceeds the recommended adult dose, the adult dose becomes the ceiling. For example, if a 50 kg adolescent is prescribed a drug at 10 mg/kg, the calculated dose would be 500 mg. If the maximum adult dose is 400 mg, the dose should be capped at 400 mg.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Tenfold error",
+          "2 mL → 20 mL",
+          "10× overdose; potentially fatal",
+          "Use leading zeros; avoid trailing zeros; independent verification"
+        ],
+        [
+          "Weight error",
+          "Using 12 lb instead of 12 kg (1 kg ≈ 2.2 lb)",
+          "2.2× overdose",
+          "Always confirm weight units; weigh in kg; verify with parent"
+        ],
+        [
+          "Concentration confusion",
+          "Using 250 mg/5 mL when product is 125 mg/5 mL",
+          "Half the intended dose (underdose)",
+          "Verify concentration on the actual bottle; never assume"
+        ],
+        [
+          "Exceeding adult dose",
+          "Calculated dose exceeds adult maximum",
+          "Toxicity",
+          "Always compare calculated dose to adult maximum; cap if exceeded"
+        ]
+      ],
+      "type": "table",
+      "caption": "Common Paediatric Dose Calculation Errors and Prevention",
+      "headers": [
+        "Error Type",
+        "Example",
+        "Consequence",
+        "Prevention"
+      ]
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "300 mg per dose",
+        "150 mg per dose",
+        "75 mg per dose",
+        "30 mg per dose"
+      ],
+      "question": "A doctor prescribes Drug Z at 15 mg/kg/day in two divided doses for a 20 kg child. What is the correct dose per administration?",
+      "explanation": "Total daily dose = 15 mg/kg/day × 20 kg = 300 mg/day. Divided into 2 doses: 300 mg ÷ 2 = 150 mg per administration. This dose should then be verified against the maximum recommended dose for Drug Z in published paediatric references.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 25
+}

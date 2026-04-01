@@ -1,0 +1,85 @@
+{
+  "id": "9a1506a7-ca8e-44ae-95bb-72416ecbf0dc",
+  "module_id": "9ea63d27-8c24-4427-8db7-c949b7266bf5",
+  "title": "Pharmaceutical Waste Disposal & Environmental Responsibility",
+  "content": [
+    {
+      "text": "Disposing of Medications Responsibly on Small Islands",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Pharmaceutical waste disposal is a significant environmental challenge for Caribbean island nations. Small island developing states (SIDS) have limited land area, fragile ecosystems, and limited waste management infrastructure. Medications flushed down drains can contaminate the marine environment and freshwater sources. Medications deposited in landfills can leach into groundwater. And incineration — while effective — requires facilities that many Caribbean islands lack. As a pharmacy professional, you have a responsibility to ensure that pharmaceutical waste is disposed of in the least harmful way possible.",
+      "type": "text"
+    },
+    {
+      "body": "Pharmaceutical waste is broadly categorised into non-hazardous (most expired tablets and capsules, packaging), hazardous (cytotoxic drugs, chemotherapy agents, certain antiseptics), sharps (needles, syringes, lancets), and controlled substances (requiring witnessed destruction as previously discussed). Each category requires a different disposal pathway.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Non-hazardous expired medications",
+          "Expired tablets, capsules, ointments, syrups",
+          "High-temperature incineration (preferred) or encapsulation in concrete and landfill disposal",
+          "Many islands lack pharmaceutical-grade incinerators"
+        ],
+        [
+          "Hazardous / cytotoxic waste",
+          "Chemotherapy agents, cytotoxic drugs, certain IV admixtures",
+          "High-temperature incineration at licenced facility; never landfill",
+          "May need to ship to regional or international treatment facilities"
+        ],
+        [
+          "Sharps waste",
+          "Needles, syringes, lancets, broken ampoules",
+          "Puncture-proof sharps containers → incineration or autoclaving",
+          "Community sharps return programmes are limited in many Caribbean islands"
+        ],
+        [
+          "Controlled substances",
+          "Expired narcotics, psychotropic substances, patient returns",
+          "Witnessed destruction with regulatory authority present",
+          "Scheduling witnesses can delay disposal; secure storage needed in the interim"
+        ]
+      ],
+      "type": "table",
+      "caption": "Pharmaceutical Waste Categories and Disposal Methods",
+      "headers": [
+        "Category",
+        "Examples",
+        "Disposal Method",
+        "Caribbean Challenge"
+      ]
+    },
+    {
+      "body": "The World Health Organization provides guidelines for pharmaceutical waste disposal in resource-limited settings through its WASH (Water, Sanitation, and Hygiene) framework. For Caribbean nations, WHO recommends that expired medications should NEVER be flushed down drains or disposed of in regular municipal waste. Preferred methods include high-temperature incineration, encapsulation (mixing with cement in sealed containers for landfill), and chemical denaturing of liquid preparations. CARPHA provides regional guidance adapted from WHO recommendations.",
+      "type": "callout",
+      "title": "The WHO WASH Framework for Pharmaceutical Disposal",
+      "variant": "info"
+    },
+    {
+      "term": "Encapsulation",
+      "type": "key-term",
+      "definition": "A pharmaceutical waste disposal method where expired or waste medications are mixed with cement, lime, or another immobilising material in a sealed container and disposed of in a controlled landfill site. The encapsulation matrix prevents the medications from leaching into groundwater. This method is recommended by WHO for resource-limited settings where incineration is unavailable."
+    },
+    {
+      "body": "Community take-back programmes — where patients can return unused medications to the pharmacy for safe disposal — are an emerging practice in the Caribbean. These programmes reduce the risk of accidental poisoning (particularly in homes with children), prevent environmental contamination from home disposal, and reduce the potential for diversion of unused controlled substances. As a pharmacy technician, you can promote these programmes to patients as part of routine counselling.",
+      "type": "text"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "It clogs the plumbing system",
+        "It wastes water",
+        "Caribbean SIDS have fragile marine ecosystems and limited freshwater sources vulnerable to pharmaceutical contamination",
+        "It violates international shipping regulations"
+      ],
+      "question": "Why is flushing expired medications down the drain particularly problematic in Caribbean island nations?",
+      "explanation": "Caribbean small island developing states have particularly fragile marine ecosystems (coral reefs, mangroves) and limited freshwater sources (aquifers, rivers) that are highly vulnerable to pharmaceutical contamination. Flushing medications introduces active pharmaceutical ingredients into water systems, with potential ecological harm and contamination of drinking water supplies.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 20
+}

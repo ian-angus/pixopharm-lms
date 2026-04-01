@@ -1,0 +1,144 @@
+[
+  {
+    "id": "3d3315f5-f55b-4d10-8fdc-a64104add094",
+    "module_id": "8759d1cb-8aee-41fa-bb18-ddb11b629779",
+    "question": "What is the primary patient safety benefit of barcode scanning during the dispensing process?",
+    "options": [
+      "It speeds up the dispensing process",
+      "It eliminates the need for pharmacist verification",
+      "It provides electronic verification that the correct product has been selected to match the prescription",
+      "It generates promotional discounts for frequent customers"
+    ],
+    "correct_answer": 2,
+    "explanation": "Barcode scanning provides electronic verification by comparing the scanned product's encoded identity (drug name, strength, batch, expiry) against the prescription data entry. This catches selection errors — particularly LASA medication mix-ups — that the human eye might miss.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "e44223bc-f247-40fe-8e96-e178e4910677",
+    "module_id": "8759d1cb-8aee-41fa-bb18-ddb11b629779",
+    "question": "True or False: A pharmacy management system eliminates the need for manual verification checks by the pharmacist.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": 1,
+    "explanation": "False. Pharmacy management systems supplement — never replace — manual verification by the pharmacist. Technology is a safety layer, not a substitute for professional judgement. The pharmacist's final verification remains a legal and professional requirement.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "7c7f91de-76c1-4a06-868f-b9217e8c9ae0",
+    "module_id": "8759d1cb-8aee-41fa-bb18-ddb11b629779",
+    "question": "Which barcode standard is becoming the global norm for pharmaceutical product identification?",
+    "options": [
+      "UPC-A barcode",
+      "QR code",
+      "GS1 DataMatrix",
+      "Code 128"
+    ],
+    "correct_answer": 2,
+    "explanation": "The GS1 DataMatrix is the internationally recognised standard for pharmaceutical products. It encodes the GTIN, batch number, expiry date, and serial number — enabling pharmaceutical serialisation and track-and-trace systems.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "38592f72-7cf4-4c47-95ac-3119fca58ad3",
+    "module_id": "8759d1cb-8aee-41fa-bb18-ddb11b629779",
+    "question": "Which government programme in Jamaica requires POS integration for co-payment processing at the pharmacy?",
+    "options": [
+      "CDAP (Chronic Disease Assistance Programme)",
+      "NHF (National Health Fund)",
+      "Barbados Drug Service",
+      "OECS PPS"
+    ],
+    "correct_answer": 1,
+    "explanation": "Jamaica's National Health Fund (NHF) subsidises medications for specific chronic conditions. POS integration is needed to verify patient NHF eligibility, calculate the subsidised co-payment, and generate reimbursement claims for the pharmacy.",
+    "order_index": 3,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "51d41895-312e-45dd-abe3-67528c892959",
+    "module_id": "8759d1cb-8aee-41fa-bb18-ddb11b629779",
+    "question": "A pharmacy technician shares her POS login credentials with a colleague to save time during a busy period. What is the risk?",
+    "options": [
+      "No risk — it improves efficiency",
+      "It compromises the audit trail, as transactions cannot be attributed to the correct staff member",
+      "It speeds up the dispensing process with no downside",
+      "It is required during busy periods"
+    ],
+    "correct_answer": 1,
+    "explanation": "Sharing login credentials destroys the audit trail. Individual logins ensure that every transaction can be traced to the staff member who processed it — essential for accountability, error tracking, and regulatory compliance. Credential sharing may also violate data protection laws.",
+    "order_index": 4,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "evaluate"
+  },
+  {
+    "id": "0fc09a54-e5c7-4aa5-89d1-10e723583ae2",
+    "module_id": "8759d1cb-8aee-41fa-bb18-ddb11b629779",
+    "question": "Match each technology component with its primary function in a pharmacy.",
+    "options": [
+      "POS system → Financial transaction processing and programme claims",
+      "Barcode scanner → Product verification at point of selection",
+      "Pharmacy management software → Prescription processing and patient records",
+      "All matches are correct"
+    ],
+    "correct_answer": 3,
+    "explanation": "All three matches are correct. The POS handles financial transactions and subsidy claims. The barcode scanner verifies product selection. The pharmacy management software manages prescriptions, patient records, and inventory.",
+    "order_index": 5,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "808ddf7b-5675-4f8a-a9a5-ead717571966",
+    "module_id": "8759d1cb-8aee-41fa-bb18-ddb11b629779",
+    "question": "What key factor must Caribbean pharmacies consider when evaluating cloud-based pharmacy management systems?",
+    "options": [
+      "The colour scheme of the software interface",
+      "Internet reliability, since cloud systems require stable connectivity",
+      "Whether the software was developed in the Caribbean",
+      "The number of languages the software supports"
+    ],
+    "correct_answer": 1,
+    "explanation": "Cloud-based systems require reliable internet connectivity to function. In the Caribbean, where internet stability can be inconsistent, particularly during tropical weather events, this is a critical evaluation factor. Pharmacies must ensure adequate connectivity or choose systems with offline capability.",
+    "order_index": 6,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "evaluate"
+  },
+  {
+    "id": "ea6d0a60-3504-4ca6-b9ac-d2ba7c80eea1",
+    "module_id": "8759d1cb-8aee-41fa-bb18-ddb11b629779",
+    "question": "The principle of 'garbage in, garbage out' in pharmacy technology means:",
+    "options": [
+      "Old computers should be replaced with new ones",
+      "The accuracy of system outputs depends entirely on the accuracy of data entered by staff",
+      "Expired medications should be entered into the system before disposal",
+      "Only recycled materials should be used for pharmacy packaging"
+    ],
+    "correct_answer": 1,
+    "explanation": "The 'garbage in, garbage out' principle means that a system's outputs are only as accurate as its inputs. In pharmacy, this has life-or-death implications: if a prescription is entered incorrectly, the system will generate an incorrect label, incorrect interaction checks, and incorrect inventory records. Data accuracy is the technician's responsibility.",
+    "order_index": 7,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "understand"
+  }
+]

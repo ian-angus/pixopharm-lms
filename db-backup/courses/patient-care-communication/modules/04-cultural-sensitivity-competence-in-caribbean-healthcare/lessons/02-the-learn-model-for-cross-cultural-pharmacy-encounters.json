@@ -1,0 +1,67 @@
+{
+  "id": "270a6052-c23d-4abe-89f7-9be449ab6e5a",
+  "module_id": "6adf744f-6b1b-43dd-ab82-6ccf2046ca79",
+  "title": "The LEARN Model for Cross-Cultural Pharmacy Encounters",
+  "content": [
+    {
+      "text": "A Framework for Every Cultural Encounter",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "The LEARN model provides a structured, practical framework for cross-cultural healthcare encounters. Originally developed by Berlin and Fowkes, it has been widely adopted in pharmacy practice because of its simplicity and effectiveness. Each letter represents a step that pharmacy technicians can apply in daily patient interactions.",
+      "type": "text"
+    },
+    {
+      "term": "LEARN Model",
+      "type": "key-term",
+      "definition": "A five-step cross-cultural communication framework: Listen with sympathy and understanding to the patient's perception of the problem; Explain your perception of the problem; Acknowledge and discuss the differences and similarities; Recommend treatment; Negotiate agreement. It bridges cultural gaps in healthcare encounters."
+    },
+    {
+      "type": "list",
+      "items": [
+        "L — LISTEN: Hear the patient's perspective on their illness, its cause, and their preferred treatment. Do not interrupt or correct. 'Tell me what you think is causing your symptoms.'",
+        "E — EXPLAIN: Share the clinical perspective in plain language. 'From a medical standpoint, your blood sugar levels suggest type 2 diabetes.'",
+        "A — ACKNOWLEDGE: Recognise differences between the patient's beliefs and the clinical perspective without judgement. 'I can see why you believe the herbal treatment is working — your energy levels have improved.'",
+        "R — RECOMMEND: Offer a treatment plan that respects the patient's cultural context. 'The doctor has prescribed metformin. You can continue your bitter melon tea, but let us make sure there are no interactions.'",
+        "N — NEGOTIATE: Reach a mutually acceptable plan. 'How about we try the metformin for one month alongside your herbal remedy, and check your blood sugar at the end? That way we can see how both are working together.'"
+      ],
+      "ordered": true
+    },
+    {
+      "body": "In a busy pharmacy, you may not have time for a full LEARN conversation. The abbreviated version: (1) Ask one open-ended question about the patient's perspective; (2) Share your clinical information simply; (3) Find one point of agreement; (4) Offer a plan that incorporates both perspectives. Even this abbreviated approach dramatically improves cross-cultural interactions.",
+      "type": "callout",
+      "title": "LEARN in Practice: 3-Minute Version",
+      "variant": "tip"
+    },
+    {
+      "type": "case-study",
+      "title": "Case Study: Rajesh and the Fasting Dilemma",
+      "scenario": "Rajesh, a 45-year-old Hindu man in Trinidad, has been prescribed metformin 500 mg twice daily with meals for type 2 diabetes. He tells you: 'I am doing a religious fast for Navratri — I will not eat for nine days, only fruits. How should I take my tablet?' Using the LEARN model, he has Listened to his doctor's instructions but is seeking your guidance on integrating them with his religious practice.",
+      "questions": [
+        "How would you apply the LEARN model to Rajesh's situation?",
+        "What specific safety concern does fasting create for a patient on metformin?",
+        "How could you negotiate a plan that respects his religious practice while ensuring his safety?"
+      ],
+      "discussion": "Listen: Rajesh's Navratri fast is deeply important to him. Explain: Metformin taken without adequate food can cause dangerously low blood sugar (hypoglycaemia). Acknowledge: 'Navratri is a significant time for you, and your faith is important.' Recommend: Consult the pharmacist about potential dose adjustment during the fast; suggest taking metformin with his fruit meals rather than skipping entirely. Negotiate: Agree on a monitoring plan — check blood sugar more frequently during the fast and contact the pharmacy immediately if he feels dizzy, shaky, or unwell. Involve the pharmacist for clinical decision on dosing."
+    },
+    {
+      "body": "The LEARN model has been validated across diverse healthcare settings and cultural contexts. In the Caribbean, it is particularly effective because it begins with listening — an act that many patients, accustomed to being told what to do, find surprisingly empowering. When a patient feels genuinely heard, they become far more receptive to clinical recommendations.",
+      "type": "text"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Telling the patient they must follow the prescription exactly as written",
+        "Arguing with the patient until they agree with the clinical perspective",
+        "Reaching a mutually acceptable plan that incorporates both the clinical recommendation and the patient's cultural values",
+        "Negotiating a lower price for the medication"
+      ],
+      "question": "In the LEARN model, what does the 'N' step (Negotiate) involve?",
+      "explanation": "The Negotiate step is about finding common ground — a treatment plan that both the healthcare provider and the patient can agree on. It incorporates clinical necessity with cultural respect, resulting in a plan the patient is actually willing and able to follow.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 20
+}

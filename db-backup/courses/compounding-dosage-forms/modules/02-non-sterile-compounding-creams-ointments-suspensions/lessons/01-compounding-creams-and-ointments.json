@@ -1,0 +1,114 @@
+{
+  "id": "f0d4e9c9-c8e1-404d-8551-50dd6dfc4c90",
+  "module_id": "09de5c32-b893-4b01-812f-12f4b6b92bc3",
+  "title": "Compounding Creams and Ointments",
+  "content": [
+    {
+      "text": "Preparing Topical Semi-Solid Preparations",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Compounding creams and ointments is one of the most common non-sterile compounding tasks in Caribbean pharmacy practice. Dermatological conditions are highly prevalent in the tropics — fungal infections, contact dermatitis, eczema exacerbated by heat and humidity, insect bites, and sun-related conditions all require topical treatment. When the precise formulation a patient needs is not commercially available, the pharmacy technician compounds it.",
+      "type": "text"
+    },
+    {
+      "text": "Key Techniques for Topical Compounding",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "term": "Geometric Dilution",
+      "type": "key-term",
+      "definition": "A technique used to ensure the uniform distribution of a small quantity of potent drug throughout a larger quantity of base or diluent. The drug is first mixed with an approximately equal amount of base, then that mixture is combined with another equal amount of base, and so on — doubling the quantity at each step until all the base has been incorporated. This method prevents 'hot spots' of concentrated drug in the finished product."
+    },
+    {
+      "body": "Geometric dilution is the cornerstone technique for incorporating a small amount of active ingredient into a large amount of base. Consider compounding 100g of a 1% hydrocortisone cream: you have 1g of hydrocortisone powder to distribute uniformly throughout 99g of cream base. Simply dumping the powder into the base and stirring would result in uneven distribution — some areas of the cream would contain too much drug, others too little. Geometric dilution solves this problem by building up the mixture incrementally.",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Place the hydrocortisone powder (1g) on the ointment slab",
+        "Add an approximately equal amount of cream base (~1g) and mix thoroughly using a spatula with firm, consistent strokes",
+        "Add another portion of base equal to the current mixture (~2g) and mix thoroughly",
+        "Continue doubling the amount of base added at each step: ~4g, ~8g, ~16g, ~32g",
+        "Incorporate the remaining base and mix until the preparation is smooth and homogeneous",
+        "Scrape down the sides of the slab and spatula to ensure no material is lost",
+        "Transfer to the dispensing container, weigh to verify the final weight, and label"
+      ],
+      "ordered": true
+    },
+    {
+      "term": "Levigation",
+      "type": "key-term",
+      "definition": "A technique for reducing the particle size of a solid drug by triturating (grinding) it with a small amount of liquid (the levigating agent) on an ointment slab. The levigating agent wets the particles, preventing them from flying off the slab, and creates a smooth paste that can be easily incorporated into the final base. Common levigating agents include mineral oil, glycerin, and propylene glycol."
+    },
+    {
+      "body": "When incorporating insoluble powders into an ointment or cream base, levigation should be performed before geometric dilution. The powder is first triturated with a small volume of an appropriate levigating agent (mineral oil for oil-based preparations, glycerin or propylene glycol for water-based preparations) to form a smooth, fine paste. This paste is then incorporated into the base using geometric dilution. Levigation produces a smoother, more elegant finished product and ensures that the drug particles are small enough for effective topical application.",
+      "type": "text"
+    },
+    {
+      "body": "When mixing on an ointment slab, use the flat side of the spatula to spread the mixture across the slab with firm, sweeping strokes. Scrape the mixture back to the centre after every few strokes. This technique — called spatulation — is more effective than stirring in a circular motion. The goal is to shear the preparation between the spatula and the slab surface, which breaks up aggregates and produces a smooth, uniform product. Practise this technique until it becomes second nature.",
+      "type": "callout",
+      "title": "The Spatulation Technique",
+      "variant": "tip"
+    },
+    {
+      "rows": [
+        [
+          "Hydrocortisone cream 1%",
+          "Insect bites, mild eczema, contact dermatitis",
+          "Oil-in-water cream base (e.g., aqueous cream BP)",
+          "Commonly compounded when commercial OTC products are out of stock; must be used within 30 days (no preservative testing)"
+        ],
+        [
+          "Compound benzoic acid ointment (Whitfield's ointment)",
+          "Fungal skin infections (tinea)",
+          "Emulsifying ointment BP or white soft paraffin",
+          "Very common in Caribbean practice; contains benzoic acid 6% + salicylic acid 3%"
+        ],
+        [
+          "Zinc oxide paste",
+          "Diaper rash, skin protection, weeping skin lesions",
+          "White soft paraffin + zinc oxide powder (25–50%)",
+          "Extremely stable; excellent barrier against tropical moisture; commonly compounded for paediatric use"
+        ],
+        [
+          "Calamine cream or lotion",
+          "Sunburn, insect bites, mild skin irritation",
+          "Aqueous cream base (cream) or water (lotion)",
+          "Very commonly requested in the Caribbean; cooling and soothing effect"
+        ]
+      ],
+      "type": "table",
+      "caption": "Common Compounded Topical Preparations in Caribbean Pharmacies",
+      "headers": [
+        "Preparation",
+        "Typical Use",
+        "Base",
+        "Notes"
+      ]
+    },
+    {
+      "type": "video-placeholder",
+      "title": "Demonstration: Geometric Dilution and Levigation",
+      "duration": "12 min",
+      "description": "Watch a step-by-step demonstration of compounding a 1% hydrocortisone cream using levigation and geometric dilution techniques on an ointment slab. The video covers ingredient weighing, levigation with mineral oil, geometric dilution into aqueous cream base, spatulation technique, quality checks, and final packaging."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "To reduce the cost of ingredients",
+        "To ensure the small amount of drug is uniformly distributed throughout the large amount of base, preventing concentration hot spots",
+        "To increase the shelf life of the preparation",
+        "To make the cream more aesthetically pleasing"
+      ],
+      "question": "When compounding a 1% hydrocortisone cream, why is geometric dilution used rather than simply adding the powder directly to the cream base?",
+      "explanation": "Geometric dilution ensures that a small quantity of potent drug is evenly distributed throughout a larger quantity of base. Without this technique, the drug could be concentrated in some areas of the cream (hot spots) and absent in others, leading to inconsistent dosing — some applications would deliver too much drug, others too little. This is especially critical for potent drugs like hydrocortisone.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 30
+}

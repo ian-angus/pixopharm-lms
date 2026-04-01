@@ -1,0 +1,145 @@
+[
+  {
+    "id": "4bdd0b2b-811f-49b9-88bc-48be093bdd21",
+    "module_id": "1f1768e6-a667-41f3-8cd9-025c0e02e0fb",
+    "question": "In which Caribbean jurisdiction is CARPHA headquartered, providing regional guidance on pharmaceutical quality?",
+    "options": [
+      "Kingston, Jamaica",
+      "Bridgetown, Barbados",
+      "Port of Spain, Trinidad and Tobago",
+      "Georgetown, Guyana"
+    ],
+    "correct_answer": 2,
+    "explanation": "CARPHA (Caribbean Public Health Agency) is headquartered in Port of Spain, Trinidad and Tobago. It provides regional guidance on pharmaceutical quality, disease surveillance, and public health policy that influences compounding standards across the Caribbean.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "5b2b6fd7-2767-4cc4-863d-4216166c960f",
+    "module_id": "1f1768e6-a667-41f3-8cd9-025c0e02e0fb",
+    "question": "What constitutes the critical legal distinction between pharmacy compounding and pharmaceutical manufacturing in Caribbean jurisdictions?",
+    "options": [
+      "The size of the pharmacy",
+      "Compounding is for individual patients based on prescriptions; manufacturing is large-scale production for general distribution",
+      "The type of drugs used",
+      "The qualifications of the person preparing the medication"
+    ],
+    "correct_answer": 1,
+    "explanation": "Across all Caribbean jurisdictions studied, the critical legal distinction is that compounding involves preparing a medication for an individual patient in response to a specific prescription, while manufacturing involves large-scale production of medications for general distribution. Crossing this boundary without appropriate licensing is a legal offence.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "a8d6163f-47f7-4803-921a-e75fe3743e75",
+    "module_id": "1f1768e6-a667-41f3-8cd9-025c0e02e0fb",
+    "question": "A pharmacy in Barbados uses correction fluid (Tipp-Ex) to cover an error in a paper compounding record. Is this acceptable practice?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": 1,
+    "explanation": "Using correction fluid (Tipp-Ex/White-Out) on pharmacy records is NEVER acceptable. The correct method for correcting a paper record is to draw a single line through the error (so the original entry is still readable), write the correction nearby, and initial and date the change. Obliterating entries raises suspicions of record tampering and can have serious legal and regulatory consequences.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "d2a6ec48-151b-4f5a-ae8d-aac5a8ea6e3a",
+    "module_id": "1f1768e6-a667-41f3-8cd9-025c0e02e0fb",
+    "question": "Which of the following records should a Caribbean compounding pharmacy maintain? Select ALL that apply.",
+    "options": [
+      "Master formulae for all compounded preparations",
+      "Compounding records with ingredient lot numbers",
+      "Equipment calibration records",
+      "Temperature and humidity logs for the compounding area",
+      "Staff social media passwords"
+    ],
+    "correct_answer": 0,
+    "explanation": "A compounding pharmacy must maintain master formulae, compounding records (including ingredient lot numbers), equipment calibration records, and temperature/humidity logs. These documents are essential for quality assurance, traceability, and regulatory compliance. Staff social media passwords are obviously not a pharmacy record and have no place in compounding documentation.",
+    "order_index": 3,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "c9f3efe3-e054-43bc-b86f-16aa885add5e",
+    "module_id": "1f1768e6-a667-41f3-8cd9-025c0e02e0fb",
+    "question": "According to Good Pharmacy Practice (GPP), what should a pharmacy technician do if they are uncertain about the safety of a compounding ingredient?",
+    "options": [
+      "Use the ingredient anyway to avoid delaying the patient's medication",
+      "Substitute a different ingredient without consulting anyone",
+      "Stop compounding, consult the pharmacist, and do not proceed until the safety concern is resolved",
+      "Continue compounding but assign a shorter beyond-use date"
+    ],
+    "correct_answer": 2,
+    "explanation": "Good Pharmacy Practice is unequivocal: if you are uncertain about the safety of any aspect of the compounding process — an ingredient, a calculation, a procedure — you must stop, not compound, and consult the pharmacist. It is always better to delay than to risk dispensing a potentially unsafe preparation. This principle protects patients and is the ethical standard expected of all pharmacy professionals.",
+    "order_index": 4,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "9cc2018b-d4dc-475b-9544-ab3306e770d2",
+    "module_id": "1f1768e6-a667-41f3-8cd9-025c0e02e0fb",
+    "question": "In Trinidad and Tobago, pharmaceutical compounding must be performed under whose direct supervision?",
+    "options": [
+      "A pharmacy technician with 5+ years of experience",
+      "A registered pharmacist",
+      "Any pharmacy employee",
+      "A nurse practitioner"
+    ],
+    "correct_answer": 1,
+    "explanation": "In Trinidad and Tobago (and in Jamaica and Barbados), pharmaceutical compounding must be performed under the direct supervision of a registered pharmacist. While the pharmacy technician performs the physical compounding, the pharmacist is responsible for verifying the prescription, approving the formula, checking calculations, and performing the final quality check before the preparation is released.",
+    "order_index": 5,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "b23a8004-4ba5-4dbd-a32b-916472f1d1db",
+    "module_id": "1f1768e6-a667-41f3-8cd9-025c0e02e0fb",
+    "question": "Why should Caribbean pharmacies consider off-site or cloud backup for digital compounding records?",
+    "options": [
+      "To share records with competitor pharmacies",
+      "To protect records from natural disasters (hurricanes, flooding) that are common in the Caribbean",
+      "To reduce the need for paper records",
+      "To allow patients to access their own records online"
+    ],
+    "correct_answer": 1,
+    "explanation": "The Caribbean is highly vulnerable to natural disasters, including hurricanes, tropical storms, flooding, and earthquakes. These events can destroy paper records and on-site digital storage. Off-site or cloud backup ensures that critical compounding records survive natural disasters, enabling continued traceability and regulatory compliance even after a catastrophic event.",
+    "order_index": 6,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "evaluate"
+  },
+  {
+    "id": "915b7120-3973-485a-9f94-f93ed9b44e30",
+    "module_id": "1f1768e6-a667-41f3-8cd9-025c0e02e0fb",
+    "question": "Match each Caribbean organisation with its role in pharmaceutical compounding and quality.",
+    "options": [
+      "Pharmacy Board of Trinidad and Tobago",
+      "CARPHA",
+      "Caribbean Regulatory System (CRS)",
+      "COSTAATT"
+    ],
+    "correct_answer": 0,
+    "explanation": "The Pharmacy Board of T&T governs pharmacy practice including compounding; CARPHA provides regional pharmaceutical quality guidance; CRS works toward harmonising drug registration across CARICOM; COSTAATT provides pharmacy technician education and training in Trinidad and Tobago.",
+    "order_index": 7,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  }
+]

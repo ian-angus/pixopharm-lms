@@ -1,0 +1,181 @@
+[
+  {
+    "id": "3a53cd47-69a8-46cc-9575-7e2c83426c58",
+    "module_id": "405b2e6f-2c09-41e2-930e-8ab0b29c32ef",
+    "question": "Why does Grenada have no locally trained pharmacists?",
+    "options": [
+      "The Grenada Pharmacy Council prohibits local training",
+      "SGU's medical school has replaced the need for pharmacists",
+      "Grenada has no local pharmacy degree programme — all pharmacists must train overseas",
+      "The government does not recognise pharmacy as a profession"
+    ],
+    "correct_answer": 2,
+    "explanation": "Grenada has no local pharmacy degree programme. All Grenadian pharmacists must train overseas — primarily at UWI (St. Augustine or Mona), UTech Jamaica, or international universities. This creates a dependency on externally trained professionals and contributes to the brain drain challenge.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "fe34720d-4aae-4fb6-8edb-eb546e554b79",
+    "module_id": "405b2e6f-2c09-41e2-930e-8ab0b29c32ef",
+    "question": "An American SGU student presents a US prescription for Adderall (Schedule 2 controlled substance) at a Grenadian pharmacy. What is the correct response?",
+    "options": [
+      "Fill the prescription — it is valid and from a licensed US doctor",
+      "Fill a partial quantity to help the student while they seek a local prescription",
+      "Politely explain that foreign prescriptions for controlled substances cannot be honoured in Grenada and suggest they consult a local doctor",
+      "Contact the US doctor to verify and then dispense"
+    ],
+    "correct_answer": 2,
+    "explanation": "Grenadian pharmacies cannot legally fill foreign prescriptions for controlled substances. The technician should politely explain this and suggest the student consult a local doctor who, if clinically appropriate, could write a Grenadian prescription for the medication or a suitable alternative available on the island.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "24f04e75-d761-4a4a-8b5e-3edb3540a1a6",
+    "module_id": "405b2e6f-2c09-41e2-930e-8ab0b29c32ef",
+    "question": "What was the significance of Hurricane Ivan (2004) for Grenada's pharmacy system?",
+    "options": [
+      "It had no significant impact on pharmacy services",
+      "It caused catastrophic damage that led to improved emergency preparedness protocols and pharmaceutical stockpiling",
+      "It resulted in the closure of all community pharmacies permanently",
+      "It led to Grenada building its own pharmaceutical manufacturing plant"
+    ],
+    "correct_answer": 1,
+    "explanation": "Hurricane Ivan caused catastrophic damage to Grenada, destroying over 90% of structures including the General Hospital. The pharmaceutical supply chain was completely disrupted. This became a turning point that led to improved emergency preparedness protocols, including pharmaceutical emergency stockpiling, disaster response SOPs, and regional mutual aid agreements.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "7a42fd7d-f962-472b-9159-aa2d3c07ce62",
+    "module_id": "405b2e6f-2c09-41e2-930e-8ab0b29c32ef",
+    "question": "What is the OECS Pharmaceutical Procurement Service (PPS) and how does it benefit Grenada?",
+    "options": [
+      "A local Grenadian drug manufacturing facility that produces generic medications",
+      "A pooled purchasing mechanism for nine Eastern Caribbean states that achieves better prices and more reliable supply",
+      "A US government programme that provides free medications to Caribbean islands",
+      "An OECS organisation that trains pharmacy technicians across the region"
+    ],
+    "correct_answer": 1,
+    "explanation": "The OECS PPS pools pharmaceutical purchasing needs of nine Eastern Caribbean states, achieving price reductions of 30-70% compared to individual procurement. For small islands like Grenada, this pooled purchasing power is essential for maintaining affordable medication supply.",
+    "order_index": 3,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "68828f5f-e669-434d-a819-1444210e3665",
+    "module_id": "405b2e6f-2c09-41e2-930e-8ab0b29c32ef",
+    "question": "Which traditional Grenadian spice can be toxic in excessive quantities due to its myristicin content?",
+    "options": [
+      "Cinnamon",
+      "Turmeric",
+      "Nutmeg",
+      "Ginger"
+    ],
+    "correct_answer": 2,
+    "explanation": "Nutmeg, Grenada's signature spice, contains myristicin which can cause hallucinations, nausea, and liver damage when consumed in excessive quantities or as concentrated oil. While safe in culinary amounts, pharmacy technicians should be aware of potential medicinal overuse.",
+    "order_index": 4,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "943607e4-2b70-433b-ab91-d1ca58153656",
+    "module_id": "405b2e6f-2c09-41e2-930e-8ab0b29c32ef",
+    "question": "A pharmacy technician in Grenada notices that the essential medicines list does not include the specific SSRI antidepressant that a patient needs. What should they do?",
+    "options": [
+      "Tell the patient there is nothing that can be done",
+      "Dispense Amitriptyline instead without consulting the pharmacist",
+      "Flag the issue to the pharmacist, who can discuss formulary alternatives with the prescriber or explore private-sector procurement options",
+      "Order the medication directly from an international supplier"
+    ],
+    "correct_answer": 2,
+    "explanation": "When a needed medication is not on the essential medicines list, the technician should alert the pharmacist. The pharmacist can then contact the prescriber to discuss available formulary alternatives (e.g. Amitriptyline or Fluoxetine if available) or explore whether the medication can be procured through private-sector channels for the patient.",
+    "order_index": 5,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "ffe6f72f-d098-4768-881c-431576e6a7fa",
+    "module_id": "405b2e6f-2c09-41e2-930e-8ab0b29c32ef",
+    "question": "How does SGU's presence on the island primarily affect community pharmacies near its campus?",
+    "options": [
+      "SGU students are prohibited from using local pharmacies",
+      "SGU provides free medications to all community pharmacies",
+      "The student population increases demand for pharmacy services, including prescriptions and OTC products",
+      "SGU's students replace the need for pharmacy technicians at nearby pharmacies"
+    ],
+    "correct_answer": 2,
+    "explanation": "SGU brings 5,000-7,000 students to Grenada, significantly increasing demand for pharmacy services — particularly in the True Blue and Grand Anse areas near campus. These students need prescriptions filled, OTC medications, travel health supplies, and general pharmacy services.",
+    "order_index": 6,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "bc35c190-5416-439a-a7ac-7dd4a4a42932",
+    "module_id": "405b2e6f-2c09-41e2-930e-8ab0b29c32ef",
+    "question": "Place the following post-hurricane pharmaceutical triage priorities in the correct order: (1) Other routine medications, (2) Medications for chronic conditions that cannot be safely interrupted, (3) Life-saving medications (insulin, anticonvulsants, cardiac drugs)",
+    "options": [
+      "3 → 2 → 1",
+      "1 → 2 → 3",
+      "2 → 3 → 1",
+      "3 → 1 → 2"
+    ],
+    "correct_answer": 0,
+    "explanation": "Post-disaster pharmaceutical triage follows this priority: (1) Life-saving medications first (insulin, anticonvulsants, cardiac medications, antibiotics for wound infections), (2) Medications for chronic conditions that cannot be safely interrupted (antiretrovirals, antihypertensives, diabetes medications), (3) Other routine medications.",
+    "order_index": 7,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "49e04af6-dac3-4d7e-845d-79ea74b53c5f",
+    "module_id": "405b2e6f-2c09-41e2-930e-8ab0b29c32ef",
+    "question": "True or false: Grenada has pharmacy chain stores similar to SuperPharm in T&T or Fontana in Jamaica.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": 1,
+    "explanation": "False. Grenada has no pharmacy chains. All community pharmacies on the island are independently owned and operated, typically by a pharmacist-owner with a small support team. The island's small market does not support chain operations.",
+    "order_index": 8,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "ffc2d244-fa85-4de9-9d43-e87e115098f3",
+    "module_id": "405b2e6f-2c09-41e2-930e-8ab0b29c32ef",
+    "question": "Select ALL the challenges that are specific to or amplified by practising pharmacy in a Small Island Developing State (SIDS) like Grenada:",
+    "options": [
+      "100% import dependency for pharmaceuticals",
+      "Limited economies of scale resulting in higher per-unit costs",
+      "Excessive domestic pharmaceutical manufacturing capacity",
+      "Vulnerability to supply chain disruption from natural disasters",
+      "Brain drain of trained pharmacy professionals"
+    ],
+    "correct_answer": 0,
+    "explanation": "Four of the five options are real SIDS pharmacy challenges: 100% import dependency, limited economies of scale, natural disaster vulnerability, and brain drain. 'Excessive domestic pharmaceutical manufacturing capacity' is the opposite of reality — SIDS like Grenada have no domestic pharmaceutical manufacturing whatsoever.",
+    "order_index": 9,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "analyze"
+  }
+]

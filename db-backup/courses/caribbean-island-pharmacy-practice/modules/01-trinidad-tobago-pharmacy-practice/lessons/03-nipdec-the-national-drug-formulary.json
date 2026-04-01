@@ -1,0 +1,108 @@
+{
+  "id": "bf66593e-1c99-4afa-8324-b13e0d03db0b",
+  "module_id": "aaa6f0c8-9dee-4403-9dce-33b8977e2a1c",
+  "title": "NIPDEC & the National Drug Formulary",
+  "content": [
+    {
+      "text": "NIPDEC and Public-Sector Drug Supply",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "The National Insurance Property Development Company Limited (NIPDEC) is the state enterprise responsible for the procurement, warehousing, and distribution of pharmaceuticals and medical supplies to all public health facilities in Trinidad and Tobago. If you work in an RHA pharmacy, every medication on your shelves almost certainly passed through NIPDEC's supply chain. Understanding how NIPDEC operates is essential for managing stock, anticipating shortages, and knowing how to escalate supply issues.",
+      "type": "text"
+    },
+    {
+      "term": "NIPDEC",
+      "type": "key-term",
+      "definition": "The National Insurance Property Development Company Limited — a state enterprise under the Ministry of Health that procures, stores, and distributes pharmaceuticals, medical devices, and supplies to all public health institutions in Trinidad and Tobago. NIPDEC acts as the central purchasing agent, leveraging bulk buying power to negotiate better prices from international and regional suppliers."
+    },
+    {
+      "text": "How the Supply Chain Works",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "type": "list",
+      "items": [
+        "The Ministry of Health and the RHAs identify medication requirements based on disease burden data and historical consumption",
+        "NIPDEC issues tenders (competitive bids) to pharmaceutical manufacturers and distributors, both locally and internationally",
+        "Winning bidders supply medications to NIPDEC's central warehouse in Trinidad",
+        "NIPDEC's distribution arm delivers medications to RHA hospitals, health centres, and dispensaries on a scheduled basis",
+        "RHA pharmacies receive stock, verify quantities and expiry dates, and store according to protocol",
+        "Pharmacy technicians in RHA settings are responsible for receiving, checking, and properly storing incoming NIPDEC deliveries"
+      ],
+      "ordered": true
+    },
+    {
+      "text": "The National Drug Formulary",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "The National Drug Formulary is the official list of medications approved for use in T&T's public health system. It is maintained by the Ministry of Health in consultation with clinical experts and is reviewed periodically. For pharmacy technicians in public-sector settings, the formulary is your bible — you can only dispense what is on it. When a doctor prescribes something off-formulary, you must flag it to the pharmacist, who will typically contact the prescriber to discuss an alternative that is on the formulary.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Antihypertensives",
+          "Amlodipine, Enalapril, Hydrochlorothiazide, Atenolol",
+          "Generally well-stocked; Enalapril occasionally on back-order"
+        ],
+        [
+          "Antidiabetics",
+          "Metformin, Glibenclamide, Insulin (NPH, Regular)",
+          "Insulin supply chain critical — requires cold storage throughout"
+        ],
+        [
+          "Antibiotics",
+          "Amoxicillin, Augmentin, Ciprofloxacin, Metronidazole, Azithromycin",
+          "Seasonal spikes during flu and dengue season can strain supply"
+        ],
+        [
+          "Analgesics",
+          "Paracetamol, Ibuprofen, Diclofenac, Tramadol",
+          "Tramadol is a controlled substance — strict dispensing protocols apply"
+        ],
+        [
+          "Respiratory",
+          "Salbutamol, Beclomethasone, Prednisolone",
+          "Inhaler supply can be inconsistent; nebuliser solutions more reliably stocked"
+        ],
+        [
+          "Mental Health",
+          "Amitriptyline, Fluoxetine, Haloperidol, Diazepam",
+          "Diazepam is a controlled substance; strict record-keeping required"
+        ]
+      ],
+      "type": "table",
+      "caption": "National Formulary — Selected Therapeutic Categories",
+      "headers": [
+        "Category",
+        "Examples on T&T Formulary",
+        "Common Stock Issues"
+      ]
+    },
+    {
+      "body": "Stock-outs are a chronic challenge in T&T's public pharmacy system. NIPDEC procurement cycles, shipping delays, and budget constraints can all contribute to gaps in supply. As a pharmacy technician, you should: (1) monitor stock levels proactively and flag items approaching reorder points, (2) communicate expected stock-out durations to patients clearly and empathetically, and (3) know which private pharmacies nearby carry CDAP medications so you can redirect patients appropriately.",
+      "type": "callout",
+      "title": "Stock-Outs in the Public System",
+      "variant": "warning"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Training and certifying pharmacy technicians",
+        "Procuring, warehousing, and distributing pharmaceuticals to public health facilities",
+        "Regulating the practice of pharmacy and licensing pharmacists",
+        "Manufacturing generic medications for the Caribbean market"
+      ],
+      "question": "What is NIPDEC's primary role in the T&T health system?",
+      "explanation": "NIPDEC (National Insurance Property Development Company Limited) is the state enterprise responsible for procuring, warehousing, and distributing pharmaceuticals and medical supplies to all public health facilities in Trinidad and Tobago. It acts as the central purchasing agent for the public health system.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 3,
+  "duration_minutes": 25
+}

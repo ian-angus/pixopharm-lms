@@ -1,0 +1,67 @@
+{
+  "id": "ba300aa0-8e82-4c27-8a95-144709d83131",
+  "module_id": "373bbb03-458a-4385-890c-f79814de2f62",
+  "title": "Creating Patient Education Materials with AI",
+  "content": [
+    {
+      "text": "AI-Assisted Patient Education: Culturally Appropriate and Accessible",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Patient education is one of the most impactful roles a pharmacy technician can play, and AI tools can dramatically speed up the creation of high-quality, culturally appropriate educational materials. Whether you need a handout about diabetes management for an elderly patient who speaks primarily Trinidadian Creole, or an infographic about dengue prevention for a school notice board, AI can help you draft it — but you must review it for cultural sensitivity, clinical accuracy, and appropriate literacy level.",
+      "type": "text"
+    },
+    {
+      "body": "Health literacy is a critical consideration in the Caribbean. Studies indicate that a significant proportion of Caribbean patients have limited health literacy — they may struggle to understand standard medical leaflets written at a university reading level. AI tools can help by rewriting clinical information at different reading levels, but you must verify that simplification does not sacrifice critical safety information.",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Step 1: Draft with AI — Use a clear prompt specifying the topic, target audience, reading level, and any cultural considerations",
+        "Step 2: Clinical review — Check every clinical fact against authoritative sources (BNF, drug monograph)",
+        "Step 3: Cultural review — Ensure language, examples, and recommendations are appropriate for the local context",
+        "Step 4: Literacy check — Read aloud. If it sounds complicated when spoken, simplify further",
+        "Step 5: Pharmacist approval — Have the supervising pharmacist review before distributing to patients"
+      ],
+      "ordered": true
+    },
+    {
+      "body": "When creating materials for Caribbean patients, consider using familiar terms alongside medical ones: 'sugar' (diabetes), 'pressure' (hypertension), 'tablets' rather than 'oral medications.' Acknowledge bush medicine respectfully: 'If you are using herbal remedies alongside your medications, please let us know so we can check for interactions.' Never dismiss traditional practices — build trust by respecting them while ensuring safety.",
+      "type": "callout",
+      "title": "Culturally Appropriate Language",
+      "variant": "tip"
+    },
+    {
+      "term": "Health Literacy",
+      "type": "key-term",
+      "definition": "The degree to which individuals can obtain, process, and understand basic health information needed to make appropriate health decisions. Low health literacy is linked to poorer health outcomes, more medication errors, and higher hospitalisation rates."
+    },
+    {
+      "type": "case-study",
+      "title": "Case Study: The Diabetes Handout",
+      "scenario": "You are asked to create a patient handout about metformin for newly diagnosed Type 2 diabetes patients at your pharmacy in Mandeville, Jamaica. Many patients are over 60, some have limited reading ability, and several speak primarily Jamaican Patois. You use Claude to draft the handout, requesting 'a one-page guide to metformin for elderly Jamaican patients, written at a primary school reading level, including when to take it, common side effects, when to call the doctor, and food interactions.' The AI produces a well-structured draft, but includes 'take on an empty stomach' — which contradicts the standard recommendation for metformin (take with food to reduce GI side effects).",
+      "questions": [
+        "What does this error demonstrate about relying on AI for clinical content?",
+        "How would you verify the AI output before giving it to patients?",
+        "What cultural adaptations would you make for the Jamaican patient population?"
+      ],
+      "discussion": "This case demonstrates that AI tools can produce plausible errors in clinical content. Metformin should be taken with or immediately after food to reduce gastrointestinal side effects — the AI's recommendation of 'empty stomach' is incorrect and could cause patients to experience unnecessary nausea and diarrhoea, potentially leading them to stop the medication. The correct workflow: draft with AI, verify every clinical fact against the BNF or drug monograph, adapt language for the local context (include Patois alongside standard English), and get pharmacist sign-off before distribution."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Print and distribute it immediately to save time",
+        "Post it on social media for wider reach",
+        "Verify every clinical fact against authoritative sources and have the pharmacist review it",
+        "Translate it into as many languages as possible"
+      ],
+      "question": "What is the most important step after AI generates a patient education handout?",
+      "explanation": "Clinical verification and pharmacist review are the most critical steps. AI-generated content can contain errors that appear plausible, and distributing incorrect clinical information to patients is a serious safety risk. Every fact must be verified against authoritative sources before the material reaches patients.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 20
+}

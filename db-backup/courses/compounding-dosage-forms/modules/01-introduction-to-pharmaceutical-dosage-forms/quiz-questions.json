@@ -1,0 +1,180 @@
+[
+  {
+    "id": "ec94e369-3905-4f87-a2ef-a07c38b0b6f5",
+    "module_id": "3fc15d29-bbc6-49e7-9434-0660669d41ee",
+    "question": "What is the term for the fraction of an administered drug dose that reaches systemic circulation in an unchanged, pharmacologically active form?",
+    "options": [
+      "Bioequivalence",
+      "Bioavailability",
+      "Biopharmaceutics",
+      "Biotransformation"
+    ],
+    "correct_answer": 1,
+    "explanation": "Bioavailability is the fraction of an administered dose that reaches the systemic circulation in an active form. It is a critical pharmacokinetic parameter that varies depending on the route of administration and the dosage form. Intravenous administration has 100% bioavailability by definition.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "9811433e-5e7f-46a8-9e12-73f571321741",
+    "module_id": "3fc15d29-bbc6-49e7-9434-0660669d41ee",
+    "question": "Why are polyethylene glycol (PEG) suppository bases generally preferred over cocoa butter bases in Caribbean pharmacies?",
+    "options": [
+      "PEG bases are less expensive than cocoa butter",
+      "PEG bases have higher melting points and are more stable at tropical ambient temperatures",
+      "PEG bases provide better drug absorption than cocoa butter",
+      "Cocoa butter is not available in the Caribbean"
+    ],
+    "correct_answer": 1,
+    "explanation": "Cocoa butter melts at approximately 34°C, which is dangerously close to the ambient temperatures regularly experienced in the Caribbean (30°C+). PEG suppository bases have higher melting points and dissolve in rectal fluids rather than melting, making them far more practical for pharmacies and patients in tropical environments.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "99420526-5695-433f-bb3f-a0ff973332af",
+    "module_id": "3fc15d29-bbc6-49e7-9434-0660669d41ee",
+    "question": "A pharmacy technician is reconstituting amoxicillin dry powder for oral suspension. Arrange the following steps in the correct order.",
+    "options": [
+      "Tap the bottle to loosen the powder",
+      "Add approximately half the required volume of purified water and shake vigorously",
+      "Add the remaining water and shake again until uniformly dispersed",
+      "Label with reconstitution date, beyond-use date, and auxiliary labels"
+    ],
+    "correct_answer": 0,
+    "explanation": "The correct reconstitution sequence is: (1) Tap the bottle to loosen compacted powder, (2) Add half the water volume and shake vigorously to wet all particles, (3) Add the remaining water and shake to achieve uniform dispersion, (4) Label with reconstitution date, beyond-use date, and 'SHAKE WELL' and 'KEEP REFRIGERATED' auxiliary labels.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "f5bcda88-5460-462b-84a1-f5a3fabeeba3",
+    "module_id": "3fc15d29-bbc6-49e7-9434-0660669d41ee",
+    "question": "Which semi-solid dosage form is generally BEST tolerated by patients in the tropical Caribbean due to its non-greasy feel?",
+    "options": [
+      "White petrolatum ointment",
+      "Water-in-oil (w/o) cream",
+      "Oil-in-water (o/w) cream",
+      "Stiff paste"
+    ],
+    "correct_answer": 2,
+    "explanation": "Oil-in-water (o/w) creams are the most cosmetically acceptable semi-solid dosage form in the Caribbean tropics because they have a non-greasy feel, allow the skin to breathe, and do not trap perspiration. This makes them far more comfortable for patients in hot, humid conditions compared to ointments, w/o creams, or pastes.",
+    "order_index": 3,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "f0d2e2a2-9285-467b-a825-2ce85ae2c5c8",
+    "module_id": "3fc15d29-bbc6-49e7-9434-0660669d41ee",
+    "question": "What is the primary risk of crushing a modified-release (sustained-release, extended-release) tablet?",
+    "options": [
+      "The tablet will taste bitter",
+      "The drug will be inactivated",
+      "Dose dumping — the entire dose may be released at once, causing toxicity",
+      "The tablet will not dissolve in water"
+    ],
+    "correct_answer": 2,
+    "explanation": "Crushing a modified-release tablet destroys the mechanism that controls the rate of drug release, potentially causing the entire dose to be absorbed at once (dose dumping). This can lead to dangerously high plasma drug concentrations and severe adverse effects or death. This is particularly dangerous with opioids, antihypertensives, and psychotropic medications.",
+    "order_index": 4,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "bdfa82a4-697a-4459-9bbe-c438e69b96ce",
+    "module_id": "3fc15d29-bbc6-49e7-9434-0660669d41ee",
+    "question": "Hard gelatin capsules stored in a Caribbean pharmacy during the wet season are becoming tacky and sticking together. This is caused by which environmental factor?",
+    "options": [
+      "Low temperatures causing condensation",
+      "UV light degradation of the gelatin",
+      "High ambient humidity causing the gelatin to absorb moisture",
+      "Insect contamination of the storage area"
+    ],
+    "correct_answer": 2,
+    "explanation": "Gelatin is highly hygroscopic and readily absorbs moisture from the surrounding environment. During the Caribbean wet season (June–December), humidity regularly exceeds 80% RH, causing gelatin capsule shells to absorb water, become soft, tacky, and stick together. Proper storage with desiccant packets and airtight containers is essential.",
+    "order_index": 5,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "c88444bb-f380-4bc0-b9e1-d70791f79d0d",
+    "module_id": "3fc15d29-bbc6-49e7-9434-0660669d41ee",
+    "question": "An excipient that helps a tablet break apart in the gastrointestinal tract to release the active ingredient is called a:",
+    "options": [
+      "Binder",
+      "Lubricant",
+      "Disintegrant",
+      "Diluent"
+    ],
+    "correct_answer": 2,
+    "explanation": "A disintegrant is an excipient added to tablets to facilitate their break-up (disintegration) after administration. Common disintegrants include croscarmellose sodium and sodium starch glycolate. Disintegration is the first step in drug release from a tablet — the tablet must break apart before the drug can dissolve and be absorbed.",
+    "order_index": 6,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "7b053886-3f30-49bf-87ff-c7734a18a0c8",
+    "module_id": "3fc15d29-bbc6-49e7-9434-0660669d41ee",
+    "question": "Which of the following liquid dosage forms is a homogeneous mixture where the drug is completely dissolved?",
+    "options": [
+      "Suspension",
+      "Emulsion",
+      "Solution",
+      "Lotion"
+    ],
+    "correct_answer": 2,
+    "explanation": "A solution is a homogeneous mixture in which the solute (drug) is completely dissolved in the solvent, producing a clear, uniform preparation. Unlike suspensions (which contain undissolved particles) or emulsions (which contain two immiscible phases), solutions do not require shaking before use and have uniform concentration throughout.",
+    "order_index": 7,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "e7545da6-0892-4b1b-bebf-2a75212a9502",
+    "module_id": "3fc15d29-bbc6-49e7-9434-0660669d41ee",
+    "question": "A reconstituted amoxicillin suspension has been stored at 31°C on a kitchen counter for 10 days. Is this preparation still suitable for use?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": 1,
+    "explanation": "Reconstituted amoxicillin suspension is unstable at temperatures above 25°C. The manufacturer's beyond-use dating assumes refrigerated storage (2–8°C). Stored at 31°C for 10 days, the drug has almost certainly undergone significant degradation and loss of potency. This preparation is not suitable for use and should be discarded.",
+    "order_index": 8,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "evaluate"
+  },
+  {
+    "id": "a7a5c5f9-dc5d-4a96-b8d8-45c92c216827",
+    "module_id": "3fc15d29-bbc6-49e7-9434-0660669d41ee",
+    "question": "Match each dosage form with its correct description.",
+    "options": [
+      "Ointment",
+      "Cream",
+      "Gel",
+      "Paste"
+    ],
+    "correct_answer": 0,
+    "explanation": "Ointments are oil-based and occlusive; creams are emulsions (o/w or w/o) that are lighter and non-greasy; gels are transparent or translucent preparations with a gelling agent; pastes are stiff preparations containing a high proportion (>20%) of powder in an ointment base.",
+    "order_index": 9,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  }
+]

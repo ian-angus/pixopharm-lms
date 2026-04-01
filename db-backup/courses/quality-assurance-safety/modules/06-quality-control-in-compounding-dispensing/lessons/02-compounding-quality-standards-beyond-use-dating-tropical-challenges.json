@@ -1,0 +1,121 @@
+{
+  "id": "c9ffc698-1c3d-4a56-b140-754283d4708c",
+  "module_id": "e0506ad3-0af5-4df8-a4be-e6430624b383",
+  "title": "Compounding Quality: Standards, Beyond-Use Dating & Tropical Challenges",
+  "content": [
+    {
+      "text": "Compounding in the Caribbean Context",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Pharmaceutical compounding — the preparation of customised medications by combining, mixing, or altering ingredients — remains a vital pharmacy service in the Caribbean, particularly for paediatric dosage forms (not all drugs are commercially available in child-friendly doses), dermatological preparations, and medications for patients with specific allergies to commercial excipients. However, compounding introduces quality risks that are amplified by tropical conditions and require meticulous quality control.",
+      "type": "text"
+    },
+    {
+      "term": "Beyond-Use Date (BUD)",
+      "type": "key-term",
+      "definition": "The date after which a compounded preparation should not be used, based on the stability of the preparation in the specific container and storage conditions. Unlike the manufacturer's expiry date, the beyond-use date is determined by the pharmacy based on USP guidelines and the specific formulation. In tropical climates, shorter BUDs are generally required."
+    },
+    {
+      "body": "USP Chapter <795> provides guidelines for non-sterile compounding, and USP Chapter <797> addresses sterile compounding. While these standards were developed for the US context, they represent the global benchmark for compounding quality. Caribbean pharmacies that compound should apply these principles, adapted for tropical conditions — which generally means shorter beyond-use dates, more rigorous storage requirements, and more frequent quality checks.",
+      "type": "text"
+    },
+    {
+      "text": "Quality Control for Compounded Preparations",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "rows": [
+        [
+          "Appearance",
+          "Colour, clarity, consistency, absence of particles or separation",
+          "Visual inspection",
+          "Heat may cause phase separation in creams/ointments — check more frequently"
+        ],
+        [
+          "Weight/Volume",
+          "Final weight or volume matches the compounding record",
+          "Analytical balance or graduated cylinder",
+          "Humidity can affect powder weights — use desiccated weighing conditions"
+        ],
+        [
+          "pH",
+          "pH is within the acceptable range for the preparation",
+          "pH meter or pH strips",
+          "Some preparations are pH-sensitive and may drift in tropical heat"
+        ],
+        [
+          "Labelling",
+          "Complete, accurate label including BUD, storage instructions, and lot number",
+          "Visual verification against compounding record",
+          "BUD must account for tropical storage conditions — shorter than USP defaults"
+        ],
+        [
+          "Documentation",
+          "Complete compounding record with all ingredients, quantities, equipment, and procedures",
+          "Review of compounding log",
+          "Document storage temperature at time of compounding"
+        ]
+      ],
+      "type": "table",
+      "caption": "Quality Checks for Compounded Preparations",
+      "headers": [
+        "Quality Parameter",
+        "What to Check",
+        "Method",
+        "Caribbean Consideration"
+      ]
+    },
+    {
+      "body": "USP default beyond-use dates assume storage at controlled room temperature (20-25 °C). In Caribbean pharmacies that cannot maintain this range, beyond-use dates should be shortened. A general rule of thumb: if the pharmacy cannot guarantee storage below 25 °C, reduce the USP default BUD by 25-50%. For aqueous preparations (solutions, suspensions), consider reducing to 7-14 days unless stability data supports longer dating. Always err on the side of caution.",
+      "type": "callout",
+      "title": "Tropical Beyond-Use Dating",
+      "variant": "warning"
+    },
+    {
+      "text": "Common Caribbean Compounding Challenges",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "type": "list",
+      "items": [
+        "Powder absorption of moisture — hygroscopic powders absorb ambient humidity, affecting weight accuracy and stability",
+        "Cream/ointment separation — tropical heat causes oil-water phase separation, altering drug distribution and dose uniformity",
+        "Microbial growth — warm, humid conditions accelerate microbial contamination of non-preserved preparations",
+        "Ingredient sourcing — limited availability of compounding-grade ingredients may require substitutions that affect quality",
+        "Equipment limitations — not all Caribbean pharmacies have precision balances, pH meters, or proper compounding facilities",
+        "Training gaps — compounding technique training may be limited; USP standards are not universally taught in regional programmes"
+      ],
+      "ordered": false
+    },
+    {
+      "type": "case-study",
+      "title": "Case Study: The Melted Suppositories",
+      "scenario": "A community pharmacy in Scarborough, Tobago, compounds progesterone suppositories for a patient undergoing fertility treatment. The pharmacy does not have full air conditioning — only a ceiling fan. During an August heat wave (ambient temperature 37 °C), a batch of 30 suppositories is compounded in the morning. By afternoon, the technician discovers that several suppositories have partially melted and deformed in their storage box on the compounding bench. The patient is due to collect them the next morning.",
+      "questions": [
+        "What quality defects have occurred, and why are they significant?",
+        "Can the melted suppositories be re-moulded and dispensed to the patient?",
+        "What changes to the compounding process should be implemented to prevent recurrence?",
+        "How should the beyond-use date be determined for suppositories in this tropical environment?"
+      ],
+      "discussion": "The partial melting has compromised dose uniformity — the active ingredient may have migrated unevenly as the suppository base melted and resolidified. Re-moulding is NOT acceptable because there is no guarantee of uniform drug distribution throughout the re-solidified matrix. The entire batch must be discarded and re-compounded. Prevention strategies include: compounding early in the morning when temperatures are lower, storing finished suppositories immediately in the refrigerator (2-8 °C), using a higher-melting-point suppository base (e.g., cocoa butter mixtures with added wax), and labelling all suppositories with 'STORE IN REFRIGERATOR' instructions. The BUD should be shortened to account for the storage conditions the patient will encounter at home — if the patient does not have reliable refrigeration, consider whether this dosage form is practical."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Extended by 25% to account for faster dispensing in warm climates",
+        "Used without modification — the USP default is universal",
+        "Shortened by 25-50% to account for accelerated degradation in tropical conditions",
+        "Eliminated entirely — compounding should not be performed in tropical climates"
+      ],
+      "question": "In a Caribbean pharmacy that cannot guarantee storage below 25 °C, the USP default beyond-use date for a compounded preparation should be:",
+      "explanation": "USP default beyond-use dates assume controlled room temperature (20-25 °C). When this cannot be guaranteed, BUDs should be shortened by 25-50% as a safety margin. This ensures that the preparation remains safe and effective throughout its assigned shelf life, even under less-than-ideal storage conditions.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 30
+}

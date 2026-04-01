@@ -1,0 +1,100 @@
+{
+  "id": "4ee50c34-f4cf-48c1-8d87-c9f4997cad40",
+  "module_id": "17041265-a6b2-423a-b63e-694a6ecc358e",
+  "title": "Supporting Patients with Diabetes, Hypertension & Chronic Disease Fatigue",
+  "content": [
+    {
+      "text": "The Long Game: When Patients Get Tired of Being Patients",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Chronic diseases require chronic treatment — and that is precisely the problem. Taking medication every day, for the rest of your life, for a condition that often produces no symptoms, tests the patience and motivation of even the most committed patient. In the Caribbean, where diabetes and hypertension are epidemic (some estimates suggest 30-40% of adults over 40 have one or both), chronic disease fatigue is a major driver of non-adherence and, ultimately, premature death.",
+      "type": "text"
+    },
+    {
+      "term": "Chronic Disease Fatigue",
+      "type": "key-term",
+      "definition": "The psychological exhaustion, frustration, and loss of motivation that patients experience from the relentless demands of managing a long-term health condition. It manifests as dose skipping, appointment avoidance, dietary lapses, and emotional burnout. It is distinct from depression (though they can co-occur) and is a normal response to the burden of chronic illness."
+    },
+    {
+      "rows": [
+        [
+          "Caribbean prevalence (adults)",
+          "12-15% (among the highest globally)",
+          "25-35% (some islands exceed 40%)"
+        ],
+        [
+          "Leading cause of death contribution",
+          "Top 5 cause of death in most Caribbean nations",
+          "Leading risk factor for stroke and heart disease — the #1 killer in the region"
+        ],
+        [
+          "Medication adherence rate",
+          "Estimated 40-60% in the Caribbean",
+          "Estimated 40-50% in the Caribbean"
+        ],
+        [
+          "Key pharmacy challenge",
+          "Insulin storage (cold chain), multiple daily doses, blood glucose monitoring",
+          "'Feel fine' misconception — asymptomatic patients stop medications"
+        ]
+      ],
+      "type": "table",
+      "caption": "Diabetes and Hypertension in the Caribbean: Key Statistics",
+      "headers": [
+        "Statistic",
+        "Diabetes",
+        "Hypertension"
+      ]
+    },
+    {
+      "text": "Pharmacy-Level Adherence Support Strategies",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "type": "list",
+      "items": [
+        "Medication synchronisation (Med Sync): Align all of a patient's chronic medication refills to the same date, reducing pharmacy visits from multiple per month to one",
+        "Pill organisers and blister packs: Pre-sort medications by day and time to simplify complex regimens — particularly valuable for elderly patients on 5+ medications",
+        "Refill reminders: Phone calls, text messages, or WhatsApp reminders 3 days before a refill is due — WhatsApp is the most effective channel in the Caribbean",
+        "Blood pressure and blood glucose screening at the pharmacy: Free screening builds the patient's engagement with their condition and creates a natural conversation about adherence",
+        "Celebrate milestones: Acknowledge when a patient has been adherent for 6 months, 1 year, etc. — 'Mrs. James, you have been keeping up with your medication perfectly for a year now. Your dedication is really impressive.'",
+        "Address the 'feel fine' myth at every opportunity: 'High blood pressure does not give you a headache — it gives you a stroke. The fact that you feel fine means the medication is WORKING, not that you do not need it.'"
+      ],
+      "ordered": true
+    },
+    {
+      "body": "WhatsApp is the dominant communication platform across the Caribbean. With patient consent, a pharmacy can use WhatsApp for refill reminders, adherence check-ins, and basic health education messaging. A simple 'Good morning! Your blood pressure medication is due for refill. Would you like us to prepare it for collection today?' can significantly improve refill rates. Always obtain written consent and maintain confidentiality — never include medication names in group messages.",
+      "type": "callout",
+      "title": "WhatsApp as an Adherence Tool",
+      "variant": "tip"
+    },
+    {
+      "type": "case-study",
+      "title": "Case Study: Chronic Disease Fatigue in Real Life",
+      "scenario": "Patricia, 56, has had type 2 diabetes for 12 years and hypertension for 8 years. She takes metformin 1000 mg BID, gliclazide 60 mg daily, amlodipine 10 mg daily, and atorvastatin 20 mg daily. At her pharmacy visit today, she tells you: 'I tired of all these tablets. Every day, morning time, evening time, tablets tablets tablets. Sometimes I just skip the whole thing for a few days. I feel fine — maybe I don't even need them anymore.'",
+      "questions": [
+        "What signs of chronic disease fatigue is Patricia displaying?",
+        "How would you respond using motivational interviewing techniques?",
+        "What practical interventions could your pharmacy offer to reduce her medication burden?"
+      ],
+      "discussion": "Patricia is displaying classic chronic disease fatigue: frustration with the medication burden, 'pill fatigue,' the 'feel fine' misconception, and intermittent intentional non-adherence. Response: Express empathy ('I hear you — taking tablets every single day is exhausting. Your frustration is completely valid.'). Develop discrepancy ('You told me last year that your biggest fear is losing your sight like your mother did from diabetes. These tablets are protecting your eyes, kidneys, and heart every single day.'). Practical interventions: Med Sync (align all refills), pill organiser, explore whether any medications can be consolidated (e.g., combination tablets), and ensure she has the simplest possible regimen. Celebrate her 12 years of management."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "The patient is correct — once blood pressure normalises, medication can be stopped",
+        "The blood pressure is normal BECAUSE of the medication; stopping it will cause blood pressure to rise again, increasing stroke and heart attack risk",
+        "Tell the patient to ask their doctor — this is outside your scope",
+        "Agree with the patient to avoid conflict"
+      ],
+      "question": "A hypertensive patient says: 'My blood pressure is normal now, so I stopped the tablet.' What is the critical misconception, and how should you respond?",
+      "explanation": "This is the 'feel fine' misconception — one of the most dangerous beliefs in chronic disease management. Blood pressure is controlled because the medication is working. Stopping it causes blood pressure to rebound, often to dangerous levels. The analogy is: 'The medication is like a dam holding back the water. Remove the dam and the river floods.' This is within your scope to address — it is medication counselling, not clinical diagnosis.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 25
+}

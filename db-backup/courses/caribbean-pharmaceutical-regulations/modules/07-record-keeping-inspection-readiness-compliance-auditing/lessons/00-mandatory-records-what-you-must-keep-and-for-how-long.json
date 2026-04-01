@@ -1,0 +1,115 @@
+{
+  "id": "df30b984-a098-4e87-ad7a-b1eba5d4a1f7",
+  "module_id": "3ae651ec-d517-49a5-b470-2e80076fafe1",
+  "title": "Mandatory Records: What You Must Keep and for How Long",
+  "content": [
+    {
+      "text": "The Paper Trail That Protects Everyone",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "In pharmacy, if it is not documented, it did not happen. This axiom is not merely a professional best practice — it is a legal reality. Every Caribbean pharmacy is required to maintain a comprehensive set of records that document its operations, from controlled substance transactions to prescription logs, temperature monitoring to equipment calibration. These records serve multiple purposes: they demonstrate compliance with the law, enable investigation of incidents, protect the pharmacy in legal proceedings, and provide data for quality improvement.",
+      "type": "text"
+    },
+    {
+      "body": "For pharmacy technicians, record-keeping is not a secondary responsibility — it is a core function. You will be expected to make entries in logs, maintain registers, file documents, and ensure that records are complete, accurate, and retrievable. Understanding what records are required, what each record must contain, and how long each must be retained is fundamental to your role.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Controlled Substance Register",
+          "All receipts, dispensings, returns, and destructions of controlled substances; running balances",
+          "Minimum 2 years (T&T); up to 5 years (Jamaica); varies by jurisdiction",
+          "Dangerous Drugs Act"
+        ],
+        [
+          "Prescription Records",
+          "Original prescriptions or copies; patient details, prescriber, product, quantity, date",
+          "Minimum 2 years; some jurisdictions require longer for controlled substance prescriptions",
+          "Pharmacy Act"
+        ],
+        [
+          "Temperature Monitoring Logs",
+          "Daily minimum/maximum temperatures for refrigerators, freezers, and controlled areas; corrective actions",
+          "Minimum 1-2 years; longer for vaccines and biologics",
+          "GMP/GDP guidelines"
+        ],
+        [
+          "Goods Receipt Records",
+          "Delivery records, invoices, supplier details, batch numbers, quantities, dates",
+          "Minimum 2-5 years depending on jurisdiction and product type",
+          "Pharmacy Act / Import regulations"
+        ],
+        [
+          "Pharmacy Licence and Certificates",
+          "Current pharmacy licence, pharmacist registration certificates, insurance certificates",
+          "Current at all times; expired documents retained for reference",
+          "Pharmacy Act"
+        ],
+        [
+          "Equipment Calibration Records",
+          "Calibration certificates for balances, thermometers, and other measuring equipment",
+          "Duration of equipment use plus 1-2 years",
+          "GMP guidelines"
+        ],
+        [
+          "Adverse Drug Reaction Reports",
+          "Reports of suspected adverse reactions submitted to the national pharmacovigilance centre",
+          "Copy retained in pharmacy for minimum 5 years",
+          "Pharmacovigilance regulations"
+        ]
+      ],
+      "type": "table",
+      "caption": "Mandatory Pharmacy Records — Caribbean Overview",
+      "headers": [
+        "Record Type",
+        "Contents",
+        "Retention Period",
+        "Legal Basis"
+      ]
+    },
+    {
+      "body": "Regulatory retention periods are minimums, not maximums. In practice, it is always safer to retain records longer than the minimum requirement. Some legal proceedings — particularly those involving controlled substances or patient harm — may arise years after the event. If the relevant records have been destroyed, the pharmacy loses a critical defence tool. When in doubt, keep it.",
+      "type": "callout",
+      "title": "When in Doubt, Keep It Longer",
+      "variant": "warning"
+    },
+    {
+      "term": "Record Retention",
+      "type": "key-term",
+      "definition": "The practice of maintaining records for a specified period as required by law or professional standards. In pharmacy, retention periods vary by record type and jurisdiction, typically ranging from 2 to 7 years. Records must be stored securely, accessible for inspection, and protected from damage, loss, or unauthorised access."
+    },
+    {
+      "body": "Digital record-keeping is increasingly common in Caribbean pharmacies, but it introduces its own compliance requirements. Electronic records must be backed up regularly, protected from unauthorised access and modification, and capable of producing printed copies for inspectors. Many jurisdictions still require certain records — particularly the Controlled Substance Register — to be maintained in physical bound-book format alongside any electronic systems.",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Entries must be made at the time of the event, not retrospectively",
+        "Errors must be corrected properly (single-line strikethrough, initials, date)",
+        "Blank spaces should not be left in sequential records",
+        "Records must be legible, in permanent ink (for handwritten records)",
+        "The person making each entry must be identifiable (signature, initials, or electronic user ID)",
+        "Records must be stored securely but be readily accessible for inspection"
+      ],
+      "ordered": false
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "6 months",
+        "1 year",
+        "2 years (minimum; some jurisdictions require up to 5 years)",
+        "There is no minimum — records can be destroyed after the annual audit"
+      ],
+      "question": "What is the minimum retention period for controlled substance records in most Caribbean jurisdictions?",
+      "explanation": "Controlled substance records must be retained for a minimum of 2 years in most Caribbean jurisdictions, with some (notably Jamaica) requiring up to 5 years. These are minimum periods — best practice is to retain records longer, as legal proceedings may arise years after the event.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 25
+}

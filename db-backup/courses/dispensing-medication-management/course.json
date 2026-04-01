@@ -1,0 +1,22 @@
+{
+  "id": "fe1cf6bb-7f0d-4f89-85cc-2db8b87b0a0e",
+  "title": "Dispensing & Medication Management",
+  "slug": "dispensing-medication-management",
+  "description": "Learn the end-to-end dispensing process and inventory management for Caribbean pharmacies.",
+  "skill_level": "Intermediate",
+  "duration_weeks": 7,
+  "icon": "Pill",
+  "color": "violet",
+  "prerequisites": [
+    "foundations-pharmacy-practice"
+  ],
+  "what_youll_learn": [
+    "Execute complete dispensing workflow",
+    "Manage inventory using FEFO/FIFO",
+    "Maintain controlled substance records",
+    "Implement cold chain management",
+    "Operate pharmacy management software"
+  ],
+  "status": "published",
+  "order": 4
+}

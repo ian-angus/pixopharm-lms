@@ -1,0 +1,181 @@
+[
+  {
+    "id": "5fb5f16e-b537-4f3b-90d7-fdc00365809d",
+    "module_id": "00de6d94-4229-4a9a-aec6-0c5d4e87fbbd",
+    "question": "What is the correct storage temperature range for refrigerated medications?",
+    "options": [
+      "−10°C to 0°C",
+      "2°C to 8°C",
+      "15°C to 25°C",
+      "8°C to 15°C"
+    ],
+    "correct_answer": 1,
+    "explanation": "Refrigerated medications must be maintained between 2°C and 8°C. Temperatures below 2°C risk freezing (which can destroy vaccines and insulin), while temperatures above 8°C constitute an excursion that may degrade the product.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "9d553642-8843-4da5-b9f5-729048377a00",
+    "module_id": "00de6d94-4229-4a9a-aec6-0c5d4e87fbbd",
+    "question": "True or False: A domestic household refrigerator is acceptable for storing pharmaceutical products in a Caribbean pharmacy.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": 1,
+    "explanation": "False. Domestic refrigerators lack the temperature uniformity, alarm systems, temperature logging, and security features required for pharmaceutical storage. Pharmaceutical-grade refrigerators are required by regulation in most Caribbean jurisdictions.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "5537f976-00f9-4439-9bb6-5bb79b68e8cd",
+    "module_id": "00de6d94-4229-4a9a-aec6-0c5d4e87fbbd",
+    "question": "According to the Arrhenius principle, a medication stored at 35°C degrades approximately how much faster than one stored at 25°C?",
+    "options": [
+      "50% faster",
+      "Twice as fast",
+      "Three times as fast",
+      "The same rate — temperature has no effect on stability"
+    ],
+    "correct_answer": 1,
+    "explanation": "The Arrhenius equation indicates that for every 10°C increase in temperature, the rate of chemical degradation approximately doubles. A 10°C increase from 25°C to 35°C therefore doubles the degradation rate.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "0f77bc13-7ece-4924-bffd-5abbbddc0d3f",
+    "module_id": "00de6d94-4229-4a9a-aec6-0c5d4e87fbbd",
+    "question": "Which of the following are appropriate actions when a temperature excursion is detected in a pharmacy refrigerator? Select ALL that apply.",
+    "options": [
+      "Quarantine the affected stock",
+      "Record the excursion details (duration, peak temperature, affected products)",
+      "Contact the manufacturer for stability guidance",
+      "Immediately discard all affected medications without further assessment",
+      "Do not dispense affected stock until stability is confirmed"
+    ],
+    "correct_answer": 0,
+    "explanation": "Options A, B, C, and E are all correct actions during a temperature excursion. Immediately discarding medications (option D) without consulting the manufacturer is wasteful — many products can tolerate brief excursions. The correct approach is quarantine, document, consult, then decide.",
+    "order_index": 3,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "5788935a-35fd-4bfb-b39c-1552ea498af1",
+    "module_id": "00de6d94-4229-4a9a-aec6-0c5d4e87fbbd",
+    "question": "What is the ideal relative humidity range for pharmaceutical storage?",
+    "options": [
+      "10–20%",
+      "40–60%",
+      "70–80%",
+      "85–95%"
+    ],
+    "correct_answer": 1,
+    "explanation": "The ideal relative humidity for pharmaceutical storage is 40–60%. Caribbean pharmacies typically require active dehumidification to achieve this, as ambient humidity often exceeds 80%.",
+    "order_index": 4,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "f9c0953f-a04c-489d-9fde-e51c98db2e62",
+    "module_id": "00de6d94-4229-4a9a-aec6-0c5d4e87fbbd",
+    "question": "Match each storage category with its appropriate temperature range.",
+    "options": [
+      "Frozen → −25°C to −10°C",
+      "Refrigerated → 2°C to 8°C",
+      "Controlled Room Temperature → 15°C to 25°C",
+      "All matches are correct"
+    ],
+    "correct_answer": 3,
+    "explanation": "All three matches are correct. Frozen products are stored at −25°C to −10°C, refrigerated products at 2°C to 8°C, and controlled room temperature products at 15°C to 25°C (with allowable excursions up to 30°C as defined by pharmacopoeia).",
+    "order_index": 5,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "8cc02021-6f19-4cdb-b3f3-56d1ad503d4d",
+    "module_id": "00de6d94-4229-4a9a-aec6-0c5d4e87fbbd",
+    "question": "A pharmacy in Grenada experiences frequent afternoon power outages lasting 2–3 hours. What is the MOST critical infrastructure investment for protecting cold chain integrity?",
+    "options": [
+      "Additional shelving for better stock organisation",
+      "A backup generator with automatic transfer switch",
+      "Window tinting to reduce heat from sunlight",
+      "A larger pharmacy refrigerator"
+    ],
+    "correct_answer": 1,
+    "explanation": "A backup generator with an automatic transfer switch is the most critical investment. It ensures that refrigeration continues uninterrupted during power outages, protecting the cold chain for temperature-sensitive medications. While other improvements are beneficial, none address the immediate threat of cold chain failure during outages.",
+    "order_index": 6,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "evaluate"
+  },
+  {
+    "id": "b07b77c1-4d09-47ab-a692-52779a73461d",
+    "module_id": "00de6d94-4229-4a9a-aec6-0c5d4e87fbbd",
+    "question": "What is the term for a substance that readily absorbs moisture from the surrounding air?",
+    "options": [
+      "Hydrophobic",
+      "Photosensitive",
+      "Hygroscopic",
+      "Thermolabile"
+    ],
+    "correct_answer": 2,
+    "explanation": "Hygroscopic substances readily absorb moisture from the air. In the Caribbean's humid climate, hygroscopic medications require special protection — sealed containers, desiccant packs, and dehumidified storage environments — to maintain their quality.",
+    "order_index": 7,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "a8e85b0b-72b2-4b91-b5ea-1df73abba17e",
+    "module_id": "00de6d94-4229-4a9a-aec6-0c5d4e87fbbd",
+    "question": "Arrange the following storage best practices in order of priority for a tropical Caribbean pharmacy.",
+    "options": [
+      "Window tinting for light protection",
+      "Temperature-controlled air conditioning maintained 24/7",
+      "Desiccant packs in opened containers",
+      "Backup power for refrigeration"
+    ],
+    "correct_answer": 0,
+    "explanation": "The correct priority order is: (1) Temperature-controlled AC maintained 24/7, (2) Backup power for refrigeration, (3) Desiccant packs in opened containers, (4) Window tinting. Temperature control is the single most important factor, followed by cold chain backup, moisture control, and light protection.",
+    "order_index": 8,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "hard",
+    "blooms_level": "evaluate"
+  },
+  {
+    "id": "dce4c3ba-3458-4edc-a6e2-022677f489ea",
+    "module_id": "00de6d94-4229-4a9a-aec6-0c5d4e87fbbd",
+    "question": "Why should medications be stored at least 15 cm off the floor in a Caribbean pharmacy?",
+    "options": [
+      "To make them easier for staff to reach",
+      "To prevent moisture wicking from the floor in humid tropical conditions",
+      "Because Caribbean building codes require it",
+      "To allow space for pest control treatments underneath"
+    ],
+    "correct_answer": 1,
+    "explanation": "In the Caribbean's humid climate, concrete and tile floors can wick moisture upward through capillary action, especially during the rainy season. Storing medications at least 15 cm off the floor prevents moisture damage and is a fundamental Good Storage Practice requirement.",
+    "order_index": 9,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  }
+]

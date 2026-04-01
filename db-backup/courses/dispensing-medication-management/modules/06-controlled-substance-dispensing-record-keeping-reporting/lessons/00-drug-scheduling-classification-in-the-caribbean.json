@@ -1,0 +1,85 @@
+{
+  "id": "c49738dc-d814-40e0-93db-a97929f0c743",
+  "module_id": "985d5724-85ec-4a39-a2d7-47693858456e",
+  "title": "Drug Scheduling & Classification in the Caribbean",
+  "content": [
+    {
+      "text": "How the Law Classifies Dangerous Drugs",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Controlled substances — also called dangerous drugs, scheduled drugs, or narcotic and psychotropic substances — are medications with a recognised potential for abuse, dependence, or diversion. While they have legitimate medical uses (pain management, anxiety treatment, ADHD management), their misuse can lead to addiction, harm, and death. Caribbean nations regulate these substances through a combination of international treaty obligations (UN Single Convention on Narcotic Drugs, 1961; Convention on Psychotropic Substances, 1971) and national legislation.",
+      "type": "text"
+    },
+    {
+      "body": "Each Caribbean nation maintains its own drug scheduling system, though these are broadly aligned with international frameworks. The schedules classify drugs by their potential for abuse, medical utility, and safety profile. Higher schedules (or more restrictive categories) indicate greater abuse potential and carry stricter prescribing, dispensing, and storage requirements.",
+      "type": "text"
+    },
+    {
+      "type": "island-comparison",
+      "title": "Controlled Substance Legislation by Island",
+      "islands": [
+        {
+          "flag": "🇹🇹",
+          "name": "Trinidad & Tobago",
+          "details": [
+            "Governed by the Dangerous Drugs Act (Chapter 11:25)",
+            "The Pharmacy Board and Dangerous Drugs Inspectorate oversee compliance",
+            "Dangerous drugs are classified into First Schedule (narcotics) and Second Schedule (psychotropic substances)",
+            "Prescriptions for dangerous drugs must include the prescriber's dangerous drugs licence number",
+            "Methadone maintenance programmes operate under specific regulatory provisions"
+          ]
+        },
+        {
+          "flag": "🇯🇲",
+          "name": "Jamaica",
+          "details": [
+            "Governed by the Dangerous Drugs Act (1948, extensively amended)",
+            "The Pharmacy Council and Dangerous Drugs Advisory Council oversee policy",
+            "Jamaica has reformed its cannabis laws (Dangerous Drugs Amendment Act 2015) — possession of small amounts decriminalised",
+            "Controlled substance prescriptions require specific form and documentation",
+            "The National Council on Drug Abuse (NCDA) monitors substance abuse trends"
+          ]
+        },
+        {
+          "flag": "🇧🇧",
+          "name": "Barbados",
+          "details": [
+            "Governed by the Drug Abuse (Prevention and Control) Act (Cap. 131)",
+            "The Chief Medical Officer authorises import/export of controlled substances",
+            "Strict penalties for unauthorised possession, supply, and trafficking",
+            "The Barbados Drug Service manages controlled substance supply in the public sector",
+            "Pharmacies must maintain detailed registers subject to inspection by the Drug Service"
+          ]
+        }
+      ],
+      "description": "While the categories differ in name, all three jurisdictions impose strict controls on narcotics and psychotropic substances."
+    },
+    {
+      "term": "Drug Scheduling",
+      "type": "key-term",
+      "definition": "The legal classification system that categorises drugs based on their potential for abuse, accepted medical use, and safety profile. Higher-schedule (more restricted) drugs carry stricter prescribing, dispensing, storage, and destruction requirements. Examples include morphine and pethidine (highly restricted), codeine-containing preparations (moderately restricted), and benzodiazepines (controlled but more widely prescribed)."
+    },
+    {
+      "body": "Violations of controlled substance regulations carry severe penalties in all Caribbean jurisdictions — including criminal prosecution, imprisonment, loss of professional registration, and permanent disqualification from pharmacy practice. As a pharmacy technician, you must understand and follow controlled substance procedures exactly. Ignorance of the law is not a defence.",
+      "type": "callout",
+      "title": "Legal Consequences of Non-Compliance",
+      "variant": "danger"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Trinidad & Tobago",
+        "Jamaica",
+        "Barbados",
+        "Grenada"
+      ],
+      "question": "Which Caribbean nation has reformed its cannabis legislation to decriminalise possession of small amounts?",
+      "explanation": "Jamaica passed the Dangerous Drugs Amendment Act in 2015, decriminalising possession of small amounts of cannabis (up to 2 ounces) and establishing a Cannabis Licensing Authority. Trinidad & Tobago has also enacted cannabis reforms, but Jamaica's legislation was a regional landmark.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 20
+}

@@ -1,0 +1,79 @@
+{
+  "id": "45e18296-7e0a-4299-8bb5-a056a76bb6ae",
+  "module_id": "ec614d8d-d8c6-43ec-ba3c-eecdee20cbb6",
+  "title": "International Treaties: The Foundation of Drug Control",
+  "content": [
+    {
+      "text": "The Global Framework That Shapes Caribbean Drug Law",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Every Caribbean nation's Dangerous Drugs Act is rooted in international treaties administered by the United Nations. These treaties create binding obligations for signatory nations to control the manufacture, distribution, and use of substances deemed to have potential for abuse. Understanding this global framework is essential because it explains why controlled substance regulation is so strict — and why pharmacy technicians face serious legal consequences for non-compliance.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Single Convention on Narcotic Drugs",
+          "1961 (amended 1972)",
+          "Controls narcotic drugs including opium, morphine, codeine, and cannabis; establishes four schedules of increasing restriction"
+        ],
+        [
+          "Convention on Psychotropic Substances",
+          "1971",
+          "Controls psychotropic substances including benzodiazepines, barbiturates, amphetamines, and hallucinogens; establishes four schedules"
+        ],
+        [
+          "Convention Against Illicit Traffic in Narcotic Drugs and Psychotropic Substances",
+          "1988",
+          "Targets drug trafficking, money laundering, and precursor chemical control; strengthens law enforcement cooperation"
+        ]
+      ],
+      "type": "table",
+      "caption": "Key International Drug Control Treaties",
+      "headers": [
+        "Treaty",
+        "Year",
+        "Focus"
+      ]
+    },
+    {
+      "body": "All Caribbean nations are signatories to these treaties and have incorporated their requirements into domestic legislation through their respective Dangerous Drugs Acts. The International Narcotics Control Board (INCB), based in Vienna, monitors treaty compliance and publishes annual estimates and assessments of global drug control. When a Caribbean state imports controlled substances, it does so within a system of import/export authorisations overseen by the INCB.",
+      "type": "text"
+    },
+    {
+      "term": "International Narcotics Control Board (INCB)",
+      "type": "key-term",
+      "definition": "An independent, quasi-judicial body established under the UN Single Convention on Narcotic Drugs. The INCB monitors international drug control treaty compliance, administers the system of import/export authorisations for controlled substances, and publishes annual reports on the global drug situation."
+    },
+    {
+      "body": "Violations of controlled substance laws carry some of the most severe penalties in Caribbean legal systems. In Trinidad & Tobago, possession of certain controlled substances with intent to supply can carry penalties of up to 25 years imprisonment. Jamaica's Dangerous Drugs Act prescribes similarly harsh penalties. Even minor documentation errors — such as failing to maintain accurate controlled substance registers — can result in prosecution, loss of licence, and personal criminal liability for both pharmacists and pharmacy technicians.",
+      "type": "callout",
+      "title": "Legal Consequences",
+      "variant": "danger"
+    },
+    {
+      "body": "The treaty framework establishes a tiered scheduling system where substances are classified based on their medical utility, abuse potential, and risk of dependence. Nations may adopt stricter controls than the treaties require, but cannot impose lesser controls. This is why some Caribbean countries control substances more tightly than the international minimum — for example, some nations schedule certain cough preparations containing codeine as controlled substances, while others permit their over-the-counter sale.",
+      "type": "text"
+    },
+    {
+      "body": "For pharmacy technicians, the practical implication is that controlled substance handling is governed by both international and national law, creating a compliance framework that is non-negotiable. Every receipt, every dispensing, and every destruction of a controlled substance must be documented precisely, and deviations can result in criminal prosecution — not merely professional discipline.",
+      "type": "text"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "CARICOM",
+        "The World Health Organisation (WHO)",
+        "The International Narcotics Control Board (INCB)",
+        "CARPHA"
+      ],
+      "question": "Which UN body monitors international compliance with drug control treaties?",
+      "explanation": "The International Narcotics Control Board (INCB), based in Vienna, is the independent body that monitors treaty compliance, administers import/export authorisations for controlled substances, and reports annually on the global drug situation.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 25
+}

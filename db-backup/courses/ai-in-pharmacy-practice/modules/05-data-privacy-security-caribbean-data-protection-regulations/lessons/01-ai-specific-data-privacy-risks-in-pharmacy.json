@@ -1,0 +1,87 @@
+{
+  "id": "fa3726d5-09e1-4df8-8fcd-c444207903f3",
+  "module_id": "432d98b6-47af-4c06-9c20-21f449b6c90d",
+  "title": "AI-Specific Data Privacy Risks in Pharmacy",
+  "content": [
+    {
+      "text": "When AI Meets Patient Data: New Risks Require New Safeguards",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "AI tools introduce unique data privacy risks that traditional pharmacy systems did not pose. When you type a patient question into ChatGPT, that data may be processed on servers outside the Caribbean, potentially retained for model training, and subject to different jurisdictions' privacy laws. Understanding these risks is essential for compliant, ethical AI use in pharmacy practice.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Data leakage to AI providers",
+          "Patient information entered into AI chatbots may be stored or used for training",
+          "Typing a patient's full name and medication list into ChatGPT",
+          "NEVER enter identifiable patient information into public AI tools. Use anonymised queries only."
+        ],
+        [
+          "Cross-border data transfer",
+          "AI services often process data on servers outside the Caribbean",
+          "Cloud-based dispensing software storing patient records on US servers",
+          "Verify that your AI/cloud providers comply with Caribbean data protection requirements for cross-border transfers"
+        ],
+        [
+          "Data retention by AI",
+          "Some AI tools retain conversation history indefinitely",
+          "A pharmacy technician's ChatGPT history containing patient-related queries",
+          "Use AI tools with data retention controls; turn off history features; use enterprise versions with privacy guarantees"
+        ],
+        [
+          "Re-identification risk",
+          "Seemingly anonymised data can be re-identified in small populations",
+          "In a community of 5,000 people, '72-year-old female on insulin and warfarin' may be identifiable",
+          "Use extra caution with de-identification in small Caribbean communities; remove all demographic details"
+        ],
+        [
+          "Algorithmic inference",
+          "AI can infer sensitive information from seemingly innocuous data",
+          "An AI system inferring HIV status from a combination of medications and lab values",
+          "Be aware that AI can deduce more than you explicitly provide; minimise data input to AI systems"
+        ]
+      ],
+      "type": "table",
+      "caption": "AI-Specific Data Privacy Risks",
+      "headers": [
+        "Risk",
+        "Description",
+        "Example",
+        "Mitigation"
+      ]
+    },
+    {
+      "body": "Never enter a patient's name, date of birth, address, phone number, or any other identifying information into a public AI chatbot (ChatGPT, Claude, Gemini) along with their clinical information. Instead, use anonymised queries: 'A 65-year-old male patient with Type 2 diabetes and CKD Stage 3 is on metformin 1g BD. Is dose adjustment needed?' — no name, no identifying details.",
+      "type": "callout",
+      "title": "NEVER Do This",
+      "variant": "danger"
+    },
+    {
+      "term": "De-identification",
+      "type": "key-term",
+      "definition": "The process of removing or obscuring personal identifiers from data so that the individual can no longer be identified. In small Caribbean communities, effective de-identification requires removing more identifiers than in larger populations, as combinations of age, gender, and condition may be sufficient for identification."
+    },
+    {
+      "body": "Enterprise-grade AI tools (such as Microsoft Azure OpenAI Service, or pharmacy-specific AI platforms) typically offer stronger privacy protections: data processing agreements, no training on customer data, regional data residency options, and compliance certifications. As Caribbean pharmacies adopt AI, negotiating for these protections should be a priority.",
+      "type": "text"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "'Mrs. Kamla Singh, DOB 15/03/1952, of 22 Ariapita Avenue, takes Warfarin 5mg daily. Can she take Clarithromycin?'",
+        "'A 72-year-old female patient on Warfarin 5mg daily has been prescribed Clarithromycin 500mg BD. Is there a significant interaction?'",
+        "'Patient ID #TT-2024-9481 at HealthPlus Pharmacy has a Warfarin-Clarithromycin query'",
+        "Any query is fine because ChatGPT is secure"
+      ],
+      "question": "A pharmacy technician wants to use ChatGPT to check a drug interaction. Which query is compliant with data protection requirements?",
+      "explanation": "Only the second option is compliant — it removes all identifying information (name, date of birth, address, patient ID, pharmacy name) while retaining the clinical details needed for a useful response. Never enter identifiable patient data into public AI tools.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 20
+}

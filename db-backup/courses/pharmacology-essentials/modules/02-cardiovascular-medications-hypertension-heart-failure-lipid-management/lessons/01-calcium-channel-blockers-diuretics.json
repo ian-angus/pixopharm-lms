@@ -1,0 +1,75 @@
+{
+  "id": "e6319a00-0ca7-4646-a205-84a537c99a9b",
+  "module_id": "a385e5c9-29c8-445d-af9a-42d9ce480f76",
+  "title": "Calcium Channel Blockers & Diuretics",
+  "content": [
+    {
+      "text": "Two Pillars of Caribbean Hypertension Management",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Calcium channel blockers (CCBs) and diuretics are the backbone of hypertension treatment in the Caribbean. CCBs like amlodipine are particularly effective in Black patients, who make up the majority of the Caribbean population. Diuretics — especially thiazides like hydrochlorothiazide — are often the cheapest antihypertensive option and are widely available across the region.",
+      "type": "text"
+    },
+    {
+      "term": "Calcium Channel Blocker (CCB)",
+      "type": "key-term",
+      "definition": "A drug that blocks L-type calcium channels in vascular smooth muscle and/or cardiac muscle, causing vasodilation and reduced blood pressure. Dihydropyridines (e.g., amlodipine, nifedipine) primarily affect blood vessels; non-dihydropyridines (e.g., verapamil, diltiazem) also slow heart rate."
+    },
+    {
+      "body": "Amlodipine is the most dispensed antihypertensive in many Caribbean pharmacies. Its long half-life (~35 hours) allows once-daily dosing, promoting adherence. Common side effects include peripheral oedema (ankle swelling) — a frequent complaint from patients — headache, and flushing. These are all consequences of vasodilation.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Thiazide",
+          "Hydrochlorothiazide",
+          "Distal convoluted tubule",
+          "Hypokalaemia, hyperuricaemia (gout risk)"
+        ],
+        [
+          "Loop",
+          "Furosemide",
+          "Loop of Henle",
+          "Potent — used in heart failure and oedema; risk of dehydration"
+        ],
+        [
+          "Potassium-sparing",
+          "Spironolactone",
+          "Collecting duct",
+          "Hyperkalaemia risk — do NOT combine with ACEi without monitoring"
+        ]
+      ],
+      "type": "table",
+      "caption": "Diuretic Classes Used in Caribbean Hypertension Management",
+      "headers": [
+        "Class",
+        "Example",
+        "Site of Action",
+        "Key Concern"
+      ]
+    },
+    {
+      "body": "Thiazide and loop diuretics cause potassium loss. In the Caribbean's tropical climate, patients who sweat heavily and take diuretics are at increased risk of dangerous hypokalaemia. Symptoms include muscle weakness, cramps, and cardiac arrhythmias. Counsel patients to eat potassium-rich foods (bananas, coconut water) and stay hydrated.",
+      "type": "callout",
+      "title": "Hypokalaemia and Tropical Heat",
+      "variant": "danger"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "They are the cheapest available option",
+        "They are more effective in Black patients due to differences in RAAS activity",
+        "They have no side effects",
+        "They also treat diabetes simultaneously"
+      ],
+      "question": "Why are calcium channel blockers like amlodipine particularly recommended for hypertension management in Caribbean populations?",
+      "explanation": "Clinical evidence (including the ALLHAT trial) shows that CCBs and diuretics are more effective as first-line monotherapy in Black patients compared to ACE inhibitors and beta-blockers. This is attributed to lower renin levels in Black populations. Caribbean guidelines reflect this evidence.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 20
+}

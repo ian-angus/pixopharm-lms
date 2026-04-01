@@ -1,0 +1,76 @@
+{
+  "id": "4c1400ad-a98d-4207-a799-7a97ca9d4046",
+  "module_id": "d7b0331a-9b72-42c9-b4c4-c741bb3adcec",
+  "title": "Using Interpreters & Multilingual Resources",
+  "content": [
+    {
+      "text": "When You Cannot Speak the Language",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "There will be situations where your language skills are insufficient to communicate safely with a patient. In these cases, you need strategies for accessing interpretation services, using multilingual resources, and ensuring that critical medication information is accurately conveyed despite the language barrier. Getting this wrong is not an inconvenience — it is a patient safety failure.",
+      "type": "text"
+    },
+    {
+      "text": "Using Informal Interpreters: Risks and Rules",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "In the Caribbean, formal interpretation services are rarely available in community pharmacies. The reality is that informal interpreters — family members, friends, bilingual staff, or even other customers — are commonly used. While not ideal, this can be safe if managed properly. However, there are significant risks:",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Children should NEVER be used as interpreters for adult health matters — it is inappropriate to place a child in this role, and they may lack the vocabulary for medical concepts",
+        "Family members may filter, soften, or misinterpret information based on their own understanding or cultural dynamics (e.g., a husband may not translate sensitive reproductive health information accurately)",
+        "Other customers in the pharmacy present a confidentiality risk — the patient's health information is being disclosed to a stranger",
+        "Bilingual staff members are the safest informal option but must be trained to interpret accurately, not paraphrase or add their own advice"
+      ],
+      "ordered": false
+    },
+    {
+      "body": "It is common in the Caribbean to see children interpreting for parents or grandparents at the pharmacy counter. While a child can help with basic transactions, they must NEVER be asked to interpret clinical medication information. A 10-year-old cannot accurately convey warfarin dosing instructions, and the burden of being responsible for a parent's medication safety is inappropriate for a child.",
+      "type": "callout",
+      "title": "Children as Interpreters — Never for Clinical Information",
+      "variant": "warning"
+    },
+    {
+      "text": "Multilingual Medication Resources",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "type": "list",
+      "items": [
+        "Multilingual medication instruction templates: Pre-printed dosing instructions in common languages, ready to attach to prescriptions",
+        "Pictogram-based universal instructions: Bypass language entirely using standardised pharmacy pictograms",
+        "Telephone interpretation services: Some Caribbean health systems provide access to interpretation lines — know your local options",
+        "Bilingual pharmacy staff: The most effective solution is hiring staff who reflect the linguistic diversity of your patient population",
+        "Technology-assisted translation: Smartphone translation apps can assist with basic communication, but should NEVER be relied upon for clinical accuracy — always verify with a human speaker"
+      ],
+      "ordered": true
+    },
+    {
+      "term": "Language Concordance",
+      "type": "key-term",
+      "definition": "The situation where a healthcare provider and patient share a common language, enabling direct communication without interpretation. Research consistently shows that language concordance improves patient satisfaction, medication adherence, and health outcomes. In multilingual Caribbean communities, achieving language concordance may require bilingual staff, multilingual resources, or both."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Children talk too much and will breach confidentiality",
+        "It is illegal in all Caribbean jurisdictions",
+        "Children may lack medical vocabulary for accurate interpretation, and the burden of responsibility for a parent's medication safety is inappropriate",
+        "Children cannot speak Creole"
+      ],
+      "question": "Why should children NEVER be used as interpreters for clinical medication information in the pharmacy?",
+      "explanation": "Using children as clinical interpreters is inappropriate for two reasons: (1) they may lack the vocabulary and comprehension to accurately convey medical information, leading to errors, and (2) placing the responsibility for a parent's or grandparent's medication safety on a child is an inappropriate burden regardless of the child's language skills.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 25
+}

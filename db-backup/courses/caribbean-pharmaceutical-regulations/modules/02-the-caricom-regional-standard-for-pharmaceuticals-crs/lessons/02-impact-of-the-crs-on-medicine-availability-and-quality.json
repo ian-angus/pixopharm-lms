@@ -1,0 +1,69 @@
+{
+  "id": "364c735e-37fe-41d7-b9c7-e9024aa2272e",
+  "module_id": "dfe7b615-4723-402c-af37-21981d97b705",
+  "title": "Impact of the CRS on Medicine Availability and Quality",
+  "content": [
+    {
+      "text": "From Policy to Patient — How Harmonisation Affects the Pharmacy Counter",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "For a pharmacy technician, the CRS may seem like a distant policy matter. But its effects — or the consequences of its incomplete implementation — are felt at the pharmacy counter every day. When a commonly needed medication is unavailable because the manufacturer has not yet completed registration in your specific island, that is a regulatory access gap that the CRS is designed to close.",
+      "type": "text"
+    },
+    {
+      "body": "Consider the situation across the smaller Eastern Caribbean islands. With populations ranging from 50,000 to 180,000, these markets are often too small to attract pharmaceutical manufacturers willing to invest in individual country registrations. The CRS, by offering access to the combined CARICOM market of over 18 million people through a single registration pathway, makes these smaller markets more viable for manufacturers — and their patients more likely to access the medicines they need.",
+      "type": "text"
+    },
+    {
+      "body": "When patients ask why a specific medication is unavailable in their country but can be purchased just across the water in another Caribbean island, the answer often lies in drug registration status. Understanding the CRS helps technicians explain these access gaps to patients and supports advocacy for faster implementation of mutual recognition.",
+      "type": "callout",
+      "title": "Practical Impact for Technicians",
+      "variant": "tip"
+    },
+    {
+      "type": "case-study",
+      "title": "Case Study: Rosuvastatin Registration Across the OECS",
+      "scenario": "A generic rosuvastatin product is registered and widely available in Trinidad & Tobago, where it was evaluated by the CFDD. However, the same product is not yet registered in St. Lucia, Dominica, or Grenada. Patients in those countries who were prescribed rosuvastatin while visiting Trinidad must switch to a different statin upon returning home, causing confusion and potential compliance issues. Under the CRS mutual recognition pathway, the manufacturer could leverage the T&T evaluation report to apply for streamlined registration in these OECS states.",
+      "questions": [
+        "Why might a product registered in T&T not be available in smaller OECS states?",
+        "How does the CRS mutual recognition pathway address this specific problem?",
+        "What are the potential clinical implications of forcing patients to switch statins due to availability?"
+      ],
+      "discussion": "This scenario illustrates the real-world consequences of fragmented drug registration. Without mutual recognition, manufacturers must invest time and money in separate registrations for each small island market — an investment that may not be justified by the market size. The CRS solves this by allowing the T&T evaluation to serve as the basis for OECS registrations, reducing cost and time while maintaining quality assurance standards."
+    },
+    {
+      "text": "Quality Assurance Through the CRS",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "The CRS is not merely about speed and efficiency — it is fundamentally about quality. By setting harmonised evaluation standards based on WHO/ICH guidelines, the CRS raises the bar across the region. Countries that previously accepted products with minimal evaluation now have access to more rigorous assessment tools and criteria. CARPHA's CaMET laboratory provides a shared resource for quality testing that most individual islands could not afford to maintain.",
+      "type": "text"
+    },
+    {
+      "body": "Post-market surveillance is another critical quality component. Under the CRS framework, adverse drug reaction reports from any member state are shared regionally, creating a larger safety database than any single country could generate. This is particularly important in the Caribbean, where small populations mean that rare adverse effects may never be detected through national surveillance alone.",
+      "type": "text"
+    },
+    {
+      "term": "Post-Market Surveillance",
+      "type": "key-term",
+      "definition": "The systematic monitoring of pharmaceutical products after they have been authorised for sale. Includes collecting and analysing adverse drug reaction reports, conducting quality testing of marketed products, and taking regulatory action (such as recalls or label changes) when safety or quality issues are identified."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Because smaller islands have stricter regulations than larger ones",
+        "Because their small market size often makes individual drug registrations uneconomic for manufacturers, limiting medicine availability",
+        "Because smaller islands manufacture their own medicines and need export assistance",
+        "Because the CRS provides free medicines to all OECS member states"
+      ],
+      "question": "Why is the CRS particularly beneficial for smaller Eastern Caribbean islands?",
+      "explanation": "Small island markets (populations of 50,000-180,000) are often too small to justify the cost of individual drug registrations for manufacturers. The CRS, by enabling mutual recognition, makes the combined CARICOM market of 18+ million people accessible through a single registration pathway, improving medicine availability for smaller islands.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 25
+}

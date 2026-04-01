@@ -1,0 +1,103 @@
+{
+  "id": "2918a664-20eb-4277-954d-b03817478707",
+  "module_id": "eeaefebc-259f-42ce-824a-77332e5f4432",
+  "title": "Queen Elizabeth Hospital (QEH) Pharmacy Operations",
+  "content": [
+    {
+      "text": "Pharmacy at the Queen Elizabeth Hospital",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "The Queen Elizabeth Hospital (QEH) in Bridgetown is Barbados's only public hospital and the island's largest healthcare facility. Its pharmacy department is the cornerstone of hospital pharmacy practice in Barbados, handling inpatient dispensing, outpatient prescriptions, IV admixture preparation, oncology support, and controlled substance management for the entire island's public hospital system. For pharmacy technicians, working at QEH pharmacy represents the most complex and rewarding hospital pharmacy experience available in Barbados.",
+      "type": "text"
+    },
+    {
+      "term": "Queen Elizabeth Hospital (QEH)",
+      "type": "key-term",
+      "definition": "Barbados's sole public hospital, located in Bridgetown. A 600+ bed facility providing secondary and tertiary care, including surgery, internal medicine, obstetrics, paediatrics, oncology, and emergency services. The QEH pharmacy department is the island's largest, serving both inpatients and a high-volume outpatient dispensary."
+    },
+    {
+      "text": "QEH Pharmacy Department Structure",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "rows": [
+        [
+          "Inpatient Dispensary",
+          "Prepares and dispenses medications for all admitted patients; ward stock management",
+          "Filling ward stock requisitions, preparing unit-dose medications, checking expiry dates"
+        ],
+        [
+          "Outpatient Dispensary",
+          "Dispenses prescriptions for patients attending QEH clinics and discharged patients",
+          "Receiving prescriptions, data entry, medication preparation, patient queue management"
+        ],
+        [
+          "IV Admixture / Sterile Compounding",
+          "Prepares intravenous medications, chemotherapy pre-packs, and parenteral nutrition",
+          "Assisting with preparation under pharmacist supervision; maintaining aseptic technique"
+        ],
+        [
+          "Drug Information Centre",
+          "Provides drug information to medical staff and answers clinical queries",
+          "Maintaining reference materials; assisting with literature searches"
+        ],
+        [
+          "Controlled Substance Unit",
+          "Manages all Schedule 1-5 substances; maintains the hospital narcotic register",
+          "Assisting with controlled drug counts; recording dispensing in the register under pharmacist oversight"
+        ]
+      ],
+      "type": "table",
+      "caption": "QEH Pharmacy Sections",
+      "headers": [
+        "Section",
+        "Function",
+        "Technician Role"
+      ]
+    },
+    {
+      "text": "A Day in the QEH Outpatient Dispensary",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "The QEH outpatient dispensary is one of the busiest pharmacy environments in Barbados. On a typical weekday, it processes 300-500 prescriptions. Patients arrive from various QEH clinics — medical, surgical, obstetric, psychiatric — and often wait in long queues. The technician's role is to receive prescriptions, enter them into the dispensing system, pull and prepare medications from the BDS formulary stock, and ensure accurate labelling. Speed and accuracy are equally important — patients may have been waiting since early morning, but a dispensing error can be fatal.",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "7:00 AM — Technicians arrive and check overnight requisitions; verify controlled substance counts from the previous shift",
+        "8:00 AM — Outpatient dispensary opens; queue of patients from morning clinics begins to form",
+        "8:00 AM – 12:00 PM — Peak dispensing hours; process prescriptions as quickly and accurately as possible",
+        "12:00 PM – 1:00 PM — Reduced volume; some technicians take lunch while others cover the counter",
+        "1:00 PM – 3:30 PM — Afternoon clinic patients arrive; processing continues; inventory checks for fast-moving items",
+        "3:30 PM — Outpatient dispensary closes; remaining prescriptions completed; stock reconciliation; shift handover"
+      ],
+      "ordered": true
+    },
+    {
+      "body": "Patient frustration is real in the QEH outpatient dispensary — waits of 1-2 hours are not uncommon. As a pharmacy technician, your demeanour matters. A calm, professional attitude, brief explanations about wait times, and efficient processing make a significant difference. Never rush accuracy to reduce the queue — a dispensing error will cause far more harm than an extra 15-minute wait.",
+      "type": "callout",
+      "title": "Surviving the QEH Queue",
+      "variant": "tip"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "50-100",
+        "100-200",
+        "300-500",
+        "1,000+"
+      ],
+      "question": "How many prescriptions does the QEH outpatient dispensary typically process on a weekday?",
+      "explanation": "The QEH outpatient dispensary processes approximately 300-500 prescriptions on a typical weekday, making it one of the busiest pharmacy environments in Barbados. This high volume requires technicians who are both fast and accurate.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 25
+}

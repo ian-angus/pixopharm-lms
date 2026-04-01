@@ -1,0 +1,92 @@
+[
+  {
+    "id": "ea381c4c-911f-42c5-9125-860190ea10b1",
+    "module_id": "dc1f1623-87c0-4bbe-bfb2-9ba9f226430b",
+    "question": "Which ethical principle is being applied when a pharmacist refuses to dispense a medication due to a dangerous drug interaction, even though the patient insists?",
+    "options": [
+      "Autonomy — respecting the patient's choice",
+      "Justice — treating the patient fairly",
+      "Non-maleficence — the duty to do no harm",
+      "Beneficence — acting in the patient's interest"
+    ],
+    "correct_answer": 2,
+    "explanation": "Non-maleficence (do no harm) is the principle at work. While respecting patient autonomy is important, the duty to prevent harm takes precedence when there is a clear danger. The pharmacist has a professional obligation to prevent a medication error that could injure the patient.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "1514bcff-47e3-4279-a8cd-eb5ac00b4f1f",
+    "module_id": "dc1f1623-87c0-4bbe-bfb2-9ba9f226430b",
+    "question": "Your neighbour asks you at a weekend barbecue whether their friend (who you recognise as a patient) is 'doing okay' health-wise. They know you work at the pharmacy. What should you do?",
+    "options": [
+      "Share general information but not specific medications",
+      "Confirm the person is a patient but say nothing about their medications",
+      "Refuse to confirm or deny anything about any individual's health or pharmacy visits",
+      "Tell them to ask the person directly, then share what you know to be helpful"
+    ],
+    "correct_answer": 2,
+    "explanation": "You cannot confirm or deny whether someone is a patient, let alone share any health information. Even acknowledging that someone visited the pharmacy is a breach of confidentiality. The appropriate response is: 'I can't discuss anything about anyone's health — that's my professional duty.'",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "e63b8352-7c92-4180-8bf1-32624191cbae",
+    "module_id": "dc1f1623-87c0-4bbe-bfb2-9ba9f226430b",
+    "question": "Which Caribbean island enacted a Data Protection Act in 2019 that classifies health information as a 'special category' of personal data?",
+    "options": [
+      "Jamaica",
+      "Trinidad & Tobago",
+      "Barbados",
+      "Guyana"
+    ],
+    "correct_answer": 2,
+    "explanation": "Barbados enacted its Data Protection Act in 2019, which classifies health data as a special category requiring enhanced protections. Trinidad & Tobago's Data Protection Act was enacted in 2011, and Jamaica's in 2020.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "a595e381-2fc1-4c0a-93a7-3fc6023cacb4",
+    "module_id": "dc1f1623-87c0-4bbe-bfb2-9ba9f226430b",
+    "question": "A community pastor asks you to check whether a young woman from his congregation has been prescribed contraceptives. He says it is for 'pastoral care'. What should you do?",
+    "options": [
+      "Check the records and share the information — he is a trusted community leader",
+      "Tell him you cannot check records but suggest he ask her directly",
+      "Refuse absolutely — you cannot confirm or deny whether anyone is a patient or share any prescription information with a third party without patient consent",
+      "Ask the young woman for permission first, then share if she agrees"
+    ],
+    "correct_answer": 2,
+    "explanation": "No matter who asks or what reason they give, you cannot share patient information without explicit written consent from the patient. Community standing, religious authority, or claimed concern does not override patient confidentiality. The correct response firmly declines while remaining professional.",
+    "order_index": 3,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "417b8c4e-2953-427e-912e-c0bcf6d23021",
+    "module_id": "dc1f1623-87c0-4bbe-bfb2-9ba9f226430b",
+    "question": "Under what circumstances can patient confidentiality be legally breached?",
+    "options": [
+      "When a family member asks on behalf of the patient",
+      "When the information would be helpful to the community",
+      "Only when required by law (court order, mandatory disease reporting), when there is imminent threat, or with the patient's explicit consent",
+      "Whenever the pharmacist deems it appropriate"
+    ],
+    "correct_answer": 2,
+    "explanation": "Confidentiality can only be breached in very limited circumstances: when required by law (court orders, statutory reporting of communicable diseases, child abuse reporting), when there is an imminent threat to the patient or others, or with the patient's explicit written consent. Even then, only the minimum necessary information should be disclosed.",
+    "order_index": 4,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  }
+]

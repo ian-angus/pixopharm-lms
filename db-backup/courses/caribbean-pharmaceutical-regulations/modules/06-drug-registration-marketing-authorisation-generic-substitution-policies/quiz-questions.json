@@ -1,0 +1,181 @@
+[
+  {
+    "id": "58edf415-7061-4a9d-8b48-749753287a4f",
+    "module_id": "e456d723-48a8-4e9e-9fc2-b733d161a607",
+    "question": "What is the standard validity period for a drug marketing authorisation in most Caribbean jurisdictions?",
+    "options": [
+      "1 year",
+      "3 years",
+      "5 years",
+      "Indefinite — once approved, always approved"
+    ],
+    "correct_answer": 2,
+    "explanation": "Marketing authorisations in most Caribbean jurisdictions are valid for approximately 5 years before renewal is required. This periodic renewal ensures that the regulatory authority can reassess the product's quality, safety, and efficacy in light of post-market experience.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "ff3b98d9-457a-41c5-a16f-ac5fad0c3e82",
+    "module_id": "e456d723-48a8-4e9e-9fc2-b733d161a607",
+    "question": "Bioequivalence studies typically measure which two pharmacokinetic parameters?",
+    "options": [
+      "Colour and taste of the medication",
+      "Cmax (peak concentration) and AUC (area under the curve)",
+      "Manufacturing cost and retail price",
+      "Shelf life and dissolution rate"
+    ],
+    "correct_answer": 1,
+    "explanation": "Bioequivalence studies measure Cmax (the peak concentration of drug in the blood) and AUC (the area under the concentration-time curve, representing total drug exposure). These parameters must fall within accepted statistical limits compared to the innovator product.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "e03e42ba-ebd1-4697-9224-5a4cabba778b",
+    "module_id": "e456d723-48a8-4e9e-9fc2-b733d161a607",
+    "question": "Which of the following drugs have a narrow therapeutic index and require extra caution with generic substitution?",
+    "options": [
+      "Warfarin",
+      "Paracetamol",
+      "Phenytoin",
+      "Amoxicillin",
+      "Levothyroxine"
+    ],
+    "correct_answer": 0,
+    "explanation": "Warfarin, phenytoin, and levothyroxine are all narrow therapeutic index drugs where small differences in blood levels can cause therapeutic failure or toxicity. Paracetamol and amoxicillin have wider therapeutic windows and are generally safer for generic substitution.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "hard",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "be8c58d9-29d9-4eb0-ac88-bfff2260920b",
+    "module_id": "e456d723-48a8-4e9e-9fc2-b733d161a607",
+    "question": "A generic medicine may contain different inactive ingredients (excipients) from the innovator product but must contain the same active pharmaceutical ingredient.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": 0,
+    "explanation": "True. Generic medicines must contain the same active pharmaceutical ingredient (API) in the same dose and form as the innovator, but may differ in inactive ingredients such as colours, fillers, binders, and coatings. The critical requirement is bioequivalence — that the generic delivers the same API exposure.",
+    "order_index": 3,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "0a992bac-d789-4de5-beda-ccefd50cc965",
+    "module_id": "e456d723-48a8-4e9e-9fc2-b733d161a607",
+    "question": "Match each Caribbean jurisdiction with its approach to generic substitution.",
+    "options": [
+      "Trinidad & Tobago",
+      "Jamaica",
+      "Barbados"
+    ],
+    "correct_answer": 0,
+    "explanation": "All three countries support generic substitution, but with different emphases: T&T permits unless prohibited, Jamaica actively encourages through the NHF, and Barbados structures its public formulary around generics.",
+    "order_index": 4,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "analyze"
+  },
+  {
+    "id": "3c07171b-d720-41b5-b7d1-ea7742094911",
+    "module_id": "e456d723-48a8-4e9e-9fc2-b733d161a607",
+    "question": "What does INN stand for in pharmaceutical terminology?",
+    "options": [
+      "Internal National Number",
+      "International Non-proprietary Name",
+      "Innovative New Notation",
+      "Inter-island Naming Network"
+    ],
+    "correct_answer": 1,
+    "explanation": "INN stands for International Non-proprietary Name — the unique name assigned to an active pharmaceutical ingredient by the World Health Organisation. INN prescribing enables pharmacies to dispense any registered generic equivalent.",
+    "order_index": 5,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "6f8f0cc5-93b1-42e1-bc70-09e594694648",
+    "module_id": "e456d723-48a8-4e9e-9fc2-b733d161a607",
+    "question": "Arrange the drug registration process in the correct order.",
+    "options": [
+      "Technical evaluation of quality, safety, and efficacy",
+      "Application submission by manufacturer",
+      "Marketing authorisation granted or refused",
+      "Administrative screening for completeness",
+      "GMP verification of manufacturing site"
+    ],
+    "correct_answer": 0,
+    "explanation": "The correct order is: (1) Application submission, (2) Administrative screening, (3) Technical evaluation, (4) GMP verification, (5) Decision (grant or refuse marketing authorisation).",
+    "order_index": 6,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "hard",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "8dfdffcc-f757-4191-ad96-7158e6b19564",
+    "module_id": "e456d723-48a8-4e9e-9fc2-b733d161a607",
+    "question": "How much cheaper are generic medicines typically compared to their innovator counterparts?",
+    "options": [
+      "5-10% cheaper",
+      "30-80% cheaper",
+      "Generics are usually more expensive",
+      "There is no price difference"
+    ],
+    "correct_answer": 1,
+    "explanation": "Generic medicines are typically 30-80% cheaper than their innovator counterparts because they do not need to recover the cost of original research and development, extensive clinical trials, and initial marketing — costs that can exceed US$1 billion for a new drug.",
+    "order_index": 7,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "3f9927a9-b687-4840-9532-972742a8cc58",
+    "module_id": "e456d723-48a8-4e9e-9fc2-b733d161a607",
+    "question": "A patient presents a prescription for 'Norvasc 5mg' (brand-name amlodipine) at your pharmacy in Kingston, Jamaica. Your pharmacy stocks a registered generic amlodipine 5mg but not Norvasc. The prescription does not contain any 'Do Not Substitute' notation. What is the correct course of action?",
+    "options": [
+      "Tell the patient you cannot fill the prescription because you do not have Norvasc",
+      "Dispense the generic amlodipine without informing the patient",
+      "Under pharmacist supervision, dispense the registered generic amlodipine, inform the patient of the substitution, and ensure they understand it contains the same active ingredient",
+      "Call the prescriber and insist they rewrite the prescription for the generic"
+    ],
+    "correct_answer": 2,
+    "explanation": "In Jamaica, generic substitution is encouraged and the prescription does not prohibit it. The correct course is to dispense the registered generic under pharmacist supervision and inform the patient of the substitution. Transparency and patient communication are essential for building trust and adherence.",
+    "order_index": 8,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "hard",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "746251e2-d9e1-4ad0-9c5c-d295877accc1",
+    "module_id": "e456d723-48a8-4e9e-9fc2-b733d161a607",
+    "question": "The CTD (Common Technical Document) for drug registration has _____ modules.",
+    "options": [
+      "3",
+      "5",
+      "7",
+      "10"
+    ],
+    "correct_answer": 1,
+    "explanation": "The CTD has five modules: Module 1 (administrative/regional information), Module 2 (quality/non-clinical/clinical summaries), Module 3 (quality data), Module 4 (non-clinical study reports), and Module 5 (clinical study reports).",
+    "order_index": 9,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  }
+]

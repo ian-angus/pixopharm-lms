@@ -1,0 +1,108 @@
+{
+  "id": "d26beba3-7cbd-4e61-8f0e-d297d5da420e",
+  "module_id": "0464175f-5c7e-4bcb-b01a-6fe45e50d244",
+  "title": "Heart Anatomy: Chambers, Valves & the Coronary Circulation",
+  "content": [
+    {
+      "text": "The Human Heart: Structure and Function",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "The heart is a muscular organ roughly the size of a closed fist, located in the mediastinum — the central compartment of the thoracic cavity. It sits slightly left of the midline, between the lungs, and is enclosed by a double-walled sac called the pericardium. The heart's sole purpose is to pump blood through the circulatory system, delivering oxygen and nutrients to every tissue and removing metabolic waste products.",
+      "type": "text"
+    },
+    {
+      "body": "Understanding cardiac anatomy is essential for pharmacy technicians because the drugs you dispense — beta-blockers, ACE inhibitors, calcium channel blockers, anticoagulants, antiarrhythmics — all target specific structures and processes within the cardiovascular system. Without knowing what these drugs act upon, you cannot appreciate why they work, why they have particular side effects, or why dosing and monitoring matter.",
+      "type": "text"
+    },
+    {
+      "text": "The Four Chambers",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "The heart contains four chambers. The two upper chambers — the right atrium and left atrium — receive blood returning to the heart. The two lower chambers — the right ventricle and left ventricle — pump blood out of the heart. The right side handles deoxygenated blood (pumping it to the lungs for gas exchange), while the left side handles oxygenated blood (pumping it to the rest of the body). The left ventricle has the thickest muscular wall because it must generate enough pressure to push blood through the entire systemic circulation.",
+      "type": "text"
+    },
+    {
+      "term": "Myocardium",
+      "type": "key-term",
+      "definition": "The thick, muscular middle layer of the heart wall, composed of cardiac muscle tissue (cardiomyocytes). The myocardium is responsible for the heart's contractile force. When we speak of a 'myocardial infarction' (heart attack), we mean that a portion of the myocardium has died due to interrupted blood supply. Drugs like beta-blockers reduce myocardial oxygen demand."
+    },
+    {
+      "text": "The Heart Valves",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Four valves ensure one-way blood flow through the heart. The tricuspid valve sits between the right atrium and right ventricle. The pulmonary valve guards the exit from the right ventricle to the pulmonary artery. The mitral (bicuspid) valve separates the left atrium from the left ventricle. The aortic valve controls flow from the left ventricle into the aorta. Valve disorders — such as mitral valve prolapse or aortic stenosis — may require long-term anticoagulation therapy with drugs like warfarin, which pharmacy technicians handle regularly.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Tricuspid",
+          "Right atrium → right ventricle",
+          "Atrioventricular (AV)",
+          "Endocarditis risk in IV drug users"
+        ],
+        [
+          "Pulmonary",
+          "Right ventricle → pulmonary artery",
+          "Semilunar",
+          "Rarely diseased in isolation"
+        ],
+        [
+          "Mitral (Bicuspid)",
+          "Left atrium → left ventricle",
+          "Atrioventricular (AV)",
+          "Mitral valve prolapse — most common valve disorder"
+        ],
+        [
+          "Aortic",
+          "Left ventricle → aorta",
+          "Semilunar",
+          "Aortic stenosis — common in elderly patients"
+        ]
+      ],
+      "type": "table",
+      "caption": "Heart Valves Summary",
+      "headers": [
+        "Valve",
+        "Location",
+        "Type",
+        "Clinical Relevance"
+      ]
+    },
+    {
+      "text": "Coronary Circulation",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "The heart muscle itself requires its own blood supply, delivered by the coronary arteries. The left coronary artery divides into the left anterior descending artery (LAD) and the circumflex artery, supplying the left ventricle and septum. The right coronary artery supplies the right ventricle and the inferior wall of the left ventricle. Blockage of a coronary artery — typically by atherosclerotic plaque — causes myocardial infarction (heart attack). Sublingual nitroglycerin, aspirin, clopidogrel, and statins are all medications used in coronary artery disease that pharmacy technicians must handle with precision.",
+      "type": "text"
+    },
+    {
+      "body": "The Caribbean region has some of the highest cardiovascular disease mortality rates in the Americas. CARPHA data shows that cardiovascular disease is the leading cause of death in Trinidad & Tobago, Jamaica, and Barbados. Contributing factors include high rates of hypertension, diabetes, obesity, sedentary lifestyles, and dietary habits (high salt and processed food intake). This makes cardiovascular medications the highest-volume category in most Caribbean pharmacies.",
+      "type": "callout",
+      "title": "Caribbean Cardiovascular Burden",
+      "variant": "info"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Right atrium",
+        "Right ventricle",
+        "Left atrium",
+        "Left ventricle"
+      ],
+      "question": "Which heart chamber has the thickest muscular wall?",
+      "explanation": "The left ventricle has the thickest myocardial wall because it must generate sufficient pressure to pump oxygenated blood through the entire systemic circulation — from the aorta to the capillaries of every organ. The right ventricle only needs to pump blood the short distance to the lungs.",
+      "correctIndex": 3
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 35
+}

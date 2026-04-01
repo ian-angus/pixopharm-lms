@@ -1,0 +1,44 @@
+{
+  "id": "89d4ae10-cc68-4143-bf37-8fe006cb7bf0",
+  "module_id": "40f9b245-60bf-4e97-bc70-fb4b58fcd290",
+  "title": "Community Pharmacy: The Heart of Caribbean Healthcare",
+  "content": [
+    {
+      "text": "More Than a Place to Fill Prescriptions",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "In the Caribbean, the community pharmacy is far more than a retail outlet for medications. It is often the first — and sometimes the only — point of healthcare access for many communities. Patients walk into pharmacies for blood pressure checks, diabetes advice, wound care, cold and flu remedies, family planning support, and a hundred other health needs. The community pharmacist and their technician team are trusted healthcare advisors.",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Blood pressure and blood glucose monitoring (many pharmacies offer free screening)",
+        "OTC medication advice for minor ailments",
+        "Medication therapy management for patients on multiple medications",
+        "Health education and disease prevention counselling",
+        "Vaccination services (expanding across the region)",
+        "First aid and wound care advice",
+        "Referral to medical professionals when symptoms suggest a condition beyond pharmacy scope",
+        "Supporting public health campaigns (dengue prevention, HIV testing, NCD awareness)"
+      ],
+      "ordered": false
+    },
+    {
+      "body": "Across the Caribbean, the scope of community pharmacy practice is gradually expanding. Trinidad, Jamaica, and Barbados are all exploring expanded roles for pharmacists and technicians, including: pharmacist prescribing for minor ailments, expanded vaccination authority, chronic disease monitoring and management, and telepharmacy for reaching remote communities. Investing in your education now positions you for these expanded roles as they emerge.",
+      "type": "callout",
+      "title": "The Future Is Expanding",
+      "variant": "tip"
+    },
+    {
+      "type": "video-placeholder",
+      "title": "Community Pharmacy Spotlight: Three Islands",
+      "duration": "15 min",
+      "description": "A visual tour of community pharmacies in Port of Spain (Trinidad), Kingston (Jamaica), and Bridgetown (Barbados), showing the daily rhythm, patient interactions, and community impact of Caribbean pharmacy practice."
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 15
+}

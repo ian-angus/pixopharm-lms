@@ -1,0 +1,180 @@
+[
+  {
+    "id": "f3089b4a-6190-46c2-b178-4e12bce8bfc5",
+    "module_id": "eeaefebc-259f-42ce-824a-77332e5f4432",
+    "question": "How are medications on the BDS national formulary provided to Barbadian patients through the public health system?",
+    "options": [
+      "Through a co-payment system where patients pay 30-50%",
+      "Free of charge — no co-payment required",
+      "Through a sliding-scale fee based on income",
+      "Only to patients with valid health insurance"
+    ],
+    "correct_answer": 1,
+    "explanation": "Barbados provides BDS formulary medications entirely free of charge through the public health system. This universal free model is closer to T&T's CDAP than Jamaica's NHF, but operates primarily through public-sector facilities (polyclinics, QEH) rather than private pharmacies.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "7157d791-0cf2-423c-bcea-c6b7ba387a1b",
+    "module_id": "eeaefebc-259f-42ce-824a-77332e5f4432",
+    "question": "What is the Queen Elizabeth Hospital (QEH)?",
+    "options": [
+      "A private hospital in Bridgetown with a small pharmacy",
+      "Barbados's sole public hospital — a 600+ bed facility with the island's largest pharmacy department",
+      "A polyclinic in St. Michael parish",
+      "A teaching hospital affiliated with UTech Jamaica"
+    ],
+    "correct_answer": 1,
+    "explanation": "The Queen Elizabeth Hospital (QEH) is Barbados's sole public hospital, located in Bridgetown. It is a 600+ bed facility providing secondary and tertiary care, and houses the island's largest pharmacy department serving both inpatients and a high-volume outpatient dispensary.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "2213b170-f9ac-42bd-991b-986d6445f32e",
+    "module_id": "eeaefebc-259f-42ce-824a-77332e5f4432",
+    "question": "Why is Enalapril (an ACE inhibitor) particularly important in Barbadian prescribing compared to some other Caribbean islands?",
+    "options": [
+      "It is the cheapest medication on the BDS formulary",
+      "Barbados has banned all other antihypertensives",
+      "Barbados has a high prevalence of diabetic nephropathy, and ACE inhibitors provide renal protection",
+      "Barbadian patients have fewer side effects from ACE inhibitors than other populations"
+    ],
+    "correct_answer": 2,
+    "explanation": "Barbados has a disproportionately high rate of chronic kidney disease and diabetic nephropathy. ACE inhibitors like Enalapril are prescribed both for blood pressure control and for their proven renal-protective benefits, making them especially prominent in Barbadian prescribing.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "analyze"
+  },
+  {
+    "id": "77e70276-03a5-4d2c-87a5-98a49d3ca682",
+    "module_id": "eeaefebc-259f-42ce-824a-77332e5f4432",
+    "question": "A cold-chain delivery of insulin arrives at your Barbadian pharmacy. The temperature monitor shows the shipment reached 12°C during transit (acceptable range is 2-8°C). What is the correct action?",
+    "options": [
+      "Accept the delivery and refrigerate immediately",
+      "Accept the delivery but mark the insulin as 'use first'",
+      "Refuse the delivery and report the temperature excursion to the pharmacist",
+      "Accept the delivery and contact the manufacturer for a replacement"
+    ],
+    "correct_answer": 2,
+    "explanation": "A temperature excursion (exceeding the 2-8°C range) means the cold chain has been broken. The insulin's stability, efficacy, and safety may be compromised. The technician should refuse the delivery and report it to the pharmacist, who will arrange for replacement and file a quality incident report.",
+    "order_index": 3,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "83d27f4e-66fe-4896-a983-10c2bcd2e996",
+    "module_id": "eeaefebc-259f-42ce-824a-77332e5f4432",
+    "question": "Which statin is the preferred choice on the BDS public-sector formulary?",
+    "options": [
+      "Atorvastatin",
+      "Rosuvastatin",
+      "Simvastatin",
+      "Pravastatin"
+    ],
+    "correct_answer": 2,
+    "explanation": "Simvastatin is the preferred statin on the BDS public-sector formulary, primarily due to cost considerations. While Atorvastatin and Rosuvastatin are available in private pharmacies, the public formulary prioritises Simvastatin as a cost-effective option.",
+    "order_index": 4,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "f67d0e5d-d327-4bd0-80f2-7003de87a796",
+    "module_id": "eeaefebc-259f-42ce-824a-77332e5f4432",
+    "question": "Where do most Barbadian pharmacists complete their pharmacy degree?",
+    "options": [
+      "University of the West Indies (UWI) Cave Hill, Barbados",
+      "St. George's University, Grenada",
+      "University of the West Indies (UWI) St. Augustine, Trinidad",
+      "University of Technology, Jamaica (UTech)"
+    ],
+    "correct_answer": 2,
+    "explanation": "Since UWI Cave Hill in Barbados does not currently offer a full pharmacy degree, most Barbadian pharmacists complete their education at UWI St. Augustine in Trinidad. Some also obtain qualifications internationally.",
+    "order_index": 5,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "c4860d35-ec91-42e0-8520-41f083baa0c1",
+    "module_id": "eeaefebc-259f-42ce-824a-77332e5f4432",
+    "question": "A patient at a Barbados polyclinic dispensary receives a prescription for Rosuvastatin 10mg. You check and find it is not on the BDS formulary. What is the correct first action?",
+    "options": [
+      "Dispense Simvastatin as a substitute — they are both statins",
+      "Tell the patient to go to a private pharmacy",
+      "Flag the formulary discrepancy to the pharmacist",
+      "Dispense the Rosuvastatin and note it as an off-formulary exception"
+    ],
+    "correct_answer": 2,
+    "explanation": "When a prescribed medication is not on the BDS formulary, the technician's correct first action is to flag the issue to the pharmacist. The pharmacist will then contact the prescriber to discuss an appropriate formulary alternative. Independent substitution by the technician is outside their scope of practice.",
+    "order_index": 6,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "87eeb71a-6e3a-48d4-8f5e-18cd166fe3d4",
+    "module_id": "eeaefebc-259f-42ce-824a-77332e5f4432",
+    "question": "Approximately how many prescriptions does the QEH outpatient dispensary process on a typical weekday?",
+    "options": [
+      "50-100",
+      "100-200",
+      "300-500",
+      "1,000+"
+    ],
+    "correct_answer": 2,
+    "explanation": "The QEH outpatient dispensary processes approximately 300-500 prescriptions on a typical weekday. This high volume requires pharmacy technicians who are both fast and accurate.",
+    "order_index": 7,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "4c5e4814-ccca-4b70-9c51-77f89631bf7f",
+    "module_id": "eeaefebc-259f-42ce-824a-77332e5f4432",
+    "question": "Match the following Barbados regulatory documents to their purposes: (A) Import Licence, (B) Certificate of Pharmaceutical Product (CPP), (C) Batch Certificate. Purposes: (1) Confirms the product is approved in the country of origin, (2) Authorises the importer to bring specific products into Barbados, (3) Provides quality specifications for a specific manufacturing batch.",
+    "options": [
+      "A-2, B-1, C-3",
+      "A-1, B-3, C-2",
+      "A-3, B-2, C-1",
+      "A-2, B-3, C-1"
+    ],
+    "correct_answer": 0,
+    "explanation": "Import Licence (A) authorises the importer to bring specific products into Barbados (2). Certificate of Pharmaceutical Product / CPP (B) confirms the product is approved in the country of origin (1). Batch Certificate (C) provides quality specifications for the specific batch (3).",
+    "order_index": 8,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "hard",
+    "blooms_level": "analyze"
+  },
+  {
+    "id": "fada7402-340a-4639-89a7-ec3f6e127784",
+    "module_id": "eeaefebc-259f-42ce-824a-77332e5f4432",
+    "question": "True or false: Barbados has a standalone Pharmacy Council identical in structure to Jamaica's PCJ.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": 1,
+    "explanation": "False. Unlike Jamaica, Barbados does not have a standalone Pharmacy Council. Pharmacy practice in Barbados is regulated through the Pharmacy Act (Cap. 372D) and oversight by the Chief Medical Officer, the BDS, and the Ministry of Health and Wellness.",
+    "order_index": 9,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  }
+]

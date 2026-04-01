@@ -1,0 +1,147 @@
+{
+  "id": "17cdbe0f-a083-44e8-a4ca-610a93956f2d",
+  "module_id": "3531eb1a-a44a-4c50-bf40-ac897e98251f",
+  "title": "Household Measures and Patient Counselling",
+  "content": [
+    {
+      "text": "Bridging the Gap: Metric Pharmacy and Household Kitchens",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "While pharmacy calculations are performed in metric units, patients at home use household measures: teaspoons, tablespoons, cups, and drops. This is especially true in the Caribbean, where many patients — particularly elderly patients managing chronic conditions — rely on kitchen utensils to measure liquid medications. A pharmacy technician must be able to convert between metric and household measures and communicate dosing instructions in terms patients understand.",
+      "type": "text"
+    },
+    {
+      "term": "Household Measure",
+      "type": "key-term",
+      "definition": "Non-standardised measurement units commonly used in homes, including teaspoons (tsp), tablespoons (tbsp), cups, and drops (gtt). Because household teaspoons vary in size, oral dosing syringes are the preferred measuring device. However, patient counselling must still reference these familiar units."
+    },
+    {
+      "rows": [
+        [
+          "1 teaspoon (tsp)",
+          "5 mL",
+          "Most common conversion in pharmacy"
+        ],
+        [
+          "1 tablespoon (tbsp)",
+          "15 mL",
+          "3 teaspoons = 1 tablespoon"
+        ],
+        [
+          "1 dessertspoon",
+          "10 mL",
+          "Used in some Caribbean prescriptions (UK tradition)"
+        ],
+        [
+          "1 fluid ounce (fl oz)",
+          "30 mL",
+          "Approximate; exact = 29.57 mL"
+        ],
+        [
+          "1 cup",
+          "240 mL (8 fl oz)",
+          "Used for large-volume oral rehydration"
+        ],
+        [
+          "1 drop (gtt)",
+          "0.05 mL",
+          "Approximate; varies with dropper and liquid viscosity"
+        ],
+        [
+          "1 pound (lb)",
+          "454 g (0.454 kg)",
+          "Used by some patients when stating body weight"
+        ],
+        [
+          "1 inch",
+          "2.54 cm",
+          "Relevant for transdermal patch sizing and wound measurements"
+        ]
+      ],
+      "type": "table",
+      "caption": "Household-to-Metric Conversion Table",
+      "headers": [
+        "Household Measure",
+        "Metric Equivalent",
+        "Notes"
+      ]
+    },
+    {
+      "type": "island-comparison",
+      "title": "Measurement Traditions Across Caribbean Islands",
+      "islands": [
+        {
+          "flag": "🇹🇹",
+          "name": "Trinidad & Tobago",
+          "details": [
+            "Metric system officially used in pharmacy and medicine",
+            "Patients commonly reference teaspoons and tablespoons for liquid doses",
+            "Body weight often given in pounds by older patients (colonial legacy), kilograms by younger patients",
+            "Temperature: Fahrenheit still common in daily life, but pharmacy uses Celsius for storage",
+            "CDAP prescriptions always use metric units"
+          ]
+        },
+        {
+          "flag": "🇯🇲",
+          "name": "Jamaica",
+          "details": [
+            "Metric system standard in healthcare and pharmacy",
+            "Household teaspoons widely used by patients; oral syringes encouraged by NHF programme",
+            "Older patients may reference ounces for liquid volumes",
+            "Body weight: mixed use of pounds and kilograms",
+            "Drug import documentation uses metric exclusively (CARICOM standards)"
+          ]
+        },
+        {
+          "flag": "🇧🇧",
+          "name": "Barbados",
+          "details": [
+            "Metric system standard in pharmacy and the Barbados Drug Service",
+            "QEH and polyclinics use metric exclusively",
+            "Community pharmacy patients commonly use teaspoons and tablespoons",
+            "British-influenced measurement traditions persist in older population",
+            "Drug Service formulary entries list metric doses only"
+          ]
+        },
+        {
+          "flag": "🇬🇩",
+          "name": "Grenada",
+          "details": [
+            "Metric system official in pharmacy practice",
+            "St. George's University medical graduates trained in metric",
+            "Smaller pharmacies may encounter patients using informal household measures",
+            "Drug supplies often routed through OECS Pharmaceutical Procurement Service (metric)",
+            "Patient education materials increasingly available in metric and household equivalents"
+          ]
+        }
+      ],
+      "description": "Historical colonial influences create different measurement habits across the region, impacting how patients understand and follow dosing instructions."
+    },
+    {
+      "body": "Household teaspoons range from 2 mL to 9 mL in actual volume. A 'teaspoon' from a cutlery set is NOT a reliable 5 mL measure. Always counsel patients to use the oral syringe or measuring cup provided with the medication — especially for paediatric liquid medications where accuracy is critical. In the Caribbean, where many households use inherited silverware of varying sizes, this counselling point is essential.",
+      "type": "callout",
+      "title": "The Dangerous Kitchen Teaspoon",
+      "variant": "warning"
+    },
+    {
+      "body": "Worked example: A mother in Kingston asks how much Children's Paracetamol (120 mg/5 mL) to give her 4-year-old who weighs 16 kg. The dose is 15 mg/kg. Calculate: 15 mg/kg × 16 kg = 240 mg. Volume: 240 mg ÷ (120 mg/5 mL) = 240 × 5 / 120 = 10 mL. You would tell the mother: '10 mL — that is two teaspoons or one dessertspoon. Please use the syringe in the box for accuracy.'",
+      "type": "text"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "15 mL",
+        "30 mL",
+        "10 mL",
+        "20 mL"
+      ],
+      "question": "A patient is instructed to take 2 teaspoonfuls of antacid suspension three times daily. How many millilitres per day is this?",
+      "explanation": "1 teaspoon = 5 mL. 2 teaspoonfuls = 10 mL per dose. Three times daily = 10 × 3 = 30 mL per day. This is a very common calculation when counselling patients on OTC liquid medications like antacids, which are high-volume items in Caribbean pharmacies.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 20
+}

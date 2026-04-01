@@ -1,0 +1,97 @@
+{
+  "id": "b1e0c230-38bb-41c6-9fba-bc8508c4f128",
+  "module_id": "d7b0331a-9b72-42c9-b4c4-c741bb3adcec",
+  "title": "The Caribbean Linguistic Landscape",
+  "content": [
+    {
+      "text": "One Region, Many Tongues",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Within the relatively compact Caribbean region, patients may speak English, Spanish, French, Dutch, Haitian Creole, Jamaican Patois, Trinidadian Creole, Papiamentu, Sranan Tongo, Garifuna, Hindi, Mandarin, or any combination thereof. For pharmacy technicians, this linguistic diversity is not an academic curiosity — it is a daily clinical reality that directly affects patient safety.",
+      "type": "text"
+    },
+    {
+      "body": "A medication error caused by language misunderstanding is just as dangerous as one caused by a dispensing mistake. If a patient hears 'once' (which means 'eleven' in Spanish) instead of 'one,' they may take eleven tablets instead of one. If a French Creole speaker does not understand 'twice daily,' they may take their medication randomly. Language is a safety issue, not merely a convenience issue.",
+      "type": "text"
+    },
+    {
+      "type": "island-comparison",
+      "title": "Languages of the Caribbean",
+      "islands": [
+        {
+          "flag": "🇬🇧",
+          "name": "English-Speaking Caribbean",
+          "details": [
+            "Jamaica (English + Jamaican Patois/Creole)",
+            "Trinidad & Tobago (English + Trinidadian Creole + Hindi + Spanish)",
+            "Barbados (English + Bajan dialect)",
+            "Guyana (English + Creolese + Hindi + Amerindian languages)",
+            "Eastern Caribbean islands: Dominica, St. Lucia, Grenada (English + French-lexifier Creole known as Kwéyòl)"
+          ]
+        },
+        {
+          "flag": "🇪🇸",
+          "name": "Spanish-Speaking Caribbean",
+          "details": [
+            "Cuba, Dominican Republic, Puerto Rico — predominantly Spanish-speaking",
+            "Venezuelan and Colombian immigrants across the English-speaking Caribbean, especially Trinidad & Tobago",
+            "Growing Spanish-speaking populations in Aruba, Curaçao, and Bonaire",
+            "Many Caribbean pharmacy technicians will encounter Spanish-speaking patients regardless of their island's official language"
+          ]
+        },
+        {
+          "flag": "🇫🇷",
+          "name": "French-Speaking Caribbean",
+          "details": [
+            "Haiti (French + Haitian Creole — Kreyòl Ayisyen, spoken by virtually all 11 million Haitians)",
+            "Martinique, Guadeloupe (French + Antillean Creole)",
+            "French Guiana (French + various Creoles)",
+            "Haitian diaspora communities throughout the Caribbean, especially Bahamas, Turks and Caicos, Dominican Republic"
+          ]
+        },
+        {
+          "flag": "🇳🇱",
+          "name": "Dutch-Speaking Caribbean",
+          "details": [
+            "Suriname (Dutch + Sranan Tongo + Sarnami Hindi + Javanese)",
+            "Curaçao, Aruba, Bonaire (Dutch + Papiamentu + Spanish + English)",
+            "Sint Maarten (Dutch + English)",
+            "Papiamentu is a Creole with Spanish, Portuguese, Dutch, and African language influences — unique to the ABC islands"
+          ]
+        }
+      ],
+      "description": "The colonial history of the Caribbean has created one of the most linguistically diverse regions on earth."
+    },
+    {
+      "body": "Caribbean Creole languages are fully developed, rule-governed linguistic systems — not 'bad' versions of their lexifier languages. Jamaican Patois has its own grammar, phonology, and vocabulary. Haitian Creole is an official language of Haiti alongside French. Treating Creole as 'inferior' is both linguistically incorrect and culturally offensive. Pharmacy technicians who can communicate in the local Creole have a powerful tool for patient safety.",
+      "type": "callout",
+      "title": "Creole Is Not Broken English or Broken French",
+      "variant": "info"
+    },
+    {
+      "term": "Creole Language",
+      "type": "key-term",
+      "definition": "A stable, natural language that developed from a mixture of different languages during periods of colonisation. Caribbean Creoles typically have a European lexifier language (English, French, Spanish, Dutch, Portuguese) combined with West African grammatical structures and vocabulary from multiple other sources. They are not simplified or corrupted versions of European languages — they are distinct linguistic systems."
+    },
+    {
+      "body": "The linguistic landscape of the Caribbean is further complicated by migration patterns. Venezuelan refugees in Trinidad, Haitian migrants in the Bahamas, Guyanese diaspora in Barbados, and Cuban communities across the region mean that a pharmacy on any island may serve patients speaking languages that are not traditionally associated with that territory. Pharmacy teams must be prepared for linguistic encounters they did not expect.",
+      "type": "text"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "The word 'once' is offensive in Spanish",
+        "In Spanish, 'once' means 'eleven,' potentially causing the patient to take eleven doses instead of one",
+        "Spanish patients cannot understand any English words",
+        "The word 'once' has no meaning in Spanish"
+      ],
+      "question": "Why is it clinically dangerous if a Spanish-speaking patient hears the English word 'once' during medication counselling?",
+      "explanation": "This is a classic and dangerous cross-linguistic false friend. The English 'once' (meaning one time) sounds identical to the Spanish 'once' (meaning eleven). A Spanish-speaking patient could misinterpret 'take once daily' as 'take eleven daily.' This example illustrates why language concordance in medication counselling is a patient safety issue.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 20
+}

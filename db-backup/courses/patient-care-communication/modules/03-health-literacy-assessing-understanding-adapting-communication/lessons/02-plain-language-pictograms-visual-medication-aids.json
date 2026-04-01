@@ -1,0 +1,118 @@
+{
+  "id": "4af4959c-5617-4a06-b673-02723f392533",
+  "module_id": "f2c4ca68-e98b-42d1-8711-b24c619e1e6b",
+  "title": "Plain Language, Pictograms & Visual Medication Aids",
+  "content": [
+    {
+      "text": "Tools That Bridge the Health Literacy Gap",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "When words fail — due to literacy barriers, language differences, or cognitive limitations — visual communication takes over. Pharmacy technicians who can create and use visual medication aids are providing a service that directly prevents medication errors and saves lives. This is not a luxury — it is a clinical necessity in the Caribbean context.",
+      "type": "text"
+    },
+    {
+      "text": "Plain Language Principles",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "rows": [
+        [
+          "Take orally twice daily",
+          "Swallow one tablet two times a day",
+          "Tek one tablet morning time, one tablet evening time"
+        ],
+        [
+          "Apply topically to affected area",
+          "Rub the cream on the sore spot",
+          "Rub de cream right on where it hurting yuh"
+        ],
+        [
+          "Administer sublingually",
+          "Place under your tongue and let it dissolve",
+          "Put it under yuh tongue and leh it melt — doh swallow it"
+        ],
+        [
+          "Contraindicated with alcohol",
+          "Do not drink alcohol while taking this",
+          "No rum, no beer, nothing so while yuh taking dis"
+        ],
+        [
+          "May cause photosensitivity",
+          "This medication can make your skin burn easily in the sun",
+          "Yuh skin go burn up fast in de sun with dis tablet — wear sunscreen"
+        ]
+      ],
+      "type": "table",
+      "caption": "Medical Jargon vs. Plain Language for Caribbean Patients",
+      "headers": [
+        "Medical Jargon",
+        "Plain Language",
+        "Even Plainer (Creole-Adapted)"
+      ]
+    },
+    {
+      "body": "Best practice for patient education materials is to write at a Grade 5-6 reading level (age 10-11). This is not 'dumbing down' — it is effective communication. Use short sentences (15 words or fewer), common words, active voice, and avoid jargon. If you must use a medical term, define it immediately: 'Hypertension (high blood pressure) means...'",
+      "type": "callout",
+      "title": "Writing at a Grade 5-6 Level",
+      "variant": "info"
+    },
+    {
+      "text": "Pictogram-Based Medication Instructions",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Pictograms — simple icons that convey medication instructions visually — have been shown to improve medication adherence by up to 50% in patients with low health literacy. A set of standardised pharmacy pictograms covers: time of day (sun = morning, moon = night), route (mouth, eye, ear, skin), quantity (number of tablets shown as dots), food requirement (plate and cutlery = with food), and storage (thermometer = keep cool, water droplets = keep dry).",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Sun icon: Take in the morning",
+        "Moon icon: Take at night",
+        "Sun + Moon: Take morning and night",
+        "Plate with cutlery: Take with food",
+        "Crossed-out plate: Take on empty stomach",
+        "Water glass: Take with a full glass of water",
+        "Crossed-out wine glass: No alcohol",
+        "Pregnant woman with X: Do not take if pregnant",
+        "Thermometer: Store in refrigerator",
+        "Clock: Take at the same time every day"
+      ],
+      "ordered": false
+    },
+    {
+      "body": "For patients on multiple medications, a colour-coded medication schedule — using coloured stickers on each medication bottle that match a time-of-day chart — can be transformative. The red-stickered bottles are morning medications, the blue-stickered bottles are evening medications, and the green-stickered bottle is the one taken with lunch. The patient does not need to read a single word.",
+      "type": "text"
+    },
+    {
+      "body": "You do not need expensive software to create pictogram labels. A simple hand-drawn sun and moon on a medication label, or a colour dot from a pack of stickers, can be life-saving. Many Caribbean pharmacies have started creating laminated pictogram cards that can be reused and are available in local languages. This is low-cost, high-impact patient care.",
+      "type": "callout",
+      "title": "DIY Pictogram Labels",
+      "variant": "tip"
+    },
+    {
+      "type": "video-placeholder",
+      "title": "Creating Visual Medication Aids in Your Pharmacy",
+      "duration": "10 min",
+      "description": "Step-by-step demonstration of creating pictogram labels, colour-coded medication schedules, and illustrated dosing cards using materials available at any Caribbean pharmacy."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "About 5%",
+        "About 15%",
+        "Up to 50%",
+        "Over 90%"
+      ],
+      "question": "Pictogram-based medication instructions have been shown to improve adherence by how much in patients with low health literacy?",
+      "explanation": "Research demonstrates that pictogram-based medication instructions can improve adherence by up to 50% in patients with low health literacy. Visual aids bypass reading barriers and provide a universal, language-independent communication channel for medication instructions.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 30
+}

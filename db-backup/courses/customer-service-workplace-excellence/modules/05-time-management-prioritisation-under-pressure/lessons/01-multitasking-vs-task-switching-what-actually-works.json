@@ -1,0 +1,85 @@
+{
+  "id": "108a2ad2-dbc8-4018-aebd-ba2c0d1d429a",
+  "module_id": "60b63fc2-8fc4-4b47-8ac7-caf737ad8b8c",
+  "title": "Multitasking vs. Task-Switching — What Actually Works",
+  "content": [
+    {
+      "text": "The Multitasking Myth",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Here is an uncomfortable truth: human beings cannot multitask. What we call 'multitasking' is actually rapid task-switching — jumping between tasks so quickly that it feels simultaneous. The problem is that every switch costs time and accuracy. Research shows that task-switching can reduce productivity by up to 40% and significantly increases error rates. In a pharmacy, where errors can harm patients, this is not just an efficiency issue — it is a safety issue.",
+      "type": "text"
+    },
+    {
+      "body": "This does not mean you can only do one thing at a time — it means you need to be strategic about how you manage multiple demands. Some tasks can be batched. Some can be sequenced. Some genuinely need to be interrupted. The key is knowing the difference.",
+      "type": "text"
+    },
+    {
+      "term": "Task-Switching Cost",
+      "type": "key-term",
+      "definition": "The measurable decrease in speed and accuracy that occurs every time you shift your attention from one task to another. In pharmacy, this cost manifests as longer processing times, increased error rates, and mental fatigue. The cost is highest when switching between tasks that require different types of attention (e.g., from data entry to customer conversation)."
+    },
+    {
+      "rows": [
+        [
+          "Batching",
+          "Group similar tasks together to reduce switching costs",
+          "Enter all waiting prescriptions into the system before starting to fill them, rather than entering and filling one by one"
+        ],
+        [
+          "Sequencing",
+          "Complete one task fully before starting the next",
+          "Finish counting one prescription before answering a non-urgent question"
+        ],
+        [
+          "Prioritised Interruption",
+          "Only interrupt current task for genuine urgency",
+          "Pause data entry for a parent with a sick child, but not for a general product enquiry"
+        ],
+        [
+          "The Parking Lot",
+          "When interrupted, write a brief note about where you left off",
+          "Jot 'Mrs. Singh — entered, needs filling — metformin 500mg' before turning to the next customer"
+        ],
+        [
+          "Parallel Processing",
+          "Do genuinely independent tasks simultaneously only when neither requires focused attention",
+          "Restock shelves while waiting for a prescription label to print"
+        ]
+      ],
+      "type": "table",
+      "caption": "Effective Task Management Strategies",
+      "headers": [
+        "Strategy",
+        "How It Works",
+        "Example"
+      ]
+    },
+    {
+      "body": "Keep a small pad of sticky notes at your station. When you are interrupted mid-task, take three seconds to write where you left off: 'Singh — metformin — entered, not filled.' When you return to the task, the note eliminates the 30 seconds you would otherwise spend trying to remember where you were. Three seconds of writing saves thirty seconds of remembering.",
+      "type": "callout",
+      "title": "The Sticky Note Method",
+      "variant": "tip"
+    },
+    {
+      "body": "In Caribbean pharmacies, the pressure to 'multitask' is constant. The phone is ringing, a customer is at the counter, a prescription is half-filled, and the supplier just arrived for a delivery. The temptation is to do everything at once. Resist it. Handle one thing at a time, in order of priority, and communicate clearly: 'I will be with you in just a moment' is better than trying to serve two people at once and making errors on both.",
+      "type": "text"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Most people are excellent multitaskers with practice",
+        "True simultaneous multitasking is impossible — we actually task-switch, which reduces productivity by up to 40%",
+        "Multitasking only reduces productivity by about 5%",
+        "Multitasking is only a problem for complex tasks, not simple ones"
+      ],
+      "question": "What does research show about human multitasking?",
+      "explanation": "Research consistently shows that human beings cannot truly multitask — we task-switch, and each switch incurs a cost in speed and accuracy. In pharmacy, where accuracy is safety-critical, understanding and managing this limitation is essential.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 20
+}

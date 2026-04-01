@@ -1,0 +1,67 @@
+{
+  "id": "d19a7e79-3255-4657-9aa3-bff1a77a99f7",
+  "module_id": "00de6d94-4229-4a9a-aec6-0c5d4e87fbbd",
+  "title": "Humidity Control & Storage Layout Design",
+  "content": [
+    {
+      "text": "Fighting Moisture in a Tropical Pharmacy",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Humidity is the silent destroyer of medication quality in the Caribbean. While temperature gets most of the attention, excess moisture can be equally damaging. Hygroscopic medications absorb moisture from the air, causing tablets to soften, capsules to stick together, powders to clump, and effervescent tablets to activate prematurely. Moisture also promotes hydrolysis — a chemical breakdown reaction — and can encourage microbial growth in liquid formulations.",
+      "type": "text"
+    },
+    {
+      "body": "The ideal relative humidity for pharmaceutical storage is 40–60%. In the Caribbean, ambient humidity regularly exceeds 80%, and during the rainy season, it can approach 95% in coastal areas. Achieving and maintaining appropriate humidity levels requires active dehumidification, proper building ventilation, and mindful storage practices.",
+      "type": "text"
+    },
+    {
+      "text": "Practical Humidity Control Measures",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "type": "list",
+      "items": [
+        "Air conditioning: The primary humidity control method — AC systems both cool and dehumidify",
+        "Dedicated dehumidifiers: Essential in storage areas where AC alone cannot maintain humidity below 60%",
+        "Hygrometers: Placed throughout the pharmacy to monitor relative humidity in real time",
+        "Desiccant packs: Placed in opened medication containers and storage bins; replace regularly",
+        "Moisture barriers: Keep medications in their original packaging until dispensed; reseal opened containers tightly",
+        "Ventilation: Ensure adequate airflow to prevent moisture pockets — avoid stacking boxes against walls",
+        "Building maintenance: Repair leaks, seal windows, and address rising damp promptly"
+      ],
+      "ordered": false
+    },
+    {
+      "body": "Design your pharmacy storage layout to minimise degradation risk: store medications at least 15 cm off the floor (prevents moisture wicking), keep stock 30 cm away from exterior walls (which can transfer heat and moisture), position temperature-sensitive items away from doors and windows, place the heaviest items on lower shelves for safety, and organise alphabetically or by therapeutic class with clear labelling for efficient retrieval.",
+      "type": "callout",
+      "title": "Storage Layout Best Practices",
+      "variant": "tip"
+    },
+    {
+      "term": "Hygroscopic",
+      "type": "key-term",
+      "definition": "A property of certain substances that causes them to readily absorb moisture from the surrounding air. Hygroscopic medications — such as aspirin, certain vitamins, and many powder formulations — require protection from humidity through sealed containers, desiccant packs, and dehumidified storage environments."
+    },
+    {
+      "body": "Temperature mapping is an important but often neglected practice. Not all areas of a pharmacy maintain the same temperature — areas near doors, windows, roof spaces, and cooking/break rooms are typically warmer. Conducting a temperature mapping exercise involves placing thermometers or data loggers at multiple points throughout the pharmacy for 7–14 days and analysing the results to identify hot spots and cold spots. Medications should be stored only in areas that consistently meet the required temperature and humidity specifications.",
+      "type": "text"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "10–20%",
+        "40–60%",
+        "70–80%",
+        "90–100%"
+      ],
+      "question": "What is the ideal relative humidity range for pharmaceutical storage?",
+      "explanation": "The ideal relative humidity for pharmaceutical storage is 40–60%. In the Caribbean, where ambient humidity often exceeds 80%, active dehumidification through air conditioning and dedicated dehumidifiers is essential to maintain medication quality.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 25
+}

@@ -1,0 +1,86 @@
+{
+  "id": "8428774c-9fd2-41ff-ac0f-8cc05bf36aca",
+  "module_id": "9ac6450c-aeb9-430c-9763-10a0ce1064e5",
+  "title": "Drug-Receptor Interactions: Agonists, Antagonists & Beyond",
+  "content": [
+    {
+      "text": "How Drugs Produce Their Effects",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Most drugs produce their effects by binding to specific protein targets in the body called receptors. Think of a receptor as a lock and the drug as a key. Some keys turn the lock and open the door (agonists), some keys fit the lock but do not turn it, blocking other keys from entering (antagonists), and some keys only partially turn the lock (partial agonists).",
+      "type": "text"
+    },
+    {
+      "term": "Agonist",
+      "type": "key-term",
+      "definition": "A drug that binds to a receptor and activates it, producing a biological response. Example: salbutamol is a beta-2 agonist that relaxes bronchial smooth muscle in asthma."
+    },
+    {
+      "term": "Antagonist",
+      "type": "key-term",
+      "definition": "A drug that binds to a receptor but does not activate it, instead blocking the receptor and preventing agonists from binding. Example: atenolol is a beta-1 antagonist (beta-blocker) that blocks adrenaline's effects on the heart."
+    },
+    {
+      "body": "Understanding agonism and antagonism explains how entire drug classes work. Beta-blockers like atenolol and metoprolol — among the most dispensed medications in Caribbean pharmacies for hypertension — work by antagonising (blocking) beta-1 receptors in the heart, reducing heart rate and contractility. Conversely, salbutamol inhalers for asthma work by agonising (activating) beta-2 receptors in the lungs, causing bronchodilation.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Full agonist",
+          "Maximal receptor activation",
+          "Salbutamol (beta-2 agonist for asthma)",
+          "Widely used for asthma management across Caribbean islands"
+        ],
+        [
+          "Partial agonist",
+          "Sub-maximal activation even at full occupancy",
+          "Buprenorphine (partial opioid agonist)",
+          "Used in opioid dependence programmes in Trinidad"
+        ],
+        [
+          "Antagonist",
+          "Blocks receptor, no activation",
+          "Atenolol (beta-1 blocker)",
+          "First-line for hypertension — covered by CDAP in Trinidad"
+        ],
+        [
+          "Inverse agonist",
+          "Reduces constitutive receptor activity below baseline",
+          "Certain antihistamines",
+          "Less commonly encountered in practice"
+        ]
+      ],
+      "type": "table",
+      "caption": "Drug-Receptor Interaction Types",
+      "headers": [
+        "Type",
+        "Receptor Effect",
+        "Clinical Example",
+        "Caribbean Relevance"
+      ]
+    },
+    {
+      "body": "Drug name stems help you identify receptor targets: -olol = beta-blocker (atenolol, propranolol), -pril = ACE inhibitor (enalapril, lisinopril), -sartan = ARB (losartan, valsartan), -dipine = calcium channel blocker (amlodipine, nifedipine). Learning these stems makes you faster and more accurate at the dispensing counter.",
+      "type": "callout",
+      "title": "Recognising Drug Classes by Their Stems",
+      "variant": "tip"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "They both activate the same receptor, so their effects are additive",
+        "Salbutamol is a beta-2 agonist and atenolol is a beta-1 antagonist — at therapeutic doses they primarily affect different receptor subtypes",
+        "Atenolol completely blocks salbutamol's effects, making the inhaler useless",
+        "They have no relationship because they are taken by different routes"
+      ],
+      "question": "A patient in Barbados uses a salbutamol inhaler for asthma and atenolol tablets for hypertension. How do these two drugs interact at the receptor level?",
+      "explanation": "Salbutamol primarily targets beta-2 receptors (in the lungs) while atenolol primarily targets beta-1 receptors (in the heart). At standard doses they work on different receptor subtypes. However, non-selective beta-blockers like propranolol can block beta-2 receptors and worsen asthma — which is why cardio-selective agents are preferred in asthmatic patients.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 20
+}

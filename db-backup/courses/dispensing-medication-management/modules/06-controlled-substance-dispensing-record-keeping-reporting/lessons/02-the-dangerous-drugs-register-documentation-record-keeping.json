@@ -1,0 +1,96 @@
+{
+  "id": "248b306d-8e5e-4f5e-86c8-6e0d6cf6eb17",
+  "module_id": "985d5724-85ec-4a39-a2d7-47693858456e",
+  "title": "The Dangerous Drugs Register: Documentation & Record-Keeping",
+  "content": [
+    {
+      "text": "Every Tablet Counted, Every Transaction Recorded",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "The Dangerous Drugs Register (DDR) — also known as the Controlled Drug Register or CD Register — is the cornerstone of controlled substance accountability in a pharmacy. It is a legally mandated record that documents every transaction involving controlled substances: every receipt, every dispensing, every return, every destruction, and every balance. The register must enable any inspector to trace the complete lifecycle of every unit of a controlled substance from arrival at the pharmacy to its final disposition.",
+      "type": "text"
+    },
+    {
+      "text": "What Must Be Recorded",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Each entry in the register must include the date of transaction, the name and form of the drug, the quantity received or supplied, the running balance, and — for dispensed items — the patient's name and address, the prescriber's name and dangerous drugs licence number, and the prescription reference number. Entries must be made in ink (not pencil), must not be altered by erasure (corrections must be made by striking through with a single line and initialling), and must be made at the time of the transaction — not retrospectively.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "15/01/2025",
+          "Morphine Sulphate 10 mg Tablets",
+          "Received from NIPDEC, Invoice #4521",
+          "100",
+          "—",
+          "100",
+          "KS"
+        ],
+        [
+          "16/01/2025",
+          "Morphine Sulphate 10 mg Tablets",
+          "Supplied to J. Mohammed, Rx #7834, Dr. Singh (DD Lic #456)",
+          "—",
+          "20",
+          "80",
+          "KS"
+        ],
+        [
+          "18/01/2025",
+          "Morphine Sulphate 10 mg Tablets",
+          "Supplied to R. Rampersad, Rx #7841, Dr. Patel (DD Lic #289)",
+          "—",
+          "10",
+          "70",
+          "AM"
+        ]
+      ],
+      "type": "table",
+      "caption": "Dangerous Drugs Register: Sample Entry Format",
+      "headers": [
+        "Date",
+        "Drug Name & Form",
+        "Received From / Supplied To",
+        "Qty In",
+        "Qty Out",
+        "Balance",
+        "Pharmacist Initials"
+      ]
+    },
+    {
+      "body": "The running balance in the register must match the physical count at all times. Any discrepancy — even a single tablet — must be investigated immediately, documented, and reported to the supervising pharmacist. Unexplained discrepancies in controlled substance balances may require reporting to the relevant regulatory authority (Dangerous Drugs Inspectorate in Trinidad, Pharmacy Council in Jamaica, Drug Service in Barbados).",
+      "type": "callout",
+      "title": "Balance Reconciliation",
+      "variant": "info"
+    },
+    {
+      "term": "Dangerous Drugs Register (DDR)",
+      "type": "key-term",
+      "definition": "A legally mandated, bound record book (or validated electronic equivalent where permitted) documenting every receipt, dispensing, destruction, and balance of controlled substances in a pharmacy. The DDR must be available for inspection by regulatory authorities at any time and must be retained for a minimum period (typically 2–5 years after the last entry, depending on jurisdiction)."
+    },
+    {
+      "body": "Physical storage of controlled substances must match the accountability in the register. All controlled substances must be stored in a double-locked safe or cabinet — two separate locks requiring two separate keys, held by different authorised persons. Access to the controlled substance cabinet must be logged separately from the DDR, creating a dual audit trail: who accessed the cabinet and what transactions occurred.",
+      "type": "text"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Use correction fluid (white-out) and rewrite the entry",
+        "Erase the error with a pencil eraser and rewrite",
+        "Strike through the error with a single line, initial and date the correction, and write the correct entry",
+        "Remove the page and rewrite it completely"
+      ],
+      "question": "How should an error be corrected in a Dangerous Drugs Register?",
+      "explanation": "Corrections in a Dangerous Drugs Register must be made by striking through the error with a single line so that the original entry remains legible, then initialling and dating the correction. Correction fluid, erasures, and page removal are prohibited — they destroy the audit trail and may constitute evidence of tampering.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 25
+}

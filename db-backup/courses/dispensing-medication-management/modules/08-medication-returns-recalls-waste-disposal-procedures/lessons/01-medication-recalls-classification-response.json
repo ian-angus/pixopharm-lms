@@ -1,0 +1,99 @@
+{
+  "id": "b41da6cd-a1ab-4f38-abff-e6db010b4b2f",
+  "module_id": "9ea63d27-8c24-4427-8db7-c949b7266bf5",
+  "title": "Medication Recalls: Classification & Response",
+  "content": [
+    {
+      "text": "When Manufacturers Sound the Alarm",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "A medication recall occurs when a manufacturer or regulatory authority determines that a pharmaceutical product on the market may be defective, contaminated, mislabelled, or otherwise unsafe. Recalls range from precautionary measures (minor labelling errors) to emergency actions (contaminated products that pose immediate health risks). As a pharmacy technician, your ability to respond quickly and accurately to a recall can protect patients from serious harm.",
+      "type": "text"
+    },
+    {
+      "text": "Recall Classification",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "rows": [
+        [
+          "Class I",
+          "High — serious health risk or death",
+          "The product poses a reasonable probability of causing serious adverse health consequences or death",
+          "IMMEDIATE action required. Pull all affected stock. Contact patients who received affected batches."
+        ],
+        [
+          "Class II",
+          "Moderate — temporary or reversible health effects",
+          "The product may cause temporary or medically reversible adverse health effects; probability of serious consequences is remote",
+          "URGENT action. Remove from stock within 24–48 hours. Notify affected patients."
+        ],
+        [
+          "Class III",
+          "Low — unlikely to cause adverse health effects",
+          "The product violates regulations but is not likely to cause adverse health effects (e.g., minor labelling error)",
+          "Standard action. Remove from stock during routine operations. Patient notification not usually required."
+        ]
+      ],
+      "type": "table",
+      "caption": "Medication Recall Classes",
+      "headers": [
+        "Class",
+        "Risk Level",
+        "Description",
+        "Response Urgency"
+      ]
+    },
+    {
+      "term": "Medication Recall",
+      "type": "key-term",
+      "definition": "A manufacturer-initiated or regulatory authority-ordered withdrawal of a pharmaceutical product from the market due to identified defects, contamination, mislabelling, or safety concerns. Recalls are classified by severity (Class I, II, or III) and require specific response actions from every pharmacy holding affected stock."
+    },
+    {
+      "body": "In the Caribbean, recall notifications may reach pharmacies through multiple channels: direct manufacturer communication, wholesaler alerts, regulatory authority notices (CFDD in Trinidad, Standards and Regulation Division in Jamaica, Barbados Drug Service), CARPHA regional alerts, and professional association communications. Pharmacy technicians must monitor all these channels and have a clear recall response SOP that can be activated immediately.",
+      "type": "text"
+    },
+    {
+      "text": "The Recall Response Checklist",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "type": "list",
+      "items": [
+        "Identify: Check the recall notice for the specific drug name, strength, batch numbers, and expiry dates affected",
+        "Locate: Search all pharmacy stock areas (shelves, fridge, backstock, returned items) for the affected product",
+        "Quarantine: Remove all affected stock from dispensing areas and place in a clearly labelled quarantine zone",
+        "Document: Record the quantity quarantined, batch numbers, and location found",
+        "Notify: For Class I and II recalls, identify patients who received the affected batch from dispensing records and contact them with clear instructions",
+        "Report: Notify the supervising pharmacist and the relevant regulatory authority as required",
+        "Return or dispose: Follow the manufacturer's or regulatory authority's instructions for returning or disposing of the quarantined stock",
+        "Record: Complete all recall documentation and file for regulatory inspection"
+      ],
+      "ordered": true
+    },
+    {
+      "body": "When a Class I recall is issued, treat it as a patient safety emergency. Stop dispensing the affected product immediately. Pull all affected stock from every location in the pharmacy. Check dispensing records to identify every patient who received the affected batch. Contact those patients promptly with clear instructions — whether to stop taking the medication, return it to the pharmacy, or seek medical attention. Document everything. Minutes matter in a Class I recall.",
+      "type": "callout",
+      "title": "Class I Recalls — Immediate Action Required",
+      "variant": "danger"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Continue dispensing the remaining stock since it's only Class II",
+        "Remove all affected batch stock within 24–48 hours, quarantine it, notify affected patients, and follow manufacturer return instructions",
+        "Discard the affected stock in the regular waste bin",
+        "Wait for the regulatory authority to visit the pharmacy and remove the stock"
+      ],
+      "question": "A manufacturer issues a Class II recall for a specific batch of metformin 500 mg due to an impurity exceeding acceptable limits. What should the pharmacy do?",
+      "explanation": "A Class II recall requires urgent action within 24–48 hours: remove all affected stock from dispensing areas, quarantine it, identify and notify affected patients, and follow the manufacturer's return or disposal instructions. Continuing to dispense (option A) is dangerous, regular waste disposal (option C) is inappropriate for pharmaceutical products, and waiting passively (option D) is inadequate.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 25
+}

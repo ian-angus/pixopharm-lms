@@ -1,0 +1,113 @@
+{
+  "id": "ddc537f6-ed0f-46e8-9bf0-ee0631ff8cd0",
+  "module_id": "3fc15d29-bbc6-49e7-9434-0660669d41ee",
+  "title": "Overview of Dosage Forms and Routes of Administration",
+  "content": [
+    {
+      "text": "Why Dosage Forms Matter",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "A pharmaceutical dosage form is the physical form in which a drug is produced and dispensed. The same active pharmaceutical ingredient (API) can be delivered in dozens of different dosage forms — tablets, capsules, syrups, creams, injections, suppositories, patches, and more. Each form is designed to deliver the drug to the body in a specific way, at a specific rate, and to a specific site. For pharmacy technicians in the Caribbean, understanding dosage forms is essential because many patients rely on compounded preparations when commercially manufactured products are unavailable or unsuitable.",
+      "type": "text"
+    },
+    {
+      "body": "The choice of dosage form directly affects a drug's bioavailability (how much of the drug reaches systemic circulation), onset of action, duration of effect, stability, patient compliance, and cost. In the Caribbean context, where tropical heat and humidity can degrade certain formulations rapidly, dosage form selection takes on additional significance. A cream that performs perfectly in a European climate may separate or degrade within weeks in a Trinidadian pharmacy without air conditioning.",
+      "type": "text"
+    },
+    {
+      "term": "Dosage Form",
+      "type": "key-term",
+      "definition": "The physical form in which a drug is manufactured, dispensed, and administered to a patient. Examples include tablets, capsules, solutions, suspensions, creams, ointments, suppositories, and injections. The dosage form determines the route of administration, the rate of drug release, and the stability of the product."
+    },
+    {
+      "text": "Routes of Administration",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "The route of administration refers to the path by which a drug enters the body. Each route has distinct advantages, limitations, and appropriate dosage forms. Caribbean pharmacy technicians must be familiar with all common routes, as they will encounter prescriptions for each and may be involved in compounding preparations for several of them.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Oral",
+          "Swallowed and absorbed through the GI tract",
+          "Tablets, capsules, syrups, suspensions, powders",
+          "Syrups and suspensions may require refrigeration difficult to maintain in rural Caribbean areas; paediatric liquids are frequently compounded locally"
+        ],
+        [
+          "Topical",
+          "Applied to the skin or mucous membranes for local effect",
+          "Creams, ointments, gels, lotions, pastes",
+          "High humidity and perspiration in tropical climates affect absorption and product stability; creams may liquefy in heat"
+        ],
+        [
+          "Rectal",
+          "Inserted into the rectum for local or systemic effect",
+          "Suppositories, enemas",
+          "Cocoa butter suppositories melt at tropical temperatures; synthetic bases (e.g., polyethylene glycol) preferred in the Caribbean"
+        ],
+        [
+          "Parenteral",
+          "Injected (IV, IM, SC) bypassing the GI tract",
+          "Solutions, suspensions, emulsions for injection",
+          "Cold chain management is critical; sterile compounding requires controlled environments challenging to maintain in humid climates"
+        ],
+        [
+          "Inhalation",
+          "Inhaled into the lungs",
+          "Metered-dose inhalers (MDIs), dry powder inhalers (DPIs), nebuliser solutions",
+          "Saharan dust season (June–September) increases demand for respiratory medications across the Eastern Caribbean"
+        ],
+        [
+          "Ophthalmic",
+          "Applied to the eye",
+          "Eye drops, eye ointments",
+          "Must be sterile; multi-dose containers must be discarded within 28 days of opening — patients must be counselled on this strictly"
+        ],
+        [
+          "Otic",
+          "Applied to the ear",
+          "Ear drops",
+          "Tropical ear infections (otitis externa/swimmer's ear) are common in Caribbean populations due to warm, humid climate and swimming"
+        ]
+      ],
+      "type": "table",
+      "caption": "Common Routes of Administration and Their Dosage Forms",
+      "headers": [
+        "Route",
+        "Description",
+        "Common Dosage Forms",
+        "Caribbean Considerations"
+      ]
+    },
+    {
+      "body": "Every year between June and September, vast plumes of Saharan dust cross the Atlantic and settle over the Caribbean. This phenomenon significantly increases the incidence of asthma attacks, allergic rhinitis, and other respiratory conditions across the region. Pharmacy technicians should anticipate increased demand for inhalers, nebuliser solutions, and antihistamines during this period and ensure adequate stock of respiratory dosage forms.",
+      "type": "callout",
+      "title": "Saharan Dust and Respiratory Dosage Forms",
+      "variant": "info"
+    },
+    {
+      "term": "Bioavailability",
+      "type": "key-term",
+      "definition": "The fraction of an administered dose of a drug that reaches the systemic circulation in an unchanged, pharmacologically active form. Intravenous administration has 100% bioavailability by definition; oral bioavailability varies widely depending on the drug's formulation, the patient's GI function, and first-pass metabolism in the liver."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "PEG bases are cheaper than cocoa butter",
+        "Cocoa butter melts at body temperature, but in tropical ambient temperatures it may soften or melt before use",
+        "PEG bases taste better",
+        "Cocoa butter is only available in European pharmacies"
+      ],
+      "question": "A patient in Tobago requires a suppository medication. Why might a polyethylene glycol (PEG) base be preferred over a cocoa butter base in the Caribbean?",
+      "explanation": "Cocoa butter has a melting point of approximately 34°C — close to body temperature. In the Caribbean, where ambient temperatures regularly exceed 30°C, cocoa butter suppositories may soften or melt during storage, making them impractical unless refrigerated. PEG bases have higher melting points and dissolve in rectal fluids rather than melting, making them more suitable for tropical conditions.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 25
+}

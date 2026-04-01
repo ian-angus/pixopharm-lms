@@ -1,0 +1,121 @@
+{
+  "id": "04add6a8-863b-4db8-9d90-f222a9ccf482",
+  "module_id": "3ae651ec-d517-49a5-b470-2e80076fafe1",
+  "title": "Internal Compliance Auditing and Continuous Improvement",
+  "content": [
+    {
+      "text": "Auditing Yourself Before the Inspector Does",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Internal compliance auditing is the proactive practice of systematically reviewing your pharmacy's operations against regulatory requirements and professional standards. Rather than waiting for a regulatory inspection to identify deficiencies, internal audits allow the pharmacy to find and fix problems before they become inspection findings, regulatory citations, or — worst of all — patient safety incidents.",
+      "type": "text"
+    },
+    {
+      "body": "An effective internal audit programme follows a structured cycle: plan (identify what to audit and when), do (conduct the audit), check (analyse findings), and act (implement corrective actions). This Plan-Do-Check-Act (PDCA) cycle, also known as the Deming Cycle, is a cornerstone of quality management used across healthcare and industry worldwide.",
+      "type": "text"
+    },
+    {
+      "term": "Internal Compliance Audit",
+      "type": "key-term",
+      "definition": "A systematic, documented evaluation of a pharmacy's operations conducted by its own staff to verify compliance with regulatory requirements, professional standards, and internal SOPs. Internal audits identify deficiencies and drive corrective actions before external regulatory inspections discover them."
+    },
+    {
+      "text": "Conducting a Basic Internal Audit",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "type": "list",
+      "items": [
+        "Select the audit area: choose a specific aspect of operations (e.g. controlled substances, temperature monitoring, prescription record-keeping)",
+        "Prepare the checklist: develop or obtain a structured checklist of requirements for the audit area, drawn from the relevant legislation and standards",
+        "Conduct the audit: systematically work through the checklist, verifying each item against actual practice and documentation",
+        "Document findings: record all observations, including compliant items, deficiencies, and areas for improvement",
+        "Classify deficiencies: categorise each finding by severity (critical, major, minor) to prioritise corrective actions",
+        "Develop corrective actions: for each deficiency, determine what needs to change, who is responsible, and by when",
+        "Implement and verify: carry out corrective actions and verify their effectiveness",
+        "Report and file: prepare a summary report and retain audit documentation as evidence of the pharmacy's quality management system"
+      ],
+      "ordered": true
+    },
+    {
+      "body": "Pharmacy technicians are often ideally positioned to lead or assist with internal audits. Your daily presence on the front line gives you intimate knowledge of actual operations — where shortcuts happen, where documentation slips, where procedures could be improved. Embrace the audit role as an opportunity to improve your pharmacy's quality and protect your patients.",
+      "type": "callout",
+      "title": "Technicians as Audit Champions",
+      "variant": "info"
+    },
+    {
+      "rows": [
+        [
+          "Controlled Substance Records",
+          "Monthly",
+          "Register accuracy, physical counts, balance reconciliation, destruction records"
+        ],
+        [
+          "Temperature Monitoring",
+          "Monthly",
+          "Log completeness, excursion documentation, corrective actions, equipment calibration"
+        ],
+        [
+          "Prescription Record-Keeping",
+          "Quarterly",
+          "Filing completeness, required elements present, retention compliance"
+        ],
+        [
+          "Expiry Date Management",
+          "Monthly",
+          "Shelf checks, short-dated product identification, FIFO compliance"
+        ],
+        [
+          "SOP Compliance",
+          "Quarterly",
+          "SOPs current, staff training records, observed practice matches written procedures"
+        ],
+        [
+          "Premises and Equipment",
+          "Quarterly",
+          "Cleanliness, maintenance, security systems, equipment calibration status"
+        ]
+      ],
+      "type": "table",
+      "caption": "Internal Audit Schedule — Recommended Frequency",
+      "headers": [
+        "Audit Area",
+        "Recommended Frequency",
+        "Key Checkpoints"
+      ]
+    },
+    {
+      "type": "case-study",
+      "title": "Case Study: The Monthly Controlled Substance Audit",
+      "scenario": "At the end of the month, pharmacy technician Keisha conducts the routine controlled substance audit at her pharmacy in Bridgetown, Barbados. While reconciling the tramadol register, she discovers a discrepancy of 5 tablets — the register shows 120 tablets, but the physical count is 115. She reviews the register entries for the month and finds that a dispensing of 5 tramadol tablets on the 14th was entered in the oxycodone section of the register by mistake.",
+      "questions": [
+        "What should Keisha do now that she has identified the source of the discrepancy?",
+        "How should the erroneous register entry be corrected?",
+        "Does this finding need to be reported to the regulatory authority?",
+        "What systems could prevent this type of error in the future?"
+      ],
+      "discussion": "Keisha should immediately report her findings to the supervising pharmacist. The erroneous entry should be corrected following proper procedures: single-line strikethrough in the oxycodone section (with initials, date, and explanatory note) and a correcting entry in the tramadol section (with cross-reference). Because the discrepancy has been explained through a documentation error (not diversion), external reporting may not be required — but the pharmacist should make this determination based on local regulatory requirements. Preventive measures include implementing a double-check system for register entries and using pre-printed register pages that reduce the risk of entering data in the wrong section."
+    },
+    {
+      "body": "Continuous improvement is not about perfection — it is about consistently getting better. Every audit finding is an opportunity to strengthen your pharmacy's systems. Track your audit results over time: are the same deficiencies recurring? If so, the corrective actions are not working and a different approach is needed. Are new types of findings emerging? That may indicate changes in workload, staffing, or procedures that need to be addressed. The goal is a pharmacy where compliance is embedded in the culture, not dependent on individual vigilance alone.",
+      "type": "text"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Pharmacy, Dispensing, Compliance, Auditing",
+        "Plan, Do, Check, Act",
+        "Prescribe, Dispense, Counsel, Assess",
+        "Prepare, Document, Count, Archive"
+      ],
+      "question": "What does the PDCA cycle stand for in quality management?",
+      "explanation": "PDCA stands for Plan, Do, Check, Act — also known as the Deming Cycle. It is a continuous improvement framework used in quality management across healthcare and industry. In pharmacy, it drives systematic identification and correction of compliance gaps.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 30
+}

@@ -1,0 +1,165 @@
+{
+  "id": "332ef348-1412-4971-be07-b8dff43577f2",
+  "module_id": "dfb48101-2356-4d0d-9a97-2396820bb069",
+  "title": "Common Prescribing Patterns & Top Dispensed Medications in Jamaica",
+  "content": [
+    {
+      "text": "Jamaica's Prescribing Landscape",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Jamaica shares the Caribbean's heavy burden of non-communicable diseases, but its prescribing patterns have some distinctive features shaped by the NHF formulary, local prescribing culture, and the availability of specific generics. Hypertension is the most prevalent chronic condition (affecting approximately 25-30% of adults), followed by diabetes and hyperlipidaemia. Understanding Jamaica's specific medication preferences will help you work more effectively and anticipate dispensing needs.",
+      "type": "text"
+    },
+    {
+      "text": "Top 15 Dispensed Medications in Jamaican Community Pharmacies",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "rows": [
+        [
+          "1",
+          "Amlodipine 5mg/10mg",
+          "Calcium channel blocker",
+          "Hypertension"
+        ],
+        [
+          "2",
+          "Metformin 500mg/850mg/1000mg",
+          "Biguanide",
+          "Type 2 diabetes"
+        ],
+        [
+          "3",
+          "Losartan 25mg/50mg/100mg",
+          "ARB",
+          "Hypertension"
+        ],
+        [
+          "4",
+          "Omeprazole 20mg",
+          "Proton pump inhibitor",
+          "GERD"
+        ],
+        [
+          "5",
+          "Atorvastatin 10mg/20mg/40mg",
+          "Statin",
+          "Hyperlipidaemia"
+        ],
+        [
+          "6",
+          "Hydrochlorothiazide 25mg",
+          "Thiazide diuretic",
+          "Hypertension"
+        ],
+        [
+          "7",
+          "Amoxicillin 250mg/500mg",
+          "Penicillin antibiotic",
+          "Bacterial infections"
+        ],
+        [
+          "8",
+          "Enalapril 5mg/10mg/20mg",
+          "ACE inhibitor",
+          "Hypertension"
+        ],
+        [
+          "9",
+          "Aspirin 81mg",
+          "Antiplatelet",
+          "Cardiovascular prevention"
+        ],
+        [
+          "10",
+          "Glimepiride 1mg/2mg/4mg",
+          "Sulphonylurea",
+          "Type 2 diabetes"
+        ],
+        [
+          "11",
+          "Salbutamol inhaler 100mcg",
+          "Beta-2 agonist",
+          "Asthma"
+        ],
+        [
+          "12",
+          "Diclofenac 50mg/75mg",
+          "NSAID",
+          "Pain, inflammation"
+        ],
+        [
+          "13",
+          "Fluoxetine 20mg",
+          "SSRI",
+          "Depression"
+        ],
+        [
+          "14",
+          "Ciprofloxacin 500mg",
+          "Fluoroquinolone",
+          "Bacterial infections"
+        ],
+        [
+          "15",
+          "Lisinopril 5mg/10mg/20mg",
+          "ACE inhibitor",
+          "Hypertension"
+        ]
+      ],
+      "type": "table",
+      "caption": "Most Commonly Dispensed Medications in Jamaica (approximate ranking)",
+      "headers": [
+        "Rank",
+        "Medication",
+        "Class",
+        "Primary Indication"
+      ]
+    },
+    {
+      "text": "Jamaica-Specific Prescribing Observations",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "type": "list",
+      "items": [
+        "ARBs (Losartan) are more popular in Jamaica relative to ACE inhibitors compared to T&T — partly due to better tolerance (no ACE-inhibitor cough) in the population",
+        "Glimepiride is more commonly prescribed as a second-line antidiabetic than Glibenclamide (the opposite of T&T's pattern)",
+        "Jamaican doctors frequently prescribe combination antihypertensives: Losartan/Hydrochlorothiazide, Amlodipine/Valsartan combinations are popular",
+        "Antibiotics are prescribed aggressively for upper respiratory infections; azithromycin (the 'Z-Pack') is extremely popular",
+        "Herbal and traditional remedies are widely used: cerasee tea (Momordica charantia) for diabetes and blood cleansing is a Jamaican staple",
+        "Mental health prescribing is increasing but still stigmatised; many patients request that psychiatric medications be dispensed discreetly"
+      ],
+      "ordered": false
+    },
+    {
+      "body": "Mental health carries significant stigma in Jamaica. Patients collecting medications for depression, psychosis, or epilepsy may be anxious about being seen at the pharmacy counter. As a pharmacy technician, always handle these prescriptions with the same discretion and respect as any other. Never discuss a patient's mental health medication within earshot of other customers. Use opaque bags and avoid labelling that identifies the condition on the outside of the package.",
+      "type": "callout",
+      "title": "Cultural Sensitivity — Mental Health",
+      "variant": "tip"
+    },
+    {
+      "term": "Cerasee (Momordica charantia)",
+      "type": "key-term",
+      "definition": "Also known as bitter melon or bitter gourd, cerasee is one of Jamaica's most widely used traditional remedies. Brewed as a tea, it is believed to lower blood sugar, purify the blood, and treat skin conditions. While there is some scientific evidence for its hypoglycaemic properties, it can interact with prescription diabetes medications and cause dangerously low blood sugar. Always ask diabetic patients if they are drinking cerasee tea."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Cerasee tea neutralises the effect of Metformin",
+        "Cerasee has hypoglycaemic properties that could cause dangerously low blood sugar when combined with antidiabetic medications",
+        "Cerasee tea is illegal to consume while on prescription medication in Jamaica",
+        "There is no concern — cerasee tea has no effect on blood sugar"
+      ],
+      "question": "A Jamaican patient with Type 2 diabetes tells you they drink cerasee tea daily alongside their Metformin and Glimepiride. Why is this potentially concerning?",
+      "explanation": "Cerasee (Momordica charantia / bitter melon) has documented hypoglycaemic properties. When taken alongside prescription antidiabetic medications like Metformin and Glimepiride, it can cause additive blood sugar lowering, potentially resulting in hypoglycaemia (dangerously low blood sugar). The pharmacist should be alerted, and the patient counselled about this interaction.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 3,
+  "duration_minutes": 25
+}

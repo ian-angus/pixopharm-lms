@@ -1,0 +1,180 @@
+[
+  {
+    "id": "6084d7ed-d433-4c21-906f-e3517c50f7ca",
+    "module_id": "de02aa8f-49a7-4ad1-92e5-bc0b16c14f1c",
+    "question": "When a patient says 'meh belly hot,' what is the MOST likely clinical interpretation?",
+    "options": [
+      "Fever",
+      "Heartburn, acid reflux, or dyspepsia",
+      "Appendicitis",
+      "Food poisoning"
+    ],
+    "correct_answer": 1,
+    "explanation": "'Meh belly hot' is a common Caribbean vernacular expression for epigastric burning, most likely indicating heartburn, acid reflux, or dyspepsia. However, follow-up questions about location, timing, and triggers are essential to confirm the meaning.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "ba85da95-6e75-4a42-8b8a-ebde39cc0d00",
+    "module_id": "de02aa8f-49a7-4ad1-92e5-bc0b16c14f1c",
+    "question": "Why should pharmacy technicians NOT correct a patient's vernacular health descriptions?",
+    "options": [
+      "Because the patient might get offended and leave",
+      "Because mirroring their language builds trust and makes them feel heard",
+      "Because it is not the technician's job to educate patients",
+      "Because vernacular language is more accurate than medical terminology"
+    ],
+    "correct_answer": 1,
+    "explanation": "Mirroring a patient's language — saying 'your sugar running' instead of correcting to 'your blood glucose is elevated' — builds rapport and trust. Patients feel heard and understood, which makes them more likely to share important health information and adhere to treatment plans.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "analyze"
+  },
+  {
+    "id": "280498e4-dbde-4a22-899b-c578e5163dbf",
+    "module_id": "de02aa8f-49a7-4ad1-92e5-bc0b16c14f1c",
+    "question": "Which question type should you START with when a patient presents a vague complaint?",
+    "options": [
+      "Closed question: 'Is it your head?'",
+      "Leading question: 'You probably just need paracetamol, right?'",
+      "Open-ended question: 'Can you describe what you are experiencing?'",
+      "Rhetorical question: 'We all have bad days, do we not?'"
+    ],
+    "correct_answer": 2,
+    "explanation": "Open-ended questions give patients the space to describe their experience in their own words, providing the broadest possible information for you to work with. Closed questions are useful later to confirm specifics, but starting with them risks missing important details.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "c91c9fa9-3c0e-4cac-8fd6-fbfbd21d3262",
+    "module_id": "de02aa8f-49a7-4ad1-92e5-bc0b16c14f1c",
+    "question": "Cerasee (bitter melon) tea is commonly used for diabetes management in the Caribbean. Why is this relevant for pharmacy technicians?",
+    "options": [
+      "Because cerasee is a banned substance that should be reported",
+      "Because cerasee has documented hypoglycaemic effects that can interact with diabetes medications",
+      "Because cerasee has no pharmacological effect and patients should be told to stop wasting their time",
+      "Because cerasee is only used in Trinidad and not relevant elsewhere"
+    ],
+    "correct_answer": 1,
+    "explanation": "Cerasee (Momordica charantia) has well-documented hypoglycaemic properties. When combined with metformin or other diabetes medications, it can cause blood sugar to drop dangerously low. Pharmacy technicians must ask about bush medicine use and flag potential interactions to the pharmacist.",
+    "order_index": 3,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "52d8341d-b591-4331-be3d-f4f08e68e0e2",
+    "module_id": "de02aa8f-49a7-4ad1-92e5-bc0b16c14f1c",
+    "question": "What is the MOST effective way to encourage patients to disclose bush medicine use?",
+    "options": [
+      "Ask directly: 'Are you using any dangerous herbal remedies?'",
+      "Wait for them to mention it voluntarily",
+      "Normalise the question: 'Many of our patients use bush remedies. Are you using anything herbal?'",
+      "Put a sign up saying 'Tell us about your herbal medicines'"
+    ],
+    "correct_answer": 2,
+    "explanation": "Normalising the question — framing bush medicine use as common and expected — removes the stigma that prevents patients from disclosing. Asking about 'dangerous' remedies implies judgement, waiting is passive, and a sign alone is insufficient.",
+    "order_index": 4,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "4db8355e-2443-4a42-bc14-df64565b3a79",
+    "module_id": "de02aa8f-49a7-4ad1-92e5-bc0b16c14f1c",
+    "question": "Which of the following is the BEST way to translate the pharmacist's instruction 'take this medication on an empty stomach' into patient-friendly language?",
+    "options": [
+      "'Do not eat when you take this.'",
+      "'Take this at least 30 minutes before eating breakfast in the morning.'",
+      "'Your stomach needs to be empty for this to work.'",
+      "'Take this with an empty stomach — preferably without food.'"
+    ],
+    "correct_answer": 1,
+    "explanation": "Specific, actionable instructions are more effective than vague ones. 'At least 30 minutes before eating breakfast' gives a clear time reference and a daily routine anchor. 'On an empty stomach' is ambiguous — patients may not know how long 'empty' means.",
+    "order_index": 5,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "445282d6-9bcc-4801-a052-0a2a371a8bc9",
+    "module_id": "de02aa8f-49a7-4ad1-92e5-bc0b16c14f1c",
+    "question": "Match the Caribbean vernacular expression with its most likely clinical meaning:",
+    "options": [
+      "'Meh pressure riding me' → Hypertension",
+      "'Sleep doh come' → Insomnia",
+      "'Meh sugar running' → Elevated blood glucose",
+      "'Meh head going to burst' → Severe headache"
+    ],
+    "correct_answer": 0,
+    "explanation": "Caribbean vernacular health expressions use vivid, metaphorical language rooted in cultural traditions. Learning these translations is essential for effective patient communication in the region.",
+    "order_index": 6,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "0a376a0a-3b37-420a-af18-ada32561a076",
+    "module_id": "de02aa8f-49a7-4ad1-92e5-bc0b16c14f1c",
+    "question": "Bush medicines in the Caribbean are purely cultural practices with no real pharmacological effects.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": 1,
+    "explanation": "Many bush medicines have documented pharmacological effects. Cerasee has hypoglycaemic properties, soursop has blood pressure-lowering effects, and concentrated garlic supplements have blood-thinning properties. These are real effects that can interact with prescribed medications.",
+    "order_index": 7,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "32178361-6598-4ec6-b03a-eb150ec6e6b9",
+    "module_id": "de02aa8f-49a7-4ad1-92e5-bc0b16c14f1c",
+    "question": "An elderly patient tells you she drinks soursop leaf tea 'to bring down the pressure' alongside her prescribed amlodipine. She asks if this is okay. What is the BEST response?",
+    "options": [
+      "'Soursop tea is fine — it is natural and cannot harm you.'",
+      "'Stop drinking that tea immediately — it is interfering with your medication.'",
+      "'That is a great question. Soursop can affect blood pressure, so let me get the pharmacist to advise you on how to use both safely.'",
+      "'I have no idea — ask your doctor.'"
+    ],
+    "correct_answer": 2,
+    "explanation": "Soursop leaf tea has documented blood pressure-lowering effects. Combined with amlodipine, it could cause hypotension. The correct response validates the patient's question, explains the concern briefly, and involves the pharmacist for clinical guidance. This is culturally sensitive, accurate, and within scope.",
+    "order_index": 8,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "hard",
+    "blooms_level": "evaluate"
+  },
+  {
+    "id": "b731d344-4e64-4269-af11-7045fa3c19e5",
+    "module_id": "de02aa8f-49a7-4ad1-92e5-bc0b16c14f1c",
+    "question": "What is the 'funnel technique' in patient questioning?",
+    "options": [
+      "Starting with closed questions and moving to open-ended ones",
+      "Starting with open-ended questions and narrowing down with closed questions",
+      "Asking all questions at once and letting the patient choose which to answer",
+      "Using only closed questions for efficiency"
+    ],
+    "correct_answer": 1,
+    "explanation": "The funnel technique starts with broad, open-ended questions ('What brings you in today?') and progressively narrows with more specific, closed questions ('Is the pain in your upper or lower belly?') until you have the specific information needed. This approach ensures you capture the full picture before narrowing focus.",
+    "order_index": 9,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  }
+]

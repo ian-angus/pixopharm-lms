@@ -1,0 +1,92 @@
+[
+  {
+    "id": "e3af39aa-90a5-423a-9c44-8608273678dc",
+    "module_id": "e41c6408-ecd5-4edc-b518-e7ac682ec96d",
+    "question": "What are the '5 Rights' of medication dispensing?",
+    "options": [
+      "Right price, Right pharmacist, Right time, Right drug, Right quantity",
+      "Right patient, Right drug, Right dose, Right route, Right time",
+      "Right prescription, Right label, Right count, Right check, Right handoff",
+      "Right patient, Right drug, Right dose, Right refill, Right documentation"
+    ],
+    "correct_answer": 1,
+    "explanation": "The 5 Rights are: Right Patient, Right Drug, Right Dose, Right Route, and Right Time. These are the fundamental safety checks that must be verified before any medication is dispensed.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "af65f4bc-2fed-4dd7-8cf7-784911386588",
+    "module_id": "e41c6408-ecd5-4edc-b518-e7ac682ec96d",
+    "question": "How many times should you check the medication label when selecting from the shelf?",
+    "options": [
+      "Once — when picking it up",
+      "Twice — when picking up and when returning",
+      "Three times — when picking up, when counting/measuring, and when returning to shelf",
+      "Four times — once at each step of the workflow"
+    ],
+    "correct_answer": 2,
+    "explanation": "The Triple Check: verify the label (1) when removing the stock bottle from the shelf, (2) when counting or measuring the medication, and (3) when returning the stock bottle to the shelf. This three-point verification significantly reduces 'wrong drug' errors.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "e9ce0803-89ec-4f85-a9ca-4d3a47864be0",
+    "module_id": "e41c6408-ecd5-4edc-b518-e7ac682ec96d",
+    "question": "What is 'Tall Man Lettering' used for in pharmacy?",
+    "options": [
+      "Making labels easier to read for elderly patients",
+      "Highlighting differences between look-alike/sound-alike drug names to prevent errors",
+      "Identifying controlled substances on the shelf",
+      "Indicating that a medication is for topical use only"
+    ],
+    "correct_answer": 1,
+    "explanation": "Tall Man Lettering uses uppercase letters to highlight the critical differences between look-alike drug names (e.g., metFORMIN vs. metOPROLOL) to help pharmacy staff distinguish between easily confused medications and prevent dispensing errors.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "6d61cb76-3a55-4ebc-9c2e-6f81d43386ce",
+    "module_id": "e41c6408-ecd5-4edc-b518-e7ac682ec96d",
+    "question": "What is the 'teach-back' method in patient counselling?",
+    "options": [
+      "Teaching the patient to read their medication label",
+      "Asking the patient to repeat back in their own words how they will take the medication, to verify comprehension",
+      "Providing a written pamphlet for the patient to study at home",
+      "Having the patient demonstrate how to use an inhaler before leaving the pharmacy"
+    ],
+    "correct_answer": 1,
+    "explanation": "Teach-back asks the patient to explain in their own words how they will take the medication. This verifies that the patient actually understood the instructions, rather than simply nodding along. It's a cornerstone of effective patient counselling.",
+    "order_index": 3,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "6803f888-dfc2-426e-850c-b69f5e637352",
+    "module_id": "e41c6408-ecd5-4edc-b518-e7ac682ec96d",
+    "question": "At which step in the dispensing workflow does the pharmacist perform the FINAL verification check?",
+    "options": [
+      "Step 2 — when the prescription is first received",
+      "Step 5 — when medication is prepared",
+      "Step 8 — after the technician has prepared and labelled the medication, the pharmacist verifies everything before release",
+      "Step 10 — during patient counselling"
+    ],
+    "correct_answer": 2,
+    "explanation": "The pharmacist's final check (Step 8) occurs after the technician has prepared, counted, and labelled the medication. The pharmacist compares the original prescription against the prepared medication and label before authorising release to the patient. This is the last safety barrier.",
+    "order_index": 4,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  }
+]

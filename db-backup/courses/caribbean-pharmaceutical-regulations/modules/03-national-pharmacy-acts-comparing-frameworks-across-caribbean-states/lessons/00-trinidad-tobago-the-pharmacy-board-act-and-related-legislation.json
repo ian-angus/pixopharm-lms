@@ -1,0 +1,92 @@
+{
+  "id": "d1a7308a-e480-485e-b231-8869f24a6c29",
+  "module_id": "dabd4858-ddf1-4ea7-9bb0-b04d4ba460d5",
+  "title": "Trinidad & Tobago: The Pharmacy Board Act and Related Legislation",
+  "content": [
+    {
+      "text": "Understanding T&T's Pharmaceutical Legal Framework",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Trinidad and Tobago's pharmaceutical sector is governed by a network of interconnected legislation, with the Pharmacy Board Act (Chapter 29:52) at its centre. This Act establishes the Pharmacy Board, defines who may practise pharmacy, sets licensing requirements for pharmacy premises, and creates the disciplinary framework for professional misconduct.",
+      "type": "text"
+    },
+    {
+      "body": "The Act operates alongside several related statutes: the Food and Drugs Act (Chapter 30:01), which governs the safety and quality of pharmaceutical products; the Dangerous Drugs Act, which controls narcotics and psychotropic substances; and various subsidiary regulations that provide detailed rules for specific aspects of pharmacy practice.",
+      "type": "text"
+    },
+    {
+      "term": "Pharmacy Board Act (Chapter 29:52)",
+      "type": "key-term",
+      "definition": "The primary legislation governing pharmacy practice in Trinidad and Tobago. It establishes the Pharmacy Board, defines the practice of pharmacy, sets registration requirements for pharmacists, and provides for the licensing and inspection of pharmacy premises."
+    },
+    {
+      "text": "Key Provisions of the Pharmacy Board Act",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "rows": [
+        [
+          "Board Composition",
+          "The Pharmacy Board comprises appointed members including registered pharmacists, a medical practitioner, and a Ministry of Health representative"
+        ],
+        [
+          "Pharmacist Registration",
+          "Applicants must hold a recognised pharmacy qualification, pass the Board's examination or satisfy equivalency requirements, and be of good character"
+        ],
+        [
+          "Pharmacy Licensing",
+          "Every premises from which prescriptions are dispensed or pharmaceutical products are sold must hold a valid pharmacy licence issued by the Board"
+        ],
+        [
+          "Inspection Powers",
+          "Drug inspectors appointed under the Act may enter and inspect any pharmacy premises at reasonable times to verify compliance"
+        ],
+        [
+          "Disciplinary Action",
+          "The Board may reprimand, suspend, or remove from the register any pharmacist found guilty of misconduct, incompetence, or violation of the Act"
+        ],
+        [
+          "Penalties",
+          "Unregistered practice or operation of an unlicensed pharmacy carries fines and potential imprisonment"
+        ]
+      ],
+      "type": "table",
+      "caption": "Key Provisions of the T&T Pharmacy Board Act",
+      "headers": [
+        "Provision",
+        "Detail"
+      ]
+    },
+    {
+      "body": "As of the current legislative framework, Trinidad & Tobago does not maintain a separate statutory register for pharmacy technicians. Technicians work under the licence and supervision of a registered pharmacist. There is an ongoing movement toward formal technician registration, but it has not yet been enacted into law. This means technicians must be especially vigilant about operating within the bounds of their supervising pharmacist's licence.",
+      "type": "callout",
+      "title": "Technician Registration Gap",
+      "variant": "warning"
+    },
+    {
+      "body": "The Chemistry, Food and Drugs Division (CFDD) of the Ministry of Health plays a complementary role. While the Pharmacy Board focuses on professional regulation, the CFDD handles product regulation — evaluating drug registration applications, conducting quality testing, and monitoring the safety of pharmaceutical products on the market. Together, the Board and the CFDD provide comprehensive pharmaceutical oversight.",
+      "type": "text"
+    },
+    {
+      "body": "An important practical consideration: in T&T, only a registered pharmacist may own and operate a pharmacy. This 'pharmacist-only' ownership model differs from some other Caribbean jurisdictions where non-pharmacists may own pharmacy businesses. The rationale is that pharmacist ownership ensures that commercial considerations never override professional and patient safety obligations.",
+      "type": "text"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Technicians must register separately with the Pharmacy Board",
+        "There is no separate statutory register for technicians; they work under a pharmacist's licence",
+        "Technicians are registered through CARPHA",
+        "Technician registration is handled by COSTAATT directly"
+      ],
+      "question": "What is the current status of pharmacy technician registration in Trinidad & Tobago?",
+      "explanation": "Trinidad & Tobago does not currently maintain a separate statutory register for pharmacy technicians. Technicians work under the licence and supervision of a registered pharmacist. While there is a growing movement toward formal technician registration, it has not yet been enacted into law.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 25
+}

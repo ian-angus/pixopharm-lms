@@ -1,0 +1,181 @@
+[
+  {
+    "id": "b9b3127e-0db7-48ea-9a09-9d2309200a7f",
+    "module_id": "9b4fe8f1-fe84-4fa2-b2f4-db8c18c1a30e",
+    "question": "Approximately what percentage of Caribbean healthcare workers emigrate within 10 years of qualification, according to PAHO estimates?",
+    "options": [
+      "10%",
+      "20%",
+      "30%",
+      "50%"
+    ],
+    "correct_answer": 2,
+    "explanation": "PAHO estimates that approximately 30% of trained Caribbean healthcare workers emigrate within 10 years of qualification, seeking higher wages and broader career opportunities in North America, the UK, and Europe. This brain drain significantly impacts pharmacy staffing across the region.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "92338e49-374e-4003-9f86-e724875b1c21",
+    "module_id": "9b4fe8f1-fe84-4fa2-b2f4-db8c18c1a30e",
+    "question": "A pharmacy manager in Trinidad discovers at 7:55 AM that the pharmacist is ill and cannot come to work. The pharmacy is scheduled to open at 8:00 AM. What is the legally correct action?",
+    "options": [
+      "Open the pharmacy and allow the senior technician to supervise dispensing",
+      "Open the front-of-shop but cease all dispensing until a registered pharmacist arrives",
+      "Keep the pharmacy completely closed until the pharmacist recovers",
+      "Contact the Pharmacy Board for emergency dispensing authorisation"
+    ],
+    "correct_answer": 1,
+    "explanation": "The legally correct action is to open the front-of-shop for non-prescription sales (OTC products, sundries) but cease all dispensing activities until a registered pharmacist is physically present. Technicians may manage general retail operations but cannot dispense without pharmacist supervision.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "49ad5ea4-324b-41c8-ba2d-7bbfbc576bdd",
+    "module_id": "9b4fe8f1-fe84-4fa2-b2f4-db8c18c1a30e",
+    "question": "What is the estimated cost of replacing a pharmacy technician, including recruitment, training, and productivity loss?",
+    "options": [
+      "1–3 months of salary",
+      "6–12 months of salary",
+      "18–24 months of salary",
+      "3–5 years of salary"
+    ],
+    "correct_answer": 1,
+    "explanation": "The cost of replacing a pharmacy technician — including recruitment advertising, interviewing, onboarding, training, and the productivity dip during the new hire's learning curve — is estimated at 6–12 months of salary. This makes retention strategies highly cost-effective.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "d223c9ee-c5e6-4d2e-9b43-723091ab418b",
+    "module_id": "9b4fe8f1-fe84-4fa2-b2f4-db8c18c1a30e",
+    "question": "In Caribbean pharmacy practice, a pharmacist can provide remote supervision by telephone to allow technicians to dispense independently.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": 1,
+    "explanation": "False. In Trinidad & Tobago, Jamaica, and Barbados, the supervising pharmacist must be physically present on the premises for dispensing to occur. Remote or telephone supervision does not satisfy the legal requirement. If the pharmacist is absent, the dispensary must cease operations.",
+    "order_index": 3,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "4708382e-9cff-4fff-b253-b74f6d438a93",
+    "module_id": "9b4fe8f1-fe84-4fa2-b2f4-db8c18c1a30e",
+    "question": "Which scheduling strategy is MOST effective for managing a Caribbean pharmacy with one pharmacist and two technicians?",
+    "options": [
+      "Schedule all staff for the same 9-to-5 shift every day",
+      "Build the schedule around pharmacist availability first, then layer in technicians to cover peak hours",
+      "Let staff choose their own hours based on personal preference",
+      "Schedule the pharmacist for mornings only and let technicians handle afternoon dispensing"
+    ],
+    "correct_answer": 1,
+    "explanation": "Because the pharmacist must be present for dispensing, the schedule must be built around pharmacist availability first. Technicians are then layered in to ensure adequate coverage during peak dispensing hours. Letting technicians handle afternoon dispensing without a pharmacist is illegal.",
+    "order_index": 4,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "45073acf-bed8-4b57-87c9-f039d18613f3",
+    "module_id": "9b4fe8f1-fe84-4fa2-b2f4-db8c18c1a30e",
+    "question": "A pharmacy manager needs to address a technician's repeated dispensing errors. In the Caribbean cultural context, the BEST approach is:",
+    "options": [
+      "Discuss the errors publicly at the next team meeting as a learning opportunity",
+      "Send a formal written warning without prior discussion",
+      "Have a private conversation acknowledging strengths before addressing the specific errors",
+      "Ignore the errors to avoid confrontation and hope they improve"
+    ],
+    "correct_answer": 2,
+    "explanation": "In Caribbean workplace culture, which tends to be hierarchical and relationship-oriented, the 'praise-improve-praise' approach delivered in a private setting is most effective. Public criticism damages relationships and morale, while ignoring errors compromises patient safety. A private, balanced conversation maintains dignity while addressing the issue directly.",
+    "order_index": 5,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "evaluate"
+  },
+  {
+    "id": "fe3a61a8-19a2-47d6-a368-56ccf6ada5d3",
+    "module_id": "9b4fe8f1-fe84-4fa2-b2f4-db8c18c1a30e",
+    "question": "In Barbados, what is the minimum annual leave entitlement for a pharmacy employee after one year of service?",
+    "options": [
+      "10 working days",
+      "14 working days",
+      "15 working days (3 calendar weeks)",
+      "21 working days"
+    ],
+    "correct_answer": 2,
+    "explanation": "In Barbados, the minimum annual leave entitlement is 15 working days (equivalent to 3 calendar weeks) after one year of service. This is more generous than Trinidad & Tobago's 14 days and Jamaica's 10 days, and must be factored into scheduling and staffing plans.",
+    "order_index": 6,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "78e14ba4-7202-4a46-8ade-acd403d6454b",
+    "module_id": "9b4fe8f1-fe84-4fa2-b2f4-db8c18c1a30e",
+    "question": "Which of the following are effective strategies for retaining pharmacy technicians in a Caribbean community pharmacy? (Select all that apply)",
+    "options": [
+      "Create clear career pathways with defined milestones and pay increments",
+      "Fund continuing education and professional development",
+      "Maintain a rigid hierarchy with no opportunity for technicians to take on new responsibilities",
+      "Provide competitive benefits beyond salary (health insurance, flexible scheduling)",
+      "Keep salary information confidential to prevent comparison among staff"
+    ],
+    "correct_answer": 0,
+    "explanation": "Clear career pathways, continuing education funding, and competitive benefits are all proven retention strategies. Rigid hierarchies without growth opportunities drive talented staff away, and while salary confidentiality is common, it is not a retention strategy — transparent, fair compensation builds trust.",
+    "order_index": 7,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "evaluate"
+  },
+  {
+    "id": "469260d2-fa5b-4485-b37f-c2b005b4e371",
+    "module_id": "9b4fe8f1-fe84-4fa2-b2f4-db8c18c1a30e",
+    "question": "In Trinidad & Tobago, the overtime rate for a pharmacy employee working beyond 44 hours in a week (after the first 4 overtime hours) is:",
+    "options": [
+      "Standard rate (no premium)",
+      "1.5 times the standard rate",
+      "2 times the standard rate",
+      "3 times the standard rate"
+    ],
+    "correct_answer": 2,
+    "explanation": "In Trinidad & Tobago, the overtime rate is 1.5 times standard rate for the first 4 hours of overtime, then 2 times the standard rate thereafter. Pharmacy managers must factor these costs into scheduling decisions, as excessive overtime significantly increases labour costs.",
+    "order_index": 8,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "7e46abc2-4efc-40b0-a93b-8946c50429f5",
+    "module_id": "9b4fe8f1-fe84-4fa2-b2f4-db8c18c1a30e",
+    "question": "A pharmacy onboarding programme should assess a new technician's competence at supervised dispensing during which timeframe?",
+    "options": [
+      "Day 1, immediately upon starting",
+      "Weeks 2–4, after initial orientation is complete",
+      "After 6 months, at the first annual review",
+      "Only if the pharmacist suspects a problem"
+    ],
+    "correct_answer": 1,
+    "explanation": "The supervised dispensing competency assessment should occur during weeks 2–4 of onboarding, after the new technician has completed orientation (Week 1) and had initial exposure to the dispensing workflow. Assessing on Day 1 is premature, while waiting 6 months risks errors going uncorrected for too long.",
+    "order_index": 9,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  }
+]

@@ -1,0 +1,180 @@
+[
+  {
+    "id": "1975857c-5397-4d77-9d1d-52689e717f15",
+    "module_id": "aaa6f0c8-9dee-4403-9dce-33b8977e2a1c",
+    "question": "Under the Pharmacy Board Act (Chapter 29:52), what is the mandatory first step for a foreign-trained pharmacist seeking to practise in Trinidad & Tobago?",
+    "options": [
+      "Immediately begin working under a registered pharmacist's supervision",
+      "Have their foreign qualification assessed by the Pharmacy Board for equivalence",
+      "Register with NIPDEC as a pharmaceutical professional",
+      "Complete a two-year internship at a Regional Health Authority pharmacy"
+    ],
+    "correct_answer": 1,
+    "explanation": "Foreign-trained pharmacists must first have their qualifications assessed by the Pharmacy Board of Trinidad and Tobago. The Board evaluates the overseas degree for equivalence with recognised pharmacy qualifications (e.g. UWI B.Sc. Pharmacy) before the applicant can proceed to the registration examination.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "6ce1a276-467a-43c6-849c-8a7486358c34",
+    "module_id": "aaa6f0c8-9dee-4403-9dce-33b8977e2a1c",
+    "question": "How many chronic conditions are currently covered under CDAP?",
+    "options": [
+      "10",
+      "15",
+      "22",
+      "30"
+    ],
+    "correct_answer": 2,
+    "explanation": "CDAP covers 22 chronic conditions including hypertension, diabetes, arthritis, cardiac diseases, glaucoma, asthma, depression, epilepsy, and others. The programme has expanded over time from a smaller initial list.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "62808833-7f11-41f9-ac00-bada5180b425",
+    "module_id": "aaa6f0c8-9dee-4403-9dce-33b8977e2a1c",
+    "question": "A CDAP prescription arrives at your pharmacy written for 'Norvasc 5mg' instead of the generic name. What is the correct course of action?",
+    "options": [
+      "Dispense the brand-name Norvasc and claim reimbursement under CDAP",
+      "Refuse to fill the prescription entirely",
+      "Dispense the CDAP-approved generic Amlodipine 5mg and note the generic substitution",
+      "Ask the patient to pay privately for the brand-name medication"
+    ],
+    "correct_answer": 2,
+    "explanation": "CDAP prescriptions should specify generic (INN) names, but when a brand name is written, the pharmacy can dispense the CDAP-approved generic equivalent (Amlodipine in this case, as Norvasc is the brand for Amlodipine). The prescription should be annotated accordingly and the generic dispensed.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "167f6000-b0b9-4038-8975-1f9ea0fcd7e5",
+    "module_id": "aaa6f0c8-9dee-4403-9dce-33b8977e2a1c",
+    "question": "Which RHA operates the Eric Williams Medical Sciences Complex (EWMSC)?",
+    "options": [
+      "North-West Regional Health Authority (NWRHA)",
+      "North Central Regional Health Authority (NCRHA)",
+      "Eastern Regional Health Authority (ERHA)",
+      "South-West Regional Health Authority (SWRHA)"
+    ],
+    "correct_answer": 1,
+    "explanation": "The Eric Williams Medical Sciences Complex (EWMSC) is located at Mt. Hope and falls under the North Central Regional Health Authority (NCRHA). It is the primary teaching hospital affiliated with UWI's medical campus.",
+    "order_index": 3,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "c9811da3-28c7-4738-98db-e0f9abca3966",
+    "module_id": "aaa6f0c8-9dee-4403-9dce-33b8977e2a1c",
+    "question": "What is the primary function of NIPDEC in Trinidad & Tobago's health system?",
+    "options": [
+      "Training and certifying pharmacy professionals",
+      "Central procurement, warehousing, and distribution of pharmaceuticals to public health facilities",
+      "Regulating the quality and safety of imported medications",
+      "Operating the CDAP programme for chronic disease patients"
+    ],
+    "correct_answer": 1,
+    "explanation": "NIPDEC acts as the central purchasing agent for the public health system, procuring pharmaceuticals through competitive tenders, storing them at its central warehouse, and distributing them to all RHA hospitals, health centres, and dispensaries across Trinidad and Tobago.",
+    "order_index": 4,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "829b0088-258e-4b32-be2e-f52d0aaf557b",
+    "module_id": "aaa6f0c8-9dee-4403-9dce-33b8977e2a1c",
+    "question": "A patient at your community pharmacy presents a regular prescription pad script (not a CDAP form) for Metformin 500mg, Amlodipine 5mg, and Atorvastatin 20mg. They insist they should get these free under CDAP. What do you do?",
+    "options": [
+      "Dispense the medications free of charge — the conditions and drugs are clearly CDAP-eligible",
+      "Explain that CDAP requires the official CDAP prescription form and advise the patient to return to their doctor for the correct form",
+      "Call the CDAP Secretariat to get verbal authorisation for a one-time exception",
+      "Dispense the medications and charge the patient, since it is not on a CDAP form"
+    ],
+    "correct_answer": 1,
+    "explanation": "CDAP prescriptions must be written on the official CDAP prescription form. Even though all three medications and the underlying conditions are CDAP-eligible, a regular prescription pad cannot be processed under the programme. The correct action is to politely explain this to the patient and advise them to return to their doctor for the CDAP form.",
+    "order_index": 5,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "586f1c8c-6189-4290-951c-726e99ce6429",
+    "module_id": "aaa6f0c8-9dee-4403-9dce-33b8977e2a1c",
+    "question": "Which of the following best describes the pharmacy technician's scope of practice in Trinidad & Tobago?",
+    "options": [
+      "Technicians are independently registered and can operate without pharmacist supervision",
+      "Technicians work under the direct supervision of a registered pharmacist and cannot independently verify prescriptions",
+      "Technicians can independently dispense OTC medications but not prescription drugs",
+      "Technicians have no legal recognition and therefore no defined scope of practice"
+    ],
+    "correct_answer": 1,
+    "explanation": "In T&T, pharmacy technicians work under the direct supervision of a registered pharmacist. While there is no separate statutory registration for technicians, their scope of practice requires pharmacist oversight for all prescription-related activities. The pharmacist must perform the final verification before any medication is dispensed.",
+    "order_index": 6,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "2c2e13a8-9a91-428e-98f8-3acf89d29b03",
+    "module_id": "aaa6f0c8-9dee-4403-9dce-33b8977e2a1c",
+    "question": "Place the following steps of the CDAP dispensing process in the correct order: (1) Pharmacist performs final check, (2) Patient presents CDAP form, (3) Pharmacy submits record for reimbursement, (4) Technician verifies form and patient ID",
+    "options": [
+      "2 → 4 → 1 → 3",
+      "4 → 2 → 3 → 1",
+      "2 → 1 → 4 → 3",
+      "1 → 2 → 4 → 3"
+    ],
+    "correct_answer": 0,
+    "explanation": "The correct CDAP dispensing sequence is: Patient presents the CDAP form → Technician verifies the form, formulary match, and patient ID → Pharmacist performs the final check and counsels the patient → Pharmacy submits the dispensing record to the CDAP Secretariat for reimbursement.",
+    "order_index": 7,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "bd167091-ddc0-4064-9db9-3120e4f4d3c3",
+    "module_id": "aaa6f0c8-9dee-4403-9dce-33b8977e2a1c",
+    "question": "Polypharmacy in T&T is most commonly associated with which combination of chronic conditions?",
+    "options": [
+      "Asthma, epilepsy, and glaucoma",
+      "Hypertension, diabetes, and hyperlipidaemia",
+      "Depression, arthritis, and thyroid disease",
+      "HIV/AIDS, tuberculosis, and malaria"
+    ],
+    "correct_answer": 1,
+    "explanation": "The most common polypharmacy combination in Trinidad & Tobago involves hypertension, diabetes (Type 2), and hyperlipidaemia. Many patients are prescribed 4-6 medications simultaneously to manage these co-existing conditions — typically an antihypertensive (or combination), metformin, a statin, and aspirin.",
+    "order_index": 8,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "analyze"
+  },
+  {
+    "id": "0f6b8224-5be1-4ce7-8aea-ec9d280ca875",
+    "module_id": "aaa6f0c8-9dee-4403-9dce-33b8977e2a1c",
+    "question": "True or false: In Trinidad and Tobago, pharmacy technicians have a separate statutory registration category under the Pharmacy Board Act.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": 1,
+    "explanation": "False. As of 2025, Trinidad and Tobago does not have a separate statutory registration category for pharmacy technicians. Technicians work under the registered pharmacist's licence. There is, however, growing advocacy for the establishment of a formal technician registration framework.",
+    "order_index": 9,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  }
+]

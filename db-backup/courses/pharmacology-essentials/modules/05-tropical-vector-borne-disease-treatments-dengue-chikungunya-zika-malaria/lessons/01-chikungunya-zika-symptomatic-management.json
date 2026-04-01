@@ -1,0 +1,54 @@
+{
+  "id": "f734c119-1b4d-4c69-be30-6f772484e8d0",
+  "module_id": "8565ea75-e96a-4d25-8e89-327097346a61",
+  "title": "Chikungunya & Zika: Symptomatic Management",
+  "content": [
+    {
+      "text": "Managing the Other Aedes-Borne Viruses",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Chikungunya and Zika are also transmitted by Aedes aegypti mosquitoes and have caused major Caribbean epidemics. Like dengue, there are no specific antiviral treatments — management is supportive. Chikungunya is characterised by severe joint pain that can persist for months, while Zika's primary concern is its association with birth defects (microcephaly) in pregnant women.",
+      "type": "text"
+    },
+    {
+      "term": "Chikungunya",
+      "type": "key-term",
+      "definition": "A viral disease causing fever and severe joint pain (arthralgia) that can last weeks to months. The name means 'that which bends up' in Kimakonde, describing the stooped posture of affected patients. Treatment is symptomatic: paracetamol, NSAIDs (once dengue is excluded), and rest."
+    },
+    {
+      "body": "An important clinical distinction: NSAIDs CAN be used for chikungunya joint pain ONLY if dengue has been ruled out. Since dengue and chikungunya have overlapping symptoms and are transmitted by the same mosquito in the same region, laboratory confirmation may be needed before NSAIDs are safe. In practice, paracetamol is the safest initial choice until dengue is excluded.",
+      "type": "text"
+    },
+    {
+      "body": "Chronic chikungunya arthralgia can persist for months to years after the acute infection resolves. In Jamaica and Trinidad, many patients who contracted chikungunya during the 2014 epidemic still experience joint pain. Long-term management may include NSAIDs, physiotherapy, and in some cases, methotrexate or hydroxychloroquine under rheumatology supervision. Pharmacy technicians should be aware that a patient requesting chronic pain medication may be dealing with post-chikungunya arthralgia.",
+      "type": "text"
+    },
+    {
+      "term": "Zika Virus",
+      "type": "key-term",
+      "definition": "A flavivirus transmitted by Aedes aegypti mosquitoes that usually causes mild illness (fever, rash, conjunctivitis, joint pain) but is dangerous in pregnancy due to its association with microcephaly and other congenital anomalies. There is no specific antiviral treatment or vaccine."
+    },
+    {
+      "body": "Zika virus infection during pregnancy can cause microcephaly and other severe birth defects. There is no specific treatment or vaccine. Prevention through mosquito control is critical. Pregnant women in Caribbean endemic areas should use DEET-based insect repellent (safe in pregnancy), wear long sleeves, and sleep under bed nets.",
+      "type": "callout",
+      "title": "Zika and Pregnancy",
+      "variant": "warning"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Immediately upon presentation",
+        "Only after dengue has been ruled out, as NSAIDs are dangerous in dengue",
+        "Never — NSAIDs are always contraindicated in vector-borne diseases",
+        "Only if the patient is also taking paracetamol"
+      ],
+      "question": "When can NSAIDs be safely used for a patient with suspected chikungunya joint pain?",
+      "explanation": "NSAIDs are effective for chikungunya arthralgia but contraindicated in dengue. Since the diseases overlap geographically and symptomatically, dengue must be excluded first. Paracetamol is the safe initial choice.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 20
+}

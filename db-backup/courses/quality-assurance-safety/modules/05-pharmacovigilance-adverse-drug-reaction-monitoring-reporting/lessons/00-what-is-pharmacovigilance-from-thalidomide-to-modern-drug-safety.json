@@ -1,0 +1,65 @@
+{
+  "id": "0e62cd27-277c-4d2c-b21c-d337336803ac",
+  "module_id": "518e49f7-db26-4701-a332-4928c74d9aa0",
+  "title": "What Is Pharmacovigilance? From Thalidomide to Modern Drug Safety",
+  "content": [
+    {
+      "text": "The Science of Drug Safety",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Pharmacovigilance is the science and activities relating to the detection, assessment, understanding, and prevention of adverse effects or any other medicine-related problems. The term derives from the Greek 'pharmakon' (drug) and the Latin 'vigilare' (to keep watch). It is, in essence, the healthcare system's continuous monitoring of drug safety after medications reach the market — because clinical trials, no matter how rigorous, cannot detect all adverse effects before a drug is used by millions of diverse patients in real-world conditions.",
+      "type": "text"
+    },
+    {
+      "term": "Pharmacovigilance",
+      "type": "key-term",
+      "definition": "The science and activities relating to the detection, assessment, understanding, and prevention of adverse effects or any other medicine-related problems. It encompasses the entire lifecycle of a medicine, from post-marketing surveillance to signal detection and regulatory action."
+    },
+    {
+      "body": "The modern pharmacovigilance system was born from tragedy. In the late 1950s and early 1960s, thalidomide — prescribed to pregnant women for morning sickness — caused severe birth defects (phocomelia) in over 10,000 children worldwide before the connection was recognised and the drug was withdrawn. This disaster exposed the catastrophic inadequacy of existing drug safety monitoring and led directly to the creation of systematic adverse drug reaction reporting programmes in every developed country, and eventually the WHO Programme for International Drug Monitoring.",
+      "type": "text"
+    },
+    {
+      "body": "Many Caribbean nations participate in the WHO Programme for International Drug Monitoring through their national pharmacovigilance centres. Trinidad & Tobago's Chemistry, Food and Drugs Division (CFDD) serves as the national reporting centre. Jamaica's Pharmacovigilance unit operates within the Ministry of Health. Barbados reports through the Drug Service. These centres collect ADR reports from healthcare professionals and submit them to the WHO global database (VigiBase), contributing Caribbean safety data to the global knowledge base.",
+      "type": "callout",
+      "title": "Caribbean Pharmacovigilance",
+      "variant": "info"
+    },
+    {
+      "text": "Why Pharmacovigilance Matters in the Caribbean",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Caribbean populations have unique genetic, environmental, and nutritional factors that can influence drug metabolism and adverse reaction profiles. Genetic polymorphisms in drug-metabolising enzymes (such as CYP2D6 and CYP2C19) vary across the Caribbean's ethnically diverse population — affecting how efficiently different individuals process certain drugs. Tropical climate, dietary patterns (including use of herbal supplements and traditional remedies), and the prevalence of specific diseases all create a pharmacovigilance landscape that cannot simply be extrapolated from studies conducted in North American or European populations.",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Genetic diversity — the Caribbean's mixed African, Indian, European, and indigenous heritage creates varied drug metabolism profiles",
+        "Herbal interactions — widespread use of bush medicine and herbal supplements may interact with prescription drugs in undocumented ways",
+        "Generic product variation — multiple generic manufacturers may produce the same drug with different excipients, which can trigger ADRs in sensitive patients",
+        "Tropical disease treatments — medications for dengue, chikungunya, and other tropical diseases have specific ADR profiles requiring regional monitoring",
+        "Limited clinical trial representation — Caribbean populations are underrepresented in the clinical trials that establish drug safety profiles"
+      ],
+      "ordered": false
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "The discovery of penicillin allergy in the 1940s",
+        "The thalidomide disaster of the late 1950s–early 1960s",
+        "The introduction of generic drugs in the 1980s",
+        "The COVID-19 pandemic of 2020"
+      ],
+      "question": "What historical event catalysed the creation of modern pharmacovigilance systems worldwide?",
+      "explanation": "The thalidomide disaster — in which a drug prescribed to pregnant women for morning sickness caused severe birth defects in over 10,000 children — was the catalyst for systematic pharmacovigilance. It led directly to the creation of national adverse drug reaction reporting systems and the WHO Programme for International Drug Monitoring.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 25
+}

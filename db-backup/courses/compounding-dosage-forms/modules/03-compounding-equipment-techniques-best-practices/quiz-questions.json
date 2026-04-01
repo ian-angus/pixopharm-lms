@@ -1,0 +1,180 @@
+[
+  {
+    "id": "1dbc2913-6649-46b5-855b-2e66033f9946",
+    "module_id": "d535aae0-2da8-4ad8-8c9f-005c1b03ae1f",
+    "question": "What is the minimum sensitivity requirement for a Class III prescription balance used in pharmaceutical compounding?",
+    "options": [
+      "1 mg",
+      "6 mg",
+      "10 mg",
+      "100 mg"
+    ],
+    "correct_answer": 1,
+    "explanation": "A Class III prescription balance must have a sensitivity of 6 mg, meaning it can reliably detect a change of 6 mg on the pan. This determines the minimum weighable quantity (typically 120 mg based on a ±5% error tolerance). Any quantity below the MWQ cannot be weighed directly and requires the aliquot method.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "632bdda3-7a12-42aa-8128-4b03e0a2ede4",
+    "module_id": "d535aae0-2da8-4ad8-8c9f-005c1b03ae1f",
+    "question": "A formula requires 60 mg of Drug Y. Your balance has a minimum weighable quantity of 120 mg. Using the aliquot method, you weigh 300 mg of Drug Y and dilute with 2700 mg of lactose. How much of the diluted mixture must you weigh to obtain 60 mg of Drug Y?",
+    "options": [
+      "600 mg"
+    ],
+    "correct_answer": 0,
+    "explanation": "Total mixture = 300 mg Drug Y + 2700 mg lactose = 3000 mg. Concentration of Drug Y = 300/3000 = 0.1 (1 part Drug Y per 10 parts mixture). To get 60 mg Drug Y: 60 mg ÷ 0.1 = 600 mg of mixture. This is well above the MWQ of 120 mg, so it can be weighed accurately.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "hard",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "66aa1d5e-a401-40f6-8a40-28772bb86a5b",
+    "module_id": "d535aae0-2da8-4ad8-8c9f-005c1b03ae1f",
+    "question": "Which type of mortar should be used for triturating (grinding) dry powders?",
+    "options": [
+      "Glass mortar",
+      "Porcelain (Wedgwood) mortar",
+      "Plastic mortar",
+      "Stainless steel mortar"
+    ],
+    "correct_answer": 1,
+    "explanation": "The porcelain (Wedgwood) mortar has a rough, unglazed interior surface that provides the abrasive friction necessary for effective trituration of dry powders. Glass mortars have smooth surfaces and are better suited for liquid preparations. Plastic and stainless steel mortars are not standard compounding equipment.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "46b03a44-be51-4922-b46c-5ce6d2d5aed2",
+    "module_id": "d535aae0-2da8-4ad8-8c9f-005c1b03ae1f",
+    "question": "When measuring a liquid in a graduated cylinder, where should you read the volume?",
+    "options": [
+      "At the top of the meniscus, looking down from above",
+      "At the bottom of the meniscus, with your eye level with the liquid surface",
+      "At the centre of the meniscus, from any angle",
+      "At the top line visible above the liquid"
+    ],
+    "correct_answer": 1,
+    "explanation": "For aqueous pharmaceutical liquids, the meniscus curves downward (concave). The correct reading is at the bottom of the meniscus, with your eye level with the liquid surface to avoid parallax error. This ensures accurate volume measurement — critical for correct drug concentration in compounded preparations.",
+    "order_index": 3,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "2ca0d6ee-1cc0-4c9d-b055-2e02379137ef",
+    "module_id": "d535aae0-2da8-4ad8-8c9f-005c1b03ae1f",
+    "question": "Match each compounding technique with its primary purpose.",
+    "options": [
+      "Trituration",
+      "Levigation",
+      "Spatulation",
+      "Geometric Dilution"
+    ],
+    "correct_answer": 0,
+    "explanation": "Trituration reduces particle size by grinding in a mortar; levigation uses a wetting agent to further reduce particle size and form a paste; spatulation mixes ingredients on a slab using shearing strokes; geometric dilution ensures uniform distribution of a small amount of drug in a large amount of base.",
+    "order_index": 4,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "69bb824e-2658-474f-bee8-d4ca3e8894a0",
+    "module_id": "d535aae0-2da8-4ad8-8c9f-005c1b03ae1f",
+    "question": "Why should a Caribbean compounding pharmacy maintain a hygrometer in the compounding area?",
+    "options": [
+      "To measure drug potency",
+      "To check if compounded liquids have the correct pH",
+      "To monitor ambient humidity, which affects ingredient stability and preparation quality in tropical environments",
+      "To verify that the balance is calibrated"
+    ],
+    "correct_answer": 2,
+    "explanation": "A hygrometer measures ambient relative humidity (RH). In the tropical Caribbean, high humidity (>80% RH) can cause hygroscopic ingredients to absorb water, gelatin capsules to soften, powders to clump, and preparations to degrade. Monitoring and documenting humidity is an important quality control measure for compounding pharmacies.",
+    "order_index": 5,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "30b5c69b-3dd2-418d-af63-7b20082f318b",
+    "module_id": "d535aae0-2da8-4ad8-8c9f-005c1b03ae1f",
+    "question": "Which of the following personal hygiene practices are mandatory during compounding? Select ALL that apply.",
+    "options": [
+      "Washing hands thoroughly before compounding",
+      "Wearing disposable gloves",
+      "Removing jewellery from hands and wrists",
+      "Wearing a business suit",
+      "Avoiding compounding while having an active skin infection"
+    ],
+    "correct_answer": 0,
+    "explanation": "All listed hygiene practices except wearing a business suit are mandatory during compounding. Handwashing, glove use, jewellery removal, and not compounding with active infections are all essential to prevent microbial contamination of pharmaceutical preparations. A clean compounding coat or gown — not a business suit — is the appropriate garment.",
+    "order_index": 6,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "8490e2bf-fdb1-4360-9554-3dd63b5820ac",
+    "module_id": "d535aae0-2da8-4ad8-8c9f-005c1b03ae1f",
+    "question": "A pharmacy technician selects a 250 mL graduated cylinder to measure 15 mL of a vehicle. What is wrong with this choice?",
+    "options": [
+      "Nothing — any graduated cylinder can accurately measure any volume",
+      "The cylinder is too small for the volume",
+      "The volume is less than 20% of the cylinder's capacity, introducing significant measurement error; a smaller cylinder should be used",
+      "Graduated cylinders cannot measure volumes in millilitres"
+    ],
+    "correct_answer": 2,
+    "explanation": "Measuring 15 mL in a 250 mL cylinder means the volume is only 6% of the capacity. The graduation marks are widely spaced relative to such a small volume, making accurate measurement difficult. The general rule is that the volume to be measured should be at least 20% of the cylinder's total capacity. A 25 mL or 50 mL graduated cylinder would be appropriate for 15 mL.",
+    "order_index": 7,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "evaluate"
+  },
+  {
+    "id": "56fd7430-73da-4124-ad80-0576faeebe61",
+    "module_id": "d535aae0-2da8-4ad8-8c9f-005c1b03ae1f",
+    "question": "A plastic spatula should be used instead of a stainless steel spatula when compounding with which ingredient?",
+    "options": [
+      "Hydrocortisone",
+      "Zinc oxide",
+      "Iodine (which reacts with metal)",
+      "Lactose"
+    ],
+    "correct_answer": 2,
+    "explanation": "Iodine reacts with stainless steel, causing discolouration of both the spatula and the preparation. Plastic spatulas are inert and should be used when compounding with iodine, coal tar, and other ingredients known to react with or stain metal equipment.",
+    "order_index": 8,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "07ed2ea1-5ed7-4254-8d3a-59907f763a5d",
+    "module_id": "d535aae0-2da8-4ad8-8c9f-005c1b03ae1f",
+    "question": "In a Caribbean pharmacy without air conditioning, what compensating measures should be taken for compounding?",
+    "options": [
+      "No measures needed — compounding can proceed normally at any temperature",
+      "Schedule compounding during the coolest part of the day, refrigerate bases until use, and assign shorter beyond-use dates",
+      "Compound only sterile preparations, which are less heat-sensitive",
+      "Use only solid dosage forms, which are never affected by heat"
+    ],
+    "correct_answer": 1,
+    "explanation": "Without climate control in the Caribbean tropics, compensating measures include scheduling compounding during the coolest hours (early morning), refrigerating heat-sensitive bases and ingredients until immediately before use, working quickly to minimise heat exposure, and assigning shorter beyond-use dates to reflect the warmer compounding and storage conditions. All temperatures should be documented in the compounding log.",
+    "order_index": 9,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "evaluate"
+  }
+]

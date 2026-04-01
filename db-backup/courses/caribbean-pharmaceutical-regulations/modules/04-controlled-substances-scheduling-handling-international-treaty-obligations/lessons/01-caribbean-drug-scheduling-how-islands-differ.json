@@ -1,0 +1,122 @@
+{
+  "id": "bbfe66ab-b8b0-4e9f-8079-ed200814f0c7",
+  "module_id": "ec614d8d-d8c6-43ec-ba3c-eecdee20cbb6",
+  "title": "Caribbean Drug Scheduling: How Islands Differ",
+  "content": [
+    {
+      "text": "Same Drug, Different Rules — Scheduling Across the Caribbean",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "One of the most practically significant aspects of Caribbean pharmaceutical regulation is that drug scheduling varies between islands. A substance that is available over-the-counter (OTC) in one country may be prescription-only (Rx) or even classified as a controlled substance in another. For pharmacy technicians, this creates real challenges — particularly in border regions and for patients who travel between islands expecting to obtain the same medications under the same conditions.",
+      "type": "text"
+    },
+    {
+      "type": "island-comparison",
+      "title": "Codeine Scheduling: A Case Study in Caribbean Variation",
+      "islands": [
+        {
+          "flag": "🇹🇹",
+          "name": "Trinidad & Tobago",
+          "details": [
+            "Low-dose codeine combinations (e.g. codeine + paracetamol, certain cough preparations) available OTC without prescription",
+            "Higher-strength codeine preparations require a prescription",
+            "Pure codeine is a controlled substance under the Dangerous Drugs Act",
+            "Codeine abuse has been flagged as a growing concern, particularly among young people"
+          ]
+        },
+        {
+          "flag": "🇯🇲",
+          "name": "Jamaica",
+          "details": [
+            "ALL codeine-containing products require a prescription — no OTC codeine available",
+            "Jamaica takes a stricter approach based on public health concerns about codeine misuse",
+            "The Dangerous Drugs Act classifies codeine under a higher restriction level",
+            "Pharmacy technicians must verify a valid prescription before any codeine dispensing"
+          ]
+        },
+        {
+          "flag": "🇧🇧",
+          "name": "Barbados",
+          "details": [
+            "Low-dose codeine preparations (e.g. codeine linctus for cough) have historically been available OTC",
+            "Increasing regulatory scrutiny has led to tighter controls in recent years",
+            "The Drug Service has issued guidance on responsible dispensing of codeine OTC products",
+            "Some pharmacists choose to exercise professional discretion and require a prescription"
+          ]
+        }
+      ],
+      "description": "Codeine-containing products illustrate how the same substance can be classified very differently across Caribbean jurisdictions."
+    },
+    {
+      "body": "Never assume that a substance's classification in one Caribbean country is the same in another. A patient travelling from Trinidad (where codeine cough syrup is OTC) to Jamaica (where all codeine is prescription-only) may not understand why their usual cough medicine now requires a doctor's visit. As a pharmacy technician, you must always apply the scheduling rules of the jurisdiction where you are practising — regardless of what the patient is accustomed to.",
+      "type": "callout",
+      "title": "Critical Practice Point",
+      "variant": "warning"
+    },
+    {
+      "body": "Caribbean Dangerous Drugs Acts generally classify substances into categories or schedules based on their potential for abuse, medical utility, and risk of dependence. While the specific terminology and numbering vary, the underlying principle is consistent: substances with higher abuse potential and lower medical utility face more restrictive controls.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Highest Control (Schedule I / Class A equivalent)",
+          "High abuse potential, no accepted medical use or highly restricted medical use",
+          "Heroin, LSD, MDMA, raw cannabis (though Jamaica has decriminalised small quantities)",
+          "Prohibited or severely restricted; no pharmacy dispensing in most jurisdictions"
+        ],
+        [
+          "High Control (Schedule II / Class B equivalent)",
+          "High abuse potential with accepted medical use",
+          "Morphine, oxycodone, fentanyl, methylphenidate, amphetamines",
+          "Prescription only; locked storage; controlled substance register; INCB import/export authorisations"
+        ],
+        [
+          "Moderate Control (Schedule III-IV / Class C equivalent)",
+          "Moderate abuse potential with accepted medical use",
+          "Codeine (higher strength), benzodiazepines, barbiturates, tramadol",
+          "Prescription only; record-keeping; some storage restrictions"
+        ],
+        [
+          "Lower Control (Scheduled but less restricted)",
+          "Lower abuse potential; preparations containing small amounts of controlled substances",
+          "Codeine cough preparations (in jurisdictions where OTC), pseudoephedrine products",
+          "OTC with pharmacist oversight in some jurisdictions; Rx in others; purchase records may be required"
+        ]
+      ],
+      "type": "table",
+      "caption": "Common Drug Scheduling Tiers (Generalised Caribbean Framework)",
+      "headers": [
+        "Tier",
+        "Characteristics",
+        "Examples",
+        "Controls"
+      ]
+    },
+    {
+      "term": "Drug Scheduling",
+      "type": "key-term",
+      "definition": "The classification of pharmaceutical substances into categories (schedules) based on their potential for abuse, accepted medical use, and risk of physical or psychological dependence. Scheduling determines the level of regulatory control applied to a substance, including prescribing, dispensing, storage, and record-keeping requirements."
+    },
+    {
+      "body": "Jamaica's approach to cannabis deserves special mention. In 2015, Jamaica amended its Dangerous Drugs Act to decriminalise possession of small quantities of cannabis (up to two ounces) for personal use, allow cultivation of up to five plants, permit Rastafarians to use cannabis for religious purposes, and establish a Cannabis Licensing Authority. However, large-scale possession, trafficking, and commercial activity outside the licensing framework remain criminal offences. This nuanced approach reflects Jamaica's unique cultural relationship with cannabis.",
+      "type": "text"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Trinidad & Tobago",
+        "Barbados",
+        "Jamaica",
+        "Grenada"
+      ],
+      "question": "In which Caribbean country are ALL codeine-containing products classified as prescription-only?",
+      "explanation": "Jamaica takes the strictest approach to codeine among the major Caribbean nations, requiring a prescription for all codeine-containing products. This contrasts with Trinidad & Tobago and Barbados, where low-dose codeine preparations have historically been available over-the-counter.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 25
+}

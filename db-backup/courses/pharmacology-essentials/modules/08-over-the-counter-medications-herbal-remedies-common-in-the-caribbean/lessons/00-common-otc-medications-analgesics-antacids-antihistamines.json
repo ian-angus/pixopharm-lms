@@ -1,0 +1,81 @@
+{
+  "id": "8ab8af2f-6334-4b13-a905-b10965e5a6da",
+  "module_id": "34141bea-36cb-4e91-9ba8-8579bff2a291",
+  "title": "Common OTC Medications: Analgesics, Antacids & Antihistamines",
+  "content": [
+    {
+      "text": "The OTC Counter: Where Most Pharmacy Interactions Begin",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "In Caribbean pharmacies, OTC sales often exceed prescription volume. Patients self-treat headaches, heartburn, allergies, colds, and minor infections. While many OTC medications are safe when used correctly, the pharmacy technician must identify situations where referral to the pharmacist or a doctor is needed — particularly when OTC medications may interact with existing prescriptions.",
+      "type": "text"
+    },
+    {
+      "term": "Over-the-Counter (OTC) Medication",
+      "type": "key-term",
+      "definition": "A medication that can be sold directly to a consumer without a prescription. OTC status is granted by drug regulatory authorities based on a drug's safety profile when used as directed. In the Caribbean, OTC availability varies by territory — some drugs that are OTC in one island may require a prescription in another."
+    },
+    {
+      "body": "The top five OTC categories by volume in Caribbean pharmacies are analgesics (paracetamol, NSAIDs), cough and cold remedies (pseudoephedrine, dextromethorphan, antihistamines), antacids and acid reducers (aluminium hydroxide, omeprazole), anti-diarrhoeals (loperamide, ORS), and antihistamines (cetirizine, loratadine). Each category carries specific safety concerns that a pharmacy technician must understand.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Analgesics",
+          "Paracetamol, ibuprofen, aspirin",
+          "Overdose risk (paracetamol), GI bleeding (NSAIDs), Reye's syndrome (aspirin in children)"
+        ],
+        [
+          "Antacids/PPIs",
+          "Aluminium hydroxide, omeprazole (now OTC in some markets)",
+          "Calcium absorption interference; long-term PPI risks"
+        ],
+        [
+          "Antihistamines",
+          "Cetirizine, loratadine (non-sedating), diphenhydramine (sedating)",
+          "Drowsiness (first-gen), anticholinergic effects in elderly"
+        ],
+        [
+          "Cough/cold",
+          "Dextromethorphan, pseudoephedrine, guaifenesin",
+          "Hypertension risk (pseudoephedrine), abuse potential (DXM)"
+        ],
+        [
+          "Antidiarrhoeals",
+          "Loperamide, ORS",
+          "Loperamide should NOT be used in bloody diarrhoea or suspected infection"
+        ]
+      ],
+      "type": "table",
+      "caption": "Common OTC Categories in Caribbean Pharmacies",
+      "headers": [
+        "Category",
+        "Examples",
+        "Key Safety Concern"
+      ]
+    },
+    {
+      "body": "Pseudoephedrine (found in many cold/sinus products) raises blood pressure. In the Caribbean, where hypertension prevalence exceeds 30%, always ask OTC cold remedy buyers whether they have high blood pressure. Suggest non-decongestant alternatives (saline spray, steam inhalation, antihistamines) for hypertensive patients.",
+      "type": "callout",
+      "title": "Pseudoephedrine and Hypertension",
+      "variant": "warning"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Dispense it — OTC products are safe for everyone",
+        "Suggest a non-decongestant alternative and refer to the pharmacist, as pseudoephedrine can raise blood pressure",
+        "Tell them to take double their blood pressure medication",
+        "Recommend aspirin instead"
+      ],
+      "question": "A patient with known hypertension asks for a pseudoephedrine-containing decongestant. What should you recommend?",
+      "explanation": "Pseudoephedrine is a sympathomimetic that raises blood pressure. Hypertensive patients should avoid it. Alternatives include saline nasal sprays, steam inhalation, and antihistamines for allergy-related congestion.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 20
+}

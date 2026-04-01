@@ -1,0 +1,182 @@
+[
+  {
+    "id": "19c33396-64e4-40c2-92f0-f83f56eb505d",
+    "module_id": "18355ac8-d8d2-46a7-8eb4-7df008bb62d9",
+    "question": "Where does gas exchange occur in the respiratory system?",
+    "options": [
+      "In the trachea",
+      "In the bronchi",
+      "In the alveoli",
+      "In the pharynx"
+    ],
+    "correct_answer": 2,
+    "explanation": "Gas exchange occurs in the alveoli — approximately 300 million microscopic air sacs at the terminal ends of the bronchial tree. Oxygen diffuses from alveolar air into the pulmonary capillaries, while carbon dioxide diffuses in the opposite direction.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "a8521516-1de8-4de9-b8e7-23c5760c4d60",
+    "module_id": "18355ac8-d8d2-46a7-8eb4-7df008bb62d9",
+    "question": "What is the key difference between asthma and COPD regarding airflow obstruction?",
+    "options": [
+      "Asthma obstruction is irreversible; COPD is reversible",
+      "Asthma obstruction is reversible; COPD is largely irreversible",
+      "Both are equally reversible with proper treatment",
+      "Neither condition involves true airflow obstruction"
+    ],
+    "correct_answer": 1,
+    "explanation": "Asthma involves reversible bronchospasm — with treatment, the airways can return to near-normal function. COPD involves largely irreversible airflow limitation due to structural destruction of lung tissue (emphysema) and chronic inflammation (chronic bronchitis). This distinction is fundamental to treatment strategy.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "e90f3467-a786-4645-a56e-6ff9082d2a6f",
+    "module_id": "18355ac8-d8d2-46a7-8eb4-7df008bb62d9",
+    "question": "Proton pump inhibitors (PPIs) work by:",
+    "options": [
+      "Neutralising stomach acid after it is produced",
+      "Blocking histamine H2 receptors on parietal cells",
+      "Irreversibly blocking the hydrogen-potassium ATPase enzyme in gastric parietal cells",
+      "Forming a protective coating over the stomach lining"
+    ],
+    "correct_answer": 2,
+    "explanation": "PPIs irreversibly block the hydrogen-potassium ATPase enzyme system (the 'proton pump') in gastric parietal cells, which is the final step of acid secretion. This makes them the most effective acid-suppressing drugs, reducing acid production by up to 90%.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "d8c92cc9-22d8-45be-9912-7c33d67ce064",
+    "module_id": "18355ac8-d8d2-46a7-8eb4-7df008bb62d9",
+    "question": "Which of the following drugs require dose adjustment in chronic kidney disease? Select ALL that apply.",
+    "options": [
+      "Metformin",
+      "Digoxin",
+      "Paracetamol (at standard doses)",
+      "Gentamicin",
+      "Amlodipine"
+    ],
+    "correct_answer": 0,
+    "explanation": "Metformin (risk of lactic acidosis), digoxin (narrow therapeutic window, renally cleared), and gentamicin (nephrotoxic and renally cleared) all require dose adjustment in CKD. Paracetamol at standard doses and amlodipine (hepatically cleared) generally do not require renal dose adjustment.",
+    "order_index": 3,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "hard",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "b6d467ef-2769-4f01-82c8-af2d414a354f",
+    "module_id": "18355ac8-d8d2-46a7-8eb4-7df008bb62d9",
+    "question": "The functional unit of the kidney is called the ________.",
+    "options": [
+      "nephron",
+      "alveolus",
+      "neuron",
+      "hepatocyte"
+    ],
+    "correct_answer": 0,
+    "explanation": "The nephron is the functional unit of the kidney. Each kidney contains approximately one million nephrons, each consisting of a glomerulus and a tubular system. The nephron performs the kidney's essential functions: filtration, reabsorption, secretion, and excretion.",
+    "order_index": 4,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "effc1b52-8ff8-42a7-96a1-e50493993793",
+    "module_id": "18355ac8-d8d2-46a7-8eb4-7df008bb62d9",
+    "question": "A patient with GORD is prescribed omeprazole 20 mg daily. This drug belongs to which class?",
+    "options": [
+      "H2-receptor antagonist",
+      "Proton pump inhibitor",
+      "Antacid",
+      "Antiemetic"
+    ],
+    "correct_answer": 1,
+    "explanation": "Omeprazole is a proton pump inhibitor (PPI), identified by the '-prazole' drug name stem. PPIs are the most effective drugs for treating GORD and peptic ulcer disease, and are among the most frequently dispensed medications in Caribbean pharmacies.",
+    "order_index": 5,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "3e8f0cce-c2f7-4355-b6d0-a14328761962",
+    "module_id": "18355ac8-d8d2-46a7-8eb4-7df008bb62d9",
+    "question": "A common dangerous side effect of thiazide and loop diuretics is:",
+    "options": [
+      "Hyperglycaemia",
+      "Hypokalaemia",
+      "Liver failure",
+      "Visual disturbances"
+    ],
+    "correct_answer": 1,
+    "explanation": "Both thiazide and loop diuretics promote potassium excretion in the urine, leading to hypokalaemia (low blood potassium). Hypokalaemia can cause muscle cramps, weakness, and dangerous cardiac arrhythmias. This is why potassium monitoring and supplementation are important when dispensing these drugs.",
+    "order_index": 6,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "fddf17c3-6aaf-49db-8a9f-3d1e9247fc7c",
+    "module_id": "18355ac8-d8d2-46a7-8eb4-7df008bb62d9",
+    "question": "Place the following structures in the correct order of airflow during inhalation.",
+    "options": [
+      "Nasal cavity / mouth",
+      "Pharynx and larynx",
+      "Trachea",
+      "Bronchi and bronchioles",
+      "Alveoli"
+    ],
+    "correct_answer": 0,
+    "explanation": "Air follows this path during inhalation: nasal cavity/mouth → pharynx and larynx → trachea → bronchi and bronchioles → alveoli. This sequence is important for understanding where inhaled medications are deposited and where they exert their effects.",
+    "order_index": 7,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "ad2deccc-43b9-4b70-aae9-a4090c9ff5aa",
+    "module_id": "18355ac8-d8d2-46a7-8eb4-7df008bb62d9",
+    "question": "A 55-year-old man in Bridgetown, Barbados with Stage 3b CKD (eGFR 35 mL/min) is prescribed metformin 1000 mg twice daily for type 2 diabetes. What concern should the pharmacy technician flag?",
+    "options": [
+      "No concern — metformin is safe at all kidney function levels",
+      "Metformin dose should be reviewed as the risk of lactic acidosis increases with reduced kidney function",
+      "Metformin should be replaced with insulin immediately",
+      "The patient needs a higher dose of metformin to compensate for reduced kidney clearance"
+    ],
+    "correct_answer": 1,
+    "explanation": "At Stage 3b CKD (eGFR 30-44), metformin dose should be reviewed and typically reduced. Below eGFR 30, metformin is generally contraindicated due to the risk of lactic acidosis — a rare but potentially fatal metabolic complication. The pharmacy technician should flag this for pharmacist review immediately.",
+    "order_index": 8,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "hard",
+    "blooms_level": "evaluate"
+  },
+  {
+    "id": "4fc4d47d-7f24-434b-ba22-7ff14c78a361",
+    "module_id": "18355ac8-d8d2-46a7-8eb4-7df008bb62d9",
+    "question": "Chronic NSAID use is a primary cause of peptic ulcer disease.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": 0,
+    "explanation": "True. Chronic NSAID use (ibuprofen, diclofenac, naproxen, etc.) is one of the two primary causes of peptic ulcer disease, alongside H. pylori infection. NSAIDs inhibit cyclooxygenase (COX) enzymes, reducing prostaglandin production in the stomach lining, which normally protects the mucosa from acid damage. This is a major concern in the Caribbean where OTC NSAID use is very high.",
+    "order_index": 9,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  }
+]

@@ -1,0 +1,110 @@
+{
+  "id": "8f4c0c32-35bf-4c94-b578-3664170d7ac4",
+  "module_id": "bfda189c-515f-4915-b7c9-01dc35e6f45b",
+  "title": "Dengue, Chikungunya & Zika: Arboviral Diseases of the Caribbean",
+  "content": [
+    {
+      "text": "Mosquito-Borne Viral Diseases: The Caribbean Reality",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "The Caribbean is a hotspot for arboviral diseases — viral infections transmitted by arthropod vectors, primarily the Aedes aegypti and Aedes albopictus mosquitoes. Dengue fever, chikungunya, and Zika virus disease are the three most significant arboviruses in the region, all transmitted by the same mosquito species. The tropical climate, abundant rainfall, and urban environments of Caribbean islands create ideal breeding conditions for Aedes mosquitoes, making these diseases endemic or epidemic threats year-round.",
+      "type": "text"
+    },
+    {
+      "body": "For pharmacy technicians, arboviral diseases generate significant workload during outbreaks: high demand for paracetamol (the primary symptomatic treatment), oral rehydration salts, antiemetics, and insect repellents. Critically, NSAIDs and aspirin are contraindicated in suspected dengue because they increase bleeding risk — a potentially life-threatening error that pharmacy technicians must be vigilant about preventing.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Vector",
+          "Aedes aegypti / albopictus",
+          "Aedes aegypti / albopictus",
+          "Aedes aegypti / albopictus"
+        ],
+        [
+          "Incubation",
+          "4-10 days",
+          "3-7 days",
+          "3-14 days"
+        ],
+        [
+          "Key symptoms",
+          "High fever, severe headache, retro-orbital pain, myalgia, rash",
+          "Fever, severe joint pain (often debilitating and prolonged)",
+          "Often mild: fever, rash, conjunctivitis, joint pain"
+        ],
+        [
+          "Serious complication",
+          "Dengue haemorrhagic fever / dengue shock syndrome (can be fatal)",
+          "Chronic arthralgia lasting months to years",
+          "Microcephaly and other birth defects in babies of infected pregnant women"
+        ],
+        [
+          "Treatment",
+          "Supportive: paracetamol, fluids, rest. NO NSAIDs/aspirin",
+          "Supportive: paracetamol, NSAIDs (safe here), fluids",
+          "Supportive: paracetamol, fluids, rest"
+        ],
+        [
+          "Vaccine",
+          "Dengvaxia (limited use — seropositive individuals only)",
+          "None currently available",
+          "None currently available"
+        ],
+        [
+          "Caribbean impact",
+          "Endemic across all CARICOM nations; periodic epidemics",
+          "Major epidemic in 2014; now endemic",
+          "2015-2016 epidemic; ongoing transmission"
+        ]
+      ],
+      "type": "table",
+      "caption": "Comparison of Major Caribbean Arboviral Diseases",
+      "headers": [
+        "Feature",
+        "Dengue",
+        "Chikungunya",
+        "Zika"
+      ]
+    },
+    {
+      "body": "Dengue can cause thrombocytopenia (low platelet count) and vascular permeability, increasing the risk of haemorrhage. NSAIDs (ibuprofen, diclofenac, naproxen) and aspirin inhibit platelet function and further increase bleeding risk. Giving NSAIDs or aspirin to a dengue patient can precipitate dengue haemorrhagic fever. During dengue season, pharmacy technicians must exercise extra caution when dispensing pain relievers — paracetamol is the ONLY safe analgesic/antipyretic for suspected dengue. This distinction can save lives.",
+      "type": "callout",
+      "title": "CRITICAL: No NSAIDs or Aspirin in Suspected Dengue",
+      "variant": "danger"
+    },
+    {
+      "type": "case-study",
+      "title": "Case Study: Dengue Season at the Pharmacy Counter",
+      "scenario": "It is September — peak dengue season in Trinidad. A 35-year-old man comes to your pharmacy in Arima requesting ibuprofen for 'terrible body pain and fever' that started three days ago. He mentions his neighbour was recently diagnosed with dengue. He has no prescription — he wants to buy ibuprofen over the counter. You notice he appears flushed, with visible petechiae (small red spots) on his forearms.",
+      "questions": [
+        "Why is ibuprofen dangerous for this patient?",
+        "What OTC medication would be safe and appropriate instead?",
+        "What additional action should the pharmacy team take?"
+      ],
+      "discussion": "This patient almost certainly has dengue, given the clinical presentation (fever, myalgia, petechiae) during peak season with a known dengue case nearby. Ibuprofen is an NSAID that would inhibit platelet function and dramatically increase his bleeding risk — the petechiae already suggest vascular involvement. Paracetamol is the only safe analgesic/antipyretic. The pharmacy technician should immediately alert the pharmacist, who can counsel the patient on paracetamol use, adequate hydration (oral rehydration salts), and the urgent need to see a doctor for blood tests (platelet count, haematocrit). This case demonstrates how a pharmacy technician's knowledge can prevent a potentially fatal error."
+    },
+    {
+      "term": "Thrombocytopenia",
+      "type": "key-term",
+      "definition": "An abnormally low platelet count in the blood (below 150,000/μL). Platelets are essential for blood clotting; thrombocytopenia increases the risk of spontaneous bleeding and bruising. Dengue fever commonly causes thrombocytopenia, which is why antiplatelet drugs (aspirin, NSAIDs) are dangerous in dengue patients. The term breaks down as: thromb/o (clot) + cyt/o (cell) + -penia (deficiency)."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Ibuprofen",
+        "Aspirin",
+        "Paracetamol (acetaminophen)",
+        "Diclofenac"
+      ],
+      "question": "During dengue season in the Caribbean, the ONLY safe over-the-counter analgesic/antipyretic is:",
+      "explanation": "Paracetamol is the only safe analgesic and antipyretic for suspected dengue. NSAIDs (ibuprofen, diclofenac, naproxen) and aspirin all inhibit platelet function and increase bleeding risk, which is dangerous in dengue where thrombocytopenia and vascular permeability are already elevated. This is one of the most critical safety points for Caribbean pharmacy practice.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 20
+}

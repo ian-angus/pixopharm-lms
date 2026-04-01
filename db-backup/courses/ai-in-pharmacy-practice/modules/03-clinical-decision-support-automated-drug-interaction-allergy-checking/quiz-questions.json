@@ -1,0 +1,149 @@
+[
+  {
+    "id": "2dde6ba2-71fc-4eea-a844-d87db4154f6e",
+    "module_id": "82cf2650-5f9f-4f8f-9460-cd77a32d431e",
+    "question": "What does DIS stand for in pharmacy technology?",
+    "options": [
+      "Digital Information System",
+      "Drug Interaction Screening",
+      "Dispensing Integration Software",
+      "Data Intelligence Service"
+    ],
+    "correct_answer": 1,
+    "explanation": "DIS stands for Drug Interaction Screening — an automated system that checks whether two or more medications prescribed to the same patient have the potential to interact harmfully.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "03d3d7a3-b0b8-4ee6-ace2-909663b75543",
+    "module_id": "82cf2650-5f9f-4f8f-9460-cd77a32d431e",
+    "question": "A DIS alert is classified as 'Contraindicated' (Level 1, Red). What is the correct action?",
+    "options": [
+      "Note it in the patient file and continue dispensing",
+      "Inform the pharmacist at the end of the day",
+      "STOP immediately, do not dispense, alert the pharmacist, and contact the prescriber",
+      "Override the alert if the patient has taken the combination before"
+    ],
+    "correct_answer": 2,
+    "explanation": "A Contraindicated (Level 1) alert means the combination should never be used — the risk of severe harm or death is too great. The immediate response is to stop, alert the pharmacist, and contact the prescriber. This alert should never be overridden.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "e3741811-4ad9-4565-8ffa-0413edab0644",
+    "module_id": "82cf2650-5f9f-4f8f-9460-cd77a32d431e",
+    "question": "What is alert fatigue in the context of clinical decision support?",
+    "options": [
+      "When the pharmacy's computer system crashes due to too many alerts",
+      "When pharmacy staff become desensitised to alerts due to high volume, leading to critical alerts being dismissed",
+      "When patients become tired of being told about drug interactions",
+      "When the DIS database becomes outdated"
+    ],
+    "correct_answer": 1,
+    "explanation": "Alert fatigue occurs when the sheer volume of drug interaction alerts — many of which are minor or clinically irrelevant in context — causes pharmacy staff to become desensitised and start overriding alerts reflexively, including critical ones. Studies show override rates can exceed 95% in busy settings.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "0cde88ce-69c1-4b71-92d1-7653c63034be",
+    "module_id": "82cf2650-5f9f-4f8f-9460-cd77a32d431e",
+    "question": "Which of the following is a key difference between rule-based and ML-based drug interaction detection?",
+    "options": [
+      "Rule-based systems are always more accurate",
+      "ML-based systems can never detect known interactions",
+      "Rule-based systems only detect catalogued interactions; ML-based systems can potentially identify novel ones",
+      "ML-based systems do not require any data to function"
+    ],
+    "correct_answer": 2,
+    "explanation": "Rule-based systems check against a curated database of known interactions, so they only detect what has already been catalogued. ML-based systems analyse patterns in data and can potentially identify novel interactions not yet documented, though they may also generate more false positives.",
+    "order_index": 3,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "analyze"
+  },
+  {
+    "id": "cca43ecc-3da2-4530-adfc-c67b293cae0a",
+    "module_id": "82cf2650-5f9f-4f8f-9460-cd77a32d431e",
+    "question": "A patient on Warfarin is prescribed Clarithromycin. The DIS flags a Major interaction. What is the clinical concern?",
+    "options": [
+      "Clarithromycin reduces Warfarin effectiveness, increasing clotting risk",
+      "Clarithromycin significantly increases Warfarin effect, increasing haemorrhage risk",
+      "The combination causes kidney failure",
+      "There is no real interaction; this is a false positive"
+    ],
+    "correct_answer": 1,
+    "explanation": "Clarithromycin inhibits the liver enzymes (CYP3A4 and CYP1A2) that metabolise Warfarin, leading to increased Warfarin levels in the blood. This significantly increases the risk of haemorrhage. Azithromycin is often suggested as an alternative with minimal Warfarin interaction.",
+    "order_index": 4,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "hard",
+    "blooms_level": "analyze"
+  },
+  {
+    "id": "52203b7f-c9aa-44a7-ac33-a2f62766249c",
+    "module_id": "82cf2650-5f9f-4f8f-9460-cd77a32d431e",
+    "question": "Arrange the DIS alert response workflow in the correct order.",
+    "options": [
+      "STOP — read the alert completely",
+      "ASSESS — determine severity level",
+      "CHECK — review patient dispensing history",
+      "ESCALATE — inform pharmacist for major/contraindicated alerts",
+      "DOCUMENT — record alert, action, and outcome",
+      "COMMUNICATE — inform patient and prescriber as needed"
+    ],
+    "correct_answer": 0,
+    "explanation": "The correct DIS workflow follows a structured sequence: Stop, Assess, Check, Escalate, Document, Communicate. Skipping steps — especially escalation for serious interactions — can compromise patient safety.",
+    "order_index": 5,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "a9dbd93f-c99b-4bb1-872b-4c89e4338950",
+    "module_id": "82cf2650-5f9f-4f8f-9460-cd77a32d431e",
+    "question": "What percentage of drug interaction alerts are typically overridden in busy pharmacy settings, according to research?",
+    "options": [
+      "About 10%",
+      "About 25%",
+      "About 50%",
+      "Up to 95%"
+    ],
+    "correct_answer": 3,
+    "explanation": "Research shows that up to 95% of drug interaction alerts are overridden in busy pharmacy settings. This alarmingly high rate is the core of the alert fatigue problem and underscores why tiered alert systems and mandatory hard stops for critical interactions are essential.",
+    "order_index": 6,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "b9ec5acf-7dbc-4353-b152-95ee1c6c8de8",
+    "module_id": "82cf2650-5f9f-4f8f-9460-cd77a32d431e",
+    "question": "Which of the following contraindicated drug combinations should a pharmacy technician memorise?",
+    "options": [
+      "Methotrexate + Trimethoprim",
+      "Warfarin + Miconazole oral gel",
+      "Paracetamol + Ibuprofen",
+      "MAOIs + SSRIs",
+      "Simvastatin + Clarithromycin"
+    ],
+    "correct_answer": 0,
+    "explanation": "Methotrexate + Trimethoprim (bone marrow suppression), Warfarin + Miconazole oral gel (haemorrhage), MAOIs + SSRIs (serotonin syndrome), and Simvastatin + Clarithromycin (rhabdomyolysis) are all contraindicated combinations that pharmacy technicians should memorise. Paracetamol + Ibuprofen is generally safe when used appropriately.",
+    "order_index": 7,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "hard",
+    "blooms_level": "remember"
+  }
+]

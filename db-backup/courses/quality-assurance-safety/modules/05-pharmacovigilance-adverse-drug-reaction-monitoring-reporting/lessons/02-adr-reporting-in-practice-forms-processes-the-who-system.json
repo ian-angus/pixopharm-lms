@@ -1,0 +1,143 @@
+{
+  "id": "6af6bf91-5d30-4121-8c4b-e9c06e33e78c",
+  "module_id": "518e49f7-db26-4701-a332-4928c74d9aa0",
+  "title": "ADR Reporting in Practice: Forms, Processes & the WHO System",
+  "content": [
+    {
+      "text": "Reporting ADRs: A Practical Guide",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Reporting a suspected adverse drug reaction is a professional responsibility that contributes to the safety of every patient who will ever take that drug. The process need not be complex — the key is to capture essential information accurately and submit it to the appropriate national authority in a timely manner. This lesson walks through the practical steps of ADR reporting in the Caribbean context.",
+      "type": "text"
+    },
+    {
+      "text": "What to Include in an ADR Report",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "rows": [
+        [
+          "Patient",
+          "Age, sex, weight, relevant medical history, ethnicity (if relevant)",
+          "Enables assessment of patient-specific risk factors"
+        ],
+        [
+          "Suspected Drug",
+          "Drug name (brand and generic), dose, route, start date, indication",
+          "Identifies the suspected causative agent"
+        ],
+        [
+          "Reaction",
+          "Description of the reaction, onset date, severity, duration, outcome",
+          "Characterises the ADR for classification and assessment"
+        ],
+        [
+          "Concomitant Drugs",
+          "All other medications the patient is taking, including herbals and OTCs",
+          "Enables assessment of drug-drug interactions as a potential cause"
+        ],
+        [
+          "Dechallenge/Rechallenge",
+          "Did the reaction resolve when the drug was stopped? Did it recur when restarted?",
+          "Provides evidence of causality — the strongest form of clinical evidence for an ADR"
+        ],
+        [
+          "Reporter",
+          "Name, profession, contact details",
+          "Allows the pharmacovigilance centre to follow up for additional information"
+        ]
+      ],
+      "type": "table",
+      "caption": "Essential Information for an ADR Report",
+      "headers": [
+        "Category",
+        "Required Information",
+        "Why It Matters"
+      ]
+    },
+    {
+      "type": "island-comparison",
+      "title": "ADR Reporting Pathways in the Caribbean",
+      "islands": [
+        {
+          "flag": "🇹🇹",
+          "name": "Trinidad & Tobago",
+          "details": [
+            "Report to the Chemistry, Food and Drugs Division (CFDD) under the Ministry of Health",
+            "ADR reporting form available from the CFDD website and in print at public health facilities",
+            "CFDD submits reports to the WHO Collaborating Centre for International Drug Monitoring in Uppsala, Sweden",
+            "Both healthcare professionals and patients can submit ADR reports",
+            "Pharmacists and technicians are encouraged to report directly"
+          ]
+        },
+        {
+          "flag": "🇯🇲",
+          "name": "Jamaica",
+          "details": [
+            "Report to the Pharmacovigilance Unit, Ministry of Health & Wellness",
+            "Jamaica joined the WHO Programme for International Drug Monitoring in 2013",
+            "Online and paper-based ADR reporting forms available",
+            "The National Health Fund tracks ADRs for drugs in the national formulary",
+            "Active pharmacovigilance programmes exist for HIV and TB medications"
+          ]
+        },
+        {
+          "flag": "🇧🇧",
+          "name": "Barbados",
+          "details": [
+            "Report through the Barbados Drug Service, Ministry of Health",
+            "ADR reports are submitted to CARPHA for regional analysis",
+            "Queen Elizabeth Hospital has an internal ADR monitoring committee",
+            "Community pharmacies are encouraged to submit reports for any suspected ADR",
+            "Barbados contributes to PAHO/WHO regional pharmacovigilance initiatives"
+          ]
+        }
+      ],
+      "description": "Each island has its own ADR reporting pathway. Know the process for your jurisdiction."
+    },
+    {
+      "text": "The WHO Global Pharmacovigilance System",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "The WHO Programme for International Drug Monitoring, coordinated by the Uppsala Monitoring Centre (UMC) in Sweden, collects ADR reports from over 170 member countries into VigiBase — the world's largest database of adverse drug reaction reports, containing over 30 million reports. When multiple reports from different countries describe the same unexpected ADR for the same drug, a 'signal' is generated — an alert that triggers further investigation. Caribbean reports contribute to this global safety net.",
+      "type": "text"
+    },
+    {
+      "body": "As a pharmacy technician, you interact with patients more frequently than almost any other healthcare professional. When a patient mentions a new symptom, a change in how they feel since starting a medication, or a reaction they experienced, YOU may be the first to hear about it. Your role is to: (1) Recognise the potential ADR, (2) Alert the supervising pharmacist, (3) Help document the report, and (4) Encourage the patient to seek medical attention if the reaction is serious.",
+      "type": "callout",
+      "title": "The Technician's Role in Pharmacovigilance",
+      "variant": "tip"
+    },
+    {
+      "type": "case-study",
+      "title": "Case Study: The Unreported Rash",
+      "scenario": "Mrs. Ramdeen, a 62-year-old patient of East Indian descent in San Fernando, Trinidad, has been taking a new generic version of amlodipine (calcium channel blocker) for hypertension for three weeks. She comes to the pharmacy to collect her next month's supply and mentions in passing that she developed a 'itchy rash' on her arms two weeks ago. She dismisses it as 'just dry skin from the dry season.' The pharmacy technician, Keisha, recognises that a new rash two weeks after starting a new medication could be an adverse drug reaction.",
+      "questions": [
+        "What should Keisha do immediately upon hearing about the rash?",
+        "What information should be gathered for a potential ADR report?",
+        "Why is this report valuable even though the reaction seems mild?",
+        "What is the significance of noting that Mrs. Ramdeen is taking a new GENERIC version of the drug?"
+      ],
+      "discussion": "Keisha should alert the supervising pharmacist immediately. The pharmacist should assess the rash, counsel the patient about the possible connection to the new medication, and determine whether the patient needs medical attention. An ADR report should be completed with patient details, the specific generic product (manufacturer, lot number), onset timing, and description of the reaction. Even a mild rash is reportable — it may be a Type B reaction signal, and the fact that it involves a new generic version is especially significant because different excipients in the generic formulation could be the cause. Reports like this, aggregated across multiple patients, can reveal formulation-specific safety issues."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "The symptom started after the drug was prescribed",
+        "The patient believes the drug is causing the symptom",
+        "The symptom resolved when the drug was stopped and returned when it was restarted (dechallenge/rechallenge)",
+        "The symptom is listed as a possible side effect in the drug's product information"
+      ],
+      "question": "Which of the following is the strongest evidence that a patient's symptom is caused by a specific drug?",
+      "explanation": "Dechallenge (symptom resolves when the drug is stopped) and rechallenge (symptom returns when the drug is restarted) provide the strongest clinical evidence of a causal relationship between a drug and an adverse reaction. While the other options are supportive, they do not establish causality as clearly.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 25
+}

@@ -1,0 +1,181 @@
+[
+  {
+    "id": "a675cece-61b5-404d-99de-f9c45827914a",
+    "module_id": "a990037d-ba04-45d0-ae91-bab492ae6c2b",
+    "question": "Which of the following is the MOST significant challenge when selecting pharmacy management software for a Caribbean community pharmacy?",
+    "options": [
+      "The software does not have a mobile app",
+      "Integration with local government insurance programme claims processing",
+      "The software interface is not available in French",
+      "The software does not include a social media module"
+    ],
+    "correct_answer": 1,
+    "explanation": "Integration with government insurance programmes (CDAP, NHF, Barbados Drug Benefit) is the most significant practical challenge. These programmes represent a major revenue stream, and the system must be able to generate compliant claims, submit them electronically where possible, and track reimbursement status.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "b8c17a61-aa7f-4cbe-a8ff-443044d1068a",
+    "module_id": "a990037d-ba04-45d0-ae91-bab492ae6c2b",
+    "question": "ABC inventory analysis reveals that the top 20% of a pharmacy's products generate approximately what percentage of total sales revenue?",
+    "options": [
+      "20%",
+      "50%",
+      "80%",
+      "95%"
+    ],
+    "correct_answer": 2,
+    "explanation": "The Pareto Principle (80/20 rule) applied to pharmacy inventory typically shows that the top 20% of products ('A' items) generate approximately 80% of total sales revenue. These items deserve the closest management attention — tight stock control, frequent reordering, and careful margin analysis.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "134f82b0-c5c0-4325-9112-54afd654465b",
+    "module_id": "a990037d-ba04-45d0-ae91-bab492ae6c2b",
+    "question": "Under Trinidad & Tobago's Data Protection Act, a pharmacy that experiences a data breach involving patient health information must:",
+    "options": [
+      "Do nothing if fewer than 10 patients are affected",
+      "Report the breach only if a patient complains",
+      "Report the breach to the Office of the Information Commissioner and affected patients",
+      "Delete the compromised records to prevent further exposure"
+    ],
+    "correct_answer": 2,
+    "explanation": "Under Trinidad & Tobago's Data Protection Act, data breaches involving personal data must be reported to the Office of the Information Commissioner. Affected individuals should also be notified, particularly when health data is involved, as they may need to take protective action. Deleting records would be destruction of evidence.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "d7af2b7c-8af5-4be0-8b41-e916eedf190f",
+    "module_id": "a990037d-ba04-45d0-ae91-bab492ae6c2b",
+    "question": "WhatsApp is an acceptable channel for sharing patient prescription photos between pharmacy staff because it uses end-to-end encryption.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": 1,
+    "explanation": "False. While WhatsApp does use end-to-end encryption during transmission, patient-identifiable health data on personal devices creates significant risks: phones can be lost, stolen, or accessed by others. Caribbean data protection legislation requires 'appropriate safeguards' for health data, and personal messaging apps do not meet this standard. All patient identifiers must be removed before sharing, or a secure, pharmacy-approved channel should be used.",
+    "order_index": 3,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "evaluate"
+  },
+  {
+    "id": "e4cf0464-14c4-429c-9b4f-bb737067f05c",
+    "module_id": "a990037d-ba04-45d0-ae91-bab492ae6c2b",
+    "question": "When implementing a new pharmacy management system, what is the recommended approach for training staff?",
+    "options": [
+      "Train staff during go-live so they learn by doing under real pressure",
+      "Send written instructions by email and expect staff to self-study",
+      "Train all staff BEFORE go-live with hands-on practice using test data",
+      "Only train the pharmacist, who can then teach the technicians"
+    ],
+    "correct_answer": 2,
+    "explanation": "All staff should be trained before go-live, using test data in a practice environment. Training during go-live creates chaos, written instructions are insufficient for complex software, and relying on a single person to cascade training introduces errors and delays.",
+    "order_index": 4,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "68432407-ceb9-40d0-9a55-aebeb07f4a8e",
+    "module_id": "a990037d-ba04-45d0-ae91-bab492ae6c2b",
+    "question": "A pharmacy's insurance claim rejection rate has increased from 3% to 12%. An analysis reveals that 80% of rejections are due to 'expired patient eligibility'. What is the MOST effective systemic intervention?",
+    "options": [
+      "Submit claims faster before eligibility expires",
+      "Implement mandatory eligibility verification at the point of dispensing, with PMS prompts",
+      "Send patients letters reminding them to renew their cards",
+      "Stop accepting insurance patients to eliminate rejections"
+    ],
+    "correct_answer": 1,
+    "explanation": "A systemic intervention — building mandatory eligibility verification into the dispensing workflow with PMS prompts — addresses the root cause at the point where the error occurs. This is more reliable than individual reminders or downstream fixes because it prevents the problem from occurring rather than trying to catch it later.",
+    "order_index": 5,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "hard",
+    "blooms_level": "evaluate"
+  },
+  {
+    "id": "5591064a-81f0-4e60-a983-48a7a6d2e6b7",
+    "module_id": "a990037d-ba04-45d0-ae91-bab492ae6c2b",
+    "question": "Which of the following are essential cybersecurity measures for a Caribbean community pharmacy? (Select all that apply)",
+    "options": [
+      "Daily automated backups to an offsite location",
+      "Strong passwords and multi-factor authentication",
+      "Staff training on phishing and social engineering",
+      "Giving all staff full administrator access for convenience",
+      "Role-based access control to limit data exposure"
+    ],
+    "correct_answer": 0,
+    "explanation": "Daily offsite backups, strong authentication, phishing awareness training, and role-based access control are all essential cybersecurity measures. Giving all staff administrator access is the opposite of security best practice — it increases the attack surface and makes it impossible to trace actions to specific users.",
+    "order_index": 6,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "0d790a3e-7c27-494d-aea0-d5dad2223657",
+    "module_id": "a990037d-ba04-45d0-ae91-bab492ae6c2b",
+    "question": "The 'technology champion' approach to PMS implementation involves:",
+    "options": [
+      "Hiring an external IT consultant to run the entire implementation",
+      "Having the pharmacy owner make all technology decisions unilaterally",
+      "Identifying enthusiastic staff members, training them deeply, and using them as peer support during the transition",
+      "Selecting the most expensive system to ensure quality"
+    ],
+    "correct_answer": 2,
+    "explanation": "The technology champion approach identifies staff who are comfortable with technology, trains them early and deeply in the new system, and positions them as peer supporters during the transition. In Caribbean workplaces, colleagues are more likely to seek help from a trusted peer than from a supervisor or external trainer.",
+    "order_index": 7,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "9e9f20a2-69d6-42b1-8b7b-b020b1727200",
+    "module_id": "a990037d-ba04-45d0-ae91-bab492ae6c2b",
+    "question": "What is the MOST critical risk during data migration from an old pharmacy system to a new one?",
+    "options": [
+      "The new system's interface colour scheme is different",
+      "Loss or corruption of patient records, inventory data, and financial history",
+      "Staff having to use two monitors simultaneously",
+      "Internet speed slowing down during the transfer"
+    ],
+    "correct_answer": 1,
+    "explanation": "Data migration is the most technically complex and risky step in PMS implementation. Patient records, dispensing history, inventory data, and financial records must be accurately transferred. Data loss, corruption, or incomplete migration can compromise patient safety (lost allergy records), financial accuracy (wrong inventory counts), and regulatory compliance.",
+    "order_index": 8,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "analyze"
+  },
+  {
+    "id": "e3adf565-8fd5-4b7e-8078-21518915ceb3",
+    "module_id": "a990037d-ba04-45d0-ae91-bab492ae6c2b",
+    "question": "For a pharmacy transitioning from a paper-based system to its first digital PMS, the recommended parallel-running period is:",
+    "options": [
+      "1 week",
+      "2 weeks (same as system-to-system transition)",
+      "4 weeks (longer than system-to-system transition)",
+      "No parallel running is needed — just switch immediately"
+    ],
+    "correct_answer": 2,
+    "explanation": "A first-time paper-to-digital transition requires a longer parallel-running period (typically 4 weeks) compared to a system-to-system transition (2 weeks). Staff are learning entirely new workflows, not just a different interface. The extended period allows the team to build confidence and catch errors before the paper system is retired.",
+    "order_index": 9,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  }
+]

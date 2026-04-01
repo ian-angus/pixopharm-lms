@@ -1,0 +1,182 @@
+[
+  {
+    "id": "d8b0b8e7-5581-4498-99f0-3a8f91112c3a",
+    "module_id": "3ae651ec-d517-49a5-b470-2e80076fafe1",
+    "question": "In pharmacy record-keeping, the axiom 'if it is not documented, it did not happen' reflects which principle?",
+    "options": [
+      "That pharmacies should maintain excessive paperwork",
+      "That records serve as legal evidence of compliance and protect both patients and the pharmacy",
+      "That electronic records are not acceptable",
+      "That only pharmacists need to understand record-keeping"
+    ],
+    "correct_answer": 1,
+    "explanation": "The axiom reflects the principle that records serve as the legal evidence that proper procedures were followed. Without documentation, a pharmacy cannot demonstrate compliance during an inspection, investigation, or legal proceeding.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "44778a1f-3743-4fe6-a3f6-e03f10c833d8",
+    "module_id": "3ae651ec-d517-49a5-b470-2e80076fafe1",
+    "question": "Which of the following are commonly found during regulatory pharmacy inspections in the Caribbean?",
+    "options": [
+      "Expired products on shelves",
+      "Incomplete temperature monitoring records",
+      "Controlled substance register discrepancies",
+      "Excessive inventory of fast-moving products",
+      "Missing or outdated SOPs"
+    ],
+    "correct_answer": 0,
+    "explanation": "Common inspection findings include expired products on shelves, incomplete temperature logs, controlled substance register discrepancies, and missing/outdated SOPs. Excessive inventory of fast-moving products is not typically a compliance concern.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "analyze"
+  },
+  {
+    "id": "1cf2b269-6665-4fb5-b387-f0dfb227e867",
+    "module_id": "3ae651ec-d517-49a5-b470-2e80076fafe1",
+    "question": "How often should a pharmacy record refrigerator temperatures according to best practice?",
+    "options": [
+      "Once a week",
+      "Once a day",
+      "Twice daily (morning and afternoon)",
+      "Only when a temperature excursion is suspected"
+    ],
+    "correct_answer": 2,
+    "explanation": "Best practice requires temperature recordings at least twice daily — morning and afternoon — to capture the temperature range over the full operating period. Once daily may miss excursions, and weekly monitoring is insufficient for detecting problems in time.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "340e7439-8c61-4253-bbd7-d5c01d4ca4d9",
+    "module_id": "3ae651ec-d517-49a5-b470-2e80076fafe1",
+    "question": "PDCA stands for Plan, Do, Check, Act.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": 0,
+    "explanation": "True. PDCA (Plan, Do, Check, Act), also known as the Deming Cycle, is a continuous improvement framework used in quality management across healthcare and industry.",
+    "order_index": 3,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "e83dc980-09b3-45b1-99e0-db204d2faeb1",
+    "module_id": "3ae651ec-d517-49a5-b470-2e80076fafe1",
+    "question": "Arrange the steps of conducting an internal compliance audit in the correct order.",
+    "options": [
+      "Document findings and classify deficiencies",
+      "Select the audit area",
+      "Implement corrective actions and verify effectiveness",
+      "Prepare the checklist",
+      "Conduct the audit using the checklist"
+    ],
+    "correct_answer": 0,
+    "explanation": "The correct order is: (1) Select the audit area, (2) Prepare the checklist, (3) Conduct the audit, (4) Document findings and classify deficiencies, (5) Implement corrective actions and verify.",
+    "order_index": 4,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "hard",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "011b52ff-860d-4c26-a380-814bee3a1bc2",
+    "module_id": "3ae651ec-d517-49a5-b470-2e80076fafe1",
+    "question": "How often should controlled substance records be internally audited?",
+    "options": [
+      "Annually",
+      "Monthly",
+      "Only when a discrepancy is discovered",
+      "Every 5 years"
+    ],
+    "correct_answer": 1,
+    "explanation": "Controlled substance records should be audited monthly as recommended best practice. This frequency allows timely detection of discrepancies and demonstrates a robust compliance culture to regulatory inspectors.",
+    "order_index": 5,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "df5a2bef-2e94-446d-9454-ed5ef18210fe",
+    "module_id": "3ae651ec-d517-49a5-b470-2e80076fafe1",
+    "question": "Match each record type with its primary legal basis in Caribbean pharmacy regulation.",
+    "options": [
+      "Controlled Substance Register",
+      "Prescription Records",
+      "Temperature Monitoring Logs",
+      "Adverse Drug Reaction Reports"
+    ],
+    "correct_answer": 0,
+    "explanation": "Each record type is mandated by specific legislation or guidelines: controlled substance registers by the Dangerous Drugs Act, prescription records by the Pharmacy Act, temperature logs by GMP/GDP guidelines, and ADR reports by pharmacovigilance regulations.",
+    "order_index": 6,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "6bf60b3f-398b-4047-9a08-56a4c7ddf370",
+    "module_id": "3ae651ec-d517-49a5-b470-2e80076fafe1",
+    "question": "During a regulatory inspection, the inspector asks you a technical question about controlled substance legislation that you are unsure about. What should you do?",
+    "options": [
+      "Provide your best guess to appear knowledgeable",
+      "Refuse to answer any questions without a lawyer present",
+      "Honestly state that you are not certain and refer the question to the supervising pharmacist",
+      "Change the subject to an area you know more about"
+    ],
+    "correct_answer": 2,
+    "explanation": "Honesty during inspections is paramount. If you are unsure about an answer, the correct response is to say so and refer the question to the supervising pharmacist. Guessing or fabricating information can constitute a regulatory offence and undermines the pharmacy's credibility.",
+    "order_index": 7,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "e6d67b24-b3e1-4031-aa41-93a9d17e023f",
+    "module_id": "3ae651ec-d517-49a5-b470-2e80076fafe1",
+    "question": "Records must be stored securely but be readily _____ for inspection.",
+    "options": [
+      "accessible",
+      "hidden",
+      "encrypted",
+      "sealed"
+    ],
+    "correct_answer": 0,
+    "explanation": "Records must be stored securely to prevent unauthorised access, damage, or loss, but must also be readily accessible for regulatory inspection. An inspector should be able to view any mandated record within a reasonable timeframe during an inspection visit.",
+    "order_index": 8,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "f9e95dd4-5ddd-47bd-ba53-3b13f8c11195",
+    "module_id": "3ae651ec-d517-49a5-b470-2e80076fafe1",
+    "question": "A pharmacy technician discovers during a monthly audit that temperature logs for the medication refrigerator are missing for 3 days last week. What is the most appropriate first action?",
+    "options": [
+      "Fabricate entries for the missing days using estimated temperatures",
+      "Report the gap to the supervising pharmacist and document it as an audit finding with a corrective action plan",
+      "Delete the entire month's temperature log and start fresh",
+      "Ignore it — 3 days out of a month is not significant"
+    ],
+    "correct_answer": 1,
+    "explanation": "The correct action is to report the gap to the supervising pharmacist, document it as an audit finding, and develop a corrective action plan to prevent future gaps. Fabricating entries is fraudulent, deleting records is destructive, and ignoring gaps undermines the quality system.",
+    "order_index": 9,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "hard",
+    "blooms_level": "evaluate"
+  }
+]

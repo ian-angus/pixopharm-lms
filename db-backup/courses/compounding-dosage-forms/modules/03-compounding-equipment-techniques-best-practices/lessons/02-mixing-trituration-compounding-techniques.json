@@ -1,0 +1,206 @@
+{
+  "id": "1ef38eee-e86b-414c-bdca-76319e1801f6",
+  "module_id": "d535aae0-2da8-4ad8-8c9f-005c1b03ae1f",
+  "title": "Mixing, Trituration & Compounding Techniques",
+  "content": [
+    {
+      "text": "The Art and Science of Mixing",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Effective mixing is what transforms individual ingredients into a uniform, effective pharmaceutical preparation. Different compounding tasks require different mixing techniques, and choosing the wrong method can result in a product that is non-uniform, gritty, separated, or otherwise unfit for use. Caribbean pharmacy technicians must master several core mixing techniques to handle the full range of non-sterile compounding tasks they will encounter.",
+      "type": "text"
+    },
+    {
+      "term": "Trituration",
+      "type": "key-term",
+      "definition": "The process of reducing the particle size of a solid by grinding it in a mortar with a pestle, using a firm, downward, rotational motion. Trituration also refers to the mixing of two or more powders in a mortar. The technique is essential for producing fine, uniform powders suitable for incorporation into dosage forms and for ensuring uniform mixing of potent drugs with diluents."
+    },
+    {
+      "rows": [
+        [
+          "Trituration",
+          "Reduce particle size of solids; mix powders uniformly",
+          "Porcelain mortar and pestle",
+          "Use firm, downward rotational pressure; scrape sides and pestle frequently; sieve after for uniform particle size"
+        ],
+        [
+          "Levigation",
+          "Reduce particle size using a wetting agent; prepare smooth paste for incorporation",
+          "Ointment slab and spatula; levigating agent (mineral oil, glycerin)",
+          "Add just enough levigating agent to form a paste; use small circular motions; ensures smooth, grit-free final product"
+        ],
+        [
+          "Spatulation",
+          "Mix ingredients on an ointment slab; incorporate drugs into semi-solid bases",
+          "Ointment slab and stainless steel or plastic spatula",
+          "Use firm, sweeping strokes; scrape and fold repeatedly; shearing action between spatula and slab breaks up aggregates"
+        ],
+        [
+          "Geometric Dilution",
+          "Ensure uniform distribution of potent drug in a larger quantity of base or diluent",
+          "Mortar and pestle (powders) or ointment slab (semi-solids)",
+          "Mix drug with equal amount of diluent; double the amount of diluent at each step; thorough mixing at each stage"
+        ],
+        [
+          "Comminution",
+          "General term for particle size reduction by any method",
+          "Mortar and pestle, ball mill, or sieve",
+          "Goal is to achieve uniform particle size for consistent drug distribution and smooth preparation"
+        ]
+      ],
+      "type": "table",
+      "caption": "Core Compounding Techniques",
+      "headers": [
+        "Technique",
+        "Purpose",
+        "Equipment",
+        "Key Points"
+      ]
+    },
+    {
+      "text": "Practical Tips for Tropical Compounding",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "type": "list",
+      "items": [
+        "Work quickly when compounding in non-climate-controlled areas — cream bases can soften in tropical heat, making mixing difficult",
+        "If a cream base becomes too soft to work with, briefly chill it in the refrigerator before continuing",
+        "Keep the ointment slab clean and dry — humidity can cause condensation on the glass surface, contaminating the preparation",
+        "When making suppositories with PEG bases, pour into moulds quickly as PEG sets rapidly upon cooling",
+        "For capsule filling, work in a low-humidity area if possible — gelatin capsules absorb moisture and become difficult to handle",
+        "Store finished preparations in appropriate containers immediately after compounding; do not leave them exposed on the bench"
+      ],
+      "ordered": false
+    },
+    {
+      "body": "When mixing on an ointment slab, develop the habit of the 'scrape-and-fold' technique: spread the mixture across the slab with the spatula, then scrape it all back into a pile and repeat. Do this at least 20–30 times for a typical cream or ointment. This ensures that every particle of drug comes into contact with every part of the base. Count your strokes — it is easy to rush and undermix, resulting in a non-uniform product.",
+      "type": "callout",
+      "title": "The Scrape-and-Fold Technique",
+      "variant": "tip"
+    },
+    {
+      "type": "scenario-simulation",
+      "nodes": [
+        {
+          "id": "start",
+          "text": "A prescription arrives for 50g of 2% salicylic acid ointment in white soft paraffin. The salicylic acid powder is coarse and gritty. What is your first step?",
+          "choices": [
+            {
+              "label": "Weigh the salicylic acid and mix it directly into the white soft paraffin on the ointment slab",
+              "feedback": "Mixing coarse powder directly into the base will result in a gritty, non-uniform product. Consider particle size reduction first.",
+              "nextNodeId": "direct-mix"
+            },
+            {
+              "label": "Triturate the salicylic acid in a mortar to reduce particle size, then levigate with mineral oil to form a smooth paste",
+              "feedback": "Excellent! Reducing the particle size first and creating a smooth paste will produce a far superior product.",
+              "isOptimal": true,
+              "nextNodeId": "triturate-levigate"
+            },
+            {
+              "label": "Dissolve the salicylic acid in water before adding to the ointment",
+              "feedback": "Salicylic acid is poorly soluble in water, and adding water to a petrolatum-based ointment would create an incompatible mixture.",
+              "nextNodeId": "dissolve-water"
+            }
+          ]
+        },
+        {
+          "id": "direct-mix",
+          "text": "The ointment is gritty and the salicylic acid is not evenly distributed. The pharmacist rejects the preparation. What should you do differently?",
+          "choices": [
+            {
+              "label": "Start over: triturate the powder first, then levigate with mineral oil before incorporating into the base",
+              "feedback": "Correct decision. Always reduce particle size of gritty powders before incorporating into an ointment base.",
+              "isOptimal": true,
+              "nextNodeId": "triturate-levigate"
+            },
+            {
+              "label": "Mix more vigorously on the slab to break up the particles",
+              "feedback": "Additional mixing on the slab alone will not adequately reduce the particle size of coarse powder. Trituration in a mortar is needed.",
+              "nextNodeId": "mix-harder"
+            }
+          ]
+        },
+        {
+          "id": "dissolve-water",
+          "text": "The water separates from the petrolatum base, creating a broken, unusable preparation. What should you do?",
+          "choices": [
+            {
+              "label": "Discard and start over using trituration and levigation with mineral oil",
+              "feedback": "Correct. Mineral oil is compatible with the petrolatum base; water is not.",
+              "isOptimal": true,
+              "nextNodeId": "triturate-levigate"
+            }
+          ]
+        },
+        {
+          "id": "mix-harder",
+          "text": "Despite vigorous mixing, the preparation remains gritty. The pharmacist asks you to start over. What technique should you use?",
+          "choices": [
+            {
+              "label": "Triturate in a mortar first, then levigate with mineral oil",
+              "feedback": "Correct. The mortar and pestle provides the abrasive force needed for particle size reduction.",
+              "isOptimal": true,
+              "nextNodeId": "triturate-levigate"
+            }
+          ]
+        },
+        {
+          "id": "triturate-levigate",
+          "text": "You have a smooth salicylic acid paste. Now you need to incorporate it into 49g of white soft paraffin. What technique ensures uniform distribution?",
+          "choices": [
+            {
+              "label": "Add all the paraffin at once and mix thoroughly",
+              "feedback": "Adding all the base at once makes thorough mixing difficult and may result in uneven distribution of the drug.",
+              "nextNodeId": "all-at-once"
+            },
+            {
+              "label": "Use geometric dilution: add the paraffin in incrementally doubling portions, mixing thoroughly at each step",
+              "feedback": "Perfect. Geometric dilution ensures uniform distribution of the drug throughout the entire base.",
+              "isOptimal": true,
+              "nextNodeId": "geometric-success"
+            }
+          ]
+        },
+        {
+          "id": "all-at-once",
+          "text": "The preparation appears to have uneven colour, suggesting non-uniform drug distribution. How should you fix this?",
+          "choices": [
+            {
+              "label": "Apply the geometric dilution principle: remove the mixture, and re-incorporate using incrementally increasing portions",
+              "feedback": "Good recovery. Remember to use geometric dilution from the start in future preparations.",
+              "isOptimal": true,
+              "nextNodeId": "geometric-success"
+            }
+          ]
+        },
+        {
+          "id": "geometric-success",
+          "text": "The final preparation is smooth, uniform in colour, and the pharmacist approves it after inspection. You label it with the patient's name, drug concentration, beyond-use date, and 'FOR EXTERNAL USE ONLY'. Well done!",
+          "isEnd": true,
+          "outcome": "success",
+          "summary": "You correctly applied trituration, levigation, and geometric dilution to produce a high-quality compounded ointment. These three techniques — used in sequence — are the standard approach for incorporating insoluble powders into ointment bases."
+        }
+      ],
+      "title": "Compounding Decision Simulator: Choosing the Right Technique",
+      "description": "You receive a prescription to compound a topical preparation. Make the right compounding decisions at each step."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Glass mortar — because it is transparent",
+        "Porcelain (Wedgwood) mortar — because its rough interior provides grinding abrasion",
+        "Plastic mortar — because it is lightweight",
+        "Metal mortar — because it is durable"
+      ],
+      "question": "Which type of mortar is best suited for grinding dry powders to reduce particle size?",
+      "explanation": "The porcelain (Wedgwood) mortar has a rough, unglazed interior surface that provides the abrasive friction needed to grind and reduce the particle size of solid drugs. Glass mortars have smooth interiors and are better suited for mixing liquids and preparations that stain. The rough texture of porcelain is what makes it effective for trituration.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 25
+}

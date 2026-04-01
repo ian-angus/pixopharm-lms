@@ -1,0 +1,182 @@
+[
+  {
+    "id": "e1857ebd-ed16-43c2-8671-ef178dc94fd7",
+    "module_id": "8655a4bb-6786-4c6f-8c79-df8a5e077ff3",
+    "question": "The maximum daily dose of paracetamol in adults is:",
+    "options": [
+      "2g",
+      "3g",
+      "4g",
+      "6g"
+    ],
+    "correct_answer": 2,
+    "explanation": "The maximum is 4g (4,000mg) daily for adults. Exceeding this causes hepatotoxicity.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "0ca7660b-323d-4504-b603-d13fae9b8da3",
+    "module_id": "8655a4bb-6786-4c6f-8c79-df8a5e077ff3",
+    "question": "SSRIs typically take how long to reach full therapeutic effect?",
+    "options": [
+      "24 hours",
+      "3-5 days",
+      "2-4 weeks",
+      "3 months"
+    ],
+    "correct_answer": 2,
+    "explanation": "SSRIs require 2-4 weeks to produce full antidepressant effects. Patients need counselling about this delay to prevent premature discontinuation.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "2b46d2f3-cfbc-44e7-a577-c3c66af3d02f",
+    "module_id": "8655a4bb-6786-4c6f-8c79-df8a5e077ff3",
+    "question": "Which antiepileptic drug is teratogenic and requires careful consideration in women of childbearing age?",
+    "options": [
+      "Levetiracetam",
+      "Lamotrigine",
+      "Sodium valproate",
+      "Gabapentin"
+    ],
+    "correct_answer": 2,
+    "explanation": "Valproate is highly teratogenic, causing neural tube defects and developmental problems. Women planning pregnancy should use alternative AEDs.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "06c07e70-b477-4cd0-b0f1-e61640da4555",
+    "module_id": "8655a4bb-6786-4c6f-8c79-df8a5e077ff3",
+    "question": "Extrapyramidal symptoms are most associated with which type of antipsychotic?",
+    "options": [
+      "Atypical (second-generation)",
+      "Typical (first-generation)",
+      "Both equally",
+      "Neither — EPS are caused by SSRIs"
+    ],
+    "correct_answer": 1,
+    "explanation": "Typical antipsychotics like haloperidol block dopamine D2 receptors more potently, causing higher rates of EPS including dystonia, akathisia, and tardive dyskinesia.",
+    "order_index": 3,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "928fa035-089d-411b-aace-c50c25b21b05",
+    "module_id": "8655a4bb-6786-4c6f-8c79-df8a5e077ff3",
+    "question": "Combining tramadol with an SSRI increases the risk of:",
+    "options": [
+      "Liver failure",
+      "Serotonin syndrome",
+      "Kidney damage",
+      "Hypoglycaemia"
+    ],
+    "correct_answer": 1,
+    "explanation": "Tramadol has serotonergic activity. Combining it with SSRIs can precipitate serotonin syndrome (agitation, tremor, hyperthermia).",
+    "order_index": 4,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "56939e9c-52b1-447d-b493-768fa4cdef67",
+    "module_id": "8655a4bb-6786-4c6f-8c79-df8a5e077ff3",
+    "question": "A patient buying a cold remedy and separate paracetamol tablets should be warned about:",
+    "options": [
+      "Allergic cross-reactivity",
+      "Potential paracetamol overdose from duplicate dosing",
+      "Reduced cold remedy efficacy",
+      "Caffeine interaction"
+    ],
+    "correct_answer": 1,
+    "explanation": "Many cold remedies contain paracetamol. Taking additional paracetamol on top risks exceeding the 4g daily limit and causing hepatotoxicity.",
+    "order_index": 5,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "1b9402ae-aa6c-425c-8338-dd11cdb3cd1b",
+    "module_id": "8655a4bb-6786-4c6f-8c79-df8a5e077ff3",
+    "question": "Phenytoin requires careful dose adjustment because it has:",
+    "options": [
+      "Linear pharmacokinetics",
+      "Non-linear (saturation) pharmacokinetics — small dose changes cause large blood level changes",
+      "No side effects",
+      "A very wide therapeutic index"
+    ],
+    "correct_answer": 1,
+    "explanation": "Phenytoin follows zero-order kinetics at therapeutic doses. Once metabolic enzymes are saturated, small dose increases cause disproportionately large rises in blood levels.",
+    "order_index": 6,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "hard",
+    "blooms_level": "analyze"
+  },
+  {
+    "id": "7fef1742-29f2-47e8-9afb-b9b6dbb77ce0",
+    "module_id": "8655a4bb-6786-4c6f-8c79-df8a5e077ff3",
+    "question": "SSRI discontinuation syndrome includes all of the following EXCEPT:",
+    "options": [
+      "Dizziness",
+      "Brain zaps (electric shock sensations)",
+      "Hepatotoxicity",
+      "Anxiety and irritability"
+    ],
+    "correct_answer": 2,
+    "explanation": "SSRI discontinuation causes dizziness, brain zaps, anxiety, nausea, and irritability. It does not cause hepatotoxicity. These symptoms reflect neurochemical readjustment, not organ damage.",
+    "order_index": 7,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "2e7067c2-7c2d-4bca-bb4f-57a3fd129709",
+    "module_id": "8655a4bb-6786-4c6f-8c79-df8a5e077ff3",
+    "question": "Codeine is converted to its active metabolite (morphine) by which CYP450 enzyme?",
+    "options": [
+      "CYP3A4",
+      "CYP2D6",
+      "CYP1A2",
+      "CYP2C9"
+    ],
+    "correct_answer": 1,
+    "explanation": "CYP2D6 converts codeine to morphine. Ultra-rapid CYP2D6 metabolisers convert more codeine to morphine, increasing toxicity risk. Poor metabolisers get little analgesic benefit from codeine.",
+    "order_index": 8,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "hard",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "5e041453-886d-4afc-9d2c-adbc1f3b98d9",
+    "module_id": "8655a4bb-6786-4c6f-8c79-df8a5e077ff3",
+    "question": "The WHO analgesic ladder Step 1 recommends which type of medication for mild pain?",
+    "options": [
+      "Strong opioids (morphine)",
+      "Weak opioids (codeine, tramadol)",
+      "Non-opioid analgesics (paracetamol, NSAIDs)",
+      "Nerve blocks"
+    ],
+    "correct_answer": 2,
+    "explanation": "The WHO analgesic ladder Step 1 uses non-opioid analgesics (paracetamol and/or NSAIDs) for mild pain. Step 2 adds weak opioids for moderate pain, and Step 3 uses strong opioids for severe pain.",
+    "order_index": 9,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  }
+]

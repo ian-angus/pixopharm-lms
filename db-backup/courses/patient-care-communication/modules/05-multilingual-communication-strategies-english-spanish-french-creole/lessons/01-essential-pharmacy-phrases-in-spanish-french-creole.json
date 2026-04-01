@@ -1,0 +1,152 @@
+{
+  "id": "2e04f890-b71c-42da-b108-ea06315631a9",
+  "module_id": "d7b0331a-9b72-42c9-b4c4-c741bb3adcec",
+  "title": "Essential Pharmacy Phrases in Spanish & French Creole",
+  "content": [
+    {
+      "text": "Speaking Their Language at the Pharmacy Counter",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "You do not need to be fluent in another language to provide safe, effective pharmaceutical care across a language barrier. A core set of pharmacy-specific phrases — covering dosing, timing, route, warnings, and verification — can bridge the most critical communication gaps. This lesson provides those phrases in Spanish and Haitian Creole, the two most common non-English languages encountered in Caribbean pharmacy practice.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Take one tablet in the morning",
+          "Tome una pastilla en la mañana",
+          "Pran yon grenn nan maten"
+        ],
+        [
+          "Take one tablet at night",
+          "Tome una pastilla en la noche",
+          "Pran yon grenn nan aswè"
+        ],
+        [
+          "Take with food",
+          "Tome con comida",
+          "Pran li ak manje"
+        ],
+        [
+          "Take on an empty stomach",
+          "Tome con el estómago vacío",
+          "Pran li lè vant ou vid"
+        ],
+        [
+          "Do not drink alcohol",
+          "No tome alcohol",
+          "Pa bwè alkòl"
+        ],
+        [
+          "Keep in the refrigerator",
+          "Guarde en el refrigerador",
+          "Kenbe li nan frijidè a"
+        ],
+        [
+          "Are you taking any other medications?",
+          "¿Está tomando otros medicamentos?",
+          "Èske w ap pran lòt medikaman?"
+        ],
+        [
+          "Are you pregnant or breastfeeding?",
+          "¿Está embarazada o amamantando?",
+          "Èske w ansent oswa w ap bay tete?"
+        ],
+        [
+          "Do you have any allergies?",
+          "¿Tiene alguna alergia?",
+          "Èske w gen alèji?"
+        ],
+        [
+          "If symptoms worsen, see a doctor",
+          "Si los síntomas empeoran, consulte a un médico",
+          "Si sentòm yo vin pi grav, ale wè yon doktè"
+        ]
+      ],
+      "type": "table",
+      "caption": "Essential Pharmacy Phrases: English, Spanish & Haitian Creole",
+      "headers": [
+        "English",
+        "Spanish",
+        "Haitian Creole (Kreyòl)"
+      ]
+    },
+    {
+      "body": "Spanish: Most words are pronounced as written. Emphasis falls on the second-to-last syllable unless there is an accent mark. 'Pastilla' = pas-TEE-ya. 'Mañana' = man-YAH-na. Haitian Creole: Pronounced largely phonetically. 'Pran' = 'pran' (take). 'Manje' = 'man-jay' (food). 'Aswè' = 'ah-SWEH' (evening). Practice these phrases until they flow naturally.",
+      "type": "callout",
+      "title": "Pronunciation Tips",
+      "variant": "tip"
+    },
+    {
+      "term": "False Friend (Faux Ami)",
+      "type": "key-term",
+      "definition": "A word that looks or sounds similar in two languages but has a different meaning. In pharmacy, false friends are clinically dangerous — e.g., English 'once' (one time) vs. Spanish 'once' (eleven). Pharmacy technicians working across languages must be aware of common false friends to prevent dosing errors."
+    },
+    {
+      "text": "Pharmacy Phrases in Jamaican Patois",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "rows": [
+        [
+          "Take one tablet twice a day",
+          "Tek one tablet two time a day",
+          "Clear and direct — most Jamaican patients understand this phrasing"
+        ],
+        [
+          "Take with food",
+          "Tek it wid yuh food",
+          "The 'wid' (with) is universally understood"
+        ],
+        [
+          "Do not stop taking this medication without asking the doctor",
+          "Doh stop tek di medicine widout yuh ask di doctor",
+          "Critical for chronic disease medications"
+        ],
+        [
+          "Come back if you feel worse",
+          "Come back if yuh feel more sick",
+          "Simple and unambiguous"
+        ],
+        [
+          "This medication is for your blood pressure",
+          "Dis medicine is fi yuh pressure",
+          "'Pressure' is universally understood for hypertension in Jamaica"
+        ],
+        [
+          "Can you tell me how you will take this?",
+          "Tell mi how yuh ago tek dis when yuh reach home",
+          "Teach-back phrased naturally in Patois"
+        ]
+      ],
+      "type": "table",
+      "caption": "Common Pharmacy Phrases in Jamaican Patois",
+      "headers": [
+        "Standard English",
+        "Jamaican Patois",
+        "Usage Note"
+      ]
+    },
+    {
+      "body": "Learning even a handful of these phrases demonstrates respect for the patient's linguistic identity and builds trust. Patients who feel their language is respected are more likely to ask questions, disclose concerns, and adhere to their medication regimens.",
+      "type": "text"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Take two tablets at night",
+        "Take one tablet in the morning",
+        "Keep the medication in the refrigerator",
+        "Do not drink alcohol"
+      ],
+      "question": "The Haitian Creole phrase 'Pran yon grenn nan maten' means:",
+      "explanation": "'Pran' = take, 'yon grenn' = one tablet/pill, 'nan maten' = in the morning. Therefore, 'Pran yon grenn nan maten' means 'Take one tablet in the morning.' This is one of the most essential pharmacy phrases for serving Haitian Creole-speaking patients.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 25
+}

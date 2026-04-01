@@ -1,0 +1,101 @@
+{
+  "id": "41f79341-229a-408b-9841-e340d5ef98b1",
+  "module_id": "b375a985-9529-414f-9f08-bf0d39bb4eef",
+  "title": "Emotional Regulation: Staying Calm When Everything Is Chaotic",
+  "content": [
+    {
+      "text": "Calm Is a Skill, Not a Personality Trait",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Some people seem naturally calm under pressure. They handle irate customers, computer crashes, and stock crises with an unshakeable composure that makes the rest of us wonder if they even have a pulse. Here is the truth: calmness under pressure is not a personality trait — it is a skill that can be learned, practised, and strengthened. You do not have to be born calm to become calm at work.",
+      "type": "text"
+    },
+    {
+      "body": "Emotional regulation does not mean suppressing your emotions. Suppression — pretending you are not angry, not frustrated, not overwhelmed — actually makes things worse. Suppressed emotions leak out in other ways: snapping at a colleague, making careless errors, dreading your next shift. True emotional regulation means feeling the emotion, acknowledging it, and choosing how to express it — or choosing not to express it until the right moment.",
+      "type": "text"
+    },
+    {
+      "term": "Emotional Regulation",
+      "type": "key-term",
+      "definition": "The ability to manage and modify emotional reactions in a way that is appropriate to the situation. It involves recognising emotions as they arise, understanding their origin, and consciously choosing a response rather than being driven by automatic reactions. It is not the same as emotional suppression."
+    },
+    {
+      "text": "Practical Techniques for the Pharmacy Floor",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "rows": [
+        [
+          "The 4-7-8 Breath",
+          "Inhale for 4 seconds, hold for 7, exhale for 8. Activates the parasympathetic nervous system.",
+          "When your heart rate rises during a confrontation or after a stressful interaction"
+        ],
+        [
+          "The Mental Pause",
+          "Before responding to a provocation, silently count to three. Those three seconds create space between trigger and response.",
+          "When a customer says something that makes you want to snap back"
+        ],
+        [
+          "The Name-It-To-Tame-It",
+          "Silently label your emotion: 'I am feeling angry.' Research shows naming emotions reduces their intensity.",
+          "When you notice a strong emotion building during any interaction"
+        ],
+        [
+          "The Physical Reset",
+          "Step back from the counter for 30 seconds. Stretch your hands. Roll your shoulders. Change your physical state.",
+          "During a lull after a difficult interaction"
+        ],
+        [
+          "The Perspective Shift",
+          "Ask yourself: 'Will this matter in a week?' Most pharmacy stressors will not.",
+          "When minor frustrations start accumulating throughout a shift"
+        ]
+      ],
+      "type": "table",
+      "caption": "Emotional Regulation Techniques for Pharmacy Technicians",
+      "headers": [
+        "Technique",
+        "How It Works",
+        "When to Use It"
+      ]
+    },
+    {
+      "body": "After every difficult interaction, give yourself 30 seconds before serving the next customer. Take a breath, shake off the residual emotion, and reset. The next customer deserves a clean start, not the emotional overflow from the last one.",
+      "type": "callout",
+      "title": "The 30-Second Rule",
+      "variant": "tip"
+    },
+    {
+      "body": "Emotional regulation also means managing the cumulative stress of the shift, not just individual incidents. A single difficult customer is manageable. Five difficult customers in a row, combined with a short-staffed shift, a broken printer, and a missed lunch break, can push anyone to breaking point. The goal is not to be stoic — the goal is to notice when you are approaching your limit and take action before you cross it.",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Know your warning signs: irritability, sighing, rushing through tasks, making small errors, wanting the shift to end",
+        "Take your breaks: skipping breaks to 'power through' actually reduces your effectiveness",
+        "Ask for help: telling the pharmacist 'I am having a rough shift — can you take the next walk-in?' is not weakness",
+        "Hydrate and eat: basic physiological needs directly affect emotional resilience",
+        "Debrief after bad interactions: talking it through with a trusted colleague reduces emotional residue"
+      ],
+      "ordered": false
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "They are the same thing — both involve hiding your emotions",
+        "Regulation means feeling and choosing your response; suppression means pretending you do not feel anything",
+        "Regulation is for managers; suppression is for frontline staff",
+        "Regulation happens before the emotion; suppression happens after"
+      ],
+      "question": "What is the key difference between emotional regulation and emotional suppression?",
+      "explanation": "Emotional regulation involves acknowledging the emotion and consciously choosing how to respond. Emotional suppression involves pretending the emotion does not exist. Suppression is associated with burnout, leaked aggression, and decreased job satisfaction, while regulation supports long-term professional resilience.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 25
+}

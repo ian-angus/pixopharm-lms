@@ -1,0 +1,99 @@
+{
+  "id": "797310d1-1235-49ba-b579-b993561a72ad",
+  "module_id": "8da2e0ca-0c98-417f-86ed-27157562e5f6",
+  "title": "Look-Alike Sound-Alike (LASA) Drugs: The Silent Threat",
+  "content": [
+    {
+      "text": "When Drugs Look or Sound Too Similar",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Look-alike sound-alike (LASA) drugs are medications whose names look similar when written or sound similar when spoken. They represent one of the most persistent and dangerous sources of medication errors worldwide. The problem is compounded in the Caribbean, where multiple generic manufacturers supply the same molecules in packaging that can vary dramatically — or, worse, look nearly identical across different drugs entirely.",
+      "type": "text"
+    },
+    {
+      "term": "LASA Drugs (Look-Alike Sound-Alike)",
+      "type": "key-term",
+      "definition": "Medications whose names are visually or phonetically similar, creating a risk of confusion during prescribing, dispensing, or administration. Examples include hydrOXYzine / hydrALAZINE, predniSONE / prednisoLONE, and chlorproMAZINE / chlorproPAMIDE."
+    },
+    {
+      "body": "The Institute for Safe Medication Practices (ISMP) maintains a list of confused drug names that has become the global reference standard. In the Caribbean, this list must be supplemented with locally relevant LASA pairs, because the specific generic products available on any given island depend on which manufacturers have distribution agreements with local importers.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "hydrOXYzine (antihistamine)",
+          "hydrALAZINE (antihypertensive)",
+          "Dangerous blood pressure drop if antihistamine patient receives antihypertensive",
+          "High — both widely stocked in community pharmacies"
+        ],
+        [
+          "predniSONE",
+          "prednisoLONE",
+          "Different potency and metabolic conversion; incorrect substitution affects dosing",
+          "Very high — both used extensively for inflammatory conditions"
+        ],
+        [
+          "metFORMIN",
+          "metroNIDAZOLE",
+          "Diabetic patient receives antibiotic, missing diabetes management",
+          "High — both are essential medicines in the Caribbean"
+        ],
+        [
+          "amLODIPine",
+          "aMILoride",
+          "Calcium channel blocker vs. potassium-sparing diuretic — serious cardiovascular risk",
+          "Moderate — both used in hypertension management"
+        ],
+        [
+          "gliMEPIRide",
+          "glyBURIDE",
+          "Both are sulphonylureas but different dosing ranges — hypoglycaemia risk",
+          "High — diabetes is the most common NCD in the Caribbean"
+        ],
+        [
+          "cefTRIAXone",
+          "ceFAZolin",
+          "Different spectrum of activity and dosing; treatment failure possible",
+          "High — both commonly used injectable antibiotics"
+        ],
+        [
+          "chlorproMAZINE",
+          "chlorproPAMIDE",
+          "Antipsychotic confused with oral hypoglycaemic — severe hypoglycaemia risk",
+          "Moderate — both found in public hospital formularies"
+        ]
+      ],
+      "type": "table",
+      "caption": "Common LASA Drug Pairs Encountered in Caribbean Pharmacies",
+      "headers": [
+        "Drug A",
+        "Drug B",
+        "Risk",
+        "Caribbean Prevalence"
+      ]
+    },
+    {
+      "body": "When a brand-name drug goes off patent, multiple generic manufacturers produce the same molecule — often in similar-looking packaging. In the Caribbean, a pharmacy may stock generics from Indian, European, and North American manufacturers simultaneously. Different manufacturers' packages for the SAME drug may look different, while packages from the same manufacturer for DIFFERENT drugs may look confusingly similar. This 'packaging roulette' makes visual verification alone unreliable.",
+      "type": "callout",
+      "title": "The Caribbean Generic Challenge",
+      "variant": "danger"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "predniSONE / prednisoLONE",
+        "hydrOXYzine / hydrALAZINE",
+        "metFORMIN / metroNIDAZOLE",
+        "gliMEPIRide / glyBURIDE"
+      ],
+      "question": "Which of the following LASA drug pairs poses a risk of a patient receiving an antihypertensive instead of an antihistamine?",
+      "explanation": "HydrOXYzine is an antihistamine, while hydrALAZINE is an antihypertensive. Confusing these two can result in a patient receiving a blood pressure-lowering drug instead of an allergy medication, potentially causing dangerous hypotension — particularly risky in elderly patients.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 20
+}

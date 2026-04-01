@@ -1,0 +1,90 @@
+{
+  "id": "b956d500-2c54-4e9a-8e68-b9d5e1b82b06",
+  "module_id": "d1a5c2a4-b317-4ac6-8cd0-1637e571461c",
+  "title": "Blame Culture vs. Just Culture: Transforming How We Respond to Errors",
+  "content": [
+    {
+      "text": "From Blame to Learning",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "How an organisation responds to errors determines whether those errors are repeated. In a blame culture, errors are treated as individual failings — the person who made the mistake is reprimanded, shamed, or dismissed. This approach feels satisfying in the moment but is catastrophic for safety: it drives reporting underground, prevents systemic learning, and ensures that the same latent failures will produce the same errors with a different individual. A just culture, by contrast, recognises that most errors result from system failures and treats them as learning opportunities — while maintaining accountability for genuinely reckless behaviour.",
+      "type": "text"
+    },
+    {
+      "term": "Just Culture",
+      "type": "key-term",
+      "definition": "An organisational culture that distinguishes between honest human errors (consoled and supported), at-risk behaviour (coached and corrected), and reckless conduct (disciplined). In a just culture, staff are not punished for making honest mistakes within a flawed system, but are held accountable for wilful violations and reckless disregard for safety."
+    },
+    {
+      "rows": [
+        [
+          "Response to honest error",
+          "Punishment, reprimand, shaming",
+          "Support, system investigation, process improvement"
+        ],
+        [
+          "Reporting behaviour",
+          "Errors hidden, underreported",
+          "Errors reported openly, near-misses shared"
+        ],
+        [
+          "Learning outcome",
+          "Same errors recur with different individuals",
+          "System improvements prevent recurrence"
+        ],
+        [
+          "Staff morale",
+          "Fear, anxiety, defensive practice",
+          "Trust, psychological safety, proactive engagement"
+        ],
+        [
+          "Accountability",
+          "Individual blamed regardless of system factors",
+          "Individual accountability proportionate to intent: honest mistakes consoled, at-risk behaviour coached, reckless acts disciplined"
+        ],
+        [
+          "Patient safety",
+          "Declines over time (hidden errors, missed learning)",
+          "Improves continuously (transparent reporting, systemic fixes)"
+        ]
+      ],
+      "type": "table",
+      "caption": "Blame Culture vs. Just Culture Compared",
+      "headers": [
+        "Dimension",
+        "Blame Culture",
+        "Just Culture"
+      ]
+    },
+    {
+      "body": "Many Caribbean pharmacies, particularly small owner-operated businesses, default to blame culture because it feels natural and requires no formal systems. When the team is small — one pharmacist, one or two technicians — the person who made the error is obvious, and the temptation to blame is strong. Building a just culture in this environment requires deliberate effort, formal reporting procedures, and leadership commitment from the pharmacist-owner.",
+      "type": "callout",
+      "title": "The Caribbean Challenge",
+      "variant": "warning"
+    },
+    {
+      "body": "The just culture framework uses three categories to determine the appropriate response to an error. First, human error — an inadvertent action; the individual intended to do the right thing. The appropriate response is consolation, support, and system investigation. Second, at-risk behaviour — a conscious choice to take a shortcut or deviate from procedure, often because the individual believed the risk was insignificant or justified. The appropriate response is coaching, re-education, and removing the incentive for the shortcut. Third, reckless behaviour — a conscious disregard of substantial and unjustifiable risk. The appropriate response is disciplinary action.",
+      "type": "text"
+    },
+    {
+      "body": "The vast majority of medication errors — research suggests over 90% — fall into the human error category. The pharmacy team member intended to do the right thing but was failed by the system. Punishing these individuals does not prevent future errors; it only prevents future reporting.",
+      "type": "text"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Reckless behaviour — she should have refused to answer the walk-in patient",
+        "At-risk behaviour — she chose to answer the patient instead of finishing counting",
+        "Human error — she intended to do the right thing but was failed by a system that allows interruptions during dispensing",
+        "Not an error — interruptions are a normal part of pharmacy work"
+      ],
+      "question": "A pharmacy technician follows the standard dispensing procedure but makes a counting error because a walk-in patient interrupted her mid-count. Under a just culture framework, this is classified as:",
+      "explanation": "This is a human error within a flawed system. The technician did not choose to be interrupted — the system (lack of an 'interruption-free zone' policy) allowed the interruption to occur during a safety-critical task. The appropriate response is consolation and support for the technician, combined with a system change to prevent interruptions during dispensing.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 20
+}

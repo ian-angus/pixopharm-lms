@@ -1,0 +1,85 @@
+{
+  "id": "8475ac0f-f86e-41fb-aaca-2714758139e5",
+  "module_id": "30df726a-ab1c-402b-a4fd-52861a29b89b",
+  "title": "FEFO & FIFO: Stock Rotation Methods",
+  "content": [
+    {
+      "text": "Ensuring the Right Stock Moves First",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Stock rotation is the systematic practice of dispensing older stock before newer stock to minimise wastage due to expiry. In pharmacy, two methods are used: FEFO (First Expiry, First Out) and FIFO (First In, First Out). FEFO is the preferred method for pharmaceutical products because it is based on the expiry date, not the receipt date — and the two may differ if shipments arrive with varying remaining shelf life.",
+      "type": "text"
+    },
+    {
+      "term": "FEFO (First Expiry, First Out)",
+      "type": "key-term",
+      "definition": "A stock rotation method where products with the earliest expiry date are dispensed first, regardless of when they were received. This is the gold standard for pharmaceutical inventory management because it directly minimises expiry-related wastage. Example: A box of metformin received in January with a December 2025 expiry should be dispensed before a box received in March with a June 2026 expiry."
+    },
+    {
+      "body": "FIFO (First In, First Out) dispenses stock in the order it was received. While simpler to implement — especially in pharmacies without computerised systems — FIFO can lead to wastage if newer shipments happen to have shorter expiry dates than older stock already on the shelf. This occurs when manufacturers ship product from different batches, or when a supplier sends close-dated stock to clear their own inventory.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Basis",
+          "Expiry date",
+          "Date of receipt"
+        ],
+        [
+          "Wastage minimisation",
+          "Superior — directly targets shortest-dated stock",
+          "Good but not optimal — may miss short-dated newer arrivals"
+        ],
+        [
+          "Complexity",
+          "Higher — requires checking expiry dates at every stock placement",
+          "Lower — based on chronological order of receipt"
+        ],
+        [
+          "Best for",
+          "All pharmaceutical products",
+          "Non-perishable, non-pharmaceutical goods"
+        ],
+        [
+          "Caribbean recommendation",
+          "Required for all prescription medications",
+          "Acceptable for non-pharmaceutical items (bandages, gloves)"
+        ]
+      ],
+      "type": "table",
+      "caption": "FEFO vs. FIFO Comparison",
+      "headers": [
+        "Feature",
+        "FEFO",
+        "FIFO"
+      ]
+    },
+    {
+      "body": "When placing new stock on shelves, always check the expiry date of existing stock first. Place newer (longer-dated) stock BEHIND existing stock. Never simply place new stock in front. During every delivery, rotate the entire shelf: pull existing stock forward, place new stock at the back, then rearrange so the shortest-dated product is at the front. This takes an extra few minutes per delivery but saves thousands in expired stock annually.",
+      "type": "callout",
+      "title": "Practical FEFO Implementation",
+      "variant": "tip"
+    },
+    {
+      "body": "Both methods require discipline and consistency. The most common failure in stock rotation is 'topping up' — placing new stock on top of or in front of existing stock without checking expiry dates. This pushes older stock to the back where it expires unnoticed. Training, visual reminders, and periodic rotation audits are essential to maintaining FEFO discipline, especially in busy pharmacies with high stock turnover.",
+      "type": "text"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "The existing stock (March 2026) because it was received first",
+        "The new shipment (January 2026) because it has the earlier expiry date",
+        "It doesn't matter — dispense whichever is more convenient",
+        "Return the new shipment to the supplier because it has a shorter expiry"
+      ],
+      "question": "A pharmacy receives a new shipment of atorvastatin. The existing stock on the shelf expires in March 2026. The new shipment expires in January 2026. Under FEFO, which stock should be dispensed first?",
+      "explanation": "Under FEFO, the stock with the earliest expiry date is always dispensed first, regardless of receipt order. The new shipment (January 2026) must be placed in front of the existing stock (March 2026) to ensure it is dispensed first. This is exactly the scenario where FEFO differs from FIFO and prevents wastage.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 20
+}

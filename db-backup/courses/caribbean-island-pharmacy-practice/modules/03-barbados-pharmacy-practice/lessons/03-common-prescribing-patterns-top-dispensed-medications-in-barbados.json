@@ -1,0 +1,147 @@
+{
+  "id": "3e25fc4c-927f-47b4-87d8-888ba5b2017c",
+  "module_id": "eeaefebc-259f-42ce-824a-77332e5f4432",
+  "title": "Common Prescribing Patterns & Top Dispensed Medications in Barbados",
+  "content": [
+    {
+      "text": "What Barbados Prescribes Most",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Barbados has one of the highest life expectancies in the Caribbean (approximately 78 years), which means a large and growing elderly population managing multiple chronic conditions. The island's disease burden is heavily dominated by non-communicable diseases — hypertension, diabetes, cardiovascular disease, and chronic kidney disease — which drive the vast majority of prescribing. Barbados also has notable rates of certain conditions like sickle cell disease and kidney disease (the island has a disproportionately high rate of end-stage renal disease for its population size).",
+      "type": "text"
+    },
+    {
+      "text": "Top Dispensed Medications in Barbadian Pharmacies",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "rows": [
+        [
+          "1",
+          "Amlodipine 5mg/10mg",
+          "Calcium channel blocker",
+          "Hypertension"
+        ],
+        [
+          "2",
+          "Metformin 500mg/850mg",
+          "Biguanide",
+          "Type 2 diabetes"
+        ],
+        [
+          "3",
+          "Enalapril 5mg/10mg/20mg",
+          "ACE inhibitor",
+          "Hypertension, renal protection"
+        ],
+        [
+          "4",
+          "Simvastatin 20mg/40mg",
+          "Statin",
+          "Hyperlipidaemia"
+        ],
+        [
+          "5",
+          "Omeprazole 20mg",
+          "Proton pump inhibitor",
+          "GERD"
+        ],
+        [
+          "6",
+          "Hydrochlorothiazide 25mg",
+          "Thiazide diuretic",
+          "Hypertension"
+        ],
+        [
+          "7",
+          "Aspirin 81mg",
+          "Antiplatelet",
+          "Cardiovascular prevention"
+        ],
+        [
+          "8",
+          "Amoxicillin 250mg/500mg",
+          "Penicillin antibiotic",
+          "Bacterial infections"
+        ],
+        [
+          "9",
+          "Losartan 50mg/100mg",
+          "ARB",
+          "Hypertension, diabetic nephropathy"
+        ],
+        [
+          "10",
+          "Gliclazide 80mg",
+          "Sulphonylurea",
+          "Type 2 diabetes"
+        ],
+        [
+          "11",
+          "Salbutamol inhaler 100mcg",
+          "Beta-2 agonist",
+          "Asthma"
+        ],
+        [
+          "12",
+          "Furosemide 40mg",
+          "Loop diuretic",
+          "Heart failure, oedema"
+        ]
+      ],
+      "type": "table",
+      "caption": "Most Commonly Dispensed Medications in Barbados (approximate ranking)",
+      "headers": [
+        "Rank",
+        "Medication",
+        "Class",
+        "Primary Indication"
+      ]
+    },
+    {
+      "text": "Barbados-Specific Prescribing Observations",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "type": "list",
+      "items": [
+        "ACE inhibitors (Enalapril) are more prominent than in Jamaica or T&T — linked to the high prevalence of diabetic nephropathy and the renal-protective benefits of ACE inhibition",
+        "Simvastatin is the preferred statin on the BDS formulary (cost-driven); private pharmacies also dispense Atorvastatin and Rosuvastatin",
+        "Furosemide usage is higher than on other islands, reflecting Barbados's significant heart failure and renal disease population",
+        "Antibiotic prescribing is more conservative than in Jamaica or T&T; Barbados has invested in antibiotic stewardship programmes",
+        "Sickle cell disease management medications (Hydroxyurea, Folic acid) are a notable part of the BDS formulary",
+        "Barbados has a lower rate of herbal/traditional remedy use than Jamaica or T&T, though 'bush tea' culture exists"
+      ],
+      "ordered": false
+    },
+    {
+      "body": "Barbados has a disproportionately high rate of chronic kidney disease (CKD) and end-stage renal disease (ESRD). Many patients on your dispensing counter will be managing hypertension, diabetes, AND kidney disease simultaneously. This means you will frequently see prescriptions combining ACE inhibitors or ARBs (for renal protection), erythropoietin-stimulating agents (for renal anaemia), phosphate binders, and bicarbonate supplements. Understanding the renal medication regimen is especially valuable for pharmacy technicians in Barbados.",
+      "type": "callout",
+      "title": "Chronic Kidney Disease — A Barbadian Reality",
+      "variant": "info"
+    },
+    {
+      "term": "Diabetic Nephropathy",
+      "type": "key-term",
+      "definition": "Kidney damage caused by long-standing diabetes mellitus. It is a leading cause of chronic kidney disease and end-stage renal disease in Barbados. ACE inhibitors (like Enalapril) and ARBs (like Losartan) are prescribed both for blood pressure control and to slow the progression of diabetic kidney damage."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "It is the cheapest antihypertensive available in Barbados",
+        "Barbados has a high prevalence of diabetic nephropathy, and ACE inhibitors provide renal protection",
+        "Barbadian patients prefer the taste of Enalapril tablets",
+        "The PCJ mandates ACE inhibitors as first-line therapy"
+      ],
+      "question": "Why is Enalapril (an ACE inhibitor) more prominently prescribed in Barbados compared to some other Caribbean islands?",
+      "explanation": "Barbados has a disproportionately high rate of chronic kidney disease and diabetic nephropathy. ACE inhibitors like Enalapril are prescribed both for blood pressure control and for their proven renal-protective benefits in patients with diabetic kidney disease, making them more prominent in Barbadian prescribing than on some other islands.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 3,
+  "duration_minutes": 25
+}

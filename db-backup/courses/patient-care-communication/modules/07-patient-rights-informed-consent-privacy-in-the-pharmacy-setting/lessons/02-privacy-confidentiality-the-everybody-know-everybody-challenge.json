@@ -1,0 +1,173 @@
+{
+  "id": "826eb063-1be1-4550-aa66-53fb5d9a4bf1",
+  "module_id": "710621ab-0904-462c-84b8-da3229d5c8dc",
+  "title": "Privacy & Confidentiality: The 'Everybody Know Everybody' Challenge",
+  "content": [
+    {
+      "text": "Confidentiality in Communities Where There Are No Strangers",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Nowhere in the world is pharmacy confidentiality more challenging — or more important — than in small Caribbean island communities. In a village of 2,000 people, the pharmacy technician dispensing medications may know every patient personally. They may attend the same church, send their children to the same school, shop at the same market, and socialise at the same events. In this environment, maintaining absolute confidentiality is both critically important and exceptionally difficult.",
+      "type": "text"
+    },
+    {
+      "body": "Breaches of pharmacy confidentiality in small communities can have devastating consequences. A patient's HIV status becoming public knowledge can lead to social isolation, family rejection, loss of employment, and even violence. A patient's mental health medication being disclosed can result in stigma that affects their children's social standing. In the Caribbean, a breach of confidentiality is not just a professional failing — it can destroy a life.",
+      "type": "text"
+    },
+    {
+      "term": "Pharmacy Confidentiality",
+      "type": "key-term",
+      "definition": "The ethical and legal obligation to protect all patient health information encountered during pharmacy practice, including but not limited to: diagnoses, medications prescribed, medication history, health conditions, personal details, and any information shared during counselling interactions. This obligation applies to all pharmacy staff and continues indefinitely — even after the staff member leaves the pharmacy or the patient stops visiting."
+    },
+    {
+      "rows": [
+        [
+          "Personal relationships",
+          "You are dispensing ARVs to your neighbour who you see every day",
+          "Treat every prescription as strictly professional. Do not change your social behaviour toward the patient. NEVER reference their health in any social context."
+        ],
+        [
+          "Gossip culture",
+          "A colleague says: 'You would never guess who I just dispensed for...'",
+          "Stop the conversation immediately. Report the breach to the pharmacist. This is a terminable offence."
+        ],
+        [
+          "Family inquiries",
+          "A patient's mother calls asking what medication her adult child is taking",
+          "Decline to provide any information without the patient's explicit consent, regardless of family relationship. 'I am sorry, I cannot share patient information without their permission.'"
+        ],
+        [
+          "Third-party observation",
+          "A customer recognises the medication being dispensed to the patient in front of them",
+          "Use private dispensing areas. Call patients by number. Keep medication packaging face-down on the counter."
+        ],
+        [
+          "Social media",
+          "A pharmacy staff member posts a photo from inside the pharmacy showing patient names on prescriptions in the background",
+          "Zero tolerance policy. No photography inside the dispensary. No social media posts that could identify patients."
+        ]
+      ],
+      "type": "table",
+      "caption": "Confidentiality Challenges Specific to Small Caribbean Communities",
+      "headers": [
+        "Challenge",
+        "Scenario",
+        "Protocol"
+      ]
+    },
+    {
+      "body": "There is no 'small' breach of confidentiality. Telling your spouse that a particular person came to the pharmacy today IS a breach. Adjusting your social behaviour toward someone after learning their health status IS a breach. Even confirming that someone IS a patient at your pharmacy is a breach if the person asking does not have authorisation. In the Caribbean, where information travels at the speed of village gossip, every word matters.",
+      "type": "callout",
+      "title": "Confidentiality Is ABSOLUTE — No Exceptions",
+      "variant": "danger"
+    },
+    {
+      "text": "Designing a Privacy-Compliant Pharmacy Environment",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "type": "list",
+      "items": [
+        "Private counselling area: A separate, enclosed space away from the main counter where sensitive conversations can occur without being overheard",
+        "Ticketing system: Call patients by number rather than name to avoid announcing who is being served",
+        "Prescription facing: Keep prescription labels and medication packaging face-down on counters to prevent other customers from reading them",
+        "Computer screen privacy: Use privacy filters on dispensary screens to prevent patients from seeing other patients' records",
+        "Conversation volume: Train all staff to keep pharmacy conversations at appropriate volume — a whispered conversation may actually attract more attention than a normal-volume one",
+        "Sealed dispensing bags: Use opaque bags so medication names are not visible when patients leave the pharmacy",
+        "Confidentiality agreements: All staff, including cleaners, delivery drivers, and temporary staff, must sign confidentiality agreements"
+      ],
+      "ordered": false
+    },
+    {
+      "type": "scenario-simulation",
+      "nodes": [
+        {
+          "id": "start",
+          "text": "You are working at the only pharmacy in a small Tobago village (population 3,500). Mrs. Charles, a well-known community figure, comes to collect a new prescription. You recognise the medication as an antidepressant. As you prepare it, her son — who you know works as a teacher at the local school — calls the pharmacy and asks: 'My mother came in today. What medication did the doctor prescribe for her?' What do you do?",
+          "choices": [
+            {
+              "label": "Tell the son — he is her family and is probably concerned about her health",
+              "feedback": "Mrs. Charles is an adult. You cannot disclose her medication without her explicit consent, regardless of the caller's relationship.",
+              "nextNodeId": "told-son"
+            },
+            {
+              "label": "Politely decline: 'I am sorry, I cannot share patient information without their direct permission. You should ask your mother directly.'",
+              "feedback": "Correct. You protected Mrs. Charles's confidentiality while redirecting the son to an appropriate source — his mother.",
+              "isOptimal": true,
+              "nextNodeId": "declined-son"
+            },
+            {
+              "label": "Confirm she visited but refuse to name the medication",
+              "feedback": "Even confirming that Mrs. Charles visited the pharmacy is a breach of confidentiality. The son may deduce she is on a new medication, which could lead to further probing.",
+              "nextNodeId": "partial-breach"
+            }
+          ]
+        },
+        {
+          "id": "told-son",
+          "text": "The son tells his wife, who mentions it at a PTA meeting. Within a week, the entire village knows Mrs. Charles is 'on tablets for she head.' She stops taking the medication, her depression worsens, and she withdraws from community life. She files a complaint with the Pharmacy Board.",
+          "isEnd": true,
+          "outcome": "failure",
+          "summary": "Family relationship does not equal authorisation. An adult patient's medication information can ONLY be shared with their explicit consent. This breach destroyed Mrs. Charles's trust, her treatment, and potentially your career."
+        },
+        {
+          "id": "declined-son",
+          "text": "Good. Mrs. Charles collects her prescription and thanks you for being professional. The next day, you see Mrs. Charles at the market. She waves and smiles. Your colleague at the pharmacy says to you: 'Mrs. Charles looked upset yesterday when she came in. What was wrong with her?' How do you respond?",
+          "choices": [
+            {
+              "label": "'She is fine — just a routine prescription.' (Minimise to end the conversation)",
+              "feedback": "Even confirming that Mrs. Charles visited and characterising her visit as 'routine' is sharing patient information. You revealed she has a prescription and that you assessed it as routine.",
+              "nextNodeId": "minimise"
+            },
+            {
+              "label": "'I cannot discuss any patient's visit or prescription — you know the rules.'",
+              "feedback": "Perfect. You shut down the gossip immediately and reminded your colleague of their professional obligations.",
+              "isOptimal": true,
+              "nextNodeId": "success"
+            }
+          ]
+        },
+        {
+          "id": "partial-breach",
+          "text": "The son now knows his mother visited the pharmacy for a new medication. He confronts her at home: 'What tablet you taking now? What wrong with you?' Mrs. Charles feels her privacy was violated — you confirmed information she did not want shared. She considers changing pharmacies, but there is no other pharmacy in the village.",
+          "isEnd": true,
+          "outcome": "partial",
+          "summary": "Even confirming a patient visit is a breach of confidentiality. The correct response is to neither confirm nor deny, and redirect the inquirer to speak with the patient directly."
+        },
+        {
+          "id": "minimise",
+          "text": "Your colleague mentions at lunch that Mrs. Charles was in with 'a routine prescription.' Another staff member, who knows Mrs. Charles's daughter, casually mentions it. The information reaches Mrs. Charles's church group by Sunday. While no one knows the specific medication, the knowledge that she is 'on something new' generates speculation.",
+          "isEnd": true,
+          "outcome": "partial",
+          "summary": "There is no such thing as a harmless or 'minor' disclosure. Even characterising a visit as 'routine' reveals that there was a visit and a prescription. In small communities, even this minimal information can trigger a gossip chain."
+        },
+        {
+          "id": "success",
+          "text": "Your colleague respects the boundary. Mrs. Charles continues to visit the pharmacy, trusts the team with her health, and takes her antidepressant consistently. At her three-month check-up, her depression has improved significantly. She tells you: 'Thank you for being a safe place. I could not manage this without knowing my business stays between us.'",
+          "isEnd": true,
+          "outcome": "success",
+          "summary": "Absolute confidentiality — even in the face of well-meaning curiosity from colleagues and family — is the foundation of patient trust. In small communities, this trust is the pharmacy's most valuable asset."
+        }
+      ],
+      "title": "Confidentiality Decision Simulator",
+      "description": "Navigate the complex confidentiality challenges that arise in a small Caribbean island pharmacy."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Provide the information — spouses have a right to know",
+        "Provide the information only if the spouse sounds concerned",
+        "Politely decline and advise the spouse to ask the patient directly",
+        "Read the medication names but refuse to explain what they are for"
+      ],
+      "question": "A patient's spouse calls the pharmacy asking what medications their partner is taking. The patient has NOT given consent for information sharing. What should you do?",
+      "explanation": "Patient health information cannot be shared with anyone — including spouses, parents of adult children, or other family members — without the patient's explicit consent. The correct response is to politely decline and redirect the caller to speak with the patient directly. Being a spouse does not confer automatic access to health information.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 25
+}

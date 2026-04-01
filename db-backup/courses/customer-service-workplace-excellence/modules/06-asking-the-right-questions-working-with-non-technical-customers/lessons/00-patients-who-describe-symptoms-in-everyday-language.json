@@ -1,0 +1,100 @@
+{
+  "id": "365e42e9-b0b4-410f-8290-fc9822cdc445",
+  "module_id": "de02aa8f-49a7-4ad1-92e5-bc0b16c14f1c",
+  "title": "Patients Who Describe Symptoms in Everyday Language",
+  "content": [
+    {
+      "text": "'Meh Belly Hot' — Understanding How Patients Really Talk",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Patients do not walk into a Caribbean pharmacy and say, 'I am experiencing dyspepsia with associated epigastric burning.' They say, 'Meh belly hot.' Or 'Something eating me inside.' Or 'Ah feel like meh head going to burst.' The language is vivid, metaphorical, and deeply rooted in Caribbean culture. If you cannot translate between patient language and medical concepts, you cannot serve them effectively.",
+      "type": "text"
+    },
+    {
+      "body": "This is not about patients being uneducated — it is about language being cultural. A retired professor might say 'meh sugar high' rather than 'I am experiencing hyperglycaemia.' A nurse might describe her own symptoms in Creole at a pharmacy even though she uses medical terminology at work. The pharmacy counter is an informal space, and people communicate in their most comfortable register. Your job is to meet them there.",
+      "type": "text"
+    },
+    {
+      "term": "Health Literacy",
+      "type": "key-term",
+      "definition": "The ability to obtain, understand, and use health information to make informed decisions. Health literacy exists on a spectrum — even highly educated people may have low health literacy when it comes to their own conditions. In the Caribbean, cultural and linguistic factors add additional layers to health literacy challenges."
+    },
+    {
+      "rows": [
+        [
+          "'Meh belly hot'",
+          "Heartburn, acid reflux, dyspepsia, or gastritis",
+          "'Where exactly — high up or down low? Does it happen after eating?'"
+        ],
+        [
+          "'Meh sugar high / meh sugar running'",
+          "Elevated blood glucose — diabetes concern",
+          "'When did you last check? Are you taking your medication regularly?'"
+        ],
+        [
+          "'Meh pressure high / pressure riding me'",
+          "Elevated blood pressure — hypertension",
+          "'Do you have a BP monitor at home? Any headaches or dizziness?'"
+        ],
+        [
+          "'Something eating me inside'",
+          "Internal pain — could be ulcer, anxiety, or unexplained chronic pain",
+          "'Can you show me where you feel it? How long has it been going on?'"
+        ],
+        [
+          "'Ah feeling weak / ah feeling faint'",
+          "Dizziness, fatigue, low blood pressure, anaemia, or low blood sugar",
+          "'Did you eat today? Any new medications? Do you feel like you might faint?'"
+        ],
+        [
+          "'Meh joints stiff / meh bones hurting'",
+          "Arthritis, joint pain, musculoskeletal complaints",
+          "'Which joints? Worse in the morning or after activity?'"
+        ],
+        [
+          "'Meh head going to burst'",
+          "Severe headache — migraine, tension headache, or hypertension-related",
+          "'Is it one side or both? Any vision changes? How long?'"
+        ],
+        [
+          "'Ah cyah sleep / sleep doh come'",
+          "Insomnia — could be stress, anxiety, pain, or medication side effect",
+          "'How long has this been going on? Anything changed recently — stress, new medication?'"
+        ]
+      ],
+      "type": "table",
+      "caption": "Common Caribbean Vernacular Health Descriptions and Likely Medical Meanings",
+      "headers": [
+        "Patient Says",
+        "Likely Meaning",
+        "Follow-Up Questions to Ask"
+      ]
+    },
+    {
+      "body": "When a patient says 'meh sugar running,' do not correct them and say 'you mean your blood glucose is elevated.' Mirror their language: 'Your sugar running — are you taking your tablets?' This builds trust and makes them feel heard. Translation happens in your head, not out loud.",
+      "type": "callout",
+      "title": "Never Correct Their Language",
+      "variant": "tip"
+    },
+    {
+      "body": "The ability to translate between patient language and medical context is one of the most valuable skills a Caribbean pharmacy technician can develop. It bridges the gap between the clinical world and the community, making healthcare more accessible for everyone. And it is a skill that pharmacists trained overseas may lack — making you, as a locally trained technician, uniquely valuable.",
+      "type": "text"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Recommend a painkiller and send them on their way",
+        "Ask follow-up questions: 'Can you show me where? How long has it been going on?'",
+        "Tell them they need to see a doctor because that description is too vague",
+        "Correct them: 'Can you be more specific in medical terms?'"
+      ],
+      "question": "A patient says 'something eating me inside.' What is the best initial response?",
+      "explanation": "Asking clarifying questions respects the patient's language while gathering the information needed to help them. The description is vague, so follow-up questions narrow down the potential issue. Never dismiss, correct, or redirect a patient for using everyday language.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 20
+}

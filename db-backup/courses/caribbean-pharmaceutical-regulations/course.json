@@ -1,0 +1,22 @@
+{
+  "id": "cf53d538-39c1-4093-8a18-62c37abd6b25",
+  "title": "Caribbean Pharmaceutical Regulations",
+  "slug": "caribbean-pharmaceutical-regulations",
+  "description": "Navigate the regulatory environment governing pharmaceutical practice across the Caribbean.",
+  "skill_level": "Intermediate",
+  "duration_weeks": 5,
+  "icon": "Scale",
+  "color": "amber",
+  "prerequisites": [
+    "foundations-pharmacy-practice"
+  ],
+  "what_youll_learn": [
+    "Explain CARICOM pharmaceutical standards",
+    "Interpret controlled substance schedules",
+    "Ensure import/export compliance",
+    "Prepare for regulatory inspection",
+    "Differentiate national frameworks"
+  ],
+  "status": "published",
+  "order": 6
+}

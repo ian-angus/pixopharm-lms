@@ -1,0 +1,147 @@
+[
+  {
+    "id": "9aa2b760-eea1-4b8d-b408-14192ac3f68d",
+    "module_id": "5f78ea4a-5416-4877-9c32-764e4bb0ecb3",
+    "question": "What is e-prescribing?",
+    "options": [
+      "Printing prescriptions on an electronic printer",
+      "A system where prescribers create and send prescriptions electronically directly to the pharmacy's dispensing system",
+      "Emailing a photograph of a handwritten prescription",
+      "Using a calculator to check prescription doses"
+    ],
+    "correct_answer": 1,
+    "explanation": "E-prescribing is a system where prescribers create prescriptions electronically and transmit them directly to the pharmacy's dispensing system. This eliminates paper handling, reduces transcription errors, enables automatic interaction checking at the point of prescribing, and creates comprehensive audit trails.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "d380b656-98cb-4cc4-881a-f642de871a60",
+    "module_id": "5f78ea4a-5416-4877-9c32-764e4bb0ecb3",
+    "question": "How could telepharmacy improve pharmaceutical care in the Caribbean?",
+    "options": [
+      "By replacing all pharmacy technicians with robots",
+      "By allowing pharmacists to remotely verify prescriptions and counsel patients on islands or in rural areas without local pharmacist coverage",
+      "By eliminating the need for any physical pharmacies",
+      "By providing free medications to all patients"
+    ],
+    "correct_answer": 1,
+    "explanation": "Telepharmacy allows pharmacists to verify prescriptions, counsel patients, and oversee dispensing remotely via telecommunications. In the Caribbean, where some islands lack resident pharmacists and rural areas have limited access, telepharmacy can dramatically improve access to pharmaceutical care.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "348b987f-e168-496e-8409-ab28dfbfee3d",
+    "module_id": "5f78ea4a-5416-4877-9c32-764e4bb0ecb3",
+    "question": "What is blockchain's primary potential benefit for Caribbean pharmaceutical supply chains?",
+    "options": [
+      "Making medications cheaper to manufacture",
+      "Creating tamper-proof, transparent tracking of medications from manufacturer to patient, combating counterfeiting",
+      "Eliminating the need for pharmacists to check medications",
+      "Automatically curing diseases"
+    ],
+    "correct_answer": 1,
+    "explanation": "Blockchain creates a tamper-proof, transparent record of every transaction in the supply chain. For the Caribbean, where medications pass through multiple international intermediaries, this helps verify authenticity and combat counterfeit medications, which the WHO estimates affect up to 10% of medicines in developing countries.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "bca62972-feb2-4a31-a11e-9ce4d97e1769",
+    "module_id": "5f78ea4a-5416-4877-9c32-764e4bb0ecb3",
+    "question": "Why is pharmacogenomics particularly relevant to the Caribbean?",
+    "options": [
+      "All Caribbean patients have identical genetics",
+      "The Caribbean's genetically diverse population means drug metabolism varies significantly, making personalised medicine especially valuable",
+      "Pharmacogenomic testing is mandatory in all Caribbean countries",
+      "Caribbean pharmacies already use pharmacogenomics daily"
+    ],
+    "correct_answer": 1,
+    "explanation": "The Caribbean's extraordinary genetic diversity — reflecting African, Indian, European, Chinese, and Indigenous heritage — means significant variation in drug metabolism enzymes. Pharmacogenomics could enable truly personalised medication management, addressing differences like CYP2D6 ultra-rapid metabolism that are more common in certain populations.",
+    "order_index": 3,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "analyze"
+  },
+  {
+    "id": "2ec97a0f-5ff3-4923-aa55-4e48ddebd68e",
+    "module_id": "5f78ea4a-5416-4877-9c32-764e4bb0ecb3",
+    "question": "Which emerging technology is estimated to be closest to meaningful Caribbean pharmacy adoption (2-5 year timeline)?",
+    "options": [
+      "Blockchain supply chain tracking",
+      "Robotic dispensing for community pharmacies",
+      "AI-powered medication adherence apps",
+      "Routine pharmacogenomic testing"
+    ],
+    "correct_answer": 2,
+    "explanation": "AI-powered medication adherence apps are estimated to be the closest to meaningful Caribbean adoption (2-5 years) due to high smartphone penetration across the region. Blockchain, robotic dispensing, and routine pharmacogenomics all have longer timelines due to infrastructure, cost, and development requirements.",
+    "order_index": 4,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "evaluate"
+  },
+  {
+    "id": "7207f063-a1dd-4774-9f1f-356ef96a3f65",
+    "module_id": "5f78ea4a-5416-4877-9c32-764e4bb0ecb3",
+    "question": "What is the most valuable long-term skill for a pharmacy technician in an era of rapid technological change?",
+    "options": [
+      "Memorising the features of every current AI tool",
+      "The ability to learn, evaluate, and adapt to new technologies as they emerge",
+      "Avoiding all technology to maintain traditional skills",
+      "Becoming a software developer"
+    ],
+    "correct_answer": 1,
+    "explanation": "The ability to learn, critically evaluate, and adapt to new technologies is the most valuable long-term skill. Specific tools and systems change, but this meta-skill — learning how to learn — remains relevant throughout a pharmacy technician's entire career.",
+    "order_index": 5,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "evaluate"
+  },
+  {
+    "id": "4e49275e-090e-46ef-a3b3-ce5e83b93801",
+    "module_id": "5f78ea4a-5416-4877-9c32-764e4bb0ecb3",
+    "question": "Which of the following contributes to Continuing Professional Development (CPD) in pharmacy technology? Select ALL that apply.",
+    "options": [
+      "Completing PIXOPHARM AI courses",
+      "Attending vendor training webinars on pharmacy software",
+      "Teaching colleagues how to use digital tools",
+      "Documenting technology skills learned in a CPD log",
+      "Using social media for personal entertainment"
+    ],
+    "correct_answer": 0,
+    "explanation": "Completing formal courses (PIXOPHARM), attending vendor training, teaching colleagues (peer education), and maintaining a CPD log all contribute to continuing professional development. Using social media for personal entertainment does not count as CPD, though professional networking on social media could.",
+    "order_index": 6,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "b818d285-de17-4dce-95aa-6867f244a23d",
+    "module_id": "5f78ea4a-5416-4877-9c32-764e4bb0ecb3",
+    "question": "The COVID-19 pandemic had what effect on digital health adoption in the Caribbean?",
+    "options": [
+      "It slowed down digital health adoption",
+      "It had no effect on digital health adoption",
+      "It accelerated digital health adoption, particularly telepharmacy and remote services",
+      "It led to the banning of digital health tools"
+    ],
+    "correct_answer": 2,
+    "explanation": "The COVID-19 pandemic significantly accelerated digital health adoption across the Caribbean, particularly telepharmacy, remote consultation, and electronic prescription processing. Necessity drove innovation, and many of these changes are expected to persist and expand post-pandemic.",
+    "order_index": 7,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  }
+]

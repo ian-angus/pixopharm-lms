@@ -1,0 +1,69 @@
+{
+  "id": "25b5fa04-3789-4114-9c58-15e6c38d31b3",
+  "module_id": "e41c6408-ecd5-4edc-b518-e7ac682ec96d",
+  "title": "Medication Selection & Accuracy Checks",
+  "content": [
+    {
+      "text": "Choosing the Right Medication Every Time",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Look-Alike, Sound-Alike (LASA) medications are one of the leading causes of dispensing errors worldwide. Medications with similar names or similar packaging can be easily confused, especially during busy periods. Caribbean pharmacies face an additional challenge: the same generic medication may be sourced from multiple international manufacturers with different packaging, colours, and tablet appearances.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Metformin (diabetes)",
+          "Metoprolol (blood pressure)",
+          "Similar 'Met-' prefix — both commonly dispensed"
+        ],
+        [
+          "Losartan (blood pressure)",
+          "Lisinopril (blood pressure)",
+          "Both are common antihypertensives starting with 'L'"
+        ],
+        [
+          "Prednisolone (steroid)",
+          "Prednisone (steroid)",
+          "Nearly identical names, different pharmacokinetics"
+        ],
+        [
+          "Hydroxyzine (antihistamine)",
+          "Hydralazine (blood pressure)",
+          "Similar 'Hydr-' prefix"
+        ],
+        [
+          "Chlorpromazine (antipsychotic)",
+          "Chlorpropamide (diabetes)",
+          "Nearly identical first 10 letters"
+        ]
+      ],
+      "type": "table",
+      "caption": "Common LASA Medication Pairs in Caribbean Pharmacy",
+      "headers": [
+        "Drug 1",
+        "Drug 2",
+        "Risk"
+      ]
+    },
+    {
+      "body": "Tall Man Lettering uses uppercase letters to highlight the differences between look-alike drug names: metFORMIN vs metOPROLOL, predniSONE vs prednisoLONE, hydrOXYzine vs hydrALAZINE. Many Caribbean pharmacies are now adopting this system on shelf labels and computer systems. Learn to recognise and use it.",
+      "type": "callout",
+      "title": "Tall Man Lettering",
+      "variant": "warning"
+    },
+    {
+      "text": "The Counting and Measuring Process",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Accurate counting and measuring is a core technical skill for pharmacy technicians. Use a clean counting tray and spatula for tablets and capsules. For liquids, use appropriate graduated measures. Never estimate, rush, or pour 'by eye'. In Caribbean pharmacies where air conditioning may be inconsistent, be aware that humidity can cause tablets to stick together or become difficult to count.",
+      "type": "text"
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 15
+}

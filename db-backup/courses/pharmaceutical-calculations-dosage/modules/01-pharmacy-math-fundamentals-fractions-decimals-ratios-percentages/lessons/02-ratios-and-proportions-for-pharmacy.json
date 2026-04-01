@@ -1,0 +1,109 @@
+{
+  "id": "e8c7bb09-60aa-4641-90fa-26aa86f558fb",
+  "module_id": "a10da8b5-6ddf-4b8e-9a92-c4055fb72eed",
+  "title": "Ratios and Proportions for Pharmacy",
+  "content": [
+    {
+      "text": "Ratios: Expressing Relationships Between Quantities",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "A ratio expresses the relationship between two quantities. In pharmacy, ratios appear in drug concentrations (e.g., 1:1000 adrenaline means 1 g of drug per 1000 mL of solution), dilution instructions (e.g., dilute 1:4 means 1 part concentrate to 4 parts diluent), and compounding recipes. Mastering ratios is essential for every pharmacy technician working in the Caribbean, where compounding is still a significant part of daily practice in many community pharmacies.",
+      "type": "text"
+    },
+    {
+      "term": "Ratio Strength",
+      "type": "key-term",
+      "definition": "A way of expressing the concentration of a weak solution or liquid preparation. Written as 1:X, it means 1 g of solute in X mL of solution (for liquids) or 1 g of active ingredient in X g of product (for solids). Example: 1:10,000 potassium permanganate solution contains 1 g per 10,000 mL."
+    },
+    {
+      "text": "Setting Up Proportions",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "A proportion states that two ratios are equal. The most common pharmacy calculation method — ratio and proportion — uses this principle. If you know three of the four values in a proportion, you can solve for the unknown. Format: a/b = c/d, where a×d = b×c (cross-multiplication).",
+      "type": "text"
+    },
+    {
+      "body": "Worked example: If 5 mL of a solution contains 250 mg of amoxicillin, how many milligrams are in 7.5 mL? Set up the proportion: 250 mg / 5 mL = x mg / 7.5 mL. Cross-multiply: 250 × 7.5 = 5 × x. So 1875 = 5x, and x = 375 mg. Therefore 7.5 mL contains 375 mg of amoxicillin.",
+      "type": "text"
+    },
+    {
+      "body": "You will frequently encounter ratio strengths in Caribbean pharmacies when dealing with antiseptic solutions. Chlorhexidine 1:5000 (used for wound irrigation at UHWI Jamaica) contains 1 g per 5000 mL, equivalent to 0.02% w/v. Potassium permanganate 1:10,000 is commonly used for skin conditions in Trinidad's dermatology clinics. Understanding how to convert between ratio strength, percentage, and mg/mL is a daily requirement.",
+      "type": "callout",
+      "title": "Ratio Strength in Caribbean Practice",
+      "variant": "info"
+    },
+    {
+      "text": "Converting Between Ratio Strength and Percentage",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "To convert ratio strength to percentage: divide 1 by the ratio denominator and multiply by 100. Example: 1:1000 = (1 ÷ 1000) × 100 = 0.1%. To convert percentage to ratio strength: divide 100 by the percentage. Example: 0.05% = 100 ÷ 0.05 = 1:2000.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Adrenaline injection (anaphylaxis)",
+          "1:1,000",
+          "0.1%",
+          "1 mg/mL"
+        ],
+        [
+          "Adrenaline injection (cardiac)",
+          "1:10,000",
+          "0.01%",
+          "0.1 mg/mL"
+        ],
+        [
+          "Chlorhexidine skin cleanser",
+          "1:5,000",
+          "0.02%",
+          "0.2 mg/mL"
+        ],
+        [
+          "Potassium permanganate soak",
+          "1:10,000",
+          "0.01%",
+          "0.1 mg/mL"
+        ],
+        [
+          "Silver nitrate solution",
+          "1:200",
+          "0.5%",
+          "5 mg/mL"
+        ]
+      ],
+      "type": "table",
+      "caption": "Common Ratio Strengths in Caribbean Pharmacy",
+      "headers": [
+        "Preparation",
+        "Ratio Strength",
+        "Percentage",
+        "mg/mL"
+      ]
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "0.001 mg of adrenaline",
+        "0.01 mg of adrenaline",
+        "0.1 mg of adrenaline",
+        "1 mg of adrenaline"
+      ],
+      "question": "Adrenaline 1:1000 means that each millilitre contains:",
+      "explanation": "A ratio strength of 1:1000 means 1 g per 1000 mL. Since 1 g = 1000 mg, this equals 1000 mg per 1000 mL = 1 mg per mL. This is a critical ratio to memorise — adrenaline is a life-saving emergency medication and dosing errors can be fatal. The 1:10,000 concentration (0.1 mg/mL) is used in cardiac arrest, while 1:1,000 (1 mg/mL) is used for anaphylaxis.",
+      "correctIndex": 3
+    },
+    {
+      "body": "Practice converting between ratio strengths, percentages, and mg/mL until these conversions become automatic. In an emergency situation — such as anaphylaxis in a community pharmacy — there is no time to pull out a calculator. You must know instantly that 1:1000 adrenaline = 1 mg/mL.",
+      "type": "text"
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 30
+}

@@ -1,0 +1,100 @@
+{
+  "id": "506f172c-ba6b-468b-a589-28c30464dab9",
+  "module_id": "17041265-a6b2-423a-b63e-694a6ecc358e",
+  "title": "HIV, Mental Health & Stigma in Caribbean Pharmacy",
+  "content": [
+    {
+      "text": "The Weight of Stigma in Caribbean Healthcare",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Stigma kills. Not metaphorically — literally. In the Caribbean, stigma around HIV, mental illness, and other conditions causes patients to avoid testing, refuse treatment, hide their medications, and suffer in silence. The Caribbean has the second-highest HIV prevalence rate of any region outside sub-Saharan Africa, yet stigma remains one of the greatest barriers to treatment and viral suppression.",
+      "type": "text"
+    },
+    {
+      "body": "For pharmacy technicians, stigma manifests at the dispensing counter: the patient who whispers their request, the patient who sends someone else to collect their antiretrovirals, the patient who asks for a plain bag so no one sees the medication name, the patient who simply never fills the prescription at all. Recognising and addressing stigma is not a soft skill — it is a clinical skill that affects viral load, disease progression, and mortality.",
+      "type": "text"
+    },
+    {
+      "term": "Health-Related Stigma",
+      "type": "key-term",
+      "definition": "A social process of devaluation, judgement, and discrimination directed toward individuals based on a health condition. In the Caribbean, particularly severe stigma is associated with HIV/AIDS, mental illness, sexually transmitted infections, and substance use disorders. Stigma operates at individual (self-stigma), interpersonal (social stigma), and institutional (systemic stigma) levels."
+    },
+    {
+      "rows": [
+        [
+          "HIV/AIDS",
+          "Association with promiscuity, homosexuality, and 'immorality'; fear of contagion",
+          "Patients avoid collecting ARVs, skip refills, hide medications, request unmarked packaging",
+          "Dispense ARVs with identical routine to all other medications; use private counselling areas; never announce medication names aloud"
+        ],
+        [
+          "Mental illness",
+          "'Madness' stigma; belief that mental illness is spiritual punishment or personal weakness",
+          "Patients may refuse to collect psychiatric medications or claim they are for someone else",
+          "Normalise mental health medication; use terms like 'mood medication' or 'sleep medication' if patient prefers; never question the prescription openly"
+        ],
+        [
+          "Sexually transmitted infections",
+          "Association with promiscuity; shame and secrecy",
+          "Patients may avoid pharmacies where they are known; may not complete antibiotic courses due to embarrassment about refills",
+          "Treat STI prescriptions identically to any other; offer discreet packaging; ensure full course dispensing with clear instructions"
+        ],
+        [
+          "Substance use disorders",
+          "Viewed as moral failure rather than medical condition",
+          "Patients may be treated poorly by staff; may avoid pharmacy-based addiction services",
+          "Treat with the same professionalism and respect as any patient; recognise addiction as a chronic medical condition"
+        ],
+        [
+          "Erectile dysfunction",
+          "Seen as threat to masculinity; embarrassment",
+          "Patients, especially older men, may avoid filling prescriptions or request alternatives through informal channels",
+          "Maintain a matter-of-fact professional demeanour; counsel in private; never make light of the condition"
+        ]
+      ],
+      "type": "table",
+      "caption": "Stigmatised Conditions in Caribbean Communities",
+      "headers": [
+        "Condition",
+        "Nature of Stigma",
+        "Impact on Pharmacy Interactions",
+        "Destigmatisation Strategy"
+      ]
+    },
+    {
+      "body": "Stigma is amplified exponentially in small island communities. In a town of 3,000 people, the pharmacy technician dispensing ARVs may be the patient's church member, their child's schoolmate's parent, or their neighbour. The fear that 'people will find out' is not paranoia — it is a realistic assessment of how information travels in small communities. This is why ABSOLUTE confidentiality is the single most important professional obligation in Caribbean pharmacy.",
+      "type": "callout",
+      "title": "The 'Small Island' Amplifier",
+      "variant": "danger"
+    },
+    {
+      "text": "HIV in the Caribbean: The Numbers",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "The Caribbean has approximately 330,000 people living with HIV. The region has the second-highest HIV prevalence rate outside of sub-Saharan Africa. While antiretroviral therapy (ART) has transformed HIV from a death sentence to a manageable chronic condition, stigma remains the single greatest barrier to testing, treatment initiation, and adherence in the Caribbean. UNAIDS estimates that stigma-related treatment avoidance accounts for thousands of preventable deaths in the region annually.",
+      "type": "text"
+    },
+    {
+      "body": "Key populations disproportionately affected include men who have sex with men (MSM), sex workers, and transgender individuals — all of whom face compounded stigma in Caribbean societies where homosexuality remains criminalised in many jurisdictions. Pharmacy technicians must provide safe, non-judgemental service to all patients regardless of their identity or the nature of their prescription.",
+      "type": "text"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Refuse — all medications must be dispensed in pharmacy-branded bags",
+        "Comply immediately and without question — this is a reasonable request that respects the patient's privacy and reduces stigma",
+        "Ask why they want a plain bag in front of other customers",
+        "Counsel them that they should not be ashamed of their medication"
+      ],
+      "question": "A patient collecting antiretroviral medication asks you to put it in a plain, unmarked bag. What is the MOST appropriate response?",
+      "explanation": "Providing unmarked packaging is a simple, zero-cost destigmatisation measure that respects the patient's privacy. In a Caribbean context where HIV stigma is severe and community visibility is high, this request is entirely reasonable. Questioning the request or counselling against 'shame' in the moment is inappropriate and may discourage the patient from returning.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 25
+}

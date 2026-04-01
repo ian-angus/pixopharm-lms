@@ -1,0 +1,114 @@
+{
+  "id": "9b2687a7-bb5d-45ca-b801-277b7f4b156c",
+  "module_id": "91889a52-a6a7-4e25-af1f-f63baba022fd",
+  "title": "National Regulatory Bodies: Trinidad, Jamaica, Barbados & Grenada",
+  "content": [
+    {
+      "text": "The Pharmacy Boards and Drug Authorities",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Each Caribbean nation maintains its own regulatory authority responsible for overseeing pharmaceutical products and pharmacy practice. While these bodies share common goals — protecting public health through safe, quality medicines — their structures, powers, and procedures differ significantly, reflecting each country's unique legal traditions and healthcare infrastructure.",
+      "type": "text"
+    },
+    {
+      "type": "island-comparison",
+      "title": "National Pharmacy Regulatory Bodies Compared",
+      "islands": [
+        {
+          "flag": "🇹🇹",
+          "name": "Trinidad & Tobago",
+          "details": [
+            "Pharmacy Board of Trinidad and Tobago — established under the Pharmacy Board Act (Chapter 29:52)",
+            "The Chemistry, Food and Drugs Division (CFDD) under the Ministry of Health handles drug registration and quality control",
+            "The Board registers pharmacists, approves pharmacies, and sets professional standards",
+            "NIPDEC (National Insurance Property Development Company) manages public pharmaceutical procurement",
+            "Drug inspectors conduct regular pharmacy inspections and enforce compliance"
+          ]
+        },
+        {
+          "flag": "🇯🇲",
+          "name": "Jamaica",
+          "details": [
+            "Pharmacy Council of Jamaica (PCJ) — established under the Pharmacy Act of 1975 (amended 2013)",
+            "PCJ registers pharmacists, accredits training programmes, and enforces professional standards",
+            "The Standards and Regulation Division of the Ministry of Health handles drug registration",
+            "National Health Fund (NHF) manages pharmaceutical benefits and essential medicines list",
+            "Jamaica has one of the most comprehensive pharmacy regulatory frameworks in the English-speaking Caribbean"
+          ]
+        },
+        {
+          "flag": "🇧🇧",
+          "name": "Barbados",
+          "details": [
+            "Barbados Drug Service (BDS) — operates under the Drug Service Act and the Pharmacy Act (Cap. 372D)",
+            "BDS manages public sector pharmaceutical procurement and distribution through polyclinics and Queen Elizabeth Hospital",
+            "The Barbados National Drug Formulary (BNDF) governs prescribing and dispensing in the public sector",
+            "The Chief Pharmacist's Office oversees pharmacy standards and inspection",
+            "Private pharmacies are regulated separately under the Pharmacy Act"
+          ]
+        },
+        {
+          "flag": "🇬🇩",
+          "name": "Grenada",
+          "details": [
+            "Pharmacy Council of Grenada — operates under the Pharmacy Act and related health legislation",
+            "Drug registration is handled through the Ministry of Health in conjunction with the OECS Pharmaceutical Procurement Service",
+            "As an OECS member, Grenada participates in pooled pharmaceutical procurement for cost savings",
+            "The Pharmacist Inspector's Office conducts compliance inspections",
+            "Grenada's small scale means the regulatory framework relies heavily on regional support from CARPHA"
+          ]
+        }
+      ],
+      "description": "Understanding the regulatory body in each jurisdiction is essential for any pharmacy technician working across the region."
+    },
+    {
+      "body": "The National Insurance Property Development Company (NIPDEC) is a state enterprise in Trinidad & Tobago that manages pharmaceutical procurement for public health institutions. NIPDEC purchases, stores, and distributes medicines to hospitals, health centres, and chronic disease programmes. Understanding NIPDEC's role is essential for any technician working in the public health sector in T&T.",
+      "type": "callout",
+      "title": "NIPDEC — Trinidad's Procurement Powerhouse",
+      "variant": "info"
+    },
+    {
+      "body": "The powers granted to these regulatory bodies typically include: registering pharmacists and pharmacy premises; approving and revoking drug registrations; conducting inspections; investigating complaints; disciplining professionals for misconduct; and advising government on pharmaceutical policy. However, the extent of these powers and the resources available to exercise them vary dramatically from island to island.",
+      "type": "text"
+    },
+    {
+      "text": "Common Functions of Caribbean Pharmacy Boards",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "type": "list",
+      "items": [
+        "Registration of pharmacists and, in some jurisdictions, pharmacy technicians",
+        "Licensing of pharmacy premises (community, hospital, and wholesale)",
+        "Approval or recognition of pharmacy education programmes",
+        "Investigation of complaints and professional misconduct",
+        "Setting and enforcing standards of professional practice",
+        "Advising the Minister of Health on pharmacy-related policy",
+        "Maintaining public registers of licensed pharmacists and pharmacies"
+      ],
+      "ordered": false
+    },
+    {
+      "term": "Pharmacy Board",
+      "type": "key-term",
+      "definition": "A statutory body established by law to regulate the practice of pharmacy within a specific jurisdiction. Pharmacy boards are typically responsible for professional registration, premises licensing, and enforcement of practice standards. In the Caribbean, each sovereign nation maintains its own board or equivalent regulatory authority."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "The Pharmacy Council of Jamaica (PCJ)",
+        "The Barbados Drug Service (BDS)",
+        "NIPDEC (National Insurance Property Development Company)",
+        "CARPHA (Caribbean Public Health Agency)"
+      ],
+      "question": "Which organisation manages public pharmaceutical procurement in Trinidad & Tobago?",
+      "explanation": "NIPDEC is the state enterprise in Trinidad & Tobago responsible for purchasing, storing, and distributing pharmaceutical products to public health institutions. It plays a critical role in ensuring that hospitals and health centres across the twin-island republic have access to essential medicines.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 25
+}

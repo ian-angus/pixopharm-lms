@@ -1,0 +1,90 @@
+{
+  "id": "61b54afe-0399-4860-b805-0b25ee6f4f31",
+  "module_id": "9ac6450c-aeb9-430c-9763-10a0ce1064e5",
+  "title": "What Is Pharmacology? Core Concepts & Caribbean Context",
+  "content": [
+    {
+      "text": "Welcome to Pharmacology",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Pharmacology is the science of how drugs interact with living organisms. For a pharmacy technician working in the Caribbean, pharmacology knowledge is not an academic luxury — it is the foundation that allows you to understand why prescribers choose certain medications, why specific dosing instructions matter, and why some drug combinations are dangerous. Every prescription you handle tells a pharmacological story.",
+      "type": "text"
+    },
+    {
+      "body": "Pharmacology is divided into two major branches. Pharmacokinetics asks the question: 'What does the body do to the drug?' It studies how drugs are absorbed, distributed, metabolised, and excreted. Pharmacodynamics asks the opposite: 'What does the drug do to the body?' It studies how drugs produce their effects at the molecular, cellular, and organ-system level.",
+      "type": "text"
+    },
+    {
+      "term": "Pharmacokinetics (PK)",
+      "type": "key-term",
+      "definition": "The study of how the body absorbs, distributes, metabolises, and excretes a drug. Often summarised as ADME — Absorption, Distribution, Metabolism, Excretion."
+    },
+    {
+      "term": "Pharmacodynamics (PD)",
+      "type": "key-term",
+      "definition": "The study of how a drug produces its effects on the body, including drug-receptor interactions, dose-response relationships, and mechanisms of action."
+    },
+    {
+      "body": "When a patient in Trinidad asks 'Why do I have to take this on an empty stomach?' or a patient in Jamaica asks 'Can I take this with my bush tea?', your pharmacology knowledge helps you give accurate, potentially life-saving answers. Understanding PK and PD transforms you from a label-reader to a medication expert.",
+      "type": "callout",
+      "title": "Why This Matters at the Counter",
+      "variant": "info"
+    },
+    {
+      "rows": [
+        [
+          "Key question",
+          "What does the body do to the drug?",
+          "What does the drug do to the body?"
+        ],
+        [
+          "Focus",
+          "Drug movement through the body",
+          "Drug effects on the body"
+        ],
+        [
+          "Processes",
+          "ADME (Absorption, Distribution, Metabolism, Excretion)",
+          "Receptor binding, signal transduction, dose-response"
+        ],
+        [
+          "Clinical relevance",
+          "Determines dosing frequency, route, and timing",
+          "Determines drug selection and therapeutic effect"
+        ],
+        [
+          "Example",
+          "Amlodipine has a long half-life (~35 hrs) so it is dosed once daily",
+          "Amlodipine blocks L-type calcium channels to lower blood pressure"
+        ]
+      ],
+      "type": "table",
+      "caption": "Pharmacokinetics vs Pharmacodynamics at a Glance",
+      "headers": [
+        "Feature",
+        "Pharmacokinetics",
+        "Pharmacodynamics"
+      ]
+    },
+    {
+      "body": "Throughout this course, we will reference medications commonly dispensed in Caribbean pharmacies — amlodipine for hypertension, metformin for diabetes, amoxicillin for infections, and many others that you encounter daily. This is not abstract science; it is the science behind your everyday work.",
+      "type": "text"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Pharmacodynamics — because food changes how metformin affects blood sugar",
+        "Pharmacokinetics — because food affects how metformin is absorbed in the GI tract",
+        "Toxicology — because metformin is toxic on an empty stomach",
+        "Pharmacogenomics — because food interacts with the patient's genes"
+      ],
+      "question": "A patient asks: 'Why does my doctor say I must take metformin with food?' Which branch of pharmacology best explains the answer?",
+      "explanation": "Taking metformin with food is a pharmacokinetic consideration. Food slows gastric emptying and reduces the GI side effects (nausea, diarrhoea) associated with metformin absorption. It also slightly reduces the rate of absorption, making the drug better tolerated.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 25
+}

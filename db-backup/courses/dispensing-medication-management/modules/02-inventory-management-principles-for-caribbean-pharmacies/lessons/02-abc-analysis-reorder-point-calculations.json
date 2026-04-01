@@ -1,0 +1,88 @@
+{
+  "id": "7a1960a0-77ce-4be3-a4ca-9b30b91ba818",
+  "module_id": "2a2b8ae6-dc6c-4b92-b48f-b978c51bf5fd",
+  "title": "ABC Analysis & Reorder Point Calculations",
+  "content": [
+    {
+      "text": "Not All Inventory Is Created Equal",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "ABC analysis is a classification method that divides inventory into three categories based on value and usage. In the Caribbean pharmacy context, this classification also considers criticality — a low-cost medication that is essential for life (e.g., insulin, ARVs) may be elevated to Category A regardless of its dollar value. The goal is to allocate management attention proportionally: intensive control for the vital few, moderate control for the middle, and basic control for the trivial many.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "A — Critical/High Value",
+          "10–20%",
+          "70–80%",
+          "Tight control, weekly counts, low safety stock with frequent reorders",
+          "Insulin, ARVs, oncology drugs, biological products, controlled substances"
+        ],
+        [
+          "B — Moderate Value",
+          "20–30%",
+          "15–20%",
+          "Moderate control, monthly counts, standard reorder points",
+          "Antihypertensives, antibiotics, diabetes medications (oral), inhalers"
+        ],
+        [
+          "C — Low Value/High Volume",
+          "50–60%",
+          "5–10%",
+          "Basic control, quarterly counts, bulk ordering",
+          "Paracetamol, OTC cough syrups, bandages, cotton wool, multivitamins"
+        ]
+      ],
+      "type": "table",
+      "caption": "ABC Inventory Classification for Caribbean Pharmacies",
+      "headers": [
+        "Category",
+        "% of Items",
+        "% of Total Value",
+        "Management Level",
+        "Caribbean Examples"
+      ]
+    },
+    {
+      "text": "Calculating the Reorder Point (ROP)",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "The reorder point is the inventory level at which a new order must be placed to avoid a stockout. In the Caribbean, where lead times are long and variable, getting this calculation right is critical. The formula accounts for average daily usage, lead time (the time between placing an order and receiving it), and safety stock (a buffer to cover demand variability and supply delays).",
+      "type": "text"
+    },
+    {
+      "term": "Reorder Point (ROP)",
+      "type": "key-term",
+      "definition": "The inventory level that triggers a new purchase order. Calculated as: ROP = (Average Daily Usage × Lead Time in Days) + Safety Stock. For Caribbean pharmacies, lead times typically range from 28 to 84 days for international orders, making safety stock calculations particularly important."
+    },
+    {
+      "body": "A pharmacy in Bridgetown, Barbados dispenses an average of 8 tablets of amlodipine 5 mg per day. The lead time for reorder from the international supplier is 42 days (6 weeks). The pharmacy maintains safety stock of 14 days' supply. ROP = (8 × 42) + (8 × 14) = 336 + 112 = 448 tablets. When stock falls to 448 tablets, a new order must be placed.",
+      "type": "callout",
+      "title": "Worked Example — Reorder Point Calculation",
+      "variant": "info"
+    },
+    {
+      "body": "Safety stock is the buffer that protects against the unexpected: a shipment delayed by customs, a hurricane disrupting port operations, or a sudden spike in demand during a dengue outbreak. Caribbean pharmacies typically maintain higher safety stock levels than their mainland counterparts — 2 to 4 weeks for Category A items, compared to 3 to 7 days in countries with reliable domestic supply chains.",
+      "type": "text"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "420 units",
+        "540 units",
+        "350 units",
+        "120 units"
+      ],
+      "question": "A pharmacy dispenses an average of 12 units of a medication per day. The lead time is 35 days and the safety stock is set at 10 days' supply. What is the reorder point?",
+      "explanation": "ROP = (Average Daily Usage × Lead Time) + Safety Stock = (12 × 35) + (12 × 10) = 420 + 120 = 540 units. When stock reaches 540 units, a new order must be placed to avoid a stockout before the next delivery arrives.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 25
+}

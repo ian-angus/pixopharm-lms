@@ -1,0 +1,87 @@
+{
+  "id": "53cec738-25f1-4ba6-8326-659b086e4721",
+  "module_id": "82cf2650-5f9f-4f8f-9460-cd77a32d431e",
+  "title": "Combating Alert Fatigue: Strategies for Sustainable Vigilance",
+  "content": [
+    {
+      "text": "When Every Prescription Triggers an Alert",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "In a busy Caribbean pharmacy dispensing 200–400 prescriptions per day, a DIS system might generate 50–100 interaction alerts. The vast majority — perhaps 80–90% — are minor or moderate interactions that have been previously assessed and accepted by the pharmacist. If every alert requires the same level of attention, the system quickly becomes noise rather than signal, and critical alerts get lost in the flood.",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Tiered alert display: Configure your system to display contraindicated and major alerts prominently (full screen, audio alert) while showing moderate and minor alerts less intrusively (sidebar notification)",
+        "Custom suppression lists: Work with the pharmacist to create a list of known, accepted interactions for specific patient-drug combinations that do not need to be re-alerted each time",
+        "Mandatory hard stops: Ensure contraindicated combinations cannot be overridden without pharmacist credentials — this prevents accidental dismissal of critical alerts",
+        "Regular override audits: Periodically review which alerts have been overridden to catch patterns of inappropriate dismissal",
+        "Continuing education: Regularly update your knowledge of clinically significant interactions so you can quickly assess alert relevance"
+      ],
+      "ordered": true
+    },
+    {
+      "body": "Research shows that when override rates exceed 90%, the risk of a clinically significant interaction being missed increases dramatically. In 2019, a study found that pharmacies with lower override rates had 40% fewer adverse drug events. Caribbean pharmacies, often with fewer staff and higher volume per technician, are particularly vulnerable to alert fatigue. Building a culture where critical alerts are never overridden without pharmacist review is essential.",
+      "type": "callout",
+      "title": "The Cost of Override Culture",
+      "variant": "warning"
+    },
+    {
+      "type": "island-comparison",
+      "title": "CDS System Configuration Across the Caribbean",
+      "islands": [
+        {
+          "flag": "🇹🇹",
+          "name": "Trinidad & Tobago",
+          "details": [
+            "Major pharmacy chains use Lexicomp-integrated DIS with customisable alert tiers",
+            "CDAP dispensing software includes basic interaction checking for programme medications",
+            "The Pharmacy Board encourages but does not mandate specific DIS software",
+            "Hospital pharmacies at Eric Williams Medical Sciences Complex use more advanced CDS",
+            "Alert fatigue is a recognised issue in high-volume Port of Spain pharmacies"
+          ]
+        },
+        {
+          "flag": "🇯🇲",
+          "name": "Jamaica",
+          "details": [
+            "The NHF electronic claims system includes interaction checking for scheme medications",
+            "University Hospital of the West Indies uses enterprise-grade CDS systems",
+            "Community pharmacies increasingly use cloud-based dispensing software with built-in DIS",
+            "The Pharmacy Council promotes DIS use as part of good dispensing practice",
+            "Rural pharmacies may rely more on manual checking and the BNF due to system limitations"
+          ]
+        },
+        {
+          "flag": "🇧🇧",
+          "name": "Barbados",
+          "details": [
+            "The Barbados Drug Service procurement system integrates basic formulary-level interaction checks",
+            "Queen Elizabeth Hospital pharmacy uses comprehensive CDS within its electronic health record",
+            "Community pharmacies typically use BNF interaction checker or Lexicomp",
+            "The smaller market size means fewer locally customised CDS solutions",
+            "National formulary alignment helps standardise which interactions are considered most relevant"
+          ]
+        }
+      ],
+      "description": "How different islands approach clinical decision support configuration and alert management."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Turning off all alerts to reduce noise",
+        "Implementing mandatory hard stops for contraindicated combinations that require pharmacist credentials to override",
+        "Displaying all alerts at the same priority level",
+        "Having the technician override all alerts to save time"
+      ],
+      "question": "Which strategy is most effective at preventing critical drug interaction alerts from being accidentally dismissed?",
+      "explanation": "Mandatory hard stops for contraindicated (Level 1) combinations ensure that the most dangerous interactions cannot be bypassed without pharmacist review. This preserves the safety net for critical alerts while allowing routine management of lower-severity interactions.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 15
+}

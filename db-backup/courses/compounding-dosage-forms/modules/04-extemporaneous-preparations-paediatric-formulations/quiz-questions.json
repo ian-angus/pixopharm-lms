@@ -1,0 +1,147 @@
+[
+  {
+    "id": "75038e27-60ce-437d-9934-d7b4d25a3e01",
+    "module_id": "b9855cb0-1519-41b9-ba8d-ce85a758b84b",
+    "question": "What is the most common method used for paediatric dose calculation in Caribbean pharmacy practice?",
+    "options": [
+      "Age-based dosing",
+      "Fixed adult dose divided in half",
+      "Weight-based dosing (mg/kg)",
+      "Body surface area dosing (mg/m²)"
+    ],
+    "correct_answer": 2,
+    "explanation": "Weight-based dosing (mg/kg) is the most widely used method for paediatric dose calculation in everyday Caribbean pharmacy practice. It accounts for the child's actual body weight, producing more accurate doses than age-based methods. Body surface area dosing (mg/m²) is used for specific drugs (e.g., chemotherapy) but is not the standard for routine paediatric prescribing.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "8bb866cf-08f6-4375-b344-532a7b5927bc",
+    "module_id": "b9855cb0-1519-41b9-ba8d-ce85a758b84b",
+    "question": "A 15 kg child is prescribed Drug A at 10 mg/kg/day in 3 divided doses. The available suspension is 50 mg/5 mL. What volume should be administered per dose?",
+    "options": [
+      "2.5 mL",
+      "5 mL",
+      "10 mL",
+      "15 mL"
+    ],
+    "correct_answer": 1,
+    "explanation": "Total daily dose: 10 mg/kg × 15 kg = 150 mg/day. Per dose: 150 ÷ 3 = 50 mg. Volume per dose: (50 mg ÷ 50 mg) × 5 mL = 5 mL. Verify: 5 mL × 3 = 15 mL/day; 15 mL × (50 mg/5 mL) = 150 mg/day. Correct.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "a90ca47f-6d9a-4022-a04b-f70845bbbf0c",
+    "module_id": "b9855cb0-1519-41b9-ba8d-ce85a758b84b",
+    "question": "Why is honey NEVER used as a sweetening agent in formulations for children under 1 year of age?",
+    "options": [
+      "Honey is too expensive for paediatric formulations",
+      "Honey can contain Clostridium botulinum spores, which can cause infant botulism",
+      "Honey causes allergic reactions in all infants",
+      "Honey is not sweet enough to mask bitter drugs"
+    ],
+    "correct_answer": 1,
+    "explanation": "Honey can contain spores of Clostridium botulinum, the bacterium that causes botulism. While adults and older children have mature intestinal flora that prevent these spores from germinating, infants under 1 year have immature gut flora, making them vulnerable to infant botulism — a serious, potentially fatal condition. Honey must NEVER be used in any formulation for children under 12 months.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "72a1c697-c2ee-456e-8fbd-3873bcf19efb",
+    "module_id": "b9855cb0-1519-41b9-ba8d-ce85a758b84b",
+    "question": "A calculated paediatric dose using the mg/kg method exceeds the recommended adult dose for the same drug. What should the pharmacy technician do?",
+    "options": [
+      "Dispense the calculated paediatric dose, as paediatric dosing always overrides adult limits",
+      "Cap the dose at the adult maximum and consult with the pharmacist and prescriber",
+      "Refuse to dispense the medication entirely",
+      "Halve the calculated dose"
+    ],
+    "correct_answer": 1,
+    "explanation": "When a weight-based paediatric calculation produces a dose exceeding the recommended adult maximum, the adult dose becomes the ceiling. The technician should flag this to the pharmacist, who should contact the prescriber to confirm the appropriate dose. This situation commonly occurs with larger adolescents.",
+    "order_index": 3,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "evaluate"
+  },
+  {
+    "id": "5d6828ad-0a14-4083-ba7a-1a0053fe707b",
+    "module_id": "b9855cb0-1519-41b9-ba8d-ce85a758b84b",
+    "question": "Which of the following excipients poses the GREATEST safety risk to neonates?",
+    "options": [
+      "Sucrose",
+      "Methylcellulose",
+      "Benzyl alcohol",
+      "Citric acid"
+    ],
+    "correct_answer": 2,
+    "explanation": "Benzyl alcohol is the most dangerous excipient for neonates among those listed. It can cause gasping syndrome — a fatal toxicity syndrome characterised by metabolic acidosis, gasping respirations, and cardiovascular collapse. Neonates cannot metabolise benzyl alcohol due to immature enzyme systems. Sucrose, methylcellulose, and citric acid are generally safe in neonates at appropriate concentrations.",
+    "order_index": 4,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "52aa8022-1978-4f3b-ba38-29dd8b0d7242",
+    "module_id": "b9855cb0-1519-41b9-ba8d-ce85a758b84b",
+    "question": "A tenfold dosing error in a paediatric prescription (e.g., 2 mL prescribed but 20 mL dispensed) is caused by:",
+    "options": [
+      "Using the wrong drug",
+      "A misplaced decimal point or confusion between units",
+      "An incorrect patient weight in pounds rather than kilograms",
+      "Using an expired medication"
+    ],
+    "correct_answer": 1,
+    "explanation": "Tenfold (10×) errors are most commonly caused by misplaced decimal points (e.g., writing 20 instead of 2.0) or confusion between mg and mL. These errors are preventable by using leading zeros (0.5 mL, not .5 mL), avoiding trailing zeros (2 mL, not 2.0 mL), writing quantities clearly, and having every paediatric calculation independently verified by a second person.",
+    "order_index": 5,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "42be87a4-8d0f-4011-b24a-153fb8270e09",
+    "module_id": "b9855cb0-1519-41b9-ba8d-ce85a758b84b",
+    "question": "Which Caribbean island has a particularly high prevalence of sickle cell disease, driving demand for compounded hydroxyurea suspensions?",
+    "options": [
+      "The Cayman Islands",
+      "Jamaica",
+      "Aruba",
+      "Puerto Rico"
+    ],
+    "correct_answer": 1,
+    "explanation": "Jamaica has one of the highest prevalences of sickle cell disease in the Caribbean, with approximately 1 in 150 births affected (HbSS genotype). The Sickle Cell Unit at the University of the West Indies, Mona campus, is a globally recognised research and treatment centre. This high prevalence drives significant demand for compounded hydroxyurea suspensions and other paediatric sickle cell medications.",
+    "order_index": 6,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "aaae0ace-57d1-4be0-a7b3-ef1fe225065e",
+    "module_id": "b9855cb0-1519-41b9-ba8d-ce85a758b84b",
+    "question": "When compounding a paediatric oral suspension, which locally preferred flavours might improve acceptance by Caribbean children compared to standard North American flavouring?",
+    "options": [
+      "Mango",
+      "Guava",
+      "Plain (unflavoured)",
+      "Passion fruit",
+      "Black liquorice"
+    ],
+    "correct_answer": 0,
+    "explanation": "Caribbean children are often more familiar with tropical fruit flavours such as mango, guava, and passion fruit than with standard North American flavourings like cherry or grape. Using familiar, locally preferred flavours can significantly improve paediatric medication acceptance and compliance. Plain (unflavoured) and black liquorice would not be preferred by most children.",
+    "order_index": 7,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "apply"
+  }
+]

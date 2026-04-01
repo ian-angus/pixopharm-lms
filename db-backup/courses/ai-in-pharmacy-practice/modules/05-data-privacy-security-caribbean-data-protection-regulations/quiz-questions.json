@@ -1,0 +1,147 @@
+[
+  {
+    "id": "a18d38bd-a4fb-4a0d-a508-6a694f4eda42",
+    "module_id": "432d98b6-47af-4c06-9c20-21f449b6c90d",
+    "question": "Under Caribbean data protection legislation, health data (including medication records) is classified as what?",
+    "options": [
+      "Public information",
+      "General personal data",
+      "Sensitive personal data requiring enhanced protection",
+      "Anonymised data requiring no protection"
+    ],
+    "correct_answer": 2,
+    "explanation": "Health data, including patient medication records, is classified as 'sensitive personal data' under Caribbean data protection acts. This requires enhanced protection measures including explicit consent, restricted access, encryption, and strict controls on sharing.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "f0638efe-00fd-4335-aa99-35d6f500d252",
+    "module_id": "432d98b6-47af-4c06-9c20-21f449b6c90d",
+    "question": "Why is de-identification of patient data particularly challenging in small Caribbean communities?",
+    "options": [
+      "Caribbean data protection laws do not allow de-identification",
+      "In small populations, combinations of age, gender, and condition may be sufficient to identify individuals",
+      "Caribbean patients refuse to allow their data to be de-identified",
+      "De-identification technology is not available in the Caribbean"
+    ],
+    "correct_answer": 1,
+    "explanation": "In small Caribbean communities, where 'everybody knows everybody,' even seemingly anonymised data can be re-identified. A description like '72-year-old female on insulin and warfarin' might identify only a handful of people — or only one — in a small town. Extra identifiers must be removed compared to larger populations.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "analyze"
+  },
+  {
+    "id": "2dd67493-6727-42bc-b4b1-1c81521f32b4",
+    "module_id": "432d98b6-47af-4c06-9c20-21f449b6c90d",
+    "question": "A pharmacy technician enters 'Mrs. Jones, 68, diabetic, on metformin and glipizide, can she take ibuprofen?' into ChatGPT. What is wrong with this query?",
+    "options": [
+      "Nothing — ChatGPT is a secure platform",
+      "The clinical question itself is inappropriate for AI",
+      "The query includes identifiable patient information (name, age, conditions) entered into a public AI tool",
+      "Ibuprofen does not interact with diabetes medications"
+    ],
+    "correct_answer": 2,
+    "explanation": "The query includes the patient's name, age, and medical conditions — identifiable personal data — entered into a public AI tool. This violates data protection principles as the data may be stored on external servers, used for training, and is subject to different jurisdictions' laws. The correct approach: remove the name and use only anonymised clinical details.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "72bab531-7dd6-422d-99cc-70ed512ffef7",
+    "module_id": "432d98b6-47af-4c06-9c20-21f449b6c90d",
+    "question": "Which Caribbean country proclaimed its Data Protection Act in 2011 with staged implementation?",
+    "options": [
+      "Jamaica",
+      "Barbados",
+      "Trinidad & Tobago",
+      "Guyana"
+    ],
+    "correct_answer": 2,
+    "explanation": "Trinidad & Tobago's Data Protection Act was passed in 2011 and has been proclaimed in stages. It establishes comprehensive data protection rights, an Information Commissioner for enforcement, and classifies health data as sensitive personal data requiring enhanced protection.",
+    "order_index": 3,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "ca86c8bb-7bb4-45cb-abfc-5e059257a844",
+    "module_id": "432d98b6-47af-4c06-9c20-21f449b6c90d",
+    "question": "What is a 'data controller' in the context of pharmacy data protection?",
+    "options": [
+      "The computer system that stores patient data",
+      "The person or organisation that determines the purposes and means of processing personal data",
+      "A government agency that controls all health data",
+      "The software company that built the dispensing system"
+    ],
+    "correct_answer": 1,
+    "explanation": "A data controller is the person or organisation that determines the purposes and means of processing personal data. In a pharmacy context, the pharmacy (or its owner/operator) is the data controller for patient records and is legally responsible for how that data is handled.",
+    "order_index": 4,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "f141dfe5-3ccf-47cc-8fe5-95e149d55df0",
+    "module_id": "432d98b6-47af-4c06-9c20-21f449b6c90d",
+    "question": "Which of the following are appropriate components of a pharmacy data protection protocol? Select ALL that apply.",
+    "options": [
+      "Classify all patient data by sensitivity level",
+      "Audit all AI tools for data processing and retention practices",
+      "Allow all staff unrestricted access to all patient records",
+      "Establish a 'clean query' policy for AI chatbot use",
+      "Conduct quarterly data protection training for all staff"
+    ],
+    "correct_answer": 0,
+    "explanation": "Data classification, AI tool auditing, clean query policies, and regular staff training are all essential components of a pharmacy data protection protocol. Unrestricted staff access is the opposite of good data protection — access should be role-based and limited to what is needed for each person's duties.",
+    "order_index": 5,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "3d5f2273-85bf-4023-bcc0-c701f62588eb",
+    "module_id": "432d98b6-47af-4c06-9c20-21f449b6c90d",
+    "question": "A pharmacy receives prescriptions via WhatsApp. What data protection concern does this raise?",
+    "options": [
+      "No concern — WhatsApp is end-to-end encrypted",
+      "WhatsApp is not a pharmacy-approved communication channel and transfers sensitive health data through a commercial platform without appropriate data processing agreements",
+      "WhatsApp only works in certain Caribbean countries",
+      "The concern is only about cost, not data protection"
+    ],
+    "correct_answer": 1,
+    "explanation": "While WhatsApp uses end-to-end encryption, receiving prescriptions through it raises multiple data protection concerns: no formal data processing agreement with Meta/WhatsApp, data may be stored on the technician's personal device, no audit trail, and no guarantee of compliance with Caribbean data protection requirements. Pharmacies should use approved, auditable communication channels.",
+    "order_index": 6,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "hard",
+    "blooms_level": "evaluate"
+  },
+  {
+    "id": "2549b865-7927-476e-ae1e-2ee3f1d2793d",
+    "module_id": "432d98b6-47af-4c06-9c20-21f449b6c90d",
+    "question": "What should happen immediately if a pharmacy discovers a data breach involving patient records?",
+    "options": [
+      "Ignore it and hope no one notices",
+      "Delete all evidence of the breach",
+      "Contain the breach, notify the Information Commissioner, inform affected patients, and document everything",
+      "Only notify patients if they ask about it"
+    ],
+    "correct_answer": 2,
+    "explanation": "Caribbean data protection acts require prompt action on data breaches: contain the breach to prevent further exposure, notify the Information Commissioner, inform affected patients (especially if there is risk of harm), and thoroughly document the incident and response. Attempting to hide a breach can result in additional penalties.",
+    "order_index": 7,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  }
+]

@@ -1,0 +1,85 @@
+{
+  "id": "71d2af5f-0c9a-401b-9703-53e48751ab59",
+  "module_id": "c7399bfe-b4be-492b-8515-c4e4668a80df",
+  "title": "Anatomy of a Prescription",
+  "content": [
+    {
+      "text": "The Parts of a Prescription",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Every prescription, whether handwritten or electronic, contains a set of standard elements. Understanding each element is essential for accurate dispensing and for identifying incomplete or potentially fraudulent prescriptions. While the format may vary slightly between islands, the core components are consistent across the Caribbean.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Prescriber information",
+          "Name, qualifications, registration number, address, contact",
+          "Dr. Sarah Maraj, MBBS, Reg. #4521, 45 Frederick Street, POS"
+        ],
+        [
+          "Date",
+          "Date the prescription was written",
+          "24/03/2026"
+        ],
+        [
+          "Patient information",
+          "Full name, date of birth or age, address",
+          "Maria Gonzalez, DOB: 15/08/1985, Chaguanas"
+        ],
+        [
+          "Superscription",
+          "The symbol Rx (Latin 'recipe' meaning 'take')",
+          "℞"
+        ],
+        [
+          "Inscription",
+          "Medication name, strength, dosage form",
+          "Amoxicillin 500 mg capsules"
+        ],
+        [
+          "Subscription",
+          "Quantity to dispense",
+          "#21 (or Mitte 21)"
+        ],
+        [
+          "Sig / Signa",
+          "Directions for patient use",
+          "1 cap PO TDS × 7/7"
+        ],
+        [
+          "Prescriber signature",
+          "Handwritten signature (mandatory for controlled substances)",
+          "Signed"
+        ],
+        [
+          "Refill information",
+          "Number of refills permitted (where applicable)",
+          "Refills: 0"
+        ]
+      ],
+      "type": "table",
+      "caption": "Elements of a Valid Prescription",
+      "headers": [
+        "Element",
+        "Description",
+        "Example"
+      ]
+    },
+    {
+      "alt": "Annotated diagram of a sample Caribbean prescription showing all required elements",
+      "type": "image-placeholder",
+      "caption": "Figure 3.1 — Anatomy of a Caribbean prescription (annotated)"
+    },
+    {
+      "body": "Be alert for: prescriptions written in pencil (easily altered), missing prescriber registration numbers, patients requesting specific controlled substances by name and strength, prescriptions from prescribers you cannot verify, alterations or crossed-out information without the prescriber's counter-signature, and prescriptions presented significantly after the date written (especially for controlled substances).",
+      "type": "callout",
+      "title": "Red Flags on Prescriptions",
+      "variant": "warning"
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 15
+}

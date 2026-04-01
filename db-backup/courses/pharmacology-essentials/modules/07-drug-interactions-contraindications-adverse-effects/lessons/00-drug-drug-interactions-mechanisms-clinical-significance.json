@@ -1,0 +1,99 @@
+{
+  "id": "cd5b16c4-9218-4a3b-a0d0-88267f6fa963",
+  "module_id": "7b0ea0ee-1e61-4a29-ac4e-45cb21f60042",
+  "title": "Drug-Drug Interactions: Mechanisms & Clinical Significance",
+  "content": [
+    {
+      "text": "When Drugs Affect Each Other",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Drug interactions occur when one drug alters the effect of another. In the Caribbean, where many patients take multiple medications for hypertension, diabetes, and high cholesterol simultaneously, interactions are an everyday concern. Interactions can be pharmacokinetic (one drug affects the ADME of another) or pharmacodynamic (drugs have additive, synergistic, or antagonistic effects at the receptor level).",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Warfarin",
+          "NSAIDs (ibuprofen, diclofenac)",
+          "NSAIDs inhibit platelet function and increase GI bleeding risk",
+          "Life-threatening haemorrhage"
+        ],
+        [
+          "ACE inhibitor",
+          "Potassium-sparing diuretic (spironolactone)",
+          "Both increase potassium levels",
+          "Dangerous hyperkalaemia"
+        ],
+        [
+          "Metformin",
+          "Alcohol (excessive)",
+          "Both increase lactate production",
+          "Increased lactic acidosis risk"
+        ],
+        [
+          "Simvastatin",
+          "Grapefruit juice",
+          "CYP3A4 inhibition increases statin levels",
+          "Increased myopathy/rhabdomyolysis risk"
+        ],
+        [
+          "SSRI (fluoxetine)",
+          "Tramadol",
+          "Both increase serotonin levels",
+          "Serotonin syndrome risk"
+        ]
+      ],
+      "type": "table",
+      "caption": "High-Risk Drug Interactions Common in Caribbean Pharmacies",
+      "headers": [
+        "Drug A",
+        "Drug B",
+        "Interaction",
+        "Clinical Consequence"
+      ]
+    },
+    {
+      "term": "Enzyme Induction",
+      "type": "key-term",
+      "definition": "When a drug increases the activity of metabolic enzymes (especially CYP450), causing other drugs to be metabolised faster and reducing their effectiveness. Example: carbamazepine induces CYP3A4, reducing oral contraceptive effectiveness."
+    },
+    {
+      "term": "Enzyme Inhibition",
+      "type": "key-term",
+      "definition": "When a drug decreases the activity of metabolic enzymes, causing other drugs to be metabolised slower and increasing their blood levels (potentially to toxic levels). Example: grapefruit juice inhibits CYP3A4."
+    },
+    {
+      "body": "Carbamazepine is a potent CYP450 inducer that reduces the effectiveness of oral contraceptives. Women taking carbamazepine need alternative or additional contraception. This interaction is critically important in Caribbean practice, where both drugs are commonly prescribed.",
+      "type": "callout",
+      "title": "Carbamazepine and Oral Contraceptives",
+      "variant": "warning"
+    },
+    {
+      "type": "case-study",
+      "title": "Case Study: Polypharmacy Interaction in a Bridgetown Community Pharmacy",
+      "scenario": "Mr. Williams, a 72-year-old retired fisherman in Bridgetown, Barbados, collects his monthly medications: warfarin 5 mg daily, amlodipine 10 mg daily, simvastatin 40 mg daily, and metformin 1000 mg twice daily. Today he also asks for ibuprofen 400 mg for his arthritic knee, and mentions he started drinking noni juice 'for energy' on his neighbour's recommendation.",
+      "questions": [
+        "How many potential drug interactions can you identify in this scenario?",
+        "Which interaction poses the most immediate danger?",
+        "What would you recommend as an action plan?"
+      ],
+      "discussion": "Multiple significant interactions exist: (1) Warfarin + ibuprofen = high bleeding risk (most immediately dangerous); (2) Simvastatin 40 mg + amlodipine = exceeds the safe simvastatin limit of 20 mg with amlodipine (CYP3A4 interaction); (3) Noni juice has high potassium content — a concern with age-related renal decline and potentially with warfarin; (4) Warfarin + noni = possible INR alteration. The pharmacy technician should flag ALL of these to the pharmacist. Paracetamol should be recommended instead of ibuprofen, the simvastatin dose should be reviewed, and the noni juice interaction should be discussed with the prescriber."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Dispense ibuprofen — there is no interaction",
+        "Flag the interaction to the pharmacist — NSAIDs significantly increase bleeding risk with warfarin",
+        "Give a lower dose of ibuprofen",
+        "Suggest the patient stop warfarin temporarily"
+      ],
+      "question": "A patient takes warfarin for atrial fibrillation and asks for ibuprofen for knee pain. What should you do?",
+      "explanation": "NSAIDs inhibit platelet function and can cause GI bleeding. Combined with warfarin's anticoagulant effect, the bleeding risk is dramatically increased. Paracetamol is the safer analgesic for warfarin patients.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 20
+}

@@ -1,0 +1,181 @@
+[
+  {
+    "id": "5e008d82-7b47-433d-9ac8-46d1a0461ff6",
+    "module_id": "92fe6b21-d361-44b7-bb64-0f1af50d8b66",
+    "question": "USP Chapter <800> specifically addresses:",
+    "options": [
+      "Sterile compounding procedures",
+      "Non-sterile compounding procedures",
+      "Hazardous drug handling in healthcare settings",
+      "Patient counselling standards"
+    ],
+    "correct_answer": 2,
+    "explanation": "USP Chapter <800> — Hazardous Drugs: Handling in Healthcare Settings — provides comprehensive standards for the safe receiving, storing, preparing, dispensing, and disposing of hazardous drugs. USP <795> covers non-sterile compounding, and USP <797> covers sterile compounding.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "5926254e-327c-4228-b53c-759a7bd1a804",
+    "module_id": "92fe6b21-d361-44b7-bb64-0f1af50d8b66",
+    "question": "Which of the following drugs, commonly stocked in Caribbean community pharmacies, is classified as hazardous by NIOSH?",
+    "options": [
+      "Paracetamol (acetaminophen)",
+      "Methotrexate",
+      "Amoxicillin",
+      "Omeprazole"
+    ],
+    "correct_answer": 1,
+    "explanation": "Methotrexate is a NIOSH-listed hazardous drug commonly stocked in Caribbean community pharmacies for conditions including rheumatoid arthritis, psoriasis, and ectopic pregnancy. It is an antimetabolite with teratogenic, mutagenic, and immunosuppressive properties — making occupational exposure a significant health risk. Paracetamol, amoxicillin, and omeprazole are not classified as hazardous drugs.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "b7450ce3-3dc3-4964-b8c8-f7a5fff0f7e1",
+    "module_id": "92fe6b21-d361-44b7-bb64-0f1af50d8b66",
+    "question": "What is the recommended minimum frequency for disinfecting high-touch surfaces in a Caribbean community pharmacy?",
+    "options": [
+      "Once daily at closing time",
+      "Once weekly during deep cleaning",
+      "At least every 2 hours during operating hours",
+      "Only when a surface is visibly soiled"
+    ],
+    "correct_answer": 2,
+    "explanation": "High-touch surfaces — including the dispensing counter, card payment terminal, telephone, computer keyboard, and door handles — should be disinfected at least every 2 hours during operating hours. This frequency, established as standard practice during the COVID-19 pandemic, should be maintained permanently as a baseline infection control measure.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "db7be268-8bb0-4350-9d61-c1141828bdce",
+    "module_id": "92fe6b21-d361-44b7-bb64-0f1af50d8b66",
+    "question": "A pharmacy technician experiences persistent lower back pain from standing for 8-hour shifts. This is classified as what type of occupational hazard?",
+    "options": [
+      "Chemical hazard",
+      "Biological hazard",
+      "Ergonomic hazard",
+      "Psychosocial hazard"
+    ],
+    "correct_answer": 2,
+    "explanation": "Lower back pain from prolonged standing is an ergonomic hazard — related to the physical demands and workplace design of the pharmacy. Prevention measures include anti-fatigue mats, proper workstation height, scheduled sitting breaks, supportive footwear, and task rotation to vary posture throughout the shift.",
+    "order_index": 3,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "7d8fccc6-d205-4bb1-b4f6-5219b2f5af43",
+    "module_id": "92fe6b21-d361-44b7-bb64-0f1af50d8b66",
+    "question": "Which of the following are components of a pharmacy workplace safety plan? (Select all that apply)",
+    "options": [
+      "Hazard identification and risk assessment",
+      "Emergency procedures (fire, hurricane, robbery)",
+      "Staff holiday scheduling",
+      "Hazardous drug handling protocols",
+      "PPE requirements and availability"
+    ],
+    "correct_answer": 0,
+    "explanation": "A pharmacy workplace safety plan should include hazard identification/risk assessment, emergency procedures, hazardous drug handling protocols, PPE requirements, infection control measures, ergonomic provisions, and training requirements. Staff holiday scheduling, while important for operations, is not a component of the workplace safety plan.",
+    "order_index": 4,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "analyze"
+  },
+  {
+    "id": "e49ec834-baa7-4f60-8b03-148d601c740e",
+    "module_id": "92fe6b21-d361-44b7-bb64-0f1af50d8b66",
+    "question": "Why should Caribbean pharmacies maintain the transparent barrier screens installed during the COVID-19 pandemic?",
+    "options": [
+      "They are legally required by all Caribbean pharmacy boards",
+      "They protect staff from respiratory droplets year-round, not just during pandemics",
+      "They prevent patients from stealing medications from the counter",
+      "They improve the aesthetic appearance of the pharmacy"
+    ],
+    "correct_answer": 1,
+    "explanation": "Transparent barrier screens provide year-round protection against respiratory droplets during face-to-face interactions. Respiratory infections — including influenza, COVID-19, and other viral illnesses — are transmitted through droplets and aerosols during close-range conversations. The screens reduce staff exposure during every patient interaction, not just during declared pandemics.",
+    "order_index": 5,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "88606e14-4bd0-4b2d-b9dd-910c24274239",
+    "module_id": "92fe6b21-d361-44b7-bb64-0f1af50d8b66",
+    "question": "When a hazardous drug spill occurs in a Caribbean pharmacy, the first priority is to:",
+    "options": [
+      "Clean up the spill immediately with a wet mop",
+      "Evacuate the entire pharmacy and call emergency services",
+      "Ensure anyone not wearing appropriate PPE moves away from the spill area, especially pregnant or immunocompromised staff",
+      "Photograph the spill for documentation purposes"
+    ],
+    "correct_answer": 2,
+    "explanation": "The immediate priority during a hazardous drug spill is to protect people — particularly those without PPE, pregnant staff, and immunocompromised individuals — by moving them away from the spill area. Only after personnel are safe should spill containment and cleanup begin, using a designated spill kit and appropriate PPE. Documentation is important but is never the first priority.",
+    "order_index": 6,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "06dabd98-9597-4437-b669-dcc5a9687731",
+    "module_id": "92fe6b21-d361-44b7-bb64-0f1af50d8b66",
+    "question": "Standard latex examination gloves provide adequate protection when handling hazardous drugs such as methotrexate.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": 1,
+    "explanation": "False. Standard latex examination gloves are thinner and more permeable to hazardous drug residue than chemotherapy-rated gloves. USP <800> requires chemotherapy-rated gloves (tested for permeation resistance to hazardous drugs) as the minimum PPE for handling hazardous drugs, even for routine tasks like receiving intact packages.",
+    "order_index": 7,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "7c6d6b68-4faa-41ed-b098-3f2a57490a84",
+    "module_id": "92fe6b21-d361-44b7-bb64-0f1af50d8b66",
+    "question": "Which of the following best describes 'standard precautions' in infection control?",
+    "options": [
+      "Special measures taken only when a patient is known to be infectious",
+      "The minimum infection prevention practices applied to ALL patient/client care regardless of infection status",
+      "Emergency protocols activated during a disease outbreak",
+      "Precautions specific to handling controlled substances"
+    ],
+    "correct_answer": 1,
+    "explanation": "Standard precautions are the minimum infection prevention practices applied to all patient/client care, regardless of suspected or confirmed infection status. They include hand hygiene, appropriate PPE use, respiratory hygiene, safe sharps handling, and environmental cleaning. The principle is to treat every interaction as potentially infectious.",
+    "order_index": 8,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "cb077dfd-91ee-4b35-9cac-c7dc5ad57535",
+    "module_id": "92fe6b21-d361-44b7-bb64-0f1af50d8b66",
+    "question": "Pharmacy worker burnout is classified as which type of occupational hazard?",
+    "options": [
+      "Chemical hazard",
+      "Ergonomic hazard",
+      "Biological hazard",
+      "Psychosocial hazard"
+    ],
+    "correct_answer": 3,
+    "explanation": "Burnout is a psychosocial hazard — arising from workplace conditions including high workload, time pressure, error anxiety, understaffing, and inadequate support. Psychosocial hazards affect mental health and wellbeing, and have been shown to increase medication error rates, reduce error reporting, and drive pharmacy professionals out of the profession.",
+    "order_index": 9,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "understand"
+  }
+]

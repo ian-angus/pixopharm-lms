@@ -1,0 +1,54 @@
+{
+  "id": "12f0b40a-3285-4478-8379-eb10ba31641c",
+  "module_id": "8565ea75-e96a-4d25-8e89-327097346a61",
+  "title": "Leptospirosis, Gastroenteritis & Other Regional Infections",
+  "content": [
+    {
+      "text": "Other Infections of Caribbean Significance",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Beyond vector-borne diseases, the Caribbean faces unique infection challenges including leptospirosis (spread through water contaminated with animal urine, especially after flooding), gastroenteritis (common in areas with inconsistent water treatment), and parasitic infections. Understanding the pharmacological treatments helps pharmacy technicians provide better care.",
+      "type": "text"
+    },
+    {
+      "body": "Caribbean hurricanes, tropical storms, and heavy rainfall create conditions that promote waterborne and vector-borne disease outbreaks. Leptospirosis cases spike dramatically after flooding events — Trinidad reported a significant increase following the 2018 floods. Gastroenteritis outbreaks from contaminated water supplies occur periodically across the region. Parasitic infections, while declining with improved sanitation, still affect vulnerable populations, particularly in rural areas and lower-income communities.",
+      "type": "text"
+    },
+    {
+      "term": "Leptospirosis",
+      "type": "key-term",
+      "definition": "A bacterial infection (Leptospira species) transmitted through water or soil contaminated with infected animal urine. Common after Caribbean flooding events. Symptoms include high fever, headache, muscle pain, and jaundice. Treated with doxycycline or penicillin."
+    },
+    {
+      "term": "Oral Rehydration Salts (ORS)",
+      "type": "key-term",
+      "definition": "A precisely formulated mixture of glucose, sodium chloride, potassium chloride, and trisodium citrate dissolved in water. ORS replaces fluids and electrolytes lost through diarrhoea and vomiting. The WHO-UNICEF formula is the standard used worldwide and is a critical pharmacy stock item in the Caribbean."
+    },
+    {
+      "body": "Oral rehydration therapy (ORT) remains the most important pharmacological intervention for gastroenteritis in the Caribbean. ORS packets are among the most dispensed items in Caribbean pharmacies. For parasitic infections, albendazole and mebendazole (anti-helminthics) are used for roundworm, hookworm, and threadworm — infections that remain common in parts of the region.",
+      "type": "text"
+    },
+    {
+      "body": "Caribbean hurricanes and heavy rains cause flooding that increases leptospirosis risk. Pharmacies should stock doxycycline and ensure ORS availability during and after flood events. Prophylactic doxycycline 200 mg weekly may be recommended for high-risk exposed individuals.",
+      "type": "callout",
+      "title": "After the Floods: Pharmacy Preparedness",
+      "variant": "tip"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Azithromycin",
+        "Ciprofloxacin",
+        "Doxycycline or penicillin",
+        "Fluconazole"
+      ],
+      "question": "After major flooding in Trinidad, a construction worker develops fever, muscle pain, and jaundice. Which antibiotic is first-line for suspected leptospirosis?",
+      "explanation": "Leptospirosis is treated with doxycycline (mild cases) or IV penicillin (severe cases). Post-flood exposure is a classic risk scenario in the Caribbean.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 3,
+  "duration_minutes": 20
+}

@@ -1,0 +1,130 @@
+{
+  "id": "a6ab4794-07bd-4236-a0a4-0ea0bb9b5b6d",
+  "module_id": "1c340831-e751-43c4-9ea1-7c290cc7cbc6",
+  "title": "The Building Blocks of Medical Language",
+  "content": [
+    {
+      "text": "Why Medical Terminology Matters for Pharmacy Technicians",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Every prescription that crosses a pharmacy counter is written in a specialised language. To the untrained eye, terms like 'hepatomegaly', 'tachycardia', or 'subcutaneous' appear intimidating. But medical terminology follows a systematic, logical structure inherited from ancient Greek and Latin. Once you learn the building blocks, you can decode virtually any term — even one you have never encountered before.",
+      "type": "text"
+    },
+    {
+      "body": "For pharmacy technicians in the Caribbean, this skill is not merely academic. You will read prescriptions from physicians trained across different systems — some in the UK tradition, others in North American or Cuban programmes. You will handle formulary documents from the Barbados Drug Service, CDAP (Chronic Disease Assistance Programme) lists in Trinidad, and NHF (National Health Fund) approved medicines in Jamaica. All of these documents rely on precise medical terminology.",
+      "type": "text"
+    },
+    {
+      "body": "Trinidad's CDAP programme and Jamaica's NHF both provide subsidised medications for chronic diseases. Understanding the medical terminology on their formulary lists — terms like 'antihypertensive', 'hypoglycaemic agent', or 'bronchodilator' — is essential for verifying that a patient's prescription matches what is covered under their benefit programme.",
+      "type": "callout",
+      "title": "The CDAP and NHF Connection",
+      "variant": "info"
+    },
+    {
+      "text": "The Four Components of a Medical Term",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Every medical term is assembled from up to four components. Not every term uses all four, but understanding each component is essential.",
+      "type": "text"
+    },
+    {
+      "term": "Word Root",
+      "type": "key-term",
+      "definition": "The core component that carries the fundamental meaning of the term. A medical term must have at least one root. For example, 'cardi' means heart, 'hepat' means liver, and 'ren' means kidney. Some terms have two roots (e.g. 'gastroenteritis' combines 'gastr/o' for stomach and 'enter/o' for intestine)."
+    },
+    {
+      "term": "Combining Vowel",
+      "type": "key-term",
+      "definition": "A vowel (usually 'o', occasionally 'i') inserted between a root and a suffix, or between two roots, to make pronunciation easier. For example, 'cardi/o/logy' uses the combining vowel 'o'. The combining vowel is typically dropped when the suffix begins with a vowel (e.g. 'hepat-itis', not 'hepato-itis')."
+    },
+    {
+      "term": "Prefix",
+      "type": "key-term",
+      "definition": "A word element attached to the beginning of a root to modify its meaning. Prefixes indicate location (sub- = under), quantity (poly- = many), time (post- = after), or negation (a-/an- = without). For example, 'tachy-cardia' means rapid heartbeat, where 'tachy-' modifies 'cardia'."
+    },
+    {
+      "term": "Suffix",
+      "type": "key-term",
+      "definition": "A word element attached to the end of a root that often indicates a condition, procedure, or speciality. Common suffixes include '-itis' (inflammation), '-ectomy' (surgical removal), '-ology' (study of), and '-pathy' (disease of). For example, 'nephropathy' means disease of the kidney."
+    },
+    {
+      "rows": [
+        [
+          "Tachycardia",
+          "tachy- (fast)",
+          "cardi (heart)",
+          "-ia (condition)",
+          "Abnormally fast heart rate"
+        ],
+        [
+          "Hepatomegaly",
+          "—",
+          "hepat/o (liver)",
+          "-megaly (enlargement)",
+          "Enlargement of the liver"
+        ],
+        [
+          "Subcutaneous",
+          "sub- (under)",
+          "cutane (skin)",
+          "-ous (pertaining to)",
+          "Under the skin"
+        ],
+        [
+          "Polyneuropathy",
+          "poly- (many)",
+          "neur/o (nerve)",
+          "-pathy (disease)",
+          "Disease affecting many nerves"
+        ],
+        [
+          "Endocarditis",
+          "endo- (within)",
+          "card (heart)",
+          "-itis (inflammation)",
+          "Inflammation of inner heart lining"
+        ],
+        [
+          "Gastroenterology",
+          "—",
+          "gastr/o (stomach) + enter/o (intestine)",
+          "-logy (study of)",
+          "Study of the stomach and intestines"
+        ]
+      ],
+      "type": "table",
+      "caption": "Deconstructing Medical Terms — Worked Examples",
+      "headers": [
+        "Term",
+        "Prefix",
+        "Root(s)",
+        "Suffix",
+        "Meaning"
+      ]
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "a",
+        "e",
+        "i",
+        "o"
+      ],
+      "question": "What is the combining vowel most commonly used in medical terminology?",
+      "explanation": "The letter 'o' is by far the most common combining vowel in medical terminology. It is inserted between word roots or between a root and suffix to ease pronunciation. Occasionally 'i' is used (e.g. 'lumbosacral'), but 'o' accounts for the vast majority of combining vowels.",
+      "correctIndex": 3
+    },
+    {
+      "body": "When you encounter an unfamiliar medical term, read it from the suffix back to the prefix. The suffix tells you the general category (condition, procedure, study), the root tells you the body part or system, and the prefix modifies or refines the meaning. For example, 'pericarditis': -itis = inflammation, cardi = heart, peri- = around. So: inflammation around the heart.",
+      "type": "callout",
+      "title": "Reading Tip: Work Backwards",
+      "variant": "tip"
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 35
+}

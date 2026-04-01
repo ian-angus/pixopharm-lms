@@ -1,0 +1,131 @@
+{
+  "id": "81d36731-b038-4030-85cf-d988643d122c",
+  "module_id": "7eafe19e-77af-463c-a1e3-e9dcaada4e10",
+  "title": "Consequences of Medication Errors: Patient, Professional & Institutional",
+  "content": [
+    {
+      "text": "The Ripple Effect of Errors",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "A single medication error can set off a cascade of consequences that extends far beyond the immediate patient. Understanding these consequences — clinical, legal, psychological, financial, and institutional — reinforces why every safety measure matters and why 'it's just a small mistake' is never an acceptable attitude in pharmacy.",
+      "type": "text"
+    },
+    {
+      "text": "Patient Consequences",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "The patient bears the most direct consequences of a medication error. Physical harm ranges from mild discomfort to permanent disability or death. But the psychological impact is often overlooked: patients who experience medication errors frequently lose trust in the healthcare system, become anxious about taking prescribed medications (medication non-adherence), and may avoid seeking necessary care. In the Caribbean, where community pharmacies are trusted neighbourhood institutions, a single error can erode the confidence of an entire community.",
+      "type": "text"
+    },
+    {
+      "text": "Professional Consequences",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Healthcare professionals involved in medication errors face disciplinary action from regulatory bodies, potential criminal prosecution (particularly in cases of gross negligence), loss of registration or certification, and civil liability. In Caribbean jurisdictions where pharmacy technician registration is still developing, the supervising pharmacist typically bears the primary legal responsibility — but the technician's professional reputation and career prospects are equally at stake.",
+      "type": "text"
+    },
+    {
+      "body": "The healthcare professional involved in a medication error is often called the 'second victim.' Guilt, shame, anxiety, depression, and fear of recurrence can be devastating. In the Caribbean, where pharmacy teams are small and close-knit, the emotional impact on the entire team can be profound. A just culture — which distinguishes between honest mistakes, at-risk behaviour, and reckless behaviour — is essential for supporting second victims while maintaining accountability.",
+      "type": "callout",
+      "title": "Second Victim Syndrome",
+      "variant": "danger"
+    },
+    {
+      "text": "Institutional and Financial Consequences",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "For the pharmacy or hospital, medication errors carry financial costs including treatment of adverse outcomes, litigation expenses, insurance premium increases, regulatory fines, and lost revenue from diminished reputation. The WHO estimates that medication errors cost the global healthcare system US$42 billion annually. In resource-constrained Caribbean health systems, these costs divert funds from patient care and drug procurement.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Patient",
+          "Physical harm, psychological distress, medication non-adherence, loss of trust",
+          "Limited access to specialist follow-up care on smaller islands; community word-of-mouth amplifies reputational damage"
+        ],
+        [
+          "Professional",
+          "Disciplinary action, loss of registration, criminal charges, second victim syndrome",
+          "Small professional community means errors are widely known; limited access to counselling and peer support"
+        ],
+        [
+          "Institutional",
+          "Litigation costs, regulatory sanctions, insurance increases, staff turnover",
+          "Small pharmacies may not survive the financial impact; public sector pharmacies face political scrutiny"
+        ],
+        [
+          "Health System",
+          "Increased hospitalisations, increased healthcare costs, diversion of resources",
+          "Resource-constrained Caribbean systems cannot absorb preventable costs; medication shortages worsen when budgets are diverted to managing error consequences"
+        ]
+      ],
+      "type": "table",
+      "caption": "Consequences of Medication Errors — Multi-Level Impact",
+      "headers": [
+        "Level",
+        "Consequences",
+        "Caribbean-Specific Factors"
+      ]
+    },
+    {
+      "type": "island-comparison",
+      "title": "Legal Framework for Medication Errors by Island",
+      "islands": [
+        {
+          "flag": "🇹🇹",
+          "name": "Trinidad & Tobago",
+          "details": [
+            "Pharmacy Board of Trinidad and Tobago can investigate complaints and impose sanctions",
+            "Civil liability under tort law (negligence) — patients can sue for damages",
+            "Criminal prosecution possible under the Offences Against the Person Act for gross negligence causing harm or death",
+            "No specific medication error reporting legislation; voluntary reporting to Pharmacy Board"
+          ]
+        },
+        {
+          "flag": "🇯🇲",
+          "name": "Jamaica",
+          "details": [
+            "Pharmacy Council of Jamaica has disciplinary authority over registered pharmacists",
+            "Civil negligence claims adjudicated through the courts",
+            "Criminal charges possible in cases of reckless disregard for patient safety",
+            "National Health Fund monitors medication use in the public system"
+          ]
+        },
+        {
+          "flag": "🇧🇧",
+          "name": "Barbados",
+          "details": [
+            "Drug Service regulates pharmaceutical practice and can investigate incidents",
+            "Civil liability for negligence applies to both pharmacists and pharmacy owners",
+            "Queen Elizabeth Hospital has internal incident reporting systems for public sector errors",
+            "Professional liability insurance increasingly expected for community pharmacy practitioners"
+          ]
+        }
+      ],
+      "description": "The legal consequences of medication errors vary by jurisdiction. Understanding your island's framework is essential for every pharmacy professional."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "The second patient harmed by the same recurring error",
+        "The family member of the patient who suffers emotional distress",
+        "The healthcare professional involved in the error who experiences guilt, shame, and psychological harm",
+        "The pharmacy that loses business after a publicised error"
+      ],
+      "question": "What is 'second victim syndrome' in the context of medication errors?",
+      "explanation": "Second victim syndrome refers to the healthcare professional involved in an error who experiences significant psychological distress including guilt, shame, anxiety, depression, and fear. Supporting second victims through a just culture, peer support programmes, and access to counselling is essential for maintaining a healthy, safety-focused pharmacy team.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 30
+}

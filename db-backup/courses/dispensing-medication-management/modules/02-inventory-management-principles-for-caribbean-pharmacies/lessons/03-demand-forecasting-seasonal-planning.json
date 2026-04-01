@@ -1,0 +1,87 @@
+{
+  "id": "39bbf42c-6ef7-4b5b-a32a-a733bfe1ec8a",
+  "module_id": "2a2b8ae6-dc6c-4b92-b48f-b978c51bf5fd",
+  "title": "Demand Forecasting & Seasonal Planning",
+  "content": [
+    {
+      "text": "Predicting What Patients Will Need — Before They Need It",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Demand forecasting is the process of estimating future medication needs based on historical data, seasonal patterns, epidemiological trends, and population health changes. In the Caribbean, demand forecasting is complicated by seasonal disease patterns (dengue peaks in the rainy season, respiratory infections in cooler months), hurricane-related supply disruptions, and government programme changes (such as additions to the CDAP formulary in Trinidad or NHF benefit list in Jamaica).",
+      "type": "text"
+    },
+    {
+      "body": "Effective forecasting combines quantitative data (dispensing records, seasonal trend analysis, population demographics) with qualitative intelligence (upcoming public health campaigns, changes to government formularies, new clinic openings in the catchment area). The technician's daily observation of dispensing patterns is a valuable input — if you notice a gradual increase in demand for salbutamol inhalers, that might signal an emerging respiratory illness trend in the community.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Rainy season (June–November)",
+          "Dengue treatments, ORS, paracetamol, mosquito repellent",
+          "Increase stock 30–50% above baseline 4 weeks before season"
+        ],
+        [
+          "Hurricane preparedness",
+          "Emergency medications, first aid supplies, chronic disease buffer stock",
+          "Build 3-month emergency buffer for essential medicines by May"
+        ],
+        [
+          "Back-to-school (September)",
+          "Multivitamins, lice treatments, first aid supplies",
+          "Increase stock 2–3 weeks before school opening"
+        ],
+        [
+          "Carnival season (Trinidad)",
+          "Contraceptives, first aid, hangover remedies, sunscreen",
+          "Stock up 2–4 weeks before Carnival Monday and Tuesday"
+        ],
+        [
+          "Christmas/New Year",
+          "Antacids, diabetes supplies (dietary excess), first aid",
+          "Increase relevant stock in early December"
+        ]
+      ],
+      "type": "table",
+      "caption": "Seasonal Demand Patterns in the Caribbean",
+      "headers": [
+        "Season/Event",
+        "Increased Demand For",
+        "Planning Action"
+      ]
+    },
+    {
+      "body": "When a medication is added to a government subsidised programme — such as Trinidad's CDAP, Jamaica's NHF, or the Barbados Drug Service formulary — demand can spike dramatically overnight. Monitor government health announcements and pre-order stock in anticipation of formulary changes to avoid being caught with insufficient supply.",
+      "type": "callout",
+      "title": "Government Programme Changes",
+      "variant": "warning"
+    },
+    {
+      "type": "case-study",
+      "title": "Case Study: Dengue Outbreak Preparedness in Jamaica",
+      "scenario": "In July 2024, the Ministry of Health in Jamaica issues an alert about a dengue outbreak in the Kingston Metropolitan Area. A community pharmacy in Half Way Tree notices a 300% increase in demand for paracetamol tablets, oral rehydration salts (ORS), and mosquito repellent within 48 hours of the announcement. Their current stock covers only 5 days at the elevated demand rate. The next regular shipment is 3 weeks away.",
+      "questions": [
+        "What immediate steps should the pharmacy take to manage the supply surge?",
+        "How could better demand forecasting have prepared this pharmacy for the dengue season?",
+        "What role does the NHF programme play in ensuring access to dengue-related treatments?"
+      ],
+      "discussion": "This case illustrates the importance of seasonal demand forecasting. Caribbean pharmacies should begin building dengue-season stock in May, before the rainy season peaks. Immediate actions include: contacting alternative local suppliers, requesting emergency stock from the wholesaler, implementing quantity limits per customer to prevent hoarding, and communicating proactively with patients about expected restocking. The NHF may provide emergency allocations through its Essential Drug Programme during declared outbreaks."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "A manufacturing recall has caused panic buying",
+        "The rainy season and back-to-school period are driving increased respiratory illness",
+        "The government has removed salbutamol from the CDAP programme",
+        "Salbutamol has been reclassified as a controlled substance"
+      ],
+      "question": "A pharmacy in Trinidad notices a 40% increase in demand for salbutamol inhalers in September. What is the most likely explanation?",
+      "explanation": "September in Trinidad coincides with the peak of the rainy season and the return to school, both of which drive increased respiratory illness — particularly asthma exacerbations in children. This is a predictable seasonal pattern that should be factored into demand forecasting and stock planning.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 3,
+  "duration_minutes": 20
+}

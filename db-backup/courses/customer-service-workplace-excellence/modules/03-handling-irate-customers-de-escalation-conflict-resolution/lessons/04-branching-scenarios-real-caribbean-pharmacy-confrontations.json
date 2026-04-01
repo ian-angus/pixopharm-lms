@@ -1,0 +1,221 @@
+{
+  "id": "a76aee1a-d43d-42a9-b3f5-2035c828cf81",
+  "module_id": "1b66b300-d870-483b-ad7a-89886af4eca1",
+  "title": "Branching Scenarios: Real Caribbean Pharmacy Confrontations",
+  "content": [
+    {
+      "text": "Practice Before the Pressure: Interactive Scenarios",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Reading about de-escalation is one thing. Doing it in the moment — with your heart racing, a queue watching, and someone shouting in your face — is entirely different. These scenarios put you in the situation so you can practise making decisions under pressure before you face the real thing. There are no perfect answers, but there are better and worse choices. Each path leads to different outcomes.",
+      "type": "text"
+    },
+    {
+      "type": "scenario-simulation",
+      "nodes": [
+        {
+          "id": "start",
+          "text": "Mrs. Bartholomew asks for her regular amlodipine. You check the system — completely out of stock. She sees your face and says, 'Oh Lord, doh tell me allyuh eh have it. I need meh tablets! What I supposed to do? Allyuh does never have what people need!' Her voice is rising. Two other customers turn to look.",
+          "choices": [
+            {
+              "label": "Explain immediately: 'Sorry, the supplier didn't deliver this week—'",
+              "feedback": "You jumped to explaining before acknowledging her fear. She does not want logistics right now — she wants to know someone cares.",
+              "nextNodeId": "explain-first"
+            },
+            {
+              "label": "Listen, then empathise: 'Mrs. Bartholomew, I hear you. I know how important this medication is for you.'",
+              "feedback": "Good instinct. You acknowledged her feelings before trying to fix the problem. This is the LEAP method in action.",
+              "isOptimal": true,
+              "nextNodeId": "empathise-first"
+            },
+            {
+              "label": "Get defensive: 'Ma'am, the stock-out is not my fault. I cannot control the suppliers.'",
+              "feedback": "You made it about you when she is worried about her health. Defensiveness escalates conflict.",
+              "nextNodeId": "defensive"
+            }
+          ]
+        },
+        {
+          "id": "explain-first",
+          "text": "Mrs. Bartholomew interrupts: 'I doh care about the supplier! What about ME? I have pressure! I could get a stroke! You think this is a joke?' She is louder now. The other customers are watching openly.",
+          "choices": [
+            {
+              "label": "Pause, take a breath, then empathise: 'You are absolutely right to be worried. Let me find a solution for you right now.'",
+              "feedback": "Good recovery. You shifted from explaining to empathising. It is not too late to use the LEAP method.",
+              "isOptimal": true,
+              "nextNodeId": "recovery-empathy"
+            },
+            {
+              "label": "Continue explaining: 'If you let me finish, I was going to say we can check another branch.'",
+              "feedback": "Telling an upset patient to 'let you finish' sounds condescending and will escalate things further.",
+              "nextNodeId": "double-down"
+            }
+          ]
+        },
+        {
+          "id": "empathise-first",
+          "text": "Mrs. Bartholomew's tone softens slightly: 'I know it eh your fault, darling. But I really need this. I taking this for years. What I going to do?' She is still upset but engaging with you as a person now.",
+          "choices": [
+            {
+              "label": "Ask: 'When did you take your last tablet? Let me check what options we have right now.'",
+              "feedback": "Excellent. You are now in the Ask phase of LEAP — gathering information to find a solution.",
+              "isOptimal": true,
+              "nextNodeId": "ask-and-solve"
+            },
+            {
+              "label": "Promise: 'Do not worry, we will definitely have it by tomorrow.'",
+              "feedback": "Never promise what you cannot guarantee. If the supplier does not deliver tomorrow, you have broken her trust and made things worse.",
+              "nextNodeId": "false-promise"
+            }
+          ]
+        },
+        {
+          "id": "defensive",
+          "text": "Mrs. Bartholomew erupts: 'So is MY fault now?! I does come here every month and spend meh money and this is how allyuh treat people! Lemme talk to the pharmacist!' Other customers start murmuring. A woman in the queue says 'She right, you know.'",
+          "choices": [
+            {
+              "label": "Apologise and reset: 'You are right, I am sorry. Let me help you properly. Your health is what matters here.'",
+              "feedback": "It took a detour, but you recovered. An honest apology and a refocus on her needs can still salvage the interaction.",
+              "nextNodeId": "recovery-empathy"
+            },
+            {
+              "label": "Call the pharmacist immediately",
+              "feedback": "Escalating here is not wrong, but you missed an opportunity to build your own de-escalation skills. The pharmacist will need to start from scratch.",
+              "nextNodeId": "early-escalation"
+            }
+          ]
+        },
+        {
+          "id": "recovery-empathy",
+          "text": "Mrs. Bartholomew pauses. 'Okay... okay. So what we going to do?' She is calmer. She is ready for a solution.",
+          "choices": [
+            {
+              "label": "Propose: 'Let me call our Arima branch right now. I will also ask the pharmacist if there is a safe alternative we stock.'",
+              "feedback": "Perfect. You proposed concrete actions and involved the pharmacist appropriately for the clinical question.",
+              "isOptimal": true,
+              "nextNodeId": "good-resolution"
+            },
+            {
+              "label": "Suggest: 'You could try another pharmacy down the road.'",
+              "feedback": "Sending a loyal regular customer to a competitor should be the last resort, not the first suggestion. You may lose her permanently.",
+              "nextNodeId": "send-away"
+            }
+          ]
+        },
+        {
+          "id": "double-down",
+          "text": "Mrs. Bartholomew raises her hand: 'Doh tell me to let you finish! I is the customer! Where the pharmacist? I want to talk to somebody in charge!' She is now furious. The situation has escalated significantly.",
+          "choices": [
+            {
+              "label": "Step back, take a breath, and say: 'I am going to get the pharmacist for you right now. I am sorry for how this went.'",
+              "feedback": "Sometimes you need to recognise that the best thing you can do is step back. An honest apology shows maturity.",
+              "nextNodeId": "late-escalation"
+            }
+          ]
+        },
+        {
+          "id": "ask-and-solve",
+          "text": "Mrs. Bartholomew says: 'I take meh last one this morning. So I eh have none for tomorrow.' You know missing even one day of blood pressure medication can be risky for a long-term patient.",
+          "choices": [
+            {
+              "label": "Propose: 'I am going to call our other branches right now. I will also speak to the pharmacist about options. Give me five minutes — please have a seat.'",
+              "feedback": "Textbook LEAP execution. You listened, empathised, asked, and now you are proposing concrete action. Mrs. Bartholomew feels heard and helped.",
+              "isOptimal": true,
+              "nextNodeId": "excellent-resolution"
+            }
+          ]
+        },
+        {
+          "id": "false-promise",
+          "text": "Mrs. Bartholomew looks relieved. 'You sure? Tomorrow for sure?' You are not sure at all. The supplier has been unreliable all week.",
+          "choices": [
+            {
+              "label": "Correct yourself: 'Actually, let me be honest — I am not 100% sure about tomorrow. Let me check what I CAN guarantee right now.'",
+              "feedback": "Honesty is always better than a broken promise. Patients respect truthfulness far more than empty reassurance.",
+              "isOptimal": true,
+              "nextNodeId": "honest-recovery"
+            },
+            {
+              "label": "Double down: 'Yes, definitely tomorrow. I will make sure of it.'",
+              "feedback": "If the medication does not arrive tomorrow, you will have destroyed this patient's trust. Never promise what you cannot control.",
+              "nextNodeId": "broken-trust"
+            }
+          ]
+        },
+        {
+          "id": "excellent-resolution",
+          "text": "You call the Arima branch — they have amlodipine 10mg in stock. The pharmacist agrees to transfer 30 tablets. You tell Mrs. Bartholomew she can collect them from Arima this evening or you will have them here by tomorrow morning. She squeezes your hand and says: 'Thank you, darling. I sorry I did shouting. You is a good one.'",
+          "isEnd": true,
+          "outcome": "success",
+          "summary": "Outstanding de-escalation. You followed the LEAP method, addressed Mrs. Bartholomew's fear, and found a concrete solution. She leaves feeling heard, helped, and loyal to your pharmacy."
+        },
+        {
+          "id": "good-resolution",
+          "text": "You call the other branch and they have stock. The pharmacist suggests a transfer. Mrs. Bartholomew calms down and thanks you. 'I know allyuh does try yuh best. I was just worried.' She leaves with a plan and her dignity intact.",
+          "isEnd": true,
+          "outcome": "success",
+          "summary": "Good recovery after a rocky start. You got to the same positive outcome, though the interaction was more stressful than it needed to be. Next time, lead with empathy from the start."
+        },
+        {
+          "id": "send-away",
+          "text": "Mrs. Bartholomew stares at you. 'So after 8 years, you just sending me down the road? Fine.' She walks out. She does not come back — not that day, not that month. You have lost a loyal customer.",
+          "isEnd": true,
+          "outcome": "failure",
+          "summary": "Sending a loyal customer to a competitor signals that you do not value their patronage. The correct approach is to exhaust all options — other branches, pharmacist consultation, alternative medications — before suggesting they go elsewhere."
+        },
+        {
+          "id": "early-escalation",
+          "text": "The pharmacist comes out and handles the situation. Mrs. Bartholomew gets her issue resolved but tells the pharmacist: 'The young one there was not very helpful.' The pharmacist later gives you feedback about building your de-escalation skills.",
+          "isEnd": true,
+          "outcome": "partial",
+          "summary": "The issue was resolved, but you missed an opportunity to develop your own de-escalation skills and build a relationship with the customer. The pharmacist should be a backup, not a crutch."
+        },
+        {
+          "id": "late-escalation",
+          "text": "The pharmacist takes over and eventually resolves the issue. Mrs. Bartholomew leaves satisfied but shaken. The pharmacist debriefs with you afterwards — not to criticise, but to help you learn for next time.",
+          "isEnd": true,
+          "outcome": "partial",
+          "summary": "The situation escalated further than it needed to. The root cause was trying to explain before empathising. Remember: Listen first. Always."
+        },
+        {
+          "id": "honest-recovery",
+          "text": "Mrs. Bartholomew appreciates the honesty: 'At least you telling me the truth.' You call other branches, find stock, and arrange a solution. She leaves feeling she can trust you — not because everything went perfectly, but because you were honest.",
+          "isEnd": true,
+          "outcome": "success",
+          "summary": "Honesty recovered what could have been a trust-destroying false promise. Patients value truthfulness over empty reassurance. Well recovered."
+        },
+        {
+          "id": "broken-trust",
+          "text": "The medication does not arrive tomorrow. Mrs. Bartholomew returns, furious: 'You LIED to me!' This time, nothing you say will help. She leaves, writes a social media post about the pharmacy, and never returns. The pharmacist has to manage the online fallout.",
+          "isEnd": true,
+          "outcome": "failure",
+          "summary": "A false promise always catches up with you. Never commit to something outside your control. Honesty about uncertainty is always better than false confidence."
+        }
+      ],
+      "title": "Scenario: The Stock-Out Confrontation",
+      "description": "You are working the afternoon shift at a busy community pharmacy in Port of Spain, Trinidad. Mrs. Bartholomew, a regular customer in her 60s, arrives to collect her blood pressure medication — amlodipine 10mg. You check the shelf and the system: out of stock. The supplier has not delivered this week due to a shipping delay. Mrs. Bartholomew has been taking this medication for 8 years. She has no tablets left."
+    },
+    {
+      "body": "Notice how the best outcomes in this scenario all involved empathising before explaining, being honest about limitations, and offering concrete next steps. The worst outcomes came from defensiveness, false promises, and sending the customer away. These patterns hold true in almost every pharmacy confrontation.",
+      "type": "callout",
+      "title": "Reflection",
+      "variant": "info"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Immediately explaining the supply chain issue",
+        "Acknowledging the customer's feelings and showing you understand their concern",
+        "Getting defensive about the stock-out not being your fault",
+        "Promising the medication will be available tomorrow"
+      ],
+      "question": "In the stock-out scenario, which initial response leads to the best outcome?",
+      "explanation": "Leading with empathy — 'I hear you, I know how important this medication is' — de-escalates the emotional intensity and opens the door to problem-solving. Explanations, defensiveness, and false promises all escalate or defer the conflict.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 4,
+  "duration_minutes": 15
+}

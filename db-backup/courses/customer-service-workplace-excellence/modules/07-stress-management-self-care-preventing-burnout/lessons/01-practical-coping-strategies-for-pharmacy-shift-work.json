@@ -1,0 +1,102 @@
+{
+  "id": "20998963-a716-41d2-bea6-294dfbd5b1b4",
+  "module_id": "deb220dc-af47-44e5-9b48-3f56cc3ad0a4",
+  "title": "Practical Coping Strategies for Pharmacy Shift Work",
+  "content": [
+    {
+      "text": "Coping Strategies That Work in Real Life, Not Just in Textbooks",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "There is no shortage of wellness advice in the world: meditate, exercise, practise gratitude, take bubble baths. The problem is that most of this advice is written for people who do not work 10-hour shifts on their feet, deal with emotionally draining interactions all day, and then go home to family responsibilities on a salary that barely covers the bills. Pharmacy coping strategies need to be practical, time-efficient, and realistic for Caribbean life.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "The Shift Bookend",
+          "Create a deliberate start and end ritual for each shift. Before: take 2 minutes in the car to breathe and set an intention. After: leave work at work — do not carry patient stories home.",
+          "Daily, before and after every shift"
+        ],
+        [
+          "The Micro-Break",
+          "Take 60 seconds between difficult interactions: stretch, breathe, drink water. Not a full break, but a reset.",
+          "After every emotionally taxing interaction"
+        ],
+        [
+          "The Debrief Buddy",
+          "Find one trusted colleague you can process difficult experiences with. Take 5 minutes after a hard shift to talk it through.",
+          "After particularly challenging shifts"
+        ],
+        [
+          "The Boundary Practice",
+          "Learn to say no to extra shifts when you are depleted. 'I cannot take that shift — I need the rest' is a complete sentence.",
+          "When asked to cover shifts beyond your capacity"
+        ],
+        [
+          "The Competence Check",
+          "When you feel like nothing matters, make a list of three patients you helped well today. Remind yourself of your impact.",
+          "When cynicism or reduced efficacy sets in"
+        ],
+        [
+          "Physical Movement",
+          "Walk for 15 minutes after work, stretch during breaks, stand differently at the counter. Movement counteracts physical stagnation.",
+          "Daily, especially after long shifts"
+        ]
+      ],
+      "type": "table",
+      "caption": "Realistic Coping Strategies for Pharmacy Workers",
+      "headers": [
+        "Strategy",
+        "What It Involves",
+        "When to Use It"
+      ]
+    },
+    {
+      "body": "If you drive or take public transport to work, use the commute as a transition ritual. On the way to work: mentally prepare for the shift, set one intention ('I will stay patient today'). On the way home: deliberately let go of the day. Change the music. Call a friend about something non-work-related. The commute is your buffer zone between work and life — use it intentionally.",
+      "type": "callout",
+      "title": "The Commute Reset",
+      "variant": "tip"
+    },
+    {
+      "text": "Caribbean-Specific Coping",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Caribbean culture offers unique coping resources that Western wellness advice often overlooks. Community connection — liming with friends, going to church, spending time with extended family — is a powerful stress buffer. Music, food, the sea, Carnival, fete — these are not distractions from the hard work, they are the cultural infrastructure that makes it sustainable. Do not feel guilty about enjoying life. It is not frivolous — it is survival.",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Community: invest in relationships outside work — they remind you that you are more than your job",
+        "Spirituality: whatever your faith tradition, spiritual practice provides meaning and perspective during difficult times",
+        "Nature: the Caribbean Sea, the mountains, the green — access to nature is a stress relief that costs nothing",
+        "Food: cooking for yourself and others is a grounding, nurturing activity — especially sharing a meal with people you love",
+        "Creative expression: music, writing, art, dance — creative outlets process emotions that words cannot reach"
+      ],
+      "ordered": false
+    },
+    {
+      "term": "Shift Bookend",
+      "type": "key-term",
+      "definition": "A deliberate ritual practised at the beginning and end of each work shift to create psychological boundaries between work and personal life. The pre-shift bookend involves preparation and intention-setting; the post-shift bookend involves conscious release of work-related stress and mental transition to personal time."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Starting and ending every shift at the exact same time",
+        "A deliberate pre-shift and post-shift ritual to create psychological boundaries between work and personal life",
+        "Reading a book at the beginning and end of each shift",
+        "Arriving early and leaving late to show dedication"
+      ],
+      "question": "What is the 'shift bookend' technique?",
+      "explanation": "The shift bookend is a psychological boundary-setting technique. Before the shift, you take a moment to prepare and set an intention. After the shift, you deliberately let go of work stress and transition to personal time. This prevents work from bleeding into every aspect of your life.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 25
+}

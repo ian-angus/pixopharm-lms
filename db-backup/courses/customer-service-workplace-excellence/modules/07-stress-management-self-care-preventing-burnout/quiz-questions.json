@@ -1,0 +1,181 @@
+[
+  {
+    "id": "40ec3460-6dac-4fa4-a218-89a8a7e1838a",
+    "module_id": "deb220dc-af47-44e5-9b48-3f56cc3ad0a4",
+    "question": "According to the WHO, what are the three dimensions of burnout?",
+    "options": [
+      "Anger, depression, and anxiety",
+      "Exhaustion, cynicism, and reduced professional efficacy",
+      "Physical illness, emotional withdrawal, and job dissatisfaction",
+      "Fatigue, insomnia, and weight change"
+    ],
+    "correct_answer": 1,
+    "explanation": "The WHO (ICD-11) defines burnout through three dimensions: exhaustion (energy depletion), cynicism (mental distance from the job), and reduced professional efficacy (feeling ineffective). Understanding these dimensions helps in early recognition and intervention.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "729fdab5-75c8-4a7b-aec8-b6706182ee0f",
+    "module_id": "deb220dc-af47-44e5-9b48-3f56cc3ad0a4",
+    "question": "Which of the following is an early warning sign of burnout?",
+    "options": [
+      "Feeling energised by challenging patients",
+      "Volunteering for extra shifts because you love your job",
+      "Dreading the start of every shift and counting the hours until it ends",
+      "Finding new ways to improve pharmacy workflow"
+    ],
+    "correct_answer": 2,
+    "explanation": "Dreading each shift and clock-watching are early indicators of the exhaustion and cynicism dimensions of burnout. In contrast, feeling energised by challenges, volunteering willingly, and seeking improvements are signs of engagement — the opposite of burnout.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "e025cad7-f2b1-41f3-b8ba-b028bfceae52",
+    "module_id": "deb220dc-af47-44e5-9b48-3f56cc3ad0a4",
+    "question": "What is the 'shift bookend' technique?",
+    "options": [
+      "Arriving early and leaving late to prepare and clean up",
+      "A deliberate pre-shift and post-shift ritual to create psychological boundaries between work and life",
+      "Having a colleague cover the start and end of your shift",
+      "Reading pharmacy literature before and after each shift"
+    ],
+    "correct_answer": 1,
+    "explanation": "The shift bookend creates psychological boundaries between work and personal life. Before the shift, a brief ritual prepares your mindset. After the shift, a deliberate release ritual prevents you from carrying work stress home. This technique is simple, time-efficient, and highly effective.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "2d132d31-5dcc-4df5-b0ae-1635e79d83a1",
+    "module_id": "deb220dc-af47-44e5-9b48-3f56cc3ad0a4",
+    "question": "Why is the Caribbean cultural expectation to 'just push through' harmful in the context of workplace stress?",
+    "options": [
+      "Because Caribbean people are not as resilient as others",
+      "Because it delays recognition and treatment of burnout, allowing it to worsen",
+      "Because it makes people work too slowly",
+      "Because it is a tradition that should be respected, not questioned"
+    ],
+    "correct_answer": 1,
+    "explanation": "The cultural pressure to 'push through' without acknowledging stress delays recognition of burnout symptoms and prevents people from seeking help early. By the time burnout is acknowledged, it has often progressed to a severe stage. Early recognition and intervention are far more effective.",
+    "order_index": 3,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "analyze"
+  },
+  {
+    "id": "0f4d58ea-a5b1-4513-9da2-98e24ecbe27a",
+    "module_id": "deb220dc-af47-44e5-9b48-3f56cc3ad0a4",
+    "question": "What are the three pillars of career resilience?",
+    "options": [
+      "Money, status, and power",
+      "Speed, accuracy, and customer service",
+      "Meaning, support, and boundaries",
+      "Knowledge, skills, and experience"
+    ],
+    "correct_answer": 2,
+    "explanation": "Career resilience is sustained by three pillars: meaning (understanding why your work matters), support (relationships and systems that sustain you), and boundaries (knowing your limits and enforcing them). All three are necessary for long-term professional sustainability.",
+    "order_index": 4,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "d2efa3e7-fd77-4114-8234-438d687ad97e",
+    "module_id": "deb220dc-af47-44e5-9b48-3f56cc3ad0a4",
+    "question": "Which of the following are appropriate actions when you recognise burnout symptoms in a colleague? (Select all that apply)",
+    "options": [
+      "Approach them privately and express genuine concern",
+      "Report them to management for poor performance",
+      "Offer to cover a shift if they need a break",
+      "Ignore it — their personal struggles are not your business",
+      "Share information about available support resources"
+    ],
+    "correct_answer": 0,
+    "explanation": "When a colleague shows signs of burnout, the compassionate and professional response includes: speaking with them privately, offering practical support like shift coverage, and sharing information about mental health resources. Reporting them as underperforming or ignoring the situation both fail to address the root cause.",
+    "order_index": 5,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "evaluate"
+  },
+  {
+    "id": "c9aaf85e-1273-49bb-8642-47e2f5766cc6",
+    "module_id": "deb220dc-af47-44e5-9b48-3f56cc3ad0a4",
+    "question": "You have been working as a pharmacy technician for three years. Lately, you feel exhausted before each shift, have lost empathy for patients you once cared about, and feel like your work does not make a difference. These feelings have persisted for several months. What is the MOST appropriate first step?",
+    "options": [
+      "Quit your job immediately — it is clearly not for you",
+      "Push through it — everyone feels this way sometimes",
+      "Acknowledge the burnout, speak to a trusted person, and explore what structural changes could help",
+      "Take a two-week holiday and assume you will feel better when you return"
+    ],
+    "correct_answer": 2,
+    "explanation": "This scenario describes established burnout across all three dimensions. The first step is acknowledging it rather than denying or fleeing. Speaking to a trusted person provides perspective, and exploring structural changes (workload, support, boundaries) addresses root causes. A holiday alone will not fix burnout if the underlying conditions remain unchanged.",
+    "order_index": 6,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "hard",
+    "blooms_level": "evaluate"
+  },
+  {
+    "id": "7936cd7e-f6e4-442a-afa1-395e8a18da90",
+    "module_id": "deb220dc-af47-44e5-9b48-3f56cc3ad0a4",
+    "question": "True resilience in pharmacy work means being able to handle any amount of stress without complaint.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": 1,
+    "explanation": "This is a harmful myth. True resilience is not about absorbing unlimited stress without complaint. It is about sustaining high-quality work and personal wellbeing over the course of a career through meaning, support, and boundaries. Complaining about unsustainable conditions is healthy advocacy, not weakness.",
+    "order_index": 7,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "05e599d2-0ed6-427f-8188-0f83da8fcfa5",
+    "module_id": "deb220dc-af47-44e5-9b48-3f56cc3ad0a4",
+    "question": "Which of the following is a Caribbean-specific coping resource that Western wellness advice often overlooks?",
+    "options": [
+      "Expensive gym memberships",
+      "Community connection — liming, church, extended family, shared meals",
+      "Corporate Employee Assistance Programmes",
+      "Online meditation apps"
+    ],
+    "correct_answer": 1,
+    "explanation": "Caribbean culture offers powerful coping resources including community connection (liming, church, extended family), cultural celebrations (Carnival, fete), and access to natural beauty (sea, mountains). These culturally embedded stress buffers are often more accessible and effective than Western wellness recommendations.",
+    "order_index": 8,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "1324422b-732f-45cb-b295-0dd181a929b6",
+    "module_id": "deb220dc-af47-44e5-9b48-3f56cc3ad0a4",
+    "question": "At what point should a pharmacy technician seek professional mental health help?",
+    "options": [
+      "Only after being diagnosed with a mental illness",
+      "When persistent feelings of hopelessness, inability to function, or thoughts of self-harm occur",
+      "Only after being fired from their job",
+      "When their pharmacist tells them they need help"
+    ],
+    "correct_answer": 1,
+    "explanation": "Professional help should be sought when experiencing persistent hopelessness, inability to function at work or home, emotional numbness, or thoughts of self-harm. Waiting for a formal diagnosis, job loss, or someone else to notice delays intervention. Early help-seeking is a sign of strength and self-awareness.",
+    "order_index": 9,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "evaluate"
+  }
+]

@@ -1,0 +1,87 @@
+{
+  "id": "2c26f26e-6e2c-4086-ae66-b618cc0a99ff",
+  "module_id": "c354ee80-fb9f-423b-864a-2b0454f2bd54",
+  "title": "Macrolides, Fluoroquinolones & Other Antibiotics",
+  "content": [
+    {
+      "text": "Beyond the Beta-Lactams",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "When beta-lactams are inappropriate (allergy, resistance, or specific pathogen requirements), other antibiotic classes step in. Macrolides (azithromycin, erythromycin), fluoroquinolones (ciprofloxacin, levofloxacin), and others play important roles in Caribbean antibiotic therapy.",
+      "type": "text"
+    },
+    {
+      "body": "Azithromycin has become one of the most popular antibiotics in Caribbean practice due to its convenient dosing (3-day or 5-day courses), broad spectrum, and good tissue penetration. Ciprofloxacin is the go-to fluoroquinolone for urinary tract infections and gastroenteritis. Metronidazole is indispensable for anaerobic infections and amoebic dysentery — both common Caribbean presentations. Each class has distinct mechanisms, spectra, and side effect profiles that pharmacy technicians must understand.",
+      "type": "text"
+    },
+    {
+      "term": "Macrolide",
+      "type": "key-term",
+      "definition": "An antibiotic class that inhibits bacterial protein synthesis by binding to the 50S ribosomal subunit. Examples: azithromycin (Z-pack), erythromycin, clarithromycin. Azithromycin's convenient 3-5 day course makes it popular in Caribbean practice."
+    },
+    {
+      "rows": [
+        [
+          "Macrolide",
+          "Azithromycin",
+          "Protein synthesis inhibition (50S)",
+          "RTIs in penicillin-allergic patients, chlamydia, H. pylori"
+        ],
+        [
+          "Fluoroquinolone",
+          "Ciprofloxacin",
+          "DNA gyrase/topoisomerase inhibition",
+          "UTIs, gastroenteritis, bone infections"
+        ],
+        [
+          "Tetracycline",
+          "Doxycycline",
+          "Protein synthesis inhibition (30S)",
+          "Acne, chlamydia, malaria prophylaxis, leptospirosis"
+        ],
+        [
+          "Aminoglycoside",
+          "Gentamicin",
+          "Protein synthesis inhibition (30S)",
+          "Severe infections (IV/IM), usually hospital-based"
+        ],
+        [
+          "Nitroimidazole",
+          "Metronidazole",
+          "DNA disruption",
+          "Anaerobic infections, amoebic dysentery, H. pylori"
+        ]
+      ],
+      "type": "table",
+      "caption": "Non-Beta-Lactam Antibiotics in Caribbean Practice",
+      "headers": [
+        "Class",
+        "Example",
+        "Mechanism",
+        "Key Caribbean Use"
+      ]
+    },
+    {
+      "body": "Metronidazole causes a severe reaction with alcohol — nausea, vomiting, flushing, headache, and tachycardia. This 'disulfiram-like' reaction can occur up to 48 hours after the last dose. In the Caribbean social context where alcohol consumption is common, this counselling point is critical. Always warn patients explicitly.",
+      "type": "callout",
+      "title": "Metronidazole and Alcohol: The Disulfiram Reaction",
+      "variant": "warning"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Take with food only",
+        "Avoid sunlight exposure",
+        "Avoid ALL alcohol during treatment and for 48 hours after completing the course",
+        "Take at bedtime only"
+      ],
+      "question": "A patient is prescribed metronidazole for a dental infection. What is the most important counselling point?",
+      "explanation": "Metronidazole causes a disulfiram-like reaction with alcohol: severe nausea, vomiting, flushing, and tachycardia. Patients must avoid alcohol completely during and for 48 hours after treatment.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 20
+}

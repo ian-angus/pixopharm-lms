@@ -1,0 +1,156 @@
+{
+  "id": "cd6ee3ed-c8cf-4e20-9234-22fa197b0e46",
+  "module_id": "92fe6b21-d361-44b7-bb64-0f1af50d8b66",
+  "title": "Occupational Health & the Pharmacy Safety Plan",
+  "content": [
+    {
+      "text": "Protecting the Pharmacy Team",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Pharmacy work involves physical, chemical, biological, and ergonomic hazards that can affect the long-term health of technicians and pharmacists. In the Caribbean, where occupational health regulation and enforcement are less developed than in North America or Europe, pharmacy professionals must take proactive responsibility for their own workplace safety and advocate for safe conditions.",
+      "type": "text"
+    },
+    {
+      "text": "Occupational Hazards in Pharmacy",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "rows": [
+        [
+          "Ergonomic",
+          "Prolonged standing, repetitive counting motions, awkward postures at the dispensing bench",
+          "Back pain, foot problems, repetitive strain injuries (carpal tunnel syndrome)",
+          "Anti-fatigue mats, proper workstation height, regular breaks, task rotation"
+        ],
+        [
+          "Chemical",
+          "Exposure to drug dust during counting/compounding, cleaning chemical fumes",
+          "Respiratory sensitisation, skin irritation, long-term organ damage from hazardous drug exposure",
+          "PPE (gloves, masks for compounding), ventilation, hazardous drug protocols"
+        ],
+        [
+          "Biological",
+          "Exposure to infectious patients, contaminated surfaces, needle sticks (hospital pharmacies)",
+          "Respiratory infections, bloodborne pathogen exposure",
+          "Standard precautions, hand hygiene, respiratory protection, sharps protocols"
+        ],
+        [
+          "Physical",
+          "Lifting heavy drug shipment boxes, exposure to UV light from laminar flow hoods",
+          "Musculoskeletal injury, UV skin/eye damage",
+          "Proper lifting technique, team lifting for heavy items, UV shielding"
+        ],
+        [
+          "Psychosocial",
+          "High workload, time pressure, error anxiety, abuse from frustrated patients",
+          "Burnout, anxiety, depression, compassion fatigue",
+          "Adequate staffing, just culture, peer support, workload management"
+        ]
+      ],
+      "type": "table",
+      "caption": "Common Occupational Health Hazards for Pharmacy Technicians",
+      "headers": [
+        "Hazard Category",
+        "Specific Hazards",
+        "Health Consequences",
+        "Prevention"
+      ]
+    },
+    {
+      "body": "Burnout among pharmacy professionals has reached crisis levels globally, and the Caribbean is no exception. Long hours, high prescription volumes, understaffing, and the constant pressure to avoid errors create chronic stress. In small Caribbean pharmacies where there is no backup staff, technicians may work through illness, skip breaks, and take on responsibilities beyond their scope. This is not dedication — it is a safety risk. A burned-out technician is more likely to make errors, less likely to report near-misses, and more likely to leave the profession.",
+      "type": "callout",
+      "title": "The Silent Epidemic: Pharmacy Worker Burnout",
+      "variant": "warning"
+    },
+    {
+      "text": "The Pharmacy Workplace Safety Plan",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Every pharmacy should have a written workplace safety plan — a concise document that identifies the specific hazards present in that pharmacy and the measures in place to control them. For a Caribbean community pharmacy, a basic workplace safety plan should cover: hazardous drug handling procedures, infection control protocols, emergency procedures (fire, hurricane, robbery), spill management, PPE requirements and availability, ergonomic measures, and staff health and wellbeing provisions.",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Hazard identification — walk through the pharmacy and list all physical, chemical, biological, and ergonomic hazards",
+        "Risk assessment — for each hazard, assess the likelihood of exposure and severity of potential harm",
+        "Control measures — for each risk, document the prevention strategy (elimination, substitution, engineering controls, administrative controls, PPE)",
+        "Emergency procedures — fire evacuation, hurricane preparedness, power outage protocols, robbery response",
+        "Training requirements — document which staff need training on which safety topics, and when",
+        "Review schedule — the safety plan should be reviewed and updated annually, or whenever a significant change occurs"
+      ],
+      "ordered": true
+    },
+    {
+      "type": "island-comparison",
+      "title": "Occupational Health Legislation in the Caribbean",
+      "islands": [
+        {
+          "flag": "🇹🇹",
+          "name": "Trinidad & Tobago",
+          "details": [
+            "Occupational Safety and Health Act (OSHA TT), 2004 — comprehensive occupational health legislation",
+            "The OSH Agency enforces workplace safety standards across all industries including healthcare",
+            "Employers are legally required to provide a safe workplace, PPE, and safety training",
+            "Pharmacy-specific occupational health guidelines are limited; general healthcare standards apply",
+            "Workers can refuse unsafe work without reprisal under the Act"
+          ]
+        },
+        {
+          "flag": "🇯🇲",
+          "name": "Jamaica",
+          "details": [
+            "Occupational Safety and Health Act, 2017 — modernised Jamaica's workplace safety framework",
+            "The Ministry of Labour and Social Security enforces OSH standards",
+            "Employer obligations include risk assessment, safety training, and incident reporting",
+            "Healthcare sector occupational health is addressed under general industry standards",
+            "Jamaica's OSH framework is considered among the most comprehensive in CARICOM"
+          ]
+        },
+        {
+          "flag": "🇧🇧",
+          "name": "Barbados",
+          "details": [
+            "Safety and Health at Work Act, 2005 — governs workplace safety across all sectors",
+            "The Labour Department enforces compliance",
+            "Employers must ensure the health, safety, and welfare of employees at work",
+            "Occupational health standards for pharmacies are embedded in general healthcare workplace requirements",
+            "Barbados is developing updated guidance for chemical handling in healthcare settings"
+          ]
+        }
+      ],
+      "description": "Occupational safety and health legislation varies across the Caribbean. Pharmacy professionals should know the framework in their jurisdiction."
+    },
+    {
+      "type": "case-study",
+      "title": "Case Study: The Methotrexate Spill",
+      "scenario": "A pharmacy technician in a community pharmacy in Port of Spain, Trinidad, is counting methotrexate 2.5 mg tablets using a standard counting tray. While transferring the tablets from the stock bottle to the tray, she drops the bottle, scattering tablets across the dispensing bench and floor. Several tablets break on impact, generating visible dust. The technician is not wearing gloves. Another technician, who is pregnant, is working at the adjacent bench two metres away. There is no spill kit available. The pharmacy has never conducted hazardous drug training.",
+      "questions": [
+        "What immediate actions should be taken to protect the technician and her pregnant colleague?",
+        "Why is methotrexate classified as a hazardous drug, and what are the specific risks of exposure?",
+        "What systemic failures does this scenario reveal?",
+        "Design a hazardous drug handling protocol that would have prevented this situation."
+      ],
+      "discussion": "Immediate actions: the pregnant technician should leave the area immediately. The exposed technician should not touch the broken tablets with bare hands — she should wash any exposed skin, then use available materials (paper towels, gloves from the first aid kit) to carefully contain the spill. All contaminated surfaces should be wiped with wet paper towels (to trap dust rather than spread it). Methotrexate is an antimetabolite classified as hazardous by NIOSH — occupational exposure can cause reproductive toxicity, liver damage, and bone marrow suppression. Systemic failures include: no hazardous drug training, no PPE available for hazardous drug handling, no spill kit, no dedicated counting tray for hazardous drugs, no policy for reassigning pregnant staff away from hazardous drug tasks, and no facility-specific hazardous drug list. A comprehensive protocol would address all of these gaps."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Assigned to handle hazardous drugs because pregnancy does not affect drug handling safety",
+        "Reassigned away from all hazardous drug handling tasks due to reproductive toxicity risk",
+        "Required to wear standard gloves while continuing to handle hazardous drugs",
+        "Placed on unpaid leave until after delivery"
+      ],
+      "question": "A pharmacy technician who is pregnant should be:",
+      "explanation": "Pregnant pharmacy staff (and those attempting to conceive or breastfeeding) should be reassigned away from hazardous drug handling tasks. Occupational exposure to certain hazardous drugs — particularly antineoplastics like methotrexate and cyclophosphamide — is associated with increased risk of miscarriage, congenital abnormalities, and reproductive harm. Standard gloves are NOT adequate protection; reassignment is the correct approach.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 30
+}

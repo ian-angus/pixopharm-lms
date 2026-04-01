@@ -1,0 +1,88 @@
+{
+  "id": "63f781ec-fd21-4357-a9ac-60da3d4239cb",
+  "module_id": "710621ab-0904-462c-84b8-da3229d5c8dc",
+  "title": "Informed Consent in Pharmacy Practice",
+  "content": [
+    {
+      "text": "Consent: More Than a Signature",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Informed consent in pharmacy is not just about getting a patient to sign a form. It is the ethical and legal process of ensuring that a patient understands what is being done, why it is being done, what the alternatives are, and what the risks and benefits are — and then freely choosing to proceed. While formal written consent is typically required for clinical trials and some pharmacy-led services (vaccinations, point-of-care testing), implied consent operates in most routine dispensing interactions.",
+      "type": "text"
+    },
+    {
+      "term": "Informed Consent",
+      "type": "key-term",
+      "definition": "The process by which a patient is provided with sufficient information about a proposed treatment, service, or intervention — including its purpose, benefits, risks, and alternatives — to make a voluntary, informed decision about whether to proceed. Valid consent requires three elements: the patient must have capacity, the consent must be voluntary, and the patient must be adequately informed."
+    },
+    {
+      "rows": [
+        [
+          "Capacity",
+          "The patient has the mental ability to understand the information and make a decision",
+          "An elderly patient with dementia may not have capacity to consent to a complex medication change — involve the designated caregiver"
+        ],
+        [
+          "Voluntariness",
+          "The consent is given freely, without coercion or undue influence",
+          "A patient should never feel pressured to accept a pharmacy service because they 'owe' the pharmacist for free advice"
+        ],
+        [
+          "Information",
+          "Sufficient information has been provided for the patient to make an informed choice",
+          "Before administering a flu vaccine, explain the benefits, possible side effects (soreness, mild fever), alternatives (not vaccinating), and when to seek help"
+        ]
+      ],
+      "type": "table",
+      "caption": "Elements of Valid Informed Consent in Pharmacy",
+      "headers": [
+        "Element",
+        "Meaning",
+        "Pharmacy Example"
+      ]
+    },
+    {
+      "text": "When Is Formal Written Consent Required?",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "type": "list",
+      "items": [
+        "Pharmacy-administered vaccinations (where authorised by jurisdiction)",
+        "Point-of-care testing services (blood glucose, blood pressure screening programmes with data recording)",
+        "Participation in pharmacy-led research or clinical trials",
+        "Enrolment in medication therapy management (MTM) programmes",
+        "Telepharmacy or remote dispensing services",
+        "Sharing of patient health information with third parties (insurers, other healthcare providers)"
+      ],
+      "ordered": false
+    },
+    {
+      "body": "When a patient presents a prescription and waits for it to be filled, they are providing implied consent to the dispensing service. However, implied consent has limits. It covers routine dispensing and basic counselling. It does NOT cover sharing their information with others, enrolling them in programmes, or performing additional services beyond what they requested. When in doubt, ask.",
+      "type": "callout",
+      "title": "Implied Consent in Routine Dispensing",
+      "variant": "info"
+    },
+    {
+      "body": "In the Caribbean, consent is often informal and based on trust relationships. A patient who has been visiting the same pharmacy for 20 years may never have been formally consented for anything. This trust is valuable but must not be taken for granted. As pharmacy services expand — into vaccinations, screening, and chronic disease management — formal consent processes become increasingly important.",
+      "type": "text"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Dispensing a routine antibiotic prescription",
+        "Providing basic medication counselling at the counter",
+        "Administering a flu vaccination in the pharmacy",
+        "Selling an OTC pain reliever"
+      ],
+      "question": "Which of the following pharmacy services typically requires formal written informed consent?",
+      "explanation": "Pharmacy-administered vaccinations require formal written informed consent because they involve a clinical procedure (injection), carry specific risks (allergic reaction, side effects), and involve a service beyond routine dispensing. Routine dispensing and OTC sales operate on implied consent.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 25
+}

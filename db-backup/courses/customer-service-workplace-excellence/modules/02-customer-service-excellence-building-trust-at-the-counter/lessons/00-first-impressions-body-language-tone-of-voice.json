@@ -1,0 +1,100 @@
+{
+  "id": "87040511-22d7-4169-bdd3-18a1b8ebbf6a",
+  "module_id": "5fca0e13-4c01-45d1-b424-9b6c4b52249e",
+  "title": "First Impressions, Body Language, Tone of Voice",
+  "content": [
+    {
+      "text": "You Are Judged in the First Seven Seconds",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Research consistently shows that people form a first impression within seven seconds of meeting someone. In a pharmacy, that impression determines whether a patient trusts you with their health information, follows your instructions, and comes back. Your body language, facial expression, and tone of voice communicate far more than your words — and patients who are unwell, anxious, or in pain read those signals with heightened sensitivity.",
+      "type": "text"
+    },
+    {
+      "body": "In Caribbean culture, warmth and respect are non-negotiable in customer interactions. A pharmacy technician who is technically competent but cold or dismissive will lose patients to the pharmacy down the road. Conversely, a technician who greets with genuine warmth — even on a hectic day — creates loyalty that no discount can match.",
+      "type": "text"
+    },
+    {
+      "term": "Non-Verbal Communication",
+      "type": "key-term",
+      "definition": "All forms of communication beyond words: facial expressions, eye contact, posture, hand gestures, physical distance, and tone of voice. Studies suggest non-verbal cues account for 55–93% of the emotional content of a message, making them critically important in healthcare interactions."
+    },
+    {
+      "rows": [
+        [
+          "Eye contact",
+          "Making natural eye contact = 'I see you and you matter'",
+          "Avoiding eye contact = 'I am busy and you are interrupting'"
+        ],
+        [
+          "Posture",
+          "Standing upright, facing the patient = 'I am ready to help'",
+          "Slouching, turned sideways = 'I do not want to be here'"
+        ],
+        [
+          "Arms",
+          "Arms relaxed at sides or on counter = 'I am open and approachable'",
+          "Arms crossed = 'I am guarded or impatient'"
+        ],
+        [
+          "Facial expression",
+          "Gentle smile, engaged expression = 'I care'",
+          "Blank stare, frown, or eye-rolling = 'You are bothering me'"
+        ],
+        [
+          "Physical distance",
+          "Leaning slightly forward = 'I am listening'",
+          "Stepping back or turning away = 'This conversation is over'"
+        ]
+      ],
+      "type": "table",
+      "caption": "Body Language Signals — What Patients Read",
+      "headers": [
+        "Signal",
+        "Positive Message",
+        "Negative Message"
+      ]
+    },
+    {
+      "text": "Tone of Voice: The Music Behind the Words",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Your tone of voice carries emotion that your words alone cannot convey. The sentence 'How can I help you?' can sound genuinely helpful, bored, irritated, or sarcastic depending entirely on tone. In the Caribbean, tone carries particular cultural weight — a sharp tone can be perceived as 'rude' or 'out of order' regardless of what was actually said. Patients remember how you made them feel long after they forget what you said.",
+      "type": "text"
+    },
+    {
+      "body": "Before your shift, speak your greeting out loud: 'Good morning, welcome to [pharmacy name]. How can I help you today?' If it sounds flat, practise until it carries warmth. Record yourself on your phone if needed. Your voice is a tool — keep it tuned.",
+      "type": "callout",
+      "title": "The Voice Check",
+      "variant": "tip"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Speak at a moderate pace — not so fast that patients cannot follow, not so slow that it feels condescending",
+        "Match your volume to the situation — lower your voice for sensitive conversations, speak clearly for elderly patients",
+        "Avoid the 'customer service voice' that sounds rehearsed or robotic — patients can tell when you are reading from a script in your head",
+        "Use the patient's name when you know it — it is the most powerful word in any language"
+      ],
+      "ordered": false
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Continue typing and say 'one second' without looking up",
+        "Look up, make eye contact, smile, and greet them warmly before returning to your task",
+        "Point to the waiting area and say 'I will call you when I am ready'",
+        "Finish what you are doing silently, then turn to the patient"
+      ],
+      "question": "A patient approaches the counter while you are entering data into the computer. What is the best first response?",
+      "explanation": "Acknowledging the patient immediately with eye contact and a greeting — even if you need a moment to finish your current task — shows respect and tells them they are seen. It takes two seconds and prevents the patient from feeling ignored or unimportant.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 25
+}

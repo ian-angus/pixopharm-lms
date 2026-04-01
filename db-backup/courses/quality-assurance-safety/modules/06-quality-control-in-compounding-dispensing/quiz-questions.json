@@ -1,0 +1,146 @@
+[
+  {
+    "id": "deced165-bb7b-4886-a616-cad06ed9642b",
+    "module_id": "e0506ad3-0af5-4df8-a4be-e6430624b383",
+    "question": "What is the acceptable temperature range for refrigerated medication storage?",
+    "options": [
+      "0-2 °C",
+      "2-8 °C",
+      "8-15 °C",
+      "15-25 °C"
+    ],
+    "correct_answer": 1,
+    "explanation": "The internationally accepted temperature range for refrigerated pharmaceutical storage is 2-8 °C. Temperatures below 2 °C risk freezing (which can damage many medications, particularly insulin and vaccines), while temperatures above 8 °C do not provide adequate cold storage.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "b4f36da8-ba67-4297-943b-990b36131667",
+    "module_id": "e0506ad3-0af5-4df8-a4be-e6430624b383",
+    "question": "Which dosage form is MOST vulnerable to tropical humidity in a Caribbean pharmacy?",
+    "options": [
+      "Injectable solutions in sealed ampoules",
+      "Tablets and capsules in opened multi-dose containers",
+      "Topical ointments in sealed tubes",
+      "Liquid syrups in sealed bottles"
+    ],
+    "correct_answer": 1,
+    "explanation": "Tablets and capsules in opened multi-dose containers are most vulnerable because each time the container is opened, humid tropical air enters and is absorbed by the dosage form. This can cause tablets to soften, stick together, and degrade. Sealed ampoules, tubes, and bottles provide a moisture barrier until opened.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "analyze"
+  },
+  {
+    "id": "78e51948-7724-43c5-bc5e-92743e44fc0d",
+    "module_id": "e0506ad3-0af5-4df8-a4be-e6430624b383",
+    "question": "Why might an insulin vial that appears normal still be ineffective after transport in a Caribbean delivery van?",
+    "options": [
+      "Insulin changes colour when it degrades",
+      "The delivery van vibrations physically break down insulin molecules",
+      "Heat exposure above 30 °C can denature insulin proteins without visible changes, reducing potency",
+      "Insulin is not affected by temperature during transport"
+    ],
+    "correct_answer": 2,
+    "explanation": "Insulin is a protein that can denature (lose its three-dimensional structure and potency) when exposed to temperatures above 30 °C. This denaturation may not produce any visible changes — the vial looks normal, but the insulin has lost effectiveness. This is why continuous cold chain monitoring from manufacturer to patient is critical.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "hard",
+    "blooms_level": "analyze"
+  },
+  {
+    "id": "4e0ffb23-d0b6-4271-8e30-1318cd571dba",
+    "module_id": "e0506ad3-0af5-4df8-a4be-e6430624b383",
+    "question": "What is a beyond-use date (BUD) for a compounded preparation?",
+    "options": [
+      "The manufacturer's expiry date printed on commercial products",
+      "The date after which a compounded preparation should not be used, based on its stability in specific storage conditions",
+      "The date the prescription expires",
+      "The date by which the pharmacy must sell the product"
+    ],
+    "correct_answer": 1,
+    "explanation": "A beyond-use date is assigned by the compounding pharmacy based on the stability of the specific preparation in its container under expected storage conditions. Unlike a manufacturer's expiry date (which is based on extensive stability testing), the BUD is assigned using USP guidelines and must be shortened in tropical conditions where storage temperatures exceed controlled room temperature.",
+    "order_index": 3,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "b9bf6028-88a2-4c0b-8117-339ac5fca587",
+    "module_id": "e0506ad3-0af5-4df8-a4be-e6430624b383",
+    "question": "A technician notices that a compounded cream has separated into two layers. What is the correct action?",
+    "options": [
+      "Shake the container and dispense it — separation is normal in tropical climates",
+      "Discard the preparation, investigate the cause, and re-compound with appropriate quality measures",
+      "Add more emulsifying agent to the separated cream and re-label it",
+      "Dispense it with a note telling the patient to mix it before each use"
+    ],
+    "correct_answer": 1,
+    "explanation": "Phase separation in a compounded cream indicates a quality failure — the drug may no longer be evenly distributed, and the dose applied by the patient will be inconsistent and potentially unsafe. The preparation must be discarded, the cause investigated (heat exposure, inadequate emulsification, wrong base), and a new batch compounded with corrective measures.",
+    "order_index": 4,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "e438896f-3049-4276-8053-6e5dcbabac48",
+    "module_id": "e0506ad3-0af5-4df8-a4be-e6430624b383",
+    "question": "How often should temperature be recorded in a Caribbean pharmacy's medication storage areas?",
+    "options": [
+      "Once per week",
+      "Once per day",
+      "At least twice daily (morning and afternoon)",
+      "Only when the air conditioning fails"
+    ],
+    "correct_answer": 2,
+    "explanation": "Temperature should be recorded at least twice daily — typically morning and afternoon — to capture the full range of temperatures during the day. In tropical climates, afternoon temperatures can be significantly higher than morning readings. Continuous digital temperature loggers are even better, recording at regular intervals throughout the day.",
+    "order_index": 5,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "ad1bd047-580b-4c22-8364-b2155308b938",
+    "module_id": "e0506ad3-0af5-4df8-a4be-e6430624b383",
+    "question": "Partially melted and re-solidified suppositories should be:",
+    "options": [
+      "Dispensed with a warning that they may look different",
+      "Re-moulded into proper shape and dispensed",
+      "Discarded because drug distribution within the re-solidified matrix may be non-uniform",
+      "Stored in the refrigerator for 24 hours before dispensing to restore their form"
+    ],
+    "correct_answer": 2,
+    "explanation": "Suppositories that have partially melted and re-solidified must be discarded. During melting, the active ingredient can migrate unevenly within the base. When the suppository resolidifies, the drug distribution may be non-uniform — meaning the patient could receive too much or too little active ingredient. Re-moulding does not solve this problem.",
+    "order_index": 6,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "hard",
+    "blooms_level": "evaluate"
+  },
+  {
+    "id": "6008e5cc-923c-4678-bb05-4f0febbe1cc0",
+    "module_id": "e0506ad3-0af5-4df8-a4be-e6430624b383",
+    "question": "Which USP chapter provides guidelines for non-sterile pharmaceutical compounding?",
+    "options": [
+      "USP <795>",
+      "USP <797>",
+      "USP <800>",
+      "USP <1075>"
+    ],
+    "correct_answer": 0,
+    "explanation": "USP Chapter <795> provides standards and guidelines for non-sterile compounding (creams, ointments, solutions, suspensions, powders). USP <797> addresses sterile compounding (injectables, ophthalmic preparations). USP <800> covers hazardous drug handling. Caribbean pharmacies that compound should follow USP <795> principles, adapted for tropical conditions.",
+    "order_index": 7,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  }
+]

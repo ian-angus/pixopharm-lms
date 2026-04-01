@@ -1,0 +1,181 @@
+[
+  {
+    "id": "fab3ee4d-bb8a-41f5-b11a-a3052df7bd31",
+    "module_id": "026af364-0a48-4e14-b54f-e7a0e6483591",
+    "question": "A 10-month-old infant weighing 9 kg is prescribed paracetamol at 15 mg/kg/dose. What is the single dose?",
+    "options": [
+      "90 mg",
+      "120 mg",
+      "135 mg",
+      "150 mg"
+    ],
+    "correct_answer": 2,
+    "explanation": "15 mg/kg × 9 kg = 135 mg per dose. Using paracetamol 120 mg/5 mL: volume = (135/120) × 5 = 5.6 mL.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "eb9d1ee2-fb60-4df9-b6b6-b7717a5aa321",
+    "module_id": "026af364-0a48-4e14-b54f-e7a0e6483591",
+    "question": "The Mosteller formula for BSA is:",
+    "options": [
+      "BSA = (Height × Weight) / 3600",
+      "BSA = √[(Height in cm × Weight in kg) / 3600]",
+      "BSA = (Height + Weight) / 100",
+      "BSA = Weight / Height²"
+    ],
+    "correct_answer": 1,
+    "explanation": "The Mosteller formula is BSA (m²) = √[(Height in cm × Weight in kg) / 3600]. This is the most widely used BSA formula in Caribbean clinical practice.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "143314f8-4f87-4399-8b3d-6ee1c2a77d9f",
+    "module_id": "026af364-0a48-4e14-b54f-e7a0e6483591",
+    "question": "Why are NSAIDs like ibuprofen contraindicated in dengue fever?",
+    "options": [
+      "They reduce fever too quickly, causing hypothermia",
+      "They impair platelet function and increase bleeding risk",
+      "They interact with the dengue virus directly",
+      "They cause dehydration in tropical climates"
+    ],
+    "correct_answer": 1,
+    "explanation": "NSAIDs (ibuprofen, aspirin) impair platelet function and can worsen the haemorrhagic complications of dengue fever. Dengue itself causes thrombocytopenia (low platelet count), and adding an NSAID further impairs haemostasis. Only paracetamol is safe for fever/pain management in dengue.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "ecea50f5-b2a6-4ba3-ae1d-a3ff66289e6b",
+    "module_id": "026af364-0a48-4e14-b54f-e7a0e6483591",
+    "question": "A child weighing 15 kg is prescribed amoxicillin 45 mg/kg/day in 2 divided doses. What is each dose?",
+    "options": [
+      "225 mg",
+      "337.5 mg",
+      "450 mg",
+      "675 mg"
+    ],
+    "correct_answer": 1,
+    "explanation": "Total daily dose = 45 × 15 = 675 mg/day. Divided into 2 doses: 675 ÷ 2 = 337.5 mg per dose. This is a high-dose amoxicillin regimen commonly used for acute otitis media.",
+    "order_index": 3,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "3fc2c267-2e88-4db7-87ce-458a099177e9",
+    "module_id": "026af364-0a48-4e14-b54f-e7a0e6483591",
+    "question": "An adolescent weighing 70 kg is prescribed amoxicillin at 50 mg/kg/day. The maximum adult dose is 3 g/day. What daily dose should be dispensed?",
+    "options": [
+      "3000 mg (capped at adult maximum)",
+      "3500 mg (as calculated)",
+      "2500 mg (reduced for safety)",
+      "1500 mg (half the adult dose for a teenager)"
+    ],
+    "correct_answer": 0,
+    "explanation": "Calculated dose: 50 × 70 = 3500 mg/day. However, this exceeds the adult maximum of 3000 mg/day. The dose should be capped at 3000 mg/day unless the prescriber explicitly specifies a higher dose for a specific indication (e.g., endocarditis).",
+    "order_index": 4,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "hard",
+    "blooms_level": "evaluate"
+  },
+  {
+    "id": "b5271ea4-b666-47b0-b95f-7083cee2cab1",
+    "module_id": "026af364-0a48-4e14-b54f-e7a0e6483591",
+    "question": "True or false: A pharmacy technician can independently adjust a paediatric dose if their calculation shows the prescribed dose is too high.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": 1,
+    "explanation": "False. A pharmacy technician cannot independently alter any prescription. If a calculated dose appears incorrect, the technician must flag the concern to the supervising pharmacist, who will contact the prescriber. Only the prescriber can authorise a dose change.",
+    "order_index": 5,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "1cfe1a3a-1d97-4f27-9d50-a379260234c0",
+    "module_id": "026af364-0a48-4e14-b54f-e7a0e6483591",
+    "question": "A child weighs 44 pounds. What is their weight in kilograms?",
+    "options": [
+      "15 kg",
+      "20 kg",
+      "22 kg",
+      "25 kg"
+    ],
+    "correct_answer": 1,
+    "explanation": "44 lb ÷ 2.2 lb/kg = 20 kg. This is a common conversion that should be memorised as a reference point.",
+    "order_index": 6,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "976a24d8-3ffc-4671-ad08-c64b5078e1be",
+    "module_id": "026af364-0a48-4e14-b54f-e7a0e6483591",
+    "question": "A Caribbean hospital pharmacy scenario: A 5-year-old weighing 18 kg presents with a skin infection. The doctor prescribes cefalexin 25 mg/kg/day in 4 divided doses for 7 days. Stock: cefalexin 125 mg/5 mL (100 mL bottles). How many bottles are needed?",
+    "options": [
+      "1 bottle",
+      "2 bottles",
+      "3 bottles",
+      "4 bottles"
+    ],
+    "correct_answer": 2,
+    "explanation": "Daily dose = 25 × 18 = 450 mg. Per dose = 450/4 = 112.5 mg. Volume per dose = (112.5/125) × 5 = 4.5 mL. Daily volume = 4.5 × 4 = 18 mL. For 7 days = 18 × 7 = 126 mL. Need 2 bottles (200 mL total) — but 126 mL out of 200 mL means 2 bottles suffice. Wait — 126 > 100 (1 bottle), so need 2 bottles. 2 × 100 = 200 mL, which provides enough.",
+    "order_index": 7,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "hard",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "2b0f8153-3e9a-4af7-b159-6127f4803d8f",
+    "module_id": "026af364-0a48-4e14-b54f-e7a0e6483591",
+    "question": "Place the paediatric dose verification steps in the correct order.",
+    "options": [
+      "Calculate the dose from available stock (volume or tablets)",
+      "Confirm the child's weight in kilograms",
+      "Check if the daily dose exceeds the maximum for this weight",
+      "Calculate the dose using the prescribed mg/kg",
+      "Consult the pharmacist if anything is outside expected ranges"
+    ],
+    "correct_answer": 0,
+    "explanation": "Correct order: (1) Confirm weight in kg, (2) Calculate dose using mg/kg, (3) Check daily dose vs maximum, (4) Calculate volume/tablets from stock, (5) Consult pharmacist if concerns arise. This systematic approach catches errors at each stage.",
+    "order_index": 8,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "9c987067-2ec6-465c-b78e-dd922002278d",
+    "module_id": "026af364-0a48-4e14-b54f-e7a0e6483591",
+    "question": "Using the Mosteller formula, calculate the BSA for a child who is 100 cm tall and weighs 16 kg.",
+    "options": [
+      "0.55 m²",
+      "0.67 m²",
+      "0.78 m²",
+      "0.89 m²"
+    ],
+    "correct_answer": 1,
+    "explanation": "BSA = √[(100 × 16) / 3600] = √[1600 / 3600] = √0.444 = 0.667 m², rounded to 0.67 m².",
+    "order_index": 9,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  }
+]

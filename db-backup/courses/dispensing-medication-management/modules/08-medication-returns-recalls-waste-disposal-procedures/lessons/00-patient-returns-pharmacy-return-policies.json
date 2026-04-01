@@ -1,0 +1,87 @@
+{
+  "id": "89b2eddc-3a84-46f2-93a0-41a569e3d43b",
+  "module_id": "9ea63d27-8c24-4427-8db7-c949b7266bf5",
+  "title": "Patient Returns & Pharmacy Return Policies",
+  "content": [
+    {
+      "text": "When Medications Come Back",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Medication returns present a unique challenge in pharmacy practice. Unlike most consumer products, medications cannot simply be returned to the shelf after a patient has taken them home. Once a prescription medication has left the pharmacy's control, its integrity can no longer be guaranteed — storage conditions are unknown, tampering cannot be ruled out, and contamination is possible. For this reason, returned prescription medications must never be redispensed in any Caribbean jurisdiction.",
+      "type": "text"
+    },
+    {
+      "body": "Common reasons patients return medications include: discontinuation by the prescriber (change in therapy), adverse drug reactions (patient was told to stop taking the medication), bereavement (returning a deceased family member's medications), dispensing errors discovered by the patient, and overstocking from previous prescriptions. Each situation requires sensitivity and clear communication, as well as proper documentation and disposal procedures.",
+      "type": "text"
+    },
+    {
+      "term": "Medication Return",
+      "type": "key-term",
+      "definition": "The process by which a patient brings previously dispensed medication back to the pharmacy. In Caribbean practice, returned prescription medications are not redispensed. They are accepted (in most jurisdictions), documented, quarantined, and disposed of through the appropriate pharmaceutical waste stream. Some pharmacies may issue a credit or exchange for OTC products returned in unopened condition within a specified period."
+    },
+    {
+      "rows": [
+        [
+          "Prescription (non-controlled)",
+          "Accept and document",
+          "Quarantine for pharmaceutical waste disposal",
+          "Never redispense; reassure the patient that proper disposal is important"
+        ],
+        [
+          "Controlled substances",
+          "Accept and document in DDR",
+          "Quarantine for witnessed destruction",
+          "Full DDR entry required; include in next destruction event"
+        ],
+        [
+          "OTC — unopened",
+          "May accept for exchange/credit per pharmacy policy",
+          "Return to stock if packaging integrity is verified",
+          "Policy varies by pharmacy; check with management"
+        ],
+        [
+          "OTC — opened",
+          "Accept for disposal",
+          "Pharmaceutical waste stream",
+          "Cannot be returned to stock once opened"
+        ],
+        [
+          "Refrigerated/cold chain",
+          "Accept for disposal",
+          "Pharmaceutical waste — cannot verify storage history",
+          "Explain to the patient that cold chain cannot be confirmed after leaving the pharmacy"
+        ]
+      ],
+      "type": "table",
+      "caption": "Return Handling by Medication Type",
+      "headers": [
+        "Medication Type",
+        "Acceptance",
+        "Disposition",
+        "Special Considerations"
+      ]
+    },
+    {
+      "body": "When a patient returns medication, the interaction requires empathy and professionalism. The patient may be upset (adverse reaction), grieving (bereavement), or embarrassed (admitting non-adherence). Listen actively, explain the disposal process, and reassure them that returning medication to the pharmacy is the responsible thing to do — far better than leaving it in the home (risk of accidental ingestion by children) or flushing it down the drain (environmental harm).",
+      "type": "callout",
+      "title": "The Patient Conversation",
+      "variant": "info"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Yes — it is unopened and appears to be in good condition",
+        "Yes — but only with the pharmacist's approval",
+        "No — returned prescription medications must never be redispensed, regardless of apparent condition",
+        "Yes — but only if the original dispensing label is removed first"
+      ],
+      "question": "A patient returns an unopened bottle of prescription lisinopril 10 mg, explaining that her doctor changed her medication. Can this be redispensed to another patient?",
+      "explanation": "Returned prescription medications must never be redispensed, even if they appear unopened and in good condition. Once the medication has left the pharmacy's controlled environment, storage conditions, tampering, and contamination cannot be verified. The returned medication must be quarantined and disposed of through the pharmaceutical waste stream.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 20
+}

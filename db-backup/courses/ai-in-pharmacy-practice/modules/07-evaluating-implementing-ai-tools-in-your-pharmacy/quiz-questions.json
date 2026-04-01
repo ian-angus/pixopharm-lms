@@ -1,0 +1,147 @@
+[
+  {
+    "id": "1a799311-f120-4330-8712-6a3ef8e8369a",
+    "module_id": "308ad89e-b876-443b-9c03-ccfdc77305ef",
+    "question": "Which criterion should serve as an absolute disqualifier when evaluating AI tools for pharmacy use?",
+    "options": [
+      "High cost",
+      "Lack of mobile app support",
+      "Inability to demonstrate clinical safety validation",
+      "Vendor located outside the Caribbean"
+    ],
+    "correct_answer": 2,
+    "explanation": "Clinical safety is non-negotiable. An AI tool that cannot demonstrate clinical safety validation — regardless of its cost, features, or vendor location — must be disqualified for pharmacy use where errors can directly harm patients.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "evaluate"
+  },
+  {
+    "id": "e31cb5f7-2820-4063-961d-2ce97471d7db",
+    "module_id": "308ad89e-b876-443b-9c03-ccfdc77305ef",
+    "question": "Why is offline functionality particularly important for AI tools in Caribbean pharmacies?",
+    "options": [
+      "Caribbean pharmacies never have internet access",
+      "Internet connectivity can be intermittent, especially during hurricane season, and patient safety must not depend on connectivity",
+      "Offline mode is cheaper",
+      "Patients prefer pharmacies without internet"
+    ],
+    "correct_answer": 1,
+    "explanation": "Caribbean pharmacies face intermittent internet connectivity due to infrastructure limitations and natural disasters (hurricane season). An AI tool that stops functioning during connectivity loss can compromise patient safety. Offline fallback capability ensures continuity of care.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "analyze"
+  },
+  {
+    "id": "2fa6a52e-cc7f-46cc-8bbd-f4e5eac0b417",
+    "module_id": "308ad89e-b876-443b-9c03-ccfdc77305ef",
+    "question": "What is the correct sequence of phases in an AI tool pilot implementation?",
+    "options": [
+      "Preparation — define success criteria and train pilot users",
+      "Shadow mode — run AI in parallel with existing processes",
+      "Supervised live use — use AI outputs with enhanced oversight",
+      "Assessment — analyse pilot data and make go/no-go decision",
+      "Full deployment — roll out to all staff with ongoing monitoring"
+    ],
+    "correct_answer": 0,
+    "explanation": "The correct pilot sequence is: Preparation, Shadow Mode, Supervised Live Use, Assessment, and Full Deployment. Each phase builds on the previous, gradually increasing reliance on the AI tool while maintaining safety checks and gathering evidence for the deployment decision.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "ae139962-7997-495c-bae5-79be8f257a6b",
+    "module_id": "308ad89e-b876-443b-9c03-ccfdc77305ef",
+    "question": "A vendor claims their pharmacy AI tool is '100% accurate.' What should this claim tell you?",
+    "options": [
+      "The tool is excellent and should be purchased immediately",
+      "The claim is a red flag — no AI tool is 100% accurate, and this suggests the vendor is not being transparent",
+      "The tool uses the latest technology and is likely superior to competitors",
+      "The claim is probably correct for well-established AI tools"
+    ],
+    "correct_answer": 1,
+    "explanation": "No AI tool achieves 100% accuracy. A vendor making this claim is either uninformed about their own product or being deliberately misleading — both are red flags. Trustworthy vendors provide honest accuracy metrics, including error rates and confidence intervals.",
+    "order_index": 3,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "evaluate"
+  },
+  {
+    "id": "6229c443-83c6-4f2b-8e4e-e9f8ea79f947",
+    "module_id": "308ad89e-b876-443b-9c03-ccfdc77305ef",
+    "question": "What does 'Total Cost of Ownership' (TCO) include that the purchase price alone does not?",
+    "options": [
+      "Only the initial subscription fee",
+      "Implementation, training, integration, maintenance, support, and decommissioning costs over the tool's lifetime",
+      "The cost of the internet connection",
+      "The salary of the pharmacy technician using the tool"
+    ],
+    "correct_answer": 1,
+    "explanation": "TCO encompasses all costs over the tool's lifetime: initial purchase/subscription, implementation, staff training, integration with existing systems, ongoing maintenance, vendor support, and eventual decommissioning. Evaluating only the purchase price can lead to significantly underestimating the true cost.",
+    "order_index": 4,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "68a4f736-cdeb-422a-a9c1-357e24686b31",
+    "module_id": "308ad89e-b876-443b-9c03-ccfdc77305ef",
+    "question": "During a shadow mode pilot, the AI inventory tool recommends reducing stock of a product that the pharmacy knows sells heavily in summer. The AI has only 18 months of data. What should the pharmacy do?",
+    "options": [
+      "Follow the AI recommendation — it is data-driven",
+      "Override the AI recommendation based on local knowledge, document the override, and monitor the outcome",
+      "Shut down the AI tool immediately",
+      "Order double the AI recommendation to compensate"
+    ],
+    "correct_answer": 1,
+    "explanation": "When local knowledge contradicts an AI recommendation — especially when the AI has insufficient historical data — the correct approach is to override the recommendation, document the override and reasoning, and monitor the outcome. This both protects patient care and provides data that can improve the AI's future performance.",
+    "order_index": 5,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "hard",
+    "blooms_level": "evaluate"
+  },
+  {
+    "id": "32233e84-4ddb-427b-abc6-22c4ca63ad0d",
+    "module_id": "308ad89e-b876-443b-9c03-ccfdc77305ef",
+    "question": "When asking a vendor for a demonstration, what should you specifically request?",
+    "options": [
+      "A demo using generic US pharmacy examples",
+      "A Caribbean-specific demo using local drug names, formularies, and prescribing patterns",
+      "No demo is needed — vendor marketing materials are sufficient",
+      "A demo focused only on the tool's visual design"
+    ],
+    "correct_answer": 1,
+    "explanation": "A Caribbean-specific demo reveals whether the tool actually works with local drug names, formularies, and prescribing patterns. A generic US/UK demo may look impressive but does not demonstrate suitability for Caribbean pharmacy operations. Always request demos that reflect your real-world context.",
+    "order_index": 6,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "fca67b71-5695-44ad-b1c8-d9f7d25e5a5f",
+    "module_id": "308ad89e-b876-443b-9c03-ccfdc77305ef",
+    "question": "An AI tool's SLA guarantees 99% uptime with support available 9am–5pm EST only. Why might this be problematic for a Caribbean pharmacy?",
+    "options": [
+      "99% uptime is too high a guarantee",
+      "EST is the same as Caribbean time, so support hours are fine",
+      "1% downtime equals approximately 88 hours/year, which could include critical periods; support hours may not cover all Caribbean time zones",
+      "SLAs are not relevant to pharmacy operations"
+    ],
+    "correct_answer": 2,
+    "explanation": "1% downtime equals approximately 88 hours per year — nearly four full days. If this downtime occurs during peak dispensing hours or hurricane response periods, it could seriously impact patient care. Additionally, some Caribbean territories operate in different time zones (AST), and support limited to EST business hours may leave pharmacies without help during their operating hours.",
+    "order_index": 7,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "hard",
+    "blooms_level": "analyze"
+  }
+]

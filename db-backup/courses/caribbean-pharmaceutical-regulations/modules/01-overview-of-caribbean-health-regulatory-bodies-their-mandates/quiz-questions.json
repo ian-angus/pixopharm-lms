@@ -1,0 +1,182 @@
+[
+  {
+    "id": "0bc09896-1160-440e-b9cd-0500948207a2",
+    "module_id": "91889a52-a6a7-4e25-af1f-f63baba022fd",
+    "question": "Under which legislation does the Pharmacy Board of Trinidad and Tobago operate?",
+    "options": [
+      "The Pharmacy Act (Cap. 372D)",
+      "The Pharmacy Board Act (Chapter 29:52)",
+      "The Dangerous Drugs Act",
+      "The Food and Drugs Act"
+    ],
+    "correct_answer": 1,
+    "explanation": "The Pharmacy Board of Trinidad and Tobago is established under the Pharmacy Board Act, Chapter 29:52 of the Laws of Trinidad and Tobago. This legislation sets out the Board's powers, functions, and composition.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "78d374db-93cc-47cc-a86c-9e4dc327e9d4",
+    "module_id": "91889a52-a6a7-4e25-af1f-f63baba022fd",
+    "question": "Which of the following are functions commonly performed by Caribbean pharmacy boards?",
+    "options": [
+      "Registration of pharmacists",
+      "Licensing of pharmacy premises",
+      "Manufacturing generic medicines",
+      "Investigating complaints against professionals",
+      "Setting wholesale drug prices"
+    ],
+    "correct_answer": 0,
+    "explanation": "Caribbean pharmacy boards typically register pharmacists, license pharmacy premises, and investigate professional complaints. They do not manufacture medicines or set wholesale prices — those functions belong to procurement agencies and market forces respectively.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "da1dc7ad-c5a2-4a7d-92c5-e6a29b74794f",
+    "module_id": "91889a52-a6a7-4e25-af1f-f63baba022fd",
+    "question": "The Pharmacy Council of Jamaica (PCJ) was established under the Pharmacy Act of 1975.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": 0,
+    "explanation": "The Pharmacy Council of Jamaica was indeed established under the Pharmacy Act of 1975, which has since been amended (notably in 2013) to modernise the regulatory framework.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "772cfcc0-d3f1-4643-ad58-97565a44a752",
+    "module_id": "91889a52-a6a7-4e25-af1f-f63baba022fd",
+    "question": "Match each organisation with its primary role in Caribbean pharmaceutical regulation.",
+    "options": [
+      "CARPHA",
+      "OECS PPS",
+      "NIPDEC",
+      "PAHO/WHO"
+    ],
+    "correct_answer": 0,
+    "explanation": "Each organisation plays a distinct role: CARPHA handles quality testing and surveillance, OECS PPS manages pooled procurement for small Eastern Caribbean islands, NIPDEC manages T&T's public supply chain, and PAHO/WHO provides international technical cooperation.",
+    "order_index": 3,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "analyze"
+  },
+  {
+    "id": "9d18b469-4a49-46f4-9f5b-8be8504968c2",
+    "module_id": "91889a52-a6a7-4e25-af1f-f63baba022fd",
+    "question": "What approximate cost savings does the OECS Pharmaceutical Procurement Service achieve through bulk purchasing?",
+    "options": [
+      "5-10%",
+      "10-20%",
+      "30-50%",
+      "70-90%"
+    ],
+    "correct_answer": 2,
+    "explanation": "The OECS PPS achieves savings of approximately 30-50% compared to individual country purchasing by pooling the purchasing power of nine Eastern Caribbean states. This makes essential medicines significantly more affordable for small island developing states.",
+    "order_index": 4,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "b9feb90e-8828-4702-bd72-df9c3d7b4271",
+    "module_id": "91889a52-a6a7-4e25-af1f-f63baba022fd",
+    "question": "A pharmacy receives a CARPHA quality alert about a batch of amlodipine tablets. Arrange the correct sequence of actions the pharmacy technician should take.",
+    "options": [
+      "Notify the supervising pharmacist",
+      "Quarantine the affected batch from dispensing stock",
+      "Check batch/lot numbers against the alert",
+      "Document all actions taken",
+      "Assist in contacting patients who received the affected product"
+    ],
+    "correct_answer": 0,
+    "explanation": "The correct sequence is: (1) Notify the supervising pharmacist immediately, (2) Check batch/lot numbers against the alert, (3) Quarantine the affected batch, (4) Document all actions taken, and (5) Assist in contacting affected patients. Notifying the pharmacist first ensures proper oversight of the response.",
+    "order_index": 5,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "hard",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "1094b3da-8c92-4a25-8257-9f87b4baef73",
+    "module_id": "91889a52-a6a7-4e25-af1f-f63baba022fd",
+    "question": "In which year was CARPHA (Caribbean Public Health Agency) established?",
+    "options": [
+      "2003",
+      "2008",
+      "2013",
+      "2018"
+    ],
+    "correct_answer": 2,
+    "explanation": "CARPHA was established in 2013 by merging five existing regional health institutions. It is headquartered in Port of Spain, Trinidad and Tobago, and serves as the Caribbean's primary regional public health body.",
+    "order_index": 6,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "109f8e17-6305-407e-997a-4ab21106ebee",
+    "module_id": "91889a52-a6a7-4e25-af1f-f63baba022fd",
+    "question": "Which body manages the Barbados National Drug Formulary?",
+    "options": [
+      "The Pharmacy Council of Jamaica",
+      "CARPHA",
+      "The Barbados Drug Service",
+      "NIPDEC"
+    ],
+    "correct_answer": 2,
+    "explanation": "The Barbados Drug Service (BDS) manages the Barbados National Drug Formulary (BNDF), which governs prescribing and dispensing decisions in the public health sector. The BNDF is a key tool for rational drug use in Barbados.",
+    "order_index": 7,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "7468a9f6-44b7-4cb6-9841-fb495f160929",
+    "module_id": "91889a52-a6a7-4e25-af1f-f63baba022fd",
+    "question": "Grenada's pharmaceutical regulation relies heavily on regional support because of the country's _____ scale.",
+    "options": [
+      "small",
+      "large",
+      "moderate",
+      "expanding"
+    ],
+    "correct_answer": 0,
+    "explanation": "Grenada's small size means its national regulatory capacity is limited. The country relies heavily on regional bodies such as CARPHA for quality testing and the OECS PPS for pharmaceutical procurement.",
+    "order_index": 8,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "0a196b36-6757-4c84-82e1-c82256fdebbc",
+    "module_id": "91889a52-a6a7-4e25-af1f-f63baba022fd",
+    "question": "A pharmacy in Kingston, Jamaica receives a shipment of metformin tablets from a new supplier. The pharmacist notices the product lacks a Jamaica Drug Registration number. As the pharmacy technician assisting with goods receipt, what is the most appropriate course of action?",
+    "options": [
+      "Accept the shipment and begin dispensing — metformin is a common drug",
+      "Accept the shipment but place it in quarantine until the registration number can be verified",
+      "Refuse the shipment and report to the supervising pharmacist; contact the Standards and Regulation Division for verification",
+      "Accept the shipment because the supplier's invoice confirms the product is legitimate"
+    ],
+    "correct_answer": 2,
+    "explanation": "A product without a valid drug registration number should never be accepted for dispensing. The correct action is to refuse the shipment, notify the supervising pharmacist, and contact the Standards and Regulation Division of Jamaica's Ministry of Health to verify whether the product is legally registered for distribution in Jamaica.",
+    "order_index": 9,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "hard",
+    "blooms_level": "evaluate"
+  }
+]

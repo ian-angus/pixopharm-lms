@@ -1,0 +1,97 @@
+{
+  "id": "3ee8e2db-12ab-4779-9dd9-59e2c02e8124",
+  "module_id": "dfe7b615-4723-402c-af37-21981d97b705",
+  "title": "The Mutual Recognition Process in Practice",
+  "content": [
+    {
+      "text": "How a Product Moves from One Island's Register to Another",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Mutual recognition is the cornerstone of the CRS. In theory, the process works as follows: a pharmaceutical manufacturer submits a registration dossier to a 'reference' CARICOM member state. That state conducts a full evaluation of the product's quality, safety, and efficacy. If the product is approved, the manufacturer can then apply for registration in other CARICOM states through a streamlined 'mutual recognition' pathway, submitting the reference state's evaluation report rather than undergoing a completely new evaluation.",
+      "type": "text"
+    },
+    {
+      "text": "Steps in the Mutual Recognition Pathway",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "type": "list",
+      "items": [
+        "The manufacturer selects a Reference Member State (RMS) and submits a full Common Technical Document (CTD)",
+        "The RMS evaluates the dossier and, if satisfied, grants marketing authorisation",
+        "The manufacturer submits a mutual recognition application to one or more Concerned Member States (CMS)",
+        "The application includes the CTD plus the RMS evaluation report and approval certificate",
+        "Each CMS reviews the RMS evaluation and may accept, request clarification, or raise objections",
+        "If no objections are raised within the agreed timeline, the CMS grants marketing authorisation",
+        "In cases of disagreement, an arbitration mechanism may be triggered through CARICOM"
+      ],
+      "ordered": true
+    },
+    {
+      "term": "Reference Member State (RMS)",
+      "type": "key-term",
+      "definition": "Under the CRS mutual recognition procedure, the CARICOM member state that conducts the initial full evaluation of a pharmaceutical product's registration dossier. The RMS evaluation report is then shared with other member states (Concerned Member States) to facilitate streamlined registration."
+    },
+    {
+      "body": "While the CRS framework is well-designed in theory, implementation has been slower than hoped. Not all CARICOM states have the regulatory capacity to serve as Reference Member States. Some countries have been reluctant to accept other states' evaluations without their own review. Political, economic, and logistical barriers continue to slow full implementation. However, progress continues, and the CRS remains the region's best path toward efficient, high-quality pharmaceutical regulation.",
+      "type": "callout",
+      "title": "Reality Check — Progress Is Gradual",
+      "variant": "warning"
+    },
+    {
+      "body": "The benefits of mutual recognition are significant. For manufacturers, it reduces the cost and time of registering products across the region, which in turn increases the availability of quality medicines. For regulators, it allows resource-constrained agencies to leverage the expertise of better-resourced neighbours. For patients, it means faster access to a wider range of quality-assured medicines at more competitive prices.",
+      "type": "text"
+    },
+    {
+      "body": "However, challenges remain. Capacity disparities between countries mean that only a few — notably Trinidad & Tobago and Jamaica — are positioned to serve as credible Reference Member States. Some countries lack the laboratory infrastructure and trained evaluators needed to participate fully. Political sensitivities around sovereignty and trust also play a role: accepting another country's regulatory decision requires confidence in that country's evaluation standards.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Reduced duplication of regulatory effort",
+          "Capacity disparities between member states"
+        ],
+        [
+          "Faster market access for quality medicines",
+          "Political sensitivities around sovereignty"
+        ],
+        [
+          "Lower registration costs for manufacturers",
+          "Limited laboratory infrastructure in smaller states"
+        ],
+        [
+          "Broader range of available medicines",
+          "Varying levels of trust in other states' evaluations"
+        ],
+        [
+          "Better use of scarce regulatory expertise",
+          "Need for harmonised legal frameworks"
+        ]
+      ],
+      "type": "table",
+      "caption": "Benefits and Challenges of the CRS Mutual Recognition Process",
+      "headers": [
+        "Benefits",
+        "Challenges"
+      ]
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "To manufacture the pharmaceutical product for distribution",
+        "To conduct the initial full evaluation of the registration dossier, whose report is shared with other member states",
+        "To set the retail price of the medicine across the region",
+        "To serve as the sole point of sale for the product in CARICOM"
+      ],
+      "question": "In the CRS mutual recognition process, what is the role of the Reference Member State (RMS)?",
+      "explanation": "The Reference Member State (RMS) conducts the initial full evaluation of the product's quality, safety, and efficacy. Its evaluation report is then shared with Concerned Member States (CMS), enabling them to make streamlined registration decisions without conducting full independent evaluations.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 25
+}

@@ -1,0 +1,101 @@
+{
+  "id": "6b891055-3f07-472a-8935-6df3efdd8605",
+  "module_id": "00de6d94-4229-4a9a-aec6-0c5d4e87fbbd",
+  "title": "Special Storage Requirements: Light, Ventilation & Hazardous Materials",
+  "content": [
+    {
+      "text": "Beyond Temperature and Humidity",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "While temperature and humidity are the primary storage concerns, several other factors affect medication stability and safety. Light exposure, ventilation, segregation of incompatible substances, and hazardous material handling all require careful attention in the Caribbean pharmacy environment.",
+      "type": "text"
+    },
+    {
+      "text": "Light-Sensitive Medications",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Photodegradation — the breakdown of chemicals by light — affects a significant number of pharmaceutical products. The intense tropical sunlight in the Caribbean, with its high UV component, accelerates this process. Medications susceptible to photodegradation include nifedipine, methotrexate, sodium nitroprusside, furosemide, certain vitamins (especially B2 and C), and many IV admixtures.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Light-sensitive",
+          "Amber containers, opaque overwrap, away from windows",
+          "Nifedipine, methotrexate, furosemide, vitamin B complex",
+          "'Protect from Light' label"
+        ],
+        [
+          "Flammable",
+          "Fireproof cabinet, away from ignition sources, separate from oxidisers",
+          "Alcohol-based preparations, ether, acetone",
+          "Flammable material signage, no smoking signs"
+        ],
+        [
+          "Cytotoxic",
+          "Separate locked storage, spill kits available, PPE for handling",
+          "Methotrexate, cyclophosphamide, tamoxifen",
+          "'Cytotoxic — Handle with Care' warning label"
+        ],
+        [
+          "Controlled substances",
+          "Double-locked safe or cabinet, perpetual inventory, restricted access",
+          "Morphine, codeine, diazepam, methylphenidate",
+          "Not openly displayed; access log required"
+        ]
+      ],
+      "type": "table",
+      "caption": "Special Storage Requirements by Category",
+      "headers": [
+        "Category",
+        "Requirements",
+        "Common Examples",
+        "Signage/Labelling"
+      ]
+    },
+    {
+      "body": "Adequate ventilation is important not only for comfort but for safety. Volatile substances (alcohol-based preparations, certain aerosols) can release fumes that accumulate in poorly ventilated areas. Cytotoxic drug spills require specific ventilation protocols. Ensure that your pharmacy's ventilation system provides adequate air exchanges and that chemical storage areas have dedicated exhaust if required by regulation.",
+      "type": "callout",
+      "title": "Ventilation Requirements",
+      "variant": "info"
+    },
+    {
+      "body": "Segregation of incompatible substances is a fundamental storage principle. Oxidising agents must be separated from flammable materials. Acids must be separated from bases. Cytotoxic drugs must be isolated from other medications. In a Caribbean pharmacy with limited space, achieving proper segregation requires creative use of dedicated cabinets, colour-coded storage zones, and clear signage.",
+      "type": "text"
+    },
+    {
+      "term": "Photodegradation",
+      "type": "key-term",
+      "definition": "The chemical breakdown of a substance caused by exposure to light, particularly ultraviolet (UV) radiation. In pharmacy, photodegradation can reduce a medication's potency, alter its chemical composition, or produce harmful breakdown products. Affected medications must be stored in amber containers or opaque packaging and protected from direct sunlight."
+    },
+    {
+      "type": "case-study",
+      "title": "Case Study: The Power Outage at a Barbados Hospital Pharmacy",
+      "scenario": "Queen Elizabeth Hospital pharmacy in Bridgetown experiences a 6-hour power outage during a tropical storm. The pharmacy's backup generator fails to start. The pharmaceutical refrigerator, containing insulin, vaccines, and reconstituted antibiotics worth approximately BBD 45,000, begins warming. By the time power is restored, the internal temperature has reached 18°C. The pharmacy manager discovers that the data logger battery had also died two months ago, so there is no continuous temperature record.",
+      "questions": [
+        "What immediate actions should the pharmacy team take regarding the affected refrigerated stock?",
+        "How could this situation have been prevented?",
+        "What documentation is needed for the regulatory authority and the insurance claim?"
+      ],
+      "discussion": "This case illustrates multiple failures: generator maintenance neglect, data logger battery not replaced, and likely lack of a documented temperature excursion SOP. Immediate actions include quarantining all affected stock, reconstructing the temperature timeline from available evidence, contacting manufacturers for stability data, and documenting everything for regulatory and insurance purposes. Prevention requires regular generator testing (monthly), data logger battery checks (as per manufacturer schedule), and a written cold chain failure SOP that all staff are trained on."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Paracetamol tablets in blister packs",
+        "Nifedipine capsules",
+        "Metformin tablets",
+        "Omeprazole capsules in their original container"
+      ],
+      "question": "Which of the following medications is particularly susceptible to photodegradation and should be protected from light?",
+      "explanation": "Nifedipine is highly photosensitive and must be protected from light at all times. It is typically supplied in amber blister packs or opaque containers. Exposure to light causes rapid degradation that reduces efficacy and can produce harmful breakdown products.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 3,
+  "duration_minutes": 25
+}

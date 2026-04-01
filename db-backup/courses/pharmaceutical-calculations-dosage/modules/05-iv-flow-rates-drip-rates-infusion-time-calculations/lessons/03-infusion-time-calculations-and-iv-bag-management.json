@@ -1,0 +1,107 @@
+{
+  "id": "207aa8e6-fde3-43d0-99e4-f175ef2a3ade",
+  "module_id": "d3795a17-60e6-4ead-89e6-9c00001165e0",
+  "title": "Infusion Time Calculations and IV Bag Management",
+  "content": [
+    {
+      "text": "How Long Will This IV Last?",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Nurses frequently ask pharmacy technicians: 'When will this IV bag need changing?' or 'Will this infusion finish before the end of my shift?' Being able to calculate infusion completion times is a practical skill that supports ward operations. You will also need to calculate whether a prepared IV medication will still be within its stability period when the infusion completes.",
+      "type": "text"
+    },
+    {
+      "term": "Beyond-Use Date/Time (BUD)",
+      "type": "key-term",
+      "definition": "The date and time after which a compounded or reconstituted preparation should not be used. For IV admixtures, the BUD depends on the drug, diluent, concentration, and storage temperature. In the Caribbean's warm climate, BUDs for room-temperature IV preparations may be shorter than in temperate environments."
+    },
+    {
+      "text": "The Time Calculation Formula",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Infusion time (hours) = Total volume (mL) ÷ Flow rate (mL/hr). Example: A 1000 mL bag of Normal Saline is running at 125 mL/hr. Time = 1000 ÷ 125 = 8 hours. If the infusion started at 2:00 PM, it will complete at 10:00 PM.",
+      "type": "text"
+    },
+    {
+      "body": "Worked example: A nurse at POS General Hospital starts a 500 mL bag of Normal Saline at 09:30. It is running at 83 mL/hr. When will the bag need changing? Time = 500 ÷ 83 = 6.02 hours ≈ 6 hours and 1 minute. The bag will finish at approximately 15:31 (3:31 PM). The nurse should prepare the next bag by 15:00 to allow time for changeover.",
+      "type": "text"
+    },
+    {
+      "type": "case-study",
+      "title": "Case Study: Night Shift IV Management at QEH Barbados",
+      "scenario": "You are a pharmacy technician on the evening shift at QEH Barbados. At 20:00 (8 PM), the ward nurse calls with the following: Patient A has 400 mL remaining of Normal Saline running at 100 mL/hr. Patient B has 750 mL of D5W ordered to run at 50 mL/hr, to be started immediately. Patient C's heparin infusion (500 mL bag, running at 20 mL/hr) was started at 14:00 (2 PM) with 500 mL — the BUD for this preparation is 24 hours from preparation time (prepared at 13:00).",
+      "questions": [
+        "When will Patient A's bag finish? Will you need to prepare a replacement before your shift ends at midnight?",
+        "When will Patient B's infusion complete? Will it run into the next shift?",
+        "When does Patient C's heparin preparation expire? How many mL will remain at expiry?"
+      ],
+      "discussion": "Patient A: 400 mL at 100 mL/hr = 4 hours. Finishes at 00:00 (midnight) — right at shift change. Prepare replacement by 23:30. Patient B: 750 mL at 50 mL/hr = 15 hours. Finishes at 11:00 AM next day — well into the next shift. No action needed tonight. Patient C: Heparin prepared at 13:00, BUD = 13:00 the next day (24 hours). At 20:00, the infusion has been running for 6 hours at 20 mL/hr = 120 mL used, 380 mL remaining. By 13:00 next day (another 17 hours at 20 mL/hr = 340 mL), 380 - 340 = 40 mL will remain. The BUD will expire before the bag empties. Flag to the pharmacist: a new bag must be prepared before 13:00 tomorrow."
+    },
+    {
+      "body": "Many IV admixture stability data are based on studies at 25°C. In Caribbean hospitals, ward temperatures may be higher, especially if air conditioning is intermittent. Higher temperatures can reduce the beyond-use time of IV preparations. When in doubt, use the most conservative (shortest) stability period. The pharmacy department should have reference charts for local conditions.",
+      "type": "callout",
+      "title": "IV Stability in Tropical Conditions",
+      "variant": "warning"
+    },
+    {
+      "rows": [
+        [
+          "1000 mL",
+          "125 mL/hr",
+          "8 hours",
+          "7.5 hours after start"
+        ],
+        [
+          "1000 mL",
+          "100 mL/hr",
+          "10 hours",
+          "9.5 hours after start"
+        ],
+        [
+          "500 mL",
+          "50 mL/hr",
+          "10 hours",
+          "9.5 hours after start"
+        ],
+        [
+          "250 mL",
+          "100 mL/hr",
+          "2.5 hours",
+          "2 hours after start"
+        ],
+        [
+          "1000 mL",
+          "42 mL/hr",
+          "23.8 hours",
+          "23.3 hours after start"
+        ]
+      ],
+      "type": "table",
+      "caption": "Infusion Time Quick-Reference Calculations",
+      "headers": [
+        "Volume",
+        "Rate",
+        "Time",
+        "When to Prepare Next Bag (30 min before)"
+      ]
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "10:40 AM",
+        "12:00 PM (noon)",
+        "12:40 PM",
+        "2:00 PM"
+      ],
+      "question": "An IV bag of 1000 mL Normal Saline running at 150 mL/hr was started at 06:00. Approximately what time will it finish?",
+      "explanation": "Time = 1000 ÷ 150 = 6.67 hours = 6 hours and 40 minutes. Started at 06:00, so it finishes at approximately 12:40 PM.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 3,
+  "duration_minutes": 25
+}

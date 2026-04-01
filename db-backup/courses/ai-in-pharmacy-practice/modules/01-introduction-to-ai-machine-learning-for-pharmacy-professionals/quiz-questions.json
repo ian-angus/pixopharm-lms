@@ -1,0 +1,144 @@
+[
+  {
+    "id": "ee4bcad4-7820-4463-8bf3-791bd94c6991",
+    "module_id": "918bc717-9d47-4db0-b9fa-1e8ab49fd289",
+    "question": "What is the relationship between artificial intelligence and machine learning?",
+    "options": [
+      "They are the same thing",
+      "Machine learning is a subset of artificial intelligence",
+      "Artificial intelligence is a subset of machine learning",
+      "They are completely unrelated fields"
+    ],
+    "correct_answer": 1,
+    "explanation": "Machine learning is a subset (a specialised branch) of the broader field of artificial intelligence. While AI encompasses all systems that mimic human intelligence, ML specifically refers to systems that learn and improve from data rather than following only pre-programmed rules.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "73be1f44-09f9-46a7-87ed-ac752f78b898",
+    "module_id": "918bc717-9d47-4db0-b9fa-1e8ab49fd289",
+    "question": "A pharmacy's dispensing software automatically flags that Warfarin and Aspirin may interact when both are entered for the same patient. What type of AI is this?",
+    "options": [
+      "Generative AI",
+      "Rule-based clinical decision support",
+      "Deep reinforcement learning",
+      "Natural language processing"
+    ],
+    "correct_answer": 1,
+    "explanation": "Drug interaction screening in dispensing software is a classic example of rule-based clinical decision support. The system follows pre-programmed rules (if Drug A + Drug B, then flag interaction) rather than learning from data. It is one of the oldest and most established AI applications in pharmacy.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "bcde2308-9679-473d-9863-162ceb804ff2",
+    "module_id": "918bc717-9d47-4db0-b9fa-1e8ab49fd289",
+    "question": "Why is it dangerous to rely solely on a large language model (e.g., ChatGPT) for drug information without verification?",
+    "options": [
+      "LLMs are always incorrect about medications",
+      "LLMs require a paid subscription that most pharmacies cannot afford",
+      "LLMs can 'hallucinate' — generating plausible but incorrect clinical information",
+      "LLMs are not available in the Caribbean"
+    ],
+    "correct_answer": 2,
+    "explanation": "Large language models can produce 'hallucinations' — responses that sound confident and plausible but contain factual errors. In a clinical context, a hallucinated drug interaction, dosage, or contraindication could directly harm a patient. All AI-generated clinical information must be verified against authoritative sources.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "d84a494c-0630-4533-aa79-492045550bab",
+    "module_id": "918bc717-9d47-4db0-b9fa-1e8ab49fd289",
+    "question": "Which of the following are current AI applications in Caribbean pharmacy practice?",
+    "options": [
+      "Only drug interaction screening",
+      "Drug interaction screening, insurance claims processing, and inventory reorder alerts",
+      "Fully autonomous robotic dispensing",
+      "AI-powered patient diagnosis without pharmacist involvement"
+    ],
+    "correct_answer": 1,
+    "explanation": "Caribbean pharmacies currently use AI in drug interaction screening, automated insurance claims processing, and smart inventory reorder alerts. Fully autonomous robotic dispensing and AI-only diagnosis are not yet in use in the region and would raise significant regulatory and safety concerns.",
+    "order_index": 3,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "b78f0d2e-bde9-4870-8b44-40a54e2fd34a",
+    "module_id": "918bc717-9d47-4db0-b9fa-1e8ab49fd289",
+    "question": "What does 'NLP' stand for and what does it enable AI to do?",
+    "options": [
+      "National Licensing Programme — it enables AI to verify pharmacy licences",
+      "Natural Language Processing — it enables AI to understand and generate human language",
+      "Network Learning Protocol — it enables AI systems to communicate with each other",
+      "Non-Linear Programming — it enables AI to solve complex mathematical problems"
+    ],
+    "correct_answer": 1,
+    "explanation": "NLP stands for Natural Language Processing. It is the branch of AI that deals with the interaction between computers and human language, enabling tools like ChatGPT and Claude to understand questions posed in natural language and generate coherent, contextual responses.",
+    "order_index": 4,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "3e753aee-d82d-4a77-99c8-e30a8ccfd990",
+    "module_id": "918bc717-9d47-4db0-b9fa-1e8ab49fd289",
+    "question": "A pharmacy technician uses Claude to look up a drug interaction, verifies the information in Lexicomp, then consults the pharmacist before counselling the patient. Is this workflow appropriate?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": 0,
+    "explanation": "This is the ideal workflow for using AI in clinical practice. The technician uses AI for rapid initial lookup, verifies against an authoritative source, and involves the pharmacist in the clinical decision. AI is used as a tool, not as the final authority.",
+    "order_index": 5,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "567c7f23-606b-41a4-a2bc-749d115184df",
+    "module_id": "918bc717-9d47-4db0-b9fa-1e8ab49fd289",
+    "question": "Which Caribbean initiative involves the digitisation of chronic disease medication management?",
+    "options": [
+      "CARICOM Single Market (CSM)",
+      "Trinidad & Tobago's CDAP digitisation programme",
+      "The Caribbean Examination Council (CXC)",
+      "The West Indies Cricket Board"
+    ],
+    "correct_answer": 1,
+    "explanation": "Trinidad & Tobago's Chronic Disease Assistance Programme (CDAP) has been undergoing phased digitisation to improve tracking, reduce fraud, and enhance patient outcomes for chronic disease management. This is a concrete example of digital health transformation in the Caribbean.",
+    "order_index": 6,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "b4941cb4-3794-473a-876c-6b9c832d03c8",
+    "module_id": "918bc717-9d47-4db0-b9fa-1e8ab49fd289",
+    "question": "Arrange the following steps in the correct order for using AI to look up drug information in a pharmacy setting.",
+    "options": [
+      "Use AI tool for rapid initial lookup",
+      "Verify the AI response against an authoritative source (BNF, Lexicomp)",
+      "Consult with the supervising pharmacist if the query is clinical",
+      "Apply the verified information to patient care"
+    ],
+    "correct_answer": 0,
+    "explanation": "The correct workflow is: (1) Use AI for quick initial lookup, (2) Verify against authoritative clinical sources, (3) Consult the pharmacist for clinical decisions, (4) Apply verified information to patient care. Skipping verification steps can endanger patients.",
+    "order_index": 7,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  }
+]

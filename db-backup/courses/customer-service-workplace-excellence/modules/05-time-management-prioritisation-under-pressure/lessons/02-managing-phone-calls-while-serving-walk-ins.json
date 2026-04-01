@@ -1,0 +1,94 @@
+{
+  "id": "dc866959-cca7-4d8c-8d7a-42d5a7a1e600",
+  "module_id": "60b63fc2-8fc4-4b47-8ac7-caf737ad8b8c",
+  "title": "Managing Phone Calls While Serving Walk-Ins",
+  "content": [
+    {
+      "text": "The Phone vs. the Person in Front of You",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "One of the most common daily dilemmas in pharmacy: you are serving a customer at the counter and the phone rings. Do you answer it? Do you let it ring? Do you put the customer on hold? There is no universally correct answer — but there are principles that help you make the right call in the moment.",
+      "type": "text"
+    },
+    {
+      "body": "The general principle is this: the person in front of you has priority over the person on the phone, because they made the effort to come in. However, the phone cannot wait indefinitely — an unanswered phone is a missed customer, a missed prescription call-in, or a missed clinical enquiry. The solution is a structured approach to managing both channels.",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "If you are mid-sentence with a customer, let the phone ring for 2-3 rings while you complete your thought",
+        "Excuse yourself briefly: 'Pardon me for one moment — let me just answer this quickly'",
+        "Answer the phone with your standard greeting and immediately assess urgency",
+        "If the phone call is non-urgent: 'May I place you on hold for one minute? I am with a customer.' Then return to the walk-in",
+        "If the phone call IS urgent (doctor calling in a prescription, clinical enquiry): excuse yourself to the walk-in customer: 'I need to take this medical call — I will be back with you shortly'",
+        "Never leave a walk-in customer standing in silence while you have an extended phone conversation",
+        "If possible, designate one staff member to handle phones while others serve the counter during peak hours"
+      ],
+      "ordered": true
+    },
+    {
+      "body": "Doctors calling in prescriptions = high priority (take the call). Patient asking about pharmacy hours = low priority (put on hold). Insurance company calling about a claim = medium priority (take a message if busy). Drug information enquiry from a nurse = high priority (take the call or transfer to pharmacist).",
+      "type": "callout",
+      "title": "Phone Priority Levels",
+      "variant": "info"
+    },
+    {
+      "rows": [
+        [
+          "Doctor calling in prescription",
+          "High",
+          "Take the call — excuse yourself to the walk-in briefly"
+        ],
+        [
+          "Patient asking if medication is ready",
+          "Medium",
+          "Brief answer (yes/no) or hold for 30 seconds"
+        ],
+        [
+          "Patient asking about pharmacy hours or location",
+          "Low",
+          "Polite hold, return when walk-in is served"
+        ],
+        [
+          "Insurance company query",
+          "Medium",
+          "Take a message; return the call during a lull"
+        ],
+        [
+          "Drug information enquiry from healthcare professional",
+          "High",
+          "Take the call or transfer to the pharmacist immediately"
+        ]
+      ],
+      "type": "table",
+      "caption": "Phone Management Quick Reference",
+      "headers": [
+        "Caller",
+        "Priority",
+        "Action If Counter Is Busy"
+      ]
+    },
+    {
+      "term": "Channel Management",
+      "type": "key-term",
+      "definition": "The skill of simultaneously managing multiple customer service channels — in-person, telephone, and sometimes online — without letting service quality on any channel deteriorate. In pharmacy, effective channel management prevents walk-in customers from feeling ignored and phone callers from being left on hold indefinitely."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Ignore the phone — the walk-in customer has priority",
+        "Put the walk-in customer on hold and take the doctor's call",
+        "Briefly excuse yourself to the walk-in customer and take the doctor's call",
+        "Let another customer answer the phone"
+      ],
+      "question": "You are serving a walk-in customer when the phone rings. A doctor is calling in a prescription. What do you do?",
+      "explanation": "A doctor calling in a prescription is a high-priority call that should be taken. The correct approach is to briefly excuse yourself from the walk-in customer — 'Pardon me, I need to take this medical call' — and handle the call efficiently before returning to the in-person customer.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 20
+}

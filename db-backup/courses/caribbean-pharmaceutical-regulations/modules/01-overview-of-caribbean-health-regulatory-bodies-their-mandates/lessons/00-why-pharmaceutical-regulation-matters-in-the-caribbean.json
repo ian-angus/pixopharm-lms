@@ -1,0 +1,84 @@
+{
+  "id": "9d47790a-b656-4baf-93d3-4de790e37c12",
+  "module_id": "91889a52-a6a7-4e25-af1f-f63baba022fd",
+  "title": "Why Pharmaceutical Regulation Matters in the Caribbean",
+  "content": [
+    {
+      "text": "The Case for Strong Pharmaceutical Regulation",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Pharmaceutical regulation exists to protect the public. Every pill dispensed, every injection administered, and every compound prepared must meet standards of safety, efficacy, and quality. In the Caribbean, where most medications are imported and supply chains stretch across thousands of kilometres of open ocean, regulatory oversight is not a bureaucratic luxury — it is a lifeline.",
+      "type": "text"
+    },
+    {
+      "body": "The consequences of weak regulation are real and devastating. Substandard and falsified medicines account for an estimated 10% of pharmaceutical products in low- and middle-income countries, according to the World Health Organisation. In 2014, contaminated cough syrup linked to diethylene glycol poisoning killed children in several developing nations — a tragedy that robust quality assurance systems are designed to prevent.",
+      "type": "text"
+    },
+    {
+      "body": "In 2022, the WHO issued global alerts for substandard cough syrups containing toxic levels of diethylene glycol and ethylene glycol. Caribbean nations, which rely heavily on imported pharmaceuticals, must maintain vigilant post-market surveillance to intercept such products before they reach patients.",
+      "type": "callout",
+      "title": "Real-World Impact",
+      "variant": "danger"
+    },
+    {
+      "body": "Caribbean pharmaceutical regulation has evolved from colonial-era ordinances into a modern, multi-layered system. At the national level, pharmacy boards and drug regulatory agencies control licensing, drug registration, and professional standards. At the regional level, CARICOM and its specialised agencies work toward harmonisation — creating common standards that facilitate trade while protecting public health. At the international level, WHO prequalification and PAHO technical cooperation provide additional layers of quality assurance.",
+      "type": "text"
+    },
+    {
+      "term": "Pharmaceutical Regulation",
+      "type": "key-term",
+      "definition": "The system of laws, rules, and administrative mechanisms through which governments ensure that pharmaceutical products are safe, effective, and of acceptable quality, and that pharmacy practice is conducted by qualified professionals within defined legal boundaries."
+    },
+    {
+      "body": "For pharmacy technicians, understanding regulation is not optional. You operate within a legal framework that defines what you can do, what you must do, and what you are prohibited from doing. Ignorance of the law is never a defence. Whether you are checking that a controlled substance register is properly maintained, verifying that a product bears a valid registration number, or ensuring that cold chain records are complete, you are acting as the frontline of regulatory compliance.",
+      "type": "text"
+    },
+    {
+      "text": "The Three Pillars of Pharmaceutical Regulation",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "rows": [
+        [
+          "Product Regulation",
+          "Ensuring medicines are safe, effective, and of quality",
+          "Drug registration, GMP inspection, batch testing, post-market surveillance"
+        ],
+        [
+          "Professional Regulation",
+          "Ensuring practitioners are qualified and competent",
+          "Pharmacist licensing, technician certification, continuing education requirements"
+        ],
+        [
+          "Practice Regulation",
+          "Ensuring pharmacy operations meet legal standards",
+          "Pharmacy premises licensing, record-keeping requirements, controlled substance protocols"
+        ]
+      ],
+      "type": "table",
+      "caption": "Three Pillars of Caribbean Pharmaceutical Regulation",
+      "headers": [
+        "Pillar",
+        "Focus",
+        "Examples"
+      ]
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Because Caribbean nations manufacture most of their own medicines",
+        "Because most medications are imported across long supply chains, increasing risk of substandard products",
+        "Because Caribbean regulatory standards are already the strictest in the world",
+        "Because the region has no international oversight from WHO or PAHO"
+      ],
+      "question": "Why is pharmaceutical regulation particularly critical in Caribbean nations?",
+      "explanation": "Caribbean nations import the vast majority of their pharmaceuticals across long ocean supply chains. This geographic reality increases the risk of product degradation, counterfeiting, and supply disruption — making robust regulatory systems essential for patient safety.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 25
+}

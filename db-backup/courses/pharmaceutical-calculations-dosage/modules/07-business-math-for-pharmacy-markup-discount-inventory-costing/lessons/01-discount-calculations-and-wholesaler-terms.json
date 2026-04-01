@@ -1,0 +1,96 @@
+{
+  "id": "340cc5af-4d85-49f3-9e9d-a72afd17a4f9",
+  "module_id": "55a60f21-234f-4d50-8f6a-1543a68aa3fb",
+  "title": "Discount Calculations and Wholesaler Terms",
+  "content": [
+    {
+      "text": "Discounts: Buying Smart, Saving Money",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Pharmacies receive discounts from wholesalers and manufacturers, and in turn may offer discounts to certain customers (e.g., loyalty programmes, senior citizen discounts, or staff discounts). Understanding how to calculate discounts — including chain (successive) discounts — is essential for maximising pharmacy profitability. In the competitive Caribbean pharmacy market, where wholesalers like SMITH'S (Trinidad), Medical Disposables & Supplies (Jamaica), and various regional distributors compete for business, negotiating and understanding discount structures is a key skill.",
+      "type": "text"
+    },
+    {
+      "term": "Chain Discount (Successive Discount)",
+      "type": "key-term",
+      "definition": "Multiple discounts applied in sequence. A chain discount of 20% + 10% does NOT equal 30%. Instead, the second discount is applied to the already-discounted price. Example: List price TTD 100, less 20% = TTD 80, less 10% = TTD 72. Effective discount = 28%, not 30%."
+    },
+    {
+      "text": "Calculating Discounts",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Single discount: Sale price = List price × (1 - Discount%/100). Chain discount: Sale price = List price × (1 - d1/100) × (1 - d2/100) × ... Worked example: A wholesaler offers a drug at TTD 200 per box with discounts of 15% + 5%. Step 1: After 15%: 200 × 0.85 = TTD 170. Step 2: After 5%: 170 × 0.95 = TTD 161.50. Effective discount: (200 - 161.50) / 200 × 100 = 19.25%.",
+      "type": "text"
+    },
+    {
+      "body": "Early payment discounts: Many wholesalers offer terms like '2/10, net 30' — meaning a 2% discount if paid within 10 days, otherwise the full amount is due in 30 days. For a TTD 5000 invoice: Pay within 10 days = 5000 × 0.98 = TTD 4900 (save TTD 100). Caribbean pharmacies with good cash flow should always take advantage of early payment discounts — the effective annualised return far exceeds bank savings rates.",
+      "type": "text"
+    },
+    {
+      "body": "Caribbean pharmacy technicians should understand discount structures because they often process purchase orders and receive stock. Key terms to know: 'trade discount' (ongoing percentage off list price), 'quantity discount' (buy more, pay less per unit), 'early payment discount' (pay quickly for a discount), and 'loyalty rebate' (end-of-year bonus based on total purchases). Knowing these terms helps you verify invoices and catch billing errors.",
+      "type": "callout",
+      "title": "Negotiating with Caribbean Wholesalers",
+      "variant": "tip"
+    },
+    {
+      "rows": [
+        [
+          "TTD 500",
+          "20%",
+          "TTD 400",
+          "20%"
+        ],
+        [
+          "TTD 500",
+          "20% + 10%",
+          "TTD 360",
+          "28%"
+        ],
+        [
+          "TTD 500",
+          "20% + 10% + 5%",
+          "TTD 342",
+          "31.6%"
+        ],
+        [
+          "JMD 10,000",
+          "15% + 5%",
+          "JMD 8,075",
+          "19.25%"
+        ],
+        [
+          "BBD 200",
+          "10% + 2% (early pay)",
+          "BBD 176.40",
+          "11.8%"
+        ]
+      ],
+      "type": "table",
+      "caption": "Discount Calculation Examples",
+      "headers": [
+        "List Price",
+        "Discounts",
+        "Net Price",
+        "Effective Discount"
+      ]
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "TTD 520",
+        "TTD 540",
+        "TTD 560",
+        "TTD 600"
+      ],
+      "question": "A wholesaler lists a product at TTD 800 with chain discounts of 25% and 10%. What is the net price?",
+      "explanation": "Step 1: 800 × (1 - 0.25) = 800 × 0.75 = TTD 600. Step 2: 600 × (1 - 0.10) = 600 × 0.90 = TTD 540. The effective discount is (800-540)/800 × 100 = 32.5%, not 35%.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 25
+}

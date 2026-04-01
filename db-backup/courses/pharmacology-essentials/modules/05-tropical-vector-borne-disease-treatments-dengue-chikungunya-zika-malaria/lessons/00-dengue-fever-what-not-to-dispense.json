@@ -1,0 +1,82 @@
+{
+  "id": "29df19cb-e89e-4dca-bb20-1ea7dcdc5fce",
+  "module_id": "8565ea75-e96a-4d25-8e89-327097346a61",
+  "title": "Dengue Fever: What NOT to Dispense",
+  "content": [
+    {
+      "text": "Dengue: The Caribbean's Most Common Vector-Borne Disease",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Dengue fever is endemic across the Caribbean, with periodic epidemics causing significant morbidity and mortality. The disease is caused by four serotypes of dengue virus transmitted by Aedes aegypti mosquitoes. Most cases are self-limiting, but severe dengue (dengue haemorrhagic fever) can be fatal. For pharmacy technicians, the critical pharmacological knowledge is what NOT to give.",
+      "type": "text"
+    },
+    {
+      "body": "The Caribbean experiences dengue outbreaks cyclically, with major epidemics in 2006, 2010, 2014, and 2019-2020 affecting Trinidad, Jamaica, Barbados, Grenada, and across the OECS territories. Dengue has four serotypes (DENV-1 through DENV-4). Infection with one serotype provides lifelong immunity to that serotype but increases the risk of severe dengue upon subsequent infection with a different serotype. This sequential infection risk is particularly relevant in the Caribbean where all four serotypes circulate.",
+      "type": "text"
+    },
+    {
+      "term": "Dengue fever",
+      "type": "key-term",
+      "definition": "An acute viral infection transmitted by Aedes aegypti mosquitoes, causing high fever, severe headache, retro-orbital pain, muscle/joint pain ('breakbone fever'), and rash. There is no specific antiviral treatment. Management is supportive: rest, fluids, and paracetamol for fever and pain."
+    },
+    {
+      "body": "Aspirin, ibuprofen, diclofenac, and all other NSAIDs are CONTRAINDICATED in dengue because they impair platelet function and increase bleeding risk. Dengue causes thrombocytopenia (low platelet count), and adding an antiplatelet/anti-inflammatory drug can trigger life-threatening haemorrhage. ONLY paracetamol should be used for fever and pain in suspected dengue.",
+      "type": "callout",
+      "title": "NEVER Dispense NSAIDs or Aspirin for Suspected Dengue",
+      "variant": "danger"
+    },
+    {
+      "rows": [
+        [
+          "Give paracetamol for fever and pain",
+          "Give aspirin, ibuprofen, or any NSAID"
+        ],
+        [
+          "Encourage oral rehydration fluids",
+          "Give IV fluids without medical supervision"
+        ],
+        [
+          "Monitor for warning signs (abdominal pain, persistent vomiting, bleeding)",
+          "Assume improvement after fever breaks — this is when severe dengue can develop"
+        ],
+        [
+          "Refer immediately if warning signs appear",
+          "Dismiss a returning patient as 'just dengue'"
+        ]
+      ],
+      "type": "table",
+      "caption": "Dengue Management: Do's and Don'ts",
+      "headers": [
+        "DO",
+        "DO NOT"
+      ]
+    },
+    {
+      "type": "case-study",
+      "title": "Case Study: The Wrong Analgesic During Dengue Season in Arima",
+      "scenario": "During a dengue outbreak in Arima, Trinidad, a mother brings her 14-year-old son to the pharmacy. He has had fever for 2 days, severe headache, and body aches. She asks for 'something stronger than paracetamol' because 'the Panadol not working.' She specifically requests diclofenac tablets, which she has at home from a previous prescription.",
+      "questions": [
+        "Why is diclofenac dangerous in this scenario?",
+        "What should the pharmacy technician advise the mother?",
+        "What warning signs should the mother watch for that require hospital referral?"
+      ],
+      "discussion": "Diclofenac is an NSAID that inhibits platelet function. In suspected dengue, where thrombocytopenia (low platelet count) is common, NSAIDs can trigger life-threatening haemorrhage. The technician should firmly but kindly explain that only paracetamol is safe during dengue season, ensure the correct paracetamol dose is being used (up to 4g/day for adults, weight-based dosing for children), encourage oral rehydration, and advise the mother to seek medical attention if the boy develops abdominal pain, persistent vomiting, bleeding from gums or nose, or becomes unusually drowsy — these are dengue warning signs."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Dispense ibuprofen as requested",
+        "Offer paracetamol instead and explain that ibuprofen is dangerous in suspected dengue due to bleeding risk",
+        "Give aspirin as an alternative to ibuprofen",
+        "Suggest they take both paracetamol and ibuprofen together"
+      ],
+      "question": "A patient presents at your pharmacy in Port of Spain with fever, headache, and body aches during dengue season. They ask for ibuprofen. What should you do?",
+      "explanation": "During dengue season, any febrile patient should be assumed to potentially have dengue. NSAIDs (including ibuprofen) and aspirin are contraindicated due to increased bleeding risk. Paracetamol is the only safe analgesic/antipyretic.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 20
+}

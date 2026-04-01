@@ -1,0 +1,156 @@
+{
+  "id": "f38ed72c-82e3-4c35-97e2-755a528a22c1",
+  "module_id": "1c98523a-3a03-4cdf-a2ab-8b97e13644f8",
+  "title": "Conflict Resolution & Change Management",
+  "content": [
+    {
+      "text": "Navigating Conflict in Small Pharmacy Teams",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "In a small Caribbean pharmacy where three to eight people work in close quarters for eight or more hours a day, interpersonal conflict is inevitable. Personality clashes, disagreements over work distribution, perceived favouritism, and the stress of busy dispensing shifts all create friction. Left unaddressed, workplace conflict in a small team can escalate quickly — there is no large department to absorb the tension, and patients can sense (and are affected by) team dysfunction.",
+      "type": "text"
+    },
+    {
+      "term": "Mediation",
+      "type": "key-term",
+      "definition": "A conflict resolution process in which a neutral third party (the mediator) helps the disputing parties reach a mutually acceptable resolution. In pharmacy management, the supervisor often serves as mediator between conflicting team members. The goal is not to determine who is right, but to find a workable solution that preserves the working relationship."
+    },
+    {
+      "text": "A Five-Step Conflict Resolution Model for Pharmacy",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "type": "list",
+      "items": [
+        "Acknowledge the conflict: Do not ignore it. If two team members are visibly in conflict, address it before it affects patient care",
+        "Meet individually first: In Caribbean culture, airing grievances in front of others is deeply uncomfortable. Meet each person privately to hear their perspective",
+        "Identify the root cause: Is this about behaviour (lateness, not pulling their weight), communication (misunderstandings, tone), or systems (unclear roles, unfair scheduling)?",
+        "Facilitate a joint conversation: Bring both parties together in a private setting. Set ground rules — no interrupting, no personal attacks, focus on solutions. In Caribbean settings, offering a cup of tea and starting with light conversation ('liming') can ease tension before addressing the issue",
+        "Agree on actions and follow up: Document what was agreed, set a review date, and follow through. In collectivist Caribbean culture, people want to know that the leader cares enough to follow up"
+      ],
+      "ordered": true
+    },
+    {
+      "type": "scenario-simulation",
+      "nodes": [
+        {
+          "id": "start",
+          "text": "You arrive Monday morning to find Keisha and Damian barely speaking. A patient at the counter looks uncomfortable as Damian curtly tells Keisha to 'handle it' when she asks him to pass a medication from the shelf behind him. Another staff member, Assistant Carla, whispers to you: 'They been like this since Thursday. Something happened about the schedule.' What is your first action?",
+          "choices": [
+            {
+              "label": "Call both Keisha and Damian into your office immediately for a joint meeting",
+              "feedback": "Forcing an immediate joint meeting without understanding the issue first can escalate tensions, especially in Caribbean culture where people need to be heard individually before a group discussion.",
+              "isOptimal": false,
+              "nextNodeId": "joint-first"
+            },
+            {
+              "label": "Pull Keisha aside privately during a quiet moment to hear her perspective, then do the same with Damian",
+              "feedback": "Excellent. Meeting each person individually first shows respect, allows them to speak freely, and gives you a clear picture of both perspectives before attempting resolution.",
+              "isOptimal": true,
+              "nextNodeId": "individual-first"
+            },
+            {
+              "label": "Ignore it — they are adults and should sort it out themselves",
+              "feedback": "Ignoring workplace conflict that is visible to patients and colleagues is a management failure. The tension will escalate, patient care will suffer, and your authority as a leader will erode.",
+              "isOptimal": false,
+              "nextNodeId": "ignore-conflict"
+            }
+          ]
+        },
+        {
+          "id": "individual-first",
+          "text": "You speak with Keisha first. She explains that Damian swapped his Saturday shift with her without asking, by going directly to you (the supervisor) and getting it approved. She had plans for that Saturday and feels disrespected. Damian, when you speak to him, says he needed Saturday off for a family event and thought getting supervisor approval was sufficient. He did not realise Keisha would be upset. The core issue is a schedule change made without consulting the affected person. How do you proceed?",
+          "choices": [
+            {
+              "label": "Bring Keisha and Damian together, acknowledge the miscommunication, take responsibility for approving the swap without checking with Keisha, and establish a new policy",
+              "feedback": "Outstanding. You identified the system failure (no swap policy), took ownership of your role in the problem, and used the conflict as an opportunity to create a better process.",
+              "isOptimal": true,
+              "nextNodeId": "optimal-resolution"
+            },
+            {
+              "label": "Tell Damian he was wrong and must apologise to Keisha",
+              "feedback": "Placing all blame on Damian is unfair — he did seek supervisor approval. The system allowed this to happen. One-sided blame will breed resentment.",
+              "isOptimal": false,
+              "nextNodeId": "blame-one"
+            },
+            {
+              "label": "Tell Keisha to just accept it because the schedule is the supervisor's decision",
+              "feedback": "Dismissing Keisha's legitimate concern about not being consulted undermines trust and does not resolve the underlying issue. She will remain resentful and disengaged.",
+              "isOptimal": false,
+              "nextNodeId": "dismiss-keisha"
+            }
+          ]
+        },
+        {
+          "id": "optimal-resolution",
+          "text": "You bring Keisha and Damian together in a private setting. You start by taking responsibility: 'I approved the swap without checking with you, Keisha, and that was my mistake.' You facilitate a respectful conversation where both acknowledge their perspectives. Together, you establish a new policy: all shift swaps must be agreed by both parties before supervisor approval. Keisha and Damian shake hands. The tension visibly eases over the next few days.",
+          "isEnd": true,
+          "outcome": "success",
+          "summary": "You demonstrated excellent leadership by: (1) addressing the conflict promptly, (2) hearing both sides individually first, (3) taking responsibility for your role in the problem, (4) facilitating a joint resolution, and (5) creating a systemic fix (new swap policy) to prevent recurrence. This is culturally appropriate conflict resolution in a Caribbean workplace."
+        },
+        {
+          "id": "joint-first",
+          "text": "You call both into your office. Keisha immediately becomes defensive and Damian shuts down. Neither feels comfortable speaking openly in front of the other without having been heard individually first. The meeting devolves into terse one-word answers and crossed arms. You end the meeting without resolution, and the tension continues for the rest of the week.",
+          "isEnd": true,
+          "outcome": "partial",
+          "summary": "Jumping to a joint meeting without individual conversations first is a common mistake. In Caribbean culture, people need to feel heard and respected individually before they can engage in productive joint dialogue. Next time, speak with each person privately first to understand their perspective."
+        },
+        {
+          "id": "ignore-conflict",
+          "text": "Over the next two weeks, the conflict worsens. Keisha requests a transfer to another pharmacy. Damian starts calling in sick on days he is scheduled with Keisha. Assistant Carla is caught in the middle and becomes stressed. A regular patient, Mrs. Joseph, tells you she noticed the 'bad vibes' and is considering going to the pharmacy down the road. You have lost a technician, staff morale is at rock bottom, and patients are leaving.",
+          "isEnd": true,
+          "outcome": "failure",
+          "summary": "Ignoring workplace conflict never makes it go away — it makes it worse. As a supervisor, you have a responsibility to address interpersonal issues before they impact patient care, staff retention, and the pharmacy's reputation. Early intervention, even when uncomfortable, is always the better path."
+        },
+        {
+          "id": "blame-one",
+          "text": "Damian apologises under pressure but feels unfairly blamed — he had sought your approval for the swap. He becomes resentful toward you and disengaged at work. Keisha feels vindicated but senses that the resolution was forced, not genuine. The surface tension eases, but underlying trust issues remain. Two months later, Damian hands in his resignation, citing 'unfair management'.",
+          "isEnd": true,
+          "outcome": "failure",
+          "summary": "When a conflict has multiple contributing factors — including a system gap (no swap policy) and your own oversight in approving the swap without consultation — placing blame on one party is unjust and counterproductive. Effective conflict resolution examines the system, not just the individuals."
+        },
+        {
+          "id": "dismiss-keisha",
+          "text": "Keisha goes quiet but seethes internally. She stops volunteering for extra duties, does the bare minimum, and begins looking for other employment. Her relationship with you, her supervisor, is damaged — she no longer trusts that you have her interests at heart. Within a month, she accepts a position at a competing pharmacy, citing 'feeling undervalued'. You are now short-staffed.",
+          "isEnd": true,
+          "outcome": "failure",
+          "summary": "Dismissing a team member's legitimate concern erodes trust and leads to disengagement. Keisha's issue was not about the schedule itself but about respect — not being consulted about a change that directly affected her. In Caribbean workplace culture, feeling respected is a fundamental need."
+        }
+      ],
+      "title": "Scenario: Managing a Conflict Between Team Members",
+      "description": "You are the pharmacy supervisor at SunRise Pharmacy in Scarborough, Tobago. Two of your three technicians — Keisha and Damian — have been in open conflict for the past week, and it is affecting the work environment. Navigate this situation and resolve the conflict."
+    },
+    {
+      "text": "Leading Through Change",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Caribbean pharmacies face constant change: new government programme requirements, updated formularies, new software systems, regulatory changes, or restructuring. How a supervisor introduces and manages change determines whether the team embraces it or resists it. Change resistance is natural and should be expected — the key is managing it constructively.",
+      "type": "text"
+    },
+    {
+      "body": "Professor John Kotter's change management model can be simplified for pharmacy teams: (1) Create urgency — explain WHY the change is needed. (2) Build a coalition — get your senior technician and pharmacist on board first. (3) Communicate the vision — paint a picture of how things will be better after the change. (4) Remove obstacles — address practical concerns (training, time, resources). (5) Create quick wins — show early results to build momentum. (6) Embed the change — update SOPs, train all staff, and make the new way the normal way.",
+      "type": "callout",
+      "title": "Kotter's Change Model — Simplified for Pharmacy",
+      "variant": "info"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Install the software and tell staff to start using it immediately",
+        "Send staff on a training course without explaining why the change is happening",
+        "Explain why the change is needed and how it will benefit the team and patients",
+        "Ask staff to vote on whether they want the new system"
+      ],
+      "question": "When introducing a new pharmacy management software system, what should the supervisor do FIRST?",
+      "explanation": "The first step in change management is creating urgency and communicating the 'why'. Staff need to understand the reason for the change and how it will benefit them and their patients before they can be expected to embrace it. Training (how) comes after understanding (why).",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 25
+}

@@ -1,0 +1,81 @@
+{
+  "id": "e6f039d5-6b14-4781-8057-758b429aa891",
+  "module_id": "2a2b8ae6-dc6c-4b92-b48f-b978c51bf5fd",
+  "title": "Why Inventory Management Matters in the Caribbean",
+  "content": [
+    {
+      "text": "The Cost of Getting It Wrong",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Inventory management is the backbone of any pharmacy operation, but in the Caribbean it takes on an elevated importance. Unlike pharmacies in large mainland countries where overnight restocking from national warehouses is routine, Caribbean pharmacies face unique challenges: nearly all medications are imported, shipping schedules are irregular, hurricane seasons can disrupt supply chains for weeks, and the tropical climate demands careful storage. A stockout of a critical medication — insulin, antiretrovirals, antihypertensives — can be life-threatening when the next shipment is weeks away.",
+      "type": "text"
+    },
+    {
+      "body": "At the same time, overstocking carries its own risks. Medications have expiry dates, and excess stock that expires before it can be dispensed represents a direct financial loss. In tropical climates, heat and humidity accelerate degradation, making overstocking even more costly. The goal is to maintain the 'Goldilocks zone' — enough stock to serve patients reliably, but not so much that wastage and carrying costs become unsustainable.",
+      "type": "text"
+    },
+    {
+      "term": "Carrying Cost",
+      "type": "key-term",
+      "definition": "The total cost of holding inventory over a given period, including storage space, climate control (critical in the Caribbean), insurance, wastage due to expiry, theft, and the opportunity cost of capital tied up in stock. Caribbean pharmacies often have carrying costs 15–25% higher than temperate-climate counterparts due to air conditioning and humidity control requirements."
+    },
+    {
+      "body": "Trinidad & Tobago, Jamaica, and Barbados import over 90% of their pharmaceutical products. This means that inventory management is not just about what's on the shelf — it's about managing lead times of 4 to 12 weeks for international orders, navigating customs clearance, and anticipating demand months in advance. Effective inventory management in this context is part logistics, part forecasting, and part crisis planning.",
+      "type": "callout",
+      "title": "Caribbean Import Dependence",
+      "variant": "info"
+    },
+    {
+      "rows": [
+        [
+          "Long import lead times (4–12 weeks)",
+          "Stockouts if demand spikes unexpectedly",
+          "Maintain safety stock for essential medicines; use demand forecasting"
+        ],
+        [
+          "Hurricane season (June–November)",
+          "Shipping disruptions, port closures, damaged stock",
+          "Pre-hurricane buffer stock; emergency supplier agreements"
+        ],
+        [
+          "Tropical heat and humidity",
+          "Accelerated degradation; cold chain failures",
+          "Climate-controlled storage; temperature monitoring; shorter shelf cycles"
+        ],
+        [
+          "Limited warehouse space",
+          "Cannot hold large buffer stock",
+          "ABC analysis to prioritise essential items; just-in-time for fast movers"
+        ],
+        [
+          "Foreign exchange fluctuations",
+          "Cost of imported medications varies with exchange rates",
+          "Hedging strategies; negotiate fixed-price contracts with suppliers"
+        ]
+      ],
+      "type": "table",
+      "caption": "Inventory Challenges Unique to Caribbean Pharmacies",
+      "headers": [
+        "Challenge",
+        "Impact",
+        "Mitigation Strategy"
+      ]
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Caribbean pharmacies sell fewer medications overall",
+        "Air conditioning and humidity control are required to maintain medication integrity",
+        "Caribbean governments impose higher storage taxes",
+        "Patients in the Caribbean use more medications per capita"
+      ],
+      "question": "What is the primary reason that Caribbean pharmacies face higher carrying costs than pharmacies in temperate climates?",
+      "explanation": "The tropical climate demands continuous air conditioning and humidity control to prevent medication degradation. These climate control costs, combined with the risk of accelerated expiry and cold chain requirements, drive carrying costs 15–25% higher than in temperate regions.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 20
+}

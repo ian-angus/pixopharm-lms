@@ -1,0 +1,187 @@
+{
+  "id": "e5b517d6-69a4-4a50-b156-8f5dee86e317",
+  "module_id": "405b2e6f-2c09-41e2-930e-8ab0b29c32ef",
+  "title": "Common Prescribing Patterns & Top Dispensed Medications in Grenada",
+  "content": [
+    {
+      "text": "What Grenada Prescribes Most",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Grenada shares the Caribbean's NCD burden — hypertension, diabetes, and cardiovascular disease are the dominant chronic conditions. However, prescribing patterns in Grenada are shaped by the island's small formulary, limited generic options, and the particular health challenges of a small island developing state. The disease profile also includes notable rates of sickle cell disease, mental health conditions, and tropical infectious diseases (particularly during the rainy/hurricane season).",
+      "type": "text"
+    },
+    {
+      "text": "Top Dispensed Medications in Grenada",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "rows": [
+        [
+          "1",
+          "Amlodipine 5mg/10mg",
+          "Calcium channel blocker",
+          "Hypertension"
+        ],
+        [
+          "2",
+          "Metformin 500mg/850mg",
+          "Biguanide",
+          "Type 2 diabetes"
+        ],
+        [
+          "3",
+          "Enalapril 5mg/10mg/20mg",
+          "ACE inhibitor",
+          "Hypertension"
+        ],
+        [
+          "4",
+          "Hydrochlorothiazide 25mg",
+          "Thiazide diuretic",
+          "Hypertension"
+        ],
+        [
+          "5",
+          "Amoxicillin 250mg/500mg",
+          "Penicillin antibiotic",
+          "Bacterial infections"
+        ],
+        [
+          "6",
+          "Omeprazole 20mg",
+          "Proton pump inhibitor",
+          "GERD"
+        ],
+        [
+          "7",
+          "Simvastatin 20mg",
+          "Statin",
+          "Hyperlipidaemia"
+        ],
+        [
+          "8",
+          "Glibenclamide 5mg",
+          "Sulphonylurea",
+          "Type 2 diabetes"
+        ],
+        [
+          "9",
+          "Paracetamol 500mg",
+          "Analgesic/antipyretic",
+          "Pain, fever"
+        ],
+        [
+          "10",
+          "Salbutamol inhaler 100mcg",
+          "Beta-2 agonist",
+          "Asthma"
+        ]
+      ],
+      "type": "table",
+      "caption": "Most Commonly Dispensed Medications in Grenada (approximate ranking)",
+      "headers": [
+        "Rank",
+        "Medication",
+        "Class",
+        "Primary Indication"
+      ]
+    },
+    {
+      "text": "Grenada-Specific Prescribing Observations",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "type": "list",
+      "items": [
+        "The government formulary is smaller than T&T or Jamaica's — fewer medication choices means less substitution flexibility",
+        "Older, well-established generics dominate: Glibenclamide rather than newer agents like Glimepiride or Sitagliptin",
+        "Simvastatin is the primary statin; Atorvastatin available only in private pharmacies and at higher cost",
+        "Antibiotic use follows a conservative pattern similar to Barbados — influenced by WHO essential medicines guidelines",
+        "Mental health medications are limited — Amitriptyline, Haloperidol, and Diazepam are the mainstays; newer SSRIs may need to be imported privately",
+        "Traditional remedies are very common: nutmeg, mace, soursop leaf tea, and local herbs are widely used alongside prescription medications",
+        "Sickle cell disease is managed primarily with Hydroxyurea and Folic acid — both on the essential medicines list"
+      ],
+      "ordered": false
+    },
+    {
+      "body": "Grenada is known as the 'Spice Isle' and is one of the world's largest producers of nutmeg. Nutmeg and mace (the red membrane around the nutmeg seed) have a long history of traditional medicinal use in Grenada — for digestive complaints, pain relief, and as a general tonic. While nutmeg in culinary quantities is safe, excessive consumption or concentrated nutmeg oil can be toxic (containing myristicin, which can cause hallucinations, nausea, and liver damage). Be aware that patients may use nutmeg medicinally without mentioning it.",
+      "type": "callout",
+      "title": "Nutmeg — Grenada's Signature Spice and Medicine",
+      "variant": "info"
+    },
+    {
+      "term": "Essential Medicines List (EML)",
+      "type": "key-term",
+      "definition": "A list of the most important medications that satisfy the priority healthcare needs of a population. Based on the WHO Model List of Essential Medicines, each country adapts its own version. Grenada's EML is particularly important because the government procures only medications on this list for the public system, making it the primary guide for what is available at the General Hospital and health centres."
+    },
+    {
+      "type": "island-comparison",
+      "title": "Top Prescribing Differences Across the Four Islands",
+      "islands": [
+        {
+          "flag": "🇹🇹",
+          "name": "Trinidad & Tobago",
+          "details": [
+            "Broadest formulary — most medication options available",
+            "Atenolol widely used for hypertension (less common elsewhere in the region)",
+            "CDAP formulary drives prescribing toward specific generics",
+            "Highest use of Insulin (largest diabetic population)",
+            "Liberal antibiotic prescribing culture"
+          ]
+        },
+        {
+          "flag": "🇯🇲",
+          "name": "Jamaica",
+          "details": [
+            "ARBs (Losartan) preferred over ACE inhibitors",
+            "Glimepiride preferred over Glibenclamide as second-line antidiabetic",
+            "NHF formulary shapes prescribing choices",
+            "Z-Pack (Azithromycin) extremely popular for respiratory infections",
+            "Cerasee tea widely used as complementary diabetes treatment"
+          ]
+        },
+        {
+          "flag": "🇧🇧",
+          "name": "Barbados",
+          "details": [
+            "ACE inhibitors (Enalapril) prominent due to high CKD prevalence",
+            "Simvastatin preferred on BDS formulary (cost-driven)",
+            "More conservative antibiotic prescribing (stewardship programmes)",
+            "Furosemide usage higher (heart failure, renal disease population)",
+            "Less herbal remedy use compared to Jamaica or T&T"
+          ]
+        },
+        {
+          "flag": "🇬🇩",
+          "name": "Grenada",
+          "details": [
+            "Smallest formulary — oldest generics dominate",
+            "Glibenclamide rather than newer sulphonylureas",
+            "Limited statin options (Simvastatin primarily)",
+            "Mental health medication options restricted",
+            "Nutmeg-based traditional remedies widely used"
+          ]
+        }
+      ],
+      "description": "While all four islands share the NCD burden, specific medication preferences differ based on formulary availability, cost, and prescribing culture."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Cerasee tea",
+        "Fever grass",
+        "Nutmeg",
+        "Soursop leaf"
+      ],
+      "question": "Which traditional Grenadian remedy should pharmacy technicians be aware of due to potential toxicity in high doses?",
+      "explanation": "Nutmeg, Grenada's signature spice, has a history of traditional medicinal use. While safe in culinary quantities, excessive consumption or concentrated nutmeg oil can be toxic (containing myristicin, which can cause hallucinations, nausea, and liver damage). Cerasee tea is more associated with Jamaica, though used regionally.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 3,
+  "duration_minutes": 25
+}

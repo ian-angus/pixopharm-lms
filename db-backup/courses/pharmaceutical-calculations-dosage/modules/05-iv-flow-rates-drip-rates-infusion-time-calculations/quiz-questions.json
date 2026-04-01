@@ -1,0 +1,180 @@
+[
+  {
+    "id": "13fd5ee1-4d37-421f-8613-672d120cd47c",
+    "module_id": "d3795a17-60e6-4ead-89e6-9c00001165e0",
+    "question": "1000 mL Normal Saline is ordered to infuse over 8 hours. What is the flow rate?",
+    "options": [
+      "100 mL/hr",
+      "125 mL/hr",
+      "150 mL/hr",
+      "200 mL/hr"
+    ],
+    "correct_answer": 1,
+    "explanation": "Flow rate = Volume ÷ Time = 1000 ÷ 8 = 125 mL/hr.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "f9eebf10-f978-4a2e-8dfb-367096017764",
+    "module_id": "d3795a17-60e6-4ead-89e6-9c00001165e0",
+    "question": "Order: 500 mL over 4 hours using a 15 gtt/mL administration set. Calculate the drip rate in gtt/min.",
+    "options": [
+      "21 gtt/min",
+      "31 gtt/min",
+      "42 gtt/min",
+      "63 gtt/min"
+    ],
+    "correct_answer": 1,
+    "explanation": "4 hours = 240 minutes. Drip rate = (500 × 15) / 240 = 7500 / 240 = 31.25 → 31 gtt/min.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "1dbc9cf5-9f71-44a8-9d71-93b1ca243ad9",
+    "module_id": "d3795a17-60e6-4ead-89e6-9c00001165e0",
+    "question": "When using a 60 gtt/mL microdrip set, the drip rate (gtt/min) equals:",
+    "options": [
+      "The flow rate in mL/min",
+      "The flow rate in mL/hr",
+      "Half the flow rate in mL/hr",
+      "Double the flow rate in mL/hr"
+    ],
+    "correct_answer": 1,
+    "explanation": "With a 60 gtt/mL set: gtt/min = mL/hr × 60/60 = mL/hr. This is the simplest IV calculation shortcut and is widely used in Caribbean hospital wards.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "40d2b087-ce5a-41db-acb7-9b962fbbd6df",
+    "module_id": "d3795a17-60e6-4ead-89e6-9c00001165e0",
+    "question": "Heparin 25,000 units in 500 mL is running at 1200 units/hr. What is the pump rate?",
+    "options": [
+      "12 mL/hr",
+      "24 mL/hr",
+      "48 mL/hr",
+      "60 mL/hr"
+    ],
+    "correct_answer": 1,
+    "explanation": "Concentration = 25,000/500 = 50 units/mL. Flow rate = 1200/50 = 24 mL/hr.",
+    "order_index": 3,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "ddfc5dc3-b5cd-4bd8-a898-3aaa43aca4f6",
+    "module_id": "d3795a17-60e6-4ead-89e6-9c00001165e0",
+    "question": "A 500 mL bag running at 80 mL/hr started at 10:00 AM. When will it finish?",
+    "options": [
+      "2:15 PM",
+      "4:15 PM",
+      "4:00 PM",
+      "6:00 PM"
+    ],
+    "correct_answer": 1,
+    "explanation": "Time = 500/80 = 6.25 hours = 6 hours 15 minutes. Started at 10:00 AM, finishes at 4:15 PM.",
+    "order_index": 4,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "5d94fc07-8a63-49e1-af29-d859664bae39",
+    "module_id": "d3795a17-60e6-4ead-89e6-9c00001165e0",
+    "question": "Dopamine is ordered at 5 mcg/kg/min for a 80 kg patient. The IV bag contains dopamine 400 mg in 250 mL D5W. What is the pump rate?",
+    "options": [
+      "9 mL/hr",
+      "15 mL/hr",
+      "18 mL/hr",
+      "24 mL/hr"
+    ],
+    "correct_answer": 1,
+    "explanation": "Dose = 5 × 80 = 400 mcg/min. Convert: 400 × 60 / 1000 = 24 mg/hr. Concentration = 400 mg / 250 mL = 1.6 mg/mL. Flow rate = 24 / 1.6 = 15 mL/hr.",
+    "order_index": 5,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "hard",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "f9eafc13-06de-4fb3-ba22-1864c9554f01",
+    "module_id": "d3795a17-60e6-4ead-89e6-9c00001165e0",
+    "question": "Which of the following IV medications are classified as 'high-alert' requiring independent double-checks? (Select ALL that apply.)",
+    "options": [
+      "Normal Saline (0.9% NaCl)",
+      "Heparin infusion",
+      "Insulin infusion",
+      "Potassium chloride (KCl) infusion"
+    ],
+    "correct_answer": 0,
+    "explanation": "Heparin, insulin, and potassium chloride are all ISMP high-alert medications that require independent double-checks due to their potential to cause serious patient harm if errors occur. Normal Saline alone (without additives) is not classified as high-alert.",
+    "order_index": 6,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "3d0cf4cf-1408-41b6-ba98-29cd406e3681",
+    "module_id": "d3795a17-60e6-4ead-89e6-9c00001165e0",
+    "question": "Fill in the blank: The number of drops per millilitre produced by an IV administration set is called the __________.",
+    "options": [
+      "Flow rate",
+      "Drip rate",
+      "Drop factor",
+      "Infusion constant"
+    ],
+    "correct_answer": 2,
+    "explanation": "The drop factor (gtt/mL) is a fixed characteristic of the IV administration set, printed on the packaging. Common drop factors are 10, 15, 20 (macrodrip) and 60 (microdrip) gtt/mL.",
+    "order_index": 7,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "cb3daab0-4984-4e5b-986d-3593d8701e25",
+    "module_id": "d3795a17-60e6-4ead-89e6-9c00001165e0",
+    "question": "An insulin infusion runs at 4 units/hr. The preparation is 50 units in 50 mL NS. What is the pump rate?",
+    "options": [
+      "2 mL/hr",
+      "4 mL/hr",
+      "8 mL/hr",
+      "10 mL/hr"
+    ],
+    "correct_answer": 1,
+    "explanation": "Concentration = 50 units / 50 mL = 1 unit/mL. Flow rate = 4 units/hr ÷ 1 unit/mL = 4 mL/hr. This is a standard insulin infusion preparation used in Caribbean ICUs for diabetic ketoacidosis management.",
+    "order_index": 8,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "66a9c5a7-9ba7-4da0-9798-588057bd5bbc",
+    "module_id": "d3795a17-60e6-4ead-89e6-9c00001165e0",
+    "question": "True or false: In the Caribbean, IV admixture beyond-use dates may need to be shortened due to higher ambient temperatures.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": 0,
+    "explanation": "True. Many stability studies are conducted at 25°C (controlled room temperature). In Caribbean hospital wards where temperatures may reach 28-33°C, drug degradation can occur faster, potentially shortening the safe beyond-use period. Pharmacies should use the most conservative stability data applicable to local conditions.",
+    "order_index": 9,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  }
+]

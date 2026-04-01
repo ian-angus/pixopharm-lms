@@ -1,0 +1,102 @@
+{
+  "id": "163a9c14-cf45-4564-b1ae-6b5cbe4d6a6c",
+  "module_id": "e0506ad3-0af5-4df8-a4be-e6430624b383",
+  "title": "Caribbean-Specific Quality Challenges: Heat, Humidity & Drug Stability",
+  "content": [
+    {
+      "text": "Tropical Conditions and Medication Quality",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "The Caribbean's tropical climate presents significant challenges to medication quality that temperate-climate pharmacies rarely face. Ambient temperatures routinely exceed 30 °C, relative humidity often surpasses 80%, and salt-laden coastal air can corrode packaging. These conditions accelerate drug degradation, alter dosage form stability, and can render medications ineffective or even harmful before their stated expiry date. For the Caribbean pharmacy technician, understanding the relationship between environmental conditions and drug stability is not academic — it is a daily quality control imperative.",
+      "type": "text"
+    },
+    {
+      "term": "Drug Stability",
+      "type": "key-term",
+      "definition": "The capacity of a drug product to retain its identity, strength, quality, and purity throughout its shelf life when stored under the conditions stated on the label. Stability is affected by temperature, humidity, light, and the chemical nature of the drug and its packaging."
+    },
+    {
+      "rows": [
+        [
+          "Tablets",
+          "Accelerated degradation of active ingredient; discolouration",
+          "Moisture absorption; softening; sticking together",
+          "Tablets stored in non-air-conditioned pharmacies may degrade faster than shelf life predicts"
+        ],
+        [
+          "Capsules",
+          "Gelatin softening; capsule deformation",
+          "Moisture absorption; capsules may stick together or dissolve prematurely",
+          "Gelatin capsules are particularly vulnerable to tropical humidity"
+        ],
+        [
+          "Suppositories",
+          "Melting; deformation; loss of dose uniformity",
+          "Less direct effect, but humidity accelerates packaging degradation",
+          "May arrive melted if cold chain is broken during import/delivery"
+        ],
+        [
+          "Liquids/Syrups",
+          "Accelerated microbial growth; chemical degradation",
+          "Not directly affected by humidity (already liquid)",
+          "Reconstituted antibiotics degrade rapidly in heat — critical for paediatric use"
+        ],
+        [
+          "Creams/Ointments",
+          "Separation of oil and water phases; changes in consistency",
+          "May absorb moisture, altering concentration",
+          "Topical preparations may separate in heat, requiring re-mixing before use"
+        ],
+        [
+          "Insulin & Biologics",
+          "Rapid loss of potency above 30 °C; potential protein denaturation",
+          "Indirect — humidity can damage packaging integrity",
+          "Cold chain failures during import, delivery, and storage are a critical risk"
+        ]
+      ],
+      "type": "table",
+      "caption": "Impact of Tropical Conditions on Common Dosage Forms",
+      "headers": [
+        "Dosage Form",
+        "Effect of Heat (>30 °C)",
+        "Effect of Humidity (>80% RH)",
+        "Caribbean-Specific Concern"
+      ]
+    },
+    {
+      "body": "In the Caribbean, cold chain failures often occur not at the pharmacy but during transport — from the port to the warehouse, from the warehouse to the pharmacy, or during delivery to the patient's home. A vial of insulin that sat in an unrefrigerated delivery van for four hours on a 35 °C day may have lost significant potency even though it appears normal. Temperature monitoring at every stage of the supply chain is essential.",
+      "type": "callout",
+      "title": "The Hidden Cold Chain Failure",
+      "variant": "danger"
+    },
+    {
+      "text": "Temperature Monitoring in the Pharmacy",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Every Caribbean pharmacy should maintain continuous temperature monitoring for both ambient storage areas and refrigerators. This means recording temperatures at least twice daily (morning and afternoon), using calibrated thermometers or continuous digital temperature loggers, and taking immediate action when temperatures fall outside acceptable ranges. Acceptable ranges are: ambient storage 15-25 °C (or up to 30 °C for products labelled 'store below 30 °C'), and refrigerated storage 2-8 °C.",
+      "type": "text"
+    },
+    {
+      "body": "In Caribbean pharmacies without full air conditioning, ambient temperatures may exceed 30 °C for extended periods. Practical mitigation strategies include: positioning temperature-sensitive medications in the coolest area of the pharmacy (away from windows and direct sunlight), using fans to improve air circulation, installing window tinting or UV-filtering film, rotating stock aggressively to ensure medications are dispensed well before their expiry date, and storing the most temperature-sensitive products in the refrigerator if shelf space allows.",
+      "type": "text"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Expiry dates are always inaccurate",
+        "Caribbean pharmacies sell counterfeit medications",
+        "Tropical heat and humidity accelerate degradation beyond what the expiry date — set under controlled storage conditions — accounts for",
+        "The expiry date only applies to medications stored in Europe"
+      ],
+      "question": "Why might a medication in a Caribbean pharmacy degrade before its stated expiry date?",
+      "explanation": "Expiry dates are established under controlled storage conditions (typically 25 °C, 60% relative humidity). Caribbean pharmacies that cannot maintain these conditions may experience accelerated drug degradation. A medication that would remain stable for two years at 25 °C may degrade significantly faster at 35 °C and 85% humidity — meaning it could become subpotent or unsafe before its printed expiry date.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 25
+}

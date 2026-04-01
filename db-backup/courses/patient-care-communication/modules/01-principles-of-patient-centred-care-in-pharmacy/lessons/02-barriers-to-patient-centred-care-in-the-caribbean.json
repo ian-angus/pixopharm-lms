@@ -1,0 +1,136 @@
+{
+  "id": "549680db-3d90-4b99-89c4-12386735386b",
+  "module_id": "ed4e750f-4b1a-41ea-a99c-0214f0f779ee",
+  "title": "Barriers to Patient-Centred Care in the Caribbean",
+  "content": [
+    {
+      "text": "Why Patient-Centred Care Is Harder Than It Sounds",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Knowing the principles of patient-centred care is one thing; practising them in a busy Caribbean pharmacy with a queue of impatient customers is quite another. Understanding the barriers — and developing strategies to overcome them — is what separates good intentions from good practice.",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Time pressure: High patient volumes with limited staff mean technicians may have only 2-3 minutes per patient interaction",
+        "Language barriers: Patients may speak Creole, patois, Spanish, French, Hindi, or other languages; medical English may be incomprehensible to them",
+        "Health literacy: Many patients cannot read medication labels, understand dosing schedules, or interpret health information",
+        "Cultural mistrust: Historical abuses in healthcare (e.g., unethical research, dismissal of traditional medicine) have created deep distrust in some communities",
+        "Stigma: Conditions like HIV, mental illness, and sexually transmitted infections carry heavy stigma in many Caribbean communities, preventing open discussion",
+        "Privacy challenges: In small island communities where 'everybody know everybody,' patients fear their health information will become public knowledge",
+        "Economic constraints: Patients may not be able to afford the prescribed medication, making adherence counselling feel futile unless alternatives are explored",
+        "Power dynamics: Residual colonial and class hierarchies can make patients reluctant to ask questions or express disagreement"
+      ],
+      "ordered": true
+    },
+    {
+      "type": "island-comparison",
+      "title": "Barriers to Patient-Centred Care Across Islands",
+      "islands": [
+        {
+          "flag": "🇹🇹",
+          "name": "Trinidad & Tobago",
+          "details": [
+            "Multicultural population (Indian, African, Chinese, Syrian-Lebanese, Mixed) requires cultural competence across multiple traditions",
+            "CDAP programme provides free chronic disease medications, but patients still face access barriers at distribution points",
+            "Hindi, Bhojpuri, and Spanish speakers may struggle with English-only medication labels",
+            "Strong bush medicine tradition, particularly with Indian Ayurvedic and African herbal practices",
+            "High volume public hospital pharmacies may limit individual patient interaction time"
+          ]
+        },
+        {
+          "flag": "🇯🇲",
+          "name": "Jamaica",
+          "details": [
+            "Patois (Jamaican Creole) is the mother tongue for most patients; standard English labels may be poorly understood",
+            "NHF (National Health Fund) subsidises medications for chronic diseases, but co-payments remain a barrier for many",
+            "Significant stigma around HIV and mental health conditions, particularly in rural areas",
+            "Strong Rastafarian and traditional healing communities who may prefer herbal remedies",
+            "Rural areas have limited pharmacy access, with some communities served by a single pharmacy"
+          ]
+        },
+        {
+          "flag": "🇧🇧",
+          "name": "Barbados",
+          "details": [
+            "Small island (166 sq mi) means patients often encounter pharmacy staff socially, creating privacy concerns",
+            "High literacy rate (99.6%) but health literacy remains a distinct challenge",
+            "Barbados Drug Service provides medications through polyclinics, but queues can be extensive",
+            "Ageing population creates growing demand for chronic disease management and polypharmacy counselling",
+            "Strong traditional medicine culture with 'bush bath' and herbal remedies widely used"
+          ]
+        }
+      ],
+      "description": "Different islands face different combinations of barriers. Understanding your local context is essential."
+    },
+    {
+      "term": "Empathy Deficit",
+      "type": "key-term",
+      "definition": "The gap between what a healthcare provider intellectually knows about patient-centred care and their actual ability to empathise under real-world conditions of time pressure, fatigue, and emotional burnout. Recognising and addressing empathy deficit is essential for maintaining care quality in high-volume Caribbean pharmacies."
+    },
+    {
+      "body": "In a community of 5,000 people, the pharmacy technician may be dispensing HIV antiretrovirals to their neighbour, antidepressants to their child's teacher, or erectile dysfunction medication to their uncle. This creates an ethical minefield that larger countries rarely face. Every Caribbean pharmacy professional must develop an absolute, unwavering commitment to confidentiality — and patients must believe this commitment is genuine.",
+      "type": "callout",
+      "title": "The Privacy Paradox in Small Islands",
+      "variant": "warning"
+    },
+    {
+      "text": "Strategies for Overcoming Barriers",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "rows": [
+        [
+          "Time pressure",
+          "Use the 'one key message' technique — ensure every patient leaves with one clear, actionable message",
+          "'Take this tablet with your breakfast every morning'"
+        ],
+        [
+          "Language",
+          "Learn key pharmacy phrases in the languages spoken in your community",
+          "Having a Spanish medication instruction template for your Venezuelan patients"
+        ],
+        [
+          "Health literacy",
+          "Use pictograms, colour-coding, and teach-back method",
+          "Drawing a sun and moon on labels to indicate morning and night doses"
+        ],
+        [
+          "Stigma",
+          "Normalise the interaction — treat all medications equally at the counter",
+          "Dispensing ARVs with the same routine and demeanour as blood pressure tablets"
+        ],
+        [
+          "Privacy",
+          "Use a private counselling area; call patients by number when possible",
+          "Having a separate, enclosed dispensing window for sensitive prescriptions"
+        ]
+      ],
+      "type": "table",
+      "caption": "Practical Strategies for Overcoming Patient-Centred Care Barriers",
+      "headers": [
+        "Barrier",
+        "Strategy",
+        "Example"
+      ]
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Lack of medication availability",
+        "Fear that their condition will become community knowledge due to limited privacy in small populations",
+        "Pharmacy technicians not knowing how to dispense the medication",
+        "The medication being too expensive"
+      ],
+      "question": "In a small Caribbean island community, what is the MOST significant barrier to patient-centred care for patients with stigmatised conditions?",
+      "explanation": "While all of these can be barriers, the 'everybody know everybody' dynamic of small island communities creates a uniquely Caribbean privacy challenge. Patients with stigmatised conditions (HIV, mental illness, STIs) may avoid seeking treatment entirely if they fear disclosure, making this the most significant barrier to address.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 25
+}

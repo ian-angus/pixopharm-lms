@@ -1,0 +1,54 @@
+{
+  "id": "4c202c3d-f9f9-4db5-828b-ef9c64028c6b",
+  "module_id": "308ad89e-b876-443b-9c03-ccfdc77305ef",
+  "title": "Vendor Assessment & Caribbean-Specific Due Diligence",
+  "content": [
+    {
+      "text": "Asking the Right Questions Before You Buy",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Before committing to an AI tool, you need to conduct thorough vendor due diligence. This is particularly important in the Caribbean, where some vendors may not understand the unique operational, regulatory, and cultural context of island pharmacies. The following checklist will help you assess vendors systematically.",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Request a Caribbean-specific demo: Ask the vendor to demonstrate the tool using Caribbean drug names, formularies, and prescribing patterns — not just US or UK examples",
+        "Ask about training data: 'Was this tool trained on or validated with data from Caribbean populations?' If the answer is vague, that is a red flag",
+        "Verify data residency: 'Where will our patient data be processed and stored? Can we keep data within the Caribbean or at minimum within a jurisdiction with adequate data protection laws?'",
+        "Check connectivity requirements: 'What happens when our internet goes down? Is there an offline mode? How long can the system operate without connectivity?'",
+        "Review the SLA (Service Level Agreement): 'What is your guaranteed uptime? What are the support hours and response times for Caribbean time zones?'",
+        "Request customer references: 'Do you have existing Caribbean pharmacy customers we can speak with? If not, do you have customers in similar small-market settings?'",
+        "Understand the exit strategy: 'If we decide to switch vendors, can we export our data? In what format? What is the transition timeline?'"
+      ],
+      "ordered": true
+    },
+    {
+      "body": "Be cautious of vendors who: cannot provide clinical validation data; claim 100% accuracy (no AI tool is 100% accurate); cannot explain where patient data is processed; have no Caribbean customers or references; require long-term lock-in contracts with no exit clause; cannot demonstrate an offline fallback mode; dismiss Caribbean-specific concerns as irrelevant.",
+      "type": "callout",
+      "title": "Vendor Red Flags",
+      "variant": "warning"
+    },
+    {
+      "term": "Service Level Agreement (SLA)",
+      "type": "key-term",
+      "definition": "A contract between a service provider and customer that defines the level of service expected, including uptime guarantees, response times, and remedies if the service falls short. For pharmacy AI tools, the SLA should specify support availability during Caribbean business hours and acceptable downtime limits."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "To ensure the software runs faster",
+        "To verify where patient data is processed and stored, ensuring compliance with Caribbean data protection laws",
+        "To get a lower price based on location",
+        "Data residency has no relevance to pharmacy AI tools"
+      ],
+      "question": "Why is it important to ask an AI vendor about 'data residency'?",
+      "explanation": "Data residency — where patient data is physically processed and stored — directly affects compliance with Caribbean data protection legislation. Cross-border data transfers are regulated under these laws, and pharmacies must ensure their data is processed in jurisdictions with adequate privacy protections.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 15
+}

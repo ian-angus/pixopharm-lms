@@ -1,0 +1,144 @@
+[
+  {
+    "id": "075c904c-c812-4658-ba58-b1805f8f7141",
+    "module_id": "d1a5c2a4-b317-4ac6-8cd0-1637e571461c",
+    "question": "What is the primary purpose of root cause analysis (RCA)?",
+    "options": [
+      "To determine which individual to discipline",
+      "To identify the underlying system failures that made the error possible",
+      "To calculate the financial cost of the error",
+      "To satisfy regulatory reporting requirements"
+    ],
+    "correct_answer": 1,
+    "explanation": "The primary purpose of RCA is to identify underlying system failures and contributing factors that created the conditions for error — not to assign blame to individuals. RCA seeks systemic solutions that prevent recurrence, which is far more effective than punishing individuals.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "8c661cbf-99c3-49a0-934e-d0e75af096c0",
+    "module_id": "d1a5c2a4-b317-4ac6-8cd0-1637e571461c",
+    "question": "In the 5 Whys technique, how do you know when you have reached the root cause?",
+    "options": [
+      "After exactly five questions have been asked",
+      "When the answer identifies a specific individual",
+      "When the answer identifies an actionable systemic change that would prevent recurrence",
+      "When the pharmacy manager is satisfied with the explanation"
+    ],
+    "correct_answer": 2,
+    "explanation": "You have reached the root cause when further 'why' questions lead to an actionable system-level change that, if implemented, would prevent the error from recurring. The number five is a guideline, not a rigid rule — some investigations require three questions, others may require seven or more.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "d84c22d8-c2d5-4250-a49a-7fc531d47c4f",
+    "module_id": "d1a5c2a4-b317-4ac6-8cd0-1637e571461c",
+    "question": "In a fishbone (Ishikawa) diagram for a pharmacy error, which of the following is NOT a standard cause category?",
+    "options": [
+      "People",
+      "Procedures",
+      "Profit margin",
+      "Environment"
+    ],
+    "correct_answer": 2,
+    "explanation": "The standard fishbone categories for healthcare error analysis are People, Procedures, Equipment, Environment, Materials, and Management. 'Profit margin' is not a standard category, though financial pressures may appear as a contributing factor under the Management category.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "bf667cfd-5f08-44a0-88b6-6522977c1ade",
+    "module_id": "d1a5c2a4-b317-4ac6-8cd0-1637e571461c",
+    "question": "Under a just culture framework, a pharmacy technician who knowingly skips the barcode scanning step because she considers it 'too slow' would be classified as demonstrating:",
+    "options": [
+      "Human error — an inadvertent mistake",
+      "At-risk behaviour — a conscious shortcut with perceived justification",
+      "Reckless behaviour — a wilful disregard for safety",
+      "Standard practice — barcode scanning is optional"
+    ],
+    "correct_answer": 1,
+    "explanation": "Knowingly skipping a required safety step because of a perceived justification ('too slow') is at-risk behaviour — a conscious choice to deviate from procedure. The appropriate response is coaching: helping the technician understand the risk, removing the incentive for the shortcut (e.g., addressing time pressure), and monitoring for compliance. This differs from reckless behaviour, which involves conscious disregard of substantial and unjustifiable risk.",
+    "order_index": 3,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "hard",
+    "blooms_level": "analyze"
+  },
+  {
+    "id": "a29eea39-fe14-47b2-a7d4-02451fddc9c2",
+    "module_id": "d1a5c2a4-b317-4ac6-8cd0-1637e571461c",
+    "question": "What percentage of medication errors are estimated to fall into the 'human error' category (honest mistakes within flawed systems)?",
+    "options": [
+      "About 25%",
+      "About 50%",
+      "About 75%",
+      "Over 90%"
+    ],
+    "correct_answer": 3,
+    "explanation": "Research suggests that over 90% of medication errors are honest human errors — the individual intended to do the right thing but was failed by system weaknesses. This statistic underscores why punitive responses are both unfair and ineffective: the system, not the individual, is the primary driver of error in the vast majority of cases.",
+    "order_index": 4,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "93c49338-3c56-4de5-b024-9fde250bc3dc",
+    "module_id": "d1a5c2a4-b317-4ac6-8cd0-1637e571461c",
+    "question": "Which of the following is the MOST effective way to build an incident reporting culture in a small Caribbean community pharmacy?",
+    "options": [
+      "Mandate anonymous written reports and file them without discussion",
+      "Threaten disciplinary action for failing to report errors",
+      "Have leadership commit to just culture, demonstrate that reports lead to system changes, and celebrate near-miss reporting",
+      "Wait until a serious error occurs and then implement a reporting system in response"
+    ],
+    "correct_answer": 2,
+    "explanation": "Building a reporting culture requires leadership commitment to just culture (ensuring reporters are safe from punishment), visible evidence that reports drive system improvements, and positive reinforcement of near-miss reporting. Fear-based mandates and reactive approaches undermine the trust essential for voluntary, comprehensive reporting.",
+    "order_index": 5,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "evaluate"
+  },
+  {
+    "id": "3f7a39be-87b0-4e6e-8fbd-76fac8b17be7",
+    "module_id": "d1a5c2a4-b317-4ac6-8cd0-1637e571461c",
+    "question": "A medication incident report should include the name of the staff member responsible for the error so they can be disciplined appropriately.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": 1,
+    "explanation": "False. While incident reports may record which staff members were involved for the purpose of investigation and support, the primary purpose is NOT to enable discipline. The report should focus on system factors, contributing causes, and recommended changes. Under a just culture, honest errors are not punished — the report is a learning tool, not a disciplinary instrument.",
+    "order_index": 6,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "ff702602-ffc0-4e5c-8bbc-29deb50de62f",
+    "module_id": "d1a5c2a4-b317-4ac6-8cd0-1637e571461c",
+    "question": "A pharmacy has implemented a new incident reporting system. In the first quarter, reports increase from 0 to 12 per month. This increase most likely indicates:",
+    "options": [
+      "Patient safety is deteriorating rapidly",
+      "Staff are becoming more careless",
+      "The reporting culture is improving — staff feel safe enough to report",
+      "The incident reporting system is malfunctioning and generating false reports"
+    ],
+    "correct_answer": 2,
+    "explanation": "An increase in incident reports after implementing a new reporting system is a POSITIVE sign — it indicates that staff feel safe enough to report errors and near-misses that were previously hidden. Error rates do not change overnight; what changes is the willingness to report. More reports mean more learning opportunities and better safety data.",
+    "order_index": 7,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "hard",
+    "blooms_level": "evaluate"
+  }
+]

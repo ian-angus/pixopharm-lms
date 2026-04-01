@@ -1,0 +1,112 @@
+{
+  "id": "fe7020d2-f08b-433c-a13b-7934f5a90750",
+  "module_id": "3a33feeb-8c13-4005-b26d-ef01da03aae6",
+  "title": "Bones, Joints & Musculoskeletal Conditions",
+  "content": [
+    {
+      "text": "The Musculoskeletal System: Framework and Movement",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "The musculoskeletal system comprises the bones of the skeleton (206 in an adult), the joints where bones meet, the skeletal muscles that produce movement, and the connective tissues (tendons, ligaments, cartilage) that hold everything together. This system provides structural support, protects internal organs, enables movement, stores minerals (particularly calcium and phosphorus), and houses bone marrow where blood cell production (haematopoiesis) occurs.",
+      "type": "text"
+    },
+    {
+      "body": "Bone is a dynamic, living tissue that is constantly being remodelled. Osteoblasts build new bone, while osteoclasts break down old bone. This balance between formation and resorption is critical: when resorption exceeds formation, bones become weak and porous — a condition called osteoporosis. Hormones (particularly oestrogen, testosterone, parathyroid hormone, and calcitonin), vitamin D, calcium intake, and weight-bearing exercise all influence bone remodelling.",
+      "type": "text"
+    },
+    {
+      "term": "Osteoblast",
+      "type": "key-term",
+      "definition": "A bone-forming cell responsible for synthesising and mineralising new bone tissue. Osteoblasts are stimulated by weight-bearing exercise, growth hormone, and oestrogen. The term breaks down as: oste/o (bone) + blast (immature cell / builder). Drugs like bisphosphonates (alendronate, risedronate) work by inhibiting osteoclasts (bone-resorbing cells), thereby shifting the balance toward osteoblast-driven bone formation."
+    },
+    {
+      "text": "Common Musculoskeletal Conditions",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Osteoarthritis (OA) is the most common joint disease worldwide and a major source of pain and disability in Caribbean populations. It involves degeneration of joint cartilage and changes in underlying bone, particularly affecting the knees, hips, hands, and spine. OA is primarily managed with analgesics (paracetamol, NSAIDs), topical treatments, physiotherapy, and in advanced cases, joint replacement surgery. Rheumatoid arthritis (RA) is a different disease — an autoimmune condition causing inflammatory joint destruction, managed with disease-modifying antirheumatic drugs (DMARDs) such as methotrexate.",
+      "type": "text"
+    },
+    {
+      "body": "Gout is a form of inflammatory arthritis caused by the deposition of urate crystals in joints, typically the big toe (first metatarsophalangeal joint). It is strongly associated with high uric acid levels (hyperuricaemia), which can be caused by dietary factors (high-purine foods, alcohol, sugar-sweetened beverages), genetic predisposition, and certain medications (notably thiazide diuretics). Gout is relatively common in the Caribbean, particularly among men, and generates prescriptions for acute treatment (colchicine, NSAIDs, corticosteroids) and long-term urate-lowering therapy (allopurinol, febuxostat).",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Osteoarthritis",
+          "Simple analgesics",
+          "Paracetamol",
+          "First-line; safe at standard doses"
+        ],
+        [
+          "Osteoarthritis / RA",
+          "NSAIDs",
+          "Ibuprofen, diclofenac, naproxen",
+          "GI, renal, and cardiovascular risks with chronic use"
+        ],
+        [
+          "Rheumatoid arthritis",
+          "DMARDs",
+          "Methotrexate, hydroxychloroquine, sulfasalazine",
+          "Methotrexate requires folic acid supplementation and blood monitoring"
+        ],
+        [
+          "Gout (acute)",
+          "Anti-inflammatory",
+          "Colchicine, NSAIDs, prednisolone",
+          "Colchicine has narrow therapeutic index — dose carefully"
+        ],
+        [
+          "Gout (chronic)",
+          "Urate-lowering",
+          "Allopurinol, febuxostat",
+          "Do not start during an acute attack — can worsen flare"
+        ],
+        [
+          "Osteoporosis",
+          "Bisphosphonates",
+          "Alendronate, risedronate",
+          "Take on empty stomach, remain upright 30 min, with full glass of water"
+        ],
+        [
+          "Muscle spasm",
+          "Muscle relaxants",
+          "Cyclobenzaprine, baclofen",
+          "Sedation is common; short-term use preferred"
+        ]
+      ],
+      "type": "table",
+      "caption": "Musculoskeletal Drug Classes in Caribbean Practice",
+      "headers": [
+        "Condition",
+        "Drug Class",
+        "Examples",
+        "Key Notes"
+      ]
+    },
+    {
+      "body": "Bisphosphonates (alendronate, risedronate) for osteoporosis require very specific administration: take first thing in the morning on an empty stomach, with a full glass of plain water (not juice, coffee, or mineral water), remain upright (sitting or standing) for at least 30 minutes, and do not eat, drink, or take other medications during this time. Poor adherence to these instructions dramatically reduces drug absorption and effectiveness.",
+      "type": "callout",
+      "title": "Bisphosphonate Counselling — A Technician's Checklist",
+      "variant": "tip"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Autoimmune destruction of joint cartilage",
+        "Degeneration of cartilage from wear and tear",
+        "Deposition of urate crystals in joints from high uric acid levels",
+        "Bacterial infection of the joint space"
+      ],
+      "question": "What is the primary cause of gout?",
+      "explanation": "Gout is caused by the deposition of monosodium urate crystals in joint tissues, resulting from persistently high blood uric acid levels (hyperuricaemia). This causes acute, intensely painful joint inflammation, most commonly affecting the first metatarsophalangeal joint (big toe). Dietary factors, genetics, and certain medications (thiazide diuretics) contribute to hyperuricaemia.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 25
+}

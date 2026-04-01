@@ -1,0 +1,86 @@
+{
+  "id": "ccbb42b8-67f5-4eec-8c9c-e16f97b189ce",
+  "module_id": "18161038-99b9-459d-a298-2c76b434f57d",
+  "title": "From Min/Max to Machine Learning: The Inventory Revolution",
+  "content": [
+    {
+      "text": "Why Traditional Inventory Methods Fall Short",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Walk into almost any community pharmacy in the Caribbean and you will find a familiar system: minimum/maximum (min/max) reorder points. When stock of a particular item drops to the minimum level, a reorder is triggered to bring it back up to the maximum. It is simple, time-tested — and increasingly inadequate for the complex realities of modern pharmacy practice.",
+      "type": "text"
+    },
+    {
+      "body": "The fundamental problem with min/max is that it is static. It does not account for the fact that demand for albuterol inhalers spikes during the Saharan dust season (June to August), that paracetamol sales surge during Carnival (February in Trinidad, April in Jamaica), that oral rehydration salts fly off the shelves during the gastroenteritis season, or that antihypertensives need to be stocked in larger quantities at the beginning of the month when CDAP and NHF patients collect their prescriptions.",
+      "type": "text"
+    },
+    {
+      "term": "Demand Forecasting",
+      "type": "key-term",
+      "definition": "The process of predicting future customer demand for products based on historical data, seasonal patterns, market trends, and external factors. AI-powered forecasting uses machine learning to identify complex patterns that humans and simple rule-based systems would miss."
+    },
+    {
+      "rows": [
+        [
+          "Reorder trigger",
+          "Fixed threshold — reorder when stock hits minimum",
+          "Dynamic threshold — adjusts based on predicted demand"
+        ],
+        [
+          "Seasonal awareness",
+          "Manual adjustment by staff (if remembered)",
+          "Automatic seasonal pattern recognition from historical data"
+        ],
+        [
+          "External factors",
+          "Not considered",
+          "Incorporates weather, disease outbreaks, community events, public holidays"
+        ],
+        [
+          "Lead time awareness",
+          "Fixed lead time assumption",
+          "Learns actual supplier lead times and adjusts for delays"
+        ],
+        [
+          "Expiry management",
+          "Manual tracking (often reactive — discovered at stocktake)",
+          "Proactive alerts factoring in current stock expiry dates and projected demand"
+        ],
+        [
+          "Cost optimisation",
+          "Limited — focuses on availability, not cost",
+          "Balances availability against carrying cost, expiry risk, and cash flow"
+        ]
+      ],
+      "type": "table",
+      "caption": "Traditional vs. AI-Powered Inventory Management",
+      "headers": [
+        "Feature",
+        "Traditional (Min/Max)",
+        "AI-Powered Forecasting"
+      ]
+    },
+    {
+      "body": "Many Caribbean pharmacies operate on tight margins with limited capital. Overstocking ties up cash that could be used elsewhere, and expired medications are a direct financial loss. Understocking means turning patients away — who may then go to a competitor or, worse, go without their medications. AI-powered forecasting helps strike the right balance, which is particularly critical in the Caribbean where supply chain disruptions (shipping delays, customs hold-ups, natural disasters) are common.",
+      "type": "callout",
+      "title": "Caribbean Reality Check",
+      "variant": "info"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "They are too expensive for Caribbean pharmacies",
+        "They are static and do not account for changing demand patterns",
+        "They require AI to function properly",
+        "They only work for controlled substances"
+      ],
+      "question": "What is the primary limitation of traditional min/max inventory systems?",
+      "explanation": "The primary limitation of min/max systems is their static nature. They use fixed thresholds that do not adapt to seasonal demand, external factors, or changing usage patterns. This leads to both overstocking (waste) and understocking (patient harm) depending on the time of year.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 20
+}

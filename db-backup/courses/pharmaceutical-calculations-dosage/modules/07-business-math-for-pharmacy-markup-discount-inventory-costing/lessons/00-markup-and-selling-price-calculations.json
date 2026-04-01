@@ -1,0 +1,99 @@
+{
+  "id": "0a41de4d-41bc-44e6-aa58-6c1c384eb1fa",
+  "module_id": "55a60f21-234f-4d50-8f6a-1543a68aa3fb",
+  "title": "Markup and Selling Price Calculations",
+  "content": [
+    {
+      "text": "Pricing Medications: Cost, Markup, and Selling Price",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Every item in a pharmacy has a cost price (what the pharmacy pays the wholesaler) and a selling price (what the patient pays). The difference is the markup, which must cover operating expenses (rent, salaries, electricity, insurance) and provide a reasonable profit. In Caribbean community pharmacies — where many are independently owned small businesses — correct pricing calculations directly impact financial survival.",
+      "type": "text"
+    },
+    {
+      "term": "Markup Percentage",
+      "type": "key-term",
+      "definition": "The percentage added to the cost price to determine the selling price. Calculated as: Markup % = [(Selling Price - Cost Price) / Cost Price] × 100. Example: If a product costs TTD 50 and sells for TTD 75, the markup is (75-50)/50 × 100 = 50%."
+    },
+    {
+      "text": "The Basic Pricing Formulas",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Selling Price = Cost Price × (1 + Markup %/100). Markup Amount = Selling Price - Cost Price. Markup % = (Markup Amount / Cost Price) × 100. Gross Profit Margin = (Markup Amount / Selling Price) × 100. Note: Markup and margin are different! A 50% markup gives a 33.3% margin. A 100% markup gives a 50% margin.",
+      "type": "text"
+    },
+    {
+      "body": "Worked example: A box of amoxicillin 500 mg × 21 capsules costs the pharmacy TTD 45.00 from the wholesaler. The pharmacy applies a 40% markup. Selling price = 45 × (1 + 40/100) = 45 × 1.40 = TTD 63.00. Plus VAT (Trinidad: 12.5%): Final price = 63 × 1.125 = TTD 70.88. The patient pays TTD 70.88.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Prescription medications (branded)",
+          "25-40%",
+          "Lower markup, higher volume; competitive market"
+        ],
+        [
+          "Prescription medications (generic)",
+          "35-60%",
+          "Higher markup justified by lower cost base"
+        ],
+        [
+          "OTC medications",
+          "30-50%",
+          "Consumer choice; some price sensitivity"
+        ],
+        [
+          "Vitamins & supplements",
+          "40-80%",
+          "Discretionary purchases; higher perceived value"
+        ],
+        [
+          "Medical devices (thermometers, BP monitors)",
+          "30-50%",
+          "Occasional purchases; service included"
+        ],
+        [
+          "Cosmetics & personal care",
+          "50-100%",
+          "Lifestyle purchases; brand-driven pricing"
+        ]
+      ],
+      "type": "table",
+      "caption": "Typical Pharmacy Markup Ranges in the Caribbean",
+      "headers": [
+        "Product Category",
+        "Typical Markup Range",
+        "Reasoning"
+      ]
+    },
+    {
+      "body": "Several Caribbean governments regulate pharmaceutical prices. Trinidad's CDAP programme provides chronic disease medications at no cost to patients — the government reimburses pharmacies at a fixed rate. Jamaica's NHF provides subsidies on approved medications with co-payments. Barbados Drug Service procures centrally and distributes to public pharmacies. These programmes affect pricing strategy: pharmacies may earn less on government-programme items and must make up the margin on other products.",
+      "type": "callout",
+      "title": "Government Price Controls in the Caribbean",
+      "variant": "info"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "33.3%",
+        "50%",
+        "66.7%",
+        "150%"
+      ],
+      "question": "A product costs a pharmacy JMD 1,200 and is sold for JMD 1,800. What is the markup percentage?",
+      "explanation": "Markup % = [(1800 - 1200) / 1200] × 100 = [600 / 1200] × 100 = 50%. Note that the profit margin would be different: (600/1800) × 100 = 33.3%. Markup is based on cost; margin is based on selling price.",
+      "correctIndex": 1
+    },
+    {
+      "body": "Understanding the difference between markup and margin is crucial for pharmacy management. When a pharmacy owner says 'we need a 50% margin', they mean (profit/selling price) = 50%, which requires a 100% markup. If they say 'apply a 50% markup', the margin is only 33.3%. Misunderstanding this distinction can significantly impact profitability.",
+      "type": "text"
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 25
+}

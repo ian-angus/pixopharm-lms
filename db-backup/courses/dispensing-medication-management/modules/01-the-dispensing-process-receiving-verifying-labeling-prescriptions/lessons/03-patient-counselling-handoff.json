@@ -1,0 +1,177 @@
+{
+  "id": "0c38fdd9-25a9-428e-a076-ebcd84f8ac6f",
+  "module_id": "0bff4891-735a-41be-b0c3-a8bac8ddd17a",
+  "title": "Patient Counselling & Handoff",
+  "content": [
+    {
+      "text": "The Final Step: Handing Medication to the Patient",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "The patient handoff is the final and arguably most important step in the dispensing process. It is the last opportunity to ensure the patient understands how to take their medication correctly. In the Caribbean, where many patients manage multiple chronic conditions such as diabetes and hypertension, effective counselling at the point of dispensing can significantly improve adherence and health outcomes.",
+      "type": "text"
+    },
+    {
+      "body": "While the pharmacist bears primary legal responsibility for patient counselling, the pharmacy technician plays a critical supporting role. Technicians can reinforce key points, answer basic questions about administration, and identify patients who may need additional pharmacist intervention — for example, elderly patients, patients receiving a new medication, or patients who appear confused about their regimen.",
+      "type": "text"
+    },
+    {
+      "text": "The Teach-Back Method",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "term": "Teach-Back Method",
+      "type": "key-term",
+      "definition": "A patient communication technique where the healthcare professional asks the patient to explain, in their own words, how they will take their medication. This confirms understanding without embarrassing the patient. For example: 'Just to make sure I explained it clearly, can you tell me how you'll be taking this medication?'"
+    },
+    {
+      "body": "The teach-back method is especially valuable in Caribbean pharmacy practice. Patients may nod and agree during counselling out of politeness or cultural deference to healthcare professionals, even if they do not fully understand the instructions. The teach-back approach shifts the responsibility to the counsellor ('Let me make sure I explained this clearly') rather than testing the patient ('Do you understand?').",
+      "type": "text"
+    },
+    {
+      "body": "In many Caribbean cultures, patients — particularly older patients — may be reluctant to ask questions or admit confusion when speaking to healthcare professionals. Use open-ended questions, speak at a measured pace, avoid jargon, and create a non-judgmental environment. If the patient has a family member present, include them in the counselling with the patient's permission.",
+      "type": "callout",
+      "title": "Cultural Sensitivity in Counselling",
+      "variant": "info"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Verify the patient's identity before handing over the medication",
+        "State the name and purpose of the medication clearly",
+        "Explain the dosing schedule using the label as a visual aid",
+        "Highlight any important warnings (food interactions, drowsiness, storage)",
+        "Demonstrate administration technique if applicable (inhalers, eye drops, insulin pens)",
+        "Use the teach-back method to confirm understanding",
+        "Ask if the patient has any questions",
+        "Offer the pharmacist's availability for further clinical questions",
+        "Document the counselling encounter if required by pharmacy policy"
+      ],
+      "ordered": true
+    },
+    {
+      "type": "scenario-simulation",
+      "nodes": [
+        {
+          "id": "start",
+          "text": "Mrs. Rampersad approaches the collection counter. You have her labelled medication ready. How do you begin the handoff?",
+          "choices": [
+            {
+              "label": "Hand her the bag and say 'Here's your medication, take one tablet daily.'",
+              "feedback": "This is too brief. A patient receiving a new chronic medication needs more thorough counselling, especially if they appear anxious.",
+              "nextNodeId": "rushed"
+            },
+            {
+              "label": "Verify her identity, then explain the medication name, purpose, and how to take it.",
+              "feedback": "Excellent. You've started with identity verification and are taking the time to counsel a new patient on their medication.",
+              "isOptimal": true,
+              "nextNodeId": "good-start"
+            },
+            {
+              "label": "Ask her to wait for the pharmacist because you're not allowed to speak to patients.",
+              "feedback": "While the pharmacist should be involved in counselling for new medications, technicians can and should support the handoff process. You don't need to defer entirely.",
+              "nextNodeId": "defer"
+            }
+          ]
+        },
+        {
+          "id": "rushed",
+          "text": "Mrs. Rampersad takes the bag but looks uncertain. She asks 'What does this do, exactly?' What do you do?",
+          "choices": [
+            {
+              "label": "Slow down and explain that amlodipine helps lower blood pressure, and walk through the label with her.",
+              "feedback": "Good recovery. You recognised the patient's need for more information and adjusted your approach.",
+              "isOptimal": true,
+              "nextNodeId": "recovery"
+            },
+            {
+              "label": "Tell her to read the label and the patient information leaflet at home.",
+              "feedback": "This is inadequate. The patient has expressed confusion and needs face-to-face guidance, not a referral to paperwork.",
+              "nextNodeId": "fail"
+            }
+          ]
+        },
+        {
+          "id": "good-start",
+          "text": "After explaining the medication, Mrs. Rampersad says 'But my neighbour takes pressure tablets and she feels dizzy. Will I feel dizzy too?' How do you respond?",
+          "choices": [
+            {
+              "label": "Acknowledge her concern, explain that some dizziness is possible when starting, and advise her to rise slowly from sitting. Suggest she contact the pharmacy or doctor if dizziness persists.",
+              "feedback": "Well done. You addressed her concern honestly, provided practical advice, and gave a safety net by offering follow-up contact.",
+              "isOptimal": true,
+              "nextNodeId": "success"
+            },
+            {
+              "label": "Tell her not to worry — amlodipine is very safe and she won't have any problems.",
+              "feedback": "While reassurance is appropriate, dismissing a valid concern is not. Dizziness is a known side effect of amlodipine, and the patient deserves an honest, supportive response.",
+              "nextNodeId": "partial"
+            }
+          ]
+        },
+        {
+          "id": "defer",
+          "text": "The pharmacist is busy with another patient and won't be available for 20 minutes. Mrs. Rampersad looks impatient. What do you do?",
+          "choices": [
+            {
+              "label": "Begin the handoff yourself — verify identity, explain the medication basics, and inform the pharmacist when available for clinical questions.",
+              "feedback": "Good decision. You're operating within your scope while still involving the pharmacist for clinical matters.",
+              "isOptimal": true,
+              "nextNodeId": "good-start"
+            },
+            {
+              "label": "Ask Mrs. Rampersad to come back later when the pharmacist is free.",
+              "feedback": "Asking a patient to return later for their medication is poor service and could delay treatment. The technician can begin the handoff process.",
+              "nextNodeId": "fail"
+            }
+          ]
+        },
+        {
+          "id": "recovery",
+          "text": "After explaining the medication more thoroughly, Mrs. Rampersad nods but still looks uncertain. You use the teach-back method: 'Just so I know I explained it well — can you tell me how you'll take this tablet?' She correctly repeats 'One tablet every morning.' You've recovered the interaction well.",
+          "isEnd": true,
+          "outcome": "partial",
+          "summary": "You initially rushed the handoff but recovered by listening to the patient's cues and slowing down. The teach-back confirmed her understanding. In future, lead with thorough counselling for new medications from the start."
+        },
+        {
+          "id": "success",
+          "text": "Mrs. Rampersad smiles and says 'Thank you, that makes me feel better.' You use the teach-back method and she correctly describes her dosing. You note on the prescription that patient counselling was provided and offer the pharmacist for any further questions. Excellent patient care.",
+          "isEnd": true,
+          "outcome": "success",
+          "summary": "Outstanding handoff. You verified identity, explained the medication clearly, addressed the patient's concern with honesty and empathy, used the teach-back method, and documented the counselling. This is gold-standard practice."
+        },
+        {
+          "id": "partial",
+          "text": "Mrs. Rampersad accepts the medication but calls back two days later reporting dizziness and asking if she should stop the medication. The pharmacist must now provide the counselling that should have happened at handoff.",
+          "isEnd": true,
+          "outcome": "partial",
+          "summary": "The patient experienced a known side effect that she was not adequately warned about. While amlodipine is generally safe, patients deserve honest information about potential side effects so they can manage them and don't stop treatment abruptly."
+        },
+        {
+          "id": "fail",
+          "text": "Mrs. Rampersad leaves the pharmacy confused about her medication. She does not take it as directed, misses doses, and her blood pressure remains uncontrolled at her follow-up appointment. The doctor calls the pharmacy to ask why the patient was not counselled.",
+          "isEnd": true,
+          "outcome": "failure",
+          "summary": "Failure to provide adequate counselling resulted in poor medication adherence and uncontrolled blood pressure. Every patient — especially those starting a new medication — deserves a clear, patient explanation at the handoff. This is a core competency of the dispensing process."
+        }
+      ],
+      "title": "Dispensing a New Antihypertensive Medication",
+      "description": "You are a pharmacy technician at a community pharmacy in San Fernando, Trinidad. Mrs. Rampersad, a 62-year-old patient, has just been prescribed amlodipine 5 mg for newly diagnosed hypertension. She appears anxious and mentions she has never taken 'pressure tablets' before."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "To test whether the patient is intelligent enough to take the medication",
+        "To confirm that the healthcare professional explained the information clearly",
+        "To save time by getting the patient to repeat the label back",
+        "To satisfy a legal documentation requirement"
+      ],
+      "question": "What is the primary purpose of the teach-back method in patient counselling?",
+      "explanation": "The teach-back method places the responsibility on the counsellor, not the patient. The phrasing 'Let me make sure I explained that clearly' avoids embarrassing the patient while confirming that the key information was communicated effectively. It is a patient-centred communication technique, not a test of intelligence.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 3,
+  "duration_minutes": 25
+}

@@ -1,0 +1,91 @@
+{
+  "id": "49595ca2-a696-4740-99b5-c56744bee27a",
+  "module_id": "c7399bfe-b4be-492b-8515-c4e4668a80df",
+  "title": "Label Requirements Across Caribbean Islands",
+  "content": [
+    {
+      "text": "What Must Appear on a Dispensing Label?",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "The dispensing label is the primary source of medication information for the patient after they leave the pharmacy. An incomplete or unclear label can lead to medication errors, missed doses, or dangerous misuse. Each Caribbean island has specific legal requirements for what must appear on a dispensing label.",
+      "type": "text"
+    },
+    {
+      "type": "island-comparison",
+      "title": "Mandatory Label Elements by Island",
+      "islands": [
+        {
+          "flag": "🇹🇹",
+          "name": "Trinidad & Tobago",
+          "details": [
+            "Pharmacy name, address, and telephone number",
+            "Prescription number",
+            "Patient's full name",
+            "Date of dispensing",
+            "Name and strength of medication",
+            "Quantity dispensed",
+            "Directions for use in English",
+            "Prescriber's name",
+            "Expiry date of medication",
+            "Storage instructions (especially important in tropical climate)",
+            "'Keep out of reach of children' warning",
+            "Any special warnings (e.g., 'May cause drowsiness')"
+          ]
+        },
+        {
+          "flag": "🇯🇲",
+          "name": "Jamaica",
+          "details": [
+            "Name and address of the dispensing pharmacy",
+            "Prescription serial number",
+            "Patient's name",
+            "Date of dispensing",
+            "Name of medication (generic name required by policy in public facilities)",
+            "Strength and dosage form",
+            "Directions for use",
+            "Name of prescribing doctor",
+            "Quantity supplied",
+            "'Keep out of reach of children' required on all labels",
+            "National Health Fund (NHF) number if applicable for subsidised medications",
+            "Auxiliary labels for high-alert medications"
+          ]
+        },
+        {
+          "flag": "🇧🇧",
+          "name": "Barbados",
+          "details": [
+            "Pharmacy name and address",
+            "Patient's full name",
+            "Date of dispensing",
+            "Name of medication (Barbados National Drug Formulary name preferred)",
+            "Strength and quantity",
+            "Directions for use in clear, plain English",
+            "Name of prescriber",
+            "Barbados Drug Service lot/batch tracking number (public sector)",
+            "'Keep out of reach of children' mandatory",
+            "Storage temperature guidance",
+            "Expiry date",
+            "Auxiliary warning labels as appropriate"
+          ]
+        }
+      ],
+      "description": "While there is significant overlap, each jurisdiction has specific requirements. Always follow the requirements of the island where you are practising."
+    },
+    {
+      "body": "Jamaica's National Health Fund (NHF) programme strongly encourages generic prescribing and labelling. In Barbados, the National Drug Formulary also favours generic names. In Trinidad, both generic and brand names may appear. When in doubt, include both the generic and brand name on the label to avoid patient confusion, especially if a patient has been switched from a brand to a generic equivalent.",
+      "type": "callout",
+      "title": "Generic vs Brand Name Labelling",
+      "variant": "tip"
+    },
+    {
+      "type": "video-placeholder",
+      "title": "Label Printing Demo: Common Pharmacy Software",
+      "duration": "6 min",
+      "description": "Walkthrough of generating dispensing labels using common pharmacy management software used in Caribbean pharmacies, including configuration of mandatory fields and auxiliary warning labels."
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 15
+}

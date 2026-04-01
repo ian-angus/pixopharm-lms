@@ -1,0 +1,116 @@
+{
+  "id": "f48a1477-b7fd-40b0-81c3-63693a1075c3",
+  "module_id": "b9855cb0-1519-41b9-ba8d-ce85a758b84b",
+  "title": "Excipient Safety and Palatability in Paediatric Formulations",
+  "content": [
+    {
+      "text": "What Goes Into the Formulation Matters as Much as the Drug",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "In paediatric compounding, every ingredient in the formulation — not just the active drug — must be evaluated for safety. Excipients that are harmless in adults can be toxic, irritating, or otherwise harmful in children, especially neonates and infants. Caribbean pharmacy technicians must be familiar with the excipients that pose known risks in paediatric populations and must always check the safety profile of every ingredient before including it in a paediatric preparation.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Ethanol (alcohol)",
+          "CNS depression, hypoglycaemia in neonates and infants; hepatotoxicity",
+          "Avoid in neonates; minimise in infants; FDA recommends <0.5% ethanol in medications for children <6 years"
+        ],
+        [
+          "Benzyl alcohol",
+          "'Gasping syndrome' in neonates — a potentially fatal toxicity causing metabolic acidosis, respiratory distress, and cardiovascular collapse",
+          "CONTRAINDICATED in neonates; avoid in infants under 6 months; use preservative-free alternatives"
+        ],
+        [
+          "Propylene glycol",
+          "Hyperosmolality, CNS depression, seizures in neonates",
+          "Avoid in neonates; use with caution in infants; monitor cumulative exposure from multiple sources"
+        ],
+        [
+          "Artificial sweeteners (saccharin, aspartame)",
+          "Saccharin: questionable safety in very young children; Aspartame: contraindicated in phenylketonuria (PKU)",
+          "Use sucrose or sucralose preferentially in young children; always check for PKU before using aspartame"
+        ],
+        [
+          "Sorbitol",
+          "Osmotic diarrhoea at high doses; GI discomfort",
+          "Limit sorbitol content in paediatric formulations; be aware of cumulative sorbitol from multiple medications"
+        ],
+        [
+          "Parabens (methylparaben, propylparaben)",
+          "Possible endocrine disruption; rare hypersensitivity",
+          "Use minimally; consider alternative preservatives (potassium sorbate, sodium benzoate) where possible"
+        ]
+      ],
+      "type": "table",
+      "caption": "Excipients of Concern in Paediatric Formulations",
+      "headers": [
+        "Excipient",
+        "Risk in Children",
+        "Recommendation"
+      ]
+    },
+    {
+      "body": "Benzyl alcohol, a common preservative in multi-dose vials and some compounding vehicles, is CONTRAINDICATED in neonates. It has been associated with 'gasping syndrome' — a fatal condition characterised by metabolic acidosis, gasping respirations, CNS dysfunction, and cardiovascular collapse. Neonates lack the enzyme (alcohol dehydrogenase) needed to metabolise benzyl alcohol. When compounding for neonates, ALWAYS use preservative-free ingredients and vehicles.",
+      "type": "callout",
+      "title": "Benzyl Alcohol and Neonates: The Gasping Syndrome",
+      "variant": "danger"
+    },
+    {
+      "text": "Making Medicines Palatable for Children",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "A perfectly formulated paediatric preparation is worthless if the child refuses to take it. Palatability — the taste, smell, texture, and appearance of the medication — is one of the greatest challenges in paediatric compounding. Children have more taste buds than adults and are particularly sensitive to bitter flavours, which is unfortunately the predominant taste of many drugs. In the Caribbean, where many medications must be compounded from adult formulations, creative strategies for taste masking are essential.",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Sweetening agents: Sucrose (traditional, well-accepted), sucralose (sugar-free alternative), honey (NEVER for children under 1 year — botulism risk)",
+        "Flavouring: Fruit flavours (cherry, strawberry, grape, mango, guava) are well-accepted by Caribbean children; bitter-tasting drugs pair best with chocolate, cherry, or mint flavours",
+        "Acidifying agents: A small amount of citric acid (sourness) can mask bitterness effectively",
+        "Viscosity: Thicker preparations coat the tongue less broadly, reducing the perception of taste; however, too-thick preparations are difficult for small children to swallow",
+        "Temperature: Chilling a preparation before administration can reduce taste perception (cold numbs taste buds); counsel parents to store in the refrigerator and administer cold",
+        "Colour: A preparation that looks appealing (bright colours) is more likely to be accepted by young children; however, avoid dyes with known sensitivities (e.g., tartrazine)"
+      ],
+      "ordered": false
+    },
+    {
+      "body": "When compounding paediatric preparations in the Caribbean, consider locally preferred flavours. Mango, guava, passion fruit, and sorrel flavourings may be more familiar and acceptable to Caribbean children than the standard cherry or grape flavours used in North American compounding. Some Caribbean compounding pharmacies maintain a selection of local fruit flavour concentrates specifically for paediatric preparations. Always ask the parent or caregiver about the child's flavour preferences before compounding.",
+      "type": "callout",
+      "title": "Caribbean Flavour Preferences",
+      "variant": "tip"
+    },
+    {
+      "type": "case-study",
+      "title": "Case Study: Compounding Hydroxyurea Suspension for a Sickle Cell Patient",
+      "scenario": "A 6-year-old boy in Kingston, Jamaica, with sickle cell disease (HbSS) is prescribed hydroxyurea 15 mg/kg/day. He weighs 18 kg and cannot swallow capsules. The pharmacy has hydroxyurea 500 mg capsules available. The pharmacist asks the technician to compound an oral suspension at a concentration of 100 mg/mL using an Ora-Plus / Ora-Sweet (1:1) vehicle. The prescription is for a 30-day supply.",
+      "questions": [
+        "What is the daily dose of hydroxyurea for this patient?",
+        "How much hydroxyurea (in mg) is needed for a 30-day supply?",
+        "How many 500 mg capsules are needed?",
+        "What special safety considerations apply when handling hydroxyurea powder?"
+      ],
+      "discussion": "Daily dose: 15 mg/kg × 18 kg = 270 mg/day. For 30 days: 270 mg × 30 = 8100 mg total. At 100 mg/mL, total volume = 81 mL. Capsules needed: 8100 mg ÷ 500 mg = 16.2, so 17 capsules. CRITICAL SAFETY NOTE: Hydroxyurea is a cytotoxic (chemotherapy) drug. The technician must wear chemotherapy-rated gloves, a mask, and a gown when handling the powder. A biological safety cabinet (BSC) or containment device should be used if available. If not available (common in Caribbean community pharmacies), work in a well-ventilated area with appropriate PPE, minimise dust generation, and clean the work area thoroughly with a damp cloth afterward. This preparation is commonly needed in the Caribbean due to the high prevalence of sickle cell disease in the Afro-Caribbean population."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Sodium benzoate",
+        "Potassium sorbate",
+        "Benzyl alcohol",
+        "Methylparaben"
+      ],
+      "question": "Which preservative is CONTRAINDICATED in neonatal formulations due to the risk of gasping syndrome?",
+      "explanation": "Benzyl alcohol is contraindicated in neonates because it can cause gasping syndrome — a potentially fatal toxicity characterised by metabolic acidosis, gasping respirations, and cardiovascular collapse. Neonates lack the enzyme (alcohol dehydrogenase) needed to metabolise benzyl alcohol. Always use preservative-free ingredients when compounding for neonates.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 25
+}

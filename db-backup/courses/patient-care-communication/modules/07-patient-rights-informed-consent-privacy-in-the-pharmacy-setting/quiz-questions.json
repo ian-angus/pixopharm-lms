@@ -1,0 +1,198 @@
+[
+  {
+    "id": "429af6f1-0a70-4354-a370-1653886580d5",
+    "module_id": "710621ab-0904-462c-84b8-da3229d5c8dc",
+    "question": "Which of the following is a fundamental right of patients in Caribbean pharmacy practice?",
+    "options": [
+      "The right to receive any medication they request without a prescription",
+      "The right to receive complete, accurate, and understandable information about their medications",
+      "The right to have their prescriptions filled for free",
+      "The right to override the pharmacist's clinical judgement"
+    ],
+    "correct_answer": 1,
+    "explanation": "The right to information is fundamental: patients are entitled to receive complete, accurate, and understandable information about their medications, including benefits, risks, side effects, and alternatives. This right underpins informed consent and patient autonomy.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "3cdc782b-6ffd-4bfc-8657-14c626ad7a2f",
+    "module_id": "710621ab-0904-462c-84b8-da3229d5c8dc",
+    "question": "What are the three elements required for valid informed consent?",
+    "options": [
+      "Payment, signature, and witness",
+      "Capacity, voluntariness, and adequate information",
+      "Age, literacy, and legal status",
+      "Diagnosis, prognosis, and treatment"
+    ],
+    "correct_answer": 1,
+    "explanation": "Valid informed consent requires: (1) Capacity — the patient can understand the information and make a decision; (2) Voluntariness — the consent is freely given without coercion; (3) Information — sufficient information has been provided for an informed choice. All three elements must be present for consent to be valid.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "0ab4c35d-f571-4e60-8bef-ed0e878da78a",
+    "module_id": "710621ab-0904-462c-84b8-da3229d5c8dc",
+    "question": "A patient's adult daughter calls the pharmacy asking what medications her elderly mother takes. The mother has NOT given consent. What is the correct response?",
+    "options": [
+      "Provide the information — daughters should know what their mothers take",
+      "Provide the information but ask the daughter to keep it confidential",
+      "Politely decline and advise the daughter to ask her mother directly or visit with her mother's written consent",
+      "Provide only the medication names but not the dosages"
+    ],
+    "correct_answer": 2,
+    "explanation": "Patient confidentiality cannot be breached based on family relationship alone. Without the patient's explicit consent, no information can be shared — even with close family members. The daughter should be directed to speak with her mother or to visit the pharmacy with her mother's written consent.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "ba44174b-9ac2-4a60-b68a-76f6a398e286",
+    "module_id": "710621ab-0904-462c-84b8-da3229d5c8dc",
+    "question": "In a small Caribbean island pharmacy, which of the following is NOT a recommended privacy measure?",
+    "options": [
+      "Using a ticketing system to call patients by number",
+      "Installing privacy filters on dispensary computer screens",
+      "Announcing the patient's full name and medication aloud at the counter",
+      "Providing a private counselling area for sensitive discussions"
+    ],
+    "correct_answer": 2,
+    "explanation": "Announcing a patient's name and medication aloud at the counter is a major privacy violation, not a privacy measure. In small communities where customers know each other, this can instantly disclose a patient's health condition to bystanders. Recommended measures include ticketing systems, screen privacy filters, and private counselling areas.",
+    "order_index": 3,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "58df09a0-cfde-4e6b-8104-688a4b1fcb03",
+    "module_id": "710621ab-0904-462c-84b8-da3229d5c8dc",
+    "question": "A colleague whispers to you during shift: 'You will never guess who just picked up antidepressants.' What should you do?",
+    "options": [
+      "Listen quietly — it is just workplace conversation",
+      "Stop the conversation immediately and report the breach to the pharmacist — this is a serious confidentiality violation",
+      "Ask for more details so you can provide better care next time",
+      "Tell the colleague to whisper more quietly so patients do not hear"
+    ],
+    "correct_answer": 1,
+    "explanation": "Sharing any patient's prescription information with colleagues outside of a clinical need is a breach of confidentiality and should be treated as a serious professional misconduct issue. The conversation must be stopped immediately and reported to the supervising pharmacist. This is potentially a terminable offence.",
+    "order_index": 4,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "adf58bc1-4810-4eee-9d46-46bed3e6283e",
+    "module_id": "710621ab-0904-462c-84b8-da3229d5c8dc",
+    "question": "When does the obligation of pharmacy confidentiality expire?",
+    "options": [
+      "When the patient stops visiting the pharmacy",
+      "When the staff member leaves the pharmacy's employment",
+      "After five years",
+      "Never — the obligation continues indefinitely"
+    ],
+    "correct_answer": 3,
+    "explanation": "The obligation of confidentiality is lifelong. It does not expire when the patient stops visiting, when the staff member changes jobs, or after any period of time. Health information learned during pharmacy practice must be kept confidential permanently.",
+    "order_index": 5,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "f34e4058-9c08-417a-be43-637ad1e90d2f",
+    "module_id": "710621ab-0904-462c-84b8-da3229d5c8dc",
+    "question": "Which Caribbean territory has a comprehensive Data Protection Act (2019) that includes health data protections?",
+    "options": [
+      "Jamaica",
+      "Guyana",
+      "Barbados",
+      "Dominica"
+    ],
+    "correct_answer": 2,
+    "explanation": "Barbados enacted a comprehensive Data Protection Act in 2019 that establishes data privacy protections including for health data. Trinidad & Tobago has a Data Protection Act from 2011. Jamaica, as of 2024, does not yet have comprehensive data protection legislation, though draft bills have been tabled.",
+    "order_index": 6,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "3fcc8ece-c992-4c82-b77d-3c3402bc7c59",
+    "module_id": "710621ab-0904-462c-84b8-da3229d5c8dc",
+    "question": "Patient autonomy means:",
+    "options": [
+      "The patient can do whatever they want in the pharmacy",
+      "The patient has the right to make informed decisions about their own healthcare, including refusing treatment",
+      "The pharmacist has autonomous authority over patient care",
+      "The patient does not need any professional guidance"
+    ],
+    "correct_answer": 1,
+    "explanation": "Patient autonomy is the right to make informed decisions about one's own healthcare, including the right to refuse treatment after being fully informed. It does not mean unlimited freedom within the pharmacy or absence of professional guidance — it means the final decision rests with the informed patient.",
+    "order_index": 7,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "e8e7f8ef-7511-43ee-af9c-9bf8e20c1896",
+    "module_id": "710621ab-0904-462c-84b8-da3229d5c8dc",
+    "question": "Place the following confidentiality responses in order from MOST appropriate to LEAST appropriate when a family member calls asking about a patient's medication.",
+    "options": [
+      "Politely decline and redirect: 'I cannot share patient information. Please ask them directly.'",
+      "Confirm the patient visited but refuse to name the medication",
+      "Tell the caller the medication name because they are family",
+      "Post the patient's medication list on social media"
+    ],
+    "correct_answer": 0,
+    "explanation": "The correct order from most to least appropriate: (1) Declining and redirecting is the only fully correct response; (2) Confirming a visit is a partial breach — better than naming medications but still inappropriate; (3) Sharing medication names without consent is a clear breach; (4) Social media posting is an egregious, potentially criminal breach.",
+    "order_index": 8,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "evaluate"
+  },
+  {
+    "id": "7e642f52-e0df-43e2-8aad-d00dd513722e",
+    "module_id": "710621ab-0904-462c-84b8-da3229d5c8dc",
+    "question": "True or false: Even confirming that a person IS a patient at your pharmacy (without sharing any medication details) is a breach of confidentiality.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": 0,
+    "explanation": "True. Confirming that someone is a patient at your pharmacy reveals health-related information — that they are receiving pharmaceutical services. In a small Caribbean community, this alone can trigger speculation and gossip. The correct response to any third-party inquiry is to neither confirm nor deny and redirect them to speak with the person directly.",
+    "order_index": 9,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "hard",
+    "blooms_level": "evaluate"
+  },
+  {
+    "id": "b37f6114-32d2-4870-b09c-b4a18928ee09",
+    "module_id": "710621ab-0904-462c-84b8-da3229d5c8dc",
+    "question": "Which of the following pharmacy services requires formal written informed consent rather than implied consent?",
+    "options": [
+      "Dispensing a repeat prescription",
+      "Providing basic OTC counselling",
+      "Administering a vaccination in the pharmacy",
+      "Handing a patient their change"
+    ],
+    "correct_answer": 2,
+    "explanation": "Pharmacy-administered vaccinations involve a clinical procedure (injection) with specific risks (allergic reaction, side effects) and require formal written informed consent. Routine dispensing, OTC counselling, and sales transactions operate on implied consent.",
+    "order_index": 10,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "apply"
+  }
+]

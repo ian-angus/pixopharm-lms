@@ -1,0 +1,20 @@
+{
+  "id": "e44ed7d9-6b3a-4131-a0d3-acf099cbd14e",
+  "title": "Anatomy, Physiology & Medical Terminology",
+  "slug": "anatomy-physiology-medical-terminology",
+  "description": "Build foundational knowledge of the human body and medical language for pharmacy technicians.",
+  "skill_level": "Beginner",
+  "duration_weeks": 7,
+  "icon": "Stethoscope",
+  "color": "indigo",
+  "prerequisites": [],
+  "what_youll_learn": [
+    "Decode medical terminology",
+    "Describe major body systems",
+    "Identify Caribbean-prevalent conditions",
+    "Connect body system knowledge to drugs",
+    "Use correct medical terminology"
+  ],
+  "status": "published",
+  "order": 3
+}

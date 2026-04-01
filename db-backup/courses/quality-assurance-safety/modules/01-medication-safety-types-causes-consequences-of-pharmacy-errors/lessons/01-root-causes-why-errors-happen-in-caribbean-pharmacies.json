@@ -1,0 +1,89 @@
+{
+  "id": "fadfdd7c-e67c-4e79-8b2f-8826b1fe1599",
+  "module_id": "7eafe19e-77af-463c-a1e3-e9dcaada4e10",
+  "title": "Root Causes: Why Errors Happen in Caribbean Pharmacies",
+  "content": [
+    {
+      "text": "Understanding Why Errors Occur",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Medication errors are rarely caused by a single factor. They typically result from a chain of contributing causes — system failures, environmental pressures, human factors, and process gaps that align to create the conditions for error. Understanding these root causes is the first step toward prevention.",
+      "type": "text"
+    },
+    {
+      "term": "Latent Failure",
+      "type": "key-term",
+      "definition": "An underlying system weakness — such as inadequate staffing, poor lighting, confusing drug packaging, or lack of standard procedures — that creates conditions in which errors are more likely to occur. Latent failures may exist for months or years before contributing to an incident."
+    },
+    {
+      "term": "Active Failure",
+      "type": "key-term",
+      "definition": "An unsafe act committed by the person at the sharp end — the technician, pharmacist, or nurse whose action (or inaction) directly triggers the error. Active failures are the visible tip of the iceberg; latent failures are the mass beneath."
+    },
+    {
+      "body": "Caribbean pharmacies face a distinct set of latent failures driven by the region's geography, economics, and healthcare infrastructure. These systemic issues create an environment in which even diligent, well-trained technicians are at increased risk of error.",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "High prescription volume with limited staff — many Caribbean pharmacies operate with one pharmacist and one or two technicians, processing hundreds of prescriptions per day",
+        "Generic substitution complexity — with multiple generic manufacturers supplying the same molecule in different packaging, look-alike sound-alike (LASA) confusion is common",
+        "Handwritten prescriptions — electronic prescribing is still the exception rather than the rule in most Caribbean jurisdictions, and illegible handwriting is a persistent source of transcription errors",
+        "Temperature and humidity — heat can degrade medications and create uncomfortable working conditions that impair concentration",
+        "Interrupted workflow — walk-in patients, phone calls, and informal consultations constantly break the dispensing workflow, increasing error risk",
+        "Limited technology — automated dispensing systems, barcode verification, and clinical decision support are uncommon outside major hospital pharmacies",
+        "Supply chain instability — frequent stock-outs force substitutions, which introduce additional opportunities for selection errors"
+      ],
+      "ordered": false
+    },
+    {
+      "body": "Research shows that each interruption during the dispensing process increases the risk of error by approximately 12%. In a busy Caribbean community pharmacy where the technician is simultaneously dispensing, answering phones, and helping walk-in customers, interruptions may occur dozens of times per hour. Establishing 'no-interruption zones' during critical dispensing steps is one of the most effective error-prevention strategies.",
+      "type": "callout",
+      "title": "The Interruption Problem",
+      "variant": "warning"
+    },
+    {
+      "text": "The Swiss Cheese Model",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "James Reason's Swiss Cheese Model is the most widely used framework for understanding how errors penetrate safety defences. Imagine multiple slices of Swiss cheese stacked together — each slice represents a safety barrier (training, double-checks, labelling standards, technology). The holes in each slice represent weaknesses. An error leads to patient harm only when the holes in every slice align, allowing the error to pass through all defences. The goal of safety systems is not to eliminate all holes (which is impossible) but to ensure they never align.",
+      "type": "text"
+    },
+    {
+      "alt": "Swiss Cheese Model diagram showing multiple defence layers with holes that can align to allow an error through",
+      "type": "image-placeholder",
+      "caption": "Reason's Swiss Cheese Model — errors cause harm when holes in multiple defences align simultaneously"
+    },
+    {
+      "type": "case-study",
+      "title": "Case Study: The Wrong-Strength Dispensing Error",
+      "scenario": "A busy community pharmacy in Port of Spain, Trinidad, operates with one pharmacist and one technician. On a Friday afternoon during rainy season, the pharmacy is crowded. The technician is dispensing enalapril 5 mg tablets for an elderly patient with hypertension. The phone rings, and the technician answers while mid-count. When she returns to the dispensing bench, she picks up a bottle from the shelf — but it is enalapril 20 mg, not 5 mg. The packaging looks nearly identical. The pharmacist, occupied with a patient consultation at the counter, performs a brief final check and does not catch the strength discrepancy. The patient takes the 20 mg dose for three days before experiencing severe hypotension and dizziness, requiring emergency department treatment.",
+      "questions": [
+        "Identify at least three latent failures in this scenario.",
+        "What active failure occurred, and why was it understandable given the circumstances?",
+        "How could the Swiss Cheese Model explain why all defence layers failed?",
+        "What system changes would you recommend to prevent this error from recurring?"
+      ],
+      "discussion": "Latent failures include understaffing (only one pharmacist and one technician for a busy pharmacy), look-alike packaging for different strengths of the same drug, lack of an 'interruption-free zone' policy during dispensing, no barcode verification technology, and an overburdened pharmacist performing a superficial final check. The active failure was the technician selecting the wrong bottle after an interruption, but this was predictable given the system weaknesses. System solutions might include colour-coded shelf labels for different strengths, a strict no-interruption policy during dispensing, additional staffing during peak hours, and implementing a barcode-scan step before dispensing."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "A technician picks the wrong bottle from the shelf",
+        "A pharmacist skips the final check due to time pressure",
+        "The pharmacy uses look-alike packaging for different drug strengths",
+        "A prescriber writes an incorrect dose on the prescription"
+      ],
+      "question": "Which of the following is an example of a latent failure rather than an active failure?",
+      "explanation": "Look-alike packaging is a latent failure — a systemic weakness that exists independently of any individual's actions. It creates conditions in which selection errors are more likely. The other options describe active failures: specific unsafe acts by individuals at specific moments.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 30
+}

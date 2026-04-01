@@ -1,0 +1,93 @@
+{
+  "id": "66421ac8-e119-4fa1-9333-c99165a987e6",
+  "module_id": "34141bea-36cb-4e91-9ba8-8579bff2a291",
+  "title": "Caribbean Herbal Remedies: Soursop, Moringa, Noni & Bush Tea",
+  "content": [
+    {
+      "text": "Traditional Medicine Meets Modern Pharmacy",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Herbal and traditional remedies are deeply woven into Caribbean healthcare culture. From soursop (graviola) tea in Trinidad to moringa (saijan) in Jamaica, noni juice in Barbados, and countless bush teas prepared by family elders, these remedies are used alongside — and sometimes instead of — prescription medications. A pharmacy technician who understands these remedies can provide safer, more culturally sensitive care.",
+      "type": "text"
+    },
+    {
+      "term": "Bush Tea",
+      "type": "key-term",
+      "definition": "A Caribbean term for herbal teas brewed from locally grown plants, often prepared according to traditional family recipes passed down through generations. Common bush teas include fever grass (lemongrass), soursop leaf, shadon beni (culantro), and cerasee (bitter melon). Many patients use bush teas as primary or complementary medicine without disclosing this to their healthcare providers."
+    },
+    {
+      "body": "A 2018 survey in Trinidad and Tobago found that over 60% of patients used herbal remedies alongside their prescription medications, but fewer than 20% had discussed this with their pharmacist or doctor. This gap between actual use and healthcare provider awareness represents a significant patient safety concern — especially when herb-drug interactions are possible.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Soursop (Annona muricata)",
+          "Graviola, guanabana, corossol",
+          "Cancer prevention, hypertension, sleep aid",
+          "Limited evidence; may interact with antihypertensives and diabetes meds"
+        ],
+        [
+          "Moringa (Moringa oleifera)",
+          "Saijan (Trinidad), drumstick tree",
+          "Diabetes, inflammation, nutrition supplement",
+          "Some evidence for blood sugar lowering; may potentiate hypoglycaemics"
+        ],
+        [
+          "Noni (Morinda citrifolia)",
+          "Noni fruit, Indian mulberry",
+          "Immune boost, pain relief, general wellness",
+          "High potassium content — concern in CKD and ACEi/ARB users"
+        ],
+        [
+          "Turmeric/Curcumin",
+          "Haldi, turmeric root",
+          "Inflammation, joint pain, digestive health",
+          "Anti-inflammatory properties documented; may increase bleeding risk with anticoagulants"
+        ],
+        [
+          "Ginger (Zingiber officinale)",
+          "Ginger root, ginger tea",
+          "Nausea, digestion, cold symptoms",
+          "Well-evidenced for nausea; mild antiplatelet effect — caution with warfarin"
+        ],
+        [
+          "Aloe vera",
+          "Aloe, sinkle bible",
+          "Burns, constipation, skin conditions",
+          "Topical use well-supported; oral use can cause diarrhoea and electrolyte imbalance"
+        ]
+      ],
+      "type": "table",
+      "caption": "Popular Caribbean Herbal Remedies",
+      "headers": [
+        "Remedy",
+        "Local Names",
+        "Traditional Use",
+        "Evidence & Safety"
+      ]
+    },
+    {
+      "body": "Dismissing bush tea or herbal remedies as 'not real medicine' is culturally insensitive and counterproductive. Instead, ask respectful questions about what the patient is taking, explain potential interactions without judgement, and document herbal use in the patient profile. Many patients will hide herbal use if they feel judged.",
+      "type": "callout",
+      "title": "Never Dismiss Traditional Medicine",
+      "variant": "info"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "No concern — moringa has no effect on blood sugar",
+        "Moringa may have blood sugar-lowering effects that could add to metformin's action, increasing hypoglycaemia risk",
+        "Moringa blocks metformin absorption",
+        "Moringa causes liver damage"
+      ],
+      "question": "A diabetic patient in Jamaica drinks moringa tea daily for 'sugar control' alongside metformin. What is the concern?",
+      "explanation": "Moringa has documented blood glucose-lowering properties. Combined with metformin, this could potentiate hypoglycaemic effects. The patient should be counselled to monitor blood sugar more frequently and inform their doctor about their moringa use.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 20
+}

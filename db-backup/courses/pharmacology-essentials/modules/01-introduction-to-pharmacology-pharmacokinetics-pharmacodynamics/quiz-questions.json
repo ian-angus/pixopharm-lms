@@ -1,0 +1,182 @@
+[
+  {
+    "id": "6b28413f-c113-4c7a-8403-99ff92f4c208",
+    "module_id": "9ac6450c-aeb9-430c-9763-10a0ce1064e5",
+    "question": "Which branch of pharmacology studies how the body absorbs, distributes, metabolises, and excretes a drug?",
+    "options": [
+      "Pharmacodynamics",
+      "Pharmacokinetics",
+      "Pharmacogenomics",
+      "Toxicology"
+    ],
+    "correct_answer": 1,
+    "explanation": "Pharmacokinetics (PK) studies what the body does to the drug — the ADME processes. Pharmacodynamics studies what the drug does to the body.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "49125b89-dbb8-48c5-a726-4a7ed1138b76",
+    "module_id": "9ac6450c-aeb9-430c-9763-10a0ce1064e5",
+    "question": "A drug has a bioavailability of 40% when taken orally. What does this mean?",
+    "options": [
+      "40% of the drug is excreted unchanged in urine",
+      "40% of the administered dose reaches the systemic circulation in active form",
+      "The drug is 40% protein-bound in plasma",
+      "The drug produces effects for 40% of the dosing interval"
+    ],
+    "correct_answer": 1,
+    "explanation": "Bioavailability is the fraction of administered drug that reaches systemic circulation unchanged. 40% bioavailability means 60% is lost to incomplete absorption or first-pass metabolism.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "61df6b6e-b276-4c1f-a04b-2856427b3606",
+    "module_id": "9ac6450c-aeb9-430c-9763-10a0ce1064e5",
+    "question": "Why is grapefruit juice a concern for patients taking simvastatin in the Caribbean?",
+    "options": [
+      "Grapefruit increases simvastatin absorption by raising gastric pH",
+      "Grapefruit inhibits CYP3A4 enzymes, reducing simvastatin metabolism and dangerously increasing drug levels",
+      "Grapefruit causes simvastatin to be excreted faster through the kidneys",
+      "Grapefruit has no interaction with simvastatin"
+    ],
+    "correct_answer": 1,
+    "explanation": "Grapefruit juice inhibits CYP3A4 enzymes in the gut wall and liver. Since simvastatin is extensively metabolised by CYP3A4, inhibition leads to dramatically increased drug levels, raising the risk of rhabdomyolysis.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "fa5a5805-818a-4ce1-92dc-42f7dea5ff98",
+    "module_id": "9ac6450c-aeb9-430c-9763-10a0ce1064e5",
+    "question": "A drug that binds to a receptor and blocks it without activating it is called a(n):",
+    "options": [
+      "Agonist",
+      "Partial agonist",
+      "Antagonist",
+      "Inverse agonist"
+    ],
+    "correct_answer": 2,
+    "explanation": "An antagonist binds to a receptor but does not activate it, preventing natural ligands or agonist drugs from binding. Example: atenolol blocks beta-1 receptors.",
+    "order_index": 3,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "435d0c15-586e-4e3a-bd02-9a9a58d111ef",
+    "module_id": "9ac6450c-aeb9-430c-9763-10a0ce1064e5",
+    "question": "The half-life of metformin is approximately 5 hours. How often must it typically be taken?",
+    "options": [
+      "Once daily",
+      "Twice daily",
+      "Every 4 hours",
+      "Once weekly"
+    ],
+    "correct_answer": 1,
+    "explanation": "With a 5-hour half-life, metformin is cleared relatively quickly. Twice-daily dosing maintains effective plasma levels throughout the day. Extended-release formulations allow once-daily dosing.",
+    "order_index": 4,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "19518726-3592-4420-8022-defa739bceff",
+    "module_id": "9ac6450c-aeb9-430c-9763-10a0ce1064e5",
+    "question": "Which of the following drugs has a narrow therapeutic index and requires regular blood monitoring?",
+    "options": [
+      "Amoxicillin",
+      "Paracetamol",
+      "Warfarin",
+      "Amlodipine"
+    ],
+    "correct_answer": 2,
+    "explanation": "Warfarin has a very narrow therapeutic index — the difference between an effective dose and a dangerous dose is small. Regular INR monitoring is essential to prevent bleeding or clotting.",
+    "order_index": 5,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "analyze"
+  },
+  {
+    "id": "3a3629b0-11f9-4d43-8fa4-8a804ad2e2e3",
+    "module_id": "9ac6450c-aeb9-430c-9763-10a0ce1064e5",
+    "question": "First-pass metabolism primarily occurs in which organ?",
+    "options": [
+      "Kidneys",
+      "Lungs",
+      "Liver",
+      "Small intestine"
+    ],
+    "correct_answer": 2,
+    "explanation": "First-pass metabolism occurs primarily in the liver, where enzymes (especially CYP450) metabolise the drug before it reaches systemic circulation. This reduces the bioavailability of many oral drugs.",
+    "order_index": 6,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "9f821a81-0be6-4848-9632-db11e6074728",
+    "module_id": "9ac6450c-aeb9-430c-9763-10a0ce1064e5",
+    "question": "Steady state for a drug is typically reached after:",
+    "options": [
+      "1 half-life",
+      "2-3 half-lives",
+      "4-5 half-lives",
+      "10 half-lives"
+    ],
+    "correct_answer": 2,
+    "explanation": "Steady state — where drug input equals drug elimination — is achieved after approximately 4-5 half-lives of repeated dosing at regular intervals.",
+    "order_index": 7,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "0623a077-576e-4916-b473-4ef96cc60e80",
+    "module_id": "9ac6450c-aeb9-430c-9763-10a0ce1064e5",
+    "question": "A patient with severe chronic kidney disease requires a dose adjustment for gentamicin. Which ADME process is impaired?",
+    "options": [
+      "Absorption",
+      "Distribution",
+      "Metabolism",
+      "Excretion"
+    ],
+    "correct_answer": 3,
+    "explanation": "Gentamicin is eliminated almost entirely by renal excretion. Chronic kidney disease impairs excretion, causing drug accumulation and potential toxicity unless the dose is reduced or the interval extended.",
+    "order_index": 8,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "3fde8c02-89dc-46bf-9988-d4fa9873be69",
+    "module_id": "9ac6450c-aeb9-430c-9763-10a0ce1064e5",
+    "question": "The drug name stem '-olol' indicates the drug belongs to which class?",
+    "options": [
+      "ACE inhibitors",
+      "Beta-blockers",
+      "Calcium channel blockers",
+      "Angiotensin receptor blockers"
+    ],
+    "correct_answer": 1,
+    "explanation": "The stem -olol identifies beta-adrenergic blockers: atenolol, propranolol, metoprolol, bisoprolol. These are among the most commonly dispensed antihypertensives in the Caribbean.",
+    "order_index": 9,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  }
+]

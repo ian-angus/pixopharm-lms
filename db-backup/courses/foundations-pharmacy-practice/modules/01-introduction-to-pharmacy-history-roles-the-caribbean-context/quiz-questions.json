@@ -1,0 +1,92 @@
+[
+  {
+    "id": "2bf47f96-863f-4115-ac66-791ed66ae91e",
+    "module_id": "3f917344-bdd9-402c-b23b-c11f916aa57a",
+    "question": "What is the origin of the word 'pharmacy'?",
+    "options": [
+      "Latin 'pharmacia' meaning healing",
+      "Greek 'pharmakon' meaning drug or remedy",
+      "Arabic 'al-farmasi' meaning preparation",
+      "French 'pharmacie' meaning dispensary"
+    ],
+    "correct_answer": 1,
+    "explanation": "The word 'pharmacy' derives from the Greek 'pharmakon', meaning drug, remedy, or poison. This ancient root reflects the dual nature of medicines — they can heal or harm depending on how they are used.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "78bd7bf0-e33b-4243-864b-8ad07760df3b",
+    "module_id": "3f917344-bdd9-402c-b23b-c11f916aa57a",
+    "question": "In most Caribbean jurisdictions, who must perform the final verification check before a prescription is dispensed to a patient?",
+    "options": [
+      "The pharmacy technician who prepared the medication",
+      "Any member of the pharmacy team",
+      "A registered pharmacist",
+      "The pharmacy owner"
+    ],
+    "correct_answer": 2,
+    "explanation": "Across Trinidad & Tobago, Jamaica, and Barbados, the final verification of a dispensed prescription must be performed by a registered pharmacist. While technicians prepare medications, the pharmacist's check is the legal and professional safeguard before the medication reaches the patient.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "2ec108b5-dc25-40b1-8c8a-62784d356cf5",
+    "module_id": "3f917344-bdd9-402c-b23b-c11f916aa57a",
+    "question": "Which organisation is responsible for coordinating the harmonisation of drug registration across CARICOM member states?",
+    "options": [
+      "Caribbean Association of Pharmacists (CAP)",
+      "Caribbean Regulatory System (CRS)",
+      "Pan American Health Organization (PAHO)",
+      "Caribbean Examination Council (CXC)"
+    ],
+    "correct_answer": 1,
+    "explanation": "The Caribbean Regulatory System (CRS) is a CARICOM initiative designed to harmonise drug registration across member states, enabling mutual recognition of approved medicines. While progress has been made, full harmonisation is still a work in progress.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "2c38cdf3-6989-4c14-b6af-1e07e52fb6fe",
+    "module_id": "3f917344-bdd9-402c-b23b-c11f916aa57a",
+    "question": "What is a significant challenge unique to pharmacy practice in the Caribbean?",
+    "options": [
+      "Overproduction of generic medications locally",
+      "Excessive numbers of pharmacy training programmes",
+      "Importing medications across ocean with tropical climate storage demands",
+      "Too many pharmacists relative to the population"
+    ],
+    "correct_answer": 2,
+    "explanation": "Caribbean nations import the vast majority of their medications, which must be transported across ocean and maintained in strict temperature-controlled conditions despite the tropical climate. This creates unique supply chain, cost, and cold chain management challenges not faced by mainland countries with domestic pharmaceutical manufacturing.",
+    "order_index": 3,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "8e365527-0d63-4d53-8a09-5682dd1af565",
+    "module_id": "3f917344-bdd9-402c-b23b-c11f916aa57a",
+    "question": "Where is CARPHA (Caribbean Public Health Agency) headquartered?",
+    "options": [
+      "Kingston, Jamaica",
+      "Bridgetown, Barbados",
+      "Port of Spain, Trinidad and Tobago",
+      "Nassau, Bahamas"
+    ],
+    "correct_answer": 2,
+    "explanation": "CARPHA is headquartered in Port of Spain, Trinidad and Tobago. It serves as the regional public health body coordinating disease surveillance, laboratory services, pharmaceutical quality, and public health emergency response across the Caribbean.",
+    "order_index": 4,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  }
+]

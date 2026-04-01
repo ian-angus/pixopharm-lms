@@ -1,0 +1,106 @@
+{
+  "id": "546b7c0e-89e7-4ca2-98cc-0c7d96f7d587",
+  "module_id": "dfb48101-2356-4d0d-9a97-2396820bb069",
+  "title": "The Pharmacy Council of Jamaica (PCJ): Registration & Standards",
+  "content": [
+    {
+      "text": "The Pharmacy Council of Jamaica",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "The Pharmacy Council of Jamaica (PCJ) is the statutory body charged with regulating the practice of pharmacy throughout Jamaica. Established under the Pharmacy Act of 1975 (and its subsequent amendments), the PCJ maintains the Register of Pharmacists, sets standards for pharmacy practice, approves pharmacy premises, and disciplines practitioners who fall below professional standards. Unlike Trinidad & Tobago, Jamaica has a more formalised approach to recognising different categories of pharmacy workers.",
+      "type": "text"
+    },
+    {
+      "term": "Pharmacy Council of Jamaica (PCJ)",
+      "type": "key-term",
+      "definition": "The statutory regulatory body for pharmacy in Jamaica, established under the Pharmacy Act (1975). The PCJ registers pharmacists, licences pharmacy premises, enforces professional standards, and advises the Minister of Health on pharmaceutical matters. Its offices are located in Kingston."
+    },
+    {
+      "text": "Registration Categories",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "The PCJ maintains several registration categories. Full registration as a pharmacist requires a recognised pharmacy degree (typically the B.Sc. Pharmacy from the University of Technology, Jamaica — UTech — or an approved equivalent), completion of the pre-registration training period, and passing the PCJ's registration examination. Jamaica also formally distinguishes between 'qualified dispensers' and 'pharmacy technicians', with the latter increasingly recognised as a distinct professional category.",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Obtain a recognised pharmacy qualification (UTech B.Sc. Pharmacy, UWI, or approved equivalent)",
+        "Complete the pre-registration training period (typically one year) under a registered preceptor",
+        "Submit application to the PCJ with all required documentation",
+        "Pay the registration fee (approximately J$15,000–$25,000)",
+        "Sit and pass the PCJ registration examination",
+        "Receive your registration certificate and annual practising licence",
+        "Maintain registration through annual renewal and continuing professional development (CPD)"
+      ],
+      "ordered": true
+    },
+    {
+      "body": "Jamaica has been a leader in the Caribbean in pushing for mandatory CPD for pharmacists. The PCJ increasingly requires evidence of ongoing professional development as a condition of licence renewal. While CPD requirements for technicians are not yet formally mandated, completing a PIXOPHARM programme and pursuing additional training demonstrates the kind of professional commitment that the PCJ is looking to formalise across all pharmacy categories.",
+      "type": "callout",
+      "title": "Continuing Professional Development (CPD)",
+      "variant": "info"
+    },
+    {
+      "text": "Pharmacy Premises Requirements",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Every pharmacy in Jamaica must be licensed by the PCJ. The requirements for premises licensing cover physical space (minimum square footage, separate dispensing area, adequate storage), security (controlled substance safes, alarm systems), temperature and humidity controls, record-keeping systems, and the continuous presence of a registered pharmacist during operating hours. The PCJ conducts routine inspections and can issue compliance orders or revoke licences for premises that do not meet standards.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Dispensing Area",
+          "Separate, enclosed area visible to but separated from the retail floor"
+        ],
+        [
+          "Storage",
+          "Adequate shelving; temperature monitoring; separate locked storage for controlled substances"
+        ],
+        [
+          "Cold Chain",
+          "Pharmaceutical-grade refrigerator with temperature log maintained daily"
+        ],
+        [
+          "Security",
+          "Controlled substance safe bolted to the floor or wall; premises alarm system"
+        ],
+        [
+          "Records",
+          "Prescription records retained for minimum of 5 years; controlled substance register maintained"
+        ],
+        [
+          "Pharmacist Presence",
+          "Registered pharmacist must be physically present during all hours the pharmacy is open for dispensing"
+        ]
+      ],
+      "type": "table",
+      "caption": "PCJ Premises Requirements — Key Standards",
+      "headers": [
+        "Requirement",
+        "Minimum Standard"
+      ]
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "University of the West Indies (UWI) Mona",
+        "University of Technology, Jamaica (UTech)",
+        "Northern Caribbean University (NCU)",
+        "Caribbean Maritime University (CMU)"
+      ],
+      "question": "Which institution is the primary provider of pharmacy education in Jamaica?",
+      "explanation": "The University of Technology, Jamaica (UTech) is the primary provider of pharmacy education in Jamaica, offering the B.Sc. Pharmacy degree that is the standard qualification for pharmacist registration with the PCJ. While UWI also offers pharmacy programmes regionally, UTech is the leading Jamaican institution for pharmacy training.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 30
+}

@@ -1,0 +1,20 @@
+{
+  "id": "c4c844e4-5ca2-4c73-b0e9-da20221d5d19",
+  "title": "Foundations of Pharmacy Practice",
+  "slug": "foundations-pharmacy-practice",
+  "description": "Begin your pharmacy career with a comprehensive grounding in how pharmacies operate across the Caribbean.",
+  "skill_level": "Beginner",
+  "duration_weeks": 6,
+  "icon": "GraduationCap",
+  "color": "blue",
+  "prerequisites": [],
+  "what_youll_learn": [
+    "Interpret prescriptions accurately",
+    "Navigate Caribbean pharmacy laws",
+    "Apply ethical decision-making frameworks",
+    "Describe the pharmacy technician role",
+    "Execute standard pharmacy workflow"
+  ],
+  "status": "published",
+  "order": 1
+}

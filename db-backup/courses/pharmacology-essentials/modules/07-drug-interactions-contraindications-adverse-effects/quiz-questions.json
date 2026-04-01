@@ -1,0 +1,182 @@
+[
+  {
+    "id": "0fdd2339-f9fb-4722-8876-7bbb12f930ed",
+    "module_id": "7b0ea0ee-1e61-4a29-ac4e-45cb21f60042",
+    "question": "Which interaction is most dangerous when a patient takes warfarin?",
+    "options": [
+      "Warfarin + paracetamol",
+      "Warfarin + NSAIDs",
+      "Warfarin + amlodipine",
+      "Warfarin + metformin"
+    ],
+    "correct_answer": 1,
+    "explanation": "NSAIDs inhibit platelet function and can cause GI bleeding, dramatically increasing haemorrhage risk in warfarin patients.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "e31ae3da-0c49-40d8-a2ab-6db3e665915a",
+    "module_id": "7b0ea0ee-1e61-4a29-ac4e-45cb21f60042",
+    "question": "Grapefruit juice interacts with drugs by:",
+    "options": [
+      "Increasing gastric acid production",
+      "Inhibiting CYP3A4 enzymes in the gut and liver",
+      "Increasing renal excretion",
+      "Blocking drug absorption in the stomach"
+    ],
+    "correct_answer": 1,
+    "explanation": "Grapefruit inhibits CYP3A4, slowing the metabolism of drugs like simvastatin and amlodipine, increasing their blood levels potentially to toxic ranges.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "d27f8e56-7013-4f8e-bdf3-d206ba689b80",
+    "module_id": "7b0ea0ee-1e61-4a29-ac4e-45cb21f60042",
+    "question": "Dairy products reduce the absorption of tetracyclines and fluoroquinolones because:",
+    "options": [
+      "They increase gastric pH",
+      "Calcium ions form insoluble chelates with the antibiotics",
+      "They speed up gastric emptying",
+      "They dilute the drug concentration"
+    ],
+    "correct_answer": 1,
+    "explanation": "Calcium (and other divalent cations in dairy) chelates with tetracyclines and fluoroquinolones, forming insoluble complexes that cannot be absorbed.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "762bb045-422e-4ab7-8ca9-79e23f0dff26",
+    "module_id": "7b0ea0ee-1e61-4a29-ac4e-45cb21f60042",
+    "question": "St. John's Wort is a potent CYP450 inducer. This means it:",
+    "options": [
+      "Increases the blood levels of other drugs",
+      "Decreases the effectiveness of drugs metabolised by CYP450 enzymes",
+      "Has no effect on other medications",
+      "Only affects herbal remedies"
+    ],
+    "correct_answer": 1,
+    "explanation": "Enzyme induction speeds up metabolism of other drugs, reducing their blood levels and effectiveness. St. John's Wort can reduce the effectiveness of oral contraceptives, warfarin, and many other drugs.",
+    "order_index": 3,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "analyze"
+  },
+  {
+    "id": "6d2d9587-1ed2-4c42-bbef-75b1f3b887c7",
+    "module_id": "7b0ea0ee-1e61-4a29-ac4e-45cb21f60042",
+    "question": "A Type B adverse drug reaction is:",
+    "options": [
+      "Dose-dependent and predictable",
+      "Dose-independent, unpredictable, and often immune-mediated",
+      "Always mild and self-limiting",
+      "Related to the drug's therapeutic effect"
+    ],
+    "correct_answer": 1,
+    "explanation": "Type B (bizarre) ADRs are unpredictable, often immune-mediated, and unrelated to the drug's pharmacological action. Examples include anaphylaxis and Stevens-Johnson syndrome.",
+    "order_index": 4,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "558ce377-53a8-4462-8796-512b07a8c2be",
+    "module_id": "7b0ea0ee-1e61-4a29-ac4e-45cb21f60042",
+    "question": "Carbamazepine reduces oral contraceptive effectiveness because it:",
+    "options": [
+      "Blocks oestrogen receptors",
+      "Induces CYP450 enzymes that metabolise contraceptive hormones faster",
+      "Causes nausea that reduces absorption",
+      "Increases renal excretion of hormones"
+    ],
+    "correct_answer": 1,
+    "explanation": "Carbamazepine induces CYP3A4 and other enzymes, accelerating the metabolism of ethinylestradiol and progestogens, reducing contraceptive efficacy.",
+    "order_index": 5,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "hard",
+    "blooms_level": "analyze"
+  },
+  {
+    "id": "be531d85-c7f5-4040-b429-b8f83e4081eb",
+    "module_id": "7b0ea0ee-1e61-4a29-ac4e-45cb21f60042",
+    "question": "The correct advice for warfarin patients regarding vitamin K-rich vegetables is:",
+    "options": [
+      "Eliminate all vitamin K foods",
+      "Maintain consistent weekly intake — sudden changes affect INR stability",
+      "Only eat vegetables on warfarin-free days",
+      "Double warfarin dose when eating vegetables"
+    ],
+    "correct_answer": 1,
+    "explanation": "Consistency is key. Patients should maintain a stable intake of vitamin K rather than eliminating it, as warfarin dosing is calibrated to their usual vitamin K consumption.",
+    "order_index": 6,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "1c0a53a2-1c90-4206-8595-a05863b2bee5",
+    "module_id": "7b0ea0ee-1e61-4a29-ac4e-45cb21f60042",
+    "question": "ACE inhibitors combined with potassium-sparing diuretics increase the risk of:",
+    "options": [
+      "Hypokalaemia",
+      "Hyperkalaemia",
+      "Hypernatraemia",
+      "Hypoglycaemia"
+    ],
+    "correct_answer": 1,
+    "explanation": "Both ACE inhibitors and potassium-sparing diuretics increase potassium retention. Together they can cause dangerous hyperkalaemia.",
+    "order_index": 7,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "f27cb9dc-17fe-4c5f-85eb-ecb0179f2c83",
+    "module_id": "7b0ea0ee-1e61-4a29-ac4e-45cb21f60042",
+    "question": "In the Caribbean, which organisation coordinates regional ADR surveillance?",
+    "options": [
+      "WHO only",
+      "CARPHA (Caribbean Public Health Agency)",
+      "The local police",
+      "Individual hospital pharmacies only"
+    ],
+    "correct_answer": 1,
+    "explanation": "CARPHA coordinates Caribbean regional pharmacovigilance, collecting ADR reports from member states and identifying safety signals across the region.",
+    "order_index": 8,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "5455572b-9cfa-42f3-9156-3de89c1b087c",
+    "module_id": "7b0ea0ee-1e61-4a29-ac4e-45cb21f60042",
+    "question": "A pharmacy technician's role when a patient reports a suspected ADR is to:",
+    "options": [
+      "Diagnose the ADR and change the medication",
+      "Document the event and report it to the pharmacist for assessment",
+      "Tell the patient to stop all medications",
+      "Ignore it unless it is life-threatening"
+    ],
+    "correct_answer": 1,
+    "explanation": "Pharmacy technicians should document suspected ADRs and report to the pharmacist. They should not diagnose or change medications independently.",
+    "order_index": 9,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "apply"
+  }
+]

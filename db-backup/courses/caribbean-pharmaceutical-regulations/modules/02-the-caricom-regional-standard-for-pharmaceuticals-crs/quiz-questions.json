@@ -1,0 +1,182 @@
+[
+  {
+    "id": "f8774ffa-3962-409b-85c0-4aed0ea1b5aa",
+    "module_id": "dfe7b615-4723-402c-af37-21981d97b705",
+    "question": "What does the acronym CRS stand for in the context of Caribbean pharmaceutical regulation?",
+    "options": [
+      "Caribbean Regulatory System",
+      "CARICOM Regional Standard",
+      "Caribbean Registration Scheme",
+      "Common Regional Specification"
+    ],
+    "correct_answer": 1,
+    "explanation": "CRS stands for CARICOM Regional Standard — the harmonised framework for pharmaceutical evaluation and registration across CARICOM member states.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "2657c2c1-d923-4066-b984-a43834a099c6",
+    "module_id": "dfe7b615-4723-402c-af37-21981d97b705",
+    "question": "The CRS replaces all national drug regulatory agencies with a single CARICOM authority.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": 1,
+    "explanation": "False. The CRS does not replace national regulatory agencies. Each CARICOM member state retains sovereignty over its drug registration decisions. The CRS provides a common framework and mutual recognition mechanism that makes national processes more consistent and efficient.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "1ca9de11-3f3b-4428-bcbc-3f8eb108ecb9",
+    "module_id": "dfe7b615-4723-402c-af37-21981d97b705",
+    "question": "Which standardised dossier format does the CRS use for drug registration applications?",
+    "options": [
+      "Caribbean Drug Dossier (CDD)",
+      "Common Technical Document (CTD)",
+      "Regional Registration Report (RRR)",
+      "CARICOM Application Form (CAF)"
+    ],
+    "correct_answer": 1,
+    "explanation": "The CRS uses the Common Technical Document (CTD), a standardised dossier format aligned with international ICH (International Council for Harmonisation) guidelines. This format is the global standard for drug registration applications.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "cf2b65cf-5181-4edd-b0c9-43bc153d90ac",
+    "module_id": "dfe7b615-4723-402c-af37-21981d97b705",
+    "question": "Arrange the steps of the CRS mutual recognition pathway in the correct order.",
+    "options": [
+      "CMS reviews the RMS evaluation report",
+      "Manufacturer submits full CTD to Reference Member State",
+      "CMS grants marketing authorisation if no objections",
+      "RMS evaluates and grants marketing authorisation",
+      "Manufacturer submits mutual recognition application to Concerned Member States"
+    ],
+    "correct_answer": 0,
+    "explanation": "The correct order is: (1) Manufacturer submits CTD to RMS, (2) RMS evaluates and grants authorisation, (3) Manufacturer submits mutual recognition application to CMS, (4) CMS reviews the RMS evaluation, (5) CMS grants authorisation if no objections.",
+    "order_index": 3,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "hard",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "0002126c-6485-42b5-8ae7-c010a5dce8da",
+    "module_id": "dfe7b615-4723-402c-af37-21981d97b705",
+    "question": "Which of the following are core components of the CRS?",
+    "options": [
+      "Common Technical Document (CTD)",
+      "Mutual Recognition mechanism",
+      "Harmonised GMP standards",
+      "Regional retail price controls",
+      "Shared pharmacovigilance reporting"
+    ],
+    "correct_answer": 0,
+    "explanation": "The CRS includes a standardised CTD, mutual recognition, harmonised GMP, and shared pharmacovigilance. It does not include regional retail price controls — pricing remains a national matter.",
+    "order_index": 4,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "38e1d12c-c302-4658-be73-c7339a1c4f36",
+    "module_id": "dfe7b615-4723-402c-af37-21981d97b705",
+    "question": "The approximate combined population of the CARICOM market accessible through CRS registration is _____ million people.",
+    "options": [
+      "5",
+      "10",
+      "18",
+      "50"
+    ],
+    "correct_answer": 2,
+    "explanation": "The CARICOM region has a combined population of approximately 18 million people. This combined market makes individual product registrations more commercially viable for manufacturers than the small market of any single island state.",
+    "order_index": 5,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "7e9d04eb-9be3-4439-8ffa-463f5716207e",
+    "module_id": "dfe7b615-4723-402c-af37-21981d97b705",
+    "question": "What is the target timeline for the CRS mutual recognition pathway?",
+    "options": [
+      "30-60 days",
+      "90-180 days",
+      "1-2 years",
+      "3-5 years"
+    ],
+    "correct_answer": 1,
+    "explanation": "The CRS targets a 90-180 day timeline for the mutual recognition pathway, which is significantly faster than the unpredictable timelines (sometimes years) of independent national registration processes.",
+    "order_index": 6,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "068f4585-45f4-4ec8-8e97-ccd5c0d5673d",
+    "module_id": "dfe7b615-4723-402c-af37-21981d97b705",
+    "question": "A generic manufacturer has registered a new antihypertensive in Jamaica through a full CTD evaluation by the PCJ. The manufacturer now wants to register the same product in Barbados using the CRS mutual recognition pathway. In this scenario, Jamaica is the _____ and Barbados is the _____.",
+    "options": [
+      "Concerned Member State (CMS); Reference Member State (RMS)",
+      "Reference Member State (RMS); Concerned Member State (CMS)",
+      "Primary Regulatory Authority; Secondary Regulatory Authority",
+      "Marketing Authorisation Holder; Applicant State"
+    ],
+    "correct_answer": 1,
+    "explanation": "Jamaica, having conducted the initial full evaluation, is the Reference Member State (RMS). Barbados, which receives the mutual recognition application and reviews the RMS evaluation report, is the Concerned Member State (CMS).",
+    "order_index": 7,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "hard",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "2ebd3948-efe9-4f61-b516-23a065145887",
+    "module_id": "dfe7b615-4723-402c-af37-21981d97b705",
+    "question": "Which of the following is the primary challenge slowing CRS implementation?",
+    "options": [
+      "Excess regulatory capacity across all member states",
+      "Capacity disparities between member states and political sensitivities around sovereignty",
+      "Too many manufacturers seeking registration",
+      "Excessive funding from international donors"
+    ],
+    "correct_answer": 1,
+    "explanation": "The primary challenges to CRS implementation include capacity disparities between member states (only a few can serve as credible Reference Member States), political sensitivities around accepting other countries' regulatory decisions, and varying levels of laboratory infrastructure.",
+    "order_index": 8,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "analyze"
+  },
+  {
+    "id": "54f30072-5137-4906-825b-fb93acf7822f",
+    "module_id": "dfe7b615-4723-402c-af37-21981d97b705",
+    "question": "Match each CRS feature with its benefit.",
+    "options": [
+      "Mutual Recognition",
+      "CTD Format",
+      "Shared Pharmacovigilance",
+      "Harmonised GMP"
+    ],
+    "correct_answer": 0,
+    "explanation": "Each CRS feature contributes a specific benefit: mutual recognition reduces duplication, CTD standardises submissions, shared pharmacovigilance improves safety monitoring, and harmonised GMP ensures consistent manufacturing quality.",
+    "order_index": 9,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  }
+]

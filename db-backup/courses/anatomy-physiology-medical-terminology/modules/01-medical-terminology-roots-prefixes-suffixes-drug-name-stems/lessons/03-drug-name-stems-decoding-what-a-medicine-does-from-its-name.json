@@ -1,0 +1,167 @@
+{
+  "id": "35541ccc-8d70-4314-b767-d6c3b7424555",
+  "module_id": "1c340831-e751-43c4-9ea1-7c290cc7cbc6",
+  "title": "Drug Name Stems: Decoding What a Medicine Does from Its Name",
+  "content": [
+    {
+      "text": "The INN Stem System: A Hidden Code in Every Drug Name",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Every generic drug name approved by the World Health Organization (WHO) contains a stem — a syllable or group of syllables that indicates the drug's pharmacological class or mechanism of action. This system, managed through the International Nonproprietary Names (INN) programme, means that a pharmacy technician who knows the stem system can determine what a drug does simply by reading its name — even if they have never seen that specific drug before.",
+      "type": "text"
+    },
+    {
+      "body": "This is an extraordinary practical skill. When a new medication appears on the Caribbean market, or when you encounter an unfamiliar generic on a CDAP list or NHF formulary, stem knowledge tells you immediately what drug class you are handling. This knowledge helps prevent dispensing errors, enables better patient counselling, and makes inventory management more intuitive.",
+      "type": "text"
+    },
+    {
+      "term": "International Nonproprietary Name (INN)",
+      "type": "key-term",
+      "definition": "A unique, globally recognised name assigned to every pharmaceutical substance by the WHO. INNs are designed to be distinct, informative, and not confused with existing names. The INN system ensures that atenolol, for example, is called 'atenolol' in Trinidad, Jamaica, Barbados, the UK, India, and everywhere else — facilitating safe international trade and communication."
+    },
+    {
+      "rows": [
+        [
+          "-olol",
+          "Beta-adrenergic blockers",
+          "Atenolol, metoprolol, propranolol",
+          "First-line hypertension treatment — CDAP and NHF listed"
+        ],
+        [
+          "-pril",
+          "ACE inhibitors",
+          "Enalapril, lisinopril, ramipril",
+          "Hypertension and diabetic nephropathy — extremely common Caribbean prescriptions"
+        ],
+        [
+          "-sartan",
+          "Angiotensin II receptor blockers (ARBs)",
+          "Losartan, valsartan, irbesartan",
+          "Alternative to ACE inhibitors — growing use across CARICOM"
+        ],
+        [
+          "-dipine",
+          "Calcium channel blockers (dihydropyridine)",
+          "Amlodipine, nifedipine",
+          "High-volume dispensing for hypertension in every Caribbean pharmacy"
+        ],
+        [
+          "-statin",
+          "HMG-CoA reductase inhibitors",
+          "Atorvastatin, simvastatin, rosuvastatin",
+          "Cholesterol management — frequently co-prescribed with antihypertensives"
+        ],
+        [
+          "-formin",
+          "Biguanide antidiabetics",
+          "Metformin",
+          "First-line type 2 diabetes treatment — the most dispensed diabetes drug in the Caribbean"
+        ],
+        [
+          "-gliptin",
+          "DPP-4 inhibitors",
+          "Sitagliptin, linagliptin",
+          "Newer diabetes agents increasingly available on Caribbean formularies"
+        ],
+        [
+          "-mycin / -micin",
+          "Antibiotics (various subclasses)",
+          "Azithromycin, erythromycin, gentamicin",
+          "High use for respiratory and tropical infections"
+        ],
+        [
+          "-cillin",
+          "Penicillin-type antibiotics",
+          "Amoxicillin, ampicillin",
+          "First-line antibiotic for many infections across the Caribbean"
+        ],
+        [
+          "-azole",
+          "Antifungal agents",
+          "Fluconazole, clotrimazole, ketoconazole",
+          "Tropical climate makes fungal infections very common"
+        ],
+        [
+          "-vir",
+          "Antiviral agents",
+          "Acyclovir, oseltamivir",
+          "Used during dengue supportive care and for herpes/varicella"
+        ],
+        [
+          "-olone / -sone",
+          "Corticosteroids",
+          "Prednisolone, dexamethasone, hydrocortisone",
+          "Anti-inflammatory use across multiple conditions"
+        ],
+        [
+          "-prazole",
+          "Proton pump inhibitors",
+          "Omeprazole, pantoprazole, esomeprazole",
+          "Acid reflux management — high OTC and prescription demand"
+        ],
+        [
+          "-ine (various)",
+          "Context-dependent",
+          "Adrenaline, atropine, morphine",
+          "Legacy names — the '-ine' ending alone is not a reliable stem classifier"
+        ]
+      ],
+      "type": "table",
+      "caption": "Essential Drug Name Stems for Caribbean Pharmacy Practice",
+      "headers": [
+        "Stem",
+        "Drug Class",
+        "Examples",
+        "Caribbean Relevance"
+      ]
+    },
+    {
+      "body": "Next time you are organising pharmacy shelves, notice how drugs with the same stem share a therapeutic class: all the '-sartans' will be ARBs, all the '-statins' will be cholesterol-lowering agents. This pattern recognition becomes automatic with practice and dramatically reduces the risk of selecting the wrong medication during dispensing.",
+      "type": "callout",
+      "title": "Practical Application",
+      "variant": "tip"
+    },
+    {
+      "type": "case-study",
+      "title": "Case Study: The Unfamiliar Generic",
+      "scenario": "A patient presents a prescription at your community pharmacy in San Fernando, Trinidad. The prescription reads 'candesartan 16 mg, one tablet daily'. You have not encountered candesartan before — your pharmacy usually stocks losartan and valsartan. The patient says the doctor switched them from losartan because of a persistent dry cough.",
+      "questions": [
+        "Using drug name stems, what therapeutic class does candesartan belong to?",
+        "Why might the physician have switched from losartan to candesartan rather than to an ACE inhibitor like enalapril?",
+        "What steps should you take when your pharmacy does not stock a prescribed medication?"
+      ],
+      "discussion": "The '-sartan' stem tells you candesartan is an angiotensin II receptor blocker (ARB), the same class as losartan and valsartan. The physician likely kept the patient on an ARB rather than switching to an ACE inhibitor ('-pril') because ACE inhibitors are actually more likely to cause dry cough. Within the ARB class, a switch from losartan to candesartan might be for efficacy or tolerability reasons. The technician should inform the pharmacist, check if candesartan can be ordered from the wholesaler, and discuss a potential therapeutic substitution with the pharmacist if the medication is urgently needed."
+    },
+    {
+      "text": "Stems That Signal Danger",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Some drug stems should trigger heightened caution during dispensing because they identify high-alert medication classes. Drugs with the stem '-arin' (anticoagulants like warfarin) require careful dose monitoring. The stem '-sulin' (insulins) identifies medications where dose errors can be rapidly fatal. The stem '-barb' (barbiturates like phenobarbital) identifies controlled substances with abuse potential and narrow therapeutic windows.",
+      "type": "text"
+    },
+    {
+      "body": "When you see these stems, apply extra vigilance: '-arin' (anticoagulants — bleeding risk), '-sulin' (insulins — hypoglycaemia risk), '-barb' (barbiturates — respiratory depression), '-opioid' prefix or '-done'/'-phine' (opioid analgesics — respiratory depression and dependence). These drugs require double-checking of dose, route, frequency, and patient identity.",
+      "type": "callout",
+      "title": "High-Alert Drug Stems",
+      "variant": "danger"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Beta-blocker",
+        "ACE inhibitor",
+        "Angiotensin II receptor blocker (ARB)",
+        "Calcium channel blocker"
+      ],
+      "question": "A new prescription arrives for 'olmesartan'. Based on the drug name stem, what class of medication is this?",
+      "explanation": "The '-sartan' stem identifies olmesartan as an angiotensin II receptor blocker (ARB). ARBs are widely used across the Caribbean for hypertension management and are commonly found on CDAP and NHF formulary lists. Other ARBs include losartan, valsartan, irbesartan, and candesartan — all sharing the telltale '-sartan' stem.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 3,
+  "duration_minutes": 30
+}

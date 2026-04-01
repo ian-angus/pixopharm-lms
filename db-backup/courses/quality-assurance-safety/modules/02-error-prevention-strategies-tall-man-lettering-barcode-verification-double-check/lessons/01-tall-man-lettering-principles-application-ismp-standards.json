@@ -1,0 +1,120 @@
+{
+  "id": "7ea3bda2-06f0-415b-8cad-00e01af048c2",
+  "module_id": "8da2e0ca-0c98-417f-86ed-27157562e5f6",
+  "title": "Tall Man Lettering: Principles, Application & ISMP Standards",
+  "content": [
+    {
+      "text": "Making Differences Visible",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Tall Man Lettering (TML) is a visual strategy that uses uppercase letters to highlight the differences between look-alike drug names. By drawing the eye to the distinguishing characters, TML reduces the likelihood that a reader will confuse two similar names. The technique was first recommended by the FDA in 2001 and has since been adopted by the ISMP, the Joint Commission, and the WHO as a core medication safety strategy.",
+      "type": "text"
+    },
+    {
+      "term": "Tall Man Lettering (TML)",
+      "type": "key-term",
+      "definition": "A safety strategy that uses UPPERCASE letters to emphasise the portions of drug names that differ between look-alike pairs. For example: hydrOXYzine vs. hydrALAZINE. The capitalised letters force the reader to slow down and recognise the distinguishing characters."
+    },
+    {
+      "body": "The ISMP publishes and regularly updates a standardised list of drug name pairs that should be displayed with Tall Man Lettering. This list is the authoritative reference for pharmacy practice. Key principles of TML implementation include: always capitalise the portion of the name that differs between the confused pair, apply TML consistently across all pharmacy systems (labels, shelves, computer screens, order forms), and combine TML with other safety strategies — it is not a standalone solution.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "hydrOXYzine",
+          "hydrALAZINE",
+          "Antihistamine vs. Antihypertensive"
+        ],
+        [
+          "predniSONE",
+          "prednisoLONE",
+          "Corticosteroids (different potency)"
+        ],
+        [
+          "metFORMIN",
+          "metroNIDAZOLE",
+          "Antidiabetic vs. Antibiotic"
+        ],
+        [
+          "gliMEPIRide",
+          "glyBURIDE",
+          "Both sulphonylureas — different dosing"
+        ],
+        [
+          "buPROPion",
+          "busPIRone",
+          "Antidepressant vs. Anxiolytic"
+        ],
+        [
+          "cloNIDine",
+          "clonAZEPAM",
+          "Antihypertensive vs. Benzodiazepine"
+        ],
+        [
+          "DOBUTamine",
+          "DOPamine",
+          "Both vasopressors — different indications"
+        ],
+        [
+          "vinCRIStine",
+          "vinBLAStine",
+          "Both vinca alkaloids — fatal mix-up risk"
+        ]
+      ],
+      "type": "table",
+      "caption": "ISMP Tall Man Lettering Examples Relevant to Caribbean Practice",
+      "headers": [
+        "Drug Name with TML",
+        "Commonly Confused With",
+        "Therapeutic Class"
+      ]
+    },
+    {
+      "body": "Tall Man Lettering is only effective if it is applied consistently and universally throughout the pharmacy. This means: shelf labels, prescription labels, computer system displays, refrigerator labels, automated dispensing cabinets, and staff training materials must all use TML for ISMP-listed drug pairs. Partial implementation creates a false sense of security.",
+      "type": "callout",
+      "title": "Implementing TML in Your Pharmacy",
+      "variant": "tip"
+    },
+    {
+      "body": "Research evidence supports TML as an effective error-reduction strategy, though it works best when combined with other interventions. Studies show that TML reduces look-alike name confusion by 35-50% in experimental settings. However, TML alone cannot prevent all LASA errors — it must be part of a comprehensive approach that includes physical separation on shelves, colour-coded labels, barcode verification, and independent double-checks.",
+      "type": "text"
+    },
+    {
+      "text": "The Five Rights of Medication Safety",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Every dispensing act should be verified against the Five Rights: the Right Patient, the Right Drug, the Right Dose, the Right Route, and the Right Time. These rights are not merely a checklist — they are a cognitive framework that should run through every step of the dispensing process. Some authorities add additional rights: the Right Documentation, the Right Reason, and the Right Response.",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Right Patient — confirm the patient's identity using at least two identifiers (name and date of birth, or name and address)",
+        "Right Drug — verify the drug name matches the prescription, using TML awareness for LASA pairs",
+        "Right Dose — confirm the dose, strength, and quantity match the prescription",
+        "Right Route — ensure the formulation matches the prescribed route (oral, topical, injectable, etc.)",
+        "Right Time — verify the dosing frequency and timing instructions"
+      ],
+      "ordered": true
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "5-10%",
+        "15-25%",
+        "35-50%",
+        "75-90%"
+      ],
+      "question": "Tall Man Lettering has been shown in research to reduce look-alike name confusion by approximately:",
+      "explanation": "Research indicates that Tall Man Lettering reduces look-alike drug name confusion by 35-50% in experimental settings. While significant, this is not sufficient on its own — TML must be combined with physical separation, barcode verification, and other strategies for comprehensive LASA error prevention.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 30
+}

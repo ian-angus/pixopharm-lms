@@ -1,0 +1,128 @@
+{
+  "id": "b6febde5-7f6b-4ec4-a32d-daafc1767693",
+  "module_id": "aaa6f0c8-9dee-4403-9dce-33b8977e2a1c",
+  "title": "Working in T&T Pharmacies: Community, Hospital & CDAP Dispensing Sites",
+  "content": [
+    {
+      "text": "Where Pharmacy Technicians Work in T&T",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Trinidad and Tobago offers a diverse range of pharmacy work environments, each with its own rhythm, challenges, and rewards. Whether you end up in a busy community pharmacy on Frederick Street, the hospital pharmacy at EWMSC, or a CDAP dispensing site in a rural health centre, the fundamentals remain the same — accuracy, patient care, and regulatory compliance. But the day-to-day realities differ significantly.",
+      "type": "text"
+    },
+    {
+      "text": "Community Pharmacy",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Community (retail) pharmacies are the most common employer of pharmacy technicians in T&T. They range from large chain operations (such as SuperPharm, Bhagan's Drugs, and MedPlus) to independent owner-operated pharmacies in towns and villages across both islands. As a community pharmacy technician, your day will typically involve receiving and entering prescriptions, pulling and preparing medications, managing inventory, handling OTC sales, and increasingly processing CDAP prescriptions.",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Typical hours: 8:00 AM – 6:00 PM weekdays; 8:00 AM – 1:00 PM Saturdays; some pharmacies open Sundays",
+        "Major chains: SuperPharm (largest), Bhagan's Drug Mart, MedPlus Pharmacy, PharmaCare",
+        "CDAP participation: Most community pharmacies participate in CDAP, making it a major revenue stream",
+        "OTC sales: A significant portion of revenue comes from over-the-counter medications, vitamins, and personal care products",
+        "Patient relationship: In smaller pharmacies, you will know your regular patients by name — relationship-building is key"
+      ],
+      "ordered": false
+    },
+    {
+      "text": "Hospital Pharmacy",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Hospital pharmacy in T&T operates within the RHA system. Major hospital pharmacies — such as those at Port of Spain General Hospital, San Fernando General Hospital, and the Eric Williams Medical Sciences Complex (EWMSC) — handle inpatient dispensing, outpatient prescriptions, IV admixture preparation, and controlled substance management. Hospital pharmacy tends to be more structured and protocol-driven than community practice.",
+      "type": "text"
+    },
+    {
+      "body": "In hospital pharmacy, you work on a shift roster (including nights and weekends), dispense from a limited formulary, and handle more complex medications (injectables, chemotherapy pre-packs, controlled substances). In community pharmacy, you work regular business hours, deal with a broader range of products, and have more direct patient interaction. Many technicians find it valuable to gain experience in both settings.",
+      "type": "callout",
+      "title": "Hospital vs. Community — Key Differences",
+      "variant": "tip"
+    },
+    {
+      "text": "CDAP Dispensing Sites",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Some health centres and district facilities operate as dedicated CDAP dispensing sites. These are typically staffed by a pharmacist and one or two technicians, and focus exclusively on processing CDAP prescriptions. The pace can be intense — some CDAP sites process 150-300 prescriptions per day — and the work is highly repetitive (the same medications for the same conditions), but it is an excellent way to build speed, accuracy, and familiarity with chronic disease medications.",
+      "type": "text"
+    },
+    {
+      "type": "island-comparison",
+      "title": "Pharmacy Work Environments Across the Caribbean",
+      "islands": [
+        {
+          "flag": "🇹🇹",
+          "name": "Trinidad & Tobago",
+          "details": [
+            "Largest pharmacy workforce in the region; most diverse range of settings",
+            "CDAP creates a unique public-private dispensing model not found on other islands",
+            "Major chains (SuperPharm, Bhagan's) dominate the community pharmacy sector",
+            "RHA hospital pharmacies are the primary public-sector employers",
+            "Salary range for technicians: approximately TT$4,000–$8,000/month"
+          ]
+        },
+        {
+          "flag": "🇯🇲",
+          "name": "Jamaica",
+          "details": [
+            "Fontana Pharmacy is the dominant chain; many independent pharmacies",
+            "NHF programme drives a high volume of chronic disease dispensing",
+            "Hospital pharmacy at University Hospital of the West Indies (UHWI) is a premier training site",
+            "Salary range for technicians: approximately J$80,000–$160,000/month"
+          ]
+        },
+        {
+          "flag": "🇧🇧",
+          "name": "Barbados",
+          "details": [
+            "Queen Elizabeth Hospital (QEH) is the primary hospital pharmacy employer",
+            "Barbados Drug Service makes the public sector pharmacy experience unique",
+            "Smaller community pharmacy market; Collin's Pharmacy and Knights Pharmacy are well known",
+            "Salary range for technicians: approximately BDS$2,500–$4,500/month"
+          ]
+        },
+        {
+          "flag": "🇬🇩",
+          "name": "Grenada",
+          "details": [
+            "Very small pharmacy workforce; everyone knows everyone",
+            "General Hospital pharmacy in St. George's is the main public employer",
+            "SGU presence creates opportunities for pharmacy support roles",
+            "Salary range for technicians: approximately EC$2,000–$3,500/month"
+          ]
+        }
+      ],
+      "description": "How pharmacy work settings compare between the four islands covered in this course."
+    },
+    {
+      "body": "As a newly certified pharmacy technician in T&T, expect a starting salary of approximately TT$4,000–$5,500 per month in the private sector and TT$5,000–$7,000 in the public sector (RHA). Public-sector positions offer pension, medical, and leave benefits that significantly increase total compensation. Salaries increase with experience, additional certifications, and specialised skills (e.g. sterile compounding, oncology).",
+      "type": "callout",
+      "title": "Starting Salary Expectations",
+      "variant": "info"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Fontana Pharmacy",
+        "Bhagan's Drug Mart",
+        "SuperPharm",
+        "Knights Pharmacy"
+      ],
+      "question": "Which of the following is the largest community pharmacy chain in Trinidad & Tobago?",
+      "explanation": "SuperPharm is the largest community pharmacy chain in Trinidad & Tobago, with multiple locations across both islands. Fontana is the major chain in Jamaica, Knights is a well-known brand in Barbados, and Bhagan's is a significant but smaller T&T chain.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 5,
+  "duration_minutes": 35
+}

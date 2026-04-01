@@ -1,0 +1,178 @@
+[
+  {
+    "id": "6913213b-f8f9-4003-a764-d8772612b913",
+    "module_id": "f2c4ca68-e98b-42d1-8711-b24c619e1e6b",
+    "question": "What is the difference between general literacy and health literacy?",
+    "options": [
+      "There is no difference — they are the same concept",
+      "Health literacy is the ability to read, while general literacy is the ability to do maths",
+      "General literacy is the ability to read and write; health literacy is the capacity to obtain, process, and understand health information to make appropriate health decisions",
+      "Health literacy only applies to healthcare professionals"
+    ],
+    "correct_answer": 2,
+    "explanation": "General literacy refers to basic reading and writing skills, while health literacy specifically addresses the ability to understand and use health information for decision-making. A person can be generally literate but health illiterate — unable to interpret medication labels, dosing charts, or health education materials.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "40d868af-c85c-4417-b28c-a17d33ec6241",
+    "module_id": "f2c4ca68-e98b-42d1-8711-b24c619e1e6b",
+    "question": "Which of the following is a red flag for limited health literacy?",
+    "options": [
+      "The patient asks detailed, specific questions about drug interactions",
+      "The patient consistently says 'I forgot my glasses' when asked to read labels",
+      "The patient arrives early for their appointment",
+      "The patient knows the names of all their medications"
+    ],
+    "correct_answer": 1,
+    "explanation": "Repeatedly claiming to have forgotten glasses is a classic coping strategy for patients who cannot read. They avoid reading in the pharmacy to hide their difficulty. Other red flags include 'I will read it at home,' incomplete forms, and reliance on family members for all communication.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "b5e45220-f64b-4c25-9110-7f34c0299263",
+    "module_id": "f2c4ca68-e98b-42d1-8711-b24c619e1e6b",
+    "question": "The 'universal precautions' approach to health literacy means:",
+    "options": [
+      "Only communicating with patients who have confirmed low literacy",
+      "Using clear, plain language, visual aids, and teach-back with EVERY patient regardless of perceived literacy level",
+      "Refusing to dispense medications to patients who cannot read",
+      "Requiring all patients to pass a literacy test before receiving medications"
+    ],
+    "correct_answer": 1,
+    "explanation": "Universal precautions apply clear communication strategies to every patient interaction, eliminating the need to identify (and potentially embarrass) individual patients with low literacy. This approach ensures no one falls through the gap and improves communication quality for all patients.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "881a3d1c-4383-4680-9296-0bef33b7230b",
+    "module_id": "f2c4ca68-e98b-42d1-8711-b24c619e1e6b",
+    "question": "Convert the following instruction to plain language: 'Administer 10 mL PO TID AC.'",
+    "options": [
+      "Take 10 millilitres by mouth three times a day before meals",
+      "Swallow two teaspoons three times a day before eating"
+    ],
+    "correct_answer": 0,
+    "explanation": "PO = by mouth, TID = three times daily, AC = before meals. In plain language: 'Take 10 millilitres (two teaspoons) by mouth three times a day before eating.' For even plainer communication: 'Swallow two teaspoons of this medicine before breakfast, before lunch, and before dinner.'",
+    "order_index": 3,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "442410ba-4a82-4073-aecb-6af573bbb82a",
+    "module_id": "f2c4ca68-e98b-42d1-8711-b24c619e1e6b",
+    "question": "What reading level is recommended for patient education materials?",
+    "options": [
+      "University level (Grade 12+)",
+      "High school level (Grade 9-10)",
+      "Grade 5-6 level (age 10-11)",
+      "There is no recommended level"
+    ],
+    "correct_answer": 2,
+    "explanation": "Best practice recommends writing patient education materials at a Grade 5-6 reading level (age 10-11). This ensures accessibility for the widest range of patients. It is not 'dumbing down' — it is effective communication that uses short sentences, common words, and active voice.",
+    "order_index": 4,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "c6056884-b923-43b7-a51e-dd81240bcb35",
+    "module_id": "f2c4ca68-e98b-42d1-8711-b24c619e1e6b",
+    "question": "What percentage of Caribbean adults are estimated to have inadequate or marginal health literacy?",
+    "options": [
+      "10-15%",
+      "20-25%",
+      "40-50%",
+      "70-80%"
+    ],
+    "correct_answer": 2,
+    "explanation": "Studies suggest that 40-50% of adults in the Caribbean have inadequate or marginal health literacy, despite relatively high general literacy rates. This discrepancy highlights the critical importance of health literacy-sensitive communication in every pharmacy interaction.",
+    "order_index": 5,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "7a480612-c756-497d-9503-ce414d2d9e9b",
+    "module_id": "f2c4ca68-e98b-42d1-8711-b24c619e1e6b",
+    "question": "A colour-coded medication schedule primarily helps patients who:",
+    "options": [
+      "Are colour-blind",
+      "Take multiple medications and struggle to read medication labels",
+      "Prefer brand-name medications",
+      "Have perfect health literacy but are forgetful"
+    ],
+    "correct_answer": 1,
+    "explanation": "Colour-coded medication schedules help patients on multiple medications identify which medications to take at which times without needing to read labels. The coloured stickers on bottles match a time-of-day chart, bypassing reading requirements entirely. Note: colour-blind patients require alternative approaches (e.g., shape or texture coding).",
+    "order_index": 6,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "b8d4a7b8-ff75-4be4-aad6-6a4c3d07c1f3",
+    "module_id": "f2c4ca68-e98b-42d1-8711-b24c619e1e6b",
+    "question": "Mr. Ravi, who cannot read, has been prescribed warfarin with variable dosing. Which visual aid would be MOST appropriate?",
+    "options": [
+      "A detailed written information leaflet in large font",
+      "A colour-coded dose calendar showing which coloured tablet to take on which day",
+      "A verbal explanation only — no visual aids needed",
+      "An audio recording of the pharmacist explaining the dose schedule"
+    ],
+    "correct_answer": 1,
+    "explanation": "For warfarin, which often requires different doses on different days, a colour-coded dose calendar is the most effective visual aid for patients with limited literacy. Each tablet colour is matched to the correct day on a calendar, allowing the patient to self-manage dosing without reading. While audio recordings can supplement, visual tools provide a persistent, at-a-glance reference.",
+    "order_index": 7,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "hard",
+    "blooms_level": "evaluate"
+  },
+  {
+    "id": "c47f671b-1722-4a4d-abc3-07d703735cc0",
+    "module_id": "f2c4ca68-e98b-42d1-8711-b24c619e1e6b",
+    "question": "True or false: A patient with a high school diploma cannot have low health literacy.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": 1,
+    "explanation": "False. Health literacy is distinct from general educational attainment. Many patients with secondary or even post-secondary education struggle with health information because it requires specialised vocabulary, numeracy, and system navigation skills that are not taught in standard education. Universal precautions should be applied regardless of a patient's educational background.",
+    "order_index": 8,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "2380006a-788b-413d-bc8c-31a103d2b188",
+    "module_id": "f2c4ca68-e98b-42d1-8711-b24c619e1e6b",
+    "question": "Match each pictogram symbol with its meaning for medication labels.",
+    "options": [
+      "Sun icon",
+      "Moon icon",
+      "Plate with cutlery",
+      "Crossed-out wine glass"
+    ],
+    "correct_answer": 0,
+    "explanation": "Sun = take in the morning; Moon = take at night; Plate with cutlery = take with food; Crossed-out wine glass = no alcohol while taking this medication. These standardised pictograms communicate dosing instructions across language and literacy barriers.",
+    "order_index": 9,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  }
+]

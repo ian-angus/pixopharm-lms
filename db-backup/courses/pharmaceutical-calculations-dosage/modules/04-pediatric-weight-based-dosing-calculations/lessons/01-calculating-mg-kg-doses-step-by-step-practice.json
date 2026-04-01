@@ -1,0 +1,125 @@
+{
+  "id": "f90562b9-9a3f-4047-b982-527c35533d49",
+  "module_id": "026af364-0a48-4e14-b54f-e7a0e6483591",
+  "title": "Calculating mg/kg Doses: Step-by-Step Practice",
+  "content": [
+    {
+      "text": "The mg/kg Calculation Workflow",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "This lesson provides intensive practice with weight-based dose calculations. Every calculation follows the same systematic workflow: (1) Convert weight to kg if needed. (2) Calculate the dose: weight × mg/kg. (3) Determine the volume or tablet quantity from available stock. (4) Verify against maximum dose limits. (5) Calculate the total supply quantity.",
+      "type": "text"
+    },
+    {
+      "text": "Practice Problem 1: Amoxicillin for Otitis Media",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Prescription: Amoxicillin 40 mg/kg/day in 3 divided doses × 7 days for a 2-year-old weighing 12 kg. Step 1: Weight = 12 kg (already in kg). Step 2: Total daily dose = 40 × 12 = 480 mg/day. Step 3: Dose per administration = 480 ÷ 3 = 160 mg. Step 4: Stock = amoxicillin 125 mg/5 mL. Volume per dose = (160/125) × 5 = 6.4 mL (round to 6.5 mL using a dosing syringe). Step 5: Daily volume = 6.5 × 3 = 19.5 mL. Total for 7 days = 19.5 × 7 = 136.5 mL. Dispense two 100 mL bottles.",
+      "type": "text"
+    },
+    {
+      "text": "Practice Problem 2: Paracetamol for Fever",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "A mother in Bridgetown, Barbados brings her 5-year-old (18 kg) to the pharmacy with a fever of 38.5°C. The pharmacist recommends paracetamol 15 mg/kg/dose every 4-6 hours PRN, maximum 4 doses in 24 hours. Calculate: Dose = 15 × 18 = 270 mg. Stock: paracetamol 120 mg/5 mL. Volume = (270/120) × 5 = 11.25 mL. Round to 11 mL for practical measurement with an oral syringe. Max daily: 270 × 4 = 1080 mg (check: 60 mg/kg/day = 1080 mg — at the maximum, which is acceptable for short-term use).",
+      "type": "text"
+    },
+    {
+      "text": "Practice Problem 3: Co-trimoxazole Prophylaxis",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "An HIV-positive child in Trinidad, aged 8, weighing 24 kg, requires co-trimoxazole (trimethoprim/sulfamethoxazole) prophylaxis. The dose for prophylaxis is trimethoprim 5 mg/kg once daily. Stock: co-trimoxazole 40/200 mg per 5 mL (trimethoprim 40 mg per 5 mL). Dose = 5 × 24 = 120 mg trimethoprim. Volume = (120/40) × 5 = 15 mL once daily. Alternatively, if the child can swallow tablets, co-trimoxazole 80/400 mg tablets: 120 mg ÷ 80 mg = 1.5 tablets (round to 1½ tablets if scored).",
+      "type": "text"
+    },
+    {
+      "body": "Co-trimoxazole prophylaxis is a cornerstone of paediatric HIV care across the Caribbean. It prevents opportunistic infections including Pneumocystis pneumonia and toxoplasmosis. The Caribbean HIV Treatment Guidelines, coordinated by CARPHA, recommend prophylaxis for all HIV-exposed infants from 4-6 weeks of age until HIV infection is excluded. Pharmacy technicians in CDAP pharmacies and NHF-affiliated facilities will calculate these doses regularly.",
+      "type": "callout",
+      "title": "Co-trimoxazole in Caribbean HIV Care",
+      "variant": "info"
+    },
+    {
+      "rows": [
+        [
+          "Paracetamol",
+          "Fever, pain",
+          "15 mg/kg/dose",
+          "Q4-6H PRN (max 4/day)",
+          "75 mg/kg/day or 4 g"
+        ],
+        [
+          "Ibuprofen",
+          "Fever, pain, inflammation",
+          "5-10 mg/kg/dose",
+          "Q6-8H",
+          "40 mg/kg/day or 2.4 g"
+        ],
+        [
+          "Amoxicillin",
+          "Standard infections",
+          "25 mg/kg/dose",
+          "TDS",
+          "3 g/day"
+        ],
+        [
+          "Amoxicillin",
+          "High-dose (otitis media)",
+          "40-45 mg/kg/dose",
+          "BD",
+          "3 g/day"
+        ],
+        [
+          "Cefalexin",
+          "Skin/UTI infections",
+          "12.5-25 mg/kg/dose",
+          "QDS",
+          "4 g/day"
+        ],
+        [
+          "Azithromycin",
+          "Respiratory infections",
+          "10 mg/kg/dose day 1, then 5 mg/kg",
+          "OD",
+          "500 mg/day"
+        ],
+        [
+          "Metronidazole",
+          "Anaerobic/parasitic",
+          "7.5 mg/kg/dose",
+          "TDS",
+          "2 g/day"
+        ]
+      ],
+      "type": "table",
+      "caption": "Weight-Based Doses for Common Caribbean Paediatric Medications",
+      "headers": [
+        "Medication",
+        "Indication",
+        "Dose (mg/kg)",
+        "Frequency",
+        "Max Daily Dose"
+      ]
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "5.5 mL",
+        "11 mL",
+        "15 mL",
+        "22 mL"
+      ],
+      "question": "A 6-year-old weighing 22 kg is prescribed amoxicillin 25 mg/kg/dose TDS × 7 days. Stock: 250 mg/5 mL. What volume per dose?",
+      "explanation": "Dose = 25 × 22 = 550 mg. Volume = (550/250) × 5 = 11 mL per dose. Daily = 11 × 3 = 33 mL. Weekly = 33 × 7 = 231 mL. Dispense three 100 mL bottles (or the locally available 150 mL and 100 mL combination).",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 30
+}

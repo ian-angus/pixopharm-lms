@@ -1,0 +1,98 @@
+{
+  "id": "5b34b499-78aa-40ce-a1ae-0fcdf966774c",
+  "module_id": "710621ab-0904-462c-84b8-da3229d5c8dc",
+  "title": "Patient Rights in Caribbean Pharmacy",
+  "content": [
+    {
+      "text": "Rights That Cannot Be Dispensed Away",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Every person who enters a pharmacy is entitled to certain fundamental rights — regardless of their condition, background, ability to pay, or social status. These rights are enshrined in various Caribbean health legislation, professional codes of conduct, and international declarations. As a pharmacy technician, understanding and upholding these rights is not optional — it is the bedrock of professional practice.",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Right to information: Patients have the right to receive complete, accurate, and understandable information about their medications, including benefits, risks, side effects, and alternatives",
+        "Right to refuse treatment: Patients have the right to decline any medication or pharmaceutical service, even if the healthcare team disagrees with their decision",
+        "Right to privacy: Patients have the right to have their health information kept confidential and to receive pharmaceutical services in a private setting",
+        "Right to respect: Patients have the right to be treated with dignity, regardless of their condition, background, or ability to pay",
+        "Right to access: Patients have the right to access pharmaceutical services without discrimination based on race, gender, religion, sexual orientation, or health status",
+        "Right to continuity of care: Patients have the right to consistent, reliable access to their medications, including during emergencies and transitions between healthcare settings",
+        "Right to complain: Patients have the right to raise concerns about pharmaceutical services without fear of retaliation or reduced quality of care"
+      ],
+      "ordered": true
+    },
+    {
+      "body": "When a patient refuses a medication you know they need, it can be deeply frustrating. Mrs. Doreen refusing metformin, Mr. Desmond skipping atenolol on weekends, a Rastafarian patient declining all pharmaceutical medications — these decisions may seem irrational to you. But patient autonomy is absolute. You can inform, educate, and counsel. You cannot coerce. Document the counselling provided and the patient's decision, and ensure they know they can return at any time.",
+      "type": "callout",
+      "title": "The Right to Refuse — Even When It Frustrates You",
+      "variant": "warning"
+    },
+    {
+      "term": "Patient Autonomy",
+      "type": "key-term",
+      "definition": "The right of patients to make informed decisions about their own healthcare, including the right to accept or refuse treatment. It is considered one of the four fundamental principles of medical ethics (alongside beneficence, non-maleficence, and justice). In pharmacy, patient autonomy means providing information and counselling, then respecting the patient's decision."
+    },
+    {
+      "type": "island-comparison",
+      "title": "Patient Rights Frameworks Across the Caribbean",
+      "islands": [
+        {
+          "flag": "🇹🇹",
+          "name": "Trinidad & Tobago",
+          "details": [
+            "Patients' Charter of Trinidad & Tobago outlines rights and responsibilities in healthcare",
+            "Pharmacy Board Act (Chapter 29:52) governs pharmacy practice and professional conduct",
+            "Data Protection Act (2011) provides a legal framework for health data privacy",
+            "No standalone patient consent legislation — consent is governed by common law principles",
+            "Regional Health Authorities have their own patient rights policies for public pharmacies"
+          ]
+        },
+        {
+          "flag": "🇯🇲",
+          "name": "Jamaica",
+          "details": [
+            "Jamaican Patients' Charter establishes rights including informed consent and confidentiality",
+            "Pharmacy Act (1975, amended) and Pharmacy Council Code of Ethics govern professional standards",
+            "Access to Information Act provides a framework for health record access",
+            "No comprehensive data protection legislation as of 2024, though draft bills have been tabled",
+            "Professional ethics codes fill the gap where legislation is pending"
+          ]
+        },
+        {
+          "flag": "🇧🇧",
+          "name": "Barbados",
+          "details": [
+            "Barbados Patients' Bill of Rights applies across public health facilities",
+            "Pharmacy Act (Cap. 372D) and Drug Service regulations govern pharmaceutical services",
+            "Data Protection Act (2019) establishes comprehensive data privacy protections including health data",
+            "Queen Elizabeth Hospital and polyclinics have documented patient rights and complaint procedures",
+            "Strong professional ethics tradition through the Pharmaceutical Society of Barbados"
+          ]
+        }
+      ],
+      "description": "While the principles are universal, the legal frameworks vary by jurisdiction."
+    },
+    {
+      "body": "In the Caribbean, where many patients rely on the pharmacy as their primary healthcare touchpoint, upholding patient rights carries additional weight. The pharmacy may be the only place where a patient receives health information, where their concerns are heard, and where their dignity as a healthcare consumer is either upheld or undermined. Every pharmacy technician is a guardian of these rights.",
+      "type": "text"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Refuse to serve the patient until they agree to take the medication",
+        "Call the patient's doctor without the patient's consent to report their non-compliance",
+        "Document the counselling provided and the patient's informed decision to refuse, and ensure they know they can return at any time",
+        "Dispense the medication anyway and tell the family to ensure the patient takes it"
+      ],
+      "question": "A patient refuses to take their prescribed anticoagulant after you have thoroughly counselled them on its importance. What is the correct course of action?",
+      "explanation": "Patient autonomy is absolute — after informed counselling, the patient has the right to refuse any medication. The technician should document the counselling provided and the patient's decision, inform the pharmacist, and ensure the patient knows they can return if they change their mind. Coercion, secret reporting, or dispensing without consent all violate patient rights.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 20
+}

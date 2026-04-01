@@ -1,0 +1,182 @@
+[
+  {
+    "id": "e3d34768-7e04-4e1c-9d16-d0df0d15b4d3",
+    "module_id": "422a447f-ed9b-4281-abdb-94d3a9124d6c",
+    "question": "What does PDSA stand for?",
+    "options": [
+      "Plan-Design-Study-Assess",
+      "Plan-Do-Study-Act",
+      "Prepare-Deliver-Score-Adjust",
+      "Problem-Data-Solution-Action"
+    ],
+    "correct_answer": 1,
+    "explanation": "PDSA stands for Plan-Do-Study-Act. It is a four-stage iterative quality improvement cycle developed by W. Edwards Deming. Plan the change, Do (implement) it on a small scale, Study the results, and Act on what was learned — then repeat.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "58630d8b-9ac1-422e-9620-03c5ca5a8e6b",
+    "module_id": "422a447f-ed9b-4281-abdb-94d3a9124d6c",
+    "question": "In the PDSA cycle, what happens during the 'Study' phase?",
+    "options": [
+      "The team studies textbooks on quality improvement",
+      "Baseline data is collected before making any changes",
+      "Results of the test change are analysed and compared to baseline data",
+      "Staff are studied to determine who is responsible for quality problems"
+    ],
+    "correct_answer": 2,
+    "explanation": "The Study phase involves analysing the results of the test change and comparing outcome data to the baseline data collected during the Plan phase. The key question is: did the change produce the desired improvement? This evidence-based assessment drives the decision in the Act phase.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "dbc257d5-2cf1-40b4-9e37-775eb94230ce",
+    "module_id": "422a447f-ed9b-4281-abdb-94d3a9124d6c",
+    "question": "A pharmacy's dispensing error rate drops from 5 per 1,000 to 2 per 1,000 prescriptions after implementing a barcode scanning check. However, three months later, the rate has crept back up to 4 per 1,000. What is the most likely explanation?",
+    "options": [
+      "The barcode scanning technology has malfunctioned",
+      "The improvement was not sustained because it was not embedded in SOPs, training, and ongoing monitoring",
+      "Dispensing errors are impossible to reduce permanently",
+      "The initial improvement was a statistical anomaly"
+    ],
+    "correct_answer": 1,
+    "explanation": "Regression to previous performance levels is the most common failure of CQI initiatives. It typically occurs when changes are not formally embedded in SOPs, staff are not retrained, and ongoing monitoring lapses. Sustained improvement requires systemic embedding — not just initial enthusiasm.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "hard",
+    "blooms_level": "evaluate"
+  },
+  {
+    "id": "aa2ac72c-0055-46b8-a151-e43357dd4464",
+    "module_id": "422a447f-ed9b-4281-abdb-94d3a9124d6c",
+    "question": "Which quality indicator would BEST measure the safety culture of a pharmacy?",
+    "options": [
+      "Total revenue per month",
+      "Number of prescriptions dispensed per day",
+      "Near-miss reporting rate (near-misses reported per month)",
+      "Average staff salary"
+    ],
+    "correct_answer": 2,
+    "explanation": "The near-miss reporting rate is a strong indicator of safety culture because it reflects staff willingness to identify and report errors caught before they reach patients. A high near-miss reporting rate (and an increasing trend) suggests a culture where safety is valued and staff feel safe reporting without fear of punishment.",
+    "order_index": 3,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "evaluate"
+  },
+  {
+    "id": "f364966d-33cd-45ba-83e2-2dfbacddc7f1",
+    "module_id": "422a447f-ed9b-4281-abdb-94d3a9124d6c",
+    "question": "Why is baseline data collection essential before implementing a CQI change?",
+    "options": [
+      "It is a regulatory requirement in all Caribbean jurisdictions",
+      "Without baseline data, it is impossible to determine whether the change produced a genuine improvement",
+      "Baseline data is only needed for statistical research, not practical quality improvement",
+      "It helps identify which staff member to blame for the current quality problems"
+    ],
+    "correct_answer": 1,
+    "explanation": "Baseline data establishes the 'before' measurement against which the 'after' measurement is compared. Without it, there is no evidence that the change actually produced an improvement — any perceived improvement might be due to normal variation, seasonal factors, or the Hawthorne effect (improvement from being observed, not from the intervention itself).",
+    "order_index": 4,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "34ce1da2-ab47-4d2a-bd70-147b4dab5f70",
+    "module_id": "422a447f-ed9b-4281-abdb-94d3a9124d6c",
+    "question": "In Lean quality improvement methodology, what is the primary focus?",
+    "options": [
+      "Adding more quality checkpoints to every process",
+      "Eliminating waste — unnecessary steps, waiting times, and excess inventory",
+      "Increasing the number of staff to reduce individual workload",
+      "Replacing human judgment with technology at every step"
+    ],
+    "correct_answer": 1,
+    "explanation": "Lean methodology focuses on eliminating waste in processes — any step, delay, or resource use that does not add value for the patient. In pharmacy, this might include reducing unnecessary paperwork, optimising shelf layout to minimise walking, or streamlining the prescription intake process.",
+    "order_index": 5,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "3ce956e1-092c-4d18-9b68-6398c40f8cb6",
+    "module_id": "422a447f-ed9b-4281-abdb-94d3a9124d6c",
+    "question": "Arrange the PDSA cycle stages in the correct order:",
+    "options": [
+      "Plan",
+      "Do",
+      "Study",
+      "Act"
+    ],
+    "correct_answer": 0,
+    "explanation": "The PDSA cycle follows the sequence: Plan (identify problem, design change), Do (implement on small scale), Study (analyse results vs. baseline), Act (adopt, modify, or abandon). This cycle then repeats iteratively, with each cycle building on the learning from the previous one.",
+    "order_index": 6,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "5c7bd1c2-45b1-4513-ac1c-0685ac47608a",
+    "module_id": "422a447f-ed9b-4281-abdb-94d3a9124d6c",
+    "question": "What is the IHI Model for Improvement's first guiding question?",
+    "options": [
+      "How much will this cost?",
+      "What are we trying to accomplish?",
+      "Who is responsible for quality?",
+      "When should we start?"
+    ],
+    "correct_answer": 1,
+    "explanation": "The IHI Model for Improvement wraps the PDSA cycle in three guiding questions: (1) What are we trying to accomplish? (2) How will we know a change is an improvement? (3) What change can we make that will result in improvement? The first question establishes a clear, specific, measurable aim before any change is attempted.",
+    "order_index": 7,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "9874b315-a57c-43d1-8ea5-1e45bda59722",
+    "module_id": "422a447f-ed9b-4281-abdb-94d3a9124d6c",
+    "question": "What is the recommended approach for a CQI test of change in a small Caribbean community pharmacy?",
+    "options": [
+      "Implement the change across the entire pharmacy operation immediately",
+      "Start with the smallest possible test — one technician, one shift, one week — and expand if successful",
+      "Wait until the pharmacy can afford advanced technology before attempting any quality improvement",
+      "Hire a CQI consultant before making any changes"
+    ],
+    "correct_answer": 1,
+    "explanation": "Small-scale testing is the cornerstone of PDSA-based CQI. Starting with one technician, one shift, one week minimises disruption, limits resource expenditure, and allows rapid learning. If the change works, it can be expanded. If it fails, very little has been lost. This 'start small, learn fast' philosophy is perfectly suited to resource-constrained Caribbean settings.",
+    "order_index": 8,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "edb06fbd-be1c-4ffe-b2e3-53d6790637ca",
+    "module_id": "422a447f-ed9b-4281-abdb-94d3a9124d6c",
+    "question": "A pharmacy displays its quality indicators on a whiteboard in the dispensary that is updated monthly. This approach is effective because:",
+    "options": [
+      "It replaces the need for computerised quality management systems",
+      "It makes data visible to the entire team, creates shared accountability, and celebrates improvements",
+      "It satisfies regulatory inspection requirements in all Caribbean jurisdictions",
+      "It is the only way to track quality indicators in a pharmacy"
+    ],
+    "correct_answer": 1,
+    "explanation": "Visual display of quality indicators creates transparency, shared ownership, and team motivation. When the entire team can see how the pharmacy is performing — and can see improvements resulting from their efforts — engagement and accountability increase. A simple whiteboard is often more effective than a complex electronic system that only the manager reviews.",
+    "order_index": 9,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "understand"
+  }
+]

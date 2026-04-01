@@ -1,0 +1,80 @@
+{
+  "id": "ce5578e6-2601-48d6-b937-2d1e2978957d",
+  "module_id": "a385e5c9-29c8-445d-af9a-42d9ce480f76",
+  "title": "Beta-Blockers & Combination Therapy",
+  "content": [
+    {
+      "text": "Slowing the Heart, Protecting the Vessels",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Beta-blockers reduce blood pressure by blocking beta-1 adrenergic receptors in the heart, decreasing heart rate, contractility, and cardiac output. They also reduce renin release from the kidneys. While no longer recommended as first-line monotherapy for uncomplicated hypertension, beta-blockers remain essential for patients with heart failure, post-myocardial infarction, angina, and certain arrhythmias.",
+      "type": "text"
+    },
+    {
+      "term": "Cardioselective Beta-Blocker",
+      "type": "key-term",
+      "definition": "A beta-blocker that preferentially blocks beta-1 receptors (heart) over beta-2 receptors (lungs, peripheral vessels). Examples: atenolol, bisoprolol, metoprolol. Safer in patients with asthma or COPD compared to non-selective agents, though caution is still warranted."
+    },
+    {
+      "body": "In Caribbean pharmacy practice, atenolol is the most commonly dispensed beta-blocker and is available on both CDAP and NHF formularies. Propranolol (non-selective) is widely used for performance anxiety, essential tremor, and migraine prophylaxis. For heart failure specifically, only bisoprolol, carvedilol, and metoprolol succinate have evidence for mortality reduction — other beta-blockers should not be substituted without prescriber direction.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Examples",
+          "Atenolol, metoprolol, bisoprolol",
+          "Propranolol, carvedilol, labetalol"
+        ],
+        [
+          "Primary effect",
+          "Heart rate and contractility reduction",
+          "Heart + bronchial smooth muscle + peripheral vessels"
+        ],
+        [
+          "Asthma risk",
+          "Lower risk at therapeutic doses",
+          "Contraindicated — may trigger bronchospasm"
+        ],
+        [
+          "Caribbean availability",
+          "Atenolol widely available on CDAP/NHF",
+          "Propranolol commonly used for anxiety, migraine"
+        ]
+      ],
+      "type": "table",
+      "caption": "Cardioselective vs Non-Selective Beta-Blockers",
+      "headers": [
+        "Feature",
+        "Cardioselective (Beta-1)",
+        "Non-Selective (Beta-1 & 2)"
+      ]
+    },
+    {
+      "body": "Most patients with moderate to severe hypertension require two or more antihypertensive drugs. The ABCD rule guides combination therapy: A (ACEi/ARB) + C (CCB) or A + D (diuretic) are preferred combinations. Combining ACEi with ARB is generally avoided due to increased risk of hyperkalaemia and renal impairment without additional benefit.",
+      "type": "text"
+    },
+    {
+      "body": "Single-pill combinations (e.g., amlodipine/valsartan, losartan/hydrochlorothiazide) reduce pill burden and improve adherence. In the Caribbean, where medication adherence is a major challenge, recommending combination tablets when available can significantly improve blood pressure control.",
+      "type": "callout",
+      "title": "Fixed-Dose Combinations Improve Adherence",
+      "variant": "tip"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Propranolol — because it is the cheapest",
+        "A cardioselective beta-blocker like bisoprolol, with close monitoring",
+        "Any beta-blocker is safe in asthma",
+        "Beta-blockers are absolutely contraindicated in all asthma patients"
+      ],
+      "question": "A patient with asthma and hypertension needs a beta-blocker for heart failure. Which is the safest choice?",
+      "explanation": "Cardioselective beta-blockers (bisoprolol, metoprolol) preferentially block beta-1 receptors and have minimal effect on beta-2 receptors in the airways at therapeutic doses. They can be used cautiously in patients with asthma when the benefit (e.g., heart failure management) outweighs the risk, with close monitoring.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 20
+}

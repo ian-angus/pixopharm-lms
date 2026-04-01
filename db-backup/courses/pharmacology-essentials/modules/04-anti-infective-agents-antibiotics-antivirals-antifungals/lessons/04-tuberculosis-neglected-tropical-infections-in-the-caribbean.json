@@ -1,0 +1,81 @@
+{
+  "id": "79308b0c-cdf8-4a07-9e15-711934b79ff5",
+  "module_id": "c354ee80-fb9f-423b-864a-2b0454f2bd54",
+  "title": "Tuberculosis & Neglected Tropical Infections in the Caribbean",
+  "content": [
+    {
+      "text": "TB and Parasitic Infections: Still Present in the Caribbean",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "While tuberculosis (TB) rates in the Caribbean are lower than in sub-Saharan Africa or Southeast Asia, TB has not been eliminated from the region. Haiti has the highest TB burden in the Caribbean, and cases occur throughout CARICOM territories, particularly among immunocompromised individuals (HIV co-infection), migrants, and people experiencing poverty. Parasitic infections — including intestinal helminths and schistosomiasis — also remain prevalent in parts of the Caribbean.",
+      "type": "text"
+    },
+    {
+      "term": "DOTS (Directly Observed Therapy, Short-course)",
+      "type": "key-term",
+      "definition": "The WHO-recommended strategy for TB treatment, where a healthcare worker directly observes the patient swallowing each dose of medication to ensure adherence. This is critical because incomplete TB treatment leads to drug-resistant TB. DOTS programmes operate across the Caribbean."
+    },
+    {
+      "rows": [
+        [
+          "Rifampicin",
+          "R",
+          "Inhibits bacterial RNA polymerase",
+          "Orange discolouration of body fluids; potent CYP450 inducer (many drug interactions)"
+        ],
+        [
+          "Isoniazid",
+          "I/H",
+          "Inhibits mycolic acid synthesis",
+          "Peripheral neuropathy (prevent with pyridoxine/vitamin B6); hepatotoxicity"
+        ],
+        [
+          "Pyrazinamide",
+          "Z",
+          "Disrupts membrane function (acidic pH)",
+          "Hepatotoxicity; hyperuricaemia (gout risk)"
+        ],
+        [
+          "Ethambutol",
+          "E",
+          "Inhibits cell wall synthesis",
+          "Optic neuritis (visual impairment) — requires baseline eye exam"
+        ]
+      ],
+      "type": "table",
+      "caption": "First-Line Anti-TB Medications (RIPE Regimen)",
+      "headers": [
+        "Drug",
+        "Abbreviation",
+        "Mechanism",
+        "Key Side Effect"
+      ]
+    },
+    {
+      "body": "Rifampicin colours urine, tears, sweat, and saliva orange-red. Patients MUST be warned about this or they will panic and stop treatment. It also stains contact lenses permanently. Additionally, rifampicin is one of the most powerful CYP450 inducers — it reduces the effectiveness of oral contraceptives, warfarin, many ARVs, and numerous other drugs. Always check for interactions.",
+      "type": "callout",
+      "title": "Rifampicin Turns Everything Orange",
+      "variant": "warning"
+    },
+    {
+      "body": "For intestinal parasites, albendazole (400 mg single dose for roundworm, hookworm, and whipworm) and mebendazole are the standard treatments in the Caribbean. Mass deworming programmes in schools, once common across the region, have reduced prevalence. Praziquantel is used for schistosomiasis and tapeworm infections. These anti-helminthic drugs are generally well tolerated with minimal side effects.",
+      "type": "text"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "They are having an allergic reaction and should stop treatment immediately",
+        "This is a normal and harmless effect of rifampicin — it colours body fluids orange-red",
+        "Their kidneys are failing and they need to go to hospital",
+        "The medication has expired and should be returned"
+      ],
+      "question": "A patient starting TB treatment asks why their urine has turned orange. What should you explain?",
+      "explanation": "Orange discolouration of urine, tears, sweat, and saliva is a well-known and harmless effect of rifampicin. Patients must be warned about this before starting treatment to prevent unnecessary alarm and treatment discontinuation.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 4,
+  "duration_minutes": 20
+}

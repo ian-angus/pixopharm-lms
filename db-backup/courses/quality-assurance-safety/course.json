@@ -1,0 +1,23 @@
+{
+  "id": "aeb6349b-61f4-4dc3-bdf8-d7828cdabfa6",
+  "title": "Quality Assurance & Safety",
+  "slug": "quality-assurance-safety",
+  "description": "Build the safety-first mindset that prevents medication errors and protects patients.",
+  "skill_level": "Advanced",
+  "duration_weeks": 6,
+  "icon": "ShieldCheck",
+  "color": "orange",
+  "prerequisites": [
+    "foundations-pharmacy-practice",
+    "dispensing-medication-management"
+  ],
+  "what_youll_learn": [
+    "Identify common medication errors",
+    "Conduct root cause analysis",
+    "Write and audit SOPs",
+    "Report adverse drug reactions",
+    "Establish CQI programmes"
+  ],
+  "status": "published",
+  "order": 10
+}

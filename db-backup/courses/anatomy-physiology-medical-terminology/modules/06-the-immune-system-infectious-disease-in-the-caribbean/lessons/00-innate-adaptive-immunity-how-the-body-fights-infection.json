@@ -1,0 +1,105 @@
+{
+  "id": "0fb7e982-ca00-42e1-9872-5f5cf023b103",
+  "module_id": "bfda189c-515f-4915-b7c9-01dc35e6f45b",
+  "title": "Innate & Adaptive Immunity: How the Body Fights Infection",
+  "content": [
+    {
+      "text": "The Immune System: Layers of Defence",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "The immune system is the body's defence network against pathogens — bacteria, viruses, fungi, and parasites. It operates through two complementary arms: innate (non-specific) immunity, which provides immediate, broad defence; and adaptive (specific) immunity, which mounts targeted responses against specific pathogens and provides immunological memory. Understanding the immune system is essential for pharmacy technicians because many medications — vaccines, immunosuppressants, anti-inflammatory drugs, and antimicrobials — interact with immune function.",
+      "type": "text"
+    },
+    {
+      "text": "Innate Immunity: The First Line of Defence",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Innate immunity is present from birth and provides immediate, non-specific protection. It includes physical barriers (skin, mucous membranes, cilia in the respiratory tract), chemical barriers (stomach acid, lysozyme in tears, antimicrobial peptides), and cellular components (neutrophils, macrophages, natural killer cells). The inflammatory response — characterised by redness, heat, swelling, and pain — is a hallmark of innate immunity: blood vessels dilate, immune cells rush to the site of infection, and chemical mediators coordinate the defence. Many medications, including NSAIDs and corticosteroids, work by modulating this inflammatory response.",
+      "type": "text"
+    },
+    {
+      "text": "Adaptive Immunity: Targeted and Memorable",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Adaptive immunity develops over time as the body encounters specific pathogens. It involves two main types of lymphocytes: B lymphocytes (B cells), which produce antibodies (immunoglobulins) that neutralise pathogens and mark them for destruction; and T lymphocytes (T cells), which include helper T cells (coordinate the immune response), cytotoxic T cells (directly kill infected cells), and regulatory T cells (prevent excessive immune responses). The hallmark of adaptive immunity is immunological memory — after encountering a pathogen once, the immune system can mount a faster, stronger response upon re-exposure. This is the principle underlying vaccination.",
+      "type": "text"
+    },
+    {
+      "term": "Antibody (Immunoglobulin)",
+      "type": "key-term",
+      "definition": "A Y-shaped protein produced by B lymphocytes (plasma cells) that binds specifically to an antigen (a foreign substance) on a pathogen. Antibodies neutralise pathogens, activate complement (a cascade of immune proteins), and tag pathogens for destruction by phagocytes. There are five classes: IgG (most abundant; crosses placenta), IgA (found in mucosal secretions), IgM (first antibody produced in an immune response), IgE (involved in allergic reactions and parasitic defence), and IgD (function in B cell activation)."
+    },
+    {
+      "term": "Vaccination",
+      "type": "key-term",
+      "definition": "The administration of a weakened, inactivated, or subunit form of a pathogen (or its toxin) to stimulate adaptive immunity without causing disease. The immune system generates memory B and T cells, enabling a rapid, effective response upon future exposure to the actual pathogen. Vaccines are among the most cost-effective public health interventions; CARPHA and PAHO coordinate vaccination programmes across the Caribbean."
+    },
+    {
+      "body": "The Expanded Programme on Immunisation (EPI), coordinated by PAHO/WHO, ensures that Caribbean nations maintain high vaccination coverage for childhood diseases (measles, mumps, rubella, polio, hepatitis B, Haemophilus influenzae type b). Pharmacy technicians may be involved in vaccine storage (maintaining the cold chain at 2-8°C), inventory management, and in some jurisdictions, assisting with vaccine administration under pharmacist supervision. COVID-19 vaccination programmes further expanded the role of pharmacies in Caribbean immunisation efforts.",
+      "type": "callout",
+      "title": "Vaccination Programmes in the Caribbean",
+      "variant": "info"
+    },
+    {
+      "rows": [
+        [
+          "Response speed",
+          "Immediate (minutes to hours)",
+          "Delayed (days to weeks on first exposure)"
+        ],
+        [
+          "Specificity",
+          "Non-specific — responds to broad pathogen patterns",
+          "Highly specific — targets individual antigens"
+        ],
+        [
+          "Memory",
+          "No memory — same response every time",
+          "Immunological memory — faster, stronger on re-exposure"
+        ],
+        [
+          "Key cells",
+          "Neutrophils, macrophages, natural killer cells",
+          "B lymphocytes, T lymphocytes"
+        ],
+        [
+          "Key molecules",
+          "Complement, cytokines, antimicrobial peptides",
+          "Antibodies (immunoglobulins)"
+        ],
+        [
+          "Clinical application",
+          "Anti-inflammatory drugs modulate innate responses",
+          "Vaccines stimulate adaptive immune memory"
+        ]
+      ],
+      "type": "table",
+      "caption": "Innate vs Adaptive Immunity Comparison",
+      "headers": [
+        "Feature",
+        "Innate Immunity",
+        "Adaptive Immunity"
+      ]
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Innate immunity",
+        "Adaptive immunity",
+        "Physical barrier immunity",
+        "Chemical barrier immunity"
+      ],
+      "question": "Which type of immunity provides immunological memory, allowing a faster response upon re-exposure to a pathogen?",
+      "explanation": "Adaptive immunity provides immunological memory through the generation of memory B and T cells. After the first encounter with a pathogen, these memory cells persist and can mount a faster, stronger immune response upon re-exposure — the principle that makes vaccination effective.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 30
+}

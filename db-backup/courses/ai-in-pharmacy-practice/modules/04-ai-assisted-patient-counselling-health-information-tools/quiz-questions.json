@@ -1,0 +1,146 @@
+[
+  {
+    "id": "c862e15f-94d3-41f9-89d3-313993275d44",
+    "module_id": "373bbb03-458a-4385-890c-f79814de2f62",
+    "question": "What is 'prompt engineering' in the context of using AI tools for pharmacy?",
+    "options": [
+      "Programming the pharmacy's computer systems",
+      "Crafting precise, context-rich questions to get accurate and useful AI responses",
+      "Engineering pharmaceutical manufacturing processes",
+      "Creating automated prescription prompts"
+    ],
+    "correct_answer": 1,
+    "explanation": "Prompt engineering is the practice of crafting precise, context-rich questions for AI systems. In pharmacy, this means including clinical context, patient specifics, and desired output format to get targeted, useful responses rather than vague generalities.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "45c5182e-afb8-4b2f-b98c-a9ea8d22a6c6",
+    "module_id": "373bbb03-458a-4385-890c-f79814de2f62",
+    "question": "After AI generates a patient education handout about a medication, what must happen before it reaches patients?",
+    "options": [
+      "It should be printed and distributed immediately",
+      "It should be posted on the pharmacy's social media",
+      "Every clinical fact must be verified against authoritative sources and the pharmacist must review it",
+      "It only needs to be spell-checked"
+    ],
+    "correct_answer": 2,
+    "explanation": "AI-generated patient education content must be clinically verified against authoritative sources (BNF, Lexicomp, drug monographs) and reviewed by the supervising pharmacist before distribution. AI can produce plausible but incorrect clinical information that could harm patients.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "01908558-4d49-46b7-9886-c1a6cd2c8efa",
+    "module_id": "373bbb03-458a-4385-890c-f79814de2f62",
+    "question": "Why is AI translation of clinical content particularly risky in Caribbean Creole languages?",
+    "options": [
+      "AI cannot translate any Creole languages at all",
+      "Creole languages have no medical terminology",
+      "AI accuracy for Caribbean Creole languages varies and clinical mistranslation can be dangerous",
+      "Caribbean patients all speak fluent English"
+    ],
+    "correct_answer": 2,
+    "explanation": "AI translation tools have inconsistent accuracy for Caribbean Creole languages, especially for clinical terminology. Mistranslation of dosing instructions or warnings could directly harm patients. Human review by a fluent speaker is essential for any clinical translation.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "analyze"
+  },
+  {
+    "id": "74464ca0-c4eb-454f-8e2d-661900183766",
+    "module_id": "373bbb03-458a-4385-890c-f79814de2f62",
+    "question": "A patient who speaks primarily Jamaican Patois is picking up a new blood pressure medication. What is the best approach to ensure they understand how to take it?",
+    "options": [
+      "Give them the standard English patient information leaflet",
+      "Use the teach-back method: explain in accessible language, then ask them to repeat back in their own words how they will take the medication",
+      "Write the instructions in formal medical English and assume they will look up unfamiliar words",
+      "Tell them to check the internet for dosing information"
+    ],
+    "correct_answer": 1,
+    "explanation": "The teach-back method is the gold standard for confirming patient understanding, especially across language barriers. By asking the patient to explain in their own words how they will take the medication, you can identify and correct any misunderstandings immediately.",
+    "order_index": 3,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "2c5cac9f-d912-449a-bcea-b32b40638528",
+    "module_id": "373bbb03-458a-4385-890c-f79814de2f62",
+    "question": "Which of the following is an example of an effective AI prompt for pharmacy use?",
+    "options": [
+      "'Tell me about drugs'",
+      "'List all side effects of every medication'",
+      "'I am a pharmacy technician. A patient on Amlodipine 10mg asks about swollen ankles. Explain the cause and what to advise, in patient-friendly language.'",
+      "'What is the best medicine?'"
+    ],
+    "correct_answer": 2,
+    "explanation": "The effective prompt specifies the user's role (pharmacy technician), the specific scenario (Amlodipine-related ankle swelling), the information needed (cause and advice), and the desired format (patient-friendly language). This specificity yields targeted, useful AI output.",
+    "order_index": 4,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "49dcc279-f3ec-49f2-adda-adf988eb8acc",
+    "module_id": "373bbb03-458a-4385-890c-f79814de2f62",
+    "question": "What does 'health literacy' mean and why does it matter for patient education materials?",
+    "options": [
+      "The ability to read medical textbooks; it only matters for medical students",
+      "The degree to which individuals can obtain, process, and understand basic health information for appropriate health decisions",
+      "How many medications a patient can name; it determines their intelligence",
+      "Whether a patient has a university degree; only affects prescribing decisions"
+    ],
+    "correct_answer": 1,
+    "explanation": "Health literacy is the degree to which individuals can obtain, process, and understand basic health information needed for appropriate health decisions. Low health literacy is linked to poorer health outcomes, more medication errors, and higher hospitalisation rates. Patient education materials must match the target audience's literacy level.",
+    "order_index": 5,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "981baf24-bf64-4fc8-96c8-fd1bceaba432",
+    "module_id": "373bbb03-458a-4385-890c-f79814de2f62",
+    "question": "In creating a patient handout using AI, the tool incorrectly states that Metformin should be taken on an empty stomach. What does this demonstrate?",
+    "options": [
+      "AI tools are always incorrect about drug administration",
+      "Metformin dosing is too complex for AI to understand",
+      "AI can produce plausible-sounding but clinically incorrect information that must be verified",
+      "The AI tool needs to be returned and replaced with a newer version"
+    ],
+    "correct_answer": 2,
+    "explanation": "This demonstrates a core limitation of AI tools: they can generate content that sounds correct and authoritative but contains clinically significant errors. Metformin should be taken with food to reduce GI side effects. This is why every clinical statement in AI-generated content must be verified against authoritative sources.",
+    "order_index": 6,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "evaluate"
+  },
+  {
+    "id": "ad6fb6b9-4a19-4f7e-bdda-3c7c4d853e96",
+    "module_id": "373bbb03-458a-4385-890c-f79814de2f62",
+    "question": "The term 'pressure' is commonly used by Caribbean patients to refer to which condition?",
+    "options": [
+      "Anxiety disorders",
+      "Hypertension (high blood pressure)",
+      "Respiratory distress",
+      "Headache"
+    ],
+    "correct_answer": 1,
+    "explanation": "In Caribbean English, 'pressure' is commonly used to refer to hypertension (high blood pressure), just as 'sugar' refers to diabetes. Using familiar local terms alongside medical terminology improves patient understanding and builds rapport.",
+    "order_index": 7,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  }
+]

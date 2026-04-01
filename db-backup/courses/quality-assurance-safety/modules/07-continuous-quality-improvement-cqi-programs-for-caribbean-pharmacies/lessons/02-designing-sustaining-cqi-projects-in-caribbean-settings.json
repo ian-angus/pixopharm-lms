@@ -1,0 +1,76 @@
+{
+  "id": "e889f799-b62f-42f2-93f2-c042f5ba9c17",
+  "module_id": "422a447f-ed9b-4281-abdb-94d3a9124d6c",
+  "title": "Designing & Sustaining CQI Projects in Caribbean Settings",
+  "content": [
+    {
+      "text": "From Theory to Practice",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Designing a CQI project in a Caribbean community pharmacy requires balancing ambition with practicality. Resources are limited, teams are small, and daily operations cannot be disrupted. The most successful CQI projects in this context are tightly focused (one specific problem), small-scale (tested on one shift before expanding), data-driven (baseline measurement before change, outcome measurement after), and team-owned (every team member understands and contributes to the improvement).",
+      "type": "text"
+    },
+    {
+      "text": "Designing Your CQI Project",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "type": "list",
+      "items": [
+        "Select one specific, measurable problem — e.g., 'Our dispensing error rate for LASA drugs is 3 per 100 LASA prescriptions'",
+        "Collect baseline data — measure the current state for at least 2-4 weeks before making changes",
+        "Identify the root cause — use the 5 Whys or fishbone diagram from Module 3",
+        "Design a small test of change — e.g., 'We will implement Tall Man Lettering shelf labels for our top 10 LASA pairs and measure the effect over 4 weeks'",
+        "Implement the test (DO phase) — run the change for a defined period, documenting observations",
+        "Measure the outcome (STUDY phase) — compare post-change data to baseline data",
+        "Decide next steps (ACT phase) — adopt if successful, modify if partially successful, abandon if unsuccessful",
+        "Sustain the improvement — embed the change in SOPs, train all staff, and continue monitoring"
+      ],
+      "ordered": true
+    },
+    {
+      "body": "CQI changes should be monitored for at least 90 days after full implementation to confirm sustainability. Initial improvements often decay as the novelty wears off and old habits reassert themselves. Sustained improvement after 90 days indicates that the change has become embedded in the pharmacy's culture and workflow.",
+      "type": "callout",
+      "title": "The 90-Day Rule",
+      "variant": "tip"
+    },
+    {
+      "text": "Common CQI Pitfalls in Caribbean Pharmacies",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Several common pitfalls undermine CQI efforts in Caribbean pharmacy settings. Attempting too much at once — trying to fix five problems simultaneously dilutes focus and makes it impossible to attribute results to specific changes. Skipping baseline measurement — without knowing where you started, you cannot demonstrate improvement. Lack of leadership engagement — if the pharmacist-in-charge is not visibly committed, staff will not take the project seriously. Failure to sustain — implementing a change without embedding it in SOPs, training, and monitoring leads to regression.",
+      "type": "text"
+    },
+    {
+      "type": "case-study",
+      "title": "Case Study: Reducing Prescription Wait Times in a Jamaican Pharmacy",
+      "scenario": "A busy community pharmacy in Montego Bay, Jamaica, receives consistent patient complaints about long wait times. The pharmacist-in-charge asks a senior technician to lead a CQI project. Baseline data (collected over two weeks by timing 200 prescriptions) shows a mean turnaround time of 28 minutes, with peak wait times exceeding 45 minutes during the lunch rush. The root cause analysis reveals three contributing factors: prescriptions are processed in order of arrival regardless of complexity, the technician frequently walks to the storeroom for back-shelf stock, and the pharmacist performs final checks in large batches rather than continuously.",
+      "questions": [
+        "Which CQI model should be used, and what would the first PDSA cycle look like?",
+        "Design one specific change to test in the first PDSA cycle — keep it small and measurable",
+        "What quality indicator would you use to measure the success of this intervention?",
+        "How would you sustain the improvement if the first cycle is successful?"
+      ],
+      "discussion": "A PDSA approach is ideal. The first cycle might focus on the single most impactful change — perhaps moving the pharmacist to continuous 'flow' checking (verifying each prescription as it is completed rather than batching). The test could run for one week during lunch shifts only. The quality indicator is mean prescription turnaround time (measured the same way as baseline). If turnaround time drops significantly, the change is adopted system-wide, embedded in the dispensing SOP, and monitored monthly. Subsequent PDSA cycles would address the other root causes (prescription triage by complexity, pre-staging frequently used stock)."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "One week",
+        "Two weeks",
+        "30 days",
+        "At least 90 days"
+      ],
+      "question": "How long should a CQI change be monitored after full implementation to confirm sustainability?",
+      "explanation": "CQI changes should be monitored for at least 90 days after full implementation. Initial improvements often decay as novelty wears off and old habits return. A 90-day monitoring period provides confidence that the change has truly been embedded into the pharmacy's workflow and culture, not just temporarily adopted.",
+      "correctIndex": 3
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 25
+}

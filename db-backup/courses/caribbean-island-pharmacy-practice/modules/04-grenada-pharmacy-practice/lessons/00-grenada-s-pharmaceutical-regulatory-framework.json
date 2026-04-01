@@ -1,0 +1,112 @@
+{
+  "id": "962f4c6a-c0c1-4497-9ba3-053533983e81",
+  "module_id": "405b2e6f-2c09-41e2-930e-8ab0b29c32ef",
+  "title": "Grenada's Pharmaceutical Regulatory Framework",
+  "content": [
+    {
+      "text": "Regulating Pharmacy in the Spice Isle",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Grenada, with a population of approximately 125,000, is one of the smallest independent nations in the Western Hemisphere. Its pharmaceutical regulatory framework reflects this scale — less institutionally complex than T&T or Jamaica, but no less important for patient safety. Pharmacy regulation in Grenada operates under the Pharmacy Act and is overseen by the Ministry of Health, with input from the Chief Medical Officer and the Grenada Pharmacy Council.",
+      "type": "text"
+    },
+    {
+      "term": "Grenada Pharmacy Council",
+      "type": "key-term",
+      "definition": "The advisory body that assists the Ministry of Health in regulating pharmacy practice in Grenada. It oversees pharmacist registration, advises on pharmaceutical policy, and helps maintain professional standards. Smaller and less autonomous than Jamaica's PCJ or T&T's Pharmacy Board, it operates in close collaboration with the Chief Medical Officer."
+    },
+    {
+      "text": "Pharmacist Registration in Grenada",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Pharmacist registration in Grenada requires a recognised pharmacy qualification, verification by the Ministry of Health, and registration under the Pharmacy Act. Because Grenada has no local pharmacy degree programme, all pharmacists are trained overseas — primarily at UWI (St. Augustine or Mona), UTech Jamaica, or international universities. This creates a unique dependency on externally trained professionals and makes pharmacist retention a significant challenge for the island.",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Obtain a recognised pharmacy degree from an approved institution (UWI, UTech, or equivalent)",
+        "Return to Grenada (or relocate) and apply to the Ministry of Health for registration",
+        "Submit certified copies of qualifications, transcripts, and character references",
+        "Qualifications are verified and assessed by the Pharmacy Council / CMO",
+        "Complete any required period of supervised practice",
+        "Registration is granted; annual renewal required"
+      ],
+      "ordered": true
+    },
+    {
+      "body": "Grenada — like many small Caribbean islands — faces a significant 'brain drain' of healthcare professionals, including pharmacists. Many Grenadian-born pharmacists who train overseas (particularly at UWI in Trinidad or in North America) do not return to Grenada due to limited career opportunities, lower salaries, and restricted scope of practice. This means Grenada often has fewer pharmacists per capita than needed, increasing the burden on those who remain and elevating the importance of well-trained pharmacy technicians.",
+      "type": "callout",
+      "title": "The Brain Drain Challenge",
+      "variant": "warning"
+    },
+    {
+      "text": "Controlled Substances in Grenada",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Grenada's controlled substance framework operates under the Misuse of Drugs Act and aligns broadly with international conventions. The island's small size means that controlled substance monitoring is, in some ways, more manageable — the total volume is small, and the pharmacy community is tight-knit. However, it also means that any diversion or misuse is more quickly noticed and has a larger proportional impact.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Population",
+          "~125,000",
+          "287,000 (Barbados) to 2.8 million (Jamaica)"
+        ],
+        [
+          "Regulatory Body",
+          "Pharmacy Council (advisory) + Ministry of Health",
+          "Standalone Pharmacy Boards/Councils with statutory authority"
+        ],
+        [
+          "Local Pharmacy Education",
+          "None — all pharmacists trained overseas",
+          "UWI St. Augustine (T&T), UTech (Jamaica)"
+        ],
+        [
+          "Number of Pharmacies",
+          "~20-30 (entire island)",
+          "50-500+ depending on island"
+        ],
+        [
+          "Controlled Substance Framework",
+          "Misuse of Drugs Act",
+          "Various Dangerous Drugs / Misuse of Drugs Acts"
+        ],
+        [
+          "Technician Registration",
+          "No formal category",
+          "No formal category (all islands, though Jamaica is closest)"
+        ]
+      ],
+      "type": "table",
+      "caption": "Pharmaceutical Regulation — Grenada Compared",
+      "headers": [
+        "Aspect",
+        "Grenada",
+        "T&T / Jamaica / Barbados"
+      ]
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Grenada has too many pharmacy schools producing too many graduates",
+        "Grenadian pharmacists must train overseas and many do not return due to limited opportunities and lower salaries",
+        "The Grenada Pharmacy Council has excessively strict registration requirements",
+        "Grenada prohibits foreign-trained pharmacists from practising"
+      ],
+      "question": "Why does Grenada face a particular challenge with pharmacist retention?",
+      "explanation": "Grenada has no local pharmacy degree programme, so all pharmacists must train overseas (primarily at UWI or internationally). Many do not return due to limited career opportunities, lower salaries, and restricted practice scope compared to larger islands or North America. This 'brain drain' is a significant challenge for small island states.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 30
+}

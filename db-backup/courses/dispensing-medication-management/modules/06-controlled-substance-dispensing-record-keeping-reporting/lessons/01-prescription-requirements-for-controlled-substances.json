@@ -1,0 +1,89 @@
+{
+  "id": "a785b8e6-6e03-49b3-8333-b2d7054e9035",
+  "module_id": "985d5724-85ec-4a39-a2d7-47693858456e",
+  "title": "Prescription Requirements for Controlled Substances",
+  "content": [
+    {
+      "text": "What Makes a Controlled Substance Prescription Valid?",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Controlled substance prescriptions carry additional requirements beyond those for regular medications. These requirements serve two purposes: ensuring patient safety by documenting exactly what was prescribed and by whom, and creating an audit trail that deters diversion and enables regulatory oversight. A prescription that fails to meet these requirements cannot legally be dispensed.",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Must be written in ink and in the prescriber's own handwriting (in most Caribbean jurisdictions — electronic prescribing of controlled substances is still limited)",
+        "Must include the patient's full name AND address (address is mandatory, not optional as for regular prescriptions)",
+        "Must specify the total quantity in both words and figures (e.g., 'twenty (20) tablets') to prevent alteration",
+        "Must include the prescriber's dangerous drugs licence number or equivalent authorisation",
+        "Must be dated and signed by the prescriber",
+        "Must specify the dose, frequency, and total supply duration",
+        "Must not be post-dated",
+        "In most jurisdictions, controlled substance prescriptions cannot be repeated (refilled) without a new prescription"
+      ],
+      "ordered": false
+    },
+    {
+      "rows": [
+        [
+          "Trinidad & Tobago",
+          "Typically 7 days for narcotics",
+          "No — new prescription required each time",
+          "Prescriber's dangerous drugs licence number required"
+        ],
+        [
+          "Jamaica",
+          "Varies by schedule — 7–14 days for narcotics",
+          "No",
+          "Pharmacy Council may set additional requirements"
+        ],
+        [
+          "Barbados",
+          "7 days for Schedule I narcotics",
+          "No",
+          "Prescriber must hold authorisation from the Chief Medical Officer for certain substances"
+        ]
+      ],
+      "type": "table",
+      "caption": "Controlled Substance Prescription Validity Periods",
+      "headers": [
+        "Jurisdiction",
+        "Validity Period",
+        "Refills Permitted?",
+        "Special Notes"
+      ]
+    },
+    {
+      "body": "Be alert to signs of potential fraud: prescriptions written on plain paper rather than official letterhead, prescriber details that cannot be verified, prescriptions from doctors in distant parishes for controlled substances (doctor shopping), alterations or erasures on the prescription, patients requesting specific brands or dosage forms of narcotics, patients claiming to be tourists who 'lost' their medication, and prescriptions presented outside of normal business hours. Report suspicious prescriptions to the supervising pharmacist immediately.",
+      "type": "callout",
+      "title": "Red Flags for Prescription Fraud",
+      "variant": "warning"
+    },
+    {
+      "term": "Drug Diversion",
+      "type": "key-term",
+      "definition": "The transfer of a controlled substance from its lawful medical purpose to illicit use. Diversion can occur at any point in the supply chain — from manufacturer theft to prescriber fraud (pill mills), pharmacy theft, patient resale, or forged prescriptions. Pharmacy technicians play a frontline role in preventing diversion through vigilant prescription verification and accurate record-keeping."
+    },
+    {
+      "body": "When dispensing a controlled substance, the technician must verify every element of the prescription with heightened scrutiny: confirm the prescriber's identity and dangerous drugs authorisation, verify the patient's identity (often requiring government-issued ID), ensure the prescription meets all legal requirements, and flag any anomalies to the supervising pharmacist before proceeding.",
+      "type": "text"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "To help the patient understand how many tablets they will receive",
+        "To prevent alteration of the quantity — it is much harder to change both words and figures without detection",
+        "Because controlled substances are more expensive and need accurate billing",
+        "Because pharmacy software requires both formats for data entry"
+      ],
+      "question": "Why must the total quantity on a controlled substance prescription be written in both words and figures (e.g., 'twenty (20) tablets')?",
+      "explanation": "Writing the quantity in both words and figures is a security measure to prevent fraudulent alteration. Changing '20' to '200' is simple, but changing 'twenty' to 'two hundred' is far more difficult to do without visible evidence of tampering. This dual-format requirement has been a cornerstone of controlled substance prescribing for over a century.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 20
+}

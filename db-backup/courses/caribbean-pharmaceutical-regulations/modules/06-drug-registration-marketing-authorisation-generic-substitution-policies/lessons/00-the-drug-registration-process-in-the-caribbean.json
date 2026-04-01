@@ -1,0 +1,100 @@
+{
+  "id": "9689de55-26e9-4aa9-a975-67b40c5a5c7b",
+  "module_id": "e456d723-48a8-4e9e-9fc2-b733d161a607",
+  "title": "The Drug Registration Process in the Caribbean",
+  "content": [
+    {
+      "text": "How a Medicine Gets Legal Approval",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Before any pharmaceutical product can be legally sold in a Caribbean country, it must undergo a registration process through the national drug regulatory authority. Drug registration — also called marketing authorisation — is the process by which a government evaluates a product's quality, safety, and efficacy and, if satisfied, grants permission for it to be marketed and sold.",
+      "type": "text"
+    },
+    {
+      "body": "The registration process serves as a gatekeeper. It ensures that only products meeting established standards of pharmaceutical quality, demonstrated safety, and proven efficacy reach patients. Without drug registration, any product — regardless of quality — could be marketed as a medicine, with potentially fatal consequences.",
+      "type": "text"
+    },
+    {
+      "text": "Steps in the Drug Registration Process",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "type": "list",
+      "items": [
+        "Application submission: the manufacturer or importer submits a registration dossier to the national drug regulatory authority",
+        "Administrative screening: the authority verifies the completeness of the submission and confirms that all required documents and fees are included",
+        "Technical evaluation: scientific assessors review the quality (chemistry, manufacturing, and controls), safety (toxicology and clinical safety data), and efficacy (clinical trial results) data",
+        "GMP verification: the authority verifies that the manufacturing site complies with Good Manufacturing Practice standards",
+        "Query resolution: the authority may raise queries requiring additional information from the applicant",
+        "Committee review: an expert advisory committee may review the application and provide recommendations",
+        "Decision: the authority grants marketing authorisation (with conditions, if applicable) or refuses registration",
+        "Post-registration maintenance: the registration must be periodically renewed, and any changes to the product (formulation, labelling, manufacturer) require regulatory approval"
+      ],
+      "ordered": true
+    },
+    {
+      "term": "Marketing Authorisation",
+      "type": "key-term",
+      "definition": "The formal approval granted by a national drug regulatory authority that permits a pharmaceutical product to be manufactured, imported, distributed, and sold within its jurisdiction. Marketing authorisation is granted after evaluation of the product's quality, safety, and efficacy data, and is typically valid for a specified period (usually 5 years) before renewal is required."
+    },
+    {
+      "body": "Most Caribbean drug regulatory authorities now accept (or require) registration dossiers in the Common Technical Document (CTD) format, aligned with International Council for Harmonisation (ICH) guidelines. The CTD has five modules: administrative information, quality (chemistry and manufacturing), non-clinical (animal studies), clinical (human studies), and study reports. This standardised format facilitates both national evaluation and CRS mutual recognition.",
+      "type": "callout",
+      "title": "The CTD Format",
+      "variant": "info"
+    },
+    {
+      "rows": [
+        [
+          "Trinidad & Tobago",
+          "12-24 months",
+          "6-12 months (for WHO-prequalified products)",
+          "CFDD handles evaluation; capacity constraints may extend timelines"
+        ],
+        [
+          "Jamaica",
+          "12-18 months",
+          "6-9 months (fast-track for essential medicines)",
+          "PCJ and Standards & Regulation Division coordinate; relatively robust capacity"
+        ],
+        [
+          "Barbados",
+          "Variable",
+          "Abbreviated for BNDF products",
+          "Smaller evaluation team; may rely on reference country evaluations"
+        ],
+        [
+          "OECS States",
+          "Variable",
+          "CRS mutual recognition pathway available",
+          "Limited individual evaluation capacity; leverage regional mechanisms"
+        ]
+      ],
+      "type": "table",
+      "caption": "Drug Registration Timeline Estimates",
+      "headers": [
+        "Jurisdiction",
+        "Standard Pathway",
+        "Expedited/Abbreviated Pathway",
+        "Notes"
+      ]
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Price, packaging, and advertising",
+        "Quality, safety, and efficacy",
+        "Manufacturing cost, profit margin, and market size",
+        "Colour, taste, and appearance"
+      ],
+      "question": "What are the three main areas evaluated during drug registration?",
+      "explanation": "Drug registration evaluates three fundamental areas: quality (is the product manufactured to proper standards?), safety (does the product have an acceptable risk profile?), and efficacy (does the product actually work for its intended purpose?). These three pillars are the basis of pharmaceutical regulation worldwide.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 25
+}

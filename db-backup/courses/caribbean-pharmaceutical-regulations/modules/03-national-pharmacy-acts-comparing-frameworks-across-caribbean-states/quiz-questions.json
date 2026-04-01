@@ -1,0 +1,181 @@
+[
+  {
+    "id": "91994efa-92e8-4347-84c5-590c3ab23f4a",
+    "module_id": "dabd4858-ddf1-4ea7-9bb0-b04d4ba460d5",
+    "question": "Which legislation is the primary law governing pharmacy practice in Trinidad & Tobago?",
+    "options": [
+      "The Dangerous Drugs Act",
+      "The Pharmacy Board Act (Chapter 29:52)",
+      "The Food and Drugs Act",
+      "The CARICOM Pharmacy Harmonisation Treaty"
+    ],
+    "correct_answer": 1,
+    "explanation": "The Pharmacy Board Act (Chapter 29:52) is the primary legislation governing pharmacy practice in Trinidad & Tobago. It establishes the Pharmacy Board, defines pharmacy practice, and sets registration and licensing requirements.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "aae6cb17-d72e-4bb9-b300-35ca2ce6a459",
+    "module_id": "dabd4858-ddf1-4ea7-9bb0-b04d4ba460d5",
+    "question": "In which year was Jamaica's Pharmacy Act significantly amended to modernise its regulatory framework?",
+    "options": [
+      "2003",
+      "2008",
+      "2013",
+      "2019"
+    ],
+    "correct_answer": 2,
+    "explanation": "Jamaica's Pharmacy Act of 1975 was significantly amended in 2013, updating educational requirements, expanding scope of practice considerations, and strengthening enforcement provisions.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "ba9f3016-bd0e-4f38-9677-66c770ef9e81",
+    "module_id": "dabd4858-ddf1-4ea7-9bb0-b04d4ba460d5",
+    "question": "Match each Caribbean country with its public pharmaceutical procurement mechanism.",
+    "options": [
+      "Trinidad & Tobago",
+      "Jamaica",
+      "Barbados",
+      "Grenada"
+    ],
+    "correct_answer": 0,
+    "explanation": "Each Caribbean country uses a different mechanism for public pharmaceutical procurement: T&T uses NIPDEC, Jamaica uses the NHF and Ministry of Health, Barbados uses the Drug Service, and Grenada uses the OECS PPS.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "analyze"
+  },
+  {
+    "id": "57478e25-dab0-4864-af95-26543fb79e01",
+    "module_id": "dabd4858-ddf1-4ea7-9bb0-b04d4ba460d5",
+    "question": "The Pharmacy Council of Jamaica has the power to conduct unannounced inspections of pharmacy premises.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": 0,
+    "explanation": "True. The PCJ has robust enforcement powers including the ability to conduct unannounced inspections, suspend or revoke licences, and refer criminal matters to the Director of Public Prosecutions.",
+    "order_index": 3,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "753d4daa-0f8a-4f90-8301-6672d6734fd7",
+    "module_id": "dabd4858-ddf1-4ea7-9bb0-b04d4ba460d5",
+    "question": "Which of the following are common themes across all Caribbean pharmacy regulatory frameworks?",
+    "options": [
+      "Pharmacist registration is required for practice",
+      "Pharmacy premises must be licensed",
+      "All technicians must be separately registered",
+      "Controlled substances are regulated",
+      "All pharmacies must be pharmacist-owned"
+    ],
+    "correct_answer": 0,
+    "explanation": "Common themes across all Caribbean jurisdictions include mandatory pharmacist registration, premises licensing, and controlled substance regulation. Separate technician registration and pharmacist ownership requirements vary by jurisdiction.",
+    "order_index": 4,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "analyze"
+  },
+  {
+    "id": "8292222f-474c-4bde-85c2-bab34571fa50",
+    "module_id": "dabd4858-ddf1-4ea7-9bb0-b04d4ba460d5",
+    "question": "What role does the Chemistry, Food and Drugs Division (CFDD) play in T&T's pharmaceutical system?",
+    "options": [
+      "It registers pharmacists and issues practice licences",
+      "It evaluates drug registration applications, conducts quality testing, and monitors product safety",
+      "It manages public pharmaceutical procurement and distribution",
+      "It sets retail prices for medicines across the country"
+    ],
+    "correct_answer": 1,
+    "explanation": "The CFDD handles product regulation in T&T — evaluating drug registration applications, conducting quality testing, and monitoring the safety of pharmaceutical products. Professional regulation is handled by the Pharmacy Board, while procurement is handled by NIPDEC.",
+    "order_index": 5,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "2c3d7cdc-6027-499e-b408-92ea9633b818",
+    "module_id": "dabd4858-ddf1-4ea7-9bb0-b04d4ba460d5",
+    "question": "Which university in Grenada operates the only School of Pharmacy in the OECS?",
+    "options": [
+      "The University of the West Indies",
+      "St. George's University",
+      "COSTAATT",
+      "The University of Guyana"
+    ],
+    "correct_answer": 1,
+    "explanation": "St. George's University in Grenada operates the only School of Pharmacy in the Organisation of Eastern Caribbean States (OECS). Its graduates serve the wider Eastern Caribbean, contributing pharmaceutical expertise across the sub-region.",
+    "order_index": 6,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "ceec9eb7-dc3e-4595-b56d-8a86a5ac80b5",
+    "module_id": "dabd4858-ddf1-4ea7-9bb0-b04d4ba460d5",
+    "question": "A pharmacy technician trained in Jamaica is offered a position in Trinidad & Tobago. She wants to understand the key differences she will encounter. Which of the following correctly describes a difference between the two jurisdictions?",
+    "options": [
+      "T&T requires pharmacist ownership of pharmacies; Jamaica permits corporate ownership",
+      "Jamaica does not require pharmacist registration; T&T does",
+      "T&T has a National Health Fund; Jamaica does not",
+      "Jamaica lacks a regulatory body; the PCJ was dissolved in 2020"
+    ],
+    "correct_answer": 0,
+    "explanation": "A key difference is that Trinidad & Tobago requires pharmacist ownership of pharmacies, while Jamaica permits corporate ownership (provided a registered pharmacist is on premises). Jamaica has the NHF, not T&T, and both countries require pharmacist registration.",
+    "order_index": 7,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "hard",
+    "blooms_level": "evaluate"
+  },
+  {
+    "id": "78a17b9b-24f9-4bac-9cdd-5300b7f2a805",
+    "module_id": "dabd4858-ddf1-4ea7-9bb0-b04d4ba460d5",
+    "question": "Arrange the following Caribbean pharmacy-related legislation from oldest to most recently enacted/amended.",
+    "options": [
+      "Jamaica Pharmacy Act amendment (2013)",
+      "Jamaica Pharmacy Act (1975)",
+      "T&T Pharmacy Board Act (original enactment)",
+      "CARPHA establishment (2013)"
+    ],
+    "correct_answer": 0,
+    "explanation": "The T&T Pharmacy Board Act was originally enacted in the colonial period and subsequently revised, followed by the Jamaica Pharmacy Act in 1975. The 2013 amendment to the Jamaica Pharmacy Act and the establishment of CARPHA both occurred in 2013.",
+    "order_index": 8,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "hard",
+    "blooms_level": "analyze"
+  },
+  {
+    "id": "060dc4d2-15f2-4a50-ace0-a657e29b49f2",
+    "module_id": "dabd4858-ddf1-4ea7-9bb0-b04d4ba460d5",
+    "question": "Caribbean pharmacy laws are primarily influenced by which colonial legal tradition?",
+    "options": [
+      "French civil law",
+      "British common law",
+      "Dutch maritime law",
+      "Spanish colonial ordinances"
+    ],
+    "correct_answer": 1,
+    "explanation": "The pharmacy laws of Trinidad & Tobago, Jamaica, Barbados, and Grenada all descend from the British colonial legal tradition. The fundamental structure of statutory boards, professional registers, and premises licensing reflects the UK pharmacy legislation of the 19th and early 20th centuries.",
+    "order_index": 9,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  }
+]

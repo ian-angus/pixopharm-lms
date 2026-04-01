@@ -1,0 +1,97 @@
+{
+  "id": "5908d409-df92-4909-9875-e4b6b8e2a0e6",
+  "module_id": "0383cbc9-9d6d-45f4-86fd-3581389860af",
+  "title": "Compounding Quality Checks and Documentation",
+  "content": [
+    {
+      "text": "Verifying Compounded Preparations",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Every compounded preparation must be verified for accuracy before dispensing. In Caribbean pharmacies, where compounding ranges from simple topical creams to reconstituted antibiotics, a systematic quality check process ensures patient safety. This lesson covers the mathematical verification steps and documentation requirements for compounded preparations.",
+      "type": "text"
+    },
+    {
+      "term": "Compounding Record (Formulation Record)",
+      "type": "key-term",
+      "definition": "A written document detailing the preparation of a compounded medication, including the drug name, strength, quantity, ingredients used (with lot numbers), calculations performed, preparer's initials, pharmacist verification, and beyond-use date. This record is a legal requirement and must be retained for the period specified by local pharmacy legislation."
+    },
+    {
+      "text": "The Five-Point Compounding Verification",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "type": "list",
+      "items": [
+        "Ingredient check: Verify each ingredient name, lot number, and expiry date against the formula",
+        "Quantity check: Independently recalculate all quantities — has the correct amount of each ingredient been measured?",
+        "Concentration check: Does the final concentration match the label? Verify with the total drug / total volume (or weight) method",
+        "Physical check: Does the product look, smell, and feel as expected? Is the colour correct? Is a cream smooth and homogeneous?",
+        "Label check: Does the label include all required information — drug name, strength, beyond-use date, storage, and patient details?"
+      ],
+      "ordered": true
+    },
+    {
+      "body": "Example verification: You compounded 120 g of salicylic acid 5% ointment. Verification: Drug amount = 5% of 120 g = 6 g of salicylic acid. Weigh a sample of the final product — if possible, have the pharmacist independently confirm the weight of salicylic acid used (should be 6 g ± 0.3 g, within 5% tolerance). Ointment base used = 120 - 6 = 114 g. Label: Salicylic Acid Ointment 5%, 120 g, BUD 30 days, store below 25°C.",
+      "type": "text"
+    },
+    {
+      "body": "Compounding practices in the Caribbean are governed by national pharmacy legislation. Trinidad's Pharmacy Board, Jamaica's Pharmacy Council, and the Barbados Drug Service each have guidelines on compounding standards, record-keeping, and beyond-use dating. While Caribbean standards are evolving, USP Chapter <795> (non-sterile compounding) and USP <797> (sterile compounding) serve as widely referenced best-practice benchmarks across the region.",
+      "type": "callout",
+      "title": "Compounding Regulations in the Caribbean",
+      "variant": "info"
+    },
+    {
+      "rows": [
+        [
+          "Aqueous oral solutions/suspensions",
+          "14 days (refrigerated)",
+          "Enforce strict refrigeration; shorter if no AC available"
+        ],
+        [
+          "Topical creams (water-containing)",
+          "30 days",
+          "May need shorter BUD in humid tropical conditions"
+        ],
+        [
+          "Anhydrous ointments",
+          "6 months or 25% of earliest expiry",
+          "Store below 25°C; stability may decrease in heat"
+        ],
+        [
+          "Reconstituted oral antibiotics",
+          "Per manufacturer (usually 7-14 days, refrigerated)",
+          "Ensure patients have refrigeration access"
+        ],
+        [
+          "Sterile IV admixtures",
+          "Per stability data (often 24-48 hours)",
+          "May be shorter at Caribbean ambient temperatures"
+        ]
+      ],
+      "type": "table",
+      "caption": "Beyond-Use Dating for Compounded Preparations",
+      "headers": [
+        "Preparation Type",
+        "Standard BUD",
+        "Caribbean Consideration"
+      ]
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "2 g",
+        "4 g",
+        "10 g",
+        "20 g"
+      ],
+      "question": "You compounded 200 g of a cream intended to be 2% w/w active ingredient. How many grams of active ingredient should it contain?",
+      "explanation": "2% w/w = 2 g per 100 g. For 200 g: (2/100) × 200 = 4 g of active ingredient. The remaining 196 g is the cream base.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 3,
+  "duration_minutes": 25
+}

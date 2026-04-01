@@ -1,0 +1,104 @@
+{
+  "id": "56e705c4-cbe7-46db-aeb4-2d35ed856497",
+  "module_id": "18355ac8-d8d2-46a7-8eb4-7df008bb62d9",
+  "title": "Asthma, COPD & Respiratory Medications",
+  "content": [
+    {
+      "text": "Obstructive Airway Diseases: Asthma and COPD",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Asthma and chronic obstructive pulmonary disease (COPD) are the two most common chronic respiratory conditions encountered in Caribbean pharmacy practice. Both involve obstruction of airflow, but they differ significantly in their underlying pathophysiology, patient demographics, and treatment approaches.",
+      "type": "text"
+    },
+    {
+      "body": "Asthma is a chronic inflammatory airway disease characterised by reversible bronchospasm, airway inflammation, and mucus hypersecretion. It typically begins in childhood and is triggered by allergens (dust mites, mould, pollen), exercise, cold air, or respiratory infections. In the Caribbean, mould exposure from tropical humidity is a major trigger. Asthma is reversible — with appropriate treatment, airways can return to near-normal function.",
+      "type": "text"
+    },
+    {
+      "body": "COPD, by contrast, is a progressive disease characterised by irreversible airflow limitation. It encompasses two main conditions: chronic bronchitis (persistent inflammation and mucus production in the bronchi) and emphysema (destruction of alveolar walls, reducing gas exchange surface area). COPD is overwhelmingly caused by long-term smoking, though occupational exposures and indoor cooking fumes also contribute. COPD is not reversible — treatment aims to slow progression and manage symptoms.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Age of onset",
+          "Usually childhood/adolescence",
+          "Usually after age 40"
+        ],
+        [
+          "Primary cause",
+          "Allergic/inflammatory — often genetic",
+          "Smoking (85-90% of cases)"
+        ],
+        [
+          "Airflow obstruction",
+          "Reversible",
+          "Largely irreversible"
+        ],
+        [
+          "Key pathology",
+          "Bronchospasm, inflammation, mucus",
+          "Alveolar destruction, chronic inflammation"
+        ],
+        [
+          "Trigger response",
+          "Episodic — attacks with symptom-free intervals",
+          "Persistent — progressive worsening"
+        ],
+        [
+          "Key reliever drug",
+          "Salbutamol (SABA)",
+          "Salbutamol + ipratropium"
+        ],
+        [
+          "Key controller drug",
+          "Inhaled corticosteroid (beclometasone, fluticasone)",
+          "LABA + LAMA ± inhaled corticosteroid"
+        ]
+      ],
+      "type": "table",
+      "caption": "Asthma vs COPD Comparison",
+      "headers": [
+        "Feature",
+        "Asthma",
+        "COPD"
+      ]
+    },
+    {
+      "text": "Respiratory Medications: What You Will Dispense",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Respiratory medications are among the highest-volume items in Caribbean pharmacies. They fall into several categories: short-acting beta-2 agonists (SABAs) like salbutamol for acute relief; long-acting beta-2 agonists (LABAs) like salmeterol for maintenance; inhaled corticosteroids (ICS) like beclometasone and fluticasone for inflammation control; anticholinergics like ipratropium and tiotropium; and combination inhalers that combine two or three drug classes in one device.",
+      "type": "text"
+    },
+    {
+      "body": "Studies consistently show that up to 70-80% of patients use their inhalers incorrectly, drastically reducing medication delivery to the lungs. While patient counselling on inhaler technique is formally the pharmacist's role, pharmacy technicians who understand how inhalers work can reinforce good technique and identify patients who appear to be struggling. Metered-dose inhalers (MDIs) require a 'slow, steady breath in' with coordination; dry-powder inhalers (DPIs) require a 'fast, deep breath in' — the techniques are opposite.",
+      "type": "callout",
+      "title": "Inhaler Technique Matters",
+      "variant": "tip"
+    },
+    {
+      "term": "Bronchodilator",
+      "type": "key-term",
+      "definition": "A medication that relaxes the smooth muscle surrounding the bronchioles, widening the airways and improving airflow. Short-acting bronchodilators (salbutamol) provide quick relief during an asthma attack. Long-acting bronchodilators (salmeterol, formoterol) provide sustained airway opening for maintenance therapy. The term breaks down as: bronch/o (bronchial tube) + dilator (widener)."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "COPD is fully reversible with appropriate treatment",
+        "COPD is primarily caused by allergic responses to dust mites",
+        "COPD involves irreversible airflow limitation, mainly caused by smoking",
+        "COPD typically begins in childhood"
+      ],
+      "question": "Which statement about COPD is correct?",
+      "explanation": "COPD is characterised by irreversible airflow limitation and is primarily caused by long-term cigarette smoking (85-90% of cases). Unlike asthma, the lung damage in COPD (particularly alveolar destruction in emphysema) cannot be reversed. Treatment focuses on slowing disease progression, managing symptoms, and preventing exacerbations.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 25
+}

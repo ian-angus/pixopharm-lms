@@ -1,0 +1,100 @@
+{
+  "id": "e5989ba6-b477-4e8c-a22a-623151b51f94",
+  "module_id": "3f0fc32e-b930-4e92-afd4-7fefcffb355d",
+  "title": "Compounding Documentation: Master Formulae and Compounding Records",
+  "content": [
+    {
+      "text": "If It Wasn't Documented, It Wasn't Done",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Documentation is the backbone of accountable, traceable, and defensible compounding practice. Every compounded preparation must be supported by two key documents: the master formula (a tested, standardised recipe for the preparation) and the compounding record (a detailed log of every step taken during a specific compounding event, including the identity of every ingredient, the identity of every person involved, and the results of quality control checks).",
+      "type": "text"
+    },
+    {
+      "text": "The Master Formula",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "A master formula (also called a master formulation record) is a detailed, validated recipe for a specific compounded preparation. It includes the name and strength of the preparation, a complete list of ingredients with quantities, step-by-step compounding instructions, quality control specifications, beyond-use dating guidelines, and storage conditions. The master formula should be developed, tested, and approved by a pharmacist before it is used for patient preparations. Once approved, it should only be modified through a formal change control process.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Preparation name and strength",
+          "Full name and concentration of the compounded product",
+          "Hydrocortisone Cream 1% w/w"
+        ],
+        [
+          "Ingredient list with quantities",
+          "Every ingredient, including excipients, with quantities for a standard batch size",
+          "Hydrocortisone powder: 1g; Aqueous cream base: 99g; Mineral oil (levigating agent): 0.5 mL"
+        ],
+        [
+          "Step-by-step instructions",
+          "Detailed, numbered procedure that can be followed by a competent technician",
+          "1. Weigh 1g hydrocortisone. 2. Place on ointment slab. 3. Add 0.5 mL mineral oil and levigate..."
+        ],
+        [
+          "Equipment required",
+          "All equipment needed for the procedure",
+          "Class III balance, ointment slab, stainless steel spatula, weighing papers, 100g ointment jar"
+        ],
+        [
+          "Quality control criteria",
+          "Specifications the finished product must meet",
+          "Appearance: white, smooth, homogeneous cream; no grittiness; pH: 4.5–6.5; Weight: 100g ±2g"
+        ],
+        [
+          "Beyond-use date and storage",
+          "BUD assignment based on USP <795> or published stability data",
+          "BUD: 30 days from date of compounding. Store at 20–25°C or 2–8°C if >30°C ambient"
+        ],
+        [
+          "References",
+          "Source of the formula (published literature, USP, textbook, or in-house testing)",
+          "Allen LV Jr. Int J Pharm Compd. 2015; or USP <795>"
+        ]
+      ],
+      "type": "table",
+      "caption": "Components of a Master Formula",
+      "headers": [
+        "Component",
+        "Description",
+        "Example"
+      ]
+    },
+    {
+      "text": "The Compounding Record",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "The compounding record (also called a compounding log) is created every time a preparation is compounded. It is a detailed, traceable record of the specific compounding event and must include: the master formula reference, the patient's name (or stock indication), all ingredients used (with manufacturer, lot number, and expiry date), the quantities actually weighed or measured, the identity of the compounder, the identity of the checking pharmacist, the date and time of compounding, quality control results, the beyond-use date assigned, the prescription number, and any deviations from the master formula.",
+      "type": "text"
+    },
+    {
+      "body": "Every ingredient used in compounding must be traceable — if a problem arises with a compounded preparation (a patient complaint, an adverse reaction, a recall of a raw ingredient), you must be able to identify exactly which ingredients were used, from which manufacturer and lot, and for which patients' preparations. Failing to record lot numbers and expiry dates makes this impossible and constitutes a serious quality and regulatory failure. In the event of a serious adverse event, inadequate documentation can also result in legal liability.",
+      "type": "callout",
+      "title": "Traceability Is Non-Negotiable",
+      "variant": "warning"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "To satisfy the tax authority",
+        "To enable traceability — if a problem arises, all affected preparations and patients can be identified",
+        "To assist with inventory ordering",
+        "To calculate the cost of compounding"
+      ],
+      "question": "What is the primary purpose of recording ingredient lot numbers and expiry dates in the compounding record?",
+      "explanation": "Recording lot numbers and expiry dates enables full traceability. If a raw ingredient is recalled, found to be substandard, or if a patient experiences an adverse reaction, the pharmacy can trace exactly which preparations were made with that ingredient and which patients received them. This is essential for patient safety and is a fundamental requirement of Good Pharmacy Practice.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 25
+}

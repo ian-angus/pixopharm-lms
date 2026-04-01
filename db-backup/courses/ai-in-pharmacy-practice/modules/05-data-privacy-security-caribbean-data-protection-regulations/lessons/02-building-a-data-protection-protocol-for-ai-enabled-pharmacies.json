@@ -1,0 +1,65 @@
+{
+  "id": "225da802-fb2e-4317-b8a9-d128481a0ced",
+  "module_id": "432d98b6-47af-4c06-9c20-21f449b6c90d",
+  "title": "Building a Data Protection Protocol for AI-Enabled Pharmacies",
+  "content": [
+    {
+      "text": "Practical Data Protection for Your Pharmacy",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Knowing the law and understanding the risks is important, but what matters most is translating that knowledge into practical, day-to-day protocols that every member of the pharmacy team follows. This lesson provides a practical framework for building a data protection protocol suited to a Caribbean pharmacy that uses AI tools.",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Classify your data: Map every type of patient data your pharmacy collects (names, addresses, medication histories, insurance details) and classify by sensitivity level",
+        "Audit your AI tools: List every AI tool and digital system in use. For each, document where data is processed, whether it is retained, and what privacy controls are available",
+        "Establish access controls: Implement role-based access — technicians, pharmacists, and managers should have different levels of access to patient data and AI tools",
+        "Create a 'clean query' policy: Write a clear policy that no identifiable patient data is to be entered into public AI chatbots. Provide training and examples of compliant vs. non-compliant queries",
+        "Implement encryption: Ensure all patient data — at rest and in transit — is encrypted. This includes dispensing databases, backup systems, and any data sent to cloud services",
+        "Establish breach response procedures: Document what to do if a data breach occurs — who to notify, how to contain the breach, and how to inform affected patients and the Information Commissioner",
+        "Train regularly: Data protection is not a one-time exercise. Conduct quarterly training refreshers for all staff, including scenarios relevant to AI use"
+      ],
+      "ordered": true
+    },
+    {
+      "body": "Post a simple checklist next to every computer where AI tools are accessed: (1) Have I removed the patient's name? (2) Have I removed their date of birth? (3) Have I removed their address and phone number? (4) Have I removed any insurance or ID numbers? (5) Could someone in our community identify this person from the remaining details? If yes to any, revise the query before submitting.",
+      "type": "callout",
+      "title": "Quick Win: The AI Query Review",
+      "variant": "tip"
+    },
+    {
+      "term": "Data Breach",
+      "type": "key-term",
+      "definition": "An incident where personal data is accessed, disclosed, altered, or destroyed without authorisation. In a pharmacy context, this could range from an employee looking up a neighbour's records to a cyberattack on the dispensing system. All Caribbean data protection acts require breach notification to the Information Commissioner and, in some cases, to affected individuals."
+    },
+    {
+      "type": "case-study",
+      "title": "Case Study: The WhatsApp Prescription Photo",
+      "scenario": "A pharmacy technician at a busy pharmacy in Chaguanas, Trinidad, receives a photo of a prescription via WhatsApp from a patient who cannot visit in person. The technician types the patient's details into ChatGPT to check if the prescribed medication interacts with their current medications, including the patient's full name, age, and complete medication list. The pharmacy manager discovers this during a routine audit of AI tool usage.",
+      "questions": [
+        "What data protection violations occurred in this scenario?",
+        "What are the potential consequences under the Trinidad & Tobago Data Protection Act?",
+        "How should this query have been handled to be compliant?"
+      ],
+      "discussion": "Multiple violations occurred: (1) Receiving prescriptions via WhatsApp without encryption or data processing agreements creates a data transfer risk; (2) Entering identifiable patient data into ChatGPT violates the data minimisation and security principles — the data was transferred to OpenAI's servers, potentially outside Trinidad, with no guarantee of deletion; (3) The combination of name + age + full medication list in a small community like Chaguanas virtually guarantees identifiability. Under the Data Protection Act, this could result in fines and regulatory action. The correct approach: use a pharmacy-approved communication channel for receiving prescriptions, and anonymise all queries to AI tools."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Purchasing the most expensive encryption software available",
+        "Classifying all types of patient data collected and mapping sensitivity levels",
+        "Banning all AI tools from the pharmacy",
+        "Posting the Data Protection Act on the pharmacy wall"
+      ],
+      "question": "Which of the following is the FIRST step in building a data protection protocol for an AI-enabled pharmacy?",
+      "explanation": "The first step is data classification — you must understand what data you collect, where it lives, and how sensitive it is before you can protect it. This forms the foundation for all subsequent security measures, access controls, and policies.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 20
+}

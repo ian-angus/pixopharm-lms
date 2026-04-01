@@ -1,0 +1,90 @@
+{
+  "id": "573fbf8f-4a2d-419a-bdb8-07c8a8b554c4",
+  "module_id": "2a2b8ae6-dc6c-4b92-b48f-b978c51bf5fd",
+  "title": "Stock Control Systems: Perpetual vs. Periodic",
+  "content": [
+    {
+      "text": "Tracking What You Have — In Real Time or Periodically",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Stock control systems fall into two broad categories: perpetual and periodic. A perpetual inventory system tracks every stock movement in real time — every item received, dispensed, returned, or written off is recorded immediately. A periodic system counts stock at fixed intervals (weekly, monthly, quarterly) and reconciles against purchasing and dispensing records. Most modern Caribbean pharmacies aim for a perpetual system supported by periodic cycle counts for verification.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Update frequency",
+          "Real-time with every transaction",
+          "At fixed intervals (weekly, monthly)"
+        ],
+        [
+          "Accuracy",
+          "High — reflects current stock levels",
+          "Lower — gaps between counts"
+        ],
+        [
+          "Technology required",
+          "Dispensing software, barcode scanners, POS",
+          "Manual count sheets, basic records"
+        ],
+        [
+          "Cost to implement",
+          "Higher initial investment",
+          "Lower initial cost"
+        ],
+        [
+          "Best suited for",
+          "Busy pharmacies, multiple locations, controlled substances",
+          "Small pharmacies with limited technology"
+        ],
+        [
+          "Stockout prevention",
+          "Automatic reorder alerts when stock falls below threshold",
+          "Relies on manual observation and scheduled counts"
+        ]
+      ],
+      "type": "table",
+      "caption": "Perpetual vs. Periodic Inventory Systems",
+      "headers": [
+        "Feature",
+        "Perpetual System",
+        "Periodic System"
+      ]
+    },
+    {
+      "term": "Perpetual Inventory System",
+      "type": "key-term",
+      "definition": "An inventory tracking method that records every stock movement in real time, providing a continuous, up-to-date picture of stock levels for every item. In pharmacy, this is typically achieved through dispensing software integrated with a point-of-sale system."
+    },
+    {
+      "body": "In practice, even pharmacies with perpetual systems must conduct periodic physical counts to verify accuracy. Discrepancies arise from dispensing errors not recorded in the system, theft (internal or external), breakage, expiry write-offs not logged, and returns not properly processed. Cycle counting — counting a small portion of inventory each day on a rotating basis — is the most efficient way to maintain accuracy without the disruption of a full physical count.",
+      "type": "text"
+    },
+    {
+      "body": "Divide your entire inventory into sections and count one section per day. High-value and controlled items (Category A) should be counted weekly; moderate-value items (Category B) monthly; low-value items (Category C) quarterly. This ensures that discrepancies are caught early and corrective action can be taken before a stockout occurs.",
+      "type": "callout",
+      "title": "Cycle Counting Best Practice",
+      "variant": "tip"
+    },
+    {
+      "body": "For controlled substances, the perpetual inventory system is not optional — it is a legal requirement in most Caribbean jurisdictions. Every unit of a controlled substance must be accounted for, from receipt through dispensing to destruction. The Dangerous Drugs register must reconcile with the physical count at all times.",
+      "type": "text"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "The software automatically adjusts for wastage",
+        "Dispensing transactions or returns were not properly recorded in the system",
+        "Perpetual systems are inherently inaccurate and require replacement",
+        "The manufacturer shipped fewer tablets than invoiced"
+      ],
+      "question": "A pharmacy uses a perpetual inventory system but discovers a discrepancy of 15 tablets during a cycle count of metformin 500 mg. What is the most likely explanation?",
+      "explanation": "The most common cause of discrepancies between a perpetual system and physical count is unrecorded transactions — dispensing errors, returns not logged, breakage not written off, or stock adjustments not entered. This is why regular cycle counting is essential even with a perpetual system.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 20
+}

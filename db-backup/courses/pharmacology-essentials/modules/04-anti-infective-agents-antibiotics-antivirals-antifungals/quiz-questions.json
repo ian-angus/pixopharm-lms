@@ -1,0 +1,218 @@
+[
+  {
+    "id": "a5f09981-a75c-414d-a893-562745313dd7",
+    "module_id": "c354ee80-fb9f-423b-864a-2b0454f2bd54",
+    "question": "Amoxicillin works by:",
+    "options": [
+      "Inhibiting bacterial protein synthesis",
+      "Inhibiting bacterial cell wall synthesis",
+      "Disrupting bacterial DNA",
+      "Blocking bacterial folic acid synthesis"
+    ],
+    "correct_answer": 1,
+    "explanation": "Amoxicillin is a beta-lactam antibiotic that inhibits bacterial cell wall synthesis by binding to penicillin-binding proteins.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "854e757e-c1fe-4140-a720-1266979b0663",
+    "module_id": "c354ee80-fb9f-423b-864a-2b0454f2bd54",
+    "question": "Which drug causes a severe reaction with alcohol and requires specific counselling?",
+    "options": [
+      "Amoxicillin",
+      "Azithromycin",
+      "Metronidazole",
+      "Cephalexin"
+    ],
+    "correct_answer": 2,
+    "explanation": "Metronidazole causes a disulfiram-like reaction with alcohol: severe nausea, vomiting, flushing, and tachycardia.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "7eed6ec5-4b0c-4cae-bc05-4a51f2b1a5a0",
+    "module_id": "c354ee80-fb9f-423b-864a-2b0454f2bd54",
+    "question": "A patient with documented penicillin anaphylaxis requires an antibiotic. Which class should be avoided?",
+    "options": [
+      "Macrolides",
+      "Fluoroquinolones",
+      "Cephalosporins (used with extreme caution only)",
+      "Tetracyclines"
+    ],
+    "correct_answer": 2,
+    "explanation": "Cephalosporins share structural similarity with penicillins (the beta-lactam ring) and carry a 1-2% cross-reactivity risk. In patients with documented anaphylaxis, cephalosporins should be avoided or used only under medical supervision.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "55551193-5369-49e0-8f39-2eb2d902fd05",
+    "module_id": "c354ee80-fb9f-423b-864a-2b0454f2bd54",
+    "question": "The minimum adherence rate required for effective ARV therapy is:",
+    "options": [
+      "50%",
+      "75%",
+      "95%",
+      "100%"
+    ],
+    "correct_answer": 2,
+    "explanation": "ARV therapy requires >95% adherence to maintain viral suppression and prevent resistance development.",
+    "order_index": 3,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "1dbfdea7-642c-4fce-be5b-81931eee42ba",
+    "module_id": "c354ee80-fb9f-423b-864a-2b0454f2bd54",
+    "question": "Which factor is a major driver of antimicrobial resistance in the Caribbean?",
+    "options": [
+      "Too many hospitals",
+      "Over-the-counter antibiotic sales and incomplete courses",
+      "Excessive hand washing",
+      "Too few pharmacies"
+    ],
+    "correct_answer": 1,
+    "explanation": "OTC antibiotic availability, incomplete courses, self-medication with leftover antibiotics, and use for viral infections all drive AMR in the Caribbean.",
+    "order_index": 4,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "b02ef7bd-0947-4fe3-9384-1f109945b496",
+    "module_id": "c354ee80-fb9f-423b-864a-2b0454f2bd54",
+    "question": "Fluconazole is most commonly used to treat:",
+    "options": [
+      "Bacterial pneumonia",
+      "Candidal (yeast) infections",
+      "Malaria",
+      "Tuberculosis"
+    ],
+    "correct_answer": 1,
+    "explanation": "Fluconazole is an azole antifungal primarily effective against Candida species. It is commonly used for vaginal candidiasis, oral thrush, and systemic fungal infections.",
+    "order_index": 5,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "4a81be5d-6b1d-4d77-9d26-67a7b62e8aa9",
+    "module_id": "c354ee80-fb9f-423b-864a-2b0454f2bd54",
+    "question": "Azithromycin belongs to which antibiotic class?",
+    "options": [
+      "Penicillin",
+      "Cephalosporin",
+      "Macrolide",
+      "Fluoroquinolone"
+    ],
+    "correct_answer": 2,
+    "explanation": "Azithromycin is a macrolide antibiotic that inhibits bacterial protein synthesis by binding to the 50S ribosomal subunit.",
+    "order_index": 6,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "803bddbc-e4d5-444a-870d-9a66e8121777",
+    "module_id": "c354ee80-fb9f-423b-864a-2b0454f2bd54",
+    "question": "Antibiotics are ineffective against:",
+    "options": [
+      "Bacterial pneumonia",
+      "Urinary tract infections",
+      "The common cold (viral)",
+      "Strep throat"
+    ],
+    "correct_answer": 2,
+    "explanation": "The common cold is caused by viruses (rhinoviruses). Antibiotics only work against bacteria and should not be used for viral infections.",
+    "order_index": 7,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "4c4934a2-2b86-480d-ab5a-cb283878807d",
+    "module_id": "c354ee80-fb9f-423b-864a-2b0454f2bd54",
+    "question": "Doxycycline is used for malaria prophylaxis in the Caribbean. It belongs to which class?",
+    "options": [
+      "Macrolide",
+      "Beta-lactam",
+      "Tetracycline",
+      "Aminoglycoside"
+    ],
+    "correct_answer": 2,
+    "explanation": "Doxycycline is a tetracycline antibiotic that also has antimalarial activity. It is used for malaria prophylaxis in travellers and for treating various bacterial infections.",
+    "order_index": 8,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "7229a9f9-6f5a-46f9-88e2-ca3d5e1a02c6",
+    "module_id": "c354ee80-fb9f-423b-864a-2b0454f2bd54",
+    "question": "A pharmacy technician's most important role in antimicrobial stewardship is:",
+    "options": [
+      "Prescribing antibiotics when needed",
+      "Counselling patients on proper antibiotic use and completing full courses",
+      "Selling antibiotics without prescriptions to increase revenue",
+      "Recommending antibiotics for all sore throats"
+    ],
+    "correct_answer": 1,
+    "explanation": "Pharmacy technicians support stewardship by educating patients on appropriate use, emphasising course completion, and discouraging self-medication with antibiotics.",
+    "order_index": 9,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "evaluate"
+  },
+  {
+    "id": "5fde166d-dc50-4fe0-8286-b5b7e147f21a",
+    "module_id": "c354ee80-fb9f-423b-864a-2b0454f2bd54",
+    "question": "Rifampicin is a potent CYP450 inducer. This means it can:",
+    "options": [
+      "Increase the blood levels of other drugs",
+      "Reduce the effectiveness of oral contraceptives, warfarin, and many ARVs",
+      "Have no effect on other medications",
+      "Only interact with other antibiotics"
+    ],
+    "correct_answer": 1,
+    "explanation": "Rifampicin is one of the most powerful CYP450 inducers. It accelerates the metabolism of many drugs, reducing their effectiveness. This includes oral contraceptives, warfarin, HIV antiretrovirals, and many others.",
+    "order_index": 10,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "5c877c9a-20cb-4c0e-b71c-8462fb39e5a5",
+    "module_id": "c354ee80-fb9f-423b-864a-2b0454f2bd54",
+    "question": "The standard first-line TB treatment regimen (RIPE) consists of:",
+    "options": [
+      "Rifampicin, Isoniazid, Pyrazinamide, Ethambutol",
+      "Rifampicin, Ibuprofen, Penicillin, Erythromycin",
+      "Ranitidine, Isoniazid, Paracetamol, Enalapril",
+      "Rifampicin, Insulin, Prednisolone, Enalapril"
+    ],
+    "correct_answer": 0,
+    "explanation": "RIPE = Rifampicin, Isoniazid, Pyrazinamide, Ethambutol. This four-drug regimen is used for the initial 2 months of TB treatment, followed by rifampicin and isoniazid for a further 4 months.",
+    "order_index": 11,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  }
+]

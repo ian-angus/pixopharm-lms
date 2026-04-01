@@ -1,0 +1,54 @@
+{
+  "id": "b1ffb822-9622-480d-8c6e-ccbf327120b6",
+  "module_id": "260b3cfa-6a8e-4515-a5c7-46be02561533",
+  "title": "Overview of Caribbean Pharmacy Legislation",
+  "content": [
+    {
+      "text": "The Legal Foundation of Pharmacy Practice",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Every Caribbean island nation has its own pharmacy legislation — there is no single 'Caribbean pharmacy law'. This is one of the most important facts for any pharmacy technician to understand. If you train on one island and move to another, you must learn the new island's laws before you can practise. Ignorance of the law is never a defence.",
+      "type": "text"
+    },
+    {
+      "body": "Caribbean pharmacy legislation generally derives from the British colonial legal tradition and covers four main areas: (1) who may practise pharmacy, (2) what they may do, (3) how medications are classified and controlled, and (4) how the profession is governed and disciplined.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Trinidad & Tobago",
+          "Pharmacy Board Act (Ch. 29:52), Food and Drugs Act (Ch. 30:01), Dangerous Drugs Act (Ch. 11:25), Pesticides and Toxic Chemicals Act",
+          "Pharmacy Board of Trinidad and Tobago"
+        ],
+        [
+          "Jamaica",
+          "Pharmacy Act (1975, amended), Food and Drugs Act, Dangerous Drugs Act (1948, amended 2015), National Health Fund Act",
+          "Pharmacy Council of Jamaica"
+        ],
+        [
+          "Barbados",
+          "Pharmacy Act (Cap. 372D), Drug Abuse (Prevention and Control) Act (Cap. 131), Drug Service Act, Barbados National Formulary",
+          "Pharmacy Council of Barbados / Drug Service Division"
+        ]
+      ],
+      "type": "table",
+      "caption": "Primary Pharmacy Legislation by Island",
+      "headers": [
+        "Island",
+        "Key Legislation",
+        "Regulatory Body"
+      ]
+    },
+    {
+      "body": "Many Caribbean pharmacy laws were originally modelled on British legislation (particularly the UK Pharmacy Act and Misuse of Drugs Act). Over the decades, each island has amended and adapted these laws to reflect local realities. Understanding this colonial heritage helps explain both the similarities and differences between island legal frameworks.",
+      "type": "callout",
+      "title": "Colonial Legacy, Modern Reality",
+      "variant": "info"
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 15
+}

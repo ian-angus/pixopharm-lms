@@ -1,0 +1,100 @@
+{
+  "id": "798103f4-c317-46a2-a7f5-2e9712923346",
+  "module_id": "5f319f26-d171-487f-81fd-34146941df05",
+  "title": "Oral Hypoglycaemics: Metformin, Sulfonylureas & Newer Agents",
+  "content": [
+    {
+      "text": "Managing Type 2 Diabetes Without Insulin",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Most patients with type 2 diabetes in the Caribbean begin treatment with lifestyle modifications and metformin, the first-line oral hypoglycaemic worldwide. If metformin alone is insufficient, a second agent is added — commonly a sulfonylurea in the Caribbean due to cost and availability. Newer agents like DPP-4 inhibitors and SGLT2 inhibitors are increasingly available but often at higher cost.",
+      "type": "text"
+    },
+    {
+      "term": "Metformin",
+      "type": "key-term",
+      "definition": "A biguanide that reduces hepatic glucose production, increases insulin sensitivity, and reduces intestinal glucose absorption. First-line treatment for type 2 diabetes. Does NOT cause hypoglycaemia when used alone. Covered by CDAP (Trinidad) and NHF (Jamaica)."
+    },
+    {
+      "rows": [
+        [
+          "Biguanide",
+          "Metformin",
+          "Reduces hepatic glucose output",
+          "Low (alone)",
+          "Widely available — CDAP, NHF, Barbados Drug Service"
+        ],
+        [
+          "Sulfonylurea",
+          "Glibenclamide, glimepiride",
+          "Stimulates insulin secretion from pancreas",
+          "HIGH",
+          "Common second-line agent across Caribbean"
+        ],
+        [
+          "DPP-4 inhibitor",
+          "Sitagliptin, linagliptin",
+          "Increases incretin hormones",
+          "Low",
+          "Increasingly available; higher cost"
+        ],
+        [
+          "SGLT2 inhibitor",
+          "Empagliflozin, dapagliflozin",
+          "Blocks renal glucose reabsorption",
+          "Low",
+          "Growing use; cardiovascular and renal benefits"
+        ],
+        [
+          "Thiazolidinedione",
+          "Pioglitazone",
+          "Increases insulin sensitivity",
+          "Low",
+          "Limited use due to fluid retention concerns"
+        ]
+      ],
+      "type": "table",
+      "caption": "Oral Hypoglycaemic Drug Classes",
+      "headers": [
+        "Class",
+        "Example",
+        "Mechanism",
+        "Hypoglycaemia Risk",
+        "Caribbean Availability"
+      ]
+    },
+    {
+      "body": "Metformin should be used with caution (or withheld) in patients with significant renal impairment (eGFR <30 mL/min), severe dehydration, or acute illness. In these situations, metformin can accumulate and rarely cause lactic acidosis — a medical emergency. In the Caribbean, where dehydration from heat and gastroenteritis is common, this risk is clinically relevant.",
+      "type": "callout",
+      "title": "Metformin and Lactic Acidosis",
+      "variant": "warning"
+    },
+    {
+      "type": "case-study",
+      "title": "Case Study: Hypoglycaemia at a Kingston Market",
+      "scenario": "A 68-year-old woman taking glibenclamide 5 mg twice daily for diabetes is brought into a Kingston pharmacy by a concerned bystander. She appears confused, sweaty, and trembling. She last ate at 6 AM and it is now 2 PM.",
+      "questions": [
+        "What is the most likely cause of her symptoms?",
+        "Why is glibenclamide particularly risky for hypoglycaemia compared to metformin?",
+        "What immediate action should be taken in the pharmacy?"
+      ],
+      "discussion": "This patient is likely experiencing hypoglycaemia caused by glibenclamide, a sulfonylurea that stimulates insulin release regardless of blood glucose level. Skipping lunch while on a sulfonylurea is dangerous. Immediate management: give a fast-acting carbohydrate (glucose tablets, juice, or sugar water) and call for medical assistance if the patient does not improve within 15 minutes."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Glibenclamide",
+        "Metformin",
+        "Pioglitazone",
+        "Glimepiride"
+      ],
+      "question": "Which oral hypoglycaemic is first-line for type 2 diabetes and does NOT cause hypoglycaemia when used alone?",
+      "explanation": "Metformin is the global first-line treatment for type 2 diabetes. It works by reducing hepatic glucose production, not by stimulating insulin secretion, so it does not cause hypoglycaemia when used as monotherapy.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 20
+}

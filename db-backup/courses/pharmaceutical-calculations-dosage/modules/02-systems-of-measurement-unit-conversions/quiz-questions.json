@@ -1,0 +1,180 @@
+[
+  {
+    "id": "0492e5c4-50f5-43c8-ab3a-31e56a1929a1",
+    "module_id": "3531eb1a-a44a-4c50-bf40-ac897e98251f",
+    "question": "How many micrograms (mcg) are in 0.25 mg?",
+    "options": [
+      "2.5 mcg",
+      "25 mcg",
+      "250 mcg",
+      "2500 mcg"
+    ],
+    "correct_answer": 2,
+    "explanation": "1 mg = 1000 mcg. Therefore, 0.25 mg = 0.25 × 1000 = 250 mcg. This conversion is critical for drugs like levothyroxine and digoxin that are dosed in micrograms.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "59682b23-0724-4f28-9521-e11a169853dd",
+    "module_id": "3531eb1a-a44a-4c50-bf40-ac897e98251f",
+    "question": "1 tablespoon is equivalent to how many millilitres?",
+    "options": [
+      "5 mL",
+      "10 mL",
+      "15 mL",
+      "20 mL"
+    ],
+    "correct_answer": 2,
+    "explanation": "1 tablespoon = 15 mL (3 teaspoons × 5 mL each). This is a fundamental household-to-metric conversion used daily in patient counselling.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "8cd22487-0721-466d-a386-337fe1c320ed",
+    "module_id": "3531eb1a-a44a-4c50-bf40-ac897e98251f",
+    "question": "A child weighs 33 pounds. What is this in kilograms?",
+    "options": [
+      "10 kg",
+      "15 kg",
+      "20 kg",
+      "25 kg"
+    ],
+    "correct_answer": 1,
+    "explanation": "33 lb ÷ 2.2 lb/kg = 15 kg. This is a typical weight for a toddler aged 2-3 years. Weight-based dosing calculations always require weight in kilograms.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "fce15dde-e01c-4307-924f-2bc2c38e0932",
+    "module_id": "3531eb1a-a44a-4c50-bf40-ac897e98251f",
+    "question": "The acceptable temperature range for pharmaceutical refrigerator storage is:",
+    "options": [
+      "-2 to 0°C",
+      "0 to 4°C",
+      "2 to 8°C",
+      "8 to 15°C"
+    ],
+    "correct_answer": 2,
+    "explanation": "The standard pharmaceutical refrigerator range is 2-8°C. Below 2°C risks freezing (which destroys vaccines and insulin). Above 8°C risks degradation of temperature-sensitive medications.",
+    "order_index": 3,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "df1dd763-6cca-49f8-a7fa-88ae32ad01e6",
+    "module_id": "3531eb1a-a44a-4c50-bf40-ac897e98251f",
+    "question": "Convert 37°C to Fahrenheit.",
+    "options": [
+      "96.8°F",
+      "98.6°F",
+      "100.4°F",
+      "102.2°F"
+    ],
+    "correct_answer": 1,
+    "explanation": "°F = (°C × 9/5) + 32 = (37 × 9/5) + 32 = 66.6 + 32 = 98.6°F. This is normal body temperature — a key reference point for patient assessment.",
+    "order_index": 4,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "74ee3603-914b-443b-927c-e47cebbfb2b6",
+    "module_id": "3531eb1a-a44a-4c50-bf40-ac897e98251f",
+    "question": "Match each measurement system with its primary use in Caribbean pharmacy.",
+    "options": [
+      "Metric — Patient counselling on liquid doses",
+      "Household — All drug dosing and documentation",
+      "Metric — All drug dosing and documentation; Household — Patient counselling",
+      "All three systems are used interchangeably"
+    ],
+    "correct_answer": 2,
+    "explanation": "The metric system is the standard for all professional pharmacy calculations, documentation, and labelling. Household measures (teaspoons, tablespoons) are used when counselling patients on how to measure liquid doses at home. The apothecary system is essentially obsolete but technicians should recognise it in older references.",
+    "order_index": 5,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "21cf0815-0d3a-402f-83a4-a7bb90fad898",
+    "module_id": "3531eb1a-a44a-4c50-bf40-ac897e98251f",
+    "question": "Why should 'μg' NEVER be used as an abbreviation for micrograms in handwritten medication orders?",
+    "options": [
+      "It is not an SI-approved abbreviation",
+      "The 'μ' symbol can be misread as 'm', causing a 1000-fold dosing error",
+      "Pharmacy computer systems cannot process the μ symbol",
+      "Micrograms should always be written as fractions of milligrams instead"
+    ],
+    "correct_answer": 1,
+    "explanation": "The Greek letter μ can easily be misread as 'm' in handwriting, turning micrograms into milligrams — a 1000-fold error. For drugs like digoxin (usual dose 125-250 mcg), this error (125-250 mg) would be rapidly fatal. Always write 'mcg' or spell out 'micrograms'.",
+    "order_index": 6,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "c93ff204-0960-4f1d-8c44-7cd1a29d2414",
+    "module_id": "3531eb1a-a44a-4c50-bf40-ac897e98251f",
+    "question": "A prescription is written for 0.5 g of ciprofloxacin. The pharmacy stocks 250 mg tablets. How many tablets per dose?",
+    "options": [
+      "½ tablet",
+      "1 tablet",
+      "2 tablets",
+      "4 tablets"
+    ],
+    "correct_answer": 2,
+    "explanation": "First convert: 0.5 g = 500 mg. Then: 500 mg ÷ 250 mg/tablet = 2 tablets per dose. This unit conversion (g to mg) before calculating tablet quantity is a daily pharmacy operation.",
+    "order_index": 7,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "5b1620f5-a0a0-4db6-a0d3-d7337e57e941",
+    "module_id": "3531eb1a-a44a-4c50-bf40-ac897e98251f",
+    "question": "True or false: In the Caribbean, 'room temperature' storage (20-25°C) can be achieved without air conditioning in most pharmacy settings.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": 1,
+    "explanation": "False. Average Caribbean ambient temperature is 28-33°C, which exceeds the 20-25°C 'controlled room temperature' standard. Air conditioning is essential for proper pharmaceutical storage in the Caribbean. Power outages during hurricane season pose a significant risk to medication storage.",
+    "order_index": 8,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "31a680d1-e9eb-4e9a-bba3-c4fab9af0805",
+    "module_id": "3531eb1a-a44a-4c50-bf40-ac897e98251f",
+    "question": "A mother measures her child's liquid medicine using a kitchen teaspoon that actually holds 3 mL instead of 5 mL. If the prescribed dose is 5 mL (one teaspoon), the child receives what percentage of the correct dose?",
+    "options": [
+      "30%",
+      "50%",
+      "60%",
+      "75%"
+    ],
+    "correct_answer": 2,
+    "explanation": "The child receives 3 mL instead of 5 mL. 3/5 × 100 = 60% of the correct dose. This 40% underdose could result in treatment failure — for example, subtherapeutic antibiotic levels that promote resistance. This is why oral dosing syringes should always be recommended over kitchen spoons.",
+    "order_index": 9,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "hard",
+    "blooms_level": "analyze"
+  }
+]

@@ -1,0 +1,80 @@
+{
+  "id": "62d8bd28-e7cc-41a9-8ccd-9742ff2f5a3a",
+  "module_id": "3f5fc7a2-b1cf-4c21-830b-56e7b7de19bf",
+  "title": "The Unwritten Rules: What COSTAATT Does Not Teach You",
+  "content": [
+    {
+      "text": "The Informal Knowledge That Makes or Breaks You",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Every pharmacy has its own culture — unwritten rules that no training programme covers. These are the small things that determine whether your first month is smooth or painful. They vary from pharmacy to pharmacy, but certain patterns repeat across the Caribbean. Learning these early will save you grief.",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Learn the pharmacist's preferences: some want you to bring every query to them immediately; others want you to batch questions. Ask on day one how they prefer to work.",
+        "Know the regulars: within your first week, learn the names of the five most frequent customers. Greeting them by name transforms the interaction.",
+        "Never eat at the dispensing counter: this is a health and safety issue, but in some pharmacies it is also a respect issue. The dispensing area is a clinical workspace.",
+        "Phone etiquette matters more than you think: in the Caribbean, how you answer the phone reflects the entire pharmacy. 'Good morning, [Pharmacy Name], how may I help you?' — every single time.",
+        "Clean as you go: a cluttered counter slows everyone down and looks unprofessional to patients watching from the other side.",
+        "Do not discuss patients in front of other patients: even something as simple as 'Oh, Mrs. Ramjohn is here for her diabetes medication again' violates confidentiality.",
+        "Dress the part: many Caribbean pharmacies require a uniform or lab coat. Even where they do not, professional appearance builds patient trust."
+      ],
+      "ordered": true
+    },
+    {
+      "body": "Caribbean communities are tight-knit. The person behind the counter next to you might be related to the customer you just served. The patient collecting HIV medication might be your neighbour. Pharmacy gossip is not just unprofessional — it is a violation of patient confidentiality and can destroy trust in the entire pharmacy. What happens behind the counter stays behind the counter. Always.",
+      "type": "callout",
+      "title": "The Gossip Trap",
+      "variant": "warning"
+    },
+    {
+      "type": "case-study",
+      "title": "Case Study: The New Technician's First Week",
+      "scenario": "Keisha starts her first week at a busy community pharmacy in San Fernando, Trinidad. On day two, she overhears the pharmacist telling a patient about a medication change. Later, a different customer asks Keisha what medication the first patient is taking. The customer says, 'I saw Mrs. Ali in here — she is my neighbour. Is she okay? What was the pharmacist telling her about?' Keisha knows the answer but feels uncomfortable.",
+      "questions": [
+        "What should Keisha say to the curious customer?",
+        "Why is this situation particularly challenging in a tight-knit Caribbean community?",
+        "How can Keisha handle this without offending the customer or seeming rude?"
+      ],
+      "discussion": "Keisha should respond with something like: 'I am sorry, I cannot discuss another patient's information. That is confidential. Is there anything I can help you with today?' This is challenging because in Caribbean culture, asking about a neighbour's health is considered caring, not intrusive. Keisha must maintain confidentiality while being respectful of the cultural norm. A warm but firm boundary is the right approach."
+    },
+    {
+      "term": "Patient Confidentiality",
+      "type": "key-term",
+      "definition": "The ethical and legal obligation to protect all patient health information from unauthorised disclosure. This includes not discussing a patient's medications, conditions, or pharmacy visits with anyone who is not directly involved in their care — even family members, unless the patient has given explicit consent."
+    },
+    {
+      "text": "Adapting to Your Specific Pharmacy",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Every pharmacy has its quirks. The printer that jams if you load it a certain way. The shelf where the amlodipine is not where the label says it should be. The supplier delivery driver who always arrives late on Fridays. The regular customer who insists on being served only by a specific staff member. These are not problems to fix — they are the texture of your workplace. Adapt to them, and you will fit in. Fight them on day one, and you will struggle.",
+      "type": "text"
+    },
+    {
+      "body": "Give yourself 30 days before you suggest changing anything. Observe first. Understand why things are done a certain way before proposing improvements. That 'inefficient' process might exist for a reason you do not yet understand. After 30 days, if you see a genuine improvement, raise it respectfully.",
+      "type": "callout",
+      "title": "The 30-Day Rule",
+      "variant": "tip"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Share the information since the customer is clearly concerned and well-meaning",
+        "Tell the customer to mind their own business",
+        "Politely explain that you cannot discuss another patient's information and redirect the conversation",
+        "Ask the pharmacist whether it is acceptable to share in this case"
+      ],
+      "question": "A regular customer asks you what medication another patient was collecting. The customer says they are concerned about their neighbour's health. What do you do?",
+      "explanation": "Patient confidentiality is absolute, regardless of the enquirer's intentions. A polite but firm response protects the patient's privacy while respecting the customer's concern. Even asking the pharmacist is unnecessary — the answer is always no. Confidentiality is not discretionary.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 3,
+  "duration_minutes": 25
+}

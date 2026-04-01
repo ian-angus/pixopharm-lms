@@ -1,0 +1,125 @@
+{
+  "id": "7fd35fa1-1516-4992-afb4-6cd4ea15c23d",
+  "module_id": "c33cff75-0326-4020-95b4-a2f8a518375a",
+  "title": "Writing Effective SOPs: Structure, Language & Templates",
+  "content": [
+    {
+      "text": "Anatomy of an Effective SOP",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "An effective SOP is clear, concise, actionable, and complete. It tells the reader exactly what to do, how to do it, and what to do when things go wrong. The language must be plain, direct, and free of ambiguity. Steps must be numbered and sequential. Critical safety points must be highlighted. And the document must be formatted so that it can be quickly referenced during the task — not buried in paragraphs of text that no one reads.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Title",
+          "Clear, specific name of the procedure",
+          "Quick identification — e.g., 'SOP: Dispensing Workflow for Prescription Medications'"
+        ],
+        [
+          "SOP Number & Version",
+          "Unique identifier and version number",
+          "Document control — ensures the most current version is in use"
+        ],
+        [
+          "Effective Date",
+          "Date the SOP becomes active",
+          "Ensures staff know when the procedure took effect"
+        ],
+        [
+          "Review Date",
+          "Date by which the SOP must be reviewed (typically every 12-24 months)",
+          "Prevents outdated procedures from remaining in use"
+        ],
+        [
+          "Purpose",
+          "Brief statement of why this SOP exists",
+          "Provides context and motivation for following the procedure"
+        ],
+        [
+          "Scope",
+          "Who must follow this SOP and in what circumstances",
+          "Clarifies applicability — e.g., 'All pharmacy technicians during dispensing shifts'"
+        ],
+        [
+          "Responsibilities",
+          "Who is responsible for each element of the procedure",
+          "Eliminates ambiguity about roles"
+        ],
+        [
+          "Procedure Steps",
+          "Numbered, sequential, action-oriented steps",
+          "The core of the SOP — tells staff exactly what to do"
+        ],
+        [
+          "Safety Alerts",
+          "Warnings about critical steps where errors could cause harm",
+          "Draws attention to high-risk moments in the workflow"
+        ],
+        [
+          "References",
+          "Laws, guidelines, or other SOPs referenced",
+          "Connects the SOP to regulatory requirements and best practices"
+        ],
+        [
+          "Approval Signatures",
+          "Signatures of the author and approver (pharmacist-in-charge)",
+          "Authorises the document for use"
+        ]
+      ],
+      "type": "table",
+      "caption": "Essential Components of a Pharmacy SOP",
+      "headers": [
+        "Component",
+        "Description",
+        "Purpose"
+      ]
+    },
+    {
+      "text": "SOP Writing Best Practices",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "type": "list",
+      "items": [
+        "Use active voice and imperative mood — 'Scan the barcode' not 'The barcode should be scanned'",
+        "One action per step — do not combine multiple actions in a single numbered step",
+        "Use plain language — write for the least experienced person who might need to follow the SOP",
+        "Include 'what if' branches — if step 5 produces an unexpected result, what should the user do?",
+        "Highlight critical safety steps with WARNING or CAUTION markers",
+        "Keep the SOP to 1-2 pages for simple procedures — if longer, consider breaking into sub-procedures",
+        "Use consistent formatting — headers, numbering, and layout should be the same across all SOPs",
+        "Test the SOP by having someone unfamiliar with the process attempt to follow it"
+      ],
+      "ordered": true
+    },
+    {
+      "body": "A practical SOP template for Caribbean pharmacies should include a header block (pharmacy name, SOP number, title, effective date, review date), a purpose statement, scope and responsibilities, numbered procedure steps with safety alerts, a 'what if' section for common exceptions, and a signature block. Keep the template simple — an overly complex template discourages SOP creation.",
+      "type": "callout",
+      "title": "Caribbean SOP Template",
+      "variant": "tip"
+    },
+    {
+      "body": "The language of an SOP must be precise and unambiguous. Consider the difference: 'Store medication properly' versus 'Store medication at 15–25 °C in the designated cool-storage area, away from direct sunlight, with the temperature log updated twice daily.' The second version leaves no room for interpretation. In pharmacy, ambiguity can be dangerous.",
+      "type": "text"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Medications should be stored at appropriate temperatures",
+        "Check the prescription carefully for accuracy",
+        "Scan the product barcode and verify that the drug name, strength, and dosage form displayed on screen match the prescription label exactly",
+        "Ensure quality is maintained throughout the dispensing process"
+      ],
+      "question": "Which of the following is the BEST example of an SOP procedure step?",
+      "explanation": "The third option is a well-written SOP step: it uses active voice, specifies the exact action (scan the barcode), and states the verification criteria (drug name, strength, dosage form must match the prescription label). The other options are vague — 'appropriate,' 'carefully,' and 'quality' are subjective terms that leave room for interpretation.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 20
+}

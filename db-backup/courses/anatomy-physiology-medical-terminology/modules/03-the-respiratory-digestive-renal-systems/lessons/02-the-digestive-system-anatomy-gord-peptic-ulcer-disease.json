@@ -1,0 +1,111 @@
+{
+  "id": "acfeeebd-d6cb-4239-bd89-7c2b9acb30c1",
+  "module_id": "18355ac8-d8d2-46a7-8eb4-7df008bb62d9",
+  "title": "The Digestive System: Anatomy, GORD & Peptic Ulcer Disease",
+  "content": [
+    {
+      "text": "The Gastrointestinal Tract: From Mouth to Anus",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "The digestive system is a continuous muscular tube (the gastrointestinal tract or GI tract) approximately 9 metres long in adults, extending from the mouth to the anus. Its primary functions are ingestion, mechanical and chemical digestion, absorption of nutrients, and elimination of waste. The major organs include the oral cavity, oesophagus, stomach, small intestine (duodenum, jejunum, ileum), large intestine (caecum, colon, rectum), and anus. Accessory organs — the liver, gallbladder, and pancreas — produce digestive enzymes and bile that are secreted into the GI tract.",
+      "type": "text"
+    },
+    {
+      "body": "For pharmacy technicians, the digestive system is relevant on multiple levels. Many medications are administered orally and must survive the acidic stomach environment to be absorbed in the intestines. Many drugs cause GI side effects (nausea, diarrhoea, constipation). Several common conditions — gastro-oesophageal reflux disease (GORD), peptic ulcer disease, and irritable bowel syndrome — generate a high volume of prescriptions and OTC sales.",
+      "type": "text"
+    },
+    {
+      "text": "Gastro-oesophageal Reflux Disease (GORD)",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "GORD occurs when the lower oesophageal sphincter (LES) — the muscular valve between the oesophagus and stomach — fails to close properly, allowing stomach acid to reflux into the oesophagus. This causes heartburn (a burning sensation behind the sternum), regurgitation, and, if chronic, damage to the oesophageal lining (oesophagitis). GORD is extremely common in the Caribbean, partly due to dietary factors (spicy foods, carbonated drinks, late-night eating) and high obesity rates.",
+      "type": "text"
+    },
+    {
+      "term": "Proton Pump Inhibitor (PPI)",
+      "type": "key-term",
+      "definition": "A class of drugs that irreversibly blocks the hydrogen-potassium ATPase enzyme system (the 'proton pump') in the gastric parietal cells, reducing stomach acid production by up to 90%. PPIs include omeprazole, pantoprazole, esomeprazole, and lansoprazole. They are identified by the drug name stem '-prazole' and are among the most dispensed medication classes in Caribbean pharmacies."
+    },
+    {
+      "text": "Peptic Ulcer Disease",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Peptic ulcers are erosions of the mucosal lining of the stomach (gastric ulcer) or duodenum (duodenal ulcer). The two primary causes are infection with Helicobacter pylori (H. pylori) bacteria and chronic use of non-steroidal anti-inflammatory drugs (NSAIDs) such as ibuprofen and diclofenac. In the Caribbean, high NSAID use for chronic pain conditions and musculoskeletal complaints contributes significantly to peptic ulcer prevalence. Treatment of H. pylori involves triple therapy: a PPI plus two antibiotics (typically amoxicillin and clarithromycin).",
+      "type": "text"
+    },
+    {
+      "body": "NSAIDs like ibuprofen and diclofenac are widely available over the counter in Caribbean pharmacies and are heavily used for pain relief. However, chronic NSAID use is a major cause of peptic ulcers and GI bleeding, and also worsens kidney function and increases cardiovascular risk. Pharmacy technicians should be aware that patients buying NSAIDs regularly may need counselling about safer alternatives — the pharmacist can advise on paracetamol or topical NSAIDs as lower-risk options.",
+      "type": "callout",
+      "title": "NSAID Use in the Caribbean — A Double-Edged Sword",
+      "variant": "warning"
+    },
+    {
+      "rows": [
+        [
+          "Proton pump inhibitors",
+          "Omeprazole, pantoprazole",
+          "Block gastric proton pump → reduce acid secretion",
+          "GORD, peptic ulcers, H. pylori eradication"
+        ],
+        [
+          "H2-receptor antagonists",
+          "Ranitidine*, famotidine",
+          "Block histamine H2 receptors → reduce acid secretion",
+          "Mild GORD, acid indigestion (*ranitidine withdrawn in many markets due to NDMA)"
+        ],
+        [
+          "Antacids",
+          "Aluminium hydroxide, magnesium hydroxide",
+          "Neutralise existing stomach acid directly",
+          "Immediate heartburn relief"
+        ],
+        [
+          "Antiemetics",
+          "Metoclopramide, ondansetron",
+          "Block dopamine/serotonin receptors in the vomiting centre",
+          "Nausea and vomiting — high demand during dengue season"
+        ],
+        [
+          "Antidiarrhoeals",
+          "Loperamide",
+          "Reduce gut motility",
+          "Acute diarrhoea — common in tropical settings"
+        ],
+        [
+          "Oral rehydration salts (ORS)",
+          "WHO-formula ORS",
+          "Replace fluids and electrolytes",
+          "Diarrhoeal illness — a Caribbean pharmacy staple"
+        ]
+      ],
+      "type": "table",
+      "caption": "Common GI Medications in Caribbean Pharmacy Practice",
+      "headers": [
+        "Drug Class",
+        "Examples",
+        "Mechanism",
+        "Common Use"
+      ]
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Stress and spicy food",
+        "Helicobacter pylori infection and chronic NSAID use",
+        "Alcohol consumption and smoking",
+        "Paracetamol overdose and dehydration"
+      ],
+      "question": "What are the two primary causes of peptic ulcer disease?",
+      "explanation": "The two primary causes of peptic ulcer disease are H. pylori infection and chronic NSAID use. While stress, spicy food, alcohol, and smoking may worsen symptoms, they are not primary causes. This distinction is clinically important because treatment involves either H. pylori eradication therapy or NSAID cessation, alongside acid suppression with PPIs.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 30
+}

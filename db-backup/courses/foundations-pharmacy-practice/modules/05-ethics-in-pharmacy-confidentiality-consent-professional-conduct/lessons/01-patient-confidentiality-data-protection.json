@@ -1,0 +1,137 @@
+{
+  "id": "a3d45dd4-64be-4e06-935d-821c3c8bdc54",
+  "module_id": "dc1f1623-87c0-4bbe-bfb2-9ba9f226430b",
+  "title": "Patient Confidentiality & Data Protection",
+  "content": [
+    {
+      "text": "The Sacred Duty of Confidentiality",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Patient confidentiality is not merely a legal obligation — it is the foundation of the trust that makes healthcare possible. When a patient hands you a prescription, they are trusting you with intimate details of their health. They are trusting that you will not share their medical conditions, medications, or personal information with anyone who does not have a legitimate need to know. A single breach of this trust can destroy a patient's willingness to seek treatment, with potentially fatal consequences.",
+      "type": "text"
+    },
+    {
+      "body": "Breaching patient confidentiality can result in: termination of employment, criminal prosecution under data protection laws, civil lawsuits for damages, removal from any professional register, and most importantly — real harm to the patient whose privacy you violated. In small Caribbean communities, a confidentiality breach can lead to social stigma, discrimination, damaged relationships, and patients avoiding necessary treatment.",
+      "type": "callout",
+      "title": "Confidentiality Is Not Optional",
+      "variant": "danger"
+    },
+    {
+      "text": "What Information Is Confidential?",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "ALL patient information is confidential. This includes, but is not limited to:",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "The patient's name and the fact that they visited the pharmacy at all",
+        "Every medication they are prescribed or purchase",
+        "Their medical conditions, diagnoses, and health history",
+        "Their address, date of birth, and contact information",
+        "Payment information and insurance/NHF details",
+        "Anything the patient tells you verbally during counselling",
+        "The prescriber's identity and the contents of the prescription",
+        "Any notes in the patient's pharmacy file"
+      ],
+      "ordered": false
+    },
+    {
+      "text": "Types of Confidentiality Breaches",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "rows": [
+        [
+          "Verbal breaches",
+          "Discussing a patient's medication within earshot of others, gossiping about patients with colleagues, calling out a patient's name and medication loudly at the pickup counter",
+          "Lower your voice, use private counselling areas, never discuss patients outside the pharmacy"
+        ],
+        [
+          "Visual breaches",
+          "Leaving prescriptions visible on the counter, prescription bags with visible medication names, computer screens displaying patient records visible to the public",
+          "Position screens away from public view, use privacy screens, handle prescriptions face-down"
+        ],
+        [
+          "Electronic breaches",
+          "Sharing patient records via unsecured email, leaving pharmacy systems logged in unattended, storing patient data on personal devices, sharing patient information on WhatsApp or social media",
+          "Log out when stepping away, never use personal devices for patient data, use only approved communication channels"
+        ],
+        [
+          "Physical breaches",
+          "Improperly disposing of prescriptions or patient records (not shredded), leaving patient files accessible to unauthorised staff",
+          "Shred all documents containing patient information, lock filing cabinets, restrict access to records"
+        ]
+      ],
+      "type": "table",
+      "caption": "How Confidentiality Is Breached in Practice",
+      "headers": [
+        "Type",
+        "Examples",
+        "Prevention"
+      ]
+    },
+    {
+      "text": "Data Protection Legislation in the Caribbean",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "type": "island-comparison",
+      "title": "Data Protection Laws by Island",
+      "islands": [
+        {
+          "flag": "🇹🇹",
+          "name": "Trinidad & Tobago",
+          "details": [
+            "Data Protection Act 2011 (proclaimed in stages) — one of the earliest in the Caribbean",
+            "Classifies health information as 'sensitive personal data' requiring enhanced protections",
+            "Data controllers (including pharmacies) must register with the Office of the Information Commissioner",
+            "Patients have the right to access, correct, and request deletion of their personal data",
+            "Penalties: fines up to TT$100,000 and/or imprisonment for serious breaches",
+            "Pharmacies must have written data protection policies and train all staff"
+          ]
+        },
+        {
+          "flag": "🇯🇲",
+          "name": "Jamaica",
+          "details": [
+            "Jamaica's Data Protection Act (2020) establishes a framework for personal data protection",
+            "Healthcare data is classified as sensitive personal data",
+            "Pharmacies handling patient records are considered data processors/controllers",
+            "The Office of the Information Commissioner oversees compliance",
+            "Patients must be informed of how their data will be used and stored",
+            "Breach notification requirements apply — significant breaches must be reported"
+          ]
+        },
+        {
+          "flag": "🇧🇧",
+          "name": "Barbados",
+          "details": [
+            "Data Protection Act 2019 — comprehensive legislation aligned with international standards",
+            "Pharmacies must implement appropriate technical and organisational measures to protect patient data",
+            "Health data receives enhanced protection as a 'special category' of personal data",
+            "Patients have rights of access, rectification, erasure, and data portability",
+            "A Data Protection Commissioner oversees enforcement",
+            "Pharmacies must conduct data protection impact assessments for new systems handling patient information"
+          ]
+        }
+      ],
+      "description": "Caribbean nations are increasingly adopting formal data protection legislation that directly impacts pharmacy practice."
+    },
+    {
+      "body": "In many Caribbean pharmacies, WhatsApp is informally used to communicate between staff, prescribers, and sometimes patients. This practice poses SERIOUS data protection risks. Patient information should NEVER be shared via WhatsApp or similar messaging platforms unless the system has been formally approved by the pharmacy's data protection policy and meets encryption and data residency requirements. A screenshot of a WhatsApp message containing patient information could be shared endlessly and constitutes a data breach.",
+      "type": "callout",
+      "title": "WhatsApp Warning",
+      "variant": "warning"
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 30
+}

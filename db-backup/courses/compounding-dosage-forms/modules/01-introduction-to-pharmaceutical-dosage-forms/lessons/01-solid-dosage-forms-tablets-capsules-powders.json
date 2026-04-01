@@ -1,0 +1,107 @@
+{
+  "id": "ef6c8777-2cd9-4019-8197-adea3022a432",
+  "module_id": "3fc15d29-bbc6-49e7-9434-0660669d41ee",
+  "title": "Solid Dosage Forms: Tablets, Capsules & Powders",
+  "content": [
+    {
+      "text": "The Most Common Dosage Forms in Pharmacy",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Solid dosage forms — tablets, capsules, and powders — represent the majority of medications dispensed in Caribbean pharmacies. They are generally the most stable dosage forms, the most convenient for patients, and the most economical to manufacture and transport. However, even solid dosage forms face challenges in the tropical Caribbean environment, particularly from moisture absorption and heat exposure.",
+      "type": "text"
+    },
+    {
+      "body": "Tablets are the single most common dosage form worldwide. A tablet is a compressed solid containing the active ingredient mixed with excipients that serve various functions: binders hold the tablet together, disintegrants help it break apart in the GI tract, lubricants prevent the tablet from sticking to manufacturing equipment, and coatings protect the drug from stomach acid or mask an unpleasant taste. Understanding these components is essential for compounding technicians who may need to prepare tablet triturations or powder blends.",
+      "type": "text"
+    },
+    {
+      "term": "Excipient",
+      "type": "key-term",
+      "definition": "Any pharmacologically inactive substance used alongside the active pharmaceutical ingredient in a dosage form. Excipients serve specific purposes such as binding (holding a tablet together), disintegrating (helping a tablet break apart), lubricating (preventing sticking during manufacture), flavouring (improving taste), preserving (preventing microbial growth), and colouring (aiding identification)."
+    },
+    {
+      "rows": [
+        [
+          "Compressed Tablets",
+          "Powder compressed into a solid disc or shape",
+          "Accurate dosing, stable, portable, long shelf life",
+          "Store below 30°C; moisture-sensitive tablets (e.g., aspirin) require desiccants in humid Caribbean climates"
+        ],
+        [
+          "Enteric-Coated Tablets",
+          "Coated to resist stomach acid; dissolve in the intestine",
+          "Protects acid-sensitive drugs; reduces gastric irritation",
+          "Coating may soften in extreme heat; store in cool, dry place; never crush"
+        ],
+        [
+          "Hard Gelatin Capsules",
+          "Two-piece capsule shell filled with powder or granules",
+          "Masks taste; easy to swallow; can be compounded in-pharmacy",
+          "Gelatin absorbs moisture in high humidity (>60% RH); capsules may become tacky or stick together; use desiccants"
+        ],
+        [
+          "Soft Gelatin Capsules",
+          "One-piece sealed capsule containing liquid or semi-solid fill",
+          "Ideal for oils and liquid drugs; improved bioavailability",
+          "Very sensitive to heat and humidity; may soften, deform, or leak in tropical storage"
+        ],
+        [
+          "Powders and Granules",
+          "Finely divided solid intended for reconstitution or direct use",
+          "Flexible dosing; good for paediatric use; stable when dry",
+          "Extremely hygroscopic in Caribbean humidity; must be stored in airtight containers with desiccants"
+        ]
+      ],
+      "type": "table",
+      "caption": "Types of Solid Dosage Forms",
+      "headers": [
+        "Dosage Form",
+        "Description",
+        "Advantages",
+        "Caribbean Storage Considerations"
+      ]
+    },
+    {
+      "body": "Caribbean humidity regularly exceeds 80% RH, especially during the wet season (June–December). This level of moisture can cause tablets to absorb water, become soft, crumble, or undergo chemical degradation. Hard gelatin capsules may become tacky and stick together, while effervescent tablets may begin reacting prematurely. Always store solid dosage forms in tightly sealed containers, use desiccant packets, and monitor storage conditions. In pharmacies without climate control, consider the viability of compounding hygroscopic preparations.",
+      "type": "callout",
+      "title": "Humidity and Solid Dosage Forms",
+      "variant": "warning"
+    },
+    {
+      "text": "Modified-Release Solid Dosage Forms",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Modified-release dosage forms are engineered to control the rate or location of drug release. These include sustained-release (SR), extended-release (XR/ER), controlled-release (CR), and delayed-release formulations. These products must never be crushed, split, or chewed (unless specifically designed for this), as doing so can cause dose dumping — the immediate release of the entire dose, which can be dangerous or fatal.",
+      "type": "text"
+    },
+    {
+      "body": "Crushing or chewing a modified-release tablet destroys its release mechanism and can cause the entire dose to be absorbed at once (dose dumping). This is particularly dangerous with opioids, cardiovascular drugs, and psychotropic medications. When compounding for patients who cannot swallow tablets (e.g., paediatric or elderly patients), always verify whether the source drug is an immediate-release formulation before crushing. If a modified-release formulation is the only option, consult the pharmacist for an alternative formulation strategy.",
+      "type": "callout",
+      "title": "NEVER Crush Modified-Release Tablets",
+      "variant": "danger"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "The capsules are expired — discard and reorder",
+        "High ambient humidity is causing the gelatin shells to absorb moisture — add desiccant packets and ensure containers are tightly sealed",
+        "The capsules were manufactured incorrectly — return to supplier",
+        "This is normal for gelatin capsules and requires no action"
+      ],
+      "question": "A pharmacy in Kingston, Jamaica, reports that their hard gelatin capsules are becoming tacky and sticking together during the wet season. What is the most likely cause and appropriate corrective action?",
+      "explanation": "Gelatin is highly hygroscopic and readily absorbs moisture from the surrounding environment. In Jamaica's wet season, humidity regularly exceeds 80% RH, causing gelatin capsules to become soft, tacky, and prone to sticking together. The corrective actions are to store capsules in tightly sealed containers with desiccant packets and, where possible, in climate-controlled storage areas.",
+      "correctIndex": 1
+    },
+    {
+      "term": "Dose Dumping",
+      "type": "key-term",
+      "definition": "The unintended, rapid release of the entire amount of drug contained in a modified-release dosage form. This can occur when a sustained-release tablet is crushed, chewed, or exposed to alcohol, leading to potentially toxic plasma drug concentrations. Dose dumping is a serious safety concern and can be fatal."
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 30
+}

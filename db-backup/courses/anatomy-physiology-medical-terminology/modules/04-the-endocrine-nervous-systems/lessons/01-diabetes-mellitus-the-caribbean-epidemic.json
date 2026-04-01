@@ -1,0 +1,150 @@
+{
+  "id": "04ce4821-6076-4c92-81f2-30875ca31cda",
+  "module_id": "3222ebc2-0078-4915-a18c-97e78b0bcad5",
+  "title": "Diabetes Mellitus: The Caribbean Epidemic",
+  "content": [
+    {
+      "text": "Diabetes in the Caribbean: A Public Health Crisis",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Diabetes mellitus is arguably the most consequential chronic disease facing the Caribbean. The International Diabetes Federation (IDF) estimates that diabetes prevalence in the Caribbean ranges from 10% to over 15% of the adult population — significantly higher than the global average. Trinidad & Tobago, Jamaica, and Barbados all face epidemic-level diabetes rates. The consequences are devastating: diabetic nephropathy leading to dialysis, diabetic retinopathy causing blindness, diabetic neuropathy causing amputations, and accelerated cardiovascular disease.",
+      "type": "text"
+    },
+    {
+      "body": "For pharmacy technicians, diabetes generates an enormous volume of daily work. Oral antidiabetic agents, insulin, blood glucose monitoring supplies, and medications for diabetic complications (ACE inhibitors for nephropathy, statins for cardiovascular protection, gabapentin for neuropathic pain) collectively represent the largest medication category in many Caribbean pharmacies.",
+      "type": "text"
+    },
+    {
+      "text": "Type 1 vs Type 2 Diabetes",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Type 1 diabetes is an autoimmune condition in which the immune system destroys the insulin-producing beta cells of the pancreatic islets. Patients produce little or no insulin and are absolutely dependent on exogenous insulin injections. It typically presents in childhood or adolescence and accounts for approximately 5-10% of all diabetes cases.",
+      "type": "text"
+    },
+    {
+      "body": "Type 2 diabetes is characterised by insulin resistance (the body's cells respond poorly to insulin) and progressive beta cell dysfunction (the pancreas gradually produces less insulin). It is strongly associated with obesity, physical inactivity, and genetic predisposition. Type 2 accounts for 90-95% of all diabetes cases and is the type driving the Caribbean epidemic. It can often be managed initially with lifestyle modification and oral medications, but many patients eventually require insulin as the disease progresses.",
+      "type": "text"
+    },
+    {
+      "type": "island-comparison",
+      "title": "Diabetes Prevalence and Management Across the Caribbean",
+      "islands": [
+        {
+          "flag": "🇹🇹",
+          "name": "Trinidad & Tobago",
+          "details": [
+            "Diabetes prevalence estimated at 12-15% of adults — one of the highest in the Americas",
+            "CDAP provides free diabetes medications: metformin, glibenclamide, insulin",
+            "Indo-Trinidadian population has particularly high genetic susceptibility",
+            "Diabetic foot complications and amputations are major healthcare challenges",
+            "South-West Regional Health Authority runs dedicated diabetes clinics"
+          ]
+        },
+        {
+          "flag": "🇯🇲",
+          "name": "Jamaica",
+          "details": [
+            "Estimated 10-13% diabetes prevalence in adults",
+            "NHF covers metformin, gliclazide, and human insulins",
+            "Jamaica Health and Lifestyle Survey provides national surveillance data",
+            "Traditional dietary patterns (high starch, sugar-sweetened beverages) are modifiable risk factors",
+            "University Hospital of the West Indies leads diabetes research"
+          ]
+        },
+        {
+          "flag": "🇧🇧",
+          "name": "Barbados",
+          "details": [
+            "Diabetes prevalence estimated at 14-18% of adults",
+            "Barbados Drug Service provides diabetes medications through the public system",
+            "Diabetic limb amputation rates among the highest in the Western Hemisphere",
+            "Queen Elizabeth Hospital has a dedicated diabetes and endocrine unit",
+            "National NCD surveillance programme tracks outcomes"
+          ]
+        },
+        {
+          "flag": "🇬🇩",
+          "name": "Grenada",
+          "details": [
+            "Growing diabetes burden with limited specialist endocrine resources",
+            "General Hospital, St. George's manages most diabetes complications",
+            "OECS Pharmaceutical Procurement helps ensure medication availability",
+            "Community health centres play a critical role in diabetes screening and medication distribution"
+          ]
+        }
+      ],
+      "description": "Each island faces the diabetes epidemic with different resources and programmes."
+    },
+    {
+      "rows": [
+        [
+          "Biguanides",
+          "Metformin (-formin)",
+          "Reduces hepatic glucose production; improves insulin sensitivity",
+          "First-line for type 2 DM across all Caribbean formularies; CDAP and NHF covered"
+        ],
+        [
+          "Sulphonylureas",
+          "Glibenclamide, gliclazide",
+          "Stimulate pancreatic beta cells to release more insulin",
+          "Affordable; widely available; risk of hypoglycaemia — especially in elderly"
+        ],
+        [
+          "DPP-4 inhibitors",
+          "Sitagliptin, linagliptin (-gliptin)",
+          "Inhibit DPP-4 enzyme, increasing incretin hormones",
+          "Newer agents; growing Caribbean availability; weight-neutral"
+        ],
+        [
+          "SGLT2 inhibitors",
+          "Empagliflozin, dapagliflozin (-gliflozin)",
+          "Block glucose reabsorption in kidneys → glucose excreted in urine",
+          "Cardiovascular and renal benefits; emerging on Caribbean formularies"
+        ],
+        [
+          "Thiazolidinediones",
+          "Pioglitazone (-glitazone)",
+          "Increase insulin sensitivity in muscle and fat tissue",
+          "Less commonly used; fluid retention limits use in heart failure"
+        ]
+      ],
+      "type": "table",
+      "caption": "Oral Antidiabetic Drug Classes",
+      "headers": [
+        "Class",
+        "Examples (stem)",
+        "Mechanism",
+        "Caribbean Notes"
+      ]
+    },
+    {
+      "body": "Insulin is a protein that degrades rapidly when exposed to heat. In the Caribbean's tropical climate, proper insulin storage is critical. Unopened insulin must be refrigerated at 2-8°C. Once opened, most insulins can be kept at room temperature (below 30°C) for up to 28 days — but 'room temperature' in a Caribbean home without air conditioning may exceed 30°C. Pharmacy technicians must counsel patients to keep insulin away from direct sunlight, car dashboards, and un-airconditioned spaces. Degraded insulin appears cloudy (if it should be clear) and loses effectiveness.",
+      "type": "callout",
+      "title": "Insulin Storage in the Tropics",
+      "variant": "warning"
+    },
+    {
+      "term": "Glycated Haemoglobin (HbA1c)",
+      "type": "key-term",
+      "definition": "A blood test that reflects average blood glucose levels over the preceding 2-3 months. HbA1c measures the percentage of haemoglobin molecules that have glucose attached. A normal HbA1c is below 5.7%; prediabetes is 5.7-6.4%; diabetes is 6.5% or above. Treatment targets are typically HbA1c below 7% (53 mmol/mol). This test is used by clinicians to assess long-term diabetes control and adjust medications accordingly."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Stimulates the pancreas to produce more insulin",
+        "Replaces the insulin that the body cannot produce",
+        "Reduces hepatic glucose production and improves insulin sensitivity",
+        "Blocks glucose absorption in the intestines"
+      ],
+      "question": "Metformin is the first-line medication for type 2 diabetes because it:",
+      "explanation": "Metformin (a biguanide) primarily works by reducing hepatic (liver) glucose production and improving insulin sensitivity in peripheral tissues. It does not stimulate insulin secretion or replace insulin. It is first-line because of its efficacy, safety profile, low cost, weight neutrality, and cardiovascular benefits.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 30
+}

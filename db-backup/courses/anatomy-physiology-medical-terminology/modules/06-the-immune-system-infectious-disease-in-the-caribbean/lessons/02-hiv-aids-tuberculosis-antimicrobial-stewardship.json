@@ -1,0 +1,111 @@
+{
+  "id": "8623775b-0992-4c16-9541-545ecfe29a57",
+  "module_id": "bfda189c-515f-4915-b7c9-01dc35e6f45b",
+  "title": "HIV/AIDS, Tuberculosis & Antimicrobial Stewardship",
+  "content": [
+    {
+      "text": "HIV/AIDS in the Caribbean",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "The Caribbean has the second-highest HIV prevalence rate of any region in the world after sub-Saharan Africa. An estimated 330,000 people are living with HIV across the region, with the highest prevalence rates in the Bahamas, Trinidad & Tobago, Jamaica, and Haiti. Antiretroviral therapy (ART) has transformed HIV from a death sentence to a manageable chronic condition, but treatment requires strict medication adherence — typically a combination of 2-3 antiretroviral drugs taken daily for life. Pharmacy technicians play a critical role in ensuring accurate dispensing of ARV regimens and supporting medication adherence.",
+      "type": "text"
+    },
+    {
+      "body": "Modern ART regimens typically use fixed-dose combination tablets containing two or three drugs in a single pill, greatly simplifying adherence. Common regimens include tenofovir/emtricitabine/efavirenz (TLE), tenofovir/lamivudine/dolutegravir (TLD), or abacavir/lamivudine with a third agent. The CARPHA/PAHO HIV treatment guidelines for the Caribbean follow WHO recommendations and are updated regularly. Generic ARVs procured through the Clinton Health Access Initiative (CHAI) and the Global Fund have made treatment more affordable across the region.",
+      "type": "text"
+    },
+    {
+      "text": "Tuberculosis",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Tuberculosis (TB) remains a public health concern in the Caribbean, particularly in Haiti, the Dominican Republic, and Guyana. TB is caused by Mycobacterium tuberculosis and primarily affects the lungs (pulmonary TB). Treatment requires a prolonged multi-drug regimen: typically isoniazid, rifampicin, pyrazinamide, and ethambutol for 2 months (intensive phase), followed by isoniazid and rifampicin for 4 months (continuation phase) — a total of 6 months minimum. Pharmacy technicians must understand that TB treatment requires strict adherence; incomplete treatment drives drug-resistant TB, which is far more difficult and expensive to treat.",
+      "type": "text"
+    },
+    {
+      "text": "Antimicrobial Resistance: A Growing Caribbean Threat",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Antimicrobial resistance (AMR) — when bacteria, viruses, fungi, or parasites evolve to resist the drugs designed to kill them — is recognised by WHO as one of the greatest threats to global health. In the Caribbean, AMR is driven by several factors: over-the-counter access to antibiotics (without prescription) in some jurisdictions, incomplete antibiotic courses, inappropriate prescribing, use of antibiotics in agriculture, and limited laboratory capacity for culture and sensitivity testing. CARPHA leads the Caribbean AMR Surveillance Programme, collecting data on resistance patterns across the region.",
+      "type": "text"
+    },
+    {
+      "body": "Antimicrobial stewardship means using antimicrobial drugs responsibly to preserve their effectiveness. Pharmacy technicians contribute by: ensuring antibiotics are dispensed only with valid prescriptions (where required by law), counselling patients to complete their full antibiotic course, not dispensing leftover antibiotics for new infections, flagging inappropriate antibiotic prescriptions to the pharmacist, and educating patients that antibiotics do not work against viral infections (colds, flu, most sore throats).",
+      "type": "callout",
+      "title": "Antimicrobial Stewardship: The Pharmacy Technician's Role",
+      "variant": "warning"
+    },
+    {
+      "term": "Antimicrobial Resistance (AMR)",
+      "type": "key-term",
+      "definition": "The ability of microorganisms (bacteria, viruses, fungi, parasites) to grow and survive despite the presence of antimicrobial drugs that should kill them or stop their growth. AMR occurs naturally through genetic mutation and horizontal gene transfer, but is accelerated by misuse and overuse of antimicrobials. Methicillin-resistant Staphylococcus aureus (MRSA) and extended-spectrum beta-lactamase (ESBL) producing bacteria are examples of resistant organisms of concern in Caribbean hospitals."
+    },
+    {
+      "rows": [
+        [
+          "Penicillins",
+          "Amoxicillin (-cillin)",
+          "Inhibit bacterial cell wall synthesis",
+          "First-line for many community infections; CDAP/NHF listed"
+        ],
+        [
+          "Cephalosporins",
+          "Cephalexin, ceftriaxone (-cef-)",
+          "Inhibit bacterial cell wall synthesis",
+          "Broad-spectrum; hospital and community use"
+        ],
+        [
+          "Macrolides",
+          "Azithromycin, erythromycin (-mycin)",
+          "Inhibit bacterial protein synthesis",
+          "Respiratory infections; STIs; penicillin allergy alternative"
+        ],
+        [
+          "Fluoroquinolones",
+          "Ciprofloxacin, levofloxacin (-floxacin)",
+          "Inhibit bacterial DNA replication",
+          "UTIs, severe infections; growing resistance concerns"
+        ],
+        [
+          "Antiretrovirals",
+          "Tenofovir, dolutegravir, efavirenz",
+          "Various mechanisms targeting HIV replication cycle",
+          "HIV/AIDS management; CARPHA/PAHO-guided regimens"
+        ],
+        [
+          "Anti-TB drugs",
+          "Isoniazid, rifampicin, pyrazinamide, ethambutol",
+          "Various mechanisms targeting M. tuberculosis",
+          "6-month standard regimen; DOT programmes across Caribbean"
+        ]
+      ],
+      "type": "table",
+      "caption": "Major Antimicrobial Drug Classes",
+      "headers": [
+        "Class",
+        "Examples (stem)",
+        "Mechanism",
+        "Caribbean Use"
+      ]
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "2 weeks",
+        "6 weeks",
+        "6 months minimum",
+        "12 months minimum"
+      ],
+      "question": "The standard treatment duration for drug-susceptible pulmonary tuberculosis is:",
+      "explanation": "Standard TB treatment lasts a minimum of 6 months: a 2-month intensive phase with four drugs (isoniazid, rifampicin, pyrazinamide, ethambutol) followed by a 4-month continuation phase with two drugs (isoniazid, rifampicin). Shorter courses risk relapse and the development of drug-resistant TB.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 30
+}

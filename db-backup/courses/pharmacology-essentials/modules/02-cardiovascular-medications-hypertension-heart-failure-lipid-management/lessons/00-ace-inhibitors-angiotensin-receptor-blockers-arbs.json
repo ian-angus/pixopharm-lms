@@ -1,0 +1,83 @@
+{
+  "id": "6a6c3f30-df6c-42ae-a94c-e1204c347afe",
+  "module_id": "a385e5c9-29c8-445d-af9a-42d9ce480f76",
+  "title": "ACE Inhibitors & Angiotensin Receptor Blockers (ARBs)",
+  "content": [
+    {
+      "text": "Blocking the Renin-Angiotensin System",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "The renin-angiotensin-aldosterone system (RAAS) is a hormonal cascade that regulates blood pressure and fluid balance. When blood pressure drops, the kidneys release renin, which converts angiotensinogen to angiotensin I. Angiotensin-converting enzyme (ACE) then converts angiotensin I to angiotensin II — a potent vasoconstrictor that also stimulates aldosterone release, promoting sodium and water retention.",
+      "type": "text"
+    },
+    {
+      "term": "ACE Inhibitor",
+      "type": "key-term",
+      "definition": "A drug that blocks angiotensin-converting enzyme, preventing the formation of angiotensin II. This results in vasodilation, reduced aldosterone secretion, and decreased blood pressure. Common examples: enalapril, lisinopril, ramipril. Identified by the stem -pril."
+    },
+    {
+      "body": "ACE inhibitors are among the most prescribed medications in Caribbean pharmacies. Enalapril is covered by Trinidad's CDAP programme and Jamaica's NHF. They are particularly beneficial for patients with diabetes (protecting the kidneys) and heart failure. The most common side effect is a persistent dry cough (affecting 5-20% of patients), caused by accumulation of bradykinin.",
+      "type": "text"
+    },
+    {
+      "term": "Angiotensin Receptor Blocker (ARB)",
+      "type": "key-term",
+      "definition": "A drug that blocks the angiotensin II type 1 (AT1) receptor directly, preventing angiotensin II from causing vasoconstriction. ARBs do not cause the dry cough associated with ACE inhibitors. Examples: losartan, valsartan, irbesartan. Identified by the stem -sartan."
+    },
+    {
+      "body": "ACE inhibitors and ARBs are CONTRAINDICATED in pregnancy — they can cause foetal renal damage, oligohydramnios, and death. Always verify pregnancy status before dispensing these drugs to women of childbearing age. This is especially important in the Caribbean where family planning access varies across islands.",
+      "type": "callout",
+      "title": "ACE Inhibitors and Pregnancy",
+      "variant": "warning"
+    },
+    {
+      "type": "island-comparison",
+      "title": "RAAS Inhibitor Coverage Across Caribbean Drug Programmes",
+      "islands": [
+        {
+          "flag": "TT",
+          "name": "Trinidad & Tobago",
+          "details": [
+            "CDAP covers enalapril 5mg and 10mg",
+            "Losartan available as alternative for ACE cough",
+            "Free at participating pharmacies with CDAP card"
+          ]
+        },
+        {
+          "flag": "JM",
+          "name": "Jamaica",
+          "details": [
+            "NHF covers enalapril and losartan",
+            "Part of the NHF drug card benefit",
+            "Available at public hospital pharmacies and participating private pharmacies"
+          ]
+        },
+        {
+          "flag": "BB",
+          "name": "Barbados",
+          "details": [
+            "Barbados Drug Service covers enalapril",
+            "Formulary-listed ACE inhibitors available at QEH",
+            "Private insurance typically covers both ACEi and ARBs"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Advise the patient to take a cough suppressant alongside enalapril",
+        "Suggest the prescriber switch to an ARB such as losartan, which does not cause cough",
+        "Tell the patient the cough will go away on its own after a few weeks",
+        "Recommend doubling the dose to overcome the cough"
+      ],
+      "question": "A patient on enalapril complains of a persistent dry cough that is affecting their sleep. What is the most appropriate recommendation?",
+      "explanation": "The dry cough from ACE inhibitors is caused by bradykinin accumulation and does not resolve with continued use. Switching to an ARB (e.g., losartan) provides similar blood pressure control without the cough, as ARBs do not affect bradykinin metabolism.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 20
+}

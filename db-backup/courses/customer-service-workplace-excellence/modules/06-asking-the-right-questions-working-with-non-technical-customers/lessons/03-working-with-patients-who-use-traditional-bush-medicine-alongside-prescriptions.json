@@ -1,0 +1,184 @@
+{
+  "id": "363d6aa2-9357-4e58-b302-a57c1d8b04c5",
+  "module_id": "de02aa8f-49a7-4ad1-92e5-bc0b16c14f1c",
+  "title": "Working with Patients Who Use Traditional/Bush Medicine Alongside Prescriptions",
+  "content": [
+    {
+      "text": "Bush Medicine Is Not the Enemy — but Silence About It Is",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Across the Caribbean, traditional medicine — known as bush medicine, herbal medicine, or folk remedies — is deeply embedded in culture and daily life. Patients drink cerasee for diabetes, use fever grass for colds, take soursop leaf tea for blood pressure, apply aloe vera for everything from burns to constipation, and use neem for infections. These practices are not quackery — many have legitimate pharmacological properties. The danger is not the bush medicine itself. The danger is when patients use it alongside prescribed medications without telling anyone.",
+      "type": "text"
+    },
+    {
+      "body": "Why do patients hide bush medicine use from pharmacy staff? Because they expect to be judged, dismissed, or lectured. If a patient tells you they are drinking cerasee for their diabetes and you respond with a condescending 'that does not work — just take your metformin,' they will never tell you about their herbal use again. And you will lose the ability to protect them from potential interactions.",
+      "type": "text"
+    },
+    {
+      "term": "Bush Medicine",
+      "type": "key-term",
+      "definition": "Traditional herbal remedies used across the Caribbean, derived from local plants and passed down through generations. Common examples include cerasee (Momordica charantia) for blood sugar management, fever grass (Cymbopogon citratus) for colds and fever, and soursop (Annona muricata) for various ailments. Many bush medicines have documented pharmacological effects and potential interactions with prescription medications."
+    },
+    {
+      "rows": [
+        [
+          "Cerasee (bitter melon)",
+          "Diabetes, 'cleansing the blood'",
+          "Has documented hypoglycaemic effects",
+          "May enhance effect of diabetes medications — risk of hypoglycaemia"
+        ],
+        [
+          "Fever grass (lemongrass)",
+          "Colds, fever, 'cooling'",
+          "Mild antipyretic and relaxant properties",
+          "Generally low risk, but monitor if combined with sedatives"
+        ],
+        [
+          "Soursop leaf tea",
+          "Blood pressure, cancer prevention, sleep",
+          "Some evidence of blood pressure-lowering effects",
+          "May enhance antihypertensives — risk of hypotension"
+        ],
+        [
+          "Noni juice",
+          "General health, pain, inflammation",
+          "Contains potassium and coumarins",
+          "May interact with warfarin; high potassium risky with ACE inhibitors"
+        ],
+        [
+          "Garlic (concentrated supplements)",
+          "Heart health, cholesterol",
+          "Blood-thinning properties documented",
+          "Can increase bleeding risk with anticoagulants"
+        ],
+        [
+          "Neem",
+          "Infections, skin conditions, fever",
+          "Antimicrobial and anti-inflammatory properties",
+          "May affect blood sugar; caution with diabetes and immunosuppressant medications"
+        ]
+      ],
+      "type": "table",
+      "caption": "Common Caribbean Bush Medicines and Known Interactions",
+      "headers": [
+        "Bush Medicine",
+        "Traditional Use",
+        "Known Pharmacological Effect",
+        "Potential Interaction Concern"
+      ]
+    },
+    {
+      "body": "The single most important thing you can do is create a safe space for patients to disclose bush medicine use. Say: 'Many of our patients use bush remedies alongside their medications. Are you using anything herbal? I want to make sure everything works well together.' This normalises disclosure and removes stigma.",
+      "type": "callout",
+      "title": "The Non-Judgemental Approach",
+      "variant": "info"
+    },
+    {
+      "type": "scenario-simulation",
+      "nodes": [
+        {
+          "id": "start",
+          "text": "Mrs. Mahabir has just mentioned she drinks cerasee tea daily alongside her metformin and amlodipine. She seems proud of maintaining this traditional practice. How do you respond?",
+          "choices": [
+            {
+              "label": "Say: 'Mrs. Mahabir, you should stop drinking that. It could be dangerous with your diabetes medication.'",
+              "feedback": "This response dismisses her traditional practice and will likely cause her to stop sharing information with you in the future.",
+              "nextNodeId": "dismiss"
+            },
+            {
+              "label": "Say: 'Oh, cerasee! My grandmother used it too. That is actually something the pharmacist should know about — cerasee can affect blood sugar levels. Would you mind if I let them know?'",
+              "feedback": "Excellent. You validated her practice, shared relevant concern without being alarmist, and created a pathway to the pharmacist.",
+              "isOptimal": true,
+              "nextNodeId": "culturally-sensitive"
+            },
+            {
+              "label": "Say nothing — it is just herbal tea, probably harmless.",
+              "feedback": "Cerasee has documented hypoglycaemic effects. Ignoring this information could put Mrs. Mahabir at risk of dangerously low blood sugar.",
+              "nextNodeId": "ignore"
+            }
+          ]
+        },
+        {
+          "id": "dismiss",
+          "text": "Mrs. Mahabir's face falls. 'Well... meh grandmother lived to 92 with that tea.' She takes her bag and leaves quickly. She does not mention any herbal use in future visits. Two months later, the pharmacist discovers her HbA1c is erratic and cannot figure out why.",
+          "isEnd": true,
+          "outcome": "failure",
+          "summary": "Dismissing bush medicine practices shuts down communication. Mrs. Mahabir continued her cerasee use but stopped telling the pharmacy, making it impossible to monitor interactions. Her variable blood sugar levels remain unexplained because the full picture is hidden."
+        },
+        {
+          "id": "culturally-sensitive",
+          "text": "Mrs. Mahabir smiles: 'Oh, your grandmother too? Yes, the cerasee is good, eh. You think it could be a problem with meh tablets?' She is open to discussing it.",
+          "choices": [
+            {
+              "label": "Say: 'Cerasee can lower blood sugar on its own — combined with metformin, it might bring your sugar too low. Let me get the pharmacist to talk with you about how to use both safely.'",
+              "feedback": "Perfect. You explained the concern clearly in patient language and involved the pharmacist for clinical guidance.",
+              "isOptimal": true,
+              "nextNodeId": "pharmacist-consult"
+            },
+            {
+              "label": "Say: 'It is probably fine — just keep taking everything as normal.'",
+              "feedback": "This is false reassurance. The interaction between cerasee and metformin is real and documented. You missed an opportunity to protect the patient.",
+              "nextNodeId": "false-reassurance"
+            }
+          ]
+        },
+        {
+          "id": "ignore",
+          "text": "Mrs. Mahabir continues drinking cerasee daily with her metformin. Two weeks later, she experiences a hypoglycaemic episode — dizziness, confusion, sweating — while shopping in the market. Her family takes her to A&E. The hospital team identifies the cerasee-metformin interaction.",
+          "isEnd": true,
+          "outcome": "failure",
+          "summary": "Ignoring reported bush medicine use is a patient safety failure. You had the information needed to prevent an adverse event and chose not to act on it. The fact that it is 'just herbal tea' does not diminish the pharmacological risk."
+        },
+        {
+          "id": "pharmacist-consult",
+          "text": "The pharmacist speaks with Mrs. Mahabir. They explain that cerasee is indeed a powerful natural remedy — but combined with metformin, it could make her blood sugar drop too low. They agree on a plan: Mrs. Mahabir will continue her cerasee but reduce it to three times a week instead of daily, and she will monitor her blood sugar more closely. She leaves feeling respected and informed.",
+          "isEnd": true,
+          "outcome": "success",
+          "summary": "Outstanding culturally sensitive care. You validated Mrs. Mahabir's traditional practice, identified a genuine interaction risk, and facilitated a pharmacist consultation that resulted in a safe, respectful plan that honoured both modern medicine and bush medicine. This is Caribbean pharmacy excellence."
+        },
+        {
+          "id": "false-reassurance",
+          "text": "Mrs. Mahabir takes your word for it and continues both. Her blood sugar starts swinging unpredictably — sometimes too low, sometimes rebounding high. She does not connect it to the cerasee because 'the technician said it was fine.' When she eventually has a hypoglycaemic episode, the pharmacist traces it back to the interaction.",
+          "isEnd": true,
+          "outcome": "failure",
+          "summary": "False reassurance on a real interaction risk led to a preventable adverse event. When in doubt about herbal-drug interactions, always involve the pharmacist. Never reassure without clinical knowledge."
+        }
+      ],
+      "title": "Scenario: The Bush Medicine Conversation",
+      "description": "Mrs. Doreen Mahabir, 68, is a regular customer at your pharmacy in Chaguanas, Trinidad. She collects metformin 500mg twice daily for type 2 diabetes and amlodipine 5mg for blood pressure. Today, she mentions casually while you are bagging her medication: 'I does drink meh cerasee tea every morning too, yuh know. Meh grandmother used to swear by it.' You know that cerasee has documented hypoglycaemic effects and could potentiate metformin."
+    },
+    {
+      "text": "How to Ask About Bush Medicine Use",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "type": "list",
+      "items": [
+        "Normalise the question: 'Many of our patients use bush remedies. Are you using anything herbal?'",
+        "Be specific: 'Are you drinking cerasee, fever grass, soursop tea, or anything like that?'",
+        "Show genuine interest: 'What do you use it for? How often?'",
+        "Never judge or dismiss: even if you think the remedy has no effect, the patient's trust is more valuable than being right",
+        "Document what they tell you: flag bush medicine use in the patient record for the pharmacist to review",
+        "Involve the pharmacist for interaction concerns: this is a clinical matter beyond the technician's scope"
+      ],
+      "ordered": false
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Tell them to stop drinking cerasee immediately",
+        "Ignore it — herbal tea cannot interact with medication",
+        "Validate their practice, explain the potential interaction concern, and involve the pharmacist",
+        "Tell them cerasee is better than metformin and they should switch"
+      ],
+      "question": "A patient tells you they drink cerasee tea daily alongside their metformin. What should you do?",
+      "explanation": "Cerasee (bitter melon) has documented hypoglycaemic effects and can potentiate metformin, increasing the risk of dangerously low blood sugar. The correct approach is to validate the patient's traditional practice, explain the concern in accessible language, and involve the pharmacist for clinical guidance. Never dismiss or judge bush medicine use.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 3,
+  "duration_minutes": 25
+}

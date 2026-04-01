@@ -1,0 +1,79 @@
+{
+  "id": "262d2c3b-8e67-4d41-8ab7-13bc048da139",
+  "module_id": "3f0fc32e-b930-4e92-afd4-7fefcffb355d",
+  "title": "Standard Operating Procedures (SOPs) for Compounding",
+  "content": [
+    {
+      "text": "SOPs: The Guardrails of Consistent Quality",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Standard Operating Procedures (SOPs) are written documents that describe in detail how a specific task or process should be performed in the pharmacy. They ensure that every team member performs the task the same way, every time, regardless of who is working that day. In compounding pharmacy, SOPs cover everything from hand washing and equipment cleaning to specific compounding procedures, quality control testing, and waste disposal. SOPs are living documents — they should be reviewed regularly and updated whenever a process changes or an improvement is identified.",
+      "type": "text"
+    },
+    {
+      "term": "Standard Operating Procedure (SOP)",
+      "type": "key-term",
+      "definition": "A written, step-by-step document describing how a specific task or process should be performed to ensure consistency, quality, and compliance with regulatory requirements. SOPs should include the purpose, scope, responsible personnel, required materials, detailed procedure, quality criteria, documentation requirements, and review schedule. They must be readily accessible to all staff and reviewed at least annually."
+    },
+    {
+      "text": "Essential SOPs for a Compounding Pharmacy",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "type": "list",
+      "items": [
+        "SOP-001: Hand Hygiene and Gowning Procedure for Compounding",
+        "SOP-002: Compounding Area Cleaning and Disinfection",
+        "SOP-003: Balance Calibration and Verification",
+        "SOP-004: Receipt, Storage, and Rotation of Compounding Ingredients",
+        "SOP-005: Master Formula Development and Approval",
+        "SOP-006: Compounding Record Documentation",
+        "SOP-007: Quality Control Testing of Finished Preparations",
+        "SOP-008: Labelling of Compounded Preparations",
+        "SOP-009: Beyond-Use Date Assignment",
+        "SOP-010: Handling and Disposal of Hazardous Compounding Materials",
+        "SOP-011: Temperature and Humidity Monitoring in the Compounding Area",
+        "SOP-012: Recall Procedure for Compounded Preparations"
+      ],
+      "ordered": false
+    },
+    {
+      "body": "Each SOP should follow a consistent format: title, SOP number, version number, date of approval, review date, approved by (pharmacist signature), purpose, scope, definitions, required materials, step-by-step procedure, quality criteria, documentation requirements, and references. A consistent format makes SOPs easier to write, easier to follow, and easier to audit.",
+      "type": "text"
+    },
+    {
+      "body": "SOPs are only effective if staff are trained on them and if they are kept current. Best practice is to review all compounding SOPs at least annually and whenever a significant change occurs (new equipment, new ingredient supplier, new regulatory requirement). All compounding personnel should sign a training log confirming they have read and understood each SOP. In a Caribbean pharmacy where staff may rotate between compounding and dispensing, this training must be documented and refreshed regularly.",
+      "type": "callout",
+      "title": "SOP Review and Training",
+      "variant": "info"
+    },
+    {
+      "type": "case-study",
+      "title": "Case Study: The Missing SOP",
+      "scenario": "A pharmacy in Bridgetown, Barbados, receives a complaint from a patient who reports that a compounded hydrocortisone cream prescribed for her child's eczema appears to have a different consistency and colour than the previous batch. The pharmacy investigates and discovers that two different pharmacy technicians compounded the two batches. Technician A used mineral oil as the levigating agent and aqueous cream BP as the base. Technician B used glycerin as the levigating agent and a different emulsifying cream base. There is no written master formula or SOP for this preparation.",
+      "questions": [
+        "What is the root cause of the batch-to-batch inconsistency?",
+        "How would having a master formula and SOP have prevented this issue?",
+        "What steps should the pharmacy take to prevent recurrence?"
+      ],
+      "discussion": "The root cause is the absence of a standardised, documented master formula and SOP. Without these documents, each technician made independent decisions about ingredients and techniques, producing preparations that looked and felt different — and may have had different stability and drug release characteristics. The corrective actions are: (1) Develop and approve a master formula specifying exact ingredients, quantities, and procedures. (2) Create a compounding SOP for topical preparations. (3) Train all compounding staff on the approved formula and SOP. (4) Document every compounding event in a compounding record referencing the master formula. (5) Implement a quality control check comparing each batch to the master formula specifications."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Only when a problem occurs",
+        "Every 5 years",
+        "At least annually, and whenever a significant change occurs",
+        "SOPs never need to be reviewed once they are written"
+      ],
+      "question": "How often should compounding SOPs be reviewed as a minimum?",
+      "explanation": "SOPs should be reviewed at least annually to ensure they remain current and reflect best practice. They should also be reviewed and updated whenever a significant change occurs — such as new equipment, a new ingredient supplier, a new regulatory requirement, or when a quality issue is identified. Regular review ensures that SOPs remain living, useful documents rather than outdated paperwork.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 25
+}

@@ -1,0 +1,180 @@
+[
+  {
+    "id": "35458b10-9225-42e6-8a9f-734ec38b3c31",
+    "module_id": "17041265-a6b2-423a-b63e-694a6ecc358e",
+    "question": "The Caribbean has the second-highest HIV prevalence rate of any region outside of which area?",
+    "options": [
+      "Southeast Asia",
+      "Eastern Europe",
+      "Sub-Saharan Africa",
+      "Central America"
+    ],
+    "correct_answer": 2,
+    "explanation": "The Caribbean has the second-highest HIV prevalence rate globally, after sub-Saharan Africa. With approximately 330,000 people living with HIV in the region, the pharmacy's role in destigmatised ARV dispensing and adherence support is critical.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "1e76d68f-56ca-4c22-a625-b5bf3a1c8fb4",
+    "module_id": "17041265-a6b2-423a-b63e-694a6ecc358e",
+    "question": "A patient requests that their HIV medication be placed in a plain, unmarked bag. What should you do?",
+    "options": [
+      "Refuse — pharmacy policy requires branded bags",
+      "Comply without question — this is a legitimate privacy request",
+      "Ask why they want a plain bag so you can address their stigma",
+      "Tell them there is no shame in taking HIV medication"
+    ],
+    "correct_answer": 1,
+    "explanation": "Providing unmarked packaging is a simple destigmatisation measure that costs nothing and respects the patient's privacy. In the Caribbean context, where HIV stigma is severe and community visibility is high, this request is entirely reasonable and should be fulfilled without interrogation or unsolicited counselling about stigma.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "17e8d8fe-6a59-4d73-81d7-9e6536f74f32",
+    "module_id": "17041265-a6b2-423a-b63e-694a6ecc358e",
+    "question": "What is the global average medication adherence rate for chronic diseases, according to the WHO?",
+    "options": [
+      "About 25%",
+      "About 50%",
+      "About 75%",
+      "About 90%"
+    ],
+    "correct_answer": 1,
+    "explanation": "The WHO estimates that adherence to chronic disease medications averages just 50% worldwide. This means half of all patients are not taking their chronic medications as prescribed, making non-adherence one of the greatest challenges in global healthcare.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "dea44a2d-725a-4241-9d79-88019f2022ee",
+    "module_id": "17041265-a6b2-423a-b63e-694a6ecc358e",
+    "question": "A patient stopped their statin due to muscle pain. This is an example of:",
+    "options": [
+      "Unintentional non-adherence",
+      "Intentional non-adherence driven by side effects",
+      "Medication abuse",
+      "Drug diversion"
+    ],
+    "correct_answer": 1,
+    "explanation": "Stopping a medication due to experienced side effects is intentional non-adherence — a conscious, rational decision. The appropriate response is to validate the patient's experience, explore the severity and nature of the side effects, and consult the pharmacist about alternatives or management strategies rather than simply insisting on compliance.",
+    "order_index": 3,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "f5cd1835-5848-460b-976f-08ffee469370",
+    "module_id": "17041265-a6b2-423a-b63e-694a6ecc358e",
+    "question": "Which communication platform is MOST effective for medication refill reminders in the Caribbean?",
+    "options": [
+      "Email",
+      "Traditional postal mail",
+      "WhatsApp",
+      "Fax"
+    ],
+    "correct_answer": 2,
+    "explanation": "WhatsApp is the dominant communication platform across the Caribbean, with near-universal adoption. It is the most effective channel for refill reminders, adherence check-ins, and basic health communication. Always obtain patient consent and never include medication names in group messages.",
+    "order_index": 4,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "cbc5f179-51fa-4e2a-a605-c4c0cd97ba1e",
+    "module_id": "17041265-a6b2-423a-b63e-694a6ecc358e",
+    "question": "A patient says: 'My blood pressure is normal now so I do not need the tablets anymore.' Which analogy BEST addresses this misconception?",
+    "options": [
+      "'You just need to eat better and exercise more'",
+      "'The medication is like a dam holding back the river — remove the dam and the water floods. Your BP is normal BECAUSE of the tablet.'",
+      "'The doctor says you must take it, so take it.'",
+      "'You probably never had high blood pressure in the first place.'"
+    ],
+    "correct_answer": 1,
+    "explanation": "The dam analogy effectively communicates that the medication is actively controlling blood pressure, not curing it. Removing the 'dam' (medication) allows the 'river' (blood pressure) to 'flood' (rebound dangerously). Analogies grounded in familiar concepts are far more persuasive than authority-based arguments ('the doctor says so').",
+    "order_index": 5,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "9dd99848-1081-43b6-a55a-3f12b5a92178",
+    "module_id": "17041265-a6b2-423a-b63e-694a6ecc358e",
+    "question": "Match each type of non-adherence with its most appropriate pharmacy intervention.",
+    "options": [
+      "Forgets doses (unintentional)",
+      "Cannot afford medication (economic)",
+      "Side effects causing discontinuation (intentional)",
+      "Feels well so stops medication (belief-based)"
+    ],
+    "correct_answer": 0,
+    "explanation": "Forgetting responds to reminders and pill organisers; economic barriers need generic alternatives and government programme enrollment; side effects need pharmacist consultation on alternatives; and the 'feel fine' misconception needs motivational interviewing using the discrepancy technique.",
+    "order_index": 6,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "hard",
+    "blooms_level": "analyze"
+  },
+  {
+    "id": "02558eb9-6ba2-4cba-ab4b-5006dd79a1d8",
+    "module_id": "17041265-a6b2-423a-b63e-694a6ecc358e",
+    "question": "What is chronic disease fatigue?",
+    "options": [
+      "Physical tiredness caused by chronic disease",
+      "Psychological exhaustion and loss of motivation from the relentless demands of managing a long-term health condition",
+      "A side effect of chronic disease medications",
+      "A rare neurological condition affecting chronic disease patients"
+    ],
+    "correct_answer": 1,
+    "explanation": "Chronic disease fatigue is the psychological exhaustion, frustration, and motivation loss that comes from managing a lifelong condition day after day. It manifests as dose skipping, appointment avoidance, and emotional burnout. It is a normal response to chronic illness burden, distinct from clinical depression though they can co-occur.",
+    "order_index": 7,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "14bb41fb-c389-4134-a71a-1e6071af8850",
+    "module_id": "17041265-a6b2-423a-b63e-694a6ecc358e",
+    "question": "Estimated medication adherence rates for diabetes and hypertension in the Caribbean are:",
+    "options": [
+      "Over 90%",
+      "About 70-80%",
+      "About 40-60%",
+      "Under 20%"
+    ],
+    "correct_answer": 2,
+    "explanation": "Medication adherence for both diabetes and hypertension in the Caribbean is estimated at 40-60%, meaning up to 60% of patients are not taking their medications as prescribed. This alarming rate contributes directly to the region's high burden of stroke, kidney failure, blindness, and cardiovascular death.",
+    "order_index": 8,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "51ffb513-3564-422d-a0fa-3390a99fcbc7",
+    "module_id": "17041265-a6b2-423a-b63e-694a6ecc358e",
+    "question": "True or false: Dispensing ARV medications should follow a different, more discreet routine than dispensing blood pressure medications to reduce stigma.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": 1,
+    "explanation": "False. The most effective destigmatisation strategy is to dispense ALL medications with identical routine, professionalism, and demeanour. Creating a special, more discreet process for ARVs actually reinforces stigma by singling them out as 'different.' The goal is normalisation — treating ARV dispensing as unremarkable and routine as any other medication.",
+    "order_index": 9,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "hard",
+    "blooms_level": "evaluate"
+  }
+]

@@ -1,0 +1,172 @@
+{
+  "id": "4642a9a6-db49-478f-bf7c-eb0f046660aa",
+  "module_id": "8da2e0ca-0c98-417f-86ed-27157562e5f6",
+  "title": "Building a LASA-Safe Pharmacy: Shelving, Labelling & Workflow Design",
+  "content": [
+    {
+      "text": "System-Level Prevention Strategies",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Preventing LASA errors requires more than individual vigilance — it requires deliberate system design. The physical layout of the pharmacy, the shelving strategy, the labelling conventions, and the dispensing workflow must all be engineered to minimise the opportunity for confusion. This lesson provides a practical blueprint for creating a LASA-safe pharmacy environment, tailored to Caribbean community pharmacy settings.",
+      "type": "text"
+    },
+    {
+      "text": "Shelving Strategies",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "The most fundamental LASA prevention strategy is physical separation. Drugs with similar names should never be stored adjacent to one another on the shelf. While alphabetical shelving seems logical, it places LASA pairs directly next to each other — hydrALAZINE beside hydrOXYzine, gliMEPIRide beside glyBURIDE. Alternative strategies include therapeutic-class shelving (which groups drugs by their use rather than name) and colour-coded bin systems.",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Physical separation — never store LASA pairs on adjacent shelves or in adjacent bins",
+        "Tall Man Lettering on shelf labels — apply TML to all shelf labels for ISMP-listed LASA pairs",
+        "Colour-coded alerts — use brightly coloured warning stickers or labels on bins containing LASA drugs",
+        "Auxiliary labels — affix 'WARNING: LASA' labels to bins and bottles of frequently confused drugs",
+        "Dedicated LASA list — post the pharmacy's customised LASA list at the dispensing bench for quick reference",
+        "Separate storage for different strengths — store different strengths of the same drug in clearly differentiated locations, not grouped by name"
+      ],
+      "ordered": true
+    },
+    {
+      "body": "Walk your pharmacy shelves every quarter and identify any LASA pairs that are stored too close together. Check that TML labels are intact, that colour-coded alerts are visible, and that new products added to inventory have been assessed for LASA risk. This 30-minute audit can prevent serious errors.",
+      "type": "callout",
+      "title": "The Caribbean Shelf Audit",
+      "variant": "tip"
+    },
+    {
+      "text": "Workflow Design for Safety",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "The dispensing workflow itself should be designed to build in verification checkpoints. A well-designed Caribbean dispensing workflow includes: prescription receipt and initial assessment, data entry and label generation, product selection (with LASA awareness), counting or measuring, label application, pharmacist final verification, and patient counselling. Each step is an opportunity to catch errors introduced in a previous step.",
+      "type": "text"
+    },
+    {
+      "type": "scenario-simulation",
+      "nodes": [
+        {
+          "id": "start",
+          "text": "You examine the current shelving arrangement. Both hydrALAZINE and hydrOXYzine are stored alphabetically on the 'H' shelf, right next to each other in identical-looking bins. What is your first step?",
+          "choices": [
+            {
+              "label": "Move one of the drugs to a different shelf area entirely, separating them by therapeutic class",
+              "feedback": "Excellent. Physical separation is the most effective first-line strategy for LASA prevention. Therapeutic class shelving groups drugs by their function, naturally separating LASA pairs.",
+              "isOptimal": true,
+              "nextNodeId": "separate"
+            },
+            {
+              "label": "Add a warning sticker to both bins but keep them in the same location",
+              "feedback": "Warning stickers are helpful but insufficient on their own. If the drugs remain side by side, the risk of grab-error persists, especially during peak hours.",
+              "nextNodeId": "sticker-only"
+            },
+            {
+              "label": "Ask the pharmacist to handle all dispensing of these two drugs personally",
+              "feedback": "This is not sustainable — it creates a bottleneck and does not address the underlying system issue. The pharmacist is equally susceptible to selection error if the drugs are adjacent.",
+              "nextNodeId": "pharmacist-only"
+            }
+          ]
+        },
+        {
+          "id": "separate",
+          "text": "You move hydrALAZINE to the cardiovascular section and keep hydrOXYzine with the antihistamines. Now you need to update the labels. What labelling strategy do you apply?",
+          "choices": [
+            {
+              "label": "Apply Tall Man Lettering (hydrOXYzine / hydrALAZINE) on both shelf labels AND bin labels, with a bright colour-coded 'LASA' warning sticker",
+              "feedback": "Perfect. Combining physical separation with TML labelling and colour-coded warnings creates multiple layers of defence — exactly the Swiss Cheese approach to safety.",
+              "isOptimal": true,
+              "nextNodeId": "success"
+            },
+            {
+              "label": "Write the drug names in regular lowercase on new shelf labels",
+              "feedback": "Standard lowercase labelling misses the opportunity to use Tall Man Lettering, which is a proven safety intervention for LASA pairs. You should apply TML.",
+              "nextNodeId": "weak-labels"
+            }
+          ]
+        },
+        {
+          "id": "sticker-only",
+          "text": "You add bright orange 'LASA WARNING' stickers. A week later, a new locum technician almost makes the same error because the drugs are still side by side. What do you do now?",
+          "choices": [
+            {
+              "label": "Physically separate the drugs onto different shelves AND add Tall Man Lettering labels",
+              "feedback": "Correct. The near-miss proved that stickers alone were insufficient. Physical separation combined with TML creates the layered defence needed.",
+              "isOptimal": true,
+              "nextNodeId": "success"
+            },
+            {
+              "label": "Add more stickers and a verbal reminder to staff",
+              "feedback": "More stickers and verbal reminders are weak interventions. Evidence shows that physical separation and systematic labelling changes are far more effective than relying on human memory.",
+              "nextNodeId": "failure"
+            }
+          ]
+        },
+        {
+          "id": "pharmacist-only",
+          "text": "The pharmacist agrees initially, but within two days, the workload makes it impractical. On a busy afternoon, a technician dispenses hydrALAZINE for a hydrOXYzine prescription. What went wrong?",
+          "choices": [
+            {
+              "label": "The underlying system issue — adjacent storage — was never addressed. I need to separate the drugs physically and add TML labels.",
+              "feedback": "Exactly. Workarounds that depend on individual behaviour always fail under pressure. System-level changes (physical separation, TML labelling, colour coding) are the reliable solution.",
+              "isOptimal": true,
+              "nextNodeId": "success"
+            },
+            {
+              "label": "The technician should have checked more carefully",
+              "feedback": "Blaming the individual misses the systemic cause. The drugs were stored side by side with similar packaging — the system was designed for error.",
+              "nextNodeId": "failure"
+            }
+          ]
+        },
+        {
+          "id": "weak-labels",
+          "text": "A month later, a float technician who is unfamiliar with your shelf layout picks hydrALAZINE from the cardiovascular section for a hydrOXYzine prescription because the lowercase labels did not catch her attention. How could this have been prevented?",
+          "choices": [
+            {
+              "label": "Tall Man Lettering on all labels would have highlighted the name differences and prevented the confusion",
+              "feedback": "Correct. TML is specifically designed to make the distinguishing characters stand out, even for unfamiliar staff. Combined with physical separation, it provides robust protection.",
+              "isOptimal": true,
+              "nextNodeId": "success"
+            }
+          ]
+        },
+        {
+          "id": "success",
+          "text": "Your pharmacy now has hydrALAZINE and hydrOXYzine on separate shelves, with TML labelling and LASA warning stickers. No further near-misses have occurred. You document the change in your pharmacy's LASA prevention log and share the approach with other staff.",
+          "isEnd": true,
+          "outcome": "success",
+          "summary": "You successfully implemented a multi-layered LASA prevention strategy: physical separation, Tall Man Lettering, and colour-coded warnings. This is the gold standard approach recommended by ISMP."
+        },
+        {
+          "id": "failure",
+          "text": "Despite additional stickers and reminders, another near-miss occurs within a month. The pharmacist instructs you to implement physical separation and TML — the system changes that should have been made from the start.",
+          "isEnd": true,
+          "outcome": "failure",
+          "summary": "Relying on weak interventions (stickers, verbal reminders, individual vigilance) without addressing the root system issue led to continued risk. Physical separation and TML labelling are the evidence-based solutions."
+        }
+      ],
+      "title": "Scenario: LASA Shelf Rearrangement",
+      "description": "You are a pharmacy technician at a community pharmacy in Kingston, Jamaica. The pharmacist asks you to redesign the shelving layout to reduce LASA risk. A recent near-miss involved dispensing hydrALAZINE instead of hydrOXYzine. Walk through the decisions you would make."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "It makes inventory counting slower",
+        "It places drugs with similar names adjacent to each other, increasing grab-error risk",
+        "It requires too many shelf labels",
+        "It does not comply with Caribbean pharmacy regulations"
+      ],
+      "question": "Why is alphabetical shelving problematic for LASA drug safety?",
+      "explanation": "Alphabetical shelving inherently places drugs with similar-sounding names next to each other on the shelf (hydrALAZINE beside hydrOXYzine, gliMEPIRide beside glyBURIDE), maximising the risk of 'grab errors' where the wrong bottle is selected. Therapeutic-class shelving or deliberate physical separation of LASA pairs is safer.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 3,
+  "duration_minutes": 25
+}

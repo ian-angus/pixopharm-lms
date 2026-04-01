@@ -1,0 +1,118 @@
+{
+  "id": "9ea6c83f-5c72-41f6-8cdd-2d583c9aeba4",
+  "module_id": "405b2e6f-2c09-41e2-930e-8ab0b29c32ef",
+  "title": "General Hospital Pharmacy & Community Pharmacy Practice",
+  "content": [
+    {
+      "text": "Where Pharmacy Technicians Work in Grenada",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Grenada's pharmacy landscape is intimate and concentrated. The General Hospital in St. George's is the island's primary public healthcare facility and its pharmacy department is the single largest employer of pharmacy personnel. Community pharmacies are small, independently owned, and deeply embedded in their local communities. There are no pharmacy chains in Grenada — every pharmacy is a unique operation. This creates a work environment where pharmacy technicians wear many hats, know their patients personally, and have a direct and visible impact on their community's health.",
+      "type": "text"
+    },
+    {
+      "text": "General Hospital Pharmacy — St. George's",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "The General Hospital (officially known as the General Hospital, St. George's) is Grenada's main public hospital. Its pharmacy department handles inpatient dispensing, outpatient prescriptions, emergency medication supply, and the management of the government's pharmaceutical stock. Working in this pharmacy means being part of a small team that serves the entire island's public hospital needs — when you are short-staffed, there is no backup team to call.",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "The General Hospital pharmacy is typically staffed by 2-4 pharmacists and 3-6 technicians/assistants",
+        "Inpatient and outpatient services operate from the same pharmacy department",
+        "The formulary is based on an essential medicines list aligned with WHO recommendations and the government's procurement budget",
+        "Stock management is critical — with small order quantities and long lead times, running out of a medication can mean weeks without supply",
+        "Emergency dispensing during hurricanes or other disasters falls on the General Hospital pharmacy team",
+        "The pharmacy also supports SGU clinical rotations, adding an educational dimension to the work"
+      ],
+      "ordered": false
+    },
+    {
+      "text": "Community Pharmacy — The Independent Model",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Grenada's community pharmacies are all independently owned and operated — there are no chains. Most are located in St. George's (the capital), Grand Anse, Gouyave, Grenville, and Sauteurs. These pharmacies typically have one pharmacist (often the owner) and one or two support staff. As a pharmacy technician in a Grenadian community pharmacy, you will be involved in every aspect of the operation — dispensing, inventory management, customer service, OTC advice, ordering, receiving stock, and even cleaning.",
+      "type": "text"
+    },
+    {
+      "body": "In Grenada's small pharmacy community, reputation is everything. Your patients are your neighbours, your children's teachers, your friends' parents. Professional conduct, discretion (especially regarding sensitive medications), and genuine care are not just professional requirements — they are social necessities. A pharmacy technician who is known for accuracy, reliability, and compassion will quickly become a valued and trusted community figure.",
+      "type": "callout",
+      "title": "Everyone Knows Everyone",
+      "variant": "info"
+    },
+    {
+      "rows": [
+        [
+          "Employer",
+          "Government of Grenada",
+          "Private owner-pharmacist"
+        ],
+        [
+          "Medications Available",
+          "Government essential medicines list",
+          "Wider range including imported brands"
+        ],
+        [
+          "Patient Cost",
+          "Free or minimal charge",
+          "Full private-pay pricing"
+        ],
+        [
+          "Work Schedule",
+          "Shift-based (including nights, weekends, holidays)",
+          "Business hours (typically 8 AM – 5 PM Mon-Sat)"
+        ],
+        [
+          "Team Size",
+          "2-4 pharmacists, 3-6 support staff",
+          "1 pharmacist + 1-2 support staff"
+        ],
+        [
+          "Typical Daily Volume",
+          "100-200 prescriptions (inpatient + outpatient)",
+          "30-60 prescriptions"
+        ],
+        [
+          "Scope of Work",
+          "Inpatient, outpatient, emergency, IV admixture",
+          "Outpatient dispensing, OTC, inventory"
+        ]
+      ],
+      "type": "table",
+      "caption": "Hospital vs. Community Pharmacy in Grenada",
+      "headers": [
+        "Aspect",
+        "General Hospital Pharmacy",
+        "Community Pharmacy"
+      ]
+    },
+    {
+      "body": "Starting your career at the General Hospital pharmacy gives you the broadest experience and most structured learning environment. The government salary is modest (approximately EC$2,000–$3,000/month starting), but the pension, benefits, and professional development opportunities are valuable. After gaining experience, transitioning to or supplementing with community pharmacy work is common. Some technicians work in both settings simultaneously.",
+      "type": "callout",
+      "title": "Career Advice for Grenada",
+      "variant": "tip"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "One — Fontana has expanded to Grenada",
+        "Two — SuperPharm and Knights Pharmacy",
+        "None — all community pharmacies are independently owned",
+        "Three — but they are all small, local chains"
+      ],
+      "question": "How many pharmacy chains operate in Grenada?",
+      "explanation": "Grenada has no pharmacy chains. All community pharmacies on the island are independently owned and operated, typically by a pharmacist-owner with a small support team. This is quite different from T&T (SuperPharm, Bhagan's), Jamaica (Fontana), or Barbados (Collins, Knights).",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 30
+}

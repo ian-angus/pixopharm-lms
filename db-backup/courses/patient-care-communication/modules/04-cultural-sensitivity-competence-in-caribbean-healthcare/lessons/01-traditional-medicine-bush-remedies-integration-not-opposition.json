@@ -1,0 +1,97 @@
+{
+  "id": "e8f5270e-2d43-44d3-9f7d-40f650705832",
+  "module_id": "6adf744f-6b1b-43dd-ab82-6ccf2046ca79",
+  "title": "Traditional Medicine & Bush Remedies: Integration Not Opposition",
+  "content": [
+    {
+      "text": "Bush Medicine, Ayurveda & Folk Healing in the Pharmacy Context",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Traditional medicine is not a relic of the past in the Caribbean — it is a living, active part of daily health practice. Walk through any Caribbean market and you will find vendors selling fever grass (lemongrass), soursop leaves, turmeric root, neem, moringa, senna pods, aloe vera, and dozens of other medicinal plants. In Trinidad, you will find Ayurvedic practitioners; in Jamaica, Rastafarian herbalists; in Haiti, traditional healers (houngan and mambo); in Guyana, Amerindian bush doctors.",
+      "type": "text"
+    },
+    {
+      "body": "For pharmacy technicians, the question is not whether traditional medicine is 'real' or 'valid' — it is how to ensure patient safety when patients are using traditional remedies alongside prescribed pharmaceuticals. The evidence-based approach is integration, not opposition: acknowledge the patient's choices, assess for interactions, and counsel accordingly.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Fever grass (lemongrass)",
+          "Fever, colds, digestive issues",
+          "May enhance effects of sedative medications",
+          "Ask about use alongside benzodiazepines or sleep medications"
+        ],
+        [
+          "Soursop (graviola) leaf tea",
+          "Cancer prevention, hypertension, diabetes",
+          "May lower blood pressure and blood sugar — risk of hypotension/hypoglycaemia with prescribed medications",
+          "Monitor blood pressure and blood sugar closely; do not replace prescribed medication"
+        ],
+        [
+          "Turmeric (curcumin)",
+          "Inflammation, arthritis, general health",
+          "May enhance anticoagulant effect of warfarin; may interact with diabetes and blood pressure medications",
+          "Particularly important to flag for patients on warfarin or anticoagulants"
+        ],
+        [
+          "Neem (Azadirachta indica)",
+          "Diabetes, skin conditions, infections",
+          "May lower blood sugar — risk with diabetes medications; may affect liver enzymes altering drug metabolism",
+          "Ask diabetic patients about neem use; flag for pharmacist review"
+        ],
+        [
+          "Senna pods/tea",
+          "Constipation, 'cleansing'",
+          "Chronic use depletes potassium — dangerous with digoxin and diuretics",
+          "Counsel on short-term use only; check potassium-sensitive medications"
+        ],
+        [
+          "Moringa (Moringa oleifera)",
+          "General nutrition, diabetes, hypertension",
+          "May lower blood pressure and blood sugar; high vitamin K content may affect warfarin",
+          "Flag for patients on warfarin, antihypertensives, or diabetes medications"
+        ]
+      ],
+      "type": "table",
+      "caption": "Common Caribbean Bush Remedies & Potential Drug Interactions",
+      "headers": [
+        "Bush Remedy",
+        "Traditional Use",
+        "Known/Suspected Drug Interactions",
+        "Counselling Point"
+      ]
+    },
+    {
+      "body": "If a patient discloses use of bush remedies, NEVER respond with dismissal or ridicule. Document the information, assess for potential interactions, and involve the pharmacist when a significant interaction is suspected. Patients who feel judged for using traditional medicine will simply stop disclosing — and undisclosed use is far more dangerous than informed use.",
+      "type": "callout",
+      "title": "Never Dismiss — Always Document",
+      "variant": "warning"
+    },
+    {
+      "term": "Herb-Drug Interaction",
+      "type": "key-term",
+      "definition": "A clinically significant change in the effect of a pharmaceutical drug caused by the concurrent use of an herbal or traditional remedy. Interactions may increase drug effects (toxicity risk), decrease drug effects (treatment failure), or cause unpredictable adverse reactions. Caribbean pharmacy professionals must routinely screen for these, as traditional medicine use is prevalent."
+    },
+    {
+      "body": "A landmark study in Jamaica found that 73% of patients used at least one herbal remedy alongside prescribed medications, but only 30% had disclosed this to a healthcare provider. In Trinidad & Tobago, the figure was similar at 68%. This disclosure gap — driven by fear of judgement — is a patient safety crisis hiding in plain sight.",
+      "type": "text"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Moringa is toxic and should never be consumed",
+        "Moringa has high vitamin K content, which may reduce warfarin's anticoagulant effectiveness, increasing clot risk",
+        "Moringa tea interferes with the absorption of all medications",
+        "There is no concern — moringa is completely safe with all medications"
+      ],
+      "question": "A patient on warfarin tells you she drinks moringa tea daily. Why is this a potential safety concern?",
+      "explanation": "Moringa is rich in vitamin K, which directly counteracts warfarin's mechanism of action (warfarin inhibits vitamin K-dependent clotting factors). High vitamin K intake can reduce warfarin effectiveness, putting the patient at risk for blood clots. This is a clinically significant herb-drug interaction that must be flagged for the pharmacist.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 20
+}

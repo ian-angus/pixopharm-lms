@@ -1,0 +1,146 @@
+[
+  {
+    "id": "5c141d13-8f4e-4138-932b-8e566f64526b",
+    "module_id": "34141bea-36cb-4e91-9ba8-8579bff2a291",
+    "question": "Pseudoephedrine should be avoided in patients with:",
+    "options": [
+      "Diabetes",
+      "Hypertension",
+      "Asthma",
+      "Hypothyroidism"
+    ],
+    "correct_answer": 1,
+    "explanation": "Pseudoephedrine is a sympathomimetic that raises blood pressure. It should be avoided in hypertensive patients.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "ae383356-9942-4044-9373-f14f2891a72e",
+    "module_id": "34141bea-36cb-4e91-9ba8-8579bff2a291",
+    "question": "Moringa tea combined with metformin may:",
+    "options": [
+      "Reduce metformin's effectiveness",
+      "Potentiate blood sugar lowering, increasing hypoglycaemia risk",
+      "Cause liver damage",
+      "Have no interaction"
+    ],
+    "correct_answer": 1,
+    "explanation": "Moringa has documented hypoglycaemic properties that may add to metformin's effect, increasing the risk of low blood sugar.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "0ba2ddf4-7b61-4a47-808a-d12cbf5d6650",
+    "module_id": "34141bea-36cb-4e91-9ba8-8579bff2a291",
+    "question": "St. John's Wort reduces the effectiveness of oral contraceptives by:",
+    "options": [
+      "Blocking oestrogen receptors",
+      "Inducing CYP450 enzymes that metabolise contraceptive hormones faster",
+      "Preventing absorption in the gut",
+      "Causing nausea and vomiting"
+    ],
+    "correct_answer": 1,
+    "explanation": "St. John's Wort is a potent CYP inducer that speeds up metabolism of contraceptive hormones, reducing their blood levels and contraceptive efficacy.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "03aee760-7305-45b4-8025-118fa87e8db3",
+    "module_id": "34141bea-36cb-4e91-9ba8-8579bff2a291",
+    "question": "The WWHAM framework for OTC counselling stands for:",
+    "options": [
+      "Who, What, How long, Action taken, Medications",
+      "When, Where, How, Always, Maybe",
+      "Why, Which, How much, Allergies, Method",
+      "Who, Why, History, Amount, Medicine"
+    ],
+    "correct_answer": 0,
+    "explanation": "WWHAM: Who is it for? What are the symptoms? How long? Action already taken? Medications currently taking?",
+    "order_index": 3,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "511bf2ab-4d04-45a9-9732-942a3706634c",
+    "module_id": "34141bea-36cb-4e91-9ba8-8579bff2a291",
+    "question": "Loperamide should NOT be used for diarrhoea that:",
+    "options": [
+      "Is mild and watery",
+      "Has lasted less than 24 hours",
+      "Contains blood or is accompanied by high fever",
+      "Occurs while travelling"
+    ],
+    "correct_answer": 2,
+    "explanation": "Bloody diarrhoea or diarrhoea with high fever may indicate bacterial dysentery. Loperamide slows gut motility, potentially trapping the pathogen and worsening the infection.",
+    "order_index": 4,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "281e8890-576a-4b95-83ec-a6cd1418dac3",
+    "module_id": "34141bea-36cb-4e91-9ba8-8579bff2a291",
+    "question": "Garlic supplements increase bleeding risk when taken with:",
+    "options": [
+      "Metformin",
+      "Amlodipine",
+      "Warfarin",
+      "Levothyroxine"
+    ],
+    "correct_answer": 2,
+    "explanation": "Garlic has antiplatelet properties that can add to warfarin's anticoagulant effect, increasing the risk of bleeding.",
+    "order_index": 5,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "fcf65af4-ea9d-4b64-874b-c63a93ef9e9a",
+    "module_id": "34141bea-36cb-4e91-9ba8-8579bff2a291",
+    "question": "Which approach to a patient's herbal remedy use is most appropriate?",
+    "options": [
+      "Tell them herbal remedies are useless",
+      "Ask respectfully about all herbal and traditional remedies they use, without judgement",
+      "Ignore herbal use entirely",
+      "Insist they stop all herbal products immediately"
+    ],
+    "correct_answer": 1,
+    "explanation": "A non-judgemental, respectful approach encourages disclosure, allows interaction checking, and maintains trust. Dismissing traditional medicine erodes the patient relationship.",
+    "order_index": 6,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "evaluate"
+  },
+  {
+    "id": "aade8ef0-1ba1-42d3-a74f-eebd0a93c58a",
+    "module_id": "34141bea-36cb-4e91-9ba8-8579bff2a291",
+    "question": "A customer reports the 'worst headache of their life' that started suddenly. This is a red flag for:",
+    "options": [
+      "A common tension headache",
+      "Migraine",
+      "Possible subarachnoid haemorrhage — urgent medical referral needed",
+      "Sinus congestion"
+    ],
+    "correct_answer": 2,
+    "explanation": "Sudden-onset 'thunderclap' headache is a red flag for subarachnoid haemorrhage, a life-threatening emergency requiring immediate medical evaluation.",
+    "order_index": 7,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  }
+]

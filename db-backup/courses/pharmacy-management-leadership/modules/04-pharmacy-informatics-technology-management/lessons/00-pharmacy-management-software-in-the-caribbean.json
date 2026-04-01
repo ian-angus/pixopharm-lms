@@ -1,0 +1,111 @@
+{
+  "id": "29095a0b-7310-4767-b41d-6177478a733f",
+  "module_id": "a990037d-ba04-45d0-ae91-bab492ae6c2b",
+  "title": "Pharmacy Management Software in the Caribbean",
+  "content": [
+    {
+      "text": "The Digital Backbone of Modern Pharmacy",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "A pharmacy management system (PMS) is the central software platform that handles dispensing workflows, inventory management, patient records, insurance claims processing, and reporting. In the Caribbean, the choice of PMS is complicated by several factors: the need to support multiple government programme integrations (CDAP, NHF), limited local technical support for international products, internet reliability issues, and the cost of licensing for small independent pharmacies.",
+      "type": "text"
+    },
+    {
+      "body": "The Caribbean pharmacy software landscape includes a mix of international products adapted for the region, purpose-built Caribbean systems, and — in some smaller pharmacies — no computerised system at all, with everything still managed on paper and manual records. As a pharmacy manager, understanding the options and their trade-offs is essential for making sound technology decisions.",
+      "type": "text"
+    },
+    {
+      "term": "Pharmacy Management System (PMS)",
+      "type": "key-term",
+      "definition": "Integrated software that manages the full pharmacy workflow: prescription intake, dispensing, labelling, inventory control, patient profiles, insurance claims, reporting, and regulatory compliance. A good PMS is the single most important technology investment a pharmacy can make."
+    },
+    {
+      "rows": [
+        [
+          "McKesson PharmaClik / EnterpriseRx",
+          "International (adapted)",
+          "Larger chain pharmacies across the region",
+          "Full dispensing workflow, inventory, reporting, HL7 integration capability",
+          "Higher cost; requires reliable internet; North American-centric design; may need local customisation for Caribbean programmes"
+        ],
+        [
+          "Minfos",
+          "International (Australian origin)",
+          "Some Caribbean pharmacies, particularly those with Australian-trained pharmacists",
+          "Dispensing, POS, stock management, customer loyalty",
+          "Well-suited to independent pharmacy; requires adapting for Caribbean insurance programmes; good reporting"
+        ],
+        [
+          "Simple Pharmacy / Rx30",
+          "International",
+          "Medium-sized Caribbean pharmacies",
+          "Dispensing, claims, inventory, POS integration",
+          "Moderate cost; may require customisation for Caribbean formularies and programme requirements"
+        ],
+        [
+          "Local/Custom Systems",
+          "Caribbean-built",
+          "Independent pharmacies across T&T, Jamaica, Barbados",
+          "Tailored for local insurance programmes, formularies, and regulatory requirements",
+          "Best Caribbean fit; limited features compared to international products; vendor dependency risk"
+        ],
+        [
+          "Manual/Paper-based",
+          "Non-digital",
+          "Smaller, rural, or older pharmacies",
+          "Prescription logbooks, manual stock cards, paper-based insurance claims",
+          "Zero technology cost; extremely limited reporting; high error risk; slow claims processing"
+        ]
+      ],
+      "type": "table",
+      "caption": "Pharmacy Software Systems Used in the Caribbean",
+      "headers": [
+        "System",
+        "Type",
+        "Common In",
+        "Key Features",
+        "Considerations"
+      ]
+    },
+    {
+      "body": "When selecting a PMS, consider what happens if the vendor goes out of business, raises prices significantly, or stops supporting the product. Caribbean-built systems often have a single developer or small team — a 'bus factor' problem. Always ask: Can we export our data? Is the data format standard or proprietary? What happens to our patient records and financial data if we switch systems?",
+      "type": "callout",
+      "title": "The Vendor Lock-In Risk",
+      "variant": "warning"
+    },
+    {
+      "text": "Key Features to Evaluate",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "type": "list",
+      "items": [
+        "CDAP/NHF integration: Can the system generate and submit claims electronically for your island's government programme?",
+        "Formulary management: Does it support the Caribbean formularies and drug databases you work with?",
+        "Inventory with expiry tracking: Does it alert for approaching expiry dates and support FEFO rotation?",
+        "Multi-location support: If you have more than one branch, can the system manage stock transfers and consolidated reporting?",
+        "Offline capability: Caribbean internet can be unreliable — can the system continue operating during outages and sync when connectivity returns?",
+        "Reporting and analytics: Can it generate the financial and operational reports you need for business decisions?",
+        "Data backup and security: Where is data stored? Is it encrypted? How are backups managed?"
+      ],
+      "ordered": false
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Advanced AI-powered drug interaction checking",
+        "Integration with local government insurance programme claims (e.g., CDAP, NHF)",
+        "Virtual reality training modules for staff",
+        "Social media integration for pharmacy marketing"
+      ],
+      "question": "Which feature is MOST critical when evaluating a pharmacy management system for a Caribbean community pharmacy?",
+      "explanation": "For Caribbean pharmacies, integration with government insurance programme claims (CDAP, NHF, etc.) is the most critical feature. These programmes represent a significant portion of revenue, and manual claims processing is slow, error-prone, and delays reimbursement. All other features, while potentially useful, are secondary to this core business requirement.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 25
+}

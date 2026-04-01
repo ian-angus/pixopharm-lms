@@ -1,0 +1,204 @@
+{
+  "id": "f2b59381-6049-4e12-81e7-205068e1154b",
+  "module_id": "18161038-99b9-459d-a298-2c76b434f57d",
+  "title": "Reading Forecasting Dashboards & Acting on AI Recommendations",
+  "content": [
+    {
+      "text": "From Data to Decisions",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "An AI forecasting system is only as useful as your ability to interpret its outputs and take appropriate action. This lesson teaches you how to read a typical forecasting dashboard, understand confidence levels, and decide when to follow, modify, or override AI recommendations.",
+      "type": "text"
+    },
+    {
+      "text": "Key Dashboard Metrics",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "rows": [
+        [
+          "Days of Stock Remaining",
+          "How many days current stock will last at predicted demand rate",
+          "Below lead time + buffer = urgent reorder"
+        ],
+        [
+          "Forecast Accuracy (%)",
+          "How well past predictions matched actual demand",
+          "Below 70% = system may need recalibration or more data"
+        ],
+        [
+          "Stock Turn Rate",
+          "How many times inventory is sold and replaced per year",
+          "Low turn rate = overstocking risk; high = possible understocking risk"
+        ],
+        [
+          "Expiry Risk Score",
+          "Products likely to expire before being sold at current demand rate",
+          "High score = consider promotions, transfers, or return-to-vendor"
+        ],
+        [
+          "Demand Trend Arrow",
+          "Whether demand for an item is increasing, stable, or decreasing",
+          "Rising trend = increase order quantity; falling = decrease to avoid excess"
+        ],
+        [
+          "Confidence Interval",
+          "Range within which the AI predicts actual demand will fall (e.g., 80–120 units, 90% confidence)",
+          "Wide interval = more uncertainty, consider ordering toward upper bound for essential meds"
+        ]
+      ],
+      "type": "table",
+      "caption": "Essential Forecasting Dashboard Metrics",
+      "headers": [
+        "Metric",
+        "What It Tells You",
+        "Action Trigger"
+      ]
+    },
+    {
+      "body": "For essential medications (chronic disease treatments, insulin, emergency medications), always order toward the upper end of the AI confidence interval. Running out of metformin is far worse than having a few extra boxes. For non-essential or short-expiry items, order closer to the midpoint or lower end of the range.",
+      "type": "callout",
+      "title": "Practical Rule of Thumb",
+      "variant": "tip"
+    },
+    {
+      "body": "Remember that AI recommendations are inputs to your decision, not final decisions. Factors the AI may not account for include a new doctor opening a practice nearby (changing local prescribing patterns), a competitor pharmacy closing (shifting patients to you), supplier relationship nuances (that supplier always ships two days late despite what they promise), or community knowledge (the nearby school's sports day is coming and demand for first aid supplies will spike).",
+      "type": "text"
+    },
+    {
+      "term": "Confidence Interval",
+      "type": "key-term",
+      "definition": "A statistical range within which the AI predicts the actual value will fall, expressed with a confidence level (e.g., 90% confident that demand will be between 80 and 120 units). Wider intervals indicate more uncertainty in the prediction."
+    },
+    {
+      "type": "scenario-simulation",
+      "nodes": [
+        {
+          "id": "start",
+          "text": "Your AI dashboard shows three alerts this morning. Albuterol inhalers: 'Days of stock remaining: 8. Forecast demand increase: +45% over next 60 days. Reason: Saharan dust season approaching.' What do you do first?",
+          "choices": [
+            {
+              "label": "Place an immediate order for 45% more inhalers than usual",
+              "feedback": "Good instinct to act on the Saharan dust warning. Let us check the supplier lead time first.",
+              "isOptimal": true,
+              "nextNodeId": "order-inhalers"
+            },
+            {
+              "label": "Ignore the alert — 8 days of stock seems sufficient",
+              "feedback": "Eight days may seem adequate, but consider supplier lead time and the predicted demand surge.",
+              "nextNodeId": "ignore-alert"
+            },
+            {
+              "label": "Wait for the pharmacist to make the decision",
+              "feedback": "The pharmacist should be informed, but inventory ordering is within your scope. Do not delay.",
+              "nextNodeId": "wait-pharmacist"
+            }
+          ]
+        },
+        {
+          "id": "order-inhalers",
+          "text": "Good. You check and find the supplier lead time is 7 working days. With only 8 days of stock at CURRENT demand (less if demand increases), this is indeed urgent. You place the order. The second alert reads: 'Metformin 500mg: Expiry risk — 200 tablets expire in 45 days. Current demand: 15 tablets/day.' What do you do?",
+          "choices": [
+            {
+              "label": "Calculate if current demand will use the stock before expiry and rotate it to the front",
+              "feedback": "Excellent! 15 tablets/day x 45 days = 675 tablets. You can use 200 well before expiry. FEFO rotation is the right approach.",
+              "isOptimal": true,
+              "nextNodeId": "calculate-expiry"
+            },
+            {
+              "label": "Immediately return the 200 tablets to the supplier",
+              "feedback": "That is premature. At 15 tablets/day, the 200 tablets would be used in about 13 days — well before the 45-day expiry.",
+              "nextNodeId": "return-early"
+            }
+          ]
+        },
+        {
+          "id": "ignore-alert",
+          "text": "Five days later, three patients request albuterol inhalers in one morning. Your stock is now critically low and the supplier needs 7 working days for delivery. What do you do?",
+          "choices": [
+            {
+              "label": "Place an emergency rush order and contact nearby pharmacies to borrow stock",
+              "feedback": "This is a recovery action, but the rush order will cost more and patients in the interim may go without. The AI alert could have prevented this.",
+              "nextNodeId": "emergency-order"
+            }
+          ]
+        },
+        {
+          "id": "wait-pharmacist",
+          "text": "The pharmacist appreciates being informed but reminds you that inventory decisions are within your scope. She asks you to process the order. You have lost a day. Place the order now.",
+          "choices": [
+            {
+              "label": "Place the order immediately",
+              "feedback": "Good. Next time, act within your scope of practice and inform the pharmacist rather than waiting for approval on routine inventory decisions.",
+              "nextNodeId": "order-inhalers"
+            }
+          ]
+        },
+        {
+          "id": "calculate-expiry",
+          "text": "Well done. The third alert reads: 'Clopidogrel 75mg: Days of stock remaining: 45. Demand trend: Decreasing (-20% over 3 months). Stock turn rate: Low.' The AI recommends reducing next order by 20%. What is your assessment?",
+          "choices": [
+            {
+              "label": "Follow the AI recommendation and reduce the next order by 20%",
+              "feedback": "Correct. Declining demand with adequate stock means you can safely reduce order quantities to avoid overstocking and expiry risk.",
+              "isOptimal": true,
+              "nextNodeId": "success"
+            },
+            {
+              "label": "Ignore the recommendation and order the usual amount",
+              "feedback": "If demand is genuinely declining, maintaining the same order quantity will lead to overstocking and potential expiry losses. The AI data should inform your decision.",
+              "nextNodeId": "partial-end"
+            }
+          ]
+        },
+        {
+          "id": "return-early",
+          "text": "The supplier declines the return as the tablets are not within their return-to-vendor window (usually 6 months before expiry). You now need to ensure they are dispensed before expiry. Apply FEFO rotation.",
+          "isEnd": true,
+          "outcome": "partial",
+          "summary": "You acted hastily. A quick calculation would have shown the stock would be used well before expiry at current demand rates. Always calculate before acting on expiry alerts."
+        },
+        {
+          "id": "emergency-order",
+          "text": "The rush order arrives in 3 working days but at a 25% surcharge. Two patients had to be turned away in the interim. The AI alert was accurate and timely — acting on it would have prevented this situation.",
+          "isEnd": true,
+          "outcome": "failure",
+          "summary": "Ignoring AI alerts for time-sensitive seasonal demand can result in stock-outs, patient harm, and increased costs. Always evaluate alerts promptly, even if current stock seems adequate."
+        },
+        {
+          "id": "success",
+          "text": "Excellent inventory management. You acted on the urgent Saharan dust season alert, correctly assessed the expiry risk using calculation, and followed the data-driven recommendation to reduce clopidogrel ordering. Your pharmacy is well-stocked where needed and not wasting capital on slow-moving items.",
+          "isEnd": true,
+          "outcome": "success",
+          "summary": "You demonstrated effective AI-assisted inventory management: acting on urgent alerts, verifying with calculation, and trusting data-driven recommendations for routine adjustments."
+        },
+        {
+          "id": "partial-end",
+          "text": "You managed the urgent items well but missed an opportunity to optimise stock levels. Over time, ignoring demand trend data leads to tied-up capital and expiry losses.",
+          "isEnd": true,
+          "outcome": "partial",
+          "summary": "Good handling of urgent issues but improvement needed in following through on demand trend recommendations. AI data should inform all ordering decisions, not just urgent ones."
+        }
+      ],
+      "title": "Inventory Decision Simulator",
+      "description": "It is late May in your Trinidad pharmacy. The AI forecasting system has flagged several items. Make decisions on how to respond."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "80 units — the lower bound to minimise cost",
+        "100 units — the midpoint of the range",
+        "Toward 120 units — the upper bound, because running out of essential medication is worse than slight overstocking",
+        "200 units — double the upper bound to be safe"
+      ],
+      "question": "A forecasting dashboard shows 'Confidence Interval: 80–120 units (90% confidence)' for an essential chronic disease medication. What quantity should you order?",
+      "explanation": "For essential medications, you should order toward the upper end of the confidence interval. Running out of chronic disease medications causes direct patient harm, whereas a slight overstock of long-shelf-life medications carries minimal risk and will be used eventually. Ordering double the upper bound would be wasteful.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 25
+}

@@ -1,0 +1,180 @@
+[
+  {
+    "id": "7ed99bf1-3817-4a1a-95eb-d82c222f7273",
+    "module_id": "2a2b8ae6-dc6c-4b92-b48f-b978c51bf5fd",
+    "question": "What percentage of pharmaceutical products are imported by most Caribbean nations?",
+    "options": [
+      "Approximately 50%",
+      "Approximately 70%",
+      "Over 90%",
+      "Less than 30%"
+    ],
+    "correct_answer": 2,
+    "explanation": "Trinidad & Tobago, Jamaica, Barbados, and most Caribbean nations import over 90% of their pharmaceutical products. This near-total import dependence makes inventory management, lead time planning, and supply chain resilience critical competencies for Caribbean pharmacy professionals.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "f91e8c92-0cf3-4c23-9c99-08e6de3ecc30",
+    "module_id": "2a2b8ae6-dc6c-4b92-b48f-b978c51bf5fd",
+    "question": "In ABC inventory analysis, Category A items typically represent what percentage of total inventory value?",
+    "options": [
+      "5–10%",
+      "15–20%",
+      "40–50%",
+      "70–80%"
+    ],
+    "correct_answer": 3,
+    "explanation": "Category A items represent 10–20% of items but 70–80% of total inventory value. These are the critical, high-value items that require the tightest control — weekly counts, precise reorder points, and careful demand forecasting.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "fd99bbec-c906-4d65-ba3d-c2035d5ea05e",
+    "module_id": "2a2b8ae6-dc6c-4b92-b48f-b978c51bf5fd",
+    "question": "A pharmacy dispenses 20 units/day of a medication with a 28-day lead time and 7 days' safety stock. What is the reorder point?",
+    "options": [
+      "560 units",
+      "700 units",
+      "420 units",
+      "140 units"
+    ],
+    "correct_answer": 1,
+    "explanation": "ROP = (20 × 28) + (20 × 7) = 560 + 140 = 700 units. When stock reaches 700 units, a new order should be placed.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "f117ac1d-02fb-42ba-86e0-22e71560c173",
+    "module_id": "2a2b8ae6-dc6c-4b92-b48f-b978c51bf5fd",
+    "question": "True or False: In a perpetual inventory system, physical cycle counts are unnecessary because the software tracks everything automatically.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": 1,
+    "explanation": "False. Even the best perpetual inventory systems develop discrepancies due to unrecorded transactions, theft, breakage, and data entry errors. Regular cycle counts are essential to verify the accuracy of the perpetual system and catch discrepancies before they cause stockouts.",
+    "order_index": 3,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "58423350-e4ff-4c26-81e1-4719dfc70187",
+    "module_id": "2a2b8ae6-dc6c-4b92-b48f-b978c51bf5fd",
+    "question": "Which of the following should be included in demand forecasting for a Caribbean pharmacy? Select ALL that apply.",
+    "options": [
+      "Historical dispensing data",
+      "Seasonal disease patterns (dengue, respiratory illness)",
+      "Government formulary changes (CDAP, NHF)",
+      "Hurricane season preparedness",
+      "All of the above"
+    ],
+    "correct_answer": 4,
+    "explanation": "Effective Caribbean pharmacy demand forecasting must incorporate historical dispensing data, seasonal disease patterns, government programme changes, and hurricane season preparedness. All four factors significantly influence medication demand in the region.",
+    "order_index": 4,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "analyze"
+  },
+  {
+    "id": "ed88b89a-e9ee-4ec1-9a06-5d7bf638fbab",
+    "module_id": "2a2b8ae6-dc6c-4b92-b48f-b978c51bf5fd",
+    "question": "Arrange the following ABC analysis categories from MOST management attention required to LEAST.",
+    "options": [
+      "Category C — Low value, high volume",
+      "Category A — Critical, high value",
+      "Category B — Moderate value"
+    ],
+    "correct_answer": 0,
+    "explanation": "The correct order from most to least management attention is: Category A (critical, high value — weekly counts, tight control), Category B (moderate value — monthly counts, standard control), Category C (low value — quarterly counts, basic control).",
+    "order_index": 5,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "cd84ffc1-9481-476e-b598-fd2cce4bba25",
+    "module_id": "2a2b8ae6-dc6c-4b92-b48f-b978c51bf5fd",
+    "question": "During a cycle count, you discover 50 fewer tablets of atenolol 50 mg than the system shows. What is your FIRST action?",
+    "options": [
+      "Adjust the system count downward to match the physical count",
+      "Investigate the discrepancy by reviewing recent dispensing records, returns, and write-offs",
+      "Order 50 additional tablets to compensate for the shortage",
+      "Report the discrepancy to law enforcement as suspected theft"
+    ],
+    "correct_answer": 1,
+    "explanation": "Before adjusting the system or taking other action, the discrepancy must be investigated. Review recent dispensing records, check for unprocessed returns, verify whether any write-offs or transfers were not logged, and look for data entry errors. Only after the investigation should the system be adjusted, and the cause documented.",
+    "order_index": 6,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "39d75bb5-7f9e-4b2b-8df7-7935aab3367f",
+    "module_id": "2a2b8ae6-dc6c-4b92-b48f-b978c51bf5fd",
+    "question": "Why should Caribbean pharmacies begin building hurricane-season buffer stock by May?",
+    "options": [
+      "Because medications expire faster in May due to rising temperatures",
+      "Because international shipping schedules are reduced in May",
+      "Because hurricane season begins in June and lead times of 4–12 weeks mean orders placed in June may not arrive in time",
+      "Because May is the end of the Caribbean fiscal year"
+    ],
+    "correct_answer": 2,
+    "explanation": "Hurricane season runs from June to November. Given international lead times of 4–12 weeks, orders must be placed well in advance. Building buffer stock by May ensures that essential medications are on hand before shipping disruptions begin. Waiting until June means orders may not arrive before the first storms.",
+    "order_index": 7,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "analyze"
+  },
+  {
+    "id": "363a48af-1dc0-42af-9dc5-10d53b066938",
+    "module_id": "2a2b8ae6-dc6c-4b92-b48f-b978c51bf5fd",
+    "question": "Match each inventory management term with its correct definition.",
+    "options": [
+      "Carrying cost → Total cost of holding inventory including storage and climate control",
+      "Safety stock → Buffer inventory to cover demand variability and supply delays",
+      "Lead time → Time between placing an order and receiving delivery",
+      "All matches are correct"
+    ],
+    "correct_answer": 3,
+    "explanation": "All three matches are correct. Carrying cost encompasses all costs of holding inventory. Safety stock is the buffer against uncertainty. Lead time is the ordering-to-delivery interval — typically 4–12 weeks for Caribbean international orders.",
+    "order_index": 8,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "a5fffec4-e2a4-40a1-8c5d-bb4780989cb4",
+    "module_id": "2a2b8ae6-dc6c-4b92-b48f-b978c51bf5fd",
+    "question": "A pharmacy notices a sudden 300% increase in paracetamol demand following a dengue outbreak alert. Which immediate action is LEAST appropriate?",
+    "options": [
+      "Contact alternative local suppliers for emergency stock",
+      "Implement quantity limits per customer to prevent hoarding",
+      "Continue dispensing without limits until stock runs out completely",
+      "Communicate expected restocking timelines to patients"
+    ],
+    "correct_answer": 2,
+    "explanation": "Continuing to dispense without limits during a demand surge is the least appropriate action — it allows hoarding by early customers and leaves later patients without access. The appropriate response includes contacting alternative suppliers, implementing quantity limits, and communicating proactively with patients about restocking timelines.",
+    "order_index": 9,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "evaluate"
+  }
+]

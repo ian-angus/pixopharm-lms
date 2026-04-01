@@ -1,0 +1,141 @@
+{
+  "id": "e6aa44b1-984a-473b-a756-bb68c6f5f5a3",
+  "module_id": "c33cff75-0326-4020-95b4-a2f8a518375a",
+  "title": "Auditing SOPs: Compliance Monitoring & Continuous Improvement",
+  "content": [
+    {
+      "text": "Measuring What Matters",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "An SOP audit is a systematic assessment of whether staff are following a documented procedure as written. Audits serve three functions: they identify compliance gaps before they lead to errors, they reveal impractical steps that need revision, and they demonstrate to regulators and accreditation bodies that the pharmacy takes quality assurance seriously. In Caribbean pharmacies, audits need not be complex or resource-intensive — a simple, structured observation can provide invaluable safety insights.",
+      "type": "text"
+    },
+    {
+      "term": "SOP Audit",
+      "type": "key-term",
+      "definition": "A structured observation and assessment of whether a documented standard operating procedure is being followed as written. Audits may be announced (staff know they are being observed) or unannounced, and should use a standardised checklist tied to the SOP's specific steps."
+    },
+    {
+      "text": "Designing a Simple Audit Tool",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "An effective audit tool is a checklist derived directly from the SOP being audited. Each step of the SOP becomes a checklist item with three possible outcomes: Compliant (step performed as written), Non-compliant (step missed or performed incorrectly), or Not Applicable (step not relevant to this specific instance). The auditor observes the process and records the outcome for each step.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "1",
+          "Verify patient identity using two identifiers",
+          "☐",
+          "☐",
+          "☐",
+          ""
+        ],
+        [
+          "2",
+          "Read prescription completely before beginning dispensing",
+          "☐",
+          "☐",
+          "☐",
+          ""
+        ],
+        [
+          "3",
+          "Check for drug allergies in patient record",
+          "☐",
+          "☐",
+          "☐",
+          ""
+        ],
+        [
+          "4",
+          "Select medication using both drug name AND barcode/NDC verification",
+          "☐",
+          "☐",
+          "☐",
+          ""
+        ],
+        [
+          "5",
+          "Verify drug name, strength, and dosage form against prescription",
+          "☐",
+          "☐",
+          "☐",
+          ""
+        ],
+        [
+          "6",
+          "Count/measure medication without interruption",
+          "☐",
+          "☐",
+          "☐",
+          ""
+        ],
+        [
+          "7",
+          "Apply label and verify all label information against prescription",
+          "☐",
+          "☐",
+          "☐",
+          ""
+        ],
+        [
+          "8",
+          "Present completed prescription to pharmacist for final check",
+          "☐",
+          "☐",
+          "☐",
+          ""
+        ]
+      ],
+      "type": "table",
+      "caption": "Sample SOP Audit Checklist: Dispensing Workflow",
+      "headers": [
+        "Step",
+        "SOP Requirement",
+        "Compliant",
+        "Non-Compliant",
+        "N/A",
+        "Notes"
+      ]
+    },
+    {
+      "body": "Audit frequency should be proportionate to risk. High-risk processes (dispensing, controlled substance handling, compounding) should be audited monthly. Lower-risk processes (cleaning, inventory rotation) can be audited quarterly. The results should be documented, trended over time, and discussed in team meetings. A compliance rate below 90% for any critical step should trigger immediate retraining and, if necessary, SOP revision.",
+      "type": "text"
+    },
+    {
+      "body": "In small Caribbean pharmacies, consider a peer audit model where technicians audit each other's dispensing practice on a rotating basis. This builds mutual accountability, shared understanding of the SOP, and a team culture of safety. The auditor learns as much as the person being audited. Pair this with a brief post-audit discussion: 'What did I do well? What could I improve?'",
+      "type": "callout",
+      "title": "The Peer Audit Approach",
+      "variant": "tip"
+    },
+    {
+      "text": "When to Revise an SOP",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "SOPs are living documents that must evolve with the pharmacy. Triggers for SOP revision include: a medication error or near-miss that reveals a gap in the procedure, regulatory changes that affect the process, new equipment or technology that alters the workflow, audit findings showing persistent non-compliance with a specific step (which may indicate the step is impractical), staff feedback that a step is unclear or unworkable, and the scheduled review date (every 12-24 months).",
+      "type": "text"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Discipline the technician for not following the SOP",
+        "Remove step 6 from the SOP since it is impractical",
+        "Investigate the workflow to find a way to reduce interruptions during counting (e.g., designating another staff member to handle walk-ins during dispensing) and revise the SOP if needed",
+        "Increase the audit frequency to weekly until compliance improves"
+      ],
+      "question": "An SOP audit reveals that step 6 ('Count medication without interruption') is non-compliant in 60% of observations because the technician is repeatedly interrupted by walk-in customers. The most appropriate response is to:",
+      "explanation": "Persistent non-compliance with a specific SOP step usually indicates a system problem, not an individual failing. The step itself (counting without interruption) is a sound safety practice — the issue is that the workflow does not support it. The solution is to address the root cause (no designated person to handle walk-ins during dispensing) and, if necessary, revise the SOP to include the new workflow arrangement.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 3,
+  "duration_minutes": 30
+}

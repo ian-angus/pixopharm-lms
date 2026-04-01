@@ -1,0 +1,23 @@
+{
+  "id": "c9080def-6458-42cc-a277-e74b70bbcd56",
+  "title": "AI in Pharmacy Practice",
+  "slug": "ai-in-pharmacy-practice",
+  "description": "Learn how AI is transforming pharmacy operations and how to apply these tools responsibly in the Caribbean.",
+  "skill_level": "Advanced",
+  "duration_weeks": 4,
+  "icon": "BrainCircuit",
+  "color": "cyan",
+  "prerequisites": [
+    "foundations-pharmacy-practice",
+    "dispensing-medication-management"
+  ],
+  "what_youll_learn": [
+    "Evaluate AI tools for pharmacy use",
+    "Use AI inventory forecasting",
+    "Apply automated drug interaction checking",
+    "Ensure data privacy compliance",
+    "Articulate ethical AI framework"
+  ],
+  "status": "published",
+  "order": 11
+}

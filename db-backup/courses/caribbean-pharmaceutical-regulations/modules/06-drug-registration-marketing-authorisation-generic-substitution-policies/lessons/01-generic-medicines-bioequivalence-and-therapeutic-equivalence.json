@@ -1,0 +1,109 @@
+{
+  "id": "a91b7830-f8ac-40f1-bccb-d53a94d7861c",
+  "module_id": "e456d723-48a8-4e9e-9fc2-b733d161a607",
+  "title": "Generic Medicines: Bioequivalence and Therapeutic Equivalence",
+  "content": [
+    {
+      "text": "Understanding Generic Medicines in the Caribbean Context",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Generic medicines are the backbone of pharmaceutical access in the Caribbean. With limited healthcare budgets and high dependence on imported medicines, Caribbean nations rely heavily on quality-assured generic products to provide affordable treatment for their populations. Understanding what makes a generic medicine equivalent to its brand-name counterpart — and when substitution is and is not appropriate — is essential knowledge for every pharmacy technician.",
+      "type": "text"
+    },
+    {
+      "body": "A generic medicine contains the same active pharmaceutical ingredient (API), in the same dosage form and strength, as the original brand-name (innovator) product. However, it may differ in inactive ingredients (excipients), colour, shape, packaging, and price. The critical question is: does the generic deliver the same amount of active ingredient to the patient's bloodstream at the same rate as the innovator? This is the concept of bioequivalence.",
+      "type": "text"
+    },
+    {
+      "term": "Bioequivalence",
+      "type": "key-term",
+      "definition": "The demonstration that a generic pharmaceutical product delivers the same amount of active ingredient to the systemic circulation at the same rate as the innovator product, within accepted statistical limits. Bioequivalence is typically demonstrated through comparative pharmacokinetic studies in healthy volunteers, measuring Cmax (peak concentration) and AUC (area under the curve — total drug exposure)."
+    },
+    {
+      "term": "Therapeutic Equivalence",
+      "type": "key-term",
+      "definition": "A broader concept than bioequivalence, indicating that two pharmaceutical products can be expected to produce the same clinical effect and safety profile when administered to patients under the same conditions. Therapeutic equivalence encompasses bioequivalence plus pharmaceutical equivalence (same API, dose, form, and route)."
+    },
+    {
+      "body": "For drugs with a narrow therapeutic index (NTI) — where small differences in blood levels can cause therapeutic failure or toxicity — generic substitution requires extra caution. Examples include warfarin, phenytoin, levothyroxine, lithium, and digoxin. Some Caribbean jurisdictions restrict or prohibit automatic generic substitution for NTI drugs. Always check your jurisdiction's guidelines and consult the pharmacist before substituting NTI medications.",
+      "type": "callout",
+      "title": "Narrow Therapeutic Index Drugs — Proceed with Caution",
+      "variant": "warning"
+    },
+    {
+      "rows": [
+        [
+          "Active Ingredient",
+          "Original API",
+          "Same API (must be identical)"
+        ],
+        [
+          "Strength",
+          "As approved",
+          "Must match innovator strength"
+        ],
+        [
+          "Dosage Form",
+          "As developed",
+          "Must match (tablet, capsule, etc.)"
+        ],
+        [
+          "Inactive Ingredients",
+          "Original formulation",
+          "May differ (colours, fillers, binders)"
+        ],
+        [
+          "Bioequivalence",
+          "Reference standard",
+          "Must demonstrate bioequivalence to innovator"
+        ],
+        [
+          "Price",
+          "Higher (includes R&D cost recovery)",
+          "Lower (typically 30-80% cheaper)"
+        ],
+        [
+          "Patent Status",
+          "Protected during patent period",
+          "Marketed after patent expiry or under licence"
+        ],
+        [
+          "Regulatory Pathway",
+          "Full registration with clinical trial data",
+          "Abbreviated pathway with bioequivalence data"
+        ]
+      ],
+      "type": "table",
+      "caption": "Innovator vs. Generic Medicines — Key Comparisons",
+      "headers": [
+        "Feature",
+        "Innovator (Brand-Name)",
+        "Generic"
+      ]
+    },
+    {
+      "body": "In the Caribbean, the price difference between innovator and generic products can be enormous. A month's supply of an innovator antihypertensive might cost TTD $200, while a quality-assured generic equivalent costs TTD $40-60. For patients managing chronic conditions on limited incomes — and the Caribbean has very high rates of hypertension and diabetes — generic medicines are often the difference between treatment and no treatment.",
+      "type": "text"
+    },
+    {
+      "body": "However, not all generics are equal. The quality of generic medicines depends on the manufacturer's adherence to GMP, the rigour of bioequivalence studies, and the effectiveness of regulatory oversight. This is why drug registration and quality assurance are so important — they ensure that only quality-assured generics reach Caribbean patients.",
+      "type": "text"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "That it has the same colour and shape",
+        "That it costs less than the innovator",
+        "Bioequivalence — that it delivers the same amount of active ingredient at the same rate",
+        "That it was manufactured in the same country as the innovator"
+      ],
+      "question": "What must a generic medicine demonstrate to prove it is equivalent to the innovator product?",
+      "explanation": "A generic medicine must demonstrate bioequivalence to the innovator, meaning it delivers the same amount of active ingredient to the systemic circulation at the same rate. This is typically shown through comparative pharmacokinetic studies measuring Cmax and AUC.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 25
+}

@@ -1,0 +1,58 @@
+{
+  "id": "b1066803-49b7-4fd2-ad70-54d8ac0af544",
+  "module_id": "308ad89e-b876-443b-9c03-ccfdc77305ef",
+  "title": "Pilot Testing & Phased Implementation",
+  "content": [
+    {
+      "text": "Start Small, Learn Fast, Scale Carefully",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Even after thorough evaluation and vendor assessment, the only way to truly know if an AI tool works for your pharmacy is to test it in your real-world environment. A structured pilot test allows you to assess the tool's performance, identify issues, and build staff confidence before committing to full deployment. This is especially important in the Caribbean, where the consequences of a failed technology implementation can be severe for a small business operating on tight margins.",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Phase 1 — Preparation (2 weeks): Define success criteria, train pilot users, set up the tool alongside (not replacing) existing systems, establish data collection methods for the pilot",
+        "Phase 2 — Shadow mode (4 weeks): Run the AI tool in parallel with existing processes. Compare AI outputs to human decisions. Track accuracy, false positives, and false negatives. Document all discrepancies",
+        "Phase 3 — Supervised live use (4 weeks): Begin using AI outputs for actual decisions, but with enhanced pharmacist oversight. Monitor closely for errors. Collect staff feedback on usability and workflow impact",
+        "Phase 4 — Assessment & decision (2 weeks): Analyse pilot data against success criteria. Make a go/no-go decision for full deployment. If going ahead, plan the rollout; if not, document lessons learned",
+        "Phase 5 — Full deployment (ongoing): Roll out to all staff/locations. Continue monitoring performance. Schedule quarterly reviews to ensure the tool continues to meet expectations"
+      ],
+      "ordered": true
+    },
+    {
+      "body": "Shadow mode — running the AI tool alongside your existing process without relying on it — is the most valuable phase of the pilot. It reveals the tool's real-world performance without any risk to patient safety. If the AI disagrees with your existing process, investigate why. Sometimes the AI is wrong; sometimes it catches something your existing process missed. Both findings are valuable.",
+      "type": "callout",
+      "title": "The Shadow Mode Secret",
+      "variant": "tip"
+    },
+    {
+      "type": "case-study",
+      "title": "Case Study: AI Inventory Pilot in a Barbadian Pharmacy",
+      "scenario": "Paradise Pharmacy in Bridgetown, Barbados, piloted an AI-powered inventory forecasting tool over 12 weeks. During shadow mode, the tool correctly predicted a demand spike for paracetamol during a chikungunya outbreak two weeks before it became obvious from sales data alone. However, it also recommended reducing stock of hydrocortisone cream — a product the pharmacy knew sold heavily in summer but the AI had insufficient historical data to recognise (the pharmacy had only been open 18 months). The pharmacist overrode the AI recommendation for hydrocortisone and maintained stock, which proved correct when summer sales surged.",
+      "questions": [
+        "What does this case reveal about the strengths and limitations of AI inventory tools?",
+        "Why was the shadow mode phase critical for identifying the hydrocortisone issue?",
+        "How should a pharmacy handle situations where local knowledge contradicts AI recommendations?"
+      ],
+      "discussion": "This case demonstrates both AI's strength (detecting demand patterns from external data before they appear in sales) and its limitation (insufficient historical data leading to incorrect recommendations). The shadow mode phase was essential because it revealed the hydrocortisone issue before it could cause a stock-out. The correct approach: trust AI for pattern detection, but always overlay local knowledge and professional judgement. Document overrides and their outcomes to improve future AI performance."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "To hide the AI tool from staff so they are not biased",
+        "To run the AI alongside existing processes to assess its real-world performance without patient safety risk",
+        "To use the AI tool only at night when the pharmacy is closed",
+        "To test the tool on fake patient data only"
+      ],
+      "question": "What is the primary purpose of the 'shadow mode' phase in AI tool pilot testing?",
+      "explanation": "Shadow mode runs the AI tool in parallel with existing processes, comparing AI outputs to human decisions without relying on the AI for actual patient care. This reveals real-world performance, identifies discrepancies, and builds staff confidence — all without any risk to patient safety.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 15
+}

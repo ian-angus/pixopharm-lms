@@ -1,0 +1,110 @@
+{
+  "id": "da752a6a-30c3-4fa6-9ec6-b7ba91e6d356",
+  "module_id": "685e9959-38ea-4718-aa13-af91470fd76f",
+  "title": "Injectable Volume Calculations",
+  "content": [
+    {
+      "text": "Calculating Volumes for Injections",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Injectable medications require precise volume calculations because the margin for error is much smaller than with oral medications — drugs injected directly into the bloodstream or tissue act rapidly and cannot be 'recalled' once administered. In Caribbean hospital settings like the Port of Spain General Hospital, QEH Barbados, and UHWI Jamaica, pharmacy technicians prepare injectable doses for ward stock and individual patient use.",
+      "type": "text"
+    },
+    {
+      "term": "Parenteral",
+      "type": "key-term",
+      "definition": "Any route of administration that bypasses the gastrointestinal tract, most commonly injection. Routes include intravenous (IV — into a vein), intramuscular (IM — into muscle), subcutaneous (SC — under the skin), and intradermal (ID — into the skin). Parenteral drugs require sterile preparation and precise dosing."
+    },
+    {
+      "text": "The Injectable Volume Formula",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "The formula is the same as for oral liquids but with higher precision requirements. Volume to draw up = (Desired dose / Concentration on hand) in mL. Example: Ordered: gentamicin 80 mg IM. Stock: gentamicin 40 mg/mL (2 mL vial containing 80 mg total). Volume = 80 mg ÷ 40 mg/mL = 2 mL. Draw up the entire vial.",
+      "type": "text"
+    },
+    {
+      "body": "Worked example: Ordered: morphine 3 mg IV. Stock: morphine 10 mg/mL (1 mL ampoule). Volume = 3 mg ÷ 10 mg/mL = 0.3 mL. Use a 1 mL syringe for accuracy. Verify: Is 3 mg a reasonable IV morphine dose? Yes — the usual adult dose is 2-10 mg. Check: 0.3 mL × 10 mg/mL = 3 mg ✓.",
+      "type": "text"
+    },
+    {
+      "body": "Always select the smallest syringe that will hold the required volume. A 0.3 mL dose drawn up in a 10 mL syringe is extremely difficult to measure accurately — the markings are too far apart for small volumes. Use: 1 mL syringe for volumes ≤ 1 mL; 3 mL syringe for 1-3 mL; 5 mL syringe for 3-5 mL. For insulin, always use insulin syringes marked in units (U-100 = 100 units per mL).",
+      "type": "callout",
+      "title": "Syringe Selection Matters",
+      "variant": "danger"
+    },
+    {
+      "body": "Reconstitution of injectable powders: Many injectable antibiotics (e.g., ceftriaxone, ampicillin) come as powders that must be reconstituted. The powder itself displaces volume — called 'powder volume' or 'displacement volume'. Example: Ceftriaxone 1 g vial — add 9.6 mL of sterile water to get a final concentration of 100 mg/mL (total volume 10 mL, because the powder displaces 0.4 mL). Always read the manufacturer's reconstitution instructions carefully.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Gentamicin",
+          "40 mg/mL",
+          "80 mg IM",
+          "2 mL"
+        ],
+        [
+          "Morphine",
+          "10 mg/mL",
+          "5 mg IV/SC",
+          "0.5 mL"
+        ],
+        [
+          "Diazepam",
+          "5 mg/mL",
+          "10 mg IV",
+          "2 mL"
+        ],
+        [
+          "Adrenaline 1:1000",
+          "1 mg/mL",
+          "0.5 mg IM (anaphylaxis)",
+          "0.5 mL"
+        ],
+        [
+          "Ceftriaxone (reconstituted)",
+          "100 mg/mL",
+          "1 g IV",
+          "10 mL"
+        ],
+        [
+          "Insulin (regular)",
+          "100 units/mL",
+          "10 units SC",
+          "0.1 mL"
+        ]
+      ],
+      "type": "table",
+      "caption": "Common Injectable Medications — Caribbean Hospital Practice",
+      "headers": [
+        "Medication",
+        "Common Concentration",
+        "Typical Order",
+        "Volume to Draw"
+      ]
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "0.75 mL",
+        "1.5 mL",
+        "2 mL",
+        "3 mL"
+      ],
+      "question": "A doctor orders pethidine 75 mg IM. The available stock is pethidine 100 mg/2 mL. What volume should be drawn up?",
+      "explanation": "First find the concentration: 100 mg / 2 mL = 50 mg/mL. Then: Volume = 75 mg ÷ 50 mg/mL = 1.5 mL. Alternatively: (75/100) × 2 mL = 1.5 mL. Note: Pethidine is a controlled substance — additional documentation and witness requirements apply in all Caribbean jurisdictions.",
+      "correctIndex": 1
+    },
+    {
+      "body": "Always perform a sense check on injectable calculations. If your calculated volume exceeds the total volume in the vial, you have an error. If the calculated volume seems unreasonably large for an IM injection (most IM injections are 0.5-3 mL per site), verify the calculation and consult the pharmacist.",
+      "type": "text"
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 30
+}

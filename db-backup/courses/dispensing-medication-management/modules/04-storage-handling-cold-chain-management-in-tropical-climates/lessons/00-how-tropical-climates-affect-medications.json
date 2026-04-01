@@ -1,0 +1,91 @@
+{
+  "id": "e37d7442-2493-45ed-9475-32c8f411d8a5",
+  "module_id": "00de6d94-4229-4a9a-aec6-0c5d4e87fbbd",
+  "title": "How Tropical Climates Affect Medications",
+  "content": [
+    {
+      "text": "Heat, Humidity, and the Enemy of Stability",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Pharmaceutical products are designed to remain stable under specific storage conditions — typically 15–25°C (controlled room temperature) with relative humidity below 60%. In the Caribbean, ambient temperatures regularly exceed 30°C and relative humidity frequently surpasses 80%. Without active climate control, medications stored in these conditions degrade faster than their stated expiry dates suggest, potentially losing potency or forming harmful degradation products.",
+      "type": "text"
+    },
+    {
+      "body": "The Arrhenius equation — a fundamental principle of chemical kinetics — tells us that for every 10°C increase in temperature, the rate of chemical degradation roughly doubles. This means that a medication stored at 35°C (common in an un-air-conditioned Caribbean pharmacy) degrades approximately twice as fast as one stored at 25°C. Humidity compounds the problem by promoting hydrolysis, a chemical reaction that breaks down many drug molecules in the presence of moisture.",
+      "type": "text"
+    },
+    {
+      "term": "Cold Chain",
+      "type": "key-term",
+      "definition": "A temperature-controlled supply chain that maintains pharmaceutical products within their required temperature range from manufacture through storage and distribution to the point of use. A break in the cold chain — even briefly — can render temperature-sensitive products (vaccines, insulin, biologicals) ineffective or dangerous."
+    },
+    {
+      "rows": [
+        [
+          "Frozen",
+          "−25°C to −10°C",
+          "Some vaccines (varicella, MMR), certain biologicals",
+          "Requires dedicated freezers with backup power; power outages are common"
+        ],
+        [
+          "Refrigerated (Cold)",
+          "2°C to 8°C",
+          "Insulin, some eye drops, suppositories, certain antibiotics (reconstituted)",
+          "Pharmacy fridges must be pharmaceutical-grade with temperature alarms"
+        ],
+        [
+          "Cool",
+          "8°C to 15°C",
+          "Some suppositories, certain syrups",
+          "Difficult to maintain without dedicated cool rooms in tropical climates"
+        ],
+        [
+          "Controlled Room Temperature",
+          "15°C to 25°C (up to 30°C excursion)",
+          "Most tablets, capsules, and liquid formulations",
+          "Requires continuous air conditioning in Caribbean pharmacies"
+        ],
+        [
+          "Do Not Refrigerate",
+          "15°C to 30°C",
+          "Some reconstituted suspensions, certain injectables",
+          "Must be kept out of the fridge but still within temperature limits"
+        ]
+      ],
+      "type": "table",
+      "caption": "Common Storage Temperature Categories",
+      "headers": [
+        "Category",
+        "Temperature Range",
+        "Examples",
+        "Caribbean Challenge"
+      ]
+    },
+    {
+      "body": "Caribbean nations frequently experience power outages due to infrastructure limitations, tropical storms, and grid overload. A pharmacy refrigerator without backup power during a multi-hour outage can result in the loss of thousands of dollars' worth of temperature-sensitive medications — and worse, patients receiving degraded products. Every Caribbean pharmacy must have a backup power plan: generators, uninterruptible power supplies (UPS), or pre-arranged emergency cold storage at nearby facilities.",
+      "type": "callout",
+      "title": "Power Outages — A Constant Caribbean Threat",
+      "variant": "danger"
+    },
+    {
+      "body": "Light exposure is another degradation factor often overlooked. Many medications — including nifedipine, methotrexate, and certain vitamins — are light-sensitive and must be stored in amber containers or opaque packaging. In the Caribbean, intense tropical sunlight streaming through pharmacy windows can accelerate photodegradation. Window tinting, UV-filtering films, and strategic shelf placement away from direct sunlight are simple but effective protective measures.",
+      "type": "text"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "It decreases by half",
+        "It stays the same",
+        "It approximately doubles",
+        "It triples"
+      ],
+      "question": "According to the Arrhenius principle, what happens to the rate of chemical degradation of a medication for every 10°C increase in storage temperature?",
+      "explanation": "The Arrhenius equation tells us that for every 10°C increase in temperature, the rate of most chemical reactions — including drug degradation — approximately doubles. This is why climate control is critical in Caribbean pharmacies where ambient temperatures can be 10–15°C above ideal storage conditions.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 20
+}

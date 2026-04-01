@@ -1,0 +1,143 @@
+[
+  {
+    "id": "1c2ec696-cf8c-4560-9c40-5cb6b9046d05",
+    "module_id": "3a33feeb-8c13-4005-b26d-ef01da03aae6",
+    "question": "Which cells are responsible for building new bone tissue?",
+    "options": [
+      "Osteoclasts",
+      "Osteoblasts",
+      "Chondrocytes",
+      "Fibroblasts"
+    ],
+    "correct_answer": 1,
+    "explanation": "Osteoblasts are the bone-forming cells responsible for synthesising and mineralising new bone tissue. Their counterparts, osteoclasts, break down old bone. The balance between osteoblast and osteoclast activity determines bone density — when osteoclast activity dominates, osteoporosis develops.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "37b07394-d7b8-4548-a430-25193fc2b469",
+    "module_id": "3a33feeb-8c13-4005-b26d-ef01da03aae6",
+    "question": "A patient in your Barbados pharmacy is prescribed alendronate 70 mg once weekly. You should advise them to:",
+    "options": [
+      "Take it with food to reduce stomach upset",
+      "Take it at bedtime with a glass of milk",
+      "Take it first thing in the morning on an empty stomach with plain water and remain upright for 30 minutes",
+      "Take it with their other morning medications"
+    ],
+    "correct_answer": 2,
+    "explanation": "Bisphosphonates like alendronate must be taken first thing in the morning on an empty stomach with a full glass of plain water. The patient must remain upright (sitting or standing) for at least 30 minutes and must not eat, drink, or take other medications during this time. Food, beverages (other than water), and medications dramatically reduce absorption.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "a320b73b-98cb-47cd-beac-6d23df1d2ff2",
+    "module_id": "3a33feeb-8c13-4005-b26d-ef01da03aae6",
+    "question": "Tinea pedis is an infection of the:",
+    "options": [
+      "Scalp",
+      "Groin",
+      "Feet",
+      "Nails"
+    ],
+    "correct_answer": 2,
+    "explanation": "Tinea pedis (athlete's foot) is a fungal infection of the feet, commonly affecting the interdigital spaces. The term 'pedis' comes from the Latin 'pes/pedis' meaning foot. It is extremely common in tropical climates and is typically treated with topical antifungals such as clotrimazole or terbinafine cream.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "c251d008-1eaa-4978-99a4-6b1b7af47c8e",
+    "module_id": "3a33feeb-8c13-4005-b26d-ef01da03aae6",
+    "question": "Why might some Caribbean individuals with darker skin be at risk for vitamin D insufficiency despite living in a tropical climate?",
+    "options": [
+      "Darker skin is more sensitive to UV damage",
+      "Higher melanin content reduces the efficiency of cutaneous vitamin D synthesis",
+      "Tropical sunlight does not contain enough UVB radiation",
+      "Darker skin absorbs too much vitamin D, leading to deficiency"
+    ],
+    "correct_answer": 1,
+    "explanation": "Melanin absorbs UV radiation, providing protection against UV-induced skin damage. However, this same absorption reduces the amount of UVB radiation reaching the deeper skin layers where vitamin D synthesis occurs. Combined with indoor lifestyles, some darker-skinned Caribbean individuals have suboptimal vitamin D levels despite abundant tropical sunlight.",
+    "order_index": 3,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "5a5fb92a-b2fd-43e1-8ad4-3ec905d8d9be",
+    "module_id": "3a33feeb-8c13-4005-b26d-ef01da03aae6",
+    "question": "Gout is most commonly associated with which of the following drugs as a contributing factor?",
+    "options": [
+      "Metformin",
+      "Thiazide diuretics",
+      "Amoxicillin",
+      "Omeprazole"
+    ],
+    "correct_answer": 1,
+    "explanation": "Thiazide diuretics (e.g. hydrochlorothiazide) reduce uric acid excretion by the kidneys, leading to hyperuricaemia and increased gout risk. This is a significant drug-disease interaction in the Caribbean, where both hypertension (treated with thiazides) and gout are common. Prescribers may need to consider alternative antihypertensives in gout-prone patients.",
+    "order_index": 4,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "analyze"
+  },
+  {
+    "id": "2a0d40b2-28d8-4fba-bc4f-d1cc2260d373",
+    "module_id": "3a33feeb-8c13-4005-b26d-ef01da03aae6",
+    "question": "Place the three main skin layers in order from outermost to innermost.",
+    "options": [
+      "Epidermis",
+      "Dermis",
+      "Hypodermis (subcutaneous layer)"
+    ],
+    "correct_answer": 0,
+    "explanation": "The skin layers from outermost to innermost are: epidermis (protective barrier containing keratinocytes and melanocytes), dermis (contains blood vessels, nerves, and glands), and hypodermis/subcutaneous layer (adipose tissue for insulation and energy storage).",
+    "order_index": 5,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "425c4901-7a07-40dd-854e-681b0b3115c7",
+    "module_id": "3a33feeb-8c13-4005-b26d-ef01da03aae6",
+    "question": "Mercury-containing skin bleaching products can cause serious health effects.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": 0,
+    "explanation": "True. Mercury-containing skin bleaching products cause nephrotoxicity (kidney damage), neurotoxicity (nervous system damage), and skin damage. Despite being banned in many jurisdictions, they remain available through informal channels across the Caribbean. Pharmacy technicians should be aware of this public health issue.",
+    "order_index": 6,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "d4a60dcd-cb6a-4855-a9ca-09690afec426",
+    "module_id": "3a33feeb-8c13-4005-b26d-ef01da03aae6",
+    "question": "Match each musculoskeletal condition with its primary characteristic.",
+    "options": [
+      "Osteoarthritis → Cartilage degeneration from wear and tear",
+      "Rheumatoid arthritis → Autoimmune inflammatory joint destruction",
+      "Gout → Urate crystal deposition in joints",
+      "Osteoporosis → Reduced bone density from imbalanced remodelling"
+    ],
+    "correct_answer": 0,
+    "explanation": "All matches are correct: Osteoarthritis involves cartilage degeneration; Rheumatoid arthritis is autoimmune-driven; Gout results from urate crystal deposition; Osteoporosis occurs when bone resorption exceeds formation. Each condition requires different pharmacological management.",
+    "order_index": 7,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  }
+]

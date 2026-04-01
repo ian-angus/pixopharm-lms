@@ -1,0 +1,22 @@
+{
+  "id": "624b8d69-7196-4d01-928d-998b07174813",
+  "title": "Customer Service & Workplace Excellence",
+  "slug": "customer-service-workplace-excellence",
+  "description": "Bridge the gap between classroom theory and the reality of working in a busy Caribbean pharmacy.",
+  "skill_level": "Intermediate",
+  "duration_weeks": 5,
+  "icon": "Users",
+  "color": "pink",
+  "prerequisites": [
+    "foundations-pharmacy-practice"
+  ],
+  "what_youll_learn": [
+    "Apply the LEAP de-escalation method",
+    "Manage competing demands during peak hours",
+    "Gather accurate medication information",
+    "Recognise and regulate emotional responses",
+    "Implement stress management strategies"
+  ],
+  "status": "published",
+  "order": 9
+}

@@ -1,0 +1,22 @@
+{
+  "id": "83562b7c-72b7-4142-b1e2-4740add03ac5",
+  "title": "Patient Care & Communication",
+  "slug": "patient-care-communication",
+  "description": "Master patient-centred communication techniques adapted for Caribbean cultural and linguistic diversity.",
+  "skill_level": "Intermediate",
+  "duration_weeks": 5,
+  "icon": "MessageCircleHeart",
+  "color": "teal",
+  "prerequisites": [
+    "foundations-pharmacy-practice"
+  ],
+  "what_youll_learn": [
+    "Counsel patients using Show-Tell-Ask",
+    "Assess health literacy levels",
+    "Apply cultural competence principles",
+    "Communicate across Caribbean languages",
+    "Handle sensitive health conversations"
+  ],
+  "status": "published",
+  "order": 7
+}

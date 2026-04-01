@@ -1,0 +1,141 @@
+{
+  "id": "92213308-147e-4109-8947-404786e58531",
+  "module_id": "dfb48101-2356-4d0d-9a97-2396820bb069",
+  "title": "The National Health Fund (NHF) & NHFCard Programme",
+  "content": [
+    {
+      "text": "Jamaica's National Health Fund",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "The National Health Fund (NHF) is Jamaica's flagship health financing programme and one of the most sophisticated pharmaceutical subsidy systems in the Caribbean. Established in 2003, the NHF provides subsidies on prescription medications for Jamaicans diagnosed with specific chronic conditions. Unlike T&T's CDAP (which provides medications entirely free), the NHF operates through a co-payment model — the government subsidises a portion of the cost and the patient pays the difference.",
+      "type": "text"
+    },
+    {
+      "term": "National Health Fund (NHF)",
+      "type": "key-term",
+      "definition": "A statutory body established under the National Health Fund Act (2003) to provide financial support for the healthcare of Jamaicans. The NHF operates individual benefit programmes (NHFCard for chronic conditions), institutional support for public health facilities, and special programmes for vulnerable populations. Funded primarily through a special consumption tax on tobacco products."
+    },
+    {
+      "text": "The NHFCard Programme",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "The NHFCard is the NHF's primary individual benefit programme. Jamaicans diagnosed with any of the 17 NHF-covered conditions can apply for an NHFCard, which entitles them to subsidised medications at any participating pharmacy. The card is electronic and linked to the NHF database. When a patient presents their NHFCard at a pharmacy, the technician processes the transaction through the NHF point-of-sale system, the subsidy is applied automatically, and the patient pays only the co-payment amount.",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Hypertension",
+        "Diabetes (Type 1 and Type 2)",
+        "Arthritis (rheumatoid and osteoarthritis)",
+        "Asthma",
+        "Breast cancer (adjuvant therapy)",
+        "Prostate cancer (adjuvant therapy)",
+        "Benign prostatic hyperplasia",
+        "Ischaemic heart disease",
+        "Vascular disease",
+        "Depression",
+        "Psychosis",
+        "Epilepsy",
+        "Glaucoma",
+        "Hyperlipidaemia",
+        "Sickle cell disease",
+        "GERD",
+        "Thyroid disease"
+      ],
+      "ordered": false
+    },
+    {
+      "text": "Processing an NHFCard Transaction — Step by Step",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "type": "list",
+      "items": [
+        "Patient presents valid prescription and NHFCard at the pharmacy counter",
+        "Technician verifies the NHFCard is valid and not expired (check the card's expiry date and the patient's photograph)",
+        "Technician enters the prescription into the NHF point-of-sale (POS) system using the patient's NHF identification number",
+        "The POS system verifies the patient's eligibility and the medication's coverage status",
+        "The system calculates the subsidy amount and displays the co-payment the patient owes",
+        "Technician prepares the medication and processes the payment (subsidy + co-payment)",
+        "Pharmacist performs the final check and counsels the patient",
+        "Patient receives medication and a receipt showing the NHF subsidy applied",
+        "Transaction data is automatically transmitted to the NHF for reconciliation"
+      ],
+      "ordered": true
+    },
+    {
+      "rows": [
+        [
+          "Amlodipine 5mg (30 tablets)",
+          "J$1,200",
+          "J$800",
+          "J$400"
+        ],
+        [
+          "Metformin 500mg (60 tablets)",
+          "J$1,500",
+          "J$1,000",
+          "J$500"
+        ],
+        [
+          "Atorvastatin 20mg (30 tablets)",
+          "J$2,000",
+          "J$1,400",
+          "J$600"
+        ],
+        [
+          "Salbutamol inhaler",
+          "J$1,800",
+          "J$1,200",
+          "J$600"
+        ],
+        [
+          "Omeprazole 20mg (30 capsules)",
+          "J$1,400",
+          "J$900",
+          "J$500"
+        ]
+      ],
+      "type": "table",
+      "caption": "NHF Subsidy Levels — Selected Medications",
+      "headers": [
+        "Medication",
+        "Full Cost (approx.)",
+        "NHF Subsidy (approx.)",
+        "Patient Co-pay (approx.)"
+      ]
+    },
+    {
+      "body": "The NHF takes fraud extremely seriously. Common forms of NHF fraud include: using another person's NHFCard, pharmacy staff processing claims for medications not actually dispensed, and submitting duplicate claims. All transactions are electronically tracked and audited. Pharmacies found committing fraud face deregistration from the NHF programme, criminal prosecution, and loss of their PCJ licence. As a technician, always verify the patient's identity against their NHFCard and never process a claim for medication that was not actually dispensed.",
+      "type": "callout",
+      "title": "NHF Fraud Prevention",
+      "variant": "warning"
+    },
+    {
+      "body": "The most important difference between Jamaica's NHF and T&T's CDAP is the payment model. CDAP provides medications entirely free to the patient (government pays 100%). NHF provides a subsidy where the patient pays a co-payment (typically 30-50% of the cost). This means NHF patients will be more price-sensitive and may ask about cheaper generic alternatives or question why their co-payment is higher this month.",
+      "type": "callout",
+      "title": "NHF vs. CDAP — The Key Difference",
+      "variant": "tip"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Direct allocation from the Ministry of Health's annual budget",
+        "A special consumption tax on tobacco products",
+        "Employer and employee payroll contributions",
+        "International donor funding from PAHO and the World Bank"
+      ],
+      "question": "What is the funding source for Jamaica's National Health Fund?",
+      "explanation": "The NHF is funded primarily through a special consumption tax on tobacco products (the NHF Tobacco Levy). This creative funding mechanism ties a public health cost (treating chronic diseases) to a public health harm (tobacco use), creating a sustainable and dedicated revenue stream for the programme.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 30
+}

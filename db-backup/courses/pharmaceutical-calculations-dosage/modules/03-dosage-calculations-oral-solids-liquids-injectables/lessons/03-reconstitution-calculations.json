@@ -1,0 +1,115 @@
+{
+  "id": "bb58f422-509d-46ec-9b12-bf6b78c53e49",
+  "module_id": "685e9959-38ea-4718-aa13-af91470fd76f",
+  "title": "Reconstitution Calculations",
+  "content": [
+    {
+      "text": "Reconstituting Medications: Powders to Solutions",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Many medications — both oral and injectable — are supplied as powders for reconstitution. The powder must be mixed with the correct volume of diluent (purified water for oral preparations, sterile water or normal saline for injectables) to achieve the desired concentration. The concept of powder displacement volume is critical to accurate reconstitution and final concentration calculations.",
+      "type": "text"
+    },
+    {
+      "term": "Displacement Volume (Powder Volume)",
+      "type": "key-term",
+      "definition": "The volume occupied by the powdered drug itself after it dissolves. When diluent is added to a powder, the final volume equals the diluent volume PLUS the powder displacement volume. Example: If a vial states 'add 9.6 mL diluent for a final volume of 10 mL', the powder displaces 0.4 mL."
+    },
+    {
+      "text": "Oral Reconstitution",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "For oral antibiotics, the manufacturer specifies the exact reconstitution volume on the label. Worked example: Amoxicillin 250 mg/5 mL powder for oral suspension — label states 'add 62 mL of purified water for 100 mL of suspension'. The powder displaces 100 - 62 = 38 mL. If you add the correct 62 mL, the final concentration will be exactly 250 mg/5 mL. If you add too much or too little water, the concentration changes and every dose the patient takes will be wrong.",
+      "type": "text"
+    },
+    {
+      "body": "For oral suspensions, always reconstitute in two steps: (1) Tap the bottle to loosen the powder. Add approximately half the required water and shake vigorously. (2) Add the remaining water to the fill line marked on the bottle and shake again. This two-step method ensures all powder is wetted and evenly distributed. In Caribbean pharmacies, where suspension antibiotics are dispensed in high volumes, this technique prevents clumping and ensures dose accuracy.",
+      "type": "callout",
+      "title": "Two-Step Reconstitution Technique",
+      "variant": "tip"
+    },
+    {
+      "text": "Injectable Reconstitution",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Injectable reconstitution requires sterile technique and precise measurement. Worked example: Ceftriaxone 1 g powder for injection. For IM injection, the label states 'add 3.5 mL of 1% lidocaine for a final concentration of approximately 250 mg/mL'. The powder displacement is: if final volume ≈ 4 mL and diluent = 3.5 mL, then displacement = 0.5 mL. To give 750 mg: Volume = 750 ÷ 250 = 3 mL.",
+      "type": "text"
+    },
+    {
+      "body": "Important: Injectable reconstitution instructions may vary depending on the route (IM vs IV). Ceftriaxone reconstituted for IM injection uses lidocaine as diluent to reduce injection pain, whereas IV reconstitution uses sterile water or normal saline. NEVER inject a lidocaine-reconstituted solution intravenously — this could cause cardiac arrhythmias.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Ceftriaxone 1 g",
+          "Powder",
+          "3.5 mL 1% lidocaine",
+          "10 mL sterile water",
+          "~0.4-0.5 mL"
+        ],
+        [
+          "Ampicillin 500 mg",
+          "Powder",
+          "1.8 mL sterile water",
+          "5 mL sterile water",
+          "~0.2 mL"
+        ],
+        [
+          "Benzylpenicillin 600 mg",
+          "Powder",
+          "1.6 mL sterile water",
+          "Up to 10 mL",
+          "~0.4 mL"
+        ],
+        [
+          "Vancomycin 500 mg",
+          "Powder",
+          "Not given IM",
+          "10 mL sterile water",
+          "~0.3 mL"
+        ],
+        [
+          "Hydrocortisone 100 mg",
+          "Powder",
+          "2 mL sterile water",
+          "2 mL sterile water",
+          "Negligible"
+        ]
+      ],
+      "type": "table",
+      "caption": "Common Reconstitution Details — Caribbean Hospital Pharmacy",
+      "headers": [
+        "Medication",
+        "Presentation",
+        "Diluent for IM",
+        "Diluent for IV",
+        "Displacement Volume"
+      ]
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "250 mg/mL",
+        "285.7 mg/mL",
+        "200 mg/mL",
+        "1000 mg/mL"
+      ],
+      "question": "A vial of ampicillin 1 g states: 'Add 3.5 mL of sterile water to give a final volume of 4 mL.' What is the concentration after reconstitution?",
+      "explanation": "Concentration = Total drug / Total volume = 1000 mg / 4 mL = 250 mg/mL. Note the displacement volume: 4 mL (final) - 3.5 mL (diluent) = 0.5 mL displaced by the powder. If you incorrectly assumed the final volume was 3.5 mL, you would calculate 285.7 mg/mL — too concentrated, leading to overdosing.",
+      "correctIndex": 0
+    },
+    {
+      "body": "After reconstitution, always label the vial with: the date and time of reconstitution, the concentration, the beyond-use date/time (per manufacturer's instructions), and your initials. This is especially important in Caribbean hospital settings where multiple staff may access the same vial.",
+      "type": "text"
+    }
+  ],
+  "order_index": 3,
+  "duration_minutes": 30
+}

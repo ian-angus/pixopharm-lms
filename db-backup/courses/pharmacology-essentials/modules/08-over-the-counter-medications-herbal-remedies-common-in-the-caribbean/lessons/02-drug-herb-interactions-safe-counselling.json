@@ -1,0 +1,133 @@
+{
+  "id": "8a5a1c67-5df1-478f-ae71-dab751fbd9ed",
+  "module_id": "34141bea-36cb-4e91-9ba8-8579bff2a291",
+  "title": "Drug-Herb Interactions & Safe Counselling",
+  "content": [
+    {
+      "text": "When Natural and Prescribed Don't Mix",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Drug-herb interactions are a significant but underrecognised safety concern in the Caribbean. Patients often assume that 'natural' means safe and do not consider that herbal products can interact with prescription drugs. St. John's Wort, garlic supplements, ginkgo biloba, and even common foods like grapefruit can cause clinically significant interactions.",
+      "type": "text"
+    },
+    {
+      "term": "Pharmacovigilance of Herbal Products",
+      "type": "key-term",
+      "definition": "The monitoring and assessment of the safety of herbal and traditional medicine products. Unlike prescription drugs, many herbal products are not standardised in dosage or composition, making interaction prediction difficult. Reporting suspected herb-drug adverse events helps build the evidence base for safer use."
+    },
+    {
+      "body": "The challenge in the Caribbean is that many herbal products are not standardised — a cup of bush tea brewed at home may vary dramatically in concentration from one preparation to the next. Commercially available supplements may also vary between manufacturers. This variability makes it difficult to predict the magnitude of a herb-drug interaction, but the potential for interaction should still be flagged whenever a patient discloses herbal use alongside prescription medications.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "St. John's Wort",
+          "Oral contraceptives, warfarin, SSRIs, cyclosporine",
+          "CYP450 induction → reduced drug effectiveness",
+          "HIGH"
+        ],
+        [
+          "Ginkgo biloba",
+          "Warfarin, aspirin, NSAIDs",
+          "Antiplatelet effect → increased bleeding risk",
+          "MODERATE"
+        ],
+        [
+          "Garlic supplements",
+          "Warfarin, antiplatelet drugs",
+          "Antiplatelet effect → increased bleeding risk",
+          "MODERATE"
+        ],
+        [
+          "Kava",
+          "Benzodiazepines, alcohol",
+          "Additive CNS depression → excessive sedation",
+          "HIGH"
+        ],
+        [
+          "Echinacea",
+          "Immunosuppressants",
+          "Immune stimulation may counteract immunosuppression",
+          "MODERATE"
+        ]
+      ],
+      "type": "table",
+      "caption": "Clinically Significant Drug-Herb Interactions",
+      "headers": [
+        "Herbal Product",
+        "Interacting Drug",
+        "Effect",
+        "Risk Level"
+      ]
+    },
+    {
+      "type": "scenario-simulation",
+      "nodes": [
+        {
+          "id": "start",
+          "text": "The patient has disclosed garlic capsules and turmeric supplements alongside warfarin. Both have antiplatelet/anticoagulant effects. What is your priority?",
+          "choices": [
+            {
+              "label": "Tell the patient to stop all herbal products immediately",
+              "feedback": "This approach is too aggressive and may cause the patient to stop disclosing herbal use in the future.",
+              "isOptimal": false,
+              "nextNodeId": "too-aggressive"
+            },
+            {
+              "label": "Flag the garlic + warfarin and turmeric + warfarin interactions to the pharmacist for assessment",
+              "feedback": "Correct! Both garlic and turmeric increase bleeding risk with warfarin. The pharmacist needs to assess this.",
+              "isOptimal": true,
+              "nextNodeId": "correct"
+            },
+            {
+              "label": "Ignore it — herbal products are harmless",
+              "feedback": "Incorrect. Garlic and turmeric both have clinically documented antiplatelet effects that increase bleeding risk with warfarin.",
+              "isOptimal": false,
+              "nextNodeId": "wrong"
+            }
+          ]
+        },
+        {
+          "id": "correct",
+          "text": "Well done. You reported the interaction to the pharmacist, who counselled the patient about the bleeding risk and recommended they discuss their herbal use with their doctor.",
+          "isEnd": true,
+          "outcome": "success",
+          "summary": "Identifying drug-herb interactions and escalating to the pharmacist is the correct approach."
+        },
+        {
+          "id": "too-aggressive",
+          "text": "The patient becomes defensive and says they will not tell the pharmacy about their bush teas in the future.",
+          "isEnd": true,
+          "outcome": "partial",
+          "summary": "While your concern was valid, a less confrontational approach would preserve the patient's trust and willingness to disclose."
+        },
+        {
+          "id": "wrong",
+          "text": "Two weeks later, the patient is admitted to hospital with a GI bleed. The combined effect of warfarin, garlic, and turmeric contributed to excessive anticoagulation.",
+          "isEnd": true,
+          "outcome": "failure",
+          "summary": "Drug-herb interactions can have serious clinical consequences. Always flag potential interactions."
+        }
+      ],
+      "title": "Scenario: The Patient Who Takes Everything",
+      "description": "An elderly patient in Barbados comes to collect their prescriptions for warfarin, amlodipine, and metformin. During counselling, you ask about herbal remedies. They reveal they drink soursop tea, take garlic capsules, and use turmeric supplements daily."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Causes nausea",
+        "Induces CYP450 enzymes, reducing contraceptive hormone levels and risking unplanned pregnancy",
+        "Blocks the hormones from binding to receptors",
+        "Causes the contraceptive to be excreted faster by the kidneys"
+      ],
+      "question": "St. John's Wort is dangerous when combined with oral contraceptives because it:",
+      "explanation": "St. John's Wort is a potent CYP450 inducer that accelerates metabolism of ethinylestradiol and progestogens, significantly reducing their blood levels and contraceptive effectiveness.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 20
+}

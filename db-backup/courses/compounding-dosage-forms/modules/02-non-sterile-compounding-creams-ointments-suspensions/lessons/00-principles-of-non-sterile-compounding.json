@@ -1,0 +1,69 @@
+{
+  "id": "1fa00dc2-88ff-4409-b640-aae10f9a3c71",
+  "module_id": "09de5c32-b893-4b01-812f-12f4b6b92bc3",
+  "title": "Principles of Non-Sterile Compounding",
+  "content": [
+    {
+      "text": "The Foundation of Compounding Practice",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Non-sterile compounding is the preparation of pharmaceutical products that do not require sterile conditions. This includes oral liquids, topical preparations (creams, ointments, gels, pastes), capsules, suppositories, troches, and powder blends. In the Caribbean, non-sterile compounding is a core skill for pharmacy technicians because commercial products are frequently unavailable due to supply chain disruptions, limited market size, or the need for customised strengths and formulations — particularly for paediatric patients.",
+      "type": "text"
+    },
+    {
+      "body": "Compounding is not the same as manufacturing. Compounding involves the preparation of a customised medication for an individual patient based on a prescription, whereas manufacturing involves the large-scale production of medications for general distribution. This distinction has regulatory implications: compounded products are not required to undergo the same regulatory approval process as manufactured products, but they must still meet quality standards and be prepared in accordance with professional guidelines and applicable legislation.",
+      "type": "text"
+    },
+    {
+      "term": "Non-Sterile Compounding",
+      "type": "key-term",
+      "definition": "The preparation of pharmaceutical products that are not required to be sterile. This includes oral preparations (solutions, suspensions, capsules, powders), topical preparations (creams, ointments, gels, pastes), and other dosage forms that will not be injected or applied to sterile body areas. Non-sterile compounding must still meet strict quality standards for potency, purity, and stability."
+    },
+    {
+      "text": "The Nine Essentials of Good Compounding Practice",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "type": "list",
+      "items": [
+        "Competent personnel: The compounder must be trained, competent, and working under the supervision of a registered pharmacist",
+        "Appropriate facilities: A dedicated compounding area that is clean, well-lit, and separate from the dispensing area",
+        "Quality ingredients: All ingredients must be pharmaceutical grade, within their expiry date, and properly stored",
+        "Reliable equipment: Calibrated balances, graduated cylinders, mortar and pestle, spatulas, and ointment slabs must be clean and in good working order",
+        "Validated procedures: Compounding must follow established standard operating procedures (SOPs) or tested master formulae",
+        "Accurate calculations: All ingredient quantities must be double-checked before and during compounding",
+        "Proper labelling: The final product must be labelled with all required information including beyond-use date, storage conditions, and auxiliary labels",
+        "Quality control: The finished product must be inspected for appearance, consistency, pH (where applicable), and weight or volume accuracy",
+        "Complete documentation: Every compounding event must be documented in a compounding log with batch details, ingredients used, beyond-use date, and the identity of the compounder and checking pharmacist"
+      ],
+      "ordered": true
+    },
+    {
+      "body": "In Caribbean jurisdictions, compounding must be performed in response to a specific prescription for an individual patient. Preparing large batches of compounded products in advance ('anticipatory compounding') without prescriptions is generally considered manufacturing and is subject to different, more stringent regulatory requirements. Always verify your island's specific regulations on the permissible scope of compounding. In Trinidad and Tobago, the Chemistry, Food and Drugs Act and its regulations govern this boundary.",
+      "type": "callout",
+      "title": "Compounding vs. Manufacturing: Know the Boundary",
+      "variant": "warning"
+    },
+    {
+      "body": "Before beginning any compounding task, the pharmacy technician must verify: (1) Is there a valid prescription? (2) Is there a master formula or SOP available? (3) Are all required ingredients available and in date? (4) Is the compounding area clean and equipment ready? (5) Have calculations been verified by a second person? Only when all five conditions are satisfied should compounding proceed.",
+      "type": "text"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Compounding uses generic ingredients; manufacturing uses brand-name ingredients",
+        "Compounding is for individual patients based on prescriptions; manufacturing is large-scale production for general distribution",
+        "Compounding does not require a pharmacist's involvement; manufacturing does",
+        "There is no legal distinction between compounding and manufacturing"
+      ],
+      "question": "What is the key legal distinction between compounding and manufacturing?",
+      "explanation": "The fundamental distinction is that compounding involves preparing a customised medication for an individual patient in response to a specific prescription, while manufacturing involves the large-scale production of standardised medications for general distribution. This distinction is critical because it determines which regulatory framework applies. Compounded products are regulated under pharmacy practice legislation, while manufactured products must undergo formal regulatory approval.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 25
+}

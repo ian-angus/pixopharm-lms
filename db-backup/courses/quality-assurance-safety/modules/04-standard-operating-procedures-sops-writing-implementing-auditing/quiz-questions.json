@@ -1,0 +1,183 @@
+[
+  {
+    "id": "2e6fb9bb-2847-4174-8b9f-f1d4db38b5dd",
+    "module_id": "c33cff75-0326-4020-95b4-a2f8a518375a",
+    "question": "What is the primary purpose of a Standard Operating Procedure (SOP) in pharmacy?",
+    "options": [
+      "To satisfy regulatory inspectors during audits",
+      "To ensure every team member performs safety-critical tasks in a consistent, standardised manner",
+      "To document which staff member performed each task for disciplinary purposes",
+      "To reduce the need for pharmacist supervision of technicians"
+    ],
+    "correct_answer": 1,
+    "explanation": "The primary purpose of an SOP is to ensure consistency and standardisation in safety-critical processes. While SOPs also satisfy regulatory requirements and serve as training tools, their core function is to eliminate the dangerous variability that occurs when each team member performs a task differently.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "d76e66c8-c417-4927-8afa-e3e5a7b5932c",
+    "module_id": "c33cff75-0326-4020-95b4-a2f8a518375a",
+    "question": "Which of the following is an example of POOR SOP writing?",
+    "options": [
+      "'Scan the product barcode and verify the drug name matches the prescription'",
+      "'Verify patient identity using full name and date of birth'",
+      "'Ensure medications are stored at appropriate temperatures'",
+      "'Record the temperature reading in the monitoring log at 09:00 and 15:00 daily'"
+    ],
+    "correct_answer": 2,
+    "explanation": "'Ensure medications are stored at appropriate temperatures' is poor SOP writing because 'appropriate' is subjective and ambiguous. A well-written SOP step would specify the exact temperature range (e.g., '15–25 °C'), the storage location, and the monitoring frequency. All other options are specific, measurable, and actionable.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "evaluate"
+  },
+  {
+    "id": "b573c7f4-ed80-48af-9a53-6b284e66e2a2",
+    "module_id": "c33cff75-0326-4020-95b4-a2f8a518375a",
+    "question": "How often should high-risk pharmacy SOPs (such as dispensing and controlled substance handling) be audited?",
+    "options": [
+      "Annually",
+      "Every two years",
+      "Monthly",
+      "Only when an error occurs"
+    ],
+    "correct_answer": 2,
+    "explanation": "High-risk processes should be audited monthly to detect compliance gaps before they lead to errors. Lower-risk processes can be audited quarterly. Waiting until an error occurs to audit is reactive and defeats the purpose of proactive quality assurance.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "b584e5c9-e14a-4342-a3ad-0d51a9dd4def",
+    "module_id": "c33cff75-0326-4020-95b4-a2f8a518375a",
+    "question": "Which of the following are valid triggers for revising an existing SOP? (Select all that apply)",
+    "options": [
+      "A medication error or near-miss that reveals a gap in the procedure",
+      "A change in pharmacy legislation or regulations",
+      "Persistent non-compliance with a specific step revealed by audits",
+      "A staff member who prefers to do things differently",
+      "Installation of new technology that alters the workflow"
+    ],
+    "correct_answer": 0,
+    "explanation": "Valid triggers for SOP revision include errors/near-misses revealing gaps, regulatory changes, persistent audit non-compliance (indicating impractical steps), and new technology. A staff member's personal preference is NOT a valid trigger — SOPs are based on evidence and best practice, not individual preferences.",
+    "order_index": 3,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "analyze"
+  },
+  {
+    "id": "365f52d5-d822-4476-b27d-58d2f0be1e98",
+    "module_id": "c33cff75-0326-4020-95b4-a2f8a518375a",
+    "question": "What is the recommended approach when staff resist a new SOP?",
+    "options": [
+      "Allow them to opt out until they are ready",
+      "Explain the patient safety rationale — the specific risk or incident that led to the SOP",
+      "Implement the SOP without discussion and enforce through discipline",
+      "Abandon the SOP and rely on informal verbal instructions instead"
+    ],
+    "correct_answer": 1,
+    "explanation": "The most effective way to gain staff buy-in is to connect the SOP to patient safety — explaining the specific incident, near-miss, or identified risk that necessitated the procedure. When staff understand WHY the SOP exists and how it protects patients, they are far more likely to embrace it voluntarily.",
+    "order_index": 4,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "3952d633-a2b1-43c8-9c58-4d6028963482",
+    "module_id": "c33cff75-0326-4020-95b4-a2f8a518375a",
+    "question": "In an SOP audit, a compliance rate below what percentage for a critical step should trigger immediate retraining?",
+    "options": [
+      "50%",
+      "70%",
+      "90%",
+      "100%"
+    ],
+    "correct_answer": 2,
+    "explanation": "A compliance rate below 90% for any critical SOP step should trigger immediate retraining and investigation. For safety-critical processes like dispensing, high compliance is non-negotiable. The investigation should also determine whether the step itself is practical — persistent non-compliance may indicate a system barrier rather than a training gap.",
+    "order_index": 5,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "6dc4c99e-047d-4cb5-aca3-f7a3da66d7ae",
+    "module_id": "c33cff75-0326-4020-95b4-a2f8a518375a",
+    "question": "What is the advantage of a peer audit model in small Caribbean pharmacies?",
+    "options": [
+      "It eliminates the need for formal SOP documentation",
+      "It builds mutual accountability and shared understanding of procedures",
+      "It is required by all Caribbean pharmacy boards",
+      "It replaces the need for pharmacist oversight"
+    ],
+    "correct_answer": 1,
+    "explanation": "Peer audits — where technicians audit each other's practice on a rotating basis — build mutual accountability, deepen understanding of SOPs, and create a team culture of safety. The auditor gains insight into their own practice by observing others, and the process normalises constructive feedback. Peer audits complement, but do not replace, formal pharmacist oversight.",
+    "order_index": 6,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "e095e2a8-1879-4ee9-8e56-509546187160",
+    "module_id": "c33cff75-0326-4020-95b4-a2f8a518375a",
+    "question": "SOPs should be reviewed at minimum every _____ months to ensure they remain current and effective.",
+    "options": [
+      "6",
+      "12 to 24",
+      "36",
+      "48"
+    ],
+    "correct_answer": 1,
+    "explanation": "SOPs should be reviewed at minimum every 12-24 months, even if no triggering event (error, regulatory change, new equipment) has occurred. Regular scheduled reviews ensure procedures remain current, relevant, and aligned with best practice. Many pharmacy boards expect a maximum 24-month review cycle.",
+    "order_index": 7,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "2f110555-8d71-4abb-afce-15d7f324c072",
+    "module_id": "c33cff75-0326-4020-95b4-a2f8a518375a",
+    "question": "A new locum technician arrives at a Caribbean community pharmacy for a one-week assignment. She has never worked at this pharmacy before. What is the MOST important resource for ensuring she follows the pharmacy's standard processes?",
+    "options": [
+      "Verbal instructions from the permanent technician",
+      "Her personal experience from other pharmacies",
+      "The pharmacy's written SOPs for key processes",
+      "A phone call to the pharmacy board for guidance"
+    ],
+    "correct_answer": 2,
+    "explanation": "Written SOPs are the most reliable resource for ensuring a locum technician follows the pharmacy's standard processes. Verbal instructions depend on the availability and memory of other staff; personal experience may differ from this pharmacy's specific procedures; and the pharmacy board does not provide operational guidance. SOPs provide consistent, accessible, documented instructions that any qualified professional can follow.",
+    "order_index": 8,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "9bb04ec4-ac96-463e-87c2-65abf6ff32b3",
+    "module_id": "c33cff75-0326-4020-95b4-a2f8a518375a",
+    "question": "Which SOP writing technique ensures the procedure can be followed by the LEAST experienced team member?",
+    "options": [
+      "Using complex medical terminology to demonstrate expertise",
+      "Writing in passive voice to sound professional",
+      "Using plain language, active voice, and one action per numbered step",
+      "Writing a brief summary and trusting staff to fill in the details"
+    ],
+    "correct_answer": 2,
+    "explanation": "SOPs must be written for the least experienced person who might need to follow them. Plain language ensures comprehension, active voice ensures clarity ('Scan the barcode' is clearer than 'The barcode should be scanned'), and one action per step prevents confusion. This approach ensures the SOP is accessible to new staff, locums, and trainees.",
+    "order_index": 9,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "apply"
+  }
+]

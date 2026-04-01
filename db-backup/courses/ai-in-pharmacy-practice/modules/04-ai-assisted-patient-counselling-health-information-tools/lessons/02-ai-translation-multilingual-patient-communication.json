@@ -1,0 +1,87 @@
+{
+  "id": "4099b49a-c886-4744-b3da-faae99f5f16b",
+  "module_id": "373bbb03-458a-4385-890c-f79814de2f62",
+  "title": "AI Translation & Multilingual Patient Communication",
+  "content": [
+    {
+      "text": "Bridging Language Barriers with AI",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "The Caribbean is a linguistically diverse region. Within a single pharmacy in Trinidad, you may serve patients who are most comfortable in English, Trinidadian Creole, Hindi, Spanish, or French Creole. In Jamaica, Jamaican Patois may be a patient's first language. In Barbados, Bajan Dialect is widely spoken. AI translation tools can help bridge these language gaps, but they carry unique risks in a clinical context where mistranslation can be dangerous.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Trinidad & Tobago",
+          "English",
+          "Trinidadian Creole, Hindi, Spanish",
+          "Medication instructions may need Creole simplification; Hindi-speaking patients may need Hindi translation for labels"
+        ],
+        [
+          "Jamaica",
+          "English",
+          "Jamaican Patois (Patwa)",
+          "Patient counselling often more effective in Patois; AI can help draft Patois-friendly explanations"
+        ],
+        [
+          "Barbados",
+          "English",
+          "Bajan Dialect",
+          "Standard English is generally understood but Bajan phrasing improves comprehension for some patients"
+        ],
+        [
+          "Haiti / Haitian diaspora",
+          "French, Haitian Creole",
+          "Haitian Creole (Kreyol)",
+          "Significant Haitian populations across the Caribbean; medication labels in Kreyol may be needed"
+        ],
+        [
+          "Suriname diaspora",
+          "Dutch",
+          "Sranan Tongo, Javanese, Hindi",
+          "Patients from Suriname in Trinidad may need Dutch or Sranan Tongo translation"
+        ]
+      ],
+      "type": "table",
+      "caption": "Language Considerations in Caribbean Pharmacy",
+      "headers": [
+        "Island/Region",
+        "Official Language",
+        "Common Local Languages",
+        "Pharmacy Implication"
+      ]
+    },
+    {
+      "body": "AI translation tools can make errors that are dangerous in clinical contexts. 'Once daily' mistranslated as 'one time' (implying single dose rather than daily) or 'take with food' mistranslated to a Creole phrase meaning 'take instead of food' could cause serious harm. ALWAYS have a bilingual staff member or the pharmacist review AI-translated clinical content. For dosing instructions, use numbers and universal symbols alongside translated text.",
+      "type": "callout",
+      "title": "Critical Translation Risk",
+      "variant": "danger"
+    },
+    {
+      "body": "AI tools like Google Translate, DeepL, and LLMs like ChatGPT and Claude can handle major world languages well, but their performance with Caribbean Creole languages varies significantly. Jamaican Patois and Trinidadian Creole are increasingly supported, but accuracy for clinical terminology remains inconsistent. The safest approach is to use AI for a first draft, then have a fluent speaker review and correct it.",
+      "type": "text"
+    },
+    {
+      "term": "Teach-Back Method",
+      "type": "key-term",
+      "definition": "A communication technique where the healthcare professional asks the patient to explain, in their own words, what they have been told. This confirms understanding and identifies gaps, regardless of the language used. Example: 'Tell me in your own words how you will take this medication.'"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Use AI translation directly without review — modern AI is accurate enough",
+        "Avoid translation entirely and only communicate in English",
+        "Use AI for a first draft, then have a bilingual staff member review for accuracy in the target language",
+        "Only provide written instructions and avoid verbal counselling"
+      ],
+      "question": "What is the safest way to use AI translation for medication instructions in a multilingual Caribbean pharmacy?",
+      "explanation": "The safest approach is to use AI translation for an initial draft and then have a bilingual staff member review and correct it. AI translation can make errors that are clinically significant, especially with Caribbean Creole languages. Human review ensures safety while still benefiting from AI's speed.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 20
+}

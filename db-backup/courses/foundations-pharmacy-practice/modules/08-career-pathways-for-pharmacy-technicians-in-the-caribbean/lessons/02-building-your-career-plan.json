@@ -1,0 +1,71 @@
+{
+  "id": "be24e7e6-282a-496f-96ab-455d14d1e432",
+  "module_id": "ca3220b3-2c07-448d-bf3e-0790d0ed9088",
+  "title": "Building Your Career Plan",
+  "content": [
+    {
+      "text": "Your 5-Year Career Blueprint",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "A career doesn't just happen — it is built deliberately through planning, skill development, and strategic decision-making. This final lesson helps you create a personal 5-year career plan that leverages your PIXOPHARM training and positions you for long-term success in Caribbean pharmacy.",
+      "type": "text"
+    },
+    {
+      "text": "The Career Planning Framework",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "rows": [
+        [
+          "Year 1: Foundation",
+          "Complete PIXOPHARM certification, secure first pharmacy technician position",
+          "Finish all 8 courses, obtain certification, prepare CV, apply to positions, begin work under pharmacist supervision"
+        ],
+        [
+          "Year 2: Competence",
+          "Develop proficiency in all core dispensing tasks, build patient interaction skills",
+          "Complete probationary period, seek feedback from pharmacist mentor, take on additional responsibilities, begin CPD log"
+        ],
+        [
+          "Year 3: Specialisation",
+          "Identify area of interest, pursue advanced training",
+          "Enrol in PIXOPHARM advanced courses, attend CAP conference, consider a specialised role (hospital, compounding, management)"
+        ],
+        [
+          "Year 4: Leadership",
+          "Take on supervisory or mentoring responsibilities",
+          "Train new technicians, lead a quality improvement project, explore cross-island opportunities if desired"
+        ],
+        [
+          "Year 5: Advancement",
+          "Move into senior role or begin further education",
+          "Apply for senior technician / lead position, or enrol in UWI BPharm programme, or explore related career paths"
+        ]
+      ],
+      "type": "table",
+      "caption": "5-Year Career Planning Template",
+      "headers": [
+        "Timeframe",
+        "Goals",
+        "Actions"
+      ]
+    },
+    {
+      "body": "By completing this Foundations of Pharmacy Practice course, you have taken the most important step — you have started. The Caribbean pharmacy sector needs trained, ethical, knowledgeable professionals who understand the unique challenges and opportunities of our region. You are becoming that professional. The remaining PIXOPHARM courses will deepen your knowledge in pharmaceutical calculations, dispensing, pharmacology, regulations, AI, patient communication, and quality assurance. Your career awaits.",
+      "type": "callout",
+      "title": "Your Journey Starts Now",
+      "variant": "info"
+    },
+    {
+      "type": "video-placeholder",
+      "title": "Graduate Voices: Where Are They Now?",
+      "duration": "10 min",
+      "description": "PIXOPHARM graduates from Trinidad, Jamaica, and Barbados share their career journeys since completing their training — where they started, where they are now, and their advice for new pharmacy technicians."
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 15
+}

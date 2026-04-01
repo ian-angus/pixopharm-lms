@@ -1,0 +1,62 @@
+{
+  "id": "9f84b170-070c-4ffc-bebf-25ca5109d4b0",
+  "module_id": "985d5724-85ec-4a39-a2d7-47693858456e",
+  "title": "Controlled Substance Destruction & Regulatory Reporting",
+  "content": [
+    {
+      "text": "The End of the Lifecycle: Destruction & Disposal",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "When controlled substances are expired, damaged, or no longer needed, they cannot simply be discarded — they must be destroyed through a witnessed, documented process that satisfies regulatory requirements. The destruction process ensures that the substances cannot be recovered, diverted, or misused after disposal.",
+      "type": "text"
+    },
+    {
+      "body": "In most Caribbean jurisdictions, controlled substance destruction must be witnessed by an authorised official — typically an inspector from the Dangerous Drugs Inspectorate, the Pharmacy Board, or the police narcotics division. Both the pharmacist and the witness must sign a destruction certificate documenting exactly what was destroyed, the quantity, the method of destruction, and the date.",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Identify and quarantine all controlled substances due for destruction (expired, damaged, or patient returns)",
+        "Compile a detailed inventory list: drug name, form, strength, quantity, batch numbers, and reason for destruction",
+        "Request an authorised witness from the relevant regulatory authority",
+        "Carry out the destruction in the presence of the witness using an approved method (incineration, chemical denaturing, or other method approved by the authority)",
+        "Complete the destruction certificate — signed by the pharmacist and the witness",
+        "Update the Dangerous Drugs Register to reflect the destroyed quantities and the new balance",
+        "File the destruction certificate for the required retention period"
+      ],
+      "ordered": true
+    },
+    {
+      "body": "Caribbean pharmacies must submit regular reports on controlled substance transactions to their national regulatory authority. In Trinidad & Tobago, quarterly returns are submitted to the Dangerous Drugs Inspectorate. In Jamaica, reports go to the Pharmacy Council. In Barbados, the Drug Service requires periodic returns. These reports include total quantities received, dispensed, destroyed, and the closing balance. Failure to submit timely reports can result in licence suspension.",
+      "type": "callout",
+      "title": "Regulatory Reporting Requirements",
+      "variant": "warning"
+    },
+    {
+      "term": "Witnessed Destruction",
+      "type": "key-term",
+      "definition": "The supervised disposal of controlled substances in the presence of an authorised witness (typically a regulatory inspector or police officer) who verifies the identity and quantity of the substances destroyed and co-signs a destruction certificate. This process creates an unbroken chain of accountability from receipt through final disposal."
+    },
+    {
+      "body": "Patient returns of controlled substances present a special challenge. When a patient returns unused controlled medication (for example, after a family member's death), the pharmacy must document the return, quarantine the medication, and include it in the next scheduled destruction. The returned medication must never be redispensed — it cannot be verified as genuine, uncontaminated, or properly stored during the time it was in the patient's possession.",
+      "type": "text"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Accept the return, verify the tablets, and redispense them to another patient",
+        "Accept the return, document it in the DDR, quarantine the tablets, and include them in the next witnessed destruction",
+        "Refuse to accept the tablets and advise the patient to flush them down the toilet",
+        "Accept the tablets and dispose of them in the regular pharmacy waste bin"
+      ],
+      "question": "A patient returns 15 unused morphine tablets after her husband passed away. What should the pharmacy do?",
+      "explanation": "The pharmacy should accept the return, document it in the Dangerous Drugs Register (noting the patient's name and quantity returned), quarantine the tablets, and include them in the next scheduled witnessed destruction. Returned controlled substances must never be redispensed, flushed, or placed in regular waste — they must follow the complete destruction protocol.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 3,
+  "duration_minutes": 20
+}

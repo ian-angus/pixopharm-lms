@@ -1,0 +1,125 @@
+{
+  "id": "a6e4e9e1-eca4-4b65-b999-e6b365fd5116",
+  "module_id": "432d98b6-47af-4c06-9c20-21f449b6c90d",
+  "title": "Caribbean Data Protection Laws: What Pharmacy Technicians Must Know",
+  "content": [
+    {
+      "text": "The Legal Landscape of Patient Data Protection",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Patient data is among the most sensitive categories of personal information. When a pharmacy stores a patient's name, address, medical conditions, and medication history, it holds information that could cause serious harm if mishandled — from discrimination to identity theft to social stigma. Caribbean nations have recognised this and have been enacting data protection legislation, though the pace and scope vary significantly across islands.",
+      "type": "text"
+    },
+    {
+      "type": "island-comparison",
+      "title": "Data Protection Legislation Across the Caribbean",
+      "islands": [
+        {
+          "flag": "🇹🇹",
+          "name": "Trinidad & Tobago",
+          "details": [
+            "The Data Protection Act (2011, proclaimed in stages) establishes comprehensive data protection rights",
+            "An Information Commissioner oversees enforcement",
+            "The Act covers collection, processing, storage, and sharing of personal data",
+            "Health data is classified as 'sensitive personal data' requiring enhanced protection",
+            "Penalties include fines and imprisonment for serious breaches",
+            "Pharmacies must register as data controllers and appoint data compliance staff"
+          ]
+        },
+        {
+          "flag": "🇯🇲",
+          "name": "Jamaica",
+          "details": [
+            "The Data Protection Act (2020) was passed and is being implemented in phases",
+            "Establishes an Information Commissioner for enforcement",
+            "Covers the processing of personal data by both public and private entities",
+            "Health data receives special protection as sensitive personal data",
+            "Requires organisations to implement appropriate technical and organisational security measures",
+            "Pharmacies handling NHF data must comply with both the Act and NHF data-sharing agreements"
+          ]
+        },
+        {
+          "flag": "🇧🇧",
+          "name": "Barbados",
+          "details": [
+            "The Data Protection Act (2019) provides a comprehensive framework",
+            "An Information Commissioner has been appointed for oversight",
+            "All entities processing personal data must comply with data protection principles",
+            "Health data processed by pharmacies and the Drug Service falls under enhanced protection",
+            "The compact nature of Barbadian society makes de-identification of data particularly challenging",
+            "Cross-border data transfers are regulated, affecting pharmacies using offshore cloud services"
+          ]
+        }
+      ],
+      "description": "The state of data protection law varies significantly across Caribbean nations, affecting how pharmacies must handle patient data."
+    },
+    {
+      "term": "Data Controller",
+      "type": "key-term",
+      "definition": "The person or organisation that determines the purposes and means of processing personal data. In a pharmacy context, the pharmacy (or its owner/operator) is the data controller for patient records and is legally responsible for how that data is handled."
+    },
+    {
+      "rows": [
+        [
+          "Lawful basis",
+          "You must have a legal reason to collect and process personal data",
+          "Collecting patient medication history for dispensing purposes — lawful. Sharing it with a marketing company — unlawful."
+        ],
+        [
+          "Purpose limitation",
+          "Data collected for one purpose cannot be used for another without consent",
+          "Patient data collected for dispensing cannot be used for pharmacy marketing without separate consent"
+        ],
+        [
+          "Data minimisation",
+          "Only collect the minimum data necessary for the stated purpose",
+          "Asking for a patient's medication history is necessary; asking about their income is not"
+        ],
+        [
+          "Accuracy",
+          "Personal data must be accurate and kept up to date",
+          "Regularly updating patient allergy records, contact details, and medication lists"
+        ],
+        [
+          "Storage limitation",
+          "Data should not be kept longer than necessary",
+          "Retaining patient records for the legally required period, then securely destroying them"
+        ],
+        [
+          "Security",
+          "Appropriate measures must protect data against unauthorised access, loss, or damage",
+          "Password-protected dispensing systems, locked filing cabinets for paper records, encrypted backups"
+        ]
+      ],
+      "type": "table",
+      "caption": "Core Data Protection Principles (Common Across Caribbean Legislation)",
+      "headers": [
+        "Principle",
+        "What It Means",
+        "Pharmacy Example"
+      ]
+    },
+    {
+      "body": "In small Caribbean communities, everyone knows everyone. A pharmacy technician may recognise a patient's name and know their family. Data protection is not just about technical systems — it is about the discipline of not discussing patient information outside the pharmacy, not looking up friends' or neighbours' records out of curiosity, and understanding that a breach of confidence in a small community can cause devastating social harm. 'De whole town go know' is not an exaggeration — it is a genuine risk.",
+      "type": "callout",
+      "title": "Small Island Reality",
+      "variant": "warning"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Public information — anyone can access it",
+        "General personal data — standard protection applies",
+        "Sensitive personal data — enhanced protection required",
+        "Anonymous data — no protection needed"
+      ],
+      "question": "Under Caribbean data protection legislation, what category does patient medication history fall into?",
+      "explanation": "Patient medication history is classified as health data, which falls under 'sensitive personal data' in all Caribbean data protection legislation. This requires enhanced protection measures including explicit consent for collection, restricted access, encryption, and strict controls on sharing.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 20
+}

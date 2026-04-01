@@ -1,0 +1,97 @@
+{
+  "id": "b6f9b645-41f4-4926-bc7a-d79cbd691d9d",
+  "module_id": "a10da8b5-6ddf-4b8e-9a92-c4055fb72eed",
+  "title": "Percentage Calculations in Pharmacy",
+  "content": [
+    {
+      "text": "Percentages: The Universal Language of Concentrations",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Percentage expressions are the most common way to describe drug concentrations in pharmacy. A percentage always means 'parts per hundred' but in pharmacy, the specific meaning depends on whether we are talking about solids, liquids, or combinations. Understanding the three types of pharmaceutical percentages — w/w, w/v, and v/v — is essential for accurate compounding and dispensing.",
+      "type": "text"
+    },
+    {
+      "term": "Percentage w/v (weight in volume)",
+      "type": "key-term",
+      "definition": "The number of grams of solute (drug) per 100 mL of solution. This is the most common percentage expression in pharmacy. Example: Normal saline 0.9% w/v = 0.9 g of sodium chloride per 100 mL of solution = 9 g per litre."
+    },
+    {
+      "text": "The Three Types of Pharmaceutical Percentages",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "rows": [
+        [
+          "% w/v",
+          "Grams of drug per 100 mL of solution",
+          "(g solute / mL solution) × 100",
+          "Dextrose 5% = 5 g per 100 mL"
+        ],
+        [
+          "% w/w",
+          "Grams of drug per 100 g of preparation",
+          "(g solute / g total) × 100",
+          "Hydrocortisone 1% cream = 1 g per 100 g"
+        ],
+        [
+          "% v/v",
+          "Millilitres of liquid per 100 mL of solution",
+          "(mL solute / mL solution) × 100",
+          "Ethanol 70% = 70 mL per 100 mL"
+        ]
+      ],
+      "type": "table",
+      "caption": "Types of Pharmaceutical Percentages",
+      "headers": [
+        "Type",
+        "Meaning",
+        "Formula",
+        "Example"
+      ]
+    },
+    {
+      "body": "Worked example (w/v): How many grams of dextrose are needed to prepare 500 mL of Dextrose 5% solution? 5% w/v means 5 g per 100 mL. Using proportion: 5 g / 100 mL = x g / 500 mL. Cross-multiply: x = (5 × 500) / 100 = 25 g. You need 25 g of dextrose dissolved in enough water to make 500 mL.",
+      "type": "text"
+    },
+    {
+      "body": "Worked example (w/w): A prescription calls for 60 g of hydrocortisone 0.5% cream. How much hydrocortisone powder is needed? 0.5% w/w means 0.5 g per 100 g. Using proportion: 0.5 g / 100 g = x g / 60 g. Cross-multiply: x = (0.5 × 60) / 100 = 0.3 g. You need 0.3 g (300 mg) of hydrocortisone powder in 59.7 g of cream base to make 60 g total.",
+      "type": "text"
+    },
+    {
+      "body": "Caribbean patients frequently present with fungal skin infections, sunburn, and insect bites due to the tropical climate. Common compounded preparations include salicylic acid 2-10% w/w ointments for fungal conditions, calamine lotion (a suspension requiring shaking), and aqueous cream as a base. At pharmacies across Trinidad and Barbados, technicians regularly compound these preparations, making percentage w/w calculations a daily skill.",
+      "type": "callout",
+      "title": "Percentages in Caribbean Tropical Dermatology",
+      "variant": "info"
+    },
+    {
+      "text": "Converting Between Percentage and mg/mL",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "A quick conversion: 1% w/v = 10 mg/mL. This is because 1% = 1 g per 100 mL = 1000 mg per 100 mL = 10 mg per mL. Memorise this conversion factor — it saves time and reduces errors. Examples: Lidocaine 2% = 20 mg/mL. Dextrose 5% = 50 mg/mL. Bupivacaine 0.25% = 2.5 mg/mL.",
+      "type": "text"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "2 mg",
+        "20 mg",
+        "200 mg",
+        "2000 mg"
+      ],
+      "question": "How many milligrams of lidocaine are in 10 mL of lidocaine 2% w/v solution?",
+      "explanation": "Lidocaine 2% w/v = 2 g per 100 mL = 20 mg/mL. For 10 mL: 20 mg/mL × 10 mL = 200 mg. Remember the shortcut: 1% = 10 mg/mL, so 2% = 20 mg/mL. This is a standard local anaesthetic concentration used in dental and minor surgical procedures at Caribbean health centres.",
+      "correctIndex": 2
+    },
+    {
+      "body": "Always pay attention to whether a concentration is expressed as w/v, w/w, or v/v. Confusing these can lead to significant calculation errors, particularly in compounding. When in doubt, consult the pharmacist — but always attempt the calculation yourself first so you can catch errors in verification.",
+      "type": "text"
+    }
+  ],
+  "order_index": 3,
+  "duration_minutes": 30
+}

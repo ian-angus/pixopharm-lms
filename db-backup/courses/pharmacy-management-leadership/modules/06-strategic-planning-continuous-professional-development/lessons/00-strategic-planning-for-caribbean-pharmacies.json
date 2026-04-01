@@ -1,0 +1,93 @@
+{
+  "id": "989ebc4c-acd2-43d8-a563-16fe6162a1e3",
+  "module_id": "239c1c0d-6b4a-4c93-8a9f-a6dedc1deb6f",
+  "title": "Strategic Planning for Caribbean Pharmacies",
+  "content": [
+    {
+      "text": "Thinking Strategically About Your Pharmacy's Future",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Most Caribbean pharmacies operate reactively — responding to today's prescriptions, this week's stock shortages, and next month's bills. Strategic planning shifts the focus from survival mode to intentional growth. It asks: where do we want this pharmacy to be in 3–5 years, and what must we do now to get there? In a rapidly changing healthcare landscape — with new government programmes, evolving regulations, increased competition from online pharmacies, and changing patient expectations — the pharmacies that plan strategically will thrive while those that do not will struggle to keep pace.",
+      "type": "text"
+    },
+    {
+      "term": "SWOT Analysis",
+      "type": "key-term",
+      "definition": "A strategic planning tool that evaluates an organisation's Strengths (internal advantages), Weaknesses (internal disadvantages), Opportunities (external favourable conditions), and Threats (external unfavourable conditions). For pharmacies, SWOT analysis helps identify what you do well, where you need to improve, what market opportunities you can capture, and what external risks you need to manage."
+    },
+    {
+      "text": "SWOT Analysis for a Caribbean Community Pharmacy",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "rows": [
+        [
+          "Strengths",
+          "Long-standing community trust; experienced pharmacist; strong CDAP/NHF participation; loyal patient base; strategic location near medical centre"
+        ],
+        [
+          "Weaknesses",
+          "Paper-based systems; limited product range; no clinical services; high staff turnover; poor online presence"
+        ],
+        [
+          "Opportunities",
+          "Growing chronic disease prevalence (more CDAP/NHF patients); demand for clinical services (blood pressure monitoring, diabetes screening); telepharmacy potential for remote communities; health and wellness product market growth"
+        ],
+        [
+          "Threats",
+          "New competitor pharmacy opening nearby; online pharmacy competition; currency depreciation increasing import costs; government programme reimbursement rate freezes; brain drain reducing available pharmacists"
+        ]
+      ],
+      "type": "table",
+      "caption": "Example SWOT Analysis — Caribbean Community Pharmacy",
+      "headers": [
+        "Category",
+        "Factors"
+      ]
+    },
+    {
+      "body": "The value of SWOT analysis is not just in listing factors — it is in matching them. Match strengths to opportunities: your trusted community presence (strength) positions you to offer clinical screening services (opportunity). Address weaknesses that expose you to threats: your paper-based system (weakness) makes you vulnerable to competitors with faster, more efficient service (threat). This matching process generates strategic priorities that are specific, actionable, and grounded in your pharmacy's reality.",
+      "type": "text"
+    },
+    {
+      "body": "Caribbean pharmacies that plan 3–5 years ahead consistently outperform those that plan quarter-to-quarter. Your strategic plan does not need to be a 50-page document — a clear, 2-page plan with a vision statement, 3–5 strategic priorities, measurable goals, and a quarterly review schedule is more valuable than an elaborate plan that sits in a drawer. Update it annually and review progress quarterly.",
+      "type": "callout",
+      "title": "The Five-Year Horizon",
+      "variant": "info"
+    },
+    {
+      "text": "Emerging Opportunities for Caribbean Pharmacies",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "type": "list",
+      "items": [
+        "Clinical services: Blood pressure monitoring, blood glucose testing, medication therapy management, immunisation services (where permitted by law)",
+        "Telepharmacy: Remote prescription verification and patient counselling for underserved rural areas and smaller islands — regulations are evolving across the region",
+        "Health and wellness: Natural health products, nutraceuticals, health foods, fitness supplements — a growing market driven by increased health consciousness",
+        "Chronic disease management programmes: Structured medication adherence programmes, blister packing, refill reminder services",
+        "Point-of-care testing: Rapid diagnostic testing for conditions like strep throat, influenza, or UTIs — subject to regulatory approval",
+        "Compounding services: Customised medication preparation for patients with specific needs (paediatric dosage forms, allergen-free formulations)"
+      ],
+      "ordered": false
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "A Strength",
+        "A Weakness",
+        "An Opportunity",
+        "A Threat"
+      ],
+      "question": "In a SWOT analysis for a Caribbean pharmacy, 'currency depreciation increasing medication import costs' would be classified as:",
+      "explanation": "Currency depreciation is an external factor that is unfavourable to the pharmacy — it increases the cost of imported medications while selling prices may not adjust proportionally. This makes it a Threat. Threats are external conditions over which the pharmacy has no direct control but must plan for and manage.",
+      "correctIndex": 3
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 25
+}

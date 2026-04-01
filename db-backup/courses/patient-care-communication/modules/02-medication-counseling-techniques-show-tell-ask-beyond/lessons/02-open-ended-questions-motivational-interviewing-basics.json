@@ -1,0 +1,95 @@
+{
+  "id": "1acf7840-ce05-4d25-8232-7b50560444bb",
+  "module_id": "9535926c-b2f6-4855-a3c2-5d2fb75018fb",
+  "title": "Open-Ended Questions & Motivational Interviewing Basics",
+  "content": [
+    {
+      "text": "The Power of How You Ask",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "The difference between a productive patient interaction and a dead end often comes down to how questions are framed. Closed questions — those that can be answered with 'yes' or 'no' — provide minimal information and allow patients to hide their confusion, non-adherence, or concerns behind a simple nod. Open-ended questions invite the patient into a conversation and reveal the rich contextual information that patient-centred care requires.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Are you taking your medication?",
+          "Tell me how you have been taking your medication this week.",
+          "Reveals actual patterns, timing, and missed doses rather than a defensive 'yes'"
+        ],
+        [
+          "Do you have any side effects?",
+          "What changes have you noticed since starting this medication?",
+          "Patients may not recognise symptoms as side effects; open framing captures more"
+        ],
+        [
+          "Do you understand how to take this?",
+          "Can you walk me through how you plan to take this when you get home?",
+          "Activates teach-back and reveals genuine understanding vs. passive agreement"
+        ],
+        [
+          "Any questions?",
+          "What concerns do you have about this medication?",
+          "'Any questions?' almost always gets 'no'; naming 'concerns' gives permission to voice worries"
+        ]
+      ],
+      "type": "table",
+      "caption": "Closed vs. Open-Ended Questions in Pharmacy",
+      "headers": [
+        "Closed Question",
+        "Open-Ended Alternative",
+        "Why the Open Version Is Better"
+      ]
+    },
+    {
+      "term": "Motivational Interviewing (MI)",
+      "type": "key-term",
+      "definition": "A collaborative, patient-centred counselling approach that strengthens a patient's own motivation and commitment to change. In pharmacy, MI techniques are used to explore and resolve ambivalence about medication adherence, lifestyle changes, or treatment acceptance. Key principles include expressing empathy, developing discrepancy, rolling with resistance, and supporting self-efficacy."
+    },
+    {
+      "text": "MI Techniques for Pharmacy Technicians",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "While full motivational interviewing training is typically a pharmacist-level competency, pharmacy technicians can apply four core MI techniques in their daily interactions:",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Express empathy: 'I can see this is worrying you. That is completely understandable.'",
+        "Develop discrepancy: 'You mentioned wanting to see your grandchildren grow up. How does skipping your blood pressure medication fit with that goal?'",
+        "Roll with resistance: Instead of arguing when a patient says 'I don't need this tablet,' respond with 'Tell me more about that — what makes you feel that way?'",
+        "Support self-efficacy: 'You have been managing your diet really well. I believe you can add this medication to your routine too.'"
+      ],
+      "ordered": false
+    },
+    {
+      "body": "Motivational interviewing for complex adherence issues or substance use should be escalated to the pharmacist. As a technician, you can use basic MI techniques in routine dispensing interactions, but do not attempt to conduct formal MI sessions for behaviour change — that requires advanced training and falls within the pharmacist's clinical scope.",
+      "type": "callout",
+      "title": "Know Your Scope",
+      "variant": "warning"
+    },
+    {
+      "body": "In the Caribbean, MI is particularly effective because it aligns with the oral communication traditions of Caribbean cultures. Rather than handing a patient a written leaflet (which may not be read), MI engages them in a dialogue that is natural, respectful, and empowering.",
+      "type": "text"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "'You cannot just stop taking prescribed medication — that is dangerous.'",
+        "'Tell me more about the dizziness. When does it happen? I want to help us find a solution together.'",
+        "'I will tell the pharmacist. Please wait.'",
+        "'That is a listed side effect. You will get used to it.'"
+      ],
+      "question": "A patient says: 'I stopped taking my diabetes medication because it makes me feel dizzy.' Which response best uses motivational interviewing techniques?",
+      "explanation": "The MI approach 'rolls with resistance' by exploring the patient's experience rather than dismissing or arguing with their decision. 'Tell me more' expresses empathy, and 'find a solution together' supports collaborative problem-solving. This approach is far more likely to result in the patient returning to treatment — perhaps with a dosage adjustment or alternative medication — than a lecture about compliance.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 25
+}

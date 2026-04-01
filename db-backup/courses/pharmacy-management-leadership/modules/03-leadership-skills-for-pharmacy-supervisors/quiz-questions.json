@@ -1,0 +1,182 @@
+[
+  {
+    "id": "c3586aaa-25a3-499e-9a29-6d822b4a0c27",
+    "module_id": "1c98523a-3a03-4cdf-a2ab-8b97e13644f8",
+    "question": "Which statement BEST distinguishes leadership from management in a pharmacy context?",
+    "options": [
+      "Leaders create the schedule; managers motivate the team",
+      "Management ensures SOPs are followed; leadership inspires staff to care about why SOPs matter",
+      "Leaders are always pharmacists; managers can be technicians",
+      "Management is about long-term vision; leadership is about daily tasks"
+    ],
+    "correct_answer": 1,
+    "explanation": "Management is about systems and processes (ensuring SOPs are followed, schedules are made, claims are submitted), while leadership is about people and purpose (inspiring the team to care about patient safety, mentoring staff, building culture). Effective pharmacy supervisors do both.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "a1a96f9a-074d-4577-9ff1-bf9b367132f3",
+    "module_id": "1c98523a-3a03-4cdf-a2ab-8b97e13644f8",
+    "question": "According to situational leadership theory, what style should a supervisor use with a highly competent, highly committed pharmacy technician?",
+    "options": [
+      "Directing — providing detailed instructions for each task",
+      "Coaching — explaining decisions and soliciting input",
+      "Supporting — facilitating and encouraging",
+      "Delegating — turning over responsibility for decisions and implementation"
+    ],
+    "correct_answer": 3,
+    "explanation": "A staff member with high competence and high commitment (the ideal combination) should be given a delegating style — trusted with responsibility and autonomy. Micro-managing an experienced, motivated technician would be demotivating and a poor use of supervisor time.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "9f3166c9-2b8a-4b0d-a6ec-5b8fb7b8db0f",
+    "module_id": "1c98523a-3a03-4cdf-a2ab-8b97e13644f8",
+    "question": "In Caribbean workplace culture, which conflict resolution approach is MOST culturally appropriate?",
+    "options": [
+      "Publicly address the conflict at a team meeting so everyone can learn from it",
+      "Send a group email outlining the expected behaviours",
+      "Meet each person individually first, then facilitate a private joint conversation",
+      "Report the conflict to the pharmacy owner without speaking to the staff involved"
+    ],
+    "correct_answer": 2,
+    "explanation": "In Caribbean culture, where personal dignity and respect are highly valued, individual private conversations before any joint discussion are essential. Public confrontation or group emails about interpersonal conflict are deeply inappropriate and will damage rather than repair relationships.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "evaluate"
+  },
+  {
+    "id": "46a469b6-e3a5-4e09-ba34-dd3d85bcc098",
+    "module_id": "1c98523a-3a03-4cdf-a2ab-8b97e13644f8",
+    "question": "When a pharmacy supervisor delegates a task to a technician, the supervisor is no longer responsible for the outcome of that task.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": 1,
+    "explanation": "False. Delegation transfers authority (the right to act) but not responsibility (accountability for the outcome). The supervisor remains ultimately responsible for ensuring that delegated tasks are completed correctly and must establish review and oversight processes.",
+    "order_index": 3,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "cd2fee3b-6119-45c0-82c8-2f8060df938d",
+    "module_id": "1c98523a-3a03-4cdf-a2ab-8b97e13644f8",
+    "question": "Which motivational factor is MOST powerful for Caribbean pharmacy professionals, according to research?",
+    "options": [
+      "Annual salary increases above inflation",
+      "Recognition for good work, growth opportunities, and a sense of purpose",
+      "Reduced working hours and more time off",
+      "A larger staff break room and better parking"
+    ],
+    "correct_answer": 1,
+    "explanation": "While fair compensation is a baseline requirement (Herzberg's hygiene factor), the most powerful motivators are intrinsic: recognition for good work, opportunities to learn and grow, and a sense of purpose — knowing that their work directly helps patients. These 'motivators' drive engagement and loyalty beyond what salary alone can achieve.",
+    "order_index": 4,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "d57be76c-c491-413e-8c4f-961ee0b9e44e",
+    "module_id": "1c98523a-3a03-4cdf-a2ab-8b97e13644f8",
+    "question": "A pharmacy is implementing a new electronic dispensing system. Staff are resistant. According to Kotter's change model, what is the FIRST step?",
+    "options": [
+      "Mandate that all staff complete training by Friday",
+      "Fire the most resistant staff member as an example",
+      "Create urgency by explaining why the current system is inadequate and how the new system benefits patients and staff",
+      "Install the system and remove access to the old one so staff have no choice"
+    ],
+    "correct_answer": 2,
+    "explanation": "The first step in Kotter's change model is creating urgency — helping the team understand WHY the change is needed. Without understanding the rationale, staff will resist. Training (how) and implementation come after the team understands and accepts the need for change.",
+    "order_index": 5,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "7544913a-5264-49c9-89f6-1e82486137b2",
+    "module_id": "1c98523a-3a03-4cdf-a2ab-8b97e13644f8",
+    "question": "Place Kotter's simplified change management steps in the correct order for introducing a new pharmacy policy:",
+    "options": [
+      "Create urgency — explain why the change is needed",
+      "Build a coalition — get key team members on board",
+      "Communicate the vision of the improved future",
+      "Remove obstacles and address practical concerns",
+      "Create quick wins to build momentum",
+      "Embed the change into SOPs and routine"
+    ],
+    "correct_answer": 0,
+    "explanation": "Kotter's model follows a logical sequence: first create urgency (why), then build support (who), then communicate the vision (what), then address barriers (how), then demonstrate early results (proof), and finally embed the change permanently (sustain). Skipping steps — especially urgency and coalition — is the most common reason change initiatives fail.",
+    "order_index": 6,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "hard",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "bb6fc006-ac15-4f2a-a2d6-e02c52e30658",
+    "module_id": "1c98523a-3a03-4cdf-a2ab-8b97e13644f8",
+    "question": "The 'yard culture' concept in Caribbean workplaces refers to:",
+    "options": [
+      "The requirement for a physical outdoor break area in every pharmacy",
+      "The tendency for Caribbean teams to function like an extended family with close personal bonds",
+      "A government regulation about workspace size in pharmacies",
+      "The practice of growing medicinal herbs in the pharmacy garden"
+    ],
+    "correct_answer": 1,
+    "explanation": "The 'yard culture' in Caribbean workplaces describes the tendency for teams to develop close, family-like bonds — celebrating together, supporting each other through personal challenges, and building loyalty through relationships. Effective supervisors nurture this culture while maintaining professional boundaries.",
+    "order_index": 7,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "68e7a796-a71b-4875-8346-65f2e6605e6a",
+    "module_id": "1c98523a-3a03-4cdf-a2ab-8b97e13644f8",
+    "question": "A pharmacy supervisor notices that a senior technician has become disengaged — doing the minimum, no longer volunteering for extra tasks, and arriving exactly at start time and leaving exactly at end time. According to Herzberg's theory, this behaviour MOST likely indicates:",
+    "options": [
+      "The technician is physically unwell",
+      "Hygiene factors (salary, conditions) are adequate, but motivators (recognition, growth, purpose) are lacking",
+      "The technician is planning to open their own pharmacy",
+      "The pharmacy is overstaffed and the technician has nothing to do"
+    ],
+    "correct_answer": 1,
+    "explanation": "Herzberg's Two-Factor Theory distinguishes between hygiene factors (which prevent dissatisfaction) and motivators (which drive engagement). A technically competent employee who does the minimum without complaint but shows no initiative is likely experiencing adequate hygiene factors but insufficient motivators — recognition, growth opportunities, and meaningful work.",
+    "order_index": 8,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "hard",
+    "blooms_level": "analyze"
+  },
+  {
+    "id": "8a18fd5e-7ac6-40fc-a033-a9ae1a6ccee9",
+    "module_id": "1c98523a-3a03-4cdf-a2ab-8b97e13644f8",
+    "question": "When delegating the task of drafting the weekly staff schedule to a senior technician, the pharmacy supervisor should:",
+    "options": [
+      "Give the technician complete freedom with no guidelines or review",
+      "Provide clear parameters (pharmacist coverage required, peak-hour staffing levels, overtime budget) and review the draft before finalisation",
+      "Create the schedule themselves and have the technician type it up",
+      "Tell the technician to ask each staff member what hours they prefer and accommodate everyone"
+    ],
+    "correct_answer": 1,
+    "explanation": "Effective delegation involves providing clear parameters (the 'what' and 'boundaries'), allowing autonomy in execution (the 'how'), and maintaining oversight through review. Giving no guidelines risks errors; doing the work yourself and asking someone to type it up is not delegation; and fully accommodating preferences without parameters ignores operational needs.",
+    "order_index": 9,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  }
+]

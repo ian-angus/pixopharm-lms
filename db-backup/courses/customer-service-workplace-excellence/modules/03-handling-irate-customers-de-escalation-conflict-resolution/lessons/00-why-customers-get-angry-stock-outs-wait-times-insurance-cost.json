@@ -1,0 +1,99 @@
+{
+  "id": "e15954dd-7b1a-4819-b0bf-d3702c06151b",
+  "module_id": "1b66b300-d870-483b-ad7a-89886af4eca1",
+  "title": "Why Customers Get Angry: Stock-outs, Wait Times, Insurance, Cost",
+  "content": [
+    {
+      "text": "Understanding the Anger Before You Respond to It",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Nobody wakes up wanting to have a confrontation at the pharmacy. When a customer is furious at the counter, there is almost always a story behind the anger — and understanding that story is the first step to defusing it. In Caribbean pharmacies, the most common triggers are predictable, which means they are manageable if you are prepared.",
+      "type": "text"
+    },
+    {
+      "body": "The critical insight is this: the customer is rarely angry at you personally. They are angry at a situation — the medication they need is out of stock, the wait time is unreasonable, their insurance was rejected, the medication costs more than they can afford. You happen to be the person standing between them and resolution. If you can separate the person from the problem, you can usually find a path forward.",
+      "type": "text"
+    },
+    {
+      "term": "Displacement",
+      "type": "key-term",
+      "definition": "A psychological defence mechanism where emotions — especially anger or frustration — are redirected from their original source to a more accessible target. In pharmacy, this means a patient who is angry about their diagnosis, their financial situation, or the healthcare system may direct that anger at the person behind the counter."
+    },
+    {
+      "rows": [
+        [
+          "Medication out of stock",
+          "Supply chain disruptions, import delays, poor inventory management",
+          "Fear — 'I need this medicine and you do not have it. What happens to me now?'"
+        ],
+        [
+          "Long wait times",
+          "High prescription volume, understaffing, complex insurance processing",
+          "Frustration — 'My time is being wasted and nobody cares'"
+        ],
+        [
+          "Insurance rejection",
+          "Formulary restrictions, prior authorisation requirements, data entry errors",
+          "Helplessness — 'I paid for insurance and now it will not cover what I need'"
+        ],
+        [
+          "High medication cost",
+          "Import costs, no generic available, no government subsidy",
+          "Desperation — 'I cannot afford to be sick but I cannot afford the medicine either'"
+        ],
+        [
+          "Perceived rudeness from staff",
+          "Busy staff appearing dismissive, cultural miscommunication",
+          "Disrespect — 'They treat me like I do not matter'"
+        ],
+        [
+          "Prescription errors or delays",
+          "Doctor's handwriting, missing information, communication failures",
+          "Anxiety — 'If they got this wrong, what else did they get wrong?'"
+        ]
+      ],
+      "type": "table",
+      "caption": "Common Triggers for Customer Anger in Caribbean Pharmacies",
+      "headers": [
+        "Trigger",
+        "Why It Happens",
+        "Emotional Root"
+      ]
+    },
+    {
+      "body": "Medication affordability is one of the most emotionally charged issues in Caribbean pharmacy. Many patients earn modest incomes and spend a significant portion on chronic medications. When a patient erupts over the price of their diabetes medication, they may be choosing between medicine and food. Understanding this reality transforms how you respond.",
+      "type": "callout",
+      "title": "The Caribbean Cost Crisis",
+      "variant": "info"
+    },
+    {
+      "body": "Anger in the pharmacy is not always loud. Some patients express frustration through silence — they leave and never come back. Others become passive-aggressive: 'I suppose I will just have to die then since nobody can help me.' These quieter expressions of anger are just as important to recognise and respond to as the customer who is shouting.",
+      "type": "text"
+    },
+    {
+      "text": "The Emotional Iceberg",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Think of customer anger as an iceberg. The visible part — the shouting, the demands, the sharp words — is just 10% of what is happening. Below the surface are fear, frustration, embarrassment, pain, confusion, and helplessness. When you respond only to the visible anger, you miss the real issue. When you respond to what is underneath, you find resolution.",
+      "type": "text"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "They want to cause trouble for the pharmacy",
+        "They are angry at you personally",
+        "They are afraid about what will happen to their health without the medication",
+        "They enjoy confrontation"
+      ],
+      "question": "A customer is visibly angry because their prescribed medication is out of stock. What is most likely the emotional root of their anger?",
+      "explanation": "When a patient cannot get medication they depend on, the underlying emotion is almost always fear — fear about their health, fear about managing their condition, fear of the unknown. Recognising this fear behind the anger allows you to respond with empathy rather than defensiveness.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 25
+}

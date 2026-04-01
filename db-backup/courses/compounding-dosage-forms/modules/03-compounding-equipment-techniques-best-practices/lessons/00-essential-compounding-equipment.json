@@ -1,0 +1,105 @@
+{
+  "id": "c7c647a1-374c-4c60-8038-54257942ef92",
+  "module_id": "d535aae0-2da8-4ad8-8c9f-005c1b03ae1f",
+  "title": "Essential Compounding Equipment",
+  "content": [
+    {
+      "text": "Tools of the Trade",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "A well-equipped compounding pharmacy requires a range of specialised equipment, each serving a specific purpose in the preparation of pharmaceutical products. Understanding what each piece of equipment does, how to use it correctly, and how to maintain it is fundamental to producing safe, effective compounded preparations. In Caribbean pharmacies, equipment investment must be balanced against budget constraints — but certain core items are non-negotiable for safe compounding practice.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Analytical / Prescription Balance",
+          "Weighing small quantities of active ingredients and excipients",
+          "Sensitivity of 6 mg or less; capacity of at least 120g; Class III or better",
+          "Calibrate daily with certified weights; keep on a level, vibration-free surface; clean after each use"
+        ],
+        [
+          "Graduated Cylinders (various sizes)",
+          "Measuring liquid volumes accurately",
+          "Available in 10 mL, 25 mL, 50 mL, 100 mL, 250 mL; read at the meniscus",
+          "Clean immediately after use; check for chips or cracks; replace if graduation marks are worn"
+        ],
+        [
+          "Glass Mortar and Pestle",
+          "Mixing, triturating, and suspending powders in liquids; reducing particle size in solutions and suspensions",
+          "Glass is non-porous — ideal for liquids and preparations that stain",
+          "Wash with soap and water; ensure dry before storing; do not use for oily preparations (slippery)"
+        ],
+        [
+          "Porcelain (Wedgwood) Mortar and Pestle",
+          "Grinding and reducing particle size of solid drugs; trituration of powders",
+          "Rough interior surface provides grinding abrasion; available in various sizes",
+          "Porous — can absorb colours and odours; designate separate mortars for strongly coloured or odorous drugs"
+        ],
+        [
+          "Ointment Slab (Glass Tile)",
+          "Mixing and incorporating ingredients into ointment and cream bases",
+          "Non-porous, easy to clean, provides smooth working surface; typically 30×30 cm ground glass",
+          "Clean with alcohol or solvent after each use; inspect for cracks that could harbour contaminants"
+        ],
+        [
+          "Spatulas (Stainless Steel and Plastic)",
+          "Mixing ingredients on ointment slab; transferring materials; scraping equipment",
+          "Stainless steel for general use; plastic for preparations that react with metal (e.g., iodine, coal tar)",
+          "Clean immediately; inspect for bending or nicks that could introduce metal particles"
+        ],
+        [
+          "Electronic Top-Loading Balance",
+          "Weighing larger quantities (>120g) of bases and vehicles",
+          "Capacity of 500g–2000g; readability of 0.1g or better",
+          "Calibrate regularly; keep away from draughts and vibration; clean pan after each use"
+        ]
+      ],
+      "type": "table",
+      "caption": "Essential Non-Sterile Compounding Equipment",
+      "headers": [
+        "Equipment",
+        "Purpose",
+        "Key Specifications",
+        "Maintenance"
+      ]
+    },
+    {
+      "term": "Sensitivity of a Balance",
+      "type": "key-term",
+      "definition": "The smallest amount of weight that will cause a perceptible change in the position of the balance pointer or digital readout. For a Class III prescription balance, the sensitivity requirement is 6 mg (0.006 g). This means the balance can reliably detect a change of 6 mg, and the minimum weighable quantity is typically 120 mg (based on a 5% error tolerance). Weighing quantities below the minimum weighable quantity introduces unacceptable error."
+    },
+    {
+      "body": "Every balance has a minimum weighable quantity (MWQ) — the smallest amount that can be weighed with acceptable accuracy (typically ±5% error). For a Class III prescription balance with 6 mg sensitivity, the MWQ is 120 mg. If a formula calls for less than 120 mg of an ingredient, you cannot weigh it directly. Instead, use the aliquot method: weigh a larger quantity, dilute it with an inert diluent (e.g., lactose), and then weigh an aliquot (portion) of the diluted mixture that contains the desired amount of drug. This is a critical concept for safe compounding.",
+      "type": "callout",
+      "title": "Minimum Weighable Quantity",
+      "variant": "warning"
+    },
+    {
+      "body": "In Caribbean pharmacies, the choice of mortar and pestle depends on the task. Use a porcelain (Wedgwood) mortar for dry grinding and trituration — its rough interior provides the abrasion needed to reduce particle size. Use a glass mortar for mixing liquids, making suspensions, and working with preparations that stain (e.g., coal tar, potassium permanganate). Glass is non-porous, so it does not absorb colours or odours and is easier to clean for the next preparation.",
+      "type": "text"
+    },
+    {
+      "body": "Obtaining specialised compounding equipment can be challenging for Caribbean pharmacies. Analytical balances, certified calibration weights, and specialised glass mortars are typically imported from suppliers in the United States, Canada, or the United Kingdom. Lead times can be lengthy, and shipping costs are significant. Some pharmacies source equipment through regional distributors or during trade shows organised by the Caribbean Association of Pharmacists (CAP). Maintaining equipment properly to extend its lifespan is especially important when replacement parts or new equipment may take weeks or months to arrive.",
+      "type": "callout",
+      "title": "Sourcing Compounding Equipment in the Caribbean",
+      "variant": "info"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Weigh 80 mg and accept the error — it is close enough",
+        "Estimate the 80 mg visually",
+        "Use the aliquot method: weigh a larger quantity, dilute with an inert diluent, and weigh an aliquot containing the needed amount",
+        "Use a different drug that comes in a larger quantity"
+      ],
+      "question": "A compounding formula calls for 80 mg of a potent drug. Your prescription balance has a minimum weighable quantity of 120 mg. What should you do?",
+      "explanation": "When the required quantity is below the balance's minimum weighable quantity (MWQ), the aliquot method must be used. This involves weighing a larger, accurately measurable quantity of the drug, diluting it with an inert diluent such as lactose, and then weighing an aliquot (portion) of the diluted mixture that contains the desired amount. This technique ensures accurate weighing within the balance's capabilities.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 20
+}

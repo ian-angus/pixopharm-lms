@@ -1,0 +1,106 @@
+{
+  "id": "9f3e374a-0cf9-464e-ac47-4011a67ae657",
+  "module_id": "ed4e750f-4b1a-41ea-a99c-0214f0f779ee",
+  "title": "What Is Patient-Centred Care?",
+  "content": [
+    {
+      "text": "Putting the Patient at the Centre of Everything We Do",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Patient-centred care is not merely a buzzword — it is a fundamental shift in how healthcare is delivered. In traditional models, the healthcare provider decides what is best for the patient and the patient is expected to comply. In patient-centred care, the patient is an active partner in their own health decisions. Their values, preferences, cultural background, and life circumstances are integral to every clinical interaction.",
+      "type": "text"
+    },
+    {
+      "body": "For pharmacy technicians in the Caribbean, this concept carries particular weight. Across Trinidad & Tobago, Jamaica, Barbados, and the wider Caribbean, the community pharmacy is often the first — and sometimes the only — healthcare touchpoint for patients. Many patients cannot easily afford a doctor's visit or face long waits at public clinics. The pharmacy team therefore shoulders an outsized responsibility for patient education, counselling, and support.",
+      "type": "text"
+    },
+    {
+      "term": "Patient-Centred Care",
+      "type": "key-term",
+      "definition": "An approach to healthcare that consciously adopts the patient's perspective — their needs, preferences, values, and cultural context — and actively involves them as partners in their own care decisions. It encompasses respect, emotional support, information sharing, and coordination across the care team."
+    },
+    {
+      "body": "A 2019 PAHO study found that in several Caribbean nations, more than 60% of patients seek advice at a pharmacy before visiting a physician. In rural areas and on smaller islands without hospitals, this figure can exceed 80%. This makes every interaction at the pharmacy counter a clinical encounter — not just a transaction.",
+      "type": "callout",
+      "title": "The Caribbean Pharmacy as First Point of Care",
+      "variant": "info"
+    },
+    {
+      "text": "The WHO's Eight Dimensions of Patient-Centred Care",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "rows": [
+        [
+          "Respect for patient preferences",
+          "Honour the patient's values and choices",
+          "Acknowledging a patient's preference for bush tea alongside prescribed medication, then counselling on potential interactions"
+        ],
+        [
+          "Information & education",
+          "Provide clear, complete, actionable information",
+          "Explaining medication instructions in Creole or patois when the patient's English literacy is limited"
+        ],
+        [
+          "Emotional support",
+          "Address anxiety, fear, and uncertainty",
+          "Reassuring a newly diagnosed diabetic patient who is overwhelmed and frightened"
+        ],
+        [
+          "Physical comfort",
+          "Ensure comfort during care delivery",
+          "Providing a private counselling area away from other customers for sensitive discussions"
+        ],
+        [
+          "Coordination of care",
+          "Seamless integration across providers",
+          "Communicating with the patient's doctor about a potential drug interaction spotted during dispensing"
+        ],
+        [
+          "Involvement of family",
+          "Include family and caregivers as appropriate",
+          "Counselling a grandmother who collects medications for an elderly relative on proper administration"
+        ],
+        [
+          "Access to care",
+          "Remove barriers to receiving care",
+          "Offering extended pharmacy hours or telephone refill services for patients with transportation challenges"
+        ],
+        [
+          "Continuity & transition",
+          "Smooth handoffs between care settings",
+          "Maintaining patient medication profiles so any technician on duty can provide informed service"
+        ]
+      ],
+      "type": "table",
+      "caption": "WHO Dimensions of Patient-Centred Care Applied to Caribbean Pharmacy",
+      "headers": [
+        "Dimension",
+        "Meaning",
+        "Caribbean Pharmacy Example"
+      ]
+    },
+    {
+      "body": "These dimensions are not abstract ideals — they are practical standards that should guide every interaction at the pharmacy counter. When a patient approaches the dispensary window, they bring with them not just a prescription, but a life context: financial worries, cultural beliefs, family obligations, fears, and hopes. Patient-centred care means seeing the whole person, not just the prescription slip.",
+      "type": "text"
+    },
+    {
+      "hint": "Think about which response respects the patient's values while still ensuring their safety.",
+      "type": "knowledge-check",
+      "options": [
+        "Tell them to stop the bush tea immediately — it is not real medicine",
+        "Ignore the question as it is outside your scope of practice",
+        "Acknowledge their preference, ask what type of bush tea, and consult the pharmacist about potential interactions before advising",
+        "Tell them it does not matter what they do alongside their medication"
+      ],
+      "question": "A patient asks your opinion on whether they should continue taking bush tea for their blood pressure alongside their prescribed amlodipine. Which response best demonstrates patient-centred care?",
+      "explanation": "Patient-centred care respects the patient's preferences and cultural practices while ensuring safety. Dismissing bush medicine alienates the patient and may cause them to hide their use of traditional remedies, which is more dangerous. The correct approach is to engage respectfully, gather information, and involve the pharmacist in assessing any interactions.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 25
+}

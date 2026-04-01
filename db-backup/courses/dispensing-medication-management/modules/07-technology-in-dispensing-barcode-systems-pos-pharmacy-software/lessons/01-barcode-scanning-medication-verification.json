@@ -1,0 +1,49 @@
+{
+  "id": "96b13022-9204-4507-bc3a-985ba60bea90",
+  "module_id": "8759d1cb-8aee-41fa-bb18-ddb11b629779",
+  "title": "Barcode Scanning & Medication Verification",
+  "content": [
+    {
+      "text": "One Scan, One Verification — Every Time",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Barcode technology adds a powerful verification layer to the dispensing process. Every commercially manufactured medication carries a barcode — either a linear barcode (1D) or a data matrix code (2D/QR) — that encodes the product's identity: drug name, strength, dosage form, pack size, batch number, and expiry date. Scanning this barcode against the prescription data provides an electronic verification that the correct product has been selected.",
+      "type": "text"
+    },
+    {
+      "body": "In a barcode-enabled dispensing workflow, the technician scans each product at the point of selection from the shelf. The software compares the scanned barcode against the prescription data entry. If the product matches, the system confirms the selection with a green indicator or audible tone. If there is a mismatch — wrong drug, wrong strength, wrong formulation — the system generates an immediate alert. This provides a safety net that catches errors the human eye might miss, particularly with LASA medications.",
+      "type": "text"
+    },
+    {
+      "term": "GS1 DataMatrix",
+      "type": "key-term",
+      "definition": "A two-dimensional barcode standard used globally for pharmaceutical products. It encodes the Global Trade Item Number (GTIN), batch/lot number, expiry date, and serial number in a compact square or rectangular format. The GS1 DataMatrix is the foundation of pharmaceutical serialisation and track-and-trace systems being adopted worldwide, including in Caribbean markets."
+    },
+    {
+      "body": "Barcode scanning adoption in Caribbean pharmacies is growing but still limited. Hospital pharmacies and larger chains are leading the way, while many independent community pharmacies have yet to invest in barcode infrastructure. The cost of scanners and compatible software is decreasing, making adoption increasingly accessible. CARICOM's work on pharmaceutical track-and-trace systems is expected to accelerate barcode adoption across the region.",
+      "type": "callout",
+      "title": "Barcode Adoption in the Caribbean",
+      "variant": "info"
+    },
+    {
+      "body": "Beyond dispensing verification, barcode scanning supports inventory management. Scanning products at the point of receipt updates stock levels automatically. Scanning at the point of dispensing decrements stock levels in real time. This creates a perpetual inventory system with minimal manual data entry, reducing errors and enabling real-time visibility into stock levels, reorder alerts, and expiry date tracking.",
+      "type": "text"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Dispense the medication anyway — barcode scanners often malfunction",
+        "Stop, verify the product against the prescription manually, and select the correct product",
+        "Call the software vendor to report a system bug",
+        "Ask the patient which medication they prefer"
+      ],
+      "question": "You scan a medication during the dispensing process and the system displays a red alert indicating a product mismatch. What should you do?",
+      "explanation": "A barcode mismatch alert means the scanned product does not match the prescription. Stop immediately, manually verify the product against the prescription, and select the correct item. Never override or ignore barcode alerts without investigation — they are designed to catch potentially dangerous selection errors.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 20
+}

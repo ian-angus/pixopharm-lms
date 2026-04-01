@@ -1,0 +1,91 @@
+{
+  "id": "9bde4d67-058d-4fdc-b892-6dde0c75eaf0",
+  "module_id": "918bc717-9d47-4db0-b9fa-1e8ab49fd289",
+  "title": "Why AI Literacy Matters for Caribbean Pharmacy Technicians",
+  "content": [
+    {
+      "text": "The Case for AI Literacy in Caribbean Pharmacy",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "The Caribbean pharmacy profession is at a crossroads. Globally, AI is transforming healthcare at an accelerating pace. Pharmacy technicians who understand how to use AI tools effectively — and critically — will have a significant advantage in the job market, in their daily practice, and in the quality of care they provide. Those who dismiss AI as irrelevant risk being left behind.",
+      "type": "text"
+    },
+    {
+      "body": "AI literacy does not mean becoming a programmer. It means understanding enough about how AI works to use it wisely, ask the right questions, spot errors in AI outputs, and know when to rely on AI versus when to rely on your own training and the supervising pharmacist's clinical judgement. It is about being a confident, critical user of technology rather than a passive consumer.",
+      "type": "text"
+    },
+    {
+      "type": "island-comparison",
+      "title": "Digital Health Readiness Across the Caribbean",
+      "islands": [
+        {
+          "flag": "🇹🇹",
+          "name": "Trinidad & Tobago",
+          "details": [
+            "The CDAP (Chronic Disease Assistance Programme) has been undergoing phased digitisation since 2020",
+            "iGovTT has piloted e-health platforms including electronic health records",
+            "Several major pharmacy chains have adopted cloud-based dispensing systems with AI features",
+            "The University of the West Indies, St. Augustine offers health informatics programmes",
+            "Growing fintech and tech startup ecosystem creating local health-tech solutions"
+          ]
+        },
+        {
+          "flag": "🇯🇲",
+          "name": "Jamaica",
+          "details": [
+            "The National Health Fund (NHF) uses electronic claims processing with automated validation",
+            "Jamaica's Ministry of Health has invested in electronic health records at public health facilities",
+            "The mHealth Jamaica initiative explores mobile health solutions for remote communities",
+            "The University of Technology (UTech) offers IT programmes applicable to health informatics",
+            "E-prescribing pilots are under way at select public health centres"
+          ]
+        },
+        {
+          "flag": "🇧🇧",
+          "name": "Barbados",
+          "details": [
+            "The Barbados Drug Service maintains a digital national formulary and procurement system",
+            "Queen Elizabeth Hospital has implemented electronic prescribing modules",
+            "The Barbados National Drug Formulary is available digitally for healthcare professionals",
+            "Government e-health strategy includes plans for integrated patient record systems",
+            "The compact island geography makes digital health pilot programmes more feasible"
+          ]
+        }
+      ],
+      "description": "Each island is at a different stage of digital health adoption, but all are moving toward greater technology integration."
+    },
+    {
+      "body": "Large language models like ChatGPT and Claude can 'hallucinate' — generate plausible-sounding but incorrect information. In pharmacy, a hallucinated drug interaction, dosage, or contraindication could harm a patient. AI outputs must ALWAYS be verified against authoritative sources (BNF, Lexicomp, Micromedex, or the pharmacist) before being applied to patient care. Never use unverified AI output in clinical decisions.",
+      "type": "callout",
+      "title": "AI Is Not Infallible",
+      "variant": "warning"
+    },
+    {
+      "type": "case-study",
+      "title": "Case Study: The Confident Error",
+      "scenario": "A pharmacy technician in Kingston uses ChatGPT to quickly check the maximum daily dose of paracetamol for a patient asking about over-the-counter pain relief. ChatGPT confidently responds '4,000mg per day for adults, with no dose adjustment needed for hepatic impairment.' The technician knows from training that patients with liver disease require dose reduction. The AI response was partially correct (4g/day for healthy adults) but dangerously incomplete — it failed to mention the critical hepatic impairment caution.",
+      "questions": [
+        "What could have happened if the technician relied solely on the AI response without applying their own knowledge?",
+        "What steps should a pharmacy technician take to verify AI-generated drug information?",
+        "How does this case demonstrate why AI literacy — not just AI access — is essential?"
+      ],
+      "discussion": "This case illustrates a core principle of AI use in pharmacy: AI tools are assistants, not authorities. The technician's professional training caught an omission that could have caused serious liver damage in a vulnerable patient. The correct workflow is: use AI for rapid initial lookup, then verify against authoritative sources (BNF, Lexicomp), then apply professional judgement considering the individual patient's circumstances. AI literacy means knowing that AI can be confidently wrong."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "To replace pharmacists in clinical decision-making",
+        "To use AI tools effectively while maintaining critical judgement for patient safety",
+        "To programme new pharmacy software systems",
+        "AI literacy is not relevant to pharmacy practice"
+      ],
+      "question": "What is the most important reason Caribbean pharmacy technicians should develop AI literacy?",
+      "explanation": "AI literacy enables pharmacy technicians to use AI tools effectively whilst maintaining the critical judgement necessary for patient safety. It is not about replacing pharmacists or becoming programmers — it is about being a confident, critical user of technology in clinical practice.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 20
+}

@@ -1,0 +1,92 @@
+{
+  "id": "1745ac5c-cb26-4757-b108-6646405fb1aa",
+  "module_id": "d7b0331a-9b72-42c9-b4c4-c741bb3adcec",
+  "title": "Creating Multilingual Medication Labels & Instructions",
+  "content": [
+    {
+      "text": "Labels That Save Lives in Any Language",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "A medication label is only useful if the patient can read and understand it. In a multilingual Caribbean pharmacy, the standard English-only label is a barrier for a significant portion of the patient population. Creating multilingual labels and instruction sheets is not a luxury — it is a patient safety measure that can prevent medication errors, improve adherence, and save lives.",
+      "type": "text"
+    },
+    {
+      "body": "This does not mean every pharmacy needs to produce labels in ten languages. It means understanding your patient demographics and creating resources in the languages most commonly spoken in your community. A pharmacy in south Trinidad near the Venezuelan border should have Spanish medication instruction templates. A pharmacy in the Turks and Caicos with a large Haitian community should have Creole resources. A pharmacy in Suriname may need Dutch, Sranan Tongo, and Sarnami Hindi materials.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Language selection",
+          "Match the languages most commonly spoken in your specific patient community",
+          "Assuming English-only labels are sufficient for all patients"
+        ],
+        [
+          "Dual-language format",
+          "Print instructions in both English and the patient's language on the same label",
+          "Providing the translation on a separate slip that gets lost"
+        ],
+        [
+          "Pictograms",
+          "Include pictograms alongside text for universal understanding",
+          "Using text-only labels even for low-literacy populations"
+        ],
+        [
+          "Font size",
+          "Minimum 12-point font for instructions; 14-point for elderly patients",
+          "Tiny font that cannot be read by patients with age-related vision changes"
+        ],
+        [
+          "Verification",
+          "Have a native speaker verify all translations before use",
+          "Using machine translation without human verification"
+        ]
+      ],
+      "type": "table",
+      "caption": "Multilingual Label Design Best Practices",
+      "headers": [
+        "Element",
+        "Best Practice",
+        "Common Mistake"
+      ]
+    },
+    {
+      "body": "Create a set of pre-translated medication instruction templates for the most common prescriptions in your pharmacy (antihypertensives, diabetes medications, antibiotics, pain relievers). These can be printed, laminated, and attached to prescriptions as needed. This is far more efficient than translating from scratch for each patient, and the templates can be professionally verified once and used repeatedly.",
+      "type": "callout",
+      "title": "Template Approach",
+      "variant": "tip"
+    },
+    {
+      "type": "case-study",
+      "title": "Case Study: The Venezuelan Migrant",
+      "scenario": "Maria, a 34-year-old Venezuelan migrant in Trinidad, arrives at your pharmacy with a prescription for amoxicillin 500 mg TID for 7 days. She speaks minimal English. She nods and smiles when you speak but you suspect she does not understand. She has no family member with her to interpret.",
+      "questions": [
+        "What strategies can you use to communicate the dosing instructions to Maria?",
+        "How can pictograms help bridge the language barrier in this situation?",
+        "What resources should your pharmacy prepare in advance for situations like this?"
+      ],
+      "discussion": "Immediate strategies: Use the Spanish phrase 'Tome una pastilla tres veces al día por siete días' (take one tablet three times a day for seven days). Supplement with pictograms — three suns/dots on the label to show three times daily, the number 7 circled for days. Write '500 mg x 3 al día x 7 días' on the label. Use the teach-back in Spanish: '¿Puede decirme cómo va a tomar esta medicina?' Longer-term: your pharmacy should prepare Spanish-language antibiotic instruction templates for the growing Venezuelan community in Trinidad."
+    },
+    {
+      "term": "Dual-Language Label",
+      "type": "key-term",
+      "definition": "A medication label that presents instructions in two languages simultaneously — typically the official language of the jurisdiction (e.g., English) alongside the patient's preferred language (e.g., Spanish, Haitian Creole). Dual-language labels ensure that both the patient and any healthcare provider who later reviews the medication can understand the instructions."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Making it look attractive with colours and graphics",
+        "Having a native speaker verify the translation for accuracy",
+        "Printing it on waterproof paper",
+        "Getting approval from the pharmacy owner"
+      ],
+      "question": "What is the MOST important step before using a translated medication label in clinical practice?",
+      "explanation": "Translation verification by a native speaker is the most critical quality control step for multilingual medication labels. Machine translations and non-native speakers can introduce errors that may cause medication misuse. Clinical accuracy must be verified before any translated material is used in patient care.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 3,
+  "duration_minutes": 20
+}

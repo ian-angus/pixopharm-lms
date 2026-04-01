@@ -1,0 +1,115 @@
+{
+  "id": "42f24f0a-54fd-462c-8a32-04f6ec28eaa6",
+  "module_id": "5f78ea4a-5416-4877-9c32-764e4bb0ecb3",
+  "title": "Emerging Technologies: Blockchain, Robotics & Personalised Medicine",
+  "content": [
+    {
+      "text": "Technologies on the Horizon",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Beyond the technologies already being adopted, several emerging innovations have the potential to transform Caribbean pharmacy practice in the coming decade. Understanding these now — even before they arrive — positions you to adapt when they do, rather than being caught off guard.",
+      "type": "text"
+    },
+    {
+      "text": "Blockchain in Pharmaceutical Supply Chains",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Blockchain technology creates a tamper-proof, transparent record of every transaction in a supply chain. For Caribbean pharmacy, where medications pass through multiple intermediaries across international borders before reaching the patient, blockchain offers the ability to verify that every step — from manufacturer to distributor to pharmacy — is legitimate. This directly combats the problem of counterfeit medications, which the World Health Organization estimates affects up to 10% of medicines in developing countries.",
+      "type": "text"
+    },
+    {
+      "term": "Blockchain",
+      "type": "key-term",
+      "definition": "A decentralised, distributed digital ledger that records transactions across multiple computers in a way that makes the records tamper-proof and transparent. In pharmacy, blockchain can track medications from manufacturer to patient, verifying authenticity and preventing counterfeit medications from entering the supply chain."
+    },
+    {
+      "text": "Robotic Dispensing",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Automated dispensing robots can pick, count, label, and package medications with near-zero error rates. While currently found mainly in large hospital pharmacies in developed countries, robotic dispensing is becoming smaller, cheaper, and more accessible. For high-volume Caribbean pharmacies, especially those dispensing large quantities of chronic disease medications through government programmes, robotic dispensing could dramatically reduce manual errors and free staff for patient-facing work.",
+      "type": "text"
+    },
+    {
+      "text": "Pharmacogenomics & Personalised Medicine",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Pharmacogenomics — using genetic information to guide medication selection and dosing — is particularly relevant for the genetically diverse Caribbean population. As genetic testing becomes more affordable, pharmacies may eventually maintain patient genetic profiles that inform AI-powered prescribing decisions. Imagine a system that automatically flags that a patient is a CYP2D6 ultra-rapid metaboliser and recommends an alternative to codeine before the prescription is even dispensed.",
+      "type": "text"
+    },
+    {
+      "term": "Pharmacogenomics",
+      "type": "key-term",
+      "definition": "The study of how an individual's genetic makeup affects their response to drugs. By understanding a patient's genetic profile, medication selection and dosing can be personalised to maximise efficacy and minimise adverse effects. This is especially relevant for the genetically diverse Caribbean population."
+    },
+    {
+      "rows": [
+        [
+          "Blockchain supply chain",
+          "Combating counterfeit medications; improving supply chain transparency",
+          "Low — requires significant infrastructure investment",
+          "5-10 years for meaningful adoption"
+        ],
+        [
+          "Robotic dispensing",
+          "Reducing manual errors; freeing staff for patient care",
+          "Low — cost prohibitive for most Caribbean pharmacies currently",
+          "5-15 years for community pharmacy adoption"
+        ],
+        [
+          "Pharmacogenomics",
+          "Personalised medication selection for diverse populations",
+          "Very low — genetic testing infrastructure not yet in place",
+          "10-20 years for routine clinical use"
+        ],
+        [
+          "AI-powered medication adherence",
+          "Improving chronic disease management outcomes",
+          "Medium — smartphone penetration is high across the Caribbean",
+          "2-5 years for initial programmes"
+        ],
+        [
+          "Wearable-integrated pharmacy care",
+          "Real-time health monitoring informing medication management",
+          "Low-Medium — wearable adoption growing but data integration lacking",
+          "5-10 years for meaningful pharmacy integration"
+        ]
+      ],
+      "type": "table",
+      "caption": "Emerging Technologies: Caribbean Readiness Assessment",
+      "headers": [
+        "Technology",
+        "Potential Caribbean Impact",
+        "Readiness Level",
+        "Timeline Estimate"
+      ]
+    },
+    {
+      "body": "While blockchain and robotic dispensing are exciting, focus your immediate learning on the technologies arriving in the next 2-5 years: e-prescribing, telepharmacy, AI-powered inventory and clinical decision support, and medication adherence apps. These are the technologies that will affect your daily practice in the near term.",
+      "type": "callout",
+      "title": "Focus on What Is Coming Soon",
+      "variant": "tip"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Caribbean patients are more interested in genetics than other populations",
+        "The Caribbean's genetically diverse population (African, Indian, European, Chinese, Indigenous heritage) means drug metabolism varies significantly",
+        "Pharmacogenomic testing is already routine in all Caribbean pharmacies",
+        "Caribbean drug manufacturers require genetic data for all medications"
+      ],
+      "question": "Why is pharmacogenomics particularly relevant to the Caribbean population?",
+      "explanation": "The Caribbean's extraordinary genetic diversity — reflecting African, Indian, European, Chinese, and Indigenous heritage — means that drug metabolism enzyme variants (like CYP2D6) occur at very different rates across the population. Pharmacogenomics could enable truly personalised medication management for this diverse population.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 35
+}

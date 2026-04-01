@@ -1,0 +1,59 @@
+{
+  "id": "3dca8cc8-9201-4de5-a491-0da6f02db7b1",
+  "module_id": "7b0ea0ee-1e61-4a29-ac4e-45cb21f60042",
+  "title": "Adverse Drug Reactions & Pharmacovigilance",
+  "content": [
+    {
+      "text": "When Drugs Cause Harm",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Adverse drug reactions (ADRs) are unwanted, harmful effects of medications occurring at normal therapeutic doses. ADRs range from mild (nausea, headache) to severe (anaphylaxis, organ damage, death). In the Caribbean, ADR reporting is coordinated through national pharmacovigilance centres and CARPHA at the regional level.",
+      "type": "text"
+    },
+    {
+      "body": "ADR reporting is underutilised across the Caribbean. Many adverse events go unreported because healthcare professionals are unaware of reporting mechanisms, believe the ADR is already well-known, or lack time to complete reports. However, every report contributes to the regional safety database maintained by CARPHA. In Trinidad and Tobago, the Chemistry, Food and Drugs Division (CFDD) accepts ADR reports. In Jamaica, the Pharmacovigilance Centre at the Ministry of Health coordinates reporting. Pharmacy technicians can champion ADR reporting by documenting patient complaints and assisting pharmacists with report submission.",
+      "type": "text"
+    },
+    {
+      "term": "Type A ADR (Augmented)",
+      "type": "key-term",
+      "definition": "Dose-dependent, predictable reactions related to the drug's known pharmacology. Examples: hypotension from antihypertensives, hypoglycaemia from insulin. These are the most common ADRs and are usually manageable with dose adjustment."
+    },
+    {
+      "term": "Type B ADR (Bizarre)",
+      "type": "key-term",
+      "definition": "Dose-independent, unpredictable reactions unrelated to the drug's normal pharmacology. Examples: penicillin anaphylaxis, Stevens-Johnson syndrome. These are rare but potentially fatal and usually require drug discontinuation."
+    },
+    {
+      "body": "Pharmacy technicians should be alert to patients reporting new symptoms after starting a medication. Common signs of ADRs include rash, unexplained bleeding, severe GI symptoms, breathing difficulty, or significant changes in mood or behaviour. All suspected ADRs should be reported to the pharmacist and documented.",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Listen to the patient's description of the adverse event",
+        "Document the suspected drug, dose, timing, and symptoms",
+        "Report to the pharmacist for clinical assessment",
+        "The pharmacist may submit a report to the national pharmacovigilance centre",
+        "In the Caribbean, CARPHA coordinates regional ADR surveillance"
+      ],
+      "ordered": true
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Type A (augmented) — related to the drug's normal pharmacology",
+        "Type B (bizarre) — an unpredictable immune-mediated reaction",
+        "Not an ADR — rashes are normal",
+        "A drug-food interaction"
+      ],
+      "question": "A patient develops a severe rash 3 days after starting allopurinol. This is most likely which type of ADR?",
+      "explanation": "Allopurinol-induced severe rash (potentially Stevens-Johnson syndrome) is a Type B ADR — unpredictable, immune-mediated, and unrelated to the drug's urate-lowering mechanism. It requires immediate drug discontinuation and medical attention.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 20
+}

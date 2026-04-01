@@ -1,0 +1,73 @@
+{
+  "id": "4267bcf6-e0c2-4c56-9f02-6984988801b9",
+  "module_id": "d3c3203a-0e54-43ca-b9a3-1bd6c00c0d63",
+  "title": "Reading & Interpreting Sig Codes",
+  "content": [
+    {
+      "text": "Translating Prescriptions into Patient Instructions",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "The 'sig' (short for 'signa', Latin for 'write on the label') is the portion of a prescription that tells the patient how to take the medication. As a pharmacy technician, one of your most critical tasks is translating these abbreviated instructions into clear, patient-friendly language on the dispensing label.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "1 tab PO BID AC",
+          "Take one tablet by mouth twice daily before meals"
+        ],
+        [
+          "2 caps PO TID PC x 7/7",
+          "Take two capsules by mouth three times daily after meals for 7 days"
+        ],
+        [
+          "10 mL PO Q8H PRN pain",
+          "Take ten millilitres by mouth every 8 hours as needed for pain"
+        ],
+        [
+          "Apply TOP BID to affected area",
+          "Apply to the skin twice daily on the affected area"
+        ],
+        [
+          "1 tab SL STAT, repeat x1 if no relief in 5 min",
+          "Place one tablet under the tongue immediately; repeat once if no relief after 5 minutes"
+        ],
+        [
+          "2 puffs INH Q4-6H PRN SOB",
+          "Inhale two puffs every 4 to 6 hours as needed for shortness of breath"
+        ],
+        [
+          "gtt ii OU QID x 5/7",
+          "Instil two drops in both eyes four times daily for 5 days"
+        ]
+      ],
+      "type": "table",
+      "caption": "Sig Code Translation Practice",
+      "headers": [
+        "Sig Code",
+        "Translation"
+      ]
+    },
+    {
+      "body": "When writing labels and counselling patients, always use plain language. Instead of 'administer sublingually', write 'place under the tongue and let dissolve'. Instead of 'PRN', write 'when needed'. Remember that many patients have limited health literacy — your label may be the only instruction they follow.",
+      "type": "callout",
+      "title": "Patient-Friendly Language",
+      "variant": "tip"
+    },
+    {
+      "type": "case-study",
+      "title": "Case Study: The Ambiguous Prescription",
+      "scenario": "A doctor writes a prescription for amoxicillin with the sig: '500 mg TDS x 7'. The handwriting is difficult to read and 'TDS' could be interpreted as 'TID' or even 'BDS' (twice daily). The patient is an elderly woman with a urinary tract infection.",
+      "questions": [
+        "What should you do before dispensing this prescription?",
+        "Who has the authority to clarify the prescription — you or the pharmacist?",
+        "How would you document the clarification?"
+      ],
+      "discussion": "Never guess when a prescription is ambiguous. The pharmacist should contact the prescriber to clarify the intended frequency. Document the clarification on the prescription with the prescriber's name, date, and time. In this case, amoxicillin 500 mg TDS (three times daily) for 7 days is a standard UTI regimen, but assumption is never acceptable in pharmacy practice. Every ambiguity must be resolved through direct communication with the prescriber."
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 15
+}

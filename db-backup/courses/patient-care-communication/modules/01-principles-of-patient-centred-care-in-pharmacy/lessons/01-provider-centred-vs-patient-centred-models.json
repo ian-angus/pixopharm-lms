@@ -1,0 +1,101 @@
+{
+  "id": "042a4f98-b083-4df5-85ce-2a9cc814f418",
+  "module_id": "ed4e750f-4b1a-41ea-a99c-0214f0f779ee",
+  "title": "Provider-Centred vs. Patient-Centred Models",
+  "content": [
+    {
+      "text": "Two Models of Care — Two Very Different Outcomes",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "For much of medical history, healthcare operated on a paternalistic model: the doctor (or pharmacist) knew best, and the patient's role was to obey. This provider-centred approach was not born from malice — it emerged from a time when patients had limited access to health information and medical professionals were considered the sole authority. But we now know that this model produces worse health outcomes, lower medication adherence, and greater patient dissatisfaction.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Communication style",
+          "One-way: provider instructs, patient listens",
+          "Two-way: dialogue, questions welcomed"
+        ],
+        [
+          "Decision-making",
+          "Provider decides; patient complies",
+          "Shared decision-making; patient's values considered"
+        ],
+        [
+          "Cultural factors",
+          "Ignored or overridden",
+          "Integrated into care planning"
+        ],
+        [
+          "Language",
+          "Medical jargon; assumes literacy",
+          "Plain language; adapted to patient's level"
+        ],
+        [
+          "Emotional needs",
+          "Not addressed",
+          "Actively acknowledged and supported"
+        ],
+        [
+          "Outcome measure",
+          "Prescription filled = success",
+          "Patient understands, agrees, and adheres = success"
+        ]
+      ],
+      "type": "table",
+      "caption": "Comparing Provider-Centred and Patient-Centred Approaches",
+      "headers": [
+        "Aspect",
+        "Provider-Centred",
+        "Patient-Centred"
+      ]
+    },
+    {
+      "body": "In the Caribbean context, the shift from provider-centred to patient-centred care is complicated by several factors. Colonial-era hierarchies still influence how some patients interact with healthcare professionals — many older patients, in particular, may be reluctant to question authority or share concerns. Pharmacy technicians must be aware of these dynamics and actively create a safe space for dialogue.",
+      "type": "text"
+    },
+    {
+      "body": "Simple techniques can equalise the power dynamic: step out from behind the counter if possible, make eye contact at the patient's level, use their name respectfully (Mr. James, Miss Gloria), and explicitly invite questions: 'Is there anything you want to ask me about this medication? No question is a silly question.'",
+      "type": "callout",
+      "title": "Breaking Down the Hierarchy",
+      "variant": "tip"
+    },
+    {
+      "term": "Shared Decision-Making",
+      "type": "key-term",
+      "definition": "A collaborative process in which the healthcare provider and the patient work together to make healthcare decisions, combining the provider's clinical expertise with the patient's values, preferences, and circumstances. It is the practical application of patient-centred care."
+    },
+    {
+      "type": "case-study",
+      "title": "Case Study: Mrs. Doreen's Metformin",
+      "scenario": "Mrs. Doreen, a 68-year-old retired teacher in Barbados, has been prescribed metformin 500 mg twice daily for newly diagnosed type 2 diabetes. She comes to your pharmacy looking upset. She tells you: 'My neighbour take that same tablet and she belly give she trouble bad bad. I not taking that.' In a provider-centred model, you would simply say 'The doctor prescribed it, you must take it.' But Mrs. Doreen leaves and never fills the prescription.",
+      "questions": [
+        "How would you respond to Mrs. Doreen using a patient-centred approach?",
+        "What specific information would you want to share about metformin and GI side effects?",
+        "How could you involve the pharmacist to address her concerns while respecting her autonomy?"
+      ],
+      "discussion": "A patient-centred approach would validate Mrs. Doreen's concern ('I understand — that is a real worry'), explain that GI side effects are common at first but usually settle, suggest taking metformin with food to reduce nausea, and offer to contact her doctor about starting at a lower dose. The goal is not to override her decision but to provide information so she can make an informed choice. Mrs. Doreen feels heard, gets practical advice, and is more likely to start her medication."
+    },
+    {
+      "body": "Research consistently shows that patient-centred communication improves medication adherence by 20-30%. In the Caribbean, where chronic diseases like diabetes and hypertension are leading causes of death, this improvement can literally save lives.",
+      "type": "text"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "The pharmacist decides the best medication and instructs the patient accordingly",
+        "The patient chooses whatever medication they want without professional guidance",
+        "The healthcare provider and patient collaborate, combining clinical expertise with the patient's values and preferences",
+        "The pharmacy technician makes all decisions independently to save the pharmacist's time"
+      ],
+      "question": "Which of the following best describes shared decision-making in pharmacy?",
+      "explanation": "Shared decision-making is a collaborative process that respects both the provider's clinical knowledge and the patient's values, preferences, and life circumstances. It is neither purely provider-directed nor purely patient-directed.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 25
+}

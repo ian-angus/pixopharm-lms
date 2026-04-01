@@ -1,0 +1,100 @@
+{
+  "id": "e937136d-8b74-4b19-bd71-25661f3924bc",
+  "module_id": "92fe6b21-d361-44b7-bb64-0f1af50d8b66",
+  "title": "Infection Control in Caribbean Pharmacies: Post-COVID Best Practices",
+  "content": [
+    {
+      "text": "Infection Control After COVID-19",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "The COVID-19 pandemic fundamentally transformed infection control practices in pharmacies worldwide, and the Caribbean was no exception. Practices that were considered optional before 2020 — routine surface disinfection, hand hygiene stations, physical barriers, and respiratory hygiene — are now recognised as essential baseline standards. As the Caribbean transitions from pandemic response to endemic management, the challenge is maintaining these improvements rather than allowing them to lapse.",
+      "type": "text"
+    },
+    {
+      "term": "Standard Precautions",
+      "type": "key-term",
+      "definition": "The minimum infection prevention practices that apply to all patient/client care, regardless of suspected or confirmed infection status. Standard precautions include hand hygiene, use of PPE appropriate to the risk, respiratory hygiene/cough etiquette, safe sharps handling, and environmental cleaning. They are the foundation of infection control in any healthcare setting, including pharmacies."
+    },
+    {
+      "body": "Caribbean pharmacies face unique infection control challenges related to their physical environment and operational patterns. Many community pharmacies have open-front designs for ventilation, which is beneficial for air exchange but exposes the dispensary to street dust, insects, and varying humidity. The warm, humid climate promotes microbial growth on surfaces. And the high volume of walk-in traffic — patients, caregivers, delivery personnel — creates constant potential for pathogen introduction.",
+      "type": "text"
+    },
+    {
+      "text": "Essential Infection Control Practices",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "rows": [
+        [
+          "Hand hygiene",
+          "Wash hands or use alcohol-based sanitiser before and after patient contact, after handling money, and after touching common surfaces",
+          "Install hand sanitiser dispensers at entry, counter, and dispensing bench; ensure soap and water available in staff areas"
+        ],
+        [
+          "Surface disinfection",
+          "Clean high-touch surfaces (counter, card terminal, telephone, computer keyboard) at least every 2 hours during operating hours",
+          "Use 70% alcohol or sodium hypochlorite (bleach) solution; increase frequency during respiratory illness seasons"
+        ],
+        [
+          "Respiratory hygiene",
+          "Provide tissues and waste bins; encourage respiratory hygiene signage; mask availability for symptomatic patients",
+          "Post signage in English and Creole/local languages; maintain a supply of disposable masks for symptomatic visitors"
+        ],
+        [
+          "Physical barriers",
+          "Transparent screens between staff and patients at the dispensing counter",
+          "Maintain the Perspex/acrylic screens installed during COVID-19; they also reduce exposure to respiratory droplets year-round"
+        ],
+        [
+          "Ventilation",
+          "Maximise natural ventilation or mechanical air exchange in the dispensary",
+          "Caribbean pharmacies with open designs have a natural advantage; supplement with fans positioned to move air from clean to contaminated areas"
+        ],
+        [
+          "Waste management",
+          "Segregate pharmaceutical waste, general waste, and biohazardous waste",
+          "Use colour-coded bins; ensure pharmaceutical waste is not mixed with general waste"
+        ]
+      ],
+      "type": "table",
+      "caption": "Post-COVID Infection Control Practices for Caribbean Pharmacies",
+      "headers": [
+        "Practice",
+        "Standard",
+        "Implementation in Caribbean Setting"
+      ]
+    },
+    {
+      "body": "The COVID-19 pandemic revealed that Caribbean pharmacies are critical healthcare infrastructure — often the only accessible healthcare facility in rural communities. Pharmacies that maintained robust infection control practices throughout the pandemic earned community trust and sustained operations while others struggled. The investments in screens, sanitiser stations, and cleaning protocols should be maintained permanently — not as pandemic measures, but as standard pharmacy practice.",
+      "type": "callout",
+      "title": "Lessons from COVID-19 in the Caribbean",
+      "variant": "info"
+    },
+    {
+      "text": "Handling Money and Cash Transactions",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Cash handling is a significant infection control concern in Caribbean pharmacies, where cash transactions remain common despite the growth of digital payment. Banknotes and coins carry bacteria, viruses, and other pathogens. Best practice includes: sanitising hands after every cash transaction, never touching the face after handling money, cleaning the cash register area frequently, encouraging contactless payment where available, and designating one team member for cash handling (separate from the dispensing technician) during peak periods.",
+      "type": "text"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Refusing to serve patients who are not wearing masks",
+        "Limiting pharmacy operating hours to reduce foot traffic",
+        "Transparent barrier screens at the dispensing counter, regular surface disinfection, and hand hygiene stations",
+        "Requiring patients to submit prescriptions by email only"
+      ],
+      "question": "Which COVID-era infection control measure should Caribbean pharmacies maintain permanently as standard practice?",
+      "explanation": "Transparent barrier screens, regular surface disinfection, and hand hygiene stations are evidence-based infection control measures that protect both staff and patients year-round — not just during pandemics. These should be maintained as permanent standard practices. The other options are overly restrictive and not sustainable for routine pharmacy operation.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 25
+}

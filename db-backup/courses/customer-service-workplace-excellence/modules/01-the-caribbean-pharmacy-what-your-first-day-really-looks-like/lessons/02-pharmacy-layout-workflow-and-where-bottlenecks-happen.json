@@ -1,0 +1,96 @@
+{
+  "id": "8c3bd675-df4a-4ae0-b4f3-32a750a94196",
+  "module_id": "3f5fc7a2-b1cf-4c21-830b-56e7b7de19bf",
+  "title": "Pharmacy Layout, Workflow, and Where Bottlenecks Happen",
+  "content": [
+    {
+      "text": "The Geography of a Pharmacy Matters More Than You Think",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Walk into any busy Caribbean pharmacy and you will notice something: the physical layout directly shapes how efficiently the team works. Where the prescription drop-off point is, how far the pharmacist has to walk to reach the dispensing area, whether the OTC section creates a bottleneck at the counter — all of these design choices either speed things up or slow everything down. Understanding the layout is your shortcut to working smarter, not harder.",
+      "type": "text"
+    },
+    {
+      "body": "Most Caribbean community pharmacies follow a general pattern: a public-facing retail area with OTC products and a service counter, and a restricted dispensing area behind the counter where prescriptions are filled. The dispensing area typically contains the prescription computer, label printer, counting trays, medication shelving arranged alphabetically or by therapeutic class, a refrigerator for cold-chain medications, and a secure cabinet or safe for controlled substances.",
+      "type": "text"
+    },
+    {
+      "text": "Where Bottlenecks Happen — and How to Avoid Them",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "rows": [
+        [
+          "Prescription drop-off queue",
+          "Single point of entry, slow data entry",
+          "Learn the computer system thoroughly; have paper intake forms ready for rush periods"
+        ],
+        [
+          "Waiting for pharmacist verification",
+          "One pharmacist checking everything",
+          "Batch prescriptions intelligently — queue straightforward ones so the pharmacist can verify quickly"
+        ],
+        [
+          "Out-of-stock medications",
+          "Supply chain delays, poor inventory tracking",
+          "Maintain accurate stock counts; flag low-stock items before they run out"
+        ],
+        [
+          "Insurance rejections",
+          "Incorrect patient data, formulary issues",
+          "Verify insurance details at drop-off, not at pick-up; learn common rejection codes"
+        ],
+        [
+          "Pick-up confusion",
+          "Prescriptions not clearly labelled or stored",
+          "Use a consistent system: alphabetical bags, numbered shelves, colour-coded tags"
+        ]
+      ],
+      "type": "table",
+      "caption": "Common Pharmacy Bottlenecks and Solutions",
+      "headers": [
+        "Bottleneck",
+        "Why It Happens",
+        "What You Can Do"
+      ]
+    },
+    {
+      "body": "Every pharmacy has a dead zone — a time between rushes when foot traffic drops. Use this time to restock, reorganise, clean the counting trays, and prepare for the next rush. Experienced technicians treat the dead zone as sacred preparation time, not break time.",
+      "type": "callout",
+      "title": "The 'Dead Zone' Trick",
+      "variant": "tip"
+    },
+    {
+      "term": "Prescription Workflow",
+      "type": "key-term",
+      "definition": "The step-by-step process a prescription follows from receipt to patient collection: (1) drop-off and intake, (2) data entry, (3) insurance adjudication, (4) filling/preparation, (5) pharmacist verification, (6) bagging and storage, (7) patient pick-up and counselling. Each step is a potential bottleneck."
+    },
+    {
+      "body": "One thing Caribbean pharmacies deal with that textbooks rarely mention: the physical space is often small. Unlike large chain pharmacies in North America with wide aisles and spacious dispensing areas, many Caribbean pharmacies operate in compact spaces where two people behind the counter means you are constantly navigating around each other. Learning to move efficiently in tight quarters — without bumping the pharmacist's elbow while they verify a prescription — is a genuinely important skill.",
+      "type": "text"
+    },
+    {
+      "body": "Hospital pharmacy dispensaries, polyclinic pharmacies, and private community pharmacies all have different layouts. A hospital pharmacy may have a window-based dispensing system, while a community pharmacy has face-to-face counter service. Adapt your workflow to the physical space you are in.",
+      "type": "callout",
+      "title": "Layout Varies by Setting",
+      "variant": "info"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Taking a long break since it is quiet",
+        "Restocking, reorganising, and preparing for the next rush",
+        "Leaving early since there are no customers",
+        "Chatting with coworkers to build team morale"
+      ],
+      "question": "What is the best use of the 'dead zone' period between customer rushes?",
+      "explanation": "The dead zone between rushes is valuable preparation time. Experienced technicians use it to restock shelves, reorganise the dispensing area, clean equipment, and prepare for the next wave of customers. This proactive approach prevents bottlenecks during peak periods.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 25
+}

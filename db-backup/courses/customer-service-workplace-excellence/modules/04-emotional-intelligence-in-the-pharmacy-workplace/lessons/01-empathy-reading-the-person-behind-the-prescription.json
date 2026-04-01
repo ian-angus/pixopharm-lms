@@ -1,0 +1,76 @@
+{
+  "id": "1217f4a1-a8ab-4035-b89a-e0e1cb81c27f",
+  "module_id": "b375a985-9529-414f-9f08-bf0d39bb4eef",
+  "title": "Empathy: Reading the Person Behind the Prescription",
+  "content": [
+    {
+      "text": "Every Prescription Tells a Story",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "A prescription is a piece of paper with a drug name, a dose, and a frequency. But behind every prescription is a human being with a story. The woman collecting metformin is not just 'a diabetic' — she is a mother of three who was just diagnosed, who is terrified about what this means for her future, and who is embarrassed to be in the pharmacy at all. The man collecting sildenafil is not just 'a customer' — he may be dealing with shame, relationship anxiety, and the vulnerability of asking for help with something deeply personal.",
+      "type": "text"
+    },
+    {
+      "body": "Empathy in pharmacy does not mean feeling what the patient feels — that would be emotionally unsustainable. It means recognising what they might be feeling and letting that recognition shape how you interact with them. It is the difference between processing a prescription and serving a person.",
+      "type": "text"
+    },
+    {
+      "term": "Cognitive Empathy",
+      "type": "key-term",
+      "definition": "The ability to understand another person's perspective, emotions, and experience without necessarily sharing those feelings. Unlike emotional empathy (feeling what they feel), cognitive empathy is a skill that can be developed and deployed strategically in professional settings without leading to emotional burnout."
+    },
+    {
+      "text": "Reading the Signals",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Patients rarely tell you how they are feeling. You have to read the signals. The patient who avoids eye contact while collecting psychiatric medication is probably anxious about stigma. The elderly man who comes in three times a week 'just to check on something' may be lonely. The young woman who asks for a pregnancy test with trembling hands may be terrified. You do not need to address these emotions explicitly — but being aware of them changes the quality of your service.",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Watch for body language cues: avoidance, fidgeting, forced smiles, tears being held back",
+        "Listen to what they are NOT saying: the question they hesitate to ask, the topic they circle around",
+        "Consider the medication itself: what condition does it treat? How might someone feel about having that condition?",
+        "Notice changes in regulars: a usually cheerful patient who is suddenly withdrawn may be going through something",
+        "Remember cultural context: in the Caribbean, admitting vulnerability or asking for help with mental health can carry significant stigma"
+      ],
+      "ordered": false
+    },
+    {
+      "body": "Mental health medication, HIV treatment, medications for sexually transmitted infections, and even certain chronic disease medications can carry stigma in Caribbean communities. A pharmacy technician who handles these prescriptions with matter-of-fact professionalism — treating them exactly like any other medication — does more for destigmatisation than any public health campaign.",
+      "type": "callout",
+      "title": "Empathy and Stigma in the Caribbean",
+      "variant": "info"
+    },
+    {
+      "type": "case-study",
+      "title": "Case Study: The Silent Patient",
+      "scenario": "Marcus, a 35-year-old man, comes to a pharmacy in Bridgetown, Barbados, to collect antiretroviral medication for the first time. He is well-dressed, speaks quietly, and avoids eye contact with anyone in the pharmacy. He slides the prescription across the counter face-down and says, 'I will wait.' When you look at the prescription, you see it is for tenofovir/emtricitabine — a first-line HIV treatment. When his medication is ready, there are three other customers at the counter.",
+      "questions": [
+        "What emotional experience is Marcus most likely having right now?",
+        "How would you handle giving him the medication with other customers present?",
+        "What small gestures could make this experience less painful for Marcus?"
+      ],
+      "discussion": "Marcus is almost certainly experiencing shame, fear, and vulnerability. He has just received a life-changing diagnosis and is in a public space collecting medication that could reveal his status. The technician should lower their voice, process the medication discreetly, use opaque packaging, and avoid reading the medication name aloud. If the pharmacy has a private consultation area, this is exactly when to use it. These small acts of discretion can determine whether Marcus adheres to his treatment or avoids the pharmacy out of shame."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Cognitive empathy is fake; emotional empathy is genuine",
+        "Cognitive empathy means understanding someone's feelings; emotional empathy means sharing them",
+        "Cognitive empathy is for professionals; emotional empathy is for family",
+        "There is no meaningful difference between the two"
+      ],
+      "question": "What is the difference between cognitive empathy and emotional empathy?",
+      "explanation": "Cognitive empathy is understanding another person's emotional experience without absorbing it yourself. Emotional empathy is actually sharing the feeling. In healthcare settings, cognitive empathy is the sustainable skill — it allows you to be sensitive and effective without becoming emotionally overwhelmed.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 25
+}

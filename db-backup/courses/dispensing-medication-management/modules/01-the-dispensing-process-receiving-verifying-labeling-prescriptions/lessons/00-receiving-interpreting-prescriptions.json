@@ -1,0 +1,118 @@
+{
+  "id": "c774fdb8-e509-4105-8869-d8951af6b594",
+  "module_id": "0bff4891-735a-41be-b0c3-a8bac8ddd17a",
+  "title": "Receiving & Interpreting Prescriptions",
+  "content": [
+    {
+      "text": "The Prescription as a Legal Document",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "A prescription is far more than a request for medication — it is a legal document that authorises the dispensing of a specific drug to a specific patient. In the Caribbean, prescriptions may arrive in various formats: handwritten on a doctor's letterhead, printed from an electronic medical record, telephoned in by a prescriber, or transmitted electronically where systems allow. Regardless of the format, every prescription must contain certain mandatory elements before it can be dispensed.",
+      "type": "text"
+    },
+    {
+      "body": "As a pharmacy technician, you are the first line of defence in catching incomplete, illegible, or potentially fraudulent prescriptions. Your ability to accurately read and interpret prescriptions directly impacts patient safety. In the Caribbean context, where many prescriptions are still handwritten, this skill is particularly critical.",
+      "type": "text"
+    },
+    {
+      "term": "Prescription",
+      "type": "key-term",
+      "definition": "A written, electronic, or verbal order from an authorised prescriber directing the dispensing of a specific medication to a named patient. In the Caribbean, authorised prescribers typically include registered medical practitioners, dentists, and in some jurisdictions, nurse practitioners with prescriptive authority."
+    },
+    {
+      "text": "Mandatory Elements of a Valid Prescription",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "rows": [
+        [
+          "Patient name",
+          "Full legal name of the patient",
+          "Prevents dispensing to the wrong person; required for record-keeping"
+        ],
+        [
+          "Patient address",
+          "Residential address (required in most jurisdictions)",
+          "Assists in identity verification; required for controlled substances"
+        ],
+        [
+          "Date",
+          "Date the prescription was written",
+          "Determines validity period; most prescriptions expire after 3–6 months depending on jurisdiction"
+        ],
+        [
+          "Drug name",
+          "Generic (INN) or brand name of the medication",
+          "Identifies the exact medication to be dispensed"
+        ],
+        [
+          "Strength & dose",
+          "Amount of drug per dose unit (e.g., 500 mg)",
+          "Prevents dosing errors; must match available formulations"
+        ],
+        [
+          "Directions (Sig)",
+          "How the patient should take the medication (e.g., 'Take one tablet twice daily')",
+          "Guides the patient in correct medication use"
+        ],
+        [
+          "Quantity",
+          "Total amount to dispense (e.g., '30 tablets' or 'one month supply')",
+          "Controls supply duration; critical for controlled substances"
+        ],
+        [
+          "Prescriber details",
+          "Name, qualification, registration number, signature, and contact information",
+          "Establishes legal authority to prescribe; enables verification"
+        ]
+      ],
+      "type": "table",
+      "caption": "Required Prescription Elements Across Caribbean Jurisdictions",
+      "headers": [
+        "Element",
+        "Description",
+        "Why It Matters"
+      ]
+    },
+    {
+      "body": "If any part of a prescription is illegible or ambiguous, NEVER guess. Always contact the prescriber to clarify. Guessing is a leading cause of dispensing errors. In a 2019 Caribbean pharmacy error review, approximately 22% of dispensing errors were linked to misread handwritten prescriptions. When in doubt, call the doctor's office.",
+      "type": "callout",
+      "title": "Illegible Prescriptions — Never Guess",
+      "variant": "warning"
+    },
+    {
+      "body": "When receiving a prescription at the window, follow a systematic approach: greet the patient, accept the prescription, perform an initial visual scan for completeness, check the date, verify the prescriber's details, and confirm the patient's identity. This initial triage takes only seconds but can prevent significant errors downstream.",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Greet the patient and accept the prescription courteously",
+        "Perform an initial visual scan — is the prescription legible and complete?",
+        "Check the date — is the prescription still valid?",
+        "Verify the prescriber — is the signature present and the registration number identifiable?",
+        "Confirm patient identity — does the name match and is the address provided?",
+        "Check for controlled substance indicators — does the prescription require special handling?",
+        "Inform the patient of the estimated wait time"
+      ],
+      "ordered": true
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Dispense the medication as the prescription is otherwise complete",
+        "Refuse to dispense and advise the patient that the prescription has expired",
+        "Contact the prescriber to verify whether a new prescription is needed",
+        "Dispense half the quantity as a compromise"
+      ],
+      "question": "A patient presents a handwritten prescription dated seven months ago for amoxicillin 500 mg capsules. The prescription appears complete in all other respects. What should you do?",
+      "explanation": "In most Caribbean jurisdictions, prescriptions for non-controlled medications are valid for 3 to 6 months from the date written. A seven-month-old prescription has expired. The patient should be advised to return to their doctor for a new prescription. Dispensing expired prescriptions is a legal violation.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 25
+}

@@ -1,0 +1,181 @@
+[
+  {
+    "id": "b197639a-3196-4957-a67e-e9cf1584b998",
+    "module_id": "dfb48101-2356-4d0d-9a97-2396820bb069",
+    "question": "Which institution is the primary pharmacy-degree-granting university in Jamaica?",
+    "options": [
+      "University of the West Indies (UWI) Mona",
+      "University of Technology, Jamaica (UTech)",
+      "Northern Caribbean University (NCU)",
+      "University of the West Indies (UWI) St. Augustine"
+    ],
+    "correct_answer": 1,
+    "explanation": "The University of Technology, Jamaica (UTech) is the primary provider of pharmacy education in Jamaica, offering the B.Sc. Pharmacy degree that is the standard qualification for pharmacist registration with the PCJ.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "f55509df-66ad-4df3-8047-43a954c7d8e6",
+    "module_id": "dfb48101-2356-4d0d-9a97-2396820bb069",
+    "question": "How does Jamaica's NHF payment model differ from T&T's CDAP?",
+    "options": [
+      "NHF provides medications 100% free; CDAP requires a co-payment",
+      "NHF requires a patient co-payment (typically 30-50%); CDAP provides medications 100% free",
+      "Both programmes are identical — 100% free medications",
+      "NHF is funded by employer contributions; CDAP by tobacco tax"
+    ],
+    "correct_answer": 1,
+    "explanation": "Jamaica's NHF operates on a subsidy + co-payment model where the patient pays approximately 30-50% of the medication cost. T&T's CDAP provides medications entirely free to the patient with no co-payment required. This is the key structural difference between the two programmes.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "analyze"
+  },
+  {
+    "id": "8c978dcc-6256-4f50-9574-a18ec9d5c62a",
+    "module_id": "dfb48101-2356-4d0d-9a97-2396820bb069",
+    "question": "Under Jamaica's Dangerous Drugs Act, which schedule contains substances with NO accepted medical use?",
+    "options": [
+      "Schedule 2",
+      "Schedule 1",
+      "Schedule 4",
+      "Schedule 5"
+    ],
+    "correct_answer": 1,
+    "explanation": "Schedule 1 of Jamaica's Dangerous Drugs Act includes substances with the highest restriction — no accepted medical use and high abuse potential. Examples include heroin, LSD, and MDMA.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "03bdb39a-5540-41f4-96cf-6dcad8a3dd6b",
+    "module_id": "dfb48101-2356-4d0d-9a97-2396820bb069",
+    "question": "A patient presents their NHFCard for a prescription of Atorvastatin 20mg. The NHF POS system shows the card expired last month. What should the pharmacy technician do?",
+    "options": [
+      "Dispense the medication at full price and tell the patient to sort it out later",
+      "Process the NHF claim anyway — the system will catch up eventually",
+      "Inform the patient that their NHFCard has expired, advise them to renew it at an NHF office, and offer to fill the prescription at full private cost in the meantime",
+      "Refuse to fill the prescription entirely"
+    ],
+    "correct_answer": 2,
+    "explanation": "An expired NHFCard cannot be used to process subsidised claims. The technician should inform the patient, advise them on how to renew (at any NHF office), and offer to fill the prescription at the full private-pay price if the patient is willing. Refusing to fill entirely would be inappropriate — the prescription itself is still valid.",
+    "order_index": 3,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "7e42110a-0003-4f48-b6a2-ab5d3f97d936",
+    "module_id": "dfb48101-2356-4d0d-9a97-2396820bb069",
+    "question": "Which controlled substance has seen increasing misuse in Jamaica and is now subject to tightened prescribing controls?",
+    "options": [
+      "Paracetamol",
+      "Amoxicillin",
+      "Tramadol",
+      "Omeprazole"
+    ],
+    "correct_answer": 2,
+    "explanation": "Tramadol has become one of the most problematic controlled substances in Jamaica and across the Caribbean. Originally considered lower-risk, it has seen increasing misuse and diversion, leading Jamaican authorities to tighten controls on its prescribing and dispensing.",
+    "order_index": 4,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "29d2df17-cf12-41bd-b96f-11ea37a63212",
+    "module_id": "dfb48101-2356-4d0d-9a97-2396820bb069",
+    "question": "What is the primary source of funding for Jamaica's National Health Fund (NHF)?",
+    "options": [
+      "General taxation",
+      "A special consumption tax on tobacco products",
+      "International donor funding from PAHO",
+      "National insurance contributions from employers"
+    ],
+    "correct_answer": 1,
+    "explanation": "The NHF is funded primarily through a special consumption tax on tobacco products (the NHF Tobacco Levy). This creative funding mechanism ties a public health cost (treating chronic diseases) to a public health harm (tobacco use).",
+    "order_index": 5,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "01f62013-5987-4614-9c7e-da921bb4647a",
+    "module_id": "dfb48101-2356-4d0d-9a97-2396820bb069",
+    "question": "A patient with diabetes tells you they drink cerasee tea daily. Why should this be flagged to the pharmacist?",
+    "options": [
+      "Cerasee tea is a banned substance in Jamaica",
+      "Cerasee can cause liver damage when combined with any medication",
+      "Cerasee has hypoglycaemic properties that could cause dangerously low blood sugar when combined with antidiabetic medications",
+      "Cerasee tea nullifies the effect of all diabetes medications"
+    ],
+    "correct_answer": 2,
+    "explanation": "Cerasee (Momordica charantia / bitter melon) has documented hypoglycaemic properties. Combined with prescription antidiabetic medications, it can cause additive blood sugar lowering and potentially dangerous hypoglycaemia. This herb-drug interaction should be flagged to the pharmacist.",
+    "order_index": 6,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "d9126f8a-1d5e-48e1-b90e-4d24f08fabbc",
+    "module_id": "dfb48101-2356-4d0d-9a97-2396820bb069",
+    "question": "Which government entity is responsible for procuring and distributing pharmaceuticals to public health facilities in Jamaica?",
+    "options": [
+      "Pharmacy Council of Jamaica (PCJ)",
+      "Health Corporation Limited (HCL)",
+      "National Health Fund (NHF)",
+      "Jamaica Pharmaceutical Association (JPA)"
+    ],
+    "correct_answer": 1,
+    "explanation": "Health Corporation Limited (HCL) is Jamaica's state entity responsible for procuring and distributing pharmaceuticals and medical supplies to public health facilities — similar in function to NIPDEC in Trinidad & Tobago.",
+    "order_index": 7,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "c3b44774-59c8-464f-9c4e-9e1de587ab91",
+    "module_id": "dfb48101-2356-4d0d-9a97-2396820bb069",
+    "question": "Select ALL that apply: Which of the following are conditions covered by the NHFCard programme?",
+    "options": [
+      "Hypertension",
+      "Sickle cell disease",
+      "Malaria",
+      "Glaucoma",
+      "Dengue fever"
+    ],
+    "correct_answer": 0,
+    "explanation": "Hypertension, sickle cell disease, and glaucoma are all covered by the NHFCard programme. Malaria and dengue fever are acute infectious diseases and are not covered under the NHF's chronic disease benefit programme.",
+    "order_index": 8,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "72a64ef5-3e68-4ec3-9189-6ef8429b5597",
+    "module_id": "dfb48101-2356-4d0d-9a97-2396820bb069",
+    "question": "True or false: In Jamaica, cannabis has been fully legalised and can be dispensed by pharmacy technicians.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": 1,
+    "explanation": "False. Jamaica decriminalised possession of small quantities of cannabis (up to 2 ounces) in 2015, but cannabis remains a controlled substance. It is NOT legal for pharmacy dispensing and has no place in current pharmacy practice unless specific pharmaceutical cannabis products receive formal regulatory approval.",
+    "order_index": 9,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  }
+]

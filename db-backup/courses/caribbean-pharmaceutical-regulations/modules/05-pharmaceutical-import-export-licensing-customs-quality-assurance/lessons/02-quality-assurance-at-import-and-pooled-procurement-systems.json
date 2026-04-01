@@ -1,0 +1,82 @@
+{
+  "id": "f2a85913-9d7b-46db-b3db-75a4fe1d9466",
+  "module_id": "b9e56c17-da7d-48e1-93c3-f737c5c8ff4c",
+  "title": "Quality Assurance at Import and Pooled Procurement Systems",
+  "content": [
+    {
+      "text": "Ensuring Quality from the Point of Entry",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Quality assurance does not end at the factory gate — it must continue through the entire supply chain, including the critical import phase. Caribbean regulatory authorities employ a range of QA measures at the point of importation, from document review and visual inspection to laboratory testing and batch verification. These measures are the last line of defence before products enter the domestic supply chain.",
+      "type": "text"
+    },
+    {
+      "body": "CARPHA's CaMET laboratory plays a vital role in post-market and at-import quality testing. When national regulators suspect a product may be substandard, or as part of routine surveillance programmes, samples can be sent to CaMET for testing against pharmacopoeial standards. This regional testing capacity is invaluable for smaller islands that lack their own pharmaceutical testing laboratories.",
+      "type": "text"
+    },
+    {
+      "text": "QA Measures at Import",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "type": "list",
+      "items": [
+        "Document verification: confirming that the CPP, CoA, GMP certificate, and import licence are valid and consistent",
+        "Visual inspection: checking packaging integrity, labelling compliance, expiry dates, and batch numbers",
+        "Sample collection: regulatory officers may collect samples from selected batches for laboratory testing",
+        "Temperature verification: reviewing data logger records for cold chain products",
+        "Batch recall cross-reference: checking imported batches against known recall and alert databases",
+        "WHO Prequalification verification: for products purchased through international procurement, confirming WHO prequalification status"
+      ],
+      "ordered": false
+    },
+    {
+      "body": "The WHO Prequalification Programme evaluates the quality, safety, and efficacy of pharmaceutical products for international procurement. Products that achieve WHO prequalification have undergone rigorous independent assessment. Caribbean nations that source through PAHO's Strategic Fund or other international mechanisms benefit from this additional layer of quality assurance.",
+      "type": "callout",
+      "title": "WHO Prequalification — A Global Quality Mark",
+      "variant": "tip"
+    },
+    {
+      "text": "Pooled Procurement: Strength in Numbers",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Caribbean pooled procurement systems — particularly the OECS PPS and Trinidad's NIPDEC — are not merely cost-saving mechanisms. They also serve a quality assurance function. By centralising procurement, these organisations can maintain prequalified supplier lists, conduct regular supplier audits, and enforce consistent quality standards across their purchasing portfolios. A small island purchasing individually might lack the leverage to demand quality documentation or reject a substandard batch; a pooled procurement organisation, purchasing on behalf of multiple countries, has the market power to enforce compliance.",
+      "type": "text"
+    },
+    {
+      "type": "case-study",
+      "title": "Case Study: Intercepting Substandard Metformin at Import",
+      "scenario": "The OECS PPS receives a shipment of metformin 500mg tablets for distribution to Grenada, St. Lucia, and Dominica. As part of routine QA, samples are sent to CARPHA's CaMET laboratory for dissolution testing. Results show that the tablets dissolve significantly slower than the pharmacopoeial specification, meaning patients would absorb less active ingredient than intended. The batch is rejected and the supplier is placed on a watch list.",
+      "questions": [
+        "Why is dissolution testing important for oral solid dosage forms like metformin tablets?",
+        "What would have happened if this batch had reached pharmacy shelves?",
+        "How does pooled procurement through the OECS PPS enable quality testing that individual small islands might not afford?"
+      ],
+      "discussion": "Dissolution testing ensures that a tablet releases its active ingredient at the correct rate for absorption. A tablet that dissolves too slowly may fail to deliver therapeutic drug levels, leading to inadequate blood sugar control in diabetic patients. Pooled procurement enables quality testing by spreading the cost across multiple countries and maintaining a dedicated quality team that individual small islands could not sustain."
+    },
+    {
+      "term": "Certificate of Analysis (CoA)",
+      "type": "key-term",
+      "definition": "A document issued by the manufacturer or an independent testing laboratory that reports the results of quality testing performed on a specific batch of a pharmaceutical product. The CoA confirms that the batch meets pharmacopoeial specifications for identity, purity, potency, dissolution, and other critical quality attributes."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "They manufacture medicines locally, eliminating import risks",
+        "They centralise purchasing power, maintain prequalified supplier lists, and enforce consistent quality standards",
+        "They eliminate the need for drug registration in member states",
+        "They provide free medicines without any quality testing"
+      ],
+      "question": "How do pooled procurement systems like the OECS PPS contribute to pharmaceutical quality assurance?",
+      "explanation": "Pooled procurement systems leverage collective purchasing power to maintain prequalified supplier lists, conduct regular supplier audits, and enforce consistent quality standards — quality assurance functions that individual small islands might lack the resources or market leverage to perform independently.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 30
+}

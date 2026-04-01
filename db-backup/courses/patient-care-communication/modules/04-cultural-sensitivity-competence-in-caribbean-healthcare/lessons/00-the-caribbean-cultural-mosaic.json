@@ -1,0 +1,105 @@
+{
+  "id": "c580f493-e1b6-4f32-9958-f62aa0170968",
+  "module_id": "6adf744f-6b1b-43dd-ab82-6ccf2046ca79",
+  "title": "The Caribbean Cultural Mosaic",
+  "content": [
+    {
+      "text": "One Region, Many Worlds",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "The Caribbean is not a monolith. Within this archipelago of islands and coastal territories live people whose ancestors came from Africa, India, China, Syria, Lebanon, Europe, and the indigenous Americas. Their descendants have created a cultural tapestry that is unmatched in diversity per square kilometre anywhere on earth. For a pharmacy technician, this means that two patients standing side by side in your queue may have radically different health beliefs, dietary practices, family structures, communication styles, and attitudes toward medication.",
+      "type": "text"
+    },
+    {
+      "body": "Cultural competence in healthcare is not about memorising a checklist of 'what every Indian patient believes' or 'what every Rastafarian prefers.' It is about developing the awareness, knowledge, and skills to provide respectful, effective care to every individual — recognising that culture influences but does not determine a person's health decisions.",
+      "type": "text"
+    },
+    {
+      "term": "Cultural Competence",
+      "type": "key-term",
+      "definition": "The ability of healthcare providers to effectively deliver services that meet the social, cultural, and linguistic needs of patients. It involves awareness of one's own cultural biases, knowledge of other cultures' health beliefs and practices, and the skill to adapt communication and care accordingly."
+    },
+    {
+      "type": "island-comparison",
+      "title": "Cultural Diversity Across the Caribbean",
+      "islands": [
+        {
+          "flag": "🇹🇹",
+          "name": "Trinidad & Tobago",
+          "details": [
+            "Approximately 35% Indian, 34% African, 23% Mixed, plus Chinese, Syrian-Lebanese, European communities",
+            "Hindu, Muslim, Christian, and Orisha faith traditions all influence health beliefs and dietary practices",
+            "Diwali and Eid fasting periods affect medication timing for many patients",
+            "Indian Ayurvedic traditions (turmeric, neem, tulsi) coexist with African-derived bush medicine",
+            "Carnival season and cultural events may affect medication adherence patterns"
+          ]
+        },
+        {
+          "flag": "🇯🇲",
+          "name": "Jamaica",
+          "details": [
+            "Predominantly African-heritage population (92%) with Chinese, Indian, Syrian-Lebanese, and European communities",
+            "Rastafarian ital (natural) philosophy strongly influences attitudes toward pharmaceutical medications",
+            "Revivalism and Kumina spiritual traditions may affect health-seeking behaviour",
+            "Strong tradition of 'roots tonic' and herbal remedies from market vendors",
+            "Deep community interconnection influences how health information spreads and is interpreted"
+          ]
+        },
+        {
+          "flag": "🇬🇾",
+          "name": "Guyana",
+          "details": [
+            "Approximately 40% Indian, 30% African, 20% Mixed, plus Amerindian, Chinese, and Portuguese communities",
+            "Interior Amerindian communities rely heavily on traditional medicine with limited pharmacy access",
+            "Hindu puja ceremonies may involve fasting that conflicts with medication schedules",
+            "Geographic remoteness of many communities creates unique medication access challenges",
+            "Multiple languages spoken: English, Creolese, Hindi, Portuguese, Amerindian languages"
+          ]
+        },
+        {
+          "flag": "🇨🇼",
+          "name": "Curaçao",
+          "details": [
+            "Afro-Caribbean majority with Dutch, Latin American, and Portuguese-Jewish heritage communities",
+            "Papiamentu is the primary language; Dutch is official; Spanish and English also widely spoken",
+            "Brua (folk medicine) traditions influence health beliefs and treatment acceptance",
+            "Close ties to Venezuela and Colombia bring Latin American health culture influences",
+            "Tourism-driven economy means pharmacies also serve international visitors with diverse backgrounds"
+          ]
+        }
+      ],
+      "description": "Each island has its own unique cultural composition that shapes health beliefs and pharmacy interactions."
+    },
+    {
+      "body": "Cultural identity is not one-dimensional. A patient's health beliefs are shaped by the intersection of ethnicity, religion, socioeconomic status, education, age, gender, urban vs. rural residence, and personal experience. An Indo-Trinidadian Hindu grandmother in Chaguanas will have very different health beliefs from an Indo-Trinidadian Muslim businessman in Port of Spain. Cultural competence means seeing the individual, not the category.",
+      "type": "callout",
+      "title": "Beyond Ethnicity: Intersectionality in Caribbean Health",
+      "variant": "info"
+    },
+    {
+      "text": "Cultural Humility vs. Cultural Competence",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Some healthcare educators now prefer the term 'cultural humility' — the recognition that you can never fully understand another person's cultural experience, and that learning about diverse health beliefs is a lifelong process, not a destination. Cultural humility involves self-reflection on your own biases, a willingness to learn from patients, and an acceptance that the patient is the expert on their own cultural identity. Whether you call it competence or humility, the goal is the same: better care for every patient.",
+      "type": "text"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Memorising the health beliefs of every ethnic group",
+        "Treating all patients identically regardless of background",
+        "Developing awareness, knowledge, and skills to provide respectful, effective care to individuals from diverse backgrounds",
+        "Only serving patients from your own cultural background"
+      ],
+      "question": "Cultural competence in pharmacy practice means:",
+      "explanation": "Cultural competence is a dynamic skill set, not a static checklist. It involves self-awareness of your own biases, knowledge of how different cultures approach health, and the skill to adapt your communication and care to meet each individual patient's needs — without stereotyping or making assumptions.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 25
+}

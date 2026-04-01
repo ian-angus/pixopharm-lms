@@ -1,0 +1,123 @@
+{
+  "id": "67bf96ae-5502-46d8-b370-361908446bef",
+  "module_id": "5fca0e13-4c01-45d1-b424-9b6c4b52249e",
+  "title": "The Pharmacy Greeting — Professional Warmth, Not Scripted Coldness",
+  "content": [
+    {
+      "text": "Greetings That Sound Human, Not Corporate",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "There is a world of difference between a greeting that follows corporate protocol and a greeting that makes someone feel welcome. Corporate chains often mandate scripted greetings — 'Welcome to PharmaCorp, my name is Ashley, how may I assist you today?' — that sound polished but feel hollow. Caribbean customers see straight through scripts. They want to feel that you are a real person, not a recording.",
+      "type": "text"
+    },
+    {
+      "body": "The best pharmacy greetings are warm, natural, and adapted to the person in front of you. A regular customer gets a different greeting than a first-time visitor. An elderly patient gets a different energy than a young professional rushing in on their lunch break. The greeting sets the tone for the entire interaction — get it right, and everything flows easier.",
+      "type": "text"
+    },
+    {
+      "type": "island-comparison",
+      "title": "Greeting Styles Across the Caribbean",
+      "islands": [
+        {
+          "flag": "🇹🇹",
+          "name": "Trinidad & Tobago",
+          "details": [
+            "Trini customers expect friendly, familiar greetings — 'Morning! How yuh going?' is perfectly acceptable in casual settings",
+            "Formality level depends on the pharmacy — chain pharmacies lean formal, neighbourhood pharmacies lean casual",
+            "Use of 'Auntie' or 'Uncle' for elderly customers is common and shows respect",
+            "Customers often greet first — be ready to respond in kind"
+          ]
+        },
+        {
+          "flag": "🇯🇲",
+          "name": "Jamaica",
+          "details": [
+            "Jamaican customers appreciate directness combined with warmth — 'Good morning, how can I help you today?' with a genuine smile",
+            "Respect titles: 'Miss', 'Mrs.', 'Mr.' are important, especially for older customers",
+            "Do not rush Jamaican customers — taking a moment for pleasantries is expected",
+            "A cold or abrupt greeting will be remembered and discussed in the community"
+          ]
+        },
+        {
+          "flag": "🇧🇧",
+          "name": "Barbados",
+          "details": [
+            "Bajans tend to appreciate politeness and formality more than some other islands",
+            "A proper 'Good morning' or 'Good afternoon' is expected before any business discussion",
+            "Jumping straight to 'What do you need?' without a greeting is considered rude",
+            "Regulars at polyclinic pharmacies expect to be recognised and acknowledged"
+          ]
+        }
+      ],
+      "description": "While professionalism is universal, the expected warmth and formality of customer greetings varies across Caribbean islands."
+    },
+    {
+      "body": "Using a regular customer's name is the single most powerful customer service tool you have. 'Good afternoon, Mrs. Sookram — your metformin ready for you' lands completely differently from 'Next please.' It costs you nothing and buys you loyalty.",
+      "type": "callout",
+      "title": "The Name Factor",
+      "variant": "info"
+    },
+    {
+      "text": "Adapting Your Greeting to the Situation",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "rows": [
+        [
+          "Regular customer collecting chronic meds",
+          "'Good morning, Mr. Joseph! Coming for your regular? Let me get that for you.'",
+          "Shows recognition, familiarity, and efficiency — they feel valued"
+        ],
+        [
+          "First-time customer looking uncertain",
+          "'Good afternoon. Welcome — is this your first time here? I can help you find what you need.'",
+          "Acknowledges their uncertainty without making them feel awkward"
+        ],
+        [
+          "Parent with sick child",
+          "'Morning — I can see your little one is not feeling well. Let me help you quickly.'",
+          "Shows empathy and signals you will prioritise them"
+        ],
+        [
+          "Professional on lunch break",
+          "'Good afternoon. I can see you are on a schedule — how can I help?'",
+          "Respects their time without rushing them"
+        ],
+        [
+          "Elderly patient moving slowly",
+          "'Good morning, take your time coming up. No rush at all.'",
+          "Relieves pressure and shows patience"
+        ]
+      ],
+      "type": "table",
+      "caption": "Greeting Adaptations by Situation",
+      "headers": [
+        "Situation",
+        "Appropriate Greeting",
+        "Why It Works"
+      ]
+    },
+    {
+      "term": "Professional Warmth",
+      "type": "key-term",
+      "definition": "The ability to combine genuine friendliness and emotional presence with professional competence. It is not performative cheerfulness — it is authentic human engagement delivered within professional boundaries. In Caribbean pharmacy practice, professional warmth is the foundation of patient trust."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "A standardised script used for every customer",
+        "A warm, natural greeting adapted to the specific customer and situation",
+        "No greeting — just ask what they need",
+        "A greeting in Creole or dialect to show you are from the community"
+      ],
+      "question": "Which greeting approach is most effective in a Caribbean pharmacy?",
+      "explanation": "Caribbean customers respond best to genuine, adapted greetings. A script feels impersonal, no greeting feels rude, and dialect use depends on context and relationship. The best approach is professional warmth that adjusts to the person in front of you.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 25
+}

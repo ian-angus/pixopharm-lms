@@ -1,0 +1,56 @@
+{
+  "id": "f7d46f8d-989e-4dbf-a650-6d4aa33ce044",
+  "module_id": "5f319f26-d171-487f-81fd-34146941df05",
+  "title": "Thyroid Medications & Hormonal Therapies",
+  "content": [
+    {
+      "text": "Managing Thyroid Disorders and Hormonal Conditions",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Thyroid disorders are common in the Caribbean, with hypothyroidism being far more prevalent than hyperthyroidism. Levothyroxine — a synthetic form of the thyroid hormone T4 — is the standard treatment for hypothyroidism and one of the most prescribed medications globally. Proper dispensing requires attention to timing, interactions, and narrow therapeutic dosing.",
+      "type": "text"
+    },
+    {
+      "term": "Levothyroxine",
+      "type": "key-term",
+      "definition": "A synthetic thyroid hormone (T4) used to treat hypothyroidism. It has a narrow therapeutic window and should be taken on an empty stomach, 30-60 minutes before breakfast, with a full glass of water. Many drugs and foods interfere with its absorption."
+    },
+    {
+      "type": "list",
+      "items": [
+        "Take on an empty stomach, 30-60 minutes before breakfast",
+        "Separate from calcium, iron, and antacids by at least 4 hours (they reduce absorption)",
+        "Consistent daily timing is essential for stable thyroid levels",
+        "Do NOT switch brands without medical supervision (bioavailability varies between manufacturers)",
+        "TSH levels should be checked 6-8 weeks after any dose change"
+      ],
+      "ordered": false
+    },
+    {
+      "body": "Hormonal therapies dispensed in Caribbean pharmacies include combined oral contraceptives (COCs), progestogen-only pills, injectable contraceptives (Depo-Provera), and hormone replacement therapy (HRT). Pharmacy technicians should be aware of major contraindications: COCs are contraindicated in women over 35 who smoke, those with migraine with aura, and those with a history of venous thromboembolism.",
+      "type": "text"
+    },
+    {
+      "body": "Many Caribbean patients take their levothyroxine with morning coffee. Caffeine can reduce levothyroxine absorption by up to 30%. Advise patients to wait at least 30 minutes after taking levothyroxine before having coffee — or take it at bedtime as an alternative (with prescriber approval).",
+      "type": "callout",
+      "title": "Counselling Point: Levothyroxine and Morning Coffee",
+      "variant": "tip"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Take together for convenience",
+        "Separate by at least 4 hours — calcium reduces levothyroxine absorption",
+        "Take calcium first, then levothyroxine 30 minutes later",
+        "Timing does not matter for these two medications"
+      ],
+      "question": "A patient takes levothyroxine and a calcium supplement. How should these be timed?",
+      "explanation": "Calcium forms insoluble complexes with levothyroxine in the gut, significantly reducing absorption. A separation of at least 4 hours is recommended. The same applies to iron supplements and antacids.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 20
+}

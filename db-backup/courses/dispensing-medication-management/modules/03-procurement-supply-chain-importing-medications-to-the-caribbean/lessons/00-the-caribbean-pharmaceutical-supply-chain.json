@@ -1,0 +1,85 @@
+{
+  "id": "4c4ebb49-1c09-4557-80ea-dae467dc6346",
+  "module_id": "2e20b351-7665-40a0-840d-62c0eebb01a2",
+  "title": "The Caribbean Pharmaceutical Supply Chain",
+  "content": [
+    {
+      "text": "From Factory Floor to Pharmacy Shelf",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "The journey a medication takes from manufacturer to patient in the Caribbean is longer, more complex, and more vulnerable to disruption than in most developed nations. With virtually no domestic pharmaceutical manufacturing in most Caribbean states, medications must be sourced internationally — primarily from India, the United States, Europe, and increasingly, Latin America. Each link in the supply chain introduces potential delays, cost increases, and quality risks.",
+      "type": "text"
+    },
+    {
+      "body": "The typical supply chain flows as follows: International manufacturer → Export from country of origin → Shipping (sea freight, 2–6 weeks) → Port arrival in Caribbean nation → Customs clearance and regulatory inspection → National wholesaler or distributor → Pharmacy. At each stage, documentation must be verified, cold chain must be maintained where applicable, and regulatory requirements must be met.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "International procurement & order placement",
+          "1–2 weeks",
+          "Currency fluctuations, supplier reliability"
+        ],
+        [
+          "Manufacturing & quality release",
+          "2–4 weeks",
+          "Production delays, batch failures"
+        ],
+        [
+          "Sea freight shipping",
+          "2–6 weeks",
+          "Container damage, cold chain breaks, piracy in rare cases"
+        ],
+        [
+          "Port arrival & customs clearance",
+          "3–14 days",
+          "Documentation delays, regulatory holds, port congestion"
+        ],
+        [
+          "Distribution to pharmacy",
+          "1–3 days (same island) to 1–2 weeks (inter-island)",
+          "Last-mile logistics, inter-island shipping"
+        ]
+      ],
+      "type": "table",
+      "caption": "Caribbean Pharmaceutical Supply Chain Stages",
+      "headers": [
+        "Stage",
+        "Typical Duration",
+        "Key Risks"
+      ]
+    },
+    {
+      "term": "NIPDEC (National Insurance Property Development Company)",
+      "type": "key-term",
+      "definition": "A state enterprise in Trinidad & Tobago responsible for the procurement and distribution of pharmaceuticals and medical supplies to public health facilities. NIPDEC leverages bulk purchasing power to negotiate lower prices and ensure consistent supply to hospitals and health centres across the country."
+    },
+    {
+      "body": "Caribbean nations individually have limited purchasing power due to small population sizes. Regional pooled procurement initiatives — such as the OECS Pharmaceutical Procurement Service (PPS) and PAHO's Strategic Fund — allow multiple countries to combine their orders, achieving volume discounts of 30–60% compared to individual purchasing. This is critical for ensuring access to affordable medications across the region.",
+      "type": "callout",
+      "title": "Pooled Procurement — Strength in Numbers",
+      "variant": "info"
+    },
+    {
+      "body": "For private pharmacies, procurement may occur through local or regional wholesalers (such as Ansa McAL in Trinidad, Facey Commodity in Jamaica, or various Barbados-based distributors), direct import from international generic manufacturers, or a combination. The choice of procurement channel affects cost, lead time, minimum order quantities, and the range of products available.",
+      "type": "text"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "It eliminates the need for customs clearance",
+        "It allows small island nations to achieve volume discounts they could not get independently",
+        "It guarantees overnight delivery of all medications",
+        "It removes the need for quality testing of imported medications"
+      ],
+      "question": "What is the primary advantage of pooled procurement through organisations like the OECS PPS?",
+      "explanation": "Pooled procurement combines the purchasing volumes of multiple small nations, giving them collective bargaining power. This results in volume discounts of 30–60% compared to individual country purchasing. However, it does not eliminate customs requirements, guarantee delivery speeds, or remove quality testing obligations.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 20
+}

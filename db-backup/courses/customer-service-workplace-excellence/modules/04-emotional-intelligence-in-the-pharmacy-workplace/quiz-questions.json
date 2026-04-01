@@ -1,0 +1,180 @@
+[
+  {
+    "id": "74fc1272-56d4-4f17-9ba3-2f2b9df4d483",
+    "module_id": "b375a985-9529-414f-9f08-bf0d39bb4eef",
+    "question": "What is the foundation of emotional intelligence?",
+    "options": [
+      "Being naturally calm in all situations",
+      "Self-awareness — recognising your own emotions and triggers",
+      "Ability to suppress all negative emotions",
+      "Being liked by everyone in the workplace"
+    ],
+    "correct_answer": 1,
+    "explanation": "Self-awareness is the foundation upon which all other emotional intelligence skills are built. Without understanding your own emotional patterns, triggers, and reactions, you cannot effectively manage them or empathise with others.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "662f07e2-2b19-470b-9ba5-9eb8879d2474",
+    "module_id": "b375a985-9529-414f-9f08-bf0d39bb4eef",
+    "question": "What does 'cognitive empathy' mean in a pharmacy context?",
+    "options": [
+      "Feeling the exact same emotions as the patient",
+      "Understanding the patient's perspective without absorbing their feelings",
+      "Ignoring the patient's emotions to maintain professionalism",
+      "Diagnosing the patient's emotional state and treating it"
+    ],
+    "correct_answer": 1,
+    "explanation": "Cognitive empathy is the professional skill of understanding another person's emotional experience without becoming emotionally overwhelmed yourself. It is sustainable and effective for healthcare workers because it allows sensitivity without burnout.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "64e6e1c4-b668-41d4-bc32-c5449c917718",
+    "module_id": "b375a985-9529-414f-9f08-bf0d39bb4eef",
+    "question": "Which emotional regulation technique involves silently labelling your emotions to reduce their intensity?",
+    "options": [
+      "The 4-7-8 Breath",
+      "The Perspective Shift",
+      "The Name-It-To-Tame-It technique",
+      "The Physical Reset"
+    ],
+    "correct_answer": 2,
+    "explanation": "The Name-It-To-Tame-It technique involves silently labelling your emotion — 'I am feeling angry' — which research shows activates the prefrontal cortex and reduces the intensity of the emotion. Naming creates psychological distance between you and the feeling.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "d0b9978b-d1a7-4932-a5a9-3d42c9f1f3f1",
+    "module_id": "b375a985-9529-414f-9f08-bf0d39bb4eef",
+    "question": "A pharmacy colleague frequently gossips about other staff members. What is the BEST approach?",
+    "options": [
+      "Join in to fit in with the team",
+      "Listen politely but do not contribute, and avoid sharing personal information",
+      "Report them to the pharmacist immediately",
+      "Confront them publicly and tell them to stop"
+    ],
+    "correct_answer": 1,
+    "explanation": "The socially intelligent approach is to avoid participating in gossip without creating conflict. Listening politely without contributing, changing the subject, and not sharing personal information with known gossips protects your reputation and relationships.",
+    "order_index": 3,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "38c3185e-0534-44f9-8b2b-0a10f170e1ca",
+    "module_id": "b375a985-9529-414f-9f08-bf0d39bb4eef",
+    "question": "Why is emotional suppression harmful for pharmacy technicians?",
+    "options": [
+      "It makes you slower at dispensing",
+      "It leads to leaked aggression, burnout, and decreased job satisfaction",
+      "It is against pharmacy regulations",
+      "It makes customers trust you less"
+    ],
+    "correct_answer": 1,
+    "explanation": "Emotional suppression — pretending negative emotions do not exist — is associated with burnout, leaked aggression (snapping at colleagues or patients), increased errors, and decreased job satisfaction. Healthy emotional regulation involves acknowledging feelings and choosing responses, not denying emotions exist.",
+    "order_index": 4,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "analyze"
+  },
+  {
+    "id": "c9b6cca4-ef82-41db-ae91-44ec7c7f5468",
+    "module_id": "b375a985-9529-414f-9f08-bf0d39bb4eef",
+    "question": "A patient collecting HIV medication avoids eye contact and slides the prescription face-down. What does this behaviour most likely indicate?",
+    "options": [
+      "They are in a hurry and want quick service",
+      "They are experiencing shame or fear of stigma",
+      "They are angry about their diagnosis",
+      "They do not trust the pharmacy"
+    ],
+    "correct_answer": 1,
+    "explanation": "Avoiding eye contact and concealing the prescription are classic indicators of shame and fear of stigma. HIV medication still carries significant stigma in many Caribbean communities. The empathic response is to handle the interaction with discretion, lowered voice, and matter-of-fact professionalism.",
+    "order_index": 5,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "analyze"
+  },
+  {
+    "id": "a23fa596-f91c-4e7e-b1a8-6f3d93fff335",
+    "module_id": "b375a985-9529-414f-9f08-bf0d39bb4eef",
+    "question": "You are having a terrible day — you slept poorly, argued with a family member, and missed breakfast. A customer makes a mildly rude comment. You feel disproportionately angry. Using emotional intelligence principles, what should you recognise?",
+    "options": [
+      "The customer is being unreasonable and deserves a firm response",
+      "Your lowered baseline emotional state is making you more reactive than usual",
+      "You should go home because you are not fit to work",
+      "You should suppress the anger and pretend everything is fine"
+    ],
+    "correct_answer": 1,
+    "explanation": "Self-awareness means recognising that your emotional baseline — affected by poor sleep, hunger, and personal conflict — has lowered your resilience. The anger is disproportionate because of your state, not the customer's behaviour. Recognising this allows you to choose a measured response rather than reacting from your depleted emotional state.",
+    "order_index": 6,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "hard",
+    "blooms_level": "evaluate"
+  },
+  {
+    "id": "08fcf062-cf2e-4fe6-8340-50928c6f8030",
+    "module_id": "b375a985-9529-414f-9f08-bf0d39bb4eef",
+    "question": "Emotional regulation and emotional suppression are the same thing — both involve controlling your feelings at work.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": 1,
+    "explanation": "Emotional regulation and suppression are fundamentally different. Regulation involves acknowledging the emotion and choosing how to respond. Suppression involves pretending the emotion does not exist. Regulation is healthy and sustainable; suppression leads to burnout, leaked aggression, and decreased job satisfaction.",
+    "order_index": 7,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "30978f5b-3d09-46d5-ab65-653d33641f2c",
+    "module_id": "b375a985-9529-414f-9f08-bf0d39bb4eef",
+    "question": "In Trinidadian workplace culture, what is 'picong' and why is it relevant to pharmacy workplace dynamics?",
+    "options": [
+      "A type of pharmacy inventory system",
+      "Good-natured teasing that is part of social bonding — knowing the line between humour and disrespect is important",
+      "A formal complaint process for workplace issues",
+      "A traditional medicine practice"
+    ],
+    "correct_answer": 1,
+    "explanation": "Picong is a Trinidadian cultural tradition of good-natured teasing and witty banter. In the workplace, it serves as a social bonding tool, but knowing where humour ends and disrespect begins is crucial. New team members should observe the culture before participating.",
+    "order_index": 8,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "fa8849b5-5d0c-440e-b472-1b81dc7d5d24",
+    "module_id": "b375a985-9529-414f-9f08-bf0d39bb4eef",
+    "question": "After a very difficult customer interaction, what is the recommended action before serving the next customer?",
+    "options": [
+      "Immediately serve the next customer to keep the queue moving",
+      "Take 30 seconds to breathe, reset, and release residual emotion",
+      "Complain to a colleague about what just happened",
+      "Take a full 30-minute break"
+    ],
+    "correct_answer": 1,
+    "explanation": "The 30-second reset allows you to release residual emotion from the previous interaction so the next customer gets a clean start. Immediately serving the next person risks carrying over negative energy. A full break may not be feasible, and complaining reinforces the negative emotion.",
+    "order_index": 9,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "apply"
+  }
+]

@@ -1,0 +1,108 @@
+{
+  "id": "02499e7d-4733-4c1b-b830-bb763b8731b3",
+  "module_id": "aaa6f0c8-9dee-4403-9dce-33b8977e2a1c",
+  "title": "The Pharmacy Board of Trinidad & Tobago: Registration & Licensing",
+  "content": [
+    {
+      "text": "The Pharmacy Board of Trinidad & Tobago",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "The Pharmacy Board of Trinidad and Tobago is the statutory body established under the Pharmacy Board Act (Chapter 29:52) to regulate pharmacy practice throughout the twin-island republic. It is the single most important regulatory entity that any pharmacy professional — pharmacist, intern, or technician — must understand before practising in T&T. The Board operates under the Ministry of Health and is responsible for maintaining the Register of Pharmacists, approving pharmacy premises, and ensuring that the pharmaceutical profession meets acceptable standards of practice.",
+      "type": "text"
+    },
+    {
+      "term": "Pharmacy Board Act (Chapter 29:52)",
+      "type": "key-term",
+      "definition": "The primary legislation governing pharmacy practice in Trinidad and Tobago. It establishes the Pharmacy Board, defines who may practise pharmacy, regulates the registration of pharmacists, and sets standards for pharmacy premises. Originally enacted in the colonial era and amended multiple times, most recently to reflect modern practice standards."
+    },
+    {
+      "text": "Registration Process for Pharmacists",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "To practise as a pharmacist in T&T, an individual must hold a recognised pharmacy qualification (typically a B.Sc. Pharmacy or PharmD from a CARICOM-recognised institution such as the University of the West Indies at St. Augustine, or an approved international programme), complete the required internship period, and pass the Pharmacy Board's registration examination. Upon successful registration, the pharmacist's name is entered into the Register of Pharmacists and they receive a licence to practise, which must be renewed annually.",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Obtain a recognised pharmacy qualification (UWI St. Augustine B.Sc. Pharmacy, or equivalent approved foreign degree)",
+        "Complete the mandatory pre-registration internship (typically 12 months under a registered pharmacist)",
+        "Submit application to the Pharmacy Board with academic transcripts, internship completion certificate, and character references",
+        "Pay the prescribed registration fee (currently approximately TT$500–$1,000)",
+        "Sit and pass the Pharmacy Board's registration examination",
+        "Receive your Certificate of Registration and annual practising licence",
+        "Renew your licence annually before 31 January each year"
+      ],
+      "ordered": true
+    },
+    {
+      "body": "As of 2025, Trinidad & Tobago does not have a separate statutory registration category for pharmacy technicians. Technicians work under the direct supervision and licence of a registered pharmacist. However, there is growing advocacy — particularly from the Pharmacy Association of Trinidad and Tobago (PATT) and the UWI — for formalised technician registration. A PIXOPHARM certification positions you strongly for the formal registration framework that is expected in the coming years.",
+      "type": "callout",
+      "title": "Where Do Pharmacy Technicians Fit?",
+      "variant": "info"
+    },
+    {
+      "text": "Pharmacy Premises Licensing",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Every pharmacy in T&T must be licensed by the Pharmacy Board. The premises must meet specific requirements regarding physical layout, storage conditions, security (especially for controlled substances), and the presence of a registered pharmacist during all operating hours. The Board conducts inspections before issuing a licence and may conduct unannounced inspections thereafter. A pharmacy that operates without a licensed pharmacist on the premises — even briefly — is operating illegally.",
+      "type": "text"
+    },
+    {
+      "body": "In T&T, some smaller community pharmacies operate in a grey area where the pharmacist may step out, leaving the technician or assistant in charge. This is technically illegal under the Pharmacy Board Act. As a pharmacy technician, you must never dispense a prescription medication while the pharmacist is off-premises. If a customer insists on receiving a prescription while the pharmacist is absent, politely explain that you cannot legally do so and offer to hold the prescription until the pharmacist returns.",
+      "type": "callout",
+      "title": "Practical Reality",
+      "variant": "warning"
+    },
+    {
+      "rows": [
+        [
+          "Registration",
+          "Maintains the Register of Pharmacists; processes new applications and annual renewals"
+        ],
+        [
+          "Premises Licensing",
+          "Inspects and licenses all pharmacy premises; ensures compliance with physical and operational standards"
+        ],
+        [
+          "Disciplinary Action",
+          "Investigates complaints against registered pharmacists; may suspend or revoke licences for professional misconduct"
+        ],
+        [
+          "Standards Setting",
+          "Establishes guidelines for good pharmacy practice, including dispensing protocols and continuing education expectations"
+        ],
+        [
+          "Foreign Qualification Assessment",
+          "Evaluates overseas pharmacy degrees for equivalence and determines whether additional examinations are required"
+        ]
+      ],
+      "type": "table",
+      "caption": "Key Pharmacy Board Functions",
+      "headers": [
+        "Function",
+        "Description"
+      ]
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "It is legal provided a certified pharmacy technician is present",
+        "It is illegal — a registered pharmacist must be present during all operating hours",
+        "It is permitted for up to two hours per day",
+        "It is legal provided the pharmacist is reachable by phone"
+      ],
+      "question": "Under current T&T law, what happens if a community pharmacy operates while the registered pharmacist is off the premises?",
+      "explanation": "Under the Pharmacy Board Act, a pharmacy must have a registered pharmacist present during all operating hours. Operating without a pharmacist — even for a short period — constitutes an offence. No provision currently exists for technician-supervised dispensing in the pharmacist's absence.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 30
+}

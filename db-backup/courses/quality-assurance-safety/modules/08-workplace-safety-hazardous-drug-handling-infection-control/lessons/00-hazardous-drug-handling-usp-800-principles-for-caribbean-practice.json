@@ -1,0 +1,100 @@
+{
+  "id": "33d4188a-d2c0-4378-8883-3b9f58a6c53c",
+  "module_id": "92fe6b21-d361-44b7-bb64-0f1af50d8b66",
+  "title": "Hazardous Drug Handling: USP <800> Principles for Caribbean Practice",
+  "content": [
+    {
+      "text": "Understanding Hazardous Drugs",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Hazardous drugs are medications that pose a health risk to pharmacy personnel who handle them during routine activities such as receiving, storing, preparing, dispensing, and disposing. The risk comes from occupational exposure — absorbing small amounts of the drug through skin contact, inhalation of dust or aerosol, or accidental ingestion. Over time, cumulative exposure to certain hazardous drugs can cause reproductive harm, organ damage, or cancer. The list includes many cytotoxic (anti-cancer) agents, certain antivirals, hormones, and immunosuppressants.",
+      "type": "text"
+    },
+    {
+      "term": "Hazardous Drug",
+      "type": "key-term",
+      "definition": "A medication that poses a potential health risk to healthcare workers from occupational exposure during handling. The NIOSH (National Institute for Occupational Safety and Health) maintains a list of hazardous drugs, which includes antineoplastics, certain antivirals, hormones, and other agents that are carcinogenic, teratogenic, genotoxic, or toxic to organs at low doses."
+    },
+    {
+      "body": "USP Chapter <800> — Hazardous Drugs: Handling in Healthcare Settings — provides comprehensive standards for the safe handling of hazardous drugs. While USP <800> was developed for the US context, its principles are universally applicable. Caribbean pharmacies must adapt these principles to their specific settings, resources, and the types of hazardous drugs they handle.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "List of hazardous drugs",
+          "Maintain a facility-specific list based on NIOSH",
+          "Create a list of all NIOSH-listed drugs stocked in your pharmacy; update annually"
+        ],
+        [
+          "Personnel training",
+          "All staff handling HDs must be trained before first handling and annually thereafter",
+          "Train all technicians who receive, store, or dispense hazardous drugs; document training"
+        ],
+        [
+          "Personal protective equipment",
+          "Chemotherapy-rated gloves, gowns, eye protection for preparation; gloves for routine handling",
+          "At minimum: chemotherapy-rated gloves for any handling of intact hazardous drug packages; full PPE for any manipulation (counting, compounding)"
+        ],
+        [
+          "Receiving and storage",
+          "Designated receiving area; segregated storage",
+          "Receive HD shipments in a designated area; store on separate, clearly labelled shelves"
+        ],
+        [
+          "Dispensing",
+          "Use caution when counting; contain dust generation",
+          "Use a dedicated counting tray for HDs (never shared with non-HDs); wipe down after use"
+        ],
+        [
+          "Spill management",
+          "Spill kits immediately available; trained personnel",
+          "Maintain a HD spill kit (gloves, absorbent pads, disposal bags) near HD storage; train all staff on spill response"
+        ],
+        [
+          "Waste disposal",
+          "Trace-contaminated waste in designated containers",
+          "Use clearly labelled hazardous waste containers; arrange appropriate disposal through the health authority or licensed waste contractor"
+        ]
+      ],
+      "type": "table",
+      "caption": "USP <800> Key Requirements Adapted for Caribbean Pharmacies",
+      "headers": [
+        "Requirement",
+        "USP <800> Standard",
+        "Caribbean Adaptation"
+      ]
+    },
+    {
+      "body": "Occupational exposure to certain hazardous drugs — particularly antineoplastics and some hormones — poses a significant risk to reproductive health. Healthcare workers who handle these drugs without adequate protection have shown increased rates of miscarriage, infertility, and congenital abnormalities. Pharmacy staff who are pregnant, attempting to conceive, or breastfeeding should be reassigned away from hazardous drug handling tasks. This is not optional — it is an occupational health imperative.",
+      "type": "callout",
+      "title": "Reproductive Risk",
+      "variant": "danger"
+    },
+    {
+      "text": "Common Hazardous Drugs in Caribbean Pharmacies",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "While full-scale chemotherapy preparation is typically limited to hospital pharmacies, Caribbean community pharmacies commonly stock several NIOSH-listed hazardous drugs that require careful handling. These include: methotrexate (used for rheumatoid arthritis, psoriasis, and ectopic pregnancy), tamoxifen and letrozole (breast cancer hormonal therapy), cyclophosphamide (occasionally dispensed for autoimmune conditions), finasteride (used for benign prostatic hyperplasia), and various hormonal contraceptives. Any pharmacy that stocks these drugs must have hazardous drug handling procedures in place.",
+      "type": "text"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "No PPE is required for intact packages",
+        "Chemotherapy-rated gloves",
+        "Full hazmat suit with respirator",
+        "Standard latex examination gloves only"
+      ],
+      "question": "Which of the following is the MINIMUM PPE required when handling intact packages of hazardous drugs during routine dispensing?",
+      "explanation": "USP <800> requires at minimum chemotherapy-rated gloves when handling intact hazardous drug packages. Standard examination gloves are NOT adequate — they are thinner and more permeable to hazardous drug residue that may be present on the outside of packaging. For any manipulation of hazardous drugs (opening, counting, compounding), additional PPE (gown, eye protection) is required.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 25
+}

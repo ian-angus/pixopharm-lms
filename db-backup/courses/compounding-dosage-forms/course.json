@@ -1,0 +1,23 @@
+{
+  "id": "1c8fea95-ccdf-4293-b15b-7b0f285f20b1",
+  "title": "Compounding & Dosage Forms",
+  "slug": "compounding-dosage-forms",
+  "description": "Develop hands-on competence in pharmaceutical compounding for Caribbean pharmacy practice.",
+  "skill_level": "Intermediate",
+  "duration_weeks": 6,
+  "icon": "FlaskConical",
+  "color": "purple",
+  "prerequisites": [
+    "foundations-pharmacy-practice",
+    "pharmaceutical-calculations-dosage"
+  ],
+  "what_youll_learn": [
+    "Identify pharmaceutical dosage forms",
+    "Prepare non-sterile compounded products",
+    "Apply proper compounding techniques",
+    "Perform quality control checks",
+    "Maintain compliant compounding records"
+  ],
+  "status": "published",
+  "order": 8
+}

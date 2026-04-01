@@ -1,0 +1,114 @@
+{
+  "id": "63516b89-d810-4416-981a-f87aa30f8636",
+  "module_id": "3f917344-bdd9-402c-b23b-c11f916aa57a",
+  "title": "The Pharmacy Team: Roles & Responsibilities",
+  "content": [
+    {
+      "text": "Who Does What in the Pharmacy?",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "A well-functioning pharmacy depends on a team of professionals, each with clearly defined roles and responsibilities. Understanding these roles — and crucially, the legal boundaries between them — is fundamental to safe practice. In the Caribbean, these boundaries vary by jurisdiction, making it essential for technicians to know exactly what they can and cannot do in their specific island context.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Pharmacist",
+          "Bachelor's or Doctor of Pharmacy (PharmD), registered with national pharmacy board",
+          "Final verification of prescriptions, clinical consultations, drug therapy management, supervision of staff",
+          "Yes — final check and patient counselling"
+        ],
+        [
+          "Pharmacy Technician",
+          "Certified training programme (e.g. PIXOPHARM), registered where required",
+          "Prescription data entry, medication preparation, inventory management, assisting with dispensing under supervision",
+          "Preparation yes; final check requires pharmacist oversight in most Caribbean jurisdictions"
+        ],
+        [
+          "Pharmacy Assistant / Aide",
+          "On-the-job training, no formal certification required in most jurisdictions",
+          "Stocking shelves, cashier duties, answering phones, basic customer service",
+          "No — cannot handle prescription medications"
+        ]
+      ],
+      "type": "table",
+      "caption": "Pharmacy Team Roles Compared",
+      "headers": [
+        "Role",
+        "Qualifications",
+        "Key Responsibilities",
+        "Can They Dispense?"
+      ]
+    },
+    {
+      "type": "island-comparison",
+      "title": "Pharmacy Technician Scope of Practice by Island",
+      "islands": [
+        {
+          "flag": "🇹🇹",
+          "name": "Trinidad & Tobago",
+          "details": [
+            "Governed by the Pharmacy Board of Trinidad and Tobago under the Pharmacy Board Act (Chapter 29:52)",
+            "Pharmacy technicians work under the direct supervision of a registered pharmacist",
+            "Technicians may assist in dispensing but the pharmacist must perform the final check",
+            "No separate statutory registration for technicians — operates under pharmacist's licence",
+            "Growing movement toward formal technician registration and expanded scope"
+          ]
+        },
+        {
+          "flag": "🇯🇲",
+          "name": "Jamaica",
+          "details": [
+            "Governed by the Pharmacy Council of Jamaica under the Pharmacy Act (1975, amended)",
+            "Technicians must work under the supervision of a registered pharmacist",
+            "Jamaica's system distinguishes between 'qualified assistants' and 'pharmacy technicians'",
+            "The Pharmacy Council maintains a register of approved training programmes",
+            "Technicians cannot independently verify or release prescriptions"
+          ]
+        },
+        {
+          "flag": "🇧🇧",
+          "name": "Barbados",
+          "details": [
+            "Governed by the Barbados Drug Service and the Pharmacy Act (Cap. 372D)",
+            "Pharmacy technicians serve as vital support in both public (Queen Elizabeth Hospital, polyclinics) and private pharmacy settings",
+            "The Barbados National Drug Formulary guides prescribing and dispensing decisions",
+            "Technicians assist with dispensing and inventory management under pharmacist supervision",
+            "The Drug Service Division oversees medication supply throughout the public health system"
+          ]
+        }
+      ],
+      "description": "The legal scope of what a pharmacy technician can do varies significantly between islands. Always verify the current regulations in your jurisdiction."
+    },
+    {
+      "body": "Never exceed the scope of practice defined by your island's pharmacy legislation. Performing acts reserved for pharmacists — such as independently verifying prescriptions or providing clinical advice — can result in legal prosecution, even if done with good intentions. When in doubt, always defer to the supervising pharmacist.",
+      "type": "callout",
+      "title": "Critical Legal Point",
+      "variant": "warning"
+    },
+    {
+      "text": "The Pharmacy Technician as a Professional",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Being a pharmacy technician is not merely a job — it is a profession with ethical obligations, continuing education requirements, and a duty of care to every patient. As a technician, you are often the first person a patient interacts with. Your accuracy in preparing medications, your attention to detail in managing inventory, and your professionalism in every interaction directly impact patient health outcomes.",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Accuracy: A single dispensing error can cause serious harm or death",
+        "Confidentiality: Patient information must be protected at all times",
+        "Professionalism: Your conduct reflects on the entire pharmacy profession",
+        "Continuous Learning: Drug information changes constantly — staying current is a duty, not optional",
+        "Teamwork: Effective communication with pharmacists and other healthcare providers is essential"
+      ],
+      "ordered": false
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 20
+}

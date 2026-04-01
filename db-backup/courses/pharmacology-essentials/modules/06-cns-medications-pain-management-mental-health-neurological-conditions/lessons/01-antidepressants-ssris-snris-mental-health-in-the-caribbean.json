@@ -1,0 +1,87 @@
+{
+  "id": "49f42aa5-6133-4a19-9d31-d41a650788e1",
+  "module_id": "8655a4bb-6786-4c6f-8c79-df8a5e077ff3",
+  "title": "Antidepressants: SSRIs, SNRIs & Mental Health in the Caribbean",
+  "content": [
+    {
+      "text": "Treating Depression in a Stigmatised Environment",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Mental health conditions affect an estimated 1 in 4 Caribbean adults, yet treatment rates remain low due to stigma, limited access to psychiatrists, and cultural attitudes that view depression as a spiritual or personal weakness rather than a medical condition. When patients do receive antidepressants, pharmacy technicians play a crucial role in supporting adherence and providing judgement-free counselling.",
+      "type": "text"
+    },
+    {
+      "body": "In many Caribbean communities, mental health conditions carry significant stigma. Patients may be embarrassed to collect antidepressants or antipsychotics and may request them by brand name to avoid saying the drug class. Some patients may wrap their medications to hide the label. Pharmacy technicians should handle all mental health prescriptions with discretion, confidentiality, and compassion — never drawing attention to the nature of the medication.",
+      "type": "callout",
+      "title": "Mental Health Stigma in the Caribbean",
+      "variant": "info"
+    },
+    {
+      "term": "SSRI (Selective Serotonin Reuptake Inhibitor)",
+      "type": "key-term",
+      "definition": "A class of antidepressant that selectively blocks serotonin reuptake in the brain, increasing serotonin availability in the synaptic cleft. Examples: fluoxetine, sertraline, escitalopram. First-line treatment for depression and anxiety disorders."
+    },
+    {
+      "body": "SSRIs take 2-4 weeks to reach full therapeutic effect. This delayed onset is a major reason for non-adherence — patients expect immediate relief and stop taking the medication when they do not feel better in the first few days. Clear counselling at the point of dispensing is essential: 'This medication takes 2-4 weeks to work fully. Do not stop taking it without speaking to your doctor, even if you feel better.'",
+      "type": "text"
+    },
+    {
+      "body": "Abruptly stopping an SSRI can cause discontinuation symptoms: dizziness, nausea, anxiety, 'brain zaps' (electric shock sensations), and irritability. These symptoms are NOT a sign of addiction — they reflect the brain readjusting to the absence of the drug. SSRIs should always be tapered gradually under medical supervision.",
+      "type": "callout",
+      "title": "SSRI Discontinuation Syndrome",
+      "variant": "warning"
+    },
+    {
+      "rows": [
+        [
+          "Fluoxetine (Prozac)",
+          "SSRI",
+          "Nausea, insomnia, sexual dysfunction",
+          "Long half-life; least likely to cause discontinuation syndrome"
+        ],
+        [
+          "Sertraline (Zoloft)",
+          "SSRI",
+          "GI upset, diarrhoea",
+          "Widely used; generally well tolerated"
+        ],
+        [
+          "Amitriptyline",
+          "TCA",
+          "Drowsiness, dry mouth, weight gain, cardiac effects",
+          "Used for depression, neuropathic pain, migraine prophylaxis"
+        ],
+        [
+          "Venlafaxine",
+          "SNRI",
+          "Nausea, hypertension at high doses",
+          "Effective for depression and anxiety; must taper slowly"
+        ]
+      ],
+      "type": "table",
+      "caption": "Common Antidepressants in Caribbean Practice",
+      "headers": [
+        "Drug",
+        "Class",
+        "Key Side Effects",
+        "Notes"
+      ]
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Agree — if it has not worked in 5 days, it will not work",
+        "Explain that SSRIs take 2-4 weeks to reach full effect and encourage them to continue as prescribed",
+        "Suggest doubling the dose for faster effect",
+        "Recommend switching to a herbal alternative"
+      ],
+      "question": "A patient wants to stop their fluoxetine because 'it is not working' after 5 days. What should you advise?",
+      "explanation": "SSRIs have a delayed onset of action (2-4 weeks). Patients often need reassurance during this initial period. Stopping prematurely is a common cause of treatment failure.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 20
+}

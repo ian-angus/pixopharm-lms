@@ -1,0 +1,68 @@
+{
+  "id": "29cf3460-27c8-4d54-b3b5-128000b40ef7",
+  "module_id": "c33cff75-0326-4020-95b4-a2f8a518375a",
+  "title": "Why SOPs Matter: Standardisation as a Safety Strategy",
+  "content": [
+    {
+      "text": "The Case for Standard Operating Procedures",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "A Standard Operating Procedure (SOP) is a written, step-by-step instruction for performing a routine task in a consistent, safe, and efficient manner. In pharmacy, SOPs ensure that every team member — regardless of experience, training background, or the time pressures they face — follows the same process for safety-critical tasks. Without SOPs, practice varies from person to person, shift to shift, and day to day. This variability is the enemy of safety.",
+      "type": "text"
+    },
+    {
+      "term": "Standard Operating Procedure (SOP)",
+      "type": "key-term",
+      "definition": "A detailed, written instruction describing how to perform a specific task or process consistently and correctly. SOPs reduce variability, ensure compliance with regulations, serve as training tools, and provide a reference standard against which performance can be audited."
+    },
+    {
+      "body": "In Caribbean community pharmacies, SOPs are particularly important because of high staff turnover, the use of locum (temporary) pharmacists and technicians who may be unfamiliar with the specific pharmacy's systems, and the absence of automated systems that enforce standardised workflows. An SOP ensures that when a locum technician arrives at your pharmacy, she can follow the documented process rather than improvising.",
+      "type": "text"
+    },
+    {
+      "body": "Pharmacy boards across the Caribbean increasingly expect pharmacies to maintain written SOPs for key processes. In Trinidad & Tobago, the Pharmacy Board may request to review SOPs during inspections. In Jamaica, the Pharmacy Council considers SOPs part of Good Pharmacy Practice standards. SOPs are not optional — they are a regulatory and professional obligation.",
+      "type": "callout",
+      "title": "Regulatory Requirement",
+      "variant": "info"
+    },
+    {
+      "text": "What Processes Need SOPs?",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Not every task requires a written SOP, but any process that is safety-critical, regulatory-required, or complex enough that variation could lead to error should be documented. For Caribbean pharmacies, essential SOPs include: dispensing workflow (prescription receipt to patient counselling), controlled substance handling, medication storage and temperature monitoring, expiry date management, error and incident reporting, emergency procedures (hurricane preparedness, power outage), compounding (if applicable), and cleaning and infection control.",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Dispensing workflow — from prescription receipt through to patient handoff",
+        "Controlled substance handling — receipt, storage, dispensing, record-keeping, destruction",
+        "Medication storage and temperature monitoring — including cold chain management",
+        "Expiry date management — checking, rotating stock, removing expired products",
+        "Error and incident reporting — what to report, how to report, follow-up actions",
+        "Emergency procedures — hurricane preparedness, power outage, security threat",
+        "Compounding procedures — if the pharmacy performs any compounding",
+        "Cleaning and infection control — daily cleaning, equipment sanitisation, PPE use"
+      ],
+      "ordered": false
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Caribbean pharmacies have more staff than they need",
+        "SOPs are only required in hospital pharmacies, not community settings",
+        "High staff turnover and use of locum staff means consistent written procedures are essential",
+        "Caribbean pharmacy regulations prohibit verbal instructions"
+      ],
+      "question": "Why are SOPs particularly important in Caribbean community pharmacies?",
+      "explanation": "Caribbean community pharmacies often rely on locum (temporary) staff who may be unfamiliar with the specific pharmacy's systems and workflows. Written SOPs ensure that every team member, whether permanent or temporary, follows the same standardised process — maintaining safety and consistency regardless of who is on shift.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 25
+}

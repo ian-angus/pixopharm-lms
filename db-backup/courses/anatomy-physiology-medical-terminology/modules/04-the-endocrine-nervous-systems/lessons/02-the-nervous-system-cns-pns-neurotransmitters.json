@@ -1,0 +1,87 @@
+{
+  "id": "2b2e8f1b-4cf0-4235-92ed-bb640a11d84e",
+  "module_id": "3222ebc2-0078-4915-a18c-97e78b0bcad5",
+  "title": "The Nervous System: CNS, PNS & Neurotransmitters",
+  "content": [
+    {
+      "text": "The Nervous System: Structural Overview",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "The nervous system is the body's rapid communication network. It is divided structurally into two parts: the central nervous system (CNS), comprising the brain and spinal cord, and the peripheral nervous system (PNS), comprising all nerves outside the CNS that connect it to the rest of the body. The PNS is further divided into the somatic nervous system (voluntary control of skeletal muscles) and the autonomic nervous system (involuntary control of internal organs).",
+      "type": "text"
+    },
+    {
+      "body": "The autonomic nervous system (ANS) is particularly relevant to pharmacy because many drugs target its two divisions: the sympathetic nervous system ('fight or flight' — increases heart rate, dilates airways, raises blood pressure) and the parasympathetic nervous system ('rest and digest' — slows heart rate, stimulates digestion, constricts pupils). Beta-blockers, for example, block sympathetic stimulation of the heart; anticholinergics block parasympathetic activity.",
+      "type": "text"
+    },
+    {
+      "term": "Neurotransmitter",
+      "type": "key-term",
+      "definition": "A chemical substance released by a nerve cell (neuron) at a synapse to transmit a signal to another cell. Major neurotransmitters include acetylcholine (muscle contraction, parasympathetic function), noradrenaline (sympathetic function, alertness), dopamine (reward, movement), serotonin (mood, sleep, appetite), GABA (inhibition, calm), and glutamate (excitation). Most psychiatric and neurological drugs work by modifying neurotransmitter activity."
+    },
+    {
+      "rows": [
+        [
+          "Serotonin (5-HT)",
+          "Mood, sleep, appetite, pain modulation",
+          "SSRIs, SNRIs, triptans",
+          "Fluoxetine, sertraline, sumatriptan"
+        ],
+        [
+          "Noradrenaline (NE)",
+          "Alertness, sympathetic tone, blood pressure",
+          "SNRIs, beta-blockers, alpha-agonists",
+          "Venlafaxine, atenolol, clonidine"
+        ],
+        [
+          "Dopamine",
+          "Reward, motivation, motor control",
+          "Antipsychotics, anti-Parkinsonian drugs",
+          "Haloperidol, levodopa"
+        ],
+        [
+          "Acetylcholine (ACh)",
+          "Muscle contraction, parasympathetic, memory",
+          "Anticholinergics, cholinesterase inhibitors",
+          "Ipratropium, donepezil"
+        ],
+        [
+          "GABA",
+          "Inhibitory signalling, anxiety reduction",
+          "Benzodiazepines, gabapentinoids",
+          "Diazepam, gabapentin, pregabalin"
+        ]
+      ],
+      "type": "table",
+      "caption": "Key Neurotransmitters and Their Drug Connections",
+      "headers": [
+        "Neurotransmitter",
+        "Primary Functions",
+        "Drug Classes That Affect It",
+        "Examples"
+      ]
+    },
+    {
+      "body": "Mental health conditions, including depression and anxiety, are increasingly recognised as significant health burdens across the Caribbean. However, stigma remains a major barrier to treatment. Many patients present to pharmacies for physical symptoms (insomnia, chronic pain, fatigue) without disclosing underlying depression or anxiety. Pharmacy technicians should handle prescriptions for antidepressants and anxiolytics with the same professionalism and confidentiality as any other medication, and never make assumptions about patients based on their prescriptions.",
+      "type": "callout",
+      "title": "Mental Health in the Caribbean",
+      "variant": "info"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Rest and digest",
+        "Fight or flight",
+        "Sleep and recovery",
+        "Immune activation"
+      ],
+      "question": "The sympathetic nervous system is associated with which response?",
+      "explanation": "The sympathetic nervous system mediates the 'fight or flight' response — increasing heart rate, dilating airways, raising blood pressure, and diverting blood flow to skeletal muscles. Many cardiovascular drugs (beta-blockers, alpha-blockers) work by modulating sympathetic nervous system activity.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 20
+}

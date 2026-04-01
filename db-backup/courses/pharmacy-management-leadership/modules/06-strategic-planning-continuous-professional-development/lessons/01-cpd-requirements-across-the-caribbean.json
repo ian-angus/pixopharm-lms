@@ -1,0 +1,116 @@
+{
+  "id": "e09da2f6-dc33-45e8-a8ad-7c5049739317",
+  "module_id": "239c1c0d-6b4a-4c93-8a9f-a6dedc1deb6f",
+  "title": "CPD Requirements Across the Caribbean",
+  "content": [
+    {
+      "text": "Continuing Professional Development: A Career-Long Obligation",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Pharmacy is a profession where knowledge has a half-life — what you learn in your training programme will be partially obsolete within 5 years due to new drugs, updated guidelines, changed regulations, and evolving best practices. Continuing Professional Development (CPD) is the mechanism by which pharmacy professionals maintain and enhance their competence throughout their careers. Across the Caribbean, CPD is increasingly moving from voluntary to mandatory — a requirement for maintaining professional registration.",
+      "type": "text"
+    },
+    {
+      "term": "Continuing Professional Development (CPD)",
+      "type": "key-term",
+      "definition": "The ongoing process of learning and development that pharmacy professionals undertake throughout their careers to maintain, improve, and broaden their knowledge, skills, and competence. Unlike continuing education (CE), which focuses on attending courses or lectures, CPD encompasses all learning activities — formal courses, self-directed reading, mentoring, practice-based learning, and reflective practice."
+    },
+    {
+      "type": "island-comparison",
+      "title": "CPD Requirements for Pharmacy Professionals by Island",
+      "islands": [
+        {
+          "flag": "🇹🇹",
+          "name": "Trinidad & Tobago",
+          "details": [
+            "The Pharmacy Board of T&T is developing mandatory CPD requirements for pharmacist re-registration",
+            "Currently, CPD is strongly encouraged but not yet a strict renewal condition for all registrants",
+            "The Pharmaceutical Society of Trinidad and Tobago (PSTT) offers CPD events and workshops",
+            "UWI School of Pharmacy provides formal continuing education programmes",
+            "PIXOPHARM-certified courses are recognised as valid CPD activities"
+          ]
+        },
+        {
+          "flag": "🇯🇲",
+          "name": "Jamaica",
+          "details": [
+            "The Pharmacy Council of Jamaica requires CPD for pharmacist re-registration",
+            "Pharmacists must accumulate a minimum number of CPD credits over each registration cycle",
+            "Approved CPD providers include UTech, the Pharmaceutical Society of Jamaica, and accredited online platforms",
+            "CPD activities must be documented in a professional portfolio for audit purposes",
+            "Categories include formal learning, practice-based learning, and self-directed learning"
+          ]
+        },
+        {
+          "flag": "🇧🇧",
+          "name": "Barbados",
+          "details": [
+            "The Barbados Pharmacy Council oversees CPD requirements for registered pharmacists",
+            "CPD is increasingly being linked to re-registration and licence renewal",
+            "The Barbados Pharmaceutical Society organises CPD conferences and seminars",
+            "International CPD from recognised institutions (e.g., UK GPhC, US ACPE) may be accepted",
+            "Pharmacy technicians are encouraged to pursue CPD even where not yet mandatory"
+          ]
+        }
+      ],
+      "description": "CPD requirements vary by jurisdiction and are evolving. Pharmacy managers must ensure both they and their staff meet the requirements for their specific island."
+    },
+    {
+      "body": "While CPD is currently more formalised for pharmacists than for technicians in most Caribbean jurisdictions, the trend is clearly toward mandatory CPD for all pharmacy professionals. Technicians who proactively build a CPD portfolio now will be ahead when requirements are formalised. Additionally, CPD is a powerful retention and career advancement tool — staff who are actively learning are more engaged and more promotable.",
+      "type": "callout",
+      "title": "CPD for Pharmacy Technicians",
+      "variant": "tip"
+    },
+    {
+      "rows": [
+        [
+          "Formal Learning",
+          "Accredited courses, workshops, conferences, webinars, PIXOPHARM modules",
+          "1–3 credits per hour of instruction"
+        ],
+        [
+          "Practice-Based Learning",
+          "Case discussions, clinical audits, journal clubs, quality improvement projects",
+          "1–2 credits per activity"
+        ],
+        [
+          "Self-Directed Learning",
+          "Professional reading, online research, reflective practice journals",
+          "0.5–1 credit per hour (often capped)"
+        ],
+        [
+          "Teaching & Mentoring",
+          "Precepting students, training new staff, presenting at conferences",
+          "2–3 credits per activity"
+        ]
+      ],
+      "type": "table",
+      "caption": "Types of CPD Activities Recognised in the Caribbean",
+      "headers": [
+        "Category",
+        "Examples",
+        "Typical Credit Value"
+      ]
+    },
+    {
+      "body": "As a pharmacy manager, you have a dual CPD responsibility: maintaining your own professional development AND supporting your team's CPD. Build CPD into your pharmacy's culture by allocating a training budget (even a modest one), sharing relevant journal articles or updates during team meetings, sending staff to conferences on a rotating basis, and recognising CPD achievements. When CPD is treated as a valued part of work — not an afterthought — the entire team benefits.",
+      "type": "text"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "CE is for pharmacists; CPD is for technicians",
+        "CE focuses on attending courses; CPD encompasses all learning activities including practice-based and self-directed learning",
+        "CE is mandatory; CPD is always voluntary",
+        "CE provides credits; CPD does not"
+      ],
+      "question": "What is the key difference between Continuing Education (CE) and Continuing Professional Development (CPD)?",
+      "explanation": "CE traditionally focuses on formal learning activities (attending courses, lectures, webinars), while CPD is a broader concept that encompasses all professional learning — formal courses, practice-based learning (clinical audits, case discussions), self-directed learning (reading, research), and reflective practice. CPD represents a shift from 'hours attended' to 'competence maintained and enhanced'.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 20
+}

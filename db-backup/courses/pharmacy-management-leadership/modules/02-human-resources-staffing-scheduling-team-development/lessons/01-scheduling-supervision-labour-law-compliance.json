@@ -1,0 +1,104 @@
+{
+  "id": "8f20beeb-0274-4f6c-8932-64112068271b",
+  "module_id": "9b4fe8f1-fe84-4fa2-b2f4-db8c18c1a30e",
+  "title": "Scheduling, Supervision & Labour Law Compliance",
+  "content": [
+    {
+      "text": "Building Rosters That Work — Legally and Practically",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Pharmacy scheduling is more complex than scheduling for a typical retail business. In every Caribbean jurisdiction, a registered pharmacist must be physically present and supervising whenever the pharmacy is open and dispensing. This legal requirement fundamentally shapes how rosters are built: you cannot open the pharmacy if the pharmacist calls in sick, regardless of how many technicians are available.",
+      "type": "text"
+    },
+    {
+      "body": "In Trinidad & Tobago, Jamaica, and Barbados, dispensing medications without a registered pharmacist physically present on the premises is a criminal offence. If your pharmacist is absent, the pharmacy must either close the dispensary or cease dispensing until a registered pharmacist arrives. Technicians may continue to manage front-of-shop operations but cannot dispense prescriptions.",
+      "type": "callout",
+      "title": "Legal Requirement: Pharmacist Supervision",
+      "variant": "danger"
+    },
+    {
+      "rows": [
+        [
+          "Standard work week",
+          "40 hours (8 hours x 5 days)",
+          "40 hours (8 hours x 5 days)",
+          "40 hours (8 hours x 5 days)"
+        ],
+        [
+          "Overtime rate",
+          "1.5x for first 4 hours overtime; 2x thereafter",
+          "1.5x standard rate after 40 hours",
+          "1.5x standard rate; 2x on Sundays and public holidays"
+        ],
+        [
+          "Public holidays",
+          "13 gazetted public holidays; double time or time off in lieu",
+          "8 public holidays; double time if worked",
+          "11 public holidays; double or triple time depending on contract"
+        ],
+        [
+          "Annual leave minimum",
+          "14 working days after 1 year of service",
+          "10 working days after 1 year; 15 after 10 years",
+          "15 working days (3 calendar weeks) minimum"
+        ],
+        [
+          "Sick leave provisions",
+          "14 days paid sick leave per year (typical)",
+          "Varies by contract; Industrial Disputes Tribunal guidance",
+          "As per contract; Sick Leave and Sickness Benefits Act provisions"
+        ]
+      ],
+      "type": "table",
+      "caption": "Labour Law Considerations for Caribbean Pharmacy Scheduling",
+      "headers": [
+        "Factor",
+        "Trinidad & Tobago",
+        "Jamaica",
+        "Barbados"
+      ]
+    },
+    {
+      "text": "Practical Scheduling Strategies",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "A well-designed pharmacy schedule balances four competing demands: legal compliance (pharmacist supervision), operational coverage (enough staff during peak hours), employee wellbeing (reasonable shifts, adequate rest), and cost management (minimising unnecessary overtime). In small Caribbean pharmacies, this is often a jigsaw puzzle where every piece matters.",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Map your peak hours: Analyse dispensing volume by hour and day of week — most Caribbean pharmacies see peaks on Monday mornings (post-weekend prescriptions), Friday afternoons (before the weekend), and the first week of each month (when government programme patients refill)",
+        "Build around pharmacist availability: Always start the schedule with your pharmacist(s), then layer in technicians and assistants",
+        "Cross-train staff: Ensure every technician can handle both dispensing and front-of-shop duties so you have scheduling flexibility",
+        "Plan for absence: Have a locum pharmacist on call and a system for short-notice coverage",
+        "Use split shifts strategically: A technician working 7 AM–11 AM and 3 PM–7 PM covers both peaks while reducing mid-day staffing costs",
+        "Post schedules two weeks in advance: This gives staff time to plan and reduces last-minute changes"
+      ],
+      "ordered": true
+    },
+    {
+      "term": "Locum Pharmacist",
+      "type": "key-term",
+      "definition": "A registered pharmacist who provides temporary coverage at a pharmacy, typically to cover leave, illness, or extended hours. In the Caribbean, the locum pool is limited, and pharmacies often share locum contacts informally. Having a reliable locum arrangement is essential for uninterrupted pharmacy operations."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "The senior pharmacy technician may supervise dispensing until the pharmacist returns",
+        "The pharmacy must cease dispensing until a registered pharmacist is present",
+        "Another nearby pharmacist can provide remote supervision by telephone",
+        "The pharmacy owner can authorise the technician to dispense independently"
+      ],
+      "question": "What must happen if the pharmacist on duty is unexpectedly absent from a Caribbean community pharmacy?",
+      "explanation": "In Trinidad & Tobago, Jamaica, and Barbados, a registered pharmacist must be physically present on the premises for dispensing to occur. No amount of remote supervision, seniority of the technician, or owner authorisation can substitute for the physical presence of a registered pharmacist. The dispensary must cease operations until one arrives.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 25
+}

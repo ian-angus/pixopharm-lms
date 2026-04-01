@@ -1,0 +1,60 @@
+{
+  "id": "3eabf327-0f49-4b41-bb8b-65392b15ee95",
+  "module_id": "dc1f1623-87c0-4bbe-bfb2-9ba9f226430b",
+  "title": "Informed Consent in the Caribbean Context",
+  "content": [
+    {
+      "text": "The Patient's Right to Know and Choose",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Informed consent in pharmacy means that patients have the right to receive sufficient information about their medication to make an informed decision about whether to take it. This includes: what the medication is for, how to take it, common side effects, serious adverse effects to watch for, interactions with food or other medications, and what to do if they miss a dose.",
+      "type": "text"
+    },
+    {
+      "text": "Components of Informed Consent in Dispensing",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "type": "list",
+      "items": [
+        "Disclosure: Provide all relevant information about the medication in language the patient can understand",
+        "Comprehension: Ensure the patient actually understands the information — use teach-back method ('Can you tell me how you will take this medication?')",
+        "Voluntariness: The patient must freely choose to take the medication — no coercion or undue pressure",
+        "Competence: Assess whether the patient has the capacity to make healthcare decisions (age, mental capacity, language barriers)",
+        "Documentation: Record that counselling was provided and the patient's acknowledgement"
+      ],
+      "ordered": true
+    },
+    {
+      "text": "Cultural Considerations in the Caribbean",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Caribbean cultures often have strong communal ties where family members — particularly elders — play a significant role in healthcare decisions. A patient may defer to a family member or a traditional healer. While respecting cultural norms, the pharmacy professional must ensure that the patient themselves has given consent and understands their treatment.",
+      "type": "text"
+    },
+    {
+      "body": "In Trinidad, patients may speak English, Hindi, or Spanish. In Jamaica, patients may communicate primarily in Jamaican Patois/Creole. Informed consent requires that the patient UNDERSTANDS the information provided. If there is a language barrier, use plain language, visual aids, or seek assistance from a colleague who speaks the patient's language. Never assume comprehension — always use the teach-back method.",
+      "type": "callout",
+      "title": "Language Barriers",
+      "variant": "info"
+    },
+    {
+      "type": "case-study",
+      "title": "Case Study: The Family Decision",
+      "scenario": "An elderly patient is prescribed a new antihypertensive medication. Her adult son accompanies her and speaks on her behalf throughout the interaction. When you try to counsel the patient directly, the son says, 'Just tell me — I'll make sure she takes it properly.' The patient remains silent and appears deferential to her son.",
+      "questions": [
+        "How do you balance respect for family dynamics with the patient's autonomy?",
+        "What steps can you take to ensure the patient herself understands and consents to the medication?",
+        "Are there any circumstances where counselling the family member instead of the patient is acceptable?"
+      ],
+      "discussion": "While family involvement in healthcare is culturally important in the Caribbean, the patient must be directly addressed and must demonstrate understanding. Strategies include: speaking to the patient directly (making eye contact), using simple language, providing written instructions, and offering to speak with the patient privately. If the patient appears to lack capacity (dementia, for example), the family member's role becomes more central, but a pharmacist should be involved in assessing this situation."
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 20
+}

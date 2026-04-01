@@ -1,0 +1,92 @@
+[
+  {
+    "id": "5e7714a6-246f-4090-87b5-c11fbe4ca136",
+    "module_id": "ca3220b3-2c07-448d-bf3e-0790d0ed9088",
+    "question": "Which CARICOM initiative supports the free movement of skilled workers across Caribbean nations?",
+    "options": [
+      "The Caribbean Regulatory System (CRS)",
+      "The CARICOM Single Market and Economy (CSME)",
+      "The Caribbean Public Health Agency (CARPHA)",
+      "The OECS Pharmaceutical Procurement Service"
+    ],
+    "correct_answer": 1,
+    "explanation": "The CARICOM Single Market and Economy (CSME) enables the free movement of skilled workers, including healthcare professionals, across CARICOM member states. This means your pharmacy technician qualification can be a passport to career opportunities across the Caribbean — though island-specific registration requirements still apply.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "bf3a9f91-75e0-4b82-9697-4a7a0d9ac8ca",
+    "module_id": "ca3220b3-2c07-448d-bf3e-0790d0ed9088",
+    "question": "Why is Continuing Professional Development (CPD) important for pharmacy technicians?",
+    "options": [
+      "It is only needed if you want a promotion",
+      "Pharmacy knowledge becomes outdated as drugs, guidelines, and regulations change — CPD ensures you remain competent and current",
+      "It is only required in private sector pharmacy",
+      "It is only needed during the first year of practice"
+    ],
+    "correct_answer": 1,
+    "explanation": "The pharmaceutical field changes constantly — new medications are approved, clinical guidelines are updated, regulations evolve, and technology advances. CPD is a professional obligation to ensure you maintain the competence needed to serve patients safely throughout your career.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "14abae81-5592-4a51-ac4c-d3904964e419",
+    "module_id": "ca3220b3-2c07-448d-bf3e-0790d0ed9088",
+    "question": "Which university system offers pharmacy degrees across campuses in Trinidad, Jamaica, and Barbados?",
+    "options": [
+      "Caribbean Examination Council (CXC)",
+      "University of the West Indies (UWI)",
+      "University of Technology, Jamaica",
+      "University of the Southern Caribbean"
+    ],
+    "correct_answer": 1,
+    "explanation": "The University of the West Indies (UWI) is the premier regional university with campuses in Trinidad (St. Augustine), Jamaica (Mona), and Barbados (Cave Hill). UWI offers Bachelor of Pharmacy and Doctor of Pharmacy degrees that provide a pathway for pharmacy technicians seeking to advance to pharmacist-level qualifications.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "64b6b5eb-a448-4451-a3e6-6582290cee70",
+    "module_id": "ca3220b3-2c07-448d-bf3e-0790d0ed9088",
+    "question": "What is typically the career progression after 2-5 years as a pharmacy technician?",
+    "options": [
+      "Automatic promotion to pharmacist",
+      "Senior Pharmacy Technician with potential supervisory responsibilities",
+      "Mandatory relocation to another island",
+      "Retirement eligibility"
+    ],
+    "correct_answer": 1,
+    "explanation": "After 2-5 years of experience, pharmacy technicians typically advance to Senior Pharmacy Technician roles, where they may supervise junior staff, handle more complex dispensing tasks, and take on additional responsibilities. This is a common stepping stone toward lead technician, dispensary manager, or specialist roles.",
+    "order_index": 3,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "885569f6-acf4-44c0-a18e-fe1a260e6a37",
+    "module_id": "ca3220b3-2c07-448d-bf3e-0790d0ed9088",
+    "question": "What is the most common employment setting for pharmacy technicians in the Caribbean?",
+    "options": [
+      "Hospital pharmacy",
+      "Pharmaceutical manufacturing",
+      "Community / retail pharmacy",
+      "Insurance claims processing"
+    ],
+    "correct_answer": 2,
+    "explanation": "Community (retail) pharmacy is the most common employment setting for pharmacy technicians across the Caribbean. These pharmacies serve as primary healthcare access points in their communities, handling dispensing, OTC advice, health screenings, and patient counselling.",
+    "order_index": 4,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  }
+]

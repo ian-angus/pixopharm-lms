@@ -1,0 +1,63 @@
+{
+  "id": "bea4a5af-2173-4c36-8841-42f4e79a372b",
+  "module_id": "30df726a-ab1c-402b-a4fd-52861a29b89b",
+  "title": "Short-Dated Stock Management & Wastage Reduction",
+  "content": [
+    {
+      "text": "Turning Short-Dated Stock Into Used Stock, Not Wasted Stock",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Short-dated stock — products approaching their expiry date — represents an imminent financial loss if not managed proactively. In the Caribbean, where medication costs are already elevated by import duties and shipping, every expired product is money that could have served patients. A systematic short-dated stock management programme can reduce pharmaceutical wastage by 30–50%.",
+      "type": "text"
+    },
+    {
+      "text": "The Three-Tier Alert System",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Implement a three-tier alert system based on remaining shelf life. The specific thresholds should be calibrated to your pharmacy's dispensing speed for each product, but a common framework is:",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "GREEN ALERT (6+ months to expiry): Normal dispensing. No special action required, but continue FEFO rotation.",
+        "AMBER ALERT (3–6 months to expiry): Increase dispensing priority. Move to the front of the shelf. Consider transfers to sister pharmacies or facilities with higher turnover. Flag for promotional pricing if applicable for OTC products.",
+        "RED ALERT (under 3 months to expiry): Immediate action required. Contact suppliers about returns or credit (many have return policies for stock within 3 months of expiry). Transfer to high-volume facilities. For controlled substances, begin documentation for witnessed destruction."
+      ],
+      "ordered": true
+    },
+    {
+      "body": "Monthly expiry audits are the backbone of short-dated stock management. During these audits, the technician systematically checks every product on the shelf, in the fridge, and in backstock for approaching expiry dates. Products entering the amber or red zone are flagged, documented, and acted upon. Modern pharmacy software can automate these alerts, but manual checks remain essential as a verification layer.",
+      "type": "text"
+    },
+    {
+      "body": "Many pharmaceutical suppliers and wholesalers in the Caribbean offer return programmes for short-dated stock — typically products within 3 to 6 months of expiry. The terms vary: some offer full credit, others partial credit, and some charge a restocking fee. Build these terms into your supplier agreements and track return deadlines carefully. A product that could have been returned for 80% credit becomes a 100% loss once the return window closes.",
+      "type": "callout",
+      "title": "Supplier Return Programmes",
+      "variant": "info"
+    },
+    {
+      "term": "Pharmaceutical Wastage Rate",
+      "type": "key-term",
+      "definition": "The percentage of total pharmaceutical stock that is disposed of due to expiry, damage, contamination, or other causes without being dispensed to patients. A well-managed Caribbean pharmacy aims for a wastage rate below 2% of total inventory value. Rates above 5% indicate systemic stock management failures."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Green Alert — normal dispensing",
+        "Amber Alert — increase dispensing priority and consider transfers",
+        "Red Alert — immediate action, contact suppliers for returns",
+        "No alert — 4 months is too far from expiry to require action"
+      ],
+      "question": "Under a three-tier alert system, a product with 4 months remaining shelf life falls into which alert level?",
+      "explanation": "Four months falls within the Amber Alert zone (3–6 months to expiry). The product should be moved to the front of the shelf, flagged for increased dispensing priority, and considered for transfer to higher-volume facilities if turnover at the current pharmacy is insufficient to use the stock before expiry.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 25
+}

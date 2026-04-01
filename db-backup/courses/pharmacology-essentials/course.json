@@ -1,0 +1,23 @@
+{
+  "id": "34fcd2ea-9c5d-4a5f-9f70-5276076fcf2a",
+  "title": "Pharmacology Essentials",
+  "slug": "pharmacology-essentials",
+  "description": "Develop working knowledge of how drugs act in the body, tailored to the Caribbean disease landscape.",
+  "skill_level": "Intermediate",
+  "duration_weeks": 10,
+  "icon": "HeartPulse",
+  "color": "rose",
+  "prerequisites": [
+    "foundations-pharmacy-practice",
+    "anatomy-physiology-medical-terminology"
+  ],
+  "what_youll_learn": [
+    "Classify major drug families",
+    "Identify critical drug interactions",
+    "Describe first-line treatments",
+    "Recognise adverse drug reactions",
+    "Advise on OTC and herbal remedies"
+  ],
+  "status": "published",
+  "order": 5
+}

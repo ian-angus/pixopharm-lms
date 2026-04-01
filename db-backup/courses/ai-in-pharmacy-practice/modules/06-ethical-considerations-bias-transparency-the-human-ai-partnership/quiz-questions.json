@@ -1,0 +1,147 @@
+[
+  {
+    "id": "1af86023-f414-4279-bc0a-5cc70b9b5544",
+    "module_id": "de3922e4-c680-4c74-9283-4ffb9c806bc5",
+    "question": "What is algorithmic bias in the context of healthcare AI?",
+    "options": [
+      "When an AI system runs too slowly",
+      "Systematic errors in AI outputs arising from biased training data or design that can lead to unequal care",
+      "When a pharmacist disagrees with an AI recommendation",
+      "A deliberate feature that makes AI prefer certain drugs over others"
+    ],
+    "correct_answer": 1,
+    "explanation": "Algorithmic bias refers to systematic errors in AI outputs that arise from biased assumptions in training data, algorithm design, or development processes. In healthcare, this can lead to diagnostic errors, inappropriate treatment recommendations, or unequal quality of care for underrepresented populations.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "6fce9c93-f0b7-475f-8f63-ec61074665e6",
+    "module_id": "de3922e4-c680-4c74-9283-4ffb9c806bc5",
+    "question": "Approximately what percentage of people of African descent are CYP2D6 ultra-rapid metabolisers?",
+    "options": [
+      "1-2%",
+      "5-10%",
+      "29%",
+      "75%"
+    ],
+    "correct_answer": 2,
+    "explanation": "Approximately 29% of people of African descent are CYP2D6 ultra-rapid metabolisers, compared to only 1-2% of Caucasians. This has significant implications for the metabolism of drugs like codeine, tramadol, and some antidepressants, and means AI dosing tools trained on predominantly Caucasian data may give inappropriate recommendations.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "hard",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "32c5501f-52ad-4405-9a49-642e8255d184",
+    "module_id": "de3922e4-c680-4c74-9283-4ffb9c806bc5",
+    "question": "What does 'Explainable AI' (XAI) mean?",
+    "options": [
+      "AI that is easy to install and use",
+      "AI systems that provide human-understandable explanations for their outputs and decisions",
+      "AI that explains human behaviour",
+      "AI that only works when explained by a technician"
+    ],
+    "correct_answer": 1,
+    "explanation": "Explainable AI (XAI) refers to AI systems designed to provide human-understandable explanations for their outputs and decisions. In healthcare, this is crucial because clinicians need to understand why an AI recommends a particular action to assess its validity for a specific patient.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "3cbf87d8-816a-4012-b6a4-ec9f7aff5b54",
+    "module_id": "de3922e4-c680-4c74-9283-4ffb9c806bc5",
+    "question": "In the Human-in-the-Loop (HITL) model, what is the role of AI?",
+    "options": [
+      "AI makes all clinical decisions independently",
+      "AI provides information and recommendations while humans make and are accountable for final decisions",
+      "AI is not used at all — humans do everything",
+      "AI and humans alternate making decisions"
+    ],
+    "correct_answer": 1,
+    "explanation": "In the HITL model, AI provides information, analysis, and recommendations, but qualified human professionals remain in the decision loop, making final decisions and bearing accountability for patient outcomes. This ensures that human judgement, contextual understanding, and ethical reasoning are always part of clinical decisions.",
+    "order_index": 3,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "f85fcb28-c769-459b-b56f-6e169f114ed2",
+    "module_id": "de3922e4-c680-4c74-9283-4ffb9c806bc5",
+    "question": "Why might pulse oximeters integrated into AI monitoring systems underserve Afro-Caribbean patients?",
+    "options": [
+      "Pulse oximeters do not work in tropical climates",
+      "Afro-Caribbean patients do not need oxygen monitoring",
+      "Pulse oximeters have been documented to be less accurate on darker skin tones, potentially underestimating hypoxia",
+      "Pulse oximeters are not available in the Caribbean"
+    ],
+    "correct_answer": 2,
+    "explanation": "Multiple studies have documented that pulse oximeters can be less accurate on darker skin tones, potentially overestimating oxygen levels (underestimating hypoxia). When this biased data feeds into AI monitoring systems, the AI may fail to alert clinicians to dangerous oxygen levels in Afro-Caribbean patients.",
+    "order_index": 4,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "analyze"
+  },
+  {
+    "id": "63855791-3e32-4308-9284-e1b8bdf47340",
+    "module_id": "de3922e4-c680-4c74-9283-4ffb9c806bc5",
+    "question": "An AI tool recommends changing a patient's medication but cannot explain why. What should the pharmacy technician do?",
+    "options": [
+      "Follow the recommendation — AI is always correct",
+      "Ignore all AI recommendations permanently",
+      "Treat the recommendation with extra scepticism, discuss with the pharmacist, and investigate the reasoning manually",
+      "Report the AI vendor to the police"
+    ],
+    "correct_answer": 2,
+    "explanation": "When an AI tool cannot explain its reasoning, its output should be treated with extra scepticism. The technician should discuss the recommendation with the pharmacist and investigate the clinical reasoning manually using authoritative sources. Unexplainable recommendations should never be acted upon without independent clinical verification.",
+    "order_index": 5,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "evaluate"
+  },
+  {
+    "id": "ae618447-3119-495b-8d66-fe198542289c",
+    "module_id": "de3922e4-c680-4c74-9283-4ffb9c806bc5",
+    "question": "Which statement best describes the ideal human-AI relationship in Caribbean pharmacy practice?",
+    "options": [
+      "AI should replace pharmacy technicians to reduce costs",
+      "AI handles technical processing so pharmacy staff have more time for the personal, human elements of patient care",
+      "Pharmacy staff should refuse to use any AI tools",
+      "AI should interact directly with patients without staff involvement"
+    ],
+    "correct_answer": 1,
+    "explanation": "The ideal human-AI partnership in Caribbean pharmacy uses AI for technical tasks (data processing, interaction checking, inventory forecasting) so pharmacy staff can dedicate more time and energy to the personal, culturally sensitive, human-centred aspects of patient care that Caribbean patients expect and deserve.",
+    "order_index": 6,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "evaluate"
+  },
+  {
+    "id": "28960bc3-dd5f-48bf-b535-e330afe76b20",
+    "module_id": "de3922e4-c680-4c74-9283-4ffb9c806bc5",
+    "question": "Which types of AI bias are particularly relevant to Caribbean patient populations? Select ALL that apply.",
+    "options": [
+      "Training data bias from predominantly Caucasian clinical trials",
+      "Measurement bias in devices less accurate on darker skin tones",
+      "Language bias in NLP models trained on American/British English",
+      "Representation bias missing tropical disease presentations",
+      "Colour bias in pharmacy interior design"
+    ],
+    "correct_answer": 0,
+    "explanation": "Training data bias, measurement bias (e.g., pulse oximeters), language bias (Caribbean English and Creole), and representation bias (missing tropical diseases) are all directly relevant to Caribbean patient populations. Interior design colour preferences have no relevance to AI bias in healthcare.",
+    "order_index": 7,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "analyze"
+  }
+]

@@ -1,0 +1,124 @@
+{
+  "id": "17889e13-1548-4bfd-9d09-7dd7951ef304",
+  "module_id": "1f1768e6-a667-41f3-8cd9-025c0e02e0fb",
+  "title": "Record-Keeping Requirements for Caribbean Compounding Pharmacies",
+  "content": [
+    {
+      "text": "Records That Protect Patients and Pharmacies",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Comprehensive record-keeping is the foundation of accountable pharmacy practice, and it is especially critical in compounding, where each preparation is a unique product made without the quality assurance framework of commercial manufacturing. In the Caribbean, where regulatory inspections may be infrequent and where compounding pharmacies may operate with less oversight than their counterparts in larger pharmaceutical markets, self-discipline in record-keeping is what separates professional compounding from uncontrolled preparation.",
+      "type": "text"
+    },
+    {
+      "text": "Records Every Compounding Pharmacy Must Maintain",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "rows": [
+        [
+          "Master Formulae",
+          "Standardised, approved recipes for all compounded preparations",
+          "Indefinite (keep as long as the pharmacy continues to compound that preparation)",
+          "Preparation name, strength, ingredients, procedure, QC criteria, BUD guidelines, references"
+        ],
+        [
+          "Compounding Records (Logs)",
+          "Detailed record of each compounding event for traceability and accountability",
+          "Minimum 2 years (check local requirements — some jurisdictions require longer)",
+          "Date, patient name, prescription number, ingredients with lot numbers and expiry dates, quantities, compounder ID, pharmacist check, QC results, BUD assigned"
+        ],
+        [
+          "Ingredient Receipt and Storage Records",
+          "Track the source, quality, and storage conditions of all compounding ingredients",
+          "Minimum 2 years from the date the ingredient is used up or discarded",
+          "Supplier name, date received, ingredient name, lot number, expiry date, certificate of analysis (if available), storage conditions verified"
+        ],
+        [
+          "Equipment Calibration Records",
+          "Verify that balances, pH metres, and other equipment are accurate and maintained",
+          "Minimum 2 years or as required by local regulations",
+          "Date of calibration, equipment ID, calibration method, results, pass/fail, corrective actions, calibrator ID"
+        ],
+        [
+          "Temperature and Humidity Logs",
+          "Document environmental conditions in the compounding and storage areas",
+          "Minimum 1 year",
+          "Date, time, temperature, humidity, location, recorded by, any excursions and corrective actions"
+        ],
+        [
+          "SOP Register",
+          "Track all active SOPs, their version numbers, and review dates",
+          "Indefinite (maintain current and previous versions)",
+          "SOP number, title, version, date approved, approved by, next review date"
+        ],
+        [
+          "Training Records",
+          "Document staff competency in compounding procedures",
+          "Duration of employment + 2 years",
+          "Staff name, SOP/procedure trained on, date, trainer, assessment result"
+        ]
+      ],
+      "type": "table",
+      "caption": "Compounding Records and Their Purpose",
+      "headers": [
+        "Record",
+        "Purpose",
+        "Retention Period",
+        "Key Contents"
+      ]
+    },
+    {
+      "body": "Caribbean compounding pharmacies may use paper-based or digital record-keeping systems, or a combination of both. Digital systems offer advantages in searchability, backup, and analysis, but must be secure (password-protected, backed up regularly, compliant with data protection requirements). Paper systems are acceptable but must be maintained in a legible, organised manner — entries should be in permanent ink, errors should be crossed out with a single line (not obliterated), and corrections should be initialled and dated. Whichever system is used, the records must be accessible, complete, and available for regulatory inspection.",
+      "type": "callout",
+      "title": "Digital vs. Paper Records",
+      "variant": "info"
+    },
+    {
+      "text": "Record-Keeping Best Practices for Caribbean Pharmacies",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "type": "list",
+      "items": [
+        "Complete the compounding record in real time — during and immediately after compounding, not hours or days later from memory",
+        "Never use correction fluid (e.g., Tipp-Ex) on paper records — draw a single line through the error, write the correction, and initial and date the change",
+        "Assign a unique batch or preparation number to each compounding event for easy cross-referencing",
+        "File compounding records in chronological order for easy retrieval during inspections",
+        "Back up digital records at least weekly — consider off-site or cloud backup for hurricane resilience",
+        "Retain records for at least the minimum period required by local regulations — when in doubt, keep longer",
+        "Ensure all staff understand the importance of accurate, contemporaneous documentation — it is not bureaucracy, it is patient safety"
+      ],
+      "ordered": false
+    },
+    {
+      "type": "case-study",
+      "title": "Case Study: The Compounding Record That Saved the Pharmacy",
+      "scenario": "A community pharmacy in Port of Spain receives a complaint from a patient's doctor reporting that a compounded paediatric omeprazole suspension appears to have caused an adverse reaction in a 2-year-old patient. The pharmacy's records show: (1) the compounding record with the exact master formula used, (2) all ingredients with lot numbers and expiry dates, (3) the identity of the technician who compounded and the pharmacist who checked, (4) QC results showing the preparation passed all checks, and (5) the certificate of analysis for the omeprazole powder from the supplier. Investigation reveals that the adverse reaction was actually caused by a food allergy, not the medication. The complete compounding records enabled a thorough, rapid investigation that exonerated the pharmacy.",
+      "questions": [
+        "How did the compounding records enable the pharmacy to investigate the complaint?",
+        "What would have happened if the pharmacy had incomplete or missing records?",
+        "What additional documentation could the pharmacy maintain to further strengthen its quality assurance?"
+      ],
+      "discussion": "The complete compounding records enabled the pharmacy to trace every ingredient to its source, verify the formula and procedure used, confirm quality control results, and identify all personnel involved. Without these records, the pharmacy would have been unable to demonstrate that the preparation was made correctly, potentially facing regulatory action, legal liability, and reputational damage. This case illustrates that thorough documentation is not just a regulatory requirement — it is the pharmacy's best legal protection. Additional strengthening measures could include retaining a sample of each compounded batch for testing if a complaint arises (stability samples), and maintaining photographic records of finished preparations for comparison purposes."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "6 months",
+        "1 year",
+        "2 years",
+        "10 years"
+      ],
+      "question": "What is the minimum recommended retention period for compounding records in most Caribbean jurisdictions?",
+      "explanation": "Most Caribbean jurisdictions require compounding records to be retained for a minimum of 2 years. However, best practice is to keep records longer, especially for preparations made for paediatric patients or those with chronic conditions. When in doubt, err on the side of retaining records for a longer period. Some jurisdictions may require longer retention periods — always verify your specific local requirements.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 25
+}

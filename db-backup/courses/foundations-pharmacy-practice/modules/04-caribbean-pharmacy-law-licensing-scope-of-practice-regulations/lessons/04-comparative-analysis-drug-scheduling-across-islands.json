@@ -1,0 +1,134 @@
+{
+  "id": "712f84c8-3b42-44d7-bc87-ff78115ff54a",
+  "module_id": "260b3cfa-6a8e-4515-a5c7-46be02561533",
+  "title": "Comparative Analysis: Drug Scheduling Across Islands",
+  "content": [
+    {
+      "text": "One Drug, Three Islands, Different Rules",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "This is arguably the most critical lesson in this course. The same medication can have completely different legal classifications depending on which Caribbean island you are on. A drug that is available over the counter in one jurisdiction may require a prescription — or be entirely restricted — in another. As a pharmacy technician, you must NEVER assume that the rules you learned on one island apply on another.",
+      "type": "text"
+    },
+    {
+      "type": "island-comparison",
+      "title": "Codeine-Containing Products",
+      "islands": [
+        {
+          "flag": "🇹🇹",
+          "name": "Trinidad & Tobago",
+          "details": [
+            "Low-dose codeine compounds (e.g., codeine phosphate 8mg combined with paracetamol) — Pharmacy Only, available without prescription from a pharmacist",
+            "Higher-dose codeine preparations and pure codeine — Controlled/Dangerous Drug, strict prescription requirements",
+            "Codeine cough linctus (low concentration) — may be available as Pharmacy Only depending on formulation",
+            "Record-keeping required for all codeine sales even when not prescription-only"
+          ]
+        },
+        {
+          "flag": "🇯🇲",
+          "name": "Jamaica",
+          "details": [
+            "ALL codeine products — Prescription Only",
+            "Jamaica takes a stricter approach to codeine scheduling due to abuse concerns",
+            "No codeine-containing product may be sold without a valid prescription",
+            "Controlled drug record-keeping requirements apply to all codeine dispensing"
+          ]
+        },
+        {
+          "flag": "🇧🇧",
+          "name": "Barbados",
+          "details": [
+            "Low-dose combination products — may be available as Pharmacy Only (pharmacist's discretion)",
+            "Higher concentrations — Prescription Only",
+            "The Drug Abuse (Prevention and Control) Act governs controlled substance scheduling",
+            "Pharmacist must assess patient and exercise professional judgement for Pharmacy Only sales"
+          ]
+        }
+      ],
+      "description": "One of the most significant regulatory differences in the Caribbean."
+    },
+    {
+      "type": "island-comparison",
+      "title": "Emergency Contraception (Levonorgestrel)",
+      "islands": [
+        {
+          "flag": "🇹🇹",
+          "name": "Trinidad & Tobago",
+          "details": [
+            "Available as Pharmacy Only — sold by pharmacist without prescription",
+            "Pharmacist may provide counselling but cannot refuse on personal grounds in most circumstances",
+            "No age restriction on purchase"
+          ]
+        },
+        {
+          "flag": "🇯🇲",
+          "name": "Jamaica",
+          "details": [
+            "Available Over the Counter in pharmacies",
+            "Jamaica was one of the first Caribbean nations to deregulate emergency contraception",
+            "Public health campaigns have promoted awareness and accessibility"
+          ]
+        },
+        {
+          "flag": "🇧🇧",
+          "name": "Barbados",
+          "details": [
+            "Available without prescription from pharmacies",
+            "Pharmacist counselling may be offered but is not a barrier to sale",
+            "Considered an important public health measure"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "island-comparison",
+      "title": "Pseudoephedrine",
+      "islands": [
+        {
+          "flag": "🇹🇹",
+          "name": "Trinidad & Tobago",
+          "details": [
+            "Restricted — purchase records required",
+            "Pharmacist must log buyer information",
+            "Limits on quantity per transaction"
+          ]
+        },
+        {
+          "flag": "🇯🇲",
+          "name": "Jamaica",
+          "details": [
+            "Pharmacy Only — must be sold from a pharmacy",
+            "Government monitoring for diversion potential",
+            "May require ID for purchase"
+          ]
+        },
+        {
+          "flag": "🇧🇧",
+          "name": "Barbados",
+          "details": [
+            "Behind the counter — available without prescription but only from pharmacy",
+            "Pharmacist discretion on quantity",
+            "Increasing scrutiny due to regional diversion concerns"
+          ]
+        }
+      ],
+      "description": "A decongestant with potential for diversion to illicit methamphetamine manufacture."
+    },
+    {
+      "body": "WHEN IN DOUBT — CHECK. Drug classifications change through government gazetting, and what was true last year may not be true today. Always verify the current scheduling status of any medication you are uncertain about. Consult the most recent government gazette, your pharmacist supervisor, or the relevant national pharmacy board. Dispensing a controlled substance without proper authorisation is a criminal offence in all three jurisdictions.",
+      "type": "callout",
+      "title": "The Golden Rule",
+      "variant": "danger"
+    },
+    {
+      "type": "video-placeholder",
+      "title": "Interactive: Drug Classification Comparison Tool",
+      "duration": "10 min",
+      "description": "Use the PIXOPHARM Island Regulatory Navigator to practice looking up drug classifications across Trinidad, Jamaica, and Barbados. This interactive exercise reinforces the critical skill of checking — not assuming — before dispensing."
+    }
+  ],
+  "order_index": 4,
+  "duration_minutes": 20
+}

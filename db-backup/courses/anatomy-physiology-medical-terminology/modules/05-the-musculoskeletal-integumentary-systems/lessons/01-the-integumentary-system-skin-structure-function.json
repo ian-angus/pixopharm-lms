@@ -1,0 +1,75 @@
+{
+  "id": "4950d0a6-5d33-4956-af66-395fc67f3934",
+  "module_id": "3a33feeb-8c13-4005-b26d-ef01da03aae6",
+  "title": "The Integumentary System: Skin Structure & Function",
+  "content": [
+    {
+      "text": "The Skin: The Body's Largest Organ",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "The integumentary system — comprising the skin, hair, nails, and associated glands — is the body's largest organ system. The skin alone covers approximately 1.5-2 square metres in an adult and weighs about 3-4 kilograms. It serves as the body's first line of defence against infection, UV radiation, physical trauma, and chemical exposure. It also plays critical roles in temperature regulation, sensation (touch, pain, temperature), vitamin D synthesis, and fluid retention.",
+      "type": "text"
+    },
+    {
+      "body": "The skin has three main layers. The epidermis (outermost layer) is composed of stratified squamous epithelium and contains keratinocytes (which produce the protective protein keratin), melanocytes (which produce the pigment melanin), and Langerhans cells (immune cells). The dermis (middle layer) contains blood vessels, nerve endings, hair follicles, sweat glands, and sebaceous glands, all embedded in a matrix of collagen and elastin fibres. The hypodermis (subcutaneous layer) is composed primarily of adipose tissue and connects the skin to underlying structures.",
+      "type": "text"
+    },
+    {
+      "term": "Melanin",
+      "type": "key-term",
+      "definition": "A pigment produced by melanocytes in the epidermis that gives skin, hair, and eyes their colour. Melanin absorbs ultraviolet (UV) radiation, providing protection against UV-induced DNA damage and skin cancer. Individuals of African and Caribbean descent typically have higher melanin content, which provides greater UV protection but also reduces cutaneous vitamin D synthesis — a clinically relevant consideration in darker-skinned populations."
+    },
+    {
+      "body": "Despite living in a tropical, sun-rich environment, some Caribbean populations show surprisingly high rates of vitamin D insufficiency. Higher melanin content in darker-skinned individuals reduces the efficiency of cutaneous vitamin D synthesis. Additionally, urbanised lifestyles with indoor work and sun avoidance contribute. Pharmacy technicians should be aware that vitamin D supplementation (cholecalciferol) prescriptions are increasingly common across the Caribbean, particularly for patients with osteoporosis, chronic kidney disease, or autoimmune conditions.",
+      "type": "callout",
+      "title": "Melanin and Vitamin D in Caribbean Populations",
+      "variant": "info"
+    },
+    {
+      "rows": [
+        [
+          "Epidermis",
+          "Keratinocytes, melanocytes, Langerhans cells",
+          "Barrier function, UV protection, immune surveillance",
+          "Topical drugs must penetrate this layer; creams and ointments work here"
+        ],
+        [
+          "Dermis",
+          "Blood vessels, nerves, hair follicles, sweat and sebaceous glands",
+          "Blood supply, sensation, thermoregulation, secretion",
+          "Intradermal injections (e.g. TB test) delivered here"
+        ],
+        [
+          "Hypodermis",
+          "Adipose tissue, larger blood vessels",
+          "Insulation, shock absorption, energy storage",
+          "Subcutaneous injections (insulin, heparin) delivered here"
+        ]
+      ],
+      "type": "table",
+      "caption": "Layers of the Skin",
+      "headers": [
+        "Layer",
+        "Key Structures",
+        "Functions",
+        "Drug Delivery Relevance"
+      ]
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Hypodermis",
+        "Dermis",
+        "Epidermis",
+        "Subcutaneous tissue"
+      ],
+      "question": "Which skin layer must topical medications penetrate to be effective?",
+      "explanation": "Most topical medications (creams, ointments, lotions) must penetrate the epidermis — the outermost skin layer — to reach their site of action. The epidermis acts as a barrier; the formulation of a topical product (vehicle) is designed to enhance penetration through this barrier. Ointments generally penetrate better than creams due to their occlusive nature.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 20
+}

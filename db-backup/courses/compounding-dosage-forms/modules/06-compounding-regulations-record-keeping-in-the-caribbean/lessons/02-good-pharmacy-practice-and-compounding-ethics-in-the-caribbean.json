@@ -1,0 +1,100 @@
+{
+  "id": "2d4f66e1-bd06-41da-94d4-fdb6ebfa7d17",
+  "module_id": "1f1768e6-a667-41f3-8cd9-025c0e02e0fb",
+  "title": "Good Pharmacy Practice and Compounding Ethics in the Caribbean",
+  "content": [
+    {
+      "text": "Professional Standards for the Caribbean Compounder",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Good Pharmacy Practice (GPP) is the international framework that defines the standards of professional conduct and practice for pharmacies and pharmacy personnel. In compounding, GPP means going beyond mere regulatory compliance to embrace a culture of quality, safety, and continuous improvement. For Caribbean pharmacy technicians, GPP provides the ethical and professional foundation for every compounding decision, from ingredient selection to patient counselling on the correct use of a compounded preparation.",
+      "type": "text"
+    },
+    {
+      "text": "Core Principles of GPP Applied to Compounding",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "type": "list",
+      "items": [
+        "Patient safety first: Every compounding decision should be made with the patient's safety as the primary consideration — never cut corners, even under time pressure or cost constraints",
+        "Only compound what you are competent to prepare: If a preparation is beyond your training or experience, say so — the pharmacist should be consulted, and the preparation should be referred to a pharmacy with the necessary capability",
+        "Use quality ingredients: Only pharmaceutical-grade ingredients from reputable suppliers should be used — never food-grade or industrial-grade substitutes, even if they are cheaper",
+        "Follow validated procedures: Always compound according to an approved master formula and SOP — freelancing with formulations risks patient harm",
+        "Document everything: Complete, accurate, contemporaneous documentation is a professional obligation, not an administrative burden",
+        "Maintain your competence: Compounding science evolves — participate in continuing education, read professional literature, and update your skills regularly",
+        "Report problems: If you suspect a quality issue with a compounded preparation (or a compounding ingredient), report it immediately to the pharmacist — never conceal problems"
+      ],
+      "ordered": true
+    },
+    {
+      "text": "Ethical Dilemmas in Caribbean Compounding",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Caribbean pharmacy technicians may face ethical dilemmas unique to the region's resource-constrained environment. Should you compound a preparation using a base from a non-preferred supplier because the usual supplier is out of stock and the patient needs the medication today? Should you compound a larger-than-prescribed quantity to save the patient a return trip to the pharmacy? Should you use a vehicle that is past its expiry date because no replacement is available on the island? These are real dilemmas, and the answer is always to prioritise patient safety, consult the pharmacist, and document your reasoning.",
+      "type": "text"
+    },
+    {
+      "body": "If at any point during the compounding process you are uncertain about the safety of an ingredient, the accuracy of a calculation, the stability of a formulation, or the appropriateness of a preparation for the patient — STOP. Do not compound. Consult the pharmacist. It is always better to delay dispensing than to release a potentially unsafe preparation. This principle applies universally, but is especially important in the Caribbean, where compounded preparations often serve the most vulnerable patients (children, the elderly, those with limited access to alternative healthcare).",
+      "type": "callout",
+      "title": "When in Doubt, Do Not Compound",
+      "variant": "warning"
+    },
+    {
+      "type": "island-comparison",
+      "title": "Professional Bodies and Continuing Education",
+      "islands": [
+        {
+          "flag": "🇹🇹",
+          "name": "Trinidad & Tobago",
+          "details": [
+            "The Pharmacy Board of Trinidad and Tobago governs pharmacy practice standards",
+            "The Pharmaceutical Society of Trinidad and Tobago (PSTT) provides continuing education and professional development opportunities",
+            "COSTAATT (College of Science, Technology and Applied Arts of Trinidad and Tobago) offers pharmacy technician training",
+            "UWI Faculty of Medical Sciences offers advanced pharmaceutical science education"
+          ]
+        },
+        {
+          "flag": "🇯🇲",
+          "name": "Jamaica",
+          "details": [
+            "The Pharmacy Council of Jamaica sets professional standards and may require CPD for registration renewal",
+            "The Pharmaceutical Society of Jamaica (PSJ) organises professional conferences and continuing education",
+            "University of Technology, Jamaica (UTech) and UWI offer pharmacy education programmes",
+            "The Caribbean Association of Pharmacists (CAP) provides regional CPD opportunities"
+          ]
+        },
+        {
+          "flag": "🇧🇧",
+          "name": "Barbados",
+          "details": [
+            "The Barbados Pharmaceutical Society supports professional development for pharmacy practitioners",
+            "Queen Elizabeth Hospital pharmacy department provides in-service training for compounding technicians",
+            "UWI Cave Hill campus offers pharmacy-related courses and continuing education",
+            "CARPHA provides regional workshops on pharmaceutical quality that are relevant to compounding practice"
+          ]
+        }
+      ],
+      "description": "Pharmacy technicians across the Caribbean can access professional development and continuing education through various organisations."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Use the expired base — the patient needs the medication urgently",
+        "Refuse to compound and send the patient home without medication",
+        "Consult the pharmacist; do not use the expired ingredient; explore alternatives (sourcing from another pharmacy, contacting the prescriber for an alternative formulation)",
+        "Use the expired base but assign a shorter beyond-use date"
+      ],
+      "question": "A pharmacy technician in Jamaica discovers that the only available batch of a compounding base is past its expiry date, but a patient urgently needs the compounded preparation. What should the technician do?",
+      "explanation": "Expired ingredients must not be used in compounding, regardless of urgency. The correct action is to immediately consult the pharmacist and explore alternatives: sourcing the ingredient from another pharmacy on the island, contacting the prescriber for an alternative drug or formulation, or referring the patient to a pharmacy that has the ingredient in stock. Using expired ingredients compromises patient safety and is a violation of professional standards.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 25
+}

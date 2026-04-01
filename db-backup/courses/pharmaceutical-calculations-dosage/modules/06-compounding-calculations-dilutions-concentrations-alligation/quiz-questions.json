@@ -1,0 +1,181 @@
+[
+  {
+    "id": "54259010-b1b4-447d-98bc-72d101d0e321",
+    "module_id": "0383cbc9-9d6d-45f4-86fd-3581389860af",
+    "question": "Using the dilution formula C1V1 = C2V2, how many mL of 5% chlorhexidine are needed to prepare 2 litres of 0.05% solution?",
+    "options": [
+      "2 mL",
+      "10 mL",
+      "20 mL",
+      "100 mL"
+    ],
+    "correct_answer": 2,
+    "explanation": "V1 = (C2 × V2) / C1 = (0.05 × 2000) / 5 = 100/5 = 20 mL. Take 20 mL of 5% chlorhexidine and dilute with purified water to 2000 mL total.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "7174ddf8-bede-49a0-8822-09b984d6f39d",
+    "module_id": "0383cbc9-9d6d-45f4-86fd-3581389860af",
+    "question": "Using alligation, how many grams of 10% ointment and 2% ointment are needed to prepare 240 g of 6% ointment?",
+    "options": [
+      "120 g of 10% and 120 g of 2%",
+      "144 g of 10% and 96 g of 2%",
+      "96 g of 10% and 144 g of 2%",
+      "60 g of 10% and 180 g of 2%"
+    ],
+    "correct_answer": 0,
+    "explanation": "Grid: Higher = 10%, Lower = 2%, Desired = 6%. Parts of 10% = |6-2| = 4. Parts of 2% = |10-6| = 4. Ratio = 4:4 = 1:1. Equal parts: 120 g of 10% + 120 g of 2% = 240 g of 6%.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "abe150e6-421e-4a6c-98a2-d6cf38bfb984",
+    "module_id": "0383cbc9-9d6d-45f4-86fd-3581389860af",
+    "question": "150 mL of 8% solution is mixed with 350 mL of 3% solution. What is the final concentration?",
+    "options": [
+      "4.0%",
+      "4.5%",
+      "5.0%",
+      "5.5%"
+    ],
+    "correct_answer": 1,
+    "explanation": "Total drug = (150 × 0.08) + (350 × 0.03) = 12 + 10.5 = 22.5 g. Total volume = 500 mL. Final % = 22.5/500 × 100 = 4.5%.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "b9c6df52-7177-4ec5-a3ff-c4fb6520b678",
+    "module_id": "0383cbc9-9d6d-45f4-86fd-3581389860af",
+    "question": "True or false: When preparing a dilution, if you need 500 mL of final solution and 20 mL of concentrate, you add 500 mL of diluent to the concentrate.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": 1,
+    "explanation": "False. You add enough diluent to make the total volume 500 mL. Since you already have 20 mL of concentrate, you add 480 mL of diluent (500 - 20 = 480). Adding 500 mL of diluent would give a total volume of 520 mL, resulting in a weaker-than-intended concentration.",
+    "order_index": 3,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "10de3941-196e-44d8-b079-1eb0fe04a2af",
+    "module_id": "0383cbc9-9d6d-45f4-86fd-3581389860af",
+    "question": "To prepare a 1:10,000 solution using serial dilution, you could perform:",
+    "options": [
+      "One 1:10,000 dilution step",
+      "Two 1:100 dilution steps",
+      "Three 1:100 dilution steps",
+      "Four 1:10 dilution steps"
+    ],
+    "correct_answer": 1,
+    "explanation": "1/100 × 1/100 = 1/10,000. Two successive 1:100 dilutions achieve a 1:10,000 final dilution. While a single 1:10,000 step is theoretically possible, serial dilution is more practical for very high dilution factors.",
+    "order_index": 4,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "082cbc9d-442a-46bd-9024-8b12a83ffd51",
+    "module_id": "0383cbc9-9d6d-45f4-86fd-3581389860af",
+    "question": "A compounding formulation calls for coal tar 5% ointment. You have 10% coal tar ointment and white soft paraffin (0%). To make 200 g, how much of the 10% ointment do you need?",
+    "options": [
+      "50 g",
+      "100 g",
+      "150 g",
+      "200 g"
+    ],
+    "correct_answer": 1,
+    "explanation": "Using alligation: Parts of 10% = |5 - 0| = 5. Parts of 0% = |10 - 5| = 5. Ratio = 5:5 = 1:1. For 200 g: 100 g of 10% + 100 g of base. Verify: (100 × 10/100) / 200 × 100 = 10/200 × 100 = 5% ✓.",
+    "order_index": 5,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "e755f6ff-7717-44d2-b01b-9b9ea3e7b1e2",
+    "module_id": "0383cbc9-9d6d-45f4-86fd-3581389860af",
+    "question": "Match each compounding term with its definition.",
+    "options": [
+      "C1V1 = C2V2 — Used to determine proportions of two different concentrations",
+      "Alligation — Used for simple dilutions from a single stock",
+      "C1V1 = C2V2 — Dilution formula; Alligation — Mixing different concentrations; Serial dilution — Stepwise dilution",
+      "All three are identical methods"
+    ],
+    "correct_answer": 2,
+    "explanation": "C1V1 = C2V2 is the dilution formula for simple dilution from a single concentrated stock. Alligation is used to determine proportions when mixing two preparations of different strengths. Serial dilution involves stepwise dilution through multiple stages.",
+    "order_index": 6,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "a62e6b97-0b17-453e-93b1-49440d752be6",
+    "module_id": "0383cbc9-9d6d-45f4-86fd-3581389860af",
+    "question": "The standard beyond-use date for a compounded aqueous oral suspension stored in the refrigerator is:",
+    "options": [
+      "7 days",
+      "14 days",
+      "30 days",
+      "6 months"
+    ],
+    "correct_answer": 1,
+    "explanation": "Per USP <795> guidelines (used as reference across the Caribbean), compounded aqueous oral preparations have a 14-day beyond-use date when stored under refrigeration, unless stability data supports a longer period.",
+    "order_index": 7,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "bd6cc821-178b-4bec-b4ec-0670367bebc4",
+    "module_id": "0383cbc9-9d6d-45f4-86fd-3581389860af",
+    "question": "How many grams of active ingredient are in 150 g of a 3% w/w ointment?",
+    "options": [
+      "3 g",
+      "4.5 g",
+      "5 g",
+      "15 g"
+    ],
+    "correct_answer": 1,
+    "explanation": "3% w/w = 3 g per 100 g. For 150 g: (3/100) × 150 = 4.5 g of active ingredient.",
+    "order_index": 8,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "011eacf2-3caf-47f6-b7f6-cf83be5d28ed",
+    "module_id": "0383cbc9-9d6d-45f4-86fd-3581389860af",
+    "question": "Place the compounding verification steps in the correct order.",
+    "options": [
+      "Verify the label includes all required information",
+      "Check each ingredient name, lot number, and expiry date",
+      "Confirm the final concentration matches the intended strength",
+      "Independently recalculate all quantities",
+      "Perform physical checks — appearance, colour, consistency"
+    ],
+    "correct_answer": 0,
+    "explanation": "Correct order: (1) Check ingredients, (2) Recalculate quantities, (3) Verify concentration, (4) Physical checks, (5) Label check. This systematic approach catches errors at each stage before the product reaches the patient.",
+    "order_index": 9,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  }
+]

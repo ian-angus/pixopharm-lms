@@ -1,0 +1,82 @@
+{
+  "id": "b514e2bf-a2c7-48ac-b73b-42c93faac043",
+  "module_id": "8655a4bb-6786-4c6f-8c79-df8a5e077ff3",
+  "title": "Controlled Substances: Opioids & Dispensing Responsibilities",
+  "content": [
+    {
+      "text": "Opioids in Caribbean Practice",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Unlike North America, the Caribbean has not experienced an opioid epidemic on the same scale. Opioid prescribing is generally more conservative, and strong opioids are typically restricted to hospital settings. However, codeine-containing products are widely available (sometimes OTC) and tramadol prescribing has increased. Understanding controlled substance regulations and appropriate opioid dispensing is essential.",
+      "type": "text"
+    },
+    {
+      "term": "Opioid",
+      "type": "key-term",
+      "definition": "A class of drugs that bind to opioid receptors (mu, kappa, delta) in the CNS and GI tract to produce analgesia, euphoria, respiratory depression, and constipation. Includes natural opiates (morphine, codeine), semi-synthetic (oxycodone, hydromorphone), and synthetic (tramadol, fentanyl) agents."
+    },
+    {
+      "body": "Key counselling points for opioid dispensing: warn about drowsiness (no driving), constipation (recommend a laxative for regular use), risk of dependence with prolonged use, and the danger of combining opioids with alcohol or benzodiazepines. For codeine products, counsel that codeine is converted to morphine in the body — some patients are 'ultra-rapid metabolisers' who convert more codeine to morphine, increasing the risk of toxicity.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Schedule 1 (most restricted)",
+          "Heroin, LSD, cannabis (in most territories)",
+          "No legitimate medical use; cannot be dispensed"
+        ],
+        [
+          "Schedule 2 (high potential for abuse)",
+          "Morphine, fentanyl, oxycodone, methylphenidate",
+          "Written prescription only; locked storage; register entry required"
+        ],
+        [
+          "Schedule 3 (moderate potential)",
+          "Codeine combinations (e.g., codeine/paracetamol), tramadol",
+          "Prescription required in most territories; some OTC restrictions"
+        ],
+        [
+          "Schedule 4 (lower potential)",
+          "Benzodiazepines (diazepam, alprazolam)",
+          "Prescription required; refill limits may apply"
+        ]
+      ],
+      "type": "table",
+      "caption": "Controlled Substance Schedules in the Caribbean",
+      "headers": [
+        "Category",
+        "Examples",
+        "Dispensing Requirements"
+      ]
+    },
+    {
+      "body": "Codeine is a prodrug that requires CYP2D6 to convert it to morphine. Approximately 1-2% of Caribbean populations are ultra-rapid CYP2D6 metabolisers who convert codeine to morphine much faster and more extensively than normal. These individuals are at increased risk of morphine toxicity even at standard doses. This is particularly dangerous in breastfeeding mothers and children.",
+      "type": "callout",
+      "title": "Codeine and CYP2D6 Ultra-Rapid Metabolisers",
+      "variant": "warning"
+    },
+    {
+      "body": "Caribbean pharmacy laws require strict documentation for controlled substances. Every dispensing must be recorded in the controlled drugs register: patient name, prescriber details, drug name, strength, quantity, and date. The pharmacy technician is often responsible for maintaining these records accurately.",
+      "type": "callout",
+      "title": "Controlled Substance Record-Keeping",
+      "variant": "info"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Tramadol with paracetamol",
+        "Tramadol with an SSRI (risk of serotonin syndrome)",
+        "Tramadol with amlodipine",
+        "Tramadol with metformin"
+      ],
+      "question": "When dispensing tramadol, which drug interaction should be flagged to the pharmacist?",
+      "explanation": "Tramadol has serotonergic activity and combining it with SSRIs or SNRIs increases the risk of serotonin syndrome — a potentially fatal condition characterised by agitation, tremor, hyperthermia, and hyperreflexia.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 3,
+  "duration_minutes": 20
+}

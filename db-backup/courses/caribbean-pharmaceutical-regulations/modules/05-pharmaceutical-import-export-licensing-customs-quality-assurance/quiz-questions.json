@@ -1,0 +1,180 @@
+[
+  {
+    "id": "50eb5383-2b74-430b-a1b3-15852e25e658",
+    "module_id": "b9e56c17-da7d-48e1-93c3-f737c5c8ff4c",
+    "question": "What document certifies the registration status and GMP compliance of a pharmaceutical product in its country of origin?",
+    "options": [
+      "Certificate of Analysis (CoA)",
+      "Certificate of Pharmaceutical Product (CPP)",
+      "Bill of Lading",
+      "Import Licence"
+    ],
+    "correct_answer": 1,
+    "explanation": "The WHO Certificate of Pharmaceutical Product (CPP) certifies the product's registration status and manufacturing GMP compliance in the exporting country. The CoA reports quality testing results for a specific batch.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "6fe194d3-92c8-48f3-8a69-3ae7816bb524",
+    "module_id": "b9e56c17-da7d-48e1-93c3-f737c5c8ff4c",
+    "question": "What is the correct temperature range for storing refrigerated pharmaceutical products?",
+    "options": [
+      "-25°C to -10°C",
+      "2°C to 8°C",
+      "8°C to 15°C",
+      "15°C to 25°C"
+    ],
+    "correct_answer": 1,
+    "explanation": "Refrigerated pharmaceutical products (including insulin, many vaccines, and certain eye drops) must be stored at 2°C to 8°C. Frozen products require -25°C to -10°C, cool products 8°C to 15°C, and controlled room temperature 15°C to 25°C.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "4d405b61-3ea4-4848-94b9-672e3e71b6c0",
+    "module_id": "b9e56c17-da7d-48e1-93c3-f737c5c8ff4c",
+    "question": "Which of the following are quality assurance measures applied at the point of pharmaceutical importation?",
+    "options": [
+      "Visual inspection of packaging and labelling",
+      "Verifying CPP and Certificate of Analysis",
+      "Reviewing temperature data logger records",
+      "Checking batch numbers against recall databases",
+      "Conducting clinical trials on imported products"
+    ],
+    "correct_answer": 0,
+    "explanation": "QA measures at import include visual inspection, document verification (CPP, CoA), temperature record review, and recall database cross-referencing. Clinical trials are conducted during development, not at import.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "1b1970e5-b6c1-421e-b499-487774451dd1",
+    "module_id": "b9e56c17-da7d-48e1-93c3-f737c5c8ff4c",
+    "question": "A cold chain break during customs clearance can render insulin useless without any visible change to the product.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": 0,
+    "explanation": "True. Insulin and many other biologics can lose potency when exposed to temperatures outside their specified range, and this degradation is not visible. The product may appear normal but fail to provide therapeutic benefit — making cold chain breaks particularly dangerous.",
+    "order_index": 3,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "c8350170-2630-4f95-bae4-1dbb7840fef8",
+    "module_id": "b9e56c17-da7d-48e1-93c3-f737c5c8ff4c",
+    "question": "Arrange the customs clearance steps for a pharmaceutical shipment in the correct order.",
+    "options": [
+      "Customs physical inspection",
+      "Pre-arrival notification to customs and health ministry",
+      "Release to importer's warehouse",
+      "Document submission to customs",
+      "Duty assessment and payment"
+    ],
+    "correct_answer": 0,
+    "explanation": "The correct order is: (1) Pre-arrival notification, (2) Document submission, (3) Customs physical inspection, (4) Duty assessment, (5) Release to warehouse.",
+    "order_index": 4,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "hard",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "84a86935-9313-43b6-8684-4601a4a19d7b",
+    "module_id": "b9e56c17-da7d-48e1-93c3-f737c5c8ff4c",
+    "question": "Match each document with its purpose in pharmaceutical importation.",
+    "options": [
+      "CPP",
+      "CoA",
+      "Import Licence",
+      "Data Logger Record"
+    ],
+    "correct_answer": 0,
+    "explanation": "Each document serves a distinct purpose: the CPP confirms regulatory standing abroad, the CoA confirms batch quality, the import licence authorises importation, and data logger records verify cold chain integrity.",
+    "order_index": 5,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "16659005-71e1-46e1-83db-87ba0b3300b8",
+    "module_id": "b9e56c17-da7d-48e1-93c3-f737c5c8ff4c",
+    "question": "A shipment of vaccines arrives at the Port of Spain seaport. The data logger shows the temperature reached 12°C for 4 hours during transit. The vaccines require 2-8°C storage. As a pharmacy technician assisting with goods receipt, what should you recommend?",
+    "options": [
+      "Accept the shipment — 12°C is close enough to the required range",
+      "Quarantine the shipment and consult the manufacturer's stability data and the supervising pharmacist before making a decision",
+      "Reject the shipment outright without further investigation",
+      "Accept the shipment and place it in the refrigerator immediately to reverse the damage"
+    ],
+    "correct_answer": 1,
+    "explanation": "A temperature excursion of 12°C for 4 hours represents a cold chain breach. The shipment should be quarantined while the manufacturer's stability data is consulted to determine whether the product remains safe and effective after this specific excursion. Refrigeration cannot reverse degradation that has already occurred.",
+    "order_index": 6,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "hard",
+    "blooms_level": "evaluate"
+  },
+  {
+    "id": "5ce3e766-699c-450a-a754-21477946e427",
+    "module_id": "b9e56c17-da7d-48e1-93c3-f737c5c8ff4c",
+    "question": "The WHO estimates that up to _____% of vaccines may be wasted globally due to cold chain failures.",
+    "options": [
+      "10",
+      "25",
+      "50",
+      "75"
+    ],
+    "correct_answer": 2,
+    "explanation": "The WHO estimates that up to 50% of vaccines may be wasted globally due to cold chain failures. This staggering figure underscores the critical importance of maintaining cold chain integrity, particularly in the Caribbean's tropical climate.",
+    "order_index": 7,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "c7789d5e-61c5-49bc-8ef2-a4fca1563ffb",
+    "module_id": "b9e56c17-da7d-48e1-93c3-f737c5c8ff4c",
+    "question": "Which organisation provides the regional pharmaceutical quality testing capacity through its CaMET laboratory?",
+    "options": [
+      "OECS PPS",
+      "NIPDEC",
+      "CARPHA",
+      "PAHO"
+    ],
+    "correct_answer": 2,
+    "explanation": "CARPHA operates the Caribbean Medicines Evaluation & Testing (CaMET) laboratory, which provides regional pharmaceutical quality testing capacity. This shared resource is particularly valuable for smaller islands that lack their own testing laboratories.",
+    "order_index": 8,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "3246b478-9fd5-42c1-864d-5654c2c1990a",
+    "module_id": "b9e56c17-da7d-48e1-93c3-f737c5c8ff4c",
+    "question": "Many Caribbean governments grant duty concessions on essential medicines to reduce costs and improve patient access.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": 0,
+    "explanation": "True. Many Caribbean governments grant duty concessions or full exemptions on essential medicines, recognising that import duties increase medicine costs in a region where virtually all pharmaceuticals are imported. The WHO has recommended eliminating tariffs on essential medicines.",
+    "order_index": 9,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  }
+]

@@ -1,0 +1,181 @@
+[
+  {
+    "id": "c7dbcae4-e0f7-4346-a88e-c19a360bbc63",
+    "module_id": "1c340831-e751-43c4-9ea1-7c290cc7cbc6",
+    "question": "Which component of a medical term carries its fundamental meaning?",
+    "options": [
+      "Prefix",
+      "Suffix",
+      "Word root",
+      "Combining vowel"
+    ],
+    "correct_answer": 2,
+    "explanation": "The word root is the core component that carries the fundamental meaning of any medical term. Every medical term must contain at least one root. Prefixes and suffixes modify the root, and combining vowels aid pronunciation, but the root is the essential element.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "4611b2b4-05b8-4d56-8321-cd42fed24f0f",
+    "module_id": "1c340831-e751-43c4-9ea1-7c290cc7cbc6",
+    "question": "What does the prefix 'tachy-' mean?",
+    "options": [
+      "Slow",
+      "Fast or rapid",
+      "Painful",
+      "Large"
+    ],
+    "correct_answer": 1,
+    "explanation": "'Tachy-' means fast or rapid. It appears in terms like 'tachycardia' (rapid heart rate) and 'tachypnoea' (rapid breathing). Its opposite is 'brady-' (slow), as in 'bradycardia' (slow heart rate).",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "71be0b94-b6de-4611-9e12-4ebfa19d8a46",
+    "module_id": "1c340831-e751-43c4-9ea1-7c290cc7cbc6",
+    "question": "The drug name stem '-pril' identifies which class of medication?",
+    "options": [
+      "Beta-blockers",
+      "Calcium channel blockers",
+      "ACE inhibitors",
+      "Proton pump inhibitors"
+    ],
+    "correct_answer": 2,
+    "explanation": "The '-pril' stem identifies ACE (angiotensin-converting enzyme) inhibitors such as enalapril, lisinopril, and ramipril. These are among the most commonly prescribed antihypertensives in the Caribbean and appear on both CDAP (Trinidad) and NHF (Jamaica) formulary lists.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "bf715c6f-7bed-423e-8822-f407e355ccec",
+    "module_id": "1c340831-e751-43c4-9ea1-7c290cc7cbc6",
+    "question": "Deconstruct the term 'polyneuropathy'. Select ALL correct components.",
+    "options": [
+      "poly- = many (prefix)",
+      "neur/o = nerve (root)",
+      "-pathy = disease (suffix)",
+      "poly- = painful (prefix)",
+      "-pathy = study of (suffix)"
+    ],
+    "correct_answer": 0,
+    "explanation": "Polyneuropathy breaks down as: poly- (many) + neur/o (nerve) + -pathy (disease). It means disease affecting many nerves — a common complication of uncontrolled diabetes in Caribbean populations.",
+    "order_index": 3,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "analyze"
+  },
+  {
+    "id": "ca91db49-8c57-4f8e-8f7c-84bdfc8c8e65",
+    "module_id": "1c340831-e751-43c4-9ea1-7c290cc7cbc6",
+    "question": "Place the following steps for decoding an unfamiliar medical term in the correct order.",
+    "options": [
+      "Identify the suffix to determine the general category",
+      "Identify the root(s) to determine the body part or system",
+      "Identify the prefix to determine any modifiers",
+      "Combine all parts to form the complete meaning"
+    ],
+    "correct_answer": 0,
+    "explanation": "The recommended approach is to read a term backwards: (1) identify the suffix for the general category, (2) identify the root(s) for the body part, (3) identify any prefix modifiers, then (4) combine all parts into a complete meaning.",
+    "order_index": 4,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "405b0682-85c8-4f23-85e5-9c4345f08161",
+    "module_id": "1c340831-e751-43c4-9ea1-7c290cc7cbc6",
+    "question": "Match each drug name stem with its correct drug class.",
+    "options": [
+      "-olol → Beta-blocker",
+      "-statin → HMG-CoA reductase inhibitor",
+      "-sartan → Angiotensin II receptor blocker",
+      "-azole → Antifungal"
+    ],
+    "correct_answer": 0,
+    "explanation": "All matches are correct: -olol identifies beta-blockers (atenolol, metoprolol), -statin identifies HMG-CoA reductase inhibitors (atorvastatin, simvastatin), -sartan identifies ARBs (losartan, valsartan), and -azole identifies antifungal agents (fluconazole, clotrimazole).",
+    "order_index": 5,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "bd183eb9-1b14-4716-afd1-de56a717b9e7",
+    "module_id": "1c340831-e751-43c4-9ea1-7c290cc7cbc6",
+    "question": "The combining vowel is typically dropped when the suffix begins with a vowel.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": 0,
+    "explanation": "This is true. When a suffix begins with a vowel (e.g. '-itis', '-osis'), the combining vowel is usually dropped: 'hepatitis' not 'hepatoitis'. When a suffix begins with a consonant (e.g. '-scopy'), the combining vowel is retained: 'arthroscopy' not 'arthrscopy'.",
+    "order_index": 6,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "a11f670c-dae1-4021-96fb-629f58c56b97",
+    "module_id": "1c340831-e751-43c4-9ea1-7c290cc7cbc6",
+    "question": "A patient brings in a prescription for 'rosuvastatin 10 mg daily'. They ask you what type of medicine it is. Based on the drug name stem, the correct response is that it is a ________ .",
+    "options": [
+      "cholesterol-lowering medication",
+      "blood pressure medication",
+      "blood sugar medication",
+      "pain medication"
+    ],
+    "correct_answer": 0,
+    "explanation": "The '-statin' stem identifies rosuvastatin as an HMG-CoA reductase inhibitor — a cholesterol-lowering medication. Other statins include atorvastatin, simvastatin, and pravastatin. These are among the most widely prescribed medications globally and are standard on Caribbean formularies.",
+    "order_index": 7,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "b4109d1b-9be9-468d-b36f-473f3cf0b865",
+    "module_id": "1c340831-e751-43c4-9ea1-7c290cc7cbc6",
+    "question": "A physician in Barbados prescribes azithromycin 500 mg for a patient with a respiratory infection. What does the '-mycin' stem tell you about this drug?",
+    "options": [
+      "It is an antifungal agent",
+      "It is an antibiotic",
+      "It is an antiviral agent",
+      "It is an anti-inflammatory agent"
+    ],
+    "correct_answer": 1,
+    "explanation": "The '-mycin' (and '-micin') stem identifies antibiotics. Azithromycin is a macrolide antibiotic commonly prescribed for respiratory tract infections, sexually transmitted infections, and travellers' diarrhoea. It is widely available across Caribbean pharmacies and appears on the Barbados National Drug Formulary.",
+    "order_index": 8,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "74df7216-7759-4600-9c31-de78f20fe0be",
+    "module_id": "1c340831-e751-43c4-9ea1-7c290cc7cbc6",
+    "question": "Which suffix means 'inflammation'?",
+    "options": [
+      "-osis",
+      "-itis",
+      "-ectomy",
+      "-pathy"
+    ],
+    "correct_answer": 1,
+    "explanation": "The suffix '-itis' means inflammation. It is one of the most common suffixes in medicine, appearing in terms like arthritis (inflammation of joints), bronchitis (inflammation of the bronchi), dermatitis (inflammation of the skin), and gastritis (inflammation of the stomach).",
+    "order_index": 9,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  }
+]

@@ -1,0 +1,180 @@
+[
+  {
+    "id": "2a9c1ce6-6e4b-486a-866b-e3109c3f41f6",
+    "module_id": "6adf744f-6b1b-43dd-ab82-6ccf2046ca79",
+    "question": "What is the primary goal of cultural competence in pharmacy practice?",
+    "options": [
+      "To learn every language spoken in the Caribbean",
+      "To provide respectful, effective care adapted to each patient's cultural, social, and linguistic needs",
+      "To avoid interacting with patients from unfamiliar cultural backgrounds",
+      "To convince patients to abandon traditional health practices"
+    ],
+    "correct_answer": 1,
+    "explanation": "Cultural competence aims to deliver healthcare that is respectful, effective, and adapted to individual patients' cultural contexts. It is not about mastering every language or convincing patients to abandon their traditions, but about providing safe, effective care within the framework of their beliefs.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "d69a36e3-7cd2-4c59-9b64-70211bef1d99",
+    "module_id": "6adf744f-6b1b-43dd-ab82-6ccf2046ca79",
+    "question": "A patient on warfarin is drinking daily moringa tea. What is the primary concern?",
+    "options": [
+      "Moringa tea is expensive and wasteful",
+      "Moringa has high vitamin K content, which may counteract warfarin's anticoagulant effect",
+      "Moringa causes liver failure in all patients",
+      "Moringa interacts with all medications equally"
+    ],
+    "correct_answer": 1,
+    "explanation": "Moringa is rich in vitamin K, which directly antagonises warfarin. High vitamin K intake can reduce warfarin's effectiveness, increasing the patient's risk of blood clots. This is one of the most clinically significant herb-drug interactions in Caribbean pharmacy practice.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "e952baf2-90aa-4b7b-bbf9-b548b20de7bd",
+    "module_id": "6adf744f-6b1b-43dd-ab82-6ccf2046ca79",
+    "question": "In Jamaica, approximately what percentage of patients use herbal remedies alongside prescribed medications?",
+    "options": [
+      "About 20%",
+      "About 45%",
+      "About 73%",
+      "About 95%"
+    ],
+    "correct_answer": 2,
+    "explanation": "A landmark Jamaican study found that approximately 73% of patients used at least one herbal remedy alongside prescribed medications, but only 30% had disclosed this to a healthcare provider. This disclosure gap is a major patient safety concern in the Caribbean.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "270e20b7-f0f4-4de1-a316-803957167e67",
+    "module_id": "6adf744f-6b1b-43dd-ab82-6ccf2046ca79",
+    "question": "What does the 'L' in the LEARN cultural assessment model stand for?",
+    "options": [
+      "Lead the conversation",
+      "Listen with sympathy and understanding to the patient's perception of the problem",
+      "Look up the patient's cultural background in a database",
+      "Limit the interaction to clinical facts only"
+    ],
+    "correct_answer": 1,
+    "explanation": "The L in LEARN stands for Listen — specifically, listening with sympathy and understanding to the patient's own perception of their health problem, its cause, and their preferred treatment. This is the essential first step in cross-cultural communication.",
+    "order_index": 3,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "ec6e61b4-3b35-4aea-9640-7a4b506bca95",
+    "module_id": "6adf744f-6b1b-43dd-ab82-6ccf2046ca79",
+    "question": "A Hindu patient on metformin for diabetes tells you he will fast for nine days during Navratri, eating only fruits. What is the PRIMARY clinical concern?",
+    "options": [
+      "The patient may gain weight from eating too much fruit",
+      "Metformin combined with significantly reduced caloric intake increases the risk of hypoglycaemia",
+      "Fruits will interact chemically with metformin",
+      "There are no clinical concerns with this fast"
+    ],
+    "correct_answer": 1,
+    "explanation": "Metformin, especially when combined with other diabetes medications, can cause dangerously low blood sugar (hypoglycaemia) when caloric intake is significantly reduced during fasting. A nine-day fruit-only fast creates a real risk that must be addressed through pharmacist consultation, potential dose adjustment, and careful blood sugar monitoring.",
+    "order_index": 4,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "hard",
+    "blooms_level": "analyze"
+  },
+  {
+    "id": "f98012a8-b357-4f18-967f-994aaec90dbb",
+    "module_id": "6adf744f-6b1b-43dd-ab82-6ccf2046ca79",
+    "question": "Why do many Muslim and Hindu patients have concerns about gelatin capsules?",
+    "options": [
+      "Gelatin is an allergen",
+      "Porcine gelatin is prohibited in Islam (haram) and bovine gelatin may concern Hindu patients whose faith reveres cows",
+      "Gelatin capsules are more expensive than tablets",
+      "Gelatin capsules dissolve too quickly"
+    ],
+    "correct_answer": 1,
+    "explanation": "Many capsule shells are made from porcine (pig) gelatin, which is haram in Islam, or bovine (cow) gelatin, which concerns Hindu patients whose faith reveres the cow. Pharmacy professionals should be aware of capsule compositions and explore vegetarian (HPMC) alternatives when available.",
+    "order_index": 5,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "ccb8b0c1-9232-4143-b941-e82b49fe6d56",
+    "module_id": "6adf744f-6b1b-43dd-ab82-6ccf2046ca79",
+    "question": "A Rastafarian patient prefers natural remedies over pharmaceutical medications. Which response best demonstrates cultural competence?",
+    "options": [
+      "Tell the patient their beliefs are wrong and they must take the medication",
+      "Respect their autonomy, provide evidence-based information about both options, and explore natural alternatives where clinically safe",
+      "Refuse to serve the patient until they agree to take conventional medication",
+      "Pretend to agree with their beliefs while secretly adding medication to their herbal remedy"
+    ],
+    "correct_answer": 1,
+    "explanation": "Cultural competence respects patient autonomy while ensuring they have accurate information to make informed decisions. The pharmacy professional should neither coerce the patient into conventional treatment nor endorse potentially unsafe alternatives. The goal is informed choice within a framework of clinical safety.",
+    "order_index": 6,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "f91e084d-f7da-4b77-ace3-4ed512a430e4",
+    "module_id": "6adf744f-6b1b-43dd-ab82-6ccf2046ca79",
+    "question": "During Ramadan, a Muslim patient asks how to manage their twice-daily medication when they cannot eat or drink between sunrise and sunset. Place the following steps in the correct counselling order.",
+    "options": [
+      "Listen to the patient's fasting schedule and understand Suhoor and Iftar meal times",
+      "Explain that the medication can be shifted to pre-dawn and post-sunset meals",
+      "Consult the pharmacist about any medications requiring consistent spacing or hydration",
+      "Negotiate a modified dosing plan that respects the fast while maintaining medication effectiveness"
+    ],
+    "correct_answer": 0,
+    "explanation": "The correct order follows the LEARN model: first listen to understand the patient's specific fasting schedule, then explain the clinical considerations, consult the pharmacist for clinical approval, and negotiate a mutually acceptable modified dosing plan.",
+    "order_index": 7,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "hard",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "f317e69d-8330-4ce7-b0a8-152b6ce3d342",
+    "module_id": "6adf744f-6b1b-43dd-ab82-6ccf2046ca79",
+    "question": "Match each Caribbean bush remedy with its primary drug interaction concern.",
+    "options": [
+      "Turmeric (curcumin)",
+      "Soursop leaf tea",
+      "Senna pods/tea",
+      "Neem"
+    ],
+    "correct_answer": 0,
+    "explanation": "Turmeric enhances warfarin's anticoagulant effect; soursop may lower blood pressure and blood sugar alongside prescribed medications; chronic senna use depletes potassium (dangerous with digoxin/diuretics); neem may lower blood sugar and affect liver enzymes altering drug metabolism.",
+    "order_index": 8,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "hard",
+    "blooms_level": "analyze"
+  },
+  {
+    "id": "addebd11-1146-420c-8ea7-4ccea7484076",
+    "module_id": "6adf744f-6b1b-43dd-ab82-6ccf2046ca79",
+    "question": "True or false: The best approach to traditional medicine in Caribbean pharmacy is to forbid patients from using bush remedies.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": 1,
+    "explanation": "False. Forbidding bush remedies is both impractical and counterproductive. Patients will continue using them but will stop disclosing their use, creating a hidden safety risk. The evidence-based approach is integration: acknowledge, assess for interactions, counsel on safe use, and document. Respect and safety work together, not against each other.",
+    "order_index": 9,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "understand"
+  }
+]

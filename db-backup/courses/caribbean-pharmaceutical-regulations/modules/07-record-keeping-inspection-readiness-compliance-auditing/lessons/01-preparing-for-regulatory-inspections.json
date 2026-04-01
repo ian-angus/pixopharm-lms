@@ -1,0 +1,111 @@
+{
+  "id": "c7813372-1b5f-40f3-ac8e-0327f62ee449",
+  "module_id": "3ae651ec-d517-49a5-b470-2e80076fafe1",
+  "title": "Preparing for Regulatory Inspections",
+  "content": [
+    {
+      "text": "The Inspector Is Coming — Are You Ready?",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Regulatory inspections are a fact of pharmacy life. Drug inspectors, pharmacy board officers, or ministry of health representatives may arrive at your pharmacy with little or no advance notice to verify compliance with the law. While inspections can feel stressful, a pharmacy that maintains continuous compliance — rather than scrambling to prepare when an inspection is announced — will find the process straightforward and even beneficial.",
+      "type": "text"
+    },
+    {
+      "body": "The key principle is inspection readiness. This means operating every day as if an inspector could walk through the door at any moment — because they can. Inspection readiness is not about last-minute document preparation or hasty clean-up; it is about embedding compliance into daily operations so that your pharmacy is always in a state of readiness.",
+      "type": "text"
+    },
+    {
+      "text": "What Inspectors Typically Check",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "type": "list",
+      "items": [
+        "Pharmacy licence: current and displayed in a visible location",
+        "Pharmacist registration: the supervising pharmacist's certificate is current and accessible",
+        "Controlled substance safe: locked, secure, properly positioned; register up to date with accurate running balances",
+        "Prescription records: filed, accessible, and complete for the required retention period",
+        "Temperature records: daily logs for refrigerators and storage areas; evidence of corrective actions for excursions",
+        "Drug storage conditions: proper shelving, FIFO (First In, First Out) stock rotation, no expired products on shelves",
+        "Labelling compliance: all dispensed medications properly labelled with required information",
+        "Cleanliness and hygiene: premises clean, pest-free, and maintained to professional standards",
+        "Staff qualifications: evidence that all staff working in dispensing hold appropriate qualifications or operate under proper supervision",
+        "Standard Operating Procedures (SOPs): written SOPs available and evidence that staff are trained on them"
+      ],
+      "ordered": false
+    },
+    {
+      "body": "During a regulatory inspection, the pharmacy technician may be asked to locate records, demonstrate procedures, or answer questions about their work. Respond honestly, politely, and directly. If you do not know the answer to a question, say so — never guess or fabricate information. Refer technical or legal questions to the supervising pharmacist. Your professionalism during an inspection reflects directly on the pharmacy.",
+      "type": "callout",
+      "title": "The Technician's Role During Inspections",
+      "variant": "tip"
+    },
+    {
+      "rows": [
+        [
+          "Record refrigerator and room temperatures",
+          "Twice daily (morning and afternoon)",
+          "Assigned pharmacy technician"
+        ],
+        [
+          "Verify controlled substance safe is locked",
+          "Each time safe is accessed; end-of-day check",
+          "Pharmacist and technician"
+        ],
+        [
+          "Check shelves for expired products",
+          "Daily visual check; weekly comprehensive check",
+          "Pharmacy technician"
+        ],
+        [
+          "Ensure pharmacy licence is displayed",
+          "Visual check during opening procedures",
+          "Opening staff member"
+        ],
+        [
+          "File prescriptions and delivery records",
+          "Daily filing; no backlog beyond 24 hours",
+          "Pharmacy technician"
+        ],
+        [
+          "Update controlled substance register",
+          "Immediately upon each transaction",
+          "Pharmacist (with technician assistance)"
+        ]
+      ],
+      "type": "table",
+      "caption": "Inspection Readiness Checklist — Daily Actions",
+      "headers": [
+        "Action",
+        "Frequency",
+        "Responsible"
+      ]
+    },
+    {
+      "body": "Common inspection findings in Caribbean pharmacies include: expired products remaining on shelves, incomplete temperature monitoring records, controlled substance register discrepancies, missing or outdated SOPs, and insufficient evidence of staff training. All of these are preventable through disciplined daily operations and a culture of compliance.",
+      "type": "text"
+    },
+    {
+      "term": "Inspection Readiness",
+      "type": "key-term",
+      "definition": "A state of continuous operational compliance in which a pharmacy maintains all records, procedures, and facilities to the standard required by law at all times — not merely when an inspection is anticipated. Inspection readiness is achieved through embedded daily compliance practices rather than episodic preparation."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Preparing documents quickly when you learn an inspector is coming",
+        "Operating every day as if an inspector could arrive at any moment",
+        "Only allowing inspections by appointment",
+        "Keeping compliance documents in a locked office that inspectors cannot access"
+      ],
+      "question": "What is the fundamental principle of inspection readiness?",
+      "explanation": "Inspection readiness means operating every day as if an inspector could walk through the door at any moment — because they can. This is achieved by embedding compliance into daily operations rather than relying on last-minute preparation.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 25
+}

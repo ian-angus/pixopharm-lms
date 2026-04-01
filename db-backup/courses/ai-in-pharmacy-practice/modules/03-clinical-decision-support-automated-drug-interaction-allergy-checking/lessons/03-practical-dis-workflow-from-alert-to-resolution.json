@@ -1,0 +1,68 @@
+{
+  "id": "1b92adcc-2d09-471e-96ac-6d74f96fe1f5",
+  "module_id": "82cf2650-5f9f-4f8f-9460-cd77a32d431e",
+  "title": "Practical DIS Workflow: From Alert to Resolution",
+  "content": [
+    {
+      "text": "The Complete Interaction Alert Workflow",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Knowing what to do when a drug interaction alert appears — from the moment it flashes on your screen to its final resolution — is a core competency for pharmacy technicians. This lesson walks you through the complete workflow using a structured approach that ensures patient safety while maintaining efficient dispensary operations.",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "STOP: Do not click past the alert. Read it completely, noting the severity level, the interacting medications, and the clinical consequence described.",
+        "ASSESS: Determine the severity level. Is it contraindicated (red), major (orange), moderate (yellow), or minor (green)?",
+        "CHECK: Look at the patient profile. Is this a new combination or have they been on both medications before? Check dispensing history.",
+        "ESCALATE: For contraindicated and major interactions, immediately inform the pharmacist. Do not attempt to resolve these independently.",
+        "DOCUMENT: Record the alert, the action taken, and the outcome in the patient record and in the pharmacy's interaction log.",
+        "COMMUNICATE: Ensure the resolution is communicated to the patient (if counselling is needed) and to the prescriber (if the prescription was modified)."
+      ],
+      "ordered": true
+    },
+    {
+      "type": "case-study",
+      "title": "Case Study: The Warfarin-Antibiotic Alert",
+      "scenario": "Mrs. Persad, a 68-year-old patient at your pharmacy in San Fernando, Trinidad, presents a new prescription for Clarithromycin 500mg BD for a respiratory infection. She is a regular patient who has been taking Warfarin 5mg daily for atrial fibrillation for three years. When you enter the Clarithromycin, the DIS system flags a Major (Level 2) interaction: 'Clarithromycin significantly increases Warfarin effect. Risk of serious haemorrhage. Consider alternative antibiotic (e.g., Azithromycin) or increase INR monitoring frequency.' Mrs. Persad is anxious to get her antibiotics and start feeling better. She says her doctor knows about her Warfarin.",
+      "questions": [
+        "What is your immediate action upon seeing this alert?",
+        "Should you dispense the Clarithromycin based on Mrs. Persad's statement that her doctor is aware?",
+        "What alternative workflow would ensure patient safety while minimising delay?"
+      ],
+      "discussion": "The correct workflow: (1) Stop and read the full alert. (2) Inform Mrs. Persad that you need the pharmacist to review the prescription for safety — this is routine and protects her. (3) Present the alert to the pharmacist with the patient's full medication profile. The pharmacist may call the prescriber to suggest Azithromycin as an alternative (which has minimal Warfarin interaction) or, if Clarithromycin is specifically needed, arrange increased INR monitoring. Mrs. Persad's statement that her doctor 'knows about the Warfarin' is reassuring but does not replace the DIS alert workflow — the prescriber may not have checked the specific interaction."
+    },
+    {
+      "body": "'Mrs. Persad, I need to have the pharmacist take a quick look at this prescription before I can prepare it. It is a routine safety check that we do for all our patients — especially our regulars that we care about. It should only take a few minutes. Can I get you a seat while you wait?'",
+      "type": "callout",
+      "title": "Communication Script",
+      "variant": "tip"
+    },
+    {
+      "body": "Notice the communication approach: reassuring, professional, patient-centred. Never say 'the computer flagged a problem' or 'there is a drug interaction' to the patient — this can cause unnecessary alarm. Use language like 'routine safety check' and 'the pharmacist wants to review this' to maintain confidence while ensuring the alert is properly assessed.",
+      "type": "text"
+    },
+    {
+      "term": "INR (International Normalised Ratio)",
+      "type": "key-term",
+      "definition": "A blood test that measures how long it takes blood to clot, used to monitor Warfarin therapy. A high INR means blood is too thin (bleeding risk); a low INR means the Warfarin is not effective enough (clotting risk). The target range is typically 2.0–3.0 for most indications."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Accept the patient's statement and dispense the medication",
+        "Refuse to fill the prescription entirely",
+        "Acknowledge the patient's input but still have the pharmacist review the alert before dispensing",
+        "Tell the patient the computer is wrong and override the alert"
+      ],
+      "question": "A patient says 'my doctor already knows about the interaction' when you pause to review a Major drug interaction alert. What is the correct response?",
+      "explanation": "A patient's statement about their doctor's awareness does not replace the pharmacist review process. The correct approach is to acknowledge what the patient has said, reassure them, and still have the pharmacist assess the interaction. The prescriber may have overlooked the specific interaction, or the pharmacist may identify a safer alternative or monitoring plan.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 3,
+  "duration_minutes": 20
+}

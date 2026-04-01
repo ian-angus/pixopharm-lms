@@ -1,0 +1,179 @@
+{
+  "id": "6adde72b-4c7b-48c3-8080-e3c766cfab10",
+  "module_id": "ec614d8d-d8c6-43ec-ba3c-eecdee20cbb6",
+  "title": "Discrepancy Management, Destruction & Inspection Readiness",
+  "content": [
+    {
+      "text": "When the Numbers Don't Add Up",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Despite the most meticulous record-keeping, discrepancies in controlled substance balances can occur. A discrepancy means that the physical count of a controlled substance does not match the balance recorded in the Controlled Substance Register. This is a serious matter that requires immediate investigation and documentation.",
+      "type": "text"
+    },
+    {
+      "body": "Discrepancies can arise from innocent causes — mathematical errors in the register, measurement inaccuracies, or documentation omissions. However, they can also indicate diversion (theft for personal use or illegal sale), which is a criminal offence. Because regulators cannot distinguish innocent errors from diversion without investigation, all discrepancies must be treated as serious incidents.",
+      "type": "text"
+    },
+    {
+      "text": "Discrepancy Response Protocol",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "type": "list",
+      "items": [
+        "Stop — do not attempt to 'fix' the discrepancy by adjusting records",
+        "Recount — perform a second physical count, preferably with a witness",
+        "Recheck — review all register entries since the last verified balance for mathematical or documentation errors",
+        "Report — immediately notify the supervising pharmacist",
+        "Document — record the discrepancy, the investigation steps taken, and the findings",
+        "Report externally — the pharmacist must report unresolved discrepancies to the regulatory authority within the mandated timeframe (typically 24-48 hours)",
+        "Investigate — the regulatory authority may conduct its own investigation, including interviews, security camera review, and forensic audit of records"
+      ],
+      "ordered": true
+    },
+    {
+      "body": "If you discover a discrepancy during a physical count, never alter the register to match the count or vice versa without a proper investigation. Unexplained adjustments are themselves evidence of potential impropriety and can result in prosecution. Always follow your pharmacy's discrepancy protocol and ensure the supervising pharmacist is immediately informed.",
+      "type": "callout",
+      "title": "Never 'Correct' a Discrepancy Without Investigation",
+      "variant": "warning"
+    },
+    {
+      "text": "Destruction of Controlled Substances",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Expired, damaged, or unclaimed controlled substances must be destroyed according to strict regulatory protocols. In most Caribbean jurisdictions, destruction must be witnessed by an authorised person — typically a drug inspector, police officer, or other designated authority. The destruction process, including the identity of the substances, quantities, method of destruction, and the names of all witnesses, must be documented and the records retained.",
+      "type": "text"
+    },
+    {
+      "body": "Pharmacy technicians may assist in preparing controlled substances for destruction — counting, listing, and packaging — but the actual destruction event must be carried out in the presence of the required witnesses and documented by the supervising pharmacist.",
+      "type": "text"
+    },
+    {
+      "term": "Diversion",
+      "type": "key-term",
+      "definition": "The illegal channelling of controlled substances from their legitimate medical or pharmaceutical purpose to illicit use. Diversion can occur at any point in the supply chain — from manufacturer to distributor to pharmacy to patient. It includes theft by healthcare workers, forged prescriptions, and 'doctor shopping' to obtain multiple prescriptions."
+    },
+    {
+      "type": "scenario-simulation",
+      "nodes": [
+        {
+          "id": "start",
+          "text": "You count the morphine 10mg tablets and find 47 tablets, but the register shows a balance of 50. The pharmacist has stepped out for 10 minutes. What is your first action?",
+          "choices": [
+            {
+              "label": "Adjust the register to show 47 to make it match",
+              "feedback": "Never adjust the register to match a discrepant count. This is itself a regulatory violation and could be considered evidence of tampering.",
+              "nextNodeId": "adjust-bad"
+            },
+            {
+              "label": "Recount the tablets carefully and check if any were misplaced",
+              "feedback": "Correct first step. Always recount before escalating, but never try to resolve the discrepancy by altering records.",
+              "isOptimal": true,
+              "nextNodeId": "recount"
+            },
+            {
+              "label": "Call the police immediately",
+              "feedback": "While police involvement may eventually be needed, it is premature to call them before recounting and notifying the supervising pharmacist.",
+              "nextNodeId": "police-premature"
+            }
+          ]
+        },
+        {
+          "id": "adjust-bad",
+          "text": "You adjust the register to show 47 tablets. However, a drug inspector arrives for an unannounced inspection the following morning and notices the alteration.",
+          "isEnd": true,
+          "outcome": "failure",
+          "summary": "Altering the register without investigation is a serious regulatory violation. The inspector will document the unauthorised adjustment, which may be treated as evidence of diversion or cover-up. Both you and the pharmacist face potential criminal charges and professional sanctions."
+        },
+        {
+          "id": "recount",
+          "text": "You recount carefully and still find 47 tablets. You check the immediate dispensing area and controlled substance cabinet but find no misplaced tablets. The register arithmetic appears correct. What do you do next?",
+          "choices": [
+            {
+              "label": "Wait for the pharmacist to return and report the discrepancy immediately",
+              "feedback": "Correct. The supervising pharmacist must be notified immediately of any unresolved controlled substance discrepancy.",
+              "isOptimal": true,
+              "nextNodeId": "report-pharmacist"
+            },
+            {
+              "label": "Check yesterday's prescriptions to see if a dispensing was not recorded",
+              "feedback": "Reviewing records is a reasonable investigative step, but it should be done after notifying the pharmacist — not as a substitute for reporting.",
+              "nextNodeId": "check-records"
+            },
+            {
+              "label": "Assume it was a counting error yesterday and move on",
+              "feedback": "Never assume a discrepancy is innocent without investigation. An unexplained shortage of 3 morphine tablets must be formally investigated and documented.",
+              "nextNodeId": "assume-bad"
+            }
+          ]
+        },
+        {
+          "id": "police-premature",
+          "text": "Police arrive and find the pharmacy in disarray from the premature report. The pharmacist returns and is alarmed. Upon investigation, the 3 tablets are found to have been dispensed to a patient but the register entry was accidentally skipped.",
+          "isEnd": true,
+          "outcome": "partial",
+          "summary": "While your concern was valid, calling police before basic investigation steps wasted resources and caused unnecessary alarm. The proper sequence is: recount, notify pharmacist, investigate documentation, then report externally if the discrepancy remains unresolved."
+        },
+        {
+          "id": "report-pharmacist",
+          "text": "The pharmacist returns and you report the 3-tablet discrepancy. Together, you review the day's dispensing records and discover that a dispensing of 3 morphine 10mg tablets was made at 2:15 PM but the register entry was inadvertently skipped. The prescription, patient counselling record, and till receipt all confirm the dispensing. The pharmacist documents the finding and completes the missing register entry with an explanatory note.",
+          "isEnd": true,
+          "outcome": "success",
+          "summary": "You followed the correct protocol: recount, verify, and report to the supervising pharmacist. The investigation revealed a documentation error, not diversion. The pharmacist corrected the register with proper annotation. This is the textbook response to a controlled substance discrepancy."
+        },
+        {
+          "id": "check-records",
+          "text": "You review yesterday's prescriptions and find a potential match, but you are not certain. The pharmacist returns while you are reviewing records.",
+          "choices": [
+            {
+              "label": "Report the discrepancy and your preliminary findings to the pharmacist",
+              "feedback": "Correct. Share what you have found so far and let the pharmacist lead the formal investigation.",
+              "isOptimal": true,
+              "nextNodeId": "report-pharmacist"
+            },
+            {
+              "label": "Complete the investigation yourself before telling the pharmacist",
+              "feedback": "A technician should not conduct a controlled substance investigation alone. Report to the pharmacist immediately and assist the investigation under their supervision.",
+              "nextNodeId": "solo-investigate"
+            }
+          ]
+        },
+        {
+          "id": "assume-bad",
+          "text": "You assume it was a counting error and leave at the end of your shift. The next morning, the pharmacist discovers the discrepancy during the opening count and reports it to the regulatory authority. An investigation reveals the 3 tablets were dispensed but never recorded — but your failure to report the discrepancy when you discovered it is noted.",
+          "isEnd": true,
+          "outcome": "failure",
+          "summary": "Failing to report a controlled substance discrepancy is a serious breach of protocol. Even though the discrepancy turned out to have an innocent explanation, your failure to report it when discovered reflects poorly on your professionalism and may result in disciplinary action."
+        },
+        {
+          "id": "solo-investigate",
+          "text": "The pharmacist asks what you are doing with the controlled substance records. When you explain, she is concerned that you did not report the discrepancy to her immediately.",
+          "isEnd": true,
+          "outcome": "partial",
+          "summary": "While your initiative in checking records was commendable, controlled substance discrepancies must be reported to the supervising pharmacist immediately. The pharmacist is legally responsible and must oversee the investigation. Always report first, then assist."
+        }
+      ],
+      "title": "Scenario: Controlled Substance Discrepancy Discovery",
+      "description": "You are conducting the end-of-day physical count of controlled substances in your pharmacy in Port of Spain. You discover that the morphine 10mg tablet count is 3 tablets short of what the register shows. The pharmacist has stepped out briefly. What do you do?"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Any two pharmacy staff members",
+        "The patient who returned the medication",
+        "An authorised person such as a drug inspector or police officer",
+        "No witness is required — the pharmacist can destroy them alone"
+      ],
+      "question": "Who must typically witness the destruction of expired controlled substances in Caribbean jurisdictions?",
+      "explanation": "In most Caribbean jurisdictions, the destruction of controlled substances must be witnessed by an authorised person such as a drug inspector, police officer, or other designated authority. The destruction event must be fully documented, including the identity and quantities of substances destroyed and the names of all witnesses.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 3,
+  "duration_minutes": 30
+}

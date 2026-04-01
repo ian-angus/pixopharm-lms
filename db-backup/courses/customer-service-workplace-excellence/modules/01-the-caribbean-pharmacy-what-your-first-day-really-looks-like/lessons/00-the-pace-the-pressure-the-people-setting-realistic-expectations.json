@@ -1,0 +1,112 @@
+{
+  "id": "959d22a9-4f21-433a-b9ad-c1038ada8030",
+  "module_id": "3f5fc7a2-b1cf-4c21-830b-56e7b7de19bf",
+  "title": "The Pace, the Pressure, the People — Setting Realistic Expectations",
+  "content": [
+    {
+      "text": "What Nobody Tells You Before Your First Shift",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Your first day behind a Caribbean pharmacy counter will feel nothing like your training. The textbooks prepared you for drug names, dosage forms, and dispensing steps. They did not prepare you for the grandmother who needs her blood pressure tablets but forgot her prescription at home, the mother with a screaming toddler who needs something for fever NOW, and the line of six people behind them all watching you fumble with the computer system. Welcome to the real thing.",
+      "type": "text"
+    },
+    {
+      "body": "Caribbean pharmacies operate at a pace that is shaped by community need, not corporate efficiency targets. In Trinidad, a busy Hi-Lo or Pennywise pharmacy might see 200-300 prescriptions per day. In Jamaica, a pharmacy near a public hospital can get slammed with 50 prescriptions in the first hour after morning clinic. In Barbados, polyclinic pharmacies handle a steady stream from dawn until the doors close. The pace is relentless, and it does not care that you are new.",
+      "type": "text"
+    },
+    {
+      "body": "Do not try to be fast on your first day. Try to be correct. Speed comes with familiarity — but an error on your first shift can shake your confidence for weeks. Ask questions. Write things down. Watch how the experienced staff move. They have a rhythm, and you will find yours.",
+      "type": "callout",
+      "title": "Survival Tip for Day One",
+      "variant": "tip"
+    },
+    {
+      "term": "Workflow Rhythm",
+      "type": "key-term",
+      "definition": "The natural pace and sequence of tasks that develops in a pharmacy over time. Every pharmacy has its own rhythm, influenced by peak hours, staffing levels, prescription volume, and the community it serves. Learning the rhythm is the first step to functioning effectively."
+    },
+    {
+      "text": "The People You Will Meet",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Caribbean pharmacies are community institutions. You are not simply dispensing tablets — you are serving neighbours, church members, your grandmother's friend, your old school teacher. Customers may address you by name before you know theirs. They may share personal health details openly across the counter because in the Caribbean, pharmacy is personal. This intimacy is both the reward and the challenge of the work.",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "The regulars: elderly patients who come every month for chronic medications — they know the pharmacy better than you do",
+        "The anxious parents: mothers and fathers who need reassurance as much as they need medicine",
+        "The impatient professional: lunch-hour customers who have 15 minutes and zero patience",
+        "The confused patient: someone handed a prescription by a doctor who explained nothing",
+        "The self-diagnoser: 'I Googled it and I need antibiotics' — a conversation you will have weekly"
+      ],
+      "ordered": false
+    },
+    {
+      "body": "In many Caribbean communities, the pharmacy technician is the most accessible healthcare worker. Patients will ask you questions that should go to a doctor. They will describe symptoms and expect a recommendation. Knowing where your scope ends — and how to redirect without making the patient feel dismissed — is a skill you will use every single day.",
+      "type": "callout",
+      "title": "Caribbean Reality Check",
+      "variant": "info"
+    },
+    {
+      "rows": [
+        [
+          "7:00–8:30 AM",
+          "Opening procedures, early prescription drop-offs, regulars collecting chronic meds",
+          "Moderate"
+        ],
+        [
+          "8:30–11:00 AM",
+          "Morning rush — post-clinic prescriptions arrive, walk-ins increase",
+          "High"
+        ],
+        [
+          "11:00 AM–12:30 PM",
+          "Brief lull, catch-up on filling, restock shelves",
+          "Moderate"
+        ],
+        [
+          "12:30–2:00 PM",
+          "Lunch-hour rush — office workers, parents after school run",
+          "High"
+        ],
+        [
+          "2:00–4:00 PM",
+          "Steady flow, delivery orders, phone enquiries",
+          "Moderate"
+        ],
+        [
+          "4:00–6:00 PM",
+          "After-work rush, last-minute prescriptions, closing procedures",
+          "High"
+        ]
+      ],
+      "type": "table",
+      "caption": "Typical Daily Rhythm of a Caribbean Community Pharmacy",
+      "headers": [
+        "Time",
+        "Activity",
+        "Intensity"
+      ]
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Dispensing as quickly as possible to impress the pharmacist",
+        "Being accurate and asking questions when unsure",
+        "Memorising every drug on the shelf",
+        "Handling customer complaints independently"
+      ],
+      "question": "On your first day, what should your primary focus be?",
+      "explanation": "On your first day, accuracy is far more important than speed. Speed develops naturally with experience, but errors — especially early on — can harm patients and damage your confidence. Asking questions shows professionalism, not weakness.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 30
+}

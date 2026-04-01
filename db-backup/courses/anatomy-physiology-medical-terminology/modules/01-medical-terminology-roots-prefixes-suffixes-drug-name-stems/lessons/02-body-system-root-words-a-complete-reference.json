@@ -1,0 +1,179 @@
+{
+  "id": "2323b9d6-fb0b-4ae1-a23e-1ce9296a97ac",
+  "module_id": "1c340831-e751-43c4-9ea1-7c290cc7cbc6",
+  "title": "Body System Root Words: A Complete Reference",
+  "content": [
+    {
+      "text": "Root Words Organised by Body System",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "The human body is organised into systems, and medical terminology mirrors this organisation. Each body system has a set of root words that describe its organs, structures, and functions. As a pharmacy technician, your ability to recognise these roots enables you to quickly understand what body system a medication targets, what condition is being treated, and what side effects to watch for.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Cardiovascular",
+          "cardi/o",
+          "Heart",
+          "Cardiovascular"
+        ],
+        [
+          "Cardiovascular",
+          "angi/o, vas/o",
+          "Blood vessel",
+          "Angioplasty"
+        ],
+        [
+          "Cardiovascular",
+          "haem/o, hemat/o",
+          "Blood",
+          "Haematology"
+        ],
+        [
+          "Respiratory",
+          "pulmon/o, pneum/o",
+          "Lung",
+          "Pulmonology"
+        ],
+        [
+          "Respiratory",
+          "bronch/o",
+          "Bronchial tube",
+          "Bronchitis"
+        ],
+        [
+          "Digestive",
+          "gastr/o",
+          "Stomach",
+          "Gastroenteritis"
+        ],
+        [
+          "Digestive",
+          "hepat/o",
+          "Liver",
+          "Hepatotoxicity"
+        ],
+        [
+          "Digestive",
+          "enter/o",
+          "Intestine",
+          "Enteritis"
+        ],
+        [
+          "Renal/Urinary",
+          "nephr/o, ren/o",
+          "Kidney",
+          "Nephrology"
+        ],
+        [
+          "Renal/Urinary",
+          "cyst/o",
+          "Bladder",
+          "Cystitis"
+        ],
+        [
+          "Endocrine",
+          "aden/o",
+          "Gland",
+          "Adenoma"
+        ],
+        [
+          "Endocrine",
+          "thyr/o",
+          "Thyroid",
+          "Thyroiditis"
+        ],
+        [
+          "Nervous",
+          "neur/o",
+          "Nerve",
+          "Neuropathy"
+        ],
+        [
+          "Nervous",
+          "cephal/o",
+          "Head",
+          "Cephalgia"
+        ],
+        [
+          "Nervous",
+          "encephal/o",
+          "Brain",
+          "Encephalitis"
+        ],
+        [
+          "Musculoskeletal",
+          "oste/o",
+          "Bone",
+          "Osteoporosis"
+        ],
+        [
+          "Musculoskeletal",
+          "arthr/o",
+          "Joint",
+          "Arthritis"
+        ],
+        [
+          "Musculoskeletal",
+          "my/o",
+          "Muscle",
+          "Myalgia"
+        ],
+        [
+          "Integumentary",
+          "derm/o, dermat/o",
+          "Skin",
+          "Dermatology"
+        ],
+        [
+          "Immune",
+          "immun/o",
+          "Immune",
+          "Immunodeficiency"
+        ],
+        [
+          "Immune",
+          "lymph/o",
+          "Lymphatic",
+          "Lymphadenopathy"
+        ]
+      ],
+      "type": "table",
+      "caption": "Root Words by Body System",
+      "headers": [
+        "Body System",
+        "Root Word",
+        "Meaning",
+        "Sample Term"
+      ]
+    },
+    {
+      "body": "The root words you use most frequently will depend on the disease burden of your community. In the Caribbean, cardiovascular roots (cardi/o, angi/o) and endocrine roots (particularly those related to glucose metabolism like 'glyc/o') appear on prescriptions far more often than in many other regions, reflecting the high prevalence of hypertension and diabetes across CARICOM nations.",
+      "type": "callout",
+      "title": "Caribbean Relevance",
+      "variant": "info"
+    },
+    {
+      "term": "Combining Form",
+      "type": "key-term",
+      "definition": "A root word together with its combining vowel, written with a slash to show the join point. For example, 'cardi/o' is the combining form of the root 'cardi'. The combining form is used when building compound terms. You will see combining forms written in drug references and medical dictionaries throughout your career."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "nephr/o",
+        "hepat/o",
+        "gastr/o",
+        "pulmon/o"
+      ],
+      "question": "Which root word relates to the liver?",
+      "explanation": "The root 'hepat/o' refers to the liver. This root appears in many pharmacy-relevant terms: hepatotoxicity (liver damage — a critical drug side effect), hepatitis (inflammation of the liver), and hepatomegaly (enlargement of the liver). Drugs like paracetamol (acetaminophen) can cause hepatotoxicity in overdose, making this root essential knowledge for Caribbean pharmacy technicians.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 15
+}

@@ -1,0 +1,98 @@
+{
+  "id": "37d9d15e-8afa-43b0-92cf-006182c6e243",
+  "module_id": "deb220dc-af47-44e5-9b48-3f56cc3ad0a4",
+  "title": "Recognising the Signs of Burnout in Yourself and Colleagues",
+  "content": [
+    {
+      "text": "Burnout Does Not Announce Itself — It Creeps",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Nobody wakes up one morning and says, 'Today I am burned out.' Burnout is a slow erosion. It starts with tiredness you cannot shake, irritability you cannot explain, and a creeping cynicism about work that used to matter to you. By the time you recognise it, it has usually been building for months. In Caribbean pharmacy — where the emotional demands are high, the staffing is low, and the cultural expectation is to 'just keep going' — burnout is endemic.",
+      "type": "text"
+    },
+    {
+      "body": "The World Health Organisation defines burnout as a syndrome resulting from chronic workplace stress that has not been successfully managed. It manifests in three dimensions: exhaustion (emotional and physical depletion), cynicism (mental distance from your job and the people you serve), and reduced professional efficacy (feeling like you are not making a difference no matter how hard you work).",
+      "type": "text"
+    },
+    {
+      "term": "Burnout",
+      "type": "key-term",
+      "definition": "A syndrome recognised by the World Health Organisation (ICD-11) resulting from chronic workplace stress that has not been successfully managed. It is characterised by three dimensions: (1) feelings of energy depletion or exhaustion, (2) increased mental distance from one's job or feelings of negativism or cynicism related to one's job, and (3) reduced professional efficacy. Burnout is not laziness or weakness — it is a predictable consequence of unsustainable work conditions."
+    },
+    {
+      "rows": [
+        [
+          "Exhaustion",
+          "Chronic fatigue that sleep does not fix, dreading the shift, feeling physically drained before the day starts",
+          "'I am so tired. I am always tired. No amount of sleep helps.'"
+        ],
+        [
+          "Cynicism",
+          "Emotional withdrawal from patients, sarcastic thoughts about customers, going through the motions",
+          "'I do not care any more. These people just take and take.'"
+        ],
+        [
+          "Reduced Efficacy",
+          "Feeling ineffective despite working hard, questioning your career choice, loss of professional satisfaction",
+          "'What is the point? Nothing I do makes a difference.'"
+        ]
+      ],
+      "type": "table",
+      "caption": "The Three Dimensions of Burnout",
+      "headers": [
+        "Dimension",
+        "What It Looks Like",
+        "What You Might Say to Yourself"
+      ]
+    },
+    {
+      "text": "Warning Signs to Watch For",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "type": "list",
+      "items": [
+        "Physical: chronic fatigue, headaches, frequent illness, changes in appetite or sleep patterns",
+        "Emotional: irritability, tearfulness, feeling numb, loss of empathy, dread before work",
+        "Behavioural: withdrawing from colleagues, calling in sick more often, making more errors, clock-watching",
+        "Cognitive: difficulty concentrating, forgetfulness, negative self-talk, questioning career choice",
+        "Relational: snapping at family, withdrawing from social activities, feeling like nobody understands"
+      ],
+      "ordered": false
+    },
+    {
+      "body": "Burnout is easier to recognise in others than in yourself. If you notice a colleague who was once enthusiastic becoming withdrawn, cynical, or error-prone, say something — privately and with care. 'You seem like you have been carrying a lot lately. Are you okay?' might be the most important thing anyone says to them that month.",
+      "type": "callout",
+      "title": "Watch Your Colleagues Too",
+      "variant": "warning"
+    },
+    {
+      "type": "case-study",
+      "title": "Case Study: The Invisible Collapse",
+      "scenario": "Dwayne has been a pharmacy technician for six years at a busy pharmacy in Montego Bay, Jamaica. He used to love his job — he was known for his warmth with customers and his accuracy. Over the past year, he has become irritable, makes more errors, and dreads going to work. He has started calling in sick on Mondays. When a colleague asks if he is okay, he says 'I am fine — just tired.' His manager has noticed the sick days but has not addressed it.",
+      "questions": [
+        "Which dimensions of burnout is Dwayne showing?",
+        "What could Dwayne's manager have done earlier?",
+        "What should Dwayne do now?"
+      ],
+      "discussion": "Dwayne is showing all three dimensions: exhaustion (dreading work, chronic fatigue), cynicism (irritability, loss of enthusiasm), and reduced efficacy (increasing errors). His manager should have addressed the pattern earlier — not punitively, but supportively. Dwayne needs to acknowledge the burnout, seek support (peer, professional, or employer-provided), and consider what structural changes would make the work sustainable. The cultural expectation in the Caribbean to simply 'keep going' is precisely what allows burnout to progress to this stage."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Exhaustion",
+        "Cynicism",
+        "Aggression",
+        "Reduced professional efficacy"
+      ],
+      "question": "Which of the following is NOT one of the three WHO-recognised dimensions of burnout?",
+      "explanation": "The three dimensions of burnout recognised by the WHO are exhaustion, cynicism (depersonalisation), and reduced professional efficacy. While irritability and aggression can be symptoms of burnout, aggression is not one of the three defining dimensions.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 25
+}

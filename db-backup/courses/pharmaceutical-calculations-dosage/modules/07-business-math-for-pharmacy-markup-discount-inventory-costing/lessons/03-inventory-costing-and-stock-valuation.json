@@ -1,0 +1,98 @@
+{
+  "id": "37b8548c-b87c-4946-9f66-9a19d1ec76b3",
+  "module_id": "55a60f21-234f-4d50-8f6a-1543a68aa3fb",
+  "title": "Inventory Costing and Stock Valuation",
+  "content": [
+    {
+      "text": "Inventory Costing: FIFO and Average Cost Methods",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Pharmacies carry significant inventory — the value of stock on hand at any time in a medium-sized Caribbean community pharmacy may range from TTD 200,000 to TTD 1,000,000 (or equivalent in JMD/BBD). Accurate inventory costing is essential for financial reporting, tax compliance, and pricing decisions. The two main methods used in Caribbean pharmacy are FIFO (First In, First Out) and Weighted Average Cost.",
+      "type": "text"
+    },
+    {
+      "term": "FIFO (First In, First Out)",
+      "type": "key-term",
+      "definition": "An inventory costing method where the oldest stock (first purchased) is assumed to be sold first. This aligns with pharmaceutical best practice — dispensing the shortest-dated stock first to minimise expiry wastage. FIFO typically provides a higher ending inventory value and lower cost of goods sold during periods of rising prices."
+    },
+    {
+      "text": "FIFO Worked Example",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "A pharmacy purchased metformin 500 mg in three batches: Batch 1 (January): 200 boxes at TTD 22 each = TTD 4,400. Batch 2 (March): 150 boxes at TTD 24 each = TTD 3,600. Batch 3 (May): 180 boxes at TTD 25 each = TTD 4,500. In June, the pharmacy dispensed 280 boxes. Under FIFO: First 200 boxes from Batch 1 at TTD 22 = TTD 4,400. Next 80 boxes from Batch 2 at TTD 24 = TTD 1,920. Cost of goods sold = TTD 4,400 + TTD 1,920 = TTD 6,320. Remaining inventory: 70 boxes at TTD 24 + 180 boxes at TTD 25 = TTD 1,680 + TTD 4,500 = TTD 6,180.",
+      "type": "text"
+    },
+    {
+      "text": "Weighted Average Cost Method",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Average cost per unit = Total cost of inventory / Total units available. Using the same data: Total cost = 4,400 + 3,600 + 4,500 = TTD 12,500. Total units = 200 + 150 + 180 = 530 boxes. Average cost = 12,500 / 530 = TTD 23.58 per box. Cost of 280 boxes dispensed = 280 × 23.58 = TTD 6,603. Remaining inventory value = 250 × 23.58 = TTD 5,896.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "FIFO",
+          "TTD 6,320",
+          "TTD 6,180",
+          "Preferred in pharmacy (matches physical stock rotation)"
+        ],
+        [
+          "Weighted Average",
+          "TTD 6,603",
+          "TTD 5,896",
+          "Simpler; used by some pharmacy software systems"
+        ]
+      ],
+      "type": "table",
+      "caption": "FIFO vs Weighted Average Cost — Comparison",
+      "headers": [
+        "Method",
+        "Cost of Goods Sold",
+        "Ending Inventory",
+        "When to Use"
+      ]
+    },
+    {
+      "body": "FIFO is not just an accounting method in pharmacy — it is a patient safety requirement. Dispensing the oldest stock first minimises the risk of medications expiring on the shelf. In the Caribbean, where supply chain delays can make replacement stock unpredictable, good stock rotation is critical. Check expiry dates during every stock count, and move shorter-dated items to the front of the shelf. Many Caribbean pharmacies conduct monthly expiry audits.",
+      "type": "callout",
+      "title": "Stock Rotation and Expiry Management",
+      "variant": "tip"
+    },
+    {
+      "body": "Inventory turnover ratio = Cost of Goods Sold / Average Inventory Value. A healthy pharmacy typically has an inventory turnover of 8-12 times per year (meaning stock turns over every 30-45 days on average). A turnover below 6 suggests overstocking (tying up capital); above 15 suggests understocking (risking stockouts). Caribbean pharmacies that depend on imported stock should maintain higher safety stock levels, reducing turnover but improving availability.",
+      "type": "text"
+    },
+    {
+      "type": "case-study",
+      "title": "Case Study: Hurricane Season Inventory Planning at a Barbados Pharmacy",
+      "scenario": "You are the head pharmacy technician at a community pharmacy in Bridgetown, Barbados. Hurricane season runs from June to November. Your pharmacist-owner asks you to calculate the additional inventory investment needed to increase safety stock from the usual 30-day supply to a 90-day supply for essential medications. Current monthly cost of goods for essential medications (chronic disease, antibiotics, pain relief, ORS) is BBD 18,000.",
+      "questions": [
+        "What is the current inventory value for essential medications (30-day supply)?",
+        "What would the 90-day supply inventory value be?",
+        "What additional capital investment is needed?"
+      ],
+      "discussion": "Current 30-day supply = BBD 18,000. A 90-day supply = BBD 18,000 × 3 = BBD 54,000. Additional investment = 54,000 - 18,000 = BBD 36,000. This is a significant capital outlay for a small pharmacy. The pharmacist-owner should consider: (1) negotiating extended payment terms with wholesalers, (2) prioritising the most critical medications for 90-day stock (insulin, antihypertensives, diabetes medications, antibiotics, ORS) while keeping less critical items at 30-day levels, and (3) applying for small business hurricane preparedness funding available through the Barbados government. Insurance coverage for stock loss during natural disasters should also be verified."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "TTD 3,600",
+        "TTD 3,720",
+        "TTD 3,960",
+        "TTD 4,320"
+      ],
+      "question": "A pharmacy bought 100 boxes at TTD 30 each and later 100 boxes at TTD 36 each. Using FIFO, what is the cost of the first 120 boxes sold?",
+      "explanation": "FIFO: First 100 boxes at TTD 30 = TTD 3,000. Next 20 boxes at TTD 36 = TTD 720. Total = TTD 3,720. Under FIFO, the cheaper stock (bought first) is costed out first.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 3,
+  "duration_minutes": 30
+}

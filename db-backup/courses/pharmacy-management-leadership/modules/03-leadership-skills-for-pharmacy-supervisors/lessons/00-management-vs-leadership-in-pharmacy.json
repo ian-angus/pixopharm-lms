@@ -1,0 +1,88 @@
+{
+  "id": "1864f817-6681-4662-b1a6-1fdb64e22639",
+  "module_id": "1c98523a-3a03-4cdf-a2ab-8b97e13644f8",
+  "title": "Management vs. Leadership in Pharmacy",
+  "content": [
+    {
+      "text": "The Difference Between Managing and Leading",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Every pharmacy needs both management and leadership, but they are not the same thing. Management is about systems, processes, and ensuring that things run correctly — the schedule is posted, inventory is ordered, claims are submitted. Leadership is about people, vision, and inspiring a team to deliver exceptional patient care even when the systems are under pressure. In a small Caribbean pharmacy where the supervisor wears both hats, understanding when to manage and when to lead is a critical skill.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Creates the schedule",
+          "Inspires staff to arrive on time because they care about patients"
+        ],
+        [
+          "Implements SOPs",
+          "Explains why SOPs matter for patient safety"
+        ],
+        [
+          "Monitors inventory levels",
+          "Empowers technicians to flag stock issues proactively"
+        ],
+        [
+          "Processes insurance claims",
+          "Advocates for better reimbursement rates for the team"
+        ],
+        [
+          "Conducts performance reviews",
+          "Mentors staff toward their career goals"
+        ],
+        [
+          "Reacts to problems",
+          "Anticipates challenges and prepares the team"
+        ]
+      ],
+      "type": "table",
+      "caption": "Management vs. Leadership — Pharmacy Context",
+      "headers": [
+        "Management",
+        "Leadership"
+      ]
+    },
+    {
+      "term": "Situational Leadership",
+      "type": "key-term",
+      "definition": "A leadership model developed by Hersey and Blanchard that proposes there is no single best leadership style. Instead, effective leaders adapt their approach based on the competence and commitment of the individual being led. A new pharmacy assistant needs direction; an experienced technician needs delegation and autonomy."
+    },
+    {
+      "body": "In Caribbean pharmacy practice, the supervisor often leads a team of varying skill levels — from a newly hired assistant who needs step-by-step guidance to a veteran technician who has been with the pharmacy for 15 years and knows more about the stock than anyone. Applying the same leadership style to both would be a mistake. The new assistant needs directing (clear instructions, close supervision), while the veteran needs delegating (trusted with responsibility, consulted on decisions).",
+      "type": "text"
+    },
+    {
+      "text": "Leadership in Caribbean Workplace Culture",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Caribbean workplace culture has distinct features that shape how leadership is exercised. Authority is generally respected and expected — staff look to supervisors for clear direction. However, heavy-handed or authoritarian leadership is deeply resented, particularly in cultures where personal dignity and respect are paramount. The most effective Caribbean pharmacy leaders combine firmness with warmth — they set high standards and hold staff accountable, but they do so with genuine care for their team members as individuals.",
+      "type": "text"
+    },
+    {
+      "body": "In many Caribbean workplaces, the team functions like an extended family — the 'yard' culture. Staff celebrate each other's birthdays, know each other's children, and support each other through personal challenges. As a pharmacy supervisor, nurturing this culture builds loyalty and teamwork that no amount of formal policy can achieve. But it also means that professional boundaries must be carefully maintained — familiarity should not compromise patient safety standards or fair performance management.",
+      "type": "callout",
+      "title": "The 'Yard' Culture Advantage",
+      "variant": "tip"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Delegating — give her tasks and trust her to figure them out",
+        "Directing — provide clear step-by-step instructions and close supervision",
+        "Participating — ask for her opinions on how to do the work",
+        "Coaching — let her try independently but check in frequently"
+      ],
+      "question": "A new pharmacy assistant is in her first week. According to situational leadership, what approach should the supervisor use?",
+      "explanation": "A brand-new employee with low competence (not yet trained) but typically high commitment (eager to learn) needs a directing style — clear instructions, demonstrations, and close supervision. As her competence grows, the supervisor should progressively shift toward coaching, then participating, and eventually delegating.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 25
+}

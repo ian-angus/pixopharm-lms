@@ -1,0 +1,117 @@
+{
+  "id": "60db45f9-a138-45f9-9693-5735ab19d6d3",
+  "module_id": "5fca0e13-4c01-45d1-b424-9b6c4b52249e",
+  "title": "Serving Customers Who Are Elderly, Anxious, or in a Hurry",
+  "content": [
+    {
+      "text": "Every Customer Needs Something Different",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "The mark of an excellent pharmacy technician is not treating everyone the same — it is treating everyone appropriately. An elderly patient with hearing difficulties needs a different approach than an anxious first-time customer collecting psychiatric medication. A time-pressured professional dropping off a prescription needs a different energy than a mother who has questions about her child's medication. Recognising what each person needs and adapting your approach is the core skill of customer service excellence.",
+      "type": "text"
+    },
+    {
+      "text": "Serving Elderly Patients",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Elderly patients are often the backbone of a Caribbean pharmacy's customer base. Many collect chronic medications monthly — antihypertensives, diabetes medications, cholesterol treatments, pain relief. They are frequently the most loyal customers but also the most vulnerable. Hearing loss, visual impairment, cognitive decline, and physical frailty all affect how you should serve them.",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Speak clearly and at a moderate volume — do not shout, but ensure you are heard",
+        "Face them when speaking so they can read your lips if needed",
+        "Use simple, direct language — 'Take one tablet every morning with breakfast' is better than 'Administer one unit per os with the first meal of the day'",
+        "Be patient with repetition — if they ask the same question twice, answer it twice with the same warmth",
+        "Write things down if they seem unsure — a handwritten note on the bag can be a lifesaver",
+        "Offer to call a family member if they seem confused about complex medication changes",
+        "Never rush them — even if there is a queue. An elderly patient who feels rushed will not take their medication correctly"
+      ],
+      "ordered": false
+    },
+    {
+      "text": "Serving Anxious Patients",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Anxiety in the pharmacy takes many forms. The patient collecting antidepressants for the first time who is terrified someone will see them. The person picking up HIV medication who scans the queue to see if anyone they know is there. The parent whose child was just diagnosed with something serious. Anxiety makes people hyper-vigilant, easily overwhelmed, and sometimes short-tempered. Your job is to make them feel safe, not judged.",
+      "type": "text"
+    },
+    {
+      "body": "For patients who seem anxious about privacy, lower your voice, use a calm tone, and angle your body to create a semi-private space at the counter. If the pharmacy has a counselling area, offer to use it. Small adjustments in your physical presence can dramatically reduce a patient's anxiety.",
+      "type": "callout",
+      "title": "Lowering the Anxiety Temperature",
+      "variant": "tip"
+    },
+    {
+      "text": "Serving Time-Pressured Customers",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "The lunch-hour rush brings professionals who have exactly 15 minutes. They are not rude — they are stressed. Acknowledge their time constraint, work efficiently, and avoid unnecessary conversation. 'I can see you are on a schedule — let me get this sorted quickly for you' tells them you respect their time without making them feel like they are being rushed through important healthcare.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Elderly patient",
+          "Patience, clarity, respect, physical assistance",
+          "Rushing, medical jargon, condescension, impatience with repetition"
+        ],
+        [
+          "Anxious patient",
+          "Privacy, calm tone, non-judgemental attitude, reassurance",
+          "Loud voice, drawing attention, asking unnecessary questions in earshot of others"
+        ],
+        [
+          "Time-pressured professional",
+          "Speed, efficiency, acknowledgement of their schedule",
+          "Unnecessary small talk, slow processing, asking them to wait without explanation"
+        ],
+        [
+          "Parent with sick child",
+          "Empathy, urgency, clear dosing instructions",
+          "Dismissing the parent's concern, being slow when a child is clearly unwell"
+        ],
+        [
+          "Confused patient",
+          "Patience, step-by-step explanations, written instructions",
+          "Assuming they understand, using jargon, showing frustration at questions"
+        ]
+      ],
+      "type": "table",
+      "caption": "Adapting Service by Customer Type",
+      "headers": [
+        "Customer Type",
+        "What They Need",
+        "What to Avoid"
+      ]
+    },
+    {
+      "term": "Patient-Centred Service",
+      "type": "key-term",
+      "definition": "An approach to healthcare delivery that adapts to the individual needs, preferences, and circumstances of each patient. Rather than a one-size-fits-all approach, patient-centred service recognises that every person walking up to the counter brings unique needs that require a tailored response."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Tell them you have already answered that question",
+        "Answer patiently a third time with the same warmth as the first",
+        "Ask a family member to come in and explain for them",
+        "Write the instructions on a note and stop answering verbally"
+      ],
+      "question": "An elderly patient asks you the same question about their medication for the third time. What is the appropriate response?",
+      "explanation": "Elderly patients may have memory difficulties, hearing issues, or anxiety that causes them to seek repeated reassurance. Answering patiently each time is the correct approach. You can also reinforce your verbal answer by writing instructions on the bag, but never replace verbal communication with written-only notes unless the patient requests it.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 35
+}

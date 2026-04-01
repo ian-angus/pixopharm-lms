@@ -1,0 +1,97 @@
+{
+  "id": "9df674fc-c924-44e7-a9bc-7121b56a53d0",
+  "module_id": "3f0fc32e-b930-4e92-afd4-7fefcffb355d",
+  "title": "Quality Control Tests for Compounded Preparations",
+  "content": [
+    {
+      "text": "Ensuring Quality in Every Preparation",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Quality control (QC) in pharmaceutical compounding is the systematic process of testing and inspecting compounded preparations to ensure they meet predefined quality standards. While compounded preparations cannot undergo the same rigorous testing as commercially manufactured products (formal dissolution testing, content uniformity assays, accelerated stability studies), every compounding pharmacy can and must perform a range of practical QC checks to verify the quality of their products before they reach patients.",
+      "type": "text"
+    },
+    {
+      "body": "In the Caribbean, where compounded preparations are frequently the only option for vulnerable patients, quality control is not a bureaucratic formality — it is a patient safety imperative. A compounded oral suspension with incorrect concentration, a cream that has separated, or a preparation contaminated with micro-organisms can cause treatment failure, adverse effects, or infection. The pharmacy technician plays a central role in quality control, performing checks at every stage of the compounding process.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Visual Inspection",
+          "Appearance, colour, consistency, homogeneity, absence of particles",
+          "Examine the preparation under adequate lighting; look for discolouration, separation, grittiness, or foreign matter",
+          "All preparations"
+        ],
+        [
+          "Weight Check",
+          "Final weight or volume matches the calculated amount",
+          "Weigh the final preparation (semi-solids, powders) or measure the final volume (liquids) and compare to the target",
+          "All preparations"
+        ],
+        [
+          "pH Measurement",
+          "Acidity/alkalinity is within the acceptable range for the formulation",
+          "Use pH paper or a calibrated pH metre to measure the pH of liquid and semi-solid preparations",
+          "Oral liquids, topical preparations with pH-sensitive ingredients"
+        ],
+        [
+          "Odour Check",
+          "The preparation smells as expected; absence of off-odours indicating degradation or contamination",
+          "Carefully waft the preparation towards the nose (never sniff directly); compare to expected scent",
+          "All preparations"
+        ],
+        [
+          "Texture/Consistency Check",
+          "Smoothness, pourability, or spreadability meets the expected standard",
+          "For creams/ointments: spread a small amount on the back of the hand — should be smooth and free of grit. For liquids: pour to assess viscosity and ease of redispersal",
+          "Semi-solids and suspensions"
+        ],
+        [
+          "Capsule Weight Uniformity",
+          "Individual capsule weights are consistent (±10% of average weight is typical acceptance criterion)",
+          "Weigh 10 capsules individually and calculate the average; ensure each falls within ±10% of the average",
+          "Compounded capsules"
+        ]
+      ],
+      "type": "table",
+      "caption": "Quality Control Checks for Non-Sterile Compounded Preparations",
+      "headers": [
+        "QC Test",
+        "What It Checks",
+        "How It Is Performed",
+        "Applicable To"
+      ]
+    },
+    {
+      "term": "Quality Control (QC)",
+      "type": "key-term",
+      "definition": "The systematic processes and procedures used to evaluate, monitor, and maintain the quality of compounded pharmaceutical preparations. QC includes testing of ingredients (identity, purity, expiry), in-process checks (weight, appearance), and final product testing (visual inspection, pH, weight/volume verification). It is a subset of the broader quality assurance programme that encompasses all aspects of the compounding operation."
+    },
+    {
+      "body": "Before releasing any compounded preparation, perform this five-point final check: (1) Does it look right? — correct colour, consistency, and homogeneity. (2) Does it weigh or measure right? — final weight or volume matches calculations. (3) Does it smell right? — no unexpected or off-odours. (4) Is the pH acceptable? — within the expected range for the formulation. (5) Is the label correct? — patient name, drug name and strength, directions, beyond-use date, storage conditions, and auxiliary labels all present and accurate. If any check fails, do NOT release the product.",
+      "type": "callout",
+      "title": "The Five-Point Final Check",
+      "variant": "tip"
+    },
+    {
+      "body": "In the Caribbean, where compounding pharmacies may not have access to sophisticated analytical equipment, these practical QC tests take on even greater importance. They are the front line of quality assurance. A vigilant pharmacy technician who consistently performs thorough visual inspections, weight checks, and pH measurements will catch the majority of quality issues before they reach a patient. Quality control is not a separate step performed at the end — it is an integrated mindset applied from the moment ingredients are selected through to the moment the labelled preparation is released.",
+      "type": "text"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Stir the cream and dispense it — separation is normal",
+        "Add more preservative to stabilise the cream",
+        "Reject the preparation, investigate the cause of separation, and recompound if necessary",
+        "Label it with 'SHAKE WELL' and dispense"
+      ],
+      "question": "A compounded cream appears to have separated into an oily layer and a watery layer upon visual inspection. What should the pharmacy technician do?",
+      "explanation": "Separation (cracking) of a cream indicates that the emulsion has broken — the oil and water phases have separated. This is a quality failure that may result in non-uniform drug distribution and indicates a formulation or technique problem (e.g., incorrect emulsifier quantity, excessive heat, improper mixing). The preparation must not be dispensed. The technician should reject it, investigate the cause, and recompound with corrective measures.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 20
+}

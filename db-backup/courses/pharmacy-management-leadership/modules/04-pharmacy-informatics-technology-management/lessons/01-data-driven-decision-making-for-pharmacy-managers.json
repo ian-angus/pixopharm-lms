@@ -1,0 +1,92 @@
+{
+  "id": "643f9db3-c94d-4a95-8583-082afa7a46c2",
+  "module_id": "a990037d-ba04-45d0-ae91-bab492ae6c2b",
+  "title": "Data-Driven Decision Making for Pharmacy Managers",
+  "content": [
+    {
+      "text": "Turning Pharmacy Data Into Actionable Insights",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Every pharmacy generates vast amounts of data daily: prescription volumes, dispensing times, inventory levels, sales figures, insurance claim outcomes, patient demographics, and more. Most of this data sits unused in PMS databases. Pharmacy managers who learn to extract, analyse, and act on this data gain a significant competitive advantage — they can predict demand, optimise stock levels, identify profitable product categories, and detect operational inefficiencies.",
+      "type": "text"
+    },
+    {
+      "term": "Pharmacy Analytics",
+      "type": "key-term",
+      "definition": "The systematic analysis of pharmacy operational data to support decision-making. This includes descriptive analytics (what happened — e.g., sales reports), diagnostic analytics (why it happened — e.g., why did a particular product's sales drop), predictive analytics (what will happen — e.g., demand forecasting), and prescriptive analytics (what should we do — e.g., optimal reorder quantities)."
+    },
+    {
+      "text": "Key Reports Every Pharmacy Manager Should Review",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "rows": [
+        [
+          "Daily Sales Summary",
+          "Daily",
+          "Total revenue, prescription count, average transaction value, cash vs. insurance split",
+          "Sudden drop in prescriptions may indicate a problem (e.g., nearby doctor closed, competitor opened)"
+        ],
+        [
+          "Inventory Ageing Report",
+          "Weekly",
+          "Products approaching expiry, slow-moving stock, dead stock",
+          "Products within 3 months of expiry → return to vendor, promote, or write off"
+        ],
+        [
+          "Insurance Claims Summary",
+          "Weekly",
+          "Claims submitted, approved, rejected, pending; reimbursement amounts and timelines",
+          "Rejection rate above 5% → review documentation and eligibility verification processes"
+        ],
+        [
+          "Gross Margin by Category",
+          "Monthly",
+          "Profitability of each product category (Rx, OTC, health & beauty, sundries)",
+          "Declining margins → renegotiate with suppliers, review pricing, or discontinue unprofitable lines"
+        ],
+        [
+          "Staff Productivity Report",
+          "Monthly",
+          "Prescriptions dispensed per technician, dispensing accuracy, customer service metrics",
+          "Identify training needs, recognise top performers, address underperformance"
+        ]
+      ],
+      "type": "table",
+      "caption": "Essential Pharmacy Management Reports",
+      "headers": [
+        "Report",
+        "Frequency",
+        "What It Tells You",
+        "Action Triggers"
+      ]
+    },
+    {
+      "body": "In practice, many Caribbean pharmacies review financial data only when problems arise — a reactive approach. Proactive data review means scheduling weekly and monthly report reviews as non-negotiable management tasks. Even 30 minutes per week reviewing key reports can transform how you manage your pharmacy.",
+      "type": "text"
+    },
+    {
+      "body": "Apply the Pareto Principle (80/20 rule) to your inventory: 'A' items (top 20% of products by revenue, typically representing 80% of sales value) deserve the closest management attention — tight stock control, frequent reordering, and careful margin analysis. 'B' items (next 30%) need moderate attention. 'C' items (bottom 50%) are low-value and can be managed with simpler reorder rules. Most Caribbean pharmacies find that 50–80 SKUs generate the majority of their revenue.",
+      "type": "callout",
+      "title": "ABC Analysis for Inventory Optimisation",
+      "variant": "tip"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Whether the pharmacy management software has a bug",
+        "Whether the documentation and eligibility verification processes have been followed correctly",
+        "Whether the insurance programme has changed its reimbursement rates",
+        "Whether patients have been submitting fraudulent claims"
+      ],
+      "question": "A pharmacy's insurance claim rejection rate has risen from 3% to 12% over the past month. What should the manager investigate FIRST?",
+      "explanation": "A sudden spike in rejection rates most commonly indicates a breakdown in the claims documentation or eligibility verification processes — perhaps a new staff member is not completing forms correctly, or patient eligibility is not being checked at the point of dispensing. This is the most likely and most immediately addressable cause.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 20
+}

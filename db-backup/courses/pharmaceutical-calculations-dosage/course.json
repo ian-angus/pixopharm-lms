@@ -1,0 +1,20 @@
+{
+  "id": "df2df2a3-5a9d-489e-8b9c-fdba7757445e",
+  "title": "Pharmaceutical Calculations & Dosage",
+  "slug": "pharmaceutical-calculations-dosage",
+  "description": "Master the mathematical skills that underpin safe and accurate pharmacy practice.",
+  "skill_level": "Beginner",
+  "duration_weeks": 8,
+  "icon": "Calculator",
+  "color": "emerald",
+  "prerequisites": [],
+  "what_youll_learn": [
+    "Perform accurate dosage calculations",
+    "Convert between measurement systems",
+    "Calculate pediatric doses",
+    "Determine IV flow rates",
+    "Apply alligation and dilution formulas"
+  ],
+  "status": "published",
+  "order": 2
+}

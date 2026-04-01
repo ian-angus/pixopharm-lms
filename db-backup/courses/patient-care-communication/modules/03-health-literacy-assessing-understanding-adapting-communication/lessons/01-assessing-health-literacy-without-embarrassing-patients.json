@@ -1,0 +1,76 @@
+{
+  "id": "75e3de89-5ecf-42ff-a7c8-735b366cbfee",
+  "module_id": "f2c4ca68-e98b-42d1-8711-b24c619e1e6b",
+  "title": "Assessing Health Literacy Without Embarrassing Patients",
+  "content": [
+    {
+      "text": "Detecting the Problem Without Creating Another One",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Low health literacy is often invisible. Patients who struggle with health information have developed sophisticated coping strategies: they may claim they forgot their glasses, say they will 'read it at home,' ask a family member to come back for the medication, or simply nod and agree with everything. As a pharmacy technician, you must learn to recognise these signals without putting the patient in an embarrassing position.",
+      "type": "text"
+    },
+    {
+      "text": "Red Flags for Limited Health Literacy",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "type": "list",
+      "items": [
+        "'I forgot my glasses' — said repeatedly across visits; may indicate inability to read rather than forgotten spectacles",
+        "'I'll read it when I get home' — avoids reading in front of you",
+        "Forms returned incomplete or filled out incorrectly",
+        "Bringing a family member to 'help' with every pharmacy visit",
+        "Inability to name their medications or state what they are for",
+        "Missed appointments or refill dates — may not understand the scheduling system",
+        "Asking the same questions repeatedly across visits",
+        "Medication bottles at home that are all mixed together — the patient cannot distinguish between them by reading labels",
+        "Choosing not to fill a prescription — may not understand why the medication was prescribed"
+      ],
+      "ordered": false
+    },
+    {
+      "body": "Rather than trying to identify which patients have low health literacy (which risks profiling and embarrassment), adopt a 'universal precautions' approach: communicate clearly with EVERY patient, use plain language with EVERY patient, and verify understanding with EVERY patient. Just as universal precautions in infection control protect everyone, universal health literacy precautions ensure no patient falls through the gap.",
+      "type": "callout",
+      "title": "The Universal Precautions Approach",
+      "variant": "tip"
+    },
+    {
+      "term": "Universal Health Literacy Precautions",
+      "type": "key-term",
+      "definition": "An approach to patient communication that assumes all patients may have difficulty understanding health information, and therefore uses clear, plain language, visual aids, and teach-back methods with every patient — not just those identified as having low health literacy. This removes the stigma of being singled out and improves communication for all patients."
+    },
+    {
+      "body": "The Caribbean context adds layers of complexity. In Trinidad & Tobago, a patient may speak and read Hindi at home but receive all health information in English. In Suriname, Dutch is the official language but Sranan Tongo is spoken daily. In Haiti, medical care is delivered in French but the patient speaks only Haitian Creole. These linguistic intersections multiply the health literacy challenge.",
+      "type": "text"
+    },
+    {
+      "type": "case-study",
+      "title": "Case Study: Mr. Ravi's Silent Struggle",
+      "scenario": "Mr. Ravi, a 62-year-old retired sugarcane worker in Chaguanas, Trinidad, has been prescribed warfarin after a deep vein thrombosis. He attends the pharmacy with his daughter. When you offer counselling, his daughter says: 'Just tell me, I will explain to Daddy.' You hand Mr. Ravi the medication information leaflet and he says: 'I go read it home.' His daughter later calls the pharmacy to report that her father has been taking the wrong dose — he could not read the label and was guessing based on the tablet colour.",
+      "questions": [
+        "What red flags did Mr. Ravi display for low health literacy?",
+        "How could the pharmacy team have identified and addressed his needs without embarrassing him?",
+        "What visual aids could have helped Mr. Ravi take warfarin safely?"
+      ],
+      "discussion": "Red flags included: reliance on his daughter for communication, claiming he would 'read it at home,' and the subsequent dosing error. A universal precautions approach — providing pictogram-based dosing instructions, colour-coded dose cards, and teach-back verification regardless of perceived literacy level — would have caught this problem. For warfarin specifically, a dose calendar with colour-coded tablets and dosing amounts is an essential safety tool for ALL patients, not just those with identified literacy issues."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "It is faster for the technician",
+        "It eliminates the stigma of being singled out and ensures clear communication with ALL patients",
+        "It is required by Caribbean law",
+        "It saves the pharmacy money on printed materials"
+      ],
+      "question": "Why is the 'universal precautions' approach to health literacy preferred over trying to identify individual patients with low literacy?",
+      "explanation": "Universal precautions mean every patient receives clear, plain-language communication with visual aids and teach-back verification. This removes the stigma of being identified as 'low literacy,' avoids the risk of missing patients who hide their difficulties, and improves outcomes for all patients — including those with adequate literacy who still benefit from clearer communication.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 25
+}

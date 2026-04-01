@@ -1,0 +1,105 @@
+{
+  "id": "81064c0a-5359-46c2-8723-94fbabbd5700",
+  "module_id": "3222ebc2-0078-4915-a18c-97e78b0bcad5",
+  "title": "Pain, Epilepsy & Common Neurological Medications",
+  "content": [
+    {
+      "text": "Neurological Conditions and Their Pharmacotherapy",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "The nervous system gives rise to a diverse range of conditions that generate significant prescription volume in Caribbean pharmacies. Pain management — from mild headaches to severe neuropathic pain — is the most common reason patients present to pharmacies. Epilepsy (seizure disorders), though less common, requires lifelong medication with narrow therapeutic windows. Depression, anxiety, and insomnia are increasingly treated with pharmaceutical agents across the region.",
+      "type": "text"
+    },
+    {
+      "text": "The Pain Pathway and Analgesic Drugs",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Pain begins when nociceptors (pain receptors) in peripheral tissues detect damage or potential damage. The pain signal travels via sensory nerves to the spinal cord (dorsal horn), then ascends to the brain (thalamus and cortex) where pain is perceived. Analgesic drugs can intervene at various points along this pathway: NSAIDs and paracetamol act peripherally (and centrally for paracetamol); opioids act centrally in the spinal cord and brain; local anaesthetics block nerve signal transmission; and adjuvant analgesics (gabapentin, amitriptyline) modify pain signalling in the CNS.",
+      "type": "text"
+    },
+    {
+      "body": "The WHO analgesic ladder provides a stepwise approach to pain management: Step 1 (mild pain) — non-opioid analgesics (paracetamol, NSAIDs); Step 2 (moderate pain) — weak opioids (tramadol, codeine) ± non-opioids; Step 3 (severe pain) — strong opioids (morphine, oxycodone) ± non-opioids ± adjuvants. This framework guides prescribing across the Caribbean and is reflected in the medications that pharmacy technicians handle daily.",
+      "type": "text"
+    },
+    {
+      "text": "Epilepsy and Anticonvulsant Medications",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Epilepsy is a neurological disorder characterised by recurrent seizures — episodes of abnormal, excessive electrical activity in the brain. Seizures may be generalised (affecting the whole brain, as in tonic-clonic 'grand mal' seizures) or focal/partial (affecting one region of the brain). Anticonvulsant medications (also called antiepileptic drugs or AEDs) work by stabilising neuronal membranes, enhancing inhibitory GABA activity, or reducing excitatory glutamate activity. Common AEDs dispensed in the Caribbean include sodium valproate, carbamazepine, phenytoin, levetiracetam, and lamotrigine.",
+      "type": "text"
+    },
+    {
+      "body": "Anticonvulsant medications have narrow therapeutic indices and are not interchangeable between brands or generics without clinical supervision. Switching a patient's carbamazepine or phenytoin between manufacturers can cause breakthrough seizures (if the new product has lower bioavailability) or toxicity (if it has higher bioavailability). In the Caribbean, where drug supply may necessitate manufacturer changes, pharmacy technicians must flag any anticonvulsant brand changes to the pharmacist immediately.",
+      "type": "callout",
+      "title": "Critical: Anticonvulsant Switching",
+      "variant": "danger"
+    },
+    {
+      "term": "Neuropathic Pain",
+      "type": "key-term",
+      "definition": "Pain caused by damage to or dysfunction of the nervous system itself, rather than by tissue damage. It is often described as burning, shooting, stabbing, or electric shock-like. Diabetic peripheral neuropathy (nerve damage from chronic high blood sugar) is the most common cause in the Caribbean. Standard analgesics (paracetamol, NSAIDs) are generally ineffective; treatment requires adjuvant analgesics like gabapentin, pregabalin, or amitriptyline."
+    },
+    {
+      "rows": [
+        [
+          "SSRIs",
+          "Fluoxetine, sertraline, escitalopram",
+          "Depression, anxiety disorders",
+          "Nausea, sexual dysfunction, initial anxiety worsening"
+        ],
+        [
+          "Tricyclic antidepressants (TCAs)",
+          "Amitriptyline, nortriptyline",
+          "Depression, neuropathic pain, migraine prevention",
+          "Sedation, dry mouth, urinary retention, cardiotoxicity in overdose"
+        ],
+        [
+          "Gabapentinoids",
+          "Gabapentin, pregabalin",
+          "Neuropathic pain, epilepsy, anxiety",
+          "Drowsiness, dizziness, weight gain"
+        ],
+        [
+          "Benzodiazepines",
+          "Diazepam, lorazepam, clonazepam",
+          "Anxiety, seizures, muscle spasm, insomnia",
+          "Sedation, dependence, respiratory depression — controlled substances"
+        ],
+        [
+          "Anticonvulsants",
+          "Sodium valproate, carbamazepine, phenytoin",
+          "Epilepsy, bipolar disorder, neuropathic pain",
+          "Hepatotoxicity (valproate), blood dyscrasias (carbamazepine), narrow therapeutic index (phenytoin)"
+        ]
+      ],
+      "type": "table",
+      "caption": "Common Neurological and Psychiatric Drug Classes",
+      "headers": [
+        "Class",
+        "Examples",
+        "Primary Indication",
+        "Key Side Effects"
+      ]
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "NSAIDs (e.g. ibuprofen)",
+        "Proton pump inhibitors (e.g. omeprazole)",
+        "Gabapentinoids (e.g. gabapentin, pregabalin)",
+        "Thiazide diuretics (e.g. hydrochlorothiazide)"
+      ],
+      "question": "Diabetic peripheral neuropathy is best treated with which class of medication?",
+      "explanation": "Neuropathic pain, including diabetic peripheral neuropathy, responds poorly to standard analgesics like NSAIDs. First-line treatments include gabapentinoids (gabapentin, pregabalin) and certain antidepressants (amitriptyline, duloxetine). These drugs modify pain signalling in the central nervous system, where neuropathic pain is generated and amplified.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 3,
+  "duration_minutes": 30
+}

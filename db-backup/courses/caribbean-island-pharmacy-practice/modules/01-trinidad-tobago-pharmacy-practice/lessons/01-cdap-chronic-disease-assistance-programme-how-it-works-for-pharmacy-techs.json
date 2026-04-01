@@ -1,0 +1,162 @@
+{
+  "id": "8cd7153c-0aae-4805-ae4c-485ec388740e",
+  "module_id": "aaa6f0c8-9dee-4403-9dce-33b8977e2a1c",
+  "title": "CDAP (Chronic Disease Assistance Programme): How It Works for Pharmacy Techs",
+  "content": [
+    {
+      "text": "Understanding CDAP",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "The Chronic Disease Assistance Programme (CDAP) is one of the most important government health initiatives in Trinidad and Tobago, and it directly shapes the daily work of every pharmacy technician in the country. Launched in 2003, CDAP provides prescription medications free of charge to citizens and residents of T&T who are diagnosed with specific chronic conditions. The programme covers over 60 medications across multiple therapeutic categories, and is funded entirely by the Government of Trinidad and Tobago.",
+      "type": "text"
+    },
+    {
+      "term": "CDAP (Chronic Disease Assistance Programme)",
+      "type": "key-term",
+      "definition": "A Government of Trinidad and Tobago programme that provides free prescription medications to all citizens and legal residents diagnosed with any of 22 specified chronic diseases. Medications are dispensed through participating private community pharmacies, making it the largest public-private pharmaceutical partnership in the country."
+    },
+    {
+      "text": "Diseases Covered Under CDAP",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "CDAP covers 22 chronic conditions that represent the major non-communicable disease (NCD) burden in Trinidad and Tobago. The programme was originally launched covering a smaller number of conditions and has expanded over time. Understanding which conditions are covered is essential because a pharmacy technician is often the first person to check whether a patient's prescription qualifies for CDAP dispensing.",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Hypertension (high blood pressure)",
+        "Diabetes mellitus (Type 1 and Type 2)",
+        "Arthritis (rheumatoid and osteoarthritis)",
+        "Cardiac diseases (heart failure, ischaemic heart disease)",
+        "Glaucoma",
+        "Asthma",
+        "Depression and mental health conditions",
+        "Epilepsy",
+        "Benign prostatic hyperplasia (BPH)",
+        "Thyroid disease (hypothyroidism and hyperthyroidism)",
+        "Parkinson's disease",
+        "Hyperlipidaemia (high cholesterol)",
+        "GERD (gastro-oesophageal reflux disease)",
+        "Chronic obstructive pulmonary disease (COPD)",
+        "HIV/AIDS (added later via expanded coverage)"
+      ],
+      "ordered": false
+    },
+    {
+      "text": "How CDAP Dispensing Works — Step by Step",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "CDAP operates through a network of participating private community pharmacies across T&T. Patients visit their doctor, who writes a CDAP prescription on a special CDAP prescription form (distinct from a regular prescription). The patient brings this form to any participating CDAP pharmacy, where the technician and pharmacist process it. The government reimburses the pharmacy based on a fixed-price schedule for each medication dispensed.",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Patient visits a registered medical practitioner who diagnoses a CDAP-covered condition",
+        "Doctor writes the prescription on an official CDAP prescription form (pink form), specifying generic drug names from the CDAP formulary",
+        "Patient presents at any participating CDAP pharmacy with the prescription and valid national identification",
+        "Pharmacy technician verifies: (a) the form is an official CDAP form, (b) the medication is on the CDAP formulary, (c) the patient's ID matches the form",
+        "Technician enters the prescription into the CDAP dispensing system and prepares the medication",
+        "Pharmacist performs the final check and counsels the patient",
+        "Patient receives their medication at no cost — signs the dispensing record",
+        "Pharmacy submits the dispensing record to the CDAP Secretariat for reimbursement (typically monthly)"
+      ],
+      "ordered": true
+    },
+    {
+      "body": "Before processing any CDAP prescription, always verify three things: (1) Is the medication on the current CDAP formulary? Brand names change — always check the generic name. (2) Is the prescription on the correct CDAP form (not a regular prescription pad)? (3) Does the patient's ID match the name on the prescription? These three checks prevent the most common CDAP claim rejections.",
+      "type": "callout",
+      "title": "Technician's CDAP Checklist",
+      "variant": "tip"
+    },
+    {
+      "text": "Commonly Dispensed CDAP Medications",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "rows": [
+        [
+          "Hypertension",
+          "Amlodipine, Enalapril, Losartan, Hydrochlorothiazide, Atenolol, Nifedipine",
+          "5mg/10mg, 5mg/10mg/20mg, 50mg/100mg, 25mg, 50mg/100mg, 30mg"
+        ],
+        [
+          "Diabetes",
+          "Metformin, Glibenclamide, Gliclazide, Insulin (various)",
+          "500mg/850mg, 5mg, 80mg, 100IU/mL"
+        ],
+        [
+          "Hyperlipidaemia",
+          "Simvastatin, Atorvastatin",
+          "20mg/40mg, 10mg/20mg/40mg"
+        ],
+        [
+          "Asthma / COPD",
+          "Salbutamol inhaler, Beclomethasone inhaler, Ipratropium bromide",
+          "100mcg, 250mcg, 20mcg"
+        ],
+        [
+          "Depression",
+          "Amitriptyline, Fluoxetine",
+          "25mg, 20mg"
+        ],
+        [
+          "Epilepsy",
+          "Carbamazepine, Sodium valproate, Phenytoin",
+          "200mg, 200mg/500mg, 100mg"
+        ],
+        [
+          "Glaucoma",
+          "Timolol eye drops, Latanoprost eye drops",
+          "0.5%, 0.005%"
+        ]
+      ],
+      "type": "table",
+      "caption": "Top CDAP Formulary Medications by Condition",
+      "headers": [
+        "Condition",
+        "CDAP Medications",
+        "Common Strengths"
+      ]
+    },
+    {
+      "body": "CDAP prescriptions must use generic (INN) names. If a doctor writes a brand name — for example 'Norvasc' instead of 'Amlodipine' — the pharmacy can still dispense the CDAP-approved generic equivalent, but the prescription should ideally be written generically. Some patients will ask for the brand-name version; you must explain that CDAP only covers the formulary generics and that they would need to pay privately for branded alternatives.",
+      "type": "callout",
+      "title": "Brand vs. Generic on CDAP",
+      "variant": "warning"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Yes — the medication and condition are covered, so the form doesn't matter",
+        "No — CDAP requires the official CDAP prescription form; the patient must return to their doctor for the correct form",
+        "Yes — but only if the pharmacy manager approves the exception",
+        "No — Metformin is not on the CDAP formulary"
+      ],
+      "question": "A patient presents a prescription written on a regular prescription pad (not a CDAP form) for Metformin 500mg for their diabetes. Can you process this under CDAP?",
+      "explanation": "CDAP prescriptions must be written on the official CDAP prescription form. Even though Metformin is on the formulary and diabetes is a covered condition, a prescription on a regular pad cannot be processed under CDAP. The patient must return to their doctor to get the prescription rewritten on the pink CDAP form.",
+      "correctIndex": 1
+    },
+    {
+      "type": "case-study",
+      "title": "Case Study: The CDAP Reimbursement Delay",
+      "scenario": "It is month-end at PharmaCare Pharmacy in Chaguanas. The owner-pharmacist informs the team that CDAP reimbursements from the government are three months behind. The pharmacy has been dispensing hundreds of CDAP prescriptions monthly, and cash flow is critically tight. Some pharmacies in the area have started quietly asking CDAP patients for a small 'dispensing fee' of TT$20–$50 per prescription. The pharmacist is considering doing the same.",
+      "questions": [
+        "Is charging a CDAP patient a dispensing fee legal under the programme's terms?",
+        "What alternatives does the pharmacy have to manage cash flow during reimbursement delays?",
+        "If the pharmacist proceeds with the fee, what is the pharmacy technician's ethical obligation?"
+      ],
+      "discussion": "Charging CDAP patients any fee violates the programme's terms — CDAP medications must be dispensed free of charge to the patient. However, delayed government reimbursement is a real and chronic challenge for T&T pharmacies. Legitimate alternatives include: negotiating extended payment terms with wholesalers, maintaining a CDAP float separate from general revenue, or, in extreme cases, temporarily reducing the number of CDAP prescriptions accepted. A technician who observes illegal fees being charged should raise the concern with the pharmacist and, if unresolved, may report to the Pharmacy Board."
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 40
+}

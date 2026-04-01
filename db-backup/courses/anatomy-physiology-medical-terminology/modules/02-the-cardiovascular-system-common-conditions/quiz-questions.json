@@ -1,0 +1,181 @@
+[
+  {
+    "id": "480db826-ff70-44b7-95a9-b8075f21c437",
+    "module_id": "0464175f-5c7e-4bcb-b01a-6fe45e50d244",
+    "question": "How many chambers does the human heart contain?",
+    "options": [
+      "Two",
+      "Three",
+      "Four",
+      "Five"
+    ],
+    "correct_answer": 2,
+    "explanation": "The human heart has four chambers: the right atrium, right ventricle, left atrium, and left ventricle. The atria receive blood; the ventricles pump blood out of the heart.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "e3283692-3769-4ddd-a917-ba2a13b3228e",
+    "module_id": "0464175f-5c7e-4bcb-b01a-6fe45e50d244",
+    "question": "The mitral valve is located between which two structures?",
+    "options": [
+      "Right atrium and right ventricle",
+      "Left atrium and left ventricle",
+      "Right ventricle and pulmonary artery",
+      "Left ventricle and aorta"
+    ],
+    "correct_answer": 1,
+    "explanation": "The mitral (bicuspid) valve is located between the left atrium and the left ventricle. It prevents backflow of blood from the ventricle into the atrium during systole. The mitral valve is the most commonly affected valve in valvular heart disease.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "2d2494c6-3f84-4aa5-8a38-810e06f220f4",
+    "module_id": "0464175f-5c7e-4bcb-b01a-6fe45e50d244",
+    "question": "Which physiological system is directly targeted by both ACE inhibitors (-pril) and ARBs (-sartan)?",
+    "options": [
+      "The sympathetic nervous system",
+      "The renin-angiotensin-aldosterone system (RAAS)",
+      "The arachidonic acid pathway",
+      "The hepatic cytochrome P450 system"
+    ],
+    "correct_answer": 1,
+    "explanation": "Both ACE inhibitors and ARBs target the renin-angiotensin-aldosterone system (RAAS). ACE inhibitors block the conversion of angiotensin I to angiotensin II; ARBs block the angiotensin II type 1 receptor. Together, these two drug classes account for a substantial proportion of antihypertensive prescriptions in the Caribbean.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "8197bf5c-c426-48d1-a0ec-c5086405d8a0",
+    "module_id": "0464175f-5c7e-4bcb-b01a-6fe45e50d244",
+    "question": "In the context of sickle cell disease, hydroxyurea works by:",
+    "options": [
+      "Replacing abnormal haemoglobin S with normal haemoglobin A",
+      "Increasing production of foetal haemoglobin (HbF) to reduce sickling",
+      "Dissolving blood clots in blocked capillaries",
+      "Providing extra iron for haemoglobin production"
+    ],
+    "correct_answer": 1,
+    "explanation": "Hydroxyurea increases the production of foetal haemoglobin (HbF), which does not polymerise like HbS. Higher HbF levels dilute the proportion of HbS in red blood cells, reducing sickling, vaso-occlusion, and the frequency of pain crises. It does not replace HbS or provide iron.",
+    "order_index": 3,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "33009ebb-1279-4c0b-ad15-2a0463c0decb",
+    "module_id": "0464175f-5c7e-4bcb-b01a-6fe45e50d244",
+    "question": "A blood pressure reading of 155/98 mmHg would be classified as:",
+    "options": [
+      "Elevated blood pressure",
+      "Stage 1 Hypertension",
+      "Stage 2 Hypertension",
+      "Hypertensive crisis"
+    ],
+    "correct_answer": 2,
+    "explanation": "A reading of 155/98 mmHg (systolic ≥ 140, diastolic ≥ 90) is classified as Stage 2 Hypertension. This typically requires medication in addition to lifestyle modification. In the Caribbean, this classification warrants referral to a physician and is well above the threshold for treatment.",
+    "order_index": 4,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "23077194-2899-4767-8702-4cf71f06b5c6",
+    "module_id": "0464175f-5c7e-4bcb-b01a-6fe45e50d244",
+    "question": "The sinoatrial (SA) node is often called the heart's natural pacemaker because it:",
+    "options": [
+      "Is the largest node in the heart",
+      "Initiates each electrical impulse that triggers a heartbeat",
+      "Prevents arrhythmias from occurring",
+      "Regulates blood pressure directly"
+    ],
+    "correct_answer": 1,
+    "explanation": "The SA node, located in the right atrium, spontaneously generates electrical impulses at a rate of 60-100 per minute at rest. This intrinsic automaticity makes it the natural pacemaker of the heart. All other cardiac tissue follows the SA node's rhythm under normal conditions.",
+    "order_index": 5,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "4123f59a-5a48-4cd2-971b-470f3253a3db",
+    "module_id": "0464175f-5c7e-4bcb-b01a-6fe45e50d244",
+    "question": "Which of the following are risk factors for coronary artery disease that are highly prevalent in Caribbean populations? Select ALL that apply.",
+    "options": [
+      "Hypertension",
+      "Type 2 diabetes",
+      "High dietary salt intake",
+      "Hypothermia",
+      "Hyperlipidaemia"
+    ],
+    "correct_answer": 0,
+    "explanation": "Hypertension, type 2 diabetes, high dietary salt intake, and hyperlipidaemia are all major risk factors for coronary artery disease and are highly prevalent across the Caribbean. Hypothermia is not a cardiovascular risk factor and is rarely encountered in tropical climates.",
+    "order_index": 6,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "analyze"
+  },
+  {
+    "id": "1907bf13-f359-44da-87c5-41aea42cbca8",
+    "module_id": "0464175f-5c7e-4bcb-b01a-6fe45e50d244",
+    "question": "Atherosclerosis is best described as:",
+    "options": [
+      "An inflammation of the heart valves caused by bacterial infection",
+      "A buildup of fatty plaques within artery walls leading to narrowing",
+      "An inherited condition causing abnormally shaped red blood cells",
+      "A rapid, irregular heartbeat originating in the atria"
+    ],
+    "correct_answer": 1,
+    "explanation": "Atherosclerosis is a chronic disease characterised by the buildup of fatty plaques (atheromas) within arterial walls. Over time, these plaques narrow the artery, restrict blood flow, and may rupture, triggering blood clot formation. It is the underlying pathology in most cases of coronary artery disease and many strokes.",
+    "order_index": 7,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "b01a3044-e85a-4a16-a8f8-b5f5023dc217",
+    "module_id": "0464175f-5c7e-4bcb-b01a-6fe45e50d244",
+    "question": "A sickle cell patient in pain crisis requesting opioid analgesics should be assumed to be drug-seeking.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": 1,
+    "explanation": "False. Sickle cell vaso-occlusive crises produce some of the most severe pain known to medicine. Patients may have physiological tolerance to opioids due to repeated crises — this is not addiction. Assuming drug-seeking behaviour is stigmatising, unethical, and can lead to inadequate pain management. Every sickle cell patient should be treated with dignity and clinical urgency.",
+    "order_index": 8,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "evaluate"
+  },
+  {
+    "id": "1ddb4b52-44b6-49ec-9e88-e19422467889",
+    "module_id": "0464175f-5c7e-4bcb-b01a-6fe45e50d244",
+    "question": "A pharmacy in Port of Spain receives a prescription for a patient: amlodipine 10 mg daily, losartan 50 mg daily, hydrochlorothiazide 25 mg daily, atorvastatin 20 mg daily, and aspirin 81 mg daily. What condition is most likely being managed?",
+    "options": [
+      "Type 1 diabetes",
+      "Asthma",
+      "Cardiovascular disease with hypertension and hyperlipidaemia",
+      "Sickle cell disease"
+    ],
+    "correct_answer": 2,
+    "explanation": "This is a classic cardiovascular combination: amlodipine (calcium channel blocker for BP), losartan (ARB for BP), hydrochlorothiazide (diuretic for BP), atorvastatin (statin for cholesterol), and aspirin (antiplatelet for cardiovascular protection). This polypharmacy regimen is extremely common in Caribbean patients with established cardiovascular disease.",
+    "order_index": 9,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "hard",
+    "blooms_level": "analyze"
+  }
+]

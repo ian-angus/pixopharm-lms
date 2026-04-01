@@ -1,0 +1,107 @@
+{
+  "id": "4d303269-8f08-40e4-b4fd-7da3b1fd2cce",
+  "module_id": "28473813-1710-4ced-a35f-28e0d84766a0",
+  "title": "Insurance Schemes, Claims Processing & Revenue Cycle Management",
+  "content": [
+    {
+      "text": "Navigating Caribbean Insurance & Government Programme Reimbursement",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Revenue cycle management — the process of tracking revenue from the initial patient encounter through to final payment — is critical for Caribbean pharmacies that participate in government insurance programmes. A significant portion of your revenue may come from programmes like CDAP, NHF, or JADEP, and efficient claims processing directly impacts your cash flow.",
+      "type": "text"
+    },
+    {
+      "term": "Revenue Cycle Management (RCM)",
+      "type": "key-term",
+      "definition": "The financial process that healthcare facilities use to track patient care episodes from registration and appointment scheduling to the final payment of a balance. In pharmacy, RCM encompasses prescription intake, eligibility verification, dispensing, claims submission, adjudication, and payment collection."
+    },
+    {
+      "rows": [
+        [
+          "CDAP (Chronic Disease Assistance Programme)",
+          "Trinidad & Tobago",
+          "Free medications for chronic conditions including diabetes, hypertension, asthma, arthritis, cardiac disease, glaucoma, thyroid disease, depression, epilepsy, and benign prostatic hyperplasia",
+          "Pharmacy submits claims to NIPDEC; reimbursement at fixed rates; patient pays nothing for listed items"
+        ],
+        [
+          "NHF (National Health Fund)",
+          "Jamaica",
+          "Subsidy for medications treating 17 chronic conditions",
+          "Patient pays co-payment; NHF pays subsidy directly to pharmacy; individual benefit card system"
+        ],
+        [
+          "JADEP (Jamaica Drugs for the Elderly Programme)",
+          "Jamaica",
+          "Free or subsidised medications for persons 60 and older",
+          "Covers specified formulary of essential medications; administered through NHF infrastructure"
+        ],
+        [
+          "Barbados Drug Benefit Programme",
+          "Barbados",
+          "Medications through public health system",
+          "Drug Benefit Card for eligible persons; dispensed through polyclinics and Queen Elizabeth Hospital pharmacy"
+        ]
+      ],
+      "type": "table",
+      "caption": "Major Caribbean Government Pharmacy Programmes",
+      "headers": [
+        "Programme",
+        "Country",
+        "Coverage",
+        "Key Details"
+      ]
+    },
+    {
+      "text": "The Claims Processing Workflow",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "type": "list",
+      "items": [
+        "Patient presents: Verify eligibility — check that the patient's CDAP/NHF card is valid and the condition is covered",
+        "Prescription validation: Confirm the medication is on the programme formulary and the prescriber is registered",
+        "Dispensing: Prepare and dispense the medication following standard operating procedures",
+        "Documentation: Record all required information — patient details, medication, quantity, batch number, prescriber",
+        "Claims submission: Submit claims electronically (where available) or via paper forms within the submission window",
+        "Adjudication: The programme processes the claim and approves, rejects, or queries it",
+        "Payment: Reimbursement is deposited to the pharmacy's account (timeline varies: 14–90 days)",
+        "Reconciliation: Match payments received against claims submitted; follow up on rejected or unpaid claims"
+      ],
+      "ordered": true
+    },
+    {
+      "body": "The most frequent reasons for CDAP and NHF claim rejections are: expired patient eligibility, medication not on the programme formulary, prescriber not registered with the programme, incomplete documentation, and claims submitted outside the filing window. Each rejected claim represents lost revenue and additional administrative work. Training your team to get claims right the first time is one of the highest-value management activities.",
+      "type": "callout",
+      "title": "Common Claim Rejections",
+      "variant": "danger"
+    },
+    {
+      "type": "case-study",
+      "title": "Case Study: The Cash Flow Crunch",
+      "scenario": "GreenLeaf Pharmacy in San Fernando, Trinidad, participates in the CDAP programme. In January, they dispense $85,000 worth of CDAP medications. Their wholesaler payment is due in 30 days ($62,000), but CDAP reimbursement typically arrives in 45–60 days. The pharmacy has $25,000 in cash reserves. By mid-February, they face a $37,000 shortfall — they owe the wholesaler $62,000 but only have $25,000 in cash. Their non-CDAP cash sales cover daily operating expenses but cannot close this gap.",
+      "questions": [
+        "What immediate steps should the pharmacy manager take to address the cash shortfall?",
+        "What longer-term strategies could prevent this situation from recurring?",
+        "How might the pharmacy negotiate better terms with their wholesaler?"
+      ],
+      "discussion": "This scenario illustrates the classic Caribbean pharmacy cash flow gap. Immediate options include: negotiating extended payment terms with the wholesaler (45–60 days to match CDAP reimbursement timing), arranging a short-term business line of credit, or factoring receivables. Longer-term strategies include: maintaining a larger cash reserve (target 2 months of CDAP disbursement value), diversifying revenue beyond government programmes (OTC sales, health services), submitting claims more frequently to shorten the reimbursement cycle, and negotiating prompt-payment discounts with wholesalers to incentivise faster CDAP processing."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "The pharmacy is not registered with the programme",
+        "Incomplete documentation or expired patient eligibility",
+        "The medication is too expensive for the programme",
+        "The patient visited the pharmacy too recently"
+      ],
+      "question": "Which of the following is the MOST common reason for CDAP/NHF claim rejections in Caribbean pharmacies?",
+      "explanation": "Incomplete documentation and expired patient eligibility are the most frequent causes of claim rejections. This is why verifying patient eligibility at the point of dispensing and ensuring all required fields are completed before submission is critical to revenue cycle efficiency.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 3,
+  "duration_minutes": 25
+}

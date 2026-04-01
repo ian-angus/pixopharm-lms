@@ -1,0 +1,91 @@
+{
+  "id": "d2d89a16-9e75-4538-806d-82b9b37dfb22",
+  "module_id": "1b66b300-d870-483b-ad7a-89886af4eca1",
+  "title": "When to Involve the Pharmacist vs. Handle It Yourself",
+  "content": [
+    {
+      "text": "Knowing Your Limits Is a Strength, Not a Weakness",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Not every customer complaint needs the pharmacist. And not every complaint should be handled by you. Knowing which is which is a critical judgment call. Escalate too early and you seem incompetent; escalate too late and the situation may have spiralled out of control. The key is understanding what falls within your authority to resolve and what requires someone with more seniority, clinical knowledge, or legal responsibility.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Wait time complaints — acknowledge, apologise, give realistic time estimate",
+          "Clinical complaints — patient claims medication caused a reaction"
+        ],
+        [
+          "Pricing enquiries — explain the cost, offer generic alternatives if available",
+          "Dispensing error concerns — patient believes they received the wrong medication"
+        ],
+        [
+          "Insurance questions — help navigate paperwork, explain common rejections",
+          "Controlled substance disputes — patient claims they are owed more"
+        ],
+        [
+          "Stock-out frustration — check other branches, offer to order, suggest alternatives through pharmacist",
+          "Verbal threats — any situation that feels physically threatening"
+        ],
+        [
+          "Minor service complaints — another staff member was rude or slow",
+          "Prescription validity questions — patient presents a prescription that looks altered"
+        ]
+      ],
+      "type": "table",
+      "caption": "Handle Yourself vs. Escalate to Pharmacist",
+      "headers": [
+        "Handle Yourself",
+        "Involve the Pharmacist"
+      ]
+    },
+    {
+      "body": "If at any point you feel unsafe, uncertain, or out of your depth — escalate immediately. There is no penalty for involving the pharmacist too early. There can be serious consequences for not involving them when you should have. Trust your instincts.",
+      "type": "callout",
+      "title": "The Golden Rule of Escalation",
+      "variant": "warning"
+    },
+    {
+      "body": "When you do escalate, do it professionally. Do not say 'I cannot help you — you need to talk to the pharmacist' as if you are passing off a problem. Instead, say 'I want to make sure you get the best possible help with this. Let me bring our pharmacist in — they have the authority to resolve this for you.' Frame the escalation as an upgrade in service, not a retreat.",
+      "type": "text"
+    },
+    {
+      "text": "How to Escalate Effectively",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "type": "list",
+      "items": [
+        "Acknowledge the customer's issue: 'I hear you, and I want this sorted out.'",
+        "Explain why you are involving the pharmacist: 'This needs someone with the authority to make that decision.'",
+        "Brief the pharmacist before they approach the customer: give a 10-second summary of the issue and the customer's emotional state",
+        "Do not abandon the customer: stay nearby, offer a chair if appropriate, check back if the pharmacist is delayed",
+        "Follow up after: if the pharmacist resolves it, make a mental note so you know how to handle similar situations in the future"
+      ],
+      "ordered": true
+    },
+    {
+      "term": "Professional Escalation",
+      "type": "key-term",
+      "definition": "The deliberate, structured transfer of a customer issue to a more senior or clinically qualified team member. Effective escalation includes briefing the receiving person, framing the transfer positively for the customer, and following up to learn from the resolution."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Count the current prescription carefully and tell them last month's issue cannot be verified",
+        "Offer them extra tablets from current stock to make up the difference",
+        "Escalate to the pharmacist — this is a potential dispensing error that requires investigation",
+        "Apologise and promise it will not happen again"
+      ],
+      "question": "A customer insists they were given the wrong number of tablets last month. They are becoming increasingly agitated. What should you do?",
+      "explanation": "A patient claiming they received the wrong quantity is a potential dispensing error — a serious matter that must be investigated by the pharmacist. Dismissing it, compensating without investigation, or making promises without understanding what happened are all inappropriate responses.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 25
+}

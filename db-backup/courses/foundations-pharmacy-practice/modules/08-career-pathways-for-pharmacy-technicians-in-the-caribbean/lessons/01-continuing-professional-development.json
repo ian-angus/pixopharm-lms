@@ -1,0 +1,65 @@
+{
+  "id": "d4be1c53-c6c9-44cd-ad9d-b497028412f2",
+  "module_id": "ca3220b3-2c07-448d-bf3e-0790d0ed9088",
+  "title": "Continuing Professional Development",
+  "content": [
+    {
+      "text": "Never Stop Learning",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Pharmacy is a field where knowledge becomes outdated rapidly. New drugs are approved, guidelines change, regulations are updated, and technology evolves. Continuing Professional Development (CPD) is not optional — it is a professional obligation and, increasingly, a regulatory requirement for maintaining your qualification.",
+      "type": "text"
+    },
+    {
+      "text": "CPD Opportunities in the Caribbean",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "type": "list",
+      "items": [
+        "PIXOPHARM advanced courses: Dispensing & Medication Management, Pharmacology Essentials, AI in Pharmacy",
+        "Caribbean Association of Pharmacists (CAP) conferences and workshops",
+        "CARPHA training programmes in pharmaceutical quality and regulatory affairs",
+        "University programmes: UWI (University of the West Indies) offers pharmacy degrees across campuses in Trinidad, Jamaica, and Barbados",
+        "Online learning: FDA, WHO, and PAHO offer free pharmaceutical training modules",
+        "Manufacturer training: Pharmaceutical companies offer product-specific training",
+        "In-pharmacy mentorship: Learning from experienced pharmacists and senior technicians",
+        "Professional journals: The West Indian Medical Journal, Caribbean Medical Journal"
+      ],
+      "ordered": false
+    },
+    {
+      "text": "Career Progression Pathways",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Your career as a pharmacy technician is not a dead end — it is a launching pad. With experience and further education, you can advance into senior technician roles, specialised areas, management, or even transition toward a pharmacy degree.",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Entry-Level Pharmacy Technician → 0-2 years experience",
+        "Senior Pharmacy Technician → 2-5 years, may supervise junior staff",
+        "Lead Technician / Dispensary Manager → 5+ years, manages pharmacy operations",
+        "Specialist Roles → Sterile compounding, oncology pharmacy, clinical trials support",
+        "Pharmacy Management → Store manager, district pharmacy coordinator",
+        "Further Education → Bachelor of Pharmacy (BPharm), Doctor of Pharmacy (PharmD) at UWI",
+        "Related Fields → Pharmaceutical sales, regulatory affairs, health administration, public health"
+      ],
+      "ordered": true
+    },
+    {
+      "body": "As a CARICOM national, you benefit from the free movement of skilled workers under the CARICOM Single Market and Economy (CSME). While pharmacy regulations remain island-specific, your qualification and experience are valuable across the region. Research the specific registration requirements of any island you wish to practise on. PIXOPHARM's multi-island curriculum is designed to give you a competitive advantage in cross-island career mobility.",
+      "type": "callout",
+      "title": "Cross-Island Mobility",
+      "variant": "tip"
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 20
+}

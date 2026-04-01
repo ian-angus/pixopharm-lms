@@ -1,0 +1,68 @@
+{
+  "id": "cfb4b211-dd12-4709-aa2f-eb5899747408",
+  "module_id": "c33cff75-0326-4020-95b4-a2f8a518375a",
+  "title": "Implementing SOPs: Training, Change Management & Staff Buy-In",
+  "content": [
+    {
+      "text": "From Paper to Practice",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Writing an excellent SOP is only half the battle. An SOP that sits in a binder on a shelf, unread and unfollowed, provides zero safety benefit. Implementation — the process of training staff, embedding the SOP into daily workflow, and sustaining adherence over time — is where SOPs either succeed or fail. In Caribbean pharmacies where teams are small and change can feel personal, effective implementation requires sensitivity, communication, and patience.",
+      "type": "text"
+    },
+    {
+      "text": "The Implementation Process",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "type": "list",
+      "items": [
+        "Announce the new SOP in a team meeting — explain the purpose, the problem it addresses, and the expected benefits",
+        "Distribute copies and walk through each step as a team — invite questions and concerns",
+        "Demonstrate the procedure — the pharmacist or lead technician should perform the SOP while the team observes",
+        "Have each team member practice the procedure under supervision — provide feedback and coaching",
+        "Post the SOP in a visible location near the relevant work area (e.g., dispensing bench, storage room)",
+        "Set a 'go-live' date and announce it — from this date, the SOP is the required standard",
+        "Monitor adherence closely during the first two weeks — provide encouragement and correction as needed",
+        "Collect feedback after 30 days — are there steps that are impractical, unclear, or missing? Revise as needed"
+      ],
+      "ordered": true
+    },
+    {
+      "body": "Staff may resist new SOPs for several reasons: 'We have always done it this way,' 'This is extra work,' or 'I already know how to do this.' The most effective response is to connect the SOP to patient safety — 'This SOP exists because a near-miss showed us that our current process has a gap that could harm a patient.' When staff understand the WHY behind the SOP, compliance improves dramatically.",
+      "type": "callout",
+      "title": "Resistance to Change",
+      "variant": "warning"
+    },
+    {
+      "body": "Documentation of training is essential. Every staff member who is trained on a new SOP should sign an acknowledgement that they have read, understood, and been trained on the procedure. This documentation serves two purposes: it ensures accountability (the person cannot claim ignorance of the procedure), and it satisfies regulatory expectations for staff competency records.",
+      "type": "text"
+    },
+    {
+      "text": "Sustaining SOP Adherence",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Initial compliance with a new SOP is typically high but tends to decay over time as the novelty wears off and time pressures reassert themselves. Sustaining adherence requires: regular audits (see Lesson 4.4), periodic refresher training, visible leadership compliance (the pharmacist must follow the SOPs too), integration of SOP compliance into performance reviews, and prompt correction of deviations before they become normalised.",
+      "type": "text"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Threaten disciplinary action for non-compliance",
+        "Explain that the SOP is a regulatory requirement with no room for discussion",
+        "Connect the SOP to patient safety by explaining the specific risk or incident that led to its creation",
+        "Allow staff to decide for themselves whether to follow the SOP"
+      ],
+      "question": "What is the most effective way to overcome staff resistance to a new SOP?",
+      "explanation": "When staff understand the 'why' behind an SOP — particularly when it is connected to a real incident or near-miss that could have harmed a patient — they are far more likely to embrace it. Threats and mandates may achieve short-term compliance but breed resentment and covert non-compliance. True buy-in comes from understanding, not coercion.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 25
+}

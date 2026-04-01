@@ -1,0 +1,80 @@
+{
+  "id": "b0b1d5a3-8050-4120-87fc-d4460ced5bc9",
+  "module_id": "40f9b245-60bf-4e97-bc70-fb4b58fcd290",
+  "title": "Public vs Private Pharmacy Practice",
+  "content": [
+    {
+      "text": "Two Sectors, Different Realities",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Working in a public sector pharmacy versus a private sector pharmacy are quite different experiences in the Caribbean. Both have advantages and challenges, and understanding these differences will help you decide where you want to build your career — and prepare you for the realities of each setting.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Medication cost to patient",
+          "Free or heavily subsidised",
+          "Patient pays (may be partially covered by insurance or NHF)"
+        ],
+        [
+          "Formulary",
+          "Restricted to approved national formulary",
+          "Broader range including brand medications, supplements, cosmetics"
+        ],
+        [
+          "Patient volume",
+          "High volume, often with long wait times",
+          "Variable; more time per patient typically available"
+        ],
+        [
+          "Medication supply",
+          "Central procurement; may face stockouts",
+          "Independent purchasing; more supply flexibility but cost-driven"
+        ],
+        [
+          "Technology",
+          "Government systems, may be older",
+          "Often more modern POS and pharmacy management systems"
+        ],
+        [
+          "Work environment",
+          "Structured, government employment conditions",
+          "Varied; from independent pharmacies to chain operations"
+        ],
+        [
+          "Career progression",
+          "Civil service structure with defined grades",
+          "Performance-based; entrepreneurial opportunities"
+        ],
+        [
+          "Salary",
+          "Government scale; benefits and pension",
+          "Competitive but varies; limited government benefits"
+        ]
+      ],
+      "type": "table",
+      "caption": "Public vs Private Pharmacy: Key Differences",
+      "headers": [
+        "Factor",
+        "Public Sector",
+        "Private Sector"
+      ]
+    },
+    {
+      "type": "case-study",
+      "title": "Case Study: The Formulary Dilemma",
+      "scenario": "You work in a public polyclinic pharmacy in Barbados. A patient's doctor has prescribed a specific brand-name antihypertensive that is NOT on the Barbados National Drug Formulary. The formulary equivalent (a different generic medication in the same therapeutic class) is available. The patient is insistent that they want the specific brand their doctor prescribed, saying 'the other one doesn't work as well for me.'",
+      "questions": [
+        "Can the public pharmacy dispense the brand-name medication?",
+        "How would you explain the formulary system to the patient?",
+        "What are the patient's options?"
+      ],
+      "discussion": "Public sector pharmacies in Barbados must dispense from the approved National Drug Formulary. The brand-name medication would need to go through a formal non-formulary request if it is clinically justified. In the meantime, the patient can: (1) accept the formulary equivalent, (2) ask their doctor to submit a special request for the non-formulary item, or (3) obtain the specific brand from a private pharmacy at their own expense. The technician's role is to explain this clearly and non-judgementally, and to involve the pharmacist in the clinical discussion."
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 10
+}

@@ -1,0 +1,145 @@
+[
+  {
+    "id": "e56abe04-1cd3-4d44-a205-8b95f180e471",
+    "module_id": "2e20b351-7665-40a0-840d-62c0eebb01a2",
+    "question": "What is NIPDEC's primary function in Trinidad & Tobago's pharmaceutical supply chain?",
+    "options": [
+      "Regulating pharmacy licences",
+      "Procuring and distributing pharmaceuticals to public health facilities",
+      "Manufacturing generic medications domestically",
+      "Training pharmacy technicians"
+    ],
+    "correct_answer": 1,
+    "explanation": "NIPDEC (National Insurance Property Development Company) is a state enterprise responsible for the bulk procurement and distribution of pharmaceuticals and medical supplies to public health facilities across Trinidad & Tobago.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "56d6ff83-9861-4023-ae5c-99bea0bf6d46",
+    "module_id": "2e20b351-7665-40a0-840d-62c0eebb01a2",
+    "question": "The OECS Pharmaceutical Procurement Service achieves volume discounts of approximately what range compared to individual country purchasing?",
+    "options": [
+      "5–10%",
+      "10–20%",
+      "30–60%",
+      "80–90%"
+    ],
+    "correct_answer": 2,
+    "explanation": "The OECS PPS achieves volume discounts of 30–60% by pooling the purchasing volumes of multiple small Eastern Caribbean nations. This collective bargaining power is critical for ensuring affordable medication access in the region.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "bf0a218a-bc28-4df2-8cfc-7a781206c903",
+    "module_id": "2e20b351-7665-40a0-840d-62c0eebb01a2",
+    "question": "Arrange the following pharmaceutical supply chain stages in the correct order from manufacturer to patient.",
+    "options": [
+      "Customs clearance and regulatory inspection",
+      "International procurement and order placement",
+      "Sea freight shipping",
+      "Distribution to pharmacy",
+      "Manufacturing and quality release"
+    ],
+    "correct_answer": 0,
+    "explanation": "The correct order is: (1) International procurement and order placement, (2) Manufacturing and quality release, (3) Sea freight shipping, (4) Customs clearance and regulatory inspection, (5) Distribution to pharmacy.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "e2361bf3-c613-46aa-bee8-fe62fdbbbb9e",
+    "module_id": "2e20b351-7665-40a0-840d-62c0eebb01a2",
+    "question": "True or False: A medication that is registered in one CARICOM country is automatically approved for import into all other CARICOM countries.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": 1,
+    "explanation": "False. While the CARICOM Caribbean Regulatory System (CRS) is working toward mutual recognition of drug registrations, full harmonisation has not yet been achieved. Each nation currently maintains its own registration requirements, though the CRS is gradually enabling faster recognition pathways.",
+    "order_index": 3,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "5b0ee236-6f64-4011-a463-dc28a09fc829",
+    "module_id": "2e20b351-7665-40a0-840d-62c0eebb01a2",
+    "question": "Which regulatory body oversees drug registration in Trinidad & Tobago?",
+    "options": [
+      "The Pharmacy Board of Trinidad and Tobago",
+      "The Chemistry, Food and Drugs Division (CFDD)",
+      "CARPHA",
+      "The Trinidad and Tobago Bureau of Standards"
+    ],
+    "correct_answer": 1,
+    "explanation": "The Chemistry, Food and Drugs Division (CFDD) under the Ministry of Health is responsible for drug registration in Trinidad & Tobago, operating under the Food and Drugs Act (Chapter 30:01).",
+    "order_index": 4,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "c1b8cdd5-45f8-441c-82d2-c27a1119852a",
+    "module_id": "2e20b351-7665-40a0-840d-62c0eebb01a2",
+    "question": "A shipment of insulin arrives at Port of Spain without a Certificate of Pharmaceutical Product (CPP). What should happen?",
+    "options": [
+      "The shipment should be released immediately since insulin is a life-saving medication",
+      "The shipment should be held pending receipt of the CPP from the exporting country's regulatory authority",
+      "The pharmacy technician should create a CPP based on the manufacturer's label",
+      "The shipment should be destroyed as it is presumed counterfeit"
+    ],
+    "correct_answer": 1,
+    "explanation": "The CPP is a mandatory import document. While the medication may be perfectly safe, it cannot be released without proper documentation. The shipment should be held at customs while the CPP is obtained from the exporting country's regulatory authority. This protects the integrity of the supply chain.",
+    "order_index": 5,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "hard",
+    "blooms_level": "evaluate"
+  },
+  {
+    "id": "5e2b2add-2344-4442-81e1-74d10839df2b",
+    "module_id": "2e20b351-7665-40a0-840d-62c0eebb01a2",
+    "question": "Which of the following are benefits of supplier diversification for a Caribbean pharmacy? Select ALL that apply.",
+    "options": [
+      "Reduced risk of complete supply disruption",
+      "Competitive pricing through multiple sources",
+      "Backup options during hurricane season",
+      "Eliminated need for inventory management"
+    ],
+    "correct_answer": 0,
+    "explanation": "Supplier diversification provides reduced risk, competitive pricing, and backup options. However, it does not eliminate the need for inventory management — diversified supply still requires careful ordering, tracking, and stock control.",
+    "order_index": 6,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "analyze"
+  },
+  {
+    "id": "bab734bb-0e4c-43cd-8352-69f8e2d6afb3",
+    "module_id": "2e20b351-7665-40a0-840d-62c0eebb01a2",
+    "question": "The typical sea freight shipping time for pharmaceutical products to reach the Caribbean from international manufacturers is approximately ___________.",
+    "options": [
+      "1–3 days",
+      "2–6 weeks",
+      "3–6 months",
+      "12–18 months"
+    ],
+    "correct_answer": 1,
+    "explanation": "Sea freight shipping to the Caribbean typically takes 2–6 weeks depending on the origin country, shipping route, and port of destination. This is one reason why Caribbean pharmacies must plan procurement months in advance and maintain appropriate safety stock levels.",
+    "order_index": 7,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  }
+]

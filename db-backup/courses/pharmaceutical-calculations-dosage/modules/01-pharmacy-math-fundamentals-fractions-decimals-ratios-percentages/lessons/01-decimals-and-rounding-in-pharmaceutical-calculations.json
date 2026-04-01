@@ -1,0 +1,114 @@
+{
+  "id": "c5f9a4fe-5671-45ce-8613-637bfe9bbe09",
+  "module_id": "a10da8b5-6ddf-4b8e-9a92-c4055fb72eed",
+  "title": "Decimals and Rounding in Pharmaceutical Calculations",
+  "content": [
+    {
+      "text": "Decimals: The Language of Modern Pharmacy",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "While fractions appear in traditional pharmacy notation, decimals dominate modern pharmaceutical calculations. Drug concentrations, metric measurements, and digital pharmacy systems all use decimal notation. A pharmacy technician who cannot manipulate decimals quickly and accurately is a patient safety risk. In this lesson, we will master the decimal operations you will use every day.",
+      "type": "text"
+    },
+    {
+      "body": "A misplaced decimal point can cause a tenfold dosing error — potentially fatal, especially in paediatric patients. For example, 0.5 mL misread as 5 mL represents a 10× overdose. ALWAYS use a leading zero before a decimal point (write 0.5, never .5). NEVER use a trailing zero after a decimal point in medication orders (write 5 mg, never 5.0 mg). These rules are mandated by the Institute for Safe Medication Practices (ISMP) and adopted across Caribbean institutions including Queen Elizabeth Hospital (QEH) Barbados and the Port of Spain General Hospital.",
+      "type": "callout",
+      "title": "The Lethal Decimal Point Error",
+      "variant": "danger"
+    },
+    {
+      "term": "Leading Zero",
+      "type": "key-term",
+      "definition": "A zero placed before a decimal point in numbers less than one (e.g., 0.25 instead of .25). Required in all pharmaceutical documentation to prevent misreading and dosing errors. This is a patient safety standard, not a stylistic preference."
+    },
+    {
+      "text": "Decimal Place Value in Pharmacy",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Understanding place value is critical for drug dosing. In the number 1.234: the 1 is the ones place (1 gram), the 2 is tenths (200 milligrams), the 3 is hundredths (30 milligrams), and the 4 is thousandths (4 milligrams). When dispensing methotrexate 2.5 mg versus 25 mg — a difference of one decimal place — the consequences of error are severe. Methotrexate overdose can be fatal.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Tablet quantity",
+          "Always round UP to the next whole number",
+          "31.5 tablets → dispense 32"
+        ],
+        [
+          "Liquid volume (adult)",
+          "Round to nearest 0.1 mL for syringes, 1 mL for cups",
+          "4.67 mL → 4.7 mL (syringe) or 5 mL (cup)"
+        ],
+        [
+          "Liquid volume (paediatric)",
+          "Round to nearest 0.01 mL for precision syringes",
+          "0.347 mL → 0.35 mL"
+        ],
+        [
+          "Body weight calculation",
+          "Round to nearest 0.1 kg for adults",
+          "72.45 kg → 72.5 kg"
+        ],
+        [
+          "BSA calculation",
+          "Round to nearest 0.01 m²",
+          "1.734 m² → 1.73 m²"
+        ],
+        [
+          "Drug quantity in compounding",
+          "Use analytical balance precision (0.001 g)",
+          "0.2456 g → 0.246 g"
+        ]
+      ],
+      "type": "table",
+      "caption": "Pharmacy Rounding Rules",
+      "headers": [
+        "Situation",
+        "Rounding Rule",
+        "Example"
+      ]
+    },
+    {
+      "text": "Multiplying and Dividing Decimals",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "When multiplying decimals, count the total number of decimal places in both numbers and place the decimal point that many places from the right in the product. Example: 0.25 × 0.4 = 0.100 = 0.1. When dividing, move the decimal point in the divisor to make it a whole number, then move the decimal point in the dividend the same number of places. Example: 2.5 ÷ 0.5 — move one place to get 25 ÷ 5 = 5.",
+      "type": "text"
+    },
+    {
+      "body": "Worked pharmacy example: A vial contains 2.5 mg/mL of morphine. The doctor orders 0.75 mg. What volume do you draw up? Volume = Dose ÷ Concentration = 0.75 mg ÷ 2.5 mg/mL = 0.3 mL. Verify: 0.3 mL × 2.5 mg/mL = 0.75 mg ✓.",
+      "type": "text"
+    },
+    {
+      "body": "While calculators are permitted in Caribbean pharmacy practice, you must be able to estimate mentally to catch calculator entry errors. If your calculator shows a result that is 10× or 100× different from your estimate, you likely made a decimal point error. Always estimate before calculating, then verify your calculator result against your estimate.",
+      "type": "callout",
+      "title": "Calculator Dependence",
+      "variant": "warning"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        ".5 mg",
+        "0.5 mg",
+        "0.50 mg",
+        "½ mg"
+      ],
+      "question": "Which of the following is the CORRECT way to write a drug dose of half a milligram on a medication order?",
+      "explanation": "0.5 mg is correct. It uses a leading zero (mandatory) and no trailing zero (which could cause the dose to be misread as 5.0 mg → 5 mg, a tenfold error). Writing '.5 mg' omits the leading zero — it could be misread as '5 mg'. Writing '0.50 mg' adds an unnecessary trailing zero. Using the fraction symbol '½' is informal and not standard for written medication orders.",
+      "correctIndex": 1
+    },
+    {
+      "body": "Remember: in pharmacy, decimal precision is not about mathematical elegance — it is about patient safety. Every decimal place represents a potential point of error, so always use the minimum number of decimal places needed for accurate dosing, and always double-check your decimal placement.",
+      "type": "text"
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 35
+}

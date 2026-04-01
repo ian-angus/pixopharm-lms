@@ -1,0 +1,23 @@
+{
+  "id": "086d9081-308a-4252-8a25-45e1f8b90558",
+  "title": "Caribbean Island Pharmacy Practice",
+  "slug": "caribbean-island-pharmacy-practice",
+  "description": "Island-specific knowledge for Trinidad & Tobago, Jamaica, Barbados, and Grenada pharmacy practice.",
+  "skill_level": "Regional",
+  "duration_weeks": 4,
+  "icon": "Globe",
+  "color": "sky",
+  "prerequisites": [
+    "foundations-pharmacy-practice",
+    "caribbean-pharmaceutical-regulations"
+  ],
+  "what_youll_learn": [
+    "Navigate island-specific licensing",
+    "Process local government drug programmes",
+    "Apply island-specific regulations",
+    "Operate within local hospital systems",
+    "Identify island supply chain pathways"
+  ],
+  "status": "published",
+  "order": 13
+}

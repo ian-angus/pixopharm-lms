@@ -1,0 +1,100 @@
+{
+  "id": "499ee0ce-220a-4e96-9650-e9324830eaff",
+  "module_id": "5f78ea4a-5416-4877-9c32-764e4bb0ecb3",
+  "title": "Your Personal Technology Learning Plan",
+  "content": [
+    {
+      "text": "Staying Relevant in a Changing Profession",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "The pace of technology change in pharmacy means that the AI tools and digital systems you learn today will evolve, be replaced, or be supplemented by new technologies throughout your career. The most valuable skill you can develop is not mastery of any specific tool — it is the ability to learn, evaluate, and adapt to new technologies as they emerge. This lesson helps you create a personal technology learning plan.",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Assess your current skills: Where are you confident with technology? Where do you feel uncertain? Be honest — this baseline guides your learning.",
+        "Identify immediate learning priorities: Focus on technologies you will use in the next 12 months (your pharmacy's dispensing software AI features, AI chatbots for drug information, electronic claims processing)",
+        "Set quarterly learning goals: Each quarter, commit to learning one new technology skill relevant to pharmacy practice. Make it specific and measurable.",
+        "Use free resources: PIXOPHARM courses, vendor training webinars, YouTube tutorials on pharmacy software, free tiers of AI tools (ChatGPT, Claude) for practice",
+        "Join a community: Connect with other Caribbean pharmacy technicians learning technology through professional associations, social media groups, and PIXOPHARM forums",
+        "Document your learning: Keep a CPD log of technology skills learned. This contributes to your continuing professional development requirements.",
+        "Teach others: The best way to solidify your knowledge is to help a colleague learn. Become the technology resource person in your pharmacy."
+      ],
+      "ordered": true
+    },
+    {
+      "body": "As Caribbean pharmacy boards increasingly recognise the importance of technology competency, AI and digital health topics are being incorporated into CPD requirements. Pharmacy technicians who proactively develop technology skills now will be ahead of the curve when these requirements become formal. PIXOPHARM courses, including this one, count toward CPD hours in participating jurisdictions.",
+      "type": "callout",
+      "title": "CPD & Technology",
+      "variant": "info"
+    },
+    {
+      "rows": [
+        [
+          "Q1",
+          "Master AI chatbot use for drug information lookup",
+          "PIXOPHARM Module 4, free ChatGPT/Claude accounts, Lexicomp for verification",
+          "Can efficiently use AI for drug queries with proper verification workflow"
+        ],
+        [
+          "Q2",
+          "Understand and use your pharmacy's inventory forecasting features",
+          "Vendor training, PIXOPHARM Module 2, in-pharmacy mentoring",
+          "Can interpret forecasting dashboards and act on AI recommendations"
+        ],
+        [
+          "Q3",
+          "Develop data protection competency for AI-enabled pharmacy",
+          "PIXOPHARM Module 5, national data protection authority resources, pharmacy manager guidance",
+          "Can follow and explain your pharmacy's data protection protocol"
+        ],
+        [
+          "Q4",
+          "Evaluate one new AI tool for potential pharmacy use",
+          "PIXOPHARM Module 7, vendor demos, peer discussion",
+          "Can produce a written evaluation using the AI Tool Evaluation Framework"
+        ]
+      ],
+      "type": "table",
+      "caption": "Personal Technology Learning Plan Template",
+      "headers": [
+        "Quarter",
+        "Learning Goal",
+        "Resources",
+        "Success Measure"
+      ]
+    },
+    {
+      "body": "Remember: the goal is not to become a technology expert — it is to become a pharmacy professional who is confident, capable, and critical in their use of technology. Every new skill you develop makes you more effective, more employable, and more valuable to your patients and your pharmacy.",
+      "type": "text"
+    },
+    {
+      "type": "case-study",
+      "title": "Case Study: The Tech-Savvy Technician",
+      "scenario": "Keisha, a pharmacy technician in Scarborough, Tobago, completed the PIXOPHARM AI in Pharmacy Practice course and began applying what she learned. She introduced the pharmacy team to using Claude for drug information lookups (with proper verification), created a simple inventory tracking spreadsheet that flagged upcoming expiry dates, and suggested the pharmacy trial a telepharmacy service for patients who found it difficult to travel to the pharmacy. Within six months, the pharmacy owner promoted her to senior technician with a responsibility allowance for technology coordination. Other pharmacies in the area began asking her for advice on digital tools.",
+      "questions": [
+        "What personal qualities and professional habits enabled Keisha's career advancement?",
+        "How did Keisha apply the human-AI partnership principles from this course?",
+        "What would you include in your own technology learning plan based on Keisha's example?"
+      ],
+      "discussion": "Keisha's success was built on proactive learning, practical application, and sharing knowledge with others. She did not just complete a course — she applied what she learned to solve real problems in her pharmacy. She maintained the human-AI partnership principles by always verifying AI outputs and involving the pharmacist in clinical decisions. Her willingness to teach others multiplied the impact of her learning across the team. The lesson: technology skills + initiative + collaboration = career advancement."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Mastering one specific software programme",
+        "The ability to learn, evaluate, and adapt to new technologies as they emerge",
+        "Programming in Python",
+        "Building websites for the pharmacy"
+      ],
+      "question": "What is the single most valuable long-term technology skill for a pharmacy technician?",
+      "explanation": "Specific software programmes change, but the ability to learn, critically evaluate, and adapt to new technologies is a skill that remains valuable throughout your career. This meta-skill — learning how to learn — is far more important than mastery of any single tool.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 20
+}

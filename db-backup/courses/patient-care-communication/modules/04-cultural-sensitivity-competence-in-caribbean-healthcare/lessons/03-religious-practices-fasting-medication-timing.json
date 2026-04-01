@@ -1,0 +1,91 @@
+{
+  "id": "49a53507-24cb-4dd7-8e6e-31cd0525c22f",
+  "module_id": "6adf744f-6b1b-43dd-ab82-6ccf2046ca79",
+  "title": "Religious Practices, Fasting & Medication Timing",
+  "content": [
+    {
+      "text": "When Faith and Pharmacy Intersect",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "The Caribbean is deeply religious. Christianity (Catholic, Anglican, Pentecostal, Baptist, Seventh-day Adventist), Hinduism, Islam, Rastafarianism, Vodou, Santeria, Orisha, and Spiritual Baptist traditions all have active communities across the region. Many of these faiths involve practices — fasting, dietary restrictions, prayer times, holy days — that directly intersect with medication regimens. A pharmacy technician who understands these intersections can provide safer, more respectful care.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Islam (Ramadan fasting)",
+          "No food or water from sunrise to sunset for 30 days",
+          "Medications requiring food or water cannot be taken during daylight hours; risk of dehydration with certain drugs",
+          "Shift doses to pre-dawn (Suhoor) and post-sunset (Iftar) meals; flag medications requiring consistent hydration"
+        ],
+        [
+          "Hinduism (Navratri, Ekadashi)",
+          "Multi-day fasting or restricted diet (fruits, milk only)",
+          "Metformin and diabetes medications: hypoglycaemia risk; reduced caloric intake affects drug metabolism",
+          "Consult pharmacist about dose adjustment; monitor blood sugar closely during fast"
+        ],
+        [
+          "Seventh-day Adventism",
+          "Vegetarian diet (many adherents); Saturday Sabbath observance",
+          "Gelatin capsules may be rejected (animal-derived); Saturday pharmacy visits unlikely",
+          "Offer vegetarian capsule alternatives where available; ensure Friday or Sunday dispensing access"
+        ],
+        [
+          "Rastafarianism",
+          "Ital (natural, unprocessed) diet; preference for natural/herbal remedies over pharmaceuticals",
+          "May refuse conventional medications entirely; prefer herbal alternatives",
+          "Respect the patient's autonomy; provide evidence-based information without coercion; explore natural options where safe"
+        ],
+        [
+          "Catholicism (Lenten fasting)",
+          "Reduced food intake and abstinence from meat on specific days",
+          "Medications requiring food: timing adjustments needed during Ash Wednesday and Good Friday",
+          "Advise on taking medications with the permitted meal(s); generally lower-risk than extended fasts"
+        ]
+      ],
+      "type": "table",
+      "caption": "Religious Practices Affecting Medication Use in the Caribbean",
+      "headers": [
+        "Religion / Practice",
+        "Relevant Practice",
+        "Medication Impact",
+        "Pharmacy Response"
+      ]
+    },
+    {
+      "body": "Many capsule shells are made from porcine (pig) or bovine (cow) gelatin. This is a significant concern for Muslim patients (porcine gelatin is haram), Hindu patients (bovine gelatin from cow), and vegetarian/vegan patients. Pharmacy technicians should be aware of which medications in their formulary have gelatin capsules and whether vegetarian (HPMC — hydroxypropyl methylcellulose) alternatives exist. When alternatives are not available, patients should be informed and the pharmacist can advise on religious dispensation guidelines.",
+      "type": "callout",
+      "title": "Gelatin Capsules and Religious Dietary Laws",
+      "variant": "info"
+    },
+    {
+      "term": "Religious Fasting",
+      "type": "key-term",
+      "definition": "The voluntary abstinence from food, drink, or both for a defined period as an act of spiritual devotion. In the Caribbean, religious fasting practices include Ramadan (Islam), Navratri and Ekadashi (Hinduism), Lent (Christianity), and various Afro-Caribbean spiritual practices. Each has distinct implications for medication timing, absorption, and patient safety that pharmacy technicians must understand."
+    },
+    {
+      "body": "It is never the pharmacy technician's place to judge or comment on a patient's religious practices. Your role is to ensure that their medication regimen is as safe and effective as possible within the framework of their beliefs. This often requires creativity, flexibility, and close collaboration with the pharmacist.",
+      "type": "text"
+    },
+    {
+      "body": "Proactive counselling is key: if you know that Ramadan, Navratri, or Lent is approaching, initiate conversations with patients who may be affected. Do not wait for them to ask — many patients will simply adjust their medication on their own without professional guidance, which can be dangerous. A simple question a week before the fast begins can prevent a medication crisis.",
+      "type": "text"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Tell her it does not matter because it is medicine, not food",
+        "Check the medication's capsule composition, inform her honestly, and explore alternatives if porcine gelatin is present",
+        "Tell her to ask her imam instead of the pharmacy",
+        "Refuse to discuss religious matters in the pharmacy"
+      ],
+      "question": "A Muslim patient asks if her capsule medication contains porcine gelatin because she observes halal dietary laws. What is the MOST appropriate response?",
+      "explanation": "Respecting a patient's religious dietary requirements is a core element of culturally competent care. The appropriate response is to investigate the capsule composition, provide honest information, and explore alternatives (such as HPMC capsules or tablet forms) where available. If no alternative exists, the pharmacist can discuss the situation and the patient can consult their religious authority.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 3,
+  "duration_minutes": 20
+}

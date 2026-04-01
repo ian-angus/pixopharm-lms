@@ -1,0 +1,107 @@
+{
+  "id": "e7e2e297-bfad-4af9-89fc-62637cd90dc1",
+  "module_id": "1b66b300-d870-483b-ad7a-89886af4eca1",
+  "title": "Dealing with Verbal Abuse — Your Rights and Boundaries",
+  "content": [
+    {
+      "text": "You Are a Professional, Not a Punching Bag",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "There is a line between an angry customer and an abusive one. An angry customer is frustrated about a situation. An abusive customer is attacking you as a person — with insults, threats, racial slurs, sexual comments, or intimidating behaviour. You are under no obligation to accept abuse. Understanding where that line is, and knowing how to enforce it, is essential for your mental health and your safety.",
+      "type": "text"
+    },
+    {
+      "body": "In Caribbean pharmacy settings, there is sometimes an unspoken expectation that service workers should just 'take it' — that the customer is always right, that you should smile through verbal abuse because 'that is the job.' This is wrong. No job requires you to tolerate personal attacks. Your employer has a duty to protect you, and you have the right to set boundaries.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Raising their voice about a problem",
+          "Screaming profanities at you"
+        ],
+        [
+          "Expressing frustration with strong language",
+          "Using racial, ethnic, or sexual slurs"
+        ],
+        [
+          "Demanding to speak to a manager",
+          "Making physical threats"
+        ],
+        [
+          "Complaining about service quality",
+          "Making personal insults about your appearance, intelligence, or background"
+        ],
+        [
+          "Insisting a problem be resolved immediately",
+          "Banging on the counter, throwing objects, or invading your personal space"
+        ]
+      ],
+      "type": "table",
+      "caption": "Anger vs. Abuse — Know the Difference",
+      "headers": [
+        "Acceptable (Angry)",
+        "Unacceptable (Abusive)"
+      ]
+    },
+    {
+      "body": "If a customer makes a physical threat, invades your space aggressively, or you feel in danger, remove yourself from the situation immediately. Step back, go to the dispensary, and call for help. Do not attempt to de-escalate someone who is physically threatening. No prescription is worth your safety.",
+      "type": "callout",
+      "title": "Your Safety Comes First",
+      "variant": "danger"
+    },
+    {
+      "text": "Setting Boundaries Professionally",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Boundaries can be set firmly without aggression. The key is to name the behaviour, state the consequence, and follow through. 'I want to help you, but I am not able to do that while you are speaking to me this way. If we can have a respectful conversation, I will do everything I can to resolve this. If not, I will need to ask you to leave and come back when you are ready.' This is not rude — it is professional boundary enforcement.",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Stay calm: do not match their energy or raise your voice",
+        "Name the behaviour: 'I understand you are frustrated, but calling me names is not acceptable'",
+        "State the boundary: 'I want to help you, but I need you to speak to me respectfully'",
+        "Offer a choice: 'We can continue this conversation respectfully, or I can have the pharmacist assist you'",
+        "Follow through: if the behaviour continues, step back and involve a senior staff member or security",
+        "Document the incident: write down what happened, when, and who was present — this protects you if there are further complaints"
+      ],
+      "ordered": true
+    },
+    {
+      "term": "Boundary Enforcement",
+      "type": "key-term",
+      "definition": "The professional act of clearly communicating the limits of acceptable behaviour in an interaction and implementing consequences when those limits are crossed. In pharmacy, boundaries protect both the employee's wellbeing and the professional environment for all patients."
+    },
+    {
+      "type": "case-study",
+      "title": "Case Study: The Abusive Customer",
+      "scenario": "A man arrives at a pharmacy in Kingston, Jamaica, demanding his prescription be filled immediately. When told there is a 20-minute wait, he begins shouting obscenities and makes a comment about the technician's ethnicity. Other customers are watching. The technician is shaken but tries to remain professional.",
+      "questions": [
+        "At what point did this interaction cross from angry to abusive?",
+        "What should the technician say to set a boundary?",
+        "What should happen after the interaction ends — for the technician and for the pharmacy?"
+      ],
+      "discussion": "The interaction crossed from angry to abusive when the customer used obscenities and made ethnic comments. The technician should say something like: 'Sir, I understand you are frustrated about the wait time, but I am not able to serve you while you are speaking to me this way. I will ask the pharmacist to assist you.' After the incident, the technician should document what happened, the pharmacist should be informed, and the pharmacy's policy on abusive customers should be invoked. The technician should also be given a brief break to recover emotionally."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Ignore the language and focus on resolving the insurance issue",
+        "Shout back to establish dominance",
+        "Calmly state that the language is unacceptable and that you need respectful communication to continue helping",
+        "Walk away without saying anything"
+      ],
+      "question": "A customer begins using racial slurs while complaining about their insurance rejection. What is the correct response?",
+      "explanation": "Racial slurs are verbal abuse, not merely an expression of frustration. Ignoring them normalises the behaviour. The correct response is a calm, firm boundary: name the behaviour, state the expectation, and offer a choice. Walking away without explanation leaves the situation unresolved.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 3,
+  "duration_minutes": 30
+}

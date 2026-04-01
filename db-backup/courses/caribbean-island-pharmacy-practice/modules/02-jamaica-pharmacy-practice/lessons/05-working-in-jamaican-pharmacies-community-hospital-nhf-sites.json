@@ -1,0 +1,136 @@
+{
+  "id": "140521a1-496d-452c-affe-8180aa002e85",
+  "module_id": "dfb48101-2356-4d0d-9a97-2396820bb069",
+  "title": "Working in Jamaican Pharmacies: Community, Hospital & NHF Sites",
+  "content": [
+    {
+      "text": "Pharmacy Practice Settings in Jamaica",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Jamaica offers a vibrant and varied pharmacy landscape. From the bustling Fontana pharmacies in Kingston and Montego Bay to rural parish health centres in Portland and Trelawny, the island provides diverse opportunities for pharmacy technicians. Each setting has its own character, pace, and challenges, but all share the common goal of getting the right medication to the right patient safely.",
+      "type": "text"
+    },
+    {
+      "text": "Community Pharmacy — The Fontana Factor",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Fontana Pharmacy is Jamaica's largest and most well-known pharmacy chain, with multiple locations across the island. Founded in Jamaica, Fontana combines traditional pharmacy services with a modern retail experience that includes cosmetics, wellness products, and health screenings. For pharmacy technicians, Fontana represents the most structured and professionalised community pharmacy experience in Jamaica, with standardised operating procedures, training programmes, and career pathways.",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Fontana Pharmacy: Jamaica's premier chain; high-volume, NHF-participating, standardised SOPs",
+        "Hi-Lo / PriceSmart pharmacies: In-store pharmacies within supermarket chains; convenience-focused",
+        "Independent pharmacies: Owner-operated, parish-based; often the only pharmacy in rural communities; personal patient relationships",
+        "Typical hours: 8:30 AM – 7:00 PM weekdays; 9:00 AM – 5:00 PM Saturdays; limited Sunday hours",
+        "NHF participation: Most community pharmacies participate in the NHF programme; a significant proportion of daily transactions"
+      ],
+      "ordered": false
+    },
+    {
+      "text": "Hospital Pharmacy",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Jamaica's hospital pharmacy system centres on the University Hospital of the West Indies (UHWI) in Kingston, Kingston Public Hospital (KPH), and regional hospitals such as Cornwall Regional Hospital in Montego Bay and Mandeville Regional Hospital. UHWI is the premier teaching hospital and offers the most advanced pharmacy services, including clinical pharmacy, oncology support, and antiretroviral dispensing. Hospital pharmacy technicians in Jamaica typically work rotating shifts and handle a broader range of medication types than their community counterparts.",
+      "type": "text"
+    },
+    {
+      "body": "Cornwall Regional Hospital in Montego Bay experienced a prolonged crisis starting in 2018 when toxic mould was discovered in the building, leading to a partial evacuation and years of disrupted services. This event impacted pharmacy operations significantly and highlighted the vulnerability of hospital pharmacy infrastructure in the Caribbean. Pharmacy technicians working in hospital settings should be aware of building maintenance, ventilation, and environmental safety as factors that directly affect medication storage and patient care.",
+      "type": "callout",
+      "title": "Cornwall Regional Hospital — A Cautionary Tale",
+      "variant": "info"
+    },
+    {
+      "text": "NHF Dispensing Sites & Health Centres",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Jamaica operates a network of public health centres across all 14 parishes, many of which have dispensaries staffed by pharmacy personnel. These health centres primarily serve patients who cannot afford or access private pharmacies. Medications dispensed at health centres are from the government formulary and are provided at no cost or minimal cost. For pharmacy technicians, health centre dispensaries offer the opportunity to serve the most vulnerable populations and develop a deep understanding of the NCD burden in Jamaica's underserved communities.",
+      "type": "text"
+    },
+    {
+      "type": "case-study",
+      "title": "Case Study: Rural Parish Pharmacy Access",
+      "scenario": "You are a pharmacy technician working at the only community pharmacy in a rural parish in eastern Jamaica. The nearest alternative pharmacy is 45 minutes away by car. A regular patient, Mrs. Campbell, comes in with an NHFCard prescription for Amlodipine 10mg and Metformin 1000mg. You are out of Metformin 1000mg but have 500mg tablets in stock. The pharmacist is on lunch break and will return in 30 minutes.",
+      "questions": [
+        "Can you dispense Metformin 500mg (two tablets to make 1000mg) as a substitution without the pharmacist present?",
+        "What should you communicate to Mrs. Campbell while she waits?",
+        "How could better inventory management have prevented this situation?"
+      ],
+      "discussion": "You cannot independently make the substitution decision or dispense without the pharmacist present — this exceeds the technician's scope of practice. Explain to Mrs. Campbell that the pharmacist will return shortly and can address the Metformin supply issue then. The pharmacist may approve dispensing two 500mg tablets to equal the 1000mg dose (a common and generally acceptable substitution) and process the NHF claim accordingly. The inventory issue should be flagged for the pharmacy's next order — monitoring fast-moving NHF items and maintaining safety stock is a core technician responsibility."
+    },
+    {
+      "type": "island-comparison",
+      "title": "Government Health Programmes — Side by Side",
+      "islands": [
+        {
+          "flag": "🇹🇹",
+          "name": "Trinidad & Tobago",
+          "details": [
+            "Programme: CDAP (Chronic Disease Assistance Programme)",
+            "Model: 100% free — no patient co-payment",
+            "Covers: 22 chronic conditions, 60+ medications",
+            "Dispensed through: Private community pharmacies",
+            "ID required: National ID + CDAP prescription form"
+          ]
+        },
+        {
+          "flag": "🇯🇲",
+          "name": "Jamaica",
+          "details": [
+            "Programme: NHF (National Health Fund) / NHFCard",
+            "Model: Subsidy + co-payment (patient pays 30-50%)",
+            "Covers: 17 chronic conditions",
+            "Dispensed through: Participating community and hospital pharmacies",
+            "ID required: NHFCard (electronic) + valid prescription"
+          ]
+        },
+        {
+          "flag": "🇧🇧",
+          "name": "Barbados",
+          "details": [
+            "Programme: Barbados Drug Service (BDS)",
+            "Model: 100% free for formulary drugs through public facilities",
+            "Covers: Broad national formulary; most common chronic disease medications",
+            "Dispensed through: Polyclinics, QEH, and BDS-contracted pharmacies",
+            "ID required: Barbados National ID + prescription from public-sector doctor"
+          ]
+        },
+        {
+          "flag": "🇬🇩",
+          "name": "Grenada",
+          "details": [
+            "Programme: General Hospital pharmacy + limited government subsidy",
+            "Model: Free at government facilities; limited private-sector subsidy",
+            "Covers: Essential medicines list; narrower than T&T or Jamaica",
+            "Dispensed through: General Hospital pharmacy, health centres",
+            "ID required: National ID + prescription"
+          ]
+        }
+      ],
+      "description": "Comparing the major government pharmaceutical assistance programmes across the four islands."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "SuperPharm",
+        "Knights Pharmacy",
+        "Fontana Pharmacy",
+        "MedPlus Pharmacy"
+      ],
+      "question": "Which pharmacy chain is the largest and most prominent in Jamaica?",
+      "explanation": "Fontana Pharmacy is Jamaica's largest and most well-known pharmacy chain. SuperPharm is the leading chain in Trinidad & Tobago, Knights is a well-known Barbadian brand, and MedPlus is a T&T chain.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 5,
+  "duration_minutes": 35
+}

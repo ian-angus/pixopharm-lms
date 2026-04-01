@@ -1,0 +1,54 @@
+{
+  "id": "1de2f235-c857-4dd0-b575-247bfb1f184b",
+  "module_id": "260b3cfa-6a8e-4515-a5c7-46be02561533",
+  "title": "Barbados: Pharmacy Law in Detail",
+  "content": [
+    {
+      "text": "Pharmacy Practice Law in Barbados",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Barbados has a well-structured pharmaceutical regulatory system built around the Pharmacy Act (Cap. 372D), the Drug Service Act, and the Drug Abuse (Prevention and Control) Act. The Barbados Drug Service plays a central role in managing medication supply throughout the public healthcare system, which includes the Queen Elizabeth Hospital and a network of polyclinics across the island.",
+      "type": "text"
+    },
+    {
+      "text": "The Barbados Drug Service",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "The Drug Service Division, operating under the Ministry of Health and Wellness, is responsible for the procurement, storage, and distribution of pharmaceuticals for the public health system. It manages the Barbados National Drug Formulary — a list of medications approved for use in the public sector that guides prescribing and dispensing decisions across all government health facilities.",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Centrally procures medications for all public health facilities",
+        "Maintains and updates the Barbados National Drug Formulary",
+        "Operates the central pharmaceutical warehouse",
+        "Distributes medications to Queen Elizabeth Hospital and all polyclinics",
+        "Monitors medication usage, wastage, and expiry across the public system",
+        "Conducts quality assurance on pharmaceutical products entering Barbados"
+      ],
+      "ordered": false
+    },
+    {
+      "text": "Barbados Polyclinic System",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Barbados operates a network of polyclinics providing primary healthcare services, including pharmacy services, to the population. Each polyclinic has a pharmacy that dispenses medications to patients at no cost for conditions treated within the public system. This decentralised model makes pharmacy technicians essential to the public health infrastructure.",
+      "type": "text"
+    },
+    {
+      "body": "Barbados enacted the Data Protection Act in 2019, which has direct implications for pharmacy practice. Patient health information, including medication records, is classified as sensitive personal data and must be handled with enhanced protections. Pharmacy technicians must understand their obligations under this Act, which is covered in detail in Module 5 (Ethics & Confidentiality).",
+      "type": "callout",
+      "title": "Data Protection in Barbados",
+      "variant": "info"
+    }
+  ],
+  "order_index": 3,
+  "duration_minutes": 20
+}

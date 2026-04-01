@@ -1,0 +1,99 @@
+{
+  "id": "832b56d8-d794-46f6-a052-03ee9f32755c",
+  "module_id": "0383cbc9-9d6d-45f4-86fd-3581389860af",
+  "title": "Alligation Alternate: Mixing Two Different Strengths",
+  "content": [
+    {
+      "text": "Alligation: The Tic-Tac-Toe Method for Mixing Concentrations",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Alligation is a mathematical method used to determine the proportions in which two preparations of different strengths must be combined to produce a preparation of an intermediate strength. This is particularly useful in Caribbean compounding pharmacies where the exact strength needed is not commercially available. The alligation alternate method uses a simple grid — sometimes called the 'tic-tac-toe' method — that pharmacists and technicians have used for centuries.",
+      "type": "text"
+    },
+    {
+      "term": "Alligation Alternate",
+      "type": "key-term",
+      "definition": "A method for calculating the proportions of two solutions (or preparations) of different concentrations to mix in order to obtain a desired intermediate concentration. The method uses a grid where the desired concentration is placed in the centre, the higher and lower concentrations at the corners, and the differences (taken diagonally) give the proportional parts of each component."
+    },
+    {
+      "text": "Step-by-Step Alligation Method",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Step 1: Draw a grid. Place the desired concentration in the centre. Step 2: Place the higher concentration in the upper left and the lower concentration in the lower left. Step 3: Take the diagonal differences (always subtract the smaller from the larger): Upper-right = |Desired - Lower|. Lower-right = |Higher - Desired|. Step 4: The numbers on the right give the ratio of parts: upper-right parts of the higher concentration, lower-right parts of the lower concentration.",
+      "type": "text"
+    },
+    {
+      "body": "Worked example: Prepare 200 g of hydrocortisone 0.75% cream by mixing 1% cream with 0.5% cream. Grid: Higher = 1%, Lower = 0.5%, Desired = 0.75%. Upper-right = |0.75 - 0.5| = 0.25 parts of 1%. Lower-right = |1 - 0.75| = 0.25 parts of 0.5%. Ratio = 0.25 : 0.25 = 1 : 1. Mix equal parts: 100 g of 1% cream + 100 g of 0.5% cream = 200 g of 0.75% cream.",
+      "type": "text"
+    },
+    {
+      "body": "More complex example: Prepare 300 g of coal tar 3% ointment. Available: coal tar 10% ointment and plain ointment base (0%). Grid: Higher = 10%, Lower = 0%, Desired = 3%. Upper-right = |3 - 0| = 3 parts of 10%. Lower-right = |10 - 3| = 7 parts of 0%. Total parts = 3 + 7 = 10. For 300 g: 10% ointment = (3/10) × 300 = 90 g. Plain base = (7/10) × 300 = 210 g. Verify: (90 × 10) + (210 × 0) = 900 / 300 = 3% ✓.",
+      "type": "text"
+    },
+    {
+      "body": "Coal tar preparations are commonly compounded in Caribbean pharmacies for psoriasis and chronic eczema — conditions that are manageable but require long-term topical therapy. The strength is frequently adjusted based on clinical response, making alligation calculations a regular occurrence. Strengths range from 1% (initial therapy) to 10% (thick plaques), with 3-5% being most common for maintenance.",
+      "type": "callout",
+      "title": "Coal Tar in Caribbean Dermatology",
+      "variant": "info"
+    },
+    {
+      "rows": [
+        [
+          "5% cream, 120 g",
+          "10%",
+          "2%",
+          "120 g",
+          "45 g of 10% + 75 g of 2%"
+        ],
+        [
+          "2% solution, 500 mL",
+          "5%",
+          "0% (water)",
+          "500 mL",
+          "200 mL of 5% + 300 mL of water"
+        ],
+        [
+          "70% alcohol, 1 L",
+          "95%",
+          "50%",
+          "1000 mL",
+          "444 mL of 95% + 556 mL of 50%"
+        ],
+        [
+          "0.5% cream, 60 g",
+          "1%",
+          "0.25%",
+          "60 g",
+          "20 g of 1% + 40 g of 0.25%"
+        ]
+      ],
+      "type": "table",
+      "caption": "Alligation Practice Problems",
+      "headers": [
+        "Desired",
+        "Available Higher",
+        "Available Lower",
+        "Total Amount",
+        "Answer"
+      ]
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "7 parts of 20% : 8 parts of 5%",
+        "8 parts of 20% : 7 parts of 5%",
+        "12 parts of 20% : 3 parts of 5%",
+        "3 parts of 20% : 12 parts of 5%"
+      ],
+      "question": "Using alligation, what ratio of 20% and 5% solutions should be mixed to produce a 12% solution?",
+      "explanation": "Grid: Higher = 20%, Lower = 5%, Desired = 12%. Parts of 20% = |12 - 5| = 7. Parts of 5% = |20 - 12| = 8. Ratio = 7 : 8. To prepare 150 mL, for example: 20% = (7/15) × 150 = 70 mL. 5% = (8/15) × 150 = 80 mL.",
+      "correctIndex": 0
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 25
+}

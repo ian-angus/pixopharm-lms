@@ -1,0 +1,115 @@
+{
+  "id": "0e733c72-61dc-46ff-af72-d2371e65a8f3",
+  "module_id": "eeaefebc-259f-42ce-824a-77332e5f4432",
+  "title": "The Barbados Drug Service (BDS): National Formulary & Free Drug Dispensing",
+  "content": [
+    {
+      "text": "The Barbados Drug Service",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "The Barbados Drug Service (BDS) is the division within the Ministry of Health and Wellness responsible for the procurement, storage, distribution, and quality assurance of pharmaceuticals throughout Barbados's public health system. What makes Barbados distinctive in the Caribbean is that medications on the BDS national formulary are provided free of charge to all Barbadians through the public health system — at polyclinics, the Queen Elizabeth Hospital, and contracted community pharmacies. This universal free medication model is closer to T&T's CDAP than Jamaica's NHF co-payment system, but it operates through the public sector rather than private pharmacies.",
+      "type": "text"
+    },
+    {
+      "term": "Barbados Drug Service (BDS)",
+      "type": "key-term",
+      "definition": "The division of Barbados's Ministry of Health and Wellness that manages the national drug formulary, procures pharmaceuticals for the public system, ensures quality standards for imported medications, and oversees the distribution of free medications through polyclinics, the QEH, and contracted pharmacies. Established to ensure equitable access to essential medicines for all Barbadians."
+    },
+    {
+      "text": "The BDS National Formulary",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "The BDS maintains a national formulary — an approved list of medications available through the public health system. This formulary is carefully curated based on the island's disease burden, WHO essential medicines guidelines, cost-effectiveness analysis, and clinical expert recommendations. Medications on the formulary are procured by the BDS through international tenders and distributed to public health facilities. The formulary is reviewed and updated periodically, with additions and removals reflecting changes in medical practice and available evidence.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Antihypertensives",
+          "Amlodipine, Enalapril, Losartan, Hydrochlorothiazide, Atenolol, Methyldopa",
+          "Methyldopa remains on the formulary for pregnancy-related hypertension"
+        ],
+        [
+          "Antidiabetics",
+          "Metformin, Glibenclamide, Gliclazide, Insulin (Human Regular & NPH)",
+          "Newer agents (DPP-4 inhibitors, SGLT2 inhibitors) not yet widely available on the public formulary"
+        ],
+        [
+          "Antibiotics",
+          "Amoxicillin, Co-amoxiclav (Augmentin), Ciprofloxacin, Azithromycin, Metronidazole, Doxycycline",
+          "Antibiotic stewardship is a priority — BDS monitors prescribing patterns"
+        ],
+        [
+          "Statins",
+          "Simvastatin, Atorvastatin",
+          "Simvastatin historically preferred on the public formulary for cost reasons"
+        ],
+        [
+          "Respiratory",
+          "Salbutamol, Beclomethasone, Ipratropium, Prednisolone",
+          "Inhaler supply chain is closely monitored due to import dependency"
+        ],
+        [
+          "Mental Health",
+          "Amitriptyline, Fluoxetine, Haloperidol, Risperidone, Diazepam, Carbamazepine",
+          "Psychiatric medications dispensed through the Psychiatric Hospital pharmacy and polyclinics"
+        ]
+      ],
+      "type": "table",
+      "caption": "BDS Formulary — Selected Therapeutic Categories and Key Medications",
+      "headers": [
+        "Category",
+        "BDS Formulary Medications",
+        "Notes"
+      ]
+    },
+    {
+      "text": "How Free Dispensing Works",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "type": "list",
+      "items": [
+        "Patient visits a public-sector doctor (at a polyclinic or QEH clinic)",
+        "Doctor prescribes from the BDS national formulary and writes the prescription on the standard public-sector prescription form",
+        "Patient takes the prescription to the polyclinic dispensary, QEH pharmacy, or a BDS-contracted community pharmacy",
+        "Pharmacy technician receives the prescription, verifies it against the formulary, and prepares the medication",
+        "Pharmacist performs the final check",
+        "Patient receives their medication free of charge — no co-payment, no insurance claim, no NHF card needed",
+        "The BDS covers the cost entirely as part of Barbados's public health commitment"
+      ],
+      "ordered": true
+    },
+    {
+      "body": "In Barbados, there is a clear split between the public and private pharmacy systems. Patients who see public-sector doctors get their formulary medications free through the BDS system. Patients who see private doctors (and want medications not on the formulary, or prefer branded products) pay out of pocket at private community pharmacies. Many Barbadians use both systems — getting their chronic medications free through the polyclinic while purchasing specific items privately.",
+      "type": "callout",
+      "title": "Public vs. Private — The Barbados Split",
+      "variant": "info"
+    },
+    {
+      "body": "When working in a BDS-affiliated dispensing site, always check the current formulary status of prescribed medications. The BDS formulary is more limited than what is available in private pharmacies. If a doctor prescribes something off-formulary, flag it to the pharmacist rather than substituting on your own — the pharmacist will contact the prescriber to discuss an appropriate formulary alternative.",
+      "type": "callout",
+      "title": "Practical Tip for Technicians",
+      "variant": "tip"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Through a co-payment model similar to Jamaica's NHF",
+        "Free of charge to all Barbadians through polyclinics, QEH, and contracted pharmacies",
+        "At a discounted rate based on the patient's income level",
+        "Only to patients with government-issued health insurance cards"
+      ],
+      "question": "How are medications on the BDS national formulary provided to patients in Barbados's public health system?",
+      "explanation": "Barbados provides BDS formulary medications free of charge to all Barbadians through the public health system — polyclinics, Queen Elizabeth Hospital, and BDS-contracted community pharmacies. No co-payment, insurance card, or means testing is required.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 30
+}

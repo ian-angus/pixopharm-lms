@@ -1,0 +1,106 @@
+{
+  "id": "c7275125-1083-42ed-b459-ba333bea4400",
+  "module_id": "026af364-0a48-4e14-b54f-e7a0e6483591",
+  "title": "Body Surface Area (BSA) Calculations",
+  "content": [
+    {
+      "text": "Body Surface Area: When Weight Alone Is Not Enough",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "For certain medications — particularly chemotherapy agents, some biologics, and a few specialist drugs — dosing is based on Body Surface Area (BSA) rather than weight alone. BSA provides a more accurate reflection of metabolic rate and drug clearance than weight, making it the preferred method for narrow therapeutic index drugs used in oncology. While pharmacy technicians do not independently select BSA-based doses, they must be able to verify BSA calculations and prepare the correct quantities.",
+      "type": "text"
+    },
+    {
+      "term": "Body Surface Area (BSA)",
+      "type": "key-term",
+      "definition": "The total surface area of the human body, measured in square metres (m²). Used for dosing certain medications, particularly chemotherapy. The average adult BSA is approximately 1.7 m². BSA is calculated from height and weight using validated formulas such as the Mosteller formula."
+    },
+    {
+      "text": "The Mosteller Formula",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "BSA (m²) = √[(Height in cm × Weight in kg) / 3600]. This is the most commonly used formula in Caribbean hospitals. Example: A child is 120 cm tall and weighs 25 kg. BSA = √[(120 × 25) / 3600] = √[3000 / 3600] = √0.833 = 0.913 m². Round to 0.91 m².",
+      "type": "text"
+    },
+    {
+      "body": "Worked dosing example: A child with BSA 0.91 m² is prescribed methotrexate 15 mg/m² weekly. Dose = 15 × 0.91 = 13.65 mg. Round to 13.5 mg (or per institutional rounding protocol). Stock: methotrexate 25 mg/mL injection. Volume = 13.5 ÷ 25 = 0.54 mL. This is a small volume requiring a 1 mL syringe for accurate measurement.",
+      "type": "text"
+    },
+    {
+      "body": "Chemotherapy dosing errors can be fatal. In Caribbean oncology centres — including the National Radiotherapy Centre in Trinidad and oncology units at UHWI and QEH — chemotherapy doses are ALWAYS independently verified by at least two pharmacy personnel. The BSA calculation, the dose calculation, the volume drawn, and the reconstitution must each be checked separately. Never prepare a chemotherapy dose without independent verification.",
+      "type": "callout",
+      "title": "Chemotherapy Dose Verification",
+      "variant": "danger"
+    },
+    {
+      "rows": [
+        [
+          "Infant (6 months)",
+          "65 cm",
+          "7 kg",
+          "0.34 m²"
+        ],
+        [
+          "Child (3 years)",
+          "95 cm",
+          "14 kg",
+          "0.61 m²"
+        ],
+        [
+          "Child (8 years)",
+          "130 cm",
+          "25 kg",
+          "0.95 m²"
+        ],
+        [
+          "Adolescent (14 years)",
+          "165 cm",
+          "55 kg",
+          "1.59 m²"
+        ],
+        [
+          "Average adult",
+          "170 cm",
+          "70 kg",
+          "1.82 m²"
+        ],
+        [
+          "Large adult",
+          "180 cm",
+          "90 kg",
+          "2.10 m²"
+        ]
+      ],
+      "type": "table",
+      "caption": "BSA Quick Reference",
+      "headers": [
+        "Patient",
+        "Typical Height",
+        "Typical Weight",
+        "Approximate BSA"
+      ]
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "1.20 m²",
+        "1.44 m²",
+        "1.56 m²",
+        "2.08 m²"
+      ],
+      "question": "Using the Mosteller formula, what is the BSA of a patient who is 150 cm tall and weighs 50 kg?",
+      "explanation": "BSA = √[(150 × 50) / 3600] = √[7500 / 3600] = √2.083 = 1.44 m². This is within the typical range for a small adult or large adolescent.",
+      "correctIndex": 1
+    },
+    {
+      "body": "While BSA calculations are less frequent than mg/kg calculations in community pharmacy, they are essential in hospital pharmacy settings. Caribbean pharmacy technicians working in hospital oncology, paediatric wards, or burns units will use BSA calculations regularly. Practise the Mosteller formula until you can perform it confidently with a calculator.",
+      "type": "text"
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 25
+}

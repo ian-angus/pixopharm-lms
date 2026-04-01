@@ -1,0 +1,140 @@
+{
+  "id": "e4028e2d-5284-4f99-9635-bdaa7bb30538",
+  "module_id": "deb220dc-af47-44e5-9b48-3f56cc3ad0a4",
+  "title": "Building Resilience: The Long Game in Caribbean Healthcare",
+  "content": [
+    {
+      "text": "Resilience Is Not Toughness — It Is Sustainability",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "There is a dangerous myth in Caribbean healthcare: that resilience means toughness. That the good pharmacy technician is the one who works double shifts without complaint, never takes a sick day, absorbs customer abuse with a smile, and just 'pushes through.' This is not resilience — it is a recipe for collapse. True resilience is the ability to sustain high-quality work over a career, not just a shift. It is the long game, not the sprint.",
+      "type": "text"
+    },
+    {
+      "body": "Building career-length resilience requires three things: meaning (understanding why your work matters), support (having systems and relationships that sustain you), and boundaries (knowing your limits and enforcing them). Without all three, even the most dedicated technician will eventually burn out.",
+      "type": "text"
+    },
+    {
+      "text": "The Three Pillars of Career Resilience",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "rows": [
+        [
+          "Meaning",
+          "Understanding that your work has genuine impact on people's lives",
+          "Keep a 'wins' journal — write down one positive patient interaction per week. When burnout creeps in, read it."
+        ],
+        [
+          "Support",
+          "Having professional and personal relationships that sustain you",
+          "Invest in peer relationships at work. Build a support network outside work. Seek mentorship from experienced professionals."
+        ],
+        [
+          "Boundaries",
+          "Knowing your limits and enforcing them consistently",
+          "Say no to unsustainable demands. Protect your days off. Separate work from personal life. Seek help before you are in crisis."
+        ]
+      ],
+      "type": "table",
+      "caption": "The Three Pillars of Career Resilience",
+      "headers": [
+        "Pillar",
+        "What It Means",
+        "How to Build It"
+      ]
+    },
+    {
+      "body": "The average pharmacy technician career spans 20–30 years. Burning yourself out in the first five does not serve anyone — not you, not your patients, not your family. Investing in your wellbeing is not selfish — it is the only way to sustain the quality of care that patients deserve over the long term.",
+      "type": "callout",
+      "title": "Your Career Is a Marathon, Not a Sprint",
+      "variant": "info"
+    },
+    {
+      "text": "Building Your Personal Resilience Plan",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "A resilience plan is not a wish list — it is a concrete, actionable set of commitments you make to yourself. It should address daily habits, weekly practices, and emergency strategies for when things get overwhelming. Write it down. Review it monthly. Adjust it as your life changes.",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Daily: one grounding practice (deep breathing, brief walk, journalling, prayer — whatever works for you)",
+        "Weekly: one activity that is purely for enjoyment — not obligation, not productivity, just pleasure",
+        "Monthly: one honest check-in with yourself — am I still doing okay? Where am I on the burnout spectrum?",
+        "Quarterly: one professional development activity — learning something new reignites engagement",
+        "Annually: one serious conversation with yourself about whether this career is still right for you — and what needs to change if it is",
+        "Emergency: a plan for crisis — who do I call? What do I do if I cannot face another shift? Knowing this before you need it is critical"
+      ],
+      "ordered": true
+    },
+    {
+      "body": "If you experience persistent feelings of hopelessness, thoughts of self-harm, inability to function at work or home, or prolonged emotional numbness, please seek professional help. This is not a sign of weakness — it is a sign that you are taking your health seriously. In Trinidad and Tobago, the mental health helpline is 800-4673 (HOPE). In Jamaica, contact the Jamaica Mental Health Advocacy Network. In Barbados, contact the Crisis Centre at 229-6526.",
+      "type": "callout",
+      "title": "When to Seek Professional Help",
+      "variant": "danger"
+    },
+    {
+      "type": "island-comparison",
+      "title": "Mental Health Resources Across the Caribbean",
+      "islands": [
+        {
+          "flag": "🇹🇹",
+          "name": "Trinidad & Tobago",
+          "details": [
+            "Lifeline TT: 800-4673 (HOPE) — 24/7 crisis line",
+            "St. Ann's Psychiatric Hospital provides outpatient mental health services",
+            "Employee Assistance Programmes (EAPs) available through some larger employers",
+            "Growing number of private counsellors and psychologists"
+          ]
+        },
+        {
+          "flag": "🇯🇲",
+          "name": "Jamaica",
+          "details": [
+            "Jamaica Mental Health Advocacy Network — support and resources",
+            "Bellevue Hospital — Jamaica's primary psychiatric facility",
+            "University Hospital of the West Indies — mental health outpatient services",
+            "Growing private counselling sector, including online options"
+          ]
+        },
+        {
+          "flag": "🇧🇧",
+          "name": "Barbados",
+          "details": [
+            "Barbados Crisis Centre: 229-6526 — crisis support",
+            "Psychiatric Hospital (Black Rock) — inpatient and outpatient services",
+            "QEH Mental Health Unit — emergency psychiatric care",
+            "Barbados Association of Counsellors — private practitioners directory"
+          ]
+        }
+      ],
+      "description": "Access to mental health support varies across the region, but resources exist. Knowing where to find help — for yourself or a colleague — is essential."
+    },
+    {
+      "term": "Professional Resilience",
+      "type": "key-term",
+      "definition": "The sustained ability to perform high-quality work, maintain empathy and engagement, and protect personal wellbeing over the course of a career. Unlike acute stress tolerance (surviving a hard day), professional resilience is about building systems, habits, and support structures that make the work sustainable over decades."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Speed, accuracy, and knowledge",
+        "Meaning, support, and boundaries",
+        "Salary, promotion, and recognition",
+        "Exercise, sleep, and nutrition"
+      ],
+      "question": "What are the three pillars of career resilience?",
+      "explanation": "Career resilience is built on three pillars: meaning (understanding why your work matters), support (relationships and systems that sustain you), and boundaries (knowing and enforcing your limits). All three are needed — remove one, and resilience collapses over time.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 35
+}

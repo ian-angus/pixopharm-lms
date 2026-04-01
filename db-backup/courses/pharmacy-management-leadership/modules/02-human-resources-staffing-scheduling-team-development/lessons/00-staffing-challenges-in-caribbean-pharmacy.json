@@ -1,0 +1,102 @@
+{
+  "id": "4c75631b-0d34-41b2-be6a-a1fe6651b398",
+  "module_id": "9b4fe8f1-fe84-4fa2-b2f4-db8c18c1a30e",
+  "title": "Staffing Challenges in Caribbean Pharmacy",
+  "content": [
+    {
+      "text": "The Caribbean Pharmacy Workforce Landscape",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Staffing a Caribbean pharmacy presents challenges that mainland pharmacy managers rarely face. Small island economies have limited labour pools, and the pharmacy profession competes with other sectors — and other countries — for a finite number of qualified individuals. The 'brain drain' of healthcare professionals migrating to the US, UK, or Canada for higher wages is a persistent reality that shapes every HR decision.",
+      "type": "text"
+    },
+    {
+      "body": "A typical Caribbean community pharmacy employs 3–8 staff members: 1–2 pharmacists, 1–3 pharmacy technicians, and 1–3 pharmacy assistants or cashiers. Unlike chain pharmacies in North America with centralised HR departments, most Caribbean pharmacies handle recruitment, training, scheduling, and performance management locally — often with the pharmacy manager wearing multiple hats.",
+      "type": "text"
+    },
+    {
+      "type": "island-comparison",
+      "title": "Pharmacy Workforce Challenges by Island",
+      "islands": [
+        {
+          "flag": "🇹🇹",
+          "name": "Trinidad & Tobago",
+          "details": [
+            "The University of the West Indies (UWI) St. Augustine campus produces pharmacy graduates, but many emigrate within 5 years",
+            "Oil and gas sector competes for science graduates — pharmacy must offer competitive packages",
+            "COSTAATT and private institutions offer pharmacy technician training but output does not meet demand",
+            "Dual-island logistics: Tobago pharmacies struggle more with recruitment than Trinidad",
+            "Average pharmacy technician salary: TT$5,000–8,000/month ($740–1,180 USD)"
+          ]
+        },
+        {
+          "flag": "🇯🇲",
+          "name": "Jamaica",
+          "details": [
+            "University of Technology (UTech) is the primary pharmacy school; output is limited relative to need",
+            "High emigration rate — proximity to the US makes the brain drain particularly acute",
+            "Significant salary gap between public and private sector pharmacy positions",
+            "Rural pharmacies (e.g., in Portland or St. Thomas) face severe recruitment difficulties",
+            "Average pharmacy technician salary: J$120,000–180,000/month ($780–1,170 USD at current rates)"
+          ]
+        },
+        {
+          "flag": "🇧🇧",
+          "name": "Barbados",
+          "details": [
+            "Small population (approx. 280,000) limits the total pharmacy workforce pool",
+            "UWI Cave Hill does not have a pharmacy programme — many pharmacists trained abroad",
+            "Tourism sector competes aggressively for service-oriented staff",
+            "Queen Elizabeth Hospital and polyclinic positions offer job security that private pharmacies cannot match",
+            "Average pharmacy technician salary: BDS$3,000–5,000/month ($1,500–2,500 USD)"
+          ]
+        }
+      ],
+      "description": "Each island faces distinct workforce pressures shaped by its economy, training infrastructure, and proximity to higher-paying markets."
+    },
+    {
+      "body": "A 2023 PAHO report estimated that the Caribbean loses approximately 30% of its trained healthcare workers to emigration within 10 years of qualification. For pharmacy, this means investing in a technician's training only to lose them to a North American or European employer is a real and recurring cost. Retention strategies — not just recruitment — are the key to workforce stability.",
+      "type": "callout",
+      "title": "The Brain Drain Reality",
+      "variant": "info"
+    },
+    {
+      "term": "Brain Drain",
+      "type": "key-term",
+      "definition": "The emigration of highly trained or qualified people from a country or region, typically to seek better pay or living conditions. In the Caribbean pharmacy context, brain drain refers to pharmacists and technicians migrating to North America, the UK, or other higher-paying markets, depleting the local workforce."
+    },
+    {
+      "text": "Recruitment Strategies for Caribbean Pharmacies",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "type": "list",
+      "items": [
+        "Partner with local training institutions (COSTAATT, UTech, UWI) for intern and placement pipelines",
+        "Offer competitive benefits beyond salary: health insurance, continuing education funding, flexible scheduling",
+        "Develop a strong workplace culture — in small island communities, word of mouth about good employers travels fast",
+        "Consider 'grow your own' strategies: sponsor promising pharmacy assistants through technician training",
+        "Use social media and professional networks (LinkedIn, Caribbean pharmacy groups) for targeted recruitment",
+        "For rural or underserved locations, offer housing assistance or travel allowances"
+      ],
+      "ordered": false
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Too few pharmacy training programmes in the region",
+        "Emigration of qualified professionals to higher-paying markets",
+        "Government restrictions on pharmacy licensing",
+        "Low demand for pharmacy services"
+      ],
+      "question": "What is the primary driver of pharmacy workforce shortages in the Caribbean?",
+      "explanation": "While limited training capacity is a contributing factor, the emigration of qualified pharmacy professionals to North America, the UK, and other higher-paying markets (brain drain) is the primary driver of workforce shortages across the Caribbean.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 25
+}

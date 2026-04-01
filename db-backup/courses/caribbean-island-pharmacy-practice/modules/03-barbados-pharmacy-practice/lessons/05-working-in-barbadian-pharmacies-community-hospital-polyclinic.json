@@ -1,0 +1,227 @@
+{
+  "id": "762dba02-efef-467c-848b-7f8f49af61c7",
+  "module_id": "eeaefebc-259f-42ce-824a-77332e5f4432",
+  "title": "Working in Barbadian Pharmacies: Community, Hospital & Polyclinic",
+  "content": [
+    {
+      "text": "Pharmacy Practice Settings in Barbados",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Barbados, with a population of approximately 287,000, has a compact but well-organised pharmacy landscape. The island's small size means that no pharmacy is more than 45 minutes from any other, creating a close-knit professional community where everyone — pharmacists, technicians, doctors, and patients — tends to know each other. This intimacy shapes pharmacy practice in ways that are unique to small island states.",
+      "type": "text"
+    },
+    {
+      "text": "Community Pharmacy",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Barbados has approximately 50-60 community pharmacies spread across the island, with the highest concentration in Bridgetown, Holetown, and Oistins. Well-known pharmacy brands include Collins Pharmacy (one of the oldest), Knights Pharmacy, and several independent owner-operated pharmacies. Community pharmacy in Barbados tends to be more traditional and relationship-driven than in larger islands — pharmacists and technicians know their regular patients by name and often serve multiple generations of the same family.",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Collins Pharmacy: Historic Barbadian pharmacy brand; multiple locations",
+        "Knights Pharmacy: Well-known chain with locations in Bridgetown and surrounding parishes",
+        "Independent pharmacies: Family-owned, parish-based; strong community ties",
+        "Typical hours: 8:00 AM – 6:00 PM weekdays; 8:00 AM – 1:00 PM Saturdays; limited Sunday service",
+        "Private-sector dispensing: Patients with private doctors pay full price; some have private health insurance that covers a portion",
+        "Tourism impact: Tourist areas (south and west coast) see seasonal demand for travel-related medications, sunburn treatments, and emergency prescriptions"
+      ],
+      "ordered": false
+    },
+    {
+      "text": "The Polyclinic Network",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Barbados operates a network of polyclinics — public primary-care facilities distributed across the island's 11 parishes. Each polyclinic has a dispensary where BDS formulary medications are provided free of charge. Polyclinic dispensaries are staffed by pharmacists and pharmacy technicians employed by the Ministry of Health. The work is high-volume for a small-island setting, with the busiest polyclinics (such as Randall Phillips in Bridgetown) processing 150-250 prescriptions per day.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Randall Phillips Polyclinic",
+          "St. Michael (Bridgetown)",
+          "Busiest polyclinic; highest dispensing volume"
+        ],
+        [
+          "Winston Scott Polyclinic",
+          "St. Michael",
+          "Serves central Bridgetown and surrounding areas"
+        ],
+        [
+          "Edgar Cochrane Polyclinic",
+          "Christ Church",
+          "Serves the south coast; moderate volume"
+        ],
+        [
+          "Maurice Byer Polyclinic",
+          "St. Lucy",
+          "Serves the northern parishes; lower volume"
+        ],
+        [
+          "St. Philip Polyclinic",
+          "St. Philip",
+          "Serves the eastern parishes"
+        ]
+      ],
+      "type": "table",
+      "caption": "Selected Barbados Polyclinics",
+      "headers": [
+        "Polyclinic",
+        "Parish",
+        "Notes"
+      ]
+    },
+    {
+      "body": "Working in a Barbados polyclinic dispensary is an excellent introduction to public-sector pharmacy. You will develop strong dispensing skills, learn the BDS formulary thoroughly, and gain experience with the chronic disease medications that dominate Caribbean prescribing. The pace is steady but manageable, supervision is consistent, and you will quickly become a familiar and trusted presence in the community you serve.",
+      "type": "callout",
+      "title": "Polyclinic Pharmacy — What to Expect",
+      "variant": "tip"
+    },
+    {
+      "type": "island-comparison",
+      "title": "Pharmacy Workforce & Market Size Compared",
+      "islands": [
+        {
+          "flag": "🇹🇹",
+          "name": "Trinidad & Tobago",
+          "details": [
+            "Population: ~1.4 million",
+            "Estimated pharmacies: 400+",
+            "Major training institution: UWI St. Augustine",
+            "Largest employer: Community pharmacy sector (SuperPharm, Bhagan's, independents)",
+            "Public sector: 5 RHAs, multiple hospital and health centre pharmacies"
+          ]
+        },
+        {
+          "flag": "🇯🇲",
+          "name": "Jamaica",
+          "details": [
+            "Population: ~2.8 million",
+            "Estimated pharmacies: 500+",
+            "Major training institution: UTech Jamaica",
+            "Largest employer: Community pharmacy sector (Fontana, independents)",
+            "Public sector: HCL-supplied hospitals and health centres across 14 parishes"
+          ]
+        },
+        {
+          "flag": "🇧🇧",
+          "name": "Barbados",
+          "details": [
+            "Population: ~287,000",
+            "Estimated pharmacies: 50-60",
+            "Major training institution: UWI St. Augustine (overseas) or international",
+            "Largest employer: Split between QEH/polyclinics and community pharmacy",
+            "Public sector: QEH + polyclinic network across 11 parishes"
+          ]
+        },
+        {
+          "flag": "🇬🇩",
+          "name": "Grenada",
+          "details": [
+            "Population: ~125,000",
+            "Estimated pharmacies: 20-30",
+            "Major training institution: None locally; UWI or SGU (medical, not pharmacy-specific)",
+            "Largest employer: General Hospital + small community pharmacies",
+            "Public sector: General Hospital, health centres"
+          ]
+        }
+      ],
+      "description": "Understanding the scale of pharmacy practice on each island helps you assess career opportunities and work environment expectations."
+    },
+    {
+      "type": "scenario-simulation",
+      "nodes": [
+        {
+          "id": "start",
+          "text": "Mrs. Alleyne presents a prescription from the polyclinic doctor for Rosuvastatin 10mg for high cholesterol. You check the BDS formulary and find that Rosuvastatin is NOT on the formulary — only Simvastatin is listed. What do you do?",
+          "choices": [
+            {
+              "label": "Dispense Simvastatin instead without consulting anyone",
+              "feedback": "You cannot independently substitute one medication for another. Simvastatin and Rosuvastatin are different drugs with different dosing.",
+              "nextNodeId": "wrong-substitute"
+            },
+            {
+              "label": "Flag the issue to the pharmacist and explain the formulary discrepancy",
+              "feedback": "Correct. The pharmacist is the appropriate person to resolve a formulary discrepancy.",
+              "isOptimal": true,
+              "nextNodeId": "correct-flag"
+            },
+            {
+              "label": "Tell Mrs. Alleyne to buy Rosuvastatin at a private pharmacy",
+              "feedback": "While she could purchase privately, the first step should be to resolve the formulary issue through proper channels.",
+              "nextNodeId": "wrong-redirect"
+            }
+          ]
+        },
+        {
+          "id": "wrong-substitute",
+          "text": "The pharmacist notices the substitution and stops it before it reaches the patient. You are reminded that independent drug substitutions are outside the technician's scope. The pharmacist contacts the prescriber to discuss alternatives.",
+          "isEnd": true,
+          "outcome": "failure",
+          "summary": "Technicians must never independently substitute one drug for another. Always flag formulary discrepancies to the pharmacist first."
+        },
+        {
+          "id": "correct-flag",
+          "text": "The pharmacist reviews the situation and contacts the prescribing doctor. The doctor agrees to change the prescription to Simvastatin 20mg, which is on the BDS formulary. The pharmacist asks you to prepare the Simvastatin. Before dispensing, the pharmacist checks your preparation and counsels Mrs. Alleyne. How do you label the medication?",
+          "choices": [
+            {
+              "label": "Label with: 'Simvastatin 20mg — Take one tablet daily at bedtime'",
+              "feedback": "Correct. Statins are generally taken at bedtime for optimal efficacy, and your label accurately reflects the pharmacist's instructions.",
+              "isOptimal": true,
+              "nextNodeId": "correct-label"
+            },
+            {
+              "label": "Label with: 'Rosuvastatin 10mg — Take one tablet daily'",
+              "feedback": "The prescription has been changed to Simvastatin. Labelling with the wrong drug name is a serious dispensing error.",
+              "nextNodeId": "wrong-label"
+            }
+          ]
+        },
+        {
+          "id": "wrong-redirect",
+          "text": "Mrs. Alleyne is upset — she came to the polyclinic specifically because she cannot afford private pharmacy prices. She leaves without medication. The pharmacist later asks why you did not flag the formulary issue. A patient has gone without needed cholesterol medication.",
+          "isEnd": true,
+          "outcome": "partial",
+          "summary": "Always attempt to resolve formulary issues through the pharmacist before redirecting patients. Many patients rely on the free public system because they cannot afford alternatives."
+        },
+        {
+          "id": "correct-label",
+          "text": "Mrs. Alleyne receives her Simvastatin 20mg with proper labelling and counselling. She is satisfied and understands the formulary change. You log the dispensing correctly in the system. Well done — you navigated a common polyclinic scenario correctly.",
+          "isEnd": true,
+          "outcome": "success",
+          "summary": "The correct workflow: identify the formulary issue, flag to the pharmacist, pharmacist contacts prescriber, prepare the corrected medication, label accurately, pharmacist counsels the patient."
+        },
+        {
+          "id": "wrong-label",
+          "text": "Fortunately, the pharmacist catches the labelling error during the final check. The label is corrected to Simvastatin 20mg. You are reminded to always verify that labels match the actual medication being dispensed — especially after a prescription change.",
+          "isEnd": true,
+          "outcome": "partial",
+          "summary": "After a prescription change, always ensure your label reflects the new medication, not the original one. Label-drug mismatches are a common and dangerous dispensing error."
+        }
+      ],
+      "title": "Polyclinic Dispensary Scenario: Handling a Formulary Issue",
+      "description": "You are a pharmacy technician at a polyclinic dispensary in Barbados. A patient presents a prescription from the polyclinic doctor. Navigate the situation correctly."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "10-20",
+        "50-60",
+        "150-200",
+        "400+"
+      ],
+      "question": "Approximately how many community pharmacies operate in Barbados?",
+      "explanation": "Barbados has approximately 50-60 community pharmacies across the island. This relatively small number reflects the island's population of around 287,000. By comparison, Trinidad & Tobago has 400+ and Jamaica has 500+ pharmacies.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 5,
+  "duration_minutes": 30
+}

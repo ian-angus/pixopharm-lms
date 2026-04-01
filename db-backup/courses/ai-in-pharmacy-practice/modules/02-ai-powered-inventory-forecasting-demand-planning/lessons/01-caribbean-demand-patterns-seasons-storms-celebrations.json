@@ -1,0 +1,116 @@
+{
+  "id": "dacb24ff-bf76-4913-8e31-b444223e73fb",
+  "module_id": "18161038-99b9-459d-a298-2c76b434f57d",
+  "title": "Caribbean Demand Patterns: Seasons, Storms & Celebrations",
+  "content": [
+    {
+      "text": "Understanding the Caribbean Demand Calendar",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "The Caribbean has a unique set of demand drivers that shape pharmacy inventory needs throughout the year. Understanding these patterns is the first step toward effective demand planning — whether done manually or with AI assistance. A good AI forecasting system needs to be trained on data that captures these Caribbean-specific patterns.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Dry Season",
+          "January – May",
+          "Lower respiratory illness, higher outdoor activity injuries",
+          "Antihistamines, sunscreen, first aid supplies, NSAIDs"
+        ],
+        [
+          "Carnival Season",
+          "February (T&T), March–April (Jamaica, others)",
+          "Festivities, tourism influx, increased alcohol consumption",
+          "Paracetamol, ORS, antacids, condoms, first aid, electrolyte drinks"
+        ],
+        [
+          "Hurricane Season",
+          "June – November",
+          "Storm preparation, post-storm injuries, waterborne illness",
+          "Emergency kits, antibiotics, wound care, water purification, chronic meds (buffer stock)"
+        ],
+        [
+          "Saharan Dust Season",
+          "June – August",
+          "Respiratory irritation from African dust plumes",
+          "Albuterol inhalers, antihistamines, nasal sprays, eye drops"
+        ],
+        [
+          "Rainy/Dengue Season",
+          "June – December",
+          "Mosquito-borne illness (dengue, chikungunya, Zika)",
+          "Paracetamol (NOT aspirin for dengue), insect repellent, ORS, IV fluids"
+        ],
+        [
+          "Back to School",
+          "August – September",
+          "Childhood vaccinations, childhood illness uptick",
+          "Paediatric medications, vitamins, lice treatments, hand sanitiser"
+        ],
+        [
+          "Christmas/Year-End",
+          "November – December",
+          "Holiday spending, chronic med refills before holidays",
+          "All chronic medications, gift health items, digestive aids"
+        ],
+        [
+          "Month Start (Ongoing)",
+          "1st – 7th of each month",
+          "Government programme dispensing (CDAP, NHF, Drug Service)",
+          "Antihypertensives, antidiabetics, statins, inhalers — all chronic disease medications"
+        ]
+      ],
+      "type": "table",
+      "caption": "Caribbean Pharmacy Demand Calendar",
+      "headers": [
+        "Period",
+        "Months",
+        "Demand Drivers",
+        "Key Products Affected"
+      ]
+    },
+    {
+      "body": "During dengue season, demand for paracetamol surges because aspirin and NSAIDs are contraindicated in suspected dengue fever (they increase bleeding risk in dengue haemorrhagic fever). AI inventory systems must be configured to flag this pattern — increased paracetamol demand during dengue outbreaks — and to ensure adequate stock of paracetamol while noting that aspirin demand may paradoxically drop.",
+      "type": "callout",
+      "title": "Dengue Alert — Never Aspirin",
+      "variant": "warning"
+    },
+    {
+      "text": "How AI Learns These Patterns",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "An AI forecasting system analyses years of historical sales data alongside external data sources — weather forecasts, disease surveillance reports from CARPHA, public holiday calendars, and even social media trends — to identify demand patterns and predict future needs. The more data the system has, the more accurate its predictions become. For a Caribbean pharmacy, this means the system gets smarter about local patterns over time: it learns that your Tunapuna branch sells twice as many inhalers in July as in January, or that your Montego Bay location needs extra oral rehydration salts the week after major dancehall events.",
+      "type": "text"
+    },
+    {
+      "type": "case-study",
+      "title": "Case Study: Hurricane Preparedness Through Predictive Analytics",
+      "scenario": "PharmaCare, a five-branch pharmacy chain in Trinidad & Tobago, implemented an AI-powered inventory system in 2023. In June, as hurricane season approached, the system flagged that based on historical data and weather models, there was a 65% probability of a major storm affecting Trinidad within the next 90 days. It recommended increasing buffer stock of essential chronic disease medications (antihypertensives, insulin, antidiabetics) by 40%, stocking emergency supplies (wound care, oral rehydration salts, water purification tablets), and pre-ordering generator fuel for cold chain maintenance. When Tropical Storm Xavier hit in September, PharmaCare was the only pharmacy chain with adequate stock of insulin and antihypertensives for three weeks, serving hundreds of patients who could not access their usual pharmacies.",
+      "questions": [
+        "How did the AI system's recommendation differ from what a traditional min/max system would have suggested?",
+        "What data sources would the AI system need to make hurricane preparedness recommendations?",
+        "What are the financial risks of following the AI recommendation if the storm had not materialised?"
+      ],
+      "discussion": "A traditional min/max system would have maintained normal stock levels regardless of hurricane season risk. The AI system integrated weather modelling, historical storm impact data, and patient demand patterns to make proactive recommendations. The financial risk of overstocking if no storm occurred is real — but manageable, as chronic disease medications have long shelf lives and would be used eventually. The risk of understocking during a disaster — patients unable to access essential medications — is far greater and potentially life-threatening."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Paracetamol is cheaper than aspirin during the rainy season",
+        "Aspirin and NSAIDs are contraindicated in suspected dengue due to increased bleeding risk",
+        "Pharmacies run promotions on paracetamol during hurricane season",
+        "There is no relationship between dengue season and analgesic demand patterns"
+      ],
+      "question": "Why does paracetamol demand increase during dengue season while aspirin demand may decrease?",
+      "explanation": "Aspirin and other NSAIDs are contraindicated in suspected dengue fever because they increase the risk of haemorrhage, particularly in dengue haemorrhagic fever. Paracetamol is the recommended analgesic/antipyretic for dengue patients. During dengue outbreaks, demand shifts strongly toward paracetamol, a pattern that AI inventory systems must recognise.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 20
+}

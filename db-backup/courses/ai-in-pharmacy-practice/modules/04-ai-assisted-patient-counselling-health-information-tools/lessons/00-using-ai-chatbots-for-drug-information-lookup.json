@@ -1,0 +1,76 @@
+{
+  "id": "ebc4be9e-917a-485d-b094-f4440bc75b44",
+  "module_id": "373bbb03-458a-4385-890c-f79814de2f62",
+  "title": "Using AI Chatbots for Drug Information Lookup",
+  "content": [
+    {
+      "text": "ChatGPT, Claude & Beyond: AI as Your Research Assistant",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Large language models (LLMs) like ChatGPT and Claude have emerged as powerful research assistants for pharmacy professionals. They can summarise drug monographs, explain mechanisms of action in plain language, compare medications, and answer complex clinical questions — all in seconds. But they must be used correctly. Think of an LLM as a very knowledgeable junior colleague who is sometimes confidently wrong: their output always needs a senior review.",
+      "type": "text"
+    },
+    {
+      "text": "The Art of Prompting for Pharmacy",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "The quality of an AI response depends heavily on the quality of your question — this is called 'prompt engineering.' A vague question gets a vague answer. A specific, well-structured prompt gets a targeted, useful response. For pharmacy use, your prompts should always include the clinical context, the specific information you need, and any constraints.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Tell me about metformin",
+          "I am a pharmacy technician in Trinidad. A patient with Type 2 diabetes on Metformin 500mg BD asks about common side effects and when to see their doctor. Summarise in patient-friendly language at a secondary school reading level.",
+          "Specifies your role, location, dose, specific need, and desired language level"
+        ],
+        [
+          "Can I take these two drugs together?",
+          "A 72-year-old patient takes Amlodipine 10mg daily and Simvastatin 40mg at night. Is there a clinically significant interaction? If so, what monitoring or dose adjustment is recommended?",
+          "Provides specific medications, doses, and patient age; asks a targeted clinical question"
+        ],
+        [
+          "What is the dose of amoxicillin?",
+          "What is the standard adult oral dose of Amoxicillin for a lower urinary tract infection, and what dose adjustments are needed for renal impairment (CrCl < 30mL/min)?",
+          "Specifies indication, route, and a specific clinical scenario requiring nuanced information"
+        ]
+      ],
+      "type": "table",
+      "caption": "Effective vs. Ineffective AI Prompts for Pharmacy",
+      "headers": [
+        "Poor Prompt",
+        "Better Prompt",
+        "Why It Is Better"
+      ]
+    },
+    {
+      "body": "NEVER give AI-generated drug information directly to a patient without: (1) Verifying it against an authoritative source (BNF, Lexicomp, Micromedex, or a current drug monograph), and (2) Having the supervising pharmacist review any clinical content. AI tools are for YOUR preparation — they do not replace clinical verification or professional oversight.",
+      "type": "callout",
+      "title": "The Golden Rule of AI in Pharmacy",
+      "variant": "warning"
+    },
+    {
+      "term": "Prompt Engineering",
+      "type": "key-term",
+      "definition": "The practice of crafting precise, context-rich questions for AI systems to elicit the most accurate and useful responses. In pharmacy, effective prompting includes specifying the clinical context, patient details, and desired output format."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "'Tell me about blood pressure medications'",
+        "'I am a pharmacy technician. A patient on Lisinopril 10mg daily asks why they have a persistent dry cough. Explain the mechanism and common alternatives, in language suitable for patient counselling.'",
+        "'List all ACE inhibitors'",
+        "'What drugs cause cough?'"
+      ],
+      "question": "Which prompt is most likely to produce a useful, accurate AI response for pharmacy practice?",
+      "explanation": "The second prompt is most effective because it specifies the user's role (pharmacy technician), the specific clinical scenario (Lisinopril-induced cough), the information needed (mechanism and alternatives), and the desired output format (patient-friendly language). Specific, contextual prompts produce specific, useful responses.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 20
+}

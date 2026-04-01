@@ -1,0 +1,88 @@
+{
+  "id": "961bb939-7ac9-41b6-bde5-9755a3617649",
+  "module_id": "d535aae0-2da8-4ad8-8c9f-005c1b03ae1f",
+  "title": "Weighing and Measuring Techniques",
+  "content": [
+    {
+      "text": "Precision and Accuracy in Every Measurement",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Accurate weighing and measuring are the foundation of pharmaceutical compounding. An error in measurement translates directly into an error in the final product's potency — too much drug can cause toxicity, too little can result in treatment failure. In the Caribbean, where compounded preparations are frequently the only option for vulnerable patients (children, the elderly, patients with rare conditions), measurement accuracy is a matter of patient safety.",
+      "type": "text"
+    },
+    {
+      "text": "Weighing Solids: Step-by-Step",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "type": "list",
+      "items": [
+        "Ensure the balance is on a level, vibration-free surface and is calibrated (check with certified weights at the start of each compounding session)",
+        "Place a weighing paper or weighing boat on the pan and tare (zero) the balance",
+        "Using a spatula, carefully add the ingredient to the weighing vessel — add gradually, not in one large quantity",
+        "Read the weight only when the balance has stabilised (no fluctuation in the digital readout or the pointer has come to rest)",
+        "If you overshoot the target weight, carefully remove excess with a clean spatula — never return excess powder to the original container (contamination risk)",
+        "Record the exact weight measured in the compounding log"
+      ],
+      "ordered": true
+    },
+    {
+      "text": "Measuring Liquids: The Meniscus Rule",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "When measuring liquids in a graduated cylinder, the liquid surface curves — this curve is called the meniscus. For most pharmaceutical liquids (aqueous solutions), the meniscus curves downward (concave). Always read the volume at the bottom of the meniscus, with your eye level with the liquid surface. Reading from above (parallax error) causes you to undermeasure; reading from below causes you to overmeasure. Place the graduated cylinder on a flat surface and bend down to read at eye level, or raise the cylinder to eye level.",
+      "type": "text"
+    },
+    {
+      "body": "Always select the smallest graduated cylinder that will accommodate the volume you need to measure. Measuring 5 mL in a 100 mL graduated cylinder introduces significant error because the graduation marks are widely spaced relative to your measurement. The same 5 mL measured in a 10 mL graduated cylinder is far more accurate. A general rule: the volume to be measured should be at least 20% of the cylinder's total capacity.",
+      "type": "callout",
+      "title": "Choosing the Right Graduated Cylinder",
+      "variant": "tip"
+    },
+    {
+      "term": "Meniscus",
+      "type": "key-term",
+      "definition": "The curved surface of a liquid in a container, caused by surface tension and the liquid's interaction with the container wall. For aqueous solutions in glass cylinders, the meniscus is concave (curves downward), and the volume is read at the bottom of the curve. For mercury (used in some thermometers), the meniscus is convex (curves upward), and the volume is read at the top."
+    },
+    {
+      "text": "The Aliquot Method in Detail",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "The aliquot method is an essential technique for accurately measuring quantities below the minimum weighable quantity (MWQ) of a balance. It works by diluting the drug with an inert diluent so that a weighable quantity of the diluted mixture contains the desired amount of drug. Here is an example: you need 50 mg of Drug X, but your balance's MWQ is 120 mg.",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Weigh 250 mg of Drug X (a quantity well above the MWQ)",
+        "Weigh 4750 mg (4.75 g) of lactose (inert diluent)",
+        "Mix the Drug X and lactose thoroughly by geometric dilution — the mixture now contains 250 mg of Drug X in 5000 mg total",
+        "Each milligram of the mixture contains: 250 mg ÷ 5000 mg = 0.05 mg of Drug X",
+        "To obtain 50 mg of Drug X, weigh: 50 mg ÷ 0.05 mg per mg = 1000 mg (1 g) of the diluted mixture",
+        "1000 mg is well above the MWQ, so this quantity can be weighed accurately"
+      ],
+      "ordered": true
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "At the top of the meniscus",
+        "At the bottom of the meniscus, with your eye level with the liquid surface",
+        "At the middle of the meniscus",
+        "From above, looking down into the cylinder"
+      ],
+      "question": "When reading the volume of a liquid in a graduated cylinder, where should you read the measurement?",
+      "explanation": "For aqueous solutions (the vast majority of pharmaceutical liquids), the meniscus curves downward (concave), and the correct reading is at the bottom of the meniscus. Your eye must be level with the liquid surface to avoid parallax error. Reading from above causes undermeasurement; reading from below causes overmeasurement.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 30
+}

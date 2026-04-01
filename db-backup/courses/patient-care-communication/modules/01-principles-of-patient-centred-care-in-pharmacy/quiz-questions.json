@@ -1,0 +1,180 @@
+[
+  {
+    "id": "a521af47-93f7-4d28-ae21-f111fb7b7822",
+    "module_id": "ed4e750f-4b1a-41ea-a99c-0214f0f779ee",
+    "question": "Which of the following BEST defines patient-centred care?",
+    "options": [
+      "Providing the fastest possible service to reduce wait times",
+      "Allowing patients to self-diagnose and choose their own medications",
+      "An approach that integrates the patient's values, preferences, and cultural context into care decisions, making them active partners",
+      "Ensuring every patient receives the same standardised counselling regardless of their background"
+    ],
+    "correct_answer": 2,
+    "explanation": "Patient-centred care is defined by its focus on the individual patient's values, preferences, needs, and cultural context. It treats the patient as an active partner, not a passive recipient. Standardised counselling (option D) ignores individual differences, which is the opposite of patient-centred care.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "ff379d95-ccae-4ad5-9541-43ef6f1ba43c",
+    "module_id": "ed4e750f-4b1a-41ea-a99c-0214f0f779ee",
+    "question": "A patient tells you she is using soursop leaf tea alongside her prescribed chemotherapy. Using patient-centred care principles, which response is MOST appropriate?",
+    "options": [
+      "Tell her to stop immediately — bush remedies are unproven and dangerous",
+      "Acknowledge her choice respectfully, ask about the preparation and frequency, and consult the pharmacist about potential interactions with her chemotherapy",
+      "Ignore the comment — traditional remedies are not your concern",
+      "Agree that soursop cures cancer and encourage her to continue"
+    ],
+    "correct_answer": 1,
+    "explanation": "Patient-centred care respects the patient's values while ensuring safety. Dismissing traditional medicine alienates the patient and may cause them to hide their practices. Agreeing uncritically is dangerous. The correct response engages respectfully, gathers clinical information, and involves the pharmacist to assess safety.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "e829ba64-a847-479b-b123-8e4fc49ce6eb",
+    "module_id": "ed4e750f-4b1a-41ea-a99c-0214f0f779ee",
+    "question": "What percentage of Caribbean patients are estimated to seek pharmacy advice BEFORE visiting a physician?",
+    "options": [
+      "Less than 20%",
+      "About 35%",
+      "More than 60%",
+      "Approximately 90%"
+    ],
+    "correct_answer": 2,
+    "explanation": "PAHO studies indicate that more than 60% of Caribbean patients seek advice at a pharmacy before visiting a physician. In rural areas and smaller islands, this figure can exceed 80%, making the pharmacy the de facto first point of healthcare contact.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "ff7dda2a-701b-45e5-9fa4-c5e9dbf2a185",
+    "module_id": "ed4e750f-4b1a-41ea-a99c-0214f0f779ee",
+    "question": "In shared decision-making, whose values should ultimately guide treatment decisions?",
+    "options": [
+      "The pharmacist's clinical judgement alone",
+      "The patient's values, informed by the provider's clinical expertise",
+      "Whatever the newest clinical guidelines recommend",
+      "The family's preferences, regardless of the patient's wishes"
+    ],
+    "correct_answer": 1,
+    "explanation": "Shared decision-making combines the provider's clinical expertise with the patient's values, preferences, and life circumstances. Ultimately, it is the patient who must live with the treatment decision, so their informed values guide the final choice.",
+    "order_index": 3,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "2e245d46-190a-4bab-a370-214eb742bc3e",
+    "module_id": "ed4e750f-4b1a-41ea-a99c-0214f0f779ee",
+    "question": "Why is the 'everybody know everybody' dynamic of small Caribbean islands a significant barrier to patient-centred care?",
+    "options": [
+      "Pharmacy staff cannot remember all their patients' names",
+      "It creates a close-knit community that naturally supports patients",
+      "Patients with stigmatised conditions may avoid seeking treatment due to fear of disclosure",
+      "It makes pharmacies too crowded"
+    ],
+    "correct_answer": 2,
+    "explanation": "In small island communities where social networks overlap extensively, patients with stigmatised conditions (HIV, mental illness, STIs) may avoid pharmacies entirely if they fear their health information will become public knowledge. This privacy paradox is a uniquely Caribbean barrier to patient-centred care.",
+    "order_index": 4,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "analyze"
+  },
+  {
+    "id": "d2fce36f-6c45-4d55-975a-68eccd03344a",
+    "module_id": "ed4e750f-4b1a-41ea-a99c-0214f0f779ee",
+    "question": "Mrs. Doreen refuses to take metformin because her neighbour had gastrointestinal side effects. Rank the following responses from MOST to LEAST patient-centred.",
+    "options": [
+      "Validate her concern, explain that GI effects are common but usually temporary, suggest taking with food, and offer to contact her doctor about a lower starting dose",
+      "Tell her the doctor prescribed it so she must take it",
+      "Say nothing — it is not your decision",
+      "Give her the medication without discussion and move to the next patient"
+    ],
+    "correct_answer": 0,
+    "explanation": "The most patient-centred response validates the patient's concern, provides education about side effects and mitigation strategies, and offers to coordinate with the prescriber. Simply insisting on compliance, remaining silent, or ignoring the concern entirely represent progressively less patient-centred approaches.",
+    "order_index": 5,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "evaluate"
+  },
+  {
+    "id": "13a28741-1a94-452a-b382-5e8ff790422d",
+    "module_id": "ed4e750f-4b1a-41ea-a99c-0214f0f779ee",
+    "question": "The 'one key message' technique is designed to address which barrier to patient-centred care?",
+    "options": [
+      "Language differences",
+      "Medication cost",
+      "Time pressure during busy periods",
+      "Patient stigma"
+    ],
+    "correct_answer": 2,
+    "explanation": "The 'one key message' technique ensures that even when time is extremely limited, every patient leaves with one clear, actionable piece of information. It is specifically designed to maintain patient-centred care quality during high-volume, time-pressured dispensing.",
+    "order_index": 6,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "cdc420d7-d10f-4e00-93a2-c23ce5710313",
+    "module_id": "ed4e750f-4b1a-41ea-a99c-0214f0f779ee",
+    "question": "Using pictograms on medication labels — such as drawing a sun for morning doses and a moon for night doses — primarily addresses which dimension of patient-centred care?",
+    "options": [
+      "Emotional support",
+      "Physical comfort",
+      "Information and education",
+      "Continuity and transition"
+    ],
+    "correct_answer": 2,
+    "explanation": "Pictograms on medication labels address the information and education dimension by making dosing instructions accessible to patients with limited literacy or limited English proficiency. This is particularly relevant in the Caribbean, where health literacy barriers are common.",
+    "order_index": 7,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "6227a9cf-a57a-40f7-9e70-01e56e8fc3a4",
+    "module_id": "ed4e750f-4b1a-41ea-a99c-0214f0f779ee",
+    "question": "A patient-centred approach is MOST likely to improve which of the following outcomes?",
+    "options": [
+      "Medication adherence",
+      "Not medication adherence"
+    ],
+    "correct_answer": 0,
+    "explanation": "Research consistently demonstrates that patient-centred communication improves medication adherence by 20-30%. When patients feel heard, understand their medication, and have been involved in the decision-making process, they are far more likely to take their medications as prescribed.",
+    "order_index": 8,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "853d632c-1cfe-4b97-84ec-efe2e1e91281",
+    "module_id": "ed4e750f-4b1a-41ea-a99c-0214f0f779ee",
+    "question": "Match each barrier to patient-centred care with the most appropriate strategy to address it.",
+    "options": [
+      "Language barriers",
+      "Health literacy gaps",
+      "Stigma around HIV",
+      "Time pressure"
+    ],
+    "correct_answer": 0,
+    "explanation": "Language barriers are best addressed by learning key pharmacy phrases in local languages; health literacy gaps by using pictograms and teach-back methods; HIV stigma by normalising all medication dispensing; and time pressure by using the 'one key message' technique.",
+    "order_index": 9,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  }
+]

@@ -1,0 +1,86 @@
+{
+  "id": "02814c9d-7c0b-4c37-a83c-94d580fdf499",
+  "module_id": "8655a4bb-6786-4c6f-8c79-df8a5e077ff3",
+  "title": "Antipsychotics & Antiepileptics",
+  "content": [
+    {
+      "text": "Managing Psychosis and Seizures",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Antipsychotics are used to treat schizophrenia, bipolar disorder, and acute psychosis. They are divided into typical (first-generation: haloperidol, chlorpromazine) and atypical (second-generation: risperidone, olanzapine, quetiapine). Atypical antipsychotics generally have fewer movement-related side effects but carry metabolic risks (weight gain, diabetes).",
+      "type": "text"
+    },
+    {
+      "term": "Antipsychotic",
+      "type": "key-term",
+      "definition": "A drug used to manage psychosis (including delusions, hallucinations, and disordered thinking). Typical antipsychotics primarily block dopamine D2 receptors. Atypical antipsychotics block both D2 and serotonin 5-HT2A receptors, offering broader efficacy with generally fewer motor side effects."
+    },
+    {
+      "term": "Extrapyramidal Symptoms (EPS)",
+      "type": "key-term",
+      "definition": "Movement disorders caused by dopamine receptor blockade in the basal ganglia. Include acute dystonia (sustained muscle contractions), akathisia (restlessness), parkinsonism (tremor, rigidity), and tardive dyskinesia (involuntary facial movements). More common with typical antipsychotics."
+    },
+    {
+      "body": "Antiepileptic drugs (AEDs) include valproate, carbamazepine, phenytoin, and newer agents like levetiracetam and lamotrigine. Many AEDs have narrow therapeutic indices and require blood level monitoring. Phenytoin is particularly challenging due to non-linear pharmacokinetics — small dose increases can cause disproportionate rises in blood levels.",
+      "type": "text"
+    },
+    {
+      "body": "Sodium valproate is TERATOGENIC — it causes neural tube defects and developmental problems in the foetus. It should NOT be prescribed to women of childbearing potential unless no alternative exists and the patient is on effective contraception. This is a critical dispensing alert in Caribbean practice.",
+      "type": "callout",
+      "title": "Valproate and Pregnancy",
+      "variant": "danger"
+    },
+    {
+      "rows": [
+        [
+          "Valproate",
+          "Epilepsy, bipolar disorder, migraine",
+          "Liver function, blood levels",
+          "Teratogenic — avoid in pregnancy"
+        ],
+        [
+          "Carbamazepine",
+          "Epilepsy, trigeminal neuralgia",
+          "Blood levels, CBC, liver function",
+          "Enzyme inducer — many drug interactions"
+        ],
+        [
+          "Phenytoin",
+          "Epilepsy",
+          "Blood levels (narrow TI)",
+          "Non-linear kinetics; small dose changes cause large level changes"
+        ],
+        [
+          "Levetiracetam",
+          "Epilepsy",
+          "Minimal monitoring",
+          "Fewer interactions; behavioural side effects possible"
+        ]
+      ],
+      "type": "table",
+      "caption": "Key Antiepileptic Drugs",
+      "headers": [
+        "Drug",
+        "Used For",
+        "Key Monitoring",
+        "Important Warning"
+      ]
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Valproate causes infertility",
+        "Valproate is teratogenic and can cause neural tube defects in the foetus",
+        "Valproate becomes less effective during pregnancy",
+        "There is no concern"
+      ],
+      "question": "A young woman with epilepsy controlled on sodium valproate is planning pregnancy. What is the critical concern?",
+      "explanation": "Valproate is one of the most teratogenic commonly prescribed drugs. Women planning pregnancy should be switched to a safer alternative (e.g., lamotrigine or levetiracetam) well before conception, under specialist supervision.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 20
+}

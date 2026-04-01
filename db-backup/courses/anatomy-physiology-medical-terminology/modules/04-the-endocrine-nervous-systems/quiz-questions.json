@@ -1,0 +1,181 @@
+[
+  {
+    "id": "7187504b-7357-49b1-9f1b-3b2328aa549a",
+    "module_id": "3222ebc2-0078-4915-a18c-97e78b0bcad5",
+    "question": "Which organ produces insulin?",
+    "options": [
+      "Liver",
+      "Thyroid",
+      "Pancreas",
+      "Adrenal gland"
+    ],
+    "correct_answer": 2,
+    "explanation": "Insulin is produced by the beta cells of the islets of Langerhans in the pancreas. In type 1 diabetes, autoimmune destruction of these beta cells leads to absolute insulin deficiency. In type 2 diabetes, the beta cells progressively fail to produce sufficient insulin to overcome peripheral insulin resistance.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "52374afa-3ce1-4c37-8a89-7f6f3983bf96",
+    "module_id": "3222ebc2-0078-4915-a18c-97e78b0bcad5",
+    "question": "What is the key difference between type 1 and type 2 diabetes?",
+    "options": [
+      "Type 1 involves insulin resistance; type 2 involves autoimmune destruction of beta cells",
+      "Type 1 involves autoimmune destruction of beta cells; type 2 involves insulin resistance with progressive beta cell failure",
+      "Type 1 affects only children; type 2 affects only adults",
+      "Type 1 is treated with oral medications; type 2 always requires insulin"
+    ],
+    "correct_answer": 1,
+    "explanation": "Type 1 diabetes is an autoimmune disease that destroys insulin-producing beta cells, requiring lifelong insulin therapy. Type 2 diabetes is characterised by insulin resistance and progressive beta cell dysfunction, initially managed with lifestyle changes and oral medications. Type 2 accounts for 90-95% of diabetes cases and is the predominant type in the Caribbean epidemic.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "e0711b09-ba5b-4a95-9381-f1b0ab6a635e",
+    "module_id": "3222ebc2-0078-4915-a18c-97e78b0bcad5",
+    "question": "The nervous system is divided into which two structural components?",
+    "options": [
+      "Sympathetic and parasympathetic",
+      "Somatic and autonomic",
+      "Central nervous system (CNS) and peripheral nervous system (PNS)",
+      "Afferent and efferent"
+    ],
+    "correct_answer": 2,
+    "explanation": "The nervous system is structurally divided into the central nervous system (brain and spinal cord) and the peripheral nervous system (all nerves outside the CNS). The PNS is further divided into the somatic (voluntary) and autonomic (involuntary) divisions, with the autonomic division split into sympathetic and parasympathetic branches.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "12f34d51-f655-4700-88e8-10faa0ccdb60",
+    "module_id": "3222ebc2-0078-4915-a18c-97e78b0bcad5",
+    "question": "Match each neurotransmitter with its primary association.",
+    "options": [
+      "Serotonin → Mood and sleep regulation",
+      "Dopamine → Reward and motor control",
+      "GABA → Inhibitory signalling and anxiety reduction",
+      "Acetylcholine → Muscle contraction and parasympathetic function"
+    ],
+    "correct_answer": 0,
+    "explanation": "All pairings are correct: Serotonin regulates mood and sleep (targeted by SSRIs); Dopamine is involved in reward and motor control (targeted by antipsychotics and anti-Parkinsonian drugs); GABA is the main inhibitory neurotransmitter (targeted by benzodiazepines); Acetylcholine mediates muscle contraction and parasympathetic activity (targeted by anticholinergics).",
+    "order_index": 3,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "c6e0b55e-2220-4fa4-834a-4ace43c4a7af",
+    "module_id": "3222ebc2-0078-4915-a18c-97e78b0bcad5",
+    "question": "A pharmacy technician in Trinidad notices that a patient's carbamazepine has been supplied by a different manufacturer than usual. Why is this a concern?",
+    "options": [
+      "Different manufacturers use different colours, which confuses patients",
+      "Anticonvulsants have narrow therapeutic indices, and bioavailability differences between manufacturers can cause seizure breakthrough or toxicity",
+      "It is always illegal to dispense a different manufacturer's product",
+      "The new manufacturer may not be CDAP-approved"
+    ],
+    "correct_answer": 1,
+    "explanation": "Anticonvulsant medications have narrow therapeutic indices — the difference between an effective dose and a toxic dose is small. Different manufacturers may have slightly different bioavailability, meaning the amount of drug that reaches the bloodstream can vary. For a drug like carbamazepine, this can be enough to cause breakthrough seizures (if less drug is absorbed) or toxicity (if more is absorbed). This must be flagged to the pharmacist.",
+    "order_index": 4,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "hard",
+    "blooms_level": "evaluate"
+  },
+  {
+    "id": "aea90249-bb2a-48b3-8cbb-d18f1cbda14e",
+    "module_id": "3222ebc2-0078-4915-a18c-97e78b0bcad5",
+    "question": "Insulin must be stored in the refrigerator (2-8°C) before opening.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct_answer": 0,
+    "explanation": "True. Unopened insulin must be refrigerated at 2-8°C to maintain its potency. Once opened, most insulin preparations can be kept at room temperature (below 25-30°C) for a limited period (usually up to 28 days). In the Caribbean's tropical climate, ensuring insulin is not exposed to excessive heat is a critical patient safety concern.",
+    "order_index": 5,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "6a950e7a-85e7-45a5-af99-7c82db7ad8e7",
+    "module_id": "3222ebc2-0078-4915-a18c-97e78b0bcad5",
+    "question": "According to the WHO analgesic ladder, what is the first step for treating mild pain?",
+    "options": [
+      "Strong opioids (morphine)",
+      "Weak opioids (tramadol, codeine)",
+      "Non-opioid analgesics (paracetamol, NSAIDs)",
+      "Nerve blocks and anaesthesia"
+    ],
+    "correct_answer": 2,
+    "explanation": "Step 1 of the WHO analgesic ladder recommends non-opioid analgesics (paracetamol, NSAIDs) for mild pain. Step 2 adds weak opioids for moderate pain, and Step 3 uses strong opioids for severe pain. This stepwise approach guides prescribing practice across the Caribbean.",
+    "order_index": 6,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "4fa9def3-64a5-40a7-8788-e14cb8f397b5",
+    "module_id": "3222ebc2-0078-4915-a18c-97e78b0bcad5",
+    "question": "Which of the following are risk factors for type 2 diabetes that are highly prevalent in the Caribbean? Select ALL that apply.",
+    "options": [
+      "Obesity",
+      "Physical inactivity",
+      "Genetic predisposition",
+      "High altitude living",
+      "Diet high in refined carbohydrates"
+    ],
+    "correct_answer": 0,
+    "explanation": "Obesity, physical inactivity, genetic predisposition, and a diet high in refined carbohydrates are all major risk factors for type 2 diabetes and are highly prevalent across the Caribbean. High altitude living is not a risk factor for diabetes. The combination of these risk factors drives the Caribbean diabetes epidemic.",
+    "order_index": 7,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "analyze"
+  },
+  {
+    "id": "f22b76fc-54bc-45eb-b457-c2f870e8333f",
+    "module_id": "3222ebc2-0078-4915-a18c-97e78b0bcad5",
+    "question": "The endocrine system maintains hormone balance primarily through:",
+    "options": [
+      "Positive feedback loops that continuously increase hormone levels",
+      "Negative feedback loops that regulate hormone production",
+      "Random hormone secretion that adjusts over time",
+      "Direct electrical signals from the brain"
+    ],
+    "correct_answer": 1,
+    "explanation": "The endocrine system uses negative feedback loops as its primary regulatory mechanism. When a hormone reaches a sufficient level, it signals the producing gland to reduce output. This self-correcting system maintains homeostasis. Positive feedback loops exist (e.g. oxytocin in labour) but are rare and serve specific short-term purposes.",
+    "order_index": 8,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "220576a5-15dd-45c4-b8bb-2c87689f7432",
+    "module_id": "3222ebc2-0078-4915-a18c-97e78b0bcad5",
+    "question": "An HbA1c result of 8.5% indicates:",
+    "options": [
+      "Normal blood glucose control",
+      "Prediabetes",
+      "Well-controlled diabetes (within target)",
+      "Poorly controlled diabetes (above typical target of < 7%)"
+    ],
+    "correct_answer": 3,
+    "explanation": "An HbA1c of 8.5% indicates poorly controlled diabetes. The typical treatment target is below 7% (53 mmol/mol). An HbA1c of 8.5% means the patient's average blood glucose over the past 2-3 months has been significantly elevated, increasing the risk of diabetic complications. The prescriber may need to intensify treatment.",
+    "order_index": 9,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  }
+]

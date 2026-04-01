@@ -1,0 +1,184 @@
+{
+  "id": "04ac5c47-9b37-4b21-9bb2-ffce653b9549",
+  "module_id": "685e9959-38ea-4718-aa13-af91470fd76f",
+  "title": "Dosage Verification and Safety Checks",
+  "content": [
+    {
+      "text": "Is This Dose Safe? Verification Before Dispensing",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Every calculation must be followed by a safety check. The pharmacy technician's role is not just to calculate the dose but to verify that it falls within accepted therapeutic ranges. This lesson teaches you how to use drug references, maximum dose limits, and clinical common sense to catch errors before they reach the patient.",
+      "type": "text"
+    },
+    {
+      "term": "Maximum Daily Dose (MDD)",
+      "type": "key-term",
+      "definition": "The highest total dose of a medication that can be safely administered in a 24-hour period. Exceeding the MDD increases the risk of toxicity and adverse effects. The MDD varies by patient age, weight, renal function, and hepatic function. Always check the current drug reference for the most up-to-date MDD."
+    },
+    {
+      "text": "The Dose Verification Checklist",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "type": "list",
+      "items": [
+        "Calculate the dose per administration using the prescription details and available stock",
+        "Calculate the total daily dose (dose × frequency)",
+        "Compare to the accepted dose range in a drug reference (e.g., BNF, MIMS Caribbean, NHF formulary)",
+        "Check: Is the dose within the usual range for the patient's age and indication?",
+        "Check: Does the total daily dose exceed the maximum daily dose?",
+        "Check: Are there renal or hepatic dose adjustments required?",
+        "If ANY check fails, do NOT dispense — escalate to the pharmacist immediately"
+      ],
+      "ordered": true
+    },
+    {
+      "rows": [
+        [
+          "Paracetamol",
+          "500 mg-1 g QDS",
+          "4 g/day",
+          "Hepatotoxic in overdose; lower max in alcoholism/liver disease"
+        ],
+        [
+          "Ibuprofen",
+          "400 mg TDS",
+          "2.4 g/day",
+          "GI bleeding risk; use with caution in renal impairment"
+        ],
+        [
+          "Amoxicillin",
+          "250-500 mg TDS",
+          "3 g/day (standard); 6 g/day (severe infections)",
+          "Higher doses for endocarditis prophylaxis"
+        ],
+        [
+          "Metformin",
+          "500 mg-1 g BD/TDS",
+          "2.55 g/day (3 g in some formularies)",
+          "Withhold if eGFR < 30; lactic acidosis risk"
+        ],
+        [
+          "Amlodipine",
+          "5-10 mg OD",
+          "10 mg/day",
+          "Start at 5 mg in elderly"
+        ],
+        [
+          "Omeprazole",
+          "20-40 mg OD",
+          "40 mg/day (80 mg in Zollinger-Ellison)",
+          "Review need after 8 weeks"
+        ]
+      ],
+      "type": "table",
+      "caption": "Maximum Daily Doses — Commonly Dispensed Medications in the Caribbean",
+      "headers": [
+        "Medication",
+        "Usual Adult Dose",
+        "Maximum Daily Dose",
+        "Key Safety Note"
+      ]
+    },
+    {
+      "body": "If your calculation produces a result that seems unusual — for example, 10 tablets per dose, a volume larger than the vial, or a dose you have never seen before — STOP. Recalculate from scratch. If you get the same answer, consult the pharmacist. Common causes of unexpected results: prescribing error, wrong stock strength selected, unit conversion mistake, or decimal point error. In Caribbean practice, never be afraid to question a prescription — patient safety always comes first.",
+      "type": "callout",
+      "title": "When the Calculation Looks Wrong — Trust the Red Flag",
+      "variant": "warning"
+    },
+    {
+      "type": "scenario-simulation",
+      "nodes": [
+        {
+          "id": "start",
+          "text": "A prescription arrives for an 8-year-old child weighing 25 kg: 'Paracetamol 500 mg QDS PRN'. The usual paediatric dose is 15 mg/kg/dose, maximum 4 doses per day. You calculate: 15 mg/kg × 25 kg = 375 mg per dose. The prescription says 500 mg. What do you do?",
+          "choices": [
+            {
+              "label": "Dispense 500 mg as written — the doctor knows best",
+              "feedback": "This is not the best choice. While doctors are prescribers, pharmacy professionals are the last safety check. The dose exceeds the weight-based calculation.",
+              "isOptimal": false,
+              "nextNodeId": "dispense-as-written"
+            },
+            {
+              "label": "Flag the discrepancy and bring it to the pharmacist's attention",
+              "feedback": "Excellent choice! You have identified a potential overdose and escalated appropriately. The pharmacist will contact the prescriber.",
+              "isOptimal": true,
+              "nextNodeId": "flag-pharmacist"
+            },
+            {
+              "label": "Change the dose to 375 mg yourself without consulting anyone",
+              "feedback": "A pharmacy technician cannot alter a prescription independently. Only the pharmacist — after contacting the prescriber — can authorise a dose change.",
+              "isOptimal": false,
+              "nextNodeId": "change-dose"
+            }
+          ]
+        },
+        {
+          "id": "dispense-as-written",
+          "text": "You dispense paracetamol 500 mg QDS. The child's maximum daily dose at 500 mg × 4 = 2000 mg. Weight-based max = 75 mg/kg/day = 1875 mg. The prescribed dose exceeds the weight-based maximum. While 500 mg per dose is within the maximum single dose for children over 10, this 8-year-old at 25 kg should receive no more than 375 mg per dose. If the child develops nausea or liver tenderness, the overdose could progress to liver failure.",
+          "isEnd": true,
+          "outcome": "failure",
+          "summary": "Always verify doses against weight-based calculations for paediatric patients. Dispensing without questioning put this child at risk of paracetamol-related liver damage."
+        },
+        {
+          "id": "flag-pharmacist",
+          "text": "The pharmacist reviews your calculation and agrees — 500 mg exceeds the appropriate dose for a 25 kg child. They call the prescriber, who confirms the child weighs 25 kg and agrees to reduce the dose. What dose does the pharmacist recommend?",
+          "choices": [
+            {
+              "label": "375 mg (15 mg/kg × 25 kg) — the standard dose",
+              "feedback": "Correct. 375 mg is the weight-appropriate dose. The prescriber amends the prescription accordingly.",
+              "isOptimal": true,
+              "nextNodeId": "correct-dose"
+            },
+            {
+              "label": "250 mg — round down to be extra safe",
+              "feedback": "While erring on the side of caution is understandable, 250 mg is only 10 mg/kg — subtherapeutic and may not adequately manage the child's pain or fever.",
+              "isOptimal": false,
+              "nextNodeId": "underdose"
+            }
+          ]
+        },
+        {
+          "id": "change-dose",
+          "text": "You have altered a prescription without authorisation. This is a serious regulatory violation. In Trinidad, only a pharmacist — after contacting the prescriber — may authorise changes to a prescription. You could face disciplinary action. The pharmacist discovers the change during the final check.",
+          "isEnd": true,
+          "outcome": "failure",
+          "summary": "Never alter a prescription independently. Always escalate concerns through the proper channels: technician → pharmacist → prescriber."
+        },
+        {
+          "id": "correct-dose",
+          "text": "The prescriber amends the prescription to paracetamol 375 mg (as 7.5 mL of 250 mg/5 mL suspension) QDS PRN. The pharmacist documents the interaction, and you dispense with appropriate patient counselling. The mother is advised to use the oral syringe provided and not to exceed 4 doses in 24 hours.",
+          "isEnd": true,
+          "outcome": "success",
+          "summary": "You correctly identified a paediatric dosing discrepancy, escalated to the pharmacist, and the team ensured the child received a safe, effective dose. This is the gold standard of pharmacy practice."
+        },
+        {
+          "id": "underdose",
+          "text": "The pharmacist explains that 250 mg (10 mg/kg) is below the therapeutic range for pain and fever management. The standard dose of 15 mg/kg (375 mg) provides optimal efficacy with an adequate safety margin. The corrected prescription reads 375 mg QDS PRN.",
+          "isEnd": true,
+          "outcome": "partial",
+          "summary": "You raised the concern appropriately but suggested a subtherapeutic dose. Always refer to the standard weight-based dosing guidelines rather than guessing. The pharmacist guided you to the correct calculation."
+        }
+      ],
+      "title": "Scenario: Catching a Dosing Error at the Dispensing Counter",
+      "description": "You are a pharmacy technician at a busy community pharmacy in San Fernando, Trinidad. A prescription arrives that needs your attention."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "2 g per day",
+        "3 g per day",
+        "4 g per day",
+        "6 g per day"
+      ],
+      "question": "The maximum daily dose of paracetamol for a healthy adult is:",
+      "explanation": "The maximum daily dose of paracetamol for a healthy adult is 4 g (4000 mg) per day, equivalent to two 500 mg tablets taken four times daily. This limit is lower in patients with liver disease, chronic alcohol use, malnutrition, or low body weight (< 50 kg). Paracetamol overdose is a leading cause of acute liver failure worldwide.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 4,
+  "duration_minutes": 25
+}

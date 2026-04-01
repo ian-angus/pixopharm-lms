@@ -1,0 +1,133 @@
+{
+  "id": "ed664e63-5cb8-4c3e-90ca-78daa474c445",
+  "module_id": "94dfa46a-cb95-4f47-8ba2-3ecf482dbc13",
+  "title": "Caribbean Pharmacy Regulatory Bodies & Frameworks",
+  "content": [
+    {
+      "text": "Who Regulates Caribbean Pharmacies?",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "A Caribbean pharmacy does not answer to a single regulator — it must comply with multiple regulatory bodies simultaneously. The pharmacy board governs professional practice, the drug regulatory authority controls which medications can be imported and sold, the health ministry sets public health standards, the tax authority oversees VAT/GCT compliance, and data protection commissioners govern patient information handling. A compliance failure with any one of these bodies can result in fines, licence suspension, or criminal prosecution.",
+      "type": "text"
+    },
+    {
+      "body": "For pharmacy managers, understanding who regulates what — and when inspections are likely to occur — is essential for maintaining continuous compliance. The consequences of non-compliance in a small Caribbean community extend beyond legal penalties: news travels fast, and a pharmacy sanctioned by the board may lose the trust of patients and prescribers that took years to build.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Pharmacy Board of T&T",
+          "Trinidad & Tobago",
+          "Pharmacist registration, pharmacy premises licensing, scope of practice, professional conduct",
+          "Routine inspections at least annually; unannounced inspections on complaint"
+        ],
+        [
+          "Chemistry, Food & Drugs Division",
+          "Trinidad & Tobago",
+          "Drug importation, registration, scheduling, controlled substance permits",
+          "Inspections on importation; periodic premises checks"
+        ],
+        [
+          "Pharmacy Council of Jamaica",
+          "Jamaica",
+          "Pharmacist registration, pharmacy premises standards, professional discipline",
+          "Annual licence renewal inspection; complaint-driven investigations"
+        ],
+        [
+          "Standards & Regulation Division (Ministry of Health)",
+          "Jamaica",
+          "Drug registration, import permits, controlled substance management",
+          "Regular inspections; pre-import verification"
+        ],
+        [
+          "Barbados Drug Service / Pharmacy Council",
+          "Barbados",
+          "Pharmacy premises, pharmacist registration, drug supply chain integrity",
+          "Annual renewal inspections; periodic compliance visits"
+        ],
+        [
+          "CARPHA (Regional)",
+          "All CARICOM states",
+          "Regional pharmaceutical quality, laboratory testing, harmonisation",
+          "Technical assessments and reference laboratory services"
+        ]
+      ],
+      "type": "table",
+      "caption": "Regulatory Bodies Governing Caribbean Pharmacies",
+      "headers": [
+        "Regulatory Body",
+        "Jurisdiction",
+        "What They Oversee",
+        "Inspection Frequency"
+      ]
+    },
+    {
+      "term": "Controlled Substance",
+      "type": "key-term",
+      "definition": "A drug or chemical substance whose possession, manufacture, distribution, and use are regulated by law due to their potential for abuse, dependence, or diversion. In the Caribbean, controlled substances are classified under the Dangerous Drugs Ordinance (T&T), the Dangerous Drugs Act (Jamaica), or the Drug Abuse Prevention and Control Act (Barbados). Common examples include morphine, codeine, diazepam, and pseudoephedrine."
+    },
+    {
+      "body": "A single Caribbean pharmacy may be required to maintain compliance with the Pharmacy Board, the Drug Regulatory Authority, the Ministry of Health, the tax authority (BIR, TAJ, or BRA), the data protection commissioner, the fire services (for storage requirements), and local municipal authorities. Each has different requirements, inspection schedules, and documentation expectations. A compliance calendar mapping all requirements and deadlines is not a luxury — it is a necessity.",
+      "type": "callout",
+      "title": "The Multi-Regulator Challenge",
+      "variant": "warning"
+    },
+    {
+      "type": "island-comparison",
+      "title": "Controlled Substance Regulations by Island",
+      "islands": [
+        {
+          "flag": "🇹🇹",
+          "name": "Trinidad & Tobago",
+          "details": [
+            "Governed by the Dangerous Drugs Act and Regulations",
+            "Schedule I (prohibited), Schedule II (restricted controlled substances, e.g., morphine, fentanyl), Schedule III (less restrictive)",
+            "All controlled substance transactions must be recorded in the Dangerous Drugs Register (DDR) — a bound, consecutively numbered book",
+            "DDR must be available for inspection at all times; discrepancies are treated as potential diversion",
+            "Annual inventory of all controlled substances must be submitted to the Chief Medical Officer"
+          ]
+        },
+        {
+          "flag": "🇯🇲",
+          "name": "Jamaica",
+          "details": [
+            "Governed by the Dangerous Drugs Act and the Pharmacy Act",
+            "The National Council on Drug Abuse (NCDA) oversees drug control policy",
+            "Controlled substances require a special prescription form (triplicate where applicable)",
+            "Pharmacies must maintain a separate controlled substance register with running balances",
+            "Inspections by the Pharmacy Council and narcotics police can be unannounced"
+          ]
+        },
+        {
+          "flag": "🇧🇧",
+          "name": "Barbados",
+          "details": [
+            "Governed by the Drug Abuse (Prevention and Control) Act",
+            "The National Council on Substance Abuse provides policy guidance",
+            "Controlled substances must be stored in a locked, designated area within the pharmacy",
+            "Separate records for receipt, dispensing, and disposal of controlled substances",
+            "Destruction of expired controlled substances must be witnessed by an authorised officer"
+          ]
+        }
+      ],
+      "description": "Controlled substance management is one of the most heavily regulated aspects of pharmacy practice. Requirements vary by island and violations carry severe penalties."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "A digital spreadsheet backed up to the cloud",
+        "A bound, consecutively numbered book available for inspection at all times",
+        "A loose-leaf folder that can be reorganised as needed",
+        "Any format the pharmacist prefers, as long as records are kept"
+      ],
+      "question": "In Trinidad & Tobago, the Dangerous Drugs Register (DDR) for controlled substances must be:",
+      "explanation": "The DDR in Trinidad & Tobago must be a bound, consecutively numbered book — not a loose-leaf folder, digital file, or informal record. The bound format prevents pages from being removed or rearranged, and consecutive numbering ensures completeness. It must be available for inspection at all times.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 20
+}

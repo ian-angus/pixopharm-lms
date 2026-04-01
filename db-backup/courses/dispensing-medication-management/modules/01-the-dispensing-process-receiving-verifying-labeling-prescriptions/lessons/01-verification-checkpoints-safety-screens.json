@@ -1,0 +1,83 @@
+{
+  "id": "441b8ee6-472a-4f57-bfd3-6d70a7f94458",
+  "module_id": "0bff4891-735a-41be-b0c3-a8bac8ddd17a",
+  "title": "Verification Checkpoints & Safety Screens",
+  "content": [
+    {
+      "text": "Building Safety Into Every Dispensing Step",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Dispensing errors can cause serious patient harm, from allergic reactions to fatal overdoses. The verification process is a series of systematic checkpoints designed to catch errors before the medication reaches the patient. In a well-run Caribbean pharmacy, at least three independent checks occur before a medication is handed to the patient.",
+      "type": "text"
+    },
+    {
+      "text": "The Three-Check System",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "The three-check system is the gold standard for dispensing safety. Each check involves verifying the same five elements — the 'Five Rights': Right Patient, Right Drug, Right Dose, Right Route, and Right Time. The three checks occur at different points in the dispensing workflow, creating multiple opportunities to catch errors.",
+      "type": "text"
+    },
+    {
+      "term": "Five Rights of Medication Dispensing",
+      "type": "key-term",
+      "definition": "A safety framework requiring verification of the Right Patient, Right Drug, Right Dose, Right Route, and Right Time at every dispensing checkpoint. Some expanded versions add Right Documentation, Right Reason, and Right Response."
+    },
+    {
+      "type": "list",
+      "items": [
+        "CHECK 1 — When selecting the medication from the shelf: Verify drug name, strength, dosage form, and expiry date against the prescription",
+        "CHECK 2 — When preparing/counting the medication: Re-verify the drug, count the correct quantity, and confirm the directions match the prescription",
+        "CHECK 3 — Final pharmacist verification before patient handoff: The pharmacist independently verifies the prescription, the prepared medication, and the label"
+      ],
+      "ordered": true
+    },
+    {
+      "body": "LASA medications are drugs with names that look or sound similar, creating a high risk of selection errors. Common Caribbean examples include: metformin vs. metoprolol, losartan vs. lisinopril, hydroxyzine vs. hydralazine, prednisolone vs. prednisone. Always read the full drug name and strength — never select a medication based on a partial match or shelf position alone.",
+      "type": "callout",
+      "title": "Look-Alike, Sound-Alike (LASA) Medications",
+      "variant": "danger"
+    },
+    {
+      "body": "In addition to the three physical checks, modern Caribbean pharmacies increasingly use electronic verification aids. Barcode scanning at the point of dispensing can match the scanned product to the prescription data entry, providing an additional layer of safety. However, technology should supplement — never replace — the technician's vigilance.",
+      "type": "text"
+    },
+    {
+      "text": "Drug Interaction & Allergy Screening",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Before dispensing, the patient's medication history should be checked for potential drug interactions, duplicate therapies, and known allergies. In pharmacies using dispensing software, these alerts may be generated automatically. In pharmacies using manual systems, the technician must flag any concerns to the pharmacist. Common interactions seen in Caribbean practice include warfarin with NSAIDs (widely available OTC), ACE inhibitors with potassium-sparing diuretics, and metformin with contrast dye procedures.",
+      "type": "text"
+    },
+    {
+      "type": "case-study",
+      "title": "Case Study: The Near Miss at a Port of Spain Pharmacy",
+      "scenario": "A pharmacy technician at a busy community pharmacy in Port of Spain receives a prescription for 'Amlodipine 10 mg, one tablet daily.' While pulling the medication from the shelf, she notices that the amlodipine 10 mg and the amiloride 5 mg tablets are stored in adjacent bins. The bottles look similar in size and colour. She almost picks up the amiloride before catching the error on her second check.",
+      "questions": [
+        "What aspects of the pharmacy's storage system contributed to this near miss?",
+        "How could the three-check system help prevent this type of LASA error?",
+        "What changes would you recommend to prevent similar near misses in the future?"
+      ],
+      "discussion": "This near miss illustrates the danger of LASA medications stored in adjacent locations. Best practice is to separate LASA medications physically, use tall-man lettering on shelf labels (e.g., amLODIPine vs. aMILoride), apply auxiliary warning stickers, and ensure that the three-check system is followed rigorously. The technician's vigilance during Check 1 prevented a potentially harmful error."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "When the technician first receives the prescription at the window",
+        "When the medication is selected from the shelf",
+        "After the medication is prepared, labelled, and ready for patient handoff",
+        "Only when the patient asks a clinical question"
+      ],
+      "question": "At which point in the dispensing process does the pharmacist perform the final independent verification?",
+      "explanation": "The pharmacist's final verification (Check 3) occurs after the medication has been fully prepared, counted, and labelled by the technician. The pharmacist independently reviews the prescription against the prepared product before it is released to the patient. This is a legal requirement in most Caribbean jurisdictions.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 30
+}

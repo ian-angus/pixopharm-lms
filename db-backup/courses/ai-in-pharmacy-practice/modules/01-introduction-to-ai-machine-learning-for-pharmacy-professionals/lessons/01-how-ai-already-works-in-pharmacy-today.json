@@ -1,0 +1,95 @@
+{
+  "id": "aa6e1df6-5ca5-4484-a934-47aa3c7eaba7",
+  "module_id": "918bc717-9d47-4db0-b9fa-1e8ab49fd289",
+  "title": "How AI Already Works in Pharmacy Today",
+  "content": [
+    {
+      "text": "AI Applications You May Already Be Using",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "AI in pharmacy is not a futuristic concept — it is a present reality. Many of the tools and systems you interact with daily already incorporate AI technologies. Understanding where AI is already at work helps you use these tools more effectively and prepares you to adopt new AI-powered capabilities as they emerge.",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Drug Interaction Screening (DIS): Software like Lexicomp, Micromedex, and Clinical Pharmacology use rule-based AI and increasingly ML to flag interactions when you enter prescriptions",
+        "Barcode Verification: Scanning systems that match dispensed medication to the prescription use image recognition AI to reduce dispensing errors",
+        "Inventory Management: Smart reorder systems that track usage patterns and predict when stock will run low, adjusting for seasonal demand",
+        "Insurance Claim Adjudication: Automated systems that process, validate, and approve or reject insurance claims in real time",
+        "Clinical Decision Support (CDS): Systems that alert pharmacists to dosage concerns, allergies, duplicate therapies, and contraindications",
+        "Prescription Transcription: Optical character recognition (OCR) and NLP tools that convert handwritten or faxed prescriptions into digital text"
+      ],
+      "ordered": true
+    },
+    {
+      "text": "Emerging AI Applications",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "rows": [
+        [
+          "Drug Information",
+          "Searchable databases (Lexicomp, Micromedex)",
+          "AI chatbots that answer complex drug queries in natural language (Claude, ChatGPT)"
+        ],
+        [
+          "Dispensing",
+          "Barcode scanning and automated counting machines",
+          "Robotic dispensing with AI-driven error checking and patient-specific packaging"
+        ],
+        [
+          "Inventory",
+          "Min/max reorder point alerts",
+          "Predictive analytics forecasting demand based on disease trends, weather, and community events"
+        ],
+        [
+          "Patient Counselling",
+          "Printed patient information leaflets",
+          "AI-generated personalised patient education materials in local languages and literacy levels"
+        ],
+        [
+          "Medication Adherence",
+          "Pill organisers and reminder phone calls",
+          "AI-powered apps that track adherence patterns and predict non-compliance before it happens"
+        ]
+      ],
+      "type": "table",
+      "caption": "Current vs. Emerging AI in Pharmacy",
+      "headers": [
+        "Category",
+        "Current Use",
+        "Emerging Use"
+      ]
+    },
+    {
+      "body": "Open ChatGPT or Claude in your web browser and type: 'I am a pharmacy technician. A patient on metformin 500mg BD has been prescribed ciprofloxacin 500mg BD. What should I be aware of?' Compare the AI response to what you find in Lexicomp or the BNF. Notice how the AI provides a natural-language summary — but always verify against an authoritative source.",
+      "type": "callout",
+      "title": "Try It Yourself",
+      "variant": "tip"
+    },
+    {
+      "type": "video-placeholder",
+      "title": "AI Tools in Caribbean Pharmacies: A Visual Tour",
+      "duration": "10 min",
+      "description": "A walkthrough of AI-powered features in common Caribbean pharmacy systems, including McKesson, Minfos, and locally developed POS/dispensing software, highlighting features technicians use daily without realising they are AI-driven."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Robotic prescription filling",
+        "Drug interaction screening software",
+        "AI-powered patient diagnosis",
+        "Autonomous pharmacy management"
+      ],
+      "question": "Which of the following is an example of AI already used in most Caribbean pharmacies today?",
+      "explanation": "Drug interaction screening (DIS) software is the most common AI application already present in Caribbean pharmacies. Systems like Lexicomp and Micromedex use algorithms to flag potential interactions when prescriptions are entered. Robotic filling and AI diagnosis are emerging technologies not yet common in the region.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 20
+}

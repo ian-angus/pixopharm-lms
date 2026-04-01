@@ -1,0 +1,79 @@
+{
+  "id": "47c3a7b8-c723-4e3d-802e-0ba5c3e3d7cc",
+  "module_id": "d535aae0-2da8-4ad8-8c9f-005c1b03ae1f",
+  "title": "Compounding Workspace Design and Hygiene",
+  "content": [
+    {
+      "text": "Setting Up a Safe and Effective Compounding Area",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "The compounding workspace is where patient safety begins. A well-designed, clean, and organised compounding area minimises the risk of contamination, cross-contamination, and errors. In the Caribbean, where many pharmacies operate in older buildings with limited space and where tropical conditions present additional hygiene challenges (insects, mould, humidity), designing and maintaining an appropriate compounding workspace requires deliberate attention and adherence to best practices.",
+      "type": "text"
+    },
+    {
+      "text": "Minimum Requirements for a Compounding Area",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "type": "list",
+      "items": [
+        "Separate from the main dispensing area and customer service counter — this reduces distractions and contamination risk",
+        "Adequate lighting — a minimum of 500 lux at the working surface is recommended; shadows compromise accuracy",
+        "Smooth, non-porous work surfaces that are easy to clean and disinfect (stainless steel, tempered glass, or sealed laminate)",
+        "A dedicated sink with hot and cold running water for handwashing and equipment cleaning",
+        "Temperature monitoring — ideally climate-controlled (20–25°C); at minimum, a calibrated thermometer recording ambient conditions",
+        "Humidity monitoring — a hygrometer recording ambient humidity; ideally maintained below 60% RH",
+        "Adequate ventilation — exhaust fan or hood for preparations involving volatile or irritant substances",
+        "Pest control measures — sealed windows and doors, pest bait stations, regular inspections (tropical environments are particularly prone to insect and rodent intrusion)",
+        "Storage for ingredients at appropriate temperatures — a dedicated refrigerator for heat-sensitive materials",
+        "Clearly labelled waste containers for pharmaceutical waste, general waste, and sharps"
+      ],
+      "ordered": false
+    },
+    {
+      "body": "In many Caribbean pharmacies, especially community pharmacies in rural areas, full climate control (air conditioning) may not be available or may be unreliable due to power outages. In these situations, the pharmacy must take compensating measures: schedule compounding during the coolest part of the day (early morning), use fans to maintain air circulation, store heat-sensitive bases and ingredients in the refrigerator until immediately before use, and assign shorter beyond-use dates to account for the warmer compounding and storage conditions. Document the ambient temperature and humidity at the time of compounding in the compounding log.",
+      "type": "callout",
+      "title": "Caribbean Climate Challenges in the Compounding Area",
+      "variant": "info"
+    },
+    {
+      "text": "Personal Hygiene for Compounding",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "type": "list",
+      "items": [
+        "Wash hands thoroughly with soap and water before beginning compounding — use an alcohol-based hand rub after drying",
+        "Wear a clean, designated compounding coat or gown (not the same garment worn for general pharmacy duties)",
+        "Wear disposable gloves appropriate for the task — nitrile gloves are preferred (some compounders and patients have latex allergies)",
+        "Remove all jewellery from hands and wrists — rings harbour bacteria and can contaminate preparations",
+        "Tie back long hair and consider wearing a hair cover for sensitive preparations",
+        "Do not eat, drink, smoke, or chew gum in the compounding area",
+        "Do not compound if you have an active skin infection, respiratory infection, or open wound on the hands — inform the pharmacist"
+      ],
+      "ordered": true
+    },
+    {
+      "body": "Cleaning the compounding area before and after every compounding session is not optional — it is a regulatory and professional requirement. The ointment slab, all equipment, and the work surface must be cleaned with 70% isopropyl alcohol or another suitable disinfectant. Equipment used for one preparation must be thoroughly cleaned before being used for another to prevent cross-contamination. In the Caribbean, where mould growth is an ever-present risk due to humidity, regular deep cleaning with antifungal agents and inspection of storage areas for signs of mould or pest activity are essential.",
+      "type": "text"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "To measure the pH of compounded preparations",
+        "To monitor ambient humidity, which affects the stability of compounding ingredients and preparations in tropical environments",
+        "To measure the temperature of the compounding slab",
+        "To calibrate the prescription balance"
+      ],
+      "question": "Why should a compounding area have a hygrometer?",
+      "explanation": "A hygrometer measures relative humidity. In the Caribbean, where humidity regularly exceeds 80%, monitoring ambient humidity in the compounding area is essential because excess moisture can cause hygroscopic ingredients to absorb water, gelatin capsules to soften, powders to clump, and preparations to degrade. Documenting humidity conditions at the time of compounding supports quality control and BUD assignment.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 3,
+  "duration_minutes": 25
+}

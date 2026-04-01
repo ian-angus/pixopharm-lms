@@ -1,0 +1,103 @@
+{
+  "id": "d6afaf63-4815-442e-9b8d-c287fd10c631",
+  "module_id": "b9e56c17-da7d-48e1-93c3-f737c5c8ff4c",
+  "title": "Customs Procedures and Cold Chain Integrity",
+  "content": [
+    {
+      "text": "From Port to Pharmacy: Protecting Medicines at the Border",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "When a shipment of pharmaceuticals arrives at a Caribbean port — whether by sea or air — it enters a critical phase where regulatory requirements and logistical reality collide. Customs clearance for pharmaceuticals is not a simple matter of paying duties and collecting goods. It involves document verification, potential sampling for quality testing, and crucially, maintaining the cold chain for temperature-sensitive products.",
+      "type": "text"
+    },
+    {
+      "body": "Delays at customs are the enemy of pharmaceutical quality. A pallet of insulin sitting on a Caribbean dock in 35°C heat for even a few hours can be rendered useless. Vaccines, biologics, and many other temperature-sensitive products are equally vulnerable. This is why pharmaceutical importers invest heavily in temperature-controlled shipping, insulated packaging, and expedited customs clearance procedures.",
+      "type": "text"
+    },
+    {
+      "body": "A cold chain break — even a brief one — can compromise the safety and efficacy of vaccines, insulins, and biologics without any visible change to the product. The WHO estimates that up to 50% of vaccines may be wasted globally due to cold chain failures. In the Caribbean's tropical climate, maintaining cold chain integrity from port to pharmacy to patient is literally a matter of life and death.",
+      "type": "callout",
+      "title": "Cold Chain Breaks Kill",
+      "variant": "danger"
+    },
+    {
+      "text": "Customs Clearance Process for Pharmaceuticals",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "type": "list",
+      "items": [
+        "Pre-arrival notification: importer notifies customs authority and the health ministry of incoming pharmaceutical shipment",
+        "Document submission: import licence, product registration certificate, CPP, Certificate of Analysis, commercial invoice, packing list, bill of lading/airway bill",
+        "Customs inspection: physical inspection of shipment for integrity, labelling compliance, and document consistency",
+        "Health ministry inspection: regulatory officer may inspect shipment, verify batch numbers, and collect samples for testing",
+        "Duty assessment: customs calculates applicable duties and taxes (many Caribbean countries grant duty concessions on essential medicines)",
+        "Release: upon clearance, goods are released to the importer's bonded or approved warehouse",
+        "Cold chain verification: for temperature-sensitive products, temperature monitoring records (data loggers) are reviewed to confirm cold chain integrity throughout transit"
+      ],
+      "ordered": true
+    },
+    {
+      "term": "Cold Chain",
+      "type": "key-term",
+      "definition": "The unbroken series of temperature-controlled storage and transportation steps required to maintain a pharmaceutical product within its specified temperature range from the point of manufacture to the point of use. Common temperature ranges include 2-8°C for refrigerated products and -20°C for frozen products."
+    },
+    {
+      "body": "Many Caribbean governments grant duty concessions or full duty exemptions for essential medicines and medical supplies. This reflects the recognition that pharmaceutical import duties increase medicine costs and reduce access — a significant concern in a region where most medicines are imported. The WHO has recommended that countries eliminate tariffs on essential medicines, and several Caribbean nations have moved in this direction.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Frozen",
+          "-25°C to -10°C",
+          "Some vaccines, certain biologics",
+          "Product destruction; cannot be refrozen once thawed"
+        ],
+        [
+          "Refrigerated",
+          "2°C to 8°C",
+          "Insulin, many vaccines, certain eye drops, some antibiotics",
+          "Loss of potency; potential degradation; may not be visible"
+        ],
+        [
+          "Cool",
+          "8°C to 15°C",
+          "Suppositories, some creams and ointments",
+          "Melting, separation, reduced shelf life"
+        ],
+        [
+          "Room Temperature (controlled)",
+          "15°C to 25°C",
+          "Most tablets, capsules, oral liquids",
+          "Accelerated degradation in Caribbean heat (>30°C common)"
+        ]
+      ],
+      "type": "table",
+      "caption": "Temperature Requirements for Common Pharmaceutical Categories",
+      "headers": [
+        "Category",
+        "Temperature Range",
+        "Examples",
+        "Risk of Cold Chain Break"
+      ]
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Because customs officers may steal the medicines",
+        "Because tropical heat can compromise temperature-sensitive products like insulin and vaccines during delays",
+        "Because Caribbean customs never inspects pharmaceutical shipments",
+        "Because import duties increase with time spent at the port"
+      ],
+      "question": "Why are customs delays particularly dangerous for pharmaceutical shipments in the Caribbean?",
+      "explanation": "Customs delays expose pharmaceutical shipments to Caribbean tropical heat, which can compromise temperature-sensitive products like insulin, vaccines, and biologics. Even brief exposure to temperatures outside the specified range can render these products ineffective or dangerous.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 25
+}

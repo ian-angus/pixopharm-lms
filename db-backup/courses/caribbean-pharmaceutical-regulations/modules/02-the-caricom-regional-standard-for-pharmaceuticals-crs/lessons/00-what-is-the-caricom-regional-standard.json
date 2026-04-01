@@ -1,0 +1,101 @@
+{
+  "id": "6acf9a1a-fe9f-4927-9f69-cef08a42ecc9",
+  "module_id": "dfe7b615-4723-402c-af37-21981d97b705",
+  "title": "What Is the CARICOM Regional Standard?",
+  "content": [
+    {
+      "text": "Harmonising Pharmaceutical Regulation Across the Caribbean",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "The CARICOM Regional Standard for Pharmaceuticals (CRS) represents one of the most ambitious pharmaceutical harmonisation initiatives in the developing world. Born from the recognition that fifteen small island states maintaining fifteen separate drug registration systems is inefficient and costly, the CRS aims to create a common framework for evaluating and approving pharmaceutical products across all CARICOM member states.",
+      "type": "text"
+    },
+    {
+      "body": "The concept is straightforward: if a medicine has been rigorously evaluated and approved by one CARICOM member state, why should it undergo the same lengthy and expensive process in each of the other fourteen? The CRS establishes common evaluation criteria and a mutual recognition mechanism that allows approved products to gain registration across the region more efficiently.",
+      "type": "text"
+    },
+    {
+      "term": "CARICOM Regional Standard (CRS)",
+      "type": "key-term",
+      "definition": "A harmonised framework developed by CARICOM for the evaluation, registration, and quality assurance of pharmaceutical products across member states. The CRS establishes common technical standards and a mutual recognition mechanism that enables medicines approved in one member state to gain streamlined registration in others."
+    },
+    {
+      "body": "The CRS was developed with technical support from PAHO/WHO and has evolved through several iterations since its initial conception in the early 2000s. It draws on the experience of other regional harmonisation initiatives, including the European Medicines Agency (EMA) centralised procedure and the African Medicines Harmonisation Initiative.",
+      "type": "callout",
+      "title": "Historical Context",
+      "variant": "info"
+    },
+    {
+      "text": "Core Components of the CRS",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "type": "list",
+      "items": [
+        "Common Technical Document (CTD): A standardised dossier format for drug registration applications, aligned with international ICH guidelines",
+        "Mutual Recognition: A mechanism allowing a product registered in one CARICOM state to be recognised in others without full re-evaluation",
+        "Good Manufacturing Practice (GMP): Harmonised standards for manufacturing quality, based on WHO GMP guidelines",
+        "Quality Control: Common standards for laboratory testing and quality assurance",
+        "Pharmacovigilance: Harmonised reporting and monitoring of adverse drug reactions across the region"
+      ],
+      "ordered": true
+    },
+    {
+      "body": "The CRS does not replace national regulatory agencies. Instead, it provides a common framework within which those agencies operate. Each country retains sovereignty over its drug registration decisions, but the CRS creates a shared set of standards and procedures that makes those decisions more consistent, efficient, and transparent across the region.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Application Format",
+          "Varies by country; some accept informal submissions",
+          "Standardised Common Technical Document (CTD)"
+        ],
+        [
+          "Evaluation Criteria",
+          "Inconsistent; some countries lack full evaluation capacity",
+          "Harmonised criteria based on WHO/ICH standards"
+        ],
+        [
+          "Cross-Border Recognition",
+          "None — each country evaluates independently",
+          "Mutual recognition reduces duplication"
+        ],
+        [
+          "Timeline",
+          "Unpredictable; can take years in some jurisdictions",
+          "Target: 90-180 days for mutual recognition pathway"
+        ],
+        [
+          "GMP Requirements",
+          "Variable; not all countries conduct GMP inspections",
+          "Harmonised GMP standards with shared inspection reports"
+        ]
+      ],
+      "type": "table",
+      "caption": "CRS vs. National Drug Registration — Key Differences",
+      "headers": [
+        "Feature",
+        "National Registration (Pre-CRS)",
+        "CRS Framework"
+      ]
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "To replace all national pharmacy boards with a single regional authority",
+        "To create common standards for pharmaceutical evaluation and enable mutual recognition of drug registrations across CARICOM states",
+        "To ban the importation of generic medicines into the Caribbean",
+        "To require all medicines sold in CARICOM to be manufactured within the region"
+      ],
+      "question": "What is the primary purpose of the CARICOM Regional Standard (CRS)?",
+      "explanation": "The CRS aims to harmonise pharmaceutical evaluation standards and enable mutual recognition, so that a medicine approved in one CARICOM state can gain streamlined registration in others. It does not replace national agencies — countries retain sovereignty over their drug registration decisions.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 25
+}

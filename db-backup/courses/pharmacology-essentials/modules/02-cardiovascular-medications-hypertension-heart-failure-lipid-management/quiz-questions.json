@@ -1,0 +1,182 @@
+[
+  {
+    "id": "8bb42943-11f8-4245-8b0a-2b71906a898e",
+    "module_id": "a385e5c9-29c8-445d-af9a-42d9ce480f76",
+    "question": "Which antihypertensive class is identified by the drug name stem '-pril'?",
+    "options": [
+      "Beta-blockers",
+      "ACE inhibitors",
+      "Calcium channel blockers",
+      "ARBs"
+    ],
+    "correct_answer": 1,
+    "explanation": "The stem -pril identifies ACE inhibitors: enalapril, lisinopril, ramipril, perindopril.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "33fa2a92-0905-4e81-8bdc-d6cb89a77e80",
+    "module_id": "a385e5c9-29c8-445d-af9a-42d9ce480f76",
+    "question": "Which side effect is most characteristic of ACE inhibitors?",
+    "options": [
+      "Ankle oedema",
+      "Persistent dry cough",
+      "Bradycardia",
+      "Muscle cramps"
+    ],
+    "correct_answer": 1,
+    "explanation": "ACE inhibitors cause a dry cough in 5-20% of patients due to bradykinin accumulation. Switching to an ARB resolves this.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "e715e597-fcba-4e1c-b58d-51d1eb933eb8",
+    "module_id": "a385e5c9-29c8-445d-af9a-42d9ce480f76",
+    "question": "Why are CCBs and thiazide diuretics particularly effective as first-line therapy in Caribbean populations?",
+    "options": [
+      "They are the cheapest options",
+      "Black patients tend to have lower renin levels, making RAAS blockers less effective as monotherapy",
+      "They have no side effects",
+      "They also lower cholesterol"
+    ],
+    "correct_answer": 1,
+    "explanation": "Clinical evidence shows that CCBs and diuretics are more effective as monotherapy in Black patients due to lower baseline renin-angiotensin system activity. Caribbean guidelines reflect this.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "42ab58fb-0338-4144-a4d4-ed166af3e317",
+    "module_id": "a385e5c9-29c8-445d-af9a-42d9ce480f76",
+    "question": "A patient on hydrochlorothiazide develops muscle cramps and fatigue. Which electrolyte imbalance is most likely?",
+    "options": [
+      "Hypernatraemia",
+      "Hyperkalaemia",
+      "Hypokalaemia",
+      "Hypercalcaemia"
+    ],
+    "correct_answer": 2,
+    "explanation": "Thiazide diuretics increase potassium excretion, causing hypokalaemia. Symptoms include muscle cramps, weakness, fatigue, and cardiac arrhythmias.",
+    "order_index": 3,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "9d94d456-6344-422c-a092-9e7c48f3e59d",
+    "module_id": "a385e5c9-29c8-445d-af9a-42d9ce480f76",
+    "question": "Which beta-blocker is CONTRAINDICATED in a patient with active asthma?",
+    "options": [
+      "Bisoprolol",
+      "Atenolol",
+      "Propranolol",
+      "Metoprolol"
+    ],
+    "correct_answer": 2,
+    "explanation": "Propranolol is a non-selective beta-blocker that blocks both beta-1 and beta-2 receptors. Beta-2 blockade in the lungs can trigger bronchospasm in asthmatic patients.",
+    "order_index": 4,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "0e2b85af-1f83-4c9f-b453-65a2d27d1b72",
+    "module_id": "a385e5c9-29c8-445d-af9a-42d9ce480f76",
+    "question": "ACE inhibitors are contraindicated in pregnancy because they can cause:",
+    "options": [
+      "Gestational diabetes",
+      "Foetal renal damage and oligohydramnios",
+      "Maternal hyperthyroidism",
+      "Neural tube defects"
+    ],
+    "correct_answer": 1,
+    "explanation": "ACE inhibitors (and ARBs) can cause foetal kidney damage, reduced amniotic fluid, skull defects, and foetal death, particularly in the second and third trimesters.",
+    "order_index": 5,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "963fc1e2-6f84-407e-8175-22bec2f56318",
+    "module_id": "a385e5c9-29c8-445d-af9a-42d9ce480f76",
+    "question": "Why must potassium levels be closely monitored when furosemide and digoxin are co-prescribed?",
+    "options": [
+      "Furosemide increases digoxin absorption",
+      "Hypokalaemia from furosemide increases the risk of digoxin toxicity",
+      "Digoxin causes furosemide to stop working",
+      "There is no clinically relevant interaction"
+    ],
+    "correct_answer": 1,
+    "explanation": "Furosemide causes potassium loss. Low potassium amplifies digoxin's effect on cardiac Na+/K+ ATPase, increasing toxicity risk (arrhythmias, nausea, visual disturbances).",
+    "order_index": 6,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "hard",
+    "blooms_level": "analyze"
+  },
+  {
+    "id": "84e80f39-a5dd-466c-9153-baeadd3054e9",
+    "module_id": "a385e5c9-29c8-445d-af9a-42d9ce480f76",
+    "question": "Simvastatin should be taken in the evening because:",
+    "options": [
+      "It causes drowsiness",
+      "Cholesterol synthesis peaks overnight, and simvastatin has a short half-life",
+      "It interacts with breakfast foods",
+      "It must be taken on an empty stomach"
+    ],
+    "correct_answer": 1,
+    "explanation": "Cholesterol synthesis by HMG-CoA reductase is highest at night. Short-acting statins like simvastatin are most effective when taken in the evening to coincide with peak synthesis.",
+    "order_index": 7,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "c7b08aeb-5506-4419-a833-f2b27e0090b3",
+    "module_id": "a385e5c9-29c8-445d-af9a-42d9ce480f76",
+    "question": "A fixed-dose combination of amlodipine/valsartan is preferred over separate tablets primarily because it:",
+    "options": [
+      "Is cheaper than individual tablets",
+      "Improves adherence by reducing pill burden",
+      "Has fewer side effects",
+      "Is stronger than individual drugs"
+    ],
+    "correct_answer": 1,
+    "explanation": "Fixed-dose combinations reduce pill burden, simplify regimens, and significantly improve adherence — a major challenge in Caribbean hypertension management.",
+    "order_index": 8,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "545d1cf9-fb4d-4f91-9c2c-92144f3112f7",
+    "module_id": "a385e5c9-29c8-445d-af9a-42d9ce480f76",
+    "question": "The drug name stem '-sartan' identifies which drug class?",
+    "options": [
+      "Statins",
+      "ACE inhibitors",
+      "Beta-blockers",
+      "Angiotensin receptor blockers (ARBs)"
+    ],
+    "correct_answer": 3,
+    "explanation": "The stem -sartan identifies ARBs: losartan, valsartan, irbesartan, candesartan. These block the AT1 receptor.",
+    "order_index": 9,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  }
+]

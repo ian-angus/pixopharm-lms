@@ -1,0 +1,61 @@
+{
+  "id": "d5d310a1-5b1c-4262-ad00-3924e4658a70",
+  "module_id": "c354ee80-fb9f-423b-864a-2b0454f2bd54",
+  "title": "Antimicrobial Resistance: The Caribbean Crisis",
+  "content": [
+    {
+      "text": "When Antibiotics Stop Working",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Antimicrobial resistance (AMR) is a growing crisis in the Caribbean. Factors driving resistance in the region include over-the-counter antibiotic sales (still permitted in some jurisdictions), incomplete courses of therapy, self-medication with leftover antibiotics, and agricultural antibiotic use. CARPHA (Caribbean Public Health Agency) has identified AMR as a regional health security threat.",
+      "type": "text"
+    },
+    {
+      "body": "CARPHA's antimicrobial resistance surveillance data reveals increasing resistance rates in the Caribbean, particularly among E. coli (causing UTIs), Staphylococcus aureus (skin infections), and Klebsiella pneumoniae (hospital infections). Methicillin-resistant Staphylococcus aureus (MRSA) has been documented across Trinidad, Jamaica, Barbados, and other territories. The economic burden of resistant infections is particularly severe in small island developing states with limited healthcare budgets.",
+      "type": "text"
+    },
+    {
+      "term": "Antimicrobial Resistance (AMR)",
+      "type": "key-term",
+      "definition": "The ability of microorganisms to survive exposure to antimicrobial drugs that would normally kill them or inhibit their growth. Resistant infections are harder and more expensive to treat, lead to longer hospital stays, and increase mortality."
+    },
+    {
+      "term": "Antimicrobial Stewardship",
+      "type": "key-term",
+      "definition": "A coordinated programme of interventions designed to optimise antimicrobial use: choosing the right drug, dose, route, and duration to cure infections while minimising resistance development, toxicity, and cost. Pharmacy technicians support stewardship through patient education and flagging inappropriate prescriptions."
+    },
+    {
+      "type": "list",
+      "items": [
+        "Never dispense antibiotics without a valid prescription (even where OTC sales are legal, exercise professional judgement)",
+        "Counsel patients to complete the FULL prescribed course, even if they feel better",
+        "Advise against saving leftover antibiotics for future use or sharing them with others",
+        "Educate patients that antibiotics do NOT treat viral infections (colds, flu, most sore throats)",
+        "Support prescriber stewardship by flagging unusual antibiotic choices or durations to the pharmacist"
+      ],
+      "ordered": false
+    },
+    {
+      "body": "In many Caribbean communities, there is a deeply ingrained expectation that any illness requires an antibiotic. Patients may become upset when told their cold or flu does not need amoxicillin. Pharmacy technicians are on the front line of antimicrobial stewardship — gently educating patients that antibiotics are ineffective against viruses and can cause harm through resistance development.",
+      "type": "callout",
+      "title": "The Antibiotic-for-Every-Cold Culture",
+      "variant": "danger"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Dispense it — a cold might become a bacterial infection",
+        "Explain that antibiotics do not treat viral infections like colds and recommend rest, fluids, and paracetamol for symptoms",
+        "Give a half-course to be safe",
+        "Suggest they buy azithromycin instead"
+      ],
+      "question": "A patient asks you for amoxicillin for their cold without a prescription. What is the most appropriate response?",
+      "explanation": "Colds are caused by viruses. Antibiotics are ineffective against viruses and contribute to antimicrobial resistance when used inappropriately. Recommend symptomatic relief and advise the patient to see a doctor if symptoms worsen or persist beyond 10 days.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 3,
+  "duration_minutes": 20
+}

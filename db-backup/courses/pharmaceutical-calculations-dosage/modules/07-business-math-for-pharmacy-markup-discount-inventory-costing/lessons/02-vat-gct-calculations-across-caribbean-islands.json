@@ -1,0 +1,108 @@
+{
+  "id": "a42497ed-834d-40e9-b427-f67005c81d74",
+  "module_id": "55a60f21-234f-4d50-8f6a-1543a68aa3fb",
+  "title": "VAT/GCT Calculations Across Caribbean Islands",
+  "content": [
+    {
+      "text": "Value Added Tax in Caribbean Pharmacy",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Value Added Tax (VAT) — called General Consumption Tax (GCT) in Jamaica — is a consumption tax applied at point of sale. The rate and rules vary significantly across Caribbean islands, and pharmacy products are treated differently from general consumer goods in most jurisdictions. Understanding VAT is essential for pricing, invoicing, and compliance.",
+      "type": "text"
+    },
+    {
+      "term": "Value Added Tax (VAT)",
+      "type": "key-term",
+      "definition": "A consumption tax levied on the value added at each stage of the supply chain, ultimately borne by the consumer. In pharmacy, the VAT-inclusive selling price = (Cost + Markup) × (1 + VAT rate). Some pharmaceutical products may be zero-rated or exempt from VAT depending on the jurisdiction."
+    },
+    {
+      "type": "island-comparison",
+      "title": "VAT/GCT Rates and Pharmacy Rules Across Caribbean Islands",
+      "islands": [
+        {
+          "flag": "🇹🇹",
+          "name": "Trinidad & Tobago",
+          "details": [
+            "Standard VAT rate: 12.5%",
+            "Prescription medications: ZERO-RATED (0% VAT) — a significant benefit for patients",
+            "OTC medications: Standard-rated at 12.5%",
+            "Medical devices: Generally standard-rated",
+            "CDAP medications: Zero-rated; pharmacy reimbursed by government at fixed rates",
+            "VAT registration required for pharmacies with annual turnover above TTD 500,000"
+          ]
+        },
+        {
+          "flag": "🇯🇲",
+          "name": "Jamaica",
+          "details": [
+            "Standard GCT rate: 15%",
+            "Prescription medications: EXEMPT from GCT",
+            "Difference between zero-rated and exempt: exempt businesses cannot claim input GCT credits",
+            "NHF-subsidised medications: Patient pays co-payment; NHF pays remainder — GCT exempt",
+            "OTC products: Generally subject to GCT at 15%",
+            "GCT registration threshold: JMD 10 million annual turnover"
+          ]
+        },
+        {
+          "flag": "🇧🇧",
+          "name": "Barbados",
+          "details": [
+            "Standard VAT rate: 17.5%",
+            "Prescription medications: ZERO-RATED",
+            "Barbados Drug Service medications: Provided at no cost in public sector",
+            "OTC medications: Standard-rated at 17.5%",
+            "Medical devices: VAT treatment varies by product classification",
+            "VAT registration threshold: BBD 200,000 annual turnover"
+          ]
+        },
+        {
+          "flag": "🇬🇩",
+          "name": "Grenada",
+          "details": [
+            "Standard VAT rate: 15%",
+            "Pharmaceutical products: Most are zero-rated under essential goods provisions",
+            "OTC personal care products: Standard-rated",
+            "VAT compliance monitored by Grenada Inland Revenue",
+            "Small pharmacies near the registration threshold should seek tax advice"
+          ]
+        }
+      ],
+      "description": "Tax treatment of pharmaceutical products varies significantly across the Caribbean. Always confirm current rates as they are subject to change."
+    },
+    {
+      "text": "VAT-Inclusive Pricing Calculations",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "VAT-inclusive price = Pre-VAT price × (1 + VAT rate/100). To extract VAT from an inclusive price: Pre-VAT price = Inclusive price / (1 + VAT rate/100). VAT amount = Inclusive price - Pre-VAT price.",
+      "type": "text"
+    },
+    {
+      "body": "Worked example: An OTC cough syrup costs the pharmacy TTD 35 (pre-VAT). The markup is 45%, and VAT is 12.5%. Pre-VAT selling price = 35 × 1.45 = TTD 50.75. VAT-inclusive price = 50.75 × 1.125 = TTD 57.09. The patient pays TTD 57.09, of which TTD 6.34 is VAT that the pharmacy must remit to the government.",
+      "type": "text"
+    },
+    {
+      "body": "In Trinidad and Barbados, prescription drugs are zero-rated — the pharmacy charges 0% VAT but CAN claim back the VAT paid on business inputs (wholesaler purchases, equipment, utilities). In Jamaica, some drugs are exempt from GCT — the pharmacy charges no GCT but CANNOT claim input credits. This difference significantly affects pharmacy cash flow and profitability. Understanding your island's specific rules is essential for financial management.",
+      "type": "callout",
+      "title": "Zero-Rated vs Exempt: It Matters for Cash Flow",
+      "variant": "warning"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "BBD 44.00",
+        "BBD 47.00",
+        "BBD 46.00",
+        "BBD 57.50"
+      ],
+      "question": "A product has a pre-VAT selling price of BBD 40 in Barbados (VAT rate 17.5%). What is the VAT-inclusive price?",
+      "explanation": "VAT-inclusive price = 40 × (1 + 17.5/100) = 40 × 1.175 = BBD 47.00. The VAT component is BBD 7.00.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 25
+}

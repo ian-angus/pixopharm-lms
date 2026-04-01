@@ -1,0 +1,106 @@
+{
+  "id": "5946f387-8673-40c8-89a4-1514b3eaf620",
+  "module_id": "8565ea75-e96a-4d25-8e89-327097346a61",
+  "title": "Malaria Prophylaxis & Treatment in the Caribbean",
+  "content": [
+    {
+      "text": "Malaria: Still a Caribbean Concern",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "While most Caribbean islands are malaria-free, cases still occur in Haiti, parts of the Dominican Republic, Guyana, and Suriname. Travellers from other Caribbean nations visiting these countries may need prophylaxis. Additionally, Caribbean pharmacists may encounter malaria in patients arriving from Africa or South Asia.",
+      "type": "text"
+    },
+    {
+      "term": "Antimalarial Prophylaxis",
+      "type": "key-term",
+      "definition": "The use of medications to prevent malaria infection in travellers or residents of endemic areas. Drugs are started before entering the malaria zone, continued during the stay, and for a specified period after leaving. Options include chloroquine (for sensitive areas), atovaquone/proguanil (Malarone), doxycycline, and mefloquine."
+    },
+    {
+      "rows": [
+        [
+          "Chloroquine",
+          "Prophylaxis and treatment (where sensitive)",
+          "Still effective in Haiti/DR; resistance widespread in Africa/Asia"
+        ],
+        [
+          "Atovaquone/proguanil (Malarone)",
+          "Prophylaxis and treatment",
+          "Well tolerated; take with fatty food for absorption; expensive"
+        ],
+        [
+          "Doxycycline",
+          "Prophylaxis",
+          "Cheap alternative; causes photosensitivity — important in Caribbean sun"
+        ],
+        [
+          "Artemether/lumefantrine (Coartem)",
+          "Treatment of P. falciparum",
+          "First-line ACT for uncomplicated malaria; take with fatty food"
+        ]
+      ],
+      "type": "table",
+      "caption": "Antimalarial Drugs Used in Caribbean Practice",
+      "headers": [
+        "Drug",
+        "Use",
+        "Key Considerations"
+      ]
+    },
+    {
+      "body": "Doxycycline causes significant photosensitivity. Travellers and workers in the Caribbean taking doxycycline for malaria prophylaxis must use high-SPF sunscreen and protective clothing. Severe sunburn is a common and preventable adverse effect.",
+      "type": "callout",
+      "title": "Doxycycline and Caribbean Sun",
+      "variant": "warning"
+    },
+    {
+      "type": "island-comparison",
+      "title": "Malaria Status Across the Caribbean",
+      "islands": [
+        {
+          "flag": "🇹🇹",
+          "name": "Trinidad & Tobago",
+          "details": [
+            "Malaria-free since 1965 (WHO certified)",
+            "Travellers to Haiti, Guyana, or Africa need prophylaxis",
+            "Chloroquine and atovaquone/proguanil available at pharmacies"
+          ]
+        },
+        {
+          "flag": "🇯🇲",
+          "name": "Jamaica",
+          "details": [
+            "Experienced a malaria outbreak in 2006; mostly malaria-free",
+            "Imported cases from Haiti and Guyana still occur",
+            "Public health surveillance active through the Ministry of Health"
+          ]
+        },
+        {
+          "flag": "🇬🇾",
+          "name": "Guyana",
+          "details": [
+            "Active malaria transmission in interior/mining regions",
+            "P. vivax and P. falciparum both present",
+            "ACT (artemether/lumefantrine) used for treatment; chloroquine for P. vivax"
+          ]
+        }
+      ],
+      "description": "The malaria situation varies significantly across the Caribbean"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "No prophylaxis needed — the Caribbean is malaria-free",
+        "Chloroquine, started 1-2 weeks before travel",
+        "Artemether/lumefantrine (treatment, not prophylaxis)",
+        "Fluconazole"
+      ],
+      "question": "A Trinidadian tourist travelling to Haiti asks about malaria prophylaxis. Which drug is appropriate for chloroquine-sensitive areas like Haiti?",
+      "explanation": "Haiti still has chloroquine-sensitive P. falciparum malaria. Chloroquine is appropriate for prophylaxis, started 1-2 weeks before travel, continued during the stay, and for 4 weeks after return.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 20
+}

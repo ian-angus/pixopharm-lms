@@ -1,0 +1,84 @@
+{
+  "id": "6c8af78a-bfcc-47a3-a0bb-8d5a07609ff4",
+  "module_id": "dabd4858-ddf1-4ea7-9bb0-b04d4ba460d5",
+  "title": "Barbados & Grenada: Smaller Jurisdictions, Unique Approaches",
+  "content": [
+    {
+      "text": "Regulation in Smaller Caribbean States",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Barbados and Grenada represent different points on the spectrum of Caribbean pharmaceutical regulation. Barbados, with its established public health infrastructure centred on the Barbados Drug Service, operates a structured regulatory system despite its small size. Grenada, as one of the smaller OECS states, relies more heavily on regional mechanisms while maintaining its own national framework.",
+      "type": "text"
+    },
+    {
+      "type": "island-comparison",
+      "title": "Barbados vs. Grenada: Regulatory Approaches",
+      "islands": [
+        {
+          "flag": "🇧🇧",
+          "name": "Barbados",
+          "details": [
+            "The Pharmacy Act (Cap. 372D) governs pharmacy practice alongside the Drug Service Act",
+            "The Barbados Drug Service (BDS) plays a dual role: procurement agency and regulatory coordinator",
+            "The Barbados National Drug Formulary (BNDF) guides rational drug use in the public sector",
+            "Queen Elizabeth Hospital pharmacy department serves as the island's main hospital pharmacy",
+            "Eight government polyclinics with pharmacy services distributed across the island",
+            "The Chief Pharmacist's Office coordinates standards, inspection, and policy"
+          ]
+        },
+        {
+          "flag": "🇬🇩",
+          "name": "Grenada",
+          "details": [
+            "The Pharmacy Act and Drugs (Prevention of Misuse) Act form the core legislative framework",
+            "The Pharmacy Council of Grenada registers pharmacists and oversees practice",
+            "Heavy reliance on OECS Pharmaceutical Procurement Service for medicine supply",
+            "St. George's University's School of Pharmacy contributes to local pharmaceutical education and expertise",
+            "CARPHA provides laboratory testing and quality assurance support",
+            "Limited in-country capacity for drug registration evaluation — leverages regional mechanisms"
+          ]
+        }
+      ],
+      "description": "Two island nations with different approaches to pharmaceutical governance, each shaped by their size, resources, and regional relationships."
+    },
+    {
+      "body": "Barbados's system is notable for the central role of the Drug Service. Unlike many Caribbean countries where procurement and regulation are separate functions, Barbados's Drug Service integrates supply chain management with quality oversight. The Drug Service purchases, tests, stores, and distributes medicines to all public health facilities, creating a unified system from procurement to patient. This integration is possible because of Barbados's small geographic size and concentrated population.",
+      "type": "text"
+    },
+    {
+      "body": "Grenada's participation in the OECS Pharmaceutical Procurement Service is a strategic advantage. By pooling its purchasing with eight other small island states, Grenada accesses medicines at prices it could never negotiate alone. This is a model for how small states can use regional cooperation to overcome the limitations of their individual market size.",
+      "type": "callout",
+      "title": "Grenada's Regional Advantage",
+      "variant": "tip"
+    },
+    {
+      "body": "For pharmacy technicians, the practical implication is clear: the regulatory environment you operate in depends entirely on where you work. A technician in Bridgetown, Barbados will navigate a different set of rules, forms, and procedures than one in St. George's, Grenada — even though both are working to the same fundamental goal of safe, effective pharmaceutical care. Understanding these differences is essential for any technician considering work across multiple Caribbean jurisdictions.",
+      "type": "text"
+    },
+    {
+      "term": "Barbados National Drug Formulary (BNDF)",
+      "type": "key-term",
+      "definition": "The official list of pharmaceutical products approved for use in the Barbados public health system. The BNDF guides prescribing and dispensing decisions in government health facilities, ensuring rational drug use, cost-effectiveness, and consistent availability of essential medicines."
+    },
+    {
+      "body": "St. George's University in Grenada deserves mention for its School of Pharmacy, which is the only programme of its kind in the OECS. Graduates serve not only Grenada but the wider Eastern Caribbean, contributing pharmaceutical expertise across the sub-region. This educational resource is a significant asset for Grenada's pharmaceutical sector.",
+      "type": "text"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "It only handles veterinary medicines",
+        "It integrates procurement, quality assurance, and distribution in a single agency",
+        "It operates independently of the government",
+        "It manufactures all medicines locally"
+      ],
+      "question": "What distinguishes the Barbados Drug Service from procurement agencies in other Caribbean states?",
+      "explanation": "The Barbados Drug Service is notable for integrating pharmaceutical procurement, quality oversight, and distribution to public health facilities within a single agency. This unified approach is facilitated by Barbados's small size and allows for comprehensive supply chain management from purchasing to patient.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 25
+}

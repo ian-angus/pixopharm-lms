@@ -1,0 +1,103 @@
+{
+  "id": "a0003e81-f193-49b1-83f3-a4e10a7e54a7",
+  "module_id": "0464175f-5c7e-4bcb-b01a-6fe45e50d244",
+  "title": "Sickle Cell Disease & Blood Disorders in Caribbean Populations",
+  "content": [
+    {
+      "text": "Sickle Cell Disease: A Caribbean Perspective",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Sickle cell disease (SCD) is an inherited blood disorder caused by a mutation in the gene for haemoglobin, the oxygen-carrying protein in red blood cells. In SCD, abnormal haemoglobin S (HbS) causes red blood cells to become rigid and sickle-shaped under low-oxygen conditions. These sickle cells can block small blood vessels (vaso-occlusion), causing severe pain crises, organ damage, and a shortened life expectancy. The sickle cell gene is particularly prevalent in populations of African, Caribbean, and Mediterranean descent.",
+      "type": "text"
+    },
+    {
+      "body": "The Caribbean has one of the highest prevalence rates of sickle cell disease in the world. Approximately 1 in 150 to 1 in 300 births in Jamaica are affected by SCD, and the sickle cell trait (carrier status) affects approximately 10% of the Afro-Caribbean population. This makes sickle cell disease a major clinical reality for Caribbean pharmacy technicians — you will regularly handle prescriptions for hydroxyurea, folic acid, penicillin V prophylaxis, and strong analgesics (including opioids) for pain crisis management.",
+      "type": "text"
+    },
+    {
+      "term": "Haemoglobin S (HbS)",
+      "type": "key-term",
+      "definition": "The abnormal form of haemoglobin found in sickle cell disease. HbS results from a single amino acid substitution (glutamic acid replaced by valine at position 6 of the beta-globin chain). Under low-oxygen conditions, HbS molecules polymerise, distorting the red blood cell into a rigid, sickle shape that obstructs capillary blood flow."
+    },
+    {
+      "body": "The Sickle Cell Unit at the University of the West Indies, Mona (Jamaica) has been a global leader in SCD research since its founding in 1973 by Professor Graham Serjeant. The Jamaica Sickle Cell Cohort Study — tracking patients from birth — has contributed enormously to understanding the natural history of SCD. Jamaica's newborn screening programme, one of the earliest in the developing world, has significantly improved SCD outcomes through early detection and prophylactic penicillin.",
+      "type": "callout",
+      "title": "Jamaica: A World Leader in Sickle Cell Research",
+      "variant": "info"
+    },
+    {
+      "rows": [
+        [
+          "Hydroxyurea",
+          "Reduces frequency and severity of pain crises by increasing foetal haemoglobin (HbF)",
+          "Cytotoxic drug — handle with care; pregnancy category X; regular blood count monitoring required"
+        ],
+        [
+          "Folic acid 5 mg daily",
+          "Supports red blood cell production to compensate for chronic haemolysis",
+          "Often dispensed continuously; counsel on importance of adherence"
+        ],
+        [
+          "Penicillin V prophylaxis",
+          "Prevents pneumococcal infections (splenic dysfunction in SCD)",
+          "Critical in children — often continued until at least age 5; missed doses increase infection risk"
+        ],
+        [
+          "Paracetamol / NSAIDs",
+          "Mild-to-moderate pain during vaso-occlusive episodes",
+          "Avoid exceeding paracetamol 4 g/day; NSAIDs require caution with renal impairment"
+        ],
+        [
+          "Opioid analgesics (morphine, tramadol)",
+          "Severe vaso-occlusive pain crises",
+          "Controlled substances — strict documentation; patient may have tolerance from chronic use — not necessarily drug-seeking behaviour"
+        ],
+        [
+          "L-glutamine (Endari)",
+          "Reduces oxidative stress in sickle cells",
+          "Newer therapy; may not yet be widely available on Caribbean formularies"
+        ]
+      ],
+      "type": "table",
+      "caption": "Medications Commonly Used in Sickle Cell Disease Management",
+      "headers": [
+        "Medication",
+        "Purpose",
+        "Pharmacy Notes"
+      ]
+    },
+    {
+      "body": "Sickle cell patients presenting at pharmacies during a pain crisis may request strong analgesics, including opioids. Pharmacy staff must not assume drug-seeking behaviour. SCD pain crises are among the most severe pain conditions known to medicine. Patients may have developed physiological tolerance to opioids due to repeated crises — this is not the same as addiction. Treat every sickle cell patient with dignity and urgency.",
+      "type": "callout",
+      "title": "Stigma Alert: Pain Crisis and Opioids",
+      "variant": "warning"
+    },
+    {
+      "type": "case-study",
+      "title": "Case Study: Managing Sickle Cell Prescriptions",
+      "scenario": "A 22-year-old woman presents at your pharmacy in Kingston, Jamaica with prescriptions for hydroxyurea 500 mg daily, folic acid 5 mg daily, and penicillin V 250 mg twice daily. She mentions she is thinking about becoming pregnant in the next year. She has sickle cell disease (HbSS) and has been stable on this regimen for two years.",
+      "questions": [
+        "Why is the combination of hydroxyurea, folic acid, and penicillin V appropriate for this patient?",
+        "What critical counselling point must be communicated regarding her pregnancy plans and hydroxyurea?",
+        "What role does the pharmacy technician play in flagging this issue?"
+      ],
+      "discussion": "Hydroxyurea is category X in pregnancy — it is teratogenic and must be discontinued well before conception. The pharmacy technician should flag this immediately to the supervising pharmacist when the patient mentions pregnancy plans. The pharmacist would counsel the patient to use effective contraception while on hydroxyurea and refer her back to her haematologist to discuss pre-conception planning. Folic acid and penicillin V are safe in pregnancy and would likely continue. This case illustrates how attentive listening by pharmacy technicians — even during routine dispensing — can prevent serious harm."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "1%",
+        "5%",
+        "10%",
+        "25%"
+      ],
+      "question": "Approximately what percentage of the Afro-Caribbean population carries the sickle cell trait?",
+      "explanation": "Approximately 10% of the Afro-Caribbean population carries the sickle cell trait (HbAS — one copy of the sickle gene). Carriers are generally asymptomatic but can pass the gene to their children. If both parents are carriers, there is a 25% chance with each pregnancy that the child will have sickle cell disease (HbSS).",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 3,
+  "duration_minutes": 25
+}

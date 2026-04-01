@@ -1,0 +1,123 @@
+{
+  "id": "247c5785-70ff-466d-a90c-ed14dfb9dcaa",
+  "module_id": "a385e5c9-29c8-445d-af9a-42d9ce480f76",
+  "title": "Lipid-Lowering Agents: Statins & Beyond",
+  "content": [
+    {
+      "text": "Reducing Cardiovascular Risk Through Lipid Management",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Dyslipidaemia is a major cardiovascular risk factor in the Caribbean, often coexisting with hypertension and diabetes. Statins are the cornerstone of lipid-lowering therapy, reducing LDL cholesterol by inhibiting HMG-CoA reductase — the rate-limiting enzyme in cholesterol synthesis in the liver. Atorvastatin and simvastatin are the most commonly dispensed statins in Caribbean pharmacies.",
+      "type": "text"
+    },
+    {
+      "term": "Statin",
+      "type": "key-term",
+      "definition": "A drug that inhibits HMG-CoA reductase, reducing hepatic cholesterol synthesis and increasing LDL receptor expression. This lowers LDL cholesterol by 30-55% depending on the drug and dose. Examples: atorvastatin, simvastatin, rosuvastatin. Identified by the stem -statin."
+    },
+    {
+      "rows": [
+        [
+          "Statin",
+          "Atorvastatin",
+          "Lowers LDL 30-55%",
+          "Myalgia, elevated liver enzymes, rhabdomyolysis (rare)"
+        ],
+        [
+          "Fibrate",
+          "Gemfibrozil",
+          "Lowers triglycerides 25-50%",
+          "GI upset, myopathy risk when combined with statins"
+        ],
+        [
+          "Ezetimibe",
+          "Ezetimibe",
+          "Lowers LDL 15-20%",
+          "Generally well tolerated; used as add-on to statins"
+        ]
+      ],
+      "type": "table",
+      "caption": "Lipid-Lowering Drug Classes",
+      "headers": [
+        "Class",
+        "Example",
+        "Primary Effect",
+        "Side Effects"
+      ]
+    },
+    {
+      "body": "Simvastatin and lovastatin should be taken in the evening because cholesterol synthesis peaks overnight. Atorvastatin and rosuvastatin have long half-lives and can be taken at any time. This is a common counselling point at the dispensing counter.",
+      "type": "callout",
+      "title": "Statins: Evening Dosing Matters for Some",
+      "variant": "tip"
+    },
+    {
+      "type": "scenario-simulation",
+      "nodes": [
+        {
+          "id": "start",
+          "text": "Mrs. Rampersad has simvastatin 40 mg with amlodipine 10 mg, and she drinks grapefruit juice daily. You notice two potential interaction concerns. What do you do?",
+          "choices": [
+            {
+              "label": "Dispense the simvastatin without comment — the pharmacist already checked it",
+              "feedback": "Even after pharmacist review, technicians should flag interaction concerns. Multiple safety checks prevent errors.",
+              "isOptimal": false,
+              "nextNodeId": "missed"
+            },
+            {
+              "label": "Flag both the simvastatin dose (max 20 mg with amlodipine) and the grapefruit interaction to the pharmacist before dispensing",
+              "feedback": "Excellent! You identified two important interactions: simvastatin dose limit with amlodipine and grapefruit's CYP3A4 inhibition.",
+              "isOptimal": true,
+              "nextNodeId": "correct"
+            },
+            {
+              "label": "Tell the patient to stop taking amlodipine",
+              "feedback": "A pharmacy technician should never advise stopping a prescribed medication. Refer concerns to the pharmacist.",
+              "isOptimal": false,
+              "nextNodeId": "wrong"
+            }
+          ]
+        },
+        {
+          "id": "correct",
+          "text": "The pharmacist contacts the prescriber, who reduces the simvastatin to 20 mg (the maximum safe dose with amlodipine) and counsels the patient to avoid grapefruit juice or switch to atorvastatin. Mrs. Rampersad thanks you for looking out for her.",
+          "isEnd": true,
+          "outcome": "success",
+          "summary": "Your vigilance caught a dose-interaction error and a drug-food interaction. The simvastatin dose was corrected and the patient was counselled about grapefruit."
+        },
+        {
+          "id": "missed",
+          "text": "Mrs. Rampersad takes the simvastatin 40 mg with daily grapefruit juice. Two weeks later, she presents with severe muscle pain and dark urine — signs of rhabdomyolysis. She is hospitalised.",
+          "isEnd": true,
+          "outcome": "failure",
+          "summary": "The combination of simvastatin 40 mg + amlodipine + grapefruit juice significantly increased her myopathy risk. Catching either interaction could have prevented this."
+        },
+        {
+          "id": "wrong",
+          "text": "The patient is confused and upset. Advising patients to stop prescribed medications is outside the technician's scope and could cause harm (uncontrolled hypertension).",
+          "isEnd": true,
+          "outcome": "failure",
+          "summary": "Never advise a patient to discontinue prescribed medication. Always refer concerns to the pharmacist for clinical decision-making."
+        }
+      ],
+      "title": "Statin Counselling at a San Fernando Pharmacy",
+      "description": "Mrs. Rampersad, a 55-year-old woman, is picking up her new prescription for simvastatin 40 mg daily. She also takes amlodipine 10 mg for blood pressure. She mentions she drinks grapefruit juice every morning for 'health.'"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Tell the patient muscle pain is normal and will resolve",
+        "Advise the patient to take a painkiller and continue simvastatin",
+        "Flag the complaint to the pharmacist immediately, as it may indicate myopathy or rhabdomyolysis",
+        "Suggest the patient take the simvastatin in the morning instead"
+      ],
+      "question": "A patient at a Jamaican pharmacy reports new-onset muscle pain after starting simvastatin. What should the pharmacy technician do?",
+      "explanation": "New-onset muscle pain (myalgia) in a patient on a statin may indicate myopathy or, rarely, rhabdomyolysis — a serious condition where muscle breakdown products can cause kidney failure. This must be reported to the pharmacist for clinical assessment and potential CK level testing.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 4,
+  "duration_minutes": 20
+}

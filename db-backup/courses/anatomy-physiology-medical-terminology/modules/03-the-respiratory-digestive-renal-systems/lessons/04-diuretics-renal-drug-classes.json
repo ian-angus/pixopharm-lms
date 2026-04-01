@@ -1,0 +1,92 @@
+{
+  "id": "cd9bc789-e587-41d0-943d-60f612218b13",
+  "module_id": "18355ac8-d8d2-46a7-8eb4-7df008bb62d9",
+  "title": "Diuretics & Renal Drug Classes",
+  "content": [
+    {
+      "text": "Diuretics: Drugs That Act on the Kidneys",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Diuretics are medications that increase urine production by acting on different segments of the nephron. They are among the most commonly prescribed drug classes in the Caribbean, used primarily for hypertension and heart failure. Understanding where in the nephron each diuretic class acts explains both their therapeutic effects and their side effects.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Thiazide diuretics",
+          "Hydrochlorothiazide, indapamide",
+          "Distal convoluted tubule",
+          "Hypokalaemia, hyperglycaemia, hyperuricaemia (gout risk)"
+        ],
+        [
+          "Loop diuretics",
+          "Furosemide, bumetanide",
+          "Loop of Henle (ascending limb)",
+          "Potent fluid loss, hypokalaemia, ototoxicity at high doses"
+        ],
+        [
+          "Potassium-sparing diuretics",
+          "Spironolactone, amiloride",
+          "Collecting duct",
+          "Hyperkalaemia — dangerous if combined with ACE inhibitors/ARBs without monitoring"
+        ],
+        [
+          "Osmotic diuretics",
+          "Mannitol",
+          "Proximal tubule and loop of Henle",
+          "Fluid overload initially; hospital use only"
+        ]
+      ],
+      "type": "table",
+      "caption": "Diuretic Classes: Mechanism and Side Effects",
+      "headers": [
+        "Class",
+        "Examples",
+        "Site of Action in Nephron",
+        "Key Side Effects"
+      ]
+    },
+    {
+      "body": "Thiazide diuretics (particularly hydrochlorothiazide) are a cornerstone of hypertension treatment in the Caribbean. They are affordable, effective, and appear on every regional formulary. Loop diuretics like furosemide are the go-to drugs for removing excess fluid in heart failure and acute pulmonary oedema. Potassium-sparing diuretics like spironolactone are increasingly used in resistant hypertension and heart failure but require careful monitoring because they can cause dangerously high potassium levels (hyperkalaemia).",
+      "type": "text"
+    },
+    {
+      "body": "Thiazide and loop diuretics cause potassium loss in the urine, which can lead to hypokalaemia — potentially causing dangerous cardiac arrhythmias. Many prescribers add potassium chloride supplements or a potassium-sparing diuretic to prevent this. When dispensing a diuretic, always check if the patient also has potassium supplementation or a potassium-sparing agent on their profile. If not, flag the concern to the pharmacist.",
+      "type": "callout",
+      "title": "Electrolyte Monitoring with Diuretics",
+      "variant": "tip"
+    },
+    {
+      "term": "Hypokalaemia",
+      "type": "key-term",
+      "definition": "Abnormally low potassium levels in the blood (below 3.5 mmol/L). Potassium is essential for normal cardiac muscle function; hypokalaemia can cause muscle weakness, cardiac arrhythmias, and in severe cases, cardiac arrest. Thiazide and loop diuretics are common causes. The term breaks down as: hypo- (low) + kal (potassium, from Latin 'kalium') + -aemia (blood condition)."
+    },
+    {
+      "type": "case-study",
+      "title": "Case Study: The Diuretic Dilemma",
+      "scenario": "Mrs. Persad, a 68-year-old woman from Chaguanas, Trinidad, takes hydrochlorothiazide 25 mg daily for hypertension and enalapril 10 mg daily. She visits your pharmacy complaining of muscle cramps and weakness. She mentions her doctor recently increased her hydrochlorothiazide dose from 12.5 mg to 25 mg. She is not taking any potassium supplement.",
+      "questions": [
+        "Based on the known side effects of hydrochlorothiazide, what electrolyte imbalance might be causing her symptoms?",
+        "What is the interaction concern between hydrochlorothiazide (which depletes potassium) and enalapril (an ACE inhibitor, which can raise potassium)?",
+        "What action should the pharmacy technician take?"
+      ],
+      "discussion": "Mrs. Persad's symptoms of muscle cramps and weakness are classic signs of hypokalaemia, likely worsened by the hydrochlorothiazide dose increase. While enalapril tends to retain potassium (partially offsetting the thiazide effect), the increased diuretic dose may have tipped the balance toward potassium depletion. The pharmacy technician should alert the supervising pharmacist immediately. The pharmacist may recommend the patient see her doctor for potassium level testing and possible supplementation. This case illustrates why understanding drug mechanisms and their physiological effects is essential for safe pharmacy practice."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Thiazide diuretics",
+        "Potassium-sparing diuretics",
+        "Loop diuretics",
+        "Osmotic diuretics"
+      ],
+      "question": "Which class of diuretics acts on the loop of Henle and is used for acute fluid overload in heart failure?",
+      "explanation": "Loop diuretics (e.g. furosemide, bumetanide) act on the ascending limb of the loop of Henle. They are the most potent diuretics and are the drugs of choice for acute fluid overload in heart failure, producing rapid and substantial diuresis. Their potency also means they can cause significant electrolyte disturbances.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 4,
+  "duration_minutes": 20
+}

@@ -1,0 +1,103 @@
+{
+  "id": "7c3d4b41-496a-4ed5-ba1b-e445d90a5247",
+  "module_id": "9b4fe8f1-fe84-4fa2-b2f4-db8c18c1a30e",
+  "title": "Staff Training, Retention & Performance Management",
+  "content": [
+    {
+      "text": "Developing and Keeping Your Pharmacy Team",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "In a tight Caribbean labour market, retaining trained pharmacy staff is more cost-effective than constantly recruiting and retraining. The cost of replacing a pharmacy technician — including recruitment, training, and the productivity loss during the learning curve — is estimated at 6–12 months of salary. Smart pharmacy managers invest in retention from day one.",
+      "type": "text"
+    },
+    {
+      "text": "The Onboarding Journey",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "A structured onboarding programme for new pharmacy staff should cover: pharmacy SOPs and policies, dispensing procedures, inventory management systems, customer service standards, emergency protocols (robbery, medical emergency, hurricane), and an introduction to any government programme workflows (CDAP, NHF). Many Caribbean pharmacies lack formal onboarding — new hires are simply paired with a senior technician and expected to learn by observation. While mentorship is valuable, it is not a substitute for documented training.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Week 1",
+          "Pharmacy layout, SOPs, team introductions, safety protocols, POS system basics",
+          "Observation and orientation quiz"
+        ],
+        [
+          "Weeks 2–4",
+          "Dispensing workflow, insurance programme procedures, inventory receiving, customer service standards",
+          "Supervised dispensing assessment by pharmacist"
+        ],
+        [
+          "Months 2–3",
+          "Independent task completion under supervision, handling complex prescriptions, expiry management, opening/closing procedures",
+          "Written competency assessment and pharmacist sign-off"
+        ]
+      ],
+      "type": "table",
+      "caption": "Pharmacy Staff Onboarding Checklist (First 90 Days)",
+      "headers": [
+        "Timeframe",
+        "Training Focus",
+        "Assessment"
+      ]
+    },
+    {
+      "body": "In exit interviews, Caribbean pharmacy staff consistently cite three reasons for leaving: inadequate compensation, lack of career growth, and poor management. Of these, lack of career growth is the most actionable. Create clear career pathways — from assistant to certified technician to senior technician to supervisor — with defined milestones, pay increments, and new responsibilities at each level. When staff can see their future at your pharmacy, they are less likely to look elsewhere.",
+      "type": "callout",
+      "title": "Retention Through Growth",
+      "variant": "tip"
+    },
+    {
+      "text": "Performance Management in Caribbean Culture",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Caribbean workplace culture tends to be more hierarchical and relationship-oriented than North American or European workplaces. Direct confrontation about poor performance can be perceived as disrespectful, and public criticism is deeply damaging to working relationships. Effective performance management in this context requires a blend of clear expectations, regular private feedback, and cultural sensitivity.",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Set expectations clearly from the start — written job descriptions, documented SOPs, and measurable performance indicators",
+        "Give feedback privately, never in front of colleagues or patients",
+        "Use the 'praise-improve-praise' sandwich method — acknowledge what the person does well before addressing areas for improvement",
+        "Address issues early and directly but respectfully — allowing poor performance to continue undermines the entire team",
+        "Document all performance conversations — Caribbean labour law requires documentation if termination becomes necessary",
+        "Recognise and reward good performance publicly — this is motivating in collectivist Caribbean culture"
+      ],
+      "ordered": false
+    },
+    {
+      "type": "case-study",
+      "title": "Case Study: The Perpetually Late Technician",
+      "scenario": "Marcus, a pharmacy technician at Island Health Pharmacy in Kingston, Jamaica, has been arriving 15–30 minutes late for his morning shift three or four times a week for the past two months. He is otherwise a competent and well-liked team member. His lateness means the pharmacy opens late (since the pharmacist cannot be at the counter and do the opening procedures alone), patients are kept waiting, and the other technician on shift must cover his duties. The pharmacy manager has mentioned it casually twice ('Try to be on time, nuh?') but the behaviour continues.",
+      "questions": [
+        "What has the pharmacy manager done wrong in handling this situation so far?",
+        "What steps should the manager take now, considering Jamaican labour law requirements?",
+        "How can the manager address the behaviour firmly while maintaining the working relationship?"
+      ],
+      "discussion": "The manager's error was treating a pattern of lateness with casual verbal comments rather than a structured response. Under Jamaican labour law and best HR practice, the manager should: (1) have a private, documented meeting with Marcus to discuss the pattern, (2) explore whether there is an underlying cause (childcare, transport, health) that might be accommodated, (3) issue a formal written warning if the behaviour continues, (4) set a clear improvement timeline, and (5) document every step. The 'praise-improve-praise' approach would work well: acknowledge Marcus's competence, address the lateness directly with specific examples and its impact on the team and patients, and express confidence in his ability to resolve it."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Excessive physical demands of the work",
+        "Lack of career growth and advancement opportunities",
+        "Disagreements with co-workers",
+        "Excessive weekend work requirements"
+      ],
+      "question": "Which factor is most commonly cited by Caribbean pharmacy staff as a reason for leaving their employer?",
+      "explanation": "Lack of career growth is consistently cited as a top reason Caribbean pharmacy staff seek employment elsewhere. Creating clear career pathways with defined milestones, pay increments, and increasing responsibilities is one of the most effective retention strategies available to pharmacy managers.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 30
+}

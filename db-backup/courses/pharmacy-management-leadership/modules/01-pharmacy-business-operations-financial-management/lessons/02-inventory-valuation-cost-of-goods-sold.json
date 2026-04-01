@@ -1,0 +1,106 @@
+{
+  "id": "7d2cf4dc-0cdf-4653-a6ac-dd2cee3731e9",
+  "module_id": "28473813-1710-4ced-a35f-28e0d84766a0",
+  "title": "Inventory Valuation & Cost of Goods Sold",
+  "content": [
+    {
+      "text": "Valuing Your Pharmacy's Largest Asset",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Inventory is typically the single largest asset on a pharmacy's balance sheet — representing 40–60% of total assets in a typical Caribbean community pharmacy. How you value that inventory directly affects your reported profits, tax liability, and business valuation. There are two primary methods used in Caribbean pharmacy practice: FIFO and Weighted Average Cost.",
+      "type": "text"
+    },
+    {
+      "term": "FIFO (First In, First Out)",
+      "type": "key-term",
+      "definition": "An inventory valuation method that assumes the oldest stock (first purchased) is sold first. The cost of goods sold reflects the older, typically lower prices, while ending inventory reflects the newer, typically higher prices. FIFO is the most common method in Caribbean pharmacies because it aligns with actual stock rotation practice — dispensing the oldest stock first to minimise expiry."
+    },
+    {
+      "body": "FIFO is the preferred method for pharmacies for both accounting and clinical reasons. From a clinical standpoint, you should always dispense the oldest stock first to prevent expiry waste. From an accounting standpoint, FIFO means your ending inventory reflects the most recent (current) costs, giving a more accurate picture of your asset value. However, during periods of rising prices — which is common in the Caribbean due to currency depreciation and import cost inflation — FIFO produces higher reported profits and therefore higher tax liability.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Purchase 1: 100 boxes @ $20",
+          "Sold first",
+          "Averaged into pool"
+        ],
+        [
+          "Purchase 2: 100 boxes @ $24",
+          "Sold second",
+          "Averaged into pool"
+        ],
+        [
+          "Purchase 3: 100 boxes @ $28",
+          "Sold third (or remaining inventory)",
+          "Averaged into pool"
+        ],
+        [
+          "COGS if 150 boxes sold",
+          "(100 x $20) + (50 x $24) = $3,200",
+          "150 x $24 (weighted avg) = $3,600"
+        ],
+        [
+          "Ending inventory (150 boxes)",
+          "(50 x $24) + (100 x $28) = $4,000",
+          "150 x $24 = $3,600"
+        ],
+        [
+          "Effect on profit",
+          "Higher profit (lower COGS)",
+          "Lower profit (higher COGS)"
+        ]
+      ],
+      "type": "table",
+      "caption": "FIFO vs. Weighted Average Cost — Pharmacy Example",
+      "headers": [
+        "Detail",
+        "FIFO",
+        "Weighted Average"
+      ]
+    },
+    {
+      "body": "Regardless of which accounting method you use, always physically rotate stock using FEFO (First Expiry, First Out). Check expiry dates at every receipt and place shorter-dated stock in front. Many Caribbean pharmacies conduct monthly expiry audits — products within 3 months of expiry should be flagged for return to the wholesaler (if permitted), promotional pricing, or write-off.",
+      "type": "callout",
+      "title": "Practical Inventory Management",
+      "variant": "tip"
+    },
+    {
+      "text": "Dead Stock and Expiry Waste",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Dead stock — inventory that sits unsold for extended periods — is a significant financial drain for Caribbean pharmacies. Medications have finite shelf lives, and every expired product represents a direct financial loss. Industry benchmarks suggest that expiry waste should be less than 1% of total inventory value. In practice, many Caribbean pharmacies experience 2–5% waste due to overstocking, poor rotation, or ordering products with short remaining shelf life from distributors.",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Conduct weekly FEFO checks on high-value and short-dated products",
+        "Negotiate return-to-vendor agreements with your wholesalers for products approaching expiry",
+        "Use pharmacy management software to generate automated expiry alerts",
+        "Track your monthly expiry waste as a percentage of total inventory value",
+        "Consider transferring slow-moving stock to another pharmacy in your network (if applicable)"
+      ],
+      "ordered": true
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "LIFO (Last In, First Out)",
+        "FIFO (First In, First Out)",
+        "Weighted Average Cost",
+        "Specific Identification"
+      ],
+      "question": "Which inventory valuation method aligns most closely with the clinical best practice of dispensing the oldest stock first?",
+      "explanation": "FIFO assumes the oldest stock is sold first, which mirrors the clinical best practice of dispensing the soonest-to-expire stock first (FEFO). This alignment between accounting and clinical practice makes FIFO the standard method for pharmacies.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 25
+}

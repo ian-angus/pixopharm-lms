@@ -1,0 +1,48 @@
+{
+  "id": "13bbb940-8d04-415f-9d35-806ca49ab017",
+  "module_id": "3f917344-bdd9-402c-b23b-c11f916aa57a",
+  "title": "The Evolution of Pharmacy Practice",
+  "content": [
+    {
+      "text": "From Ancient Remedies to Modern Dispensaries",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Pharmacy is one of the oldest professions in the world. The word itself derives from the Greek 'pharmakon', meaning drug or remedy. Ancient civilisations — Egyptian, Chinese, Greek, and Indian — all developed sophisticated systems for preparing medicines from natural substances. The Ebers Papyrus, dating to approximately 1550 BCE, contains over 800 prescriptions and remedies, making it one of the earliest known pharmaceutical documents.",
+      "type": "text"
+    },
+    {
+      "body": "In medieval Europe, the apothecary emerged as a distinct profession separate from physicians. The apothecary compounded and dispensed medicines, often from a shop that doubled as a clinic for the poor. This tradition crossed the Atlantic with European colonisers and took root in the Caribbean, where it blended with indigenous and African healing practices to create a unique pharmaceutical heritage.",
+      "type": "text"
+    },
+    {
+      "body": "The Caribbean has a rich tradition of bush medicine and herbal remedies passed down through generations. Plants like fever grass (lemongrass), soursop, and neem have been used medicinally for centuries. Modern Caribbean pharmacy acknowledges this heritage while ensuring patient safety through evidence-based practice.",
+      "type": "callout",
+      "title": "Caribbean Heritage",
+      "variant": "info"
+    },
+    {
+      "text": "The Modern Pharmacy",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Today's pharmacy is a far cry from the apothecary's shop. Modern pharmacies are technology-driven healthcare hubs where highly trained professionals manage complex medication therapies, counsel patients, and serve as the most accessible point of healthcare contact in many communities. In the Caribbean, this accessibility is particularly vital — pharmacies often serve as the first point of care for patients who cannot easily reach a doctor or hospital, especially on smaller islands.",
+      "type": "text"
+    },
+    {
+      "term": "Pharmaceutical Care",
+      "type": "key-term",
+      "definition": "The responsible provision of drug therapy for the purpose of achieving definite outcomes that improve a patient's quality of life. Coined by Hepler and Strand in 1990, this concept shifted pharmacy from a product-centred to a patient-centred profession."
+    },
+    {
+      "type": "video-placeholder",
+      "title": "A Day in the Life: Caribbean Pharmacy Practice",
+      "duration": "8 min",
+      "description": "Follow a pharmacy technician through a typical day at a community pharmacy in Port of Spain, Trinidad, from opening procedures through dispensing, inventory checks, and patient interactions."
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 20
+}

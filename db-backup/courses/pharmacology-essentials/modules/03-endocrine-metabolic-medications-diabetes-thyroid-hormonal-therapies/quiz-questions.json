@@ -1,0 +1,182 @@
+[
+  {
+    "id": "70a17c0c-fd96-44c7-bbf2-75fc952372dc",
+    "module_id": "5f319f26-d171-487f-81fd-34146941df05",
+    "question": "Which insulin type has no pronounced peak and lasts 18-24+ hours?",
+    "options": [
+      "Regular insulin",
+      "NPH insulin",
+      "Insulin glargine (Lantus)",
+      "Insulin lispro"
+    ],
+    "correct_answer": 2,
+    "explanation": "Glargine is a long-acting basal insulin with a relatively flat pharmacokinetic profile and duration of 18-24+ hours.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "561e095d-56db-4c76-804b-3075392734f6",
+    "module_id": "5f319f26-d171-487f-81fd-34146941df05",
+    "question": "Opened insulin pens in tropical Caribbean conditions should be:",
+    "options": [
+      "Kept in the freezer",
+      "Stored below 30°C and used within 28 days",
+      "Left at room temperature indefinitely",
+      "Returned to the refrigerator after each use"
+    ],
+    "correct_answer": 1,
+    "explanation": "Once opened, insulin can be kept at room temperature (below 30°C) for up to 28 days. In the Caribbean's heat, patients must take extra care to avoid exposing insulin to high temperatures.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "43fbc96e-0c45-4c3b-a315-c0b9b7689c79",
+    "module_id": "5f319f26-d171-487f-81fd-34146941df05",
+    "question": "Metformin is avoided in patients with severe renal impairment because:",
+    "options": [
+      "It causes kidney damage",
+      "It accumulates and can cause lactic acidosis",
+      "It loses all effectiveness",
+      "It causes severe hyperglycaemia"
+    ],
+    "correct_answer": 1,
+    "explanation": "Metformin is renally excreted. In severe renal impairment, it accumulates to dangerous levels, increasing the rare but serious risk of lactic acidosis.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "147e5526-f74e-4fde-bbd5-55335c2432eb",
+    "module_id": "5f319f26-d171-487f-81fd-34146941df05",
+    "question": "Which oral hypoglycaemic class carries the highest risk of hypoglycaemia?",
+    "options": [
+      "Biguanides (metformin)",
+      "Sulfonylureas (glibenclamide)",
+      "DPP-4 inhibitors (sitagliptin)",
+      "SGLT2 inhibitors (empagliflozin)"
+    ],
+    "correct_answer": 1,
+    "explanation": "Sulfonylureas stimulate insulin secretion from the pancreas regardless of blood glucose level, creating significant hypoglycaemia risk, especially if meals are missed.",
+    "order_index": 3,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "analyze"
+  },
+  {
+    "id": "6ba300fa-d628-41e3-bc6c-8b1439edf1b8",
+    "module_id": "5f319f26-d171-487f-81fd-34146941df05",
+    "question": "Levothyroxine absorption is significantly reduced by:",
+    "options": [
+      "Vitamin D supplements",
+      "Calcium and iron supplements",
+      "Vitamin B12",
+      "Fish oil"
+    ],
+    "correct_answer": 1,
+    "explanation": "Calcium and iron form insoluble complexes with levothyroxine in the GI tract, reducing absorption by 30-40%. Separate by at least 4 hours.",
+    "order_index": 4,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "35e3133a-ee4f-401f-9c04-ce57908c3ac1",
+    "module_id": "5f319f26-d171-487f-81fd-34146941df05",
+    "question": "A fasting diabetic patient during Ramadan is most at risk of:",
+    "options": [
+      "Weight gain",
+      "Hypoglycaemia, especially if taking sulfonylureas",
+      "Thyroid dysfunction",
+      "Liver damage"
+    ],
+    "correct_answer": 1,
+    "explanation": "Prolonged fasting while taking insulin or sulfonylureas dramatically increases hypoglycaemia risk. Medication timing must be adjusted during Ramadan.",
+    "order_index": 5,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "b7384ba1-6593-40f2-8522-ef50184c3aeb",
+    "module_id": "5f319f26-d171-487f-81fd-34146941df05",
+    "question": "SGLT2 inhibitors lower blood glucose by:",
+    "options": [
+      "Stimulating insulin secretion",
+      "Reducing hepatic glucose production",
+      "Blocking glucose reabsorption in the kidneys, causing glucosuria",
+      "Increasing insulin sensitivity in muscle"
+    ],
+    "correct_answer": 2,
+    "explanation": "SGLT2 inhibitors block the sodium-glucose co-transporter 2 in the proximal tubule of the kidney, preventing glucose reabsorption and causing it to be excreted in urine.",
+    "order_index": 6,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "bff48759-02b4-4b2e-aedb-fc815af39789",
+    "module_id": "5f319f26-d171-487f-81fd-34146941df05",
+    "question": "A confused, sweating diabetic patient in a pharmacy most likely has:",
+    "options": [
+      "Hyperglycaemia",
+      "Hypoglycaemia",
+      "A thyroid storm",
+      "An allergic reaction"
+    ],
+    "correct_answer": 1,
+    "explanation": "Sweating, trembling, and confusion are classic symptoms of hypoglycaemia. Give fast-acting carbohydrate immediately and monitor.",
+    "order_index": 7,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "6cdc5fd3-6003-447c-bb8d-112bb4d8f9fa",
+    "module_id": "5f319f26-d171-487f-81fd-34146941df05",
+    "question": "Combined oral contraceptives are CONTRAINDICATED in:",
+    "options": [
+      "Women under 30",
+      "Women over 35 who smoke",
+      "Women with regular menstrual cycles",
+      "Women who exercise regularly"
+    ],
+    "correct_answer": 1,
+    "explanation": "COCs significantly increase the risk of venous thromboembolism and stroke in women over 35 who smoke. This is an absolute contraindication.",
+    "order_index": 8,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "4af444a9-3e70-44fc-a3a0-1ed49643c50e",
+    "module_id": "5f319f26-d171-487f-81fd-34146941df05",
+    "question": "Why should patients NOT switch levothyroxine brands without medical supervision?",
+    "options": [
+      "Different brands have different colours",
+      "Bioavailability varies between manufacturers, which can alter thyroid hormone levels",
+      "Some brands contain lactose",
+      "Brand switching is actually perfectly safe"
+    ],
+    "correct_answer": 1,
+    "explanation": "Levothyroxine has a narrow therapeutic index and small differences in bioavailability between manufacturers can cause clinically significant changes in thyroid hormone levels.",
+    "order_index": 9,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "hard",
+    "blooms_level": "analyze"
+  }
+]

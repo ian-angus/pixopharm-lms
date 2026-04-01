@@ -1,0 +1,95 @@
+{
+  "id": "627509f3-16f9-4fa8-967a-9e88356e109b",
+  "module_id": "8759d1cb-8aee-41fa-bb18-ddb11b629779",
+  "title": "Pharmacy Dispensing Software: Features & Workflow Integration",
+  "content": [
+    {
+      "text": "The Digital Backbone of Modern Dispensing",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Pharmacy dispensing software — also called pharmacy management systems (PMS) — has revolutionised the way prescriptions are processed, medications are tracked, and patient records are maintained. In the Caribbean, adoption is accelerating but uneven: larger pharmacies and hospital pharmacies increasingly use comprehensive software, while many smaller independent pharmacies still rely on manual or semi-manual processes. Understanding these systems is essential for any pharmacy technician entering the modern workforce.",
+      "type": "text"
+    },
+    {
+      "body": "A comprehensive pharmacy management system integrates multiple functions into a single platform: prescription data entry, drug interaction checking, label generation, inventory management, dispensing records, patient profiles, reporting, and point-of-sale processing. The benefits are significant — reduced dispensing errors, faster processing, better inventory visibility, and comprehensive audit trails. However, the technology is only as good as the data entered and the staff trained to use it.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Prescription data entry",
+          "Captures prescription details electronically",
+          "Reduces transcription errors from illegible handwriting"
+        ],
+        [
+          "Drug interaction alerts",
+          "Flags potential interactions with patient's other medications",
+          "Prevents harmful drug combinations"
+        ],
+        [
+          "Allergy checking",
+          "Cross-references dispensed drug against patient's allergy profile",
+          "Prevents allergic reactions"
+        ],
+        [
+          "Label generation",
+          "Produces standardised, legible labels automatically",
+          "Eliminates handwritten label errors"
+        ],
+        [
+          "Inventory tracking",
+          "Real-time stock levels updated with every transaction",
+          "Enables automatic reorder alerts to prevent stockouts"
+        ],
+        [
+          "Patient profiles",
+          "Stores medication history, allergies, and demographic data",
+          "Enables continuity of care across visits"
+        ],
+        [
+          "Regulatory reporting",
+          "Generates controlled substance reports and audit trails",
+          "Simplifies compliance with regulatory requirements"
+        ]
+      ],
+      "type": "table",
+      "caption": "Key Features of Pharmacy Management Systems",
+      "headers": [
+        "Feature",
+        "Function",
+        "Patient Safety Benefit"
+      ]
+    },
+    {
+      "term": "Pharmacy Management System (PMS)",
+      "type": "key-term",
+      "definition": "An integrated software platform that manages the core operations of a pharmacy — including prescription processing, dispensing, inventory management, patient records, billing, and regulatory reporting. Leading systems in the Caribbean market include minfos, Rx30, and various locally developed solutions."
+    },
+    {
+      "body": "A pharmacy management system is only as accurate as the data entered into it. Every prescription must be entered completely and correctly. Every stock receipt must be logged. Every dispensing transaction must be recorded. The principle of 'garbage in, garbage out' applies with life-or-death consequences in pharmacy. As a technician, you are a critical gatekeeper for data integrity.",
+      "type": "callout",
+      "title": "Data Integrity Is Your Responsibility",
+      "variant": "tip"
+    },
+    {
+      "body": "For Caribbean pharmacies considering technology adoption, key factors include: cost of implementation and ongoing licencing, internet reliability (cloud-based systems require stable connectivity), compatibility with existing hardware, support for Caribbean regulatory requirements (including CDAP, NHF, and controlled substance reporting), vendor support availability in the region, and staff training requirements.",
+      "type": "text"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Override the alert because doctors always know what they're prescribing",
+        "Flag the interaction to the supervising pharmacist for clinical review before dispensing",
+        "Refuse to dispense the warfarin and tell the patient to stop taking aspirin",
+        "Ignore the alert — these systems produce too many false positives"
+      ],
+      "question": "A pharmacy management system generates a drug interaction alert when you enter a new prescription for warfarin for a patient who is already taking aspirin. What should you do?",
+      "explanation": "Drug interaction alerts should always be flagged to the supervising pharmacist for clinical review. The pharmacist will assess whether the combination is intentional (some patients are on both with appropriate monitoring) or an error. Never override clinical alerts without pharmacist review, and never make clinical decisions independently as a technician.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 20
+}

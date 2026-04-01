@@ -1,0 +1,105 @@
+{
+  "id": "15a1ef5b-8460-49fa-8315-cb3a59b6d477",
+  "module_id": "dc1f1623-87c0-4bbe-bfb2-9ba9f226430b",
+  "title": "Professional Standards, Whistleblowing & Accountability",
+  "content": [
+    {
+      "text": "Upholding Professional Standards",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "As a pharmacy professional, you have a duty not only to practise ethically yourself but also to ensure that unethical or unsafe practices by others are addressed. This includes reporting errors, raising concerns about colleagues' conduct, and refusing to participate in practices that compromise patient safety — even when there is pressure to comply.",
+      "type": "text"
+    },
+    {
+      "text": "When You Witness Unethical or Unsafe Behaviour",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "What should you do if you observe a colleague, supervisor, or pharmacist engaging in behaviour that puts patients at risk? This is one of the most difficult situations a pharmacy technician can face, especially in a small island setting where reporting a colleague can have social and professional consequences.",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Document what you observed: date, time, what happened, who was involved (keep this factual, not speculative)",
+        "Report to the supervising pharmacist first (unless the pharmacist is the one acting unethically)",
+        "If the pharmacist is the problem or fails to act, escalate to the pharmacy owner or chain management",
+        "If internal reporting fails, report to the relevant Pharmacy Board or Council (see contacts below)",
+        "In cases of immediate danger to patients, you may need to intervene directly (e.g., stopping a clearly dangerous medication from being dispensed)"
+      ],
+      "ordered": true
+    },
+    {
+      "rows": [
+        [
+          "Trinidad & Tobago",
+          "Pharmacy Board of Trinidad and Tobago",
+          "Unregistered practice, professional misconduct, unsafe pharmacy conditions, complaints against pharmacists or pharmacy premises"
+        ],
+        [
+          "Jamaica",
+          "Pharmacy Council of Jamaica",
+          "Professional misconduct, competence concerns, breaches of the Pharmacy Act, complaints about pharmacy services"
+        ],
+        [
+          "Barbados",
+          "Pharmacy Council of Barbados / Ministry of Health",
+          "Professional conduct issues, unsafe practices, breaches of the Pharmacy Act or Drug Service regulations"
+        ]
+      ],
+      "type": "table",
+      "caption": "Reporting Channels for Ethical Concerns",
+      "headers": [
+        "Island",
+        "Regulatory Body",
+        "What They Investigate"
+      ]
+    },
+    {
+      "text": "Conflicts of Interest",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "A conflict of interest arises when your personal interests, financial interests, or relationships could influence your professional judgement. In Caribbean pharmacy practice, common conflicts include:",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Recommending a more expensive brand because the pharmacy earns a higher margin, when a generic is equally effective",
+        "Dispensing medications to family members without proper prescription oversight",
+        "Accepting gifts or incentives from pharmaceutical company representatives in exchange for promoting their products",
+        "Using your position to access medications for personal use or for friends/family without a prescription",
+        "Failing to report a dispensing error because it was made by a friend or family member who works at the pharmacy"
+      ],
+      "ordered": false
+    },
+    {
+      "body": "In rare cases, a pharmacy professional may have a conscientious objection to dispensing a particular medication (e.g., emergency contraception due to religious beliefs). In most Caribbean jurisdictions, while you may raise your objection, you must ensure the patient can obtain the medication through an alternative route — either from another staff member or another pharmacy. You cannot simply refuse and leave the patient without access. The patient's right to their legally prescribed medication takes precedence over your personal beliefs.",
+      "type": "callout",
+      "title": "Refusing to Dispense on Ethical Grounds",
+      "variant": "info"
+    },
+    {
+      "text": "The Commitment to Lifelong Ethical Practice",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Ethics is not a module you complete and forget. It is a lifelong commitment that must be practised daily. The best pharmacy professionals regularly reflect on their decisions, seek guidance when uncertain, participate in ethics continuing education, and create a culture where ethical practice is the norm — not the exception. In the Caribbean context, where pharmacy professionals are deeply embedded in their communities, this commitment is especially important and especially challenging.",
+      "type": "text"
+    },
+    {
+      "type": "video-placeholder",
+      "title": "Panel Discussion: Ethics in Caribbean Pharmacy Practice",
+      "duration": "15 min",
+      "description": "Senior pharmacists from Trinidad, Jamaica, and Barbados discuss real ethical challenges they have faced in their careers, how they resolved them, and advice for new pharmacy technicians entering the profession."
+    }
+  ],
+  "order_index": 4,
+  "duration_minutes": 35
+}

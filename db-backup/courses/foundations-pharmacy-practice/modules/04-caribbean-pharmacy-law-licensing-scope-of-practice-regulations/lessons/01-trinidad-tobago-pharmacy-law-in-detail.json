@@ -1,0 +1,81 @@
+{
+  "id": "4e732df1-e0d1-46ff-b061-2109f4b1b2be",
+  "module_id": "260b3cfa-6a8e-4515-a5c7-46be02561533",
+  "title": "Trinidad & Tobago: Pharmacy Law in Detail",
+  "content": [
+    {
+      "text": "Pharmacy Practice Law in Trinidad & Tobago",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Trinidad and Tobago's pharmacy practice is governed primarily by the Pharmacy Board Act (Chapter 29:52) of the Laws of Trinidad and Tobago. The Pharmacy Board is the statutory body responsible for regulating the profession, maintaining the register of pharmacists, and setting standards for pharmacy practice across both islands of the twin-island republic.",
+      "type": "text"
+    },
+    {
+      "text": "The Pharmacy Board Act (Ch. 29:52)",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "type": "list",
+      "items": [
+        "Establishes the Pharmacy Board of Trinidad and Tobago as the regulatory authority",
+        "Defines who may be registered as a pharmacist and the qualifications required",
+        "Prohibits unregistered persons from practising pharmacy or holding themselves out as pharmacists",
+        "Sets standards for pharmacy premises (licensing of physical pharmacy locations)",
+        "Empowers the Board to conduct inspections, investigate complaints, and discipline registrants",
+        "Prescribes penalties for offences including fines and imprisonment"
+      ],
+      "ordered": false
+    },
+    {
+      "text": "The Dangerous Drugs Act (Ch. 11:25)",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "This Act governs the import, export, manufacture, supply, and possession of dangerous drugs (controlled substances) in Trinidad and Tobago. It implements Trinidad's obligations under the UN Single Convention on Narcotic Drugs (1961) and the Convention on Psychotropic Substances (1971).",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Prescription-Only Medicines (POM)",
+          "Require a valid prescription from an authorised prescriber",
+          "Antibiotics, antihypertensives, antidiabetics"
+        ],
+        [
+          "Pharmacy-Only Medicines (P)",
+          "Can be sold without a prescription but only from a pharmacy under a pharmacist's supervision",
+          "Some cough preparations, mild pain relievers not available in general retail"
+        ],
+        [
+          "General Sale List (GSL)",
+          "May be sold in retail outlets without pharmacy supervision",
+          "Simple antacids, basic first aid items, some vitamins"
+        ],
+        [
+          "Controlled Drugs / Dangerous Drugs",
+          "Subject to strict prescribing, dispensing, storage, and record-keeping requirements",
+          "Morphine, pethidine, codeine (pure), diazepam, cannabis"
+        ]
+      ],
+      "type": "table",
+      "caption": "Drug Classification in Trinidad & Tobago",
+      "headers": [
+        "Category",
+        "Description",
+        "Examples"
+      ]
+    },
+    {
+      "body": "Compound preparations containing codeine in low concentrations (e.g., certain cough syrups) may be available as Pharmacy-Only medicines in Trinidad. However, pure codeine and higher-concentration preparations are controlled under the Dangerous Drugs Act. This differs significantly from Jamaica where all codeine products are more tightly restricted. Always verify the current scheduling — it changes with government gazetting.",
+      "type": "callout",
+      "title": "Codeine in Trinidad & Tobago",
+      "variant": "warning"
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 20
+}

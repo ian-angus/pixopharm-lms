@@ -1,0 +1,89 @@
+{
+  "id": "fb8e1e62-94d8-435d-bf67-792b0afc4795",
+  "module_id": "3f917344-bdd9-402c-b23b-c11f916aa57a",
+  "title": "Pharmacy in the Caribbean Context",
+  "content": [
+    {
+      "text": "What Makes Caribbean Pharmacy Unique?",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Caribbean pharmacy practice is shaped by a unique confluence of factors that distinguish it from pharmacy practice anywhere else in the world. The region's island geography, colonial history, cultural diversity, tropical climate, and economic realities all create challenges and opportunities that a pharmacy technician must understand to practice effectively.",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Geographic fragmentation: Medications must be imported across ocean, often to remote islands with limited port infrastructure",
+        "Tropical climate: Heat and humidity demand strict cold chain management for temperature-sensitive medications",
+        "Regulatory diversity: Each island nation maintains its own pharmacy laws, drug schedules, and professional standards",
+        "Disease landscape: Tropical diseases (dengue, chikungunya, Zika), high prevalence of NCDs (hypertension, diabetes), and HIV/AIDS shape medication demand",
+        "Cultural factors: Traditional medicine (bush medicine, obeah) coexists with modern pharmacy and must be understood, not dismissed",
+        "Economic constraints: Many islands rely on imported medications with no local manufacturing, creating cost and supply chain pressures",
+        "Multilingual populations: Patients may speak English, Spanish, French, Creole, Hindi, or Dutch depending on the island"
+      ],
+      "ordered": true
+    },
+    {
+      "text": "Key Regional Organisations",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "rows": [
+        [
+          "Caribbean Community",
+          "CARICOM",
+          "Regional integration body; drives harmonisation of pharmaceutical standards across 15 member states"
+        ],
+        [
+          "Caribbean Public Health Agency",
+          "CARPHA",
+          "Regional public health body headquartered in Trinidad; coordinates disease surveillance, laboratory services, and pharmaceutical quality"
+        ],
+        [
+          "Caribbean Association of Pharmacists",
+          "CAP",
+          "Professional body representing pharmacists across the region; advocates for standards and continuing education"
+        ],
+        [
+          "Caribbean Regulatory System",
+          "CRS",
+          "CARICOM initiative to harmonise drug registration, allowing a medicine approved in one member state to gain recognition in others"
+        ],
+        [
+          "Pan American Health Organization",
+          "PAHO/WHO",
+          "UN agency providing technical cooperation to Caribbean health systems, including pharmaceutical policy support"
+        ]
+      ],
+      "type": "table",
+      "caption": "Major Caribbean Pharmacy & Health Organisations",
+      "headers": [
+        "Organisation",
+        "Acronym",
+        "Role"
+      ]
+    },
+    {
+      "body": "While CARICOM aspires to harmonised pharmaceutical standards, in practice each island maintains significant regulatory independence. The Caribbean Regulatory System (CRS) is gradually enabling mutual recognition of drug registrations, but drug scheduling, prescription requirements, and technician scope of practice still vary island by island. This is why PIXOPHARM teaches you to navigate these differences rather than assume uniformity.",
+      "type": "callout",
+      "title": "CARICOM Harmonisation — Work in Progress",
+      "variant": "tip"
+    },
+    {
+      "type": "case-study",
+      "title": "Case Study: The Supply Chain Challenge",
+      "scenario": "Hurricane season 2024: A Category 4 hurricane disrupts shipping routes to several Eastern Caribbean islands for three weeks. Pharmacies on Dominica and St. Vincent report critical shortages of insulin, antihypertensives, and asthma medications. The OECS Pharmaceutical Procurement Service activates its emergency protocol, but delivery is delayed by damaged port infrastructure.",
+      "questions": [
+        "What advance planning could pharmacies have done to prepare for hurricane season?",
+        "How should a pharmacy technician prioritise dispensing when stock of essential medications is limited?",
+        "What role do regional organisations like OECS PPS and CARPHA play in pharmaceutical emergency response?"
+      ],
+      "discussion": "This scenario illustrates why Caribbean pharmacies must maintain emergency buffer stock (typically 3-6 months for essential medicines), have written hurricane preparedness SOPs, and understand the regional procurement networks available to them. The OECS Pharmaceutical Procurement Service pools purchasing power for 9 Eastern Caribbean states, achieving better prices and more reliable supply — but cannot eliminate the geographic vulnerability of small island nations."
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 20
+}

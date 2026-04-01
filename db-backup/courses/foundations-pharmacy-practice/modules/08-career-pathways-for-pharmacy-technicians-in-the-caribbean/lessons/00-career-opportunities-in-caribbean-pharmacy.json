@@ -1,0 +1,100 @@
+{
+  "id": "a323880f-db91-41a9-a05d-c86bca95acc4",
+  "module_id": "ca3220b3-2c07-448d-bf3e-0790d0ed9088",
+  "title": "Career Opportunities in Caribbean Pharmacy",
+  "content": [
+    {
+      "text": "Where Can Your Career Take You?",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "A pharmacy technician qualification opens doors across the Caribbean healthcare sector. The demand for trained pharmacy technicians is growing across the region, driven by expanding healthcare services, an aging population with increasing chronic disease burden, and the need for properly qualified staff as pharmacy practice becomes more regulated and sophisticated.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Community / Retail Pharmacy",
+          "The most common setting — dispensing, patient interaction, OTC advice, inventory management",
+          "Customer service, dispensing accuracy, product knowledge, communication"
+        ],
+        [
+          "Hospital Pharmacy",
+          "Inpatient dispensing, ward supply, sterile compounding, specialised medications",
+          "Aseptic technique, complex calculations, teamwork, attention to detail"
+        ],
+        [
+          "Public Health / Polyclinic",
+          "Government health facilities providing primary care pharmacy services",
+          "Formulary management, public health knowledge, volume dispensing"
+        ],
+        [
+          "Pharmaceutical Distribution / Wholesale",
+          "Pharmaceutical warehousing, supply chain, regulatory compliance for importation",
+          "Logistics, regulatory knowledge, inventory systems, quality assurance"
+        ],
+        [
+          "Pharmaceutical Manufacturing (Limited)",
+          "Quality control, production support, documentation",
+          "Good Manufacturing Practice (GMP), documentation, laboratory skills"
+        ],
+        [
+          "Insurance / NHF Claims Processing",
+          "Processing pharmaceutical benefit claims, formulary management, utilisation review",
+          "Data entry, regulatory knowledge, attention to detail, analytical skills"
+        ],
+        [
+          "Education & Training",
+          "Teaching and training the next generation of pharmacy technicians",
+          "Communication, curriculum knowledge, mentoring, certification"
+        ]
+      ],
+      "type": "table",
+      "caption": "Career Settings for Pharmacy Technicians",
+      "headers": [
+        "Setting",
+        "Description",
+        "Key Skills Needed"
+      ]
+    },
+    {
+      "type": "island-comparison",
+      "title": "Job Market Outlook",
+      "islands": [
+        {
+          "flag": "🇹🇹",
+          "name": "Trinidad & Tobago",
+          "details": [
+            "Strong demand in both public (RHAs) and private sector",
+            "CDAP programme expansion creates more pharmacy service points",
+            "Growing pharmaceutical distribution sector (Trinidad as regional hub)",
+            "Competitive salaries in private sector; government positions offer benefits and pension"
+          ]
+        },
+        {
+          "flag": "🇯🇲",
+          "name": "Jamaica",
+          "details": [
+            "NHF expansion is increasing demand for qualified pharmacy staff",
+            "Community pharmacy remains the largest employer",
+            "Hospital pharmacy positions available through Regional Health Authorities",
+            "Growing interest in pharmacy informatics and technology roles"
+          ]
+        },
+        {
+          "flag": "🇧🇧",
+          "name": "Barbados",
+          "details": [
+            "Polyclinic system provides stable government employment",
+            "Queen Elizabeth Hospital pharmacy is a major employer",
+            "Private sector offers competitive alternatives",
+            "Smaller market but high per-capita demand for qualified technicians"
+          ]
+        }
+      ]
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 10
+}

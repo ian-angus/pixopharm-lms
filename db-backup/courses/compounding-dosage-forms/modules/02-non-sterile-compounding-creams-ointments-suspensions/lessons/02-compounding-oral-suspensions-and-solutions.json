@@ -1,0 +1,118 @@
+{
+  "id": "62f42e90-0609-41ac-990a-900f51d93c8a",
+  "module_id": "09de5c32-b893-4b01-812f-12f4b6b92bc3",
+  "title": "Compounding Oral Suspensions and Solutions",
+  "content": [
+    {
+      "text": "Liquid Preparations for Caribbean Patients",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Oral liquids — suspensions and solutions — are the second most commonly compounded category in Caribbean pharmacies after topical preparations. The primary driver is paediatric medicine: children under six generally cannot swallow tablets or capsules, and many essential medications are not commercially available in liquid form, particularly in smaller Caribbean markets. Additionally, elderly patients with dysphagia, patients with nasogastric tubes, and patients requiring doses that cannot be achieved with available tablet strengths all benefit from compounded oral liquids.",
+      "type": "text"
+    },
+    {
+      "text": "Formulating an Oral Suspension from Tablets",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "One of the most common compounding scenarios in Caribbean pharmacy is preparing an oral suspension from commercially available tablets when no liquid formulation exists. This requires crushing the tablets, reducing the powder to fine particles, and suspending them in a suitable vehicle with a suspending agent, sweetener, flavouring, and preservative. The compounder must verify that the tablet is an immediate-release formulation (never use modified-release tablets) and account for the weight of excipients in the original tablet.",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Verify the prescription and perform all calculations; have calculations checked by a second person",
+        "Confirm the tablets are immediate-release (NOT modified-release, enteric-coated, or sublingual)",
+        "Count and weigh the required number of tablets",
+        "Triturate (crush) the tablets to a fine, uniform powder in a mortar using a pestle",
+        "Add a small amount of the suspending vehicle and triturate to form a smooth paste",
+        "Gradually add more vehicle with constant mixing (geometric dilution principle applied to liquids)",
+        "Transfer to a graduated cylinder or dispensing bottle; rinse the mortar with vehicle to capture all drug",
+        "Add preservative, sweetener, and flavouring as per the formula",
+        "Bring to the final volume with the vehicle; mix well",
+        "Transfer to the final container, label with all required information including 'SHAKE WELL', storage conditions, and beyond-use date"
+      ],
+      "ordered": true
+    },
+    {
+      "term": "Suspending Agent",
+      "type": "key-term",
+      "definition": "A substance added to a suspension to increase the viscosity of the vehicle and slow the rate of particle sedimentation. Common suspending agents include methylcellulose, carboxymethylcellulose sodium (CMC), xanthan gum, and commercially available suspending vehicles such as Ora-Plus and Ora-Sweet. The choice of suspending agent affects the pourability, palatability, and stability of the finished suspension."
+    },
+    {
+      "body": "Ora-Plus (a suspending vehicle) and Ora-Sweet (a sweetening vehicle) are two commercially available vehicles widely used in compounding pharmacies in the Caribbean and internationally. They are commonly used in a 1:1 combination to create oral suspensions with good suspension properties and acceptable taste. However, these products must be imported and can be expensive. In situations where they are unavailable, pharmacy technicians must be able to formulate alternative vehicles using locally available ingredients such as simple syrup, methylcellulose, and citric acid.",
+      "type": "callout",
+      "title": "Ora-Plus and Ora-Sweet in Caribbean Practice",
+      "variant": "info"
+    },
+    {
+      "text": "Vehicle Selection for Caribbean Conditions",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "rows": [
+        [
+          "Simple Syrup NF (85% w/v sucrose)",
+          "Thick, sweet, self-preserving due to high sugar content",
+          "Excellent taste masking; readily available locally; inexpensive",
+          "May crystallise at low temperatures; diabetic patients require sugar-free alternatives; promotes dental caries in paediatric patients"
+        ],
+        [
+          "Ora-Plus / Ora-Sweet (1:1)",
+          "Commercial suspending/sweetening vehicle combination",
+          "Consistent quality; well-documented stability data for many formulations; easy to use",
+          "Must be imported; expensive; subject to Caribbean supply chain disruptions; limited shelf life after opening"
+        ],
+        [
+          "Methylcellulose 1% solution",
+          "Clear, viscous, non-ionic suspending vehicle",
+          "Sugar-free; suitable for diabetics; good suspending properties",
+          "Must be prepared fresh; requires refrigerated storage; shorter stability than sugar-based vehicles"
+        ],
+        [
+          "Cherry syrup / Ora-Sweet SF",
+          "Sugar-free or low-sugar flavoured vehicles",
+          "Suitable for diabetic and paediatric patients on sugar-restricted diets",
+          "Ora-Sweet SF must be imported; local cherry syrup may vary in quality and preservative content"
+        ]
+      ],
+      "type": "table",
+      "caption": "Oral Liquid Vehicles and Tropical Considerations",
+      "headers": [
+        "Vehicle",
+        "Properties",
+        "Advantages",
+        "Caribbean Considerations"
+      ]
+    },
+    {
+      "type": "case-study",
+      "title": "Case Study: Compounding Enalapril Suspension for a Paediatric Patient",
+      "scenario": "A paediatrician in Port of Spain prescribes enalapril 1 mg/mL oral suspension for a 3-year-old child with congenital heart disease. No commercial liquid formulation is available in Trinidad. The pharmacy has enalapril 5 mg tablets, Ora-Plus, and Ora-Sweet in stock. The prescription is for 100 mL. The pharmacy technician must compound the suspension.",
+      "questions": [
+        "How many 5 mg enalapril tablets are needed to prepare 100 mL of a 1 mg/mL suspension?",
+        "Why is the 1:1 Ora-Plus / Ora-Sweet combination a suitable vehicle for this preparation?",
+        "What beyond-use date should be assigned to this compounded suspension, and under what storage conditions?"
+      ],
+      "discussion": "To prepare 100 mL of 1 mg/mL enalapril suspension, the technician needs 100 mg of enalapril, which is 20 tablets of 5 mg each. The Ora-Plus / Ora-Sweet (1:1) combination provides both suspending properties (Ora-Plus) and palatability (Ora-Sweet) — critical for paediatric compliance. Based on USP <795> guidelines and published stability data, this preparation is typically assigned a beyond-use date of 60 days when stored at 2–8°C (refrigerated). In the Caribbean context, the technician must confirm that the patient's family has reliable refrigeration and counsel them that the medication must not be left at room temperature. If refrigeration is unreliable, the beyond-use date should be shortened, and the pharmacist should consider more frequent dispensing of smaller quantities."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Scored tablets",
+        "Generic tablets",
+        "Modified-release or enteric-coated tablets",
+        "Film-coated immediate-release tablets"
+      ],
+      "question": "When compounding an oral suspension from commercial tablets, which type of tablet must NEVER be used?",
+      "explanation": "Modified-release (sustained-release, extended-release, controlled-release) and enteric-coated tablets must never be crushed and used for compounding oral suspensions. Crushing these tablets destroys their rate-controlling mechanism, which can lead to dose dumping — the immediate release of the entire dose. Always verify that the source tablet is an immediate-release formulation before proceeding with compounding.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 30
+}

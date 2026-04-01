@@ -1,0 +1,81 @@
+{
+  "id": "17a72cc5-f355-4b5a-bfbe-dfbc823a7869",
+  "module_id": "7b0ea0ee-1e61-4a29-ac4e-45cb21f60042",
+  "title": "Black Box Warnings & High-Alert Medications",
+  "content": [
+    {
+      "text": "The Most Dangerous Drug Warnings",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Black box warnings (or boxed warnings) are the most serious drug safety warnings issued by regulatory authorities. They highlight risks of death, serious organ damage, or severe adverse effects. While the term 'black box' originates from the US FDA, the warnings apply globally and are relevant to Caribbean prescribing and dispensing practice.",
+      "type": "text"
+    },
+    {
+      "term": "Black Box Warning",
+      "type": "key-term",
+      "definition": "The most serious safety warning that can be placed on a medication's prescribing information, indicating that the drug carries significant risks of serious or life-threatening adverse effects. Named for the black border that surrounds the warning text in US FDA labelling. Caribbean drug regulatory authorities apply equivalent warnings."
+    },
+    {
+      "body": "Pharmacy technicians must be familiar with black box warnings for commonly dispensed medications. When dispensing a drug with a black box warning, ensure the patient has received appropriate counselling and monitoring is in place. Some pharmacies flag these medications with auxiliary stickers or computer alerts as additional safety measures.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Fluoroquinolones (ciprofloxacin)",
+          "Tendon rupture, peripheral neuropathy, CNS effects",
+          "Widely prescribed in Caribbean; elderly and steroid users at highest risk"
+        ],
+        [
+          "NSAIDs (all)",
+          "Increased cardiovascular and GI bleeding risk",
+          "Extremely common OTC and Rx use across Caribbean islands"
+        ],
+        [
+          "Metformin",
+          "Lactic acidosis in renal impairment",
+          "High diabetes prevalence; CKD common in Caribbean diabetics"
+        ],
+        [
+          "Warfarin",
+          "Major bleeding risk",
+          "Requires INR monitoring; many drug and food interactions"
+        ],
+        [
+          "Antidepressants (SSRIs)",
+          "Increased suicidality risk in young adults (<25)",
+          "Mental health stigma may delay recognition of warning signs"
+        ]
+      ],
+      "type": "table",
+      "caption": "Key Black Box Warnings Relevant to Caribbean Practice",
+      "headers": [
+        "Drug/Class",
+        "Warning",
+        "Caribbean Relevance"
+      ]
+    },
+    {
+      "body": "The Institute for Safe Medication Practices (ISMP) identifies high-alert medications that carry heightened risk of harm when used in error. These include insulin, anticoagulants (warfarin, heparin), opioids, and chemotherapy agents. Extra verification steps should be applied when dispensing these drugs.",
+      "type": "callout",
+      "title": "High-Alert Medications (ISMP List)",
+      "variant": "info"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Liver failure",
+        "Tendon rupture, peripheral neuropathy, and CNS effects",
+        "Renal toxicity",
+        "Bone marrow suppression"
+      ],
+      "question": "Fluoroquinolone antibiotics carry a black box warning for:",
+      "explanation": "Fluoroquinolones can cause tendon rupture (especially Achilles tendon), peripheral neuropathy, and CNS effects. Risk is highest in elderly patients and those taking corticosteroids.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 3,
+  "duration_minutes": 20
+}

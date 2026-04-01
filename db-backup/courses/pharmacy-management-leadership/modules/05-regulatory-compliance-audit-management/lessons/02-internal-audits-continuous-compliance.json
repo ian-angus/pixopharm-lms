@@ -1,0 +1,114 @@
+{
+  "id": "b3880cea-0a52-4c99-8b25-befdd1d75c15",
+  "module_id": "94dfa46a-cb95-4f47-8ba2-3ecf482dbc13",
+  "title": "Internal Audits & Continuous Compliance",
+  "content": [
+    {
+      "text": "Building a Culture of Continuous Compliance",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Regulatory compliance should not be an event (scrambling before an inspection) but a culture (how you operate every day). Internal audits are the mechanism through which pharmacy managers maintain this continuous compliance. A well-designed internal audit programme systematically reviews every aspect of pharmacy operations on a rotating schedule, ensuring that nothing falls through the cracks.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Controlled Substance Reconciliation",
+          "Weekly",
+          "Pharmacist + Senior Technician",
+          "Physical count vs. DDR entries; investigate any discrepancy immediately"
+        ],
+        [
+          "Temperature Monitoring",
+          "Daily check; monthly audit",
+          "Opening technician (daily); Supervisor (monthly review)",
+          "All logs complete and within range; fridge 2–8°C; ambient below 25°C"
+        ],
+        [
+          "Expiry Date Audit",
+          "Monthly",
+          "Technician (assigned rotation)",
+          "All products within 3 months of expiry flagged; action plan for each"
+        ],
+        [
+          "Prescription Records",
+          "Monthly",
+          "Pharmacist",
+          "Sample 10% of prescriptions; check completeness of records, labelling accuracy"
+        ],
+        [
+          "SOP Compliance",
+          "Quarterly",
+          "Pharmacy Manager",
+          "Observe dispensing workflow against SOPs; identify deviations"
+        ],
+        [
+          "Staff Training Records",
+          "Quarterly",
+          "Pharmacy Manager / HR",
+          "All staff training documented; CPD records current; competency assessments up to date"
+        ],
+        [
+          "Full Premises Audit",
+          "Biannually",
+          "Pharmacy Manager + external if possible",
+          "Full walk-through using regulatory inspection checklist; document and address all findings"
+        ]
+      ],
+      "type": "table",
+      "caption": "Recommended Internal Audit Schedule for Caribbean Pharmacies",
+      "headers": [
+        "Audit Area",
+        "Frequency",
+        "Responsible",
+        "Key Checks"
+      ]
+    },
+    {
+      "body": "The purpose of internal audits is not to catch and punish staff — it is to identify and fix system weaknesses before regulators find them. When an internal audit reveals a problem, it should be treated as a learning opportunity, not a disciplinary event. A pharmacy where staff are afraid to report problems has a culture of concealment, not compliance.",
+      "type": "text"
+    },
+    {
+      "body": "Every compliance-related action should leave an audit trail — a documented record of what was done, by whom, when, and why. Temperature logs should be signed. Controlled substance counts should be witnessed by two people. SOP reviews should be dated and signed by all staff who reviewed them. In the event of an inspection or legal challenge, your audit trail is your evidence of due diligence.",
+      "type": "callout",
+      "title": "The Audit Trail Principle",
+      "variant": "info"
+    },
+    {
+      "text": "Building a Compliance Calendar",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "A compliance calendar maps all regulatory requirements, licence renewal dates, internal audit schedules, and reporting deadlines across the entire year. This visual tool ensures that nothing is forgotten in the rush of daily operations. Display it prominently in the dispensary and review it at monthly management meetings.",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "January: Annual controlled substance inventory submission (T&T); Pharmacy licence renewal (check your jurisdiction's date)",
+        "Quarterly: Internal SOP compliance audit; staff training record review",
+        "Monthly: Controlled substance reconciliation; expiry audit; insurance claims review; temperature log audit",
+        "Weekly: Quick controlled substance spot-check; FEFO stock rotation check",
+        "Annually: Pharmacist registration renewal; premises licence renewal; insurance programme re-enrolment; data protection registration renewal"
+      ],
+      "ordered": false
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Annually, before the annual report is due",
+        "Monthly, during the regular inventory count",
+        "Weekly, with physical count verified against DDR entries",
+        "Only when the inspector asks for it"
+      ],
+      "question": "How often should a Caribbean pharmacy conduct a physical count of controlled substances and reconcile against the Dangerous Drugs Register?",
+      "explanation": "Best practice is to reconcile controlled substance physical counts against the DDR weekly. This frequency allows discrepancies to be detected and investigated promptly, while still being operationally feasible. Waiting for monthly or annual counts allows too much time for errors or diversion to accumulate undetected.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 25
+}

@@ -1,0 +1,195 @@
+{
+  "id": "a61c4ceb-7bdc-4810-963c-728199c38ecf",
+  "module_id": "aaa6f0c8-9dee-4403-9dce-33b8977e2a1c",
+  "title": "Common Prescribing Patterns & Top Dispensed Medications in T&T",
+  "content": [
+    {
+      "text": "What Trinidad & Tobago Prescribes Most",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Trinidad and Tobago has one of the highest per-capita rates of non-communicable diseases (NCDs) in the Caribbean. Hypertension affects an estimated 30% of the adult population, diabetes approximately 15%, and cardiovascular disease remains the leading cause of death. These disease patterns directly drive prescribing — and, by extension, what you will spend most of your time dispensing as a pharmacy technician in T&T.",
+      "type": "text"
+    },
+    {
+      "text": "Top 20 Dispensed Medications in T&T Community Pharmacies",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "rows": [
+        [
+          "1",
+          "Amlodipine 5mg/10mg",
+          "Calcium channel blocker",
+          "Hypertension"
+        ],
+        [
+          "2",
+          "Metformin 500mg/850mg",
+          "Biguanide",
+          "Type 2 diabetes"
+        ],
+        [
+          "3",
+          "Omeprazole 20mg",
+          "Proton pump inhibitor",
+          "GERD, gastric ulcer"
+        ],
+        [
+          "4",
+          "Losartan 50mg/100mg",
+          "ARB",
+          "Hypertension"
+        ],
+        [
+          "5",
+          "Atorvastatin 20mg/40mg",
+          "Statin",
+          "Hyperlipidaemia"
+        ],
+        [
+          "6",
+          "Amoxicillin 500mg",
+          "Penicillin antibiotic",
+          "Bacterial infections"
+        ],
+        [
+          "7",
+          "Paracetamol 500mg",
+          "Analgesic/antipyretic",
+          "Pain, fever"
+        ],
+        [
+          "8",
+          "Enalapril 5mg/10mg",
+          "ACE inhibitor",
+          "Hypertension, heart failure"
+        ],
+        [
+          "9",
+          "Salbutamol inhaler 100mcg",
+          "Beta-2 agonist",
+          "Asthma, bronchospasm"
+        ],
+        [
+          "10",
+          "Hydrochlorothiazide 25mg",
+          "Thiazide diuretic",
+          "Hypertension"
+        ],
+        [
+          "11",
+          "Glibenclamide 5mg",
+          "Sulphonylurea",
+          "Type 2 diabetes"
+        ],
+        [
+          "12",
+          "Diclofenac 50mg",
+          "NSAID",
+          "Pain, inflammation"
+        ],
+        [
+          "13",
+          "Simvastatin 20mg",
+          "Statin",
+          "Hyperlipidaemia"
+        ],
+        [
+          "14",
+          "Ciprofloxacin 500mg",
+          "Fluoroquinolone",
+          "Bacterial infections"
+        ],
+        [
+          "15",
+          "Aspirin 81mg",
+          "Antiplatelet",
+          "Cardiovascular prevention"
+        ],
+        [
+          "16",
+          "Fluoxetine 20mg",
+          "SSRI",
+          "Depression"
+        ],
+        [
+          "17",
+          "Metronidazole 400mg",
+          "Nitroimidazole",
+          "Infections (anaerobic, protozoal)"
+        ],
+        [
+          "18",
+          "Insulin NPH (Humulin N)",
+          "Intermediate-acting insulin",
+          "Diabetes (Type 1 & 2)"
+        ],
+        [
+          "19",
+          "Carbamazepine 200mg",
+          "Anticonvulsant",
+          "Epilepsy"
+        ],
+        [
+          "20",
+          "Nifedipine 30mg XL",
+          "Calcium channel blocker",
+          "Hypertension"
+        ]
+      ],
+      "type": "table",
+      "caption": "Most Commonly Dispensed Medications in T&T (approximate ranking)",
+      "headers": [
+        "Rank",
+        "Medication",
+        "Class",
+        "Primary Indication"
+      ]
+    },
+    {
+      "text": "Prescribing Patterns — What to Expect",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "type": "list",
+      "items": [
+        "Polypharmacy is extremely common: many patients are on 4-6 medications simultaneously for hypertension, diabetes, and cholesterol",
+        "Combination therapy for hypertension is standard: expect prescriptions for ACE inhibitor + diuretic, or ARB + calcium channel blocker",
+        "Metformin is almost always first-line for Type 2 diabetes; escalation to sulphonylureas or insulin is frequent",
+        "Antibiotics are prescribed liberally — particularly amoxicillin, ciprofloxacin, and azithromycin; antibiotic stewardship is a growing concern",
+        "Proton pump inhibitors (PPIs) like omeprazole are among the most over-prescribed medications, often continued long-term without review",
+        "Traditional remedies (bush teas, herbal supplements) are used alongside prescribed medications — always ask patients about complementary use"
+      ],
+      "ordered": false
+    },
+    {
+      "body": "T&T has a strong culture of self-medication. Patients commonly purchase antibiotics, anti-inflammatories, and even prescription medications over the counter without a prescription — particularly from smaller pharmacies or informal vendors. While this is technically illegal for prescription-only medications, the practice is widespread. As a pharmacy technician, you should encourage appropriate prescription-based dispensing while being non-judgmental about patients' self-care habits.",
+      "type": "callout",
+      "title": "The Trini Drug Culture",
+      "variant": "info"
+    },
+    {
+      "term": "Polypharmacy",
+      "type": "key-term",
+      "definition": "The concurrent use of multiple medications by a single patient, typically defined as five or more regular medications. In T&T, polypharmacy is extremely common among patients with co-existing hypertension, diabetes, and cardiovascular disease. Pharmacy technicians must be vigilant about potential drug interactions when processing multi-drug prescriptions."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Sulphonylureas (e.g. Glibenclamide)",
+        "Insulin (NPH or Regular)",
+        "Biguanides (e.g. Metformin)",
+        "DPP-4 inhibitors (e.g. Sitagliptin)"
+      ],
+      "question": "Which class of medication is typically first-line for Type 2 diabetes in Trinidad & Tobago?",
+      "explanation": "Metformin, a biguanide, is almost universally first-line for Type 2 diabetes in T&T (and globally). It is effective, affordable, available on both the CDAP formulary and the national formulary, and has a well-established safety profile. Sulphonylureas or insulin are typically added when metformin alone is insufficient.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 4,
+  "duration_minutes": 25
+}

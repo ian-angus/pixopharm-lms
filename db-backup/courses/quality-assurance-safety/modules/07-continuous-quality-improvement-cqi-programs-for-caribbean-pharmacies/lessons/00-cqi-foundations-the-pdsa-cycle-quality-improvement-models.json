@@ -1,0 +1,85 @@
+{
+  "id": "da26aba4-5c1a-4e3e-bf26-fea696238ca3",
+  "module_id": "422a447f-ed9b-4281-abdb-94d3a9124d6c",
+  "title": "CQI Foundations: The PDSA Cycle & Quality Improvement Models",
+  "content": [
+    {
+      "text": "What Is Continuous Quality Improvement?",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Continuous Quality Improvement (CQI) is a systematic, ongoing approach to enhancing the quality and safety of processes, products, and services. Unlike traditional quality control — which focuses on detecting and correcting defects — CQI seeks to raise the baseline performance of the entire system. In pharmacy, CQI means not just catching errors, but redesigning processes so that errors become less likely, service becomes faster, and patient outcomes improve over time.",
+      "type": "text"
+    },
+    {
+      "term": "PDSA Cycle (Plan-Do-Study-Act)",
+      "type": "key-term",
+      "definition": "A four-stage iterative quality improvement framework developed by W. Edwards Deming. Plan: identify the problem and design a test of change. Do: implement the change on a small scale. Study: analyse the results — did the change produce the desired improvement? Act: adopt the change, modify it, or abandon it based on the evidence. Then repeat."
+    },
+    {
+      "body": "The PDSA cycle is the most widely used CQI model in healthcare, including pharmacy. Its power lies in its simplicity and iterative nature — you do not need to design the perfect solution before starting. Instead, you make a small change, study its effect, learn, and adjust. Each cycle brings the system closer to optimal performance. This 'small tests of change' philosophy is particularly suited to Caribbean pharmacies, where resources for large-scale transformation are limited but incremental improvements are always achievable.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "PLAN",
+          "Identify the problem, collect baseline data, develop a theory of improvement, design a small test of change",
+          "Problem: 12% of dispensed prescriptions have label discrepancies. Theory: A mandatory label-check step will reduce discrepancies. Test: Implement a label-check checklist for one week."
+        ],
+        [
+          "DO",
+          "Implement the test on a small scale, document observations and problems",
+          "Run the label-check checklist for one week during the Monday-Friday morning shift. The technician uses the checklist for every prescription."
+        ],
+        [
+          "STUDY",
+          "Analyse the results — compare outcome data to baseline, identify what worked and what did not",
+          "After one week, label discrepancies dropped from 12% to 3%. The checklist added approximately 30 seconds per prescription. Staff found it straightforward."
+        ],
+        [
+          "ACT",
+          "If successful, adopt the change system-wide. If not, modify and re-test. If failed, abandon and try a different approach",
+          "Adopt the label-check checklist for all shifts and all technicians. Add it to the dispensing SOP. Set a review date for one month to confirm sustained improvement."
+        ]
+      ],
+      "type": "table",
+      "caption": "The PDSA Cycle in Detail",
+      "headers": [
+        "Stage",
+        "Key Activities",
+        "Caribbean Pharmacy Example"
+      ]
+    },
+    {
+      "body": "The most common mistake in CQI is trying to change too much at once. A PDSA cycle should start with the smallest possible test — one technician, one shift, one process, one week. If it works, expand. If it does not, you have lost very little. This approach is ideal for Caribbean pharmacies where disrupting the entire operation for an untested change is impractical.",
+      "type": "callout",
+      "title": "Start Small, Learn Fast",
+      "variant": "tip"
+    },
+    {
+      "text": "Other CQI Models",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "While PDSA is the most common, other CQI frameworks have specific strengths. Lean focuses on eliminating waste — unnecessary steps, waiting times, excess inventory — in processes. Six Sigma uses statistical methods to reduce process variation and defects. The Model for Improvement (IHI) wraps the PDSA cycle in three guiding questions: What are we trying to accomplish? How will we know a change is an improvement? What change can we make that will result in improvement?",
+      "type": "text"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "QA is used in pharmacies while CQI is used in hospitals",
+        "QA focuses on detecting and correcting defects; CQI focuses on systematically raising overall performance",
+        "QA is mandatory while CQI is optional",
+        "There is no difference — they are the same thing"
+      ],
+      "question": "What is the key difference between quality assurance (QA) and continuous quality improvement (CQI)?",
+      "explanation": "Quality assurance (QA) focuses on detecting and correcting defects — ensuring that processes meet established standards. Continuous quality improvement (CQI) goes further: it seeks to systematically raise the standards themselves, redesigning processes to make errors less likely, improve efficiency, and enhance patient outcomes over time. CQI builds on QA but extends beyond it.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 25
+}

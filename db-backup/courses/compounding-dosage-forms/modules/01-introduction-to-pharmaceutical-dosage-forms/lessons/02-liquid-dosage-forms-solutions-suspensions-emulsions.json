@@ -1,0 +1,120 @@
+{
+  "id": "fb0c0af9-9473-4913-b9d6-c3963da7a25a",
+  "module_id": "3fc15d29-bbc6-49e7-9434-0660669d41ee",
+  "title": "Liquid Dosage Forms: Solutions, Suspensions & Emulsions",
+  "content": [
+    {
+      "text": "Liquid Preparations in Caribbean Pharmacy Practice",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Liquid dosage forms are among the most frequently compounded preparations in Caribbean pharmacies. They are essential for paediatric patients who cannot swallow tablets, for elderly patients with dysphagia, and for patients requiring flexible dosing. Liquid dosage forms include solutions (where the drug is completely dissolved), suspensions (where the drug is dispersed as fine particles in a vehicle), and emulsions (where two immiscible liquids are combined with an emulsifying agent).",
+      "type": "text"
+    },
+    {
+      "body": "In the Caribbean, liquid preparations face unique stability challenges. High ambient temperatures accelerate chemical degradation, microbial growth is more rapid in warm conditions, and many liquid preparations require refrigeration that may be unreliable in areas with frequent power outages. Pharmacy technicians must understand the science behind each type of liquid preparation to compound them effectively and counsel patients on proper storage and use.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "Solution",
+          "Homogeneous mixture where the drug is completely dissolved in a solvent",
+          "Simple syrup, oral rehydration solution (ORS)",
+          "Clear; no settling; uniform concentration throughout"
+        ],
+        [
+          "Suspension",
+          "Heterogeneous mixture where insoluble drug particles are dispersed in a liquid vehicle",
+          "Amoxicillin oral suspension, calamine lotion",
+          "Requires shaking before use; particles settle over time; 'Shake Well' label mandatory"
+        ],
+        [
+          "Emulsion",
+          "Mixture of two immiscible liquids (oil and water) stabilised by an emulsifying agent",
+          "Cod liver oil emulsion, liquid paraffin emulsion",
+          "Oil-in-water (o/w) or water-in-oil (w/o); may cream or separate over time"
+        ],
+        [
+          "Elixir",
+          "Clear, sweetened, hydroalcoholic solution",
+          "Diphenhydramine elixir",
+          "Contains alcohol (typically 10–25%); self-preserving due to alcohol content"
+        ],
+        [
+          "Syrup",
+          "Concentrated, viscous, aqueous solution of sugar (typically 66.7% w/v sucrose)",
+          "Cough syrups, paediatric vitamin preparations",
+          "High sugar concentration acts as preservative; may crystallise in cool storage"
+        ]
+      ],
+      "type": "table",
+      "caption": "Types of Liquid Dosage Forms",
+      "headers": [
+        "Type",
+        "Definition",
+        "Example",
+        "Key Characteristic"
+      ]
+    },
+    {
+      "term": "Suspension",
+      "type": "key-term",
+      "definition": "A coarse dispersion of insoluble solid particles (the dispersed phase) in a liquid vehicle (the dispersion medium). Suspensions require shaking before use to redistribute settled particles and ensure accurate dosing. A well-formulated suspension should settle slowly, redisperse easily upon shaking, and pour smoothly. The particle size and viscosity of the vehicle are critical to stability."
+    },
+    {
+      "body": "Every suspension dispensed in the Caribbean — whether commercially manufactured or compounded — must bear a 'SHAKE WELL BEFORE USE' auxiliary label. Failing to shake a suspension before measuring a dose can result in the patient receiving a sub-therapeutic dose from the top of the bottle (mostly vehicle) or a toxic dose from the bottom (concentrated drug particles). During patient counselling, physically demonstrate the correct shaking technique: invert and shake vigorously for 10–15 seconds, not a gentle swirl.",
+      "type": "callout",
+      "title": "The 'Shake Well' Rule",
+      "variant": "tip"
+    },
+    {
+      "text": "Reconstitution of Dry Powder for Suspension",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Many oral suspensions — particularly antibiotics like amoxicillin, co-amoxiclav, and cephalexin — are supplied as dry powder for reconstitution. This is because the drug is unstable in liquid form and would degrade rapidly, especially in tropical storage. The powder is stable at room temperature, but once reconstituted with water, the preparation typically has a beyond-use date of only 7–14 days, and many require refrigeration. This short stability window is a critical counselling point in the Caribbean, where patients may not have reliable refrigeration.",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Check the manufacturer's instructions for the correct volume of water to add",
+        "Use purified or distilled water — never tap water (Caribbean tap water quality varies significantly by island and district)",
+        "Tap the bottle to loosen the powder before adding water",
+        "Add approximately half the required volume of water first and shake vigorously",
+        "Add the remaining water and shake again until the powder is uniformly dispersed",
+        "Label with the reconstitution date, beyond-use date, and 'SHAKE WELL' and 'KEEP REFRIGERATED' auxiliary labels",
+        "Counsel the patient on storage, shaking, accurate measuring (using an oral syringe, not a household spoon), and the beyond-use date"
+      ],
+      "ordered": true
+    },
+    {
+      "type": "case-study",
+      "title": "Case Study: The Amoxicillin That Lost Its Potency",
+      "scenario": "A mother brings her 4-year-old child back to a pharmacy in San Fernando, Trinidad, complaining that the amoxicillin suspension prescribed for the child's ear infection 'isn't working'. The child has been on the medication for 5 days. Upon questioning, the pharmacy technician discovers that the mother has been storing the reconstituted suspension on the kitchen counter (ambient temperature ~31°C) because her refrigerator is not working. The suspension was reconstituted 10 days ago.",
+      "questions": [
+        "What is the likely reason the medication is not effective?",
+        "What should the pharmacy technician advise the mother to do?",
+        "How could this situation have been prevented at the point of dispensing?"
+      ],
+      "discussion": "Reconstituted amoxicillin suspension is unstable at temperatures above 25°C and typically has a beyond-use date of 14 days when refrigerated, or 7 days at room temperature (depending on the manufacturer). Stored at 31°C for 10 days, the drug has almost certainly degraded significantly, losing potency. The technician should refer the mother to the pharmacist for a new prescription and fresh supply, counsel on the critical importance of refrigeration, and explore solutions if refrigeration is unavailable (e.g., storing in a cool bag with ice, using a neighbour's refrigerator, or requesting an alternative formulation). At the point of dispensing, the technician should have asked about refrigeration availability and offered guidance accordingly. This case illustrates why Caribbean pharmacy technicians must proactively assess a patient's storage situation before dispensing temperature-sensitive preparations."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Solutions",
+        "Elixirs",
+        "Suspensions",
+        "All liquid dosage forms"
+      ],
+      "question": "Which type of liquid dosage form requires a 'SHAKE WELL BEFORE USE' label?",
+      "explanation": "Suspensions contain insoluble drug particles dispersed in a liquid vehicle. These particles settle over time due to gravity (sedimentation). Shaking before use is essential to redistribute the particles uniformly throughout the vehicle, ensuring the patient receives an accurate dose. Solutions and elixirs are homogeneous and do not require shaking.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 30
+}

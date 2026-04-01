@@ -1,0 +1,171 @@
+{
+  "id": "ee87af6d-3c9f-41ac-9030-80180a4a323a",
+  "module_id": "d3c3203a-0e54-43ca-b9a3-1bd6c00c0d63",
+  "title": "Common Medical Abbreviations",
+  "content": [
+    {
+      "text": "Abbreviations Used in Caribbean Prescriptions",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Medical abbreviations are shorthand used by prescribers to communicate instructions efficiently. As a pharmacy technician, you must know these instantly — misinterpreting an abbreviation can lead to a serious medication error. The abbreviations below are the ones you will encounter most frequently in Caribbean pharmacy practice.",
+      "type": "text"
+    },
+    {
+      "rows": [
+        [
+          "PO",
+          "Per os",
+          "By mouth"
+        ],
+        [
+          "PRN",
+          "Pro re nata",
+          "As needed"
+        ],
+        [
+          "BID / BD",
+          "Bis in die",
+          "Twice daily"
+        ],
+        [
+          "TID / TDS",
+          "Ter in die / Ter die sumendus",
+          "Three times daily"
+        ],
+        [
+          "QID / QDS",
+          "Quater in die",
+          "Four times daily"
+        ],
+        [
+          "STAT",
+          "Statim",
+          "Immediately"
+        ],
+        [
+          "AC",
+          "Ante cibum",
+          "Before meals"
+        ],
+        [
+          "PC",
+          "Post cibum",
+          "After meals"
+        ],
+        [
+          "HS",
+          "Hora somni",
+          "At bedtime"
+        ],
+        [
+          "Q4H",
+          "Quaque 4 hora",
+          "Every 4 hours"
+        ],
+        [
+          "OD",
+          "Omni die",
+          "Once daily"
+        ],
+        [
+          "SL",
+          "Sublingual",
+          "Under the tongue"
+        ],
+        [
+          "PR",
+          "Per rectum",
+          "Rectally"
+        ],
+        [
+          "TOP",
+          "Topical",
+          "Applied to skin"
+        ],
+        [
+          "INH",
+          "Inhalation",
+          "By inhaler"
+        ],
+        [
+          "SC / SubQ",
+          "Subcutaneous",
+          "Under the skin (injection)"
+        ],
+        [
+          "IM",
+          "Intramuscular",
+          "Into the muscle (injection)"
+        ],
+        [
+          "IV",
+          "Intravenous",
+          "Into the vein (injection)"
+        ],
+        [
+          "NKA",
+          "—",
+          "No known allergies"
+        ],
+        [
+          "NKDA",
+          "—",
+          "No known drug allergies"
+        ]
+      ],
+      "type": "table",
+      "caption": "Essential Prescription Abbreviations",
+      "headers": [
+        "Abbreviation",
+        "Latin Origin",
+        "English Meaning"
+      ]
+    },
+    {
+      "body": "The following abbreviations have been identified by ISMP (Institute for Safe Medication Practices) as error-prone and should NEVER be used: 'U' (write 'units'), 'IU' (write 'international units'), 'QD' (write 'daily' — easily confused with QID), 'QOD' (write 'every other day'), 'MS' (ambiguous: morphine sulfate or magnesium sulfate?), trailing zeros (write '1 mg' not '1.0 mg'), lack of leading zero (write '0.5 mg' not '.5 mg'). If you receive a prescription with these abbreviations, clarify with the prescriber before dispensing.",
+      "type": "callout",
+      "title": "Dangerous Abbreviations — Do Not Use",
+      "variant": "danger"
+    },
+    {
+      "type": "island-comparison",
+      "title": "Prescription Language Conventions",
+      "islands": [
+        {
+          "flag": "🇹🇹",
+          "name": "Trinidad & Tobago",
+          "details": [
+            "Prescriptions typically use British-style abbreviations (BD, TDS, QDS rather than BID, TID, QID)",
+            "Metric system is standard (milligrams, millilitres)",
+            "Prescriptions must be written in English",
+            "Electronic prescriptions are increasingly common in private practice"
+          ]
+        },
+        {
+          "flag": "🇯🇲",
+          "name": "Jamaica",
+          "details": [
+            "Mix of British and American abbreviation styles depending on where the prescriber trained",
+            "You may see both 'BD' and 'BID' for twice daily — always verify intent",
+            "Prescriptions must be written in English",
+            "Handwritten prescriptions remain common in public health facilities"
+          ]
+        },
+        {
+          "flag": "🇧🇧",
+          "name": "Barbados",
+          "details": [
+            "Predominantly British abbreviation conventions (BD, TDS, QDS)",
+            "The Barbados Drug Service standardises abbreviation usage in public facilities",
+            "Prescriptions from polyclinics follow a standardised format",
+            "Growing adoption of electronic prescriptions in private sector"
+          ]
+        }
+      ]
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 15
+}

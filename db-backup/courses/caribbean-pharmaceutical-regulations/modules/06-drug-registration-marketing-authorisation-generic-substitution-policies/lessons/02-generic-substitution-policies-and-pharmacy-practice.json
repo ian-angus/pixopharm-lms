@@ -1,0 +1,86 @@
+{
+  "id": "411e164f-bb28-47fd-b6ac-cec4e19ebe9b",
+  "module_id": "e456d723-48a8-4e9e-9fc2-b733d161a607",
+  "title": "Generic Substitution Policies and Pharmacy Practice",
+  "content": [
+    {
+      "text": "Substituting at the Pharmacy Counter",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Generic substitution — the practice of dispensing a generic equivalent when a prescription specifies a brand-name product — is a powerful tool for improving medicine affordability. But it is also a practice surrounded by regulatory rules, professional responsibilities, and patient concerns. Caribbean jurisdictions take varying approaches to generic substitution, and pharmacy technicians must understand the rules that apply in their specific practice setting.",
+      "type": "text"
+    },
+    {
+      "type": "island-comparison",
+      "title": "Generic Substitution Policies Across the Caribbean",
+      "islands": [
+        {
+          "flag": "🇹🇹",
+          "name": "Trinidad & Tobago",
+          "details": [
+            "Generic substitution is permitted when the prescriber does not specifically prohibit it",
+            "Public sector: NIPDEC procures primarily generic medicines for the public health system based on the National Drug Formulary",
+            "Private sector: pharmacists may substitute with patient consent, unless the prescriber writes 'Do Not Substitute' or 'Brand Necessary'",
+            "The pharmacist bears professional responsibility for ensuring the generic is of acceptable quality"
+          ]
+        },
+        {
+          "flag": "🇯🇲",
+          "name": "Jamaica",
+          "details": [
+            "Generic substitution is actively encouraged as part of Jamaica's rational drug use policy",
+            "The NHF Card Programme formulary lists generic products as the primary funded option",
+            "Pharmacists can substitute unless the prescriber explicitly requires a specific brand",
+            "Jamaica's pharmaceutical market has a strong generic presence, supported by government policy"
+          ]
+        },
+        {
+          "flag": "🇧🇧",
+          "name": "Barbados",
+          "details": [
+            "The Barbados National Drug Formulary (BNDF) is primarily a generic formulary for the public sector",
+            "Public sector: dispensing follows BNDF, which specifies generic products by INN (International Non-proprietary Name)",
+            "Private sector: pharmacists may substitute with appropriate professional judgement and patient communication",
+            "The Drug Service procures quality-assured generics for all public health facilities"
+          ]
+        }
+      ],
+      "description": "Different Caribbean nations take different approaches to generic substitution, reflecting their unique regulatory philosophies and healthcare structures."
+    },
+    {
+      "body": "Many patients are wary of generic substitution. They may believe that cheaper means inferior, or they may be attached to the familiar appearance of their brand-name medicine. As a pharmacy technician, you can support adherence by explaining (under pharmacist guidance) that the generic contains the same active ingredient, has been evaluated for equivalence, and is endorsed by the national regulatory authority. Empathy and clear communication overcome most patient concerns.",
+      "type": "callout",
+      "title": "Patient Communication Is Key",
+      "variant": "tip"
+    },
+    {
+      "body": "The International Non-proprietary Name (INN) system, maintained by WHO, provides a universal language for active pharmaceutical ingredients. When a prescription is written using the INN (e.g. 'amlodipine' rather than 'Norvasc'), it enables the pharmacy to dispense any registered generic equivalent. Caribbean formularies increasingly use INN prescribing as standard practice.",
+      "type": "text"
+    },
+    {
+      "term": "International Non-proprietary Name (INN)",
+      "type": "key-term",
+      "definition": "A unique name assigned to an active pharmaceutical ingredient by the World Health Organisation. INNs facilitate clear communication about medicines worldwide and enable generic prescribing. For example, 'paracetamol' is the INN for the analgesic known by the brand name Panadol (or 'acetaminophen' in the US system)."
+    },
+    {
+      "body": "For pharmacy technicians, the practical implications are clear: always check whether the prescriber has indicated 'Do Not Substitute' or 'Brand Necessary' before selecting a generic. When substitution is permitted, select only from registered, quality-assured generic products. Inform the patient of the substitution. And always defer to the supervising pharmacist for clinical judgement on substitution decisions, particularly for narrow therapeutic index drugs.",
+      "type": "text"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "When the generic is cheaper than the brand",
+        "When the prescriber has written 'Do Not Substitute' or 'Brand Necessary' on the prescription",
+        "When the patient has been taking the generic for more than a year",
+        "When the generic is manufactured in a different country from the innovator"
+      ],
+      "question": "Under what circumstances should a pharmacy technician NOT proceed with generic substitution?",
+      "explanation": "Generic substitution must not proceed when the prescriber has explicitly indicated 'Do Not Substitute,' 'Brand Necessary,' or similar notation on the prescription. This instruction must be respected regardless of cost or availability considerations. Additionally, extra caution is warranted for narrow therapeutic index drugs.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 20
+}

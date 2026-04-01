@@ -1,0 +1,92 @@
+{
+  "id": "f9883a21-4330-49fd-98d8-419393e2a6c5",
+  "module_id": "9ac6450c-aeb9-430c-9763-10a0ce1064e5",
+  "title": "Half-Life, Therapeutic Index & Dosing Implications",
+  "content": [
+    {
+      "text": "Putting Pharmacokinetic Numbers to Work",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Two pharmacokinetic parameters have direct implications for how drugs are prescribed and dispensed: half-life and therapeutic index. Understanding these concepts explains why some drugs are taken once daily while others require dosing every 4-6 hours, and why some drugs require regular blood monitoring while others do not.",
+      "type": "text"
+    },
+    {
+      "term": "Half-life (t½)",
+      "type": "key-term",
+      "definition": "The time required for the plasma concentration of a drug to decrease by 50%. A drug with a long half-life (e.g., amlodipine, ~35 hours) stays in the body longer and can be dosed less frequently. A drug with a short half-life (e.g., paracetamol, ~2 hours) is cleared quickly and must be dosed more often."
+    },
+    {
+      "term": "Therapeutic Index (TI)",
+      "type": "key-term",
+      "definition": "The ratio of the toxic dose to the therapeutic dose (TD50/ED50). A drug with a narrow therapeutic index (NTI) has a small margin between the effective dose and the toxic dose. Examples include warfarin, digoxin, lithium, and phenytoin — all requiring careful monitoring."
+    },
+    {
+      "rows": [
+        [
+          "Amlodipine",
+          "30-50 hours",
+          "Once daily",
+          "Most-dispensed antihypertensive in the Caribbean"
+        ],
+        [
+          "Metformin",
+          "4-8 hours",
+          "Twice daily",
+          "First-line for diabetes — covered by CDAP and NHF"
+        ],
+        [
+          "Amoxicillin",
+          "1-1.5 hours",
+          "Three times daily",
+          "Most-dispensed antibiotic in Caribbean pharmacies"
+        ],
+        [
+          "Atenolol",
+          "6-7 hours",
+          "Once daily",
+          "Long enough half-life for convenient once-daily dosing"
+        ],
+        [
+          "Paracetamol",
+          "1-4 hours",
+          "Every 4-6 hours",
+          "Most common analgesic — often purchased OTC"
+        ]
+      ],
+      "type": "table",
+      "caption": "Half-Life and Dosing Frequency of Common Caribbean Medications",
+      "headers": [
+        "Drug",
+        "Half-Life",
+        "Typical Dosing",
+        "Caribbean Context"
+      ]
+    },
+    {
+      "body": "Drugs with a narrow therapeutic index (warfarin, digoxin, lithium, phenytoin, theophylline) require extra care during dispensing. Small changes in dose, formulation, or interacting medications can push the patient from therapeutic to toxic. When dispensing NTI drugs, always verify the dose, check for interactions, and confirm the patient understands their monitoring requirements.",
+      "type": "callout",
+      "title": "Narrow Therapeutic Index Drugs: Extra Vigilance Required",
+      "variant": "danger"
+    },
+    {
+      "body": "Steady state is reached after approximately 4-5 half-lives of regular dosing. At steady state, the rate of drug administration equals the rate of elimination, and plasma levels remain relatively constant. For amlodipine (half-life ~35 hours), steady state is reached in about 7-8 days. This is why patients with newly prescribed amlodipine may not see the full blood pressure lowering effect for a week or more.",
+      "type": "text"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "After the first dose",
+        "After 2 days",
+        "After 7-8 days (4-5 half-lives)",
+        "After 30 days"
+      ],
+      "question": "A patient starts taking amlodipine 5 mg daily for hypertension. The half-life of amlodipine is approximately 35 hours. When will the drug reach steady-state plasma concentration?",
+      "explanation": "Steady state is achieved after 4-5 half-lives of repeated dosing. For amlodipine with a 35-hour half-life: 4 x 35 = 140 hours (about 6 days) to 5 x 35 = 175 hours (about 7 days). This means the full antihypertensive effect may take a week to develop.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 3,
+  "duration_minutes": 20
+}

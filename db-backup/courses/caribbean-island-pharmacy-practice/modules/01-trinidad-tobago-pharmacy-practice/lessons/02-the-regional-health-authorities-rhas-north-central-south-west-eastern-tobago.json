@@ -1,0 +1,117 @@
+{
+  "id": "2eefa509-587f-4561-9442-706d1e36cc20",
+  "module_id": "aaa6f0c8-9dee-4403-9dce-33b8977e2a1c",
+  "title": "The Regional Health Authorities (RHAs): North Central, South-West, Eastern, Tobago",
+  "content": [
+    {
+      "text": "Trinidad & Tobago's Regional Health Authorities",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Trinidad and Tobago's public health system is decentralised through five Regional Health Authorities (RHAs), each responsible for managing health facilities, services, and pharmaceutical supply within a defined geographic area. For pharmacy technicians, understanding the RHA system is crucial because your workplace, your supply chain, and even your employment terms will differ depending on which RHA you work under.",
+      "type": "text"
+    },
+    {
+      "term": "Regional Health Authority (RHA)",
+      "type": "key-term",
+      "definition": "An autonomous body established under the Regional Health Authorities Act (2000) to manage and deliver public health services — including hospital and community pharmacy services — within a defined geographic region of Trinidad and Tobago. Each RHA operates with its own budget, management structure, and pharmaceutical procurement processes."
+    },
+    {
+      "rows": [
+        [
+          "North-West Regional Health Authority (NWRHA)",
+          "Port of Spain",
+          "Port of Spain General Hospital, St. James Medical Complex",
+          "Serves the urban capital corridor; highest patient volume; most CDAP prescriptions processed in public sector"
+        ],
+        [
+          "North Central Regional Health Authority (NCRHA)",
+          "Mt. Hope / Chaguanas",
+          "Eric Williams Medical Sciences Complex (EWMSC), Couva Hospital",
+          "Houses UWI's medical campus; major teaching hospital pharmacy; most complex pharmaceutical operations"
+        ],
+        [
+          "Eastern Regional Health Authority (ERHA)",
+          "Sangre Grande",
+          "Sangre Grande Hospital",
+          "Serves rural eastern communities; challenges with patient travel distances; limited after-hours pharmacy access"
+        ],
+        [
+          "South-West Regional Health Authority (SWRHA)",
+          "San Fernando",
+          "San Fernando General Hospital, Point Fortin Hospital",
+          "Second-largest RHA; significant industrial health needs (petrochemical sector); busy outpatient pharmacy"
+        ],
+        [
+          "Tobago Regional Health Authority (TRHA)",
+          "Scarborough, Tobago",
+          "Scarborough General Hospital",
+          "Serves Tobago exclusively; faces unique supply chain challenges (medication must be shipped from Trinidad); smallest RHA by volume"
+        ]
+      ],
+      "type": "table",
+      "caption": "The Five Regional Health Authorities of T&T",
+      "headers": [
+        "RHA",
+        "Headquarters",
+        "Major Facilities",
+        "Key Pharmacy Notes"
+      ]
+    },
+    {
+      "text": "Pharmacy Practice Within the RHA System",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Each RHA operates hospital pharmacies, health centre dispensaries, and outpatient medication collection points. Pharmacy technicians employed by an RHA work under government terms and conditions, which typically include a fixed salary (on the public-service pay scale), pension benefits, and defined working hours. The work is often high-volume and formulary-driven — you dispense from the national formulary, not from the full range of medications available in private pharmacies.",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Hospital pharmacy: Inpatient dispensing, IV admixtures, ward stock management, narcotic control",
+        "Outpatient pharmacy: High-volume dispensing for patients discharged or attending clinics — often 200+ prescriptions per day at larger hospitals",
+        "Health centre dispensary: Smaller volume; primary-care medications for hypertension, diabetes, respiratory infections",
+        "CDAP coordination: Some RHA pharmacies also serve as CDAP dispensing points, bridging public and private-sector supply"
+      ],
+      "ordered": false
+    },
+    {
+      "body": "If you are employed by an RHA, you are a government employee. This means your employment is governed by the Public Service Commission and relevant collective bargaining agreements. Advantages include job security, pension, and leave benefits. Challenges include slower procurement processes, occasional stock-outs due to government purchasing timelines, and limited formulary options compared to the private sector.",
+      "type": "callout",
+      "title": "Working in an RHA Pharmacy",
+      "variant": "info"
+    },
+    {
+      "text": "The Tobago Factor",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "The Tobago Regional Health Authority (TRHA) deserves special mention. Tobago, the smaller sister island, has a population of approximately 60,000 but faces disproportionate pharmacy challenges. Almost all medications must be shipped from Trinidad, adding transit time and risk. The Scarborough General Hospital pharmacy is the island's primary public dispensing point, and during peak tourist season or after natural disasters, demand can spike unexpectedly. Pharmacy technicians working in Tobago must be especially skilled in inventory forecasting and emergency stock management.",
+      "type": "text"
+    },
+    {
+      "body": "RHA pharmacies are excellent starting environments for newly certified pharmacy technicians. The structured protocols, pharmacist supervision, and exposure to a wide range of conditions and medications build a strong clinical foundation. Many technicians spend 2-3 years in an RHA setting before moving to the private sector or specialised practice.",
+      "type": "callout",
+      "title": "Career Tip",
+      "variant": "tip"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "North-West Regional Health Authority (NWRHA)",
+        "Eastern Regional Health Authority (ERHA)",
+        "Tobago Regional Health Authority (TRHA)",
+        "South-West Regional Health Authority (SWRHA)"
+      ],
+      "question": "Which RHA faces unique supply chain challenges because medications must be shipped from the main island?",
+      "explanation": "The Tobago Regional Health Authority (TRHA) faces unique logistical challenges because almost all medications must be shipped from Trinidad to Tobago. This inter-island transit adds time, cost, and risk to the pharmaceutical supply chain and requires technicians to be especially skilled in inventory forecasting.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 30
+}

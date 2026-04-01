@@ -1,0 +1,156 @@
+{
+  "id": "3946ce35-e0fb-4a4d-a84b-6cf0b25d1085",
+  "module_id": "bfda189c-515f-4915-b7c9-01dc35e6f45b",
+  "title": "Putting It All Together: The Pharmacy Technician as Health Defender",
+  "content": [
+    {
+      "text": "Integrating Anatomy, Physiology & Medical Terminology into Practice",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Throughout this course, you have built a comprehensive understanding of the human body — from the molecular building blocks of medical terminology to the complex interplay of organ systems. As a pharmacy technician in the Caribbean, this knowledge is not abstract theory; it is the foundation upon which safe, effective pharmacy practice is built. Every prescription you handle involves a drug acting on a specific body system to treat a specific condition. Your ability to understand that relationship — to know what a drug does, why it was prescribed, and what could go wrong — makes you an essential member of the healthcare team.",
+      "type": "text"
+    },
+    {
+      "body": "The Caribbean's unique disease landscape demands that pharmacy technicians possess knowledge beyond what might be required in other regions. You must understand cardiovascular disease because the Caribbean has among the highest hypertension rates in the Americas. You must understand diabetes because it affects up to 15% of the adult population in some CARICOM nations. You must understand arboviral diseases because dengue, chikungunya, and Zika are annual threats. You must understand sickle cell disease because the Caribbean has among the highest prevalence rates in the world. And you must understand antimicrobial resistance because the region faces growing threats from resistant organisms.",
+      "type": "text"
+    },
+    {
+      "type": "scenario-simulation",
+      "nodes": [
+        {
+          "id": "start",
+          "text": "Mrs. Ramnath, a 62-year-old regular patient, presents three prescriptions: (1) metformin 1000 mg twice daily, (2) amlodipine 10 mg daily, (3) atorvastatin 40 mg daily. She also wants to buy ibuprofen over the counter for knee pain. She mentions she recently had blood tests and her doctor said her 'kidney number was a bit low'. What do you do first?",
+          "choices": [
+            {
+              "label": "Process all prescriptions and sell the ibuprofen without comment",
+              "feedback": "Processing everything without considering the clinical information is unsafe. The mention of low kidney function is a critical red flag that should be addressed.",
+              "isOptimal": false,
+              "nextNodeId": "poor-choice-1"
+            },
+            {
+              "label": "Flag the kidney concern to the pharmacist before processing the prescriptions, and hold the ibuprofen request",
+              "feedback": "Excellent. Reduced kidney function affects the safety of both metformin and ibuprofen. Alerting the pharmacist is the correct first step.",
+              "isOptimal": true,
+              "nextNodeId": "good-choice-1"
+            },
+            {
+              "label": "Tell Mrs. Ramnath she cannot have any of her medications until she gets new blood tests",
+              "feedback": "While your concern is valid, refusing to dispense prescribed medications is not the technician's decision to make. This should be escalated to the pharmacist.",
+              "isOptimal": false,
+              "nextNodeId": "poor-choice-2"
+            }
+          ]
+        },
+        {
+          "id": "good-choice-1",
+          "text": "The pharmacist reviews the situation and calls Mrs. Ramnath's doctor. The doctor confirms her eGFR is 42 mL/min (Stage 3b CKD) and has already adjusted the metformin dose to 500 mg twice daily — but the prescription still says 1000 mg twice daily due to a printing error. The pharmacist corrects the prescription. Now Mrs. Ramnath asks again about the ibuprofen for her knee pain. What do you advise?",
+          "choices": [
+            {
+              "label": "Explain that NSAIDs like ibuprofen can worsen kidney function and suggest she speak with the pharmacist about a safer alternative",
+              "feedback": "Perfect. NSAIDs are nephrotoxic and should be avoided in CKD. Directing her to the pharmacist for a safer alternative (paracetamol, topical NSAID, or referral) is the ideal response.",
+              "isOptimal": true,
+              "nextNodeId": "optimal-end"
+            },
+            {
+              "label": "Sell her the ibuprofen — it is an OTC product and she has a right to buy it",
+              "feedback": "While ibuprofen is OTC, selling it to a patient with known CKD (eGFR 42) is unsafe. NSAIDs can further damage the kidneys and should be avoided in renal impairment. A pharmacy technician's duty of care extends to OTC sales.",
+              "isOptimal": false,
+              "nextNodeId": "poor-end-1"
+            },
+            {
+              "label": "Tell her ibuprofen is out of stock to avoid conflict",
+              "feedback": "Lying to a patient is never acceptable, even with good intentions. The patient deserves honest, professional communication about why ibuprofen may not be safe for her.",
+              "isOptimal": false,
+              "nextNodeId": "poor-end-2"
+            }
+          ]
+        },
+        {
+          "id": "optimal-end",
+          "text": "Mrs. Ramnath thanks you for looking out for her health. The pharmacist recommends paracetamol 1 g four times daily for her knee pain and suggests she ask her doctor about a referral to physiotherapy. Her corrected prescriptions are dispensed safely, and a note is added to her patient profile flagging her CKD status for future dispensing. You have potentially prevented both a metformin overdose and NSAID-induced kidney damage.",
+          "isEnd": true,
+          "outcome": "success",
+          "summary": "Outstanding clinical awareness. You identified a safety concern from a casual patient comment, escalated appropriately to the pharmacist, and helped prevent a potentially dangerous OTC sale. This is exactly the kind of vigilance that makes pharmacy technicians invaluable healthcare professionals."
+        },
+        {
+          "id": "poor-choice-1",
+          "text": "You dispense all three prescriptions and sell the ibuprofen. Two weeks later, Mrs. Ramnath is admitted to hospital with acute kidney injury. Her eGFR had been 42 mL/min (Stage 3b CKD), but the combination of metformin 1000 mg twice daily (dose too high for her kidney function) and ibuprofen (nephrotoxic) caused further kidney damage. Her metformin also caused lactic acidosis requiring ICU admission.",
+          "isEnd": true,
+          "outcome": "failure",
+          "summary": "This outcome illustrates why pharmacy technicians must listen carefully to patients and flag clinical concerns. The patient mentioned low kidney numbers — this was a critical safety signal. Metformin at the prescribed dose was too high for her CKD, and ibuprofen further damaged her kidneys."
+        },
+        {
+          "id": "poor-choice-2",
+          "text": "Mrs. Ramnath is upset and leaves without her medications. She goes to another pharmacy that dispenses everything without question. She takes the full metformin dose and buys ibuprofen elsewhere. The outcome is the same: hospitalisation for acute kidney injury. Additionally, she files a complaint about your pharmacy for refusing to dispense her doctor's prescriptions.",
+          "isEnd": true,
+          "outcome": "failure",
+          "summary": "While your instinct to protect the patient was correct, the execution was wrong. The appropriate action was to flag the concern to the supervising pharmacist — not to refuse dispensing unilaterally. The pharmacist has the authority and clinical expertise to contact the prescriber, verify doses, and make dispensing decisions."
+        },
+        {
+          "id": "poor-end-1",
+          "text": "Mrs. Ramnath takes the ibuprofen regularly for two weeks. Combined with her CKD, the NSAID causes a significant decline in kidney function. Her eGFR drops from 42 to 28 mL/min, pushing her from Stage 3b to Stage 4 CKD and closer to requiring dialysis. Her doctor is alarmed and asks where she obtained ibuprofen despite her kidney condition.",
+          "isEnd": true,
+          "outcome": "failure",
+          "summary": "NSAIDs are nephrotoxic and should be avoided in patients with chronic kidney disease. Even though ibuprofen is available OTC, the pharmacy team has a duty of care to intervene when they know a product is unsafe for a particular patient. The patient's casual mention of 'low kidney numbers' was a critical safety flag."
+        },
+        {
+          "id": "poor-end-2",
+          "text": "Mrs. Ramnath buys ibuprofen from another shop. She also does not understand why it might be harmful, because no one explained the risk. She takes ibuprofen regularly, further damaging her kidneys. Meanwhile, you have missed an opportunity to educate a patient and potentially prevent harm — and you have compromised your professional integrity by being dishonest.",
+          "isEnd": true,
+          "outcome": "failure",
+          "summary": "Honesty is a cornerstone of pharmacy professionalism. When a product is unsafe for a patient, the correct response is honest communication and referral to the pharmacist — not deception. Patients trust pharmacy teams to be truthful advocates for their health."
+        }
+      ],
+      "title": "Scenario: A Complex Patient at the Pharmacy Counter",
+      "description": "You are a pharmacy technician working the afternoon shift at a busy community pharmacy in Chaguanas, Trinidad. A patient approaches the counter with multiple prescriptions and questions. Navigate this clinical scenario by making the best decisions at each step."
+    },
+    {
+      "body": "The scenario above illustrates a crucial point: patient safety often depends on the pharmacy technician listening to what patients say in casual conversation. A comment like 'my kidney number was a bit low' is not small talk — it is clinically critical information. Train yourself to hear these signals and act on them by flagging concerns to the pharmacist. This vigilance is what elevates pharmacy technicians from dispensers to healthcare professionals.",
+      "type": "callout",
+      "title": "The Power of Listening",
+      "variant": "tip"
+    },
+    {
+      "text": "Course Summary: Key Takeaways",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "type": "list",
+      "items": [
+        "Medical terminology follows a logical system of roots, prefixes, and suffixes — learn the building blocks and you can decode any term",
+        "Drug name stems (INN system) reveal what a drug does: -olol (beta-blockers), -pril (ACE inhibitors), -sartan (ARBs), -statin (cholesterol), -formin (metformin)",
+        "The cardiovascular system is the #1 medication category in Caribbean pharmacies due to the hypertension and heart disease epidemic",
+        "Sickle cell disease has high prevalence in Caribbean populations — handle hydroxyurea, folic acid, and opioid requests with knowledge and compassion",
+        "The respiratory system generates high prescription volume through asthma and COPD medications — inhaler technique counselling saves lives",
+        "Renal function (GFR) determines whether drugs can be safely dosed — always listen for clues about kidney health",
+        "The Caribbean diabetes epidemic means metformin, insulins, and glucose monitoring supplies are daily dispensing staples",
+        "Arboviral diseases (dengue, chikungunya, Zika) require specific knowledge — NO NSAIDs/aspirin in suspected dengue",
+        "Antimicrobial resistance is a growing Caribbean threat — pharmacy technicians are frontline stewardship advocates",
+        "Every piece of anatomy and physiology knowledge you have gained translates directly to safer, more effective patient care"
+      ],
+      "ordered": true
+    },
+    {
+      "term": "Antimicrobial Stewardship",
+      "type": "key-term",
+      "definition": "A coordinated programme of interventions designed to improve and measure the appropriate use of antimicrobial agents by promoting the selection of the optimal antimicrobial drug regimen, dose, duration, and route of administration. In pharmacy, stewardship includes dispensing antibiotics only with valid prescriptions, educating patients on completing full courses, and flagging inappropriate prescribing to the pharmacist."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Paracetamol 500 mg tablets",
+        "Omeprazole 20 mg capsules",
+        "Ibuprofen 400 mg tablets",
+        "Cetirizine 10 mg tablets"
+      ],
+      "question": "A patient in your pharmacy mentions her doctor said her 'kidney number was low'. Which of the following medications should you be most cautious about?",
+      "explanation": "Ibuprofen is an NSAID that is nephrotoxic — it can worsen kidney function in patients with CKD. The patient's mention of a 'low kidney number' (likely referring to a low eGFR) is a critical safety signal. Paracetamol, omeprazole, and cetirizine are generally safe in mild-to-moderate CKD at standard doses, but NSAIDs should be avoided.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 3,
+  "duration_minutes": 25
+}

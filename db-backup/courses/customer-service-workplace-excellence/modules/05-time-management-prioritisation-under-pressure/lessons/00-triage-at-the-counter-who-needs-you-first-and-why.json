@@ -1,0 +1,80 @@
+{
+  "id": "3d8d6691-355a-457a-9f23-bf7af9e9af60",
+  "module_id": "60b63fc2-8fc4-4b47-8ac7-caf737ad8b8c",
+  "title": "Triage at the Counter: Who Needs You First and Why",
+  "content": [
+    {
+      "text": "Not Every Customer Gets Served in the Order They Arrive",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Triage is a concept borrowed from emergency medicine: when resources are limited, you serve the most urgent needs first, not the person who arrived first. In a pharmacy, this means making rapid judgement calls about who needs immediate attention and who can wait. It is not about who shouts loudest or who looks most important — it is about who has the most time-sensitive need.",
+      "type": "text"
+    },
+    {
+      "body": "This is a culturally sensitive skill in the Caribbean, where queue-jumping is a serious social offence. If you prioritise one customer over another, you need to do it transparently and with respect for those who are waiting. A brief explanation — 'I just need to help this mother with a sick child first — I will be right with you' — usually earns understanding rather than resentment.",
+      "type": "text"
+    },
+    {
+      "term": "Counter Triage",
+      "type": "key-term",
+      "definition": "The informal process of assessing which customer needs should be addressed first based on urgency, medical need, and the complexity of the request. Unlike emergency department triage, counter triage is unstructured and relies on the technician's judgement, observational skills, and experience."
+    },
+    {
+      "rows": [
+        [
+          "Urgent — serve immediately",
+          "Medical urgency, visible distress, time-critical medication",
+          "Sick child with fever, patient with no medication left (especially insulin or cardiac drugs), allergic reaction needing antihistamine"
+        ],
+        [
+          "High — serve next",
+          "Significant inconvenience if delayed, emotionally distressed",
+          "Patient on lunch break with strict time limit, patient who has been waiting longer than promised, elderly patient who appears fatigued"
+        ],
+        [
+          "Standard — serve in order",
+          "Routine transactions, no time pressure",
+          "Regular prescription collection, OTC purchase, general enquiry"
+        ],
+        [
+          "Low — can wait with explanation",
+          "Non-urgent requests that can be deferred",
+          "Price comparison enquiries, general product browsing, non-urgent callback requests"
+        ]
+      ],
+      "type": "table",
+      "caption": "Counter Triage Priority Levels",
+      "headers": [
+        "Priority",
+        "Description",
+        "Examples"
+      ]
+    },
+    {
+      "body": "Triage is about urgency, not importance. The business executive in a suit does not automatically get priority over the grandmother in house slippers. A parent with a wheezing child takes priority over a healthy adult collecting a routine refill, regardless of who arrived first or who looks more 'important'. Judge the need, not the person.",
+      "type": "callout",
+      "title": "Triage Is Not About Judging Worth",
+      "variant": "warning"
+    },
+    {
+      "body": "Effective triage also means scanning the queue proactively. Do not wait for customers to reach the counter before assessing their needs. A quick glance at who is waiting can tell you a lot: the person holding a sick baby, the person checking their watch every 10 seconds, the person who has been sitting patiently for 30 minutes. Reading the queue is a skill that comes with practice.",
+      "type": "text"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "The professional, because their time is limited",
+        "The adult collecting the refill, because they were first in line",
+        "The parent with the feverish toddler, because of medical urgency",
+        "All three equally — first come, first served"
+      ],
+      "question": "Three customers are waiting: a healthy adult collecting a routine refill, a parent with a feverish toddler, and a professional on lunch break. Who should you prioritise?",
+      "explanation": "A sick child with fever represents a medical urgency that should be prioritised regardless of queue order. The parent needs medication quickly to treat the child. A brief explanation to those waiting usually earns understanding.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 20
+}

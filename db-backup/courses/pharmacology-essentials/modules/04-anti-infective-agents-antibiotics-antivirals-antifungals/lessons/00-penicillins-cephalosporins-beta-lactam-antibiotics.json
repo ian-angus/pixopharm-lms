@@ -1,0 +1,86 @@
+{
+  "id": "386636a8-a428-406f-8d9a-48dd3096ce39",
+  "module_id": "c354ee80-fb9f-423b-864a-2b0454f2bd54",
+  "title": "Penicillins, Cephalosporins & Beta-Lactam Antibiotics",
+  "content": [
+    {
+      "text": "The Beta-Lactam Family",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Beta-lactam antibiotics — including penicillins, cephalosporins, and carbapenems — are the most widely used antibiotics worldwide and in the Caribbean. They work by inhibiting bacterial cell wall synthesis, causing the bacteria to lyse (burst) and die. Amoxicillin, a broad-spectrum penicillin, is the single most dispensed antibiotic in Caribbean pharmacies.",
+      "type": "text"
+    },
+    {
+      "body": "Understanding the beta-lactam family is essential because these drugs form the backbone of outpatient antibiotic therapy across CARICOM territories. In Trinidad, amoxicillin is dispensed through CDAP for respiratory tract infections, urinary tract infections, and dental infections. In Jamaica, both amoxicillin and the combination product amoxicillin/clavulanate (Augmentin) are frequently prescribed. Pharmacy technicians should be familiar with the different generations of cephalosporins and their clinical applications.",
+      "type": "text"
+    },
+    {
+      "term": "Beta-lactam ring",
+      "type": "key-term",
+      "definition": "A four-membered ring structure shared by penicillins, cephalosporins, and carbapenems. This ring is essential for antibacterial activity — it binds to penicillin-binding proteins (PBPs) and inhibits cell wall synthesis. Bacteria that produce beta-lactamase enzymes can destroy this ring, causing resistance."
+    },
+    {
+      "term": "Beta-Lactamase Inhibitor",
+      "type": "key-term",
+      "definition": "A drug that inhibits beta-lactamase enzymes produced by resistant bacteria, restoring the effectiveness of the partner beta-lactam antibiotic. Example: clavulanate (combined with amoxicillin as Augmentin). This combination extends amoxicillin's spectrum to include many beta-lactamase-producing organisms."
+    },
+    {
+      "rows": [
+        [
+          "Amoxicillin",
+          "Aminopenicillin",
+          "Broad-spectrum gram-positive and some gram-negative",
+          "RTIs, UTIs, otitis media, dental infections"
+        ],
+        [
+          "Amoxicillin/clavulanate (Augmentin)",
+          "Penicillin + beta-lactamase inhibitor",
+          "Extended spectrum including beta-lactamase producers",
+          "Resistant infections, bite wounds, sinusitis"
+        ],
+        [
+          "Cephalexin",
+          "1st-gen cephalosporin",
+          "Gram-positive focus",
+          "Skin and soft tissue infections"
+        ],
+        [
+          "Ceftriaxone",
+          "3rd-gen cephalosporin (IM/IV)",
+          "Broad including many gram-negatives",
+          "Hospital infections, gonorrhoea, meningitis"
+        ]
+      ],
+      "type": "table",
+      "caption": "Common Beta-Lactam Antibiotics in Caribbean Practice",
+      "headers": [
+        "Drug",
+        "Class",
+        "Spectrum",
+        "Common Caribbean Use"
+      ]
+    },
+    {
+      "body": "Penicillin allergy is one of the most commonly reported drug allergies. Always ask patients about allergies before dispensing any beta-lactam antibiotic. True penicillin allergy (anaphylaxis) contraindicates ALL penicillins and carries a 1-2% cross-reactivity risk with cephalosporins. Document the allergy prominently in the patient record.",
+      "type": "callout",
+      "title": "Penicillin Allergy: Always Ask",
+      "variant": "danger"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Ciprofloxacin",
+        "Nitrofurantoin",
+        "Cephalexin (with caution)",
+        "Amoxicillin"
+      ],
+      "question": "A patient with a documented penicillin allergy (anaphylaxis) needs an antibiotic for a UTI. Which of the following should NOT be dispensed?",
+      "explanation": "Amoxicillin is a penicillin and is absolutely contraindicated in patients with documented penicillin anaphylaxis. Cephalosporins carry a small cross-reactivity risk. Non-beta-lactam alternatives like ciprofloxacin or nitrofurantoin are safer choices.",
+      "correctIndex": 3
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 20
+}

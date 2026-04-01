@@ -1,0 +1,111 @@
+{
+  "id": "9dcff368-ce90-4aa7-ad48-749dc3934bb6",
+  "module_id": "239c1c0d-6b4a-4c93-8a9f-a6dedc1deb6f",
+  "title": "Building Your Personal Professional Development Plan",
+  "content": [
+    {
+      "text": "Your Career, Your Plan",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "A personal professional development plan (PDP) is a living document that maps where you are in your career, where you want to be, and the specific steps you will take to get there. For pharmacy technicians and aspiring supervisors in the Caribbean, a PDP transforms vague career ambitions into concrete, achievable milestones. It also demonstrates to employers and regulatory bodies that you take your professional growth seriously.",
+      "type": "text"
+    },
+    {
+      "text": "The PDP Framework",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "type": "list",
+      "items": [
+        "Self-assessment: Honestly evaluate your current knowledge, skills, and competencies. Where are you strong? Where are the gaps? Use feedback from your pharmacist, performance reviews, and self-reflection",
+        "Goal setting: Define 2–3 specific development goals for the next 12 months. Use SMART criteria: Specific, Measurable, Achievable, Relevant, Time-bound. Example: 'Complete the PIXOPHARM Pharmacy Management & Leadership course by June 2027'",
+        "Action planning: For each goal, identify the specific actions, resources, and timeline. What courses will you take? What mentoring will you seek? What reading will you do? What practical experience do you need?",
+        "Implementation: Execute your plan. Track your progress. Adjust when circumstances change — but do not abandon the plan",
+        "Review and reflection: Quarterly, review your progress. What have you learned? How has it changed your practice? What needs to change in your plan?"
+      ],
+      "ordered": true
+    },
+    {
+      "rows": [
+        [
+          "Entry",
+          "Pharmacy Assistant / Aide",
+          "Secondary school education; on-the-job training",
+          "Entry level"
+        ],
+        [
+          "Foundation",
+          "Certified Pharmacy Technician",
+          "Recognised technician training programme (e.g., PIXOPHARM, COSTAATT); registration where required",
+          "1–2 years of training"
+        ],
+        [
+          "Intermediate",
+          "Senior Pharmacy Technician",
+          "3+ years of experience; advanced competency demonstration; CPD portfolio",
+          "3–5 years in role"
+        ],
+        [
+          "Advanced",
+          "Pharmacy Supervisor / Team Lead",
+          "Management training; leadership competencies; demonstrated operational excellence",
+          "5–8 years total experience"
+        ],
+        [
+          "Professional",
+          "Pharmacy Manager / Owner",
+          "Pharmacist qualification (for owner-pharmacist) or extensive management experience (for non-pharmacist manager); business qualifications beneficial",
+          "8+ years; additional qualifications"
+        ]
+      ],
+      "type": "table",
+      "caption": "Caribbean Pharmacy Career Pathways",
+      "headers": [
+        "Level",
+        "Role",
+        "Requirements",
+        "Typical Timeframe"
+      ]
+    },
+    {
+      "body": "Build a professional portfolio that documents your CPD activities, certifications, performance reviews, and achievements. In the Caribbean, where formal credentialing systems for technicians are still developing, a well-documented portfolio is your evidence of competence. It serves you in job applications, promotion discussions, and regulatory compliance. Keep it digital (backed up) and physical (printed and organised in a binder).",
+      "type": "callout",
+      "title": "The Portfolio Approach",
+      "variant": "info"
+    },
+    {
+      "type": "case-study",
+      "title": "Case Study: Keisha's Career Plan",
+      "scenario": "Keisha completed her pharmacy technician certification through PIXOPHARM 18 months ago and has been working at a community pharmacy in Chaguanas, Trinidad. She is competent at dispensing, inventory management, and CDAP claims processing. She aspires to become a pharmacy supervisor within 3 years and eventually pursue a Bachelor's degree in pharmacy. Her current employer is supportive but has no formal career development programme.",
+      "questions": [
+        "What should Keisha include in her 12-month PDP?",
+        "How can she gain management experience while still in a technician role?",
+        "What CPD activities would be most valuable for her career goals?"
+      ],
+      "discussion": "Keisha's 12-month PDP could include: (1) Complete the PIXOPHARM Pharmacy Management & Leadership course to build management knowledge. (2) Volunteer to take on supervisory tasks — opening/closing procedures, inventory ordering, new staff orientation — to build practical management experience. (3) Attend at least two CPD events (PSTT workshops, pharmaceutical conferences). (4) Begin prerequisite courses for the UWI Bachelor of Pharmacy programme. (5) Build a professional portfolio documenting all learning, achievements, and competencies. For management experience, she could ask her pharmacist-manager to delegate specific supervisory tasks with guidance, shadow the manager during ordering and scheduling, and take the lead on a specific improvement project (e.g., reducing expiry waste by implementing FEFO checks)."
+    },
+    {
+      "type": "video-placeholder",
+      "title": "Career Pathways in Caribbean Pharmacy",
+      "duration": "10 min",
+      "description": "Hear from pharmacy professionals across Trinidad, Jamaica, and Barbados about their career journeys — from pharmacy assistant to supervisor, manager, and beyond. Learn what helped them advance and what they wish they had known earlier."
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Motivational",
+        "Measurable",
+        "Mandatory",
+        "Manageable"
+      ],
+      "question": "What does the 'M' in SMART goals stand for?",
+      "explanation": "SMART goals are Specific, Measurable, Achievable, Relevant, and Time-bound. 'Measurable' means you must be able to quantify or verify whether the goal has been achieved. For example, 'improve my pharmacy knowledge' is not measurable, but 'complete the PIXOPHARM Management course with a score of 80% or higher by June 2027' is measurable.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 25
+}

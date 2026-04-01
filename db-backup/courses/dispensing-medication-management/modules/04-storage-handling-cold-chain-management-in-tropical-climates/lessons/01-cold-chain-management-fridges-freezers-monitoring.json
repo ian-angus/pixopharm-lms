@@ -1,0 +1,67 @@
+{
+  "id": "d8ae5946-c8ab-4559-a580-edfe8309cbe0",
+  "module_id": "00de6d94-4229-4a9a-aec6-0c5d4e87fbbd",
+  "title": "Cold Chain Management: Fridges, Freezers & Monitoring",
+  "content": [
+    {
+      "text": "Keeping the Cold Chain Unbroken",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Cold chain management is one of the most critical competencies for a Caribbean pharmacy technician. Temperature-sensitive medications — vaccines, insulin, biological products, certain eye drops, and reconstituted antibiotics — must be maintained within their specified temperature range at all times. A single cold chain break can render an entire batch of vaccines ineffective, waste scarce resources, and put patients at risk.",
+      "type": "text"
+    },
+    {
+      "text": "Pharmaceutical-Grade Refrigerators",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "A pharmacy refrigerator is not a domestic fridge. Pharmaceutical-grade refrigerators are purpose-built with features domestic units lack: forced-air circulation for uniform temperature, digital temperature displays, high and low temperature alarms, locked doors, and temperature logging capabilities (digital or chart recorders). Using a domestic refrigerator to store medications is a regulatory violation in most Caribbean jurisdictions and creates unacceptable cold chain risks.",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Temperature range: Must maintain 2°C to 8°C consistently across all shelf areas",
+        "Alarm systems: Audible and visual alarms for temperature excursions beyond set limits",
+        "Temperature logging: Continuous recording (digital data logger preferred) with twice-daily manual verification",
+        "No food or beverages: Staff food must never be stored in pharmaceutical refrigerators",
+        "Organisation: Medications organised by type and expiry; leave space for air circulation",
+        "Door opening protocol: Minimise door openings; retrieve items quickly; never leave the door open",
+        "Backup power: Connected to emergency generator or UPS system"
+      ],
+      "ordered": false
+    },
+    {
+      "body": "A temperature excursion occurs when the refrigerator temperature goes outside the 2°C–8°C range. If an excursion is detected: (1) Do NOT discard medications immediately. (2) Quarantine the affected stock — move it to a properly functioning unit if available. (3) Record the excursion details: duration, peak temperature, and affected products. (4) Contact the manufacturer for stability guidance. (5) Do not dispense the affected stock until stability is confirmed. Many manufacturers provide excursion tolerance data that may allow the product to remain usable.",
+      "type": "callout",
+      "title": "Temperature Excursion Protocol",
+      "variant": "warning"
+    },
+    {
+      "term": "Temperature Excursion",
+      "type": "key-term",
+      "definition": "Any deviation of storage temperature outside the acceptable range for a pharmaceutical product. For refrigerated items (2°C–8°C), both freezing (below 0°C) and warming (above 8°C) constitute excursions. The impact on the medication depends on the duration, severity, and number of excursions, as well as the specific product's stability profile."
+    },
+    {
+      "body": "Temperature monitoring must be continuous, not just at the start and end of each day. Digital data loggers that record temperature at programmed intervals (typically every 5–15 minutes) provide a complete picture of cold chain performance. These devices generate downloadable reports that serve as regulatory documentation and can identify patterns — such as a fridge that consistently warms during overnight hours, suggesting a compressor issue.",
+      "type": "text"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "Discard all medications in the fridge immediately",
+        "Turn off the fridge and transfer all stock to a domestic refrigerator",
+        "Quarantine the affected stock, record the excursion details, and contact the manufacturer for stability guidance",
+        "Ignore it — the fridge will cool down once the compressor kicks in"
+      ],
+      "question": "You arrive at the pharmacy in the morning and discover that the fridge temperature reads 12°C — well above the 2°C–8°C range. What is your FIRST action?",
+      "explanation": "Do NOT discard stock immediately — some medications can tolerate brief temperature excursions. The correct first action is to quarantine the affected stock, document the excursion (temperature, estimated duration, affected products), and contact manufacturers for stability guidance. Only discard stock if the manufacturer confirms the excursion has compromised the product.",
+      "correctIndex": 2
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 25
+}

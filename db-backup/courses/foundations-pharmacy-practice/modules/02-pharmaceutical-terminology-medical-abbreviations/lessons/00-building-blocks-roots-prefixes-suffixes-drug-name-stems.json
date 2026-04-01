@@ -1,0 +1,571 @@
+{
+  "id": "7db67999-142f-41a8-a128-c2888bb3d186",
+  "module_id": "d3c3203a-0e54-43ca-b9a3-1bd6c00c0d63",
+  "title": "Building Blocks: Roots, Prefixes, Suffixes & Drug Name Stems",
+  "content": [
+    {
+      "text": "How Medical Terms Are Constructed",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Medical terminology can seem overwhelming at first, but it follows a logical system. Nearly all medical terms are built from Greek and Latin roots combined with prefixes (added to the beginning) and suffixes (added to the end). Once you learn these building blocks, you can decode unfamiliar terms — even ones you've never encountered before.",
+      "type": "text"
+    },
+    {
+      "term": "Root Word",
+      "type": "key-term",
+      "definition": "The core of a medical term that carries its fundamental meaning. For example, 'cardi' relates to the heart, 'hepat' relates to the liver, and 'derm' relates to the skin."
+    },
+    {
+      "rows": [
+        [
+          "cardi/o",
+          "Heart",
+          "Cardiology",
+          "Study of the heart"
+        ],
+        [
+          "hepat/o",
+          "Liver",
+          "Hepatotoxic",
+          "Toxic to the liver"
+        ],
+        [
+          "nephr/o",
+          "Kidney",
+          "Nephropathy",
+          "Disease of the kidney"
+        ],
+        [
+          "pulmon/o",
+          "Lung",
+          "Pulmonary",
+          "Relating to the lungs"
+        ],
+        [
+          "gastr/o",
+          "Stomach",
+          "Gastritis",
+          "Inflammation of the stomach"
+        ],
+        [
+          "derm/o",
+          "Skin",
+          "Dermatitis",
+          "Inflammation of the skin"
+        ],
+        [
+          "neur/o",
+          "Nerve",
+          "Neuropathy",
+          "Disease of the nerves"
+        ],
+        [
+          "hem/o",
+          "Blood",
+          "Hematology",
+          "Study of blood"
+        ],
+        [
+          "arthr/o",
+          "Joint",
+          "Arthritis",
+          "Inflammation of joints"
+        ],
+        [
+          "oste/o",
+          "Bone",
+          "Osteoporosis",
+          "Porous/weakened bones"
+        ]
+      ],
+      "type": "table",
+      "caption": "Essential Pharmaceutical Root Words",
+      "headers": [
+        "Root",
+        "Meaning",
+        "Example",
+        "Meaning of Example"
+      ]
+    },
+    {
+      "text": "Common Prefixes",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "rows": [
+        [
+          "hyper-",
+          "Above normal / excessive",
+          "Hypertension (high blood pressure)"
+        ],
+        [
+          "hypo-",
+          "Below normal / deficient",
+          "Hypoglycaemia (low blood sugar)"
+        ],
+        [
+          "anti-",
+          "Against",
+          "Antibiotic (against bacteria)"
+        ],
+        [
+          "pre-",
+          "Before",
+          "Prenatal (before birth)"
+        ],
+        [
+          "post-",
+          "After",
+          "Postoperative (after surgery)"
+        ],
+        [
+          "sub-",
+          "Under / below",
+          "Subcutaneous (under the skin)"
+        ],
+        [
+          "intra-",
+          "Within",
+          "Intravenous (within a vein)"
+        ],
+        [
+          "poly-",
+          "Many",
+          "Polypharmacy (many medications)"
+        ],
+        [
+          "tachy-",
+          "Fast",
+          "Tachycardia (fast heart rate)"
+        ],
+        [
+          "brady-",
+          "Slow",
+          "Bradycardia (slow heart rate)"
+        ]
+      ],
+      "type": "table",
+      "caption": "Prefixes You Will Use Daily",
+      "headers": [
+        "Prefix",
+        "Meaning",
+        "Example"
+      ]
+    },
+    {
+      "text": "Common Suffixes",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "rows": [
+        [
+          "-itis",
+          "Inflammation",
+          "Bronchitis (inflammation of bronchi)"
+        ],
+        [
+          "-osis",
+          "Condition / disease",
+          "Thrombosis (blood clot condition)"
+        ],
+        [
+          "-ectomy",
+          "Surgical removal",
+          "Appendectomy (removal of appendix)"
+        ],
+        [
+          "-ology",
+          "Study of",
+          "Pharmacology (study of drugs)"
+        ],
+        [
+          "-pathy",
+          "Disease",
+          "Cardiomyopathy (heart muscle disease)"
+        ],
+        [
+          "-algia",
+          "Pain",
+          "Neuralgia (nerve pain)"
+        ],
+        [
+          "-emia",
+          "Blood condition",
+          "Anaemia (low red blood cells)"
+        ],
+        [
+          "-toxic",
+          "Poisonous to",
+          "Nephrotoxic (poisonous to kidneys)"
+        ]
+      ],
+      "type": "table",
+      "caption": "Suffixes That Reveal Meaning",
+      "headers": [
+        "Suffix",
+        "Meaning",
+        "Example"
+      ]
+    },
+    {
+      "body": "When you encounter an unfamiliar medical term, break it apart: identify the root first (what body part or system?), then the prefix (any modifier?), and finally the suffix (what's happening to it?). For example: 'hepato-toxic-ity' = liver + poisonous + condition = a condition of being poisonous to the liver.",
+      "type": "callout",
+      "title": "Practice Tip",
+      "variant": "tip"
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "text": "Drug Name Stems: Suffixes That Reveal the Drug Class",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "One of the most powerful skills a pharmacy technician can develop is the ability to identify a drug's therapeutic class just by reading its name. The World Health Organization (WHO) and national drug naming authorities assign standardised stems (usually suffixes) to drug names so that medications in the same class share a common ending. If you know these stems, you can walk into any pharmacy in the Caribbean and immediately recognise what a medication does — even if you have never seen that specific brand before.",
+      "type": "text"
+    },
+    {
+      "body": "Imagine a patient hands you a prescription for 'amlodipine'. You may not have memorised every drug, but you recognise '-dipine' — that's a calcium channel blocker for blood pressure. Instantly you know the drug class, the likely condition being treated, and the type of counselling points to reinforce. This pattern recognition is what separates a confident technician from one who is guessing.",
+      "type": "callout",
+      "title": "Why This Matters at the Counter",
+      "variant": "info"
+    },
+    {
+      "text": "Cardiovascular Drug Stems",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "rows": [
+        [
+          "-olol",
+          "Beta-blockers",
+          "Atenolol, Metoprolol, Propranolol, Bisoprolol",
+          "Hypertension, angina, heart rate control, anxiety (propranolol)"
+        ],
+        [
+          "-pril",
+          "ACE inhibitors",
+          "Enalapril, Lisinopril, Ramipril, Captopril",
+          "Hypertension, heart failure, diabetic kidney protection"
+        ],
+        [
+          "-sartan",
+          "Angiotensin II receptor blockers (ARBs)",
+          "Losartan, Valsartan, Irbesartan, Telmisartan",
+          "Hypertension (often used when ACE inhibitors cause cough)"
+        ],
+        [
+          "-dipine",
+          "Calcium channel blockers (dihydropyridine)",
+          "Amlodipine, Nifedipine, Felodipine",
+          "Hypertension, angina"
+        ],
+        [
+          "-statin",
+          "HMG-CoA reductase inhibitors",
+          "Atorvastatin, Simvastatin, Rosuvastatin, Pravastatin",
+          "High cholesterol, cardiovascular risk reduction"
+        ],
+        [
+          "-fibrate",
+          "Fibric acid derivatives",
+          "Gemfibrozil, Fenofibrate",
+          "High triglycerides"
+        ],
+        [
+          "-oxin",
+          "Cardiac glycosides",
+          "Digoxin",
+          "Heart failure, atrial fibrillation"
+        ]
+      ],
+      "type": "table",
+      "caption": "Heart & Blood Pressure Medications — The Most Dispensed Class in the Caribbean",
+      "headers": [
+        "Stem",
+        "Drug Class",
+        "Common Examples",
+        "Used For"
+      ]
+    },
+    {
+      "body": "Hypertension and diabetes are the leading chronic diseases across Trinidad, Jamaica, and Barbados. You will dispense '-pril', '-sartan', '-olol', and '-dipine' medications dozens of times every day. Knowing these stems is not academic — it is essential for daily practice. The CDAP programme in Trinidad and the NHF in Jamaica both cover these drug classes extensively.",
+      "type": "callout",
+      "title": "Caribbean Relevance",
+      "variant": "warning"
+    },
+    {
+      "text": "Diabetes Drug Stems",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "rows": [
+        [
+          "-formin",
+          "Biguanides",
+          "Metformin",
+          "Type 2 diabetes (first-line treatment worldwide)"
+        ],
+        [
+          "-gliptin",
+          "DPP-4 inhibitors",
+          "Sitagliptin, Saxagliptin, Linagliptin",
+          "Type 2 diabetes (add-on therapy)"
+        ],
+        [
+          "-gliflozin",
+          "SGLT2 inhibitors",
+          "Empagliflozin, Dapagliflozin, Canagliflozin",
+          "Type 2 diabetes, heart failure, kidney protection"
+        ],
+        [
+          "-glutide",
+          "GLP-1 receptor agonists",
+          "Semaglutide, Liraglutide, Dulaglutide",
+          "Type 2 diabetes, weight management (injectable and oral)"
+        ],
+        [
+          "gli- / -ide",
+          "Sulfonylureas",
+          "Glibenclamide (Glyburide), Gliclazide, Glimepiride",
+          "Type 2 diabetes (stimulate insulin release)"
+        ]
+      ],
+      "type": "table",
+      "caption": "Antidiabetic Medications",
+      "headers": [
+        "Stem",
+        "Drug Class",
+        "Common Examples",
+        "Used For"
+      ]
+    },
+    {
+      "text": "Anti-Infective Drug Stems",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "rows": [
+        [
+          "-cillin",
+          "Penicillins",
+          "Amoxicillin, Ampicillin, Flucloxacillin",
+          "Bacterial infections (most commonly dispensed antibiotic class in the Caribbean)"
+        ],
+        [
+          "-cycline",
+          "Tetracyclines",
+          "Doxycycline, Tetracycline, Minocycline",
+          "Bacterial infections, acne, malaria prophylaxis"
+        ],
+        [
+          "-mycin / -micin",
+          "Macrolides / Aminoglycosides",
+          "Azithromycin, Erythromycin, Clarithromycin (macrolides); Gentamicin, Amikacin (aminoglycosides)",
+          "Respiratory infections, skin infections; serious hospital infections"
+        ],
+        [
+          "-floxacin",
+          "Fluoroquinolones",
+          "Ciprofloxacin, Levofloxacin, Moxifloxacin",
+          "UTIs, respiratory infections, GI infections"
+        ],
+        [
+          "cef- / ceph-",
+          "Cephalosporins",
+          "Cefuroxime, Cephalexin, Ceftriaxone",
+          "Broad-spectrum bacterial infections"
+        ],
+        [
+          "-azole",
+          "Azole antifungals",
+          "Fluconazole, Ketoconazole, Clotrimazole, Miconazole",
+          "Fungal infections (very common in tropical Caribbean climate)"
+        ],
+        [
+          "-vir / -ovir",
+          "Antivirals",
+          "Acyclovir, Valacyclovir, Oseltamivir",
+          "Herpes, chickenpox, influenza"
+        ],
+        [
+          "-navir",
+          "Protease inhibitors (HIV)",
+          "Ritonavir, Darunavir, Atazanavir",
+          "HIV/AIDS treatment (antiretroviral therapy)"
+        ],
+        [
+          "-avudine / -ivudine",
+          "Nucleoside reverse transcriptase inhibitors (NRTIs)",
+          "Lamivudine, Zidovudine, Stavudine",
+          "HIV/AIDS treatment"
+        ]
+      ],
+      "type": "table",
+      "caption": "Antibiotics, Antifungals & Antivirals",
+      "headers": [
+        "Stem",
+        "Drug Class",
+        "Common Examples",
+        "Used For"
+      ]
+    },
+    {
+      "body": "The '-azole' antifungals (fluconazole, clotrimazole, miconazole) are particularly high-volume in Caribbean pharmacies. The hot, humid tropical climate creates ideal conditions for fungal skin infections, oral thrush, and vaginal candidiasis. Recognising the '-azole' suffix instantly tells you this is an antifungal — critical when checking prescriptions.",
+      "type": "callout",
+      "title": "Tropical Climate Connection",
+      "variant": "tip"
+    },
+    {
+      "text": "Pain, Mental Health & Other Common Stems",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "rows": [
+        [
+          "-prazole",
+          "Proton pump inhibitors (PPIs)",
+          "Omeprazole, Pantoprazole, Esomeprazole, Lansoprazole",
+          "Acid reflux (GERD), stomach ulcers"
+        ],
+        [
+          "-tidine",
+          "H2 receptor antagonists",
+          "Ranitidine*, Famotidine, Cimetidine",
+          "Acid reflux, ulcers (*ranitidine withdrawn in many markets)"
+        ],
+        [
+          "-pam / -lam",
+          "Benzodiazepines",
+          "Diazepam, Lorazepam, Clonazepam, Alprazolam",
+          "Anxiety, seizures, muscle spasms, insomnia (CONTROLLED — strict handling required)"
+        ],
+        [
+          "-oxetine / -aline",
+          "SSRIs / SNRIs (antidepressants)",
+          "Fluoxetine, Paroxetine, Sertraline; Venlafaxine, Duloxetine",
+          "Depression, anxiety disorders, chronic pain"
+        ],
+        [
+          "-pine / -done",
+          "Atypical antipsychotics",
+          "Olanzapine, Quetiapine, Risperidone, Clozapine",
+          "Schizophrenia, bipolar disorder, severe agitation"
+        ],
+        [
+          "-triptan",
+          "Serotonin receptor agonists",
+          "Sumatriptan, Rizatriptan",
+          "Acute migraine treatment"
+        ],
+        [
+          "-caine",
+          "Local anaesthetics",
+          "Lidocaine, Bupivacaine, Procaine",
+          "Local numbing for procedures, dental work"
+        ],
+        [
+          "-ine (codeine, morphine)",
+          "Opioid analgesics",
+          "Codeine, Morphine, Tramadol*",
+          "Moderate to severe pain (CONTROLLED in all Caribbean jurisdictions; *tramadol has unique stem)"
+        ]
+      ],
+      "type": "table",
+      "caption": "CNS, Pain & GI Medications",
+      "headers": [
+        "Stem",
+        "Drug Class",
+        "Common Examples",
+        "Used For"
+      ]
+    },
+    {
+      "text": "Other Important Stems",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "rows": [
+        [
+          "-terol / -buterol",
+          "Beta-2 agonist bronchodilators",
+          "Salbutamol (Albuterol), Formoterol, Salmeterol",
+          "Asthma, COPD (rescue and maintenance inhalers)"
+        ],
+        [
+          "-sone / -olone",
+          "Corticosteroids",
+          "Prednisolone, Prednisone, Dexamethasone, Hydrocortisone, Betamethasone",
+          "Inflammation, asthma, allergies, autoimmune conditions"
+        ],
+        [
+          "-tadine / -adine",
+          "Antihistamines (2nd generation)",
+          "Loratadine, Cetirizine, Desloratadine, Fexofenadine",
+          "Allergies, hay fever, urticaria"
+        ],
+        [
+          "-lukast",
+          "Leukotriene receptor antagonists",
+          "Montelukast, Zafirlukast",
+          "Asthma prevention, allergic rhinitis"
+        ],
+        [
+          "-mab",
+          "Monoclonal antibodies",
+          "Trastuzumab, Rituximab, Adalimumab",
+          "Cancer, autoimmune diseases (specialist/hospital use)"
+        ],
+        [
+          "-nib",
+          "Kinase inhibitors",
+          "Imatinib, Erlotinib",
+          "Cancer (specialist/hospital use)"
+        ],
+        [
+          "-parin",
+          "Anticoagulants (heparin class)",
+          "Heparin, Enoxaparin, Dalteparin",
+          "Blood clot prevention and treatment"
+        ]
+      ],
+      "type": "table",
+      "caption": "Respiratory, Allergy & Specialty Medications",
+      "headers": [
+        "Stem",
+        "Drug Class",
+        "Common Examples",
+        "Used For"
+      ]
+    },
+    {
+      "body": "When you see '-pam' or '-lam' (benzodiazepines) or opioid stems on a prescription, your controlled substance protocols must kick in automatically. These medications require special prescribing, dispensing, storage, and record-keeping in ALL Caribbean jurisdictions. Recognising the stem is your first alert that heightened procedures apply.",
+      "type": "callout",
+      "title": "Controlled Substance Stems — Know These Instantly",
+      "variant": "danger"
+    },
+    {
+      "type": "case-study",
+      "title": "Practice Exercise: Name That Drug Class",
+      "scenario": "A patient presents three prescriptions: (1) Amlodipine 5mg, (2) Metformin 500mg, (3) Omeprazole 20mg. Using only the drug name stems, identify each drug's class and likely condition being treated — before looking anything up.",
+      "questions": [
+        "What does '-dipine' tell you about amlodipine?",
+        "What does '-formin' tell you about metformin?",
+        "What does '-prazole' tell you about omeprazole?"
+      ],
+      "discussion": "Amlodipine: '-dipine' = calcium channel blocker → hypertension/angina. Metformin: '-formin' = biguanide → type 2 diabetes. Omeprazole: '-prazole' = proton pump inhibitor → acid reflux/ulcers. This is a very common combination in Caribbean patients — an older adult managing high blood pressure, diabetes, and stomach acid issues. Recognising all three drug classes instantly from their names is a skill you will use every single working day."
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 70
+}

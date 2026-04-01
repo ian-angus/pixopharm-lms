@@ -1,0 +1,182 @@
+[
+  {
+    "id": "5d44ca95-f6e7-4e69-9a44-ec96d159bf99",
+    "module_id": "8565ea75-e96a-4d25-8e89-327097346a61",
+    "question": "Which medication is the ONLY safe analgesic/antipyretic in suspected dengue fever?",
+    "options": [
+      "Ibuprofen",
+      "Aspirin",
+      "Paracetamol",
+      "Diclofenac"
+    ],
+    "correct_answer": 2,
+    "explanation": "Paracetamol is the only safe option. All NSAIDs and aspirin are contraindicated due to increased bleeding risk from dengue-induced thrombocytopenia.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "77de2381-992a-4fc4-98c1-d97e2242dcdd",
+    "module_id": "8565ea75-e96a-4d25-8e89-327097346a61",
+    "question": "NSAIDs can be used for chikungunya joint pain ONLY after:",
+    "options": [
+      "The patient requests them",
+      "Dengue has been ruled out",
+      "3 days of symptoms",
+      "The fever has resolved"
+    ],
+    "correct_answer": 1,
+    "explanation": "NSAIDs are effective for chikungunya arthralgia but dangerous in dengue. Since both diseases overlap, dengue must be excluded before NSAIDs are used.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "ea32b325-bac3-4317-8734-203d6607ee4a",
+    "module_id": "8565ea75-e96a-4d25-8e89-327097346a61",
+    "question": "The primary concern with Zika virus infection during pregnancy is:",
+    "options": [
+      "Severe joint pain in the mother",
+      "Risk of microcephaly and birth defects in the baby",
+      "Haemorrhagic complications",
+      "Chronic fatigue in the mother"
+    ],
+    "correct_answer": 1,
+    "explanation": "Zika virus infection during pregnancy can cause microcephaly and other severe congenital abnormalities. Prevention through mosquito avoidance is critical for pregnant women.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "bedfa984-74e2-4b69-bb7a-6b7828dfe569",
+    "module_id": "8565ea75-e96a-4d25-8e89-327097346a61",
+    "question": "Which antimalarial drug causes photosensitivity — a particular concern in the Caribbean?",
+    "options": [
+      "Chloroquine",
+      "Doxycycline",
+      "Atovaquone/proguanil",
+      "Mefloquine"
+    ],
+    "correct_answer": 1,
+    "explanation": "Doxycycline causes significant photosensitivity. Caribbean sun exposure makes this a clinically important counselling point for patients using doxycycline for malaria prophylaxis.",
+    "order_index": 3,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "348fdb8d-0310-45ba-9f33-22436c2f363f",
+    "module_id": "8565ea75-e96a-4d25-8e89-327097346a61",
+    "question": "Leptospirosis risk increases significantly in the Caribbean after:",
+    "options": [
+      "Drought",
+      "Flooding events",
+      "Cold weather",
+      "Tourism season"
+    ],
+    "correct_answer": 1,
+    "explanation": "Flooding spreads Leptospira-contaminated water from animal urine into populated areas. Post-hurricane and post-flood periods see spikes in leptospirosis cases across the Caribbean.",
+    "order_index": 4,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "91bc876f-7fcc-4628-a861-123c07113e79",
+    "module_id": "8565ea75-e96a-4d25-8e89-327097346a61",
+    "question": "Why is dengue fever sometimes called 'breakbone fever'?",
+    "options": [
+      "It causes actual bone fractures",
+      "The severe muscle and joint pain feels like bones are breaking",
+      "It affects the skeletal system directly",
+      "It was first described in a bone specialist's clinic"
+    ],
+    "correct_answer": 1,
+    "explanation": "The severe myalgia and arthralgia of dengue are so intense that patients historically described it as feeling like their bones were breaking. The name reflects symptom severity, not actual bone damage.",
+    "order_index": 5,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "9ddf3dfa-848a-42c0-aebd-c3bc86a2f2f1",
+    "module_id": "8565ea75-e96a-4d25-8e89-327097346a61",
+    "question": "Artemether/lumefantrine (Coartem) should be taken with:",
+    "options": [
+      "Water only",
+      "An empty stomach",
+      "A fatty meal to improve absorption",
+      "Alcohol to enhance effects"
+    ],
+    "correct_answer": 2,
+    "explanation": "Lumefantrine absorption increases 2-3 fold when taken with a fatty meal. Patients should be counselled to take Coartem with food containing fat.",
+    "order_index": 6,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "16f1b59c-4568-4409-962a-6e271632edd3",
+    "module_id": "8565ea75-e96a-4d25-8e89-327097346a61",
+    "question": "The most important pharmacological intervention for gastroenteritis in the Caribbean is:",
+    "options": [
+      "Antibiotics for all cases",
+      "Anti-diarrhoeal drugs like loperamide",
+      "Oral rehydration salts (ORS)",
+      "IV fluids at home"
+    ],
+    "correct_answer": 2,
+    "explanation": "Oral rehydration therapy (ORS) is the cornerstone of gastroenteritis management, preventing dehydration which is the primary cause of morbidity and mortality.",
+    "order_index": 7,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "b6f3b9e9-2258-4644-8b9d-3550d8867c0c",
+    "module_id": "8565ea75-e96a-4d25-8e89-327097346a61",
+    "question": "In dengue fever, the period AFTER the fever breaks is particularly dangerous because:",
+    "options": [
+      "The patient is dehydrated",
+      "This is when severe dengue (plasma leakage, haemorrhage) can develop",
+      "The virus is at its most contagious",
+      "Antibiotics are needed at this stage"
+    ],
+    "correct_answer": 1,
+    "explanation": "The critical phase of dengue occurs around the time of defervescence (when fever drops). This is when plasma leakage, haemorrhage, and organ impairment can develop in severe dengue. Patients and caregivers must be warned not to assume the patient is improving just because the fever has broken.",
+    "order_index": 8,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "hard",
+    "blooms_level": "analyze"
+  },
+  {
+    "id": "691c91c7-690a-407b-a3c2-e620a5b2a11c",
+    "module_id": "8565ea75-e96a-4d25-8e89-327097346a61",
+    "question": "Albendazole 400 mg single dose is the standard treatment for which Caribbean infections?",
+    "options": [
+      "Malaria and dengue",
+      "Roundworm, hookworm, and whipworm (intestinal helminths)",
+      "HIV and tuberculosis",
+      "Fungal skin infections"
+    ],
+    "correct_answer": 1,
+    "explanation": "Albendazole is a broad-spectrum anti-helminthic effective against roundworm (Ascaris), hookworm (Necator/Ancylostoma), and whipworm (Trichuris) with a convenient single-dose regimen.",
+    "order_index": 9,
+    "question_type": "multiple_choice",
+    "question_data": null,
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  }
+]

@@ -1,0 +1,95 @@
+{
+  "id": "0fdf9e08-c26a-444a-85ca-79f899eefb02",
+  "module_id": "918bc717-9d47-4db0-b9fa-1e8ab49fd289",
+  "title": "What Is AI? A Pharmacy Professional's Guide",
+  "content": [
+    {
+      "text": "Artificial Intelligence — Beyond the Buzzword",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Artificial intelligence is everywhere in the news, but what does it actually mean for a pharmacy technician standing behind the dispensing counter in Port of Spain, Kingston, or Bridgetown? At its core, AI refers to computer systems that can perform tasks that normally require human intelligence — recognising patterns, making decisions, understanding language, and learning from experience. You do not need a computer science degree to use AI tools effectively; you need to understand what they can and cannot do, and how to verify their outputs.",
+      "type": "text"
+    },
+    {
+      "term": "Artificial Intelligence (AI)",
+      "type": "key-term",
+      "definition": "The broad field of computer science concerned with building systems capable of performing tasks that typically require human intelligence, such as visual perception, language understanding, decision-making, and pattern recognition."
+    },
+    {
+      "body": "Think of AI as a spectrum. At one end, you have simple rule-based systems — your pharmacy's software that flags a drug interaction when you enter two specific medications is a basic form of AI. At the other end, you have sophisticated machine learning models that can analyse thousands of patient records to predict which diabetic patients are most likely to be hospitalised next month. Both are 'AI', but they work very differently and have very different capabilities and limitations.",
+      "type": "text"
+    },
+    {
+      "term": "Machine Learning (ML)",
+      "type": "key-term",
+      "definition": "A subset of AI where systems learn patterns from data rather than following explicitly programmed rules. The system improves its performance as it is exposed to more data, much like a pharmacy technician who becomes faster and more accurate with experience."
+    },
+    {
+      "body": "The Caribbean is not behind in AI adoption — it is simply adopting differently. Many pharmacies across Trinidad, Jamaica, and Barbados already use AI-powered features within their existing software without realising it. Auto-complete in dispensing software, smart inventory reorder alerts, and insurance claim validation tools all use AI under the hood. Understanding this is the first step to using these tools more deliberately and effectively.",
+      "type": "callout",
+      "title": "Caribbean Context",
+      "variant": "info"
+    },
+    {
+      "text": "Key AI Concepts for Pharmacy",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "rows": [
+        [
+          "Algorithm",
+          "A step-by-step set of instructions for solving a problem",
+          "The process your dispensing software uses to check if a dose is within the safe range"
+        ],
+        [
+          "Natural Language Processing (NLP)",
+          "AI that understands and generates human language",
+          "ChatGPT or Claude answering your question about a drug's side effects"
+        ],
+        [
+          "Training Data",
+          "The information used to teach an ML model",
+          "Thousands of past prescriptions used to train a system that predicts demand"
+        ],
+        [
+          "Neural Network",
+          "An ML architecture inspired by the human brain's structure",
+          "The technology behind image recognition that can read handwritten prescriptions"
+        ],
+        [
+          "Large Language Model (LLM)",
+          "An AI trained on vast amounts of text to understand and generate language",
+          "Claude and ChatGPT — tools that can summarise drug monographs or draft patient information leaflets"
+        ]
+      ],
+      "type": "table",
+      "caption": "AI Terminology Made Simple",
+      "headers": [
+        "Term",
+        "What It Means",
+        "Pharmacy Example"
+      ]
+    },
+    {
+      "body": "The crucial point for pharmacy professionals is this: AI is a tool, not a replacement. Just as a calculator does not replace a pharmacy technician's need to understand pharmaceutical mathematics, AI does not replace clinical judgement. It augments it. Every AI output in a clinical context must be verified by a qualified human before it affects patient care.",
+      "type": "text"
+    },
+    {
+      "type": "knowledge-check",
+      "options": [
+        "A computer system that follows only pre-programmed rules",
+        "A subset of AI where systems learn patterns from data and improve with experience",
+        "Any software used in a pharmacy",
+        "A technology that replaces the need for human pharmacists"
+      ],
+      "question": "Which of the following best describes machine learning?",
+      "explanation": "Machine learning is a subset of AI where systems learn from data rather than relying solely on pre-programmed rules. The system improves its performance as it is exposed to more data. It does not replace human professionals — it augments their capabilities.",
+      "correctIndex": 1
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 25
+}
