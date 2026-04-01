@@ -1294,7 +1294,7 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
                             variant="ghost"
                             className="h-8 w-8 p-0"
                             title="Preview as Student"
-                            onClick={(e) => { e.stopPropagation(); setPreviewCourseId(course.id); }}
+                            onClick={(e) => { e.stopPropagation(); setPreviewCourseId(course.slug); }}
                           >
                             <IconEye />
                           </Button>
