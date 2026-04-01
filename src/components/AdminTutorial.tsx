@@ -185,6 +185,19 @@ export default function AdminTutorial() {
             <source src="/tutorials/DashboardOverview.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
+          <p className="text-sm font-medium mt-4 mb-2">Creating Your First Course</p>
+          <p className="text-sm text-muted-foreground mb-3">
+            Step-by-step guide to creating a new course from scratch.
+          </p>
+          <video
+            controls
+            playsInline
+            className="w-full rounded-lg border shadow-sm"
+            poster=""
+          >
+            <source src="/tutorials/CreatingCourse.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </CardContent>
       </Card>
 
