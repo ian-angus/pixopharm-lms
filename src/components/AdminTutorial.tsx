@@ -165,6 +165,29 @@ export default function AdminTutorial() {
         </div>
       </div>
 
+      {/* Video Walkthrough */}
+      <Card>
+        <CardHeader className="pb-2">
+          <CardTitle className="text-base flex items-center gap-2">
+            <IconTarget /> Video Walkthrough
+          </CardTitle>
+        </CardHeader>
+        <CardContent>
+          <p className="text-sm text-muted-foreground mb-3">
+            Watch a 30-second overview of every page in the admin dashboard.
+          </p>
+          <video
+            controls
+            playsInline
+            className="w-full rounded-lg border shadow-sm"
+            poster=""
+          >
+            <source src="/tutorials/DashboardOverview.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </CardContent>
+      </Card>
+
       {/* Quick Start Card */}
       <Card className="bg-gradient-to-br from-[hsl(174,45%,96%)] to-white border-[hsl(174,62%,32%)]/20">
         <CardHeader className="pb-2">
