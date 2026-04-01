@@ -172,32 +172,35 @@ export default function AdminTutorial() {
             <IconTarget /> Video Walkthrough
           </CardTitle>
         </CardHeader>
-        <CardContent>
-          <p className="text-sm text-muted-foreground mb-3">
-            Watch a 30-second overview of every page in the admin dashboard.
-          </p>
-          <video
-            controls
-            playsInline
-            className="w-full rounded-lg border shadow-sm"
-            poster=""
-          >
-            <source src="/tutorials/DashboardOverview.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-          <p className="text-sm font-medium mt-4 mb-2">Creating Your First Course</p>
-          <p className="text-sm text-muted-foreground mb-3">
-            Step-by-step guide to creating a new course from scratch.
-          </p>
-          <video
-            controls
-            playsInline
-            className="w-full rounded-lg border shadow-sm"
-            poster=""
-          >
-            <source src="/tutorials/CreatingCourse.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+        <CardContent className="space-y-5">
+          <div>
+            <p className="text-sm font-medium mb-1">Dashboard Overview</p>
+            <p className="text-sm text-muted-foreground mb-3">
+              Overview of every page in the admin dashboard.
+            </p>
+            <video
+              controls
+              playsInline
+              className="w-full max-w-[640px] rounded-lg border shadow-sm"
+            >
+              <source src="/tutorials/DashboardOverview.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div>
+            <p className="text-sm font-medium mb-1">Creating Your First Course</p>
+            <p className="text-sm text-muted-foreground mb-3">
+              Step-by-step guide to creating a new course from scratch.
+            </p>
+            <video
+              controls
+              playsInline
+              className="w-full max-w-[640px] rounded-lg border shadow-sm"
+            >
+              <source src="/tutorials/CreatingCourse.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
         </CardContent>
       </Card>
 

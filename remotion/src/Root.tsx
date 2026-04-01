@@ -11,7 +11,7 @@ export const RemotionRoot: React.FC = () => {
         width={1280}
         height={720}
         fps={30}
-        durationInFrames={30 * 30} // 30 seconds
+        durationInFrames={1710} // 57 seconds
       />
       <Composition
         id="CreatingCourse"
@@ -19,7 +19,7 @@ export const RemotionRoot: React.FC = () => {
         width={1280}
         height={720}
         fps={30}
-        durationInFrames={25 * 30} // 25 seconds
+        durationInFrames={1260} // 42 seconds
       />
     </>
   );

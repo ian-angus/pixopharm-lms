@@ -1,6 +1,7 @@
 import React from "react";
 import {
   AbsoluteFill,
+  Audio,
   Img,
   Sequence,
   interpolate,
@@ -98,7 +99,6 @@ const TitleSlide: React.FC<{ title: string; subtitle: string }> = ({
         fontFamily: "'DM Sans', system-ui, sans-serif",
       }}
     >
-      {/* Logo area */}
       <div
         style={{
           display: "flex",
@@ -162,7 +162,6 @@ const ScreenshotSlide: React.FC<{
   zoom?: { x: number; y: number; scale: number };
 }> = ({ src, highlights = [], callouts = [], zoom }) => {
   const frame = useCurrentFrame();
-  const { fps } = useVideoConfig();
 
   const imgOpacity = interpolate(frame, [0, 10], [0, 1], {
     extrapolateRight: "clamp",
@@ -203,13 +202,13 @@ const ScreenshotSlide: React.FC<{
           style={{ width: 1280, height: 720, objectFit: "cover" }}
         />
         {highlights.map((h, i) => (
-          <Sequence key={i} from={10 + i * 5}>
+          <Sequence key={i} from={15 + i * 15}>
             <Highlight x={h.x} y={h.y} width={h.w} height={h.h} />
           </Sequence>
         ))}
       </div>
       {callouts.map((c, i) => (
-        <Sequence key={i} from={15 + i * 10}>
+        <Sequence key={i} from={30 + i * 40}>
           <Callout text={c.text} x={c.x} y={c.y} align={c.align} />
         </Sequence>
       ))}
@@ -222,16 +221,22 @@ const ScreenshotSlide: React.FC<{
 export const DashboardOverview: React.FC = () => {
   return (
     <AbsoluteFill>
-      {/* 0-3s: Title slide */}
-      <Sequence from={0} durationInFrames={90}>
+      {/* Background music */}
+      <Audio
+        src={staticFile("music/gentle-caribbean-helpdesk-loop.mp3")}
+        volume={0.15}
+      />
+
+      {/* 0-4s: Title slide */}
+      <Sequence from={0} durationInFrames={120}>
         <TitleSlide
           title="PIXOPHARM Admin Guide"
           subtitle="Dashboard Overview — Know Your Console"
         />
       </Sequence>
 
-      {/* 3-7s: Dashboard page with highlights */}
-      <Sequence from={90} durationInFrames={120}>
+      {/* 4-12s: Dashboard page with highlights */}
+      <Sequence from={120} durationInFrames={240}>
         <ScreenshotSlide
           src="screenshots/03-admin-dashboard.png"
           highlights={[
@@ -247,8 +252,8 @@ export const DashboardOverview: React.FC = () => {
         />
       </Sequence>
 
-      {/* 7-11s: Courses list */}
-      <Sequence from={210} durationInFrames={120}>
+      {/* 12-20s: Courses list */}
+      <Sequence from={360} durationInFrames={240}>
         <ScreenshotSlide
           src="screenshots/04-admin-courses.png"
           highlights={[
@@ -264,8 +269,8 @@ export const DashboardOverview: React.FC = () => {
         />
       </Sequence>
 
-      {/* 11-15s: Course expanded showing modules */}
-      <Sequence from={330} durationInFrames={120}>
+      {/* 20-27s: Course expanded showing modules */}
+      <Sequence from={600} durationInFrames={210}>
         <ScreenshotSlide
           src="screenshots/05-admin-course-expanded.png"
           callouts={[
@@ -276,8 +281,8 @@ export const DashboardOverview: React.FC = () => {
         />
       </Sequence>
 
-      {/* 15-19s: Module expanded showing lessons + quizzes */}
-      <Sequence from={450} durationInFrames={120}>
+      {/* 27-34s: Module expanded showing lessons + quizzes */}
+      <Sequence from={810} durationInFrames={210}>
         <ScreenshotSlide
           src="screenshots/06-admin-module-expanded.png"
           zoom={{ x: 400, y: 200, scale: 1.3 }}
@@ -288,8 +293,8 @@ export const DashboardOverview: React.FC = () => {
         />
       </Sequence>
 
-      {/* 19-22s: New Course dialog */}
-      <Sequence from={570} durationInFrames={90}>
+      {/* 34-40s: New Course dialog */}
+      <Sequence from={1020} durationInFrames={180}>
         <ScreenshotSlide
           src="screenshots/11-admin-new-course-dialog.png"
           callouts={[
@@ -299,8 +304,8 @@ export const DashboardOverview: React.FC = () => {
         />
       </Sequence>
 
-      {/* 22-25s: Students page */}
-      <Sequence from={660} durationInFrames={90}>
+      {/* 40-46s: Students page */}
+      <Sequence from={1200} durationInFrames={180}>
         <ScreenshotSlide
           src="screenshots/07-admin-students.png"
           callouts={[
@@ -309,8 +314,8 @@ export const DashboardOverview: React.FC = () => {
         />
       </Sequence>
 
-      {/* 25-27s: Analytics page */}
-      <Sequence from={750} durationInFrames={60}>
+      {/* 46-52s: Analytics page */}
+      <Sequence from={1380} durationInFrames={180}>
         <ScreenshotSlide
           src="screenshots/08-admin-analytics.png"
           callouts={[
@@ -319,8 +324,8 @@ export const DashboardOverview: React.FC = () => {
         />
       </Sequence>
 
-      {/* 27-30s: Help & Guide page */}
-      <Sequence from={810} durationInFrames={90}>
+      {/* 52-57s: Help & Guide page */}
+      <Sequence from={1560} durationInFrames={150}>
         <ScreenshotSlide
           src="screenshots/10-admin-help.png"
           callouts={[
