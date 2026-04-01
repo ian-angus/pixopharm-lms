@@ -175,8 +175,8 @@ export default function AdminTutorial() {
         </CardHeader>
         <CardContent className="space-y-3">
           {[
-            { id: "dashboard", title: "Dashboard Overview", desc: "Overview of every admin page (1 min)", src: "/tutorials/DashboardOverview.mp4" },
-            { id: "creating", title: "Creating Your First Course", desc: "Step-by-step course creation guide (52s)", src: "/tutorials/CreatingCourse.mp4" },
+            { id: "dashboard", title: "Dashboard Overview", desc: "Overview of every admin page (1:41)", src: "/tutorials/DashboardOverview.mp4" },
+            { id: "creating", title: "Creating Your First Course", desc: "Step-by-step course creation guide (1:18)", src: "/tutorials/CreatingCourse.mp4" },
           ].map((vid) => (
             <div key={vid.id} className="border rounded-lg overflow-hidden">
               <button

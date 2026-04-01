@@ -3,7 +3,6 @@ import {
   AbsoluteFill,
   Audio,
   Img,
-  Loop,
   Sequence,
   interpolate,
   useCurrentFrame,
@@ -299,9 +298,9 @@ const ScreenshotSlide: React.FC<{
           </Sequence>
         ))}
       </div>
-      {/* Callouts: 1.5s initial delay, 3s between each */}
+      {/* Callouts: 2s initial delay, 5s between each */}
       {callouts.map((c, i) => (
-        <Sequence key={i} from={45 + i * 90}>
+        <Sequence key={i} from={60 + i * 150}>
           <Callout text={c.text} x={c.x} y={c.y} align={c.align} />
           {c.pointTo && (
             <Arrow
@@ -327,24 +326,28 @@ export const DashboardOverview: React.FC = () => {
 
   return (
     <AbsoluteFill>
-      {/* Background music — loops to fill video duration */}
-      <Loop durationInFrames={durationInFrames}>
-        <Audio
-          src={staticFile("music/gentle-caribbean-helpdesk-loop.mp3")}
-          volume={0.15}
-        />
-      </Loop>
+      {/* Background music with 3s fade-out at end */}
+      <Audio
+        src={staticFile("music/gentle-caribbean-helpdesk-loop.mp3")}
+        volume={(f) => {
+          const fadeStart = durationInFrames - 90;
+          if (f >= fadeStart) {
+            return 0.15 * (1 - (f - fadeStart) / 90);
+          }
+          return 0.15;
+        }}
+      />
 
-      {/* 0-4s: Title slide */}
-      <Sequence from={0} durationInFrames={120}>
+      {/* 0-5s: Title slide */}
+      <Sequence from={0} durationInFrames={150}>
         <TitleSlide
           title="PIXOPHARM Admin Guide"
           subtitle="Dashboard Overview — Know Your Console"
         />
       </Sequence>
 
-      {/* 4-15s: Dashboard page with highlights (3 callouts = 11s) */}
-      <Sequence from={120} durationInFrames={330}>
+      {/* 5-22s: Dashboard page with highlights (3 callouts = 17s) */}
+      <Sequence from={150} durationInFrames={510}>
         <ScreenshotSlide
           src="screenshots/03-admin-dashboard.png"
           highlights={[
@@ -376,8 +379,8 @@ export const DashboardOverview: React.FC = () => {
         />
       </Sequence>
 
-      {/* 15-26s: Courses list (3 callouts = 11s) */}
-      <Sequence from={450} durationInFrames={330}>
+      {/* 22-39s: Courses list (3 callouts = 17s) */}
+      <Sequence from={660} durationInFrames={510}>
         <ScreenshotSlide
           src="screenshots/04-admin-courses.png"
           highlights={[
@@ -408,8 +411,8 @@ export const DashboardOverview: React.FC = () => {
         />
       </Sequence>
 
-      {/* 26-37s: Course expanded showing modules (3 callouts = 11s) */}
-      <Sequence from={780} durationInFrames={330}>
+      {/* 39-56s: Course expanded showing modules (3 callouts = 17s) */}
+      <Sequence from={1170} durationInFrames={510}>
         <ScreenshotSlide
           src="screenshots/05-admin-course-expanded.png"
           callouts={[
@@ -434,8 +437,8 @@ export const DashboardOverview: React.FC = () => {
         />
       </Sequence>
 
-      {/* 37-45s: Module expanded showing lessons + quizzes (2 callouts = 8s) */}
-      <Sequence from={1110} durationInFrames={240}>
+      {/* 56-68s: Module expanded showing lessons + quizzes (2 callouts = 12s) */}
+      <Sequence from={1680} durationInFrames={360}>
         <ScreenshotSlide
           src="screenshots/06-admin-module-expanded.png"
           zoom={{ x: 400, y: 200, scale: 1.3 }}
@@ -456,8 +459,8 @@ export const DashboardOverview: React.FC = () => {
         />
       </Sequence>
 
-      {/* 45-53s: New Course dialog (2 callouts = 8s) */}
-      <Sequence from={1350} durationInFrames={240}>
+      {/* 68-80s: New Course dialog (2 callouts = 12s) */}
+      <Sequence from={2040} durationInFrames={360}>
         <ScreenshotSlide
           src="screenshots/11-admin-new-course-dialog.png"
           callouts={[
@@ -477,8 +480,8 @@ export const DashboardOverview: React.FC = () => {
         />
       </Sequence>
 
-      {/* 53-58s: Students page (1 callout = 5s) */}
-      <Sequence from={1590} durationInFrames={150}>
+      {/* 80-87s: Students page (1 callout = 7s) */}
+      <Sequence from={2400} durationInFrames={210}>
         <ScreenshotSlide
           src="screenshots/07-admin-students.png"
           callouts={[
@@ -491,8 +494,8 @@ export const DashboardOverview: React.FC = () => {
         />
       </Sequence>
 
-      {/* 58-63s: Analytics page (1 callout = 5s) */}
-      <Sequence from={1740} durationInFrames={150}>
+      {/* 87-94s: Analytics page (1 callout = 7s) */}
+      <Sequence from={2610} durationInFrames={210}>
         <ScreenshotSlide
           src="screenshots/08-admin-analytics.png"
           callouts={[
@@ -505,8 +508,8 @@ export const DashboardOverview: React.FC = () => {
         />
       </Sequence>
 
-      {/* 63-68s: Help & Guide page (1 callout = 5s) */}
-      <Sequence from={1890} durationInFrames={150}>
+      {/* 94-101s: Help & Guide page (1 callout = 7s) */}
+      <Sequence from={2820} durationInFrames={210}>
         <ScreenshotSlide
           src="screenshots/10-admin-help.png"
           callouts={[

@@ -3,7 +3,6 @@ import {
   AbsoluteFill,
   Audio,
   Img,
-  Loop,
   Sequence,
   interpolate,
   useCurrentFrame,
@@ -297,9 +296,9 @@ const ScreenshotSlide: React.FC<{
           </Sequence>
         ))}
       </div>
-      {/* Callouts: 1.5s initial delay, 3s between each */}
+      {/* Callouts: 2s initial delay, 5s between each */}
       {callouts.map((c, i) => (
-        <Sequence key={i} from={45 + i * 90}>
+        <Sequence key={i} from={60 + i * 150}>
           <Callout text={c.text} x={c.x} y={c.y} align={c.align} />
           {c.pointTo && (
             <Arrow
@@ -325,24 +324,28 @@ export const CreatingCourse: React.FC = () => {
 
   return (
     <AbsoluteFill>
-      {/* Background music — loops to fill video duration */}
-      <Loop durationInFrames={durationInFrames}>
-        <Audio
-          src={staticFile("music/gentle-caribbean-helpdesk-loop.mp3")}
-          volume={0.15}
-        />
-      </Loop>
+      {/* Background music with 3s fade-out at end */}
+      <Audio
+        src={staticFile("music/gentle-caribbean-helpdesk-loop.mp3")}
+        volume={(f) => {
+          const fadeStart = durationInFrames - 90;
+          if (f >= fadeStart) {
+            return 0.15 * (1 - (f - fadeStart) / 90);
+          }
+          return 0.15;
+        }}
+      />
 
-      {/* 0-4s: Title slide */}
-      <Sequence from={0} durationInFrames={120}>
+      {/* 0-5s: Title slide */}
+      <Sequence from={0} durationInFrames={150}>
         <TitleSlide
           title="Creating Your First Course"
           subtitle="Step-by-step — from blank slate to published course"
         />
       </Sequence>
 
-      {/* 4-12s: Courses page — highlight + New Course button (2 callouts = 8s) */}
-      <Sequence from={120} durationInFrames={240}>
+      {/* 5-17s: Courses page — highlight + New Course button (2 callouts = 12s) */}
+      <Sequence from={150} durationInFrames={360}>
         <ScreenshotSlide
           src="screenshots/20-courses-page.png"
           highlights={[
@@ -364,8 +367,8 @@ export const CreatingCourse: React.FC = () => {
         />
       </Sequence>
 
-      {/* 12-23s: New Course dialog — top fields (3 callouts = 11s) */}
-      <Sequence from={360} durationInFrames={330}>
+      {/* 17-34s: New Course dialog — top fields (3 callouts = 17s) */}
+      <Sequence from={510} durationInFrames={510}>
         <ScreenshotSlide
           src="screenshots/21-new-course-dialog-top.png"
           highlights={[
@@ -398,8 +401,8 @@ export const CreatingCourse: React.FC = () => {
         />
       </Sequence>
 
-      {/* 23-37s: New Course dialog — bottom fields (4 callouts = 14s) */}
-      <Sequence from={690} durationInFrames={420}>
+      {/* 34-56s: New Course dialog — bottom fields (4 callouts = 22s) */}
+      <Sequence from={1020} durationInFrames={660}>
         <ScreenshotSlide
           src="screenshots/22-new-course-dialog-bottom.png"
           highlights={[
@@ -438,8 +441,8 @@ export const CreatingCourse: React.FC = () => {
         />
       </Sequence>
 
-      {/* 37-48s: Expanded course showing modules (3 callouts = 11s) */}
-      <Sequence from={1110} durationInFrames={330}>
+      {/* 56-73s: Expanded course showing modules (3 callouts = 17s) */}
+      <Sequence from={1680} durationInFrames={510}>
         <ScreenshotSlide
           src="screenshots/23-course-expanded-modules.png"
           highlights={[
@@ -470,8 +473,8 @@ export const CreatingCourse: React.FC = () => {
         />
       </Sequence>
 
-      {/* 48-52s: End slide */}
-      <Sequence from={1440} durationInFrames={120}>
+      {/* 73-78s: End slide */}
+      <Sequence from={2190} durationInFrames={150}>
         <TitleSlide
           title="Course Created!"
           subtitle="Next: Add modules, lessons, and quiz questions"
