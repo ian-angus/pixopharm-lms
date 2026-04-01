@@ -124,6 +124,7 @@ function Term({ term, children }: { term: string; children: React.ReactNode }) {
 
 export default function AdminTutorial() {
   const [openSections, setOpenSections] = useState<Set<string>>(new Set(["overview"]));
+  const [activeVideo, setActiveVideo] = useState<string | null>(null);
 
   const toggle = (id: string) => {
     setOpenSections((prev) => {
@@ -165,42 +166,49 @@ export default function AdminTutorial() {
         </div>
       </div>
 
-      {/* Video Walkthrough */}
+      {/* Video Walkthrough — collapsible per video */}
       <Card>
         <CardHeader className="pb-2">
           <CardTitle className="text-base flex items-center gap-2">
-            <IconTarget /> Video Walkthrough
+            <IconTarget /> Video Walkthroughs
           </CardTitle>
         </CardHeader>
-        <CardContent className="space-y-5">
-          <div>
-            <p className="text-sm font-medium mb-1">Dashboard Overview</p>
-            <p className="text-sm text-muted-foreground mb-3">
-              Overview of every page in the admin dashboard.
-            </p>
-            <video
-              controls
-              playsInline
-              className="w-full max-w-[640px] rounded-lg border shadow-sm"
-            >
-              <source src="/tutorials/DashboardOverview.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
-          <div>
-            <p className="text-sm font-medium mb-1">Creating Your First Course</p>
-            <p className="text-sm text-muted-foreground mb-3">
-              Step-by-step guide to creating a new course from scratch.
-            </p>
-            <video
-              controls
-              playsInline
-              className="w-full max-w-[640px] rounded-lg border shadow-sm"
-            >
-              <source src="/tutorials/CreatingCourse.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
+        <CardContent className="space-y-3">
+          {[
+            { id: "dashboard", title: "Dashboard Overview", desc: "Overview of every admin page (1 min)", src: "/tutorials/DashboardOverview.mp4" },
+            { id: "creating", title: "Creating Your First Course", desc: "Step-by-step course creation guide (52s)", src: "/tutorials/CreatingCourse.mp4" },
+          ].map((vid) => (
+            <div key={vid.id} className="border rounded-lg overflow-hidden">
+              <button
+                className="w-full flex items-center justify-between px-4 py-3 hover:bg-muted/50 transition-colors text-left"
+                onClick={() => setActiveVideo(activeVideo === vid.id ? null : vid.id)}
+              >
+                <div>
+                  <p className="text-sm font-medium">{vid.title}</p>
+                  <p className="text-xs text-muted-foreground">{vid.desc}</p>
+                </div>
+                <span className={`text-xs font-medium px-3 py-1 rounded-full shrink-0 ${
+                  activeVideo === vid.id
+                    ? "bg-red-100 text-red-700"
+                    : "bg-[hsl(174,45%,96%)] text-[hsl(174,62%,32%)]"
+                }`}>
+                  {activeVideo === vid.id ? "Close" : "Watch"}
+                </span>
+              </button>
+              {activeVideo === vid.id && (
+                <div className="px-4 pb-4">
+                  <video
+                    controls
+                    autoPlay
+                    playsInline
+                    className="w-full max-w-[640px] rounded-lg border shadow-sm"
+                  >
+                    <source src={vid.src} type="video/mp4" />
+                  </video>
+                </div>
+              )}
+            </div>
+          ))}
         </CardContent>
       </Card>
 
