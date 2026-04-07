@@ -2,36 +2,7 @@
 
 ---
 
-## 2026-04-07: Deploy Testing + Regional Cleanup + Coderabbit Fixes — DEPLOYED
-
-### Branch: `feat/tiptap-course-restructure` (PR #1 open)
-
-### Issues Found & Fixed
-1. **"Regional" filter tab still showing in courses section** — hardcoded in 4 places in App.tsx:
-   - Filter tabs array: removed "Regional"
-   - Hero stats bars: updated to Beginner(7) / Intermediate(11) / Advanced(9)
-   - FAQ copy: "13-course programme, 4 levels" → "27-course programme, 3 levels"
-   - Pricing feature: "All 13 courses across 4 levels" → uses `catalogStats.totalCourses`
-   - Level certificate: "Beginner → Regional" → "Beginner → Advanced"
-2. **Coderabbit comment fixes** (courses.ts comment accuracy):
-   - Header: "24 courses" → "27 courses"
-   - Intermediate section banner: "10 courses, orders 8–17" → "11 courses, orders 8–18"
-
-### Deploy Verification (Playwright tested)
-- ✅ Homepage: 27 courses, 213 modules, hero text correct
-- ✅ Course filter tabs: All / Beginner / Intermediate / Advanced (no Regional)
-- ✅ CoursePlayer — existing course (foundations-pharmacy-practice): 8 modules, 28 lessons, loads from Supabase
-- ✅ CoursePlayer — new stub course (digital-learning-study-skills): 7 modules with correct titles, 0 lessons
-- ✅ CoursePlayer — final course (caribbean-certification-exam-prep): 8 exam-domain modules correct
-- ✅ Build: `pnpm build` clean
-
-### Commits (2026-04-07)
-- `bcb735a` — Remove Regional level references, update stats bars and copy
-- `2c00291` — Fix comment inaccuracies flagged by Coderabbit (courses.ts counts)
-
----
-
-## 2026-04-06: TipTap WYSIWYG Editor + Course Curriculum Restructure — DEPLOYED (PR open)
+## 2026-04-06: TipTap WYSIWYG Editor + Course Curriculum Restructure — IN PROGRESS (PR open)
 
 ### Branch: `feat/tiptap-course-restructure`
 
