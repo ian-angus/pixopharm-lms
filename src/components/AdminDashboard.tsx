@@ -87,9 +87,9 @@ import type {
 // ── CoursePlayer for Preview ─────────────────────────────────────────────────
 import CoursePlayer from "@/components/CoursePlayer";
 
-// ── Content Block Editor ────────────────────────────────────────────────────
-import ContentBlockEditor from "@/components/ContentBlockEditor";
-import type { ContentBlockType } from "@/components/ContentBlockEditor";
+// ── TipTap WYSIWYG Editor (replaces block-by-block ContentBlockEditor) ───────
+import TipTapLessonEditor from "@/components/TipTapLessonEditor";
+import type { ContentBlock } from "@/components/TipTapLessonEditor";
 
 // ── Dropdown Menu (for status toggle) ───────────────────────────────────────
 import {
@@ -402,7 +402,7 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
     title: "",
     duration_minutes: 15,
     order_index: 99,
-    content: [] as ContentBlockType[],
+    content: [] as ContentBlock[],
   });
   const [quizForm, setQuizForm] = useState({
     question: "",
@@ -650,7 +650,7 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
   function openEditLesson(lesson: Lesson) {
     setEditingLesson(lesson);
     setLessonParentModuleId(lesson.module_id);
-    const contentBlocks = Array.isArray(lesson.content) ? (lesson.content as ContentBlockType[]) : [];
+    const contentBlocks = Array.isArray(lesson.content) ? (lesson.content as ContentBlock[]) : [];
     setLessonForm({
       title: lesson.title,
       duration_minutes: lesson.duration_minutes,
@@ -2044,9 +2044,9 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
 
             <Separator />
 
-            {/* Content Block Editor */}
-            <ContentBlockEditor
-              blocks={lessonForm.content}
+            {/* TipTap WYSIWYG Editor */}
+            <TipTapLessonEditor
+              blocks={lessonForm.content as ContentBlock[]}
               onChange={(blocks) => setLessonForm((f) => ({ ...f, content: blocks }))}
             />
           </div>
@@ -2712,9 +2712,9 @@ function ModuleCard({
             ) : (
               <div className="space-y-1">
                 {mod.lessons.map((lesson) => {
-                  const contentBlocks = Array.isArray(lesson.content) ? (lesson.content as ContentBlockType[]) : [];
+                  const contentBlocks = Array.isArray(lesson.content) ? (lesson.content as ContentBlock[]) : [];
                   const firstTextBlock = contentBlocks.find(
-                    (b): b is Extract<ContentBlockType, { type: "text" }> => b.type === "text"
+                    (b): b is Extract<ContentBlock, { type: "text" }> => b.type === "text"
                   );
                   const contentPreview = firstTextBlock
                     ? firstTextBlock.body.slice(0, 60) + (firstTextBlock.body.length > 60 ? "..." : "")
