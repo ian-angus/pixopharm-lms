@@ -172,7 +172,7 @@ const faqs = [
   },
   {
     q: "How long does it take to complete the full program?",
-    a: `The complete 13-course programme spans ${catalogStats.totalWeeks} weeks of content across 4 levels (Beginner, Intermediate, Advanced, Regional). However, courses are self-paced, so you can take longer if needed. Most students complete individual courses within the listed timeframe when studying 8-10 hours per week. You can also take courses individually or focus on a single level.`,
+    a: `The complete ${catalogStats.totalCourses}-course programme spans ${catalogStats.totalWeeks} weeks of content across 3 levels (Beginner, Intermediate, Advanced). However, courses are self-paced, so you can take longer if needed. Most students complete individual courses within the listed timeframe when studying 8-10 hours per week. You can also take courses individually or focus on a single level.`,
   },
   {
     q: "Can I access courses on my phone or tablet?",
@@ -224,12 +224,12 @@ const plans = [
     period: "/month",
     description: "Full access for serious pharmacy professionals",
     features: [
-      "All 13 courses across 4 levels",
+      `All ${catalogStats.totalCourses} courses across 3 levels`,
       "Island Regulatory Navigator tool",
       "Drug scheduling comparison database",
       "AI in Pharmacy Practice course",
       "Practice exams & quizzes (800+ questions)",
-      "Level certificates (Beginner → Regional)",
+      "Level certificates (Beginner → Advanced)",
       "Priority email & chat support",
       "Spaced repetition flashcards",
     ],
@@ -417,10 +417,9 @@ function Hero() {
 
                 {/* Progress bars for levels */}
                 {[
-                  { level: "Beginner", courses: 3, color: "hsl(174,60%,45%)", progress: 65 },
-                  { level: "Intermediate", courses: 6, color: "hsl(199,80%,55%)", progress: 30 },
-                  { level: "Advanced", courses: 3, color: "hsl(262,60%,60%)", progress: 0 },
-                  { level: "Regional", courses: 1, color: "hsl(40,85%,55%)", progress: 0 },
+                  { level: "Beginner", courses: 7, color: "hsl(174,60%,45%)", progress: 65 },
+                  { level: "Intermediate", courses: 11, color: "hsl(199,80%,55%)", progress: 30 },
+                  { level: "Advanced", courses: 9, color: "hsl(262,60%,60%)", progress: 0 },
                 ].map((item) => (
                   <div key={item.level} className="space-y-2">
                     <div className="flex items-center justify-between text-xs">
@@ -862,7 +861,7 @@ function Courses({ onStartCourse }: { onStartCourse?: (courseId: string) => void
         {/* Filter tabs */}
         <div className="flex justify-center mb-10">
           <div className="inline-flex bg-white rounded-lg border border-slate-200 p-1 shadow-sm">
-            {["All", "Beginner", "Intermediate", "Advanced", "Regional"].map((f) => (
+            {["All", "Beginner", "Intermediate", "Advanced"].map((f) => (
               <button
                 key={f}
                 onClick={() => setFilter(f)}
