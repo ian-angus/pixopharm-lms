@@ -382,36 +382,70 @@ export const courses: Course[] = [
     order: 11,
   },
 
-  // L2-5: Applied Pharmacology & Drug Therapy
+  // L2-5a: Pharmacology, Drug Classes & Body Systems — Part 1
+  // (Penn Foster-aligned split: body systems + core drug classes first)
   {
     id: "pharmacology-essentials",
-    title: "Applied Pharmacology & Drug Therapy",
+    title: "Pharmacology & Body Systems — Part 1",
     slug: "pharmacology-essentials",
     description:
-      "Move beyond basic pharmacokinetics to develop a working knowledge of drug classes and their clinical applications. This course is tailored to the Caribbean disease landscape, with focused coverage of the medications most frequently dispensed across the region — antihypertensives, diabetes drugs, anti-infectives for tropical diseases, and HIV/AIDS therapies. You will learn to identify critical drug interactions and adverse effects that directly impact dispensing safety and patient counselling.",
+      "Build the pharmacological foundation you need to understand what every drug in your dispensary actually does. Part 1 focuses on the body systems most affected by the medications Caribbean technicians dispense every day — cardiovascular, respiratory, endocrine, gastrointestinal, and renal — linking anatomy and disease directly to the drug classes that treat them. Every drug group is introduced with its mechanism of action, common examples, key adverse effects, and the dispensing considerations that matter at the counter.",
     modules: [
-      "Drug Classification Systems and Therapeutic Categories",
-      "Cardiovascular Medications: Hypertension, Heart Failure, and Lipid Management",
-      "Endocrine and Metabolic Medications: Diabetes, Thyroid, and Hormonal Therapies",
-      "Anti-Infective Agents: Antibiotics, Antivirals, and Antifungals",
-      "Tropical and Vector-Borne Disease Treatments: Dengue, Chikungunya, Zika, and Malaria",
-      "CNS Medications: Pain Management, Mental Health, and Neurological Conditions",
-      "Drug Interactions, Contraindications, and Adverse Drug Reactions",
-      "OTC Medications and Herbal Remedies Common in the Caribbean",
+      "Drug Classification Systems: How Medications Are Named, Grouped, and Identified",
+      "Cardiovascular Medications: Antihypertensives, Heart Failure, and Lipid Agents",
+      "Respiratory Medications: Asthma, COPD, and Allergy Treatments",
+      "Endocrine and Metabolic Medications: Diabetes, Thyroid, and Hormone Therapies",
+      "Gastrointestinal Medications: Antacids, Antiemetics, Laxatives, and IBD Drugs",
+      "Renal and Urological Medications: Diuretics and Bladder Agents",
+      "Drug Forms, Routes of Administration, and Medication Storage",
+      "Introduction to Drug Interactions and Adverse Drug Reactions",
     ],
-    durationWeeks: 9,
+    durationWeeks: 6,
     skillLevel: "Intermediate",
     whatYoullLearn: [
-      "Classify major drug families and explain their mechanisms of action in patient-friendly terms",
-      "Identify critical drug interactions and contraindications for the most-dispensed Caribbean medications",
-      "Describe first-line treatments for regionally prevalent conditions including hypertension, diabetes, and tropical diseases",
-      "Recognise common adverse drug reactions and understand when to escalate to the pharmacist",
-      "Advise on OTC medications and traditional Caribbean herbal remedies with awareness of interaction risks",
+      "Explain the mechanism of action of major cardiovascular, respiratory, endocrine, and GI drug classes",
+      "Identify first-line medications for hypertension, diabetes, asthma, and GORD commonly dispensed in the Caribbean",
+      "Connect drug routes of administration and storage requirements to dispensing accuracy",
+      "Recognise common drug interactions and adverse effects for core drug families",
+      "Use drug classification knowledge to quickly look up unfamiliar medications by therapeutic category",
     ],
     icon: "HeartPulse",
     color: "rose",
     prerequisites: ["anatomy-physiology-medical-terminology", "dispensing-medication-management"],
     order: 12,
+  },
+
+  // L2-5b: Pharmacology, Drug Classes & Body Systems — Part 2
+  // (Penn Foster-aligned: CNS, immune, tropical diseases, interactions)
+  {
+    id: "pharmacology-advanced",
+    title: "Pharmacology & Body Systems — Part 2",
+    slug: "pharmacology-advanced",
+    description:
+      "Part 2 completes your pharmacological training with the drug classes and disease states that define Caribbean pharmacy practice. Tropical and vector-borne disease treatments, HIV/AIDS therapies, CNS and mental health medications, dermatological agents, and the immune system are all covered in detail. The course concludes with a systematic approach to identifying complex drug interactions, contraindications, and the OTC and herbal remedy landscape unique to the Caribbean — giving you the clinical confidence to flag safety issues before they reach patients.",
+    modules: [
+      "Musculoskeletal and Integumentary Medications: NSAIDs, Corticosteroids, and Topicals",
+      "CNS Medications: Analgesics, Antidepressants, Antipsychotics, and Anxiolytics",
+      "Neurological Medications: Anticonvulsants, Parkinson's, and Migraine Treatments",
+      "Immune System Medications: Immunosuppressants, Biologics, and Vaccines",
+      "Anti-Infective Agents: Antibiotics, Antivirals, and Antifungals in Depth",
+      "Tropical and Vector-Borne Disease Treatments: Dengue, Chikungunya, Zika, Malaria, and HIV",
+      "Complex Drug Interactions, Contraindications, and High-Risk Combinations",
+      "OTC Products and Caribbean Herbal Remedies: Evidence, Safety, and Interactions",
+    ],
+    durationWeeks: 6,
+    skillLevel: "Intermediate",
+    whatYoullLearn: [
+      "Describe the drug classes used for CNS conditions, tropical diseases, and immune system disorders",
+      "Identify the first-line anti-infective treatments for conditions prevalent in the Caribbean",
+      "Explain HIV/AIDS treatment regimens and the pharmacy technician's role in adherence support",
+      "Apply a systematic process to identify complex drug interactions and contraindications in dispensing",
+      "Advise on the safety profile and interaction risks of common Caribbean herbal remedies",
+    ],
+    icon: "Microscope",
+    color: "pink",
+    prerequisites: ["pharmacology-essentials"],
+    order: 13,
   },
 
   // L2-6: Medication Safety & Error Prevention
@@ -443,7 +477,7 @@ export const courses: Course[] = [
     icon: "ShieldAlert",
     color: "red",
     prerequisites: ["dispensing-medication-management"],
-    order: 13,
+    order: 14,
   },
 
   // L2-7: Inventory Management, Storage, Cold Chain & Supply Chain
@@ -475,7 +509,7 @@ export const courses: Course[] = [
     icon: "Package",
     color: "green",
     prerequisites: ["dispensing-medication-management"],
-    order: 14,
+    order: 15,
   },
 
   // L2-8: Documentation, Record Keeping & Reimbursement Basics
@@ -507,7 +541,7 @@ export const courses: Course[] = [
     icon: "FileText",
     color: "slate",
     prerequisites: ["dispensing-medication-management", "caribbean-pharmacy-law-ethics"],
-    order: 15,
+    order: 16,
   },
 
   // L2-9: Applied & Written Communication
@@ -539,7 +573,7 @@ export const courses: Course[] = [
     icon: "MessageSquare",
     color: "pink",
     prerequisites: ["foundations-pharmacy-practice", "professionalism-communication-ei"],
-    order: 16,
+    order: 17,
   },
 
   // L2-10: Patient & Interprofessional Communication Labs
@@ -571,11 +605,11 @@ export const courses: Course[] = [
     icon: "MessageCircleHeart",
     color: "teal",
     prerequisites: ["foundations-pharmacy-practice", "professionalism-communication-ei"],
-    order: 17,
+    order: 18,
   },
 
   // ══════════════════════════════════════════════════════════════════════════
-  // LEVEL 3 — ADVANCED (8 courses, orders 18–25)
+  // LEVEL 3 — ADVANCED (9 courses, orders 19–27)
   // ══════════════════════════════════════════════════════════════════════════
 
   // L3-1: Sterile & Nonsterile Compounding via Virtual Simulation
@@ -607,7 +641,7 @@ export const courses: Course[] = [
     icon: "Microscope",
     color: "blue",
     prerequisites: ["compounding-dosage-forms", "pharmaceutical-calculations-dosage"],
-    order: 18,
+    order: 19,
   },
 
   // L3-2: Complex Calculations
@@ -638,8 +672,8 @@ export const courses: Course[] = [
     ],
     icon: "Sigma",
     color: "indigo",
-    prerequisites: ["pharmaceutical-calculations-dosage", "pharmacology-essentials"],
-    order: 19,
+    prerequisites: ["pharmaceutical-calculations-dosage", "pharmacology-advanced"],
+    order: 20,
   },
 
   // L3-3: Advanced Pharmacy Systems & Digital Workflow
@@ -671,7 +705,7 @@ export const courses: Course[] = [
     icon: "Server",
     color: "cyan",
     prerequisites: ["dispensing-medication-management", "documentation-record-keeping"],
-    order: 20,
+    order: 21,
   },
 
   // L3-4: Public Health, Pharmacovigilance & Quality Improvement
@@ -703,7 +737,7 @@ export const courses: Course[] = [
     icon: "ShieldCheck",
     color: "orange",
     prerequisites: ["medication-safety-error-prevention", "dispensing-medication-management"],
-    order: 21,
+    order: 22,
   },
 
   // L3-5: Caribbean Regulatory Compliance & Quality Systems
@@ -735,7 +769,7 @@ export const courses: Course[] = [
     icon: "Building2",
     color: "amber",
     prerequisites: ["caribbean-pharmacy-law-ethics", "inventory-management-supply-chain"],
-    order: 22,
+    order: 23,
   },
 
   // L3-6: Technology, Automation & AI in Pharmacy
@@ -767,7 +801,7 @@ export const courses: Course[] = [
     icon: "BrainCircuit",
     color: "violet",
     prerequisites: ["dispensing-medication-management", "advanced-pharmacy-systems-digital"],
-    order: 23,
+    order: 24,
   },
 
   // L3-7: Leadership, Teamwork, Adaptability & Problem Solving
@@ -799,7 +833,7 @@ export const courses: Course[] = [
     icon: "Users",
     color: "slate",
     prerequisites: ["patient-care-communication", "quality-assurance-safety"],
-    order: 24,
+    order: 25,
   },
 
   // L3-8: Capstone Integrated Case Simulation
@@ -834,10 +868,48 @@ export const courses: Course[] = [
       "dispensing-medication-management",
       "medication-safety-error-prevention",
       "caribbean-pharmacy-law-ethics",
-      "pharmacology-essentials",
+      "pharmacology-advanced",
       "pharmacy-management-leadership",
     ],
-    order: 25,
+    order: 26,
+  },
+
+  // L3-9: Caribbean Pharmacy Certification Exam Preparation
+  // (Penn Foster-aligned: PTCE/ExCPT prep as named final subject)
+  {
+    id: "caribbean-certification-exam-prep",
+    title: "Caribbean Pharmacy Certification Exam Preparation",
+    slug: "caribbean-certification-exam-prep",
+    description:
+      "This final subject prepares you for the pharmacy technician certification examination recognised in your Caribbean jurisdiction — whether that is the PTCE (Pharmacy Technician Certification Exam), the ExCPT, or a nationally administered Caribbean competency assessment. Structured review sessions map every exam domain to content you have studied throughout the diploma. You will practise under timed conditions, identify knowledge gaps, and build the exam confidence needed to pass on your first attempt.",
+    modules: [
+      "Exam Overview: Domains, Blueprints, and What Examiners Expect",
+      "Domain Review 1: Medications — Drug Classes, Interactions, and Brand/Generic Names",
+      "Domain Review 2: Federal and Caribbean Pharmacy Law and Regulations",
+      "Domain Review 3: Patient Safety and Quality Assurance",
+      "Domain Review 4: Order Entry and Processing",
+      "Domain Review 5: Pharmacy Inventory Management",
+      "Domain Review 6: Pharmacy Billing and Reimbursement",
+      "Timed Practice Examinations and Gap Analysis",
+    ],
+    durationWeeks: 4,
+    skillLevel: "Advanced",
+    whatYoullLearn: [
+      "Identify your personal knowledge gaps across all exam domains using diagnostic practice tests",
+      "Apply exam strategy techniques including time management and question elimination",
+      "Recall high-frequency drug names, classifications, and interactions tested on certification exams",
+      "Demonstrate competency across all six PTCE/ExCPT exam domains under timed conditions",
+      "Complete a full-length simulated certification examination with performance feedback",
+    ],
+    icon: "Award",
+    color: "gold",
+    prerequisites: [
+      "pharmacology-advanced",
+      "caribbean-pharmaceutical-regulations",
+      "medication-safety-error-prevention",
+      "capstone-case-simulation",
+    ],
+    order: 27,
   },
 ];
 
