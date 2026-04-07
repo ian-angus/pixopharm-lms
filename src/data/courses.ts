@@ -2,7 +2,7 @@
 // PIXOPHARM LMS - Course Catalog Data
 // Caribbean Pharmacy Technician Training Program
 // Restructured 2026-04 per curriculum review (docx: "Suggested Update")
-// 3 Levels: Beginner → Intermediate → Advanced (24 courses)
+// 3 Levels: Beginner → Intermediate → Advanced (27 courses)
 // Developed by Melyn Management Inc.
 // ============================================================================
 
@@ -252,7 +252,7 @@ export const courses: Course[] = [
   },
 
   // ══════════════════════════════════════════════════════════════════════════
-  // LEVEL 2 — INTERMEDIATE (10 courses, orders 8–17)
+  // LEVEL 2 — INTERMEDIATE (11 courses, orders 8–18)
   // ══════════════════════════════════════════════════════════════════════════
 
   // L2-1: Prescription Processing & Workflow
