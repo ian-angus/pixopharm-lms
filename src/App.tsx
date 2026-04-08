@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { courses, catalogStats } from "@/data/courses";
+import { courses, catalogStats, skillLevels } from "@/data/courses";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription, CardFooter } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -861,7 +861,7 @@ function Courses({ onStartCourse }: { onStartCourse?: (courseId: string) => void
         {/* Filter tabs */}
         <div className="flex justify-center mb-10">
           <div className="inline-flex bg-white rounded-lg border border-slate-200 p-1 shadow-sm">
-            {["All", "Beginner", "Intermediate", "Advanced"].map((f) => (
+            {["All", ...skillLevels].map((f) => (
               <button
                 key={f}
                 onClick={() => setFilter(f)}

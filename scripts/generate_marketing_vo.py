@@ -62,7 +62,7 @@ def search_caribbean_voices(headers: dict) -> list:
                     for v in items:
                         print(f"    - {v.get('title', 'Unknown')} [{v.get('_id')}] lang={v.get('languages', [])} tags={v.get('tags', [])}")
                     return items
-    except Exception as e:
+    except (requests.RequestException, ValueError) as e:
         print(f"  Voice search failed: {e}")
     return []
 
@@ -81,9 +81,9 @@ def generate_audio(headers: dict, voice_id: str, text: str, output_path: str):
         },
     }
 
-    print(f"\nGenerating audio...")
+    print("\nGenerating audio...")
     print(f"  Voice: {voice_id}")
-    print(f"  Model: s2-pro | temp=0.82 | speed=0.95")
+    print("  Model: s2-pro | temp=0.82 | speed=0.95")
     print(f"  Text: {len(text)} chars")
 
     response = requests.post(
@@ -141,10 +141,10 @@ def main():
     print(f"\n{'='*55}")
     print(f"DONE: {output_path}")
     print(f"Size: {size_mb:.1f} MB | Duration: {duration}")
-    print(f"\nNext steps:")
-    print(f"  1. Listen to the file to check quality")
-    print(f"  2. In MarketingHero.tsx, uncomment the voiceover <Audio> line")
-    print(f"  3. Render: npx remotion render remotion/src/index.ts MarketingHero")
+    print("\nNext steps:")
+    print("  1. Listen to the file to check quality")
+    print("  2. In MarketingHero.tsx, uncomment the voiceover <Audio> line")
+    print("  3. Render: npx remotion render remotion/src/index.ts MarketingHero")
     print(f"{'='*55}")
 
 
