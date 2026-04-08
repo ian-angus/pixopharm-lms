@@ -1629,7 +1629,7 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
               <div>
                 <h2 className="text-xl font-bold text-foreground">PixoPharm AI Course Generator</h2>
                 <p className="text-sm text-muted-foreground">
-                  Generate a detailed, Caribbean-specific draft course using Claude AI. Two-phase generation: outline first, then rich lesson content per module. Saved as draft — review and publish when ready.
+                  Generate a detailed, Caribbean-specific draft course using the PixoPharm AI generator. Two-phase generation: outline first, then rich lesson content per module. Saved as draft — review and publish when ready.
                 </p>
               </div>
 
@@ -1638,7 +1638,7 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
                 <Card>
                   <CardHeader>
                     <CardTitle className="text-base">Course Specifications</CardTitle>
-                    <CardDescription>Claude generates a two-phase deep course: outline + rich lesson content per module, with Caribbean regulations, clinical detail, callouts, key terms, and island comparisons built in.</CardDescription>
+                    <CardDescription>The PixoPharm AI generator creates a two-phase deep course: outline + rich lesson content per module, with Caribbean regulations, clinical detail, callouts, key terms, and island comparisons built in.</CardDescription>
                   </CardHeader>
                   <CardContent className="space-y-5">
                     {/* Title */}
@@ -1810,7 +1810,7 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
                       </p>
                       {aiGenResult.model_used && (
                         <span className="text-xs bg-muted px-2 py-0.5 rounded text-muted-foreground">
-                          {aiGenResult.model_used.includes("opus") ? "Claude Opus" : aiGenResult.model_used.includes("sonnet") ? "Claude Sonnet" : "Claude Haiku"}
+                          {aiGenResult.model_used.includes("opus") ? "PixoPharm AI (Opus)" : aiGenResult.model_used.includes("sonnet") ? "PixoPharm AI (Sonnet)" : "PixoPharm AI"}
                         </span>
                       )}
                     </div>
@@ -1841,12 +1841,13 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
                       <div className="text-sm text-blue-800 dark:text-blue-300 space-y-1">
                         <p className="font-medium">PixoPharm AI Course Generator — two-phase deep generation</p>
                         <ul className="text-xs space-y-0.5 text-blue-700 dark:text-blue-400 list-disc list-inside">
-                          <li><strong>Phase 1:</strong> Course outline — modules, lesson structure, 5 scenario-based quiz questions per module</li>
-                          <li><strong>Phase 2:</strong> Rich lesson content per module — multi-paragraph text, Caribbean callouts, key terms, safety warnings, video placeholders</li>
+                          <li><strong>Phase 1:</strong> Course outline — modules, lesson titles, learning objectives (fast)</li>
+                          <li><strong>Phase 2:</strong> All modules generated in parallel — rich lesson content, Caribbean callouts, key terms, safety warnings, video placeholders + 3 scenario-based quiz questions per module</li>
                           <li>Real drug names, real CARICOM regulations, real island comparisons (TT, Jamaica, Barbados, Guyana…)</li>
-                          <li>Uses Claude Opus 4.6 (falls back to Haiku if unavailable)</li>
+                          <li>Powered by PixoPharm AI — best available model, automatic fallback if needed</li>
+                          <li>Connection-safe — course is saved to your database immediately; if the connection drops, find it in <strong>Courses</strong> with status "generating" or "draft"</li>
                         </ul>
-                        <p className="text-xs mt-2 font-medium text-blue-800 dark:text-blue-300">Generation takes 60–120 seconds. The draft is fully editable with the TipTap editor.</p>
+                        <p className="text-xs mt-2 font-medium text-blue-800 dark:text-blue-300">Generation takes 45–90 seconds. The draft is fully editable with the TipTap editor.</p>
                       </div>
                     </div>
                   </CardContent>

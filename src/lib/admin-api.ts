@@ -883,15 +883,21 @@ export interface GenerateCourseResult {
 export async function generateCourse(
   params: GenerateCourseParams
 ): Promise<GenerateCourseResult> {
+  // Generate a unique job_id so the server can detect retries after a dropped
+  // connection — if the same job_id is sent again, the server returns the
+  // already-completed course instead of creating a duplicate.
+  const jobId = crypto.randomUUID();
+
   const { data, error } = await supabase.functions.invoke("generate-course", {
-    body: params,
+    body: { ...params, job_id: jobId },
   });
 
-  if (error) handleError(error, "generateCourse");
-
+  // Check data.error first — supabase-js sets both data and error on non-2xx responses
   if (data?.error) {
     throw new Error(`generate-course: ${data.error}`);
   }
+
+  if (error) handleError(error, "generateCourse");
 
   return data as GenerateCourseResult;
 }
