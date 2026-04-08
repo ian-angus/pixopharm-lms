@@ -7,6 +7,7 @@
 // ============================================================================
 
 export type SkillLevel = "Beginner" | "Intermediate" | "Advanced";
+export const skillLevels: SkillLevel[] = ["Beginner", "Intermediate", "Advanced"];
 
 export interface Course {
   id: string;

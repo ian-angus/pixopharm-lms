@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { courses, catalogStats } from "@/data/courses";
+import { courses, catalogStats, skillLevels } from "@/data/courses";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription, CardFooter } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -409,7 +409,7 @@ function Hero() {
                     </div>
                     <div>
                       <div className="text-white/90 text-sm font-semibold">Your Learning Path</div>
-                      <div className="text-white/40 text-xs">4 levels &middot; 13 courses</div>
+                      <div className="text-white/40 text-xs">3 levels &middot; {catalogStats.totalCourses} courses</div>
                     </div>
                   </div>
                   <div className="text-[hsl(174,70%,70%)] text-xs font-medium bg-[hsl(174,60%,45%)]/10 px-2.5 py-1 rounded-full border border-[hsl(174,60%,45%)]/20">Active</div>
@@ -861,7 +861,7 @@ function Courses({ onStartCourse }: { onStartCourse?: (courseId: string) => void
         {/* Filter tabs */}
         <div className="flex justify-center mb-10">
           <div className="inline-flex bg-white rounded-lg border border-slate-200 p-1 shadow-sm">
-            {["All", "Beginner", "Intermediate", "Advanced"].map((f) => (
+            {["All", ...skillLevels].map((f) => (
               <button
                 key={f}
                 onClick={() => setFilter(f)}

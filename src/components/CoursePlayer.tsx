@@ -1383,6 +1383,46 @@ function transformDbCourse(
   };
 }
 
+// ── Content Protection ───────────────────────────────────────────────────────
+
+function ContentWatermark({ user }: { user: User | null }) {
+  if (!user) return null;
+  const name =
+    (user.user_metadata?.full_name as string | undefined) ??
+    (user.user_metadata?.name as string | undefined) ??
+    user.email?.split("@")[0] ??
+    "User";
+  const label = `${name}  •  ${user.email ?? ""}`;
+  const items = Array.from({ length: 24 }, (_, i) => i);
+  return (
+    <div
+      aria-hidden="true"
+      style={{ position: "fixed", inset: 0, pointerEvents: "none", zIndex: 9999, overflow: "hidden" }}
+    >
+        {items.map((i) => (
+          <div
+            key={i}
+            style={{
+              position: "absolute",
+              top: Math.floor(i / 4) * 200 - 60,
+              left: `${(i % 4) * 25}%`,
+              transform: "rotate(-35deg)",
+              whiteSpace: "nowrap",
+              fontSize: 11,
+              fontWeight: 500,
+              color: "rgba(0,0,0,0.05)",
+              letterSpacing: "0.04em",
+              fontFamily: "system-ui, sans-serif",
+              userSelect: "none",
+            }}
+          >
+            {label}
+          </div>
+        ))}
+    </div>
+  );
+}
+
 // ── Main Course Player ──────────────────────────────────────────────────────
 
 export default function CoursePlayer({
@@ -1971,8 +2011,12 @@ export default function CoursePlayer({
 
   // ── Layout ──────────────────────────────────────────────────────────────
 
+  const blockEvent = (e: React.SyntheticEvent) => e.preventDefault();
+
   return (
     <div className="h-screen flex flex-col bg-slate-50">
+      <style>{`@media print{body>*{display:none!important}body::after{content:"This content is protected — printing is not permitted.";display:block;text-align:center;padding:60px;font-size:16px;font-family:sans-serif}}`}</style>
+      <ContentWatermark user={user} />
       {/* Top bar */}
       <div className="h-14 bg-white border-b border-slate-200 flex items-center px-4 gap-3 shrink-0 z-20">
         <button onClick={() => setSidebarOpen(!sidebarOpen)} className="p-1.5 rounded-md hover:bg-slate-100 text-slate-600">
@@ -1992,7 +2036,13 @@ export default function CoursePlayer({
       {/* Body */}
       <div className="flex flex-1 overflow-hidden">
         <Sidebar />
-        <div ref={contentRef} className="flex-1 overflow-y-auto">
+        <div
+          ref={contentRef}
+          className="flex-1 overflow-y-auto select-none"
+          onCopy={blockEvent}
+          onCut={blockEvent}
+          onContextMenu={blockEvent}
+        >
           {renderContent()}
         </div>
       </div>

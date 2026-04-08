@@ -1,10 +1,19 @@
 import { Composition } from "remotion";
 import { DashboardOverview } from "./compositions/DashboardOverview";
 import { CreatingCourse } from "./compositions/CreatingCourse";
+import { MarketingHero } from "./compositions/MarketingHero";
 
 export const RemotionRoot: React.FC = () => {
   return (
     <>
+      <Composition
+        id="MarketingHero"
+        component={MarketingHero}
+        width={1280}
+        height={720}
+        fps={30}
+        durationInFrames={1020} // 34 seconds
+      />
       <Composition
         id="DashboardOverview"
         component={DashboardOverview}
