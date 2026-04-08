@@ -1473,10 +1473,11 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
                               setAiLoading((prev) => ({ ...prev, [slug]: true }));
                               try {
                                 const { supabase: sb } = await import("@/lib/supabase");
-                                const { data } = await sb.functions.invoke("analyze-survey", {
+                                const { data, error } = await sb.functions.invoke("analyze-survey", {
                                   body: { course_id: slug },
                                 });
-                                setAiAnalysis((prev) => ({ ...prev, [slug]: data }));
+                                if (error) throw error;
+                                setAiAnalysis((prev) => ({ ...prev, [slug]: data ?? { summary: "No data returned.", recommendations: [] } }));
                               } catch {
                                 setAiAnalysis((prev) => ({ ...prev, [slug]: { summary: "Analysis unavailable.", recommendations: [] } }));
                               } finally {
