@@ -2,6 +2,52 @@
 
 ---
 
+## 2026-04-08: Feature 3 (Post-Course Survey) — DEPLOYED + TESTED ✅
+
+### Branch: `feature/post-course-survey` → PR #3 open
+
+### Work Done
+1. **`course_surveys` table** — Supabase schema with RLS, UNIQUE(user_id, course_id)
+2. **`src/components/SurveyView.tsx`** — 7-question survey UI (5 required + 2 optional open-text)
+   - StarRating, PillGroup, Question sub-components
+   - Submit disabled until Q1–5 answered
+3. **`src/components/CoursePlayer.tsx`** — survey gate integrated
+   - `surveyDone` state checked on load via `hasSubmittedSurvey()`
+   - "View Certificate" → survey if not done, certificate if done
+4. **`src/lib/admin-api.ts`** — `submitSurvey`, `hasSubmittedSurvey`, `fetchSurveyStats`
+5. **`src/components/AdminDashboard.tsx`** — survey analytics in course expansion
+   - Avg ratings, recommend%, difficulty distribution, open-text responses
+   - AI Analysis button (needs `ANTHROPIC_API_KEY` Supabase secret)
+6. **`analyze-survey` Edge Function** — deployed to Supabase, calls Claude for theme analysis
+
+### Playwright Test Results
+- ✅ 100% complete course shows "View Certificate"
+- ✅ First click → survey gate (not certificate)
+- ✅ Survey fills + submits → certificate shown, DB row saved
+- ✅ Second click → certificate directly (surveyDone=true, no re-prompt)
+
+### Deploy
+- ✅ Build clean (`pnpm build`)
+- ✅ Deployed `npx vercel --prod` → pixopharm-lms.vercel.app
+
+### Pending
+- ⏳ Set `ANTHROPIC_API_KEY` as Supabase secret for AI analysis button
+- ⏳ PR #2 (Content Protection) — Coderabbit fixes committed, awaiting merge
+- ⏳ PR #3 (Survey) — awaiting Coderabbit review + merge
+
+---
+
+## 2026-04-08: Feature 1 (Content Protection) — DEPLOYED
+
+### Branch: `feature/content-protection` → PR #2 open
+
+### Work Done
+1. **ContentWatermark** — diagonal watermark with user name + email (position:fixed, z-index:9999)
+2. **Copy/print block** — `onCopy/onCut/onContextMenu` React handlers + `@media print` CSS
+3. **Coderabbit fixes** — f-string cleanup, narrowed exception catch, `skillLevels` constant extracted
+
+---
+
 ## 2026-04-08: Admin Course Grouping + Feature Backlog — DEPLOYED
 
 ### Work Done
