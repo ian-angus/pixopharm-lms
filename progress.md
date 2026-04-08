@@ -2,6 +2,79 @@
 
 ---
 
+## 2026-04-08: Feature 3 (Post-Course Survey) — DEPLOYED + TESTED ✅
+
+### Branch: `feature/post-course-survey` → PR #3 open
+
+### Work Done
+1. **`course_surveys` table** — Supabase schema with RLS, UNIQUE(user_id, course_id)
+2. **`src/components/SurveyView.tsx`** — 7-question survey UI (5 required + 2 optional open-text)
+   - StarRating, PillGroup, Question sub-components
+   - Submit disabled until Q1–5 answered
+3. **`src/components/CoursePlayer.tsx`** — survey gate integrated
+   - `surveyDone` state checked on load via `hasSubmittedSurvey()`
+   - "View Certificate" → survey if not done, certificate if done
+4. **`src/lib/admin-api.ts`** — `submitSurvey`, `hasSubmittedSurvey`, `fetchSurveyStats`
+5. **`src/components/AdminDashboard.tsx`** — survey analytics in course expansion
+   - Avg ratings, recommend%, difficulty distribution, open-text responses
+   - AI Analysis button (needs `ANTHROPIC_API_KEY` Supabase secret)
+6. **`analyze-survey` Edge Function** — deployed to Supabase, calls Claude for theme analysis
+
+### Playwright Test Results
+- ✅ 100% complete course shows "View Certificate"
+- ✅ First click → survey gate (not certificate)
+- ✅ Survey fills + submits → certificate shown, DB row saved
+- ✅ Second click → certificate directly (surveyDone=true, no re-prompt)
+
+### Deploy
+- ✅ Build clean (`pnpm build`)
+- ✅ Deployed `npx vercel --prod` → pixopharm-lms.vercel.app
+
+### Pending
+- ⏳ Set `ANTHROPIC_API_KEY` as Supabase secret for AI analysis button
+- ⏳ PR #2 (Content Protection) — Coderabbit fixes committed, awaiting merge
+- ⏳ PR #3 (Survey) — awaiting Coderabbit review + merge
+
+---
+
+## 2026-04-08: Feature 1 (Content Protection) — DEPLOYED
+
+### Branch: `feature/content-protection` → PR #2 open
+
+### Work Done
+1. **ContentWatermark** — diagonal watermark with user name + email (position:fixed, z-index:9999)
+2. **Copy/print block** — `onCopy/onCut/onContextMenu` React handlers + `@media print` CSS
+3. **Coderabbit fixes** — f-string cleanup, narrowed exception catch, `skillLevels` constant extracted
+
+---
+
+## 2026-04-08: Admin Course Grouping + Feature Backlog — DEPLOYED
+
+### Work Done
+1. **Admin course grouping + search** — `src/components/AdminDashboard.tsx`
+   - Courses now grouped by Beginner / Intermediate / Advanced with colour-coded headers
+   - Collapsible groups (click header to toggle, chevron animates)
+   - Search bar filters across all groups simultaneously; empty groups hide automatically; all groups auto-expand when searching
+   - Fixed TypeScript bracket mismatch from previous session's partial edit
+2. **Feature backlog created** — `features-backlog.md` — 4 features documented:
+   - Feature 1: Course Content Protection (watermark + copy/print block)
+   - Feature 2: AI Course Generator (Claude API → full course to DB as draft)
+   - Feature 3: Post-Course Survey & Feedback Analytics
+   - Feature 4: Stripe Payment Module (CAD, pay-per-course, referrals, coupons)
+
+### Deploy
+- ✅ Build clean (`pnpm build`)
+- ✅ Deployed `npx vercel --prod` → pixopharm-lms.vercel.app
+- ✅ Playwright verified: grouping, collapse, search all working
+
+### Next Features (priority order — see features-backlog.md)
+1. Content Protection (low complexity, high value)
+2. AI Course Generator
+3. Post-Course Survey
+4. Stripe Payments
+
+---
+
 ## 2026-04-07: Deploy Testing + Regional Cleanup + Coderabbit Fixes — DEPLOYED
 
 ### Branch: `feat/tiptap-course-restructure` (PR #1 open)
