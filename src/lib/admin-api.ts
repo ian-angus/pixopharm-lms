@@ -873,6 +873,7 @@ export interface GenerateCourseResult {
   modules_count: number;
   lessons_count: number;
   questions_count: number;
+  model_used?: string;
 }
 
 /**

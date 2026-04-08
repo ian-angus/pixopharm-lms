@@ -1102,7 +1102,7 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
           {([
             { id: "dashboard" as AdminPage, label: "Dashboard", icon: <IconDashboard /> },
             { id: "courses" as AdminPage, label: "Courses", icon: <IconCourses /> },
-            { id: "ai-generator" as AdminPage, label: "AI Generator", icon: <IconAI /> },
+            { id: "ai-generator" as AdminPage, label: "AI Generator ✦", icon: <IconAI /> },
             { id: "students" as AdminPage, label: "Students", icon: <IconStudents /> },
             { id: "analytics" as AdminPage, label: "Analytics", icon: <IconAnalytics /> },
             { id: "settings" as AdminPage, label: "Settings", icon: <IconSettings /> },
@@ -1627,9 +1627,9 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
           {activePage === "ai-generator" && (
             <div className="space-y-6 max-w-2xl">
               <div>
-                <h2 className="text-xl font-bold text-foreground">AI Course Generator</h2>
+                <h2 className="text-xl font-bold text-foreground">PixoPharm AI Course Generator</h2>
                 <p className="text-sm text-muted-foreground">
-                  Generate a full draft course tailored to Caribbean pharmacy practice using Claude AI. The course is saved as a draft — review and edit it before publishing.
+                  Generate a detailed, Caribbean-specific draft course using Claude AI. Two-phase generation: outline first, then rich lesson content per module. Saved as draft — review and publish when ready.
                 </p>
               </div>
 
@@ -1638,7 +1638,7 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
                 <Card>
                   <CardHeader>
                     <CardTitle className="text-base">Course Specifications</CardTitle>
-                    <CardDescription>Fill in the details and Claude will generate the full course structure, lesson content, and quiz questions.</CardDescription>
+                    <CardDescription>Claude generates a two-phase deep course: outline + rich lesson content per module, with Caribbean regulations, clinical detail, callouts, key terms, and island comparisons built in.</CardDescription>
                   </CardHeader>
                   <CardContent className="space-y-5">
                     {/* Title */}
@@ -1766,7 +1766,7 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
                       {aiGenLoading ? (
                         <span className="flex items-center gap-2">
                           <svg className="animate-spin h-4 w-4" viewBox="0 0 24 24" fill="none"><circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"/><path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8z"/></svg>
-                          Generating… this takes 20–40 seconds
+                          Generating detailed content… 60–120 seconds
                         </span>
                       ) : (
                         <span className="flex items-center gap-2">
@@ -1804,9 +1804,16 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
                         <div className="text-xs text-muted-foreground">Quiz Questions</div>
                       </div>
                     </div>
-                    <p className="text-xs text-muted-foreground mt-3">
-                      Slug: <code className="bg-muted px-1 rounded">{aiGenResult.course_slug}</code>
-                    </p>
+                    <div className="flex items-center justify-between mt-3">
+                      <p className="text-xs text-muted-foreground">
+                        Slug: <code className="bg-muted px-1 rounded">{aiGenResult.course_slug}</code>
+                      </p>
+                      {aiGenResult.model_used && (
+                        <span className="text-xs bg-muted px-2 py-0.5 rounded text-muted-foreground">
+                          {aiGenResult.model_used.includes("opus") ? "Claude Opus" : aiGenResult.model_used.includes("sonnet") ? "Claude Sonnet" : "Claude Haiku"}
+                        </span>
+                      )}
+                    </div>
                   </CardContent>
                   <CardFooter className="flex gap-3">
                     <Button onClick={() => setActivePage("courses")} className="flex-1">
@@ -1832,14 +1839,14 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
                     <div className="flex gap-3">
                       <svg viewBox="0 0 24 24" className="w-5 h-5 text-blue-600 shrink-0 mt-0.5" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
                       <div className="text-sm text-blue-800 dark:text-blue-300 space-y-1">
-                        <p className="font-medium">What Claude generates</p>
+                        <p className="font-medium">PixoPharm AI Course Generator — two-phase deep generation</p>
                         <ul className="text-xs space-y-0.5 text-blue-700 dark:text-blue-400 list-disc list-inside">
-                          <li>Module and lesson structure tailored to Caribbean pharmacy</li>
-                          <li>Lesson content with headings and explanatory paragraphs</li>
-                          <li>4 multiple-choice quiz questions per module with explanations</li>
-                          <li>Course description, icon, and learning outcomes</li>
+                          <li><strong>Phase 1:</strong> Course outline — modules, lesson structure, 5 scenario-based quiz questions per module</li>
+                          <li><strong>Phase 2:</strong> Rich lesson content per module — multi-paragraph text, Caribbean callouts, key terms, safety warnings, video placeholders</li>
+                          <li>Real drug names, real CARICOM regulations, real island comparisons (TT, Jamaica, Barbados, Guyana…)</li>
+                          <li>Uses Claude Opus 4.6 (falls back to Haiku if unavailable)</li>
                         </ul>
-                        <p className="text-xs mt-2">Generation typically takes 20–40 seconds. The draft is immediately editable in the Courses section.</p>
+                        <p className="text-xs mt-2 font-medium text-blue-800 dark:text-blue-300">Generation takes 60–120 seconds. The draft is fully editable with the TipTap editor.</p>
                       </div>
                     </div>
                   </CardContent>
