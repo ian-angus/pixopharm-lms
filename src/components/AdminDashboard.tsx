@@ -74,6 +74,7 @@ import {
   fetchStudents,
   fetchAnalytics,
   fetchSurveyStats,
+  fetchAllSurveyStats,
 } from "@/lib/admin-api";
 import type {
   Course,
@@ -84,6 +85,8 @@ import type {
   StudentProfile,
   AnalyticsData,
   CourseSurveyStats,
+  AllSurveyStats,
+  SurveyCourseRow,
 } from "@/lib/admin-api";
 
 // ── CoursePlayer for Preview ─────────────────────────────────────────────────
@@ -352,6 +355,11 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
   const [surveyLoading, setSurveyLoading] = useState<Record<string, boolean>>({});
   const [aiAnalysis, setAiAnalysis] = useState<Record<string, { summary: string; recommendations: string[] } | null>>({});
   const [aiLoading, setAiLoading] = useState<Record<string, boolean>>({});
+
+  // ── Analytics — All-course survey overview ───────────────────────────────
+  const [allSurveyStats, setAllSurveyStats] = useState<AllSurveyStats | null>(null);
+  const [allSurveyLoading, setAllSurveyLoading] = useState(false);
+  const [expandedSurveyCourse, setExpandedSurveyCourse] = useState<string | null>(null);
   const [courseDetail, setCourseDetail] = useState<{
     course: Course;
     modules: (Module & { lessons: Lesson[]; quiz_questions: QuizQuestion[] })[];
@@ -492,6 +500,13 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
     }
     if (activePage === "dashboard" || activePage === "analytics") {
       loadAnalytics();
+    }
+    if (activePage === "analytics") {
+      setAllSurveyLoading(true);
+      fetchAllSurveyStats()
+        .then(setAllSurveyStats)
+        .catch(() => {})
+        .finally(() => setAllSurveyLoading(false));
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [activePage, adminLoading, isAdmin]);
@@ -1694,6 +1709,124 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
           {activePage === "analytics" && (
             <div className="space-y-6">
               <h2 className="text-xl font-bold text-foreground">Analytics</h2>
+
+              {/* ── Survey Feedback Overview ──────────────────────────────── */}
+              <Card>
+                <CardHeader className="pb-3">
+                  <div className="flex items-center justify-between">
+                    <div>
+                      <CardTitle className="text-base">Student Feedback</CardTitle>
+                      <CardDescription>Survey responses collected across all completed courses</CardDescription>
+                    </div>
+                    {allSurveyStats && allSurveyStats.total_responses > 0 && (
+                      <div className="flex gap-6 text-right shrink-0">
+                        <div>
+                          <p className="text-2xl font-bold text-foreground">{allSurveyStats.total_responses}</p>
+                          <p className="text-xs text-muted-foreground">Responses</p>
+                        </div>
+                        <div>
+                          <p className="text-2xl font-bold text-foreground">
+                            <span className="text-amber-500">★</span> {allSurveyStats.avg_overall}
+                          </p>
+                          <p className="text-xs text-muted-foreground">Avg Rating</p>
+                        </div>
+                        <div>
+                          <p className="text-2xl font-bold text-foreground">{allSurveyStats.recommend_pct}%</p>
+                          <p className="text-xs text-muted-foreground">Recommend</p>
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                </CardHeader>
+                <CardContent className="pt-0">
+                  {allSurveyLoading ? (
+                    <p className="text-sm text-muted-foreground py-4 text-center">Loading feedback data…</p>
+                  ) : !allSurveyStats || allSurveyStats.total_responses === 0 ? (
+                    <div className="py-8 text-center">
+                      <p className="text-sm text-muted-foreground">No survey responses yet.</p>
+                      <p className="text-xs text-muted-foreground mt-1">Responses appear here once students complete a course and submit feedback.</p>
+                    </div>
+                  ) : (
+                    <div className="divide-y divide-border">
+                      {/* Column headers */}
+                      <div className="grid grid-cols-[1fr_5rem_6rem_6rem_6rem] gap-3 py-2 px-3 text-xs font-medium text-muted-foreground uppercase tracking-wide">
+                        <span>Course</span>
+                        <span className="text-right">Resp.</span>
+                        <span className="text-right">Overall</span>
+                        <span className="text-right">Clarity</span>
+                        <span className="text-right">Recommend</span>
+                      </div>
+                      {allSurveyStats.by_course.map((row: SurveyCourseRow) => {
+                        const courseTitle = courses.find((c) => c.slug === row.course_id)?.title ?? row.course_id;
+                        const isExpanded = expandedSurveyCourse === row.course_id;
+                        return (
+                          <div key={row.course_id}>
+                            {/* Course summary row */}
+                            <button
+                              type="button"
+                              onClick={() => setExpandedSurveyCourse(isExpanded ? null : row.course_id)}
+                              className="w-full grid grid-cols-[1fr_5rem_6rem_6rem_6rem] gap-3 py-3 px-3 text-sm hover:bg-muted/50 transition-colors text-left rounded-md"
+                            >
+                              <span className="flex items-center gap-2 font-medium text-foreground truncate">
+                                <span className={`text-xs transition-transform ${isExpanded ? "rotate-90" : ""}`}>▶</span>
+                                <span className="truncate">{courseTitle}</span>
+                                <span className="text-xs text-muted-foreground font-normal shrink-0">· {row.difficulty_mode}</span>
+                              </span>
+                              <span className="text-right text-muted-foreground">{row.total_responses}</span>
+                              <span className="text-right">
+                                <span className="text-amber-500">★</span> {row.avg_overall}
+                              </span>
+                              <span className="text-right text-muted-foreground">{row.avg_clarity}</span>
+                              <span className={`text-right font-medium ${row.recommend_pct >= 80 ? "text-emerald-600" : row.recommend_pct >= 50 ? "text-amber-600" : "text-red-500"}`}>
+                                {row.recommend_pct}%
+                              </span>
+                            </button>
+
+                            {/* Individual responses (expanded) */}
+                            {isExpanded && (
+                              <div className="mx-3 mb-3 space-y-2 bg-muted/30 rounded-lg p-3">
+                                <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wide mb-2">
+                                  {row.total_responses} Individual {row.total_responses === 1 ? "Response" : "Responses"}
+                                </p>
+                                {row.responses.map((resp, i) => (
+                                  <div key={i} className="bg-background rounded-md border border-border p-3 space-y-1.5">
+                                    <div className="flex items-center justify-between gap-3">
+                                      <div className="flex items-center gap-3 text-sm flex-wrap">
+                                        <span className="font-medium">
+                                          {"★".repeat(resp.overall_rating)}{"☆".repeat(5 - resp.overall_rating)}
+                                        </span>
+                                        <span className="text-muted-foreground text-xs">Clarity: {resp.content_clarity}/5</span>
+                                        <span className="text-xs px-1.5 py-0.5 rounded-full bg-slate-100 text-slate-600">{resp.difficulty}</span>
+                                        {resp.would_recommend
+                                          ? <span className="text-xs text-emerald-600 font-medium">✓ Recommends</span>
+                                          : <span className="text-xs text-slate-400">✗ Would not recommend</span>
+                                        }
+                                      </div>
+                                      <span className="text-xs text-muted-foreground shrink-0">
+                                        {new Date(resp.submitted_at).toLocaleDateString("en-CA")}
+                                      </span>
+                                    </div>
+                                    {resp.liked_most && (
+                                      <p className="text-xs text-slate-700">
+                                        <span className="font-medium text-slate-500">Liked: </span>{resp.liked_most}
+                                      </p>
+                                    )}
+                                    {resp.to_improve && (
+                                      <p className="text-xs text-slate-700">
+                                        <span className="font-medium text-slate-500">Improve: </span>{resp.to_improve}
+                                      </p>
+                                    )}
+                                  </div>
+                                ))}
+                              </div>
+                            )}
+                          </div>
+                        );
+                      })}
+                    </div>
+                  )}
+                </CardContent>
+              </Card>
 
               {/* Stat Cards */}
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">

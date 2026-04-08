@@ -736,7 +736,7 @@ export async function fetchSurveyStats(
   }
 
   const n = rows.length;
-  const avg = (field: keyof typeof rows[0]) =>
+  const avg = (field: "overall_rating" | "content_clarity" | "relevance") =>
     Math.round((rows.reduce((s, r) => s + Number(r[field]), 0) / n) * 10) / 10;
 
   const diffCount = { "Too Easy": 0, "Just Right": 0, "Too Hard": 0 };
@@ -760,5 +760,96 @@ export async function fetchSurveyStats(
         to_improve: r.to_improve,
         submitted_at: r.submitted_at,
       })),
+  };
+}
+
+// ── All-course survey overview (used by Analytics tab) ────────────────────────
+
+export interface SurveyCourseRow {
+  course_id: string;
+  total_responses: number;
+  avg_overall: number;
+  avg_clarity: number;
+  avg_relevance: number;
+  recommend_pct: number;
+  difficulty_mode: string;
+  responses: {
+    overall_rating: number;
+    content_clarity: number;
+    relevance: number;
+    difficulty: string;
+    would_recommend: boolean;
+    liked_most: string;
+    to_improve: string;
+    submitted_at: string;
+  }[];
+}
+
+export interface AllSurveyStats {
+  total_responses: number;
+  avg_overall: number;
+  recommend_pct: number;
+  by_course: SurveyCourseRow[];
+}
+
+/** Fetch aggregated survey stats across ALL courses for the Analytics tab. */
+export async function fetchAllSurveyStats(): Promise<AllSurveyStats> {
+  const { data, error } = await supabase
+    .from("course_surveys")
+    .select(
+      "course_id,overall_rating,content_clarity,relevance,would_recommend,difficulty,liked_most,to_improve,submitted_at"
+    )
+    .order("submitted_at", { ascending: false });
+
+  if (error) handleError(error, "fetchAllSurveyStats");
+  const rows = data ?? [];
+  if (rows.length === 0) {
+    return { total_responses: 0, avg_overall: 0, recommend_pct: 0, by_course: [] };
+  }
+
+  // Group by course_id
+  const grouped: Record<string, typeof rows> = {};
+  for (const row of rows) {
+    if (!grouped[row.course_id]) grouped[row.course_id] = [];
+    grouped[row.course_id].push(row);
+  }
+
+  const meanOf = (arr: typeof rows, field: "overall_rating" | "content_clarity" | "relevance") =>
+    Math.round((arr.reduce((s, r) => s + Number(r[field]), 0) / arr.length) * 10) / 10;
+
+  const by_course: SurveyCourseRow[] = Object.entries(grouped)
+    .map(([course_id, cRows]) => {
+      const difCounts: Record<string, number> = {};
+      for (const r of cRows) difCounts[r.difficulty as string] = (difCounts[r.difficulty as string] ?? 0) + 1;
+      const difficulty_mode =
+        Object.entries(difCounts).sort((a, b) => b[1] - a[1])[0]?.[0] ?? "Just Right";
+      return {
+        course_id,
+        total_responses: cRows.length,
+        avg_overall: meanOf(cRows, "overall_rating"),
+        avg_clarity: meanOf(cRows, "content_clarity"),
+        avg_relevance: meanOf(cRows, "relevance"),
+        recommend_pct: Math.round((cRows.filter((r) => r.would_recommend).length / cRows.length) * 100),
+        difficulty_mode,
+        responses: cRows.map((r) => ({
+          overall_rating: r.overall_rating as number,
+          content_clarity: r.content_clarity as number,
+          relevance: r.relevance as number,
+          difficulty: r.difficulty as string,
+          would_recommend: r.would_recommend as boolean,
+          liked_most: (r.liked_most as string) ?? "",
+          to_improve: (r.to_improve as string) ?? "",
+          submitted_at: r.submitted_at as string,
+        })),
+      };
+    })
+    .sort((a, b) => b.total_responses - a.total_responses);
+
+  const total = rows.length;
+  return {
+    total_responses: total,
+    avg_overall: Math.round((rows.reduce((s, r) => s + Number(r.overall_rating), 0) / total) * 10) / 10,
+    recommend_pct: Math.round((rows.filter((r) => r.would_recommend).length / total) * 100),
+    by_course,
   };
 }
