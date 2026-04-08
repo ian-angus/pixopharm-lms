@@ -2,6 +2,56 @@
 
 ---
 
+## 2026-04-08: Feature 2 (AI Course Generator) — DEPLOYED + TESTED ✅
+
+### Branch: `feature/ai-course-generator` → PR open
+
+### Work Done
+1. **`supabase/functions/generate-course/index.ts`** — Edge Function deployed
+   - Input: title, skill_level, duration_weeks, jurisdiction (opt), focus_areas (opt), created_by
+   - Calls `claude-3-haiku-20240307` with structured Caribbean pharmacy prompt
+   - Saves course → modules → lessons → quiz_questions to DB as `draft`
+   - Returns course_id, slug, counts
+2. **`src/lib/admin-api.ts`** — `generateCourse()` wrapper + `GenerateCourseResult` type
+3. **`src/components/AdminDashboard.tsx`** — new "AI Generator" nav item + page
+   - Form: title, skill level, duration, jurisdiction (10 CARICOM options), focus areas
+   - Loading state with spinner + "20-40 seconds" message
+   - Success card: module/lesson/question counts + slug + links to Courses
+
+### Playwright Test Results
+- ✅ "AI Generator" nav item renders and is active
+- ✅ Form renders with all fields; Generate button disabled until title filled
+- ✅ Generated "Tropical Disease Medications in Caribbean Pharmacy" — 4 modules, 12 lessons, 12 questions
+- ✅ Success card shows correct counts; "View in Courses" button present
+- ✅ Draft confirmed in Supabase DB
+
+---
+
+## 2026-04-08: All 3 PRs merged + deployed ✅
+
+### Coderabbit fixes addressed and merged in order (PR #1 → #2 → #3)
+
+**PR #1 (TipTap/Curriculum):**
+- Export `DEFAULT_COURSE_SLUG` constant; use in CoursePlayer instead of repeated literals
+- Add `validateCoursesIntegrity()` — checks unique ids/slugs/orders + valid prerequisite refs; runs at module load
+
+**PR #2 (Content Protection):**
+- Remove hardcoded Fish Audio API key from `generate_marketing_vo.py`; read from `FISH_AUDIO_API_KEY` env var
+- Update VO script "Thirteen" → "Twenty-seven courses"
+- Replace hardcoded "4 levels · 13 courses" in App.tsx with dynamic `catalogStats` values
+- Add `skillLevels` export to `courses.ts`
+
+**PR #3 (Post-Course Survey):**
+- `analyze-survey` Edge Function: early env var validation, normalize AI response shape, add avgContentClarity + avgRelevance to Claude prompt
+- Redeployed Edge Function
+
+### Deploy
+- ✅ Built clean, deployed `npx vercel --prod` → pixopharm-lms.vercel.app
+
+### Next: Feature 2 — AI Course Generator
+
+---
+
 ## 2026-04-08: Feature 3 (Post-Course Survey) — DEPLOYED + TESTED ✅
 
 ### Branch: `feature/post-course-survey` → PR #3 open

@@ -75,6 +75,7 @@ import {
   fetchAnalytics,
   fetchSurveyStats,
   fetchAllSurveyStats,
+  generateCourse,
 } from "@/lib/admin-api";
 import type {
   Course,
@@ -87,6 +88,7 @@ import type {
   CourseSurveyStats,
   AllSurveyStats,
   SurveyCourseRow,
+  GenerateCourseResult,
 } from "@/lib/admin-api";
 
 // ── CoursePlayer for Preview ─────────────────────────────────────────────────
@@ -113,7 +115,7 @@ interface AdminDashboardProps {
   onExit: () => void;
 }
 
-type AdminPage = "dashboard" | "courses" | "students" | "analytics" | "settings" | "help";
+type AdminPage = "dashboard" | "courses" | "ai-generator" | "students" | "analytics" | "settings" | "help";
 
 // ============================================================================
 // SVG ICONS (inline to avoid Lucide dependency bloat)
@@ -226,6 +228,9 @@ function IconLogOut() {
 }
 function IconHelp() {
   return <svg viewBox="0 0 24 24" className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10" /><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3" /><line x1="12" y1="17" x2="12.01" y2="17" /></svg>;
+}
+function IconAI() {
+  return <svg viewBox="0 0 24 24" className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z" /><circle cx="12" cy="12" r="1" fill="currentColor" /></svg>;
 }
 function IconAward() {
   return (
@@ -365,6 +370,18 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
     modules: (Module & { lessons: Lesson[]; quiz_questions: QuizQuestion[] })[];
   } | null>(null);
   const [courseDetailLoading, setCourseDetailLoading] = useState(false);
+
+  // ── AI Course Generator State ────────────────────────────────────────────
+  const [aiGenForm, setAiGenForm] = useState({
+    title: "",
+    skill_level: "Beginner" as "Beginner" | "Intermediate" | "Advanced",
+    duration_weeks: 4,
+    jurisdiction: "",
+    focus_areas: "",
+  });
+  const [aiGenLoading, setAiGenLoading] = useState(false);
+  const [aiGenResult, setAiGenResult] = useState<GenerateCourseResult | null>(null);
+  const [aiGenError, setAiGenError] = useState<string | null>(null);
 
   // ── Dialog State ─────────────────────────────────────────────────────────
   const [showCourseDialog, setShowCourseDialog] = useState(false);
@@ -1085,6 +1102,7 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
           {([
             { id: "dashboard" as AdminPage, label: "Dashboard", icon: <IconDashboard /> },
             { id: "courses" as AdminPage, label: "Courses", icon: <IconCourses /> },
+            { id: "ai-generator" as AdminPage, label: "AI Generator", icon: <IconAI /> },
             { id: "students" as AdminPage, label: "Students", icon: <IconStudents /> },
             { id: "analytics" as AdminPage, label: "Analytics", icon: <IconAnalytics /> },
             { id: "settings" as AdminPage, label: "Settings", icon: <IconSettings /> },
@@ -1604,7 +1622,234 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
           )}
 
           {/* ════════════════════════════════════════════════════════════════ */}
-          {/* C. STUDENTS VIEW                                               */}
+          {/* C. AI COURSE GENERATOR                                         */}
+          {/* ════════════════════════════════════════════════════════════════ */}
+          {activePage === "ai-generator" && (
+            <div className="space-y-6 max-w-2xl">
+              <div>
+                <h2 className="text-xl font-bold text-foreground">AI Course Generator</h2>
+                <p className="text-sm text-muted-foreground">
+                  Generate a full draft course tailored to Caribbean pharmacy practice using Claude AI. The course is saved as a draft — review and edit it before publishing.
+                </p>
+              </div>
+
+              {/* Form */}
+              {!aiGenResult && (
+                <Card>
+                  <CardHeader>
+                    <CardTitle className="text-base">Course Specifications</CardTitle>
+                    <CardDescription>Fill in the details and Claude will generate the full course structure, lesson content, and quiz questions.</CardDescription>
+                  </CardHeader>
+                  <CardContent className="space-y-5">
+                    {/* Title */}
+                    <div className="space-y-1.5">
+                      <Label htmlFor="ai-title">Course Title <span className="text-destructive">*</span></Label>
+                      <Input
+                        id="ai-title"
+                        placeholder="e.g. Controlled Substances Management in the Caribbean"
+                        value={aiGenForm.title}
+                        onChange={(e) => setAiGenForm((f) => ({ ...f, title: e.target.value }))}
+                        disabled={aiGenLoading}
+                      />
+                    </div>
+
+                    {/* Skill Level + Duration row */}
+                    <div className="grid grid-cols-2 gap-4">
+                      <div className="space-y-1.5">
+                        <Label>Skill Level <span className="text-destructive">*</span></Label>
+                        <Select
+                          value={aiGenForm.skill_level}
+                          onValueChange={(v) => setAiGenForm((f) => ({ ...f, skill_level: v as "Beginner" | "Intermediate" | "Advanced" }))}
+                          disabled={aiGenLoading}
+                        >
+                          <SelectTrigger>
+                            <SelectValue />
+                          </SelectTrigger>
+                          <SelectContent>
+                            <SelectItem value="Beginner">Beginner</SelectItem>
+                            <SelectItem value="Intermediate">Intermediate</SelectItem>
+                            <SelectItem value="Advanced">Advanced</SelectItem>
+                          </SelectContent>
+                        </Select>
+                      </div>
+                      <div className="space-y-1.5">
+                        <Label htmlFor="ai-duration">Duration (weeks) <span className="text-destructive">*</span></Label>
+                        <Input
+                          id="ai-duration"
+                          type="number"
+                          min={1}
+                          max={12}
+                          value={aiGenForm.duration_weeks}
+                          onChange={(e) => setAiGenForm((f) => ({ ...f, duration_weeks: Math.max(1, Math.min(12, parseInt(e.target.value) || 1)) }))}
+                          disabled={aiGenLoading}
+                        />
+                      </div>
+                    </div>
+
+                    {/* Jurisdiction */}
+                    <div className="space-y-1.5">
+                      <Label>Target Jurisdiction <span className="text-muted-foreground text-xs">(optional)</span></Label>
+                      <Select
+                        value={aiGenForm.jurisdiction || "all"}
+                        onValueChange={(v) => setAiGenForm((f) => ({ ...f, jurisdiction: v === "all" ? "" : v }))}
+                        disabled={aiGenLoading}
+                      >
+                        <SelectTrigger>
+                          <SelectValue placeholder="All CARICOM" />
+                        </SelectTrigger>
+                        <SelectContent>
+                          <SelectItem value="all">All CARICOM</SelectItem>
+                          <SelectItem value="Trinidad & Tobago">Trinidad & Tobago</SelectItem>
+                          <SelectItem value="Jamaica">Jamaica</SelectItem>
+                          <SelectItem value="Barbados">Barbados</SelectItem>
+                          <SelectItem value="Guyana">Guyana</SelectItem>
+                          <SelectItem value="Belize">Belize</SelectItem>
+                          <SelectItem value="St. Lucia">St. Lucia</SelectItem>
+                          <SelectItem value="Antigua & Barbuda">Antigua & Barbuda</SelectItem>
+                          <SelectItem value="The Bahamas">The Bahamas</SelectItem>
+                          <SelectItem value="Grenada">Grenada</SelectItem>
+                          <SelectItem value="St. Vincent & the Grenadines">St. Vincent & the Grenadines</SelectItem>
+                        </SelectContent>
+                      </Select>
+                    </div>
+
+                    {/* Focus Areas */}
+                    <div className="space-y-1.5">
+                      <Label htmlFor="ai-focus">Focus Areas / Learning Objectives <span className="text-muted-foreground text-xs">(optional)</span></Label>
+                      <Textarea
+                        id="ai-focus"
+                        placeholder="e.g. Emphasise compounding safety, cover CARICOM drug scheduling differences, include case studies from public hospital settings"
+                        value={aiGenForm.focus_areas}
+                        onChange={(e) => setAiGenForm((f) => ({ ...f, focus_areas: e.target.value }))}
+                        disabled={aiGenLoading}
+                        rows={3}
+                      />
+                    </div>
+
+                    {aiGenError && (
+                      <div className="rounded-md bg-destructive/10 border border-destructive/20 p-3 text-sm text-destructive">
+                        {aiGenError}
+                      </div>
+                    )}
+                  </CardContent>
+                  <CardFooter className="flex gap-3">
+                    <Button
+                      onClick={async () => {
+                        if (!aiGenForm.title.trim()) {
+                          setAiGenError("Course title is required.");
+                          return;
+                        }
+                        setAiGenError(null);
+                        setAiGenLoading(true);
+                        try {
+                          const result = await generateCourse({
+                            title: aiGenForm.title.trim(),
+                            skill_level: aiGenForm.skill_level,
+                            duration_weeks: aiGenForm.duration_weeks,
+                            jurisdiction: aiGenForm.jurisdiction || undefined,
+                            focus_areas: aiGenForm.focus_areas || undefined,
+                            created_by: user.id,
+                          });
+                          setAiGenResult(result);
+                          // Refresh course list so the new draft appears
+                          fetchCourses().then(setCourses).catch(() => {});
+                          toast({ title: "Course generated!", description: `${result.modules_count} modules, ${result.lessons_count} lessons, ${result.questions_count} quiz questions saved as draft.` });
+                        } catch (err) {
+                          setAiGenError(err instanceof Error ? err.message : String(err));
+                        } finally {
+                          setAiGenLoading(false);
+                        }
+                      }}
+                      disabled={aiGenLoading || !aiGenForm.title.trim()}
+                      className="flex-1"
+                    >
+                      {aiGenLoading ? (
+                        <span className="flex items-center gap-2">
+                          <svg className="animate-spin h-4 w-4" viewBox="0 0 24 24" fill="none"><circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"/><path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8z"/></svg>
+                          Generating… this takes 20–40 seconds
+                        </span>
+                      ) : (
+                        <span className="flex items-center gap-2">
+                          <IconAI />
+                          Generate Course
+                        </span>
+                      )}
+                    </Button>
+                  </CardFooter>
+                </Card>
+              )}
+
+              {/* Success State */}
+              {aiGenResult && (
+                <Card className="border-green-200 bg-green-50/50 dark:bg-green-950/20 dark:border-green-800">
+                  <CardHeader>
+                    <CardTitle className="text-base text-green-800 dark:text-green-300 flex items-center gap-2">
+                      <svg viewBox="0 0 24 24" className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2"><polyline points="20 6 9 17 4 12"/></svg>
+                      Course Generated Successfully
+                    </CardTitle>
+                    <CardDescription>Saved as draft — go to Courses to review and publish.</CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="grid grid-cols-3 gap-4 text-center">
+                      <div className="rounded-lg bg-white dark:bg-zinc-900 p-3 border">
+                        <div className="text-2xl font-bold text-foreground">{aiGenResult.modules_count}</div>
+                        <div className="text-xs text-muted-foreground">Modules</div>
+                      </div>
+                      <div className="rounded-lg bg-white dark:bg-zinc-900 p-3 border">
+                        <div className="text-2xl font-bold text-foreground">{aiGenResult.lessons_count}</div>
+                        <div className="text-xs text-muted-foreground">Lessons</div>
+                      </div>
+                      <div className="rounded-lg bg-white dark:bg-zinc-900 p-3 border">
+                        <div className="text-2xl font-bold text-foreground">{aiGenResult.questions_count}</div>
+                        <div className="text-xs text-muted-foreground">Quiz Questions</div>
+                      </div>
+                    </div>
+                    <p className="text-xs text-muted-foreground mt-3">
+                      Slug: <code className="bg-muted px-1 rounded">{aiGenResult.course_slug}</code>
+                    </p>
+                  </CardContent>
+                  <CardFooter className="flex gap-3">
+                    <Button onClick={() => setActivePage("courses")} className="flex-1">
+                      View in Courses
+                    </Button>
+                    <Button
+                      variant="outline"
+                      onClick={() => {
+                        setAiGenResult(null);
+                        setAiGenForm({ title: "", skill_level: "Beginner", duration_weeks: 4, jurisdiction: "", focus_areas: "" });
+                      }}
+                    >
+                      Generate Another
+                    </Button>
+                  </CardFooter>
+                </Card>
+              )}
+
+              {/* Info callout */}
+              {!aiGenResult && (
+                <Card className="border-blue-200 bg-blue-50/50 dark:bg-blue-950/20 dark:border-blue-800">
+                  <CardContent className="pt-4">
+                    <div className="flex gap-3">
+                      <svg viewBox="0 0 24 24" className="w-5 h-5 text-blue-600 shrink-0 mt-0.5" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                      <div className="text-sm text-blue-800 dark:text-blue-300 space-y-1">
+                        <p className="font-medium">What Claude generates</p>
+                        <ul className="text-xs space-y-0.5 text-blue-700 dark:text-blue-400 list-disc list-inside">
+                          <li>Module and lesson structure tailored to Caribbean pharmacy</li>
+                          <li>Lesson content with headings and explanatory paragraphs</li>
+                          <li>4 multiple-choice quiz questions per module with explanations</li>
+                          <li>Course description, icon, and learning outcomes</li>
+                        </ul>
+                        <p className="text-xs mt-2">Generation typically takes 20–40 seconds. The draft is immediately editable in the Courses section.</p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              )}
+            </div>
+          )}
+
+          {/* ════════════════════════════════════════════════════════════════ */}
+          {/* D. STUDENTS VIEW                                               */}
           {/* ════════════════════════════════════════════════════════════════ */}
           {activePage === "students" && (
             <div className="space-y-4">

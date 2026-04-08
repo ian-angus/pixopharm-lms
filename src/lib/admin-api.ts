@@ -853,3 +853,44 @@ export async function fetchAllSurveyStats(): Promise<AllSurveyStats> {
     by_course,
   };
 }
+
+// ============================================================================
+// AI COURSE GENERATOR
+// ============================================================================
+
+export interface GenerateCourseParams {
+  title: string;
+  skill_level: "Beginner" | "Intermediate" | "Advanced";
+  duration_weeks: number;
+  jurisdiction?: string;
+  focus_areas?: string;
+  created_by?: string;
+}
+
+export interface GenerateCourseResult {
+  course_id: string;
+  course_slug: string;
+  modules_count: number;
+  lessons_count: number;
+  questions_count: number;
+}
+
+/**
+ * Call the `generate-course` Edge Function to generate a full draft course
+ * with Claude and save it to the database.
+ */
+export async function generateCourse(
+  params: GenerateCourseParams
+): Promise<GenerateCourseResult> {
+  const { data, error } = await supabase.functions.invoke("generate-course", {
+    body: params,
+  });
+
+  if (error) handleError(error, "generateCourse");
+
+  if (data?.error) {
+    throw new Error(`generate-course: ${data.error}`);
+  }
+
+  return data as GenerateCourseResult;
+}
