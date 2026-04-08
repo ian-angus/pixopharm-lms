@@ -409,7 +409,7 @@ function Hero() {
                     </div>
                     <div>
                       <div className="text-white/90 text-sm font-semibold">Your Learning Path</div>
-                      <div className="text-white/40 text-xs">4 levels &middot; 13 courses</div>
+                      <div className="text-white/40 text-xs">3 levels &middot; {catalogStats.totalCourses} courses</div>
                     </div>
                   </div>
                   <div className="text-[hsl(174,70%,70%)] text-xs font-medium bg-[hsl(174,60%,45%)]/10 px-2.5 py-1 rounded-full border border-[hsl(174,60%,45%)]/20">Active</div>

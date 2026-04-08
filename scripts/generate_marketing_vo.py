@@ -10,7 +10,10 @@ import sys
 import json
 import requests
 
-API_KEY = "83169aab1d324433adfe8971b12bf3f5"
+API_KEY = os.environ.get("FISH_AUDIO_API_KEY", "")
+if not API_KEY:
+    print("ERROR: FISH_AUDIO_API_KEY environment variable is not set.", file=sys.stderr)
+    sys.exit(1)
 API_URL = "https://api.fish.audio/v1/tts"
 VOICE_SEARCH_URL = "https://api.fish.audio/v1/model"
 OUTPUT_FILE = os.path.join(os.path.dirname(__file__), "../remotion/public/marketing-vo.mp3")
@@ -23,7 +26,7 @@ From the islands of the Caribbean comes a training platform built just for you.
 or upgrading your skills to work across different islands —
 Pixopharm has you covered.
 
-[proud, clear] Thirteen courses. Three hundred lessons.
+[proud, clear] Twenty-seven courses. Three hundred lessons.
 Every module tailored to Caribbean pharmacy regulations —
 Trinidad, Jamaica, Barbados, and beyond.
 
