@@ -2,6 +2,109 @@
 
 ---
 
+## 2026-04-07: Deploy Testing + Regional Cleanup + Coderabbit Fixes — DEPLOYED
+
+### Branch: `feat/tiptap-course-restructure` (PR #1 open)
+
+### Issues Found & Fixed
+1. **"Regional" filter tab still showing in courses section** — hardcoded in 4 places in App.tsx:
+   - Filter tabs array: removed "Regional"
+   - Hero stats bars: updated to Beginner(7) / Intermediate(11) / Advanced(9)
+   - FAQ copy: "13-course programme, 4 levels" → "27-course programme, 3 levels"
+   - Pricing feature: "All 13 courses across 4 levels" → uses `catalogStats.totalCourses`
+   - Level certificate: "Beginner → Regional" → "Beginner → Advanced"
+2. **Coderabbit comment fixes** (courses.ts comment accuracy):
+   - Header: "24 courses" → "27 courses"
+   - Intermediate section banner: "10 courses, orders 8–17" → "11 courses, orders 8–18"
+
+### Deploy Verification (Playwright tested)
+- ✅ Homepage: 27 courses, 213 modules, hero text correct
+- ✅ Course filter tabs: All / Beginner / Intermediate / Advanced (no Regional)
+- ✅ CoursePlayer — existing course (foundations-pharmacy-practice): 8 modules, 28 lessons, loads from Supabase
+- ✅ CoursePlayer — new stub course (digital-learning-study-skills): 7 modules with correct titles, 0 lessons
+- ✅ CoursePlayer — final course (caribbean-certification-exam-prep): 8 exam-domain modules correct
+- ✅ Build: `pnpm build` clean
+
+### Commits (2026-04-07)
+- `bcb735a` — Remove Regional level references, update stats bars and copy
+- `2c00291` — Fix comment inaccuracies flagged by Coderabbit (courses.ts counts)
+
+---
+
+## 2026-04-06: TipTap WYSIWYG Editor + Course Curriculum Restructure — DEPLOYED (PR open)
+
+### Branch: `feat/tiptap-course-restructure`
+
+### 1. TipTap WYSIWYG Lesson Editor
+- **New file**: `src/components/TipTapLessonEditor.tsx`
+- Replaces the block-by-block `ContentBlockEditor` in `AdminDashboard.tsx` lesson editing dialog
+- Admin writes like Google Docs; `ContentBlock[]` generated automatically behind the scenes
+- **Bidirectional conversion**: `ContentBlock[]` ↔ TipTap JSON on load/save
+- **Custom TipTap node extensions** (atom blocks with hover Edit/Delete buttons):
+  - `CalloutNode` — info/tip/warning/danger callouts
+  - `KeyTermNode` — term + definition pairs
+  - `KnowledgeCheckNode` — MCQ with options, correct answer, explanation, hint
+- **Toolbar**: Bold, Italic, Underline, H2/H3/H4, Bullet/Ordered List, Divider, Table, Callout, Key Term, Quiz, Undo/Redo
+- All content still saved as `ContentBlock[]` JSONB to Supabase — fully backward compatible
+- `ContentBlockEditor.tsx` kept intact (still used by CoursePlayer for rendering)
+- **Packages added**: `@tiptap/react`, `@tiptap/starter-kit`, `@tiptap/core`, `@tiptap/extension-*` (table, highlight, underline, placeholder)
+
+### 2. Course Curriculum Restructure (courses.ts)
+- **Restructured from 13 → 24 courses** across 3 levels (Beginner/Intermediate/Advanced)
+- Removed "Regional" level — Caribbean context now integrated throughout all courses
+- Based on: docx "Pharmacy Technician Diploma Suggested Update" in Downloads
+- Penn Foster research also informed the structure (agent running in background)
+
+**New catalog:**
+
+| Level | # | Course |
+|-------|---|--------|
+| Beginner | 1 | Foundations of Pharmacy Practice (updated) |
+| Beginner | 2 | Medical & Pharmaceutical Terminology (NEW) |
+| Beginner | 3 | Anatomy, Physiology & Basic Pharmacology (updated) |
+| Beginner | 4 | Professionalism, Communication & Emotional Intelligence (NEW) |
+| Beginner | 5 | Caribbean Pharmacy Law, Ethics & Regulation (NEW — extracted from B1+I3) |
+| Beginner | 6 | Basic Pharmacy Workflow (NEW) |
+| Beginner | 7 | Digital Learning Skills & Study Skills (NEW) |
+| Intermediate | 8 | Prescription Processing & Workflow (was: Dispensing & Med Mgmt) |
+| Intermediate | 9 | OTC Medications & Health Advice Boundaries (NEW) |
+| Intermediate | 10 | Pharmacy Calculations (was: Pharmaceutical Calculations, moved from Beginner) |
+| Intermediate | 11 | Basic Compounding Techniques (was: Compounding & Dosage Forms) |
+| Intermediate | 12 | Applied Pharmacology & Drug Therapy (was: Pharmacology Essentials) |
+| Intermediate | 13 | Medication Safety & Error Prevention (NEW — extracted from A1) |
+| Intermediate | 14 | Inventory Management, Storage, Cold Chain & Supply Chain (NEW) |
+| Intermediate | 15 | Documentation, Record Keeping & Reimbursement Basics (NEW) |
+| Intermediate | 16 | Applied & Written Communication (was: Customer Service & Workplace Excellence) |
+| Intermediate | 17 | Patient & Interprofessional Communication Labs (was: Patient Care & Communication) |
+| Advanced | 18 | Sterile & Nonsterile Compounding via Virtual Simulation (NEW advanced compounding) |
+| Advanced | 19 | Complex Calculations (NEW) |
+| Advanced | 20 | Advanced Pharmacy Systems & Digital Workflow (NEW) |
+| Advanced | 21 | Public Health, Pharmacovigilance & Quality Improvement (was: Quality Assurance & Safety) |
+| Advanced | 22 | Caribbean Regulatory Compliance & Quality Systems (was: Caribbean Pharmaceutical Regulations) |
+| Advanced | 23 | Technology, Automation & AI in Pharmacy (was: AI in Pharmacy Practice) |
+| Advanced | 24 | Leadership, Teamwork, Adaptability & Problem Solving (was: Pharmacy Management & Leadership) |
+| Advanced | 25 | Capstone Integrated Case Simulation (NEW) |
+
+**Key design decisions:**
+- Existing Supabase course slugs/IDs preserved where possible — no orphaned lesson data
+- `caribbean-island-pharmacy-practice` archived in Supabase (not deleted — enrollment history preserved)
+- New courses get placeholder modules in Supabase via `scripts/sync-course-metadata.ts`
+
+### 3. Supabase Sync
+- **TODO** (needs SUPABASE_SECRET_KEY): `SUPABASE_SECRET_KEY=... npx tsx scripts/sync-course-metadata.ts`
+- Script created at `scripts/sync-course-metadata.ts` — safe to run: updates existing, inserts new, archives removed
+
+### Files Changed
+- `src/components/TipTapLessonEditor.tsx` — NEW
+- `src/components/AdminDashboard.tsx` — import + JSX swap only
+- `src/data/courses.ts` — full restructure (13 → 24 courses)
+- `scripts/sync-course-metadata.ts` — NEW sync script
+- `package.json` + `pnpm-lock.yaml` — TipTap packages added
+
+### Build Status: ✅ PASSES (`pnpm build` clean)
+
+---
+
 ## 2026-03-30: CoursePlayer Supabase-Only + Dynamic Badges — DEPLOYED
 
 ### Architecture Change: CoursePlayer now 100% Supabase-powered
