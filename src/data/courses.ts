@@ -24,6 +24,8 @@ export interface Course {
   order: number;
 }
 
+export const DEFAULT_COURSE_SLUG = "foundations-pharmacy-practice";
+
 export const courses: Course[] = [
 
   // ══════════════════════════════════════════════════════════════════════════
@@ -947,3 +949,28 @@ export const catalogStats = {
     advanced: getCoursesByLevel("Advanced").length,
   },
 };
+
+function validateCoursesIntegrity(): void {
+  const ids = new Set<string>();
+  const slugs = new Set<string>();
+  const orders = new Set<number>();
+  const allIds = new Set(courses.map((c) => c.id));
+
+  for (const course of courses) {
+    if (ids.has(course.id))
+      throw new Error(`Duplicate course id: "${course.id}"`);
+    if (slugs.has(course.slug))
+      throw new Error(`Duplicate course slug: "${course.slug}"`);
+    if (orders.has(course.order))
+      throw new Error(`Duplicate course order: ${course.order} (course "${course.id}")`);
+    for (const prereq of course.prerequisites) {
+      if (!allIds.has(prereq))
+        throw new Error(`Course "${course.id}" has unknown prerequisite: "${prereq}"`);
+    }
+    ids.add(course.id);
+    slugs.add(course.slug);
+    orders.add(course.order);
+  }
+}
+
+validateCoursesIntegrity();
