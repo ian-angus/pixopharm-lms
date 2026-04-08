@@ -19,6 +19,7 @@ import {
   knowledgeChecks,
   branchingScenarios,
 } from "@/data/interactiveContent";
+import { DEFAULT_COURSE_SLUG } from "@/data/courses";
 import { fetchCourseBySlug } from "@/lib/admin-api";
 import type {
   Course as DbCourse,
@@ -1403,7 +1404,7 @@ export default function CoursePlayer({
   const [courseError, setCourseError] = useState<string | null>(null);
 
   useEffect(() => {
-    const slug = courseId ?? "foundations-pharmacy-practice";
+    const slug = courseId ?? DEFAULT_COURSE_SLUG;
     let cancelled = false;
     setCourseLoading(true);
     setCourseError(null);
@@ -1423,7 +1424,7 @@ export default function CoursePlayer({
   }, [courseId]);
 
   const course = dynamicCourse;
-  const progressSlug = course?.courseId ?? courseId ?? "foundations-pharmacy-practice";
+  const progressSlug = course?.courseId ?? courseId ?? DEFAULT_COURSE_SLUG;
 
   const { completion, loaded, markLessonComplete, saveQuizScore } = useProgress(user, progressSlug);
 
