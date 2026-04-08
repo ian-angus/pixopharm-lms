@@ -657,3 +657,108 @@ export async function fetchAnalytics(): Promise<AnalyticsData> {
     recent_completions,
   };
 }
+
+// ============================================================================
+// SURVEYS
+// ============================================================================
+
+export interface CourseSurveySubmission {
+  user_id: string;
+  course_id: string;
+  overall_rating: number;
+  content_clarity: number;
+  difficulty: "Too Easy" | "Just Right" | "Too Hard";
+  relevance: number;
+  would_recommend: boolean;
+  liked_most: string;
+  to_improve: string;
+}
+
+export interface CourseSurveyStats {
+  total_responses: number;
+  avg_overall: number;
+  avg_clarity: number;
+  avg_relevance: number;
+  recommend_pct: number;
+  difficulty: { label: string; count: number; pct: number }[];
+  responses: { liked_most: string; to_improve: string; submitted_at: string }[];
+}
+
+/** Insert a survey response. Silently succeeds if user already submitted (unique constraint). */
+export async function submitSurvey(data: CourseSurveySubmission): Promise<void> {
+  const { error } = await supabase.from("course_surveys").insert(data);
+  if (error && !error.message.includes("duplicate")) {
+    handleError(error, "submitSurvey");
+  }
+}
+
+/** Returns true if the user has already submitted a survey for this course. */
+export async function hasSubmittedSurvey(
+  userId: string,
+  courseId: string
+): Promise<boolean> {
+  const { data } = await supabase
+    .from("course_surveys")
+    .select("id")
+    .eq("user_id", userId)
+    .eq("course_id", courseId)
+    .maybeSingle();
+  return !!data;
+}
+
+/** Fetch aggregated survey stats for a course (admin only). */
+export async function fetchSurveyStats(
+  courseId: string
+): Promise<CourseSurveyStats> {
+  const { data, error } = await supabase
+    .from("course_surveys")
+    .select("overall_rating,content_clarity,relevance,would_recommend,difficulty,liked_most,to_improve,submitted_at")
+    .eq("course_id", courseId)
+    .order("submitted_at", { ascending: false });
+
+  if (error) handleError(error, "fetchSurveyStats");
+  const rows = data ?? [];
+
+  if (rows.length === 0) {
+    return {
+      total_responses: 0,
+      avg_overall: 0,
+      avg_clarity: 0,
+      avg_relevance: 0,
+      recommend_pct: 0,
+      difficulty: [
+        { label: "Too Easy", count: 0, pct: 0 },
+        { label: "Just Right", count: 0, pct: 0 },
+        { label: "Too Hard", count: 0, pct: 0 },
+      ],
+      responses: [],
+    };
+  }
+
+  const n = rows.length;
+  const avg = (field: keyof typeof rows[0]) =>
+    Math.round((rows.reduce((s, r) => s + Number(r[field]), 0) / n) * 10) / 10;
+
+  const diffCount = { "Too Easy": 0, "Just Right": 0, "Too Hard": 0 };
+  rows.forEach((r) => { diffCount[r.difficulty as keyof typeof diffCount]++; });
+
+  return {
+    total_responses: n,
+    avg_overall: avg("overall_rating"),
+    avg_clarity: avg("content_clarity"),
+    avg_relevance: avg("relevance"),
+    recommend_pct: Math.round((rows.filter((r) => r.would_recommend).length / n) * 100),
+    difficulty: (["Too Easy", "Just Right", "Too Hard"] as const).map((label) => ({
+      label,
+      count: diffCount[label],
+      pct: Math.round((diffCount[label] / n) * 100),
+    })),
+    responses: rows
+      .filter((r) => r.liked_most || r.to_improve)
+      .map((r) => ({
+        liked_most: r.liked_most,
+        to_improve: r.to_improve,
+        submitted_at: r.submitted_at,
+      })),
+  };
+}

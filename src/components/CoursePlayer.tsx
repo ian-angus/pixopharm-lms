@@ -15,6 +15,8 @@ import type {
 } from "@/data/types";
 import { useProgress } from "@/hooks/useProgress";
 import FlashcardReview from "@/components/FlashcardReview";
+import SurveyView from "@/components/SurveyView";
+import { hasSubmittedSurvey } from "@/lib/admin-api";
 import {
   knowledgeChecks,
   branchingScenarios,
@@ -94,6 +96,7 @@ type View =
   | { page: "overview" }
   | { page: "lesson"; moduleIndex: number; lessonIndex: number }
   | { page: "quiz"; moduleIndex: number }
+  | { page: "survey" }
   | { page: "certificate" }
   | { page: "flashcards" };
 
@@ -1468,6 +1471,13 @@ export default function CoursePlayer({
 
   const { completion, loaded, markLessonComplete, saveQuizScore } = useProgress(user, progressSlug);
 
+  // Survey gate — check if user already submitted, so we don't re-ask them
+  const [surveyDone, setSurveyDone] = useState(false);
+  useEffect(() => {
+    if (!user || surveyDone) return;
+    hasSubmittedSurvey(user.id, progressSlug).then(setSurveyDone);
+  }, [user, progressSlug, surveyDone]);
+
   // Wait for course + progress to load
   if (courseLoading || (!courseError && !loaded)) {
     return (
@@ -1667,7 +1677,7 @@ export default function CoursePlayer({
             <>
               <Separator className="my-4" />
               <button
-                onClick={() => navigateTo({ page: "certificate" })}
+                onClick={() => navigateTo({ page: surveyDone ? "certificate" : "survey" })}
                 className="w-full flex items-center gap-2 px-3 py-2.5 rounded-lg bg-emerald-50 text-emerald-700 text-sm font-medium hover:bg-emerald-100 transition-colors"
                 style={{ fontFamily: "'DM Sans', sans-serif" }}
               >
@@ -1968,15 +1978,30 @@ export default function CoursePlayer({
                   </Button>
                 ) : allComplete ? (
                   <Button
-                    onClick={() => navigateTo({ page: "certificate" })}
+                    onClick={() => navigateTo({ page: surveyDone ? "certificate" : "survey" })}
                     className="bg-emerald-600 hover:bg-emerald-700"
                   >
-                    🎓 View Your Certificate
+                    🎓 {surveyDone ? "View Your Certificate" : "Complete Survey & Get Certificate"}
                   </Button>
                 ) : null}
               </div>
             )}
         </div>
+      );
+    }
+
+    // ── Survey ──
+    if (view.page === "survey") {
+      return (
+        <SurveyView
+          user={user!}
+          courseId={progressSlug}
+          courseTitle={course.title}
+          onComplete={() => {
+            setSurveyDone(true);
+            navigateTo({ page: "certificate" });
+          }}
+        />
       );
     }
 

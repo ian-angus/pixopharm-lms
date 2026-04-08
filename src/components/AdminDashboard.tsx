@@ -73,6 +73,7 @@ import {
   deleteQuizQuestion,
   fetchStudents,
   fetchAnalytics,
+  fetchSurveyStats,
 } from "@/lib/admin-api";
 import type {
   Course,
@@ -82,6 +83,7 @@ import type {
   QuestionType,
   StudentProfile,
   AnalyticsData,
+  CourseSurveyStats,
 } from "@/lib/admin-api";
 
 // ── CoursePlayer for Preview ─────────────────────────────────────────────────
@@ -340,8 +342,16 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
   const [analytics, setAnalytics] = useState<AnalyticsData | null>(null);
   const [analyticsLoading, setAnalyticsLoading] = useState(true);
 
+  // ── Course Search & Grouping ─────────────────────────────────────────────
+  const [courseSearch, setCourseSearch] = useState("");
+  const [collapsedGroups, setCollapsedGroups] = useState<Set<string>>(new Set());
+
   // ── Course Detail State ──────────────────────────────────────────────────
   const [expandedCourseId, setExpandedCourseId] = useState<string | null>(null);
+  const [surveyStats, setSurveyStats] = useState<Record<string, CourseSurveyStats>>({});
+  const [surveyLoading, setSurveyLoading] = useState<Record<string, boolean>>({});
+  const [aiAnalysis, setAiAnalysis] = useState<Record<string, { summary: string; recommendations: string[] } | null>>({});
+  const [aiLoading, setAiLoading] = useState<Record<string, boolean>>({});
   const [courseDetail, setCourseDetail] = useState<{
     course: Course;
     modules: (Module & { lessons: Lesson[]; quiz_questions: QuizQuestion[] })[];
@@ -486,13 +496,23 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [activePage, adminLoading, isAdmin]);
 
-  // Load course detail when expanding
+  // Load course detail + survey stats when expanding
   useEffect(() => {
     if (expandedCourseId) {
       loadCourseDetail(expandedCourseId);
+      // Load survey stats if not already loaded
+      const course = courses.find((c) => c.id === expandedCourseId);
+      if (course && !surveyStats[course.slug] && !surveyLoading[course.slug]) {
+        setSurveyLoading((prev) => ({ ...prev, [course.slug]: true }));
+        fetchSurveyStats(course.slug)
+          .then((stats) => setSurveyStats((prev) => ({ ...prev, [course.slug]: stats })))
+          .catch(() => {})
+          .finally(() => setSurveyLoading((prev) => ({ ...prev, [course.slug]: false })));
+      }
     } else {
       setCourseDetail(null);
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [expandedCourseId, loadCourseDetail]);
 
   // Keyboard shortcut: Escape to close dialogs
@@ -930,6 +950,47 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
     return { totalCourses, totalStudents, activeEnrollments, avgCompletion };
   }, [courses, students, analytics]);
 
+  // ── Course groups (filtered + grouped by skill level) ───────────────────
+  const COURSE_LEVELS = ["Beginner", "Intermediate", "Advanced"] as const;
+  type CourseLevel = (typeof COURSE_LEVELS)[number] | "Other";
+  const LEVEL_COLORS: Record<string, string> = {
+    Beginner: "hsl(174,62%,32%)",
+    Intermediate: "hsl(199,80%,55%)",
+    Advanced: "hsl(262,60%,60%)",
+    Other: "hsl(40,85%,55%)",
+  };
+
+  const courseGroups = useMemo(() => {
+    const q = courseSearch.toLowerCase().trim();
+    const filtered = q
+      ? courses.filter(
+          (c) =>
+            c.title.toLowerCase().includes(q) ||
+            (c.skill_level ?? "").toLowerCase().includes(q)
+        )
+      : courses;
+    const groups: { level: CourseLevel; color: string; courses: typeof filtered }[] =
+      COURSE_LEVELS.map((level) => ({
+        level,
+        color: LEVEL_COLORS[level],
+        courses: filtered.filter((c) => c.skill_level === level),
+      }));
+    const other = filtered.filter(
+      (c) => !(COURSE_LEVELS as readonly string[]).includes(c.skill_level ?? "")
+    );
+    if (other.length > 0) groups.push({ level: "Other", color: LEVEL_COLORS["Other"], courses: other });
+    return { groups, total: filtered.length, query: q };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [courses, courseSearch]);
+
+  const toggleGroup = (level: string) => {
+    setCollapsedGroups((prev) => {
+      const next = new Set(prev);
+      next.has(level) ? next.delete(level) : next.add(level);
+      return next;
+    });
+  };
+
   // ── Guard: not admin ─────────────────────────────────────────────────────
 
   if (adminLoading) {
@@ -1209,7 +1270,20 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
                 </Button>
               </div>
 
-              {/* Courses List */}
+              {/* Search */}
+              <div className="relative">
+                <div className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground pointer-events-none">
+                  <IconSearch />
+                </div>
+                <Input
+                  placeholder="Search courses by title or level..."
+                  value={courseSearch}
+                  onChange={(e) => setCourseSearch(e.target.value)}
+                  className="pl-9"
+                />
+              </div>
+
+              {/* Courses grouped by level */}
               {coursesLoading ? (
                 <TableSkeleton rows={6} />
               ) : courses.length === 0 ? (
@@ -1222,9 +1296,35 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
                     </Button>
                   }
                 />
+              ) : courseGroups.total === 0 ? (
+                <div className="text-center py-10 text-muted-foreground text-sm">
+                  No courses match &ldquo;{courseSearch}&rdquo;
+                </div>
               ) : (
-                <div className="space-y-2">
-                  {courses.map((course) => {
+                <div className="space-y-5">
+                  {courseGroups.groups
+                    .filter((g) => g.courses.length > 0)
+                    .map(({ level, color, courses: groupCourses }) => {
+                      const isOpen = courseGroups.query ? true : !collapsedGroups.has(level);
+                      return (
+                        <div key={level}>
+                          {/* Level Group Header */}
+                          <button
+                            onClick={() => toggleGroup(level)}
+                            className="w-full flex items-center gap-2.5 px-3 py-2 rounded-lg hover:bg-muted/60 transition-colors mb-2"
+                          >
+                            <div className="w-2.5 h-2.5 rounded-full shrink-0" style={{ background: color }} />
+                            <span className="font-semibold text-sm text-foreground">{level}</span>
+                            <Badge variant="outline" className="text-xs h-5 px-1.5 font-normal">{groupCourses.length} course{groupCourses.length !== 1 ? "s" : ""}</Badge>
+                            <div className="flex-1" />
+                            <div className={`transition-transform duration-200 text-muted-foreground ${isOpen ? "rotate-90" : ""}`}>
+                              <IconChevronRight />
+                            </div>
+                          </button>
+
+                          {isOpen && (
+                            <div className="space-y-2 pl-1">
+                              {groupCourses.map((course) => {
                     const borderColor =
                       course.status === "published"
                         ? "border-l-emerald-500"
@@ -1360,11 +1460,128 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
                           ) : (
                             <p className="text-sm text-muted-foreground">Failed to load course details.</p>
                           )}
+
+                          {/* ── Survey Analytics ── */}
+                          {(() => {
+                            const slug = course.slug;
+                            const stats = surveyStats[slug];
+                            const loading = surveyLoading[slug];
+                            const analysis = aiAnalysis[slug];
+                            const analysisLoading = aiLoading[slug];
+
+                            const generateAnalysis = async () => {
+                              setAiLoading((prev) => ({ ...prev, [slug]: true }));
+                              try {
+                                const { supabase: sb } = await import("@/lib/supabase");
+                                const { data } = await sb.functions.invoke("analyze-survey", {
+                                  body: { course_id: slug },
+                                });
+                                setAiAnalysis((prev) => ({ ...prev, [slug]: data }));
+                              } catch {
+                                setAiAnalysis((prev) => ({ ...prev, [slug]: { summary: "Analysis unavailable.", recommendations: [] } }));
+                              } finally {
+                                setAiLoading((prev) => ({ ...prev, [slug]: false }));
+                              }
+                            };
+
+                            return (
+                              <div className="mt-4 border-t pt-4 space-y-4">
+                                <div className="flex items-center justify-between">
+                                  <h4 className="text-sm font-semibold text-foreground">Survey Feedback</h4>
+                                  {stats && stats.total_responses > 0 && !analysis && (
+                                    <Button
+                                      size="sm"
+                                      variant="outline"
+                                      className="h-7 text-xs gap-1"
+                                      onClick={generateAnalysis}
+                                      disabled={!!analysisLoading}
+                                    >
+                                      {analysisLoading ? "Analysing…" : "✨ AI Analysis"}
+                                    </Button>
+                                  )}
+                                </div>
+
+                                {loading ? (
+                                  <p className="text-xs text-muted-foreground">Loading survey data…</p>
+                                ) : !stats || stats.total_responses === 0 ? (
+                                  <p className="text-xs text-muted-foreground italic">No survey responses yet.</p>
+                                ) : (
+                                  <div className="space-y-4">
+                                    {/* Stats grid */}
+                                    <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                                      {[
+                                        { label: "Responses", value: stats.total_responses, suffix: "" },
+                                        { label: "Overall", value: stats.avg_overall, suffix: " / 5" },
+                                        { label: "Clarity", value: stats.avg_clarity, suffix: " / 5" },
+                                        { label: "Recommend", value: stats.recommend_pct, suffix: "%" },
+                                      ].map(({ label, value, suffix }) => (
+                                        <div key={label} className="bg-muted/40 rounded-lg p-3 text-center">
+                                          <p className="text-lg font-bold text-foreground">{value}{suffix}</p>
+                                          <p className="text-xs text-muted-foreground">{label}</p>
+                                        </div>
+                                      ))}
+                                    </div>
+
+                                    {/* Difficulty distribution */}
+                                    <div className="space-y-1">
+                                      <p className="text-xs font-medium text-muted-foreground uppercase tracking-wider">Difficulty</p>
+                                      <div className="flex gap-2">
+                                        {stats.difficulty.map((d) => (
+                                          <div key={d.label} className="flex-1 text-center bg-muted/30 rounded-lg py-2">
+                                            <p className="text-sm font-semibold">{d.pct}%</p>
+                                            <p className="text-xs text-muted-foreground">{d.label}</p>
+                                          </div>
+                                        ))}
+                                      </div>
+                                    </div>
+
+                                    {/* AI Analysis */}
+                                    {analysis && (
+                                      <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 space-y-2">
+                                        <p className="text-xs font-semibold text-blue-700 uppercase tracking-wider">AI Theme Analysis</p>
+                                        <p className="text-sm text-slate-700">{analysis.summary}</p>
+                                        {analysis.recommendations.length > 0 && (
+                                          <ul className="mt-2 space-y-1">
+                                            {analysis.recommendations.map((rec, i) => (
+                                              <li key={i} className="text-xs text-slate-600 flex gap-2">
+                                                <span className="text-blue-500 shrink-0">→</span>{rec}
+                                              </li>
+                                            ))}
+                                          </ul>
+                                        )}
+                                      </div>
+                                    )}
+
+                                    {/* Open-text responses */}
+                                    {stats.responses.length > 0 && (
+                                      <div className="space-y-2">
+                                        <p className="text-xs font-medium text-muted-foreground uppercase tracking-wider">Open Responses</p>
+                                        <div className="space-y-2 max-h-60 overflow-y-auto pr-1">
+                                          {stats.responses.map((r, i) => (
+                                            <div key={i} className="bg-muted/30 rounded-lg p-3 text-xs space-y-1">
+                                              <p className="text-muted-foreground">{new Date(r.submitted_at).toLocaleDateString()}</p>
+                                              {r.liked_most && <p><span className="font-medium text-emerald-700">Liked:</span> {r.liked_most}</p>}
+                                              {r.to_improve && <p><span className="font-medium text-amber-700">Improve:</span> {r.to_improve}</p>}
+                                            </div>
+                                          ))}
+                                        </div>
+                                      </div>
+                                    )}
+                                  </div>
+                                )}
+                              </div>
+                            );
+                          })()}
                         </div>
                       )}
                     </Card>
                     );
-                  })}
+                              })}
+                            </div>
+                          )}
+                        </div>
+                      );
+                    })}
                 </div>
               )}
             </div>

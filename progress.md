@@ -2,6 +2,33 @@
 
 ---
 
+## 2026-04-08: Admin Course Grouping + Feature Backlog — DEPLOYED
+
+### Work Done
+1. **Admin course grouping + search** — `src/components/AdminDashboard.tsx`
+   - Courses now grouped by Beginner / Intermediate / Advanced with colour-coded headers
+   - Collapsible groups (click header to toggle, chevron animates)
+   - Search bar filters across all groups simultaneously; empty groups hide automatically; all groups auto-expand when searching
+   - Fixed TypeScript bracket mismatch from previous session's partial edit
+2. **Feature backlog created** — `features-backlog.md` — 4 features documented:
+   - Feature 1: Course Content Protection (watermark + copy/print block)
+   - Feature 2: AI Course Generator (Claude API → full course to DB as draft)
+   - Feature 3: Post-Course Survey & Feedback Analytics
+   - Feature 4: Stripe Payment Module (CAD, pay-per-course, referrals, coupons)
+
+### Deploy
+- ✅ Build clean (`pnpm build`)
+- ✅ Deployed `npx vercel --prod` → pixopharm-lms.vercel.app
+- ✅ Playwright verified: grouping, collapse, search all working
+
+### Next Features (priority order — see features-backlog.md)
+1. Content Protection (low complexity, high value)
+2. AI Course Generator
+3. Post-Course Survey
+4. Stripe Payments
+
+---
+
 ## 2026-04-07: Deploy Testing + Regional Cleanup + Coderabbit Fixes — DEPLOYED
 
 ### Branch: `feat/tiptap-course-restructure` (PR #1 open)
