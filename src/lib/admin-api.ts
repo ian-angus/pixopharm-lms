@@ -897,7 +897,43 @@ export async function generateCourse(
     throw new Error(`generate-course: ${data.error}`);
   }
 
-  if (error) handleError(error, "generateCourse");
+  if (error) {
+    // Network/timeout error — the Edge Function may have completed and saved to DB
+    // before the gateway dropped the connection. Check using the job_id we sent.
+    const { data: saved } = await supabase
+      .from("courses")
+      .select("id, slug, status")
+      .eq("ai_job_id", jobId)
+      .maybeSingle();
+
+    if (saved?.status === "draft" || saved?.status === "published") {
+      // Generation completed — return success despite dropped connection
+      const { count: mc } = await supabase
+        .from("modules")
+        .select("id", { count: "exact", head: true })
+        .eq("course_id", saved.id);
+      const { count: lc } = await supabase
+        .from("lessons")
+        .select("id", { count: "exact", head: true })
+        .in("module_id",
+          (await supabase.from("modules").select("id").eq("course_id", saved.id)).data?.map((m: { id: string }) => m.id) ?? []
+        );
+      return {
+        course_id: saved.id,
+        course_slug: saved.slug,
+        modules_count: mc ?? 0,
+        lessons_count: lc ?? 0,
+        questions_count: 0,
+        model_used: "claude-opus-4-6",
+      };
+    }
+
+    if (saved?.status === "generating") {
+      throw new Error("Course is still generating — it will appear in your Courses list shortly.");
+    }
+
+    handleError(error, "generateCourse");
+  }
 
   return data as GenerateCourseResult;
 }

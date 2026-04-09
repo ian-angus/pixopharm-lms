@@ -63,15 +63,16 @@ CLINICAL REALITY: Pharmacy technicians are often first healthcare contact; extre
 // Per-model output token ceiling: Opus supports up to 8192, Haiku caps at 4096.
 // Phase 2 model order: try Sonnet 3.5 (fast + high quality), then Opus (slower), then Haiku (fallback)
 const MODELS = ["claude-3-5-sonnet-20241022", "claude-opus-4-6", "claude-3-haiku-20240307"];
-// Phase 1 (outline only): Haiku is fast and sufficient for structure generation
-const PHASE1_MODELS = ["claude-3-haiku-20240307"];
+// Phase 1 (outline only): Haiku is fast and sufficient; Opus fallback if Haiku overloaded
+const PHASE1_MODELS = ["claude-3-haiku-20240307", "claude-opus-4-6"];
 const MODEL_MAX_TOKENS: Record<string, number> = {
   "claude-3-5-sonnet-20241022": 8192,
   "claude-opus-4-6": 8192,
   "claude-3-haiku-20240307": 4096,
 };
-// Per-call timeout — allows parallel module calls to abort and fall back before hitting Supabase's 150s wall
-const CALL_TIMEOUT_MS = 38_000;
+// Per-call timeout — Supabase Pro allows 400s wall time.
+// 350s gives a safe buffer; Opus 4.6 typically completes in 70-90s per module call.
+const CALL_TIMEOUT_MS = 350_000;
 
 // ── Main handler ─────────────────────────────────────────────────────────────
 Deno.serve(async (req: Request) => {
@@ -223,8 +224,8 @@ LESSONS IN THIS MODULE:
 ${lessonList}
 
 TASK — for EACH lesson write:
-1. Rich lesson content (4–5 content blocks)
-2. 2 scenario-based quiz questions for this module at the end
+1. Rich lesson content (5–7 content blocks)
+2. 3 scenario-based quiz questions for this module at the end
 
 LESSON CONTENT BLOCKS — use ALL these block types across the lessons:
   {"type":"heading","text":"...","level":2}  — main section heading (required, 1 per lesson)
@@ -235,7 +236,7 @@ LESSON CONTENT BLOCKS — use ALL these block types across the lessons:
   {"type":"key-term","term":"...","definition":"Precise 1–2 sentence definition with Caribbean clinical context and an example."}
   {"type":"video-placeholder","title":"...","duration":"X min","description":"Specific Caribbean pharmacy scenario this video demonstrates."}
 
-QUIZ QUESTIONS — exactly 2 questions for this module:
+QUIZ QUESTIONS — exactly 3 questions for this module:
   - Scenario-based: "A technician at a pharmacy in [specific Caribbean location]..."
   - 4 answer options each; realistic distractors based on common errors
   - correct_answer: 0-based index of the correct option
@@ -262,7 +263,7 @@ Return ONLY valid JSON (no markdown, no commentary):
   ]
 }`;
 
-        return callClaude(modulePrompt, 5000).then(({ result, modelUsed: mu }) => ({ result, mod, modelUsed: mu }));
+        return callClaude(modulePrompt, 6000).then(({ result, modelUsed: mu }) => ({ result, mod, modelUsed: mu }));
       });
 
       const moduleResults = await Promise.allSettled(modulePromises);
@@ -412,8 +413,8 @@ async function callClaude(
     }
     clearTimeout(timer);
 
-    // Model unavailable or bad request — try next model
-    if (resp.status === 400 || resp.status === 404 || resp.status === 429) {
+    // Model unavailable, bad request, rate-limited, or overloaded — try next model
+    if (resp.status === 400 || resp.status === 404 || resp.status === 429 || resp.status === 529) {
       const errText = await resp.text();
       lastError = `${model} (${resp.status}): ${errText.slice(0, 150)}`;
       console.warn(`Model ${model} skipped (${resp.status}), trying fallback.`);
