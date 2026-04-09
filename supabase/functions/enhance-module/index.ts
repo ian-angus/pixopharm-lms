@@ -5,23 +5,6 @@ const ANTHROPIC_API_KEY = Deno.env.get("ANTHROPIC_API_KEY") ?? "";
 const SUPABASE_URL = Deno.env.get("SUPABASE_URL") ?? "";
 const SUPABASE_SERVICE_KEY = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY") ?? "";
 
-const QUALITY_STANDARD = `
-QUALITY STANDARD — every lesson must match this depth and Caribbean specificity:
-
-EXAMPLE LESSON: "Common Medical Abbreviations Used in Caribbean Prescriptions"
-[
-  {"type":"heading","text":"Abbreviations Used in Caribbean Prescriptions","level":2},
-  {"type":"text","body":"Medical abbreviations are shorthand used by prescribers to communicate instructions efficiently. As a pharmacy technician, you must know these instantly — misinterpreting an abbreviation can lead to a serious medication error. Prescribers trained in the UK use British-style abbreviations (BD, TDS, QDS) while US-trained prescribers use American style (BID, TID, QID) — you will encounter both within the same Caribbean facility, sometimes on the same day."},
-  {"type":"callout","title":"British vs American Conventions Across the Caribbean","variant":"info","body":"In Trinidad & Tobago and Barbados, British-style abbreviations predominate due to colonial influence. In Jamaica, you encounter a mix depending on where the prescriber trained. In Guyana, both British and North American styles appear. When in doubt, read the full sig in context — never guess on dosing frequency."},
-  {"type":"key-term","term":"Sig Code","definition":"From the Latin 'signa' (mark/write). The sig is the prescription directions section. Sig codes are abbreviated Latin-origin instructions telling the dispenser and patient how to administer a medication — e.g., 'BD AC' means twice daily before meals."},
-  {"type":"callout","title":"ISMP Dangerous Abbreviations — Never Accept These","variant":"warning","body":"The Institute for Safe Medication Practices identifies these as high-error abbreviations: 'U' (mistaken for 0 — write 'units'), 'IU' (mistaken for IV — write 'international units'), 'QD' (confused with QID — write 'daily'), trailing zeros (write '1 mg' not '1.0 mg'). If a Caribbean prescriber uses these, query before dispensing."},
-  {"type":"heading","text":"Regional and Multilingual Prescription Conventions","level":3},
-  {"type":"text","body":"Caribbean pharmacies serve a multilingual patient and prescriber base. In French Creole-speaking territories (Martinique, Guadeloupe, Haiti), French abbreviations appear: 'cp' for comprimé (tablet), 'ml/j' for millilitres per day. In Suriname, Dutch conventions apply. St. Maarten/Sint Maarten prescriptions may appear in either French, Dutch, or English depending on which side of the island the prescriber practises. Technicians working in border communities or multi-island pharmacy chains must recognise all conventions."},
-  {"type":"video-placeholder","title":"Decoding Five Real Caribbean Prescriptions","duration":"14 min","description":"A senior pharmacy technician at Port of Spain General Hospital walks through five authentic Caribbean prescriptions — including one with dangerous abbreviations and one mixing British and American conventions — demonstrating the exact query process used when clarification is needed."}
-]
-END EXAMPLE. All lessons must be at least this detailed, this Caribbean-specific, and this clinically accurate.
-`;
-
 const CARIBBEAN_CONTEXT = `
 PLATFORM: PixoPharm LMS — Caribbean pharmacy technician diploma, CARICOM-aligned.
 
@@ -98,8 +81,6 @@ Deno.serve(async (req: Request) => {
     // ── Call Opus with full quality prompt ────────────────────────────────────
     const prompt = `${CARIBBEAN_CONTEXT}
 
-${QUALITY_STANDARD}
-
 You are writing MODULE ${(mod.order_index ?? 0) + 1} of ${moduleCount} for the PixoPharm course: "${course.title}" (${course.skill_level} level).
 
 MODULE: "${mod.title}"
@@ -147,7 +128,7 @@ Return ONLY valid JSON:
   ]
 }`;
 
-    const { result, modelUsed } = await callOpus(prompt, 8000);
+    const { result, modelUsed } = await callOpus(prompt, 5500);
 
     const generatedLessons = Array.isArray(result.lessons) ? result.lessons : [];
     const generatedQuestions = Array.isArray(result.quiz_questions) ? result.quiz_questions : [];

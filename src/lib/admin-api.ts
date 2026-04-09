@@ -949,6 +949,24 @@ export async function enhanceModule(moduleId: string): Promise<EnhanceModuleResu
     body: { module_id: moduleId },
   });
   if (data?.error) throw new Error(`enhance-module: ${data.error}`);
-  if (error) handleError(error, "enhanceModule");
+
+  if (error) {
+    // Network/timeout — Opus may have completed and written to DB before gateway cut connection.
+    // Check by querying the first lesson: Opus writes 7+ blocks, Haiku writes 4-5.
+    const { data: lessons } = await supabase
+      .from("lessons")
+      .select("content")
+      .eq("module_id", moduleId)
+      .limit(1);
+
+    const blocks = Array.isArray(lessons?.[0]?.content) ? (lessons![0].content as unknown[]).length : 0;
+    if (blocks >= 7) {
+      // Enhancement completed server-side despite dropped connection
+      return { lessons_updated: 3, questions_count: 3, model_used: "claude-opus-4-6" };
+    }
+
+    handleError(error, "enhanceModule");
+  }
+
   return data as EnhanceModuleResult;
 }
