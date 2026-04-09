@@ -937,3 +937,18 @@ export async function generateCourse(
 
   return data as GenerateCourseResult;
 }
+
+export interface EnhanceModuleResult {
+  lessons_updated: number;
+  questions_count: number;
+  model_used: string;
+}
+
+export async function enhanceModule(moduleId: string): Promise<EnhanceModuleResult> {
+  const { data, error } = await supabase.functions.invoke("enhance-module", {
+    body: { module_id: moduleId },
+  });
+  if (data?.error) throw new Error(`enhance-module: ${data.error}`);
+  if (error) handleError(error, "enhanceModule");
+  return data as EnhanceModuleResult;
+}

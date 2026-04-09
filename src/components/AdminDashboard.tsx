@@ -76,6 +76,7 @@ import {
   fetchSurveyStats,
   fetchAllSurveyStats,
   generateCourse,
+  enhanceModule,
 } from "@/lib/admin-api";
 import type {
   Course,
@@ -382,6 +383,8 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
   const [aiGenLoading, setAiGenLoading] = useState(false);
   const [aiGenResult, setAiGenResult] = useState<GenerateCourseResult | null>(null);
   const [aiGenError, setAiGenError] = useState<string | null>(null);
+  const [aiGenModules, setAiGenModules] = useState<{ id: string; title: string }[]>([]);
+  const [enhancingModules, setEnhancingModules] = useState<Record<string, "loading" | "done" | "error">>({});
 
   // ── Dialog State ─────────────────────────────────────────────────────────
   const [showCourseDialog, setShowCourseDialog] = useState(false);
@@ -1751,9 +1754,20 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
                             created_by: user.id,
                           });
                           setAiGenResult(result);
+                          setEnhancingModules({});
+                          // Fetch module list for the Enhance buttons
+                          try {
+                            const { supabase: sb } = await import("@/lib/supabase");
+                            const { data: mods } = await sb
+                              .from("modules")
+                              .select("id, title")
+                              .eq("course_id", result.course_id)
+                              .order("order_index");
+                            setAiGenModules(mods ?? []);
+                          } catch { /* non-critical */ }
                           // Refresh course list so the new draft appears
                           fetchCourses().then(setCourses).catch(() => {});
-                          toast({ title: "Course generated!", description: `${result.modules_count} modules, ${result.lessons_count} lessons, ${result.questions_count} quiz questions saved as draft.` });
+                          toast({ title: "Course generated!", description: `${result.modules_count} modules, ${result.lessons_count} lessons saved as draft. Enhance modules with Opus below.` });
                         } catch (err) {
                           setAiGenError(err instanceof Error ? err.message : String(err));
                         } finally {
@@ -1787,9 +1801,9 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
                       <svg viewBox="0 0 24 24" className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2"><polyline points="20 6 9 17 4 12"/></svg>
                       Course Generated Successfully
                     </CardTitle>
-                    <CardDescription>Saved as draft — go to Courses to review and publish.</CardDescription>
+                    <CardDescription>Saved as draft — enhance modules with Opus AI for richer content, then publish.</CardDescription>
                   </CardHeader>
-                  <CardContent>
+                  <CardContent className="space-y-4">
                     <div className="grid grid-cols-3 gap-4 text-center">
                       <div className="rounded-lg bg-white dark:bg-zinc-900 p-3 border">
                         <div className="text-2xl font-bold text-foreground">{aiGenResult.modules_count}</div>
@@ -1804,15 +1818,76 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
                         <div className="text-xs text-muted-foreground">Quiz Questions</div>
                       </div>
                     </div>
-                    <div className="flex items-center justify-between mt-3">
+
+                    {/* Per-module Opus enhancement */}
+                    {aiGenModules.length > 0 && (
+                      <div className="rounded-lg border bg-white dark:bg-zinc-900 p-3 space-y-2">
+                        <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wide">Enhance Modules with Opus AI ✦</p>
+                        <p className="text-xs text-muted-foreground">Each enhancement runs a dedicated Opus AI call — 5–7 rich content blocks + 3 quiz questions. Takes ~90s per module.</p>
+                        {aiGenModules.map((mod) => {
+                          const state = enhancingModules[mod.id];
+                          return (
+                            <div key={mod.id} className="flex items-center justify-between gap-3 py-1.5 border-b last:border-0">
+                              <span className="text-sm text-foreground flex-1 min-w-0 truncate">{mod.title}</span>
+                              {state === "done" ? (
+                                <span className="text-xs text-green-700 dark:text-green-400 font-medium shrink-0 flex items-center gap-1">
+                                  <svg viewBox="0 0 24 24" className="w-3.5 h-3.5" fill="none" stroke="currentColor" strokeWidth="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                                  Enhanced
+                                </span>
+                              ) : state === "error" ? (
+                                <Button
+                                  size="sm"
+                                  variant="outline"
+                                  className="text-xs h-7 shrink-0 border-red-300 text-red-600"
+                                  onClick={async () => {
+                                    setEnhancingModules(prev => ({ ...prev, [mod.id]: "loading" }));
+                                    try {
+                                      await enhanceModule(mod.id);
+                                      setEnhancingModules(prev => ({ ...prev, [mod.id]: "done" }));
+                                    } catch {
+                                      setEnhancingModules(prev => ({ ...prev, [mod.id]: "error" }));
+                                    }
+                                  }}
+                                >
+                                  Retry
+                                </Button>
+                              ) : (
+                                <Button
+                                  size="sm"
+                                  variant="outline"
+                                  className="text-xs h-7 shrink-0"
+                                  disabled={state === "loading"}
+                                  onClick={async () => {
+                                    setEnhancingModules(prev => ({ ...prev, [mod.id]: "loading" }));
+                                    try {
+                                      await enhanceModule(mod.id);
+                                      setEnhancingModules(prev => ({ ...prev, [mod.id]: "done" }));
+                                    } catch {
+                                      setEnhancingModules(prev => ({ ...prev, [mod.id]: "error" }));
+                                    }
+                                  }}
+                                >
+                                  {state === "loading" ? (
+                                    <span className="flex items-center gap-1.5">
+                                      <svg className="animate-spin h-3 w-3" viewBox="0 0 24 24" fill="none"><circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"/><path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8z"/></svg>
+                                      Enhancing…
+                                    </span>
+                                  ) : "Enhance ✦"}
+                                </Button>
+                              )}
+                            </div>
+                          );
+                        })}
+                      </div>
+                    )}
+
+                    <div className="flex items-center justify-between">
                       <p className="text-xs text-muted-foreground">
                         Slug: <code className="bg-muted px-1 rounded">{aiGenResult.course_slug}</code>
                       </p>
-                      {aiGenResult.model_used && (
-                        <span className="text-xs bg-muted px-2 py-0.5 rounded text-muted-foreground">
-                          {aiGenResult.model_used.includes("opus") ? "PixoPharm AI (Opus)" : aiGenResult.model_used.includes("sonnet") ? "PixoPharm AI (Sonnet)" : "PixoPharm AI"}
-                        </span>
-                      )}
+                      <span className="text-xs bg-muted px-2 py-0.5 rounded text-muted-foreground">
+                        PixoPharm AI (Haiku)
+                      </span>
                     </div>
                   </CardContent>
                   <CardFooter className="flex gap-3">
@@ -1823,6 +1898,8 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
                       variant="outline"
                       onClick={() => {
                         setAiGenResult(null);
+                        setAiGenModules([]);
+                        setEnhancingModules({});
                         setAiGenForm({ title: "", skill_level: "Beginner", duration_weeks: 4, jurisdiction: "", focus_areas: "" });
                       }}
                     >

@@ -58,21 +58,16 @@ CLINICAL REALITY: Pharmacy technicians are often first healthcare contact; extre
 `;
 
 // ── Model config ─────────────────────────────────────────────────────────────
-// Opus 4.6 first — best quality content.
-// Haiku fallback — used when Opus is unavailable or rate-limited.
-// Per-model output token ceiling: Opus supports up to 8192, Haiku caps at 4096.
-// Phase 2 model order: try Sonnet 3.5 (fast + high quality), then Opus (slower), then Haiku (fallback)
-const MODELS = ["claude-3-5-sonnet-20241022", "claude-opus-4-6", "claude-3-haiku-20240307"];
-// Phase 1 (outline only): Haiku is fast and sufficient; Opus fallback if Haiku overloaded
+// Phase 1 (outline): Haiku — fast and sufficient; Opus fallback if Haiku overloaded
+// Phase 2 (content): Haiku only — reliable within 150s; use enhance-module for Opus upgrade
+// enhance-module Edge Function handles per-module Opus calls on demand
 const PHASE1_MODELS = ["claude-3-haiku-20240307", "claude-opus-4-6"];
+const PHASE2_MODELS = ["claude-3-haiku-20240307"];
 const MODEL_MAX_TOKENS: Record<string, number> = {
-  "claude-3-5-sonnet-20241022": 8192,
   "claude-opus-4-6": 8192,
   "claude-3-haiku-20240307": 4096,
 };
-// Per-call timeout — Supabase Pro allows 400s wall time.
-// 350s gives a safe buffer; Opus 4.6 typically completes in 70-90s per module call.
-const CALL_TIMEOUT_MS = 350_000;
+const CALL_TIMEOUT_MS = 120_000; // 120s per call — Haiku completes in ~15-20s
 
 // ── Main handler ─────────────────────────────────────────────────────────────
 Deno.serve(async (req: Request) => {
@@ -212,8 +207,6 @@ COLOR options: blue|green|purple|amber|red|teal|orange|slate|violet|rose`;
 
         const modulePrompt = `${CARIBBEAN_CONTEXT}
 
-${QUALITY_STANDARD}
-
 You are writing MODULE ${mi + 1} of ${moduleCount} for the PixoPharm course: "${title}" (${skill_level} level).
 
 MODULE: "${mod.title}"
@@ -223,47 +216,24 @@ ${jurisdictionText}${focusText}
 LESSONS IN THIS MODULE:
 ${lessonList}
 
-TASK — for EACH lesson write:
-1. Rich lesson content (5–7 content blocks)
-2. 3 scenario-based quiz questions for this module at the end
+TASK — for EACH lesson write 4-5 content blocks, then 2 quiz questions for the module.
 
-LESSON CONTENT BLOCKS — use ALL these block types across the lessons:
-  {"type":"heading","text":"...","level":2}  — main section heading (required, 1 per lesson)
-  {"type":"heading","text":"...","level":3}  — subsection heading
-  {"type":"text","body":"3–5 sentence paragraph. Must be clinically accurate, Caribbean-specific, naming real drugs, regulations, and islands."}
-  {"type":"callout","title":"...","body":"2–4 sentences","variant":"info"}  — island comparisons, regional clinical facts, regulatory differences
-  {"type":"callout","title":"...","body":"...","variant":"warning"}  — patient safety alerts, dispensing errors, compliance warnings
-  {"type":"key-term","term":"...","definition":"Precise 1–2 sentence definition with Caribbean clinical context and an example."}
-  {"type":"video-placeholder","title":"...","duration":"X min","description":"Specific Caribbean pharmacy scenario this video demonstrates."}
+CONTENT BLOCKS (use these types):
+  {"type":"heading","text":"...","level":2}
+  {"type":"text","body":"2-4 sentences, Caribbean-specific, real drugs and islands."}
+  {"type":"callout","title":"...","body":"1-3 sentences","variant":"info"}
+  {"type":"callout","title":"...","body":"...","variant":"warning"}
+  {"type":"key-term","term":"...","definition":"1-2 sentences with Caribbean context."}
 
-QUIZ QUESTIONS — exactly 3 questions for this module:
-  - Scenario-based: "A technician at a pharmacy in [specific Caribbean location]..."
-  - 4 answer options each; realistic distractors based on common errors
-  - correct_answer: 0-based index of the correct option
-  - explanation: 2–3 sentences explaining why the answer is correct, why others are wrong, citing specific Caribbean regulation or clinical evidence
+QUIZ — exactly 2 scenario-based questions, 4 options each, correct_answer 0-based index.
 
-Return ONLY valid JSON (no markdown, no commentary):
+Return ONLY valid JSON:
 {
-  "lessons": [
-    {
-      "title": "exact title matching the lesson list above",
-      "duration_minutes": 25,
-      "content": [ ...5-7 blocks... ]
-    }
-  ],
-  "quiz_questions": [
-    {
-      "question": "Scenario-based question?",
-      "options": ["Option A", "Option B", "Option C", "Option D"],
-      "correct_answer": 0,
-      "explanation": "Detailed explanation with Caribbean regulatory/clinical context.",
-      "difficulty": "medium",
-      "blooms_level": "apply"
-    }
-  ]
+  "lessons": [{"title":"exact title","duration_minutes":25,"content":[...4-5 blocks...]}],
+  "quiz_questions": [{"question":"...","options":["A","B","C","D"],"correct_answer":0,"explanation":"...","difficulty":"medium","blooms_level":"apply"}]
 }`;
 
-        return callClaude(modulePrompt, 6000).then(({ result, modelUsed: mu }) => ({ result, mod, modelUsed: mu }));
+        return callClaude(modulePrompt, 3500, PHASE2_MODELS).then(({ result, modelUsed: mu }) => ({ result, mod, modelUsed: mu }));
       });
 
       const moduleResults = await Promise.allSettled(modulePromises);
