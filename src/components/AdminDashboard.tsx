@@ -1766,7 +1766,7 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
                       {aiGenLoading ? (
                         <span className="flex items-center gap-2">
                           <svg className="animate-spin h-4 w-4" viewBox="0 0 24 24" fill="none"><circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"/><path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8z"/></svg>
-                          Generating detailed content… 60–120 seconds
+                          Generating with PixoPharm AI (Opus)… 90–150 seconds
                         </span>
                       ) : (
                         <span className="flex items-center gap-2">
@@ -1847,7 +1847,7 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
                           <li>Powered by PixoPharm AI — best available model, automatic fallback if needed</li>
                           <li>Connection-safe — course is saved to your database immediately; if the connection drops, find it in <strong>Courses</strong> with status "generating" or "draft"</li>
                         </ul>
-                        <p className="text-xs mt-2 font-medium text-blue-800 dark:text-blue-300">Generation takes 45–90 seconds. The draft is fully editable with the TipTap editor.</p>
+                        <p className="text-xs mt-2 font-medium text-blue-800 dark:text-blue-300">Generation takes 90–150 seconds using Opus AI — keep this tab open until complete. The draft is fully editable with the TipTap editor.</p>
                       </div>
                     </div>
                   </CardContent>
