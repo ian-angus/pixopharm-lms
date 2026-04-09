@@ -3347,6 +3347,13 @@ function ModuleCard({
   onDeleteQuiz,
 }: ModuleCardProps) {
   const [expanded, setExpanded] = useState(false);
+  const { toast } = useToast();
+
+  // Auto-detect Opus-quality content: first lesson with ≥7 blocks = already enhanced
+  const firstLessonBlocks = Array.isArray(mod.lessons[0]?.content) ? (mod.lessons[0].content as unknown[]).length : 0;
+  const [enhanceState, setEnhanceState] = useState<"idle" | "loading" | "done" | "error">(
+    firstLessonBlocks >= 7 ? "done" : "idle"
+  );
 
   return (
     <div className="border rounded-lg bg-white overflow-hidden">
@@ -3368,6 +3375,39 @@ function ModuleCard({
           </p>
         </div>
         <div className="flex items-center gap-1 shrink-0">
+          {/* Enhance with Opus ✦ */}
+          {enhanceState === "done" ? (
+            <span className="text-xs text-green-700 dark:text-green-400 font-medium flex items-center gap-1 px-1.5">
+              <svg viewBox="0 0 24 24" className="w-3 h-3 shrink-0" fill="none" stroke="currentColor" strokeWidth="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Enhanced
+            </span>
+          ) : (
+            <Button
+              size="sm"
+              variant="ghost"
+              className={`h-7 px-2 text-xs ${enhanceState === "error" ? "text-red-600 border border-red-300" : "text-amber-700 dark:text-amber-400"}`}
+              disabled={enhanceState === "loading"}
+              onClick={async (e) => {
+                e.stopPropagation();
+                setEnhanceState("loading");
+                try {
+                  await enhanceModule(mod.id);
+                  setEnhanceState("done");
+                  toast({ title: "Module enhanced!", description: `"${mod.title}" updated with Opus AI content.` });
+                } catch {
+                  setEnhanceState("error");
+                  toast({ title: "Enhancement failed", description: "Click Retry to try again.", variant: "destructive" });
+                }
+              }}
+            >
+              {enhanceState === "loading" ? (
+                <span className="flex items-center gap-1">
+                  <svg className="animate-spin h-3 w-3" viewBox="0 0 24 24" fill="none"><circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"/><path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8z"/></svg>
+                  Enhancing…
+                </span>
+              ) : enhanceState === "error" ? "Retry" : "Enhance ✦"}
+            </Button>
+          )}
           <Button size="sm" variant="ghost" className="h-7 w-7 p-0" onClick={(e) => { e.stopPropagation(); onEditModule(); }}>
             <IconEdit />
           </Button>
