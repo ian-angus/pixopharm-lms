@@ -75,6 +75,8 @@ import {
   fetchAnalytics,
   fetchSurveyStats,
   fetchAllSurveyStats,
+  generateCourse,
+  enhanceModule,
 } from "@/lib/admin-api";
 import type {
   Course,
@@ -87,6 +89,7 @@ import type {
   CourseSurveyStats,
   AllSurveyStats,
   SurveyCourseRow,
+  GenerateCourseResult,
 } from "@/lib/admin-api";
 
 // ── CoursePlayer for Preview ─────────────────────────────────────────────────
@@ -113,7 +116,17 @@ interface AdminDashboardProps {
   onExit: () => void;
 }
 
-type AdminPage = "dashboard" | "courses" | "students" | "analytics" | "settings" | "help";
+type AdminPage = "dashboard" | "courses" | "ai-generator" | "students" | "analytics" | "settings" | "help";
+
+const PAGE_TITLES: Record<AdminPage, string> = {
+  dashboard: "Dashboard",
+  courses: "Courses",
+  "ai-generator": "AI Generator",
+  students: "Students",
+  analytics: "Analytics",
+  settings: "Settings",
+  help: "Help",
+};
 
 // ============================================================================
 // SVG ICONS (inline to avoid Lucide dependency bloat)
@@ -226,6 +239,9 @@ function IconLogOut() {
 }
 function IconHelp() {
   return <svg viewBox="0 0 24 24" className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10" /><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3" /><line x1="12" y1="17" x2="12.01" y2="17" /></svg>;
+}
+function IconAI() {
+  return <svg viewBox="0 0 24 24" className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z" /><circle cx="12" cy="12" r="1" fill="currentColor" /></svg>;
 }
 function IconAward() {
   return (
@@ -365,6 +381,20 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
     modules: (Module & { lessons: Lesson[]; quiz_questions: QuizQuestion[] })[];
   } | null>(null);
   const [courseDetailLoading, setCourseDetailLoading] = useState(false);
+
+  // ── AI Course Generator State ────────────────────────────────────────────
+  const [aiGenForm, setAiGenForm] = useState({
+    title: "",
+    skill_level: "Beginner" as "Beginner" | "Intermediate" | "Advanced",
+    duration_weeks: 4,
+    jurisdiction: "",
+    focus_areas: "",
+  });
+  const [aiGenLoading, setAiGenLoading] = useState(false);
+  const [aiGenResult, setAiGenResult] = useState<GenerateCourseResult | null>(null);
+  const [aiGenError, setAiGenError] = useState<string | null>(null);
+  const [aiGenModules, setAiGenModules] = useState<{ id: string; title: string }[]>([]);
+  const [enhancingModules, setEnhancingModules] = useState<Record<string, "loading" | "done" | "error">>({});
 
   // ── Dialog State ─────────────────────────────────────────────────────────
   const [showCourseDialog, setShowCourseDialog] = useState(false);
@@ -1085,6 +1115,7 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
           {([
             { id: "dashboard" as AdminPage, label: "Dashboard", icon: <IconDashboard /> },
             { id: "courses" as AdminPage, label: "Courses", icon: <IconCourses /> },
+            { id: "ai-generator" as AdminPage, label: "AI Generator ✦", icon: <IconAI /> },
             { id: "students" as AdminPage, label: "Students", icon: <IconStudents /> },
             { id: "analytics" as AdminPage, label: "Analytics", icon: <IconAnalytics /> },
             { id: "settings" as AdminPage, label: "Settings", icon: <IconSettings /> },
@@ -1122,7 +1153,7 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
       <div className="flex-1 flex flex-col min-h-screen overflow-x-hidden">
         {/* Top Bar */}
         <header className="bg-white border-b px-6 py-3 flex items-center justify-between sticky top-0 z-40">
-          <h1 className="text-lg font-semibold text-foreground capitalize">{activePage}</h1>
+          <h1 className="text-lg font-semibold text-foreground">{PAGE_TITLES[activePage]}</h1>
           <div className="flex items-center gap-4">
             <span className="text-sm text-muted-foreground">
               {(profile as AdminProfile | null)?.full_name ?? user.email}
@@ -1604,7 +1635,316 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
           )}
 
           {/* ════════════════════════════════════════════════════════════════ */}
-          {/* C. STUDENTS VIEW                                               */}
+          {/* C. AI COURSE GENERATOR                                         */}
+          {/* ════════════════════════════════════════════════════════════════ */}
+          {activePage === "ai-generator" && (
+            <div className="space-y-6 max-w-2xl">
+              <div>
+                <h2 className="text-xl font-bold text-foreground">PixoPharm AI Course Generator</h2>
+                <p className="text-sm text-muted-foreground">
+                  Generate a detailed, Caribbean-specific draft course using the PixoPharm AI generator. Two-phase generation: outline first, then rich lesson content per module. Saved as draft — review and publish when ready.
+                </p>
+              </div>
+
+              {/* Form */}
+              {!aiGenResult && (
+                <Card>
+                  <CardHeader>
+                    <CardTitle className="text-base">Course Specifications</CardTitle>
+                    <CardDescription>The PixoPharm AI generator creates a two-phase deep course: outline + rich lesson content per module, with Caribbean regulations, clinical detail, callouts, key terms, and island comparisons built in.</CardDescription>
+                  </CardHeader>
+                  <CardContent className="space-y-5">
+                    {/* Title */}
+                    <div className="space-y-1.5">
+                      <Label htmlFor="ai-title">Course Title <span className="text-destructive">*</span></Label>
+                      <Input
+                        id="ai-title"
+                        placeholder="e.g. Controlled Substances Management in the Caribbean"
+                        value={aiGenForm.title}
+                        onChange={(e) => setAiGenForm((f) => ({ ...f, title: e.target.value }))}
+                        disabled={aiGenLoading}
+                      />
+                    </div>
+
+                    {/* Skill Level + Duration row */}
+                    <div className="grid grid-cols-2 gap-4">
+                      <div className="space-y-1.5">
+                        <Label>Skill Level <span className="text-destructive">*</span></Label>
+                        <Select
+                          value={aiGenForm.skill_level}
+                          onValueChange={(v) => setAiGenForm((f) => ({ ...f, skill_level: v as "Beginner" | "Intermediate" | "Advanced" }))}
+                          disabled={aiGenLoading}
+                        >
+                          <SelectTrigger>
+                            <SelectValue />
+                          </SelectTrigger>
+                          <SelectContent>
+                            <SelectItem value="Beginner">Beginner</SelectItem>
+                            <SelectItem value="Intermediate">Intermediate</SelectItem>
+                            <SelectItem value="Advanced">Advanced</SelectItem>
+                          </SelectContent>
+                        </Select>
+                      </div>
+                      <div className="space-y-1.5">
+                        <Label htmlFor="ai-duration">Duration (weeks) <span className="text-destructive">*</span></Label>
+                        <Input
+                          id="ai-duration"
+                          type="number"
+                          min={1}
+                          max={12}
+                          value={aiGenForm.duration_weeks}
+                          onChange={(e) => setAiGenForm((f) => ({ ...f, duration_weeks: Math.max(1, Math.min(12, parseInt(e.target.value) || 1)) }))}
+                          disabled={aiGenLoading}
+                        />
+                      </div>
+                    </div>
+
+                    {/* Jurisdiction */}
+                    <div className="space-y-1.5">
+                      <Label>Target Jurisdiction <span className="text-muted-foreground text-xs">(optional)</span></Label>
+                      <Select
+                        value={aiGenForm.jurisdiction || "all"}
+                        onValueChange={(v) => setAiGenForm((f) => ({ ...f, jurisdiction: v === "all" ? "" : v }))}
+                        disabled={aiGenLoading}
+                      >
+                        <SelectTrigger>
+                          <SelectValue placeholder="All CARICOM" />
+                        </SelectTrigger>
+                        <SelectContent>
+                          <SelectItem value="all">All CARICOM</SelectItem>
+                          <SelectItem value="Trinidad & Tobago">Trinidad & Tobago</SelectItem>
+                          <SelectItem value="Jamaica">Jamaica</SelectItem>
+                          <SelectItem value="Barbados">Barbados</SelectItem>
+                          <SelectItem value="Guyana">Guyana</SelectItem>
+                          <SelectItem value="Belize">Belize</SelectItem>
+                          <SelectItem value="St. Lucia">St. Lucia</SelectItem>
+                          <SelectItem value="Antigua & Barbuda">Antigua & Barbuda</SelectItem>
+                          <SelectItem value="The Bahamas">The Bahamas</SelectItem>
+                          <SelectItem value="Grenada">Grenada</SelectItem>
+                          <SelectItem value="St. Vincent & the Grenadines">St. Vincent & the Grenadines</SelectItem>
+                        </SelectContent>
+                      </Select>
+                    </div>
+
+                    {/* Focus Areas */}
+                    <div className="space-y-1.5">
+                      <Label htmlFor="ai-focus">Focus Areas / Learning Objectives <span className="text-muted-foreground text-xs">(optional)</span></Label>
+                      <Textarea
+                        id="ai-focus"
+                        placeholder="e.g. Emphasise compounding safety, cover CARICOM drug scheduling differences, include case studies from public hospital settings"
+                        value={aiGenForm.focus_areas}
+                        onChange={(e) => setAiGenForm((f) => ({ ...f, focus_areas: e.target.value }))}
+                        disabled={aiGenLoading}
+                        rows={3}
+                      />
+                    </div>
+
+                    {aiGenError && (
+                      <div className="rounded-md bg-destructive/10 border border-destructive/20 p-3 text-sm text-destructive">
+                        {aiGenError}
+                      </div>
+                    )}
+                  </CardContent>
+                  <CardFooter className="flex gap-3">
+                    <Button
+                      onClick={async () => {
+                        if (!aiGenForm.title.trim()) {
+                          setAiGenError("Course title is required.");
+                          return;
+                        }
+                        setAiGenError(null);
+                        setAiGenLoading(true);
+                        try {
+                          const result = await generateCourse({
+                            title: aiGenForm.title.trim(),
+                            skill_level: aiGenForm.skill_level,
+                            duration_weeks: aiGenForm.duration_weeks,
+                            jurisdiction: aiGenForm.jurisdiction || undefined,
+                            focus_areas: aiGenForm.focus_areas || undefined,
+                            created_by: user.id,
+                          });
+                          setAiGenResult(result);
+                          setEnhancingModules({});
+                          // Fetch module list for the Enhance buttons
+                          try {
+                            const { supabase: sb } = await import("@/lib/supabase");
+                            const { data: mods } = await sb
+                              .from("modules")
+                              .select("id, title")
+                              .eq("course_id", result.course_id)
+                              .order("order_index");
+                            setAiGenModules(mods ?? []);
+                          } catch { /* non-critical */ }
+                          // Refresh course list so the new draft appears
+                          fetchCourses().then(setCourses).catch(() => {});
+                          toast({ title: "Course generated!", description: `${result.modules_count} modules, ${result.lessons_count} lessons saved as draft. Enhance modules with Opus below.` });
+                        } catch (err) {
+                          setAiGenError(err instanceof Error ? err.message : String(err));
+                        } finally {
+                          setAiGenLoading(false);
+                        }
+                      }}
+                      disabled={aiGenLoading || !aiGenForm.title.trim()}
+                      className="flex-1"
+                    >
+                      {aiGenLoading ? (
+                        <span className="flex items-center gap-2">
+                          <svg className="animate-spin h-4 w-4" viewBox="0 0 24 24" fill="none"><circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"/><path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8z"/></svg>
+                          Generating with PixoPharm AI… 20–30 seconds
+                        </span>
+                      ) : (
+                        <span className="flex items-center gap-2">
+                          <IconAI />
+                          Generate Course
+                        </span>
+                      )}
+                    </Button>
+                  </CardFooter>
+                </Card>
+              )}
+
+              {/* Success State */}
+              {aiGenResult && (
+                <Card className="border-green-200 bg-green-50/50 dark:bg-green-950/20 dark:border-green-800">
+                  <CardHeader>
+                    <CardTitle className="text-base text-green-800 dark:text-green-300 flex items-center gap-2">
+                      <svg viewBox="0 0 24 24" className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2"><polyline points="20 6 9 17 4 12"/></svg>
+                      Course Generated Successfully
+                    </CardTitle>
+                    <CardDescription>Saved as draft — enhance modules with Opus AI for richer content, then publish.</CardDescription>
+                  </CardHeader>
+                  <CardContent className="space-y-4">
+                    <div className="grid grid-cols-3 gap-4 text-center">
+                      <div className="rounded-lg bg-white dark:bg-zinc-900 p-3 border">
+                        <div className="text-2xl font-bold text-foreground">{aiGenResult.modules_count}</div>
+                        <div className="text-xs text-muted-foreground">Modules</div>
+                      </div>
+                      <div className="rounded-lg bg-white dark:bg-zinc-900 p-3 border">
+                        <div className="text-2xl font-bold text-foreground">{aiGenResult.lessons_count}</div>
+                        <div className="text-xs text-muted-foreground">Lessons</div>
+                      </div>
+                      <div className="rounded-lg bg-white dark:bg-zinc-900 p-3 border">
+                        <div className="text-2xl font-bold text-foreground">{aiGenResult.questions_count}</div>
+                        <div className="text-xs text-muted-foreground">Quiz Questions</div>
+                      </div>
+                    </div>
+
+                    {/* Per-module Opus enhancement */}
+                    {aiGenModules.length > 0 && (
+                      <div className="rounded-lg border bg-white dark:bg-zinc-900 p-3 space-y-2">
+                        <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wide">Enhance Modules with Opus AI ✦</p>
+                        <p className="text-xs text-muted-foreground">Each enhancement runs a dedicated Opus AI call — 5–7 rich content blocks + 3 quiz questions. Takes ~90s per module.</p>
+                        {aiGenModules.map((mod) => {
+                          const state = enhancingModules[mod.id];
+                          return (
+                            <div key={mod.id} className="flex items-center justify-between gap-3 py-1.5 border-b last:border-0">
+                              <span className="text-sm text-foreground flex-1 min-w-0 truncate">{mod.title}</span>
+                              {state === "done" ? (
+                                <span className="text-xs text-green-700 dark:text-green-400 font-medium shrink-0 flex items-center gap-1">
+                                  <svg viewBox="0 0 24 24" className="w-3.5 h-3.5" fill="none" stroke="currentColor" strokeWidth="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                                  Enhanced
+                                </span>
+                              ) : state === "error" ? (
+                                <Button
+                                  size="sm"
+                                  variant="outline"
+                                  className="text-xs h-7 shrink-0 border-red-300 text-red-600"
+                                  onClick={async () => {
+                                    setEnhancingModules(prev => ({ ...prev, [mod.id]: "loading" }));
+                                    try {
+                                      await enhanceModule(mod.id);
+                                      setEnhancingModules(prev => ({ ...prev, [mod.id]: "done" }));
+                                    } catch {
+                                      setEnhancingModules(prev => ({ ...prev, [mod.id]: "error" }));
+                                    }
+                                  }}
+                                >
+                                  Retry
+                                </Button>
+                              ) : (
+                                <Button
+                                  size="sm"
+                                  variant="outline"
+                                  className="text-xs h-7 shrink-0"
+                                  disabled={state === "loading"}
+                                  onClick={async () => {
+                                    setEnhancingModules(prev => ({ ...prev, [mod.id]: "loading" }));
+                                    try {
+                                      await enhanceModule(mod.id);
+                                      setEnhancingModules(prev => ({ ...prev, [mod.id]: "done" }));
+                                    } catch {
+                                      setEnhancingModules(prev => ({ ...prev, [mod.id]: "error" }));
+                                    }
+                                  }}
+                                >
+                                  {state === "loading" ? (
+                                    <span className="flex items-center gap-1.5">
+                                      <svg className="animate-spin h-3 w-3" viewBox="0 0 24 24" fill="none"><circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"/><path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8z"/></svg>
+                                      Enhancing…
+                                    </span>
+                                  ) : "Enhance ✦"}
+                                </Button>
+                              )}
+                            </div>
+                          );
+                        })}
+                      </div>
+                    )}
+
+                    <div className="flex items-center justify-between">
+                      <p className="text-xs text-muted-foreground">
+                        Slug: <code className="bg-muted px-1 rounded">{aiGenResult.course_slug}</code>
+                      </p>
+                      <span className="text-xs bg-muted px-2 py-0.5 rounded text-muted-foreground">
+                        PixoPharm AI (Haiku)
+                      </span>
+                    </div>
+                  </CardContent>
+                  <CardFooter className="flex gap-3">
+                    <Button onClick={() => setActivePage("courses")} className="flex-1">
+                      View in Courses
+                    </Button>
+                    <Button
+                      variant="outline"
+                      onClick={() => {
+                        setAiGenResult(null);
+                        setAiGenModules([]);
+                        setEnhancingModules({});
+                        setAiGenForm({ title: "", skill_level: "Beginner", duration_weeks: 4, jurisdiction: "", focus_areas: "" });
+                      }}
+                    >
+                      Generate Another
+                    </Button>
+                  </CardFooter>
+                </Card>
+              )}
+
+              {/* Info callout */}
+              {!aiGenResult && (
+                <Card className="border-blue-200 bg-blue-50/50 dark:bg-blue-950/20 dark:border-blue-800">
+                  <CardContent className="pt-4">
+                    <div className="flex gap-3">
+                      <svg viewBox="0 0 24 24" className="w-5 h-5 text-blue-600 shrink-0 mt-0.5" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                      <div className="text-sm text-blue-800 dark:text-blue-300 space-y-1">
+                        <p className="font-medium">PixoPharm AI Course Generator — two-phase deep generation</p>
+                        <ul className="text-xs space-y-0.5 text-blue-700 dark:text-blue-400 list-disc list-inside">
+                          <li><strong>Phase 1:</strong> Course outline — modules, lesson titles, learning objectives (fast)</li>
+                          <li><strong>Phase 2:</strong> All modules generated in parallel — lesson content, Caribbean callouts, key terms, safety warnings, video placeholders + 2 quiz questions per module</li>
+                          <li>Caribbean-contextualised content (TT, Jamaica, Barbados, Guyana…) — all output is AI-generated and requires clinical review before publishing</li>
+                          <li>Powered by PixoPharm AI — automatic fallback if primary model unavailable</li>
+                          <li>Connection-safe — course is saved to your database immediately; if the connection drops, find it in <strong>Courses</strong> with status "generating" or "draft"</li>
+                        </ul>
+                        <p className="text-xs mt-2 font-medium text-blue-800 dark:text-blue-300">Base generation takes ~20–30 seconds. Use <strong>Enhance ✦</strong> on each module for richer Opus AI content (~90s per module). All drafts are fully editable with the TipTap editor.</p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              )}
+            </div>
+          )}
+
+          {/* ════════════════════════════════════════════════════════════════ */}
+          {/* D. STUDENTS VIEW                                               */}
           {/* ════════════════════════════════════════════════════════════════ */}
           {activePage === "students" && (
             <div className="space-y-4">
@@ -3017,6 +3357,13 @@ function ModuleCard({
   onDeleteQuiz,
 }: ModuleCardProps) {
   const [expanded, setExpanded] = useState(false);
+  const { toast } = useToast();
+
+  // Auto-detect Opus-quality content: first lesson with ≥7 blocks = already enhanced
+  const firstLessonBlocks = Array.isArray(mod.lessons[0]?.content) ? (mod.lessons[0].content as unknown[]).length : 0;
+  const [enhanceState, setEnhanceState] = useState<"idle" | "loading" | "done" | "error">(
+    firstLessonBlocks >= 7 ? "done" : "idle"
+  );
 
   return (
     <div className="border rounded-lg bg-white overflow-hidden">
@@ -3038,6 +3385,39 @@ function ModuleCard({
           </p>
         </div>
         <div className="flex items-center gap-1 shrink-0">
+          {/* Enhance with Opus ✦ */}
+          {enhanceState === "done" ? (
+            <span className="text-xs text-green-700 dark:text-green-400 font-medium flex items-center gap-1 px-1.5">
+              <svg viewBox="0 0 24 24" className="w-3 h-3 shrink-0" fill="none" stroke="currentColor" strokeWidth="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Enhanced
+            </span>
+          ) : (
+            <Button
+              size="sm"
+              variant="ghost"
+              className={`h-7 px-2 text-xs ${enhanceState === "error" ? "text-red-600 border border-red-300" : "text-amber-700 dark:text-amber-400"}`}
+              disabled={enhanceState === "loading"}
+              onClick={async (e) => {
+                e.stopPropagation();
+                setEnhanceState("loading");
+                try {
+                  await enhanceModule(mod.id);
+                  setEnhanceState("done");
+                  toast({ title: "Module enhanced!", description: `"${mod.title}" updated with Opus AI content.` });
+                } catch {
+                  setEnhanceState("error");
+                  toast({ title: "Enhancement failed", description: "Click Retry to try again.", variant: "destructive" });
+                }
+              }}
+            >
+              {enhanceState === "loading" ? (
+                <span className="flex items-center gap-1">
+                  <svg className="animate-spin h-3 w-3" viewBox="0 0 24 24" fill="none"><circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"/><path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8z"/></svg>
+                  Enhancing…
+                </span>
+              ) : enhanceState === "error" ? "Retry" : "Enhance ✦"}
+            </Button>
+          )}
           <Button size="sm" variant="ghost" className="h-7 w-7 p-0" onClick={(e) => { e.stopPropagation(); onEditModule(); }}>
             <IconEdit />
           </Button>

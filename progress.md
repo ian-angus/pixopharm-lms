@@ -2,6 +2,80 @@
 
 ---
 
+## 2026-04-08: Feature 2 (AI Course Generator) — v16/v2 STABLE ✅
+
+### Branch: `feature/ai-course-generator` — PR #4 open
+
+### Architecture (current state)
+- **generate-course v16**: Phase 1 Haiku outline (~5s) + Phase 2 Haiku-only content (~20s) = full course in ~26s
+- **enhance-module v2**: Dedicated Opus call per module — 5-7 rich blocks + 3 quiz questions. Takes ~90-150s (Supabase 150s wall).
+- **Connection-drop recovery**: Both functions write to DB before HTTP response. Client checks DB after network error:
+  - `generateCourse()`: checks `ai_job_id` → course status `draft` = success
+  - `enhanceModule()`: checks first lesson block count ≥7 = Opus completed server-side
+- **Enhance ✦ button**: Added to every ModuleCard in course editor. Auto-detects already-enhanced modules (≥7 blocks shows "Enhanced ✓" on load). Also shows in success card after generation.
+
+### Edge Function versions deployed
+- `generate-course` v16: Haiku-only Phase 2, 529 fallback, job_id idempotency
+- `enhance-module` v2: Opus-only, 5500 max_tokens, 300s timeout, no QUALITY_STANDARD
+
+### Playwright Test Results (latest)
+- ✅ HIV course generated with Haiku in 26s — 4 modules, 12 lessons, 8 quiz questions
+- ✅ Module 1 enhanced with Opus (confirmed via DB: 9-10 blocks) — HTTP dropped at 150s but recovery logic detects it
+- ⏳ Modules 2-4 of HIV course not yet enhanced (use Courses tab → Enhance ✦ to do so)
+
+### Branch: `feature/ai-course-generator` — committed + pushed, PR #4 open (original v8 entry below)
+
+### Edge Function v8 (currently deployed, version 8)
+- **DB-first**: course inserted with `status="generating"` BEFORE any Claude calls — connection drops leave traceable course in admin list
+- **Phase 1**: Haiku for outline (fast, just structure) → max_tokens=1500
+- **Phase 2**: 4 concurrent module calls via `Promise.allSettled()`
+  - Model order: `claude-3-5-sonnet-20241022` → `claude-opus-4-6` → `claude-3-haiku-20240307`
+  - 38s `AbortController` timeout per call → falls back to next model
+  - 4-5 content blocks per lesson + 2 quiz questions (fits in Haiku's 4096 token limit)
+- **Idempotency**: `job_id` UUID prevents duplicate courses on retry
+- **Status lifecycle**: `generating` → `draft` (success) or `failed` with `ai_error`
+
+### Playwright Test Results (v8)
+- ✅ "Pharmaceutical Calculations for Caribbean Pharmacy Technicians" — 4 modules, 12 lessons, 8 quiz questions in ~75s
+- ✅ "Drug Scheduling and Controlled Substances in the Caribbean" — 3 modules, 9 lessons in ~84s (v7)
+- ✅ Model badge shows "PixoPharm AI" (no Claude references)
+- ✅ Info callout bullets updated with accurate Phase 1/2 descriptions
+- ✅ Connection-safe copy confirmed
+
+### Key Technical Notes
+- Supabase free tier: 150s wall time limit. Opus 4.6 takes 30-50s per call.
+  With 4+ concurrent Opus calls hitting rate limits → sequential → exceeds 150s.
+  **Fix**: 38s abort per call forces fallback to Haiku, keeps total under 100s.
+- `model_used` in response reflects Phase 2 model (not Phase 1 Haiku)
+- Admin DB columns added: `ai_error TEXT`, `ai_job_id TEXT UNIQUE`, status constraint updated to include `generating` and `failed`
+
+---
+
+## 2026-04-08: All 3 PRs merged + deployed ✅
+
+### Coderabbit fixes addressed and merged in order (PR #1 → #2 → #3)
+
+**PR #1 (TipTap/Curriculum):**
+- Export `DEFAULT_COURSE_SLUG` constant; use in CoursePlayer instead of repeated literals
+- Add `validateCoursesIntegrity()` — checks unique ids/slugs/orders + valid prerequisite refs; runs at module load
+
+**PR #2 (Content Protection):**
+- Remove hardcoded Fish Audio API key from `generate_marketing_vo.py`; read from `FISH_AUDIO_API_KEY` env var
+- Update VO script "Thirteen" → "Twenty-seven courses"
+- Replace hardcoded "4 levels · 13 courses" in App.tsx with dynamic `catalogStats` values
+- Add `skillLevels` export to `courses.ts`
+
+**PR #3 (Post-Course Survey):**
+- `analyze-survey` Edge Function: early env var validation, normalize AI response shape, add avgContentClarity + avgRelevance to Claude prompt
+- Redeployed Edge Function
+
+### Deploy
+- ✅ Built clean, deployed `npx vercel --prod` → pixopharm-lms.vercel.app
+
+### Next: Feature 2 — AI Course Generator
+
+---
+
 ## 2026-04-08: Feature 3 (Post-Course Survey) — DEPLOYED + TESTED ✅
 
 ### Branch: `feature/post-course-survey` → PR #3 open

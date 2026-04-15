@@ -12,6 +12,8 @@ import { Label } from "@/components/ui/label";
 import { Progress } from "@/components/ui/progress";
 import { Separator } from "@/components/ui/separator";
 import CoursePlayer from "@/components/CoursePlayer";
+import ShelfSimulator from "@/components/ShelfSimulator";
+import PharmacyRoomPrototype from "@/components/PharmacyRoomPrototype";
 import AuthModal from "@/components/AuthModal";
 import { useAuth } from "@/hooks/useAuth";
 import { useAdmin } from "@/hooks/useAdmin";
@@ -1455,6 +1457,16 @@ function App() {
   const urlDebug = urlParams.get("debug");
   if (urlDebug) {
     return <DebugPanel slug={urlDebug} />;
+  }
+
+  // Prototype backdoor: ?prototype=shelf opens ShelfSimulator
+  if (urlParams.get("prototype") === "shelf") {
+    return <ShelfSimulator onExit={() => { window.history.replaceState({}, "", "/"); window.location.reload(); }} />;
+  }
+
+  // Prototype backdoor: ?prototype=room opens PharmacyRoomPrototype
+  if (urlParams.get("prototype") === "room") {
+    return <PharmacyRoomPrototype onExit={() => { window.history.replaceState({}, "", "/"); window.location.reload(); }} />;
   }
 
   // Test backdoor: ?preview=slug opens CoursePlayer directly (for Playwright testing)

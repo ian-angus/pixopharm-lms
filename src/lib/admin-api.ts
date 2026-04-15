@@ -853,3 +853,129 @@ export async function fetchAllSurveyStats(): Promise<AllSurveyStats> {
     by_course,
   };
 }
+
+// ============================================================================
+// AI COURSE GENERATOR
+// ============================================================================
+
+export interface GenerateCourseParams {
+  title: string;
+  skill_level: "Beginner" | "Intermediate" | "Advanced";
+  duration_weeks: number;
+  jurisdiction?: string;
+  focus_areas?: string;
+  created_by?: string;
+}
+
+export interface GenerateCourseResult {
+  course_id: string;
+  course_slug: string;
+  modules_count: number;
+  lessons_count: number;
+  questions_count: number;
+  model_used?: string;
+}
+
+/**
+ * Call the `generate-course` Edge Function to generate a full draft course
+ * with Claude and save it to the database.
+ */
+export async function generateCourse(
+  params: GenerateCourseParams
+): Promise<GenerateCourseResult> {
+  // Generate a unique job_id so the server can detect retries after a dropped
+  // connection — if the same job_id is sent again, the server returns the
+  // already-completed course instead of creating a duplicate.
+  const jobId = crypto.randomUUID();
+
+  const { data, error } = await supabase.functions.invoke("generate-course", {
+    body: { ...params, job_id: jobId },
+  });
+
+  // Check data.error first — supabase-js sets both data and error on non-2xx responses
+  if (data?.error) {
+    throw new Error(`generate-course: ${data.error}`);
+  }
+
+  if (error) {
+    // Network/timeout error — the Edge Function may have completed and saved to DB
+    // before the gateway dropped the connection. Check using the job_id we sent.
+    const { data: saved } = await supabase
+      .from("courses")
+      .select("id, slug, status")
+      .eq("ai_job_id", jobId)
+      .maybeSingle();
+
+    if (saved?.status === "draft" || saved?.status === "published") {
+      // Generation completed — return success despite dropped connection
+      const moduleIds = (await supabase.from("modules").select("id").eq("course_id", saved.id)).data?.map((m: { id: string }) => m.id) ?? [];
+      const { count: mc } = await supabase
+        .from("modules")
+        .select("id", { count: "exact", head: true })
+        .eq("course_id", saved.id);
+      const { count: lc } = await supabase
+        .from("lessons")
+        .select("id", { count: "exact", head: true })
+        .in("module_id", moduleIds);
+      const { count: qc } = await supabase
+        .from("quiz_questions")
+        .select("id", { count: "exact", head: true })
+        .in("module_id", moduleIds);
+      return {
+        course_id: saved.id,
+        course_slug: saved.slug,
+        modules_count: mc ?? 0,
+        lessons_count: lc ?? 0,
+        questions_count: qc ?? 0,
+        model_used: "claude-haiku-20240307",
+      };
+    }
+
+    if (saved?.status === "generating") {
+      throw new Error("Course is still generating — it will appear in your Courses list shortly.");
+    }
+
+    handleError(error, "generateCourse");
+  }
+
+  return data as GenerateCourseResult;
+}
+
+export interface EnhanceModuleResult {
+  lessons_updated: number;
+  questions_count: number;
+  model_used: string;
+}
+
+export async function enhanceModule(moduleId: string): Promise<EnhanceModuleResult> {
+  const { data, error } = await supabase.functions.invoke("enhance-module", {
+    body: { module_id: moduleId },
+  });
+  if (data?.error) throw new Error(`enhance-module: ${data.error}`);
+
+  if (error) {
+    // Network/timeout — Opus may have completed and written to DB before gateway cut connection.
+    // Check by querying the first lesson: Opus writes 7+ blocks, Haiku writes 4-5.
+    const { data: lessons } = await supabase
+      .from("lessons")
+      .select("id, content")
+      .eq("module_id", moduleId);
+
+    const firstBlocks = Array.isArray(lessons?.[0]?.content) ? (lessons![0].content as unknown[]).length : 0;
+    if (firstBlocks >= 7) {
+      // Enhancement completed server-side despite dropped connection
+      const lessonsUpdated = lessons?.filter(
+        l => Array.isArray(l.content) && (l.content as unknown[]).length >= 7
+      ).length ?? 0;
+      const { count: questionsCount } = await supabase
+        .from("quiz_questions")
+        .select("id", { count: "exact", head: true })
+        .eq("module_id", moduleId);
+      return { lessons_updated: lessonsUpdated, questions_count: questionsCount ?? 3, model_used: "claude-opus-4-6" };
+    }
+
+    handleError(error, "enhanceModule");
+  }
+
+  return data as EnhanceModuleResult;
+}
