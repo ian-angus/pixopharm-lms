@@ -118,6 +118,16 @@ interface AdminDashboardProps {
 
 type AdminPage = "dashboard" | "courses" | "ai-generator" | "students" | "analytics" | "settings" | "help";
 
+const PAGE_TITLES: Record<AdminPage, string> = {
+  dashboard: "Dashboard",
+  courses: "Courses",
+  "ai-generator": "AI Generator",
+  students: "Students",
+  analytics: "Analytics",
+  settings: "Settings",
+  help: "Help",
+};
+
 // ============================================================================
 // SVG ICONS (inline to avoid Lucide dependency bloat)
 // ============================================================================
@@ -1143,7 +1153,7 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
       <div className="flex-1 flex flex-col min-h-screen overflow-x-hidden">
         {/* Top Bar */}
         <header className="bg-white border-b px-6 py-3 flex items-center justify-between sticky top-0 z-40">
-          <h1 className="text-lg font-semibold text-foreground capitalize">{activePage}</h1>
+          <h1 className="text-lg font-semibold text-foreground">{PAGE_TITLES[activePage]}</h1>
           <div className="flex items-center gap-4">
             <span className="text-sm text-muted-foreground">
               {(profile as AdminProfile | null)?.full_name ?? user.email}
@@ -1780,7 +1790,7 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
                       {aiGenLoading ? (
                         <span className="flex items-center gap-2">
                           <svg className="animate-spin h-4 w-4" viewBox="0 0 24 24" fill="none"><circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"/><path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8z"/></svg>
-                          Generating with PixoPharm AI (Opus)… 90–150 seconds
+                          Generating with PixoPharm AI… 20–30 seconds
                         </span>
                       ) : (
                         <span className="flex items-center gap-2">
@@ -1919,12 +1929,12 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
                         <p className="font-medium">PixoPharm AI Course Generator — two-phase deep generation</p>
                         <ul className="text-xs space-y-0.5 text-blue-700 dark:text-blue-400 list-disc list-inside">
                           <li><strong>Phase 1:</strong> Course outline — modules, lesson titles, learning objectives (fast)</li>
-                          <li><strong>Phase 2:</strong> All modules generated in parallel — rich lesson content, Caribbean callouts, key terms, safety warnings, video placeholders + 3 scenario-based quiz questions per module</li>
-                          <li>Real drug names, real CARICOM regulations, real island comparisons (TT, Jamaica, Barbados, Guyana…)</li>
-                          <li>Powered by PixoPharm AI — best available model, automatic fallback if needed</li>
+                          <li><strong>Phase 2:</strong> All modules generated in parallel — lesson content, Caribbean callouts, key terms, safety warnings, video placeholders + 2 quiz questions per module</li>
+                          <li>Caribbean-contextualised content (TT, Jamaica, Barbados, Guyana…) — all output is AI-generated and requires clinical review before publishing</li>
+                          <li>Powered by PixoPharm AI — automatic fallback if primary model unavailable</li>
                           <li>Connection-safe — course is saved to your database immediately; if the connection drops, find it in <strong>Courses</strong> with status "generating" or "draft"</li>
                         </ul>
-                        <p className="text-xs mt-2 font-medium text-blue-800 dark:text-blue-300">Generation takes 90–150 seconds using Opus AI — keep this tab open until complete. The draft is fully editable with the TipTap editor.</p>
+                        <p className="text-xs mt-2 font-medium text-blue-800 dark:text-blue-300">Base generation takes ~20–30 seconds. Use <strong>Enhance ✦</strong> on each module for richer Opus AI content (~90s per module). All drafts are fully editable with the TipTap editor.</p>
                       </div>
                     </div>
                   </CardContent>

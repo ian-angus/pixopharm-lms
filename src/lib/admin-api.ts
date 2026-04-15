@@ -955,14 +955,20 @@ export async function enhanceModule(moduleId: string): Promise<EnhanceModuleResu
     // Check by querying the first lesson: Opus writes 7+ blocks, Haiku writes 4-5.
     const { data: lessons } = await supabase
       .from("lessons")
-      .select("content")
-      .eq("module_id", moduleId)
-      .limit(1);
+      .select("id, content")
+      .eq("module_id", moduleId);
 
-    const blocks = Array.isArray(lessons?.[0]?.content) ? (lessons![0].content as unknown[]).length : 0;
-    if (blocks >= 7) {
+    const firstBlocks = Array.isArray(lessons?.[0]?.content) ? (lessons![0].content as unknown[]).length : 0;
+    if (firstBlocks >= 7) {
       // Enhancement completed server-side despite dropped connection
-      return { lessons_updated: 3, questions_count: 3, model_used: "claude-opus-4-6" };
+      const lessonsUpdated = lessons?.filter(
+        l => Array.isArray(l.content) && (l.content as unknown[]).length >= 7
+      ).length ?? 0;
+      const { count: questionsCount } = await supabase
+        .from("quiz_questions")
+        .select("id", { count: "exact", head: true })
+        .eq("module_id", moduleId);
+      return { lessons_updated: lessonsUpdated, questions_count: questionsCount ?? 3, model_used: "claude-opus-4-6" };
     }
 
     handleError(error, "enhanceModule");

@@ -2,28 +2,52 @@
 
 ---
 
-## 2026-04-08: Feature 2 (AI Course Generator) — DEPLOYED + TESTED ✅
+## 2026-04-08: Feature 2 (AI Course Generator) — v16/v2 STABLE ✅
 
-### Branch: `feature/ai-course-generator` → PR open
+### Branch: `feature/ai-course-generator` — PR #4 open
 
-### Work Done
-1. **`supabase/functions/generate-course/index.ts`** — Edge Function deployed
-   - Input: title, skill_level, duration_weeks, jurisdiction (opt), focus_areas (opt), created_by
-   - Calls `claude-3-haiku-20240307` with structured Caribbean pharmacy prompt
-   - Saves course → modules → lessons → quiz_questions to DB as `draft`
-   - Returns course_id, slug, counts
-2. **`src/lib/admin-api.ts`** — `generateCourse()` wrapper + `GenerateCourseResult` type
-3. **`src/components/AdminDashboard.tsx`** — new "AI Generator" nav item + page
-   - Form: title, skill level, duration, jurisdiction (10 CARICOM options), focus areas
-   - Loading state with spinner + "20-40 seconds" message
-   - Success card: module/lesson/question counts + slug + links to Courses
+### Architecture (current state)
+- **generate-course v16**: Phase 1 Haiku outline (~5s) + Phase 2 Haiku-only content (~20s) = full course in ~26s
+- **enhance-module v2**: Dedicated Opus call per module — 5-7 rich blocks + 3 quiz questions. Takes ~90-150s (Supabase 150s wall).
+- **Connection-drop recovery**: Both functions write to DB before HTTP response. Client checks DB after network error:
+  - `generateCourse()`: checks `ai_job_id` → course status `draft` = success
+  - `enhanceModule()`: checks first lesson block count ≥7 = Opus completed server-side
+- **Enhance ✦ button**: Added to every ModuleCard in course editor. Auto-detects already-enhanced modules (≥7 blocks shows "Enhanced ✓" on load). Also shows in success card after generation.
 
-### Playwright Test Results
-- ✅ "AI Generator" nav item renders and is active
-- ✅ Form renders with all fields; Generate button disabled until title filled
-- ✅ Generated "Tropical Disease Medications in Caribbean Pharmacy" — 4 modules, 12 lessons, 12 questions
-- ✅ Success card shows correct counts; "View in Courses" button present
-- ✅ Draft confirmed in Supabase DB
+### Edge Function versions deployed
+- `generate-course` v16: Haiku-only Phase 2, 529 fallback, job_id idempotency
+- `enhance-module` v2: Opus-only, 5500 max_tokens, 300s timeout, no QUALITY_STANDARD
+
+### Playwright Test Results (latest)
+- ✅ HIV course generated with Haiku in 26s — 4 modules, 12 lessons, 8 quiz questions
+- ✅ Module 1 enhanced with Opus (confirmed via DB: 9-10 blocks) — HTTP dropped at 150s but recovery logic detects it
+- ⏳ Modules 2-4 of HIV course not yet enhanced (use Courses tab → Enhance ✦ to do so)
+
+### Branch: `feature/ai-course-generator` — committed + pushed, PR #4 open (original v8 entry below)
+
+### Edge Function v8 (currently deployed, version 8)
+- **DB-first**: course inserted with `status="generating"` BEFORE any Claude calls — connection drops leave traceable course in admin list
+- **Phase 1**: Haiku for outline (fast, just structure) → max_tokens=1500
+- **Phase 2**: 4 concurrent module calls via `Promise.allSettled()`
+  - Model order: `claude-3-5-sonnet-20241022` → `claude-opus-4-6` → `claude-3-haiku-20240307`
+  - 38s `AbortController` timeout per call → falls back to next model
+  - 4-5 content blocks per lesson + 2 quiz questions (fits in Haiku's 4096 token limit)
+- **Idempotency**: `job_id` UUID prevents duplicate courses on retry
+- **Status lifecycle**: `generating` → `draft` (success) or `failed` with `ai_error`
+
+### Playwright Test Results (v8)
+- ✅ "Pharmaceutical Calculations for Caribbean Pharmacy Technicians" — 4 modules, 12 lessons, 8 quiz questions in ~75s
+- ✅ "Drug Scheduling and Controlled Substances in the Caribbean" — 3 modules, 9 lessons in ~84s (v7)
+- ✅ Model badge shows "PixoPharm AI" (no Claude references)
+- ✅ Info callout bullets updated with accurate Phase 1/2 descriptions
+- ✅ Connection-safe copy confirmed
+
+### Key Technical Notes
+- Supabase free tier: 150s wall time limit. Opus 4.6 takes 30-50s per call.
+  With 4+ concurrent Opus calls hitting rate limits → sequential → exceeds 150s.
+  **Fix**: 38s abort per call forces fallback to Haiku, keeps total under 100s.
+- `model_used` in response reflects Phase 2 model (not Phase 1 Haiku)
+- Admin DB columns added: `ai_error TEXT`, `ai_job_id TEXT UNIQUE`, status constraint updated to include `generating` and `failed`
 
 ---
 

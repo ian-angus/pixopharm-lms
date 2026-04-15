@@ -159,13 +159,16 @@ Return ONLY valid JSON:
     let questionsInserted = 0;
     for (let qi = 0; qi < generatedQuestions.length; qi++) {
       const q = generatedQuestions[qi];
+      const options = Array.isArray(q.options) && q.options.length === 4 ? q.options : ["A", "B", "C", "D"];
+      const correctAnswer = Number.isInteger(q.correct_answer) && q.correct_answer >= 0 && q.correct_answer <= 3
+        ? q.correct_answer : 0;
       const { error: qErr } = await sb.from("quiz_questions").insert({
         module_id,
         question: q.question,
-        options: Array.isArray(q.options) ? q.options : ["A", "B", "C", "D"],
-        correct_answer: typeof q.correct_answer === "number" ? q.correct_answer : 0,
+        options,
+        correct_answer: correctAnswer,
         explanation: q.explanation ?? "",
-        order_index: qi,
+        order_index: qi + 1,
         question_type: "multiple_choice",
         difficulty: q.difficulty ?? "medium",
         blooms_level: q.blooms_level ?? "apply",

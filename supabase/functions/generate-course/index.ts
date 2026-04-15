@@ -5,24 +5,6 @@ const ANTHROPIC_API_KEY = Deno.env.get("ANTHROPIC_API_KEY") ?? "";
 const SUPABASE_URL = Deno.env.get("SUPABASE_URL") ?? "";
 const SUPABASE_SERVICE_KEY = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY") ?? "";
 
-// Quality standard — shown to the model as a reference for lesson depth/format
-const QUALITY_STANDARD = `
-QUALITY STANDARD — every lesson must match this depth and Caribbean specificity:
-
-EXAMPLE LESSON: "Common Medical Abbreviations Used in Caribbean Prescriptions"
-[
-  {"type":"heading","text":"Abbreviations Used in Caribbean Prescriptions","level":2},
-  {"type":"text","body":"Medical abbreviations are shorthand used by prescribers to communicate instructions efficiently. As a pharmacy technician, you must know these instantly — misinterpreting an abbreviation can lead to a serious medication error. Prescribers trained in the UK use British-style abbreviations (BD, TDS, QDS) while US-trained prescribers use American style (BID, TID, QID) — you will encounter both within the same Caribbean facility, sometimes on the same day."},
-  {"type":"callout","title":"British vs American Conventions Across the Caribbean","variant":"info","body":"In Trinidad & Tobago and Barbados, British-style abbreviations predominate due to colonial influence. In Jamaica, you encounter a mix depending on where the prescriber trained. In Guyana, both British and North American styles appear. When in doubt, read the full sig in context — never guess on dosing frequency."},
-  {"type":"key-term","term":"Sig Code","definition":"From the Latin 'signa' (mark/write). The sig is the prescription directions section. Sig codes are abbreviated Latin-origin instructions telling the dispenser and patient how to administer a medication — e.g., 'BD AC' means twice daily before meals."},
-  {"type":"callout","title":"ISMP Dangerous Abbreviations — Never Accept These","variant":"warning","body":"The Institute for Safe Medication Practices identifies these as high-error abbreviations: 'U' (mistaken for 0 — write 'units'), 'IU' (mistaken for IV — write 'international units'), 'QD' (confused with QID — write 'daily'), trailing zeros (write '1 mg' not '1.0 mg'). If a Caribbean prescriber uses these, query before dispensing."},
-  {"type":"heading","text":"Regional and Multilingual Prescription Conventions","level":3},
-  {"type":"text","body":"Caribbean pharmacies serve a multilingual patient and prescriber base. In French Creole-speaking territories (Martinique, Guadeloupe, Haiti), French abbreviations appear: 'cp' for comprimé (tablet), 'ml/j' for millilitres per day. In Suriname, Dutch conventions apply. St. Maarten/Sint Maarten prescriptions may appear in either French, Dutch, or English depending on which side of the island the prescriber practises. Technicians working in border communities or multi-island pharmacy chains must recognise all conventions."},
-  {"type":"video-placeholder","title":"Decoding Five Real Caribbean Prescriptions","duration":"14 min","description":"A senior pharmacy technician at Port of Spain General Hospital walks through five authentic Caribbean prescriptions — including one with dangerous abbreviations and one mixing British and American conventions — demonstrating the exact query process used when clarification is needed."}
-]
-END EXAMPLE. All lessons must be at least this detailed, this Caribbean-specific, and this clinically accurate.
-`;
-
 // Caribbean pharmacy knowledge injected into every call
 const CARIBBEAN_CONTEXT = `
 PLATFORM: PixoPharm LMS — Caribbean pharmacy technician diploma, CARICOM-aligned.
@@ -72,6 +54,7 @@ const CALL_TIMEOUT_MS = 120_000; // 120s per call — Haiku completes in ~15-20s
 // ── Main handler ─────────────────────────────────────────────────────────────
 Deno.serve(async (req: Request) => {
   if (req.method === "OPTIONS") return new Response(null, { headers: corsHeaders() });
+  if (req.method !== "POST") return json({ error: "Method not allowed" }, 405);
 
   if (!ANTHROPIC_API_KEY || !SUPABASE_URL || !SUPABASE_SERVICE_KEY) {
     const missing = [
@@ -91,6 +74,10 @@ Deno.serve(async (req: Request) => {
     if (!title || !skill_level || !duration_weeks) {
       return json({ error: "title, skill_level, and duration_weeks are required" }, 400);
     }
+    const durationNum = Number(duration_weeks);
+    if (!Number.isInteger(durationNum) || durationNum < 1 || durationNum > 26) {
+      return json({ error: "duration_weeks must be an integer between 1 and 26" }, 400);
+    }
 
     // ── Idempotency: if this job_id already completed, return existing course ──
     if (job_id) {
@@ -104,9 +91,10 @@ Deno.serve(async (req: Request) => {
         if (existing.status === "draft" || existing.status === "published") {
           // Already completed — return it
           const { count: mc } = await sb.from("modules").select("id", { count: "exact", head: true }).eq("course_id", existing.id);
-          const { count: lc } = await sb.from("lessons").select("id", { count: "exact", head: true })
-            .in("module_id", (await sb.from("modules").select("id").eq("course_id", existing.id)).data?.map(m => m.id) ?? []);
-          return json({ course_id: existing.id, course_slug: existing.slug, modules_count: mc ?? 0, lessons_count: lc ?? 0, questions_count: 0, model_used: "cached", already_existed: true });
+          const moduleIds = (await sb.from("modules").select("id").eq("course_id", existing.id)).data?.map(m => m.id) ?? [];
+          const { count: lc } = await sb.from("lessons").select("id", { count: "exact", head: true }).in("module_id", moduleIds);
+          const { count: qc } = await sb.from("quiz_questions").select("id", { count: "exact", head: true }).in("module_id", moduleIds);
+          return json({ course_id: existing.id, course_slug: existing.slug, modules_count: mc ?? 0, lessons_count: lc ?? 0, questions_count: qc ?? 0, model_used: "cached", already_existed: true });
         }
         if (existing.status === "generating") {
           return json({ error: "Course generation already in progress for this job_id. Check your Courses list." }, 409);
@@ -116,8 +104,8 @@ Deno.serve(async (req: Request) => {
       }
     }
 
-    const moduleCount = Math.min(Math.max(Math.round(Number(duration_weeks)), 2), 5);
-    const lessonsPerModule = Number(duration_weeks) >= 5 ? 2 : 3;
+    const moduleCount = Math.min(Math.max(Math.round(durationNum), 2), 5);
+    const lessonsPerModule = durationNum >= 5 ? 2 : 3;
     const jurisdictionText = jurisdiction && jurisdiction !== "All CARICOM"
       ? `PRIMARY jurisdiction: ${jurisdiction}. Reference other CARICOM islands for regulatory comparison.`
       : "Applies across ALL CARICOM nations — use specific island comparisons (T&T, Jamaica, Barbados, Guyana, Belize, St. Lucia) throughout.";
@@ -133,7 +121,7 @@ Deno.serve(async (req: Request) => {
       slug: initialSlug,
       description: "",
       skill_level,
-      duration_weeks: Number(duration_weeks),
+      duration_weeks: durationNum,
       icon: "GraduationCap",
       color: "blue",
       what_youll_learn: [],
@@ -184,18 +172,19 @@ Return ONLY valid JSON — be CONCISE, no verbose descriptions:
 ICON options: GraduationCap|BookOpen|Pill|Stethoscope|FlaskConical|Shield|BarChart3|Users|ClipboardList|Award
 COLOR options: blue|green|purple|amber|red|teal|orange|slate|violet|rose`;
 
-      const { result: outline, modelUsed } = await callClaude(outlinePrompt, 1500, PHASE1_MODELS);
+      const { result: outline } = await callClaude(outlinePrompt, 1500, PHASE1_MODELS);
       if (!Array.isArray(outline.modules) || outline.modules.length === 0) {
         throw new Error("Phase 1: outline missing modules array");
       }
 
       // Update course with Phase 1 metadata
-      await sb.from("courses").update({
+      const { error: metaErr } = await sb.from("courses").update({
         description: (outline.description as string) ?? "",
         icon: (outline.icon as string) ?? "GraduationCap",
         color: (outline.color as string) ?? "blue",
         what_youll_learn: Array.isArray(outline.what_youll_learn) ? outline.what_youll_learn : [],
       }).eq("id", course.id);
+      if (metaErr) console.warn(`Phase 1 metadata update failed: ${metaErr.message}`);
 
       // ── PHASE 2: Parallel module content generation ─────────────────────────
       // All modules generated concurrently — much faster than sequential.
@@ -275,7 +264,7 @@ Return ONLY valid JSON:
           course_id: course.id,
           title: mod.title,
           description: mod.description ?? "",
-          order_index: mi,
+          order_index: mi + 1,
         }).select("id").single();
         if (modErr) throw new Error(`Insert module ${mi + 1}: ${modErr.message}`);
 
@@ -285,7 +274,7 @@ Return ONLY valid JSON:
             module_id: moduleRow.id,
             title: lesson.title,
             content: Array.isArray(lesson.content) ? lesson.content : [],
-            order_index: li,
+            order_index: li + 1,
             duration_minutes: lesson.duration_minutes ?? 25,
           });
           if (lessonErr) throw new Error(`Insert lesson ${li + 1} in module ${mi + 1}: ${lessonErr.message}`);
@@ -294,13 +283,16 @@ Return ONLY valid JSON:
 
         for (let qi = 0; qi < questions.length; qi++) {
           const q = questions[qi];
+          const options = Array.isArray(q.options) && q.options.length === 4 ? q.options : ["A", "B", "C", "D"];
+          const correctAnswer = Number.isInteger(q.correct_answer) && q.correct_answer >= 0 && q.correct_answer <= 3
+            ? q.correct_answer : 0;
           const { error: qErr } = await sb.from("quiz_questions").insert({
             module_id: moduleRow.id,
             question: q.question,
-            options: Array.isArray(q.options) ? q.options : ["A", "B", "C", "D"],
-            correct_answer: typeof q.correct_answer === "number" ? q.correct_answer : 0,
+            options,
+            correct_answer: correctAnswer,
             explanation: q.explanation ?? "",
-            order_index: qi,
+            order_index: qi + 1,
             question_type: "multiple_choice",
             difficulty: q.difficulty ?? "medium",
             blooms_level: q.blooms_level ?? "apply",
@@ -311,7 +303,8 @@ Return ONLY valid JSON:
       }
 
       // ── Mark course as draft (generation complete) ────────────────────────
-      await sb.from("courses").update({ status: "draft" }).eq("id", course.id);
+      const { error: draftErr } = await sb.from("courses").update({ status: "draft" }).eq("id", course.id);
+      if (draftErr) throw new Error(`Failed to mark course as draft: ${draftErr.message}`);
 
       return json({
         course_id: course.id,
@@ -344,7 +337,7 @@ Return ONLY valid JSON:
 async function callClaude(
   prompt: string,
   requestedTokens: number,
-  models: string[] = MODELS,
+  models: string[] = PHASE2_MODELS,
 ): Promise<{ result: Record<string, unknown>; modelUsed: string }> {
   let lastError = "";
 
