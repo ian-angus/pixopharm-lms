@@ -908,6 +908,7 @@ export async function generateCourse(
 
     if (saved?.status === "draft" || saved?.status === "published") {
       // Generation completed — return success despite dropped connection
+      const moduleIds = (await supabase.from("modules").select("id").eq("course_id", saved.id)).data?.map((m: { id: string }) => m.id) ?? [];
       const { count: mc } = await supabase
         .from("modules")
         .select("id", { count: "exact", head: true })
@@ -915,16 +916,18 @@ export async function generateCourse(
       const { count: lc } = await supabase
         .from("lessons")
         .select("id", { count: "exact", head: true })
-        .in("module_id",
-          (await supabase.from("modules").select("id").eq("course_id", saved.id)).data?.map((m: { id: string }) => m.id) ?? []
-        );
+        .in("module_id", moduleIds);
+      const { count: qc } = await supabase
+        .from("quiz_questions")
+        .select("id", { count: "exact", head: true })
+        .in("module_id", moduleIds);
       return {
         course_id: saved.id,
         course_slug: saved.slug,
         modules_count: mc ?? 0,
         lessons_count: lc ?? 0,
-        questions_count: 0,
-        model_used: "claude-opus-4-6",
+        questions_count: qc ?? 0,
+        model_used: "claude-haiku-20240307",
       };
     }
 

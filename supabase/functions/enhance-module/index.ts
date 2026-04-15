@@ -43,12 +43,22 @@ const CALL_TIMEOUT_MS = 300_000;
 
 Deno.serve(async (req: Request) => {
   if (req.method === "OPTIONS") return new Response(null, { headers: corsHeaders() });
+  if (req.method !== "POST") return json({ error: "Method not allowed" }, 405);
 
   if (!ANTHROPIC_API_KEY || !SUPABASE_URL || !SUPABASE_SERVICE_KEY) {
     return json({ error: "Missing env vars" }, 500);
   }
 
+  // Validate caller is an authenticated admin
+  const authHeader = req.headers.get("Authorization");
+  if (!authHeader?.startsWith("Bearer ")) return json({ error: "Unauthorized" }, 401);
+  const token = authHeader.slice(7);
+
   const sb = createClient(SUPABASE_URL, SUPABASE_SERVICE_KEY);
+  const { data: { user }, error: userErr } = await sb.auth.getUser(token);
+  if (userErr || !user) return json({ error: "Unauthorized" }, 401);
+  const { data: callerProfile } = await sb.from("profiles").select("role").eq("id", user.id).single();
+  if (callerProfile?.role !== "admin") return json({ error: "Forbidden" }, 403);
 
   try {
     const { module_id } = await req.json();
@@ -81,7 +91,7 @@ Deno.serve(async (req: Request) => {
     // ── Call Opus with full quality prompt ────────────────────────────────────
     const prompt = `${CARIBBEAN_CONTEXT}
 
-You are writing MODULE ${(mod.order_index ?? 0) + 1} of ${moduleCount} for the PixoPharm course: "${course.title}" (${course.skill_level} level).
+You are writing MODULE ${mod.order_index ?? 1} of ${moduleCount} for the PixoPharm course: "${course.title}" (${course.skill_level} level).
 
 MODULE: "${mod.title}"
 ${mod.description ? `Description: ${mod.description}` : ""}

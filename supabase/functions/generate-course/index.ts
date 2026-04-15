@@ -376,8 +376,8 @@ async function callClaude(
     }
     clearTimeout(timer);
 
-    // Model unavailable, bad request, rate-limited, or overloaded — try next model
-    if (resp.status === 400 || resp.status === 404 || resp.status === 429 || resp.status === 529) {
+    // Model unavailable, bad request, rate-limited, overloaded, or transient 5xx — try next model
+    if (resp.status === 400 || resp.status === 404 || resp.status === 429 || resp.status === 529 || (resp.status >= 500 && resp.status < 600)) {
       const errText = await resp.text();
       lastError = `${model} (${resp.status}): ${errText.slice(0, 150)}`;
       console.warn(`Model ${model} skipped (${resp.status}), trying fallback.`);
