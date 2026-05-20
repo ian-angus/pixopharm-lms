@@ -6,6 +6,7 @@ interface AuthState {
   user: User | null;
   session: Session | null;
   loading: boolean;
+  recoveryMode: boolean;
 }
 
 export function useAuth() {
@@ -13,19 +14,24 @@ export function useAuth() {
     user: null,
     session: null,
     loading: true,
+    recoveryMode: false,
   });
 
   useEffect(() => {
-    // Get initial session
     supabase.auth.getSession().then(({ data: { session } }) => {
-      setState({ user: session?.user ?? null, session, loading: false });
+      setState((s) => ({ ...s, user: session?.user ?? null, session, loading: false }));
     });
 
-    // Listen for auth changes
     const {
       data: { subscription },
-    } = supabase.auth.onAuthStateChange((_event, session) => {
-      setState({ user: session?.user ?? null, session, loading: false });
+    } = supabase.auth.onAuthStateChange((event, session) => {
+      setState((s) => ({
+        ...s,
+        user: session?.user ?? null,
+        session,
+        loading: false,
+        recoveryMode: event === "PASSWORD_RECOVERY" ? true : s.recoveryMode,
+      }));
     });
 
     return () => subscription.unsubscribe();
@@ -49,5 +55,27 @@ export function useAuth() {
     await supabase.auth.signOut();
   };
 
-  return { ...state, signIn, signUp, signOut };
+  const resetPasswordForEmail = async (email: string) => {
+    const { error } = await supabase.auth.resetPasswordForEmail(email, {
+      redirectTo: window.location.origin,
+    });
+    return { error };
+  };
+
+  const updatePassword = async (newPassword: string) => {
+    const { error } = await supabase.auth.updateUser({ password: newPassword });
+    return { error };
+  };
+
+  const clearRecoveryMode = () => setState((s) => ({ ...s, recoveryMode: false }));
+
+  return {
+    ...state,
+    signIn,
+    signUp,
+    signOut,
+    resetPasswordForEmail,
+    updatePassword,
+    clearRecoveryMode,
+  };
 }
