@@ -2,6 +2,36 @@
 
 ---
 
+## 2026-05-20: Forgot-Password Flow — PR #5 OPEN
+
+### Branch: `feat/forgot-password`
+
+### What shipped
+- `useAuth`: new `resetPasswordForEmail`, `updatePassword`, `recoveryMode` boolean + `clearRecoveryMode`. Listens for Supabase `PASSWORD_RECOVERY` auth event.
+- `AuthModal`: extended mode union to `signin|signup|forgot|reset`. New "Forgot password?" link in sign-in mode. Forgot mode → email input → triggers reset email. Reset mode → new password + confirm → calls `updateUser`.
+- `App.tsx`: when `recoveryMode` flips true, force-opens modal in `reset` mode and strips Supabase recovery params from URL so refresh doesn't re-trigger.
+- `pnpm build` passes; pre-existing lint debt unchanged (no net-new errors).
+
+### Required dashboard step (NOT YET CONFIRMED)
+Supabase → Authentication → URL Configuration must allow:
+- Site URL: `https://academy.pixopharm.com`
+- Redirect URLs: `https://academy.pixopharm.com`, `https://pixopharm-lms.vercel.app`, `http://localhost:5173`
+
+Cannot toggle via MCP — Ian to verify before merge.
+
+### Investigation that triggered this work
+- User reported `pixopharm@gmail.com` was locked out.
+- DB census (`auth.users` n=3): `ian.a.n.thomson@gmail.com`, `sathom11@yahoo.com`, `maintenance@pixopharm.com`. `pixopharm@gmail.com` does not exist; no `user_deleted` events in `auth.audit_log_entries`; not in `public.waitlist` or `public.consulting_patients`.
+- Ian confirmed user gave wrong email. **No passwords were reset on this branch.** Real account is `sathom11@yahoo.com` (Sharon Thomson); she will self-serve once this PR ships.
+
+### Next
+- Check PR #5 for Coderabbit/Codex comments
+- Verify Supabase redirect allowlist
+- Merge → `npx vercel --prod` from `lms/`
+- Playwright test recovery flow against prod with `maintenance@pixopharm.com`
+
+---
+
 ## 2026-04-08: Feature 2 (AI Course Generator) — v16/v2 STABLE ✅
 
 ### Branch: `feature/ai-course-generator` — PR #4 open

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { courses, catalogStats, skillLevels } from "@/data/courses";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription, CardFooter } from "@/components/ui/card";
@@ -1449,7 +1449,28 @@ function App() {
   const [activeCourse, setActiveCourse] = useState<string | null>(null);
   const [showAdmin, setShowAdmin] = useState(false);
   const [authOpen, setAuthOpen] = useState(false);
-  const { user, loading, signIn, signUp, signOut } = useAuth();
+  const {
+    user,
+    loading,
+    signIn,
+    signUp,
+    signOut,
+    resetPasswordForEmail,
+    updatePassword,
+    recoveryMode,
+    clearRecoveryMode,
+  } = useAuth();
+
+  useEffect(() => {
+    if (recoveryMode) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
+      setAuthOpen(true);
+      // Strip Supabase recovery params from the URL so refresh doesn't re-trigger.
+      if (window.location.hash || window.location.search.includes("code=")) {
+        window.history.replaceState({}, "", window.location.pathname);
+      }
+    }
+  }, [recoveryMode]);
   const { isAdmin } = useAdmin(user);
 
   // Production debug: ?debug=slug shows step-by-step Supabase query diagnostics
@@ -1499,7 +1520,15 @@ function App() {
   return (
     <div className="min-h-screen">
       <Navbar user={user} onSignInClick={() => setAuthOpen(true)} onSignOut={signOut} isAdmin={isAdmin} onAdminClick={() => setShowAdmin(true)} />
-      <AuthModal open={authOpen} onClose={() => setAuthOpen(false)} onSignIn={signIn} onSignUp={signUp} />
+      <AuthModal
+        open={authOpen}
+        onClose={() => { setAuthOpen(false); clearRecoveryMode(); }}
+        onSignIn={signIn}
+        onSignUp={signUp}
+        onForgotPassword={resetPasswordForEmail}
+        onUpdatePassword={updatePassword}
+        initialMode={recoveryMode ? "reset" : "signin"}
+      />
       <Hero />
       <StatsBar />
       <About />
