@@ -25,7 +25,7 @@
 //   true_false                 : question_data.correct_answer (boolean)
 // ============================================================================
 
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import {
   Sheet,
   SheetContent,
@@ -261,6 +261,9 @@ function buildPayload(f: QuestionForm): Partial<Omit<QuizQuestion, "id" | "modul
     question_type: f.question_type,
     difficulty: f.difficulty,
     blooms_level: f.blooms,
+    // Explicitly null for non-scenario types so editing a scenario question
+    // into another type clears its stale case link.
+    case_id: f.question_type === "scenario" && f.caseId !== "none" ? f.caseId : null,
   };
 
   switch (f.question_type) {
@@ -277,7 +280,6 @@ function buildPayload(f: QuestionForm): Partial<Omit<QuizQuestion, "id" | "modul
         options: f.options.slice(0, 4).map((o) => o.trim()),
         correct_answer: f.correctIndex,
         question_data: f.context.trim() ? { context: f.context.trim() } : {},
-        case_id: f.caseId === "none" ? null : f.caseId,
       };
     case "multiple_select": {
       const opts = f.options.map((o) => o.trim());
@@ -370,18 +372,24 @@ export default function QuizEditor({ module, open, onOpenChange, onQuizChanged }
 
   const moduleId = module?.id ?? null;
 
+  const reloadSeq = useRef(0);
   const reload = useCallback(async () => {
     if (!moduleId) return;
+    // Token guard: a stale response (e.g. after rapidly switching modules)
+    // must not overwrite the latest module's data.
+    const seq = ++reloadSeq.current;
     setLoading(true);
     try {
       const [qs, cs] = await Promise.all([fetchQuizQuestions(moduleId), fetchQuizCases(moduleId)]);
+      if (seq !== reloadSeq.current) return;
       setQuestions(qs);
       setCases(cs);
       onQuizChanged?.(moduleId, qs.length);
     } catch (err) {
+      if (seq !== reloadSeq.current) return;
       toast({ title: "Error loading quiz", description: String(err), variant: "destructive" });
     } finally {
-      setLoading(false);
+      if (seq === reloadSeq.current) setLoading(false);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [moduleId]);

@@ -573,7 +573,8 @@ export default function CurriculumOrganizer() {
           name: name.trim(),
           icon,
           color,
-          order_index: domains.length + 1,
+          // max+1, not length+1 — deletions leave gaps that length would reuse
+          order_index: Math.max(0, ...domains.map((d) => d.order_index)) + 1,
         });
         setDomains((prev) => [...prev, created]);
       }
@@ -632,11 +633,9 @@ export default function CurriculumOrganizer() {
         const updated = await updateCourse(editing.id, { title: title.trim(), status });
         setCourses((prev) => prev.map((c) => (c.id === editing.id ? { ...c, ...updated, modules_count: c.modules_count } : c)));
       } else {
-        const columnLength = (coursesByColumn.get(keyOf(domainId)) ?? []).length;
-        const order = columnLength + 1;
-        const created = await createCourse({ title: title.trim(), status, order });
-        // createCourse does not write domain_id — place it via moveCourse.
-        if (domainId) await moveCourse(created.id, domainId, order);
+        const column = coursesByColumn.get(keyOf(domainId)) ?? [];
+        const order = Math.max(0, ...column.map((c) => c.order)) + 1;
+        const created = await createCourse({ title: title.trim(), status, order, domain_id: domainId });
         setCourses((prev) => [...prev, { ...created, domain_id: domainId, order, modules_count: 0 }]);
       }
       setCourseDialog((prev) => ({ ...prev, open: false }));

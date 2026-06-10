@@ -313,6 +313,7 @@ export async function createCourse(
       what_youll_learn: data.what_youll_learn ?? [],
       status: data.status ?? "draft",
       order: data.order ?? 99,
+      domain_id: data.domain_id ?? null,
     })
     .select()
     .single();
