@@ -23,6 +23,10 @@
 //                                question_data.acceptable_answers +
 //                                question_data.case_sensitive
 //   true_false                 : question_data.correct_answer (boolean)
+//   numeric                    : question_data.answer (number) +
+//                                question_data.tolerance (number, default 0) +
+//                                question_data.unit (optional label). Correct
+//                                when |student - answer| <= tolerance.
 // ============================================================================
 
 import { useCallback, useEffect, useRef, useState } from "react";
@@ -96,6 +100,7 @@ const TYPE_LABELS: Record<QuestionType, string> = {
   fill_in_blank: "Fill in the Blank",
   true_false: "True / False",
   scenario: "Scenario",
+  numeric: "Calculation",
 };
 
 const TYPE_BADGE_COLORS: Record<QuestionType, string> = {
@@ -106,6 +111,7 @@ const TYPE_BADGE_COLORS: Record<QuestionType, string> = {
   fill_in_blank: "bg-amber-50 text-amber-700 border-amber-200",
   true_false: "bg-teal-50 text-teal-700 border-teal-200",
   scenario: "bg-rose-50 text-rose-700 border-rose-200",
+  numeric: "bg-lime-50 text-lime-700 border-lime-200",
 };
 
 const DIFFICULTY_BADGE_COLORS: Record<string, string> = {
@@ -130,6 +136,9 @@ interface QuestionForm {
   acceptableAnswers: string; // fill_in_blank — one per line
   caseSensitive: boolean; // fill_in_blank
   boolAnswer: boolean; // true_false
+  numericAnswer: string; // numeric — parsed to number on save
+  numericTolerance: string; // numeric — parsed to number on save (default 0)
+  numericUnit: string; // numeric — optional unit label
   context: string; // scenario inline context (optional)
   caseId: string; // scenario case link ("none" = unlinked)
   explanation: string;
@@ -152,6 +161,9 @@ function emptyForm(): QuestionForm {
     acceptableAnswers: "",
     caseSensitive: false,
     boolAnswer: true,
+    numericAnswer: "",
+    numericTolerance: "0",
+    numericUnit: "",
     context: "",
     caseId: "none",
     explanation: "",
@@ -200,6 +212,11 @@ function formFromQuestion(q: QuizQuestion): QuestionForm {
       break;
     case "true_false":
       f.boolAnswer = q.question_data?.correct_answer ?? true;
+      break;
+    case "numeric":
+      f.numericAnswer = q.question_data?.answer !== undefined ? String(q.question_data.answer) : "";
+      f.numericTolerance = String(q.question_data?.tolerance ?? 0);
+      f.numericUnit = q.question_data?.unit ?? "";
       break;
   }
   return f;
@@ -250,6 +267,15 @@ function validateForm(f: QuestionForm): string | null {
     }
     case "true_false":
       return null;
+    case "numeric": {
+      const answer = Number(f.numericAnswer);
+      if (!f.numericAnswer.trim() || !Number.isFinite(answer))
+        return "The correct answer must be a number.";
+      const tolerance = Number(f.numericTolerance || "0");
+      if (!Number.isFinite(tolerance) || tolerance < 0)
+        return "Tolerance must be a number of 0 or more.";
+      return null;
+    }
   }
 }
 
@@ -330,6 +356,17 @@ function buildPayload(f: QuestionForm): Partial<Omit<QuizQuestion, "id" | "modul
         options: [],
         correct_answer: 0,
         question_data: { correct_answer: f.boolAnswer },
+      };
+    case "numeric":
+      return {
+        ...base,
+        options: [],
+        correct_answer: 0,
+        question_data: {
+          answer: Number(f.numericAnswer),
+          tolerance: Number(f.numericTolerance || "0"),
+          ...(f.numericUnit.trim() ? { unit: f.numericUnit.trim() } : {}),
+        },
       };
   }
 }
@@ -973,6 +1010,44 @@ export default function QuizEditor({ module, open, onOpenChange, onQuizChanged }
                     </Label>
                   </div>
                 </RadioGroup>
+              </div>
+            )}
+
+            {form.question_type === "numeric" && (
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                <div className="space-y-1.5">
+                  <Label className="text-xs">Correct answer</Label>
+                  <Input
+                    type="number"
+                    step="any"
+                    value={form.numericAnswer}
+                    onChange={(e) => setForm((f) => ({ ...f, numericAnswer: e.target.value }))}
+                    placeholder="e.g. 4.5"
+                  />
+                </div>
+                <div className="space-y-1.5">
+                  <Label className="text-xs">
+                    Tolerance <span className="text-muted-foreground font-normal">(± accepted)</span>
+                  </Label>
+                  <Input
+                    type="number"
+                    step="any"
+                    min="0"
+                    value={form.numericTolerance}
+                    onChange={(e) => setForm((f) => ({ ...f, numericTolerance: e.target.value }))}
+                    placeholder="0"
+                  />
+                </div>
+                <div className="space-y-1.5">
+                  <Label className="text-xs">
+                    Unit <span className="text-muted-foreground font-normal">(optional)</span>
+                  </Label>
+                  <Input
+                    value={form.numericUnit}
+                    onChange={(e) => setForm((f) => ({ ...f, numericUnit: e.target.value }))}
+                    placeholder="e.g. mL, mg, tablets"
+                  />
+                </div>
               </div>
             )}
 

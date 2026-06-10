@@ -42,11 +42,10 @@ CLINICAL REALITY: Pharmacy technicians are often first healthcare contact; extre
 const OPUS_MODEL = "claude-opus-4-8";
 const CALL_TIMEOUT_MS = 300_000;
 
-// 'numeric' is excluded until the Phase 3 quiz player ships its renderer —
-// the live player handles every type below today. Add 'numeric' in Phase 3.
+// Phase 3: the quiz player now renders every type below, including 'numeric'.
 const ALLOWED_TYPES = [
   "multiple_choice", "multiple_select", "ordering",
-  "matching", "fill_in_blank", "true_false", "scenario",
+  "matching", "fill_in_blank", "true_false", "scenario", "numeric",
 ] as const;
 type QType = (typeof ALLOWED_TYPES)[number];
 
@@ -54,7 +53,7 @@ type QType = (typeof ALLOWED_TYPES)[number];
 function typeMixForDomain(domainName: string | null): string {
   const d = (domainName ?? "").toLowerCase();
   if (d.includes("calculation") || d.includes("compounding")) {
-    return "Emphasise applied problem-solving: several multiple_choice questions built around worked calculations (doses, dilutions, alligation), plus ordering (procedure steps) and fill_in_blank (formula terms).";
+    return "Emphasise applied problem-solving: at least 2–3 numeric questions where the student computes a value (doses, dilutions, alligation, infusion rates, days' supply) with a realistic tolerance and unit, plus multiple_choice built around worked calculations, ordering (procedure steps), and fill_in_blank (formula terms).";
   }
   if (d.includes("law") || d.includes("regulation")) {
     return "Emphasise matching (island ↔ statute/schedule, drug ↔ schedule class) and ordering (regulatory process steps), plus scenario questions on compliance decisions.";
@@ -125,6 +124,12 @@ function validateQuestion(q: GenQuestion): string | null {
     }
     case "true_false": {
       if (typeof qd.correct_answer !== "boolean") return "true_false: question_data.correct_answer must be boolean";
+      return null;
+    }
+    case "numeric": {
+      if (typeof qd.answer !== "number" || !Number.isFinite(qd.answer)) return "numeric: question_data.answer must be a finite number";
+      if (qd.tolerance !== undefined && (typeof qd.tolerance !== "number" || !Number.isFinite(qd.tolerance) || qd.tolerance < 0)) return "numeric: question_data.tolerance must be a number >= 0";
+      if (qd.unit !== undefined && typeof qd.unit !== "string") return "numeric: question_data.unit must be a string";
       return null;
     }
   }
@@ -257,7 +262,9 @@ QUESTION TYPE SCHEMAS (follow EXACTLY — these are machine-validated):
 5. {"question_type":"matching","question":"Match each item to its pair.","question_data":{"pairs":[{"left":"Jamaica","right":"Dangerous Drugs Act Schedules 1–4"},{"left":"...","right":"..."}]},"explanation":"...","difficulty":"medium","blooms_level":"understand"}
    (3–6 pairs; left[i] correctly matches right[i])
 6. {"question_type":"fill_in_blank","question":"Sentence with ___ for the missing term.","question_data":{"acceptable_answers":["term","synonym"],"case_sensitive":false},"explanation":"...","difficulty":"medium","blooms_level":"remember"}
-7. scenario questions go INSIDE the optional "case" object (below) and use the multiple_choice schema with "question_type":"scenario". Each must still make sense if read alone (briefly restate the key facts).
+7. {"question_type":"numeric","question":"Calculation question — the student types a number.","question_data":{"answer":12.5,"tolerance":0.1,"unit":"mL"},"explanation":"...","difficulty":"medium","blooms_level":"apply"}
+   (answer = the correct numeric value; tolerance = how far off is still accepted, use 0 for exact; unit = optional display label like "mL", "mg", "tablets")
+8. scenario questions go INSIDE the optional "case" object (below) and use the multiple_choice schema with "question_type":"scenario". Each must still make sense if read alone (briefly restate the key facts).
 
 Return ONLY valid JSON:
 {

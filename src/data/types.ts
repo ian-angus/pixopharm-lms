@@ -80,7 +80,14 @@ export type QuestionType =
   | 'matching'
   | 'fill_in_blank'
   | 'true_false'
-  | 'scenario';
+  | 'scenario'
+  | 'numeric';
+
+export interface QuizCaseVignette {
+  id: string;
+  title: string | null;
+  vignette: string;
+}
 
 export interface QuizQuestion {
   id: string;
@@ -97,9 +104,15 @@ export interface QuizQuestion {
     case_sensitive?: boolean;
     correct_answer?: boolean;
     context?: string;
+    // numeric
+    answer?: number;
+    tolerance?: number;
+    unit?: string;
   };
   difficulty?: 'easy' | 'medium' | 'hard' | 'expert';
   bloomsLevel?: 'remember' | 'understand' | 'apply' | 'analyze' | 'evaluate' | 'create';
+  /** Links the question to a shared case vignette (quiz_cases). */
+  caseId?: string | null;
 }
 
 // ── Lesson & Module Types ───────────────────────────────────────────────────
@@ -119,6 +132,8 @@ export interface Module {
   learningObjectives: string[];
   lessons: Lesson[];
   quiz: QuizQuestion[];
+  /** Shared case vignettes referenced by quiz questions via caseId. */
+  quizCases?: QuizCaseVignette[];
 }
 
 export interface FullCourse {

@@ -130,14 +130,14 @@ Port the approved prototype (`curriculum-organizer-prototype.html`) into the Rea
 - **Acceptance:** ✅ built + browser-verified 2026-06-10 (organizer renders 9 domains/36 courses live; modules lazy-load; quiz editor lists questions w/ type badges; tsc + vite build green). Reload-persistence + RLS-negative assertions land in the Phase 5 Playwright suite.
 
 ### Phase 3 — Student experience
-- [ ] **Curriculum / "My Journey" page** in the LMS using the approved student-view design (`curriculum-student-view.html`), data from `domains`+`courses` ordered.
-- [ ] **Catalog**: group courses by domain; remove Beginner/Int/Adv filters & badges.
-- [ ] **CoursePlayer navigation**: next/prev and progress should follow the new global order (domain → course → module → lesson). Confirm exact component (`CoursePlayer`/`fetchCourseBySlug`) and update the ordering source.
-- [ ] Hide/retire skill-level UI everywhere (search for `skill_level` usages).
-- [ ] **Interactive quiz player (D11):** renderer per question type — MCQ, numeric input (unit-aware, tolerance check), drag-and-drop match + ordering (reuse `@dnd-kit` from the organizer; keyboard/touch accessible), cloze inputs, case vignette panel with its linked questions in sequence.
-- [ ] **Instant feedback:** on submit of each question show correct/incorrect + the explanation before moving on; quiz summary at the end; results persist to the existing progress tracking.
-- [ ] Graceful fallback: legacy `'mcq'` rows with null `payload` render exactly as today.
-- **Acceptance:** a student sees one ordered path; navigating lessons follows domain/course/module order; no skill-tier labels; all five question types render, score correctly, and show explanations on mobile + desktop.
+- [x] **Curriculum / "My Journey" page** in the LMS using the approved student-view design (`curriculum-student-view.html`), data from `domains`+`courses` ordered.
+- [x] **Catalog**: grouped by domain ("Stage N" sections from DB); Beginner/Int/Adv filters & badges removed.
+- [x] **CoursePlayer navigation**: next/prev and progress should follow the new global order (domain → course → module → lesson). Confirm exact component (`CoursePlayer`/`fetchCourseBySlug`) and update the ordering source.
+- [x] Skill-level UI retired across student surfaces (catalog, course dialog, player badges, certificate, hero, FAQ/pricing copy).
+- [x] **Interactive quiz player (D11):** renderer per question type — MCQ, numeric input (unit-aware, tolerance check), drag-and-drop match + ordering (reuse `@dnd-kit` from the organizer; keyboard/touch accessible), cloze inputs, case vignette panel with its linked questions in sequence.
+- [x] **Instant feedback:** on submit of each question show correct/incorrect + the explanation before moving on; quiz summary at the end; results persist to the existing progress tracking.
+- [x] Graceful fallback: legacy MCQ rows render exactly as before (confirmed).
+- **Acceptance:** ✅ built + browser-verified 2026-06-10 — Journey page renders approved design with live stats (8 stages/28 courses/206 modules/320 lessons); catalog grouped by domain, no skill tiers; numeric renderer + case-vignette panel added to player (all 8 types now); enhance-module v11 deployed generating numeric. Per-type scoring assertions land in Phase 5 Playwright.
 
 ### Phase 4 — Marketing site (`homepage/`)
 - [ ] `src/pages/Academy.tsx`: copy → "one comprehensive Caribbean Pharmacy Technician Diploma"; remove level language.

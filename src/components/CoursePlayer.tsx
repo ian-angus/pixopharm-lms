@@ -28,6 +28,7 @@ import type {
   Module as DbModule,
   Lesson as DbLesson,
   QuizQuestion as DbQuizQuestion,
+  QuizCase as DbQuizCase,
 } from "@/lib/admin-api";
 
 // ── SVG Icons ───────────────────────────────────────────────────────────────
@@ -631,6 +632,7 @@ const QUESTION_TYPE_LABELS: Record<QuestionType, string> = {
   fill_in_blank: "Fill in the Blank",
   true_false: "True / False",
   scenario: "Scenario",
+  numeric: "Calculation",
 };
 
 const DIFFICULTY_COLORS: Record<string, string> = {
@@ -666,6 +668,8 @@ function QuizView({
   const [textAnswer, setTextAnswer] = useState("");
   // State for true_false
   const [boolAnswer, setBoolAnswer] = useState<boolean | null>(null);
+  // State for numeric
+  const [numericAnswer, setNumericAnswer] = useState("");
 
   const [answered, setAnswered] = useState(false);
   const [isCorrect, setIsCorrect] = useState(false);
@@ -694,6 +698,7 @@ function QuizView({
     setMatchSelections({});
     setTextAnswer("");
     setBoolAnswer(null);
+    setNumericAnswer("");
     setAnswered(false);
     setIsCorrect(false);
     const nextQ = quiz[idx];
@@ -765,6 +770,8 @@ function QuizView({
         return textAnswer.trim().length > 0;
       case "true_false":
         return boolAnswer !== null;
+      case "numeric":
+        return numericAnswer.trim().length > 0 && Number.isFinite(Number(numericAnswer));
       default:
         return false;
     }
@@ -813,6 +820,15 @@ function QuizView({
       case "true_false":
         return boolAnswer === q.questionData?.correct_answer;
 
+      case "numeric": {
+        const expected = q.questionData?.answer;
+        if (typeof expected !== "number") return false;
+        const given = Number(numericAnswer);
+        if (!Number.isFinite(given)) return false;
+        const tolerance = q.questionData?.tolerance ?? 0;
+        return Math.abs(given - expected) <= tolerance;
+      }
+
       default:
         return false;
     }
@@ -848,6 +864,11 @@ function QuizView({
     [newItems[fromIdx], newItems[toIdx]] = [newItems[toIdx], newItems[fromIdx]];
     setOrderItems(newItems);
   };
+
+  // ── Case vignette: persistent panel shared by the case's linked questions ──
+  const activeCase = q?.caseId
+    ? module.quizCases?.find((c) => c.id === q.caseId)
+    : undefined;
 
   // ── Matching: build a shuffled right column for display ──
   const matchingPairs = q?.questionData?.pairs ?? [];
@@ -892,6 +913,22 @@ function QuizView({
           </Badge>
         )}
       </div>
+
+      {/* Case vignette panel (persistent across the case's linked questions) */}
+      {activeCase && (
+        <div className="rounded-xl border-2 border-[hsl(213,50%,16%)]/25 overflow-hidden mb-6">
+          <div className="bg-[hsl(213,50%,16%)] px-4 py-2">
+            <span className="text-xs font-bold uppercase tracking-wider text-white/80" style={{ fontFamily: "'DM Sans', sans-serif" }}>
+              📋 {activeCase.title || "Case Vignette"}
+            </span>
+          </div>
+          <div className="p-4 bg-slate-50">
+            <p className="text-sm text-slate-700 leading-relaxed whitespace-pre-line" style={{ fontFamily: "'DM Sans', sans-serif" }}>
+              {activeCase.vignette}
+            </p>
+          </div>
+        </div>
+      )}
 
       {/* Scenario context card */}
       {qType === "scenario" && q.questionData?.context && (
@@ -1154,6 +1191,43 @@ function QuizView({
         </div>
       )}
 
+      {/* ── Numeric (calculation) ── */}
+      {qType === "numeric" && (
+        <div className="mb-8">
+          <div className="flex items-center gap-3">
+            <input
+              type="number"
+              inputMode="decimal"
+              step="any"
+              value={numericAnswer}
+              onChange={(e) => setNumericAnswer(e.target.value)}
+              onKeyDown={(e) => {
+                if (e.key === "Enter" && canSubmit && !answered) handleSubmit();
+              }}
+              disabled={answered}
+              placeholder="Enter your answer..."
+              className="w-full max-w-xs px-4 py-3 rounded-lg border-2 border-slate-200 text-sm focus:outline-none focus:border-[hsl(174,62%,32%)] transition-colors"
+              style={{ fontFamily: "'DM Sans', sans-serif" }}
+            />
+            {q.questionData?.unit && (
+              <span className="text-sm font-medium text-slate-600" style={{ fontFamily: "'DM Sans', sans-serif" }}>
+                {q.questionData.unit}
+              </span>
+            )}
+          </div>
+          {answered && (
+            <div className="mt-3 p-3 rounded-lg bg-slate-50 border border-slate-200">
+              <p className="text-xs font-semibold text-slate-500 mb-1" style={{ fontFamily: "'DM Sans', sans-serif" }}>Correct answer:</p>
+              <p className="text-sm text-slate-600" style={{ fontFamily: "'DM Sans', sans-serif" }}>
+                {q.questionData?.answer}
+                {q.questionData?.unit ? ` ${q.questionData.unit}` : ""}
+                {(q.questionData?.tolerance ?? 0) > 0 ? ` (±${q.questionData?.tolerance})` : ""}
+              </p>
+            </div>
+          )}
+        </div>
+      )}
+
       {/* Explanation / Feedback */}
       {answered && (
         <div className={`rounded-lg p-4 mb-6 ${isCorrect ? "bg-emerald-50 border border-emerald-200" : "bg-amber-50 border border-amber-200"}`}>
@@ -1192,7 +1266,6 @@ function CertificateView({
   moduleCount,
   lessonCount,
   quizCount,
-  skillLevel,
   durationWeeks,
 }: {
   onBack: () => void;
@@ -1200,7 +1273,6 @@ function CertificateView({
   moduleCount: number;
   lessonCount: number;
   quizCount: number;
-  skillLevel: string;
   durationWeeks: number;
 }) {
   return (
@@ -1236,8 +1308,8 @@ function CertificateView({
               <p className="text-xs text-slate-500" style={{ fontFamily: "'DM Sans', sans-serif" }}>Weeks</p>
             </div>
             <div>
-              <p className="text-2xl font-bold text-[hsl(174,62%,32%)]">{skillLevel}</p>
-              <p className="text-xs text-slate-500" style={{ fontFamily: "'DM Sans', sans-serif" }}>Level</p>
+              <p className="text-2xl font-bold text-[hsl(174,62%,32%)]">{moduleCount}</p>
+              <p className="text-xs text-slate-500" style={{ fontFamily: "'DM Sans', sans-serif" }}>Modules</p>
             </div>
             <div>
               <p className="text-2xl font-bold text-[hsl(174,62%,32%)]">CARICOM</p>
@@ -1349,7 +1421,7 @@ function enrichLessonContent(lessonId: string, moduleId: string, content: Conten
 
 function transformDbCourse(
   dbCourse: DbCourse,
-  dbModules: (DbModule & { lessons: DbLesson[]; quiz_questions: DbQuizQuestion[] })[]
+  dbModules: (DbModule & { lessons: DbLesson[]; quiz_questions: DbQuizQuestion[]; quiz_cases?: DbQuizCase[] })[]
 ): FullCourse {
   const modules: Module[] = dbModules.map((m) => ({
     id: m.id,
@@ -1373,6 +1445,12 @@ function transformDbCourse(
       questionData: q.question_data ?? undefined,
       difficulty: q.difficulty as QuizQuestion["difficulty"],
       bloomsLevel: q.blooms_level as QuizQuestion["bloomsLevel"],
+      caseId: q.case_id ?? null,
+    })),
+    quizCases: (m.quiz_cases ?? []).map((c) => ({
+      id: c.id,
+      title: c.title,
+      vignette: c.vignette,
     })),
   }));
 
@@ -1550,7 +1628,7 @@ export default function CoursePlayer({
         <div className="p-4">
           {/* Course header */}
           <button onClick={() => navigateTo({ page: "overview" })} className="text-left w-full group mb-4">
-            <Badge className="mb-2 bg-blue-50 text-blue-700 border-blue-200 text-[10px]">{course.skillLevel ?? "Beginner"} · {course.durationWeeks ?? 6} Weeks</Badge>
+            <Badge className="mb-2 bg-blue-50 text-blue-700 border-blue-200 text-[10px]">{course.durationWeeks ?? 6} Weeks · {course.modules.length} Modules</Badge>
             <h3 className="text-sm font-bold text-[hsl(213,50%,16%)] group-hover:text-[hsl(174,62%,32%)] transition-colors leading-snug">
               {course.title}
             </h3>
@@ -1698,7 +1776,7 @@ export default function CoursePlayer({
       return (
         <div className="max-w-4xl mx-auto py-8 px-6">
           <div className="mb-8">
-            <Badge className="mb-3 bg-blue-50 text-blue-700 border-blue-200">{course.skillLevel ?? "Beginner"} · {course.durationWeeks ?? 6} Weeks · {course.modules.length} Modules</Badge>
+            <Badge className="mb-3 bg-blue-50 text-blue-700 border-blue-200">{course.durationWeeks ?? 6} Weeks · {course.modules.length} Modules</Badge>
             <h1 className="text-3xl font-bold text-[hsl(213,50%,16%)] mb-3">{course.title}</h1>
             <p className="text-lg text-slate-600 leading-relaxed" style={{ fontFamily: "'DM Sans', sans-serif" }}>
               {course.tagline}
@@ -2014,7 +2092,6 @@ export default function CoursePlayer({
           moduleCount={course.modules.length}
           lessonCount={totalLessons}
           quizCount={totalQuizQuestions}
-          skillLevel={course.skillLevel ?? "Beginner"}
           durationWeeks={course.durationWeeks ?? 6}
         />
       );
