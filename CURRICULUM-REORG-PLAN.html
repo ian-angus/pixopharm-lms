@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Curriculum Reorg + CRUD — Implementation Plan · Pixopharm Academy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{--paper:#f4f1e8;--ink:#16231e;--ink-soft:#4a564f;--teal:#0d8b7e;--teal-d:#0a5d55;
+    --line:#e0d9c8;--white:#fffdf8;--amber:#bd6a1e;--amber-bg:#f8ecd6;--ok:#1d6b4f;--ok-bg:#dcefe5;
+    --shadow:0 1px 3px rgba(22,35,30,.06),0 12px 32px -18px rgba(22,35,30,.4)}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:"Hanken Grotesk",-apple-system,sans-serif;color:var(--ink);background:var(--paper);line-height:1.62;
+    background-image:radial-gradient(circle at 88% -4%,rgba(13,139,126,.08),transparent 42%),radial-gradient(circle at 4% 6%,rgba(189,106,30,.05),transparent 38%);
+    padding:0 0 90px}
+  .wrap{max-width:860px;margin:0 auto;padding:0 26px}
+  header.doc{padding:64px 0 26px;border-bottom:1px solid var(--line);margin-bottom:8px}
+  .kicker{display:inline-flex;align-items:center;gap:8px;font-size:11.5px;font-weight:800;letter-spacing:.13em;text-transform:uppercase;color:var(--teal-d);background:rgba(13,139,126,.1);padding:6px 13px;border-radius:30px}
+  h1{font-family:"Fraunces",serif;font-weight:600;font-size:clamp(30px,5vw,44px);line-height:1.05;letter-spacing:-.02em;margin:16px 0 10px}
+  .lead{color:var(--ink-soft);font-size:16px;max-width:640px}
+  .meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+  .tag{font-size:11.5px;font-weight:700;padding:5px 11px;border-radius:8px;background:var(--white);border:1px solid var(--line);color:var(--ink-soft)}
+  .tag.ok{background:var(--ok-bg);border-color:#bfe3d2;color:var(--ok)}
+  .tag.warn{background:var(--amber-bg);border-color:#e6d3ad;color:#7a4a12}
+
+  .callout{display:flex;gap:12px;background:var(--white);border:1px solid var(--line);border-left:4px solid var(--teal);border-radius:12px;padding:14px 16px;margin:22px 0;box-shadow:var(--shadow);font-size:14px}
+  .callout.ok{border-left-color:var(--ok)}.callout.warn{border-left-color:var(--amber)}
+  .callout .ic{font-size:18px;flex:none}
+
+  h2{font-family:"Fraunces",serif;font-weight:600;font-size:24px;letter-spacing:-.01em;margin:46px 0 6px;padding-top:14px;display:flex;align-items:baseline;gap:11px}
+  h2 .num{font-size:14px;font-weight:800;color:var(--teal);background:rgba(13,139,126,.1);width:30px;height:30px;border-radius:9px;display:inline-grid;place-items:center;flex:none;font-family:"Hanken Grotesk",sans-serif}
+  h2 .pin{font-size:13px;color:var(--ink-soft);font-family:"Hanken Grotesk",sans-serif;font-weight:600;margin-left:auto;align-self:center}
+  h3{font-size:15.5px;font-weight:800;margin:24px 0 6px;color:var(--teal-d)}
+  p{margin:8px 0;font-size:14.5px}
+  ul{margin:8px 0 8px 4px;list-style:none}
+  li{position:relative;padding:3px 0 3px 22px;font-size:14px}
+  li::before{content:"";position:absolute;left:4px;top:12px;width:6px;height:6px;border-radius:50%;background:var(--teal)}
+  li.todo::before,li.done::before{content:none}
+  li.todo,li.done{padding-left:26px}
+  li.todo::after{content:"☐";position:absolute;left:2px;top:2px;color:var(--ink-soft);font-size:15px}
+  li.done::after{content:"☑";position:absolute;left:2px;top:2px;color:var(--ok);font-size:15px;font-weight:800}
+  code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12.5px;background:#ece7da;padding:1.5px 6px;border-radius:5px;color:#5a4a2e}
+  strong{font-weight:800}
+  em{color:var(--ink-soft)}
+
+  table{width:100%;border-collapse:collapse;margin:14px 0;font-size:13.5px;background:var(--white);border-radius:12px;overflow:hidden;box-shadow:var(--shadow)}
+  th{background:#efe9db;text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--ink-soft);padding:10px 12px;font-weight:800}
+  td{padding:10px 12px;border-top:1px solid var(--line);vertical-align:top}
+  td.rec{color:var(--teal-d);font-weight:600}
+  td.you{color:#b89033;font-weight:700;font-style:italic;white-space:nowrap}
+  tr td:first-child{font-weight:800;color:var(--ink);width:34px;text-align:center}
+
+  .phase{display:flex;gap:13px;background:var(--white);border:1px solid var(--line);border-radius:12px;padding:13px 15px;margin:9px 0;box-shadow:var(--shadow)}
+  .phase .pn{width:30px;height:30px;border-radius:9px;background:linear-gradient(140deg,var(--teal),var(--teal-d));color:#fff;font-weight:800;display:grid;place-items:center;flex:none;font-size:14px}
+  .phase .pt{font-weight:800;font-size:14.5px}
+  .phase .pd{font-size:13px;color:var(--ink-soft);margin-top:2px}
+  .phase.is-done{border-color:#bfe3d2}.phase.is-done .pn{background:var(--ok)}
+
+  .card{background:var(--white);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:12px 0;box-shadow:var(--shadow)}
+  .map li{padding-left:22px}
+  .map li b{color:var(--ink)}
+  footer{text-align:center;color:#9a9384;font-size:12px;margin-top:46px;padding-top:18px;border-top:1px solid var(--line)}
+  @media print{body{background:#fff}.callout,.card,table,.phase{box-shadow:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="doc">
+  <span class="kicker">⚗ Pixopharm Academy · Implementation Plan</span>
+  <h1>Curriculum Reorg + full CRUD, end to end</h1>
+  <p class="lead">Ship the domain-based curriculum — database → admin organizer (create/edit/delete + drag-ordering of domains, courses & modules) → student journey with <b>interactive quizzes</b> (numeric, drag-and-drop, case-based, cloze · instant feedback + explanations · AI-generated) → marketing site — with the AI content pipeline fixed and everything tested.</p>
+  <div class="meta">
+    <span class="tag">Created 2026-06-08</span>
+    <span class="tag ok">✅ APPROVED — D1–D12 confirmed 2026-06-09</span>
+    <span class="tag ok">Enhance pipeline: FIXED &amp; verified</span>
+  </div>
+</header>
+
+<div class="callout"><span class="ic">📖</span><div><b>How to use this doc:</b> read <b>§0 Decisions</b> first and mark your choices. Everything below assumes the recommended defaults — change §0 and the affected phases adjust.</div></div>
+
+<h2><span class="num">0</span> Decisions to confirm <span class="pin">please edit these</span></h2>
+<table>
+  <tr><th>#</th><th>Decision</th><th>Recommended</th><th>Your call</th></tr>
+  <tr><td>D1</td><td>Domain grouping in the DB</td><td class="rec">Option B — a real <code>domains</code> table (you create/delete/reorder domains in the UI)</td><td class="you">✅ Confirmed 2026-06-09</td></tr>
+  <tr><td>D2</td><td>Skill levels (Beg/Int/Adv)</td><td class="rec">Remove from all UI; keep the <code>skill_level</code> column (deprecated) so nothing breaks</td><td class="you">✅ Confirmed 2026-06-09</td></tr>
+  <tr><td>D3</td><td>Drag grain</td><td class="rec">Domains, Courses, AND Modules all reorderable (confirmed)</td><td class="you">✅ Confirmed 2026-06-09</td></tr>
+  <tr><td>D4</td><td>Cleanup items</td><td class="rec">Delete the duplicate empty “HIV &amp; ART”; merge/delete the draft “Pharmaceutical Calculations for Caribbean” (overlaps “Pharmacy Calculations”)</td><td class="you">✅ Confirmed 2026-06-09</td></tr>
+  <tr><td>D5</td><td>Clinical disease courses</td><td class="rec">Keep as a separate “Clinical Therapeutics (Electives)” track</td><td class="you">✅ Confirmed 2026-06-09</td></tr>
+  <tr><td>D6</td><td>Enhance behaviour</td><td class="rec">Confirm dialog PLUS build the non-destructive (append/merge) mode in this milestone — owner upgraded from confirm-only</td><td class="you">✅ Confirmed 2026-06-09</td></tr>
+  <tr><td>D7</td><td>Enhance model</td><td class="rec">Upgrade to <code>claude-opus-4-8</code> as part of Phase 0b (prompt/schema rewritten there anyway)</td><td class="you">✅ Confirmed 2026-06-09</td></tr>
+  <tr><td>D8</td><td>Where the organizer lives</td><td class="rec">New “Curriculum” tab inside the existing React admin, reusing auth + RLS</td><td class="you">✅ Confirmed 2026-06-09</td></tr>
+  <tr><td>D9</td><td>Public syllabus page</td><td class="rec">Yes — publish the journey diagram as a public page (SEO + conversions)</td><td class="you">✅ Confirmed 2026-06-09</td></tr>
+  <tr><td>D10</td><td>Service-role secret</td><td class="rec">Repair the edge-function secret in Phase 0 (needed for future cron/webhooks); user-triggered functions keep forwarding the admin JWT</td><td class="you">✅ Confirmed 2026-06-09</td></tr>
+  <tr><td>D11</td><td>Interactive quiz types</td><td class="rec">MCQ + numeric/calculation + drag-and-drop match/order + case-based scenarios + cloze, all with instant feedback + explanations</td><td class="you">✅ Confirmed 2026-06-09</td></tr>
+  <tr><td>D12</td><td>Interactive quiz authoring</td><td class="rec">AI generates all types (extend <code>enhance-module</code>); admin quiz editor can also hand-author every type</td><td class="you">✅ Confirmed 2026-06-09</td></tr>
+</table>
+
+<h2><span class="num">1</span> Current state <span class="pin">verified facts</span></h2>
+<ul>
+  <li><b>Hierarchy today:</b> <code>courses → modules → lessons → quiz_questions</code>. <code>skill_level</code> on courses; ordering columns exist at each level.</li>
+  <li><b>Inventory:</b> 27 sequenced diploma courses (tiers map exactly to order) + ~8 clinical mini-courses (mixed published/draft/archived) + cleanup items. ~206 core modules; <b>~half of core courses have 0 lessons</b> (skeletons awaiting Enhance).</li>
+  <li><b>Enhance pipeline:</b> ✅ fixed &amp; verified (<code>enhance-module</code> v7). Live test → <code>200</code> in 119s, <code>lessons_updated:3, questions_count:3</code>.</li>
+  <li><b>Root cause:</b> the project’s <code>SUPABASE_SERVICE_ROLE_KEY</code> no longer bypasses RLS (legacy key rotated to the new <code>sb_publishable_</code> system) — functions ran anonymously, so RLS hid draft content → <code>404</code>. Fix: the function now forwards the <b>calling admin’s JWT</b>.</li>
+  <li><b>⚠ Latent:</b> <code>generate-course</code> and <code>analyze-survey</code> likely share the assumption — audit in Phase 0.</li>
+  <li><b>RLS:</b> <code>is_admin()</code> = profile role check by <code>auth.uid()</code>; admin policies already exist for all content tables.</li>
+  <li><b>Quizzes today:</b> <code>quiz_questions</code> is multiple-choice only — no explanations, no other types. Enhance generates 3 MCQs per module.</li>
+</ul>
+
+<h2><span class="num">2</span> Target architecture</h2>
+<div class="card map"><ul>
+  <li><b>Program</b> — one “Caribbean Pharmacy Technician Diploma”</li>
+  <li>&nbsp;&nbsp;└ <b>Domain</b> ← NEW tier (create / rename / recolour / reorder / delete in admin)</li>
+  <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└ <b>Course</b> — existing courses; reorder within a domain</li>
+  <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└ <b>Module</b> — reorder within a course</li>
+  <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└ <b>Lesson → Quiz</b> <em>← interactive: MCQ · numeric · match/order · case · cloze</em></li>
+</ul>
+<p style="margin-top:10px"><em>Sequencing = the student path. Order is explicit at every level. Skill tiers become a recommended order, never a gate.</em></p></div>
+
+<h2><span class="num">3</span> Phased delivery <span class="pin">each phase = 1 reviewed PR</span></h2>
+<div class="phase is-done"><div class="pn">0</div><div><div class="pt">Edge-function hardening</div><div class="pd">Enhance fixed (done) + audit/patch <code>generate-course</code> &amp; <code>analyze-survey</code> for the same RLS issue.</div></div></div>
+<div class="phase"><div class="pn">1</div><div><div class="pt">Database &amp; migration</div><div class="pd"><code>domains</code> table, <code>courses.domain_id</code> + ordering, RLS, seed 8 domains, assign every course + interactive-quiz schema (<code>question_type</code>, <code>payload</code>, <code>explanation</code>, <code>quiz_cases</code>).</div></div></div>
+<div class="phase"><div class="pn">0b</div><div><div class="pt">AI interactive quiz generation</div><div class="pd">Extend <code>enhance-module</code> + <code>generate-course</code> to emit all interactive question types with explanations (runs right after Phase 1's schema).</div></div></div>
+<div class="phase"><div class="pn">2</div><div><div class="pt">Admin Curriculum Organizer (React)</div><div class="pd">Full create/edit/delete + 3-level drag-ordering, persisted to Supabase. Ports the approved prototype.</div></div></div>
+<div class="phase"><div class="pn">3</div><div><div class="pt">Student experience</div><div class="pd">Journey page, catalog grouped by domain, course-player order follows new sequence, skill tiers removed.</div></div></div>
+<div class="phase"><div class="pn">4</div><div><div class="pt">Marketing site</div><div class="pd">Academy page → “one diploma”; public syllabus/journey page.</div></div></div>
+<div class="phase"><div class="pn">5</div><div><div class="pt">Test, deploy, verify</div><div class="pd">Playwright E2E + RLS tests green; both Vercel apps deployed &amp; smoke-tested.</div></div></div>
+
+<h2><span class="num">4</span> Detailed tasks</h2>
+
+<h3>Phase 0 — Edge-function hardening</h3>
+<ul>
+  <li class="done"><code>enhance-module</code>: forward admin JWT (deployed v7, verified).</li>
+  <li class="todo">Audit <code>generate-course</code>; switch to forwarded-admin-JWT if it relies on RLS-bypass.</li>
+  <li class="todo">Audit <code>analyze-survey</code> likewise.</li>
+  <li class="todo">Log the resolved role in each function for future debugging.</li>
+  <li class="todo"><b>Repair the service-role secret (D10)</b> under the new <code>sb_</code> key system; verify RLS bypass works.</li>
+</ul>
+
+<h3>Phase 0b — AI interactive quiz generation <em>(after Phase 1's schema lands)</em></h3>
+<ul>
+  <li class="todo">Extend <code>enhance-module</code> prompt + schema: per module a <b>mix of types</b> — MCQ, numeric (answer/tolerance/unit), match/order, case-based (shared vignette, 2–3 linked Qs), cloze — <b>every question with an explanation</b>.</li>
+  <li class="todo">Type mix by domain: Calculations → numeric-heavy · Law/Scheduling → match/order · Clinical/Capstone → case-based · Terminology → cloze.</li>
+  <li class="todo">Server-side schema validation with reject/retry — bad JSON never reaches the DB.</li>
+  <li class="todo">Same upgrade for <code>generate-course</code>; legacy MCQ modules keep working.</li>
+  <li class="todo"><b>Upgrade model to <code>claude-opus-4-8</code> (D7)</b> — verified in the same pass.</li>
+  <li class="todo"><b>Non-destructive enhance (D6):</b> Append/Merge default (keeps existing lessons + quiz, adds new); Overwrite behind the destructive-action confirm.</li>
+</ul>
+
+<h3>Phase 1 — Database &amp; migration <em>(back up first via <code>scripts/db-export.ts</code>)</em></h3>
+<ul>
+  <li class="todo">Create <code>domains</code> (id, name, icon, color, order_index, timestamps).</li>
+  <li class="todo"><code>alter table courses add column domain_id uuid references domains(id) on delete set null</code> (null = Unsorted).</li>
+  <li class="todo">Backfill <code>courses."order"</code> to be meaningful within each domain.</li>
+  <li class="todo">RLS for <code>domains</code>: public SELECT; INSERT/UPDATE/DELETE → <code>is_admin()</code>.</li>
+  <li class="todo">Seed the 8 domains + electives; set every course’s <code>domain_id</code> per the map below.</li>
+  <li class="todo">Apply D4 cleanup.</li>
+  <li class="todo"><b>Interactive quiz schema (D11):</b> <code>quiz_questions.question_type</code> (mcq/numeric/match/order/cloze/case_mcq, default mcq) + <code>payload jsonb</code> (type-specific config) + <code>explanation text</code>; new <code>quiz_cases</code> table (vignette per module) with <code>quiz_questions.case_id</code>; RLS mirrors quiz_questions. Existing 833 questions untouched.</li>
+</ul>
+<div class="card map">
+  <p style="font-weight:800;margin-bottom:6px">Domain → course mapping (approved layout)</p>
+  <ul>
+    <li><b>A 🧭 Foundations &amp; Learning Skills</b> — Foundations of Pharmacy Practice · Medical &amp; Pharmaceutical Terminology · Digital Learning &amp; Study Skills</li>
+    <li><b>B 🫀 Human Body &amp; Pharmacology</b> — Anatomy, Physiology &amp; Basic Pharmacology · Pharmacology &amp; Body Systems P1 · P2</li>
+    <li><b>C ⚙️ Operations, Systems &amp; Technology</b> — Basic Pharmacy Workflow · Prescription Processing · Inventory/Cold Chain/Supply · Documentation/Reimbursement · Advanced Systems &amp; Digital Workflow · Technology, Automation &amp; AI</li>
+    <li><b>D 🧪 Calculations &amp; Compounding</b> — Pharmacy Calculations · Complex Calculations · Basic Compounding · Sterile &amp; Nonsterile Compounding (Sim)</li>
+    <li><b>E 💬 Patient Care &amp; Communication</b> — Professionalism/EI · Applied &amp; Written Communication · Patient &amp; Interprofessional Comm Labs · OTC &amp; Advice Boundaries · Leadership &amp; Problem Solving</li>
+    <li><b>F 🛡️ Safety, Quality &amp; Public Health</b> — Medication Safety &amp; Error Prevention · Public Health, Pharmacovigilance &amp; QI</li>
+    <li><b>G ⚖️ Caribbean Law, Ethics &amp; Regulation</b> — Pharmacy Law, Ethics &amp; Regulation · Regulatory Compliance &amp; Quality Systems · Drug Scheduling &amp; Controlled Substances</li>
+    <li><b>H 🎓 Capstone &amp; Certification</b> — Capstone Integrated Case Simulation · Certification Exam Prep</li>
+    <li><b>🩺 Clinical Therapeutics (Electives)</b> — Asthma · Diabetes · Hypertension · HIV · Dengue · Caribbean Island Pharmacy Practice</li>
+  </ul>
+</div>
+
+<h3>Phase 2 — Admin Curriculum Organizer (React, in <code>AdminDashboard.tsx</code>)</h3>
+<ul>
+  <li class="todo">New <b>“Curriculum”</b> tab; port the approved <code>curriculum-organizer-prototype.html</code> UX.</li>
+  <li class="todo"><code>admin-api.ts</code> CRUD: domains (list/create/update/reorder/delete-with-reassign), courses (create/update/move/reorder/delete), modules (create/update/reorder/delete). <b>Direct Supabase calls</b> — admin session satisfies RLS; no new edge functions for CRUD.</li>
+  <li class="todo">Drag-and-drop at all three levels (consider <code>@dnd-kit</code> for touch + a11y).</li>
+  <li class="todo">Optimistic UI + batched order writes on drop (only changed rows).</li>
+  <li class="todo">Add/edit/delete modals with confirm; inline Enhance ✦ per module with the mode picker (D6): Append/Merge default, Overwrite behind the confirm.</li>
+  <li class="todo"><b>Quiz editor (D11/D12):</b> per-module question list with type badges; type-specific forms for all five types + case vignettes; explanation field on every question; preview-as-student.</li>
+</ul>
+
+<h3>Phase 3 — Student experience</h3>
+<ul>
+  <li class="todo">Curriculum / “My Journey” page using the approved <code>curriculum-student-view.html</code> design.</li>
+  <li class="todo">Catalog grouped by domain; remove Beginner/Int/Adv filters &amp; badges.</li>
+  <li class="todo">Course-player next/prev + progress follow the new order (domain → course → module → lesson).</li>
+  <li class="todo">Retire all <code>skill_level</code> UI usages.</li>
+  <li class="todo"><b>Interactive quiz player (D11):</b> renderer per type — MCQ, numeric input (unit-aware, tolerance), drag-and-drop match/order (<code>@dnd-kit</code>, keyboard + touch), cloze, case vignette with linked questions.</li>
+  <li class="todo"><b>Instant feedback:</b> correct/incorrect + explanation on each submit; end-of-quiz summary; results feed existing progress tracking. Legacy MCQ rows render as today.</li>
+</ul>
+
+<h3>Phase 4 — Marketing site (<code>homepage/</code>)</h3>
+<ul>
+  <li class="todo"><code>Academy.tsx</code> copy → “one comprehensive diploma”; drop level language.</li>
+  <li class="todo">Public syllabus page (the journey diagram) — SEO + conversion.</li>
+  <li class="todo">Cross-link homepage → syllabus → LMS sign-up.</li>
+</ul>
+
+<h2><span class="num">5</span> Testing &amp; verification <span class="pin">“ensure it works”</span></h2>
+<h3>Automated (Playwright, logged in as the maintenance admin)</h3>
+<ul>
+  <li>Admin CRUD: create domain → add course → add module → enhance → reorder all 3 levels → reload → assert order persisted (and assert in DB).</li>
+  <li>Delete paths with reassignment → assert DB state.</li>
+  <li>RLS negative test: a non-admin cannot create/update/delete.</li>
+  <li>Student flow: journey → catalog by domain → open course → navigate in order.</li>
+  <li>Enhance regression (draft module → 200, ≥7 blocks, ≥5 quiz Qs spanning ≥3 types, every Q has an explanation) + generate-course regression.</li>
+  <li>Quiz player: one spec per question type (right + wrong answers, feedback + explanation shown, score recorded); numeric tolerance edges; keyboard drag-and-drop (a11y); legacy MCQ module still plays.</li>
+  <li>Quiz editor: author one of each type → reload → student player renders it correctly.</li>
+</ul>
+<h3>Manual gates</h3>
+<ul>
+  <li>Migration: row counts before/after; no orphaned courses; spot-check 3 domains.</li>
+  <li>Deploy: <code>npx vercel --prod</code> for <code>lms/</code> &amp; <code>homepage/</code>; <b>verify bundle hash changed</b> (git auto-deploy has silently failed before).</li>
+  <li>Edge functions ACTIVE; logs show <code>200</code>.</li>
+</ul>
+<div class="callout ok"><span class="ic">✓</span><div><b>Definition of done:</b> all Playwright specs green · migration verified · both apps deployed &amp; smoke-tested · PRs merged after Coderabbit/Codex review.</div></div>
+
+<h2><span class="num">6</span> Risks &amp; mitigations</h2>
+<ul>
+  <li><b>Service-role secret broken</b> (root of the enhance bug). Short-term: functions forward the admin JWT (done). Long-term: set the correct edge-function secret under the new key system — needed for any function with no user JWT (cron/webhooks).</li>
+  <li><b>Destructive Enhance</b> overwrites edits + deletes the quiz. Mitigated this milestone (D6): Append/Merge is the default; Overwrite requires the confirm.</li>
+  <li><b>Production migration.</b> Export first; ship a tested rollback.</li>
+  <li><b>Reorder concurrency / large lists.</b> Batch updates; write only changed rows.</li>
+  <li><b>Course-player ordering regressions.</b> Covered by the navigation Playwright test pre-deploy.</li>
+  <li><b>AI emits malformed interactive payloads.</b> Server-side schema validation with reject/retry; Playwright asserts payload validity; legacy MCQ path is the fallback.</li>
+</ul>
+
+<h2><span class="num">7</span> Rollback</h2>
+<ul>
+  <li>DB: keep the pre-migration export; <code>down</code> drops <code>domain_id</code> + <code>domains</code>.</li>
+  <li>App: feature-flag the new Curriculum tab; old course-management UI stays until Phase 2 is signed off.</li>
+</ul>
+
+<h2><span class="num">8</span> Rough effort</h2>
+<p>P0 ~0.5 (mostly done) · P0b ~2 · P1 ~1.5 · P2 ~3 · P3 ~3 · P4 ~1 · P5 ~2 → <b>~13 engineering days</b>, sequenced; P3/P4 can overlap after P1; P0b runs right after P1's migration. <em>(Interactive quizzes add ~3.5 days; non-destructive enhance adds ~1 day to P0b.)</em></p>
+
+<footer>Pixopharm Academy · Implementation plan · No code or database changes were made by this document.<br>Source: <code>lms/CURRICULUM-REORG-PLAN.md</code></footer>
+</div>
+</body>
+</html>

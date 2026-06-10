@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Learning Journey · Pixopharm Academy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,900&family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#f4f1e8;--ink:#16231e;--ink-soft:#4a564f;--teal:#0d8b7e;--teal-d:#0a5d55;
+    --line:#e0d9c8;--white:#fffdf8;--amber:#c07a2c;--gold:#b8893a;
+    --shadow:0 1px 3px rgba(22,35,30,.07),0 14px 36px -18px rgba(22,35,30,.4);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:"Hanken Grotesk",-apple-system,sans-serif;color:var(--ink);background:var(--paper);line-height:1.5;
+    background-image:radial-gradient(circle at 85% -5%,rgba(13,139,126,.1),transparent 45%),radial-gradient(circle at 5% 10%,rgba(192,122,44,.07),transparent 40%);
+    padding-bottom:90px}
+  body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.04;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+  .wrap{max-width:880px;margin:0 auto;padding:0 22px;position:relative;z-index:1}
+
+  .preview-tag{position:fixed;top:0;left:0;right:0;z-index:20;background:#16231e;color:#f4f1e8;text-align:center;
+    font-size:11.5px;font-weight:600;letter-spacing:.02em;padding:6px}
+  .preview-tag b{color:#7fd4c6}
+
+  /* HERO */
+  .hero{text-align:center;padding:74px 0 26px}
+  .kicker{display:inline-flex;align-items:center;gap:8px;font-size:11.5px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--teal-d);background:rgba(13,139,126,.1);padding:6px 14px;border-radius:30px}
+  .hero h1{font-family:"Fraunces",serif;font-weight:600;font-size:clamp(34px,6vw,54px);line-height:1.02;letter-spacing:-.02em;margin:18px 0 8px}
+  .hero h1 em{font-style:italic;color:var(--teal-d)}
+  .hero p{color:var(--ink-soft);font-size:16px;max-width:540px;margin:0 auto}
+  .chips{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin:26px 0 6px}
+  .chip{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:11px 18px;box-shadow:var(--shadow);text-align:center;min-width:96px}
+  .chip .n{font-family:"Fraunces",serif;font-weight:700;font-size:24px;color:var(--ink);line-height:1;font-variant-numeric:tabular-nums}
+  .chip .k{font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--ink-soft);margin-top:4px}
+
+  .startflag{text-align:center;margin:34px 0 8px}
+  .startflag span{display:inline-flex;align-items:center;gap:9px;font-family:"Fraunces",serif;font-weight:600;font-size:15px;color:#fff;background:linear-gradient(140deg,var(--teal),var(--teal-d));padding:10px 22px;border-radius:30px;box-shadow:0 10px 24px -10px rgba(10,93,85,.7)}
+
+  /* TIMELINE */
+  .journey{position:relative;margin:6px 0 0;padding-left:46px}
+  .journey::before{content:"";position:absolute;left:19px;top:18px;bottom:30px;width:3px;border-radius:3px;
+    background:linear-gradient(var(--teal),var(--gold))}
+  .stage{position:relative;margin:0 0 26px;opacity:0;transform:translateY(16px);animation:rise .5s forwards}
+  @keyframes rise{to{opacity:1;transform:none}}
+  .node{position:absolute;left:-46px;top:2px;width:40px;height:40px;border-radius:13px;display:grid;place-items:center;
+    font-size:19px;color:#fff;box-shadow:0 8px 18px -8px rgba(22,35,30,.5);border:3px solid var(--paper)}
+  .node .sn{position:absolute;right:-6px;bottom:-6px;width:20px;height:20px;border-radius:50%;background:var(--ink);color:#fff;font-size:11px;font-weight:800;display:grid;place-items:center;border:2px solid var(--paper)}
+  .panel{background:var(--white);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);overflow:hidden}
+  .panel-head{padding:14px 18px;display:flex;align-items:center;gap:12px;border-bottom:1px solid var(--line)}
+  .panel-head h2{font-family:"Fraunces",serif;font-weight:600;font-size:18.5px;letter-spacing:-.01em;flex:1}
+  .panel-head .sm{font-size:11.5px;font-weight:700;color:var(--ink-soft);font-variant-numeric:tabular-nums;white-space:nowrap}
+  .courses{list-style:none}
+  .course{display:flex;align-items:center;gap:13px;padding:11px 18px;border-bottom:1px solid #f0ece0}
+  .course:last-child{border-bottom:none}
+  .course .ci{width:24px;height:24px;border-radius:7px;background:var(--paper);color:var(--ink-soft);font-size:11px;font-weight:800;display:grid;place-items:center;flex:none;font-variant-numeric:tabular-nums}
+  .course .cn{flex:1;min-width:0;font-weight:600;font-size:14px}
+  .course .cl{font-size:11.5px;color:var(--ink-soft);font-weight:700;white-space:nowrap;font-variant-numeric:tabular-nums}
+  .course.soon .cn{color:var(--ink-soft)}
+  .course .soon-tag{font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:.04em;color:var(--amber);background:rgba(192,122,44,.13);padding:2px 6px;border-radius:5px}
+
+  .finish{position:relative;padding-left:46px;margin-top:6px}
+  .finish .node{background:linear-gradient(140deg,var(--gold),#9a6f28)}
+  .finish .panel{border-color:var(--gold);background:linear-gradient(180deg,#fff8ea,var(--white))}
+  .finish h2{color:#7a5615}
+  .finish p{font-size:13px;color:var(--ink-soft);padding:0 18px 16px}
+
+  /* electives */
+  .electives{margin-top:40px}
+  .sec-label{font-family:"Fraunces",serif;font-weight:600;font-size:20px;text-align:center;margin-bottom:4px}
+  .sec-sub{text-align:center;color:var(--ink-soft);font-size:13px;margin-bottom:18px}
+  .ecards{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:13px}
+  .ecard{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:14px 15px;box-shadow:var(--shadow);border-top:4px solid var(--c)}
+  .ecard h3{font-size:14.5px;font-weight:700;letter-spacing:-.01em;line-height:1.25}
+  .ecard .em{font-size:11.5px;color:var(--ink-soft);font-weight:700;margin-top:8px;font-variant-numeric:tabular-nums}
+  footer{text-align:center;color:#9a9384;font-size:12px;margin-top:44px}
+</style>
+</head>
+<body>
+<div class="preview-tag">👁 <b>Student experience preview</b> · reflects the current organizer layout · sandbox only</div>
+<div class="wrap">
+
+  <div class="hero">
+    <span class="kicker">⚗ Pixopharm Academy</span>
+    <h1>Your path to becoming a<br><em>Caribbean Pharmacy Technician</em></h1>
+    <p>One comprehensive programme, mapped step by step. Follow it in order — each stage builds on the last.</p>
+    <div class="chips" id="chips"></div>
+  </div>
+
+  <div class="startflag"><span>▶ Start here</span></div>
+
+  <div class="journey" id="journey"></div>
+
+  <div class="finish">
+    <div class="node">🎓<span class="sn">★</span></div>
+    <div class="panel"><div class="panel-head"><h2>Diploma Awarded</h2></div>
+    <p>Complete every stage and the capstone to earn your Caribbean Pharmacy Technician Diploma — and sit the certification exam with confidence.</p></div>
+  </div>
+
+  <div class="electives" id="electivesWrap" style="display:none">
+    <div class="sec-label">Optional Electives</div>
+    <div class="sec-sub">Specialist, Caribbean-focused clinical topics you can take alongside your diploma.</div>
+    <div class="ecards" id="ecards"></div>
+  </div>
+
+  <footer>Pixopharm Academy · A preview of the learner journey · Not a live enrolment page</footer>
+</div>
+
+<script>
+/* fallback embedded data (matches the suggested organizer layout) */
+const MC={u0:8,u1:7,u2:7,u3:6,u4:8,u5:8,u6:8,u7:8,u8:8,u9:8,u10:8,u11:8,u12:7,u13:8,u14:6,u15:7,u16:8,u17:7,u18:7,u19:8,u20:6,u21:8,u22:8,u23:8,u24:7,u25:3,u26:8,u27:8,u28:4,u29:4,u30:4,u31:4,u32:4,u33:4,u34:0,u35:4};
+const FALLBACK={
+  domains:[
+    {id:"d-a",name:"Foundations & Learning Skills",icon:"🧭",color:"#0d8b7e"},
+    {id:"d-b",name:"Human Body & Pharmacology",icon:"🫀",color:"#c2557a"},
+    {id:"d-c",name:"Operations, Systems & Technology",icon:"⚙️",color:"#4d63c9"},
+    {id:"d-d",name:"Calculations & Compounding",icon:"🧪",color:"#7a59c2"},
+    {id:"d-e",name:"Patient Care & Communication",icon:"💬",color:"#c8743a"},
+    {id:"d-f",name:"Safety, Quality & Public Health",icon:"🛡️",color:"#2f9163"},
+    {id:"d-g",name:"Caribbean Law, Ethics & Regulation",icon:"⚖️",color:"#5a6b7b"},
+    {id:"d-h",name:"Capstone & Certification",icon:"🎓",color:"#b8893a"},
+    {id:"d-clin",name:"Clinical Therapeutics (Electives)",icon:"🩺",color:"#a8497e"},
+    {id:"d-clean",name:"Cleanup / Needs Decision",icon:"🧹",color:"#8a8f98"},
+    {id:"d-unsorted",name:"Unsorted (parking)",icon:"🗂️",color:"#9aa0a6"}
+  ],
+  units:[
+    ["Foundations of Pharmacy Practice",28,"pub","d-a"],["Medical & Pharmaceutical Terminology",0,"pub","d-a"],["Digital Learning & Study Skills",0,"pub","d-a"],
+    ["Anatomy, Physiology & Basic Pharmacology",24,"pub","d-b"],["Pharmacology & Body Systems — Part 1",34,"pub","d-b"],["Pharmacology & Body Systems — Part 2",0,"pub","d-b"],
+    ["Basic Pharmacy Workflow",0,"pub","d-c"],["Prescription Processing & Workflow",28,"pub","d-c"],["Inventory, Storage, Cold Chain & Supply",0,"pub","d-c"],["Documentation, Records & Reimbursement",0,"pub","d-c"],["Advanced Pharmacy Systems & Digital Workflow",0,"pub","d-c"],["Technology, Automation & AI in Pharmacy",25,"pub","d-c"],
+    ["Pharmacy Calculations",30,"pub","d-d"],["Complex Calculations",0,"pub","d-d"],["Basic Compounding Techniques",21,"pub","d-d"],["Sterile & Nonsterile Compounding (Simulation)",0,"pub","d-d"],
+    ["Professionalism, Communication & Emotional Intelligence",0,"pub","d-e"],["Applied & Written Communication",28,"pub","d-e"],["Patient & Interprofessional Communication Labs",24,"pub","d-e"],["OTC Medications & Health Advice Boundaries",0,"pub","d-e"],["Leadership, Teamwork, Adaptability & Problem Solving",20,"pub","d-e"],
+    ["Medication Safety & Error Prevention",0,"pub","d-f"],["Public Health, Pharmacovigilance & Quality Improvement",26,"pub","d-f"],
+    ["Caribbean Pharmacy Law, Ethics & Regulation",0,"pub","d-g"],["Caribbean Regulatory Compliance & Quality Systems",23,"pub","d-g"],["Drug Scheduling & Controlled Substances",9,"pub","d-g"],
+    ["Capstone Integrated Case Simulation",0,"pub","d-h"],["Caribbean Pharmacy Certification Exam Preparation",0,"pub","d-h"],
+    ["Asthma & Respiratory Drug Therapy",12,"pub","d-clin"],["Diabetes Medications & Counselling",12,"draft","d-clin"],["Hypertension Management",12,"draft","d-clin"],["HIV & Antiretroviral Therapy",12,"arch","d-clin"],["Dengue & Tropical Disease Drug Management",12,"arch","d-clin"],["Caribbean Island Pharmacy Practice",23,"arch","d-clin"],
+    ["HIV & Antiretroviral Therapy (duplicate, empty)",0,"arch","d-clean"],["Pharmaceutical Calculations for Caribbean (overlaps)",12,"draft","d-clean"]
+  ].map((u,i)=>({id:"u"+i,name:u[0],l:u[1],status:u[2],domainId:u[3],mods:MC["u"+i]||0}))
+};
+
+/* prefer the live organizer layout if present */
+function getState(){
+  try{const s=JSON.parse(localStorage.getItem("pixo-curriculum-organizer-v2"));
+    if(s&&s.domains&&s.units){s.units.forEach(u=>{u.mods=(u.modules&&u.modules.length)?u.modules.length:(u.mFallback||0)});return s}}catch(e){}
+  return FALLBACK;
+}
+const S=getState();
+const HIDE=["d-clean","d-unsorted"];
+const ELECT=["d-clin"];
+
+const core=S.domains.filter(d=>!HIDE.includes(d.id)&&!ELECT.includes(d.id));
+const electDomains=S.domains.filter(d=>ELECT.includes(d.id));
+
+const allCore=S.units.filter(u=>core.some(d=>d.id===u.domainId)&&u.status!=="arch");
+const totalCourses=allCore.length;
+const totalLessons=allCore.reduce((a,u)=>a+u.l,0);
+const totalMods=allCore.reduce((a,u)=>a+u.mods,0);
+const hours=Math.max(1,Math.round(totalLessons*15/60));
+
+const chips=[["Stages",core.length],["Courses",totalCourses],["Modules",totalMods],["Lessons",totalLessons],["~"+hours+"h","of content"]];
+document.getElementById("chips").innerHTML=chips.map(c=>`<div class="chip"><div class="n">${c[0]}</div><div class="k">${c[1]}</div></div>`).join("");
+
+const journey=document.getElementById("journey");
+core.forEach((d,i)=>{
+  const units=S.units.filter(u=>u.domainId===d.id&&u.status!=="arch");
+  const les=units.reduce((a,u)=>a+u.l,0),mods=units.reduce((a,u)=>a+u.mods,0);
+  const st=document.createElement("div");
+  st.className="stage";st.style.animationDelay=(i*0.07)+"s";
+  st.innerHTML=`
+    <div class="node" style="background:${d.color}">${d.icon}<span class="sn">${i+1}</span></div>
+    <div class="panel">
+      <div class="panel-head"><h2>${esc(d.name)}</h2><span class="sm">${units.length} courses · ${mods} modules · ${les} lessons</span></div>
+      <ul class="courses">${units.map((u,ci)=>`
+        <li class="course ${u.l===0?'soon':''}">
+          <span class="ci">${ci+1}</span>
+          <span class="cn">${esc(u.name)}</span>
+          ${u.l===0?'<span class="soon-tag">Coming soon</span>':''}
+          <span class="cl">${u.mods} mod${u.l?` · ${u.l} L`:''}</span>
+        </li>`).join("")}</ul>
+    </div>`;
+  journey.appendChild(st);
+});
+
+const eUnits=S.units.filter(u=>electDomains.some(d=>d.id===u.domainId)&&u.status!=="arch");
+if(eUnits.length){
+  document.getElementById("electivesWrap").style.display="";
+  document.getElementById("ecards").innerHTML=eUnits.map(u=>{
+    const d=S.domains.find(x=>x.id===u.domainId);
+    return `<div class="ecard" style="--c:${d?d.color:'#a8497e'}"><h3>${esc(u.name)}</h3><div class="em">${u.mods} modules · ${u.l} lessons</div></div>`;
+  }).join("");
+}
+
+function esc(s){return(s||"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]))}
+</script>
+</body>
+</html>
