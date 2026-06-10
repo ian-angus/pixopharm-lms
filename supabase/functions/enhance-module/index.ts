@@ -39,8 +39,115 @@ CLINICAL REALITY: Pharmacy technicians are often first healthcare contact; extre
   patient-to-staff ratios; strong role in chronic disease management (HTN, DM, asthma, HIV)
 `;
 
-const OPUS_MODEL = "claude-opus-4-6";
+const OPUS_MODEL = "claude-opus-4-8";
 const CALL_TIMEOUT_MS = 300_000;
+
+// 'numeric' is excluded until the Phase 3 quiz player ships its renderer —
+// the live player handles every type below today. Add 'numeric' in Phase 3.
+const ALLOWED_TYPES = [
+  "multiple_choice", "multiple_select", "ordering",
+  "matching", "fill_in_blank", "true_false", "scenario",
+] as const;
+type QType = (typeof ALLOWED_TYPES)[number];
+
+// Domain-aware question-type emphasis (D11). Falls back to a balanced mix.
+function typeMixForDomain(domainName: string | null): string {
+  const d = (domainName ?? "").toLowerCase();
+  if (d.includes("calculation") || d.includes("compounding")) {
+    return "Emphasise applied problem-solving: several multiple_choice questions built around worked calculations (doses, dilutions, alligation), plus ordering (procedure steps) and fill_in_blank (formula terms).";
+  }
+  if (d.includes("law") || d.includes("regulation")) {
+    return "Emphasise matching (island ↔ statute/schedule, drug ↔ schedule class) and ordering (regulatory process steps), plus scenario questions on compliance decisions.";
+  }
+  if (d.includes("clinical") || d.includes("capstone") || d.includes("certification")) {
+    return "Emphasise a case vignette (the \"case\" object) with 2–3 linked scenario questions, plus multiple_select (select-all-that-apply clinical findings).";
+  }
+  if (d.includes("foundation") || d.includes("terminology") || d.includes("learning")) {
+    return "Emphasise fill_in_blank (terminology recall) and matching (term ↔ definition, abbreviation ↔ meaning), plus true_false misconception checks.";
+  }
+  return "Use a balanced mix: multiple_choice, one multiple_select, one ordering or matching, one fill_in_blank or true_false, and a scenario.";
+}
+
+interface GenQuestion {
+  question_type?: string;
+  question?: string;
+  options?: unknown[];
+  correct_answer?: unknown;
+  question_data?: Record<string, unknown> | null;
+  explanation?: string;
+  difficulty?: string;
+  blooms_level?: string;
+}
+
+// Validate a generated question against the shapes the quiz player scores with.
+// Returns an error string, or null when valid.
+function validateQuestion(q: GenQuestion): string | null {
+  const t = q.question_type as QType;
+  if (!ALLOWED_TYPES.includes(t)) return `question_type "${q.question_type}" not allowed`;
+  if (!q.question || typeof q.question !== "string" || q.question.length < 10) return "question text missing/too short";
+  if (!q.explanation || typeof q.explanation !== "string" || q.explanation.length < 20) return "explanation missing/too short";
+  const qd = (q.question_data ?? {}) as Record<string, unknown>;
+
+  switch (t) {
+    case "multiple_choice":
+    case "scenario": {
+      if (!Array.isArray(q.options) || q.options.length !== 4) return `${t}: options must be exactly 4`;
+      const ca = q.correct_answer;
+      if (!Number.isInteger(ca) || (ca as number) < 0 || (ca as number) > 3) return `${t}: correct_answer must be 0–3`;
+      return null;
+    }
+    case "multiple_select": {
+      if (!Array.isArray(q.options) || q.options.length < 4 || q.options.length > 6) return "multiple_select: options must be 4–6";
+      const ci = qd.correct_indices;
+      if (!Array.isArray(ci) || ci.length < 2 || ci.length >= q.options.length) return "multiple_select: correct_indices must list 2+ (not all) options";
+      if (!ci.every((i) => Number.isInteger(i) && (i as number) >= 0 && (i as number) < q.options!.length)) return "multiple_select: correct_indices out of range";
+      return null;
+    }
+    case "ordering": {
+      if (!Array.isArray(q.options) || q.options.length < 3 || q.options.length > 6) return "ordering: options (items) must be 3–6";
+      const co = qd.correct_order;
+      if (!Array.isArray(co) || co.length !== q.options.length) return "ordering: correct_order must index every option";
+      const sorted = [...(co as number[])].sort((a, b) => a - b);
+      if (!sorted.every((v, i) => v === i)) return "ordering: correct_order must be a permutation of option indices";
+      return null;
+    }
+    case "matching": {
+      const pairs = qd.pairs;
+      if (!Array.isArray(pairs) || pairs.length < 3 || pairs.length > 6) return "matching: pairs must be 3–6";
+      if (!pairs.every((p) => p && typeof (p as Record<string, unknown>).left === "string" && typeof (p as Record<string, unknown>).right === "string")) return "matching: each pair needs left+right strings";
+      return null;
+    }
+    case "fill_in_blank": {
+      const aa = qd.acceptable_answers;
+      if (!Array.isArray(aa) || aa.length < 1 || !aa.every((a) => typeof a === "string" && a.length > 0)) return "fill_in_blank: acceptable_answers must be non-empty strings";
+      if (!q.question.includes("___")) return "fill_in_blank: question must contain ___ for the blank";
+      return null;
+    }
+    case "true_false": {
+      if (typeof qd.correct_answer !== "boolean") return "true_false: question_data.correct_answer must be boolean";
+      return null;
+    }
+  }
+  return "unknown type";
+}
+
+function buildInsertRow(q: GenQuestion, moduleId: string, orderIndex: number, caseId: string | null) {
+  const t = q.question_type as QType;
+  const isChoice = t === "multiple_choice" || t === "scenario";
+  return {
+    module_id: moduleId,
+    question: q.question,
+    options: Array.isArray(q.options) ? q.options : (t === "true_false" ? ["True", "False"] : []),
+    correct_answer: isChoice ? (q.correct_answer as number) : 0,
+    explanation: q.explanation ?? "",
+    order_index: orderIndex,
+    question_type: t,
+    question_data: q.question_data ?? {},
+    difficulty: ["easy", "medium", "hard", "expert"].includes(q.difficulty ?? "") ? q.difficulty : "medium",
+    blooms_level: ["remember", "understand", "apply", "analyze", "evaluate", "create"].includes(q.blooms_level ?? "") ? q.blooms_level : "apply",
+    case_id: caseId,
+  };
+}
 
 Deno.serve(async (req: Request) => {
   if (req.method === "OPTIONS") return new Response(null, { headers: corsHeaders() });
@@ -70,37 +177,54 @@ Deno.serve(async (req: Request) => {
   if (callerProfile?.role !== "admin") return json({ error: "Forbidden" }, 403);
 
   try {
-    const { module_id } = await req.json();
+    const body = await req.json();
+    const module_id: string | undefined = body.module_id;
+    // D6: non-destructive by default. "append" fills only empty lessons and adds
+    // questions alongside existing ones. "overwrite" is the legacy destructive
+    // behaviour and sits behind a confirm dialog in the admin UI.
+    const mode: "append" | "overwrite" = body.mode === "overwrite" ? "overwrite" : "append";
     if (!module_id) return json({ error: "module_id is required" }, 400);
 
-    // ── Fetch module + course context from DB ─────────────────────────────────
+    // ── Fetch module + course + domain context from DB ────────────────────────
     const { data: mod, error: modErr } = await sb
       .from("modules")
-      .select("id, title, description, order_index, course_id, courses(title, skill_level, duration_weeks, description)")
+      .select("id, title, description, order_index, course_id, courses(title, skill_level, duration_weeks, description, domains(name))")
       .eq("id", module_id)
       .single();
 
     if (modErr || !mod) return json({ error: `Module not found: ${modErr?.message}` }, 404);
 
-    const course = mod.courses as { title: string; skill_level: string; duration_weeks: number; description: string };
+    const course = mod.courses as unknown as {
+      title: string; skill_level: string; duration_weeks: number; description: string;
+      domains: { name: string } | null;
+    };
+    const domainName = course?.domains?.name ?? null;
 
     const { data: lessons, error: lessonErr } = await sb
       .from("lessons")
-      .select("id, title, order_index, duration_minutes")
+      .select("id, title, order_index, duration_minutes, content")
       .eq("module_id", module_id)
       .order("order_index");
 
     if (lessonErr || !lessons?.length) return json({ error: "No lessons found for module" }, 404);
+
+    const { data: existingQs } = await sb
+      .from("quiz_questions")
+      .select("id, order_index")
+      .eq("module_id", module_id)
+      .order("order_index", { ascending: false })
+      .limit(1);
+    const maxOrder = existingQs?.[0]?.order_index ?? 0;
 
     const moduleCount = course.duration_weeks ? Math.min(Math.max(Math.round(Number(course.duration_weeks)), 2), 5) : 4;
     const lessonList = lessons
       .map((l, i) => `  Lesson ${i + 1}: "${l.title}" — target ${l.duration_minutes ?? 25} min`)
       .join("\n");
 
-    // ── Call Opus with full quality prompt ────────────────────────────────────
-    const prompt = `${CARIBBEAN_CONTEXT}
+    // ── Build the generation prompt ───────────────────────────────────────────
+    const basePrompt = `${CARIBBEAN_CONTEXT}
 
-You are writing MODULE ${mod.order_index ?? 1} of ${moduleCount} for the PixoPharm course: "${course.title}" (${course.skill_level} level).
+You are writing MODULE ${mod.order_index ?? 1} of ${moduleCount} for the PixoPharm course: "${course.title}" (${course.skill_level} level)${domainName ? `, in the curriculum domain "${domainName}"` : ""}.
 
 MODULE: "${mod.title}"
 ${mod.description ? `Description: ${mod.description}` : ""}
@@ -109,7 +233,7 @@ Applies across ALL CARICOM nations — use specific island comparisons (T&T, Jam
 LESSONS IN THIS MODULE:
 ${lessonList}
 
-TASK — for EACH lesson write rich content (5–7 blocks), then 3 quiz questions for the module.
+TASK — for EACH lesson write rich content (5–7 blocks), then an INTERACTIVE quiz for the module.
 
 LESSON CONTENT BLOCKS — use ALL these block types across the lessons:
   {"type":"heading","text":"...","level":2}  — main section heading (required, 1 per lesson)
@@ -120,45 +244,71 @@ LESSON CONTENT BLOCKS — use ALL these block types across the lessons:
   {"type":"key-term","term":"...","definition":"Precise 1–2 sentence definition with Caribbean clinical context and an example."}
   {"type":"video-placeholder","title":"...","duration":"X min","description":"Specific Caribbean pharmacy scenario this video demonstrates."}
 
-QUIZ QUESTIONS — exactly 3 questions for this module:
-  - Scenario-based: "A technician at a pharmacy in [specific Caribbean location]..."
-  - 4 answer options each; realistic distractors based on common errors
-  - correct_answer: 0-based index of the correct option
-  - explanation: 2–3 sentences citing specific Caribbean regulation or clinical evidence
+QUIZ — produce 6–8 questions spanning AT LEAST 4 different question_type values.
+${typeMixForDomain(domainName)}
+Every question MUST have an "explanation" (2–3 sentences citing specific Caribbean regulation or clinical evidence) — it is shown to the student immediately after they answer.
+
+QUESTION TYPE SCHEMAS (follow EXACTLY — these are machine-validated):
+1. {"question_type":"multiple_choice","question":"Scenario-grounded question?","options":["A","B","C","D"],"correct_answer":0,"explanation":"...","difficulty":"medium","blooms_level":"apply"}
+2. {"question_type":"true_false","question":"Statement to judge.","question_data":{"correct_answer":true},"explanation":"...","difficulty":"easy","blooms_level":"remember"}
+3. {"question_type":"multiple_select","question":"Select ALL that apply...","options":["..","..","..","..","..."],"question_data":{"correct_indices":[0,2]},"explanation":"...","difficulty":"hard","blooms_level":"analyze"}
+4. {"question_type":"ordering","question":"Arrange the steps in the correct order.","options":["step","step","step","step"],"question_data":{"correct_order":[2,0,3,1]},"explanation":"...","difficulty":"medium","blooms_level":"apply"}
+   (options = items as DISPLAYED; correct_order = the option indices in their correct sequence)
+5. {"question_type":"matching","question":"Match each item to its pair.","question_data":{"pairs":[{"left":"Jamaica","right":"Dangerous Drugs Act Schedules 1–4"},{"left":"...","right":"..."}]},"explanation":"...","difficulty":"medium","blooms_level":"understand"}
+   (3–6 pairs; left[i] correctly matches right[i])
+6. {"question_type":"fill_in_blank","question":"Sentence with ___ for the missing term.","question_data":{"acceptable_answers":["term","synonym"],"case_sensitive":false},"explanation":"...","difficulty":"medium","blooms_level":"remember"}
+7. scenario questions go INSIDE the optional "case" object (below) and use the multiple_choice schema with "question_type":"scenario". Each must still make sense if read alone (briefly restate the key facts).
 
 Return ONLY valid JSON:
 {
   "lessons": [
-    {
-      "title": "exact title matching the lesson list above",
-      "duration_minutes": 25,
-      "content": [ ...5-7 blocks... ]
-    }
+    {"title": "exact title matching the lesson list above", "duration_minutes": 25, "content": [ ...5-7 blocks... ]}
   ],
-  "quiz_questions": [
-    {
-      "question": "Scenario-based question?",
-      "options": ["Option A", "Option B", "Option C", "Option D"],
-      "correct_answer": 0,
-      "explanation": "Detailed explanation with Caribbean context.",
-      "difficulty": "medium",
-      "blooms_level": "apply"
+  "quiz_questions": [ ...4-6 standalone questions, mixed types... ],
+  "case": {
+    "title": "short case name",
+    "vignette": "4–6 sentence Caribbean patient/pharmacy vignette",
+    "questions": [ ...2-3 "scenario" questions linked to the vignette... ]
+  }
+}
+The "case" object is OPTIONAL — include it when the domain emphasis calls for case-based assessment, otherwise omit it.`;
+
+    // ── Generate with validation + one retry ──────────────────────────────────
+    let result = (await callOpus(basePrompt, 8000)).result;
+    let { valid, rejected } = collectQuestions(result);
+
+    if (valid.standalone.length + valid.caseQs.length < 5 || distinctTypes(valid) < 3) {
+      const feedback = rejected.map((r) => `- ${r.reason}`).join("\n") || "- too few valid questions or too few distinct types";
+      console.log(`enhance-module: retrying generation; first pass had ${valid.standalone.length + valid.caseQs.length} valid questions. Rejections:\n${feedback}`);
+      const retryPrompt = `${basePrompt}
+
+PREVIOUS ATTEMPT FAILED MACHINE VALIDATION:
+${feedback}
+Regenerate the COMPLETE JSON, fixing these issues. Minimum 5 valid questions across 3+ types.`;
+      result = (await callOpus(retryPrompt, 8000)).result;
+      ({ valid, rejected } = collectQuestions(result));
+      if (valid.standalone.length + valid.caseQs.length < 5 || distinctTypes(valid) < 3) {
+        return json({
+          error: "AI output failed validation after retry",
+          rejections: rejected.map((r) => r.reason).slice(0, 10),
+        }, 502);
+      }
     }
-  ]
-}`;
 
-    const { result, modelUsed } = await callOpus(prompt, 5500);
+    const generatedLessons = Array.isArray((result as Record<string, unknown>).lessons)
+      ? (result as { lessons: { title?: string; duration_minutes?: number; content?: unknown[] }[] }).lessons
+      : [];
 
-    const generatedLessons = Array.isArray(result.lessons) ? result.lessons : [];
-    const generatedQuestions = Array.isArray(result.quiz_questions) ? result.quiz_questions : [];
-
-    // ── Update lessons in place ───────────────────────────────────────────────
+    // ── Write lessons ─────────────────────────────────────────────────────────
     let lessonsUpdated = 0;
+    let lessonsSkipped = 0;
     for (let i = 0; i < lessons.length; i++) {
-      const generated = generatedLessons.find(
-        (l: { title: string }) => l.title?.toLowerCase().trim() === lessons[i].title?.toLowerCase().trim()
-      ) ?? generatedLessons[i];
+      const hasContent = Array.isArray(lessons[i].content) && (lessons[i].content as unknown[]).length > 0;
+      if (mode === "append" && hasContent) { lessonsSkipped++; continue; }
 
+      const generated = generatedLessons.find(
+        (l) => l.title?.toLowerCase().trim() === lessons[i].title?.toLowerCase().trim()
+      ) ?? generatedLessons[i];
       if (!generated?.content?.length) continue;
 
       const { error: updateErr } = await sb
@@ -168,34 +318,52 @@ Return ONLY valid JSON:
           duration_minutes: generated.duration_minutes ?? lessons[i].duration_minutes ?? 25,
         })
         .eq("id", lessons[i].id);
-
       if (!updateErr) lessonsUpdated++;
     }
 
-    // ── Replace quiz questions ────────────────────────────────────────────────
-    await sb.from("quiz_questions").delete().eq("module_id", module_id);
-
+    // ── Write quiz ────────────────────────────────────────────────────────────
+    if (mode === "overwrite") {
+      await sb.from("quiz_questions").delete().eq("module_id", module_id);
+      await sb.from("quiz_cases").delete().eq("module_id", module_id);
+    }
+    let orderIndex = mode === "append" ? maxOrder : 0;
     let questionsInserted = 0;
-    for (let qi = 0; qi < generatedQuestions.length; qi++) {
-      const q = generatedQuestions[qi];
-      const options = Array.isArray(q.options) && q.options.length === 4 ? q.options : ["A", "B", "C", "D"];
-      const correctAnswer = Number.isInteger(q.correct_answer) && q.correct_answer >= 0 && q.correct_answer <= 3
-        ? q.correct_answer : 0;
-      const { error: qErr } = await sb.from("quiz_questions").insert({
-        module_id,
-        question: q.question,
-        options,
-        correct_answer: correctAnswer,
-        explanation: q.explanation ?? "",
-        order_index: qi + 1,
-        question_type: "multiple_choice",
-        difficulty: q.difficulty ?? "medium",
-        blooms_level: q.blooms_level ?? "apply",
-      });
-      if (!qErr) questionsInserted++;
+
+    for (const q of valid.standalone) {
+      orderIndex += 1;
+      const { error: qErr } = await sb.from("quiz_questions").insert(buildInsertRow(q, module_id, orderIndex, null));
+      if (!qErr) questionsInserted++; else console.log(`enhance-module: insert failed: ${qErr.message}`);
     }
 
-    return json({ lessons_updated: lessonsUpdated, questions_count: questionsInserted, model_used: modelUsed });
+    let caseInserted = false;
+    if (valid.caseQs.length && valid.vignette) {
+      const { data: caseRow, error: caseErr } = await sb
+        .from("quiz_cases")
+        .insert({ module_id, title: valid.caseTitle ?? "Case study", vignette: valid.vignette, order_index: 1 })
+        .select("id")
+        .single();
+      if (!caseErr && caseRow) {
+        caseInserted = true;
+        for (const q of valid.caseQs) {
+          orderIndex += 1;
+          const { error: qErr } = await sb.from("quiz_questions").insert(buildInsertRow(q, module_id, orderIndex, caseRow.id));
+          if (!qErr) questionsInserted++; else console.log(`enhance-module: case insert failed: ${qErr.message}`);
+        }
+      } else {
+        console.log(`enhance-module: quiz_cases insert failed: ${caseErr?.message}`);
+      }
+    }
+
+    return json({
+      mode,
+      lessons_updated: lessonsUpdated,
+      lessons_skipped_existing: lessonsSkipped,
+      questions_count: questionsInserted,
+      case_created: caseInserted,
+      types_generated: [...new Set([...valid.standalone, ...valid.caseQs].map((q) => q.question_type))],
+      rejected_count: rejected.length,
+      model_used: OPUS_MODEL,
+    });
 
   } catch (err) {
     const msg = err instanceof Error ? err.message : String(err);
@@ -203,6 +371,41 @@ Return ONLY valid JSON:
     return json({ error: msg }, 500);
   }
 });
+
+function collectQuestions(result: Record<string, unknown>) {
+  const standaloneRaw = Array.isArray(result.quiz_questions) ? result.quiz_questions as GenQuestion[] : [];
+  const caseObj = (result.case ?? null) as { title?: string; vignette?: string; questions?: GenQuestion[] } | null;
+  const caseRaw = Array.isArray(caseObj?.questions) ? caseObj!.questions! : [];
+
+  const valid = {
+    standalone: [] as GenQuestion[],
+    caseQs: [] as GenQuestion[],
+    vignette: typeof caseObj?.vignette === "string" && caseObj.vignette.length > 50 ? caseObj.vignette : null,
+    caseTitle: caseObj?.title ?? null,
+  };
+  const rejected: { reason: string }[] = [];
+
+  for (const q of standaloneRaw) {
+    const err = validateQuestion(q);
+    if (err) rejected.push({ reason: `standalone "${(q.question ?? "?").slice(0, 50)}": ${err}` });
+    else valid.standalone.push(q);
+  }
+  for (const q of caseRaw) {
+    if (q.question_type !== "scenario") q.question_type = "scenario";
+    const err = validateQuestion(q);
+    if (err) rejected.push({ reason: `case "${(q.question ?? "?").slice(0, 50)}": ${err}` });
+    else valid.caseQs.push(q);
+  }
+  if (caseRaw.length && !valid.vignette) {
+    rejected.push({ reason: "case: vignette missing or under 50 chars — case questions dropped" });
+    valid.caseQs = [];
+  }
+  return { valid, rejected };
+}
+
+function distinctTypes(valid: { standalone: GenQuestion[]; caseQs: GenQuestion[] }): number {
+  return new Set([...valid.standalone, ...valid.caseQs].map((q) => q.question_type)).size;
+}
 
 async function callOpus(
   prompt: string,

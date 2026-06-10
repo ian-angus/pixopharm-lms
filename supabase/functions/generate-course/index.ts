@@ -44,10 +44,10 @@ CLINICAL REALITY: Pharmacy technicians are often first healthcare contact; extre
 // Phase 1 (outline): Haiku — fast and sufficient; Opus fallback if Haiku overloaded
 // Phase 2 (content): Haiku only — reliable within 150s; use enhance-module for Opus upgrade
 // enhance-module Edge Function handles per-module Opus calls on demand
-const PHASE1_MODELS = ["claude-3-haiku-20240307", "claude-opus-4-6"];
+const PHASE1_MODELS = ["claude-3-haiku-20240307", "claude-opus-4-8"];
 const PHASE2_MODELS = ["claude-3-haiku-20240307"];
 const MODEL_MAX_TOKENS: Record<string, number> = {
-  "claude-opus-4-6": 8192,
+  "claude-opus-4-8": 8192,
   "claude-3-haiku-20240307": 4096,
 };
 const CALL_TIMEOUT_MS = 120_000; // 120s per call — Haiku completes in ~15-20s
