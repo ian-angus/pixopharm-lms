@@ -21,6 +21,25 @@
 
 ---
 
+## 2026-06-09 (cont.): Phase 1 drafted — migration written, backup taken, AWAITING APPLY APPROVAL
+
+### Branch: `feat/curriculum-phase-1` (stacked on phase-0)
+
+**Discoveries that changed the plan slightly:**
+- `quiz_questions` ALREADY has `question_type` (check: multiple_choice/multiple_select/ordering/matching/fill_in_blank/true_false/scenario), `question_data jsonb`, `explanation`, `difficulty`, `blooms_level`. So D11 schema work shrank to: add `'numeric'` to the type check + `quiz_cases` table + `case_id` FK. We use the EXISTING type vocabulary, not the plan's mcq/match/order/cloze names.
+- Live question count is **898** (894 MCQ + 3 true_false + 1 fill_in_blank), not 833 — all already have explanations.
+- The student catalog is hardcoded in `src/data/courses.ts` (not a DB query) → repurposing `courses."order"` as per-domain rank cannot break the live site. Only admin list ordering shifts cosmetically until Phase 2.
+
+**Done:**
+- `supabase/migrations/20260609000001_domains_and_quiz_cases.sql` — domains table (RLS: public read, admin write), `courses.domain_id`, `'numeric'` question type, `quiz_cases` + `case_id`, seeds 9 domains (icons/colors from approved prototype), assigns all 34 courses by ID with per-domain order. Idempotent (fixed UUIDs, if-not-exists everywhere).
+- Rollback: `supabase/migrations/rollbacks/20260609000001_down.sql`.
+- Pre-migration backup: 798 files in `db-backup/` via `scripts/db-export.ts` (needs `SUPABASE_SECRET_KEY` env — the repaired D10 key works).
+- Left Unsorted on purpose: draft "Pharmaceutical Calculations for Caribbean…" (D4 merge pending — HARD STOP).
+
+**HARD STOP pending:** apply migration to production (owner approval required).
+
+---
+
 ## 2026-06-08 (late): Enhance REALLY fixed (v7, verified) + Curriculum Reorg plan
 
 **Correction to the entry below:** the v6 "two service-role clients" fix did NOT work — logs still showed `404` in ~1s. Re-diagnosed: the project's `SUPABASE_SERVICE_ROLE_KEY` **no longer bypasses RLS** (legacy key rotated when the project moved to `sb_publishable_`/new keys). A true service-role key always bypasses RLS; since draft modules stayed invisible, the function was effectively anonymous.
