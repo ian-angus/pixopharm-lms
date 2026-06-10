@@ -18,12 +18,12 @@
           "Pharmacist",
           "Bachelor's or Doctor of Pharmacy (PharmD), registered with national pharmacy board",
           "Final verification of prescriptions, clinical consultations, drug therapy management, supervision of staff",
-          "Yes — final check and patient counselling"
+          "Yes — final checks and patient counselling"
         ],
         [
           "Pharmacy Technician",
-          "Certified training programme (e.g. PIXOPHARM), registered where required",
-          "Prescription data entry, medication preparation, inventory management, assisting with dispensing under supervision",
+          "Official training programme, Certification where required",
+          "Prescription data entry, medication preparation, inventory management, assisting with picking/packaging, and dispensing under supervision",
           "Preparation yes; final check requires pharmacist oversight in most Caribbean jurisdictions"
         ],
         [
@@ -34,7 +34,6 @@
         ]
       ],
       "type": "table",
-      "caption": "Pharmacy Team Roles Compared",
       "headers": [
         "Role",
         "Qualifications",
@@ -43,44 +42,8 @@
       ]
     },
     {
-      "type": "island-comparison",
-      "title": "Pharmacy Technician Scope of Practice by Island",
-      "islands": [
-        {
-          "flag": "🇹🇹",
-          "name": "Trinidad & Tobago",
-          "details": [
-            "Governed by the Pharmacy Board of Trinidad and Tobago under the Pharmacy Board Act (Chapter 29:52)",
-            "Pharmacy technicians work under the direct supervision of a registered pharmacist",
-            "Technicians may assist in dispensing but the pharmacist must perform the final check",
-            "No separate statutory registration for technicians — operates under pharmacist's licence",
-            "Growing movement toward formal technician registration and expanded scope"
-          ]
-        },
-        {
-          "flag": "🇯🇲",
-          "name": "Jamaica",
-          "details": [
-            "Governed by the Pharmacy Council of Jamaica under the Pharmacy Act (1975, amended)",
-            "Technicians must work under the supervision of a registered pharmacist",
-            "Jamaica's system distinguishes between 'qualified assistants' and 'pharmacy technicians'",
-            "The Pharmacy Council maintains a register of approved training programmes",
-            "Technicians cannot independently verify or release prescriptions"
-          ]
-        },
-        {
-          "flag": "🇧🇧",
-          "name": "Barbados",
-          "details": [
-            "Governed by the Barbados Drug Service and the Pharmacy Act (Cap. 372D)",
-            "Pharmacy technicians serve as vital support in both public (Queen Elizabeth Hospital, polyclinics) and private pharmacy settings",
-            "The Barbados National Drug Formulary guides prescribing and dispensing decisions",
-            "Technicians assist with dispensing and inventory management under pharmacist supervision",
-            "The Drug Service Division oversees medication supply throughout the public health system"
-          ]
-        }
-      ],
-      "description": "The legal scope of what a pharmacy technician can do varies significantly between islands. Always verify the current regulations in your jurisdiction."
+      "body": "[unsupported block type]",
+      "type": "text"
     },
     {
       "body": "Never exceed the scope of practice defined by your island's pharmacy legislation. Performing acts reserved for pharmacists — such as independently verifying prescriptions or providing clinical advice — can result in legal prosecution, even if done with good intentions. When in doubt, always defer to the supervising pharmacist.",
@@ -100,11 +63,65 @@
     {
       "type": "list",
       "items": [
-        "Accuracy: A single dispensing error can cause serious harm or death",
+        "Accuracy: A single dispensing error can cause a patient serious harm or even death",
         "Confidentiality: Patient information must be protected at all times",
         "Professionalism: Your conduct reflects on the entire pharmacy profession",
         "Continuous Learning: Drug information changes constantly — staying current is a duty, not optional",
         "Teamwork: Effective communication with pharmacists and other healthcare providers is essential"
+      ],
+      "ordered": false
+    },
+    {
+      "body": "The pharmacy team consists of specialized professionals who collaborate to ensure safe and effective medication distribution and patient care. Key roles include the Pharmacist, who oversees clinical safety, and the Pharmacy Technicians and Assistants, who handle dispensing, inventory, and front-line customer service. ",
+      "type": "text"
+    },
+    {
+      "body": "The Pharmacist",
+      "type": "text"
+    },
+    {
+      "body": "The lead of the pharmacy, responsible for verifying prescriptions, monitoring for drug interactions, and providing patient consultations. ",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Medication Review: Assesses the appropriateness of a drug regimen, checking dosages and ensuring safety against allergies or conflicting medications. ",
+        "Patient Education: Instructs patients on proper medication administration (e.g., how to use an inhaler) and potential side effects. ",
+        "Clinical Services: Many pharmacists can now adapt prescriptions, manage chronic conditions, and administer point-of-care tests or immunizations like the flu shot. "
+      ],
+      "ordered": false
+    },
+    {
+      "body": "Pharmacy Technicians",
+      "type": "text"
+    },
+    {
+      "body": "Highly trained professionals who manage the operational and technical aspects of dispensing medicines. ",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Dispensing & Assembly: Prepares, measures, and accurately labels prescriptions under the supervision of a pharmacist.",
+        "Safety & Checking: Performs final checks on dispensed items and takes accountability for their own accurate practice.",
+        "Patient Counseling: May be qualified to conduct initial consultations or advise on over-the-counter (OTC) products. "
+      ],
+      "ordered": false
+    },
+    {
+      "body": "Pharmacy Assistants & Clerks",
+      "type": "text"
+    },
+    {
+      "body": "Support staff who ensure the pharmacy runs smoothly behind the counter. ",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Inventory Management: Orders, receives, and stores pharmaceutical stock, and removes expired products.",
+        "Customer Support: Handles prescription intake and collection, cash transactions, and assists with basic over-the-counter inquiries. "
       ],
       "ordered": false
     }

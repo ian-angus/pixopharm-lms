@@ -1,0 +1,41 @@
+{
+  "id": "5a69ad8e-4674-4bda-a46a-4cbe3ad4e10f",
+  "module_id": "2e4952b7-fabf-4ea7-8961-74fd44748262",
+  "title": "Supply Chain Challenges and Medication Availability",
+  "content": [
+    {
+      "text": "Supply Chain Challenges and Medication Availability",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Even when antihypertensive medications are approved for use in the Caribbean, their consistent availability can be a challenge due to the region's unique supply chain issues. Pharmacy technicians must be aware of these factors to effectively manage hypertension treatment for patients.",
+      "type": "text"
+    },
+    {
+      "body": "The tropical climate with high year-round temperatures, frequent power outages, and delays in inter-island shipping can all impact the storage and distribution of temperature-sensitive medications like some antihypertensives. Customs clearance at ports is another common hurdle, leading to stock-outs, especially on smaller islands with limited buffer inventory.",
+      "type": "callout",
+      "title": "Supply Chain Obstacles in the Caribbean",
+      "variant": "info"
+    },
+    {
+      "body": "With limited supplies and short shelf lives, adherence to FEFO principles is critical in Caribbean pharmacies. Incorrectly rotating stock can lead to expired medications being dispensed, reducing their clinical efficacy and potentially causing harm to hypertensive patients.",
+      "type": "callout",
+      "title": "First Expiry, First Out (FEFO) in the Caribbean",
+      "variant": "warning"
+    },
+    {
+      "term": "Therapeutic Substitution",
+      "type": "key-term",
+      "definition": "The practice of dispensing an alternative medication within the same pharmacological class when the originally prescribed drug is unavailable. Caribbean pharmacy technicians must be prepared to recommend and enact therapeutic substitutions for antihypertensives during supply chain disruptions."
+    },
+    {
+      "type": "video-placeholder",
+      "title": "Strategies for Maintaining Antihypertensive Availability",
+      "duration": "20 min",
+      "description": "A training session for pharmacy technicians on optimizing stock management, temperature controls, and therapeutic substitution protocols to ensure uninterrupted access to hypertension medications across the Caribbean."
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 25
+}

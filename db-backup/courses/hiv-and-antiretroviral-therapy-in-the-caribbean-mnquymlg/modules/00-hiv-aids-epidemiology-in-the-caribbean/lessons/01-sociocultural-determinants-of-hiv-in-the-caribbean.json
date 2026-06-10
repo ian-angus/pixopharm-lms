@@ -1,0 +1,58 @@
+{
+  "id": "fb015218-2996-4056-b221-c05e365c7048",
+  "module_id": "17386738-fa04-46e5-ac0b-06ccff3e05c9",
+  "title": "Sociocultural Determinants of HIV in the Caribbean",
+  "content": [
+    {
+      "text": "Sociocultural Determinants of HIV Transmission and Treatment in the Caribbean",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "HIV in the Caribbean cannot be understood through biomedical data alone. The epidemic is shaped by deeply entrenched sociocultural factors including stigma, gender inequality, poverty, migration patterns, religious influence, criminalisation of key populations, and widespread use of traditional medicine. For pharmacy technicians, these determinants are not abstract concepts — they manifest daily at the dispensary counter: the patient who whispers their ARV request because others are within earshot, the woman who cannot adhere to efavirenz because her partner does not know her status, the MSM patient who travels to a pharmacy in another parish to avoid recognition, or the elderly patient who substitutes cerasee bush tea for their prescribed metformin and ARVs simultaneously, creating dangerous interaction potential. Understanding these forces equips you to provide more empathetic, effective, and clinically safer pharmaceutical care.",
+      "type": "text"
+    },
+    {
+      "body": "The UNAIDS People Living with HIV Stigma Index studies conducted across Jamaica, T&T, Barbados, and Guyana consistently show that 35–50% of PLHIV report experiencing discrimination in healthcare settings. In Jamaica, the 2019 Stigma Index found that 25% of PLHIV avoided seeking health services due to fear of stigma. In Trinidad & Tobago, qualitative research from UWI St. Augustine documents patients driving hours to distant pharmacies rather than collecting ARVs at their local health centre. This stigma directly impacts ART adherence and pharmacy operations — technicians must understand that confidentiality protocols are not bureaucratic formalities but lifesaving practices.",
+      "type": "callout",
+      "title": "HIV Stigma in the Caribbean — Among the Highest Globally",
+      "variant": "info"
+    },
+    {
+      "text": "Gender, Sexuality, and Legal Barriers Across CARICOM",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Gender dynamics profoundly shape HIV risk in the Caribbean. Women account for approximately 52% of PLHIV in the region — one of the few areas globally where the epidemic trends toward gender parity or female predominance. Transactional sex, intimate partner violence, economic dependence, and limited negotiating power for condom use all elevate women's vulnerability. Among men, toxic masculinity norms discourage testing, healthcare-seeking behaviour, and disclosure. In Jamaica, men are 50% less likely than women to know their HIV status. Regarding MSM, the legal landscape is stark: Guyana's criminal code prescribes life imprisonment for 'buggery,' Jamaica's Offences Against the Person Act carries up to 10 years with hard labour, and similar provisions exist in Barbados (life imprisonment), Belize (10 years — though a landmark 2016 Supreme Court ruling partially decriminalised), T&T (25 years), St. Lucia, and most other CARICOM states. Only The Bahamas has no anti-sodomy law. These laws do not merely exist on paper — they create an environment where MSM avoid HIV testing, refuse to disclose risk behaviours, and may not collect pre-exposure prophylaxis (PrEP) prescriptions.",
+      "type": "text"
+    },
+    {
+      "term": "PrEP (Pre-Exposure Prophylaxis)",
+      "type": "key-term",
+      "definition": "The use of antiretroviral medication by HIV-negative individuals at substantial risk of infection to prevent acquisition of HIV. In the Caribbean context, tenofovir disoproxil fumarate/emtricitabine (TDF/FTC, brand name Truvada or generic equivalents) is the primary PrEP regimen. Jamaica, T&T, Barbados, and Guyana have launched national PrEP programmes targeting MSM, sex workers, and serodiscordant couples, though uptake remains low due to stigma, cost barriers, and limited awareness."
+    },
+    {
+      "body": "Across all CARICOM nations, traditional 'bush medicine' use is deeply embedded in cultural practice and rarely disclosed to healthcare providers. Cerasee (Momordica charantia), widely consumed as a bitter tea for 'cleaning the blood' and managing diabetes, has hypoglycaemic and hepatic enzyme-modulating properties that can interact with protease inhibitors (e.g., atazanavir, lopinavir/ritonavir) and NNRTIs metabolised by CYP3A4. Soursop (Annona muricata) leaf tea, used as a sedative and claimed anticancer remedy, has CNS depressant activity that may potentiate efavirenz-related neuropsychiatric side effects. Cat's claw (Uncaria tomentosa), popular in Belize and Guyana, has immunomodulatory effects of unknown consequence in HIV. Pharmacy technicians MUST routinely ask PLHIV about bush tea and herbal use at every refill encounter — phrase it normalisingly: 'Many of our patients also use bush teas — are you taking any alongside your medication?'",
+      "type": "callout",
+      "title": "Traditional Medicine, Bush Remedies, and ARV Interactions",
+      "variant": "warning"
+    },
+    {
+      "body": "Poverty and migration create additional structural barriers. In Guyana, interior Amerindian communities may be days of river travel from the nearest pharmacy stocking ARVs — the Georgetown Public Hospital Corporation is the primary ARV distribution hub, leaving hinterland regions vulnerable to treatment interruption. Inter-island migration, particularly of Guyanese and Jamaican nationals to Trinidad and Barbados for work, creates challenges for treatment continuity: patients may arrive without medical records, with unfamiliar generic ARV brands, or with expired supplies. The CARICOM Single Market and Economy (CSME) framework facilitates labour mobility but has no harmonised mechanism for ARV prescription transfer. Belize faces unique challenges with cross-border migration from Guatemala and Honduras, where different ARV regimens and Spanish-language prescriptions require technicians with multilingual and cross-formulary competence.",
+      "type": "text"
+    },
+    {
+      "body": "Religious institutions exert significant influence across the Caribbean and produce contradictory effects on the HIV response. Many faith-based organisations operate the only healthcare facilities in rural and underserved areas — for example, the Catholic Diocese in Georgetown, Guyana, runs clinics providing ARV adherence support. However, religious opposition to condom distribution, condemnation of homosexuality, and promotion of abstinence-only messaging directly undermine evidence-based prevention strategies. In Jamaica, major church denominations publicly opposed condom distribution in schools during the 2018 National Family Planning Board campaign. Pharmacy technicians should be aware that patients from strongly religious backgrounds may express moral conflict about taking ARVs (associating them with 'sinful' behaviour), may refuse PrEP, or may interrupt treatment during faith-healing periods — all of which require sensitive, non-judgemental counselling reinforcement.",
+      "type": "text"
+    },
+    {
+      "type": "video-placeholder",
+      "title": "Confidentiality, Stigma, and the Pharmacy Counter: Real Scenarios from Caribbean Pharmacies",
+      "duration": "16 min",
+      "description": "A panel of pharmacy technicians from Kingston (Jamaica), Port of Spain (T&T), and Georgetown (Guyana) share real-world experiences managing HIV-related stigma at the dispensary counter. Scenarios include: a patient requesting their ARVs be placed in an unmarked bag, a family member attempting to access a patient's prescription information, a prescriber writing 'multivitamins' as a coded euphemism for ARVs, and a patient disclosing concurrent cerasee use with their dolutegravir-based regimen. The panel discusses confidentiality obligations under their respective national Pharmacy Acts and PANCAP's rights-based framework for PLHIV."
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 35
+}

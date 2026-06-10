@@ -1,0 +1,41 @@
+{
+  "id": "038687e0-0334-4283-9b7c-8660825224d3",
+  "module_id": "adae9980-53f6-4adf-99ec-d7bf5536faad",
+  "title": "Introduction to Pharmaceutical Calculations",
+  "content": [
+    {
+      "text": "Introduction to Pharmaceutical Calculations",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "As a pharmacy technician in the Caribbean, accurate pharmaceutical calculations are essential for safe medication dispensing. From converting between metric and imperial units, to determining appropriate doses and concentrations, a strong grasp of math skills is critical to preventing medication errors that could harm patients. In this lesson, we'll cover the fundamentals of pharmaceutical calculations and how they apply in the diverse Caribbean healthcare setting.",
+      "type": "text"
+    },
+    {
+      "body": "While the core principles of pharmaceutical math are universal, there are important regional differences across the Caribbean to be aware of. For example, Jamaica, Barbados, and Guyana primarily use the metric system, while Belize, Antigua, and St. Lucia see a mix of metric and imperial units on prescriptions. Technicians must be adept at quickly converting between the two to avoid potentially dangerous dosing mistakes.",
+      "type": "callout",
+      "title": "Regional Variation in Pharmaceutical Calculations",
+      "variant": "info"
+    },
+    {
+      "term": "Pharmaceutical Calculations",
+      "type": "key-term",
+      "definition": "The mathematical formulas and conversions used by pharmacy technicians and pharmacists to determine the correct amount of a medication to dispense, based on the prescribed dose, concentration, and volume. Accurate pharmaceutical calculations are essential for patient safety."
+    },
+    {
+      "body": "Many pharmacy technicians mistakenly believe they are strong in math, only to make critical errors when faced with the complexities of pharmaceutical calculations in a busy Caribbean pharmacy. Complacency about one's calculation abilities is a major contributor to medication mistakes. Technicians must remain vigilant, double-check their work, and ask for clarification whenever unsure.",
+      "type": "callout",
+      "title": "Overconfidence in Math Skills Can Lead to Errors",
+      "variant": "warning"
+    },
+    {
+      "type": "video-placeholder",
+      "title": "Pharmacy Technician Math Skills Assessment",
+      "duration": "20 min",
+      "description": "A skills assessment designed to evaluate a technician's readiness to perform accurate pharmaceutical calculations. Covers unit conversions, dosage formulations, and concentration determinations relevant to common Caribbean medications and disease states."
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 25
+}

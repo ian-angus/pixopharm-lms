@@ -1,0 +1,23 @@
+{
+  "id": "2a1d453f-15d4-495e-8fb1-a27ca1048511",
+  "title": "OTC Medications & Health Advice Boundaries",
+  "slug": "otc-medications-health-advice",
+  "description": "Patients regularly ask pharmacy technicians for advice on over-the-counter products — and knowing what you can appropriately recommend versus when you must refer to the pharmacist is critical for patient safety.",
+  "skill_level": "Intermediate",
+  "duration_weeks": 5,
+  "icon": "ShoppingBag",
+  "color": "orange",
+  "prerequisites": [
+    "foundations-pharmacy-practice",
+    "anatomy-physiology-medical-terminology"
+  ],
+  "what_youll_learn": [
+    "Identify the legal boundary between technician OTC advice and pharmacist-required consultation",
+    "Recommend appropriate OTC products for minor ailments using a structured assessment framework",
+    "Advise on potential interactions between OTC medications, herbal remedies, and prescription drugs",
+    "Recognise red flag symptoms that require immediate referral to the pharmacist or emergency care",
+    "Discuss the safety profile of common herbal and natural remedies used in the Caribbean"
+  ],
+  "status": "published",
+  "order": 9
+}

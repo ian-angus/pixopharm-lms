@@ -1,0 +1,56 @@
+[
+  {
+    "id": "e81f40d8-14f0-401e-91e7-c7eca4354583",
+    "module_id": "61807b4f-e9bb-42cd-974b-e2b35e86f821",
+    "question": "A patient in a Port of Spain, Trinidad pharmacy asks about using cerasee (Momordica charantia) to help manage their type 2 diabetes. What should the pharmacy technician advise?",
+    "options": [
+      "Cerasee is a safe, natural alternative to pharmaceutical diabetes medications and the patient should discontinue their prescribed treatment.",
+      "Cerasee may interact with the patient's diabetes medication, potentially leading to dangerously low blood sugar levels. The patient should consult their doctor before using it.",
+      "Cerasee is commonly used in Trinidad to manage diabetes, and the pharmacy technician can provide dosing instructions for the patient to use alongside their prescribed treatment.",
+      "Cerasee is not recommended for diabetes management and the patient should rely solely on their prescribed antidiabetic drugs."
+    ],
+    "correct_answer": 1,
+    "explanation": "Cerasee (Momordica charantia) is a common traditional medicine used in Trinidad & Tobago for diabetes management. However, it can lower blood glucose levels, increasing the risk of hypoglycemia when combined with antidiabetic drugs like metformin. The pharmacy technician should advise the patient to consult their doctor before using cerasee, to ensure safe integration with their prescribed treatment.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": {},
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "633e332d-245f-4865-89d4-108014399f4f",
+    "module_id": "61807b4f-e9bb-42cd-974b-e2b35e86f821",
+    "question": "A patient in a Belize City pharmacy discloses that they are using chaya leaves to help manage their hypertension, in addition to their prescribed ACE inhibitor medication. What is the best course of action for the pharmacy technician?",
+    "options": [
+      "Recommend the patient discontinue the chaya leaves, as herbal remedies are not scientifically proven to be effective for hypertension.",
+      "Advise the patient that chaya leaves can have diuretic effects, potentially reducing the efficacy of their ACE inhibitor. Suggest they consult their doctor before combining the treatments.",
+      "Provide the patient with information on the traditional uses of chaya, and encourage them to continue using it alongside their prescribed antihypertensive medication.",
+      "Explain that the pharmacy cannot provide any guidance on traditional medicines, as they are outside the scope of practice for pharmacy technicians."
+    ],
+    "correct_answer": 1,
+    "explanation": "Chaya leaves are a traditional Mestizo remedy used in Belize for hypertension management. However, their diuretic properties can impact the efficacy of ACE inhibitor medications, potentially reducing blood pressure control. The pharmacy technician should advise the patient to consult their doctor before combining the chaya leaves and their prescribed antihypertensive drug, to ensure safe integration of the treatments.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": {},
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "daf8cdb2-2a82-457f-8c85-1e49f92e0e1b",
+    "module_id": "61807b4f-e9bb-42cd-974b-e2b35e86f821",
+    "question": "A patient in a Bridgetown, Barbados pharmacy asks about using soursop leaf (Annona muricata) to help manage their chronic pain. What should the pharmacy technician consider when providing guidance?",
+    "options": [
+      "Soursop leaf is a safe, natural pain reliever that the patient can use without any concerns, as it is widely consumed in Barbados.",
+      "Soursop leaf contains compounds that may interact with central nervous system medications, potentially increasing side effects. The technician should advise the patient to discuss this with their doctor.",
+      "Soursop leaf is not recommended for chronic pain management, and the patient should rely solely on their prescribed pharmaceutical analgesics.",
+      "As a pharmacy technician, the best response is to refrain from providing any guidance on the use of soursop leaf, as it is a traditional medicine outside the scope of practice."
+    ],
+    "correct_answer": 1,
+    "explanation": "Soursop leaf (Annona muricata) is a common traditional remedy used in Barbados, including for chronic pain management. However, soursop contains compounds that may interact with central nervous system medications, potentially heightening side effects. The pharmacy technician should advise the patient to discuss the use of soursop leaf with their doctor, to ensure safe integration with any prescribed analgesics or other CNS drugs.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": {},
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  }
+]

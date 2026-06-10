@@ -1,0 +1,22 @@
+{
+  "id": "1a7d2800-a853-476d-85d0-b622390b5f56",
+  "title": "Inventory Management, Storage, Cold Chain & Supply Chain",
+  "slug": "inventory-management-supply-chain",
+  "description": "This course covers the full pharmaceutical supply chain from manufacturer to patient, with particular attention to the challenges unique to island-based pharmacy practice: irregular shipping, tropical climate storage, and cold chain requirements.",
+  "skill_level": "Intermediate",
+  "duration_weeks": 6,
+  "icon": "Package",
+  "color": "green",
+  "prerequisites": [
+    "dispensing-medication-management"
+  ],
+  "what_youll_learn": [
+    "Apply FEFO and FIFO stock rotation to minimise pharmaceutical waste from expiry",
+    "Manage cold chain storage for temperature-sensitive medications in tropical conditions",
+    "Maintain controlled substance stock registers and perform reconciliation audits",
+    "Calculate reorder points and economic order quantities for a community pharmacy",
+    "Identify and manage pharmaceutical shortages using alternative sourcing strategies"
+  ],
+  "status": "published",
+  "order": 15
+}

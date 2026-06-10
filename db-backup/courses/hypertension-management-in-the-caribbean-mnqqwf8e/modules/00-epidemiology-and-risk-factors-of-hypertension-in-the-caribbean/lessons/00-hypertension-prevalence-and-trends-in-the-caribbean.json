@@ -1,0 +1,39 @@
+{
+  "id": "c2be3971-cce7-4bfd-bc56-1873c621067d",
+  "module_id": "b748e281-c296-4ef0-ba67-d38f2592efcf",
+  "title": "Hypertension Prevalence and Trends in the Caribbean",
+  "content": [
+    {
+      "text": "The Caribbean's Hypertension Epidemic",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "The Caribbean region experiences an exceptionally high prevalence of hypertension, with some nations recording rates among the highest globally. Jamaica, Trinidad and Tobago, and Barbados all have adult hypertension rates exceeding 25%, well above the worldwide average. This cardiovascular disease burden poses a major challenge to Caribbean healthcare systems, contributing to increased hospitalizations, long-term disabilities, and premature mortality.",
+      "type": "text"
+    },
+    {
+      "body": "Jamaica: 30% of adults | Trinidad and Tobago: 27% of adults | Barbados: 26% of adults | Guyana: 23% of adults | Belize: 19% of adults | St. Lucia: 28% of adults",
+      "type": "callout",
+      "title": "Hypertension Rates in Select Caribbean Islands",
+      "variant": "info"
+    },
+    {
+      "body": "Hypertension prevalence has been steadily rising across the Caribbean over recent decades, largely driven by rapid urbanization, sedentary lifestyles, and increasing obesity rates. As the population ages, the burden is expected to grow further, straining health systems already stretched by human resource shortages and supply chain challenges.",
+      "type": "text"
+    },
+    {
+      "body": "In Barbados, hypertension accounts for 30% of all public health expenditure. In Jamaica, it is the leading cause of admissions to public hospitals, contributing to long wait times and drug stockouts. Effective hypertension management is critical to reducing this economic burden across the Caribbean.",
+      "type": "callout",
+      "title": "Hypertension's Economic Impact",
+      "variant": "warning"
+    },
+    {
+      "term": "Uncontrolled Hypertension",
+      "type": "key-term",
+      "definition": "When blood pressure remains above the target range (BP ≥140/90 mmHg) despite medication. This is extremely common in the Caribbean, often due to poor medication adherence, lifestyle factors, and limited access to specialist care."
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 25
+}

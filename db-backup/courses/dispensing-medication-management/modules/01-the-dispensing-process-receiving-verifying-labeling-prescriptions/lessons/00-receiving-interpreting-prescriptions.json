@@ -70,7 +70,6 @@
         ]
       ],
       "type": "table",
-      "caption": "Required Prescription Elements Across Caribbean Jurisdictions",
       "headers": [
         "Element",
         "Description",
@@ -93,7 +92,7 @@
         "Greet the patient and accept the prescription courteously",
         "Perform an initial visual scan — is the prescription legible and complete?",
         "Check the date — is the prescription still valid?",
-        "Verify the prescriber — is the signature present and the registration number identifiable?",
+        "Verify the prescriber — is the signature present and the doctor's stamp/registration number identifiable?",
         "Confirm patient identity — does the name match and is the address provided?",
         "Check for controlled substance indicators — does the prescription require special handling?",
         "Inform the patient of the estimated wait time"

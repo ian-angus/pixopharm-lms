@@ -1,12 +1,12 @@
 {
   "id": "df2df2a3-5a9d-489e-8b9c-fdba7757445e",
-  "title": "Pharmaceutical Calculations & Dosage",
+  "title": "Pharmacy Calculations",
   "slug": "pharmaceutical-calculations-dosage",
   "description": "Master the mathematical skills that underpin safe and accurate pharmacy practice.",
-  "skill_level": "Beginner",
+  "skill_level": "Intermediate",
   "duration_weeks": 8,
   "icon": "Calculator",
-  "color": "emerald",
+  "color": "cyan",
   "prerequisites": [],
   "what_youll_learn": [
     "Perform accurate dosage calculations",
@@ -16,5 +16,5 @@
     "Apply alligation and dilution formulas"
   ],
   "status": "published",
-  "order": 2
+  "order": 10
 }

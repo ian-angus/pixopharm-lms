@@ -1,11 +1,11 @@
 {
   "id": "b61374ef-fe5b-4566-902d-ada60166fdf2",
-  "title": "Pharmacy Management & Leadership",
+  "title": "Leadership, Teamwork, Adaptability & Problem Solving",
   "slug": "pharmacy-management-leadership",
   "description": "Advance your career into supervisory and management roles in Caribbean pharmacy settings.",
   "skill_level": "Advanced",
   "duration_weeks": 5,
-  "icon": "Building2",
+  "icon": "Users",
   "color": "slate",
   "prerequisites": [
     "dispensing-medication-management",
@@ -19,5 +19,5 @@
     "Develop strategic plans"
   ],
   "status": "published",
-  "order": 12
+  "order": 25
 }

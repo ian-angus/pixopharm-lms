@@ -36,24 +36,6 @@
     "blooms_level": "remember"
   },
   {
-    "id": "2ec108b5-dc25-40b1-8c8a-62784d356cf5",
-    "module_id": "3f917344-bdd9-402c-b23b-c11f916aa57a",
-    "question": "Which organisation is responsible for coordinating the harmonisation of drug registration across CARICOM member states?",
-    "options": [
-      "Caribbean Association of Pharmacists (CAP)",
-      "Caribbean Regulatory System (CRS)",
-      "Pan American Health Organization (PAHO)",
-      "Caribbean Examination Council (CXC)"
-    ],
-    "correct_answer": 1,
-    "explanation": "The Caribbean Regulatory System (CRS) is a CARICOM initiative designed to harmonise drug registration across member states, enabling mutual recognition of approved medicines. While progress has been made, full harmonisation is still a work in progress.",
-    "order_index": 2,
-    "question_type": "multiple_choice",
-    "question_data": null,
-    "difficulty": "medium",
-    "blooms_level": "remember"
-  },
-  {
     "id": "2c38cdf3-6989-4c14-b6af-1e07e52fb6fe",
     "module_id": "3f917344-bdd9-402c-b23b-c11f916aa57a",
     "question": "What is a significant challenge unique to pharmacy practice in the Caribbean?",
@@ -88,5 +70,122 @@
     "question_data": null,
     "difficulty": "medium",
     "blooms_level": "remember"
+  },
+  {
+    "id": "77619e52-11e4-4cb9-9b38-7e5902f943fc",
+    "module_id": "3f917344-bdd9-402c-b23b-c11f916aa57a",
+    "question": "Which statement best reflects a culturally competent approach to traditional medicine in Caribbean pharmacy practice?",
+    "options": [
+      "Traditional medicine should always be dismissed because it has no place in modern healthcare",
+      "Patients should be discouraged from discussing bush medicine or spiritual healing practices",
+      "Pharmacists and technicians should understand traditional medicine use and encourage safe, open discussion with patients",
+      "Herbal remedies should automatically be considered safer than prescription medicines"
+    ],
+    "correct_answer": 2,
+    "explanation": "Traditional medicine, including bush medicine and other cultural healing practices, often coexists with modern pharmacy in the Caribbean. A culturally competent pharmacy professional should not dismiss these practices but should respectfully ask about them to identify possible interactions, safety concerns, or adherence issues",
+    "order_index": 99,
+    "question_type": "multiple_choice",
+    "question_data": {},
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "66804660-9de1-422c-8d10-7a81f35f3aaa",
+    "module_id": "3f917344-bdd9-402c-b23b-c11f916aa57a",
+    "question": "Why is the Ebers Papyrus significant in the history of pharmacy?",
+    "options": [
+      "It was the first pharmacy school textbook",
+      "It introduced modern prescription labelling",
+      "It contains over 800 prescriptions and remedies",
+      "It was written by medieval apothecaries"
+    ],
+    "correct_answer": 0,
+    "explanation": "The Ebers Papyrus, dating to approximately 1550 BCE, is significant because it contains over 800 prescriptions and remedies, making it one of the earliest known pharmaceutical documents.",
+    "order_index": 99,
+    "question_type": "multiple_choice",
+    "question_data": {},
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "ebb6f92b-c18e-4ff1-8c08-e27f3504c087",
+    "module_id": "3f917344-bdd9-402c-b23b-c11f916aa57a",
+    "question": "Which professional obligation is especially important because a single dispensing error can seriously harm a patient?",
+    "options": [
+      "Confidentiality",
+      "Accuracy",
+      "Cash handling",
+      "Marketing"
+    ],
+    "correct_answer": 1,
+    "explanation": "Accuracy is critical in pharmacy because even one dispensing error can lead to serious patient harm or death. This is why careful medication preparation, checking, and communication are essential parts of pharmacy practice.",
+    "order_index": 99,
+    "question_type": "multiple_choice",
+    "question_data": {},
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "3aa280e8-5112-47d7-9b9d-ebfa891cb6a8",
+    "module_id": "3f917344-bdd9-402c-b23b-c11f916aa57a",
+    "question": "Which task is most appropriate for a pharmacy technician under pharmacist supervision?",
+    "options": [
+      "Diagnosing a patient’s medical condition",
+      "Preparing, measuring, and labelling prescriptions",
+      "Independently approving all prescriptions",
+      "Prescribing OTCs"
+    ],
+    "correct_answer": 1,
+    "explanation": "Preparing, measuring, and labelling prescriptions -\nWhy this is correct: Pharmacy technicians are trained to support the technical and operational aspects of dispensing, such as preparing medications and labelling prescriptions, usually under the supervision of a pharmacist",
+    "order_index": 99,
+    "question_type": "multiple_choice",
+    "question_data": {},
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "62135137-38db-4d71-a8e2-7e3174e8675d",
+    "module_id": "3f917344-bdd9-402c-b23b-c11f916aa57a",
+    "question": "Pharmacies often serve as the first point of care for patients ",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "correct_answer": 0,
+    "explanation": "Due to accessibility, financial and logistical reasons, Pharmacies or Dispensaries serve as the most accessible point of healthcare contact in many communities",
+    "order_index": 99,
+    "question_type": "true_false",
+    "question_data": {
+      "correct_answer": true
+    },
+    "difficulty": "easy",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "dc5f1c50-cada-4a4d-84bc-c7386c9eb6b4",
+    "module_id": "3f917344-bdd9-402c-b23b-c11f916aa57a",
+    "question": "Why is professionalism important as a Pharmacy Technician?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "correct_answer": 0,
+    "explanation": "Pharmacy Technicians must maintain patient level of care",
+    "order_index": 99,
+    "question_type": "fill_in_blank",
+    "question_data": {
+      "acceptable_answers": [
+        "it is a profession with ethical obligations",
+        "there is a duty of care to every patient",
+        "conduct reflects on the entire pharmacy profession",
+        "interaction directly impact patient health outcomes"
+      ]
+    },
+    "difficulty": "hard",
+    "blooms_level": "apply"
   }
 ]

@@ -1,0 +1,45 @@
+{
+  "id": "1f2e71d6-635a-40c5-a7bf-1a3b5864d843",
+  "module_id": "70fdcafd-83a1-4bfa-92c7-4516f59ac8bc",
+  "title": "Interdisciplinary Collaboration in Respiratory Care",
+  "content": [
+    {
+      "text": "Caribbean Pharmacy Technicians and the Healthcare Team",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "As essential members of the interprofessional healthcare team, Caribbean pharmacy technicians collaborate closely with pharmacists, physicians, nurses, and respiratory therapists to optimize respiratory care. Their intimate knowledge of patients, medication management, and community health resources makes them invaluable partners in chronic disease management.",
+      "type": "text"
+    },
+    {
+      "body": "In Trinidad & Tobago and Barbados, technicians work under the direct supervision of pharmacists, who rely on them to identify medication-related problems, recommend therapy changes, and provide detailed patient progress updates. This shared accountability promotes superior outcomes, especially for high-risk conditions like asthma.",
+      "type": "callout",
+      "title": "Technician-Pharmacist Collaboration",
+      "variant": "info"
+    },
+    {
+      "term": "Referral Protocols",
+      "type": "key-term",
+      "definition": "Established criteria and procedures that guide when a Caribbean pharmacy technician must elevate a case to the supervising pharmacist or the patient's physician. These protocols ensure timely intervention for worsening symptoms, adverse drug events, or the need for more complex care."
+    },
+    {
+      "body": "Effective interdisciplinary collaboration also involves technicians identifying social and economic barriers to respiratory care, such as medication affordability, transportation challenges, or inadequate health literacy. They can then refer patients to community health workers, social services, or patient assistance programs to address these barriers and promote better outcomes.",
+      "type": "text"
+    },
+    {
+      "body": "In Guyana, pharmacy technicians collaborate with community health workers to deliver comprehensive respiratory care, including home visits, inhaler technique training, and adherence monitoring. This interdisciplinary approach has improved asthma control and reduced costly emergency department visits, especially in remote regions.",
+      "type": "callout",
+      "title": "Innovative Respiratory Care Models",
+      "variant": "info"
+    },
+    {
+      "type": "video-placeholder",
+      "title": "Interdisciplinary Asthma Rounds in Belize",
+      "duration": "16 min",
+      "description": "A pharmacy technician, respiratory therapist, and pediatrician at the Karl Heusner Memorial Hospital in Belize City conduct a joint patient consultation, demonstrating how they collectively manage complex pediatric asthma cases and coordinate ongoing care."
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 25
+}

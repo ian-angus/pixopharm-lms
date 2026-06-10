@@ -1,0 +1,38 @@
+[
+  {
+    "id": "733ef639-0679-4755-b651-c03b637c8742",
+    "module_id": "44d47223-8b80-44f3-ae1d-9accc5d31972",
+    "question": "A patient in Guyana discloses that they are taking cerasee (bitter melon) to manage their diabetes. What potential interaction should the pharmacy technician be aware of?",
+    "options": [
+      "Cerasee may interact with metformin, leading to an increased risk of hypoglycemia.",
+      "Cerasee may interact with insulin, leading to a decreased effectiveness of the medication.",
+      "Cerasee has no known interactions with diabetes medications.",
+      "Cerasee may interact with ACE inhibitors, leading to an increased risk of kidney problems."
+    ],
+    "correct_answer": 0,
+    "explanation": "Cerasee (bitter melon) is a common traditional remedy used in Guyana to manage diabetes. However, it can interact with metformin, a commonly prescribed diabetes medication, leading to an increased risk of hypoglycemia. Pharmacy technicians must be aware of this potential interaction to provide safe and effective care to patients.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": {},
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "f6ac0e1a-7e33-4e9e-8584-bdae8b30aa0e",
+    "module_id": "44d47223-8b80-44f3-ae1d-9accc5d31972",
+    "question": "A patient in Barbados is taking antiretroviral medications and discloses that they are also using soursop leaf as a traditional remedy. What should the pharmacy technician's primary concern be?",
+    "options": [
+      "Soursop leaf may interact with the patient's antiretroviral medications, leading to an increased risk of side effects.",
+      "Soursop leaf may reduce the effectiveness of the patient's antiretroviral medications.",
+      "Soursop leaf has no known interactions with antiretroviral medications.",
+      "Soursop leaf may interact with the patient's other medications, such as those for hypertension or diabetes."
+    ],
+    "correct_answer": 0,
+    "explanation": "Soursop leaf, a popular traditional remedy in Barbados, has been known to interact with central nervous system (CNS) medications, including some antiretroviral medications used to treat HIV. This interaction can lead to an increased risk of side effects and toxicity. Pharmacy technicians must be aware of this potential interaction to ensure the safe and effective use of both the traditional remedy and the antiretroviral medications.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": {},
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  }
+]

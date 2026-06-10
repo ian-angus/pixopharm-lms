@@ -1,0 +1,46 @@
+{
+  "id": "090ae970-2b6c-4c67-86e9-c31c064b34ee",
+  "module_id": "c72d66d2-0af1-4710-8943-2106fdad9e6d",
+  "title": "Procurement, Storage, and Distribution of Respiratory Drugs",
+  "content": [
+    {
+      "text": "Procurement, Storage, and Distribution Best Practices",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Effective management of the respiratory medication supply chain is critical for Caribbean pharmacy technicians. Robust procurement processes, temperature-controlled storage, and reliable distribution networks are essential to ensure patients receive the medications they need, when they need them. Technicians must be diligent in applying these best practices across the region.",
+      "type": "text"
+    },
+    {
+      "term": "Procurement Planning",
+      "type": "key-term",
+      "definition": "Technicians must proactively forecast demand for respiratory medications based on regional disease burden, seasonal variation, and historical usage data. Coordinating with suppliers, managing lead times, and strategically timing orders is crucial to prevent stock-outs, especially for smaller islands."
+    },
+    {
+      "body": "The CARICOM Regional Standard (CRS) provides guidelines for procurement, storage, and distribution of pharmaceutical products across the Caribbean. Technicians must ensure all respiratory medications meet CRS quality standards and are procured from approved regional or international suppliers.",
+      "type": "callout",
+      "title": "Adherence to CARICOM Regional Standards",
+      "variant": "info"
+    },
+    {
+      "body": "Proper temperature monitoring and cold chain management are essential for many respiratory medications, including inhalers, nebulizer solutions, and some oral bronchodilators. Technicians must vigilantly track storage conditions, maintain backup power, and implement FEFO/FIFO protocols to prevent drug degradation and ensure patient safety.",
+      "type": "callout",
+      "title": "Temperature Monitoring and Cold Chain Management",
+      "variant": "warning"
+    },
+    {
+      "term": "Reliable Distribution Networks",
+      "type": "key-term",
+      "definition": "Efficient distribution of respiratory medications is critical, especially for smaller Caribbean islands. Technicians must coordinate with regional cargo carriers, customs brokers, and local couriers to minimize transit times and ensure timely delivery to pharmacies and patients."
+    },
+    {
+      "type": "video-placeholder",
+      "title": "Respiratory Supply Chain Best Practices in Barbados",
+      "duration": "23 min",
+      "description": "The Director of Pharmacy Services at the Barbados Drug Service discusses how the national formulary, procurement protocols, and distribution strategies are optimized to reliably supply respiratory medications like salbutamol, ipratropium, and beclomethasone across the island."
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 25
+}

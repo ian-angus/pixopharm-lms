@@ -13,157 +13,1014 @@
       "type": "text"
     },
     {
+      "text": "List of Common Prescription Abbreviations",
+      "type": "heading",
+      "level": 2
+    },
+    {
       "rows": [
         [
-          "PO",
-          "Per os",
-          "By mouth"
+          "Abbreviation",
+          "Latin",
+          "Meaning",
+          "Category",
+          "Safety / Notes"
         ],
         [
-          "PRN",
-          "Pro re nata",
-          "As needed"
+          "aa",
+          "ana",
+          "of each",
+          "General instruction",
+          ""
         ],
         [
-          "BID / BD",
-          "Bis in die",
-          "Twice daily"
+          "ad",
+          "ad",
+          "up to",
+          "General instruction",
+          ""
         ],
         [
-          "TID / TDS",
-          "Ter in die / Ter die sumendus",
-          "Three times daily"
+          "a.c.",
+          "ante cibum",
+          "before meals",
+          "Timing / frequency",
+          ""
         ],
         [
-          "QID / QDS",
-          "Quater in die",
-          "Four times daily"
+          "a.d.",
+          "auris dextra",
+          "right ear",
+          "Body site / route",
+          ""
         ],
         [
-          "STAT",
-          "Statim",
-          "Immediately"
+          "ad lib.",
+          "ad libitum",
+          "use as much as one desires; freely",
+          "General instruction",
+          ""
         ],
         [
-          "AC",
-          "Ante cibum",
-          "Before meals"
+          "admov.",
+          "admove",
+          "apply",
+          "Prescription instruction",
+          ""
         ],
         [
-          "PC",
-          "Post cibum",
-          "After meals"
+          "agit",
+          "agita",
+          "stir/shake",
+          "Prescription instruction",
+          ""
         ],
         [
-          "HS",
-          "Hora somni",
-          "At bedtime"
+          "alt. h.",
+          "alternis horis",
+          "every other hour",
+          "Timing / frequency",
+          ""
         ],
         [
-          "Q4H",
-          "Quaque 4 hora",
-          "Every 4 hours"
+          "a.m.",
+          "Ante Meridiem",
+          "morning, before noon",
+          "Timing / frequency",
+          ""
         ],
         [
-          "OD",
-          "Omni die",
-          "Once daily"
+          "amp",
+          "",
+          "ampule",
+          "General instruction",
+          ""
         ],
         [
-          "SL",
-          "Sublingual",
-          "Under the tongue"
+          "amt",
+          "",
+          "amount",
+          "General instruction",
+          ""
         ],
         [
-          "PR",
-          "Per rectum",
-          "Rectally"
+          "aq",
+          "aqua",
+          "water",
+          "Dosage form / preparation",
+          ""
         ],
         [
-          "TOP",
-          "Topical",
-          "Applied to skin"
+          "a.l., a.s.",
+          "auris laeva, auris sinistra",
+          "left ear",
+          "Body site / route",
+          ""
         ],
         [
-          "INH",
-          "Inhalation",
-          "By inhaler"
+          "A.T.C.",
+          "",
+          "around the clock",
+          "Timing / frequency",
+          ""
         ],
         [
-          "SC / SubQ",
-          "Subcutaneous",
-          "Under the skin (injection)"
+          "a.u.",
+          "auris utraque",
+          "both ears",
+          "Body site / route",
+          "Potential for ambiguity; use clear wording where possible."
+        ],
+        [
+          "bis",
+          "bis",
+          "twice",
+          "Timing / frequency",
+          ""
+        ],
+        [
+          "b.d./b.i.d.",
+          "bis in die",
+          "twice daily",
+          "Timing / frequency",
+          ""
+        ],
+        [
+          "B.M.",
+          "",
+          "bowel movement",
+          "Clinical / patient information",
+          ""
+        ],
+        [
+          "bol.",
+          "bolus",
+          "as a large single dose (usually intravenously)",
+          "Route of administration",
+          "High-alert route; verify order and administration details."
+        ],
+        [
+          "B.S.",
+          "",
+          "blood sugar",
+          "Clinical / patient information",
+          ""
+        ],
+        [
+          "B.S.A",
+          "",
+          "body surface areas",
+          "Clinical / patient information",
+          ""
+        ],
+        [
+          "BUCC",
+          "",
+          "inside cheek",
+          "Route of administration",
+          ""
+        ],
+        [
+          "cap., caps.",
+          "capsula",
+          "capsule",
+          "Dosage form / preparation",
+          ""
+        ],
+        [
+          "c",
+          "cum",
+          "with (usually written with a bar on top of the \"c\")",
+          "General instruction",
+          "Potential for ambiguity; use clear wording where possible."
+        ],
+        [
+          "c",
+          "cibos",
+          "food",
+          "General instruction",
+          "Potential for ambiguity; use clear wording where possible."
+        ],
+        [
+          "cc",
+          "cum cibos",
+          "with food, but also cubic centimetre",
+          "General instruction",
+          "Potential for ambiguity; use clear wording where possible."
+        ],
+        [
+          "cf",
+          "",
+          "with food",
+          "General instruction",
+          ""
+        ],
+        [
+          "comp.",
+          "",
+          "compound",
+          "Prescription instruction",
+          ""
+        ],
+        [
+          "cr., crm",
+          "",
+          "cream",
+          "Dosage form / preparation",
+          ""
+        ],
+        [
+          "D5W",
+          "",
+          "dextrose 5% solution",
+          "Dosage form / preparation",
+          ""
+        ],
+        [
+          "D5NS",
+          "",
+          "dextrose 5% in normal saline (0.9%)",
+          "Dosage form / preparation",
+          ""
+        ],
+        [
+          "D.A.W.",
+          "",
+          "dispense as written",
+          "Prescription instruction",
+          ""
+        ],
+        [
+          "dc, D/C, disc",
+          "",
+          "discontinue",
+          "Prescription instruction",
+          ""
+        ],
+        [
+          "dieb. alt.",
+          "diebus alternis",
+          "every other day",
+          "Timing / frequency",
+          ""
+        ],
+        [
+          "dil.",
+          "",
+          "dilute",
+          "General instruction",
+          ""
+        ],
+        [
+          "disp.",
+          "",
+          "dispense",
+          "Prescription instruction",
+          ""
+        ],
+        [
+          "div.",
+          "",
+          "divide",
+          "General instruction",
+          ""
+        ],
+        [
+          "d.t.d.",
+          "dentur tales doses",
+          "give of such doses",
+          "Dose / quantity / measure",
+          ""
+        ],
+        [
+          "D.W.",
+          "",
+          "distilled water",
+          "Dosage form / preparation",
+          ""
+        ],
+        [
+          "elix.",
+          "",
+          "elixir",
+          "Dosage form / preparation",
+          ""
+        ],
+        [
+          "e.m.p.",
+          "ex modo prescripto",
+          "as directed",
+          "Prescription instruction",
+          ""
+        ],
+        [
+          "emuls.",
+          "emulsum",
+          "emulsion",
+          "Dosage form / preparation",
+          ""
+        ],
+        [
+          "et",
+          "et",
+          "and",
+          "General instruction",
+          ""
+        ],
+        [
+          "ex aq",
+          "ex aqua",
+          "in water",
+          "Dosage form / preparation",
+          ""
+        ],
+        [
+          "fl., fld.",
+          "",
+          "fluid",
+          "Dosage form / preparation",
+          ""
+        ],
+        [
+          "ft.",
+          "fiat",
+          "make; let it be made",
+          "Prescription instruction",
+          ""
+        ],
+        [
+          "g",
+          "",
+          "gram",
+          "Dose / quantity / measure",
+          ""
+        ],
+        [
+          "gr",
+          "",
+          "grain",
+          "Dose / quantity / measure",
+          ""
+        ],
+        [
+          "gtt(s)",
+          "gutta(e)",
+          "drop(s)",
+          "Dose / quantity / measure",
+          ""
+        ],
+        [
+          "H",
+          "",
+          "hypodermic",
+          "Route of administration",
+          ""
+        ],
+        [
+          "h, hr",
+          "hora",
+          "hour",
+          "Timing / frequency",
+          ""
+        ],
+        [
+          "h.s.",
+          "hora somni",
+          "at bedtime",
+          "Timing / frequency",
+          ""
+        ],
+        [
+          "ID",
+          "",
+          "intradermal",
+          "Route of administration",
+          ""
         ],
         [
           "IM",
-          "Intramuscular",
-          "Into the muscle (injection)"
+          "",
+          "intramuscular (with respect to injections)",
+          "Route of administration",
+          ""
+        ],
+        [
+          "inj.",
+          "injectio",
+          "injection",
+          "General instruction",
+          ""
+        ],
+        [
+          "IP",
+          "",
+          "intraperitoneal",
+          "Route of administration",
+          ""
         ],
         [
           "IV",
-          "Intravenous",
-          "Into the vein (injection)"
+          "",
+          "intravenous",
+          "Route of administration",
+          "High-alert route; verify order and administration details."
         ],
         [
-          "NKA",
-          "—",
-          "No known allergies"
+          "IVP",
+          "",
+          "intravenous push",
+          "Route of administration",
+          "High-alert route; verify order and administration details."
         ],
         [
-          "NKDA",
-          "—",
-          "No known drug allergies"
+          "IVPB",
+          "",
+          "intravenous piggyback",
+          "Route of administration",
+          "High-alert route; verify order and administration details."
+        ],
+        [
+          "L.A.S.",
+          "",
+          "label as such",
+          "Prescription instruction",
+          ""
+        ],
+        [
+          "LCD",
+          "",
+          "coal tar solution",
+          "Dosage form / preparation",
+          ""
+        ],
+        [
+          "lin",
+          "linimentum",
+          "liniment",
+          "Dosage form / preparation",
+          ""
+        ],
+        [
+          "liq",
+          "liquor",
+          "solution",
+          "Dosage form / preparation",
+          ""
+        ],
+        [
+          "lot.",
+          "",
+          "lotion",
+          "Dosage form / preparation",
+          ""
+        ],
+        [
+          "M.",
+          "misce",
+          "mix",
+          "Prescription instruction",
+          ""
+        ],
+        [
+          "m, min",
+          "minimum",
+          "a minimum",
+          "Dose / quantity / measure",
+          ""
+        ],
+        [
+          "mcg",
+          "",
+          "microgram",
+          "Dose / quantity / measure",
+          ""
+        ],
+        [
+          "m.d.u.",
+          "more dicto utendus",
+          "to be used as directed",
+          "Prescription instruction",
+          ""
+        ],
+        [
+          "mEq",
+          "",
+          "milliequivalent",
+          "Dose / quantity / measure",
+          ""
+        ],
+        [
+          "mg",
+          "",
+          "milligram",
+          "Dose / quantity / measure",
+          ""
+        ],
+        [
+          "mist.",
+          "mistura",
+          "mix",
+          "Prescription instruction",
+          ""
+        ],
+        [
+          "mitte",
+          "mitte",
+          "send",
+          "Prescription instruction",
+          ""
+        ],
+        [
+          "mL",
+          "",
+          "millilitre",
+          "Dose / quantity / measure",
+          ""
+        ],
+        [
+          "nebul",
+          "nebula",
+          "a spray",
+          "General instruction",
+          ""
+        ],
+        [
+          "N.M.T.",
+          "",
+          "not more than",
+          "Dose / quantity / measure",
+          ""
+        ],
+        [
+          "noct.",
+          "nocte",
+          "at night",
+          "Timing / frequency",
+          ""
+        ],
+        [
+          "non rep.",
+          "non repetatur",
+          "no repeats",
+          "Prescription instruction",
+          ""
+        ],
+        [
+          "NS",
+          "",
+          "normal saline (0.9%)",
+          "Dosage form / preparation",
+          ""
+        ],
+        [
+          "1/2NS",
+          "",
+          "half normal saline (0.45%)",
+          "Dose / quantity / measure",
+          ""
+        ],
+        [
+          "N.T.E.",
+          "",
+          "not to exceed",
+          "Dose / quantity / measure",
+          ""
+        ],
+        [
+          "o_2",
+          "",
+          "both eyes, sometimes written as o2",
+          "Body site / route",
+          "Potential for ambiguity; use clear wording where possible."
+        ],
+        [
+          "o.d.",
+          "oculus dexter",
+          "right eye",
+          "Body site / route",
+          ""
+        ],
+        [
+          "o.s.",
+          "oculus sinister",
+          "left eye",
+          "Body site / route",
+          ""
+        ],
+        [
+          "o.u.",
+          "oculus uterque",
+          "both eyes",
+          "Body site / route",
+          ""
+        ],
+        [
+          "oz",
+          "",
+          "ounce",
+          "Dose / quantity / measure",
+          ""
+        ],
+        [
+          "per",
+          "per",
+          "by or through",
+          "General instruction",
+          ""
+        ],
+        [
+          "p.c.",
+          "post cibum",
+          "after meals",
+          "Timing / frequency",
+          ""
+        ],
+        [
+          "p.m.",
+          "Post Meridiem",
+          "evening or afternoon",
+          "Timing / frequency",
+          ""
+        ],
+        [
+          "prn",
+          "pro re nata",
+          "as needed",
+          "General instruction",
+          ""
+        ],
+        [
+          "p.o.",
+          "per os",
+          "by mouth or orally",
+          "Route of administration",
+          ""
+        ],
+        [
+          "p.r.",
+          "",
+          "by rectum",
+          "General instruction",
+          ""
+        ],
+        [
+          "pulv.",
+          "pulvis",
+          "powder",
+          "Dosage form / preparation",
+          ""
+        ],
+        [
+          "q",
+          "quaque",
+          "every",
+          "Timing / frequency",
+          ""
+        ],
+        [
+          "q.a.d.",
+          "quoque alternis die",
+          "every other day",
+          "Timing / frequency",
+          ""
+        ],
+        [
+          "q.a.m.",
+          "quaque die ante meridiem",
+          "every day before noon",
+          "Timing / frequency",
+          ""
+        ],
+        [
+          "q.d.s.",
+          "quater die sumendus",
+          "four times a day",
+          "Timing / frequency",
+          ""
+        ],
+        [
+          "q.p.m.",
+          "quaque die post meridiem",
+          "every day after noon",
+          "Timing / frequency",
+          ""
+        ],
+        [
+          "q.h.",
+          "quaque hora",
+          "every hour",
+          "Timing / frequency",
+          ""
+        ],
+        [
+          "q.h.s.",
+          "quaque hora somni",
+          "every night at bedtime",
+          "Timing / frequency",
+          ""
+        ],
+        [
+          "q.1h",
+          "quaque 1 hora",
+          "every 1 hour; can replace \"1\" with other numbers",
+          "Timing / frequency",
+          ""
+        ],
+        [
+          "q.d.",
+          "quaque die",
+          "every day",
+          "Timing / frequency",
+          "Potential for ambiguity; use clear wording where possible."
+        ],
+        [
+          "q.i.d.",
+          "quater in die",
+          "four times a day",
+          "Timing / frequency",
+          ""
+        ],
+        [
+          "q.o.d.",
+          "",
+          "every other day",
+          "Timing / frequency",
+          "Potential for ambiguity; use clear wording where possible."
+        ],
+        [
+          "qqh",
+          "quater quaque hora",
+          "every four hours",
+          "Timing / frequency",
+          ""
+        ],
+        [
+          "q.s.",
+          "quantum sufficiat",
+          "a sufficient quantity",
+          "Dose / quantity / measure",
+          ""
+        ],
+        [
+          "QWK",
+          "",
+          "every week",
+          "Timing / frequency",
+          ""
+        ],
+        [
+          "R",
+          "",
+          "rectal",
+          "Route of administration",
+          ""
+        ],
+        [
+          "rep., rept.",
+          "repetatur",
+          "repeats",
+          "Prescription instruction",
+          ""
+        ],
+        [
+          "RL, R/L",
+          "",
+          "Ringer's lactate",
+          "Dosage form / preparation",
+          ""
+        ],
+        [
+          "s",
+          "sine",
+          "without (usually written with a bar on top of the \"s\")",
+          "General instruction",
+          "Potential for ambiguity; use clear wording where possible."
+        ],
+        [
+          "s.a.",
+          "secundum artum",
+          "use your judgement",
+          "Prescription instruction",
+          ""
+        ],
+        [
+          "SC, subc, subcut, subq, SQ",
+          "",
+          "subcutaneous",
+          "Route of administration",
+          ""
+        ],
+        [
+          "sig",
+          "",
+          "write on label",
+          "Prescription instruction",
+          ""
+        ],
+        [
+          "SL",
+          "",
+          "sublingually, under the tongue",
+          "Route of administration",
+          ""
+        ],
+        [
+          "sol",
+          "solutio",
+          "solution",
+          "Dosage form / preparation",
+          ""
+        ],
+        [
+          "s.o.s., si op. sit",
+          "si opus sit",
+          "if there is a need",
+          "General instruction",
+          ""
+        ],
+        [
+          "ss",
+          "semis",
+          "one half",
+          "Dose / quantity / measure",
+          ""
+        ],
+        [
+          "stat",
+          "statim",
+          "immediately",
+          "General instruction",
+          ""
+        ],
+        [
+          "supp",
+          "suppositorium",
+          "suppository",
+          "Dosage form / preparation",
+          ""
+        ],
+        [
+          "susp",
+          "",
+          "suspension",
+          "Dosage form / preparation",
+          ""
+        ],
+        [
+          "syr",
+          "syrupus",
+          "syrup",
+          "Dosage form / preparation",
+          ""
+        ],
+        [
+          "tab",
+          "tabella",
+          "tablet",
+          "Dosage form / preparation",
+          ""
+        ],
+        [
+          "tal., t",
+          "talus",
+          "such",
+          "General instruction",
+          ""
+        ],
+        [
+          "tbsp",
+          "",
+          "tablespoon",
+          "Dose / quantity / measure",
+          ""
+        ],
+        [
+          "troche",
+          "trochiscus",
+          "lozenge",
+          "Dosage form / preparation",
+          ""
+        ],
+        [
+          "tsp",
+          "",
+          "teaspoon",
+          "Dose / quantity / measure",
+          ""
+        ],
+        [
+          "t.i.d.",
+          "ter in die",
+          "three times a day",
+          "Timing / frequency",
+          ""
+        ],
+        [
+          "t.d.s.",
+          "ter die sumendum",
+          "three times a day",
+          "Timing / frequency",
+          ""
+        ],
+        [
+          "t.i.w.",
+          "",
+          "three times a week",
+          "Timing / frequency",
+          ""
+        ],
+        [
+          "top.",
+          "",
+          "topical",
+          "Route of administration",
+          ""
+        ],
+        [
+          "T.P.N.",
+          "",
+          "total parenteral nutrition",
+          "Dosage form / preparation",
+          ""
+        ],
+        [
+          "tr, tinc., tinct.",
+          "",
+          "tincture",
+          "General instruction",
+          ""
+        ],
+        [
+          "u.d., ut. dict.",
+          "ut dictum",
+          "as directed",
+          "Prescription instruction",
+          ""
+        ],
+        [
+          "ung.",
+          "unguentum",
+          "ointment",
+          "Dosage form / preparation",
+          ""
+        ],
+        [
+          "U.S.P.",
+          "",
+          "United States Pharmacopoeia",
+          "General instruction",
+          "Reference standard."
+        ],
+        [
+          "vag",
+          "",
+          "vaginally",
+          "Route of administration",
+          ""
+        ],
+        [
+          "w",
+          "",
+          "with",
+          "General instruction",
+          ""
+        ],
+        [
+          "w/o",
+          "",
+          "without",
+          "General instruction",
+          ""
+        ],
+        [
+          "X",
+          "",
+          "times",
+          "General instruction",
+          ""
+        ],
+        [
+          "Y.O.",
+          "",
+          "years old",
+          "Body site / route",
+          ""
         ]
       ],
       "type": "table",
-      "caption": "Essential Prescription Abbreviations",
       "headers": [
-        "Abbreviation",
-        "Latin Origin",
-        "English Meaning"
+        "",
+        "",
+        "",
+        "",
+        ""
       ]
     },
     {
-      "body": "The following abbreviations have been identified by ISMP (Institute for Safe Medication Practices) as error-prone and should NEVER be used: 'U' (write 'units'), 'IU' (write 'international units'), 'QD' (write 'daily' — easily confused with QID), 'QOD' (write 'every other day'), 'MS' (ambiguous: morphine sulfate or magnesium sulfate?), trailing zeros (write '1 mg' not '1.0 mg'), lack of leading zero (write '0.5 mg' not '.5 mg'). If you receive a prescription with these abbreviations, clarify with the prescriber before dispensing.",
+      "body": "To avoid ambiguity, the following abbreviations are not recommended:\na.u., a.s., a.d. - Latin for both, left and right ears; the \"a\" can be misread to be an\n\"o\" and interpreted to mean both, right or left eyes\nbt - intended to mean \"bedtime\", but can be misread as \"bid\" or twice daily.\nd/c - can mean \"discontinue\" or \"discharge\"\nh.s. - can mean half strength or \"hour of sleep\"\n IJ - intended to mean \"injection\", but can be misread as \"IV\"\n IN - intended to mean \"intranasal\", but can be misread as \"IM\" or \"IV\"\n IU - intended to mean \"international unit\", but can be misread as \"IV\" or \"10\"\n o.d., o.s., o.u. - the \"o\" can be misread as \"a\".\n o.d. - can mean \"once daily\" or \"right eye\".\n OJ - intended to mean \"orange juice\" but can be misread as \"OD\" or \"OS\"\n q4PM - intended to mean \"at 4 PM\", but can be misread as every 4 hours\n q.d., q1d - intended to mean \"every day\" but can be misread as \"q.i.d.\" or 4 times a\nday\n q.o.d. - meant \"every other day\" but the \"o\" can be interpreted as \".\" or \"i\" resulting\nin double or eight times the frequency\n SC - meant \"subcutaneaous\" but mistaken for \"SL\" for \"sublingual\"\n SQ - meant \"subcutaneaous\" but mistaken for \"5Q\" or 5 every dose\n'ss - intended to mean \"sliding scale\" or \"1/2\", but can be mistaken as \"55\"\n'SSI, SSRI - intended to mean \"sliding scale insulin\" or \"sliding scale regular insulin\",\nbut can be mistaken as \"strong solution of iodine\" or \"selective serotonin reuptake\ninhibitor\n T.I.W - meant 3 times a week but mistaken for twice a week\n U - meant \"units\" but mistaken for \"0\", \"4\" (so \"4U\" can become \"40\" and the \"U\" is\nassumed), or misread as \"cc\" when poorly written; conversely cc can be mistaken\nfor \"U\"\n μg - meant \"microgram\" but mistaken for \"mg\"; this 1000-fold error can cause\npotentially fatal misunderstandings\nNotice that SID or S.I.D. is not a recognized abbreviation and\nshould not be used.  \nIf you receive a prescription with these abbreviations, clarify with the prescriber before dispensing.",
       "type": "callout",
       "title": "Dangerous Abbreviations — Do Not Use",
-      "variant": "danger"
-    },
-    {
-      "type": "island-comparison",
-      "title": "Prescription Language Conventions",
-      "islands": [
-        {
-          "flag": "🇹🇹",
-          "name": "Trinidad & Tobago",
-          "details": [
-            "Prescriptions typically use British-style abbreviations (BD, TDS, QDS rather than BID, TID, QID)",
-            "Metric system is standard (milligrams, millilitres)",
-            "Prescriptions must be written in English",
-            "Electronic prescriptions are increasingly common in private practice"
-          ]
-        },
-        {
-          "flag": "🇯🇲",
-          "name": "Jamaica",
-          "details": [
-            "Mix of British and American abbreviation styles depending on where the prescriber trained",
-            "You may see both 'BD' and 'BID' for twice daily — always verify intent",
-            "Prescriptions must be written in English",
-            "Handwritten prescriptions remain common in public health facilities"
-          ]
-        },
-        {
-          "flag": "🇧🇧",
-          "name": "Barbados",
-          "details": [
-            "Predominantly British abbreviation conventions (BD, TDS, QDS)",
-            "The Barbados Drug Service standardises abbreviation usage in public facilities",
-            "Prescriptions from polyclinics follow a standardised format",
-            "Growing adoption of electronic prescriptions in private sector"
-          ]
-        }
-      ]
+      "variant": "warning"
     }
   ],
   "order_index": 1,

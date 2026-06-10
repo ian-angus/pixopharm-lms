@@ -1,0 +1,33 @@
+{
+  "id": "af1e495a-4c45-45e6-a5e7-6b5ca02476a4",
+  "module_id": "f5cb6320-8f42-4e30-bee8-8edf52fe2384",
+  "title": "Medication Management Challenges for Caribbean Pharmacy Technicians",
+  "content": [
+    {
+      "text": "Unique Challenges in Antiretroviral Therapy Management",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Caribbean pharmacy technicians face significant medication management challenges in providing antiretroviral therapy. Limited formularies, frequent stockouts, heat and humidity impacts on drug stability, and complex patient adherence barriers all contribute to the difficulty of ensuring reliable HIV treatment access.",
+      "type": "text"
+    },
+    {
+      "body": "Precise medication inventory management using FEFO/FIFO principles is critical to minimize waste and stock-outs, especially for temperature-sensitive antiretrovirals in the tropical Caribbean climate.",
+      "type": "callout",
+      "title": "Importance of Medication Tracking"
+    },
+    {
+      "term": "Medication Adherence Support",
+      "type": "key-term",
+      "definition": "Pharmacy technicians play a vital role in counseling patients on the importance of strict adherence to antiretroviral therapy, monitoring for side effects, and connecting patients to community-based support programs to improve long-term retention in care."
+    },
+    {
+      "body": "Many Caribbean patients on ARVs also have conditions like hypertension, diabetes, and mental health disorders, requiring careful medication management and monitoring for potential drug-drug interactions.",
+      "type": "callout",
+      "title": "Comorbidities and Drug Interactions"
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 25
+}

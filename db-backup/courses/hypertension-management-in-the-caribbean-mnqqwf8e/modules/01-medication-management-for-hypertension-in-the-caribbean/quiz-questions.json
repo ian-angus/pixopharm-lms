@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1b20f418-10b5-4d44-bc8b-724ff1d5e393",
+    "module_id": "2e4952b7-fabf-4ea7-8961-74fd44748262",
+    "question": "A technician at a pharmacy in Guyana needs to dispense an antihypertensive medication to a patient. Which of the following should the technician consider when determining the appropriate medication?",
+    "options": [
+      "The medication is listed in the Georgetown Public Hospital Corporation formulary",
+      "The medication is classified as a 'dangerous drug' under the Food & Drugs Act",
+      "The medication is approved for use in the Caribbean Pharmacopoeia",
+      "The medication is covered by the patient's private health insurance plan"
+    ],
+    "correct_answer": 0,
+    "explanation": "In Guyana, the pharmacy technician should primarily consider whether the antihypertensive medication is included in the national formulary maintained by the Georgetown Public Hospital Corporation. This formulary determines the medications approved for use and reimbursement within the public health system. The other options are not relevant to the regulatory landscape in Guyana.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": {},
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "d62cb77b-ed79-43b5-bfd3-fa3b123bcc3b",
+    "module_id": "2e4952b7-fabf-4ea7-8961-74fd44748262",
+    "question": "A pharmacy technician in Trinidad & Tobago is dispensing a patient's antihypertensive medication. The patient mentions they are also taking a traditional herbal remedy called soursop. What should the technician do in this situation?",
+    "options": [
+      "Inform the patient that traditional medicines are not allowed to be used with prescription drugs",
+      "Recommend the patient discontinue the soursop remedy to avoid any potential interactions",
+      "Document the concurrent use of soursop and counsel the patient on the risk of interactions",
+      "Contact the prescribing physician to request a different antihypertensive medication"
+    ],
+    "correct_answer": 2,
+    "explanation": "In Trinidad & Tobago, the pharmacy technician should document the patient's concurrent use of the traditional soursop remedy and counsel them on the potential for interactions with the prescribed antihypertensive medication. Soursop is a commonly used herbal remedy in the Caribbean that can interact with central nervous system drugs. The technician should not outright prohibit the use of traditional medicine, but rather educate the patient on the risks and the importance of disclosing all medication use to their healthcare providers.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": {},
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  }
+]

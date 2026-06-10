@@ -1,0 +1,23 @@
+{
+  "id": "78cbdf59-b291-4a05-ae99-c29eec18b8da",
+  "title": "Sterile & Nonsterile Compounding via Virtual Simulation",
+  "slug": "sterile-nonsterile-compounding-simulation",
+  "description": "Sterile compounding demands the highest technical standards in pharmacy practice. This advanced course uses virtual sterile room simulations to develop competence in IV admixture preparation, aseptic technique, gowning procedures, and cleanroom management.",
+  "skill_level": "Advanced",
+  "duration_weeks": 8,
+  "icon": "Microscope",
+  "color": "blue",
+  "prerequisites": [
+    "compounding-dosage-forms",
+    "pharmaceutical-calculations-dosage"
+  ],
+  "what_youll_learn": [
+    "Describe cleanroom classification standards and demonstrate correct gowning procedure in simulation",
+    "Prepare IV admixtures using aseptic technique in a virtual cleanroom environment",
+    "Calculate TPN component volumes and verify compatibility before preparation",
+    "Apply beyond-use dating rules for sterile and nonsterile preparations",
+    "Perform quality control checks appropriate to sterile compounding"
+  ],
+  "status": "published",
+  "order": 19
+}

@@ -1,0 +1,54 @@
+{
+  "id": "c0739ba0-12f0-489d-8339-ca2b892233f9",
+  "module_id": "6d18ebe8-35e0-4e2a-bffb-400240e5b0a2",
+  "title": "Diabetes Patient Counselling Strategies",
+  "content": [
+    {
+      "text": "Effective Counselling Strategies for Diabetes Patients in Caribbean Pharmacies",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "In the Caribbean, pharmacy technicians are often the first — and sometimes the only — healthcare professional a patient with diabetes interacts with on a regular basis. With patient-to-staff ratios in public sector pharmacies frequently exceeding 200:1 in facilities such as the Kingston Public Hospital in Jamaica or the Georgetown Public Hospital Corporation in Guyana, the counselling window may be extremely brief. Despite this, the few minutes spent during dispensing represent a critical opportunity to reinforce adherence, correct misconceptions, and detect early signs of complications. The counselling strategies taught here are designed for real-world Caribbean practice: high-volume, time-pressured, and serving patients who may have low health literacy, multilingual backgrounds, or deep-rooted reliance on traditional remedies.",
+      "type": "text"
+    },
+    {
+      "term": "Teach-Back Method",
+      "type": "key-term",
+      "definition": "A communication technique where the patient is asked to repeat back, in their own words, the instructions they were given — confirming understanding rather than assuming it. For example, after explaining metformin dosing to a patient at a Barbados polyclinic, you might say: 'Tell me in your own words when you will take this tablet and with what.'"
+    },
+    {
+      "body": "In Trinidad & Tobago, patients may speak Trinidadian Creole English and process medical terms differently from standard English. In Belize, many patients along the western and northern borders are primarily Spanish-speaking, requiring counselling in Spanish or Kriol. In Guyana, interior communities speak Amerindian languages and may have limited English literacy. In St. Lucia and Dominica, older patients may be most comfortable in Kwéyòl (French Creole). Never assume English fluency — ask the patient which language they prefer and adapt your counselling accordingly. Use pictorial aids and demonstration wherever possible.",
+      "type": "callout",
+      "title": "Language and Literacy Realities Across CARICOM",
+      "variant": "info"
+    },
+    {
+      "text": "The Three-Prime Counselling Framework for Time-Pressured Dispensing",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "The Three-Prime framework is a practical counselling structure suited to high-volume Caribbean pharmacy settings. Prime 1 — Purpose: State the drug name and what it does in one plain sentence (e.g., 'This is glibenclamide — it helps your body use sugar better so your blood sugar comes down'). Prime 2 — Process: Explain exactly how and when to take it, including food requirements (e.g., 'Take one tablet with your breakfast every morning — never take it on an empty stomach because it can drop your sugar dangerously low'). Prime 3 — Precautions: Highlight the single most important warning and one action step (e.g., 'If you feel shaky, sweaty, or dizzy, eat something sweet right away and tell someone — that means your sugar dropped too low'). This entire exchange can be completed in under two minutes and covers the essential safety information.",
+      "type": "text"
+    },
+    {
+      "body": "Glibenclamide (glyburide) remains on many Caribbean national formularies — including the Barbados Drug Service formulary, the Guyana Georgetown Public Hospital formulary, and the Jamaica Drug for the Elderly Programme list — despite international moves toward safer alternatives like gliclazide. Its long half-life and potent hypoglycaemic effect make hypoglycaemia counselling essential at every single dispensing encounter. Never assume the patient 'already knows' — reinforcement saves lives. If a patient reports recurrent hypoglycaemia, escalate to the pharmacist immediately for possible prescriber notification.",
+      "type": "callout",
+      "title": "Hypoglycaemia Counselling Is Non-Negotiable for Sulfonylureas",
+      "variant": "warning"
+    },
+    {
+      "body": "Beyond verbal counselling, written reinforcement dramatically improves adherence. In Jamaica, the National Health Fund chronic disease programme provides patient information leaflets with some medications, but these are not always available or current. In Trinidad & Tobago, the Chronic Disease Assistance Programme (CDAP) dispenses medications often with minimal written guidance due to volume pressures. The pharmacy technician can bridge this gap by using pre-prepared counselling cards — laminated single-page summaries with pictograms showing when to take each medication, what side effects to watch for, and when to seek urgent care. These cards can be reused across patients taking the same regimen and are especially valuable for patients with low literacy or visual learners.",
+      "type": "text"
+    },
+    {
+      "type": "video-placeholder",
+      "title": "Counselling a Newly Diagnosed Type 2 Diabetes Patient at a CDAP Pharmacy in Trinidad",
+      "duration": "16 min",
+      "description": "A pharmacy technician at a CDAP-enrolled community pharmacy in San Fernando demonstrates the Three-Prime counselling method with a 54-year-old patient newly started on metformin 500 mg BD and glibenclamide 5 mg OD. The video covers explaining both medications in plain Trinidadian English, demonstrating a blood glucose logbook, addressing the patient's concern that 'tablets will damage my kidneys,' and using the teach-back method to confirm understanding. A second segment shows the same technician handling a patient who primarily speaks Spanish, using a bilingual counselling card."
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 25
+}

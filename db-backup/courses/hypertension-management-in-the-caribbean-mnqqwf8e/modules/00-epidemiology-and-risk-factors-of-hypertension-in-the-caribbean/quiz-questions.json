@@ -1,0 +1,38 @@
+[
+  {
+    "id": "e37538ae-e071-4455-998c-a5bbd43fa620",
+    "module_id": "b748e281-c296-4ef0-ba67-d38f2592efcf",
+    "question": "A technician at a pharmacy in Barbados notices that a patient's hypertension medication has been changed from enalapril to lisinopril. Which of the following is the most likely reason for this switch?",
+    "options": [
+      "The patient's blood pressure is now better controlled on lisinopril.",
+      "Lisinopril is more affordable than enalapril in the Barbados national formulary.",
+      "Enalapril was recently placed on backorder due to supply chain issues in the Caribbean.",
+      "Lisinopril has fewer drug interactions with the patient's traditional herbal remedies."
+    ],
+    "correct_answer": 1,
+    "explanation": "In Barbados, the Barbados Drug Service national formulary determines which medications are subsidized and available through the public health system. The technician can infer that lisinopril is likely a more cost-effective option that has been prioritized over enalapril, which may not be included in the BDS formulary.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": {},
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "2ef9910c-e56b-4698-92c2-392d8a2dc5eb",
+    "module_id": "b748e281-c296-4ef0-ba67-d38f2592efcf",
+    "question": "A pharmacy technician in Jamaica is counseling a patient with newly diagnosed hypertension. The patient discloses that they have been taking the herbal remedy 'cerasee' (Momordica charantia) to try to lower their blood pressure. What is the appropriate next step the technician should take?",
+    "options": [
+      "Advise the patient to stop taking cerasee, as it can dangerously interact with hypertension medications.",
+      "Recommend the patient continue taking cerasee in addition to the prescribed antihypertensive medication.",
+      "Suggest the patient use cerasee instead of the prescribed medication, as it is a more natural treatment.",
+      "Document the patient's cerasee use in their medication profile but take no further action."
+    ],
+    "correct_answer": 0,
+    "explanation": "Cerasee (Momordica charantia) is a widely used traditional Caribbean remedy that can interact negatively with prescription antihypertensive drugs, potentially causing dangerously low blood pressure. The technician should advise the patient to stop taking cerasee and focus solely on the prescribed medication regimen to ensure safe and effective hypertension management.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": {},
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "id": "5d448fcc-0d16-4be4-8447-5c8cbd05062f",
+    "module_id": "2d5f70b7-45d1-49c0-bcae-3791443f1f2e",
+    "question": "A technician at a pharmacy in Trinidad and Tobago notices that a patient's prescription for an antihypertensive medication includes a warning about potential interactions with traditional herbal remedies. What should the technician do?",
+    "options": [
+      "Recommend that the patient discontinue the traditional remedy and only use the prescribed medication",
+      "Advise the patient to continue using the traditional remedy as it is a more natural treatment option",
+      "Ask the patient if they are using any traditional Caribbean herbs or remedies for their hypertension",
+      "Dispense the medication without further discussion, as the prescriber has already considered potential interactions"
+    ],
+    "correct_answer": 2,
+    "explanation": "The correct action is for the technician to ask the patient if they are using any traditional Caribbean herbs or remedies for their hypertension. This is because the prescription includes a warning about potential interactions, indicating that the prescriber is aware of the risk and wants the technician to assess the patient's use of traditional medicine. The technician should not recommend discontinuing the traditional remedy or assume the prescriber has addressed the issue, as open communication with the patient is crucial for identifying and managing any potential interactions.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": {},
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "6987a80f-51fd-4bd5-ac67-0b886d620d03",
+    "module_id": "2d5f70b7-45d1-49c0-bcae-3791443f1f2e",
+    "question": "A patient visiting a pharmacy in Belize discloses that they are using aloe vera and cashew bark to help manage their high blood pressure. What is the BEST approach for the pharmacy technician?",
+    "options": [
+      "Advise the patient to discontinue the traditional remedies, as they may interact with their prescribed antihypertensive medication",
+      "Provide the patient with information about the potential risks and benefits of using traditional and conventional hypertension treatments concurrently",
+      "Recommend that the patient consult their physician before making any changes to their hypertension management plan",
+      "Suggest that the patient switch to using only the traditional remedies, as they are more natural and safer than prescription drugs"
+    ],
+    "correct_answer": 1,
+    "explanation": "The correct approach is for the technician to advise the patient to discontinue the traditional remedies, as they may interact with the patient's prescribed antihypertensive medication. While the technician should provide balanced information about the potential risks and benefits of using traditional and conventional treatments concurrently, the priority in this case is to ensure the patient's safety by addressing the immediate interaction risk. The technician should not recommend that the patient switch to only using traditional remedies or consult their physician, as this could delay the necessary intervention to address the potential interaction.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": {},
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  }
+]

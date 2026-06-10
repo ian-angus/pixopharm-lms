@@ -1,0 +1,50 @@
+{
+  "id": "90d476c4-7d27-4f40-aebc-1c1db20a82e2",
+  "module_id": "2d5f70b7-45d1-49c0-bcae-3791443f1f2e",
+  "title": "Potential Interactions Between Traditional and Conventional Hypertension Treatments",
+  "content": [
+    {
+      "text": "Interactions Between Traditional and Conventional Hypertension Treatments",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Many patients in the Caribbean use traditional herbal remedies concurrently with prescribed antihypertensive medications, often without disclosing this to their healthcare providers. This can lead to potentially dangerous interactions that pharmacy technicians must be able to identify and manage.",
+      "type": "text"
+    },
+    {
+      "text": "Common Interaction Risks",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Some of the most well-documented interactions between traditional Caribbean herbs and conventional hypertension treatments include cerasee (Momordica charantia) with metformin, soursop (Annona muricata) with central nervous system (CNS) depressants, and fever grass (lemongrass) with diuretics. These interactions can result in additive or antagonistic effects, leading to suboptimal blood pressure control or adverse events.",
+      "type": "text"
+    },
+    {
+      "body": "The prevalence and types of traditional medicine use for hypertension can vary across the Caribbean. For example, in Jamaica, the use of bush tea is widespread, while in Barbados, soursop leaf is more commonly utilized. Pharmacy technicians must be familiar with the local traditional practices in their area to effectively screen for potential interactions.",
+      "type": "callout",
+      "title": "Regional Variations in Traditional Medicine Use",
+      "variant": "info"
+    },
+    {
+      "body": "Patients may be hesitant to disclose the use of traditional remedies to their healthcare providers due to cultural beliefs or concerns about judgment. Pharmacy technicians should proactively ask patients about any herbal or natural products they are using, as this information is crucial for identifying and managing potential interactions.",
+      "type": "callout",
+      "title": "Importance of Patient Disclosure",
+      "variant": "warning"
+    },
+    {
+      "term": "Herb-Drug Interaction",
+      "type": "key-term",
+      "definition": "An interaction that occurs when a traditional or herbal remedy is used in combination with a conventional medication. These interactions can lead to altered drug absorption, metabolism, or excretion, potentially resulting in reduced efficacy or increased adverse effects."
+    },
+    {
+      "type": "video-placeholder",
+      "title": "Identifying and Managing Herb-Drug Interactions in Barbados",
+      "duration": "15 min",
+      "description": "A video demonstration of a pharmacy technician in Bridgetown, Barbados, discussing strategies for eliciting information about traditional medicine use from patients and assessing potential interactions with prescribed antihypertensive drugs."
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 25
+}

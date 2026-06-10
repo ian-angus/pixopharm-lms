@@ -1,0 +1,56 @@
+[
+  {
+    "id": "7a41deff-d7f1-4b5d-ac03-806911baebc3",
+    "module_id": "e47529d5-4119-4119-b611-0bb0b6e78799",
+    "question": "A technician at a pharmacy in Jamaica is counseling a patient on the use of metformin. Which of the following statements about metformin is MOST accurate?",
+    "options": [
+      "Metformin is considered the safest first-line medication for type 2 diabetes in Jamaica and across the Caribbean, as per national treatment guidelines.",
+      "Metformin works by increasing insulin secretion, which can lead to an increased risk of hypoglycemia if dosed inappropriately.",
+      "Metformin is associated with a high risk of lactic acidosis, so it should be avoided in patients with renal impairment.",
+      "Metformin is typically dosed 500 mg twice daily, with a maximum dose of 3000 mg per day in the Caribbean region."
+    ],
+    "correct_answer": 0,
+    "explanation": "Metformin is considered the safest, most effective first-line medication for type 2 diabetes in Jamaica and across the CARICOM region, per national treatment guidelines. It works by reducing hepatic glucose production and increasing peripheral glucose uptake, without causing hypoglycemia. The typical starting dose is 500 mg once or twice daily, titrated up to a maximum of 2000 mg per day.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": {},
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "0a95d49e-6ca7-42c1-b585-a7ee1285e815",
+    "module_id": "e47529d5-4119-4119-b611-0bb0b6e78799",
+    "question": "A pharmacy technician in Trinidad & Tobago is dispensing a prescription for gliclazide, a sulfonylurea diabetes medication. Which of the following considerations is MOST important when counseling the patient?",
+    "options": [
+      "Gliclazide should be taken with food to minimize gastrointestinal side effects.",
+      "Gliclazide requires dose adjustments in patients with impaired renal function, common in Trinidad & Tobago due to high rates of hypertension and diabetes.",
+      "Gliclazide has a low risk of causing hypoglycemia, so patients can take it without closely monitoring their blood glucose levels.",
+      "Gliclazide is typically dosed 40-80 mg once or twice daily, with a maximum dose of 320 mg per day in Trinidad & Tobago."
+    ],
+    "correct_answer": 1,
+    "explanation": "Many antidiabetic drugs, including sulfonylureas like gliclazide, require dose reductions in patients with impaired kidney function, which is prevalent in Trinidad & Tobago due to high rates of hypertension and diabetes complications. Failure to adjust doses appropriately can lead to drug accumulation and increased risk of hypoglycemia. Properly counseling patients on the need for renal dose adjustments is critical when dispensing these medications in the Caribbean context.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": {},
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "29e8bd57-649d-4fc9-8f82-7e6ee80a397a",
+    "module_id": "e47529d5-4119-4119-b611-0bb0b6e78799",
+    "question": "A technician at a pharmacy in Guyana is preparing to dispense a prescription for a DPP-4 inhibitor medication. Which of the following is the MOST important consideration when counseling the patient?",
+    "options": [
+      "DPP-4 inhibitors like sitagliptin have a standard dose of 100 mg once daily, which should be taken with food.",
+      "DPP-4 inhibitors work by increasing circulating levels of the incretin hormones GLP-1 and GIP, enhancing insulin secretion.",
+      "DPP-4 inhibitors have a low risk of causing hypoglycemia, so patients can take them without closely monitoring their blood glucose levels.",
+      "DPP-4 inhibitors are not affected by renal impairment, which is common in Guyana due to high rates of diabetes complications."
+    ],
+    "correct_answer": 2,
+    "explanation": "DPP-4 inhibitors, such as sitagliptin, work by inhibiting the dipeptidyl peptidase-4 enzyme to increase circulating levels of the incretin hormones GLP-1 and GIP. This enhances insulin secretion and reduces glucagon production, helping to lower blood glucose without the hypoglycemia risk associated with other diabetes medications. This is an important consideration when counseling Caribbean patients on the use of DPP-4 inhibitors, as they can take them without the constant need for blood glucose monitoring.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": {},
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  }
+]

@@ -1,0 +1,56 @@
+[
+  {
+    "id": "7bd45af1-7b12-4c87-bf4c-542cafc5b3c3",
+    "module_id": "c72d66d2-0af1-4710-8943-2106fdad9e6d",
+    "question": "A technician at a pharmacy in Trinidad & Tobago notices that the temperature in the medication storage room has exceeded 35°C for several hours due to a power outage. What should the technician do?",
+    "options": [
+      "Discard all temperature-sensitive respiratory medications like albuterol inhalers and ipratropium nebules",
+      "Continue dispensing the medications, as they will likely still be effective despite the high temperatures",
+      "Transfer the respiratory medications to a temporary cooler with ice packs to maintain the proper storage temperature",
+      "Consult the pharmacy manager to determine if the affected medications can still be used"
+    ],
+    "correct_answer": 2,
+    "explanation": "The technician should transfer the respiratory medications to a temporary cooler with ice packs to maintain the proper storage temperature of 25-30°C. Allowing these temperature-sensitive products to remain above 35°C for an extended period risks degradation and loss of potency, which could lead to treatment failure for patients. Discarding all affected medications without an assessment would be an unnecessary waste, while continuing to dispense them could put patients at risk. The pharmacy manager should be consulted, but the technician's priority should be to preserve the integrity of the respiratory drugs.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": {},
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "634ec963-b3a7-461f-b611-5634d1215073",
+    "module_id": "c72d66d2-0af1-4710-8943-2106fdad9e6d",
+    "question": "A patient at a pharmacy in Grenada discloses that they have been taking cerasee (bitter melon) tea to help manage their asthma symptoms. What is the most appropriate action for the technician to take?",
+    "options": [
+      "Recommend the patient continue using the cerasee tea, as it is a natural and safe herbal remedy",
+      "Advise the patient to stop taking the cerasee tea immediately, as it can interact dangerously with their asthma medications",
+      "Suggest the patient speak to their prescribing doctor about incorporating the cerasee tea into their asthma treatment plan",
+      "Refill the patient's albuterol inhaler prescription and provide counseling on proper inhaler technique"
+    ],
+    "correct_answer": 2,
+    "explanation": "The technician should advise the patient to stop taking the cerasee tea immediately, as it is known to interact dangerously with medications used to treat asthma, such as metformin. Continuing to use the herbal remedy could lead to serious adverse effects like hypoglycemia. While natural remedies are commonly used in the Caribbean, the technician has a responsibility to prioritize patient safety by warning against potentially harmful interactions. Recommending the continued use of cerasee or deferring to the prescriber without addressing the risk would be inappropriate. The technician should also provide counseling on proper inhaler technique to ensure the patient is using their prescribed asthma medications correctly.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": {},
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "74f0fb62-5e1f-464a-b9cc-d7c307025d86",
+    "module_id": "c72d66d2-0af1-4710-8943-2106fdad9e6d",
+    "question": "A pharmacy in Belize is experiencing a shortage of albuterol inhalers due to a delay in the latest shipment from the Ministry of Health. What is the best course of action for the technician to take?",
+    "options": [
+      "Dispense the remaining albuterol inhalers on a first-come, first-served basis until the stock is depleted",
+      "Contact the Ministry of Health to expedite the delayed shipment and request an emergency supply",
+      "Recommend that patients substitute oral bronchodilators like theophylline until the albuterol inhalers arrive",
+      "Advise patients to visit the nearest hospital emergency department to obtain albuterol inhalers"
+    ],
+    "correct_answer": 1,
+    "explanation": "The technician should contact the Ministry of Health to expedite the delayed shipment of albuterol inhalers and request an emergency supply. Depleting the remaining stock on a first-come, first-served basis would leave some patients without their essential rescue medication. Substituting oral bronchodilators may not provide the same rapid relief as inhalers, and advising patients to seek care at the hospital emergency department could be costly and disruptive. Proactively communicating with the Ministry of Health to resolve the supply chain issue is the most appropriate action to ensure uninterrupted access to albuterol inhalers for patients in Belize.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": {},
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  }
+]

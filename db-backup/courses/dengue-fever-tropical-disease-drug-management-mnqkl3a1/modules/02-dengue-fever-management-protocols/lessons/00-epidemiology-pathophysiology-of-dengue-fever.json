@@ -1,0 +1,35 @@
+{
+  "id": "853b595f-d9cc-467a-95f5-bdc0f999797c",
+  "module_id": "6ab2a498-825d-478e-93bf-4088ab80251e",
+  "title": "Epidemiology & Pathophysiology of Dengue Fever",
+  "content": [
+    {
+      "text": "Dengue Fever in the Caribbean",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Dengue fever is a viral disease transmitted by Aedes aegypti and Aedes albopictus mosquitoes, which are endemic across the Caribbean region. All CARICOM member states report regular outbreaks, with the highest incidence in Barbados, Guyana, Belize, and Jamaica. Dengue poses a significant public health burden, with hundreds of thousands of cases annually and a case-fatality rate of up to 1% in severe cases.",
+      "type": "text"
+    },
+    {
+      "body": "In Trinidad and Tobago, dengue is a leading cause of pediatric hospitalization, with over 3,000 confirmed cases reported annually. Barbados experiences regular outbreaks, with the last major epidemic in 2020 causing over 5,000 cases. Guyana and Belize have the highest regional rates, classified as hyperendemic, with all four dengue serotypes circulating.",
+      "type": "callout",
+      "title": "Dengue Incidence Across the CARICOM Region",
+      "variant": "info"
+    },
+    {
+      "term": "Dengue Fever Pathophysiology",
+      "type": "key-term",
+      "definition": "Dengue is caused by four distinct serotypes of the Flavivirus genus (DENV-1 to DENV-4). Infection with one serotype confers lifelong immunity to that strain but increases the risk of more severe disease upon subsequent infection with a different serotype. Severe manifestations like dengue hemorrhagic fever and dengue shock syndrome are more likely with secondary heterologous infections."
+    },
+    {
+      "type": "video-placeholder",
+      "title": "Dengue Epidemiology in the Caribbean",
+      "duration": "10 min",
+      "description": "A regional epidemiologist from the Caribbean Public Health Agency (CARPHA) discusses dengue fever trends, serotype distribution, and risk factors across the CARICOM member states."
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 25
+}

@@ -1,0 +1,20 @@
+{
+  "id": "59e0c59f-d8d3-43a6-836a-5dcc236dc84d",
+  "title": "Pharmaceutical Calculations for Caribbean Pharmacy Technicians",
+  "slug": "pharmaceutical-calculations-for-caribbean-pharmacy-technicia-mnqlif69",
+  "description": "This course teaches Caribbean pharmacy technicians essential pharmaceutical calculations skills needed to serve patients across diverse CARICOM nations like Trinidad & Tobago, Jamaica, Barbados, Guyana, and Belize, where they often provide frontline chronic disease management.",
+  "skill_level": "Beginner",
+  "duration_weeks": 4,
+  "icon": "Pill",
+  "color": "amber",
+  "prerequisites": [],
+  "what_youll_learn": [
+    "Perform accurate dosage calculations for solid, liquid, and parenteral medications",
+    "Adjust drug concentrations and volumes for tropical storage conditions",
+    "Manage medication supply chain challenges like inter-island shipping delays",
+    "Identify herbal medicine interactions with common Caribbean chronic disease treatments",
+    "Apply relevant national drug schedules and formularies across the CARICOM region"
+  ],
+  "status": "draft",
+  "order": 999
+}

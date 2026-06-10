@@ -1,0 +1,56 @@
+[
+  {
+    "id": "dbd4177c-430e-4393-a07e-cad175d17693",
+    "module_id": "c0a2ba7e-e1a9-4739-a860-68be6bad219b",
+    "question": "A technician at a pharmacy in Trinidad & Tobago notices a patient exhibiting signs of respiratory distress, including wheezing and shortness of breath. Which of the following is the most appropriate initial action?",
+    "options": [
+      "Immediately administer the patient's own rescue inhaler",
+      "Recommend the patient take an antihistamine for suspected allergies",
+      "Advise the patient to go home and rest, as the symptoms will likely resolve on their own",
+      "Call emergency medical services and begin providing first aid support"
+    ],
+    "correct_answer": 3,
+    "explanation": "The correct response is to call emergency services and provide first aid support. Acute respiratory distress can be life-threatening and requires urgent medical attention. Administering the patient's own rescue inhaler or recommending antihistamines or rest would be inappropriate, as the technician cannot definitively determine the underlying cause of the symptoms. Pharmacy technicians in the Caribbean play a crucial role in recognizing and rapidly responding to respiratory emergencies.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": {},
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "4cdaeee2-aa5d-4614-a7f9-24f487f6751f",
+    "module_id": "c0a2ba7e-e1a9-4739-a860-68be6bad219b",
+    "question": "According to the information provided, which Caribbean country has the highest reported prevalence of asthma?",
+    "options": [
+      "Belize",
+      "Barbados",
+      "Guyana",
+      "Jamaica"
+    ],
+    "correct_answer": 1,
+    "explanation": "The correct answer is Barbados, which has an asthma prevalence rate of 12.1%, the highest among the Caribbean nations mentioned. Belize has the lowest reported prevalence at 4.3%, while Jamaica and Trinidad & Tobago both have rates over 10%. Recognizing the significant variation in asthma burden across the region is important for pharmacy technicians to provide context-appropriate care and education.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": {},
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "d4204692-3121-495c-932b-b2c562464e0a",
+    "module_id": "c0a2ba7e-e1a9-4739-a860-68be6bad219b",
+    "question": "A pharmacy technician in Guyana is counseling a patient with COPD on environmental factors that may exacerbate their condition. Which of the following would be the MOST relevant risk factor to discuss?",
+    "options": [
+      "Exposure to secondhand smoke",
+      "Tropical heat and humidity",
+      "Proximity to busy roadways",
+      "Consumption of traditional herbal remedies"
+    ],
+    "correct_answer": 0,
+    "explanation": "The correct answer is exposure to secondhand smoke. COPD is strongly linked to smoking, and secondhand smoke exposure is a major risk factor for exacerbations. While tropical climate, air pollution, and use of traditional medicines can also impact respiratory health, secondhand smoke is the most relevant environmental determinant for a COPD patient in this Caribbean context. Pharmacy technicians must be aware of the specific risk factors driving respiratory diseases across the region.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": {},
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  }
+]

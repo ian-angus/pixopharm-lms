@@ -1,0 +1,20 @@
+{
+  "id": "decfa615-e757-4876-a2f6-d140affa14cf",
+  "title": "Hypertension Management in the Caribbean",
+  "slug": "hypertension-management-in-the-caribbean-mnqqwf8e",
+  "description": "This course provides Caribbean pharmacy technicians with the essential knowledge and skills to effectively manage hypertension, a leading cause of morbidity and mortality across the region. Drawing insights from specific islands like Jamaica, Trinidad & Tobago, Barbados, Guyana, and Belize, the course explores the unique challenges and best practices in hypertension care within the Caribbean context.",
+  "skill_level": "Beginner",
+  "duration_weeks": 4,
+  "icon": "Stethoscope",
+  "color": "blue",
+  "prerequisites": [],
+  "what_youll_learn": [
+    "Identify the key factors contributing to the high prevalence of hypertension in the Caribbean region",
+    "Describe the drug scheduling and formulary differences across CARICOM nations and their impact on hypertension management",
+    "Develop strategies to address common supply chain challenges and ensure the consistent availability of antihypertensive medications",
+    "Recognize the potential interactions between traditional Caribbean herbal remedies and conventional hypertension treatments",
+    "Demonstrate effective patient education and counseling techniques to improve medication adherence and self-management of hypertension"
+  ],
+  "status": "draft",
+  "order": 999
+}

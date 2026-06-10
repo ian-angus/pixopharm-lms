@@ -1,0 +1,36 @@
+{
+  "id": "c24274b3-12f1-4de7-8e95-2157108c6d79",
+  "module_id": "c8589189-7c88-43dc-a87a-9ddc390b0194",
+  "title": "Integrating Pharmacological Vector Management",
+  "content": [
+    {
+      "text": "Recommending Effective Pharmacological Vector Control",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Pharmacy technicians play a vital role in guiding appropriate use of insecticides, larvicides, and other vector control products across the Caribbean. By evaluating the unique regional and national factors impacting their efficacy and safety, technicians can recommend evidence-based pharmacological strategies that align with Integrated Vector Management (IVM) principles.",
+      "type": "text"
+    },
+    {
+      "body": "In Belize, the Ministry of Health promotes a comprehensive IVM approach combining Bti larvicide, pyrethroid space spraying, and community education on source reduction. Jamaica's vector control programme relies more heavily on malathion ULV fogging due to Aedes resistance, supplemented with Bacillus sphaericus larvicide. Barbados utilizes a mix of deltamethrin, Bti, and biological control with Toxorhynchites mosquitoes.",
+      "type": "callout",
+      "title": "IVM Strategies Across CARICOM",
+      "variant": "info"
+    },
+    {
+      "body": "Many Caribbean communities use traditional bush medicine like lemongrass, neem, and cerasee as natural mosquito repellents. While these may have some efficacy, pharmacy technicians should caution patients about potential drug interactions, particularly with medications for chronic diseases like diabetes and hypertension that are common in the region.",
+      "type": "callout",
+      "title": "Considering Traditional Herbal Repellents",
+      "variant": "warning"
+    },
+    {
+      "type": "video-placeholder",
+      "title": "Integrated Vector Control in St. Lucia",
+      "duration": "16 min",
+      "description": "A panel discussion with public health officials in St. Lucia explores how they coordinate insecticide, larvicide, and community-based interventions to control mosquito-borne diseases, highlighting the role of pharmacy technicians in promoting evidence-based vector management."
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 25
+}

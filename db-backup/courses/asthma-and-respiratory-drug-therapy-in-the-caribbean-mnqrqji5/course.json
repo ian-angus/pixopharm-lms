@@ -1,0 +1,20 @@
+{
+  "id": "d45c0968-4a41-49cd-adcf-bb65a084722c",
+  "title": "Asthma and Respiratory Drug Therapy in the Caribbean",
+  "slug": "asthma-and-respiratory-drug-therapy-in-the-caribbean-mnqrqji5",
+  "description": "This 4-week course covers the management of asthma and respiratory conditions prevalent across the Caribbean, including Jamaica, Trinidad & Tobago, Barbados, Guyana, and Belize. It equips pharmacy technicians to provide effective drug therapy and education for patients in high-demand, resource-constrained clinical settings.",
+  "skill_level": "Beginner",
+  "duration_weeks": 4,
+  "icon": "Pill",
+  "color": "blue",
+  "prerequisites": [],
+  "what_youll_learn": [
+    "Classify common respiratory diseases and their epidemiology in the Caribbean region",
+    "Describe the mechanism of action, indications, and side effects of key asthma and COPD medications",
+    "Evaluate the role of pharmacy technicians in chronic respiratory disease management",
+    "Identify potential drug interactions with traditional Caribbean herbal remedies",
+    "Apply best practices for procurement, storage, and distribution of respiratory medications"
+  ],
+  "status": "published",
+  "order": 999
+}

@@ -1,0 +1,41 @@
+{
+  "id": "af16eb55-4a14-4dae-9400-a6ed3c08fbcd",
+  "module_id": "2e4952b7-fabf-4ea7-8961-74fd44748262",
+  "title": "Ensuring Consistent and Appropriate Medication Dispensing",
+  "content": [
+    {
+      "text": "Ensuring Consistent and Appropriate Medication Dispensing",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Caribbean pharmacy technicians play a crucial role in the consistent and appropriate dispensing of antihypertensive medications to patients. With high patient-to-staff ratios and managing chronic conditions like hypertension, technicians must be vigilant about medication safety and adherence.",
+      "type": "text"
+    },
+    {
+      "body": "In many Caribbean healthcare settings, pharmacy technicians are often the first point of contact for patients seeking hypertension medications. Technicians must be able to identify potential drug interactions, counsel patients on proper administration, and detect early signs of non-adherence to ensure optimal blood pressure control.",
+      "type": "callout",
+      "title": "Pharmacy Technician's Role in Hypertension Management",
+      "variant": "info"
+    },
+    {
+      "body": "The widespread use of herbal remedies like cerasee, soursop, and neem in the Caribbean poses a significant risk of interactions with prescribed antihypertensive medications. Pharmacy technicians must proactively ask patients about any concurrent use of traditional medicines and counsel them on the potential dangers.",
+      "type": "callout",
+      "title": "Traditional Medicine Interactions in the Caribbean",
+      "variant": "warning"
+    },
+    {
+      "term": "Medication Synchronization",
+      "type": "key-term",
+      "definition": "The practice of aligning a patient's refill dates for all their chronic medications, including antihypertensives, to improve adherence and reduce the risk of missed doses or early stock-outs. This is an essential strategy for Caribbean pharmacy technicians managing hypertension treatment."
+    },
+    {
+      "type": "video-placeholder",
+      "title": "Providing Hypertension Medication Counseling in the Caribbean",
+      "duration": "22 min",
+      "description": "A demonstration of a pharmacy technician in Barbados educating a patient on the proper use of their antihypertensive medications, identifying potential interactions with traditional remedies, and implementing a medication synchronization program."
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 25
+}

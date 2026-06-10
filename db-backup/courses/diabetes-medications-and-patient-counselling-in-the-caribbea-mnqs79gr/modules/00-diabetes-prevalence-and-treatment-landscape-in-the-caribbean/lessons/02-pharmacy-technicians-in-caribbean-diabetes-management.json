@@ -1,0 +1,54 @@
+{
+  "id": "64df57af-9a49-4672-9b88-42682fed2d05",
+  "module_id": "a1ae2113-883c-44e1-b6a1-74165ed6c924",
+  "title": "Pharmacy Technicians in Caribbean Diabetes Management",
+  "content": [
+    {
+      "text": "The Frontline Role of Pharmacy Technicians in Diabetes Care",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "In much of the Caribbean, pharmacy technicians serve as the first — and sometimes only — healthcare contact for patients managing chronic conditions like type 2 diabetes. Unlike health systems in North America or Europe where patients regularly access primary care physicians, many Caribbean patients visit a doctor only once or twice a year for prescription renewals but interact with their pharmacy team weekly or monthly when collecting medications. In rural Jamaica, remote parishes of Guyana's interior, and smaller islands like Dominica or St. Vincent and the Grenadines, the pharmacy technician may be the most accessible healthcare professional in the community. This reality places an extraordinary responsibility on technicians to go beyond simple dispensing and actively contribute to diabetes monitoring, medication adherence support, and patient education.",
+      "type": "text"
+    },
+    {
+      "body": "Caribbean pharmacies, particularly in public hospital settings like the Kingston Public Hospital in Jamaica, Georgetown Public Hospital in Guyana, and Port of Spain General Hospital in Trinidad, routinely serve hundreds of patients per day with extremely limited staff. A single pharmacist and two to three technicians may process 200–400 prescriptions daily. In this high-volume environment, technicians must be efficient yet vigilant — accurately counting metformin 500 mg tablets, verifying insulin types (regular vs NPH vs premixed), and counselling patients on administration, all under significant time pressure.",
+      "type": "callout",
+      "title": "Patient-to-Staff Ratios: A Caribbean Reality",
+      "variant": "info"
+    },
+    {
+      "term": "Medication Adherence",
+      "type": "key-term",
+      "definition": "The extent to which a patient takes medications as prescribed by their healthcare provider, including correct dose, frequency, timing, and duration. In the Caribbean diabetes context, non-adherence is a major problem — studies from Jamaica and Trinidad estimate that 40–60% of diabetic patients do not take their medications consistently, often due to cost, side effects, or reliance on traditional remedies like cerasee tea as substitutes."
+    },
+    {
+      "text": "Core Competencies for Diabetes-Related Dispensing",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Pharmacy technicians managing diabetes prescriptions must master several core competencies. First, accurate product identification is essential: distinguishing between metformin immediate-release and extended-release formulations, recognising different insulin types by brand and packaging (for example, Humulin R versus Humulin N versus Humulin 70/30), and verifying correct strengths of sulphonylureas such as glibenclamide 5 mg versus gliclazide 80 mg. Second, technicians must understand basic storage requirements — metformin tablets require storage below 30°C (challenging in tropical heat without air conditioning), while all insulin products require refrigeration at 2–8°C until opened, after which most pens may be stored at room temperature for up to 28 days. Third, technicians should be prepared to provide basic counselling: advising patients to take metformin with food to reduce gastrointestinal side effects, warning against alcohol use with sulphonylureas due to hypoglycaemia and disulfiram-like reactions, and demonstrating proper insulin injection technique when permitted by local scope of practice.",
+      "type": "text"
+    },
+    {
+      "body": "Insulin dispensing errors are among the most dangerous medication errors in pharmacy practice. Confusing rapid-acting insulin (insulin lispro/Humalog) with long-acting insulin (insulin glargine/Lantus), or dispensing the wrong concentration (U-100 versus U-500), can cause fatal hypoglycaemia. In Caribbean settings where multiple insulin brands from different international manufacturers may be stocked — including products from Novo Nordisk, Eli Lilly, and Sanofi — technicians must verify the exact product name, type, and concentration against the prescription before dispensing. Always use the TALL man lettering system and read labels aloud during the final check with the supervising pharmacist.",
+      "type": "callout",
+      "title": "Critical Safety Alert: Insulin Mix-Ups",
+      "variant": "warning"
+    },
+    {
+      "body": "Beyond dispensing, technicians play a vital role in screening for undisclosed traditional medicine use. Across the Caribbean, patients commonly use cerasee (Momordica charantia) tea, soursop leaf infusions, neem preparations, aloe vera juice, and various bush teas to manage blood sugar. While some of these have demonstrated modest hypoglycaemic properties in research studies — cerasee in particular has been studied at the University of the West Indies — they pose serious interaction risks when combined with prescribed medications. Cerasee combined with metformin or a sulphonylurea can potentiate hypoglycaemia, while soursop leaf has CNS-depressant properties that may interact with sedating medications sometimes co-prescribed in diabetic patients experiencing neuropathic pain. Technicians should be trained to ask non-judgmentally, 'Are you taking any bush teas, herbs, or home remedies alongside your medication?' and document any disclosures for pharmacist review.",
+      "type": "text"
+    },
+    {
+      "type": "video-placeholder",
+      "title": "A Day in the Life: Caribbean Pharmacy Technician Managing Diabetes Patients",
+      "duration": "7 min",
+      "description": "A realistic dramatisation following a pharmacy technician through a morning shift at a busy public pharmacy in San Fernando, Trinidad. Scenes include: receiving a prescription for metformin 850 mg and gliclazide 80 mg for a newly diagnosed patient, performing a cold chain temperature check on stored insulin, counselling a returning patient who admits to replacing her glibenclamide with cerasee tea for the past two weeks, and flagging a potential insulin mix-up (Humulin N prescribed but Humulin R pulled from shelf) during the pharmacist verification step. Each scenario ends with a brief on-screen explanation of the correct protocol."
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 25
+}

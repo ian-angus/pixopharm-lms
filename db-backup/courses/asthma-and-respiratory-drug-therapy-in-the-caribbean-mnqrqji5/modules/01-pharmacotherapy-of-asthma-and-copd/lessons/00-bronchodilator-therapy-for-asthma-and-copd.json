@@ -1,0 +1,56 @@
+{
+  "id": "1d5cdf44-811f-455e-89e9-007cb58f2d41",
+  "module_id": "bc05270a-daa6-4bcb-baf2-cd7f1e55c5da",
+  "title": "Bronchodilator Therapy for Asthma and COPD",
+  "content": [
+    {
+      "text": "Bronchodilator Therapy for Asthma and COPD",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Bronchodilators are the mainstay of treatment for asthma and chronic obstructive pulmonary disease (COPD) across the Caribbean region. These medications work by relaxing and dilating the airways, improving airflow and reducing symptoms like wheezing, shortness of breath, and cough. Common bronchodilators found in the CARICOM national formularies include salbutamol (albuterol), ipratropium, and theophylline.",
+      "type": "text"
+    },
+    {
+      "body": "In Jamaica and Barbados, salbutamol inhalers are the most widely available and prescribed bronchodilator. Ipratropium is less common. Theophylline tablets are found in the formularies of Guyana and Trinidad & Tobago, but are rarely used due to their narrow therapeutic index and risk of adverse effects.",
+      "type": "callout",
+      "title": "Bronchodilator Availability Varies Across CARICOM",
+      "variant": "info"
+    },
+    {
+      "text": "Mechanisms of Action",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Salbutamol and other short-acting beta-2 agonists (SABAs) work by binding to beta-2 receptors in airway smooth muscle, causing relaxation and bronchodilation. Ipratropium, an anticholinergic agent, blocks acetylcholine receptors to inhibit bronchoconstriction. Theophylline, a methylxanthine, has a more complex mechanism involving phosphodiesterase inhibition and adenosine receptor antagonism.",
+      "type": "text"
+    },
+    {
+      "body": "Salbutamol inhalers are typically dosed as 2-4 puffs every 4-6 hours as needed for symptom relief. In Belize and parts of Guyana, healthcare providers may recommend more frequent dosing of 1 puff every 2-3 hours due to the hot, humid climate exacerbating respiratory symptoms. Ipratropium is usually combined with a SABA for improved bronchodilation.",
+      "type": "callout",
+      "title": "Dosing Considerations in the Caribbean",
+      "variant": "info"
+    },
+    {
+      "body": "Theophylline has a narrow therapeutic index and requires close therapeutic drug monitoring, which is often unavailable in resource-limited Caribbean settings. As a result, its use has declined in favor of safer, more predictable bronchodilators like salbutamol and ipratropium, except in Guyana and Trinidad where it remains on the national formulary.",
+      "type": "callout",
+      "title": "Theophylline Use Declining Across CARICOM",
+      "variant": "warning"
+    },
+    {
+      "term": "Metered-Dose Inhaler (MDI)",
+      "type": "key-term",
+      "definition": "The most common delivery system for bronchodilators and other respiratory medications in the Caribbean. MDIs require proper inhalation technique to ensure medication reaches the lungs effectively."
+    },
+    {
+      "type": "video-placeholder",
+      "title": "Proper Inhaler Technique Demonstration",
+      "duration": "7 min",
+      "description": "A respiratory therapist at the University of the West Indies demonstrates the step-by-step process for using a metered-dose inhaler correctly, with common errors to avoid."
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 25
+}

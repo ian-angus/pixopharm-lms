@@ -1,0 +1,41 @@
+{
+  "id": "987b7890-3998-44a3-af24-3cd87ccdd75b",
+  "module_id": "6ab2a498-825d-478e-93bf-4088ab80251e",
+  "title": "Adapting Dengue Care to Caribbean Realities",
+  "content": [
+    {
+      "text": "Dengue Management Challenges in the Caribbean",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "While PAHO and national guidelines provide a consistent framework, implementing optimal dengue care in the Caribbean faces significant logistical challenges. Limited healthcare resources, high patient volumes, and fragmented health systems strain the ability to deliver evidence-based supportive management, especially during outbreaks. Pharmacy technicians play a crucial role in ensuring effective dengue treatment and prevention within these constraints.",
+      "type": "text"
+    },
+    {
+      "body": "In Guyana and Belize, frequent power outages and shortages of IV fluids and antiplatelet drugs hamper dengue management. Barbados and St. Lucia struggle with high patient-to-staff ratios during outbreaks, leading to delayed recognition of warning signs. Jamaica's geographically dispersed population complicates coordinating vector control efforts between the Ministry of Health and local municipalities.",
+      "type": "callout",
+      "title": "Dengue Care in Resource-Limited Settings",
+      "variant": "info"
+    },
+    {
+      "body": "Many Caribbean patients use herbal 'bush medicines' like cerasee (Momordica charantia) and soursop leaf to self-manage dengue symptoms. These traditional remedies can interact with prescribed medications, increasing bleeding risk or affecting the metabolism of antiplatelet drugs. Pharmacy technicians must proactively screen for use of these therapies and counsel patients on potential interactions.",
+      "type": "callout",
+      "title": "Drug Interactions with Traditional Remedies",
+      "variant": "warning"
+    },
+    {
+      "term": "Role of Pharmacy Technicians in Dengue Care",
+      "type": "key-term",
+      "definition": "Pharmacy technicians are often the first point of contact for patients seeking dengue treatment. Their responsibilities include accurately triaging suspected cases, dispensing supportive medications per PAHO guidelines, monitoring for complications, and providing patient education on prevention measures like vector control."
+    },
+    {
+      "type": "video-placeholder",
+      "title": "Dengue Management in a Rural Belize Pharmacy",
+      "duration": "15 min",
+      "description": "A pharmacy technician at a small community health center in Belmopan, Belize demonstrates how they adapt PAHO dengue protocols to their resource-limited setting, including managing interactions with local herbal remedies."
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 25
+}

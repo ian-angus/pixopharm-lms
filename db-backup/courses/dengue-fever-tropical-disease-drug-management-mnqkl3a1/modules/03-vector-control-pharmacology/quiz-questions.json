@@ -1,0 +1,56 @@
+[
+  {
+    "id": "8d5c8278-eafe-47dc-aaad-6697f788b960",
+    "module_id": "c8589189-7c88-43dc-a87a-9ddc390b0194",
+    "question": "A patient in a Port of Spain pharmacy asks about using lemongrass as a natural mosquito repellent. What is the BEST response?",
+    "options": [
+      "Lemongrass is a safe and effective natural alternative to chemical repellents.",
+      "Lemongrass may have some mosquito-repelling properties, but it can interact with certain medications.",
+      "Lemongrass is not recommended for mosquito control - you should use a registered insecticide product instead.",
+      "Lemongrass is not approved by the Pharmacy Board of Trinidad & Tobago for use as a mosquito repellent."
+    ],
+    "correct_answer": 1,
+    "explanation": "While traditional Caribbean bush medicines like lemongrass may have some efficacy as natural mosquito repellents, pharmacy technicians should caution patients about potential drug interactions, particularly with common chronic medications in the region.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": {},
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "9019b5db-6bd7-49e5-bd60-022bb15390fb",
+    "module_id": "c8589189-7c88-43dc-a87a-9ddc390b0194",
+    "question": "Which of the following is the primary larvicide used for mosquito control across CARICOM nations?",
+    "options": [
+      "Malathion",
+      "Permethrin",
+      "Bacillus thuringiensis israelensis (Bti)",
+      "Temephos"
+    ],
+    "correct_answer": 2,
+    "explanation": "Bacillus thuringiensis israelensis (Bti) is the primary larvicide used across the Caribbean region to target the immature mosquito life stages in breeding sites.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": {},
+    "difficulty": "easy",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "9d91ddab-14a8-46a5-a91e-4e103441c5fc",
+    "module_id": "c8589189-7c88-43dc-a87a-9ddc390b0194",
+    "question": "How do vector control product efficacy and regulations differ between Jamaica and Barbados?",
+    "options": [
+      "Jamaica relies more on organophosphate insecticides like malathion due to high Aedes aegypti resistance to pyrethroids, while Barbados can use more pyrethroid-based products.",
+      "Barbados has stricter regulations on the use of Bti larvicide compared to Jamaica, where it is more readily available.",
+      "Jamaica prohibits the use of pyrethroids for mosquito control, while Barbados allows unrestricted use of these insecticides.",
+      "There are no significant differences in vector control product efficacy or regulations between Jamaica and Barbados."
+    ],
+    "correct_answer": 0,
+    "explanation": "Jamaica has documented high levels of pyrethroid resistance in its Aedes aegypti populations, leading the Ministry of Health to favour organophosphate insecticides like malathion for fogging. In contrast, Barbados reports lower resistance, allowing more widespread use of pyrethroids like deltamethrin for adult mosquito control.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": {},
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  }
+]

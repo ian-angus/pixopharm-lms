@@ -1,0 +1,23 @@
+{
+  "id": "7b098142-5c50-43d5-af69-273ef21f8936",
+  "title": "Advanced Pharmacy Systems & Digital Workflow",
+  "slug": "advanced-pharmacy-systems-digital",
+  "description": "Modern pharmacy runs on digital systems. This course covers hospital and retail pharmacy information systems, electronic prescribing workflows, automated dispensing cabinets, barcode verification, and clinical decision support integration.",
+  "skill_level": "Advanced",
+  "duration_weeks": 5,
+  "icon": "Server",
+  "color": "cyan",
+  "prerequisites": [
+    "dispensing-medication-management",
+    "documentation-record-keeping"
+  ],
+  "what_youll_learn": [
+    "Navigate and operate a pharmacy information system including prescribing, dispensing, and stock modules",
+    "Manage automated dispensing cabinet workflows including restocking and discrepancy resolution",
+    "Configure and interpret clinical decision support alerts for drug interactions and contraindications",
+    "Execute downtime procedures to maintain safe dispensing when systems are unavailable",
+    "Explain the data quality requirements for safe pharmacy information system operation"
+  ],
+  "status": "published",
+  "order": 21
+}

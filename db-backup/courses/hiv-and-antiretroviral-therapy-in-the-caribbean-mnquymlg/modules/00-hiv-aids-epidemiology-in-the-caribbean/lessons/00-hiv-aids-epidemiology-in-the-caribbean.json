@@ -1,0 +1,54 @@
+{
+  "id": "f089020a-faec-470b-9788-21d3327e0fbe",
+  "module_id": "17386738-fa04-46e5-ac0b-06ccff3e05c9",
+  "title": "HIV/AIDS Epidemiology in the Caribbean",
+  "content": [
+    {
+      "text": "HIV/AIDS Epidemiology in the Caribbean: The Second Most Affected Region Globally",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "The Caribbean is the second most HIV-affected region in the world after sub-Saharan Africa, with an estimated adult prevalence of approximately 1.2–1.3% across CARICOM nations — roughly six times the global average. UNAIDS and CARPHA data consistently show that the epidemic is not uniformly distributed: Haiti bears the largest absolute burden with over half of all Caribbean cases, while The Bahamas, Belize, Guyana, Jamaica, Suriname, and Trinidad & Tobago carry the highest prevalence rates among English-speaking CARICOM states. Understanding these numbers is not an academic exercise for pharmacy technicians — it directly shapes what antiretroviral (ARV) stock you maintain, which opportunistic infection prophylaxis drugs are in constant demand, and how you counsel patients presenting with new prescriptions for tenofovir/emtricitabine/dolutegravir (TLD) fixed-dose combinations.",
+      "type": "text"
+    },
+    {
+      "body": "Jamaica: ~1.4% adult prevalence (~32,000 PLHIV); Trinidad & Tobago: ~0.9% (~11,000 PLHIV); Guyana: ~1.4% (~8,800 PLHIV); Belize: ~1.2% (~4,900 PLHIV); Barbados: ~1.1% (~2,700 PLHIV); St. Lucia: ~0.5% (~1,000 PLHIV); Smaller Eastern Caribbean states (SVG, Grenada, Dominica, Antigua) generally report lower absolute numbers but face severe per-capita resource constraints. These figures are widely considered underestimates because of stigma-driven underreporting and limited testing infrastructure on smaller islands.",
+      "type": "callout",
+      "title": "Island-by-Island HIV Prevalence Snapshot (UNAIDS/CARPHA Estimates)",
+      "variant": "info"
+    },
+    {
+      "term": "PLHIV (People Living with HIV)",
+      "type": "key-term",
+      "definition": "The preferred epidemiological and clinical term for individuals who are HIV-positive, used by UNAIDS, CARPHA, and Caribbean national HIV programmes. Example: Guyana's National AIDS Programme Secretariat (NAPS) tracks PLHIV across all ten administrative regions to allocate ARV supplies to regional hospitals and health centres."
+    },
+    {
+      "text": "Modes of Transmission and Key Populations in the Caribbean Context",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "In the Caribbean, heterosexual transmission accounts for the majority of new infections — estimated at 60–85% depending on the territory — distinguishing the region from North America and Europe where men who have sex with men (MSM) represent the primary mode. However, MSM prevalence is extraordinarily high across CARICOM: studies coordinated by PANCAP (Pan Caribbean Partnership Against HIV/AIDS) and the UWI HIV/AIDS Response Programme report HIV prevalence of 25–33% among MSM in Jamaica, approximately 20% in Trinidad & Tobago, and 18–20% in Guyana. Female sex workers, transgender women, incarcerated populations, and adolescent girls/young women also experience disproportionate burden. Crucially, 11 of 12 CARICOM member states still criminalise same-sex relations under colonial-era buggery laws, which drives MSM populations underground, away from testing and treatment, and creates a legal environment that directly worsens the epidemic.",
+      "type": "text"
+    },
+    {
+      "body": "Several Caribbean nations have achieved WHO validation or near-elimination of MTCT: Cuba was the first country globally to receive this validation in 2015, followed by regional progress in Jamaica, Barbados, and T&T through Option B+ (lifelong ART for all pregnant women regardless of CD4 count). However, Guyana and Belize still report MTCT rates above 2% in remote interior regions where antenatal ART coverage is incomplete. Pharmacy technicians in these settings must be vigilant about ensuring nevirapine syrup stock for neonatal prophylaxis and zidovudine (AZT) oral solution availability — stock-outs of paediatric ARV formulations remain a critical supply chain vulnerability.",
+      "type": "callout",
+      "title": "Mother-to-Child Transmission (MTCT) — Caribbean Progress and Gaps",
+      "variant": "warning"
+    },
+    {
+      "body": "The UNAIDS 95-95-95 targets (95% of PLHIV knowing their status, 95% of those on ART, and 95% of those virally suppressed) remain aspirational for most CARICOM nations. Jamaica's 2023 cascade shows approximately 81% diagnosed, 64% on ART, and 53% virally suppressed — revealing massive gaps especially between diagnosis and treatment initiation. Trinidad & Tobago and Barbados perform somewhat better, with ART coverage approaching 70–75%, partly due to stronger public pharmacy distribution networks. As a pharmacy technician, you sit at the critical juncture between ART supply and patient retention: every patient who collects their monthly ARV refill on time is one step closer to viral suppression, and every missed refill risks resistance development and onward transmission.",
+      "type": "text"
+    },
+    {
+      "type": "video-placeholder",
+      "title": "The Caribbean HIV Cascade: From Testing to Viral Suppression",
+      "duration": "12 min",
+      "description": "A CARPHA epidemiologist presents the HIV treatment cascade for Jamaica, T&T, Guyana, and Barbados using real national programme data, explaining where patients are lost at each step and the specific role pharmacy technicians play in ART adherence and retention. Includes footage from a public pharmacy dispensary at Kingston Public Hospital and the Queen Elizabeth Hospital in Bridgetown illustrating daily ARV dispensing workflows."
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 30
+}

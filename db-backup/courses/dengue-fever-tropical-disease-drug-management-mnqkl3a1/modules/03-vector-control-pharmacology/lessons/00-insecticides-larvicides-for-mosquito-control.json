@@ -1,0 +1,36 @@
+{
+  "id": "fd562acf-145a-4874-92c9-db45ecdf92af",
+  "module_id": "c8589189-7c88-43dc-a87a-9ddc390b0194",
+  "title": "Insecticides & Larvicides for Mosquito Control",
+  "content": [
+    {
+      "text": "Insecticides & Larvicides Used for Vector Control in the Caribbean",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Effective vector control is essential for managing mosquito-borne diseases like dengue fever, malaria, and Zika virus that are endemic across the Caribbean region. Pharmacological interventions focus on two key areas: insecticides to kill adult mosquitoes and larvicides to target the immature mosquito life stages in breeding sites. Understanding the pharmacology, efficacy, and safety profiles of these vector control products is crucial for pharmacy technicians working in CARICOM nations.",
+      "type": "text"
+    },
+    {
+      "body": "Pyrethroid insecticides like permethrin, deltamethrin, and cypermethrin are widely used for adult mosquito control across CARICOM. Organophosphates like malathion and temephos are also common, especially for ultra-low volume (ULV) fogging. Bacillus thuringiensis israelensis (Bti) is the primary larvicide, applied to standing water sources to kill mosquito larvae.",
+      "type": "callout",
+      "title": "Common Insecticides Used in the Caribbean",
+      "variant": "info"
+    },
+    {
+      "body": "Pyrethroids can be toxic to aquatic life and bees. Overuse has led to increasing insecticide resistance in many Caribbean mosquito populations. When applying pyrethroid insecticides, technicians must follow strict environmental safety protocols and monitor for signs of diminishing efficacy in their area.",
+      "type": "callout",
+      "title": "Cautions with Pyrethroid Insecticides",
+      "variant": "warning"
+    },
+    {
+      "type": "video-placeholder",
+      "title": "Vector Control Product Application in Guyana",
+      "duration": "11 min",
+      "description": "A public health pharmacist demonstrates the proper techniques for applying pyrethroid insecticides and Bti larvicide in a typical Guyanese community, highlighting safety considerations and reporting protocols."
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 25
+}

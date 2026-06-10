@@ -9,7 +9,7 @@
       "level": 2
     },
     {
-      "body": "Inventory management is the backbone of any pharmacy operation, but in the Caribbean it takes on an elevated importance. Unlike pharmacies in large mainland countries where overnight restocking from national warehouses is routine, Caribbean pharmacies face unique challenges: nearly all medications are imported, shipping schedules are irregular, hurricane seasons can disrupt supply chains for weeks, and the tropical climate demands careful storage. A stockout of a critical medication — insulin, antiretrovirals, antihypertensives — can be life-threatening when the next shipment is weeks away.",
+      "body": "Inventory management is the backbone of any pharmacy operation, but in the Caribbean it takes on an elevated importance. Unlike pharmacies in large mainland countries where overnight restocking from national warehouses is routine, Caribbean pharmacies face unique challenges: nearly all medications are imported, shipping schedules are irregular, hurricane seasons can disrupt supply chains for weeks, and the tropical climate demands careful storage. A stockout of a critical medication — insulin, asthma inhalers, antihypertensives — can be life-threatening when the next shipment is weeks away.",
       "type": "text"
     },
     {
@@ -45,18 +45,17 @@
           "Climate-controlled storage; temperature monitoring; shorter shelf cycles"
         ],
         [
-          "Limited warehouse space",
+          "Limited backstock space",
           "Cannot hold large buffer stock",
           "ABC analysis to prioritise essential items; just-in-time for fast movers"
         ],
         [
-          "Foreign exchange fluctuations",
+          "Foreign exchange fluctuations/availability",
           "Cost of imported medications varies with exchange rates",
           "Hedging strategies; negotiate fixed-price contracts with suppliers"
         ]
       ],
       "type": "table",
-      "caption": "Inventory Challenges Unique to Caribbean Pharmacies",
       "headers": [
         "Challenge",
         "Impact",

@@ -1,0 +1,35 @@
+{
+  "id": "260f287b-1b0c-407c-b6c8-84ba053adc99",
+  "module_id": "c8589189-7c88-43dc-a87a-9ddc390b0194",
+  "title": "Comparing Vector Control Products in CARICOM",
+  "content": [
+    {
+      "text": "Evaluating Vector Control Product Efficacy Across CARICOM",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "While the core insecticides and larvicides used for vector control are similar across the Caribbean, their efficacy and safety can vary significantly by island. Factors like mosquito resistance patterns, environmental conditions, and national regulations impact the performance and appropriate use of these vector control products. Pharmacy technicians must be aware of the key differences between CARICOM nations to recommend the most effective and responsible pharmacological strategies.",
+      "type": "text"
+    },
+    {
+      "body": "Jamaica has documented high levels of pyrethroid resistance in its Aedes aegypti mosquito populations, leading the Ministry of Health to favour organophosphate insecticides like malathion for fogging. In contrast, Barbados reports lower resistance, allowing more widespread use of pyrethroids like deltamethrin for adult mosquito control.",
+      "type": "callout",
+      "title": "Insecticide Resistance in Jamaica vs. Barbados",
+      "variant": "info"
+    },
+    {
+      "body": "The Pharmacy Board of Trinidad & Tobago classifies Bti as a restricted pesticide, requiring a physician's prescription for community application. This poses challenges for rapid mosquito larval control compared to other CARICOM nations where Bti is available over-the-counter.",
+      "type": "callout",
+      "title": "Bti Larvicide Regulations in Trinidad & Tobago",
+      "variant": "warning"
+    },
+    {
+      "term": "Integrated Vector Management (IVM)",
+      "type": "key-term",
+      "definition": "A strategy that combines multiple vector control interventions, including both chemical and non-chemical methods, to maximize the effectiveness and sustainability of mosquito population reduction. IVM is the WHO-recommended approach for Caribbean nations to manage insecticide resistance and environmental impacts."
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 25
+}

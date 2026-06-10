@@ -1,0 +1,35 @@
+{
+  "id": "3b26abe6-5734-4df3-adc1-ec29c03c1550",
+  "module_id": "61807b4f-e9bb-42cd-974b-e2b35e86f821",
+  "title": "Overview of Caribbean Traditional Medicines",
+  "content": [
+    {
+      "text": "Traditional Herbal Remedies Across the Caribbean",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Traditional Caribbean bush medicines have a long history of use, often predating the arrival of modern pharmaceuticals. From Guyana's renowned medicinal forests to the abundant wild growth of herbs in Jamaica and Barbados, these natural treatments remain an integral part of healthcare and wellness practices throughout the region. Pharmacy technicians must be familiar with the most common traditional medicines and their applications to provide truly integrated, patient-centered care.",
+      "type": "text"
+    },
+    {
+      "body": "In Trinidad & Tobago, cerasee (Momordica charantia) is widely used to manage diabetes, while soursop leaf (Annona muricata) is a popular fever and pain remedy. Jamaica is known for its use of fever grass (lemongrass), neem, and aloe vera. Barbados has a rich tradition of bush teas, including the diuretic periwinkle and cooling vervain. Guyana's Amerindian populations rely on a wide variety of forest herbs like bitter cassareep. Belize has a Mestizo tradition of using plants like chaya and avocado leaf.",
+      "type": "callout",
+      "title": "Key Traditional Medicines by Island",
+      "variant": "info"
+    },
+    {
+      "term": "Traditional Medicine",
+      "type": "key-term",
+      "definition": "Any plant-derived, animal-derived, or mineral-derived substance used in traditional healthcare practices. Also known as complementary, alternative, or indigenous medicine. Differs from pharmaceutical drugs in that traditional medicines are not standardized, and their active ingredients and mechanisms of action are often not well characterized."
+    },
+    {
+      "type": "video-placeholder",
+      "title": "Caribbean Medicinal Plants & Their Uses",
+      "duration": "12 min",
+      "description": "A Guyanese traditional healer demonstrates how to identify and prepare several common bush medicines, discussing their applications in managing conditions like diabetes, hypertension, and fever."
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 25
+}

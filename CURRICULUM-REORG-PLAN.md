@@ -89,13 +89,13 @@ Program  (one comprehensive "Caribbean Pharmacy Technician Diploma")
 - **Acceptance:** enhancing a draft module yields ≥5 questions spanning ≥3 types, each with an explanation, all rows valid against the schema; append mode verifiably preserves pre-existing lessons and questions.
 
 ### Phase 1 — Database & migration  *(write as a Supabase migration; back up first via `scripts/db-export.ts`)*
-- [ ] `create table domains (id uuid pk default gen_random_uuid(), name text not null, icon text, color text, order_index int not null default 0, created_at timestamptz default now(), updated_at timestamptz default now())`.
-- [ ] `alter table courses add column domain_id uuid references domains(id) on delete set null;` (null = "Unsorted").
-- [ ] Backfill `courses."order"` to be unique/meaningful within each domain (sequence).
-- [ ] **RLS for `domains`:** enable RLS; `SELECT` → `true` (or `published-aware` if you want to hide empty domains from students — recommend public read); `INSERT/UPDATE/DELETE` → `is_admin()`.
-- [ ] **Seed the 8 domains + electives** (names/icons/colors from the approved prototype) and **assign every course's `domain_id`** per the mapping below.
+- [x] `create table domains (id uuid pk default gen_random_uuid(), name text not null, icon text, color text, order_index int not null default 0, created_at timestamptz default now(), updated_at timestamptz default now())`.
+- [x] `alter table courses add column domain_id uuid references domains(id) on delete set null;` (null = "Unsorted").
+- [x] Backfill `courses."order"` to be unique/meaningful within each domain (sequence).
+- [x] **RLS for `domains`:** enable RLS; `SELECT` → `true` (or `published-aware` if you want to hide empty domains from students — recommend public read); `INSERT/UPDATE/DELETE` → `is_admin()`.
+- [x] **Seed the 8 domains + electives** (names/icons/colors from the approved prototype) and **assign every course's `domain_id`** per the mapping below.
 - [ ] Apply D4 cleanup (delete dup HIV; resolve calc overlap).
-- [ ] **Interactive quiz schema (D11):**
+- [x] **Interactive quiz schema (D11):**
   - `alter table quiz_questions add column question_type text not null default 'mcq' check (question_type in ('mcq','numeric','match','order','cloze','case_mcq'));`
   - `alter table quiz_questions add column payload jsonb;` — type-specific config: MCQ options/correct index live on existing columns; numeric = `{answer, tolerance, unit}`; match = `{pairs:[{left,right}]}`; order = `{items:[…], correct_order:[…]}`; cloze = `{text_with_blanks, answers:[…], accept_variants}`.
   - `alter table quiz_questions add column explanation text;` (shown on answer — instant feedback).
@@ -112,7 +112,7 @@ Program  (one comprehensive "Caribbean Pharmacy Technician Diploma")
   - G ⚖️ Caribbean Law, Ethics & Regulation · Caribbean Pharmacy Law, Ethics & Regulation; Caribbean Regulatory Compliance & Quality Systems; Drug Scheduling & Controlled Substances
   - H 🎓 Capstone & Certification · Capstone Integrated Case Simulation; Caribbean Pharmacy Certification Exam Prep
   - 🩺 Clinical Therapeutics (Electives) · Asthma; Diabetes; Hypertension; HIV; Dengue; Caribbean Island Pharmacy Practice
-- **Acceptance:** every non-archived course has a `domain_id`; counts reconcile to pre-migration totals; rollback script exists.
+- **Acceptance:** ✅ met 2026-06-09 — applied + verified: 9 domains, 35/36 courses assigned (1 unsorted = D4 calc draft), 898 questions intact, 0 orphans, anon read 9 / write 401. D4 cleanup itself still pending (hard stop).
 
 ### Phase 2 — Admin Curriculum Organizer (React, in `AdminDashboard.tsx`)
 Port the approved prototype (`curriculum-organizer-prototype.html`) into the React admin, backed by Supabase.

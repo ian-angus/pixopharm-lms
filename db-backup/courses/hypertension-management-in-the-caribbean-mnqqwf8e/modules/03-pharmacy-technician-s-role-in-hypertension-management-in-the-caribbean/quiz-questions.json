@@ -1,0 +1,38 @@
+[
+  {
+    "id": "5d2830fa-4407-43ac-a6e0-23d717fdad46",
+    "module_id": "bf26981a-56a2-439f-84cf-302cc46cbdfa",
+    "question": "A technician at a pharmacy in Barbados is counseling a patient with hypertension who also takes cerasee (Momordica charantia) as a traditional herbal remedy. What is the MOST appropriate action for the technician to take?",
+    "options": [
+      "Advise the patient to stop taking cerasee, as it can interfere with their hypertension medication",
+      "Recommend the patient continue taking cerasee, as it is a natural and safe alternative to prescription drugs",
+      "Tell the patient it is not necessary to disclose the use of traditional medicines to the healthcare team",
+      "Provide information on the potential interaction between cerasee and the patient's hypertension medication"
+    ],
+    "correct_answer": 3,
+    "explanation": "The correct action is for the pharmacy technician to provide information on the potential interaction between cerasee and the patient's hypertension medication. Cerasee is a commonly used traditional remedy in the Caribbean that can interfere with the effectiveness of prescription drugs like metformin. The technician should proactively ask about traditional medicine use and counsel the patient on the risks, rather than advising them to stop or continue taking cerasee without further guidance.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": {},
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "31e8fe3c-52ec-4a43-b99e-7f13ddba348e",
+    "module_id": "bf26981a-56a2-439f-84cf-302cc46cbdfa",
+    "question": "A pharmacy technician in Jamaica is managing a hypertension clinic under a collaborative practice agreement with the supervising pharmacist. Which of the following actions is WITHIN the technician's scope of practice in this setting?",
+    "options": [
+      "Initiating a new prescription for a calcium channel blocker",
+      "Conducting a comprehensive medication review for the patient",
+      "Referring the patient to a dietitian for dietary counseling",
+      "All of the above"
+    ],
+    "correct_answer": 3,
+    "explanation": "In Jamaica, pharmacy technicians working under a collaborative practice agreement have an expanded scope of practice that includes initiating certain medications, monitoring and adjusting doses, providing medication counseling, and referring patients to other healthcare providers as part of hypertension management. Therefore, all of the actions listed are within the technician's scope in this setting, as they are working as part of a multidisciplinary team approach to hypertension care.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": {},
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "id": "e12772ac-03df-4f84-b30d-8ccf4035d9b2",
+  "title": "Pharmacology & Body Systems — Part 2",
+  "slug": "pharmacology-advanced",
+  "description": "Part 2 completes your pharmacological training with the drug classes and disease states that define Caribbean pharmacy practice: tropical diseases, HIV/AIDS, CNS medications, immune system, and complex drug interactions.",
+  "skill_level": "Intermediate",
+  "duration_weeks": 6,
+  "icon": "Microscope",
+  "color": "pink",
+  "prerequisites": [
+    "pharmacology-essentials"
+  ],
+  "what_youll_learn": [
+    "Describe the drug classes used for CNS conditions, tropical diseases, and immune system disorders",
+    "Identify the first-line anti-infective treatments for conditions prevalent in the Caribbean",
+    "Explain HIV/AIDS treatment regimens and the pharmacy technician role in adherence support",
+    "Apply a systematic process to identify complex drug interactions and contraindications",
+    "Advise on the safety profile and interaction risks of common Caribbean herbal remedies"
+  ],
+  "status": "published",
+  "order": 13
+}

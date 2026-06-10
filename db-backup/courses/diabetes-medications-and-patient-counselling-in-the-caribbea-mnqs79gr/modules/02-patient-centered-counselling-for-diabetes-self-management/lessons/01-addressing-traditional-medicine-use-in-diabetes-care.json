@@ -1,0 +1,54 @@
+{
+  "id": "e78a9762-b07c-4b19-8718-aa1be41d4430",
+  "module_id": "6d18ebe8-35e0-4e2a-bffb-400240e5b0a2",
+  "title": "Addressing Traditional Medicine Use in Diabetes Care",
+  "content": [
+    {
+      "text": "Traditional Medicine and Diabetes: Navigating Bush Remedies Alongside Pharmaceutical Care",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Across CARICOM nations, the use of traditional plant-based remedies — collectively called 'bush medicine' or 'bush tea' — is deeply embedded in cultural practice. Studies conducted through the University of the West Indies estimate that 60–80% of Caribbean patients with chronic diseases use some form of traditional remedy, yet fewer than 20% disclose this to their healthcare providers. For diabetes patients specifically, remedies such as cerasee (Momordica charantia), soursop leaf tea, neem leaf preparations, aloe vera juice, and periwinkle (Catharanthus roseus) are widely consumed with the belief that they 'bring down the sugar.' The pharmacy technician must approach this topic without judgement, with cultural humility, and with accurate pharmacological knowledge about genuine interaction risks.",
+      "type": "text"
+    },
+    {
+      "term": "Cerasee (Momordica charantia)",
+      "type": "key-term",
+      "definition": "Known as bitter melon, bitter gourd, or 'cerasee' across the English-speaking Caribbean, this is the most widely used traditional hypoglycaemic plant in the region. It contains charantin and polypeptide-p, which have demonstrated blood glucose-lowering activity in clinical studies. When taken concurrently with metformin, glibenclamide, or insulin, cerasee can cause additive hypoglycaemia — a potentially dangerous interaction that must be screened for during every diabetes counselling encounter."
+    },
+    {
+      "body": "In Jamaica, cerasee tea is ubiquitous — sold commercially in supermarkets and consumed as a general 'cleanser' and diabetes remedy; patients often do not consider it a 'medicine.' In Guyana, neem leaf and karela (the Indo-Guyanese term for bitter melon) are extremely popular, reflecting the large Indo-Caribbean community's Ayurvedic traditions. In Belize, Maya healers in the Cayo and Toledo districts prescribe specific bark and leaf preparations for 'sugar' that may interact with metformin. In Trinidad & Tobago, both Afro-Trinidadian bush medicine and Indo-Trinidadian herbal traditions coexist — patients may use tulsi (holy basil), fenugreek, and neem alongside prescription medications. In St. Lucia and Dominica, Kwéyòl-speaking populations use 'ti bwi' (small bush) remedies passed down orally through generations.",
+      "type": "callout",
+      "title": "Island-Specific Traditional Remedy Patterns",
+      "variant": "info"
+    },
+    {
+      "text": "Asking Without Judging: The OARS Approach to Traditional Medicine Disclosure",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "The single greatest barrier to identifying dangerous herb-drug interactions is that patients do not disclose traditional medicine use because they fear being ridiculed or told to stop. The OARS motivational interviewing framework — Open questions, Affirmation, Reflective listening, Summarising — is highly effective in Caribbean diabetes counselling. An open question such as 'Many of my patients drink cerasee or other bush teas for sugar — are you using anything like that alongside your tablets?' normalises the practice and invites honest disclosure. Affirmation ('It's good that you are telling me this — it helps me make sure everything works safely together') builds trust. Reflective listening ('So you drink cerasee tea every morning before your metformin — let me explain why timing matters') shows the patient they have been heard. Summarising confirms the full picture. This approach respects Caribbean cultural autonomy while fulfilling the technician's patient safety obligation.",
+      "type": "text"
+    },
+    {
+      "body": "Cerasee + metformin or sulfonylureas: additive hypoglycaemia — patients must be warned to monitor blood glucose more frequently and never take cerasee tea and glibenclamide on an empty stomach simultaneously. Soursop (Annona muricata) leaf tea has demonstrated hypotensive and hypoglycaemic effects — combined with antihypertensives and diabetes medications (a common Caribbean comorbidity triad), it can cause dangerous drops in blood pressure and blood sugar. Neem (Azadirachta indica) may potentiate the effects of oral hypoglycaemics and has hepatotoxic potential at high doses. Periwinkle (Catharanthus roseus), used in some islands for diabetes, contains vinca alkaloids that are cytotoxic and can cause peripheral neuropathy — mimicking and worsening diabetic neuropathy. Any disclosure of traditional remedy use must be documented and communicated to the pharmacist for clinical assessment.",
+      "type": "callout",
+      "title": "High-Risk Herb-Drug Interactions in Caribbean Diabetes Care",
+      "variant": "warning"
+    },
+    {
+      "body": "It is essential that pharmacy technicians never instruct patients to abruptly stop all traditional remedies, as this can damage trust, cause the patient to disengage from the pharmacy entirely, or lead them to stop their prescribed medications instead. The goal is harm reduction: help the patient understand which combinations are truly dangerous (e.g., cerasee tea with glibenclamide first thing in the morning on an empty stomach), which can be timed safely (e.g., separating cerasee intake from medication by several hours, with glucose monitoring), and which should be escalated to the pharmacist or prescriber for a definitive clinical decision. Document every disclosure in the patient's dispensing record. Under the Pharmacy Acts of Jamaica, Trinidad & Tobago, and Barbados, the pharmacy has a duty of care that extends to identifying and managing interactions from all substances the patient consumes, not only prescription medications.",
+      "type": "text"
+    },
+    {
+      "type": "video-placeholder",
+      "title": "Role-Play: Counselling a Guyanese Patient Using Karela and Neem Alongside Metformin and Gliclazide",
+      "duration": "14 min",
+      "description": "Filmed at a community pharmacy in Georgetown, Guyana, this role-play demonstrates a pharmacy technician using the OARS method to discover that a 62-year-old Indo-Guyanese woman has been drinking karela (bitter melon) juice every morning and boiling neem leaves for a nightly tea — in addition to her prescribed metformin 1 g BD and gliclazide 80 mg OD from the GPHC formulary. The technician explains the additive hypoglycaemia risk using simple analogies, negotiates a safer timing schedule, and documents the interaction for pharmacist review. A debrief segment highlights communication dos and don'ts when discussing traditional practices."
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 25
+}

@@ -1,7 +1,7 @@
 {
   "id": "71d2af5f-0c9a-401b-9703-53e48751ab59",
   "module_id": "c7399bfe-b4be-492b-8515-c4e4668a80df",
-  "title": "Anatomy of a Prescription",
+  "title": "Anatomy of a Prescription ",
   "content": [
     {
       "text": "The Parts of a Prescription",
@@ -61,7 +61,6 @@
         ]
       ],
       "type": "table",
-      "caption": "Elements of a Valid Prescription",
       "headers": [
         "Element",
         "Description",
@@ -69,9 +68,80 @@
       ]
     },
     {
-      "alt": "Annotated diagram of a sample Caribbean prescription showing all required elements",
-      "type": "image-placeholder",
-      "caption": "Figure 3.1 — Anatomy of a Caribbean prescription (annotated)"
+      "body": "A prescription is a formal medical instruction from a licensed healthcare provider to a pharmacist. To be legally valid and accurately filled, every prescription must include seven standard parts: patient information, prescriber details, the date, medication name and strength, dispensing instructions, directions for the patient, and the prescriber's signature. ",
+      "type": "text"
+    },
+    {
+      "body": "The seven key components include:",
+      "type": "text"
+    },
+    {
+      "body": "1. Patient Information",
+      "type": "text"
+    },
+    {
+      "body": "The full name, date of birth, and address of the patient. This ensures the medication is prepared for the correct individual and helps prevent errors. ",
+      "type": "text"
+    },
+    {
+      "body": "2. Prescriber Information",
+      "type": "text"
+    },
+    {
+      "body": "The name, title, address, phone number, and professional credentials (such as an NPI or DEA number) of the doctor or healthcare provider",
+      "type": "text"
+    },
+    {
+      "body": "3. Date of the Prescription",
+      "type": "text"
+    },
+    {
+      "body": "The exact date the prescription was written. This establishes a timeline, ensuring the treatment plan is current and allows pharmacists to verify its legal validity. ",
+      "type": "text"
+    },
+    {
+      "body": "4. Medication Details (Inscription)",
+      "type": "text"
+    },
+    {
+      "body": "The name of the medication (generic or brand) along with its specific strength or dosage. ",
+      "type": "text"
+    },
+    {
+      "body": "5. Dispensing Instructions (Subscription)",
+      "type": "text"
+    },
+    {
+      "body": "Specific instructions directed to the pharmacist on how much of the medication to dispense in total (e.g., number of pills or volume of liquid). ",
+      "type": "text"
+    },
+    {
+      "body": "6. Directions for the Patient (Signatura / Sig)",
+      "type": "text"
+    },
+    {
+      "body": "Instructions on how the patient should take the medication. This typically details the dosage, frequency, route of administration (e.g., by mouth), and the duration of the treatment. ",
+      "type": "text"
+    },
+    {
+      "body": "7. Refills and Prescriber's Signature",
+      "type": "text"
+    },
+    {
+      "body": "The authorized signature of the prescriber (which validates the order), along with the number of allowed refills. For controlled substances, this section may also indicate that generic equivalents are prohibited",
+      "type": "text"
+    },
+    {
+      "body": "THE 5 R's of MEDICATION:",
+      "type": "text"
+    },
+    {
+      "body": "There are the five rights of medication:",
+      "type": "text"
+    },
+    {
+      "body": "The right patient, right medication, right dose, right route and right time.",
+      "type": "text"
     },
     {
       "body": "Be alert for: prescriptions written in pencil (easily altered), missing prescriber registration numbers, patients requesting specific controlled substances by name and strength, prescriptions from prescribers you cannot verify, alterations or crossed-out information without the prescriber's counter-signature, and prescriptions presented significantly after the date written (especially for controlled substances).",

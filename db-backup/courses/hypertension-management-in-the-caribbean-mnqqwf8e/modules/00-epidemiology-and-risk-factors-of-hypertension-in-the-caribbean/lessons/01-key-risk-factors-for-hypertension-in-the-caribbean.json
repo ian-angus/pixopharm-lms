@@ -1,0 +1,39 @@
+{
+  "id": "e382e3c8-8fe2-4021-ba6f-35f6b049d46c",
+  "module_id": "b748e281-c296-4ef0-ba67-d38f2592efcf",
+  "title": "Key Risk Factors for Hypertension in the Caribbean",
+  "content": [
+    {
+      "text": "Drivers of the Caribbean Hypertension Epidemic",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "The high rates of hypertension in the Caribbean can be attributed to a complex interplay of socioeconomic, lifestyle, and genetic factors. Poverty, limited access to healthy foods, and insufficient physical activity are major contributors, as are the legacy of colonialism and the nutrition transition towards processed, high-sodium diets.",
+      "type": "text"
+    },
+    {
+      "body": "Hypertension disproportionately affects lower-income and rural populations across the Caribbean. In Jamaica, the prevalence is 50% higher in the poorest quintile compared to the wealthiest. In Guyana, rates are 30% higher in hinterland regions versus coastal areas.",
+      "type": "callout",
+      "title": "Regional Disparities in Hypertension Risk",
+      "variant": "info"
+    },
+    {
+      "body": "Genetic factors also play a role, with those of African descent having a greater inherent risk of developing hypertension. The high prevalence of sickle cell disease in the Caribbean is associated with an increased likelihood of comorbid hypertension. Clinicians must consider these population-specific risk factors when screening and managing patients.",
+      "type": "text"
+    },
+    {
+      "body": "Many Caribbean patients use herbal remedies like cerasee, soursop, and fever grass to self-manage hypertension. These can negatively interact with prescribed antihypertensive medications, putting patients at risk of dangerously low blood pressure or other adverse effects. Technicians must ask about traditional medicine use when dispensing hypertension drugs.",
+      "type": "callout",
+      "title": "Traditional Medicine Interactions",
+      "variant": "warning"
+    },
+    {
+      "term": "Metabolic Syndrome",
+      "type": "key-term",
+      "definition": "A cluster of conditions including abdominal obesity, high blood sugar, elevated triglycerides, and low HDL cholesterol. Metabolic syndrome dramatically increases the risk of developing both hypertension and type 2 diabetes, highly prevalent comorbidities in the Caribbean."
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 25
+}

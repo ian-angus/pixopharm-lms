@@ -1,0 +1,46 @@
+{
+  "id": "1b88ea08-3c0c-49d4-b332-53529afc4e4e",
+  "module_id": "c72d66d2-0af1-4710-8943-2106fdad9e6d",
+  "title": "Traditional Caribbean Herbal Remedies and Potential Drug Interactions",
+  "content": [
+    {
+      "text": "Traditional Caribbean Herbal Remedies for Respiratory Conditions",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Across the Caribbean, traditional herbal remedies are widely used for respiratory symptoms like cough, wheezing, and chest congestion. Many patients do not disclose their use of these complementary therapies to healthcare providers, posing a significant risk of dangerous drug interactions. Pharmacy technicians must be vigilant in identifying and counseling patients on the potential risks.",
+      "type": "text"
+    },
+    {
+      "term": "Cerasee (Momordica charantia)",
+      "type": "key-term",
+      "definition": "Also known as bitter melon, cerasee is a common Caribbean bush tea used to treat asthma, cough, and other respiratory issues. However, it can interact dangerously with diabetes medications like metformin, leading to hypoglycemia."
+    },
+    {
+      "term": "Soursop Leaf (Annona muricata)",
+      "type": "key-term",
+      "definition": "Soursop leaf is a popular herbal remedy for respiratory complaints across the region, especially in Jamaica and Trinidad & Tobago. It can interact with central nervous system drugs, potentially causing sedation or altered mental status."
+    },
+    {
+      "body": "Other commonly used Caribbean herbs like fever grass (lemongrass), neem, and aloe vera can also interact with prescription medications. Technicians must proactively ask patients about herbal use and counsel on potential risks, especially for respiratory patients taking corticosteroids, bronchodilators, or antidepressants.",
+      "type": "callout",
+      "title": "High-Risk Herb-Drug Interactions",
+      "variant": "warning"
+    },
+    {
+      "body": "Many Caribbean patients are reluctant to disclose their use of traditional herbal remedies to healthcare providers, due to cultural norms and stigma. This is particularly common in Guyana, Belize, and the smaller Eastern Caribbean islands. Technicians must build trust and create a non-judgmental environment to uncover these critical medication usage details.",
+      "type": "callout",
+      "title": "Disclosure Challenges in the Caribbean",
+      "variant": "info"
+    },
+    {
+      "type": "video-placeholder",
+      "title": "Identifying and Addressing Herb-Drug Interactions",
+      "duration": "21 min",
+      "description": "A panel of Caribbean pharmacists discusses real cases of patients using traditional remedies like cerasee, soursop, and fever grass in combination with prescription respiratory medications, demonstrating strategies for proactive questioning and counseling to mitigate risks."
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 25
+}

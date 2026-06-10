@@ -1,0 +1,56 @@
+[
+  {
+    "id": "9abf22f1-b5a6-4db2-a7d4-58ac6296ec77",
+    "module_id": "6ab2a498-825d-478e-93bf-4088ab80251e",
+    "question": "A patient in a Port of Spain pharmacy asks for advice about using cerasee (Momordica charantia) to treat their dengue symptoms. What should the pharmacy technician recommend?",
+    "options": [
+      "Advise the patient that cerasee may interact with their prescribed antiplatelet medication, increasing bleeding risk, and recommend against using it.",
+      "Recommend the patient continue taking their prescribed dengue treatment and supplement it with cerasee, as it is a traditional Caribbean remedy.",
+      "Suggest the patient speak to their doctor before using cerasee, as the interaction risk is not well established.",
+      "Tell the patient that cerasee is safe to use alongside their dengue medications, as it is a natural and widely used herbal remedy."
+    ],
+    "correct_answer": 0,
+    "explanation": "Cerasee (Momordica charantia) is a commonly used traditional Caribbean remedy that can interact with medications like antiplatelet drugs prescribed for severe dengue cases. The pharmacy technician should advise the patient against using cerasee to avoid potentially dangerous bleeding complications.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": {},
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "5d6e3dea-f92a-44df-9a71-49beda6d26b2",
+    "module_id": "6ab2a498-825d-478e-93bf-4088ab80251e",
+    "question": "Which of the following is NOT a key factor contributing to challenges in delivering optimal dengue care in the Caribbean?",
+    "options": [
+      "Frequent power outages and supply chain disruptions",
+      "High patient-to-staff ratios during outbreaks",
+      "Widespread use of traditional herbal remedies",
+      "Lack of standardized dengue treatment protocols across CARICOM nations"
+    ],
+    "correct_answer": 3,
+    "explanation": "The PAHO and national dengue treatment guidelines provide a consistent, standardized framework for managing dengue fever across the Caribbean region. In contrast, factors like resource constraints, high patient volumes, and interactions with traditional medicines pose significant challenges to delivering evidence-based dengue care in many CARICOM countries.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": {},
+    "difficulty": "medium",
+    "blooms_level": "analyze"
+  },
+  {
+    "id": "19c24ae3-7477-4915-a2ea-ba274740a744",
+    "module_id": "6ab2a498-825d-478e-93bf-4088ab80251e",
+    "question": "Which of the following is a key responsibility of Caribbean pharmacy technicians in providing dengue care?",
+    "options": [
+      "Prescribing antiviral medications for confirmed dengue cases",
+      "Conducting vector control activities like spraying for Aedes mosquitoes",
+      "Triaging suspected dengue cases and dispensing supportive medications",
+      "Coordinating the dengue outbreak response between hospitals and public health agencies"
+    ],
+    "correct_answer": 2,
+    "explanation": "Pharmacy technicians are often the first point of contact for patients seeking dengue treatment in the Caribbean. Their key responsibilities include accurately triaging suspected dengue cases, dispensing supportive medications per PAHO and national guidelines, monitoring for complications, and providing patient education on prevention measures.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": {},
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  }
+]

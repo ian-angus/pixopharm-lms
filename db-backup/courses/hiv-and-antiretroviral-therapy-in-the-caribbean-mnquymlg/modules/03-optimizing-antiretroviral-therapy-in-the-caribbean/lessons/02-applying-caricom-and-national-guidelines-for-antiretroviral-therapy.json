@@ -1,0 +1,33 @@
+{
+  "id": "0a38afbe-e627-4172-bd19-0d4ac98a1181",
+  "module_id": "ed876135-4384-4f1c-85ba-669988f2f596",
+  "title": "Applying CARICOM and National Guidelines for Antiretroviral Therapy",
+  "content": [
+    {
+      "text": "Navigating Regional and National HIV Treatment Guidelines",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Caribbean pharmacy technicians must be familiar with both CARICOM regional guidelines and national HIV treatment policies to ensure appropriate antiretroviral therapy selection and dosing for their patients. Understanding these frameworks is crucial for providing high-quality care.",
+      "type": "text"
+    },
+    {
+      "body": "The CARICOM Regional Standard (CRS) provides a harmonized approach to HIV treatment across the Caribbean, including first-line and second-line antiretroviral regimens, monitoring requirements, and guidance on managing coinfections like hepatitis B.",
+      "type": "callout",
+      "title": "CARICOM Regional Standard"
+    },
+    {
+      "body": "While the CRS serves as a regional framework, individual Caribbean nations maintain their own national formularies, treatment guidelines, and policies for antiretroviral therapy. Pharmacy technicians must be aware of these local variations to deliver tailored care.",
+      "type": "callout",
+      "title": "National Formularies and Policies"
+    },
+    {
+      "term": "Antiretroviral Therapy Procurement",
+      "type": "key-term",
+      "definition": "The availability of specific antiretroviral medications can vary across the Caribbean due to differences in national procurement and supply chain management. Pharmacy technicians should stay informed about local stock and availability."
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 25
+}

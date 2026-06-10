@@ -1,0 +1,45 @@
+{
+  "id": "bdbb7a25-32e4-4ad5-8319-3c044c2ebe2e",
+  "module_id": "70fdcafd-83a1-4bfa-92c7-4516f59ac8bc",
+  "title": "Scope of Practice and Clinical Duties of Caribbean Pharmacy Technicians",
+  "content": [
+    {
+      "text": "Pharmacy Technicians in Caribbean Healthcare",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "In the Caribbean, pharmacy technicians play a vital role in patient care, often serving as the first healthcare contact. With high patient-to-staff ratios, technicians frequently manage chronic disease states like asthma, hypertension, and diabetes. They must possess a broad scope of clinical knowledge and skills to provide essential medication management services across the region.",
+      "type": "text"
+    },
+    {
+      "body": "In Jamaica, Trinidad & Tobago, and Guyana, technicians are the primary point of contact for prescription refills, dispensing, and patient counseling. Shortages of pharmacists mean technicians often go beyond their traditional roles to ensure uninterrupted access to essential medicines.",
+      "type": "callout",
+      "title": "Technicians as Frontline Providers",
+      "variant": "info"
+    },
+    {
+      "term": "Scope of Practice",
+      "type": "key-term",
+      "definition": "The specific clinical and administrative tasks that a pharmacy technician is legally authorized and competent to perform. Scopes vary across CARICOM but generally include: medication dispensing, inventory management, patient education, referrals, and interdisciplinary collaboration."
+    },
+    {
+      "body": "A Caribbean pharmacy technician's clinical duties often include evaluating prescriptions for accuracy, performing basic medication therapy monitoring, providing patient education on proper inhaler technique, and recognizing signs of clinical deterioration that require referral to the supervising pharmacist or physician.",
+      "type": "text"
+    },
+    {
+      "body": "In Barbados and Belize, technicians have an even more expansive scope. They are authorized to initiate or modify select chronic disease therapies (e.g., asthma, hypertension) under collaborative practice agreements with pharmacists and physicians. This enables proactive disease management, especially in remote or underserved communities.",
+      "type": "callout",
+      "title": "Expanded Duties in Barbados and Belize",
+      "variant": "info"
+    },
+    {
+      "type": "video-placeholder",
+      "title": "Pharmacy Technician Roles Across the Caribbean",
+      "duration": "12 min",
+      "description": "A panel discussion with technicians from Jamaica, Trinidad, Barbados, and Guyana describing the unique clinical responsibilities and patient care activities they perform in their respective practice settings."
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 25
+}

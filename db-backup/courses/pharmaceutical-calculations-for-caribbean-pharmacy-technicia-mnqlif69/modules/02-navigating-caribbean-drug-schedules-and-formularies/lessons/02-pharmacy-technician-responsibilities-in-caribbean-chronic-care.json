@@ -1,0 +1,44 @@
+{
+  "id": "b2f8ddeb-13c7-4925-a7f8-8aa55b536b99",
+  "module_id": "6b62cb2d-5d10-475f-8f55-4f07f958f3da",
+  "title": "Pharmacy Technician Responsibilities in Caribbean Chronic Care",
+  "content": [
+    {
+      "text": "Pharmacy Technicians and Chronic Disease Management",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "In the Caribbean, pharmacy technicians play a vital role in the ongoing care and monitoring of patients with chronic conditions. Due to high patient-to-staff ratios and limited healthcare access in many islands, technicians are often the first point of contact for medication refills, counseling, and medication therapy management. Understanding your responsibilities in this area is essential.",
+      "type": "text"
+    },
+    {
+      "text": "Common Chronic Diseases in the Caribbean",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "The Caribbean region has a high burden of non-communicable diseases, including hypertension, type 2 diabetes, and asthma. HIV/AIDS also remains a significant public health challenge. Pharmacy technicians must be prepared to perform accurate calculations, monitor medication adherence, and provide basic disease education for these prevalent conditions.",
+      "type": "text"
+    },
+    {
+      "body": "In many Caribbean islands, healthcare resources and access are limited, especially in rural areas. Pharmacy technicians may be the primary healthcare professional a patient interacts with for chronic disease management. This includes responsibilities like dose titration, patient counseling, and coordination with prescribers to ensure continuity of care.",
+      "type": "callout",
+      "title": "Chronic Care in Resource-Limited Settings",
+      "variant": "info"
+    },
+    {
+      "body": "Achieving consistent medication adherence can be difficult for Caribbean patients with chronic conditions due to factors like financial constraints, limited health literacy, and cultural beliefs. Pharmacy technicians must be proactive in monitoring adherence, identifying barriers, and working with patients to develop strategies to overcome them.",
+      "type": "callout",
+      "title": "Medication Adherence Challenges",
+      "variant": "warning"
+    },
+    {
+      "term": "Medication Therapy Management (MTM)",
+      "type": "key-term",
+      "definition": "A collaborative process in which a pharmacy technician works with a patient and their prescriber(s) to ensure safe, effective, and appropriate use of medications. MTM is especially critical for managing complex chronic disease regimens in the Caribbean."
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 25
+}

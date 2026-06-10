@@ -1,0 +1,56 @@
+[
+  {
+    "id": "8f36d9d0-b9e4-4181-8fec-1f44874433fc",
+    "module_id": "17386738-fa04-46e5-ac0b-06ccff3e05c9",
+    "question": "A pharmacy technician at Georgetown Public Hospital Corporation (GPHC) in Guyana is reviewing ARV stock levels and notices that the facility's supply of tenofovir/lamivudine/dolutegravir (TLD) fixed-dose combination tablets has only 2 weeks of stock remaining. The expected shipment from the WHO-prequalified manufacturer has been delayed at customs. What should the technician do FIRST?",
+    "options": [
+      "Continue dispensing normally until stock is completely exhausted, then inform patients to return next month",
+      "Document current stock levels, implement strict FEFO protocol, and immediately notify the national HIV programme pharmacist to coordinate emergency inter-facility transfer or expedited customs clearance",
+      "Switch all patients to a different ARV regimen available in stock without prescriber authorisation to prevent treatment interruption",
+      "Advise patients to reduce their dose to one tablet every other day to stretch the remaining supply"
+    ],
+    "correct_answer": 1,
+    "explanation": "In Caribbean national HIV programmes funded by PEPFAR and the Global Fund, ARV stock-outs require immediate escalation to the national programme coordinator. Guyana's NAPS and GPHC pharmacy protocol mandate that technicians report critically low stock levels at the 4-week threshold and initiate inter-facility transfer requests. Reducing doses (Option D) causes subtherapeutic levels and resistance. Switching regimens (Option C) is a prescriber-only decision. Waiting until exhaustion (Option A) guarantees treatment interruption, which in the Caribbean context can take weeks to resolve due to shipping delays.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": {},
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "824a0b28-e274-4b65-af11-4dce6f6dfe07",
+    "module_id": "17386738-fa04-46e5-ac0b-06ccff3e05c9",
+    "question": "A pharmacy technician in a public polyclinic in Barbados is dispensing a monthly ARV refill of TLD to a 58-year-old female patient. During the routine adherence check, the patient mentions she has been drinking cerasee (Momordica charantia) tea daily 'to clean her blood' and help manage her type 2 diabetes, for which she also takes metformin 500 mg BD. She did not disclose this to her prescriber. What is the MOST appropriate action by the technician?",
+    "options": [
+      "Tell the patient that cerasee is harmless since it is a natural herb and does not interact with medications",
+      "Confiscate the cerasee and instruct the patient to stop all herbal remedies immediately, using a firm tone to ensure compliance",
+      "Document the cerasee use, inform the patient of potential interactions with both her ARVs and metformin (additive hypoglycaemia risk with metformin; hepatic enzyme effects potentially affecting ARV metabolism), and refer her to the supervising pharmacist for a comprehensive drug-herb interaction review",
+      "Ignore the cerasee use since it is not a prescription drug and therefore falls outside the pharmacy technician's scope of practice"
+    ],
+    "correct_answer": 2,
+    "explanation": "Cerasee (Momordica charantia) is one of the most widely used traditional remedies across CARICOM. It has documented hypoglycaemic activity that can potentiate metformin, increasing the risk of dangerous hypoglycaemia. Its hepatic enzyme modulating properties raise concerns about altered metabolism of dolutegravir and other ARV components. Under the Barbados Pharmacy Act Cap 372D and PANCAP patient safety guidelines, pharmacy technicians have a duty to document herbal use and escalate potential interactions. Dismissing bush medicine use (Options A and D) is clinically negligent; being confrontational (Option B) risks the patient concealing future herbal use.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": {},
+    "difficulty": "hard",
+    "blooms_level": "analyze"
+  },
+  {
+    "id": "59c13a30-3b17-42f4-84dc-342db1ff0e33",
+    "module_id": "17386738-fa04-46e5-ac0b-06ccff3e05c9",
+    "question": "A pharmacy technician working at a health centre in rural St. Lucia receives a phone call from someone identifying themselves as the employer of a patient who collects ARVs from the facility. The caller states they need to confirm whether the employee is HIV-positive because 'other staff are concerned about workplace safety.' The technician should:",
+    "options": [
+      "Confirm the patient's HIV status since workplace safety is a legitimate concern that overrides confidentiality",
+      "Deny the patient attends the clinic, which protects the patient without technically confirming or denying HIV status",
+      "Refuse to disclose any patient information, inform the caller that all patient records are confidential under the national Pharmacy Act and HIV/AIDS policy, document the call including the caller's name and number, and notify the supervising pharmacist immediately",
+      "Transfer the call to the prescribing physician so that the doctor can decide whether to disclose the information"
+    ],
+    "correct_answer": 2,
+    "explanation": "All CARICOM national HIV policies and respective Pharmacy Acts mandate absolute confidentiality of patient treatment information. PANCAP's Caribbean Regional Strategic Framework explicitly prohibits disclosure of HIV status to employers without the patient's written, informed consent. Option A violates confidentiality law and ethical obligations. Option B, while well-intentioned, still engages with the enquiry and could be probed further. Option D inappropriately shifts responsibility. The correct action is categorical refusal, documentation of the breach attempt, and escalation — as breaches of ARV confidentiality in the Caribbean have been documented to cause treatment abandonment, violence, and loss of employment.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": {},
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  }
+]

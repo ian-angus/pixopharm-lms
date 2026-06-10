@@ -1,0 +1,56 @@
+[
+  {
+    "id": "c3c1dfae-f221-42cb-8c10-c08b3a173ffd",
+    "module_id": "70fdcafd-83a1-4bfa-92c7-4516f59ac8bc",
+    "question": "A technician at a pharmacy in Barbados is preparing to dispense an inhaled corticosteroid prescription for a patient with moderate persistent asthma. Which of the following actions should the technician take?",
+    "options": [
+      "Provide detailed verbal and written instructions on proper inhaler technique and the importance of adherence.",
+      "Recommend the patient use a herbal remedy like cerasee or soursop leaf in addition to the prescription medication.",
+      "Refer the patient directly to the supervising pharmacist without providing any counseling.",
+      "Dispense the medication without any additional patient education or follow-up."
+    ],
+    "correct_answer": 0,
+    "explanation": "In Barbados, pharmacy technicians are required to provide comprehensive medication counseling, including demonstrating proper inhaler use. They play a vital role in promoting adherence and identifying potential interactions with traditional herbal remedies. Referring the patient directly to the pharmacist without first providing education would be inappropriate.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": {},
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "04f2dabd-90f1-4cf5-9428-e600116ae061",
+    "module_id": "70fdcafd-83a1-4bfa-92c7-4516f59ac8bc",
+    "question": "A technician at a pharmacy in Jamaica is reviewing a prescription for an elderly patient with COPD and sickle cell disease. What is the appropriate next step the technician should take?",
+    "options": [
+      "Dispense the medication and inform the patient to follow up with their physician if they experience any side effects.",
+      "Contact the prescribing physician to request a change in therapy, as sickle cell disease is a contraindication for the prescribed medication.",
+      "Provide the patient with detailed education on proper inhaler technique and the importance of adherence, as well as monitor for any adverse effects or the need for referral.",
+      "Refuse to dispense the medication, as the combination of COPD and sickle cell disease is too complex for a pharmacy technician to manage."
+    ],
+    "correct_answer": 2,
+    "explanation": "In Jamaica, pharmacy technicians play a key role in educating patients on proper inhaler use and monitoring for adverse effects, especially for high-risk populations like the elderly and those with comorbidities. They should provide detailed counseling and adhere to established referral protocols if the patient's condition requires further evaluation by the pharmacist or physician. Refusing to dispense the medication or contacting the prescriber without first assessing the patient would be inappropriate.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": {},
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "63b62e19-30bc-4474-832b-84e74adbd85a",
+    "module_id": "70fdcafd-83a1-4bfa-92c7-4516f59ac8bc",
+    "question": "A pharmacy technician in Guyana is working with a community health worker to provide home-based asthma care. Which of the following activities would be appropriate for the technician to undertake as part of this interdisciplinary collaboration?",
+    "options": [
+      "Perform a comprehensive physical examination to assess the patient's respiratory status.",
+      "Independently adjust the patient's asthma medication regimen without consulting a pharmacist or physician.",
+      "Provide education on proper inhaler technique and monitor adherence, then refer the patient to the community health worker for ongoing support.",
+      "Recommend the patient switch from their prescribed inhaled corticosteroid to a traditional herbal remedy like bush tea."
+    ],
+    "correct_answer": 2,
+    "explanation": "In Guyana, pharmacy technicians collaborate with community health workers to deliver comprehensive respiratory care, including patient education, adherence monitoring, and referrals. However, they do not have the authority to independently adjust medication regimens or provide physical examinations - those tasks should be performed by the supervising pharmacist or physician. Recommending unproven traditional remedies would be inappropriate and potentially dangerous.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": {},
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  }
+]

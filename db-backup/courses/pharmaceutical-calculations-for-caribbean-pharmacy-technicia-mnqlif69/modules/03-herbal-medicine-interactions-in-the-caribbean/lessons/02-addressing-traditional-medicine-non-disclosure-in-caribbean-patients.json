@@ -1,0 +1,41 @@
+{
+  "id": "eb3a8875-18ec-4960-ad78-ee8d21f582dd",
+  "module_id": "9af2b389-168d-498c-ab15-8f088836778a",
+  "title": "Addressing Traditional Medicine Non-Disclosure in Caribbean Patients",
+  "content": [
+    {
+      "text": "Improving Disclosure of Traditional Medicine Use",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Many Caribbean patients are reluctant to disclose their use of traditional herbal remedies to healthcare providers, even when directly asked. This non-disclosure poses serious risks, as undisclosed herb-drug interactions can undermine treatment efficacy or patient safety. As a pharmacy technician, you play a crucial role in encouraging open communication about traditional medicine use to mitigate these dangers.",
+      "type": "text"
+    },
+    {
+      "body": "Patients may not disclose herbal remedy use due to cultural beliefs, concerns about provider disapproval, or the perception that 'natural' medicines are harmless. In Jamaica and Guyana, traditional healers are often deeply embedded in the community, leading patients to prioritize their advice over conventional medical treatment. In Barbados and St. Lucia, patients may simply forget to mention their bush tea consumption during clinical visits.",
+      "type": "callout",
+      "title": "Reasons for Non-Disclosure Across the Caribbean",
+      "variant": "info"
+    },
+    {
+      "body": "To encourage patients to be forthcoming about traditional medicine use, approach the topic sensitively and without judgment. Explain the importance of disclosing all treatments, including herbal remedies, to prevent dangerous interactions. Assure patients that you will not criticize their use of traditional medicine, but need to know about it to provide safe, effective care. Additionally, post informational posters in your pharmacy about herb-drug interactions to raise awareness.",
+      "type": "callout",
+      "title": "Strategies to Improve Disclosure",
+      "variant": "warning"
+    },
+    {
+      "term": "Patient-Centered Communication",
+      "type": "key-term",
+      "definition": "An approach to healthcare that focuses on the patient's perspective, values, and needs. When discussing traditional medicine use, employ active listening, open-ended questions, and affirmative language to build trust and encourage disclosure."
+    },
+    {
+      "type": "video-placeholder",
+      "title": "Communicating with Patients About Herbal Remedies",
+      "duration": "12 min",
+      "description": "A senior pharmacy technician at the Queen Elizabeth Hospital in Bridgetown, Barbados demonstrates effective techniques for sensitively addressing traditional medicine use with Caribbean patients during medication counseling sessions."
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 25
+}

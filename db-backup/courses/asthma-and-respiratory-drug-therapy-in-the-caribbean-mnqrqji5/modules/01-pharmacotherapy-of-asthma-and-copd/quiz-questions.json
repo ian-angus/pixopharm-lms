@@ -1,0 +1,56 @@
+[
+  {
+    "id": "65d56235-f99a-49c8-a128-85f05cf999b1",
+    "module_id": "bc05270a-daa6-4bcb-baf2-cd7f1e55c5da",
+    "question": "A technician at a pharmacy in Bridgetown, Barbados is processing a prescription for a patient with moderate persistent asthma. The prescriber has ordered a metered-dose inhaler containing the bronchodilator salbutamol. What is the appropriate dosing instructions the technician should provide to the patient?",
+    "options": [
+      "2-4 puffs every 4-6 hours as needed for symptom relief",
+      "1 puff every 2-3 hours",
+      "1 puff daily",
+      "6 puffs every 8 hours"
+    ],
+    "correct_answer": 0,
+    "explanation": "In Barbados, the standard dosing for salbutamol metered-dose inhalers is 2-4 puffs every 4-6 hours as needed for symptom relief. This aligns with typical bronchodilator dosing recommendations across the Caribbean region. The other options are either too frequent (1 puff every 2-3 hours), too infrequent (1 puff daily), or an excessive dose (6 puffs every 8 hours).",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": {},
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "909dc5cb-3c80-4b35-b1a9-52679081fa08",
+    "module_id": "bc05270a-daa6-4bcb-baf2-cd7f1e55c5da",
+    "question": "A pharmacy technician at the Georgetown Public Hospital in Guyana is reviewing a prescription for a patient with severe, uncontrolled COPD. The prescriber has ordered an inhaled corticosteroid (ICS) medication. Which of the following ICS products would be most appropriate for this patient?",
+    "options": [
+      "Beclomethasone 100 mcg inhaler",
+      "Fluticasone 500 mcg/salmeterol 50 mcg combination inhaler",
+      "Montelukast 10 mg tablet",
+      "Prednisone 20 mg tablet"
+    ],
+    "correct_answer": 1,
+    "explanation": "For a patient with severe, uncontrolled COPD, a combination inhaler containing an ICS (fluticasone) and a long-acting bronchodilator (salmeterol) would be the most appropriate therapy. Beclomethasone is more commonly used for asthma in Guyana, while montelukast and oral prednisone are not first-line COPD treatments. The high-dose fluticasone/salmeterol combination is better suited for managing moderate-to-severe COPD.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": {},
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "3106b8ba-1326-4a5a-a988-2f649dd565b3",
+    "module_id": "bc05270a-daa6-4bcb-baf2-cd7f1e55c5da",
+    "question": "A patient visits a pharmacy in Kingston, Jamaica to refill their prescription for an inhaled corticosteroid (ICS) medication. The pharmacy technician notes that the patient has been using the inhaler incorrectly, resulting in poor asthma control. What is the BEST approach the technician should take to address this issue?",
+    "options": [
+      "Advise the patient to use the inhaler more frequently to get better results",
+      "Recommend the patient switch to a different ICS medication",
+      "Provide comprehensive education on proper inhaler technique and reinforce the importance of using the device correctly",
+      "Refer the patient back to their prescriber to discuss alternative treatment options"
+    ],
+    "correct_answer": 2,
+    "explanation": "The most appropriate action for the pharmacy technician in this scenario is to provide detailed education on proper inhaler technique. Improper use is a common issue across the Caribbean that can significantly impact medication effectiveness and asthma control. The technician should demonstrate the correct steps for using the inhaler and emphasize the importance of following the instructions precisely. Simply increasing the frequency or switching to a different ICS may not address the underlying problem of improper inhalation technique.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": {},
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  }
+]

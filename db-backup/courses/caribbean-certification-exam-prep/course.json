@@ -1,0 +1,25 @@
+{
+  "id": "7ba28388-1843-43d6-9973-c6b183a47dc4",
+  "title": "Caribbean Pharmacy Certification Exam Preparation",
+  "slug": "caribbean-certification-exam-prep",
+  "description": "This final subject prepares you for the pharmacy technician certification examination recognised in your Caribbean jurisdiction. Structured review sessions map every exam domain to content studied throughout the diploma.",
+  "skill_level": "Advanced",
+  "duration_weeks": 4,
+  "icon": "Award",
+  "color": "gold",
+  "prerequisites": [
+    "pharmacology-advanced",
+    "caribbean-pharmaceutical-regulations",
+    "medication-safety-error-prevention",
+    "capstone-case-simulation"
+  ],
+  "what_youll_learn": [
+    "Identify your personal knowledge gaps across all exam domains using diagnostic practice tests",
+    "Apply exam strategy techniques including time management and question elimination",
+    "Recall high-frequency drug names, classifications, and interactions tested on certification exams",
+    "Demonstrate competency across all six exam domains under timed conditions",
+    "Complete a full-length simulated certification examination with performance feedback"
+  ],
+  "status": "published",
+  "order": 27
+}

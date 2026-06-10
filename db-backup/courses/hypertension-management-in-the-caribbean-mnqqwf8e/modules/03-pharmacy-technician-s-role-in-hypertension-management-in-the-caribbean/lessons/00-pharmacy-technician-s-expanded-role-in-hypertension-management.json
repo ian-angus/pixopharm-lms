@@ -1,0 +1,35 @@
+{
+  "id": "0a717a2b-dbe8-4c26-b271-7259f0896576",
+  "module_id": "bf26981a-56a2-439f-84cf-302cc46cbdfa",
+  "title": "Pharmacy Technician's Expanded Role in Hypertension Management",
+  "content": [
+    {
+      "text": "Expanded Scope of Practice for Caribbean Pharmacy Technicians in Hypertension",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "In the Caribbean, pharmacy technicians have an expanded scope of practice compared to many other regions. Due to severe shortages of pharmacists, technicians often serve as the first and primary healthcare contact for patients with chronic conditions like hypertension. Technicians in Jamaica, Trinidad & Tobago, and Barbados are authorized to provide medication counseling, monitor blood pressure, adjust dosages within a collaborative practice agreement, and initiate certain medications under a pharmacist's supervision.",
+      "type": "text"
+    },
+    {
+      "body": "While the pharmacy technician's role in hypertension management is expanded throughout the CARICOM region, the specific regulations vary. In Guyana and Belize, technicians have a more limited scope, typically restricted to medication dispensing and basic patient education. In St. Lucia and other smaller islands, pharmacy technicians may take on advanced chronic care responsibilities but the legal framework is less defined.",
+      "type": "callout",
+      "title": "Regulatory Differences Across the Caribbean",
+      "variant": "info"
+    },
+    {
+      "term": "Collaborative Practice Agreement (CPA)",
+      "type": "key-term",
+      "definition": "A legal arrangement in Jamaica, Trinidad & Tobago, and Barbados that allows pharmacy technicians to perform certain clinical functions, such as medication management and dose adjustments, under the supervision of a licensed pharmacist. The CPA outlines the technician's specific scope of practice and required training."
+    },
+    {
+      "type": "video-placeholder",
+      "title": "Pharmacy Technician-Led Hypertension Clinic in Kingston, Jamaica",
+      "duration": "18 min",
+      "description": "A video demonstrating how pharmacy technicians in Jamaica manage a hypertension clinic, including blood pressure monitoring, medication counseling, and collaborative practice with the supervising pharmacist."
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 25
+}

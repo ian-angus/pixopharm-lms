@@ -1,0 +1,49 @@
+{
+  "id": "d8a12001-fdaa-4bb2-87a9-5c53b6fee616",
+  "module_id": "c0a2ba7e-e1a9-4739-a860-68be6bad219b",
+  "title": "Environmental and Socioeconomic Determinants of Respiratory Health",
+  "content": [
+    {
+      "text": "Environmental Factors Driving Respiratory Illness",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "The Caribbean climate and geography present unique environmental challenges that contribute to respiratory disease burden. Year-round high temperatures and humidity promote the growth of allergens like dust mites and mold, triggering asthma and other respiratory symptoms. In coastal regions, saltwater exposure can increase risk of conditions like leptospirosis that cause lung inflammation.",
+      "type": "text"
+    },
+    {
+      "body": "Rapidly expanding urbanization and industrialization in many Caribbean nations have led to increasing outdoor air pollution from traffic, power plants, and factories. Indoor air quality is also poor, with high levels of particulates from cooking with biomass fuels common in rural areas. Trinidad & Tobago and Jamaica have some of the highest air pollution levels in the region.",
+      "type": "callout",
+      "title": "Air Pollution: A Growing Concern",
+      "variant": "info"
+    },
+    {
+      "body": "Occupational exposures to dusts, fumes, and chemicals also contribute to respiratory illness, particularly in industries like mining, agriculture, and manufacturing. Pharmacy technicians must consider these environmental factors when counseling patients on disease management and medication use.",
+      "type": "text"
+    },
+    {
+      "text": "Socioeconomic Determinants of Respiratory Health",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Poverty, low education levels, and lack of access to quality healthcare are all social determinants that negatively impact respiratory health outcomes across the Caribbean. Individuals of lower socioeconomic status are more likely to live in substandard housing, be exposed to indoor/outdoor pollutants, and lack resources for proper disease management. This leads to higher rates of uncontrolled asthma, COPD exacerbations, and respiratory-related hospitalizations in these populations.",
+      "type": "text"
+    },
+    {
+      "body": "In Jamaica, asthma prevalence is over 30% in the poorest communities, compared to just 5% in the wealthiest areas. Similarly, asthma death rates in Barbados are 4 times higher among the lowest income quintile versus the highest. Addressing these socioeconomic inequities is crucial for improving respiratory health across the region.",
+      "type": "callout",
+      "title": "Disparities in Asthma Burden",
+      "variant": "info"
+    },
+    {
+      "type": "video-placeholder",
+      "title": "Respiratory Health Inequities in the Caribbean",
+      "duration": "21 min",
+      "description": "A panel discussion with public health experts from Guyana, Belize, and St. Lucia examines how poverty, urbanization, and limited access to care drive disparities in asthma, COPD, and other respiratory outcomes across the region."
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 25
+}

@@ -1,0 +1,56 @@
+[
+  {
+    "id": "deffdd4b-8293-479d-940b-04970bc9835d",
+    "module_id": "a1ae2113-883c-44e1-b6a1-74165ed6c924",
+    "question": "A pharmacy technician at a public health centre in Port of Spain, Trinidad is reviewing daily prescription data and notices that an unusually high proportion of diabetes patients are of Indo-Caribbean descent. Which of the following best explains this observation in the context of Caribbean diabetes epidemiology?",
+    "options": [
+      "Indo-Caribbean populations have higher genetic susceptibility to insulin resistance and metabolic syndrome, contributing to disproportionately higher diabetes prevalence rates compared to the general population",
+      "Indo-Caribbean patients are more likely to visit public pharmacies rather than private pharmacies, creating a sampling bias in the data",
+      "Type 2 diabetes is primarily caused by infectious agents that are more prevalent in Indo-Caribbean communities due to housing density",
+      "The Pharmacy Board of Trinidad and Tobago requires separate tracking of prescriptions by ethnicity, which inflates Indo-Caribbean diabetes counts"
+    ],
+    "correct_answer": 0,
+    "explanation": "Indo-Caribbean populations, descended largely from South Asian indentured labourers, carry genetic risk profiles for insulin resistance, central adiposity, and metabolic syndrome similar to those documented in South Asian populations globally. PAHO and UWI St. Augustine epidemiological studies have consistently shown that Indo-Trinidadians have significantly higher T2DM prevalence than Afro-Trinidadians. This is a well-established genetic and metabolic risk factor, not a sampling artifact or infectious aetiology.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": {},
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "5ba9c743-adab-47a7-8fff-a5be7fe86c7e",
+    "module_id": "a1ae2113-883c-44e1-b6a1-74165ed6c924",
+    "question": "A pharmacy technician in Bridgetown, Barbados is processing a prescription for insulin glargine (Lantus) 100 units/mL for a patient enrolled in the Barbados Drug Service (BDS) programme. During a routine cold chain check, the technician finds that the pharmacy's refrigerator thermometer reads 12°C and has been at this temperature for approximately 6 hours due to a faulty thermostat. What is the most appropriate action?",
+    "options": [
+      "Dispense the insulin as normal since it was still refrigerated and temperatures below 30°C are acceptable for short-term storage",
+      "Quarantine all insulin stock from the affected refrigerator, notify the supervising pharmacist immediately, document the temperature excursion, and do not dispense any affected products until the pharmacist authorises their disposition",
+      "Move the insulin to a cooler area of the pharmacy and allow it to reach 2–8°C before dispensing to the patient",
+      "Contact the Barbados Drug Service to request emergency replacement stock and discard all insulin products in the refrigerator immediately without further assessment"
+    ],
+    "correct_answer": 1,
+    "explanation": "Insulin must be stored at 2–8°C while in pharmacy stock. A sustained temperature of 12°C for 6 hours represents a significant cold chain excursion that may compromise insulin potency and safety. Under Barbados Pharmacy Act Cap 372D requirements and standard pharmaceutical cold chain management protocols, the technician must quarantine affected stock, document the excursion with times and temperatures, and notify the supervising pharmacist for a formal disposition decision. Dispensing compromised insulin could result in subtherapeutic dosing and dangerous hyperglycaemia.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": {},
+    "difficulty": "hard",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "16802116-80a3-41ec-9f14-66114f567030",
+    "module_id": "a1ae2113-883c-44e1-b6a1-74165ed6c924",
+    "question": "A 58-year-old female patient at a community pharmacy in Kingston, Jamaica tells the pharmacy technician that she has stopped taking her prescribed glibenclamide 5 mg because her neighbour told her that cerasee tea works just as well for controlling blood sugar. She reports drinking cerasee tea three times daily for the past month. Her last HbA1c was 9.2%. What should the pharmacy technician do?",
+    "options": [
+      "Reassure the patient that cerasee is an effective natural alternative to glibenclamide and document the change in her medication profile",
+      "Advise the patient to resume her glibenclamide immediately at double the dose to compensate for the missed month of treatment",
+      "Inform the patient non-judgmentally that while cerasee has some blood sugar-lowering properties, it is not a proven substitute for prescribed diabetes medication, document the cerasee use, advise her to resume her glibenclamide as originally prescribed, and refer her to the supervising pharmacist for counselling and potential physician follow-up given her elevated HbA1c",
+      "Tell the patient that cerasee is dangerous and must be stopped immediately, and dispense a new supply of glibenclamide without consulting the pharmacist"
+    ],
+    "correct_answer": 2,
+    "explanation": "Cerasee (Momordica charantia) has demonstrated modest hypoglycaemic effects in research conducted at UWI, but it is not a validated replacement for prescribed oral hypoglycaemics. An HbA1c of 9.2% indicates poorly controlled diabetes with significant risk of complications. Under Jamaica's Pharmacy Act 1966, the technician should counsel the patient respectfully, document the traditional remedy use, advise resumption of the prescribed medication at the original dose (not doubled, which would risk hypoglycaemia), and escalate to the supervising pharmacist for comprehensive counselling and potential referral back to the prescribing physician for medication review.",
+    "order_index": 3,
+    "question_type": "multiple_choice",
+    "question_data": {},
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  }
+]

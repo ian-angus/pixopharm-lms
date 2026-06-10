@@ -1,0 +1,45 @@
+{
+  "id": "0fa25b52-a69f-4649-a366-651b144678eb",
+  "module_id": "6b62cb2d-5d10-475f-8f55-4f07f958f3da",
+  "title": "Applying CARICOM Regional Standards and National Formularies",
+  "content": [
+    {
+      "text": "Regional and National Medication Formularies",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Beyond individual national drug scheduling, Caribbean pharmacy technicians must also be familiar with the CARICOM Regional Standard (CRS) and various national medication formularies. These establish the core list of medicines available and approved for use across the region. Knowing how to effectively utilize these resources is essential for making accurate pharmaceutical calculations.",
+      "type": "text"
+    },
+    {
+      "text": "The CARICOM Regional Standard (CRS)",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "The CRS is a harmonized essential medicines list developed by the Caribbean Public Health Agency (CARPHA). It outlines the core drugs that should be available and accessible in all CARICOM member states. Pharmacy technicians can reference the CRS when calculating doses, strengths, and quantities for common medications used to treat regional disease burdens like hypertension, diabetes, and HIV.",
+      "type": "text"
+    },
+    {
+      "body": "In addition to the CRS, each CARICOM nation also maintains its own national medication formulary. These include the Pharmacy Board of Trinidad & Tobago Formulary, the Barbados Drug Service (BDS) Formulary, the Georgetown Public Hospital Corporation Formulary in Guyana, and the Ministry of Health Formulary in Belize. Technicians must be familiar with the specific drug listings, availability, and restrictions in the formulary used at their practice location.",
+      "type": "callout",
+      "title": "National Formularies Across the CARICOM",
+      "variant": "info"
+    },
+    {
+      "body": "Accessing essential medicines can be challenging in the Caribbean due to supply chain issues, port delays, and small-island stock-out risks. Pharmacy technicians must closely monitor inventory and be prepared to collaborate with prescribers to find therapeutic alternatives when a formulary drug is unavailable.",
+      "type": "callout",
+      "title": "Formulary Challenges in the Caribbean",
+      "variant": "warning"
+    },
+    {
+      "type": "video-placeholder",
+      "title": "Using the CRS and National Formularies",
+      "duration": "18 min",
+      "description": "A senior pharmacy technician from the Barbados Drug Service demonstrates how to reference the CARICOM Regional Standard and the BDS Formulary when calculating doses, strengths, and quantities for common chronic disease medications."
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 25
+}

@@ -1,0 +1,33 @@
+{
+  "id": "da3663e7-2351-421a-b4b1-6e8a43b011ff",
+  "module_id": "f5cb6320-8f42-4e30-bee8-8edf52fe2384",
+  "title": "Antiretroviral Drug Classes and Mechanisms",
+  "content": [
+    {
+      "text": "The Major Antiretroviral Drug Classes",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "The CARICOM regional treatment guidelines recognize the major antiretroviral drug classes: nucleoside/nucleotide reverse transcriptase inhibitors (NRTIs), non-nucleoside reverse transcriptase inhibitors (NNRTIs), protease inhibitors (PIs), integrase strand transfer inhibitors (INSTIs), and entry/fusion inhibitors. Each class targets a different stage of the HIV replication cycle.",
+      "type": "text"
+    },
+    {
+      "body": "Common first-line regimens in the Caribbean include TDF/3TC/EFV, ABC/3TC/DTG, and TAF/FTC/BIC. Second-line often uses boosted PIs like DRV/r or LPV/r.",
+      "type": "callout",
+      "title": "Key Antiretroviral Drugs in CARICOM"
+    },
+    {
+      "term": "Nucleoside Reverse Transcriptase Inhibitors (NRTIs)",
+      "type": "key-term",
+      "definition": "This class of antiretrovirals, such as tenofovir (TDF), abacavir (ABC), and zidovudine (AZT), act by interfering with the HIV reverse transcriptase enzyme, blocking the conversion of viral RNA to DNA and preventing viral replication."
+    },
+    {
+      "term": "Non-Nucleoside Reverse Transcriptase Inhibitors (NNRTIs)",
+      "type": "key-term",
+      "definition": "Drugs in this class, like efavirenz (EFV) and nevirapine (NVP), bind directly to the HIV reverse transcriptase enzyme, altering its structure and inhibiting its activity to halt viral replication."
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 40
+}

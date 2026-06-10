@@ -1,0 +1,50 @@
+{
+  "id": "687c160e-fe77-4cd6-ad57-3dd93b58fb67",
+  "module_id": "e47529d5-4119-4119-b611-0bb0b6e78799",
+  "title": "Tailoring Diabetes Medications for Caribbean Patients",
+  "content": [
+    {
+      "text": "Tailoring Diabetes Medications for Caribbean Patients",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "While the basic pharmacology and dosing principles for diabetes medications are universal, Caribbean pharmacy technicians must consider several unique regional factors when selecting and managing these therapies. This includes accounting for the high prevalence of comorbidities, traditional medicine use, and supply chain challenges specific to the islands.",
+      "type": "text"
+    },
+    {
+      "text": "Comorbidities and Drug Interactions",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Diabetes in the Caribbean is often complicated by other chronic conditions like hypertension, dyslipidemia, and kidney disease. Technicians must be aware of the potential interactions between antidiabetic medications and drugs used to treat these comorbidities. For example, metformin requires dose adjustments with concurrent use of renally cleared medications like enalapril or atorvastatin, common in this patient population.",
+      "type": "text"
+    },
+    {
+      "body": "Many Caribbean patients also use herbal remedies like cerasee (Momordica charantia) or soursop leaf, which can interact with prescription diabetes medications. Technicians must actively ask about traditional medicine use and counsel patients on the risks of combining these therapies, as they may alter blood glucose control or increase the likelihood of adverse effects.",
+      "type": "callout",
+      "title": "Traditional Medicine Interactions",
+      "variant": "warning"
+    },
+    {
+      "body": "Pharmacy technicians in the Caribbean must also navigate supply chain issues that can impact diabetes medication availability. Factors like tropical heat, power outages, and shipping delays between islands can lead to stock-outs, especially for insulin. Technicians should be prepared to suggest therapeutic alternatives or provide guidance on proper storage and transport when specific products are unavailable.",
+      "type": "callout",
+      "title": "Supply Chain Challenges Across CARICOM",
+      "variant": "info"
+    },
+    {
+      "term": "Patient-Centered Care",
+      "type": "key-term",
+      "definition": "Delivering effective diabetes management in the Caribbean requires a patient-centered approach. Technicians must tailor medication regimens to each individual's clinical profile, cultural preferences, and practical needs. This may involve simplifying complex treatment plans, incorporating traditional remedies, or adapting administration techniques to the local context."
+    },
+    {
+      "type": "video-placeholder",
+      "title": "Diabetes Medication Challenges in the Caribbean",
+      "duration": "18 min",
+      "description": "A panel discussion with Caribbean pharmacy experts explores the unique considerations for selecting and managing diabetes drugs, including comorbidities, drug interactions, supply chain issues, and culturally appropriate patient education."
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 25
+}

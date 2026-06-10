@@ -1,0 +1,47 @@
+{
+  "id": "269e77ab-59b4-4a75-adc0-907c45be4dfe",
+  "module_id": "c0a2ba7e-e1a9-4739-a860-68be6bad219b",
+  "title": "Respiratory Disease Epidemiology in the Caribbean",
+  "content": [
+    {
+      "text": "Respiratory Disease Burden Across the Caribbean",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Respiratory diseases are a major public health concern across the Caribbean region. Asthma, chronic obstructive pulmonary disease (COPD), and other respiratory conditions impose a significant burden on healthcare systems and patient quality of life. Understanding the regional epidemiology is essential for pharmacy technicians to provide effective care.",
+      "type": "text"
+    },
+    {
+      "body": "Asthma prevalence ranges from 4.3% in Belize to 12.1% in Barbados. Jamaica and Trinidad & Tobago report rates over 10%, while Guyana and smaller islands like Grenada see lower rates around 5-7%. These differences are linked to environmental exposures, socioeconomic factors, and access to quality care.",
+      "type": "callout",
+      "title": "Asthma Prevalence Varies Widely",
+      "variant": "info"
+    },
+    {
+      "body": "COPD is less extensively studied in the Caribbean, but estimates suggest a regional prevalence around 4-6%. Rates tend to be higher in countries with greater smoking prevalence, such as Suriname, and in populations exposed to indoor air pollution from biomass fuels.",
+      "type": "text"
+    },
+    {
+      "body": "Respiratory diseases often coexist with other chronic conditions. In the Caribbean, high rates of hypertension, diabetes, and cardiovascular disease can exacerbate COPD and asthma. Sickle cell disease, common across the region, is associated with a higher risk of asthma and acute chest syndrome.",
+      "type": "callout",
+      "title": "Respiratory Disease Comorbidities",
+      "variant": "info"
+    },
+    {
+      "text": "Risk Factors for Respiratory Diseases",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Several environmental and socioeconomic factors contribute to the respiratory disease burden across the Caribbean. Exposure to air pollution both outdoor (vehicular, industrial, Sahara dust) and indoor (biomass fuels, secondhand smoke), is a major risk factor, especially in rapidly urbanizing areas. Low socioeconomic status is linked to poorer housing conditions, limited access to quality healthcare, and higher smoking rates — all of which increase respiratory disease risk.",
+      "type": "text"
+    },
+    {
+      "body": "[unsupported block type]",
+      "type": "text"
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 25
+}

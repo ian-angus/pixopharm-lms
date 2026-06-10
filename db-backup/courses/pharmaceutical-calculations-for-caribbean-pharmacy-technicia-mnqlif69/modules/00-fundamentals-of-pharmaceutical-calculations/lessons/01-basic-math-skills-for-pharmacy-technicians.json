@@ -1,0 +1,41 @@
+{
+  "id": "54dd28ff-87d4-4edc-a539-6e224427c116",
+  "module_id": "adae9980-53f6-4adf-99ec-d7bf5536faad",
+  "title": "Basic Math Skills for Pharmacy Technicians",
+  "content": [
+    {
+      "text": "Basic Math Skills for Pharmacy Technicians",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Pharmacy technicians in the Caribbean must be proficient in fundamental arithmetic operations to carry out accurate pharmaceutical calculations. From adding and subtracting fractions to converting between decimals and percentages, a strong grasp of basic math skills is essential. In this lesson, we'll review the core math competencies required to safely dispense medications across the diverse CARICOM region.",
+      "type": "text"
+    },
+    {
+      "body": "The Caribbean presents unique math-related challenges for pharmacy technicians. Tropical temperatures and humidity can cause liquid medication volumes to fluctuate. Power outages and unreliable internet disrupt access to electronic calculation tools. And technicians must often perform calculations on-the-fly while serving high patient volumes. Mastering mental math and hand calculations is essential.",
+      "type": "callout",
+      "title": "Unique Challenges of Caribbean Pharmacy Math",
+      "variant": "info"
+    },
+    {
+      "term": "Rounding Rules",
+      "type": "key-term",
+      "definition": "Standardized methods for properly rounding calculated medication amounts to the nearest appropriate whole number or decimal place. Correct rounding is critical to avoid over- or under-dosing patients. Caribbean pharmacies typically follow either British or American rounding conventions, which can vary by island."
+    },
+    {
+      "body": "Misplacing decimal points is a common source of dangerous medication errors in Caribbean pharmacies. For example, mistakenly dispensing 10 mg instead of 1 mg, or 100 mL instead of 10 mL. Technicians must double-check all calculated values, especially when converting between units or working with concentrated stock solutions.",
+      "type": "callout",
+      "title": "Watch for Decimal Point Errors",
+      "variant": "warning"
+    },
+    {
+      "type": "video-placeholder",
+      "title": "Basic Pharmaceutical Math Skills Refresher",
+      "duration": "18 min",
+      "description": "A step-by-step review of essential arithmetic operations, fraction-decimal-percentage conversions, and rounding techniques that Caribbean pharmacy technicians must master to perform accurate dose calculations."
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 25
+}

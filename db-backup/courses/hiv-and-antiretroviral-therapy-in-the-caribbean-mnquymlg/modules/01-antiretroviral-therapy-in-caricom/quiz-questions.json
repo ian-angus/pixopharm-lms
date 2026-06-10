@@ -1,0 +1,38 @@
+[
+  {
+    "id": "9c23cc74-4cf4-45ba-8697-f58ef1c44ee7",
+    "module_id": "f5cb6320-8f42-4e30-bee8-8edf52fe2384",
+    "question": "A patient in Barbados is prescribed a first-line antiretroviral regimen. Which drug class is most likely to be included in this regimen?",
+    "options": [
+      "Nucleoside reverse transcriptase inhibitors (NRTIs)",
+      "Non-nucleoside reverse transcriptase inhibitors (NNRTIs)",
+      "Protease inhibitors (PIs)",
+      "Integrase strand transfer inhibitors (INSTIs)"
+    ],
+    "correct_answer": 0,
+    "explanation": "The Barbados national HIV treatment guidelines recommend first-line ART regimens containing two NRTIs plus an NNRTI or INSTI as the backbone.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": {},
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "17ca2cd1-1d69-43c5-8928-56c17216edf0",
+    "module_id": "f5cb6320-8f42-4e30-bee8-8edf52fe2384",
+    "question": "A pharmacy technician in Trinidad and Tobago is counseling a patient who has been prescribed the antiretroviral drug abacavir (ABC). What is the primary concern the technician should discuss with the patient?",
+    "options": [
+      "Risk of hypersensitivity reaction",
+      "Potential for drug interactions with herbal remedies",
+      "Requirement for refrigerated storage",
+      "Need for close viral load monitoring"
+    ],
+    "correct_answer": 0,
+    "explanation": "Abacavir is associated with a potentially life-threatening hypersensitivity reaction, which the pharmacy technician should educate the patient about to ensure prompt recognition and management.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": {},
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  }
+]

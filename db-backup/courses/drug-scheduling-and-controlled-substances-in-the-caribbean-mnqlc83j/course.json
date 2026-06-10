@@ -1,0 +1,20 @@
+{
+  "id": "8be83d5a-4f68-45fc-8e1e-98d50331d79b",
+  "title": "Drug Scheduling and Controlled Substances in the Caribbean",
+  "slug": "drug-scheduling-and-controlled-substances-in-the-caribbean-mnqlc83j",
+  "description": "This course covers the differences in drug scheduling and controlled substance regulations across the major CARICOM islands, with a focus on the clinical role of pharmacy technicians in dispensing and record-keeping for these high-risk medications.",
+  "skill_level": "Beginner",
+  "duration_weeks": 3,
+  "icon": "Pill",
+  "color": "purple",
+  "prerequisites": [],
+  "what_youll_learn": [
+    "Identify the drug scheduling frameworks used in Jamaica, Trinidad & Tobago, Barbados, Guyana, and Belize",
+    "Explain the controlled substance prescribing and dispensing requirements for each island",
+    "Demonstrate proper record-keeping procedures for controlled medications",
+    "Recognize the unique clinical challenges in managing these drugs within the Caribbean healthcare context",
+    "Apply best practices to mitigate supply chain risks and medication errors"
+  ],
+  "status": "published",
+  "order": 999
+}

@@ -1,0 +1,26 @@
+{
+  "id": "b1517f97-6d17-4177-a0ff-af8f3af83546",
+  "title": "Capstone Integrated Case Simulation",
+  "slug": "capstone-case-simulation",
+  "description": "The Capstone is where everything comes together. Through complex multi-layered pharmacy simulation cases set in Caribbean environments — Port of Spain, Kingston, Grenada — you demonstrate the full range of diploma competencies.",
+  "skill_level": "Advanced",
+  "duration_weeks": 6,
+  "icon": "Trophy",
+  "color": "gold",
+  "prerequisites": [
+    "dispensing-medication-management",
+    "medication-safety-error-prevention",
+    "caribbean-pharmacy-law-ethics",
+    "pharmacology-advanced",
+    "pharmacy-management-leadership"
+  ],
+  "what_youll_learn": [
+    "Integrate clinical, regulatory, and communication competencies to manage complex real-world scenarios",
+    "Demonstrate professional judgement under time pressure and competing priorities",
+    "Apply the full dispensing workflow including clinical flag escalation, documentation, and patient counselling",
+    "Show leadership capability in managing team, system, and patient safety challenges",
+    "Produce a reflective portfolio evidencing competency across all diploma learning outcomes"
+  ],
+  "status": "published",
+  "order": 26
+}

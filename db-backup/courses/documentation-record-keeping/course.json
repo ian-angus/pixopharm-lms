@@ -1,0 +1,23 @@
+{
+  "id": "d8f844a2-1db3-4e05-a68c-d6bfaff8ad66",
+  "title": "Documentation, Record Keeping & Reimbursement Basics",
+  "slug": "documentation-record-keeping",
+  "description": "Good documentation is the backbone of safe pharmacy practice, regulatory compliance, and accurate reimbursement. This course covers every record a pharmacy technician is responsible for maintaining.",
+  "skill_level": "Intermediate",
+  "duration_weeks": 5,
+  "icon": "FileText",
+  "color": "slate",
+  "prerequisites": [
+    "dispensing-medication-management",
+    "caribbean-pharmacy-law-ethics"
+  ],
+  "what_youll_learn": [
+    "Maintain complete and accurate dispensing records that satisfy Caribbean regulatory requirements",
+    "Complete controlled drug register entries correctly for all scheduled substances",
+    "Process basic insurance and national health programme claims for common prescription scenarios",
+    "Organise pharmacy documentation to be inspection-ready at any time",
+    "Handle patient medication records in compliance with local data protection legislation"
+  ],
+  "status": "published",
+  "order": 16
+}

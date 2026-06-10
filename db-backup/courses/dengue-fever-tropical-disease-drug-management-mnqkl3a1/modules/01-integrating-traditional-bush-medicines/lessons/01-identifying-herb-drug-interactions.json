@@ -1,0 +1,35 @@
+{
+  "id": "ac722130-b673-4ea2-a8d4-d67571751391",
+  "module_id": "61807b4f-e9bb-42cd-974b-e2b35e86f821",
+  "title": "Identifying Herb-Drug Interactions",
+  "content": [
+    {
+      "text": "Risks of Combining Traditional and Pharmaceutical Treatments",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Many Caribbean patients use traditional medicines alongside or instead of prescribed drugs, often without disclosing this to their healthcare providers. This puts them at risk of dangerous herb-drug interactions that can reduce the efficacy of their treatment or cause serious adverse effects. As a pharmacy technician, you must be prepared to proactively identify potential interactions and guide patients on the safe integration of traditional and conventional therapies.",
+      "type": "text"
+    },
+    {
+      "body": "Cerasee (Momordica charantia) can lower blood glucose levels, increasing the risk of hypoglycemia when combined with antidiabetic drugs like metformin. Soursop leaf (Annona muricata) contains compounds that may interact with central nervous system medications, heightening side effects. Bush teas like periwinkle have diuretic properties that can impact the efficacy of antihypertensive drugs.",
+      "type": "callout",
+      "title": "Common Interactions in the Caribbean",
+      "variant": "warning"
+    },
+    {
+      "term": "Herb-Drug Interaction",
+      "type": "key-term",
+      "definition": "An interaction that occurs when a pharmaceutical drug is combined with a traditional herbal remedy. This can alter the drug's absorption, metabolism, or excretion, leading to reduced efficacy or increased side effects. Interactions can also work in the opposite direction, with drugs affecting the potency of traditional medicines."
+    },
+    {
+      "type": "video-placeholder",
+      "title": "Assessing Herb-Drug Interactions in a Barbados Pharmacy",
+      "duration": "17 min",
+      "description": "A Barbados pharmacy technician consults a patient who discloses they are taking a popular bush tea to manage their hypertension, in addition to their prescribed ACE inhibitor. They walk through the process of identifying potential interactions and developing a safe, integrated treatment plan."
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 25
+}
