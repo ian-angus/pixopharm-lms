@@ -12,7 +12,7 @@
 - Disable text selection and copy/paste on all lesson content (`user-select: none` + block `copy`/`cut` events)
 - Block printing via `@media print { display: none }` on content areas
 - Disable right-click context menu on lesson content
-- Diagonal watermark overlay showing logged-in user's **name + email** across all lesson content — makes any screenshot traceable back to the individual
+- Diagonal watermark overlay showing a **pseudonymous token (short user ID + timestamp)** across all lesson content — screenshots stay traceable server-side without exposing PII in the content itself
 - Note: true screen recording prevention is not possible in a browser; watermarking is the effective deterrent
 
 **Affected components:** `CoursePlayer`, lesson content renderer

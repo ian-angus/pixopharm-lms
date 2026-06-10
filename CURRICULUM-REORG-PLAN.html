@@ -133,10 +133,10 @@
 <h3>Phase 0 — Edge-function hardening</h3>
 <ul>
   <li class="done"><code>enhance-module</code>: forward admin JWT (deployed v7, verified).</li>
-  <li class="todo">Audit <code>generate-course</code>; switch to forwarded-admin-JWT if it relies on RLS-bypass.</li>
-  <li class="todo">Audit <code>analyze-survey</code> likewise.</li>
-  <li class="todo">Log the resolved role in each function for future debugging.</li>
-  <li class="todo"><b>Repair the service-role secret (D10)</b> under the new <code>sb_</code> key system; verify RLS bypass works.</li>
+  <li class="done">Audited <code>generate-course</code> — had no auth at all; now admin-JWT validated + forwarded (v20, verified end-to-end).</li>
+  <li class="done">Audited <code>analyze-survey</code> — no auth whatsoever; now admin-only gate before body parsing (v10, verified).</li>
+  <li class="done">Resolved caller id + role logged in all three functions.</li>
+  <li class="done"><b>Repaired the service-role secret (D10)</b> — new <code>sb_secret_</code> key verified to bypass RLS; stored as <code>SB_SECRET_KEY</code> function secret.</li>
 </ul>
 
 <h3>Phase 0b — AI interactive quiz generation <em>(after Phase 1's schema lands)</em></h3>

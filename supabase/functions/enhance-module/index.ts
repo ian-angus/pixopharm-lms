@@ -66,7 +66,7 @@ Deno.serve(async (req: Request) => {
   const { data: { user }, error: userErr } = await sb.auth.getUser(token);
   if (userErr || !user) return json({ error: "Unauthorized" }, 401);
   const { data: callerProfile } = await sb.from("profiles").select("role").eq("id", user.id).single();
-  console.log(`enhance-module: caller=${user.email ?? user.id} role=${callerProfile?.role ?? "none"}`);
+  console.log(`enhance-module: caller_id=${user.id} role=${callerProfile?.role ?? "none"}`);
   if (callerProfile?.role !== "admin") return json({ error: "Forbidden" }, 403);
 
   try {

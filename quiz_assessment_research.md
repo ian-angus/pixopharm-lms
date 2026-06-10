@@ -513,13 +513,13 @@ CREATE POLICY "Quiz questions viewable by authenticated users"
   ON public.quiz_questions_v2 FOR SELECT
   USING (auth.role() = 'authenticated');
 
--- Only admins/instructors can modify questions (handle in app logic or with role check)
+-- Only admins can modify questions (matches the existing is_admin() helper)
 CREATE POLICY "Quiz questions modifiable by admins"
   ON public.quiz_questions_v2 FOR ALL
   USING (
     EXISTS (
       SELECT 1 FROM public.profiles
-      WHERE id = auth.uid() AND role IN ('admin', 'instructor')
+      WHERE id = auth.uid() AND role = 'admin'  -- matches is_admin()
     )
   );
 
@@ -544,7 +544,7 @@ CREATE POLICY "Admins view all quiz attempts"
   USING (
     EXISTS (
       SELECT 1 FROM public.profiles
-      WHERE id = auth.uid() AND role IN ('admin', 'instructor')
+      WHERE id = auth.uid() AND role = 'admin'  -- matches is_admin()
     )
   );
 
@@ -553,7 +553,7 @@ CREATE POLICY "Admins view all quiz responses"
   USING (
     EXISTS (
       SELECT 1 FROM public.profiles
-      WHERE id = auth.uid() AND role IN ('admin', 'instructor')
+      WHERE id = auth.uid() AND role = 'admin'  -- matches is_admin()
     )
   );
 ```
