@@ -1,0 +1,56 @@
+[
+  {
+    "id": "43dbd680-f385-4c9c-9fac-9d9938b9d80e",
+    "module_id": "6d18ebe8-35e0-4e2a-bffb-400240e5b0a2",
+    "question": "A pharmacy technician at a CDAP-enrolled pharmacy in Chaguanas, Trinidad, is dispensing metformin 1 g BD and glibenclamide 5 mg OD to a 58-year-old patient with type 2 diabetes. The patient says, 'I already know how to take my tablets — I've been on them for years.' Using best counselling practice, what should the technician do?",
+    "options": [
+      "Accept the patient's statement and dispense the medications without further counselling since the patient is experienced.",
+      "Insist that the patient sit down for a full 10-minute counselling session regardless of the patient's response.",
+      "Use the teach-back method by asking the patient to describe how and when they take each tablet, reinforcing key safety points like hypoglycaemia signs with the glibenclamide.",
+      "Hand the patient a printed leaflet and ask them to read it at home instead of providing verbal counselling."
+    ],
+    "correct_answer": 2,
+    "explanation": "The teach-back method is the gold standard for confirming actual understanding, especially with high-risk medications like sulfonylureas. Accepting the patient's claim without verification (Option A) is dangerous — studies show patients frequently misunderstand dosing even after years of therapy. A rigid 10-minute session (Option B) is impractical in high-volume CDAP pharmacies and may alienate the patient. A leaflet alone (Option D) is insufficient, particularly given that functional health literacy in some Trinidad communities is lower than assumed. The teach-back confirms understanding efficiently while reinforcing hypoglycaemia counselling, which is non-negotiable when dispensing glibenclamide.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": {},
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "38a846e3-c6c4-458c-be0f-33bfa9fce8ab",
+    "module_id": "6d18ebe8-35e0-4e2a-bffb-400240e5b0a2",
+    "question": "A 65-year-old woman presents a prescription for metformin 500 mg BD and gliclazide 80 mg OD at a community pharmacy in Georgetown, Guyana. During dispensing, the pharmacy technician asks about other remedies. The patient reveals she drinks karela (bitter melon) juice every morning and neem leaf tea every night, both for 'sugar control.' What is the most appropriate action?",
+    "options": [
+      "Tell the patient she must immediately stop drinking karela juice and neem tea because they are dangerous and not real medicine.",
+      "Document the traditional remedy use, explain the risk of additive hypoglycaemia with karela and gliclazide, discuss safer timing, and refer to the pharmacist for clinical review.",
+      "Ignore the disclosure because herbal remedies are not the pharmacy's responsibility and are not covered under Guyana's Food & Drugs Act.",
+      "Advise the patient to replace her gliclazide with karela juice since it is a natural alternative that works the same way."
+    ],
+    "correct_answer": 1,
+    "explanation": "Option B is correct because cerasee/karela (Momordica charantia) has documented hypoglycaemic activity due to charantin and polypeptide-p, creating an additive hypoglycaemia risk when combined with gliclazide. The technician must document the disclosure, counsel on the interaction risk, negotiate safer timing, and escalate to the pharmacist — this fulfils the duty of care under Guyana's pharmacy practice standards. Option A is wrong because abruptly telling the patient to stop destroys trust and may cause her to disengage from care or stop her prescription medications instead. Option C is wrong because the pharmacy's duty of care covers all substances affecting treatment outcomes. Option D is clinically dangerous — karela is not a validated substitute for a prescribed sulfonylurea.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": {},
+    "difficulty": "hard",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "fcc1563e-55d0-4bd3-b0dc-f11d260b43e2",
+    "module_id": "6d18ebe8-35e0-4e2a-bffb-400240e5b0a2",
+    "question": "A pharmacy technician at a polyclinic in Barbados is developing a patient education handout for diabetes patients receiving medications through the Barbados Drug Service. The patient population includes many elderly individuals with limited reading ability. Which design approach is most appropriate?",
+    "options": [
+      "Use detailed paragraphs written at a university reading level to ensure clinical accuracy, with medical terminology so patients learn proper drug names.",
+      "Download a diabetes fact sheet from an American medical website and photocopy it for distribution, since the medical information is universal.",
+      "Create a pictogram-based medication schedule with local food examples (cou-cou, ground provisions, rice and peas), large fonts, and icons for dosing times, paired with the polyclinic's actual contact number for emergencies.",
+      "Produce the handout in formal French since Barbados is in the Caribbean and many Caribbean residents speak French Creole."
+    ],
+    "correct_answer": 2,
+    "explanation": "Option C is correct because effective Caribbean patient education must target Grade 4–6 reading level with pictograms for low-literacy patients, reference local foods that patients actually eat (Barbadian staples like cou-cou and ground provisions rather than American or European examples), and include actionable local resources such as the polyclinic's real emergency contact. Option A uses inappropriately high reading levels that exclude elderly and low-literacy patients. Option B fails because American materials reference irrelevant foods, assume access to technologies unavailable through the BDS system, and depict non-Caribbean populations — reducing patient engagement. Option D is incorrect because Barbados is English-speaking; French Creole is relevant to islands like St. Lucia and Dominica, not Barbados.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": {},
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  }
+]

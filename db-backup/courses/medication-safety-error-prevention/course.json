@@ -1,0 +1,22 @@
+{
+  "id": "ec35d5d4-9d1e-43ed-a337-25e92de1e028",
+  "title": "Medication Safety & Error Prevention",
+  "slug": "medication-safety-error-prevention",
+  "description": "Medication errors cause preventable patient harm every day. This course equips you with the mindset, skills, and tools to interrupt error chains before they reach patients.",
+  "skill_level": "Intermediate",
+  "duration_weeks": 5,
+  "icon": "ShieldAlert",
+  "color": "red",
+  "prerequisites": [
+    "dispensing-medication-management"
+  ],
+  "what_youll_learn": [
+    "Identify the most common medication error types and the system factors that contribute to them",
+    "Apply Tall Man lettering, barcode checking, and independent double-check procedures in dispensing",
+    "Recognise high-alert medications and LASA drug pairs requiring extra caution",
+    "Complete a near-miss or incident report accurately and constructively",
+    "Conduct a basic root cause analysis of a dispensing error and recommend preventive changes"
+  ],
+  "status": "published",
+  "order": 14
+}

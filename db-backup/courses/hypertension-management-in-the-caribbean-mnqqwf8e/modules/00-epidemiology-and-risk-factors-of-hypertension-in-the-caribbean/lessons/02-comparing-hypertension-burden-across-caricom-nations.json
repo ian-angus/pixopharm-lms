@@ -1,0 +1,44 @@
+{
+  "id": "6faed908-344a-40de-aa68-20b53d736700",
+  "module_id": "b748e281-c296-4ef0-ba67-d38f2592efcf",
+  "title": "Comparing Hypertension Burden Across CARICOM Nations",
+  "content": [
+    {
+      "text": "Variations in Hypertension Across the Caribbean",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "While hypertension is a major public health concern throughout the Caribbean Community (CARICOM), the exact burden and healthcare system response varies considerably between individual islands and nations. Understanding these differences is crucial for pharmacy technicians working across the region.",
+      "type": "text"
+    },
+    {
+      "body": "Jamaica has the Caribbean's highest adult hypertension rate at 30%, but also faces severe shortages of antihypertensive medications in public pharmacies, forcing many patients to pay out-of-pocket for private care or go without treatment.",
+      "type": "callout",
+      "title": "Jamaica: Highest Hypertension Rates, Limited Access to Care",
+      "variant": "info"
+    },
+    {
+      "body": "In contrast, Barbados has a relatively lower hypertension prevalence of 26% but has implemented successful public health initiatives to improve blood pressure control, including the Barbados Drug Service which provides subsidized hypertension drugs through the national formulary. Trinidad and Tobago, with a 27% adult hypertension rate, has invested heavily in chronic disease management programs but still grapples with high non-adherence and uncontrolled hypertension.",
+      "type": "text"
+    },
+    {
+      "body": "The dispersed, rural populations of Guyana and Belize make it difficult to deliver consistent hypertension care, especially in hinterland regions. Pharmacy technicians play a crucial role in supporting medication access and patient education in these geographically isolated communities.",
+      "type": "callout",
+      "title": "Guyana and Belize: Challenges of Geography",
+      "variant": "info"
+    },
+    {
+      "body": "Across the smaller OECS islands like St. Lucia, Grenada, and Dominica, the hypertension burden is similarly high (around 28%), but access to specialty care and advanced treatment options remains limited. Pharmacy technicians are often the primary healthcare contact for hypertensive patients on these islands.",
+      "type": "text"
+    },
+    {
+      "type": "video-placeholder",
+      "title": "Hypertension Management Challenges in Remote Belize",
+      "duration": "11 min",
+      "description": "A pharmacy technician from Belize City discusses the unique challenges of providing hypertension care in Belize's rural Cayo District, including supply chain disruptions, patient adherence issues, and the importance of community outreach."
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 25
+}

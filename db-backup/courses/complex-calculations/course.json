@@ -1,0 +1,23 @@
+{
+  "id": "af10aa84-8379-40c1-b486-c056bbc70af3",
+  "title": "Complex Calculations",
+  "slug": "complex-calculations",
+  "description": "Advanced pharmacy practice requires a higher order of mathematical competence — from clinical pharmacokinetic calculations and therapeutic drug monitoring to complex TPN formulations. Every problem set is grounded in realistic Caribbean clinical scenarios.",
+  "skill_level": "Advanced",
+  "duration_weeks": 6,
+  "icon": "Sigma",
+  "color": "indigo",
+  "prerequisites": [
+    "pharmaceutical-calculations-dosage",
+    "pharmacology-advanced"
+  ],
+  "what_youll_learn": [
+    "Perform pharmacokinetic calculations for therapeutic drug monitoring and dose individualisation",
+    "Calculate renal and hepatic dose adjustments for patients with organ impairment",
+    "Determine chemotherapy doses using body surface area for oncology scenarios",
+    "Prepare multi-component TPN formulations using accurate mathematical verification",
+    "Apply independent double-check methodology to high-stakes calculation scenarios"
+  ],
+  "status": "published",
+  "order": 20
+}

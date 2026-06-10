@@ -13,65 +13,91 @@
       "type": "text"
     },
     {
-      "type": "island-comparison",
-      "title": "Mandatory Label Elements by Island",
-      "islands": [
-        {
-          "flag": "🇹🇹",
-          "name": "Trinidad & Tobago",
-          "details": [
-            "Pharmacy name, address, and telephone number",
-            "Prescription number",
-            "Patient's full name",
-            "Date of dispensing",
-            "Name and strength of medication",
-            "Quantity dispensed",
-            "Directions for use in English",
-            "Prescriber's name",
-            "Expiry date of medication",
-            "Storage instructions (especially important in tropical climate)",
-            "'Keep out of reach of children' warning",
-            "Any special warnings (e.g., 'May cause drowsiness')"
-          ]
-        },
-        {
-          "flag": "🇯🇲",
-          "name": "Jamaica",
-          "details": [
-            "Name and address of the dispensing pharmacy",
-            "Prescription serial number",
-            "Patient's name",
-            "Date of dispensing",
-            "Name of medication (generic name required by policy in public facilities)",
-            "Strength and dosage form",
-            "Directions for use",
-            "Name of prescribing doctor",
-            "Quantity supplied",
-            "'Keep out of reach of children' required on all labels",
-            "National Health Fund (NHF) number if applicable for subsidised medications",
-            "Auxiliary labels for high-alert medications"
-          ]
-        },
-        {
-          "flag": "🇧🇧",
-          "name": "Barbados",
-          "details": [
-            "Pharmacy name and address",
-            "Patient's full name",
-            "Date of dispensing",
-            "Name of medication (Barbados National Drug Formulary name preferred)",
-            "Strength and quantity",
-            "Directions for use in clear, plain English",
-            "Name of prescriber",
-            "Barbados Drug Service lot/batch tracking number (public sector)",
-            "'Keep out of reach of children' mandatory",
-            "Storage temperature guidance",
-            "Expiry date",
-            "Auxiliary warning labels as appropriate"
-          ]
-        }
+      "body": "ANATOMY OF A PRESCRIPTION LABEL",
+      "type": "text"
+    },
+    {
+      "body": "A prescription label acts as a personal medication guide, outlining exactly who the medicine is for, what it is, and how to use it safely. ",
+      "type": "text"
+    },
+    {
+      "body": "To make it clear at a glance, we divide the core information into specific, standardized sections. ",
+      "type": "text"
+    },
+    {
+      "body": "Pharmacy & Identification Details",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Pharmacy Information: The top of the label displays the dispensing pharmacy’s name, address, and phone number for easy refill requests or questions.",
+        "Rx Number: A unique identifying number for that specific prescription. You will use this number when calling the pharmacy for refills.",
+        "Prescription Date: The date the prescription was written or filled, which dictates when the medication expires. "
       ],
-      "description": "While there is significant overlap, each jurisdiction has specific requirements. Always follow the requirements of the island where you are practising."
+      "ordered": false
+    },
+    {
+      "body": "Patient & Provider Information",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Patient Name: The full name of the person or dependent for whom the medication was prescribed.",
+        "Prescribing Doctor: The name of the healthcare provider who issued the prescription. "
+      ],
+      "ordered": false
+    },
+    {
+      "body": "Medication Details",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Drug Name & Strength: Usually the largest text on the label. It features the medication's active ingredient (generic name) and its strength (e.g., 10 mg).",
+        "Brand Name: If a generic substitute was used, this section will state \"Substituted For\" followed by the original brand name.",
+        "Description: A physical description of the medication (e.g., shape, color, or markings) to help you verify the pill inside the bottle. "
+      ],
+      "ordered": false
+    },
+    {
+      "body": "Dosage & Directions",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Directions: This is the most critical section. It dictates how much to take, how often, how long, and how to administer it (e.g., \"Take one tablet by mouth twice daily for 7 days\").",
+        "Route of Administration: Clarifies how it should be taken, such as \"by mouth,\" \"apply topically,\" or \"inhale\".",
+        "Total Quantity: The total amount of pills or liquid volume supplied in the container. "
+      ],
+      "ordered": false
+    },
+    {
+      "body": "Expiry & Refills",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Refills: Indicates how many times you can refill the prescription and the final date before which refills must be claimed.",
+        "Expiration (Discard) Date: The date the medication may lose its effectiveness or degrade. Always discard unused medication after this date. "
+      ],
+      "ordered": false
+    },
+    {
+      "body": "Warnings & Stickers",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Safety Warnings: Information highlighting potential side effects, such as \"May cause drowsiness,\" or specific instructions, such as \"Take with food\". ",
+        "Auxiliary Labels: Bright, color-coded stickers placed by the pharmacist to draw attention to critical precautions (e.g., \"Avoid alcohol\" or \"Do not chew or crush\"."
+      ],
+      "ordered": false
     },
     {
       "body": "Jamaica's National Health Fund (NHF) programme strongly encourages generic prescribing and labelling. In Barbados, the National Drug Formulary also favours generic names. In Trinidad, both generic and brand names may appear. When in doubt, include both the generic and brand name on the label to avoid patient confusion, especially if a patient has been switched from a brand to a generic equivalent.",
@@ -80,10 +106,8 @@
       "variant": "tip"
     },
     {
-      "type": "video-placeholder",
-      "title": "Label Printing Demo: Common Pharmacy Software",
-      "duration": "6 min",
-      "description": "Walkthrough of generating dispensing labels using common pharmacy management software used in Caribbean pharmacies, including configuration of mandatory fields and auxiliary warning labels."
+      "body": "[unsupported block type]",
+      "type": "text"
     }
   ],
   "order_index": 1,

@@ -1,0 +1,38 @@
+[
+  {
+    "id": "b645a714-7a48-4b29-a8b1-25a7da23f1a8",
+    "module_id": "9af2b389-168d-498c-ab15-8f088836778a",
+    "question": "A technician at a pharmacy in Guyana notices that a patient's prescription for metformin includes the herbal remedy cerasee (Momordica charantia). What should the technician do?",
+    "options": [
+      "Dispense the prescription as written, as cerasee and metformin are both safe for use together.",
+      "Consult the patient about their use of cerasee and advise them of the potential interaction with metformin.",
+      "Refuse to dispense the prescription, as the combination of cerasee and metformin is strictly prohibited in Guyana.",
+      "Contact the prescriber and request they remove the cerasee from the prescription."
+    ],
+    "correct_answer": 1,
+    "explanation": "The correct action is to consult the patient about their use of cerasee and advise them of the potential interaction with metformin. Cerasee can potentiate the effects of metformin, increasing the risk of hypoglycemia. While the combination is not strictly prohibited in Guyana, the technician should address this interaction to ensure patient safety. Dispensing the prescription as written or refusing to dispense are not appropriate responses, as the technician should first gather more information from the patient. Contacting the prescriber to remove the cerasee is also not the best initial step.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": {},
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "2f932c58-b734-49a7-8660-97881c3c3e0a",
+    "module_id": "9af2b389-168d-498c-ab15-8f088836778a",
+    "question": "A patient at a pharmacy in St. Lucia discloses that they have been taking soursop leaf (Annona muricata) in addition to their prescribed antidepressant medication. What is the most appropriate action for the pharmacy technician to take?",
+    "options": [
+      "Recommend the patient discontinue the soursop leaf, as it is not a proven treatment for depression.",
+      "Advise the patient to continue taking both the soursop leaf and their antidepressant, as natural remedies are generally safe.",
+      "Educate the patient about the potential interaction between soursop leaf and their antidepressant, and suggest they discuss it with their prescriber.",
+      "Refuse to fill the patient's antidepressant prescription until they agree to stop using the soursop leaf."
+    ],
+    "correct_answer": 2,
+    "explanation": "The correct action is to educate the patient about the potential interaction between soursop leaf and their antidepressant, and suggest they discuss it with their prescriber. Soursop leaf can interact with certain CNS medications, potentially increasing sedative effects. The technician should provide this information to the patient, but should not recommend discontinuing either the soursop leaf or the antidepressant without the prescriber's guidance. Recommending the patient stop the soursop leaf or refusing to fill the prescription are not appropriate responses, as the technician should not make clinical decisions without the prescriber's input.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": {},
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "id": "17107c48-be94-42a4-b8ed-750fc7df90b6",
+  "title": "Basic Pharmacy Workflow",
+  "slug": "basic-pharmacy-workflow",
+  "description": "This hands-on course walks you through a real pharmacy day — step by step, task by task. You will learn to receive and triage prescriptions, count medications, apply labels correctly, and complete the handover to the patient.",
+  "skill_level": "Beginner",
+  "duration_weeks": 4,
+  "icon": "ClipboardList",
+  "color": "teal",
+  "prerequisites": [
+    "foundations-pharmacy-practice",
+    "medical-pharmaceutical-terminology"
+  ],
+  "what_youll_learn": [
+    "Execute the complete prescription intake process from receipt through initial accuracy checks",
+    "Count and retrieve medications accurately using zero-error counting techniques",
+    "Produce a correctly formatted dispensing label for common prescription types",
+    "Complete a safe and professional patient handover including counselling referral",
+    "Identify out-of-stock and near-expiry items during routine dispensing"
+  ],
+  "status": "published",
+  "order": 6
+}

@@ -1,0 +1,39 @@
+{
+  "id": "b0954871-0653-416a-9385-26d0b6f0a28f",
+  "module_id": "bf26981a-56a2-439f-84cf-302cc46cbdfa",
+  "title": "Pharmacy Technicians in the Multidisciplinary Hypertension Care Team",
+  "content": [
+    {
+      "text": "The Pharmacy Technician's Role in the Multidisciplinary Hypertension Team",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "In the Caribbean, pharmacy technicians are essential members of the multidisciplinary hypertension care team, working collaboratively with physicians, nurses, dietitians, and community health workers. Technicians contribute to team-based care by monitoring patient progress, identifying medication-related problems, providing patient education and counseling, and facilitating communication between providers.",
+      "type": "text"
+    },
+    {
+      "body": "The specific structure of the multidisciplinary hypertension team varies across the Caribbean. In Jamaica and Trinidad & Tobago, pharmacy technicians often lead community-based hypertension clinics and work closely with family medicine physicians and nurses. In Guyana and Belize, the team approach is less formalized, with technicians providing more limited support within the hospital or pharmacy setting. Barbados has pioneered an integrated chronic disease management program that closely involves pharmacy technicians.",
+      "type": "callout",
+      "title": "Hypertension Care Models Across the Caribbean",
+      "variant": "info"
+    },
+    {
+      "term": "Hypertension Medication Therapy Management (HTN-MTM)",
+      "type": "key-term",
+      "definition": "A collaborative care model in the Caribbean where pharmacy technicians work under the supervision of pharmacists to provide comprehensive medication management for patients with hypertension. This includes medication reviews, dose adjustments, monitoring, and patient education to optimize blood pressure control."
+    },
+    {
+      "body": "Effective communication and information-sharing within the hypertension care team is crucial in the Caribbean context. Pharmacy technicians must document patient encounters, share relevant data (blood pressure readings, medication adherence, adverse effects) with the supervising pharmacist and other providers, and participate in case conferences to develop the best treatment plan. This coordinated, team-based approach is essential for managing the high burden of hypertension across the region.",
+      "type": "text"
+    },
+    {
+      "type": "video-placeholder",
+      "title": "Pharmacy Technician Presenting Patient Case at Multidisciplinary Hypertension Clinic in Trinidad & Tobago",
+      "duration": "20 min",
+      "description": "A video showing a pharmacy technician in Trinidad & Tobago presenting a patient's hypertension case history, medication profile, and progress to the multidisciplinary care team, including the pharmacist, physician, and nurse."
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 25
+}

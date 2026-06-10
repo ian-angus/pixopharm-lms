@@ -1,0 +1,33 @@
+{
+  "id": "7006fa14-84cc-4cea-bbaf-6b8d73f6a013",
+  "module_id": "ed876135-4384-4f1c-85ba-669988f2f596",
+  "title": "Pharmacy Technicians and Chronic Disease Management for Caribbean Patients with HIV",
+  "content": [
+    {
+      "text": "Expanding the Role of Caribbean Pharmacy Technicians",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "In the Caribbean, pharmacy technicians often serve as the first point of healthcare contact for patients with chronic conditions like HIV. They play a crucial role in medication management, patient education, and monitoring for adverse effects.",
+      "type": "text"
+    },
+    {
+      "body": "Pharmacy technicians in the Caribbean can provide comprehensive medication reviews, identify drug interactions, and collaborate with pharmacists to optimize antiretroviral therapy for patients with HIV.",
+      "type": "callout",
+      "title": "Medication Therapy Management"
+    },
+    {
+      "body": "With high patient volumes, Caribbean pharmacy technicians are essential in providing education on HIV, antiretroviral medications, and the importance of adherence. They can also connect patients to support services and community resources.",
+      "type": "callout",
+      "title": "Patient Education and Counseling"
+    },
+    {
+      "term": "Community Pharmacy Services",
+      "type": "key-term",
+      "definition": "In some Caribbean nations like Barbados and Guyana, pharmacy technicians play a significant role in delivering community-based HIV services, including medication refills, adherence support, and point-of-care testing."
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 35
+}

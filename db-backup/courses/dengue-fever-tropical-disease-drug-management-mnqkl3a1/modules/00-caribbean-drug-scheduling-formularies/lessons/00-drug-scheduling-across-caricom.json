@@ -1,0 +1,41 @@
+{
+  "id": "dc44d4e7-337e-46a5-b61c-84eb759ebfee",
+  "module_id": "4c8c9602-2245-4aa5-8fee-a4b295d9bc2a",
+  "title": "Drug Scheduling Across CARICOM",
+  "content": [
+    {
+      "text": "Navigating Drug Scheduling Across the Caribbean",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "The Caribbean lacks a unified drug scheduling system, with each country maintaining its own national regulations. As a pharmacy technician, you must be familiar with the specific schedules and classifications used in the countries you serve. This knowledge ensures you can accurately identify a drug's legal status, dispensing requirements, and potential for abuse or diversion.",
+      "type": "text"
+    },
+    {
+      "body": "Jamaica, for example, follows the Dangerous Drugs Act with Schedules 1-4, while Trinidad and Tobago uses the Dangerous Drugs Ordinance. Barbados has the Pharmacy Act Cap 372D, and Guyana follows the Food & Drugs Act. Even smaller islands like St. Lucia, Grenada, and Antigua have their own distinct national Pharmacy Acts.",
+      "type": "callout",
+      "title": "Diverse National Regulations",
+      "variant": "info"
+    },
+    {
+      "body": "Certain drugs, such as opioid analgesics, benzodiazepines, and stimulants, are classified as controlled substances across the Caribbean. These typically require special prescriptions, quantity limits, and secure storage. Technicians must be vigilant to ensure proper handling and dispensing of these high-risk medications.",
+      "type": "callout",
+      "title": "Controlled Substances and Prescription Requirements",
+      "variant": "warning"
+    },
+    {
+      "term": "CARICOM Regional Standard (CRS)",
+      "type": "key-term",
+      "definition": "A set of harmonized standards developed by the Caribbean Community (CARICOM) to promote consistency in pharmaceutical regulation and quality assurance across the region. The CRS provides a framework for national drug schedules, formularies, and supply chain best practices."
+    },
+    {
+      "type": "video-placeholder",
+      "title": "Navigating Differing Drug Schedules in Bridgetown, Barbados",
+      "duration": "15 min",
+      "description": "A pharmacy technician in Bridgetown, Barbados, demonstrates how to look up a medication's scheduling status and special dispensing requirements using both the Barbados Pharmacy Act and the CARICOM Regional Standard."
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 25
+}

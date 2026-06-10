@@ -1,6 +1,6 @@
 {
   "id": "aeb6349b-61f4-4dc3-bdf8-d7828cdabfa6",
-  "title": "Quality Assurance & Safety",
+  "title": "Public Health, Pharmacovigilance & Quality Improvement",
   "slug": "quality-assurance-safety",
   "description": "Build the safety-first mindset that prevents medication errors and protects patients.",
   "skill_level": "Advanced",
@@ -19,5 +19,5 @@
     "Establish CQI programmes"
   ],
   "status": "published",
-  "order": 10
+  "order": 22
 }

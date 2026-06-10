@@ -1,0 +1,50 @@
+{
+  "id": "c4f5be32-11c7-4aea-ab16-af870796d97d",
+  "module_id": "e47529d5-4119-4119-b611-0bb0b6e78799",
+  "title": "Diabetes Medication Pharmacology",
+  "content": [
+    {
+      "text": "Diabetes Medication Pharmacology",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Effective management of diabetes in the Caribbean requires a strong understanding of the various medication classes and their mechanisms of action. Pharmacy technicians must be able to classify the antidiabetic drugs and explain how they work to control blood glucose levels. This knowledge underpins appropriate patient counseling and safe dispensing practices across the region.",
+      "type": "text"
+    },
+    {
+      "text": "Medication Classes for Diabetes",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "The major categories of diabetes medications used in the Caribbean include metformin (biguanides), sulfonylureas, DPP-4 inhibitors, GLP-1 agonists, and insulin. Each class has a distinct mechanism of action targeting different pathways of glucose regulation. Knowing how these drugs work is critical for understanding their clinical indications, dosing, and potential adverse effects.",
+      "type": "text"
+    },
+    {
+      "body": "Metformin is considered the safest, most effective first-line medication for type 2 diabetes in the Caribbean, per national treatment guidelines in Jamaica, Trinidad & Tobago, Barbados, and Guyana. It works by reducing hepatic glucose production and increasing peripheral glucose uptake, without causing hypoglycemia.",
+      "type": "callout",
+      "title": "Biguanides: First-Line Therapy Across CARICOM",
+      "variant": "info"
+    },
+    {
+      "body": "Gliclazide and glibenclamide are commonly used sulfonylureas, but their dosing must be adjusted carefully in patients with kidney disease, common in the Caribbean due to high rates of hypertension and diabetes. Inappropriate dosing can lead to prolonged hypoglycemia, especially in the elderly.",
+      "type": "callout",
+      "title": "Sulfonylureas: Caution with Renal Impairment",
+      "variant": "warning"
+    },
+    {
+      "term": "DPP-4 Inhibitors",
+      "type": "key-term",
+      "definition": "This class, including sitagliptin and linagliptin, work by inhibiting the dipeptidyl peptidase-4 enzyme to increase circulating levels of the incretin hormones GLP-1 and GIP. This enhances insulin secretion and reduces glucagon production, helping to lower blood glucose without hypoglycemia risk."
+    },
+    {
+      "type": "video-placeholder",
+      "title": "Mechanisms of Diabetes Medications",
+      "duration": "12 min",
+      "description": "A clinical pharmacist at the University of the West Indies explains the key mechanisms of action for the major antidiabetic drug classes, with a focus on their relevance for Caribbean patients."
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 25
+}

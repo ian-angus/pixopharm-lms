@@ -1,0 +1,45 @@
+{
+  "id": "766aa690-63bb-426f-92f1-d179229bc8fc",
+  "module_id": "7d268b26-0261-4d40-84b8-3d01c34aca39",
+  "title": "Adjusting Medication Quantities for FEFO/FIFO Management",
+  "content": [
+    {
+      "text": "Managing Medication Expiration in the Caribbean",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Due to the heightened risk of medication degradation in tropical climates, Caribbean pharmacy technicians must be vigilant about expiration dates and diligent in following first-expiry, first-out (FEFO) and first-in, first-out (FIFO) protocols. This involves carefully tracking and prioritizing stock to minimize waste from expired or unstable medications.",
+      "type": "text"
+    },
+    {
+      "text": "Calculating FEFO/FIFO Stock Adjustments",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "When dispensing medications with limited shelf life, technicians must consider the expiration date and calculate the appropriate quantity to provide. This may require splitting bulk packages, adjusting dosage forms, or making partial dispensations. For example, if a bottle of metronidazole 500mg tablets has an expiry of 6 months, but the patient only needs a 14-day course, the technician should provide the exact amount required rather than the full bottle.",
+      "type": "text"
+    },
+    {
+      "body": "Managing FEFO/FIFO can be especially challenging for independent pharmacies in smaller Caribbean islands like St. Lucia or Antigua. These facilities often have limited storage space and higher stock-out risks, so technicians must be creative in dividing and rotating medication inventory to maximize use before expiry.",
+      "type": "callout",
+      "title": "FEFO/FIFO in Small Island Pharmacies",
+      "variant": "info"
+    },
+    {
+      "body": "When providing less than the full prescription quantity, technicians must carefully document the reasons and ensure the patient understands the partial fill. Patients may be reluctant to accept anything less than the full amount, so clear communication is essential to maintain compliance.",
+      "type": "callout",
+      "title": "Compliance Alert: Partial Dispensations",
+      "variant": "warning"
+    },
+    {
+      "type": "video-placeholder",
+      "title": "FEFO/FIFO Calculations for Caribbean Pharmacies",
+      "duration": "16 min",
+      "description": "A pharmacy technician trainer at the University of Guyana demonstrates how to perform FEFO/FIFO calculations for common Caribbean medications like albuterol inhalers, amoxicillin capsules, and metformin extended-release tablets."
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 25
+}

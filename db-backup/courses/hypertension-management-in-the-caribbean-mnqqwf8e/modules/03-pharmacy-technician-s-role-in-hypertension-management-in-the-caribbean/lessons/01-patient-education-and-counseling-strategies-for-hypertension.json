@@ -1,0 +1,39 @@
+{
+  "id": "4bed4015-57a1-4342-94fa-2855028cf7c1",
+  "module_id": "bf26981a-56a2-439f-84cf-302cc46cbdfa",
+  "title": "Patient Education and Counseling Strategies for Hypertension",
+  "content": [
+    {
+      "text": "Effective Hypertension Education and Counseling Techniques",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "As a Caribbean pharmacy technician, you play a critical role in improving hypertension medication adherence and supporting self-management through effective patient education and counseling. Key strategies include using teach-back methods, incorporating local cultural references, and addressing common barriers like medication costs and traditional herbal remedies.",
+      "type": "text"
+    },
+    {
+      "body": "Many Caribbean patients use herbal remedies like cerasee, soursop, and bush tea to manage hypertension, often without disclosing this to their healthcare providers. Pharmacy technicians must proactively ask about traditional medicine use and counsel on potential interactions, such as cerasee reducing the efficacy of metformin or soursop affecting the CNS effects of prescription medications.",
+      "type": "callout",
+      "title": "Addressing Traditional Medicine Use in the Caribbean",
+      "variant": "warning"
+    },
+    {
+      "term": "Teach-Back Method",
+      "type": "key-term",
+      "definition": "A patient education technique where the patient is asked to explain in their own words the information just provided, allowing the technician to identify and address any misunderstandings. This is particularly important when counseling Caribbean patients on complex medication regimens for hypertension."
+    },
+    {
+      "body": "Tailoring hypertension education to the patient's cultural context is also essential in the Caribbean. For example, using local colloquial terms for conditions and medications, drawing parallels to traditional herbal remedies, and incorporating dietary advice around staple foods can greatly improve comprehension and retention. Technicians should also be aware of cost barriers and offer solutions like generic substitutions or medication assistance programs available in each island nation.",
+      "type": "text"
+    },
+    {
+      "type": "video-placeholder",
+      "title": "Pharmacy Technician Counseling a Hypertensive Patient in Barbados",
+      "duration": "22 min",
+      "description": "A video demonstrating a pharmacy technician in Barbados using teach-back methods, addressing traditional medicine use, and providing culturally tailored education to improve medication adherence for a patient with hypertension."
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 25
+}

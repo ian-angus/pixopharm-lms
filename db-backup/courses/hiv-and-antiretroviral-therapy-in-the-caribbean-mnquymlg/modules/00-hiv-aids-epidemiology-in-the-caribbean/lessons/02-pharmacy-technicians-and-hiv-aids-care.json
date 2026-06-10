@@ -1,0 +1,54 @@
+{
+  "id": "02dcb04c-fcc6-453b-b202-fb8b8ceef234",
+  "module_id": "17386738-fa04-46e5-ac0b-06ccff3e05c9",
+  "title": "Pharmacy Technicians and HIV/AIDS Care",
+  "content": [
+    {
+      "text": "The Pharmacy Technician's Role in HIV/AIDS Care Across CARICOM",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "In Caribbean healthcare systems characterised by severe human resource shortages, pharmacy technicians are not peripheral support staff — they are often the most accessible healthcare contact for PLHIV. At public hospitals and health centres across Jamaica, T&T, Barbados, Guyana, and Belize, pharmacy technicians manage ARV inventory, dispense monthly refills, flag adherence concerns, conduct pill counts, and serve as the de facto frontline for patient interaction. In Jamaica's HIV treatment programme, the National HIV/STI Programme (NHSP) relies on pharmacy teams at treatment sites including Kingston Public Hospital, Cornwall Regional Hospital in Montego Bay, and Spanish Town Hospital to manage dispensing of the national first-line regimen (currently tenofovir/lamivudine/dolutegravir, or TLD). At Georgetown Public Hospital Corporation (GPHC) in Guyana, pharmacy technicians in the ARV dispensary manage stock for the entire national programme. Your role directly determines whether patients remain on treatment, develop resistance, or are lost to follow-up.",
+      "type": "text"
+    },
+    {
+      "body": "Pharmacy technician scope of practice varies across CARICOM. In Jamaica, the Pharmacy Council under the Pharmacy Act 1975 (amended) permits technicians to dispense under pharmacist supervision but not to provide clinical counselling independently. In Trinidad & Tobago, the Pharmacy Board registers technicians separately, and the Dangerous Drugs Ordinance restricts handling of controlled substances. In Barbados under the Pharmacy Act Cap 372D, technicians work within the Barbados Drug Service (BDS) framework at polyclinics. In Guyana, the Food & Drugs Act governs practice but enforcement is inconsistent, and technicians in rural areas often operate with minimal direct pharmacist oversight due to staffing shortages. Regardless of territory, dispensing ARVs requires meticulous documentation — every tablet must be accounted for because ARV programmes are donor-audited (PEPFAR, Global Fund).",
+      "type": "callout",
+      "title": "Scope of Practice — Know Your Legal Boundaries by Territory",
+      "variant": "info"
+    },
+    {
+      "text": "Dispensing ARVs: Practical Workflow and Safety Considerations",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Dispensing antiretrovirals requires attention to specific clinical and logistical details that differ from routine dispensing. First, ARVs in Caribbean public programmes are typically provided free of charge through PEPFAR, Global Fund, or PAHO Strategic Fund procurement — but this means stock is finite, donor-dependent, and subject to international supply chain disruptions. When generic TLD (tenofovir 300 mg/lamivudine 300 mg/dolutegravir 50 mg) shipments from WHO-prequalified Indian manufacturers (Aurobindo, Cipla, Hetero, Mylan) are delayed at port customs in Kingston, Port of Spain, or Georgetown, pharmacy technicians must implement strict FEFO (First Expiry, First Out) protocols, communicate stock levels to programme managers, and sometimes coordinate inter-facility transfers. Second, ARV dispensing must incorporate a rapid adherence check: count remaining pills from the previous supply, ask about missed doses, document adherence in the patient's treatment card, and flag patients who have missed more than three doses for pharmacist or clinician review.",
+      "type": "text"
+    },
+    {
+      "term": "Viral Load Suppression",
+      "type": "key-term",
+      "definition": "The reduction of HIV RNA copies in the blood to undetectable levels (typically <50 copies/mL on modern assays, or <1,000 copies/mL by WHO threshold), achieved through consistent ART adherence. In the Caribbean, viral load testing capacity varies: Jamaica has centralised VL testing at the National Public Health Laboratory, T&T processes samples at the Caribbean Public Health Agency (CARPHA) reference laboratory, and Guyana relies on PEPFAR-supported sample transport networks from interior regions. Pharmacy technicians should know that a patient's VL result directly indicates whether adherence counselling at the pharmacy counter is succeeding."
+    },
+    {
+      "body": "Most ARV formulations (TLD, ATV/r, LPV/r) require storage below 30°C. In Caribbean pharmacies without reliable air conditioning — particularly in Guyana's hinterland health posts, Belize's rural health centres, and smaller Eastern Caribbean island dispensaries — temperatures routinely exceed 30–35°C. Lopinavir/ritonavir (LPV/r) oral solution requires refrigeration at 2–8°C, making it virtually impossible to maintain in facilities with frequent power outages unless a cold chain with generator backup exists. Pharmacy technicians must monitor temperature logs daily, report excursions immediately, and never dispense heat-degraded stock. When in doubt about product integrity, quarantine and contact the national programme pharmacist — dispensing compromised ARVs can lead to subtherapeutic drug levels, treatment failure, and resistance.",
+      "type": "callout",
+      "title": "Storage and Supply Chain Realities for ARVs in the Tropics",
+      "variant": "warning"
+    },
+    {
+      "body": "Confidentiality in HIV dispensing is both an ethical obligation and a legal requirement under the respective Pharmacy Acts and national HIV policies of all CARICOM states. PANCAP's Caribbean Regional Strategic Framework for HIV/AIDS explicitly mandates that pharmacy staff protect the identity and treatment status of PLHIV. Practically, this means: ARVs should not be dispensed from a visually distinct or labelled 'HIV window' in the pharmacy; prescription labels should not indicate 'HIV' or 'ARV' unless the patient consents; patient records must be stored securely with restricted access; and pharmacy technicians must refuse requests from family members, employers, or law enforcement to disclose a patient's ARV status without the patient's written consent or a valid court order. Breaches of ARV confidentiality have been documented in Caribbean pharmacies and have led to patients abandoning treatment, experiencing workplace termination, domestic violence, and community ostracisation.",
+      "type": "text"
+    },
+    {
+      "type": "video-placeholder",
+      "title": "ARV Dispensing Workflow: A Day in a Caribbean Public Hospital Pharmacy",
+      "duration": "14 min",
+      "description": "Follow a pharmacy technician through a complete ARV dispensing shift at a major Jamaican treatment site. The video demonstrates: receiving and verifying ARV stock from the National Health Fund warehouse (checking batch numbers against the WHO Prequalification list), shelving according to FEFO, processing a TLD refill for a stable patient including pill count and adherence documentation, managing a stock-out scenario requiring coordination with the NHSP, handling a patient presenting with a prescription for lopinavir/ritonavir oral solution for a paediatric case and checking cold chain integrity, and properly refusing a request from a patient's employer who calls to confirm whether an employee collects 'AIDS drugs.' All scenarios reflect documented Caribbean pharmacy realities."
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 25
+}

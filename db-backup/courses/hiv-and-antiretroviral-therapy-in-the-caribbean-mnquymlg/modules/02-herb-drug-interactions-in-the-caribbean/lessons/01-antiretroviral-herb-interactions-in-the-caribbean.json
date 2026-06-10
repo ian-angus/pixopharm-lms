@@ -1,0 +1,33 @@
+{
+  "id": "7f7fcc9c-93e4-4d0d-a878-2458f0711d23",
+  "module_id": "44d47223-8b80-44f3-ae1d-9accc5d31972",
+  "title": "Antiretroviral-Herb Interactions in the Caribbean",
+  "content": [
+    {
+      "text": "Potential Interactions with Antiretrovirals",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Many of the commonly used traditional herbs in the Caribbean can interact with antiretroviral medications, potentially reducing their effectiveness or increasing the risk of adverse effects. Pharmacy technicians must be aware of these potential interactions to provide safe and effective care to patients living with HIV.",
+      "type": "text"
+    },
+    {
+      "body": "In Guyana, the use of cerasee (bitter melon) is particularly concerning, as it can interact with metformin, a common medication used to manage diabetes. This interaction can lead to hypoglycemia, putting patients at risk.",
+      "type": "callout",
+      "title": "Cerasee and Metformin"
+    },
+    {
+      "body": "Soursop leaf, a popular remedy in Barbados, has been known to interact with central nervous system (CNS) medications, including some antiretrovirals. This interaction can lead to an increased risk of side effects and toxicity.",
+      "type": "callout",
+      "title": "Soursop and Central Nervous System Drugs"
+    },
+    {
+      "term": "Drug Interactions",
+      "type": "key-term",
+      "definition": "Drug interactions occur when a medication interacts with another substance, such as a traditional herb, and can either increase or decrease the effectiveness of the medication or lead to adverse effects. Careful monitoring and communication with patients are essential to managing these interactions in the Caribbean context."
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 40
+}

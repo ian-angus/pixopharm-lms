@@ -1,0 +1,54 @@
+{
+  "id": "61fc0f89-93dd-468f-b7e6-197f3a13a815",
+  "module_id": "a1ae2113-883c-44e1-b6a1-74165ed6c924",
+  "title": "National Pharmacy Regulations and Formularies",
+  "content": [
+    {
+      "text": "Navigating Drug Scheduling and Formulary Systems for Diabetes Medications",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "There is no unified drug scheduling system across the Caribbean. Each CARICOM nation maintains its own national Pharmacy Act, drug schedules, and formulary systems, which directly impact which diabetes medications are available, how they are classified, and who may dispense them. This patchwork of regulations means a pharmacy technician trained in Jamaica may encounter very different legal frameworks when practising in Trinidad and Tobago or Barbados. The CARICOM Regional Standard (CRS) and the Caribbean Pharmacopoeia provide some harmonisation for drug quality and nomenclature, but scheduling, prescription authority, and dispensing restrictions remain entirely at the national level. Understanding your specific island's regulatory framework is not optional — it is a legal requirement for practice.",
+      "type": "text"
+    },
+    {
+      "body": "Jamaica operates under the Pharmacy Council of Jamaica governed by the Pharmacy Act 1966 and the Dangerous Drugs Act with Schedules 1–4. Trinidad & Tobago is regulated by the Pharmacy Board of Trinidad and Tobago under the Dangerous Drugs Ordinance. Barbados follows the Pharmacy Act Cap 372D with diabetes medications largely governed by the Barbados Drug Service (BDS) national formulary. Guyana uses the Food & Drugs Act and the Georgetown Public Hospital Corporation (GPHC) formulary. Belize operates under its Pharmacy Act with a Ministry of Health formulary. Smaller islands such as St. Lucia, Grenada, and Dominica each maintain their own national Pharmacy Acts with variable formulary depth.",
+      "type": "callout",
+      "title": "Regulatory Bodies by Island",
+      "variant": "info"
+    },
+    {
+      "text": "National Formularies and Diabetes Drug Availability",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "National formularies across the Caribbean typically include the core WHO Essential Medicines List diabetes drugs: metformin (first-line oral agent), glibenclamide (glyburide) or glipizide (sulphonylureas), and human insulin (regular and NPH/isophane). However, availability of newer agents varies dramatically. Barbados, through the Barbados Drug Service, provides a relatively comprehensive list of subsidised diabetes medications including metformin, gliclazide, insulin glargine, and some DPP-4 inhibitors such as sitagliptin for qualifying patients through the national health system. Jamaica's National Health Fund (NHF) subsidises metformin, glibenclamide, and human insulin but access to GLP-1 receptor agonists like liraglutide or SGLT2 inhibitors like empagliflozin remains limited to the private sector and is cost-prohibitive for most patients. In Guyana, the GPHC formulary is more restrictive, with metformin, glibenclamide, and basic insulin formulations forming the backbone of publicly available diabetes treatment.",
+      "type": "text"
+    },
+    {
+      "term": "National Formulary",
+      "type": "key-term",
+      "definition": "An official list of medicines approved for use and procurement within a country's public health system, specifying which drugs are available, their approved indications, and any subsidies or cost-sharing arrangements. For example, the Barbados Drug Service formulary determines which diabetes medications are dispensed free of charge at public pharmacies on the island."
+    },
+    {
+      "body": "Insulin requires continuous cold chain storage at 2–8°C, yet Caribbean pharmacies face frequent power outages, especially during hurricane season (June–November). Without generator backup, insulin stock can be rendered unusable within hours. The Pharmacy Board of Trinidad and Tobago and the Pharmacy Council of Jamaica both mandate that pharmacies storing insulin must have documented cold chain management protocols. Technicians must perform and log daily temperature checks. Any insulin exposed to temperatures above 30°C or below 2°C must be quarantined and not dispensed.",
+      "type": "callout",
+      "title": "Insulin Supply Chain Warning",
+      "variant": "warning"
+    },
+    {
+      "body": "Prescription requirements also differ by territory. In Jamaica, insulin does not require a Dangerous Drugs prescription but is a prescription-only medicine (POM) under the Pharmacy Act 1966, meaning it must be dispensed against a valid medical prescription by a registered pharmacist. In Trinidad and Tobago, the Pharmacy Board similarly classifies insulin as prescription-only. Metformin and sulphonylureas are POMs across all CARICOM territories. It is critical that pharmacy technicians never independently dispense these medications without a valid prescription reviewed by the supervising pharmacist, regardless of patient urgency or familiarity. The distinction between OTC, pharmacy-only, and prescription-only categories for ancillary diabetes products — such as glucose meters, lancets, and test strips — also varies by island, with some territories allowing OTC sale and others requiring pharmacy-only dispensing.",
+      "type": "text"
+    },
+    {
+      "type": "video-placeholder",
+      "title": "Comparing Caribbean Diabetes Formularies: What's on the Shelf?",
+      "duration": "5 min",
+      "description": "A split-screen walkthrough of diabetes medication shelves in three Caribbean pharmacy settings: a Barbados Drug Service public pharmacy in Bridgetown showing subsidised gliclazide and insulin glargine, a private pharmacy in Kingston Jamaica stocking NHF-listed metformin and glibenclamide alongside privately purchased sitagliptin, and a regional hospital pharmacy in Georgetown Guyana dispensing from the GPHC formulary. The video highlights how formulary differences affect what technicians dispense daily and emphasises the importance of knowing your local regulatory framework."
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 25
+}

@@ -1,0 +1,50 @@
+{
+  "id": "50f82787-f15f-410d-b0ee-a24e88580063",
+  "module_id": "bc05270a-daa6-4bcb-baf2-cd7f1e55c5da",
+  "title": "Corticosteroids and Anti-inflammatory Agents",
+  "content": [
+    {
+      "text": "Corticosteroids and Anti-inflammatory Agents",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Inhaled corticosteroids (ICS) are the cornerstone of long-term control therapy for both asthma and COPD in the Caribbean region. These anti-inflammatory medications reduce airway swelling, mucus production, and sensitivity to triggers. Common ICS formulations found across CARICOM include beclomethasone, fluticasone, and budesonide, often combined with bronchodilators for added benefit.",
+      "type": "text"
+    },
+    {
+      "body": "In Jamaica and Barbados, beclomethasone is the most widely available and prescribed ICS. Fluticasone is more common in Trinidad & Tobago and Guyana. Budesonide is less frequently used except in Belize, where it is preferred for pediatric asthma patients. Dosing ranges from 100-800 mcg per day depending on asthma severity.",
+      "type": "callout",
+      "title": "ICS Availability and Dosing Varies",
+      "variant": "info"
+    },
+    {
+      "text": "Mechanisms of Action and Therapeutic Uses",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Inhaled corticosteroids work by binding to glucocorticoid receptors in the lungs, triggering anti-inflammatory effects that reduce airway hyperresponsiveness and symptoms. They are essential for managing persistent asthma and moderate-to-severe COPD, improving lung function and quality of life. Systemic corticosteroids like prednisone are reserved for acute exacerbations.",
+      "type": "text"
+    },
+    {
+      "body": "Chronic or frequent use of oral corticosteroids like prednisone can lead to serious side effects, including adrenal suppression, hyperglycemia, and osteoporosis. Caribbean healthcare providers aim to minimize oral corticosteroid exposure, preferring inhaled formulations wherever possible, especially for long-term management of asthma and COPD.",
+      "type": "callout",
+      "title": "Concerns with Oral Corticosteroid Use",
+      "variant": "warning"
+    },
+    {
+      "term": "Leukotriene Receptor Antagonists (LTRAs)",
+      "type": "key-term",
+      "definition": "An emerging class of oral anti-inflammatory agents, such as montelukast, that block the effects of leukotrienes to prevent asthma symptoms. LTRAs are included in the formularies of Jamaica, Barbados, and Guyana, but are not as widely used as inhaled corticosteroids."
+    },
+    {
+      "type": "video-placeholder",
+      "title": "Proper Inhaler Technique for ICS/LABA Combinations",
+      "duration": "10 min",
+      "description": "A demonstration by a respiratory nurse at the University Hospital of the West Indies on using combination inhalers containing both an inhaled corticosteroid and a long-acting bronchodilator."
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 25
+}

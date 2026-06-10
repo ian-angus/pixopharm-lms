@@ -1,6 +1,6 @@
 {
   "id": "83562b7c-72b7-4142-b1e2-4740add03ac5",
-  "title": "Patient Care & Communication",
+  "title": "Patient & Interprofessional Communication Labs",
   "slug": "patient-care-communication",
   "description": "Master patient-centred communication techniques adapted for Caribbean cultural and linguistic diversity.",
   "skill_level": "Intermediate",
@@ -18,5 +18,5 @@
     "Handle sensitive health conversations"
   ],
   "status": "published",
-  "order": 7
+  "order": 18
 }

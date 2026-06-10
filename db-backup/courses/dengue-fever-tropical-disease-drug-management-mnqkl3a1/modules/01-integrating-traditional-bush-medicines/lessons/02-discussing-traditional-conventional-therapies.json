@@ -1,0 +1,36 @@
+{
+  "id": "5771a4b1-1978-46b2-95e4-5d11ea7c3633",
+  "module_id": "61807b4f-e9bb-42cd-974b-e2b35e86f821",
+  "title": "Discussing Traditional & Conventional Therapies",
+  "content": [
+    {
+      "text": "Communicating with Patients About Integrated Care",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Due to the high prevalence of traditional medicine use across the Caribbean, pharmacy technicians must be comfortable discussing these therapies with patients in a sensitive, non-judgmental manner. By fostering open dialogue, you can gather crucial information to ensure safe, effective treatment, while also validating the patient's cultural healthcare beliefs and preferences.",
+      "type": "text"
+    },
+    {
+      "body": "In Jamaica, it's important to use familiar local terminology like 'cerasee' rather than the botanical name. In Guyana, emphasize the importance of disclosing all traditional remedies used, not just those derived from the forests. Across the region, validate the longstanding role of bush medicines in Caribbean wellness practices, while gently guiding patients towards an integrated approach.",
+      "type": "callout",
+      "title": "Culturally Appropriate Communication Strategies",
+      "variant": "info"
+    },
+    {
+      "body": "Some Caribbean patients may be hesitant to discuss their use of traditional medicines, fearing dismissal or judgment from healthcare providers. Approach the topic sensitively, reassuring the patient that you aim to provide the safest, most effective care by understanding all therapies they are using.",
+      "type": "callout",
+      "title": "Potential Patient Resistance",
+      "variant": "warning"
+    },
+    {
+      "type": "video-placeholder",
+      "title": "Navigating Traditional Medicine Discussions in a Guyanese Pharmacy",
+      "duration": "14 min",
+      "description": "A Guyanese pharmacy technician has an open dialogue with a patient about their use of local bush remedies, highlighting potential interactions with their prescribed dengue treatment. They demonstrate strategies to build trust, gather key information, and develop an integrated care plan."
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 25
+}

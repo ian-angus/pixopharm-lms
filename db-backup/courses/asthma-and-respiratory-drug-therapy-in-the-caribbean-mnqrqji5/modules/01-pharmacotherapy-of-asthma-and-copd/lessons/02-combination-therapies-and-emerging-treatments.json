@@ -1,0 +1,50 @@
+{
+  "id": "5d61423b-0f96-497b-8bee-d998ebd1549b",
+  "module_id": "bc05270a-daa6-4bcb-baf2-cd7f1e55c5da",
+  "title": "Combination Therapies and Emerging Treatments",
+  "content": [
+    {
+      "text": "Combination Therapies and Emerging Treatments",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "For patients with moderate-to-severe asthma or COPD, combination inhalers containing both a bronchodilator and an inhaled corticosteroid are preferred across the Caribbean region. These 'ICS/LABA' products, such as fluticasone/salmeterol and budesonide/formoterol, provide additive benefits in improving lung function and preventing exacerbations.",
+      "type": "text"
+    },
+    {
+      "body": "In Trinidad & Tobago and Barbados, fluticasone/salmeterol is the most commonly prescribed ICS/LABA combination. Budesonide/formoterol is preferred in Belize and parts of Guyana. Jamaica's formulary includes both options. The choice depends on local prescribing patterns and cost considerations.",
+      "type": "callout",
+      "title": "Combination Inhaler Availability Varies",
+      "variant": "info"
+    },
+    {
+      "text": "Emerging Respiratory Treatments",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "While inhaled corticosteroids, bronchodilators, and combination products remain the mainstays of asthma and COPD therapy across CARICOM, newer drug classes are gradually being introduced. Biologics like omalizumab and mepolizumab, which target specific inflammatory pathways, are now available in Jamaica and Trinidad & Tobago for severe, treatment-refractory asthma. Roflumilast, an oral PDE4 inhibitor, has been added to the Barbados Drug Formulary for COPD management.",
+      "type": "text"
+    },
+    {
+      "body": "Despite their inclusion in some national formularies, the high cost of biologics and novel oral agents limits their accessibility for many Caribbean patients, especially those without robust health insurance coverage. Pharmacy technicians must be aware of these newer therapies, but should also highlight the continued importance of proper inhaler technique and adherence with established bronchodilator and anti-inflammatory medications.",
+      "type": "callout",
+      "title": "Accessibility Challenges for Emerging Treatments",
+      "variant": "warning"
+    },
+    {
+      "term": "Spacer Devices",
+      "type": "key-term",
+      "definition": "Attachable holding chambers that improve drug delivery and lung deposition from metered-dose inhalers. Spacers are recommended for all patients using ICS and ICS/LABA combinations in the Caribbean, but access and use remains suboptimal in many areas."
+    },
+    {
+      "type": "video-placeholder",
+      "title": "Incorporating Spacers to Enhance Inhaler Effectiveness",
+      "duration": "12 min",
+      "description": "A video tutorial from the Barbados Lung Foundation on the proper use of spacer devices with metered-dose inhalers, highlighting their importance for improving respiratory drug delivery, especially in hot, humid Caribbean environments."
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 25
+}

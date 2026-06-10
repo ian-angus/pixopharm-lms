@@ -1,0 +1,33 @@
+{
+  "id": "3240fcb8-f92d-410f-b71f-0d6d623aef52",
+  "module_id": "44d47223-8b80-44f3-ae1d-9accc5d31972",
+  "title": "Traditional Caribbean Herbal Medicines",
+  "content": [
+    {
+      "text": "Widespread Use of Traditional Remedies",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Traditional herbal medicines are deeply rooted in Caribbean culture and widely used across the region. From Jamaica to Guyana, patients often incorporate local plants and remedies into their healthcare routines, sometimes without disclosing their use to healthcare providers.",
+      "type": "text"
+    },
+    {
+      "body": "In Trinidad and Tobago, over 70% of the population utilizes traditional herbal remedies, with bush teas and cerasee being particularly popular for managing chronic conditions like diabetes and hypertension.",
+      "type": "callout",
+      "title": "Traditional Medicine in Trinidad & Tobago"
+    },
+    {
+      "term": "Cerasee",
+      "type": "key-term",
+      "definition": "Also known as bitter melon (Momordica charantia), cerasee is a popular Caribbean herb used to treat a variety of conditions, including diabetes, fever, and digestive issues. It is commonly consumed as a tea or juice."
+    },
+    {
+      "body": "In Barbados, aloe vera, soursop leaf, and neem are widely used traditional remedies. Patients often turn to these herbs to manage conditions like hypertension, asthma, and skin infections.",
+      "type": "callout",
+      "title": "Herbal Use in Barbados"
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 35
+}

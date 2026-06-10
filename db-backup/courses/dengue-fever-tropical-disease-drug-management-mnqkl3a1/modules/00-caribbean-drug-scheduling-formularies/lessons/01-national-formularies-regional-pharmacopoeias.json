@@ -1,0 +1,41 @@
+{
+  "id": "2cd73151-5616-4030-8783-4a610737497d",
+  "module_id": "4c8c9602-2245-4aa5-8fee-a4b295d9bc2a",
+  "title": "National Formularies & Regional Pharmacopoeias",
+  "content": [
+    {
+      "text": "Essential Medicines and National Formularies",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Each Caribbean nation maintains its own national formulary of essential medicines, defining the drugs that must be available in public healthcare facilities. These lists are critical for ensuring access to affordable, high-quality pharmaceuticals, particularly in resource-limited settings. As a pharmacy technician, you must be familiar with the specific formularies used in the countries you serve.",
+      "type": "text"
+    },
+    {
+      "body": "The Barbados Drug Service (BDS) national formulary, for example, differs from the Georgetown Public Hospital Corporation formulary in Guyana. Similarly, the Ministry of Health formulary in Belize may include different essential medicines than the one used in Trinidad and Tobago. Understanding these regional differences is key to effective medication management.",
+      "type": "callout",
+      "title": "Formulary Variations Across the Region",
+      "variant": "info"
+    },
+    {
+      "body": "To promote quality and consistency, CARICOM has developed the Caribbean Pharmacopoeia, a regional reference of drug monographs and standards. However, not all Caribbean countries have fully aligned their national formularies with this regional standard. Technicians must be vigilant to ensure medications meet the appropriate quality specifications.",
+      "type": "callout",
+      "title": "Harmonizing Standards with the Caribbean Pharmacopoeia",
+      "variant": "warning"
+    },
+    {
+      "term": "CARPHA",
+      "type": "key-term",
+      "definition": "The Caribbean Public Health Agency (CARPHA) is a regional organization responsible for coordinating public health initiatives, including the development of the Caribbean Pharmacopoeia and the promotion of harmonized drug regulations across the CARICOM member states."
+    },
+    {
+      "type": "video-placeholder",
+      "title": "Accessing National Formularies in Kingston, Jamaica",
+      "duration": "12 min",
+      "description": "A senior pharmacy technician at the University Hospital of the West Indies in Kingston, Jamaica, demonstrates how to navigate the Jamaican Dangerous Drugs Act and the Pharmacy Act to determine a medication's formulary status and dispensing requirements."
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 25
+}

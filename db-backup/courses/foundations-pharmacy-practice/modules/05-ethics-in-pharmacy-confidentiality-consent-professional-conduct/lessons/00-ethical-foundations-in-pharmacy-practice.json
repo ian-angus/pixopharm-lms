@@ -9,56 +9,30 @@
       "level": 2
     },
     {
-      "body": "Every day in pharmacy practice, you make decisions that affect people's health, privacy, and wellbeing. Ethics provides the framework for making these decisions correctly — not just legally, but morally. While the law sets the minimum standard of behaviour, professional ethics calls you to a higher standard. The difference between a competent pharmacy technician and an excellent one often comes down to ethical judgement.",
+      "body": "Every day in pharmacy practice, you will make decisions that affect people's health, privacy, and wellbeing. Ethics provides the framework for making these decisions correctly — not just legally, but morally. While the law sets the minimum standard of behaviour, professional ethics calls you to a higher standard. The difference between a competent pharmacy technician and an excellent one often comes down to ethical judgement.",
       "type": "text"
     },
     {
-      "text": "The Four Principles of Biomedical Ethics",
+      "text": "Pharmacy technicians are guided by ethical principles that prioritize patient safety, confidentiality, integrity, professional competence, and collaboration within healthcare teams.",
       "type": "heading",
       "level": 3
     },
     {
-      "body": "The Beauchamp and Childress framework of four principles provides the foundation for healthcare ethics worldwide, including in pharmacy practice. Every ethical dilemma you encounter can be analysed through these four lenses.",
+      "text": "Core Ethical Principles",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Patient Safety First: A pharmacy technician’s primary responsibility is to ensure the health and safety of patients by using their knowledge and skills effectively in all aspects of care.Integrity and Honesty: Technicians must uphold honesty and integrity in all professional actions, comply with laws, and maintain high moral and ethical standards. This includes reporting any illegal or unethical conduct without fear or favor.Confidentiality: Protecting patient information is essential. Pharmacy technicians must respect patient privacy, maintain confidentiality of medical records, and only disclose information with proper authorization.Professional Competency: Continuous learning and skill enhancement are required to maintain professional competence and provide accurate information about medications and healthcare services.Respect for Patients and Colleagues: Technicians must respect the individuality, dignity, and rights of patients, as well as value the abilities of pharmacists, colleagues, and other healthcare professionals to foster a collaborative environment.Quality Assurance: Technicians should never assist in dispensing, promoting, or distributing medications or medical devices that do not meet legal or quality standards.Professional Conduct: Pharmacy technicians must avoid actions that discredit the profession and actively support organizations that promote the pharmacy field.Equity and Non-Discrimination: Ethical practice requires treating all individuals equally, regardless of lifestyle, religion, race, gender, age, or health status, and ensuring informed choices about healthcare.Teamwork and Collaboration: Working effectively within a multidisciplinary healthcare team is essential to optimize patient care and ensure safe, efficient service delivery.",
       "type": "text"
     },
     {
-      "rows": [
-        [
-          "Autonomy",
-          "Respecting the patient's right to make their own informed decisions",
-          "A patient has the right to refuse a medication or choose not to follow your advice. Your role is to inform, not coerce."
-        ],
-        [
-          "Beneficence",
-          "Acting in the patient's best interest",
-          "Recommending a more affordable generic equivalent when the patient cannot afford the brand medication, without compromising therapeutic efficacy."
-        ],
-        [
-          "Non-Maleficence",
-          "Do no harm — avoiding actions that could hurt the patient",
-          "Refusing to dispense a medication when you suspect a dangerous drug interaction, even if the patient insists they 'always take it together'."
-        ],
-        [
-          "Justice",
-          "Treating all patients fairly and equitably",
-          "Providing the same standard of care and attention to every patient regardless of their socioeconomic status, appearance, nationality, or personal lifestyle choices."
-        ]
-      ],
-      "type": "table",
-      "caption": "The Four Principles of Biomedical Ethics",
-      "headers": [
-        "Principle",
-        "Meaning",
-        "Pharmacy Example"
-      ]
-    },
-    {
-      "text": "The FIP Code of Ethics",
+      "text": "Summary",
       "type": "heading",
-      "level": 3
+      "level": 2
     },
     {
-      "body": "The International Pharmaceutical Federation (FIP) publishes a code of ethics that serves as a global benchmark. While each Caribbean island has its own professional standards, the FIP principles underpin them all. Key commitments include: placing the wellbeing of every patient above commercial interests, maintaining professional competence through lifelong learning, respecting patient privacy and confidentiality, acting with honesty and integrity, and cooperating with other healthcare professionals for optimal patient outcomes.",
+      "body": "Ethical principles for pharmacy technicians provide a framework for professional behavior, guiding interactions with patients, colleagues, and the broader healthcare system. By adhering to these principles, technicians maintain public trust, ensure patient safety, and contribute to the integrity and effectiveness of pharmacy practice",
       "type": "text"
     },
     {

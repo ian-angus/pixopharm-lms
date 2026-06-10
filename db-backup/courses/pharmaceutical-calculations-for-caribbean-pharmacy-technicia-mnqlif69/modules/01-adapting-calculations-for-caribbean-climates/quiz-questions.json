@@ -1,0 +1,38 @@
+[
+  {
+    "id": "ed4aa5c1-d3c1-4352-97a0-34e4f012fea3",
+    "module_id": "7d268b26-0261-4d40-84b8-3d01c34aca39",
+    "question": "A technician at a pharmacy in Belize notices that a shipment of insulin vials appears discolored and crystallized upon arrival. What is the most appropriate action?",
+    "options": [
+      "Dispense the insulin vials as usual, as long as the expiry date has not passed.",
+      "Quarantine the insulin vials and contact the supplier to report the issue.",
+      "Return the insulin vials to the wholesaler immediately without further inspection.",
+      "Rehydrate the insulin vials with sterile water to restore the original appearance."
+    ],
+    "correct_answer": 1,
+    "explanation": "The correct action is to quarantine the discolored and crystallized insulin vials and report the issue to the supplier. This is because the physical changes indicate the insulin has been compromised by exposure to high heat or humidity, which can degrade the medication and make it unsafe for patient use. Dispensing the insulin anyway would put patients at risk, while returning it without inspection or attempting to rehydrate it are also not appropriate responses. Pharmacy technicians in the Caribbean must be vigilant about signs of medication instability due to the region's tropical climate.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": {},
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "ad0ddad7-7bd9-46ad-9a6b-2fb68593a861",
+    "module_id": "7d268b26-0261-4d40-84b8-3d01c34aca39",
+    "question": "A technician at a pharmacy in Grenada is dispensing a 30-day supply of metformin 500mg tablets. The medication has an expiry date of 4 months from now. What is the appropriate quantity to provide the patient?",
+    "options": [
+      "Dispense the full 90-tablet bottle, as that is the standard package size.",
+      "Split the 90-tablet bottle and provide only 30 tablets for the 30-day supply.",
+      "Provide 60 tablets, as that would be the closest whole-number equivalent to a 30-day course.",
+      "Contact the prescriber to request a new prescription for the exact 30-tablet quantity needed."
+    ],
+    "correct_answer": 1,
+    "explanation": "The correct action is to split the 90-tablet bottle and provide only 30 tablets for the 30-day supply. This follows the first-expiry, first-out (FEFO) principle to minimize waste from medications that may expire before the patient can use the full quantity. Dispensing the full 90-tablet bottle or an approximate 60-tablet quantity would not adhere to FEFO guidelines, and contacting the prescriber is unnecessary if the technician can make the appropriate partial dispensation. Caribbean pharmacy technicians must be skilled at calculating partial quantities to match the patient's needs and the medication's expiry date.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": {},
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  }
+]

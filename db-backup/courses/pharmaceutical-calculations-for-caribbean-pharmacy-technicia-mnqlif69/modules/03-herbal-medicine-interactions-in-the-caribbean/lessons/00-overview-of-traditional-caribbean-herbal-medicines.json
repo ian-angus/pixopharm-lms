@@ -1,0 +1,35 @@
+{
+  "id": "45a7f317-a3cc-4a92-b0a0-672a8c68591f",
+  "module_id": "9af2b389-168d-498c-ab15-8f088836778a",
+  "title": "Overview of Traditional Caribbean Herbal Medicines",
+  "content": [
+    {
+      "text": "Traditional Caribbean Herbal Remedies",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "The Caribbean region has a rich history of traditional herbal medicine use, with many plants endemic to the islands. Patients often self-medicate with these remedies, sometimes in conjunction with their prescribed chronic disease treatments. As a pharmacy technician, you must be aware of the most common traditional medicines used across the CARICOM nations and their potential interactions with conventional drugs.",
+      "type": "text"
+    },
+    {
+      "body": "In Jamaica, up to 70% of the population uses herbal remedies regularly, often obtained from rural 'bush doctors'. In Trinidad & Tobago, over 50% of residents report using 'bush medicine'. In Barbados and Guyana, traditional medicine is similarly prevalent, with soursop leaf, neem, and aloe vera being particularly common. Even in Belize and the smaller islands like St. Lucia, traditional bush teas and tonics remain widely consumed.",
+      "type": "callout",
+      "title": "Widespread Traditional Medicine Use Across the Caribbean",
+      "variant": "info"
+    },
+    {
+      "term": "Traditional Caribbean Herbal Medicines",
+      "type": "key-term",
+      "definition": "Also known as 'bush medicine' or 'bush tea', these are plant-based remedies used for centuries across the Caribbean to treat a variety of conditions. Examples include cerasee (Momordica charantia) for diabetes, soursop leaf (Annona muricata) for cancer, and lemongrass (Cymbopogon citratus) for fevers."
+    },
+    {
+      "body": "Many Caribbean patients do not disclose their use of herbal remedies to healthcare providers. This can lead to dangerous interactions with prescription medications, especially for patients with chronic conditions like diabetes, hypertension, and HIV. For example, cerasee can potentiate the effects of metformin, while soursop may increase CNS depressant effects of benzodiazepines or antidepressants.",
+      "type": "callout",
+      "title": "Risks of Undisclosed Traditional Medicine Use",
+      "variant": "warning"
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 25
+}

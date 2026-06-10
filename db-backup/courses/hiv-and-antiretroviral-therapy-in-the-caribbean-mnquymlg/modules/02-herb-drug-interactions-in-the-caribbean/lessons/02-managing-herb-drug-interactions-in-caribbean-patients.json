@@ -1,0 +1,33 @@
+{
+  "id": "b54954b0-8dbd-484c-ac37-12b9818f5f85",
+  "module_id": "44d47223-8b80-44f3-ae1d-9accc5d31972",
+  "title": "Managing Herb-Drug Interactions in Caribbean Patients",
+  "content": [
+    {
+      "text": "Strategies for Addressing Herb-Drug Interactions",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Pharmacy technicians in the Caribbean play a crucial role in identifying and managing potential herb-drug interactions, particularly for patients living with HIV. By implementing effective strategies, they can help ensure the safe and effective use of both traditional remedies and antiretroviral medications.",
+      "type": "text"
+    },
+    {
+      "body": "In Jamaica, pharmacy technicians emphasize the importance of open communication with patients about their use of traditional herbs. This allows for the identification of potential interactions and the development of a comprehensive treatment plan that addresses both conventional and traditional therapies.",
+      "type": "callout",
+      "title": "Importance of Patient Communication"
+    },
+    {
+      "body": "In Belize, pharmacy technicians work closely with traditional healers to understand the composition and use of local herbal remedies. This collaboration helps to identify potential interactions and develop strategies to mitigate risks for patients seeking care from both conventional and traditional providers.",
+      "type": "callout",
+      "title": "Collaboration with Traditional Healers"
+    },
+    {
+      "term": "Comprehensive Care",
+      "type": "key-term",
+      "definition": "Providing comprehensive care in the Caribbean context requires pharmacy technicians to consider both conventional and traditional therapies. By working with patients, healthcare providers, and traditional healers, technicians can develop individualized treatment plans that address the unique needs and preferences of each patient."
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 25
+}

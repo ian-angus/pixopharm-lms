@@ -1,0 +1,50 @@
+{
+  "id": "98a6331a-b7fd-4e0c-a578-12158f891f7a",
+  "module_id": "e47529d5-4119-4119-b611-0bb0b6e78799",
+  "title": "Dosing and Administration of Diabetes Drugs",
+  "content": [
+    {
+      "text": "Dosing and Administration of Diabetes Drugs",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Proper dosing and administration of diabetes medications is essential to achieve glycemic control and avoid adverse events. Caribbean pharmacy technicians must be familiar with the typical starting doses, dosage ranges, and special instructions for the various antidiabetic drug classes. Factors like patient age, renal function, and polypharmacy require careful consideration when dispensing these medications.",
+      "type": "text"
+    },
+    {
+      "text": "Oral Antidiabetic Drugs",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Metformin is usually started at 500 mg once or twice daily, titrated up to a maximum of 2000 mg per day. Sulfonylureas like gliclazide begin at 40-80 mg once or twice daily. DPP-4 inhibitors such as sitagliptin have a standard dose of 100 mg once daily. All oral medications should be taken with food to minimize gastrointestinal side effects.",
+      "type": "text"
+    },
+    {
+      "body": "For insulin therapy, long-acting basal insulins like glargine or detemir are commonly prescribed, along with rapid-acting bolus insulins (lispro, aspart, glulisine) for meals. Technicians should be prepared to counsel patients on the appropriate injection technique, dose titration, and hypoglycemia management, which can vary between islands based on local insulin availability.",
+      "type": "callout",
+      "title": "Insulin Regimens in the Caribbean",
+      "variant": "info"
+    },
+    {
+      "body": "Many antidiabetic drugs require dose reductions in patients with impaired kidney function, which is prevalent in the Caribbean due to high rates of hypertension and diabetes complications. Failure to adjust doses appropriately can lead to drug accumulation and increased risk of hypoglycemia.",
+      "type": "callout",
+      "title": "Reminder: Renal Dosing Adjustments",
+      "variant": "warning"
+    },
+    {
+      "term": "Fixed-Dose Combinations",
+      "type": "key-term",
+      "definition": "Several combination products are available, such as metformin plus a sulfonylurea (e.g., metformin/glibenclamide) or a DPP-4 inhibitor (e.g., sitagliptin/metformin). These can simplify the medication regimen for Caribbean patients, improving adherence, but technicians must still be aware of the individual components and their respective doses."
+    },
+    {
+      "type": "video-placeholder",
+      "title": "Practical Insulin Administration for Caribbean Patients",
+      "duration": "15 min",
+      "description": "A diabetes educator from the University of the West Indies demonstrates the proper injection technique for different insulin formulations, including special considerations for Caribbean patients with dexterity or vision challenges."
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 25
+}

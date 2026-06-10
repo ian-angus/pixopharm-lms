@@ -1,0 +1,45 @@
+{
+  "id": "03e22224-056f-4ac8-9366-46bfb7af455b",
+  "module_id": "7d268b26-0261-4d40-84b8-3d01c34aca39",
+  "title": "Impact of Tropical Climate on Medication Stability",
+  "content": [
+    {
+      "text": "Medication Stability in the Caribbean Climate",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "The Caribbean region experiences hot, humid tropical weather year-round, with average temperatures ranging from 25-35°C. This can significantly impact the stability and shelf life of many pharmaceutical products. As a pharmacy technician, you must understand how heat, humidity, and other environmental factors degrade medication quality, and make necessary adjustments to storage and dispensing.",
+      "type": "text"
+    },
+    {
+      "text": "Impact of Heat and Humidity on Medication",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Heat and humidity accelerate chemical reactions that break down drug compounds, affecting potency, efficacy, and safety. Medications like insulin, nitroglycerin, and many antibiotics are especially vulnerable. In the Caribbean, technicians may encounter shortened expiry dates, increased risk of microbial growth, and even crystallization or discoloration of products stored at high temperatures.",
+      "type": "text"
+    },
+    {
+      "body": "Belize experiences a more pronounced 'wet' season from June-November, with frequent heavy rainfall. This poses additional risks of moisture damage to medications in storage. In contrast, Jamaica has a more consistent tropical climate year-round, requiring less seasonal variation in storage protocols.",
+      "type": "callout",
+      "title": "Regional Comparison: Belize vs Jamaica",
+      "variant": "info"
+    },
+    {
+      "body": "Unstable medications may lose potency or develop toxic byproducts. Administering a degraded drug can lead to treatment failure or adverse effects. It is critical for Caribbean pharmacy technicians to monitor storage conditions and watch for signs of medication instability.",
+      "type": "callout",
+      "title": "Danger: Medication Degradation Risks Patient Safety",
+      "variant": "warning"
+    },
+    {
+      "type": "video-placeholder",
+      "title": "Assessing Medication Degradation in Caribbean Pharmacies",
+      "duration": "12 min",
+      "description": "A senior pharmacist in Bridgetown, Barbados demonstrates how to spot physical changes that indicate a medication has been compromised by heat or humidity, and the proper procedure for quarantining and reporting degraded stock."
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 25
+}

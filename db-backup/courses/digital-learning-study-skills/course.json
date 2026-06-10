@@ -1,0 +1,20 @@
+{
+  "id": "685190d9-644c-405e-9ec0-c91a7a72d39e",
+  "title": "Digital Learning Skills & Study Skills",
+  "slug": "digital-learning-study-skills",
+  "description": "Online learning is a skill — and one that most students are never explicitly taught. This orientation course gives you everything you need to succeed in the Pixopharm diploma programme and in the digital healthcare environment you will enter.",
+  "skill_level": "Beginner",
+  "duration_weeks": 2,
+  "icon": "Monitor",
+  "color": "sky",
+  "prerequisites": [],
+  "what_youll_learn": [
+    "Apply spaced repetition and active recall techniques to retain pharmacy content long-term",
+    "Create a personalised study schedule that fits around work and family commitments",
+    "Navigate online drug databases and clinical reference tools used in Caribbean pharmacies",
+    "Apply digital professionalism standards to social media and online healthcare communication",
+    "Evaluate online health information for accuracy, bias, and clinical reliability"
+  ],
+  "status": "published",
+  "order": 7
+}

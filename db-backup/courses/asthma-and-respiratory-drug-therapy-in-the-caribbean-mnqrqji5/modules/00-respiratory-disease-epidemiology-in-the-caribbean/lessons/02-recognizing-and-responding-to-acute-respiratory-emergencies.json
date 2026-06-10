@@ -1,0 +1,54 @@
+{
+  "id": "6a2802df-489f-47aa-b48e-6b30d0c7b6f3",
+  "module_id": "c0a2ba7e-e1a9-4739-a860-68be6bad219b",
+  "title": "Recognizing and Responding to Acute Respiratory Emergencies",
+  "content": [
+    {
+      "text": "Identifying Acute Respiratory Distress",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "As the first point of contact, pharmacy technicians in the Caribbean play a vital role in recognizing and responding to acute respiratory emergencies. Symptoms like shortness of breath, wheezing, chest tightness, and excessive coughing can indicate a serious exacerbation requiring urgent treatment.",
+      "type": "text"
+    },
+    {
+      "body": "While both asthma and COPD can present with acute breathing difficulties, the underlying causes differ. Asthma exacerbations are often triggered by allergens, infections, or poor medication adherence, while COPD exacerbations are commonly linked to respiratory infections, air pollution exposure, or cardiovascular comorbidities. Recognizing these distinctions is crucial for providing appropriate emergency care.",
+      "type": "callout",
+      "title": "Asthma vs. COPD Exacerbations",
+      "variant": "info"
+    },
+    {
+      "body": "Other time-sensitive respiratory emergencies include pneumonia, pulmonary embolism, and acute respiratory distress syndrome (ARDS). These conditions can rapidly progress to respiratory failure without prompt diagnosis and treatment.",
+      "type": "text"
+    },
+    {
+      "body": "In some cases, patients may present with unexpectedly quiet or absent breath sounds, known as 'silent chest.' This can indicate a life-threatening obstruction or fluid buildup. Pharmacy technicians should never dismiss a patient's respiratory complaints, as even subtle changes in breathing patterns may signal an impending crisis.",
+      "type": "callout",
+      "title": "Beware of 'Silent' Chest",
+      "variant": "warning"
+    },
+    {
+      "text": "Responding to Acute Respiratory Emergencies",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Upon recognizing signs of acute respiratory distress, pharmacy technicians should immediately summon emergency medical assistance and initiate first aid measures as appropriate. This may include providing supplemental oxygen, administering rescue inhalers, or assisting with nebulized bronchodilator treatments. Accurate documentation of the patient's symptoms and vital signs is also crucial for guiding the emergency response.",
+      "type": "text"
+    },
+    {
+      "term": "Rescue Inhalers",
+      "type": "key-term",
+      "definition": "Short-acting bronchodilators like salbutamol (albuterol) and ipratropium that rapidly relieve acute asthma or COPD symptoms. In the Caribbean, these are often kept on hand at pharmacies for emergency use."
+    },
+    {
+      "type": "video-placeholder",
+      "title": "Responding to Respiratory Emergencies in Caribbean Pharmacies",
+      "duration": "19 min",
+      "description": "A training video demonstrating the step-by-step process for pharmacy technicians to identify, stabilize, and appropriately refer patients experiencing acute asthma exacerbations, COPD crises, and other life-threatening respiratory events."
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 25
+}

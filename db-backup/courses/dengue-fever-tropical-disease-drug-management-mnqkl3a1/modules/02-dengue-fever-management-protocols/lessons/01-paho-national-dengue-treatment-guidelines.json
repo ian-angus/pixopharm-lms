@@ -1,0 +1,35 @@
+{
+  "id": "659540d0-52f8-4f07-8825-8e733f92be69",
+  "module_id": "6ab2a498-825d-478e-93bf-4088ab80251e",
+  "title": "PAHO & National Dengue Treatment Guidelines",
+  "content": [
+    {
+      "text": "Standardized Dengue Care Protocols",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "The Pan American Health Organization (PAHO) has published regional guidelines for the diagnosis and management of dengue fever, which have been adopted by all CARICOM member states. These protocols standardize clinical assessment, supportive care, and use of antivirals and adjunct therapies. National health authorities have also developed country-specific dengue guidelines aligned with PAHO recommendations, accounting for local epidemiology and healthcare resources.",
+      "type": "text"
+    },
+    {
+      "body": "In Jamaica, the Ministry of Health Dengue Fever Clinical Management Guidelines emphasize early recognition of warning signs and aggressive fluid resuscitation. Barbados' Dengue Fever Management Protocol mandates a strict inpatient admission policy for all suspected dengue cases. Guyana's national guidelines focus on coordinating primary care, hospital, and vector control responses during outbreaks.",
+      "type": "callout",
+      "title": "Comparing Dengue Guidelines Across the Caribbean",
+      "variant": "info"
+    },
+    {
+      "term": "PAHO Dengue Treatment Recommendations",
+      "type": "key-term",
+      "definition": "PAHO advises supportive care with close monitoring, rehydration therapy, and antiplatelet medications for severe cases. Antivirals like ribavirin are not routinely recommended, but may be considered in select patients. Adjunct therapies like corticosteroids are not indicated except in specific circumstances like plasma leakage or organ impairment."
+    },
+    {
+      "type": "video-placeholder",
+      "title": "Applying PAHO Dengue Guidelines in Trinidad",
+      "duration": "12 min",
+      "description": "A dengue specialist at the Port of Spain General Hospital demonstrates the process of triaging and managing a suspected dengue case, highlighting key differences from the PAHO standard protocol."
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 25
+}

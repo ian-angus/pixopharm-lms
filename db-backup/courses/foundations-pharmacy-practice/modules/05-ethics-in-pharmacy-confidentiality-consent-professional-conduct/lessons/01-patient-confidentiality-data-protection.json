@@ -70,7 +70,6 @@
         ]
       ],
       "type": "table",
-      "caption": "How Confidentiality Is Breached in Practice",
       "headers": [
         "Type",
         "Examples",
@@ -78,52 +77,51 @@
       ]
     },
     {
-      "text": "Data Protection Legislation in the Caribbean",
+      "text": "Data Protection in the Caribbean",
       "type": "heading",
       "level": 3
     },
     {
-      "type": "island-comparison",
-      "title": "Data Protection Laws by Island",
-      "islands": [
-        {
-          "flag": "🇹🇹",
-          "name": "Trinidad & Tobago",
-          "details": [
-            "Data Protection Act 2011 (proclaimed in stages) — one of the earliest in the Caribbean",
-            "Classifies health information as 'sensitive personal data' requiring enhanced protections",
-            "Data controllers (including pharmacies) must register with the Office of the Information Commissioner",
-            "Patients have the right to access, correct, and request deletion of their personal data",
-            "Penalties: fines up to TT$100,000 and/or imprisonment for serious breaches",
-            "Pharmacies must have written data protection policies and train all staff"
-          ]
-        },
-        {
-          "flag": "🇯🇲",
-          "name": "Jamaica",
-          "details": [
-            "Jamaica's Data Protection Act (2020) establishes a framework for personal data protection",
-            "Healthcare data is classified as sensitive personal data",
-            "Pharmacies handling patient records are considered data processors/controllers",
-            "The Office of the Information Commissioner oversees compliance",
-            "Patients must be informed of how their data will be used and stored",
-            "Breach notification requirements apply — significant breaches must be reported"
-          ]
-        },
-        {
-          "flag": "🇧🇧",
-          "name": "Barbados",
-          "details": [
-            "Data Protection Act 2019 — comprehensive legislation aligned with international standards",
-            "Pharmacies must implement appropriate technical and organisational measures to protect patient data",
-            "Health data receives enhanced protection as a 'special category' of personal data",
-            "Patients have rights of access, rectification, erasure, and data portability",
-            "A Data Protection Commissioner oversees enforcement",
-            "Pharmacies must conduct data protection impact assessments for new systems handling patient information"
-          ]
-        }
+      "body": "For a pharmacy technician in the Caribbean, confidentiality and data protection are both professional obligations and legal requirements. You must safeguard all patient information you handle, whether in paper or digital form, and ensure it is only disclosed when permitted by law, patient consent, or a public interest need.",
+      "type": "text"
+    },
+    {
+      "text": "Core Principles",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "type": "list",
+      "items": [
+        "Respect patient privacy: Treat all identifiable patient information as sensitive and protect it from unauthorized access Medical Protection.",
+        "Secure storage: Keep records in cabinets or use password-protected systems/secure digital environments. Avoid leaving documents unattended or in public areas.",
+        "Limit access: Only share information with authorized staff or healthcare providers who need it for treatment, payment, or operations.",
+        "Avoid overheard conversations: Ensure consultations or discussions about patients are not overheard."
       ],
-      "description": "Caribbean nations are increasingly adopting formal data protection legislation that directly impacts pharmacy practice."
+      "ordered": false
+    },
+    {
+      "text": "Legal and Professional Obligations",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "type": "list",
+      "items": [
+        "Caribbean context: While privacy laws vary, many CARICOM member states (e.g., Jamaica, Trinidad and Tobago) have enacted data protection laws influenced by international standards like the EU GDPR ResearchGate. Even in countries without a specific privacy law, professional codes require confidentiality.",
+        "GDPR/GDPR-like rules: If your pharmacy processes personal data, you must have a lawful basis for processing (e.g., compliance with a legal obligation, patient consent) and document it.",
+        "Professional codes: Pharmacy technician standards require adherence to confidentiality, integrity, and availability of patient information."
+      ],
+      "ordered": false
+    },
+    {
+      "type": "list",
+      "items": [
+        "Retention policies: Follow prescription retention policies as legally regulated Archive any outdated records (e.g., after patient death or no longer needed) ",
+        "Training: Ensure all staff are trained on confidentiality and data protection rules.",
+        "Incident reporting: Report any suspected breaches to your Pharmacist promptly."
+      ],
+      "ordered": false
     },
     {
       "body": "In many Caribbean pharmacies, WhatsApp is informally used to communicate between staff, prescribers, and sometimes patients. This practice poses SERIOUS data protection risks. Patient information should NEVER be shared via WhatsApp or similar messaging platforms unless the system has been formally approved by the pharmacy's data protection policy and meets encryption and data residency requirements. A screenshot of a WhatsApp message containing patient information could be shared endlessly and constitutes a data breach.",

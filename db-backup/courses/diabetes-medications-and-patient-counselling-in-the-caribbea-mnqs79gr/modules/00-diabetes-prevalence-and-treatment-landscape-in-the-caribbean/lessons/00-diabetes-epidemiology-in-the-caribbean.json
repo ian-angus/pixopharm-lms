@@ -1,0 +1,54 @@
+{
+  "id": "e96a3b90-bdb2-4fa1-90c0-8792427bc5f4",
+  "module_id": "a1ae2113-883c-44e1-b6a1-74165ed6c924",
+  "title": "Diabetes Epidemiology in the Caribbean",
+  "content": [
+    {
+      "text": "Understanding the Diabetes Burden Across the Caribbean",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "The Caribbean region faces one of the highest burdens of type 2 diabetes mellitus (T2DM) in the world, with prevalence rates ranging from approximately 11% to over 18% of the adult population depending on the island. Trinidad and Tobago consistently reports among the highest prevalence in the Americas, with estimates exceeding 16% of adults aged 20–79 years, driven by genetic predisposition in Indo-Caribbean populations, dietary patterns high in refined carbohydrates, and sedentary lifestyles. Jamaica reports prevalence rates of approximately 12–13%, while Barbados, Belize, and Guyana each report rates between 11% and 15%. These figures far exceed the global average of approximately 10.5%, making diabetes the leading cause of death in several CARICOM nations and a top priority for regional public health agencies including CARPHA and the PAHO Caribbean office.",
+      "type": "text"
+    },
+    {
+      "body": "Trinidad & Tobago has a diabetes prevalence of approximately 16–18%, Jamaica approximately 12–13%, Barbados approximately 13%, Guyana approximately 11–14%, Belize approximately 12–14%, and St. Lucia approximately 11–12%. Indo-Caribbean populations in T&T and Guyana show disproportionately higher rates compared to Afro-Caribbean populations, though both groups far exceed global averages. These differences have direct implications for formulary demand and pharmacy stock planning.",
+      "type": "callout",
+      "title": "Island Comparison: Diabetes Prevalence",
+      "variant": "info"
+    },
+    {
+      "term": "Age-Standardised Prevalence",
+      "type": "key-term",
+      "definition": "A statistical method of adjusting disease prevalence rates to account for differences in age distribution between populations, allowing fair comparison between islands. For example, age-standardising diabetes rates in Barbados and Trinidad allows comparison despite T&T having a younger median population."
+    },
+    {
+      "text": "Risk Factors Unique to Caribbean Populations",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "Several risk factors converge in the Caribbean to create an ideal environment for diabetes development. Genetic susceptibility is high, particularly among Indo-Caribbean populations descended from South Asian indentured labourers, who carry metabolic syndrome risk profiles similar to those seen in India. Afro-Caribbean populations also carry significant genetic risk for insulin resistance and central obesity. The traditional Caribbean diet, while culturally rich, includes high-glycaemic-index staples such as white rice, ground provisions (cassava, yam, dasheen), fried plantain, and sweetened beverages including mauby, sorrel with added sugar, and condensed milk-based drinks. Physical inactivity rates are high, with PAHO data showing that over 40% of adults in several CARICOM states do not meet WHO recommended physical activity levels. Urbanisation has compounded these factors, particularly in Kingston, Port of Spain, and Bridgetown.",
+      "type": "text"
+    },
+    {
+      "body": "Many Caribbean patients self-treat with traditional remedies such as cerasee (Momordica charantia), which has demonstrated hypoglycaemic activity in clinical studies. While cerasee tea may modestly lower blood glucose, patients who combine it with prescribed metformin or glibenclamide without disclosing this to their pharmacist or physician are at significant risk of hypoglycaemia. Pharmacy technicians should routinely ask about bush tea and herbal remedy use during counselling.",
+      "type": "callout",
+      "title": "Traditional Medicine and Diabetes Risk",
+      "variant": "warning"
+    },
+    {
+      "body": "Complications of uncontrolled diabetes are devastating across the region. The Caribbean has among the highest rates of diabetes-related lower limb amputations globally, with Jamaica and Trinidad reporting alarming surgical amputation numbers annually. Diabetic nephropathy is a leading cause of end-stage renal disease requiring dialysis — a service with extremely limited availability on smaller islands such as St. Lucia, Dominica, and Grenada, where patients may need to travel to Trinidad, Barbados, or Jamaica for treatment. Diabetic retinopathy screening programmes exist in Barbados (Queen Elizabeth Hospital) and Jamaica (University Hospital of the West Indies) but remain scarce elsewhere. These complications underscore the critical importance of early detection, medication adherence, and the frontline role of pharmacy technicians in chronic disease management.",
+      "type": "text"
+    },
+    {
+      "type": "video-placeholder",
+      "title": "Diabetes in the Caribbean: A Regional Overview",
+      "duration": "6 min",
+      "description": "An animated overview showing a map of the Caribbean with island-by-island diabetes prevalence data overlaid, highlighting risk factors unique to each territory including dietary patterns, ethnic composition, and healthcare infrastructure limitations. Includes brief interviews with pharmacists from Kingston, Jamaica and Port of Spain, Trinidad discussing the patient populations they serve daily."
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 25
+}

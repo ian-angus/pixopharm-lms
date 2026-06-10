@@ -1,0 +1,50 @@
+{
+  "id": "1029e227-8e37-4815-81fb-fa33682ac827",
+  "module_id": "7d268b26-0261-4d40-84b8-3d01c34aca39",
+  "title": "Calculating Buffer Stock for Small Island Supply Chains",
+  "content": [
+    {
+      "text": "Optimizing Medication Inventory for Caribbean Supply Chains",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Caribbean pharmacy technicians must carefully manage medication inventory to account for the unique supply chain challenges in the region. Frequent power outages, inter-island shipping delays, and small island stock-out risks require close attention to buffer stock calculations and supply planning.",
+      "type": "text"
+    },
+    {
+      "text": "Determining Appropriate Buffer Stock Levels",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "To prevent stockouts, Caribbean pharmacies must carry additional 'buffer' inventory above the normal quantity needed to meet patient demand. This buffer stock helps accommodate delays in shipments from regional wholesalers or national distributors. The optimal buffer level depends on factors like average daily usage, lead time for resupply, and the frequency of shipping disruptions in a given location.",
+      "type": "text"
+    },
+    {
+      "body": "Technicians in Trinidad and Tobago often need to carry larger buffer stocks to account for more frequent power outages and shipping delays between the islands. In contrast, Barbados enjoys more reliable infrastructure and transportation, allowing for leaner inventory management in most pharmacies.",
+      "type": "callout",
+      "title": "Regional Comparison: Buffer Stock in Trinidad vs Barbados",
+      "variant": "info"
+    },
+    {
+      "body": "Calculating buffer stock for controlled medications like opioids and benzodiazepines requires extra caution. Caribbean pharmacy boards have strict inventory reporting requirements, and technicians may face penalties for exceeding allowable stockpile limits for these high-risk drugs.",
+      "type": "callout",
+      "title": "Regulatory Alert: Controlled Drug Inventory",
+      "variant": "warning"
+    },
+    {
+      "term": "Medication Stock-Out",
+      "type": "key-term",
+      "definition": "When a pharmacy completely runs out of a particular medication, often due to supply chain disruptions or unexpected demand spikes. Stock-outs pose significant risks, forcing patients to go without critical treatments or seek alternatives that may be less appropriate or accessible."
+    },
+    {
+      "type": "video-placeholder",
+      "title": "Preventing Medication Stock-Outs in Caribbean Pharmacies",
+      "duration": "18 min",
+      "description": "A panel of pharmacy technicians from Jamaica, Guyana, and Trinidad share their strategies for calculating and maintaining optimal buffer stock levels for common chronic medications like losartan, metformin, and albuterol to avoid stock-outs in their facilities."
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 25
+}

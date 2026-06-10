@@ -1,0 +1,20 @@
+{
+  "id": "8639ca3e-32b1-4930-9a9c-aa6d7b0baef5",
+  "title": "Dengue Fever & Tropical Disease Drug Management",
+  "slug": "dengue-fever-tropical-disease-drug-management-mnqkl3a1",
+  "description": "Explore dengue fever and tropical disease drug management protocols across CARICOM nations like Jamaica, Trinidad & Tobago, Barbados, Guyana, and Belize. Understand interactions with traditional bush medicines and pharmacological vector control.",
+  "skill_level": "Intermediate",
+  "duration_weeks": 4,
+  "icon": "Shield",
+  "color": "teal",
+  "prerequisites": [],
+  "what_youll_learn": [
+    "Identify Caribbean-specific drug scheduling and formularies for tropical disease management",
+    "Analyze interactions between common traditional bush medicines and pharmaceutical drugs",
+    "Apply dengue fever treatment protocols across diverse CARICOM healthcare settings",
+    "Recommend vector control pharmacology strategies to prevent tropical disease transmission",
+    "Communicate effectively with patients about traditional and conventional medicine integration"
+  ],
+  "status": "archived",
+  "order": 999
+}

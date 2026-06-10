@@ -1,10 +1,10 @@
 {
   "id": "34fcd2ea-9c5d-4a5f-9f70-5276076fcf2a",
-  "title": "Pharmacology Essentials",
+  "title": "Pharmacology & Body Systems — Part 1",
   "slug": "pharmacology-essentials",
   "description": "Develop working knowledge of how drugs act in the body, tailored to the Caribbean disease landscape.",
   "skill_level": "Intermediate",
-  "duration_weeks": 10,
+  "duration_weeks": 6,
   "icon": "HeartPulse",
   "color": "rose",
   "prerequisites": [
@@ -19,5 +19,5 @@
     "Advise on OTC and herbal remedies"
   ],
   "status": "published",
-  "order": 5
+  "order": 12
 }

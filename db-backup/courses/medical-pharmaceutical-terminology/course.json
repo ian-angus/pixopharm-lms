@@ -1,0 +1,22 @@
+{
+  "id": "135a6628-dcfb-4bc7-951f-077ff2c0971c",
+  "title": "Medical & Pharmaceutical Terminology",
+  "slug": "medical-pharmaceutical-terminology",
+  "description": "Master the language of pharmacy. This course builds your fluency in the medical and pharmaceutical terms, abbreviations, and sig codes that appear on every prescription you will ever process.",
+  "skill_level": "Beginner",
+  "duration_weeks": 4,
+  "icon": "BookOpen",
+  "color": "indigo",
+  "prerequisites": [
+    "foundations-pharmacy-practice"
+  ],
+  "what_youll_learn": [
+    "Interpret prescription sig codes and Latin abbreviations accurately",
+    "Distinguish between brand, generic, and chemical drug names",
+    "Apply medical word-building rules to decode unfamiliar clinical terms",
+    "Recognise error-prone abbreviations flagged by safety bodies",
+    "Read and verify drug labels against prescriptions using correct terminology"
+  ],
+  "status": "published",
+  "order": 2
+}

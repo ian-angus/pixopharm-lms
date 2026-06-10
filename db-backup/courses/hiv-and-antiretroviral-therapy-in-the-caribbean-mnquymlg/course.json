@@ -1,0 +1,20 @@
+{
+  "id": "fd88c707-a187-4b50-8ae2-99225781d1c8",
+  "title": "HIV and Antiretroviral Therapy in the Caribbean",
+  "slug": "hiv-and-antiretroviral-therapy-in-the-caribbean-mnquymlg",
+  "description": "Explore the management of HIV/AIDS and antiretroviral therapy across the diverse Caribbean region, with a focus on the unique clinical challenges and traditional medicine interactions faced by pharmacy technicians in countries like Trinidad & Tobago, Jamaica, Barbados, Guyana, and Belize.",
+  "skill_level": "Beginner",
+  "duration_weeks": 4,
+  "icon": "Stethoscope",
+  "color": "purple",
+  "prerequisites": [],
+  "what_youll_learn": [
+    "Describe the epidemiology of HIV/AIDS in the Caribbean and its impact on public health",
+    "Identify the key antiretroviral drug classes and their mechanisms of action",
+    "Recognize common drug interactions between antiretrovirals and traditional Caribbean herbal medicines",
+    "Develop strategies to optimize medication adherence and chronic disease management for Caribbean patients living with HIV",
+    "Apply CARICOM regional guidelines and national formularies to ensure appropriate antiretroviral therapy selection and dosing"
+  ],
+  "status": "archived",
+  "order": 999
+}

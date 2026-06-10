@@ -1,0 +1,32 @@
+{
+  "id": "5c9e094d-5bb0-4a5e-8746-e3427454515d",
+  "module_id": "d68ecef5-e8ed-4491-ae3b-a9ec044a2d4e",
+  "title": "Diabetes Comorbidities and Complications in the Caribbean",
+  "content": [
+    {
+      "text": "Diabetes Comorbidities and Complications in the Caribbean",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Diabetes is a major public health emergency in the Caribbean, with prevalence rates significantly higher than the global average. Driven by genetics, diet, and rising obesity rates, uncontrolled diabetes leads to devastating microvascular and macrovascular comorbidities—specifically heart disease, kidney failure, lower-limb amputations, and vision loss.",
+      "type": "text"
+    },
+    {
+      "body": "High-Burden Comorbidities and Complications",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Cardiovascular Disease: Adults with diabetes are 2-3 times more likely to suffer heart attacks and strokes, making cardiovascular disease the leading cause of death among people living with diabetes in the Caribbean.",
+        "Diabetic Foot Infections: Peripheral neuropathy (nerve damage) combined with reduced blood flow frequently results in severe foot ulcers. These infections are the leading cause of surgical admissions in Caribbean public hospitals and frequently lead to lower limb amputations.",
+        "Diabetic Nephropathy: Chronic high blood sugar damages the small blood vessels in the kidneys, making diabetes a primary cause of end-stage renal disease and the need for dialysis.",
+        "Diabetic Retinopathy: Long-term accumulated vascular damage to the eyes is a primary cause of preventable blindness in the region"
+      ],
+      "ordered": false
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 25
+}

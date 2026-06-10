@@ -1,0 +1,54 @@
+{
+  "id": "6a329db5-3587-44d8-b7d3-99d5efbeced9",
+  "module_id": "6d18ebe8-35e0-4e2a-bffb-400240e5b0a2",
+  "title": "Developing Culturally-Relevant Diabetes Education Materials",
+  "content": [
+    {
+      "text": "Creating Patient Education Materials That Reflect Caribbean Realities",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Standard diabetes education materials produced in North America or Europe fail Caribbean patients in fundamental ways: they reference foods not commonly eaten in the region, depict portion sizes in unfamiliar measurements, illustrate only non-Caribbean populations, assume access to technologies like continuous glucose monitors that are unavailable in most CARICOM public health systems, and are written at reading levels far above the functional literacy of many patients. A pharmacy technician who develops or adapts education materials for their specific island context provides an invaluable service. Effective Caribbean diabetes education materials must address the actual diet (rice and peas, ground provisions, roti, bake and saltfish, pelau), the actual barriers (medication stock-outs, cost, transportation to clinics), and the actual belief systems (bush medicine, faith-based healing, fatalism about 'sugar').",
+      "type": "text"
+    },
+    {
+      "body": "In Jamaica, patients need to understand the glycaemic impact of staples like hard food (boiled green banana, yam, dasheen) versus white rice and flour-based products like festival and dumpling. In Guyana and Trinidad, roti skins, dhalpuri, and doubles carry significant carbohydrate loads that patients underestimate. In Belize, corn tortillas and fry jacks are daily staples. In Barbados, cou-cou and macaroni pie are high-carbohydrate cultural foods eaten weekly. Education materials must list these specific foods with portion guidance — telling a Trinidadian patient to 'eat half a cup of pasta' is meaningless, but telling them 'one small roti skin equals roughly two bread exchanges' is actionable.",
+      "type": "callout",
+      "title": "Caribbean Food Exchange Lists Must Reflect Local Diets",
+      "variant": "info"
+    },
+    {
+      "text": "Design Principles for Low-Literacy, High-Impact Patient Resources",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "The Caribbean Adult Literacy Survey data shows significant variation across CARICOM: Barbados and Trinidad & Tobago have relatively high literacy rates (above 98%), but functional health literacy — the ability to read and act on medication labels, appointment slips, and health information — is considerably lower, estimated at 60–70% in some communities. In Guyana's interior regions and Belize's rural Toledo district, functional literacy may be below 50%. Effective patient education materials therefore should target a Grade 4–6 reading level, use pictograms wherever possible, employ large font sizes (minimum 14-point), use high-contrast colours, and avoid medical jargon. Every medication instruction should pair a written direction with a visual icon — for example, a sun icon for morning dosing, a plate icon for 'take with food,' and a red triangle for 'danger: do not skip.'",
+      "type": "text"
+    },
+    {
+      "term": "Pictogram-Based Medication Schedule",
+      "type": "key-term",
+      "definition": "A visual tool that uses icons, colour coding, and simplified images to communicate medication timing, dose, and precautions without relying on text. For example, a card showing a metformin tablet icon next to a breakfast plate icon and a dinner plate icon communicates 'take with breakfast and dinner' to a patient who cannot read. These are particularly critical in multi-drug diabetes regimens common across CARICOM, where a patient may be on metformin, glibenclamide, enalapril, and aspirin simultaneously."
+    },
+    {
+      "body": "When creating culturally relevant materials, involve patients in the design process. In a pilot programme at the Eric Williams Medical Sciences Complex in Trinidad, pharmacy staff field-tested draft diabetes pamphlets with patients in the waiting area and discovered that the word 'carbohydrate' was misunderstood by the majority — patients responded far better to 'starch foods' or simply 'foods that turn to sugar in your body.' Similarly, at a community pharmacy in Montego Bay, Jamaica, technicians found that patients confused 'twice daily' with 'every two days' — leading them to redesign labels to read 'morning and night, every day.' These real-world insights are only captured through patient engagement and cannot be guessed from a desk. Materials should also include a section on when to contact the pharmacy or seek emergency care — with actual local phone numbers, clinic addresses, and opening hours.",
+      "type": "text"
+    },
+    {
+      "body": "Education materials must reflect the actual resources available to patients on each island. Do not include instructions to 'check your HbA1c every 3 months' if the patient is on an island where HbA1c testing is only available at the main hospital and requires a 3-hour bus ride. Do not recommend 'use a home glucometer daily' if test strips are prohibitively expensive or unavailable through the public system, as is common in Guyana's hinterland, rural Belize, and smaller Eastern Caribbean islands like Dominica and St. Vincent. Instead, provide realistic alternatives: urine glucose testing where glucometers are unavailable, symptom-monitoring diaries, and schedules aligned with when the patient actually sees a prescriber — which in some islands may be every 3–6 months.",
+      "type": "callout",
+      "title": "Adapting Materials for Island-Specific Health System Resources",
+      "variant": "warning"
+    },
+    {
+      "type": "video-placeholder",
+      "title": "Workshop: Building a Diabetes Self-Management Toolkit for a Barbados Polyclinic",
+      "duration": "18 min",
+      "description": "This guided workshop follows a pharmacy technician at the Winston Scott Polyclinic in Barbados through the step-by-step creation of a diabetes self-management toolkit for patients receiving medications through the Barbados Drug Service (BDS). The toolkit includes: a pictogram-based medication schedule card for a standard regimen of metformin + gliclazide + enalapril; a 'Bajan Plate Guide' showing healthy portioning of cou-cou, rice and peas, fried plantain, and ground provisions; a bush medicine disclosure prompt card; a blood glucose logbook adapted for patients who only have access to fasting glucose checks at monthly clinic visits; and a hypoglycaemia action card with the polyclinic emergency number. The technician demonstrates how to laminate and distribute these materials efficiently in a high-volume dispensing setting."
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 25
+}

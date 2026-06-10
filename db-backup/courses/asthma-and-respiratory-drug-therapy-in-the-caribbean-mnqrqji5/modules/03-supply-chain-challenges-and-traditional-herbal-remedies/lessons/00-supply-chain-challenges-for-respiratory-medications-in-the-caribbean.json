@@ -1,0 +1,47 @@
+{
+  "id": "7af7429b-8fd8-4d98-a187-2b6b1fdca32f",
+  "module_id": "c72d66d2-0af1-4710-8943-2106fdad9e6d",
+  "title": "Supply Chain Challenges for Respiratory Medications in the Caribbean",
+  "content": [
+    {
+      "text": "Respiratory Medication Supply Chain Challenges in the Caribbean",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Maintaining a reliable supply of essential respiratory medications is a constant challenge for Caribbean nations. Tropical heat, power outages, and transportation delays create unique obstacles for drug storage and distribution. Pharmacy technicians must be proactive in managing these supply chain issues to ensure patients have uninterrupted access to critical inhalers, nebulizers, and oral bronchodilators.",
+      "type": "text"
+    },
+    {
+      "body": "Temperatures in the Caribbean range from 25-35°C year-round, exceeding storage requirements for many respiratory drugs. In Trinidad & Tobago and Jamaica, where temperatures frequently reach the upper end of this range, backup power generators and cold chain storage are essential to maintain potency of medications like salbutamol inhalers and ipratropium nebules.",
+      "type": "callout",
+      "title": "Temperature Extremes Across the Region",
+      "variant": "info"
+    },
+    {
+      "term": "FEFO/FIFO Protocols",
+      "type": "key-term",
+      "definition": "First Expiry, First Out (FEFO) and First In, First Out (FIFO) inventory management protocols are critical for temperature-sensitive respiratory medications. Technicians must vigilantly monitor expiry dates and rotate stock to minimize waste from degradation."
+    },
+    {
+      "body": "For smaller Caribbean islands like St. Lucia, Grenada, and Dominica, receiving respiratory medications in a timely manner is an ongoing challenge. Shipments can be delayed by as much as 4-6 weeks due to limited air/sea freight options, customs clearance, and port congestion. Technicians must proactively manage stock levels to avoid potentially life-threatening shortages.",
+      "type": "callout",
+      "title": "Inter-Island Shipping Delays",
+      "variant": "info"
+    },
+    {
+      "body": "Frequent power blackouts across the Caribbean pose a serious risk for temperature-sensitive respiratory medications, especially nebulizer solutions and inhalers. Pharmacies without reliable backup generators are vulnerable to drug degradation and spoilage, leading to treatment interruptions for patients with asthma, COPD, and other chronic respiratory conditions.",
+      "type": "callout",
+      "title": "Power Outages and Backup Power",
+      "variant": "warning"
+    },
+    {
+      "type": "video-placeholder",
+      "title": "Respiratory Supply Chain Challenges in Guyana",
+      "duration": "18 min",
+      "description": "A pharmacist from Georgetown Public Hospital describes challenges with maintaining a consistent supply of albuterol inhalers, ipratropium nebules, and other essential respiratory medications due to frequent power outages, shipment delays, and limited cold chain storage capacity in Guyana."
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 25
+}

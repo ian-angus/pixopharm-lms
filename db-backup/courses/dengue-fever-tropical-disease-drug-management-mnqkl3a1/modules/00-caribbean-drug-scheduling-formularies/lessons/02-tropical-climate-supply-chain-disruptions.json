@@ -1,0 +1,41 @@
+{
+  "id": "bf877ec9-c7b5-4839-b259-48d978d72f3d",
+  "module_id": "4c8c9602-2245-4aa5-8fee-a4b295d9bc2a",
+  "title": "Tropical Climate & Supply Chain Disruptions",
+  "content": [
+    {
+      "text": "Overcoming Tropical Supply Chain Challenges",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "The Caribbean's tropical climate and geographic isolation pose unique challenges for pharmaceutical supply chains. Pharmacy technicians must be aware of these logistical issues and implement strategies to ensure the integrity and availability of essential medicines.",
+      "type": "text"
+    },
+    {
+      "body": "Year-round temperatures ranging from 25-35°C, combined with frequent power outages, can compromise the storage and stability of many medications. Technicians must be vigilant in monitoring storage conditions and implementing proper cold chain management, especially for heat-sensitive biologics and vaccines.",
+      "type": "callout",
+      "title": "Navigating Tropical Heat and Power Outages",
+      "variant": "info"
+    },
+    {
+      "body": "Transporting pharmaceuticals between Caribbean islands can be complicated by shipping delays, customs clearance, and small-island stock-out risks. Technicians must plan ahead, maintain strong supplier relationships, and be prepared to substitute equivalent medications when specific products are unavailable.",
+      "type": "callout",
+      "title": "Challenges in Inter-Island Shipping and Customs",
+      "variant": "warning"
+    },
+    {
+      "term": "FEFO/FIFO",
+      "type": "key-term",
+      "definition": "Pharmaceutical inventory management principles critical in the Caribbean: First-Expiry, First-Out (FEFO) and First-In, First-Out (FIFO). Ensuring the shortest-dated and oldest stock is dispensed first helps minimize waste and maintain medication quality."
+    },
+    {
+      "type": "video-placeholder",
+      "title": "Maintaining the Cold Chain in Port of Spain, Trinidad",
+      "duration": "18 min",
+      "description": "A pharmacy technician at the Eric Williams Medical Sciences Complex in Port of Spain, Trinidad, demonstrates the procedures used to monitor and maintain the cold chain for temperature-sensitive medications, including during power outages and shipping delays."
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 25
+}

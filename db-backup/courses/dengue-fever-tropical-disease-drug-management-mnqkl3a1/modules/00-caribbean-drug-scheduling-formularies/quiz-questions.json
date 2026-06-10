@@ -1,0 +1,56 @@
+[
+  {
+    "id": "fc297eba-2f85-40bc-b8ba-bb7fe3f3b74a",
+    "module_id": "4c8c9602-2245-4aa5-8fee-a4b295d9bc2a",
+    "question": "A patient in a Bridgetown, Barbados pharmacy asks about purchasing pseudoephedrine-containing decongestants. What is the appropriate response?",
+    "options": [
+      "Pseudoephedrine is a controlled substance in Barbados and requires a special prescription. I can only sell it with a valid prescription.",
+      "Pseudoephedrine is not a controlled substance in Barbados. You can purchase it over the counter without a prescription.",
+      "Pseudoephedrine is banned in Barbados. I cannot sell any products containing this ingredient.",
+      "Pseudoephedrine is classified as a Schedule 3 drug in Barbados. I can sell it, but you will need to show ID and I'll need to log the sale."
+    ],
+    "correct_answer": 0,
+    "explanation": "In Barbados, pseudoephedrine is a controlled substance under the Pharmacy Act Cap 372D. Pharmacy technicians must require a valid prescription to dispense any products containing this ingredient.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": {},
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "5ed59b48-e571-476f-aead-4c53ccbf18df",
+    "module_id": "4c8c9602-2245-4aa5-8fee-a4b295d9bc2a",
+    "question": "What is the purpose of the CARICOM Regional Standard (CRS) for pharmaceuticals?",
+    "options": [
+      "The CRS defines a unified drug scheduling system for all CARICOM member states.",
+      "The CRS establishes a common national formulary of essential medicines for CARICOM countries.",
+      "The CRS promotes harmonization of pharmaceutical regulations, quality standards, and supply chain best practices across the Caribbean region.",
+      "The CRS coordinates the development and publication of the Caribbean Pharmacopoeia."
+    ],
+    "correct_answer": 2,
+    "explanation": "The CARICOM Regional Standard aims to harmonize pharmaceutical regulations, quality assurance, and supply chain practices across the Caribbean Community member states. It does not define a unified drug scheduling system or national formularies, which still vary by country.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": {},
+    "difficulty": "medium",
+    "blooms_level": "understand"
+  },
+  {
+    "id": "1f49dbb8-4cb0-4d29-9b33-fc434c6ccde0",
+    "module_id": "4c8c9602-2245-4aa5-8fee-a4b295d9bc2a",
+    "question": "Which of the following is the MOST significant supply chain challenge for Caribbean pharmacy technicians?",
+    "options": [
+      "Maintaining the cold chain for temperature-sensitive medications",
+      "Navigating customs clearance and delays for inter-island shipments",
+      "Accounting for frequent power outages that can compromise drug storage conditions",
+      "Minimizing the risk of small-island stock-outs for essential medicines"
+    ],
+    "correct_answer": 0,
+    "explanation": "The tropical climate with year-round high temperatures poses the most significant challenge for Caribbean pharmacy technicians in maintaining the integrity of temperature-sensitive medications through the supply chain. Power outages, shipping delays, and stock-out risks are also significant issues, but the need for robust cold chain management is paramount.",
+    "order_index": 2,
+    "question_type": "multiple_choice",
+    "question_data": {},
+    "difficulty": "medium",
+    "blooms_level": "analyze"
+  }
+]

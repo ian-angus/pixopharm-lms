@@ -1,0 +1,41 @@
+{
+  "id": "59878460-708f-4474-9deb-c956ba356e3f",
+  "module_id": "2e4952b7-fabf-4ea7-8961-74fd44748262",
+  "title": "Hypertension Medication Landscape in the Caribbean",
+  "content": [
+    {
+      "text": "Hypertension Medication Landscape in the Caribbean",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Hypertension is a major public health concern across the Caribbean, with some of the highest rates globally in countries like Jamaica and Trinidad & Tobago. Effective medication management is essential to control blood pressure and prevent complications. However, the regulatory landscape for antihypertensive drugs varies significantly between CARICOM nations, impacting medication availability and patient access.",
+      "type": "text"
+    },
+    {
+      "body": "In Jamaica, common antihypertensives like diuretics, ACE inhibitors, and calcium channel blockers are classified as 'dangerous drugs' under Schedule 1 or 2 of the Dangerous Drugs Act, requiring a special prescription form. Trinidad & Tobago and Barbados have their own Pharmacy Acts and local formularies that determine drug scheduling and availability. Guyana and Belize have essential medication lists through their public health systems. Smaller islands like St. Lucia follow their own national Pharmacy Acts.",
+      "type": "callout",
+      "title": "Hypertension Medication Scheduling Across the Caribbean",
+      "variant": "info"
+    },
+    {
+      "term": "National Formulary",
+      "type": "key-term",
+      "definition": "An official list of medications approved for use and reimbursement within a country's public health system. Caribbean nations maintain their own national formularies, which can differ in the specific antihypertensive agents included and any restrictions on prescribing or dispensing."
+    },
+    {
+      "body": "The CARICOM Regional Standard (CRS) and Caribbean Pharmacopoeia provide some regional alignment on medication standards, but individual countries maintain autonomy over their national drug scheduling and formularies. This creates challenges for pharmacy technicians working across multiple Caribbean territories or with a diverse patient population.",
+      "type": "callout",
+      "title": "CARICOM Regional Harmonization Efforts",
+      "variant": "info"
+    },
+    {
+      "type": "video-placeholder",
+      "title": "Navigating Hypertension Medication Regulations Across the Caribbean",
+      "duration": "18 min",
+      "description": "A panel discussion with pharmacy regulators from Jamaica, Trinidad & Tobago, and Barbados on the differences in antihypertensive drug scheduling, national formularies, and prescribing requirements across the region."
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 25
+}

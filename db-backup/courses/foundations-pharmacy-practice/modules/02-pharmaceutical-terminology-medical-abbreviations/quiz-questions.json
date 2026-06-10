@@ -142,5 +142,45 @@
     "question_data": null,
     "difficulty": "medium",
     "blooms_level": "remember"
+  },
+  {
+    "id": "5c1e99a3-aafc-481d-92ae-1d4a90824504",
+    "module_id": "d3c3203a-0e54-43ca-b9a3-1bd6c00c0d63",
+    "question": "The difference between a suffix and a prefix is that a suffix is an affix placed before the root of a word and a prefix is an affix placed after the root of a word.",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "correct_answer": 0,
+    "explanation": "",
+    "order_index": 99,
+    "question_type": "true_false",
+    "question_data": {
+      "correct_answer": false
+    },
+    "difficulty": "medium",
+    "blooms_level": "remember"
+  },
+  {
+    "id": "18485703-95ca-441e-b2f4-189c52b51750",
+    "module_id": "d3c3203a-0e54-43ca-b9a3-1bd6c00c0d63",
+    "question": "The difference between a suffix and a prefix is that a suffix is an affix placed before the root of a word and a prefix is an affix placed after the root of a word.",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "correct_answer": 0,
+    "explanation": "",
+    "order_index": 99,
+    "question_type": "true_false",
+    "question_data": {
+      "correct_answer": false
+    },
+    "difficulty": "medium",
+    "blooms_level": "remember"
   }
 ]

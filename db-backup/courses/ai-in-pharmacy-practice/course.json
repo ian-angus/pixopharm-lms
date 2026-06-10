@@ -1,12 +1,12 @@
 {
   "id": "c9080def-6458-42cc-a277-e74b70bbcd56",
-  "title": "AI in Pharmacy Practice",
+  "title": "Technology, Automation & AI in Pharmacy",
   "slug": "ai-in-pharmacy-practice",
   "description": "Learn how AI is transforming pharmacy operations and how to apply these tools responsibly in the Caribbean.",
   "skill_level": "Advanced",
   "duration_weeks": 4,
   "icon": "BrainCircuit",
-  "color": "cyan",
+  "color": "violet",
   "prerequisites": [
     "foundations-pharmacy-practice",
     "dispensing-medication-management"
@@ -19,5 +19,5 @@
     "Articulate ethical AI framework"
   ],
   "status": "published",
-  "order": 11
+  "order": 24
 }

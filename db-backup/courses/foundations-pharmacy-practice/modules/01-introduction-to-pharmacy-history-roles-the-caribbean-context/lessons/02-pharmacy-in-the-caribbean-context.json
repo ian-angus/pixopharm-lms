@@ -16,7 +16,7 @@
       "type": "list",
       "items": [
         "Geographic fragmentation: Medications must be imported across ocean, often to remote islands with limited port infrastructure",
-        "Tropical climate: Heat and humidity demand strict cold chain management for temperature-sensitive medications",
+        "Tropical climate: Heat and humidity demand proper storage and strict cold chain management for temperature-sensitive medications",
         "Regulatory diversity: Each island nation maintains its own pharmacy laws, drug schedules, and professional standards",
         "Disease landscape: Tropical diseases (dengue, chikungunya, Zika), high prevalence of NCDs (hypertension, diabetes), and HIV/AIDS shape medication demand",
         "Cultural factors: Traditional medicine (bush medicine, obeah) coexists with modern pharmacy and must be understood, not dismissed",
@@ -59,7 +59,6 @@
         ]
       ],
       "type": "table",
-      "caption": "Major Caribbean Pharmacy & Health Organisations",
       "headers": [
         "Organisation",
         "Acronym",
@@ -67,21 +66,14 @@
       ]
     },
     {
-      "body": "While CARICOM aspires to harmonised pharmaceutical standards, in practice each island maintains significant regulatory independence. The Caribbean Regulatory System (CRS) is gradually enabling mutual recognition of drug registrations, but drug scheduling, prescription requirements, and technician scope of practice still vary island by island. This is why PIXOPHARM teaches you to navigate these differences rather than assume uniformity.",
+      "body": "While CARICOM aspires to harmonised pharmaceutical standards, in practice each island maintains significant regulatory independence. The Caribbean Regulatory System (CRS) is gradually enabling mutual recognition of drug registrations, but drug scheduling, prescription requirements, and technician scope of practice still vary island by island. This is why it is necessary to navigate these differences rather than assume uniformity.",
       "type": "callout",
       "title": "CARICOM Harmonisation — Work in Progress",
       "variant": "tip"
     },
     {
-      "type": "case-study",
-      "title": "Case Study: The Supply Chain Challenge",
-      "scenario": "Hurricane season 2024: A Category 4 hurricane disrupts shipping routes to several Eastern Caribbean islands for three weeks. Pharmacies on Dominica and St. Vincent report critical shortages of insulin, antihypertensives, and asthma medications. The OECS Pharmaceutical Procurement Service activates its emergency protocol, but delivery is delayed by damaged port infrastructure.",
-      "questions": [
-        "What advance planning could pharmacies have done to prepare for hurricane season?",
-        "How should a pharmacy technician prioritise dispensing when stock of essential medications is limited?",
-        "What role do regional organisations like OECS PPS and CARPHA play in pharmaceutical emergency response?"
-      ],
-      "discussion": "This scenario illustrates why Caribbean pharmacies must maintain emergency buffer stock (typically 3-6 months for essential medicines), have written hurricane preparedness SOPs, and understand the regional procurement networks available to them. The OECS Pharmaceutical Procurement Service pools purchasing power for 9 Eastern Caribbean states, achieving better prices and more reliable supply — but cannot eliminate the geographic vulnerability of small island nations."
+      "body": "[unsupported block type]",
+      "type": "text"
     }
   ],
   "order_index": 2,

@@ -1,11 +1,11 @@
 {
   "id": "cf53d538-39c1-4093-8a18-62c37abd6b25",
-  "title": "Caribbean Pharmaceutical Regulations",
+  "title": "Caribbean Regulatory Compliance & Quality Systems",
   "slug": "caribbean-pharmaceutical-regulations",
   "description": "Navigate the regulatory environment governing pharmaceutical practice across the Caribbean.",
-  "skill_level": "Intermediate",
+  "skill_level": "Advanced",
   "duration_weeks": 5,
-  "icon": "Scale",
+  "icon": "Building2",
   "color": "amber",
   "prerequisites": [
     "foundations-pharmacy-practice"
@@ -18,5 +18,5 @@
     "Differentiate national frameworks"
   ],
   "status": "published",
-  "order": 6
+  "order": 23
 }

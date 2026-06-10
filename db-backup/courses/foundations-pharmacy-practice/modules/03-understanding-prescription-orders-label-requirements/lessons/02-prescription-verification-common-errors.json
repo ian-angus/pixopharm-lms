@@ -59,7 +59,6 @@
         ]
       ],
       "type": "table",
-      "caption": "Prescription Validity Periods",
       "headers": [
         "Prescription Type",
         "Trinidad & Tobago",
@@ -68,15 +67,52 @@
       ]
     },
     {
-      "type": "case-study",
-      "title": "Case Study: The Expired Prescription",
-      "scenario": "A patient presents a prescription for metformin 500 mg dated seven months ago. She explains that she's been busy and couldn't get to the pharmacy sooner. She says she's running low on her diabetes medication and really needs the refill.",
-      "questions": [
-        "Can you dispense this prescription as written?",
-        "What options does the pharmacy have to help this patient?",
-        "What are the risks of dispensing against an expired prescription?"
+      "body": "A pharmacy technician prescription checklist ensures safe, accurate dispensing by preventing errors across three main stages: receiving, data entry, and filling/labeling. The process must be verified by a pharmacist's therapeutic check before being released to the patient. [1, 2]",
+      "type": "text"
+    },
+    {
+      "body": "1. Receiving & Authentication Checklist",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Two Patient Identifiers: Confirm the patient's full name and date of birth.",
+        "Date of Issue: Check that the prescription is written within allowable legal timeframes (e.g., typically within 6–12 months depending on local laws).",
+        "Prescriber Details: Verify the prescriber’s full name, address, phone number, and signature.",
+        "Controlled Substances: Ensure a DEA number (or equivalent local registry ID) is present, and log in the controlled substance record. [1, 2, 3]"
       ],
-      "discussion": "A prescription older than 6 months is generally considered expired in all three jurisdictions. You cannot dispense it. However, the pharmacist can: (1) contact the prescriber for a new prescription, (2) in some jurisdictions provide an emergency supply of a small quantity to prevent treatment interruption while a new prescription is obtained. The patient should be counselled on the importance of timely prescription filling, especially for chronic disease management. Never dispense against an expired prescription — it is a legal and safety issue."
+      "ordered": false
+    },
+    {
+      "body": "2. Data Entry & Profile Checklist",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Patient Profile: Update the patient’s address, contact details, weight, and allergy list. [1, 2]",
+        "Drug Information: Verify the generic/trade name, strength, dosage form (e.g., tablet, capsule, liquid), and route of administration. [1, 2, 3]",
+        "Directions (Sig): Ensure instructions explicitly state the dose, frequency, and duration. Confirm clear mathematical instructions for calculating the days of supply. [1]",
+        "Quantity & Refills: Validate that the dispensed quantity matches the prescription constraints and insurance formulary. [1, 2]",
+        "Clinical Screening: Allow the system to run automated screenings for drug interactions, allergies, and duplicate therapies, and flag them for pharmacist review. [1]"
+      ],
+      "ordered": false
+    },
+    {
+      "body": "3. Filling & Final Verification Checklist",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Expiration Date: Check the stock bottle's expiration date. [1]",
+        "Technical Check: Count or measure the correct quantity using proper techniques (e.g., counting tray and spatula without direct hand contact). [1, 2]",
+        "Labeling: Match the prescription label to the original hardcopy, including drug name, strength, expiration date, and prescription number. [1, 2]",
+        "Auxiliary Labels: Apply any necessary auxiliary stickers (e.g., \"take with food,\" \"may cause drowsiness\"). [1, 2]",
+        "Pharmacist Sign-Off: Submit to the pharmacist for a technical and therapeutic/clinical verification before dispensing."
+      ],
+      "ordered": false
     }
   ],
   "order_index": 2,

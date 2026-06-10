@@ -1,0 +1,41 @@
+{
+  "id": "c5042a53-3c92-46c3-85a6-a662473dd902",
+  "module_id": "adae9980-53f6-4adf-99ec-d7bf5536faad",
+  "title": "Dosage Calculations for Solid and Liquid Medications",
+  "content": [
+    {
+      "text": "Dosage Calculations for Solid and Liquid Medications",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Beyond basic math skills, pharmacy technicians in the Caribbean must also be able to apply specific formulas and calculations to determine appropriate medication doses, concentrations, and volumes. This is particularly crucial for high-risk drugs with narrow therapeutic indexes, such as warfarin, insulin, and digoxin, which are commonly prescribed across the region. In this lesson, we'll cover the key calculation methods for both solid and liquid dosage forms.",
+      "type": "text"
+    },
+    {
+      "body": "Calculating pediatric medication doses is especially complex in the Caribbean, where patient weights are often estimated rather than precisely measured. Technicians must be vigilant when converting adult doses to pediatric based on weight or body surface area, as even small miscalculations can lead to serious harm. Referencing standardized pediatric dosing charts for common Caribbean medications is recommended.",
+      "type": "callout",
+      "title": "Pediatric Dosing Challenges in the Caribbean",
+      "variant": "info"
+    },
+    {
+      "term": "Stock Solution Concentrations",
+      "type": "key-term",
+      "definition": "The starting concentration of a medication in its manufactured form, before further dilution. Accurately calculating the amount of stock solution needed to achieve a desired final concentration is crucial, especially for injectable medications like insulin or heparin. Caribbean pharmacies often deal with multiple stock solution concentrations for the same drug."
+    },
+    {
+      "body": "It is not uncommon for Caribbean prescriptions to lack key details needed for accurate dosage calculations, such as the patient's weight, the medication's concentration, or the desired final volume. Pharmacy technicians must be proactive in querying prescribers for missing information before dispensing, to avoid potentially harmful medication errors.",
+      "type": "callout",
+      "title": "Always Question Incomplete or Unclear Prescriptions",
+      "variant": "warning"
+    },
+    {
+      "type": "video-placeholder",
+      "title": "Calculating Doses for Common Caribbean Medications",
+      "duration": "22 min",
+      "description": "A demonstration of the step-by-step process for determining appropriate doses, concentrations, and volumes for solid and liquid formulations of medications frequently prescribed in Caribbean pharmacies, including warfarin, metformin, and albuterol."
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 25
+}

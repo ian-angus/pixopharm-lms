@@ -1,0 +1,22 @@
+{
+  "id": "009fa954-1cf8-40ba-b7cb-13f67e54bbdc",
+  "title": "Professionalism, Communication & Emotional Intelligence",
+  "slug": "professionalism-communication-ei",
+  "description": "Pharmacy technicians are the human face of healthcare for many patients. This course develops the professional conduct, communication skills, and emotional intelligence that separate excellent technicians from merely competent ones.",
+  "skill_level": "Beginner",
+  "duration_weeks": 5,
+  "icon": "HeartHandshake",
+  "color": "rose",
+  "prerequisites": [
+    "foundations-pharmacy-practice"
+  ],
+  "what_youll_learn": [
+    "Apply professional conduct standards consistently across all pharmacy interactions",
+    "Use active listening techniques to fully understand patient and team communication",
+    "Recognise and regulate your own emotional responses in high-pressure situations",
+    "De-escalate confrontations with upset patients using the LEAP framework",
+    "Communicate sensitively with patients experiencing stigma or chronic illness"
+  ],
+  "status": "published",
+  "order": 4
+}

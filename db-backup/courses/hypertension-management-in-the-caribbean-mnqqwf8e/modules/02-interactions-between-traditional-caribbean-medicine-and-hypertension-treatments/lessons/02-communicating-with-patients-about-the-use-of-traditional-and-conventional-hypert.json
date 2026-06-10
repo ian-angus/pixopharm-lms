@@ -1,0 +1,50 @@
+{
+  "id": "1bb3d284-2634-416a-9b37-174965031148",
+  "module_id": "2d5f70b7-45d1-49c0-bcae-3791443f1f2e",
+  "title": "Communicating with Patients About the Use of Traditional and Conventional Hypertension Therapies",
+  "content": [
+    {
+      "text": "Communicating with Patients About Traditional and Conventional Hypertension Treatments",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Effective communication between pharmacy technicians and patients is essential for ensuring the safe and optimal use of both traditional and conventional hypertension therapies. Technicians must be able to sensitively discuss the potential risks and benefits of these treatment approaches, while respecting the cultural significance of traditional medicine in the Caribbean.",
+      "type": "text"
+    },
+    {
+      "text": "Strategies for Effective Communication",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "When discussing hypertension treatment options with patients, pharmacy technicians should start by actively listening to understand the patient's preferences and beliefs about traditional and conventional medicines. Technicians can then provide balanced, evidence-based information about the potential risks and benefits of each approach, emphasizing the importance of open communication with healthcare providers. It is also crucial to address any concerns or misconceptions the patient may have about prescribed antihypertensive medications.",
+      "type": "text"
+    },
+    {
+      "body": "The use of traditional medicine is deeply rooted in Caribbean culture and often carries significant spiritual and emotional significance for patients. Pharmacy technicians should adopt a culturally sensitive approach, acknowledging the value of traditional remedies while still emphasizing the importance of integrating them safely with conventional hypertension treatments.",
+      "type": "callout",
+      "title": "Culturally Sensitive Approach",
+      "variant": "info"
+    },
+    {
+      "body": "Patients may be hesitant to disclose the use of traditional medicines due to fear of judgment or concerns about potential conflicts with their prescribed treatments. Pharmacy technicians should create a non-judgmental environment and reassure patients that disclosing all treatments, including traditional remedies, is essential for ensuring their safety and optimal health outcomes.",
+      "type": "callout",
+      "title": "Promoting Patient Disclosure",
+      "variant": "warning"
+    },
+    {
+      "term": "Culturally Competent Care",
+      "type": "key-term",
+      "definition": "The ability of healthcare providers to deliver services that are respectful of and responsive to the cultural beliefs, practices, and needs of diverse patient populations. In the Caribbean context, this includes understanding the significance of traditional medicine and integrating it sensitively into patient care."
+    },
+    {
+      "type": "video-placeholder",
+      "title": "Communicating with Patients About Traditional and Conventional Hypertension Treatments in Jamaica",
+      "duration": "18 min",
+      "description": "A video demonstration of a pharmacy technician in Kingston, Jamaica, discussing strategies for having open and non-judgmental conversations with patients about the use of traditional herbal remedies and prescribed antihypertensive medications."
+    }
+  ],
+  "order_index": 2,
+  "duration_minutes": 25
+}

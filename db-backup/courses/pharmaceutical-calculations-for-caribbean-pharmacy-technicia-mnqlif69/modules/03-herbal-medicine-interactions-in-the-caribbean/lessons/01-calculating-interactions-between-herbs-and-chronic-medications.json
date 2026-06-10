@@ -1,0 +1,35 @@
+{
+  "id": "71679927-2790-40bf-84fd-be9008e3cbee",
+  "module_id": "9af2b389-168d-498c-ab15-8f088836778a",
+  "title": "Calculating Interactions Between Herbs and Chronic Medications",
+  "content": [
+    {
+      "text": "Potential Interactions with Chronic Disease Medications",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Caribbean patients with hypertension, diabetes, asthma, HIV, and other chronic conditions often take multiple prescription medications. These can interact dangerously with the herbal remedies they may also be consuming, leading to adverse effects or treatment failure. As a pharmacy technician, you must be able to identify potential interactions and advise patients accordingly.",
+      "type": "text"
+    },
+    {
+      "body": "In Jamaica, the combination of cerasee (Momordica charantia) and metformin for diabetes is widespread but can cause hypoglycemia. In Trinidad & Tobago, patients with hypertension may take soursop leaf (Annona muricata) in addition to ACE inhibitors or calcium channel blockers, risking excessive blood pressure lowering. Guyana and Belize see many cases of aloe vera use alongside warfarin, increasing bleeding risk.",
+      "type": "callout",
+      "title": "Common Herb-Drug Interactions in the Caribbean",
+      "variant": "info"
+    },
+    {
+      "term": "Herb-Drug Interactions",
+      "type": "key-term",
+      "definition": "Traditional Caribbean herbal medicines can interact with prescription drugs through various mechanisms, including altered absorption, metabolism, or pharmacodynamics. This can lead to decreased efficacy, adverse effects, or even toxicity of the conventional medication."
+    },
+    {
+      "type": "video-placeholder",
+      "title": "Calculating Herb-Drug Interaction Risk",
+      "duration": "14 min",
+      "description": "A clinical pharmacist in Barbados demonstrates how to assess the potential for interactions between common Caribbean herbal remedies and chronic disease treatments, using real patient cases from the Bridgetown General Hospital."
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 25
+}

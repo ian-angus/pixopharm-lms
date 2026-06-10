@@ -1,0 +1,44 @@
+{
+  "id": "3dac0185-a83a-4618-9360-842230cff4cf",
+  "module_id": "6b62cb2d-5d10-475f-8f55-4f07f958f3da",
+  "title": "Comparing Drug Schedules in Jamaica, Trinidad & Tobago, and Barbados",
+  "content": [
+    {
+      "text": "Drug Scheduling Across the Caribbean",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "In the Caribbean, each nation maintains its own independent drug scheduling system, leading to significant variation across the region. As a pharmacy technician, you must be familiar with the specific schedules and regulations in the countries where you practice. Let's compare the approaches in three major CARICOM nations: Jamaica, Trinidad & Tobago, and Barbados.",
+      "type": "text"
+    },
+    {
+      "text": "Jamaica: Schedules 1 to 4",
+      "type": "heading",
+      "level": 3
+    },
+    {
+      "body": "The Dangerous Drugs Act in Jamaica establishes four schedules for controlled substances. Schedule 1 covers the most tightly restricted drugs like heroin and cocaine. Schedule 2 includes common opioids like codeine and tramadol. Schedule 3 encompasses benzodiazepines, while Schedule 4 lists less potent psychoactive drugs. Pharmacy technicians must follow strict dispensing protocols for all scheduled medications, even at the lower levels.",
+      "type": "text"
+    },
+    {
+      "body": "In Trinidad & Tobago, the Pharmacy Board regulates controlled drugs through the Dangerous Drugs Ordinance. This law establishes a single schedule for all restricted medications, with specific quantity limits and record-keeping requirements. Technicians must ensure full compliance when dispensing any scheduled drug, as penalties for errors can be severe.",
+      "type": "callout",
+      "title": "Trinidad & Tobago: Dangerous Drugs Ordinance",
+      "variant": "info"
+    },
+    {
+      "body": "Barbados takes a more streamlined approach, with a single Schedule V in the Pharmacy Act covering all controlled substances. This includes opioids, benzodiazepines, and other psychoactive drugs. Pharmacy technicians must verify prescriptions and log all dispensing activity for these medications as per the Barbados Drug Service (BDS) national formulary.",
+      "type": "callout",
+      "title": "Barbados: Pharmacy Act Schedule V",
+      "variant": "info"
+    },
+    {
+      "term": "Controlled Substance",
+      "type": "key-term",
+      "definition": "Any drug or medication that is tightly regulated by the government due to its potential for abuse, addiction, or diversion. In the Caribbean, controlled substances are classified into specific schedules with unique dispensing protocols."
+    }
+  ],
+  "order_index": 0,
+  "duration_minutes": 25
+}

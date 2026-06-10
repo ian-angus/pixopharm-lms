@@ -1,0 +1,38 @@
+[
+  {
+    "id": "acd33be9-08cf-4661-a8e3-6134373b4f4d",
+    "module_id": "adae9980-53f6-4adf-99ec-d7bf5536faad",
+    "question": "A technician at a pharmacy in Guyana is dispensing warfarin 2 mg tablets. The prescription calls for the patient to take 7.5 mg daily. How many tablets should the technician dispense?",
+    "options": [
+      "2 tablets",
+      "3 tablets",
+      "4 tablets",
+      "5 tablets"
+    ],
+    "correct_answer": 2,
+    "explanation": "To calculate the correct number of 2 mg warfarin tablets to dispense for a 7.5 mg daily dose, the technician would need to divide the prescribed dose by the tablet strength: 7.5 mg ÷ 2 mg/tablet = 3.75 tablets. Rounding up to the nearest whole number, the technician should dispense 4 tablets.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": {},
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "5b59a692-deb1-4dc1-af55-15bc444bbd47",
+    "module_id": "adae9980-53f6-4adf-99ec-d7bf5536faad",
+    "question": "A technician at a pharmacy in Barbados is preparing a 1% w/v hydrocortisone topical solution. The pharmacy has 10 g of hydrocortisone powder in stock. What is the maximum volume of solution that can be prepared?",
+    "options": [
+      "100 mL",
+      "200 mL",
+      "300 mL",
+      "400 mL"
+    ],
+    "correct_answer": 1,
+    "explanation": "To calculate the maximum volume of 1% w/v hydrocortisone solution that can be prepared from 10 g of powder, the technician would use the formula: Volume (mL) = (Mass of solute (g) / Concentration (w/v)) x 100. Plugging in the values: Volume = (10 g / 0.01) x 100 = 1000 mL. Therefore, the maximum volume that can be prepared is 1000 mL, or 100 mL.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": {},
+    "difficulty": "hard",
+    "blooms_level": "apply"
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "id": "aab90f5f-498d-4d17-80e3-767822f587cc",
+  "title": "Caribbean Pharmacy Law, Ethics & Regulation",
+  "slug": "caribbean-pharmacy-law-ethics",
+  "description": "Every pharmacy technician in the Caribbean practices within a complex web of national laws, regional standards, and professional ethics codes. This course gives you a thorough grounding in the regulatory frameworks that govern your work.",
+  "skill_level": "Beginner",
+  "duration_weeks": 5,
+  "icon": "Scale",
+  "color": "amber",
+  "prerequisites": [
+    "foundations-pharmacy-practice"
+  ],
+  "what_youll_learn": [
+    "Explain licensing requirements for pharmacy technicians in at least three Caribbean jurisdictions",
+    "Apply the correct controlled substance handling, storage, and documentation procedures",
+    "Distinguish between prescription-only and OTC drug classifications under Caribbean law",
+    "Uphold patient confidentiality and consent obligations under local data protection legislation",
+    "Apply an ethical decision-making framework to real-world pharmacy dilemmas"
+  ],
+  "status": "published",
+  "order": 5
+}

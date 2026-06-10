@@ -18,44 +18,93 @@
       "level": 3
     },
     {
-      "type": "case-study",
-      "title": "Dilemma 1: The Neighbour's HIV Medication",
-      "scenario": "You are working at the pharmacy counter when your next-door neighbour comes in to collect their prescription. You process it and see that it includes antiretroviral medications for HIV. You had no idea your neighbour was HIV-positive. Later that evening, your spouse asks, 'I saw Ms. James at the pharmacy today — everything okay with her?'",
-      "questions": [
-        "Can you tell your spouse what medication Ms. James was collecting?",
-        "Can you tell your spouse that Ms. James was even at the pharmacy?",
-        "How do you handle the ongoing social relationship knowing this confidential information?",
-        "What if you are concerned that your neighbour's partner may be at risk?"
+      "body": "Pharmacy technicians in small island communities face unique ethical challenges that combine global pharmacy standards with local cultural, economic, and health realities.",
+      "type": "text"
+    },
+    {
+      "text": "1. Cultural Sensitivity and Patient Trust",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "In many Caribbean communities, cultural beliefs, language barriers, and traditional healing practices can influence patient trust and medication adherence. Pharmacy technicians must balance global best practices with local customs to avoid alienating patients or undermining health outcomes.  For example, in some islands, herbal remedies are used alongside prescribed drugs, and technicians must respect patient autonomy while ensuring safety.",
+      "type": "text"
+    },
+    {
+      "text": "2. Limited Resources and Supply Chain Issues",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Small island economies often have restricted access to medicines due to import dependency and high transport costs. Technicians may encounter situations where:",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Medication shortages force difficult choices between dispensing available drugs and withholding prescriptions.",
+        "Overstocking is tempting to meet patient demand, but this can lead to waste, diversion, or noncompliance."
       ],
-      "discussion": "You cannot share ANY information — not the medication, not the condition, not even the fact that Ms. James was at the pharmacy. Your response to your spouse should be something like, 'I can't discuss anything about patients — you know that.' The ongoing challenge of carrying confidential knowledge about people in your social circle is one of the hardest aspects of Caribbean pharmacy practice. You must create a mental separation between your professional and personal roles. Regarding the partner at risk: there are limited exceptions to confidentiality for public health purposes, but this is a pharmacist-level decision that must follow established protocols. You should raise the concern with the supervising pharmacist."
+      "ordered": false
     },
     {
-      "type": "divider"
+      "text": "3. Noncompliance and Patient Autonomy",
+      "type": "heading",
+      "level": 2
     },
     {
-      "type": "case-study",
-      "title": "Dilemma 2: The Teacher's Mental Health Medication",
-      "scenario": "Your child's school teacher comes in to fill a prescription for an antipsychotic medication. In your small community, mental health carries significant stigma. You know that if word got out, the teacher could face discrimination from parents, lose their job, or be socially ostracised. A few days later, another parent at the school mentions that they 'heard a rumour' about the teacher's health.",
-      "questions": [
-        "How do you respond to the other parent's fishing for information?",
-        "What additional protections might you put in place for this patient?",
-        "If you observe the teacher exhibiting concerning behaviour at school, what are your obligations as a parent vs. as a pharmacy professional?"
+      "body": "Patients may refuse prescribed medications due to side effects, cost, or cultural beliefs. Technicians must respect patient rights while explaining risks of noncompliance, especially in chronic disease management. In resource-limited settings, this can be ethically complex, as patients may rely on community support networks.",
+      "type": "text"
+    },
+    {
+      "text": "4. Adhering to Medication Limits",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Caribbean pharmacies often face drug-seeking behavior from patients with chronic pain or mobility issues. Technicians must enforce prescription limits to prevent diversion, but also be sensitive to legitimate needs. This requires clear communication and documentation to protect both the patient and the pharmacy.",
+      "type": "text"
+    },
+    {
+      "text": "5. Scope of Practice and Counseling",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Technicians are generally not allowed to counsel on medications beyond label information. In small communities, where patients may seek advice on OTC or prescription drugs, technicians must avoid giving medical advice to prevent legal and professional consequences. This can be challenging when patients are ill and expect guidance.",
+      "type": "text"
+    },
+    {
+      "text": "6. Global Engagement and Cultural Competence",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "With increasing international pharmacy partnerships in the Caribbean, technicians may interact with visitors or global health teams. Ensuring cultural competence is essential to avoid misunderstandings, build trust, and maintain ethical standards.",
+      "type": "text"
+    },
+    {
+      "text": "Ethical Decision-Making Framework",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "To navigate these dilemmas, technicians can apply:",
+      "type": "text"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Autonomy vs. beneficence (respecting patient choice vs. promoting health).",
+        "Justice (fair access to medicines in resource-limited settings).",
+        "Nonmaleficence (avoiding harm from overstocking, diversion, or miscommunication).",
+        "Cultural competence (integrating local values into practice)."
       ],
-      "discussion": "You must firmly shut down any attempt to discuss the teacher's health information. A simple 'I don't discuss anyone's health matters' is sufficient. Additional protections might include: ensuring the medication is dispensed discreetly (opaque bags, no visible medication names), offering delivery services, or arranging pick-up at less busy times. As for school concerns — your observations as a parent are separate from your pharmacy knowledge. You can raise school-safety concerns through normal parent channels without referencing any pharmacy information."
+      "ordered": false
     },
     {
-      "type": "divider"
-    },
-    {
-      "type": "case-study",
-      "title": "Dilemma 3: The Pastor's Request",
-      "scenario": "A well-respected community pastor comes to the pharmacy and asks you to check whether a young woman from his congregation — who he is 'concerned about' — has been prescribed any 'certain medications'. He says he is asking out of 'pastoral care'. The young woman in question is an unmarried woman in her 20s, and you suspect the pastor is trying to determine if she has obtained contraceptives.",
-      "questions": [
-        "Can you share any information about this patient with the pastor?",
-        "How do you refuse firmly while maintaining a professional relationship?",
-        "What does this scenario reveal about power dynamics and confidentiality in small communities?"
-      ],
-      "discussion": "Absolutely not. No matter how respected the person making the request, no matter the reason given, you cannot confirm or deny whether anyone is a patient or share any information about their prescriptions. A professional response: 'Pastor, I'm sure you understand that I cannot share any patient information with anyone. That's the law and my professional duty.' This scenario highlights how social power dynamics — religious authority, community standing — can be used to pressure pharmacy staff into breaching confidentiality. The patient's reproductive choices are private, period."
+      "body": "In practice: In Trinidad and Tobago and other small islands, technicians should document all decisions, communicate clearly with prescribers, and seek guidance from supervisors or ethics committees when faced with complex cases. Building strong community relationships and cultural awareness can help resolve ethical dilemmas while maintaining professional integrity.",
+      "type": "text"
     },
     {
       "body": "Confidentiality may only be breached in very limited circumstances, and typically only by or with the approval of the supervising pharmacist: (1) When required by law — court order, statutory reporting of certain communicable diseases, child abuse reporting obligations. (2) When there is an imminent threat to the patient or others — e.g., a patient threatens self-harm. (3) When the patient gives explicit written consent to share information with a named person. (4) For purposes directly related to the patient's ongoing healthcare — e.g., sharing medication information with a hospital if the patient is admitted. Even in these cases, disclose only the minimum information necessary.",

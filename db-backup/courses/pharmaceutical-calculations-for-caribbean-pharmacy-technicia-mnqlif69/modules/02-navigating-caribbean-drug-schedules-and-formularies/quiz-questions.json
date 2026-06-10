@@ -1,0 +1,38 @@
+[
+  {
+    "id": "48c2ca26-b652-42fa-bd44-3be3142da2ca",
+    "module_id": "6b62cb2d-5d10-475f-8f55-4f07f958f3da",
+    "question": "A technician at a pharmacy in Trinidad & Tobago receives a prescription for diazepam 10 mg tablets. What is the appropriate action they should take?",
+    "options": [
+      "Dispense the medication as prescribed, since diazepam is a Schedule 4 controlled substance in Trinidad & Tobago.",
+      "Refuse to dispense the medication, as diazepam requires a special controlled drug license in Trinidad & Tobago.",
+      "Contact the prescriber to confirm the order, as diazepam is a Schedule 1 controlled substance in Trinidad & Tobago.",
+      "Dispense the medication but require the patient to sign a controlled drug register, as per Trinidad & Tobago regulations."
+    ],
+    "correct_answer": 3,
+    "explanation": "In Trinidad & Tobago, all controlled substances, including benzodiazepines like diazepam, are regulated under a single Dangerous Drugs Ordinance schedule. Pharmacy technicians must dispense these medications and ensure the patient signs the controlled drug register, as per the national regulations.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": {},
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "3a330d7e-f060-4ef9-bd97-96eba154ff61",
+    "module_id": "6b62cb2d-5d10-475f-8f55-4f07f958f3da",
+    "question": "A technician at a pharmacy in Guyana needs to calculate the dose of metformin for a patient. Which resource should they consult?",
+    "options": [
+      "The CARICOM Regional Standard (CRS) essential medicines list.",
+      "The Barbados Drug Service (BDS) national formulary.",
+      "The Georgetown Public Hospital Corporation formulary.",
+      "The Ministry of Health formulary in Belize."
+    ],
+    "correct_answer": 2,
+    "explanation": "As a pharmacy technician in Guyana, the appropriate resource to consult for dosing information on metformin and other medications would be the Georgetown Public Hospital Corporation formulary, which outlines the national drug listings and guidelines for Guyana. The CRS, BDS, and Belize formularies are specific to other CARICOM countries.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": {},
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  }
+]

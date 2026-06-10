@@ -1,11 +1,11 @@
 {
   "id": "624b8d69-7196-4d01-928d-998b07174813",
-  "title": "Customer Service & Workplace Excellence",
+  "title": "Applied & Written Communication",
   "slug": "customer-service-workplace-excellence",
   "description": "Bridge the gap between classroom theory and the reality of working in a busy Caribbean pharmacy.",
   "skill_level": "Intermediate",
-  "duration_weeks": 5,
-  "icon": "Users",
+  "duration_weeks": 4,
+  "icon": "MessageSquare",
   "color": "pink",
   "prerequisites": [
     "foundations-pharmacy-practice"
@@ -18,5 +18,5 @@
     "Implement stress management strategies"
   ],
   "status": "published",
-  "order": 9
+  "order": 17
 }

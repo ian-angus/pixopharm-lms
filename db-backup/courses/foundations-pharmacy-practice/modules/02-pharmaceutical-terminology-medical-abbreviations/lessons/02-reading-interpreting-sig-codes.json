@@ -9,7 +9,11 @@
       "level": 2
     },
     {
-      "body": "The 'sig' (short for 'signa', Latin for 'write on the label') is the portion of a prescription that tells the patient how to take the medication. As a pharmacy technician, one of your most critical tasks is translating these abbreviated instructions into clear, patient-friendly language on the dispensing label.",
+      "body": "\"Sig\" (short for 'signa'), is the shorthand prescription instruction provided by a healthcare practitioner, derived from the Latin word signetur, meaning «let it be labeled» or \"write on the label\". For pharmacy technicians, mastering these codes—which often represent frequency, route, and dosage—is vital for accurate order entry, patient safety, and efficient daily pharmacy operations.  ",
+      "type": "text"
+    },
+    {
+      "body": "As a pharmacy technician, one of your most critical tasks is translating these abbreviated instructions into clear, patient-friendly language on the dispensing label. ",
       "type": "text"
     },
     {
@@ -44,7 +48,6 @@
         ]
       ],
       "type": "table",
-      "caption": "Sig Code Translation Practice",
       "headers": [
         "Sig Code",
         "Translation"
@@ -57,15 +60,8 @@
       "variant": "tip"
     },
     {
-      "type": "case-study",
-      "title": "Case Study: The Ambiguous Prescription",
-      "scenario": "A doctor writes a prescription for amoxicillin with the sig: '500 mg TDS x 7'. The handwriting is difficult to read and 'TDS' could be interpreted as 'TID' or even 'BDS' (twice daily). The patient is an elderly woman with a urinary tract infection.",
-      "questions": [
-        "What should you do before dispensing this prescription?",
-        "Who has the authority to clarify the prescription — you or the pharmacist?",
-        "How would you document the clarification?"
-      ],
-      "discussion": "Never guess when a prescription is ambiguous. The pharmacist should contact the prescriber to clarify the intended frequency. Document the clarification on the prescription with the prescriber's name, date, and time. In this case, amoxicillin 500 mg TDS (three times daily) for 7 days is a standard UTI regimen, but assumption is never acceptable in pharmacy practice. Every ambiguity must be resolved through direct communication with the prescriber."
+      "body": "To test your knowledge of sig codes through some particularly difficult-to-understand prescriptions, try reading some of these Rxs!",
+      "type": "text"
     }
   ],
   "order_index": 2,

@@ -1,0 +1,45 @@
+{
+  "id": "073756c4-ad58-4669-a4cb-ffcf24192e76",
+  "module_id": "70fdcafd-83a1-4bfa-92c7-4516f59ac8bc",
+  "title": "Medication Counseling, Adherence Support, and Patient Education",
+  "content": [
+    {
+      "text": "The Technician's Role in Respiratory Medication Management",
+      "type": "heading",
+      "level": 2
+    },
+    {
+      "body": "Caribbean pharmacy technicians play a vital role in promoting proper use of asthma and COPD medications. They often serve as the primary educator for patients, teaching essential self-care skills like inhaler technique, recognizing worsening symptoms, and adhering to complex treatment regimens.",
+      "type": "text"
+    },
+    {
+      "body": "In Jamaica and Trinidad & Tobago, technicians are required to provide verbal and written counseling on all new prescriptions dispensed, including demonstrating proper inhaler use. In Barbados, adherence support is emphasized, with technicians monitoring refill patterns and triggering interventions for patients at risk of non-compliance.",
+      "type": "callout",
+      "title": "Medication Counseling Across the Region",
+      "variant": "info"
+    },
+    {
+      "term": "Medication Therapy Management (MTM)",
+      "type": "key-term",
+      "definition": "A collaborative process in which the technician, pharmacist, and patient work together to optimize medication use and prevent adverse drug events. In the Caribbean, MTM is especially critical for managing complex respiratory conditions like asthma, where improper inhaler technique and non-adherence are common."
+    },
+    {
+      "body": "Certain Caribbean populations face heightened asthma and COPD risks, including children in Barbados (highest pediatric asthma rates globally), the elderly in Trinidad & Tobago (high prevalence of chronic lung disease), and those with sickle cell disease in Jamaica (asthma as a common comorbidity). Technicians must be vigilant in counseling these high-risk patients.",
+      "type": "callout",
+      "title": "High-Risk Populations in the Caribbean",
+      "variant": "warning"
+    },
+    {
+      "body": "Effective patient education is crucial, as many Caribbean patients also rely on traditional herbal remedies like cerasee, soursop leaf, and bush tea that can interact dangerously with conventional respiratory medications. Technicians must be prepared to sensitively discuss these risks and encourage open disclosure of all treatments the patient is using.",
+      "type": "text"
+    },
+    {
+      "type": "video-placeholder",
+      "title": "Inhaler Technique Training for Caribbean Patients",
+      "duration": "8 min",
+      "description": "A pharmacy technician from the Queen Elizabeth Hospital in Barbados demonstrates step-by-step training on the proper use of metered-dose inhalers, dry powder inhalers, and nebulizers — common respiratory devices seen in the Caribbean."
+    }
+  ],
+  "order_index": 1,
+  "duration_minutes": 25
+}

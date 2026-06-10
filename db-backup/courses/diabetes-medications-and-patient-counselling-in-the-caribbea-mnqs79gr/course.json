@@ -1,0 +1,20 @@
+{
+  "id": "9b2e2888-f167-4aa9-a432-e6c2677ce896",
+  "title": "Diabetes Medications and Patient Counselling in the Caribbean",
+  "slug": "diabetes-medications-and-patient-counselling-in-the-caribbea-mnqs79gr",
+  "description": "This course covers the use of diabetes medications and effective patient counselling techniques for pharmacy technicians across the Caribbean region, with a focus on islands like Trinidad & Tobago, Jamaica, Barbados, Guyana, and Belize. It explores the unique disease burden, supply chain challenges, and traditional medicine practices that shape diabetes management in the Caribbean context.",
+  "skill_level": "Beginner",
+  "duration_weeks": 4,
+  "icon": "Pill",
+  "color": "amber",
+  "prerequisites": [],
+  "what_youll_learn": [
+    "Identify the national drug formularies and scheduling systems for key Caribbean countries",
+    "Describe the common diabetes medication classes and their mechanisms of action",
+    "Apply patient-centered counselling strategies to support diabetes self-management",
+    "Recognize potential interactions between diabetes drugs and traditional Caribbean herbal remedies",
+    "Develop culturally-appropriate diabetes education materials for diverse Caribbean patient populations"
+  ],
+  "status": "draft",
+  "order": 999
+}

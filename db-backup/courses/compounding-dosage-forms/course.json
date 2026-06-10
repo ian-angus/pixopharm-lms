@@ -1,6 +1,6 @@
 {
   "id": "1c8fea95-ccdf-4293-b15b-7b0f285f20b1",
-  "title": "Compounding & Dosage Forms",
+  "title": "Basic Compounding Techniques",
   "slug": "compounding-dosage-forms",
   "description": "Develop hands-on competence in pharmaceutical compounding for Caribbean pharmacy practice.",
   "skill_level": "Intermediate",
@@ -19,5 +19,5 @@
     "Maintain compliant compounding records"
   ],
   "status": "published",
-  "order": 8
+  "order": 11
 }

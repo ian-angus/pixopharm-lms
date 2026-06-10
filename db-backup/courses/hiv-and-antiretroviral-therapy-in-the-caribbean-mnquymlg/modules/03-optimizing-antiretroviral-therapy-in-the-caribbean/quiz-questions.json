@@ -1,0 +1,38 @@
+[
+  {
+    "id": "8f65d03e-faab-44aa-bcee-329787c3d2fe",
+    "module_id": "ed876135-4384-4f1c-85ba-669988f2f596",
+    "question": "Which of the following strategies can pharmacy technicians in the Caribbean employ to improve medication adherence for patients living with HIV?",
+    "options": [
+      "Provide a non-judgmental environment to discuss adherence challenges",
+      "Connect patients to financial assistance programs and community resources",
+      "Educate patients on the importance of adherence and provide medication counseling",
+      "All of the above"
+    ],
+    "correct_answer": 3,
+    "explanation": "Caribbean pharmacy technicians can use a variety of strategies to address barriers to medication adherence for patients with HIV, including creating a supportive environment, connecting patients to resources, and providing comprehensive education and counseling.",
+    "order_index": 0,
+    "question_type": "multiple_choice",
+    "question_data": {},
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  },
+  {
+    "id": "59c40733-1066-48fc-b51d-f43201a58e8a",
+    "module_id": "ed876135-4384-4f1c-85ba-669988f2f596",
+    "question": "A patient in Trinidad and Tobago with HIV is prescribed a first-line antiretroviral regimen. Which of the following should the pharmacy technician consider when ensuring appropriate therapy selection and dosing?",
+    "options": [
+      "The CARICOM Regional Standard for HIV treatment",
+      "The national formulary and treatment guidelines of Trinidad and Tobago",
+      "Potential interactions with traditional Caribbean herbal medicines",
+      "All of the above"
+    ],
+    "correct_answer": 3,
+    "explanation": "Caribbean pharmacy technicians must consider the CARICOM regional guidelines, national policies, and potential interactions with traditional medicines when selecting and dosing antiretroviral therapy for patients with HIV.",
+    "order_index": 1,
+    "question_type": "multiple_choice",
+    "question_data": {},
+    "difficulty": "medium",
+    "blooms_level": "apply"
+  }
+]

@@ -1,6 +1,6 @@
 {
   "id": "fe1cf6bb-7f0d-4f89-85cc-2db8b87b0a0e",
-  "title": "Dispensing & Medication Management",
+  "title": "Prescription Processing & Workflow",
   "slug": "dispensing-medication-management",
   "description": "Learn the end-to-end dispensing process and inventory management for Caribbean pharmacies.",
   "skill_level": "Intermediate",
@@ -18,5 +18,5 @@
     "Operate pharmacy management software"
   ],
   "status": "published",
-  "order": 4
+  "order": 8
 }
