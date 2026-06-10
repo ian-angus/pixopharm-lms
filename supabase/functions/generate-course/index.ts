@@ -4,6 +4,7 @@ import { createClient } from "jsr:@supabase/supabase-js@2";
 const ANTHROPIC_API_KEY = Deno.env.get("ANTHROPIC_API_KEY") ?? "";
 const SUPABASE_URL = Deno.env.get("SUPABASE_URL") ?? "";
 const SUPABASE_SERVICE_KEY = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY") ?? "";
+const SUPABASE_ANON_KEY = Deno.env.get("SUPABASE_ANON_KEY") ?? "";
 
 // Caribbean pharmacy knowledge injected into every call
 const CARIBBEAN_CONTEXT = `
@@ -56,16 +57,32 @@ Deno.serve(async (req: Request) => {
   if (req.method === "OPTIONS") return new Response(null, { headers: corsHeaders() });
   if (req.method !== "POST") return json({ error: "Method not allowed" }, 405);
 
-  if (!ANTHROPIC_API_KEY || !SUPABASE_URL || !SUPABASE_SERVICE_KEY) {
+  if (!ANTHROPIC_API_KEY || !SUPABASE_URL || !(SUPABASE_ANON_KEY || SUPABASE_SERVICE_KEY)) {
     const missing = [
       !ANTHROPIC_API_KEY && "ANTHROPIC_API_KEY",
       !SUPABASE_URL && "SUPABASE_URL",
-      !SUPABASE_SERVICE_KEY && "SUPABASE_SERVICE_ROLE_KEY",
+      !(SUPABASE_ANON_KEY || SUPABASE_SERVICE_KEY) && "SUPABASE_ANON_KEY/SUPABASE_SERVICE_ROLE_KEY",
     ].filter(Boolean).join(", ");
     return json({ error: `Missing env vars: ${missing}` }, 500);
   }
 
-  const sb = createClient(SUPABASE_URL, SUPABASE_SERVICE_KEY);
+  // The service-role key in this project no longer bypasses RLS (legacy key was
+  // rotated when the project moved to the new API-key system). The data client
+  // runs AS the authenticated admin who called us — RLS is_admin() then grants
+  // draft reads and all writes. Same pattern as enhance-module v7.
+  const authHeader = req.headers.get("Authorization");
+  if (!authHeader?.startsWith("Bearer ")) return json({ error: "Unauthorized" }, 401);
+  const token = authHeader.slice(7);
+
+  const sb = createClient(SUPABASE_URL, SUPABASE_ANON_KEY || SUPABASE_SERVICE_KEY, {
+    global: { headers: { Authorization: authHeader } },
+    auth: { persistSession: false, autoRefreshToken: false },
+  });
+  const { data: { user }, error: userErr } = await sb.auth.getUser(token);
+  if (userErr || !user) return json({ error: "Unauthorized" }, 401);
+  const { data: callerProfile } = await sb.from("profiles").select("role").eq("id", user.id).single();
+  console.log(`generate-course: caller=${user.email ?? user.id} role=${callerProfile?.role ?? "none"}`);
+  if (callerProfile?.role !== "admin") return json({ error: "Forbidden — admin only" }, 403);
 
   try {
     const body = await req.json();

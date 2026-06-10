@@ -4,6 +4,7 @@ import { createClient } from "jsr:@supabase/supabase-js@2";
 const ANTHROPIC_API_KEY = Deno.env.get("ANTHROPIC_API_KEY") ?? "";
 const SUPABASE_URL = Deno.env.get("SUPABASE_URL") ?? "";
 const SUPABASE_SERVICE_KEY = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY") ?? "";
+const SUPABASE_ANON_KEY = Deno.env.get("SUPABASE_ANON_KEY") ?? "";
 
 Deno.serve(async (req: Request) => {
   if (req.method === "OPTIONS") {
@@ -11,22 +12,38 @@ Deno.serve(async (req: Request) => {
   }
 
   // Fail fast if required env vars are missing
-  if (!ANTHROPIC_API_KEY || !SUPABASE_URL || !SUPABASE_SERVICE_KEY) {
+  if (!ANTHROPIC_API_KEY || !SUPABASE_URL || !(SUPABASE_ANON_KEY || SUPABASE_SERVICE_KEY)) {
     const missing = [
       !ANTHROPIC_API_KEY && "ANTHROPIC_API_KEY",
       !SUPABASE_URL && "SUPABASE_URL",
-      !SUPABASE_SERVICE_KEY && "SUPABASE_SERVICE_ROLE_KEY",
+      !(SUPABASE_ANON_KEY || SUPABASE_SERVICE_KEY) && "SUPABASE_ANON_KEY/SUPABASE_SERVICE_ROLE_KEY",
     ].filter(Boolean).join(", ");
     console.error(`analyze-survey: missing env vars: ${missing}`);
     return json({ error: `Missing required environment variables: ${missing}` }, 500);
   }
 
+  // The service-role key in this project no longer bypasses RLS (legacy key
+  // rotated to the new API-key system). Run as the calling admin instead —
+  // RLS grants survey reads via is_admin(). Also closes the previous hole
+  // where this function had no auth check at all.
+  const authHeader = req.headers.get("Authorization");
+  if (!authHeader?.startsWith("Bearer ")) return json({ error: "Unauthorized" }, 401);
+  const token = authHeader.slice(7);
+
+  const sb = createClient(SUPABASE_URL, SUPABASE_ANON_KEY || SUPABASE_SERVICE_KEY, {
+    global: { headers: { Authorization: authHeader } },
+    auth: { persistSession: false, autoRefreshToken: false },
+  });
+  const { data: { user }, error: userErr } = await sb.auth.getUser(token);
+  if (userErr || !user) return json({ error: "Unauthorized" }, 401);
+  const { data: callerProfile } = await sb.from("profiles").select("role").eq("id", user.id).single();
+  console.log(`analyze-survey: caller=${user.email ?? user.id} role=${callerProfile?.role ?? "none"}`);
+  if (callerProfile?.role !== "admin") return json({ error: "Forbidden — admin only" }, 403);
+
   try {
     const { course_id } = await req.json();
     if (!course_id) throw new Error("course_id required");
 
-    // Fetch open-text survey responses using service role (bypasses RLS)
-    const sb = createClient(SUPABASE_URL, SUPABASE_SERVICE_KEY);
     const { data: rows, error } = await sb
       .from("course_surveys")
       .select("overall_rating,content_clarity,relevance,would_recommend,difficulty,liked_most,to_improve")

@@ -71,12 +71,12 @@ Program  (one comprehensive "Caribbean Pharmacy Technician Diploma")
 ## 4. Detailed tasks
 
 ### Phase 0 — Edge-function hardening
-- [x] `enhance-module`: forward admin JWT (deployed v7, verified).
-- [ ] Audit `generate-course`: it uses `createClient(URL, SERVICE_ROLE_KEY)` with no JWT — confirm whether its INSERTs currently succeed; if it relies on RLS-bypass, switch to forwarded-admin-JWT (same pattern) **or** the repaired secret (D10).
-- [ ] Audit `analyze-survey` likewise.
-- [ ] Add a 1-line `console.log` of the resolved role to each function for future debugging.
-- [ ] **Repair the edge-function service-role secret (D10):** set the correct secret under the new `sb_` key system in the Supabase dashboard and verify a function can bypass RLS with it. User-triggered functions keep the JWT-forward pattern regardless.
-- **Acceptance:** generating a new course and enhancing its modules both work end-to-end from the live admin; the repaired secret is verified.
+- [x] `enhance-module`: forward admin JWT (deployed v7, verified; v8 adds role logging).
+- [x] Audit `generate-course`: confirmed same broken assumption + **no auth check at all**. Patched: admin-JWT validation + forwarded-JWT data client (same pattern). Deployed v20, verified end-to-end (generated test course → 2 modules + 6 lessons → cleaned up).
+- [x] Audit `analyze-survey`: worse — **no auth whatsoever** (anyone could burn Claude credits). Patched: admin-only gate before body parsing + forwarded JWT. Deployed v10, verified (401 unauth / 200 as admin).
+- [x] Add a 1-line `console.log` of the resolved role to each function.
+- [x] **Repair the edge-function service-role secret (D10):** verified the new `sb_secret_` key bypasses RLS (draft rows visible vs 0 for anon); set it as edge-function secret `SB_SECRET_KEY` for future cron/webhook functions. (Supabase also auto-injects `SUPABASE_SECRET_KEYS` now.) User-triggered functions keep the JWT-forward pattern.
+- **Acceptance:** ✅ met 2026-06-09 — all three functions 401 unauthenticated; generate-course end-to-end 200 as admin; secret verified + stored.
 
 ### Phase 0b — AI interactive quiz generation *(after Phase 1's schema lands)*
 - [ ] Extend the `enhance-module` prompt + response schema: per module emit a **mix of question types** — MCQ, numeric/calculation (answer + tolerance + unit), drag-and-drop match/order (pairs or correct sequence), case-based (shared patient vignette feeding 2–3 linked questions), fill-in-the-blank/cloze — **every question with a 1–2 sentence explanation**.

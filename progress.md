@@ -2,6 +2,25 @@
 
 ---
 
+## 2026-06-09: Curriculum Reorg — Phase 0 COMPLETE (edge-function hardening) — PR pending
+
+### Branch: `feat/curriculum-phase-0`
+
+**Plan approved:** all decisions D1–D12 confirmed by owner (see `CURRICULUM-REORG-PLAN.md` §0). Notable: D6 upgraded to build non-destructive enhance NOW; D7 = opus-4-8 in Phase 0b; D11/D12 = interactive quizzes (MCQ/numeric/match/order/case/cloze, instant feedback + explanations, AI-generated + admin-editable).
+
+**Phase 0 done (all deployed + verified live):**
+- `generate-course` v20 — had NO auth check + relied on broken service-role key. Now: validates caller is admin, data client forwards admin JWT. Verified end-to-end: generated test course (2 modules, 6 lessons) as admin → cleaned up via SQL.
+- `analyze-survey` v10 — had NO auth whatsoever (anyone could invoke → Claude API spend). Now: admin-only gate before body parsing, forwarded JWT. Verified: 401 unauth, 200 as admin.
+- `enhance-module` v8 — added resolved-role logging (fix itself shipped as v7 on 06-08).
+- All three: `console.log` of caller email + resolved role for debugging.
+- **D10 secret repair:** verified the new `sb_secret_` key DOES bypass RLS (3 draft courses visible vs 0 anon). Stored as edge-function secret `SB_SECRET_KEY` for future cron/webhook functions. Supabase also auto-injects `SUPABASE_SECRET_KEYS` into functions now.
+
+**Verification matrix:** all three functions → 401 with no auth; analyze-survey 200 as admin; enhance-module 404 on bogus module (auth+DB path good); generate-course 200 end-to-end. Found: `courses_skill_level_check` requires capitalized values ('Beginner'/'Intermediate'/'Advanced'/'Regional').
+
+**Next:** PR for Phase 0 → Coderabbit/Codex review → Phase 1 (DB migration: `domains` table + interactive quiz schema).
+
+---
+
 ## 2026-06-08 (late): Enhance REALLY fixed (v7, verified) + Curriculum Reorg plan
 
 **Correction to the entry below:** the v6 "two service-role clients" fix did NOT work — logs still showed `404` in ~1s. Re-diagnosed: the project's `SUPABASE_SERVICE_ROLE_KEY` **no longer bypasses RLS** (legacy key rotated when the project moved to `sb_publishable_`/new keys). A true service-role key always bypasses RLS; since draft modules stayed invisible, the function was effectively anonymous.
