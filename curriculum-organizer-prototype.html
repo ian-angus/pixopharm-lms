@@ -258,7 +258,7 @@ const SEED={
 const KEY="pixo-curriculum-organizer-v2";
 let state=load();
 function clone(o){return JSON.parse(JSON.stringify(o))}
-function load(){try{const s=localStorage.getItem(KEY);if(s)return JSON.parse(s)}catch(e){}return clone(SEED)}
+function load(){try{const s=localStorage.getItem(KEY);if(s){const st=JSON.parse(s);if(st&&Array.isArray(st.domains)&&Array.isArray(st.units))return st}}catch(e){}return clone(SEED)}
 function save(){try{localStorage.setItem(KEY,JSON.stringify(state))}catch(e){}}
 function mcount(u){return u.modules&&u.modules.length?u.modules.length:(u.mFallback||0)}
 

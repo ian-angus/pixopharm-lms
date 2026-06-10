@@ -86,9 +86,9 @@ Supabase → Authentication → URL Configuration must allow:
 Cannot toggle via MCP — Ian to verify before merge.
 
 ### Investigation that triggered this work
-- User reported `pixopharm@gmail.com` was locked out.
-- DB census (`auth.users` n=3): `ian.a.n.thomson@gmail.com`, `sathom11@yahoo.com`, `maintenance@pixopharm.com`. `pixopharm@gmail.com` does not exist; no `user_deleted` events in `auth.audit_log_entries`; not in `public.waitlist` or `public.consulting_patients`.
-- Ian confirmed user gave wrong email. **No passwords were reset on this branch.** Real account is `sathom11@yahoo.com` (Sharon Thomson); she will self-serve once this PR ships.
+- User reported `p********m@gmail.com` was locked out.
+- DB census (`auth.users` n=3): `i**********n@gmail.com`, `s******1@yahoo.com`, `maintenance@pixopharm.com`. `p********m@gmail.com` does not exist; no `user_deleted` events in `auth.audit_log_entries`; not in `public.waitlist` or `public.consulting_patients`.
+- Ian confirmed user gave wrong email. **No passwords were reset on this branch.** Real account is `s******1@yahoo.com` (family member); she will self-serve once this PR ships.
 
 ### Next
 - Check PR #5 for Coderabbit/Codex comments

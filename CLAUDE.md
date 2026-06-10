@@ -25,11 +25,11 @@ npx vercel --prod # deploy to production (ALWAYS use this, not git push)
 
 > **Warning:** Git auto-deploy to Vercel has silently failed before — always use `npx vercel --prod` and verify the bundle hash changed.
 
-## Database State (as of 2026-03-30)
-- **13 courses**, 90 modules, 334 lessons, 833 quiz questions
-- All content stored in Supabase; CoursePlayer fetches exclusively via `fetchCourseBySlug()`
+## Database State (as of 2026-06-09)
+- **36 courses** (27 sequenced diploma + 8 clinical/electives + 1 draft pending D4 merge), 234 modules, 415 lessons, 898 quiz questions
+- All content stored in Supabase; CoursePlayer fetches exclusively via `fetchCourseBySlug()`; the student catalog is hardcoded in `src/data/courses.ts` (until Phase 3)
 - Sync content: `npx tsx scripts/sync-lessons-to-supabase.ts`
-- Export DB: `npx tsx scripts/db-export.ts`
+- Export DB: `SUPABASE_SECRET_KEY=sb_secret_… npx tsx scripts/db-export.ts`
 - Restore DB: `npx tsx scripts/db-restore.ts`
 
 ## Key Directories
