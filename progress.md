@@ -207,9 +207,16 @@ Cannot toggle via MCP — Ian to verify before merge.
 - ✅ Deployed `npx vercel --prod` → pixopharm-lms.vercel.app
 
 ### Pending
-- ⏳ Set `ANTHROPIC_API_KEY` as Supabase secret for AI analysis button
 - ⏳ PR #2 (Content Protection) — Coderabbit fixes committed, awaiting merge
 - ⏳ PR #3 (Survey) — awaiting Coderabbit review + merge
+
+### Analytics Survey Overview — COMMITTED (f747540)
+- Cross-course "Student Feedback" card at top of Analytics tab
+- Platform KPIs: total responses, ★ avg rating, recommend%
+- Per-course table with expandable individual response cards
+- `fetchAllSurveyStats()` added to admin-api.ts — single query, grouped client-side
+- PR #3 description updated to reflect this improvement
+- `ANTHROPIC_API_KEY` set as Supabase secret — AI Analysis button confirmed working
 
 ---
 
