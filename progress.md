@@ -2,6 +2,83 @@
 
 ---
 
+## 2026-06-09: Curriculum Reorg — Phase 0 COMPLETE (edge-function hardening) — PR pending
+
+### Branch: `feat/curriculum-phase-0`
+
+**Plan approved:** all decisions D1–D12 confirmed by owner (see `CURRICULUM-REORG-PLAN.md` §0). Notable: D6 upgraded to build non-destructive enhance NOW; D7 = opus-4-8 in Phase 0b; D11/D12 = interactive quizzes (MCQ/numeric/match/order/case/cloze, instant feedback + explanations, AI-generated + admin-editable).
+
+**Phase 0 done (all deployed + verified live):**
+- `generate-course` v20 — had NO auth check + relied on broken service-role key. Now: validates caller is admin, data client forwards admin JWT. Verified end-to-end: generated test course (2 modules, 6 lessons) as admin → cleaned up via SQL.
+- `analyze-survey` v10 — had NO auth whatsoever (anyone could invoke → Claude API spend). Now: admin-only gate before body parsing, forwarded JWT. Verified: 401 unauth, 200 as admin.
+- `enhance-module` v8 — added resolved-role logging (fix itself shipped as v7 on 06-08).
+- All three: `console.log` of caller email + resolved role for debugging.
+- **D10 secret repair:** verified the new `sb_secret_` key DOES bypass RLS (3 draft courses visible vs 0 anon). Stored as edge-function secret `SB_SECRET_KEY` for future cron/webhook functions. Supabase also auto-injects `SUPABASE_SECRET_KEYS` into functions now.
+
+**Verification matrix:** all three functions → 401 with no auth; analyze-survey 200 as admin; enhance-module 404 on bogus module (auth+DB path good); generate-course 200 end-to-end. Found: `courses_skill_level_check` requires capitalized values ('Beginner'/'Intermediate'/'Advanced'/'Regional').
+
+**Next:** PR for Phase 0 → Coderabbit/Codex review → Phase 1 (DB migration: `domains` table + interactive quiz schema).
+
+---
+
+## 2026-06-08 (late): Enhance REALLY fixed (v7, verified) + Curriculum Reorg plan
+
+**Correction to the entry below:** the v6 "two service-role clients" fix did NOT work — logs still showed `404` in ~1s. Re-diagnosed: the project's `SUPABASE_SERVICE_ROLE_KEY` **no longer bypasses RLS** (legacy key rotated when the project moved to `sb_publishable_`/new keys). A true service-role key always bypasses RLS; since draft modules stayed invisible, the function was effectively anonymous.
+
+**Real fix (v7, DEPLOYED + VERIFIED):** `enhance-module` now forwards the **calling admin's JWT** (`global.headers.Authorization`), so RLS `is_admin()` passes for draft reads + all writes. Verified by logging in as `maintenance@pixopharm.com` and invoking the live function on a draft Diabetes module → `HTTP 200` in 119s, `{lessons_updated:3, questions_count:3, model_used:"claude-opus-4-6"}`. (That draft module now has real content.)
+
+**⚠ Follow-up:** same RLS-bypass assumption likely affects `generate-course` and `analyze-survey` — audit in Phase 0. Long-term: repair the edge-function service-role secret under the new key system.
+
+**Plan written:** `CURRICULUM-REORG-PLAN.md` — full end-to-end plan (DB domains table → admin CRUD organizer w/ 3-level drag → student journey → marketing site → testing). For owner review 2026-06-09. Prototypes approved by end user: `curriculum-organizer-prototype.html`, `curriculum-student-view.html`.
+
+---
+
+## 2026-06-08: Fixed AI Course Generator "Enhance ✦" 404 — DEPLOYED (SUPERSEDED — v6 did not actually work, see entry above)
+
+**Symptom:** Clicking "Enhance" on a module in the AI Course Generator immediately showed an error / "Retry" (never reached the AI).
+
+**Root cause:** `supabase/functions/enhance-module` created its service-role client, then called `sb.auth.getUser(token)` on that *same* client to validate the admin. In supabase-js, that swaps the client's auth context → all subsequent `sb.from(...)` queries ran as the user/anon token instead of service-role. RLS only exposes draft courses/modules to `is_admin()` or service-role, so the just-generated **draft** module became invisible → `.single()` got 0 rows → function returned `404 Module not found` in ~1s, before Opus. (`profiles` is world-readable, so the admin check still passed → 404 not 403.)
+
+**Evidence:** Edge logs showed `POST 404` in 0.8–2s (Opus call takes ~90s). Confirmed via REST: draft module as anon → `[]`; published module as anon → row returned. `generate-course` (same key, no `getUser` call) works fine → isolated the diff to the `getUser`-on-data-client call.
+
+**Fix:** Validate the admin on a separate throwaway client; keep `sb` pristine for all data ops (read draft + write lessons/quiz). Deployed as `enhance-module` **version 6** (verify_jwt false, unchanged). Model `claude-opus-4-6` confirmed valid (not the cause).
+
+**Checked:** `analyze-survey` does NOT have this pattern (no getUser on its data client) — unaffected.
+
+**Not yet done:** local edge-function source committed/PR'd (hotfixed straight to prod since it was 100% broken). Optional follow-up: bump model to `claude-opus-4-8`; make enhance non-destructive (it overwrites lesson content + deletes/replaces quiz questions on every run).
+
+---
+
+## 2026-05-20: Forgot-Password Flow — PR #5 OPEN
+
+### Branch: `feat/forgot-password`
+
+### What shipped
+- `useAuth`: new `resetPasswordForEmail`, `updatePassword`, `recoveryMode` boolean + `clearRecoveryMode`. Listens for Supabase `PASSWORD_RECOVERY` auth event.
+- `AuthModal`: extended mode union to `signin|signup|forgot|reset`. New "Forgot password?" link in sign-in mode. Forgot mode → email input → triggers reset email. Reset mode → new password + confirm → calls `updateUser`.
+- `App.tsx`: when `recoveryMode` flips true, force-opens modal in `reset` mode and strips Supabase recovery params from URL so refresh doesn't re-trigger.
+- `pnpm build` passes; pre-existing lint debt unchanged (no net-new errors).
+
+### Required dashboard step (NOT YET CONFIRMED)
+Supabase → Authentication → URL Configuration must allow:
+- Site URL: `https://academy.pixopharm.com`
+- Redirect URLs: `https://academy.pixopharm.com`, `https://pixopharm-lms.vercel.app`, `http://localhost:5173`
+
+Cannot toggle via MCP — Ian to verify before merge.
+
+### Investigation that triggered this work
+- User reported `p********m@gmail.com` was locked out.
+- DB census (`auth.users` n=3): `i**********n@gmail.com`, `s******1@yahoo.com`, `maintenance@pixopharm.com`. `p********m@gmail.com` does not exist; no `user_deleted` events in `auth.audit_log_entries`; not in `public.waitlist` or `public.consulting_patients`.
+- Ian confirmed user gave wrong email. **No passwords were reset on this branch.** Real account is `s******1@yahoo.com` (family member); she will self-serve once this PR ships.
+
+### Next
+- Check PR #5 for Coderabbit/Codex comments
+- Verify Supabase redirect allowlist
+- Merge → `npx vercel --prod` from `lms/`
+- Playwright test recovery flow against prod with `maintenance@pixopharm.com`
+
+---
+
 ## 2026-04-08: Feature 2 (AI Course Generator) — v16/v2 STABLE ✅
 
 ### Branch: `feature/ai-course-generator` — PR #4 open

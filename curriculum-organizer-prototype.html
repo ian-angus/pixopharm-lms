@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pixopharm Academy · Curriculum Organizer (Prototype)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#f3f0e7;--paper-2:#ece7da;--ink:#1b2a25;--ink-soft:#46544e;
+    --teal:#0d8b7e;--teal-d:#0a5d55;--line:#ddd6c6;--white:#fffdf8;
+    --amber:#bd6a1e;--amber-bg:#f8ecd6;
+    --shadow:0 1px 2px rgba(27,42,37,.06),0 8px 24px -14px rgba(27,42,37,.35);
+    --shadow-lift:0 18px 40px -16px rgba(27,42,37,.55);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{height:100%}
+  body{font-family:"Hanken Grotesk",-apple-system,BlinkMacSystemFont,sans-serif;color:var(--ink);background:var(--paper);
+    background-image:radial-gradient(circle at 12% 8%,rgba(13,139,126,.07),transparent 42%),radial-gradient(circle at 88% 0%,rgba(189,106,30,.06),transparent 38%);
+    display:flex;flex-direction:column;height:100vh;overflow:hidden}
+  body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.035;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+
+  header.topbar{position:relative;z-index:5;display:flex;align-items:center;gap:16px;padding:14px 24px;
+    background:rgba(255,253,248,.82);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  .brand{display:flex;align-items:center;gap:12px;min-width:max-content}
+  .mark{width:38px;height:38px;border-radius:11px;display:grid;place-items:center;background:linear-gradient(140deg,var(--teal),var(--teal-d));color:#fff;font-size:20px;box-shadow:0 6px 16px -6px rgba(10,93,85,.7)}
+  .brand h1{font-family:"Fraunces",serif;font-weight:600;font-size:20px;letter-spacing:-.01em;line-height:1}
+  .brand .sub{font-size:11.5px;color:var(--ink-soft);font-weight:600;margin-top:2px}
+  .topbar .grow{flex:1}
+  .search{position:relative}
+  .search input{font-family:inherit;font-size:13.5px;padding:9px 14px 9px 34px;border:1px solid var(--line);background:var(--white);border-radius:10px;width:210px;color:var(--ink);transition:.18s}
+  .search input:focus{outline:none;border-color:var(--teal);box-shadow:0 0 0 3px rgba(13,139,126,.14);width:240px}
+  .search svg{position:absolute;left:11px;top:50%;transform:translateY(-50%);width:15px;height:15px;stroke:var(--ink-soft)}
+  .btn{font-family:inherit;font-weight:700;font-size:13px;padding:9px 15px;border-radius:10px;border:1px solid var(--line);background:var(--white);color:var(--ink);cursor:pointer;transition:.16s;display:inline-flex;align-items:center;gap:7px;white-space:nowrap}
+  .btn:hover{border-color:var(--teal);color:var(--teal-d);transform:translateY(-1px)}
+  .btn.primary{background:linear-gradient(140deg,var(--teal),var(--teal-d));color:#fff;border-color:transparent;box-shadow:0 8px 18px -8px rgba(10,93,85,.7)}
+  .btn.primary:hover{color:#fff;filter:brightness(1.06)}
+  .btn.ghost{background:transparent}
+  .btn.study{background:#1b2a25;color:#fff;border-color:transparent}
+  .btn.study:hover{color:#fff;filter:brightness(1.15)}
+
+  .approval{position:relative;z-index:4;display:flex;align-items:center;gap:12px;flex-wrap:wrap;padding:8px 24px;background:var(--amber-bg);border-bottom:1px solid #e6d3ad;color:#7a4a12;font-size:12px;font-weight:600}
+  .approval .dot{width:8px;height:8px;border-radius:50%;background:var(--amber);box-shadow:0 0 0 4px rgba(189,106,30,.18);flex:none}
+  .approval b{font-weight:800}
+
+  .ribbon{position:relative;z-index:4;display:flex;gap:24px;padding:9px 24px;background:rgba(255,253,248,.6);border-bottom:1px solid var(--line);font-size:12px;align-items:center}
+  .stat{display:flex;align-items:baseline;gap:6px}
+  .stat .n{font-family:"Fraunces",serif;font-weight:600;font-size:18px;color:var(--teal-d);font-variant-numeric:tabular-nums}
+  .stat .k{color:var(--ink-soft);font-weight:600;text-transform:uppercase;letter-spacing:.05em;font-size:10.5px}
+  .ribbon .tip{margin-left:auto;color:var(--ink-soft);font-size:11.5px;font-weight:600;font-style:italic}
+
+  .board-wrap{position:relative;z-index:1;flex:1;overflow-x:auto;overflow-y:hidden;padding:18px 24px 26px}
+  .board{display:flex;gap:16px;height:100%;align-items:flex-start;min-width:max-content;padding-bottom:8px}
+  .column{width:300px;flex:none;background:rgba(255,253,248,.72);border:1px solid var(--line);border-radius:16px;display:flex;flex-direction:column;max-height:100%;box-shadow:var(--shadow);transition:box-shadow .18s,transform .18s,opacity .18s;position:relative;overflow:hidden;animation:colin .4s both}
+  @keyframes colin{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+  .column.dragover{border-color:var(--teal);box-shadow:0 0 0 3px rgba(13,139,126,.18),var(--shadow-lift)}
+  .column.col-dragging{opacity:.5}
+  .accent{height:5px;width:100%;flex:none}
+  .col-head{padding:11px 12px 9px;display:flex;align-items:flex-start;gap:9px}
+  .grip{cursor:grab;color:#b9b09a;font-size:15px;line-height:1;padding:4px 2px;user-select:none;flex:none;letter-spacing:-2px}
+  .grip:hover{color:var(--teal)}
+  .grip:active{cursor:grabbing}
+  .col-icon{position:relative;width:34px;height:34px;border-radius:10px;display:grid;place-items:center;font-size:18px;flex:none}
+  .seqchip{position:absolute;left:-7px;top:-7px;width:19px;height:19px;border-radius:50%;background:var(--ink);color:#fff;font-size:10.5px;font-weight:800;display:grid;place-items:center;font-variant-numeric:tabular-nums;box-shadow:0 2px 5px rgba(0,0,0,.25)}
+  .col-title{flex:1;min-width:0}
+  .col-title .name{font-family:"Fraunces",serif;font-weight:600;font-size:15px;line-height:1.15;letter-spacing:-.01em;outline:none;border-radius:5px;padding:1px 3px;margin:-1px -3px}
+  .col-title .name:focus{background:#fff;box-shadow:0 0 0 2px rgba(13,139,126,.3)}
+  .col-title .meta{font-size:11px;color:var(--ink-soft);font-weight:600;margin-top:3px;font-variant-numeric:tabular-nums}
+  .col-menu{position:relative}
+  .dots{border:none;background:transparent;cursor:pointer;color:var(--ink-soft);font-size:18px;width:26px;height:26px;border-radius:7px;line-height:1}
+  .dots:hover{background:var(--paper-2);color:var(--ink)}
+  .menu{position:absolute;right:0;top:30px;background:var(--white);border:1px solid var(--line);border-radius:11px;box-shadow:var(--shadow-lift);padding:6px;width:182px;z-index:30;display:none}
+  .menu.open{display:block;animation:pop .14s ease}
+  @keyframes pop{from{opacity:0;transform:translateY(-4px) scale(.98)}to{opacity:1;transform:none}}
+  .menu button{display:flex;align-items:center;gap:9px;width:100%;border:none;background:transparent;font-family:inherit;font-size:13px;font-weight:600;color:var(--ink);padding:8px 9px;border-radius:7px;cursor:pointer;text-align:left}
+  .menu button:hover{background:var(--paper)}
+  .menu button.danger{color:#b23b3b}
+  .menu .swatches{display:flex;flex-wrap:wrap;gap:6px;padding:8px 9px}
+  .menu .swatches span{width:20px;height:20px;border-radius:6px;cursor:pointer;transition:.12s}
+  .menu .swatches span:hover{transform:scale(1.15)}
+  .menu hr{border:none;border-top:1px solid var(--line);margin:5px 2px}
+
+  .col-body{flex:1;overflow-y:auto;padding:4px 10px 8px;display:flex;flex-direction:column;gap:9px;min-height:54px}
+  .col-body::-webkit-scrollbar{width:8px}
+  .col-body::-webkit-scrollbar-thumb{background:var(--line);border-radius:8px}
+  .drop-hint{border:2px dashed var(--line);border-radius:12px;color:var(--ink-soft);font-size:12px;font-weight:600;padding:20px 14px;text-align:center;width:100%;pointer-events:none}
+  .add-course{margin:2px 10px 12px;border:1px dashed var(--line);background:transparent;color:var(--ink-soft);font-family:inherit;font-weight:700;font-size:12.5px;padding:9px;border-radius:10px;cursor:pointer;transition:.14s}
+  .add-course:hover{border-color:var(--teal);color:var(--teal-d);background:rgba(13,139,126,.04)}
+
+  /* CARD */
+  .card{background:var(--white);border:1px solid var(--line);border-radius:12px;cursor:grab;box-shadow:0 1px 2px rgba(27,42,37,.05);transition:transform .14s,box-shadow .14s,opacity .14s;position:relative;overflow:hidden}
+  .card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--c,var(--teal))}
+  .card:hover{box-shadow:var(--shadow-lift);border-color:#cfc8b6}
+  .card:active{cursor:grabbing}
+  .card.dragging{opacity:.45;transform:rotate(1.2deg) scale(.98);box-shadow:var(--shadow-lift)}
+  .card-top{padding:10px 11px 10px 14px;display:flex;gap:8px;align-items:flex-start}
+  .cseq{width:18px;height:18px;border-radius:6px;background:var(--paper-2);color:var(--ink-soft);font-size:10.5px;font-weight:800;display:grid;place-items:center;flex:none;margin-top:1px;font-variant-numeric:tabular-nums}
+  .c-main{flex:1;min-width:0}
+  .c-name{font-weight:700;font-size:13.5px;line-height:1.28;letter-spacing:-.005em}
+  .c-foot{display:flex;align-items:center;gap:6px;margin-top:8px;flex-wrap:wrap}
+  .pill{font-size:9.5px;font-weight:800;padding:2px 7px;border-radius:6px;letter-spacing:.02em;text-transform:uppercase}
+  .p-pub{background:#dcefe5;color:#1d6b4f}.p-draft{background:#efe6f7;color:#7b4bb0}.p-arch{background:#eceae3;color:#7a7466}.p-empty{background:var(--amber-bg);color:var(--amber)}
+  .counts{font-size:11px;color:var(--ink-soft);font-weight:700;font-variant-numeric:tabular-nums;margin-left:auto}
+  .counts b{color:var(--ink)}
+  .chev{border:none;background:transparent;cursor:pointer;color:var(--ink-soft);font-size:13px;width:22px;height:22px;border-radius:6px;flex:none;transition:.16s}
+  .chev:hover{background:var(--paper-2);color:var(--ink)}
+  .chev.open{transform:rotate(90deg)}
+  /* module list */
+  .mod-list{padding:2px 11px 11px 14px;display:flex;flex-direction:column;gap:5px;border-top:1px dashed var(--line);margin-top:2px}
+  .mod-empty{font-size:11.5px;color:var(--ink-soft);padding:8px 2px;font-style:italic}
+  .module{display:flex;align-items:center;gap:8px;background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:6px 8px;font-size:11.5px;cursor:grab;transition:.12s}
+  .module:hover{border-color:var(--teal);background:#fff}
+  .module:active{cursor:grabbing}
+  .module.dragging{opacity:.4;border-style:dashed}
+  .module .mgrip{color:#bdb49e;font-size:12px;letter-spacing:-2px;flex:none}
+  .module .mnum{width:16px;height:16px;border-radius:5px;background:var(--white);border:1px solid var(--line);font-size:9.5px;font-weight:800;display:grid;place-items:center;flex:none;color:var(--ink-soft);font-variant-numeric:tabular-nums}
+  .module .mname{flex:1;min-width:0;font-weight:600;line-height:1.25}
+  .add-mod{border:1px dashed var(--line);background:transparent;color:var(--ink-soft);font-family:inherit;font-weight:700;font-size:11px;padding:6px;border-radius:8px;cursor:pointer;margin-top:2px}
+  .add-mod:hover{border-color:var(--teal);color:var(--teal-d)}
+
+  .add-col{width:206px;flex:none;border:2px dashed var(--line);border-radius:16px;background:transparent;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;color:var(--ink-soft);cursor:pointer;font-weight:700;font-size:13.5px;transition:.18s;min-height:160px;align-self:flex-start;padding:30px 14px}
+  .add-col:hover{border-color:var(--teal);color:var(--teal-d);background:rgba(13,139,126,.04)}
+  .add-col .plus{width:40px;height:40px;border-radius:12px;background:var(--paper-2);display:grid;place-items:center;font-size:22px;color:var(--teal-d)}
+
+  /* MODAL */
+  .overlay{position:fixed;inset:0;z-index:50;background:rgba(27,42,37,.4);backdrop-filter:blur(3px);display:none;align-items:center;justify-content:center;padding:20px}
+  .overlay.open{display:flex;animation:fade .18s ease}
+  @keyframes fade{from{opacity:0}to{opacity:1}}
+  .modal{background:var(--paper);border-radius:18px;width:430px;max-width:100%;box-shadow:var(--shadow-lift);border:1px solid var(--line);overflow:hidden;animation:rise .22s cubic-bezier(.2,.8,.2,1)}
+  @keyframes rise{from{opacity:0;transform:translateY(14px) scale(.97)}to{opacity:1;transform:none}}
+  .m-head{padding:18px 20px 4px}
+  .modal h2{font-family:"Fraunces",serif;font-weight:600;font-size:20px;letter-spacing:-.01em}
+  .modal p.m-sub{font-size:12.5px;color:var(--ink-soft);margin-top:3px}
+  .m-body{padding:14px 20px 20px;display:flex;flex-direction:column;gap:14px}
+  .field label{display:block;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.05em;color:var(--ink-soft);margin-bottom:6px}
+  .field input,.field select{font-family:inherit;font-size:14.5px;font-weight:600;padding:11px 13px;border:1px solid var(--line);border-radius:11px;width:100%;background:var(--white)}
+  .field input:focus,.field select:focus{outline:none;border-color:var(--teal);box-shadow:0 0 0 3px rgba(13,139,126,.14)}
+  .picker{display:flex;flex-wrap:wrap;gap:7px}
+  .picker .opt{width:38px;height:38px;border-radius:11px;display:grid;place-items:center;font-size:19px;cursor:pointer;background:var(--white);border:1.5px solid var(--line);transition:.12s}
+  .picker .opt:hover{transform:translateY(-2px)}
+  .picker .opt.sel{border-color:var(--teal);box-shadow:0 0 0 3px rgba(13,139,126,.16)}
+  .picker.colors .opt{border-radius:50%}
+  .picker.colors .opt.sel{box-shadow:0 0 0 3px rgba(27,42,37,.18)}
+  .m-foot{display:flex;justify-content:flex-end;gap:9px;padding:14px 20px;background:rgba(255,253,248,.6);border-top:1px solid var(--line)}
+
+  .toast{position:fixed;bottom:22px;left:50%;transform:translateX(-50%) translateY(20px);z-index:60;background:var(--ink);color:#fff;font-size:13px;font-weight:600;padding:11px 18px;border-radius:11px;box-shadow:var(--shadow-lift);opacity:0;transition:.25s;pointer-events:none}
+  .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand"><div class="mark">⚗</div><div><h1>Curriculum Organizer</h1><div class="sub">Pixopharm Academy · Pharmacy Technician Diploma</div></div></div>
+  <div class="grow"></div>
+  <div class="search"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg><input id="search" placeholder="Find a course…" autocomplete="off"></div>
+  <button class="btn ghost" id="resetBtn" title="Restore the suggested layout">↺ Reset</button>
+  <button class="btn study" id="studentBtn">👁 Student View</button>
+  <button class="btn primary" id="addDomainBtn">＋ New Domain</button>
+</header>
+
+<div class="approval">
+  <span class="dot"></span>
+  <span><b>Prototype for approval.</b> Drag the <b>⠿ handle</b> to reorder domains · drag a <b>course card</b> between domains or up/down to set sequence · click <b>▸</b> to open a course and <b>drag its modules</b> into order · <b>＋ Add course / module</b>. The numbers show the order students follow. Sandbox only — nothing touches the live Academy.</span>
+</div>
+
+<div class="ribbon">
+  <div class="stat"><span class="n" id="s-dom">0</span><span class="k">Domains</span></div>
+  <div class="stat"><span class="n" id="s-unit">0</span><span class="k">Courses</span></div>
+  <div class="stat"><span class="n" id="s-mod">0</span><span class="k">Modules</span></div>
+  <div class="stat"><span class="n" id="s-les">0</span><span class="k">Lessons</span></div>
+  <div class="stat"><span class="n" id="s-gap">0</span><span class="k">Need content</span></div>
+  <span class="tip">Tip: order = the student's path →</span>
+</div>
+
+<div class="board-wrap"><div class="board" id="board"></div></div>
+
+<div class="overlay" id="overlay"><div class="modal">
+  <div class="m-head"><h2 id="modalTitle">New Domain</h2><p class="m-sub" id="modalSub">A domain is a top-level grouping that holds courses.</p></div>
+  <div class="m-body" id="modalBody"></div>
+  <div class="m-foot"><button class="btn ghost" id="cancelModal">Cancel</button><button class="btn primary" id="saveModal">Add</button></div>
+</div></div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+const ICONS=["🧭","🫀","⚙️","🧪","💬","🛡️","⚖️","🎓","🩺","🧹","🗂️","💊","🧠","🌴","🔬","📋","📦","⭐","🧮","🗣️"];
+const COLORS=["#0d8b7e","#c2557a","#4d63c9","#7a59c2","#c8743a","#2f9163","#5a6b7b","#b8893a","#a8497e","#8a8f98","#1d8fa6","#3f7d3f"];
+
+/* modules per course (real titles) */
+const MODS={
+ u0:["Introduction to Pharmacy: History, Roles & the Caribbean Context","Pharmaceutical Terminology & Medical Abbreviations","Understanding Prescription Orders & Label Requirements","Caribbean Pharmacy Law: Licensing, Scope of Practice & Regulations","Ethics in Pharmacy: Confidentiality, Consent & Professional Conduct","Pharmacy Workflow: From Receiving to Dispensing","Health Systems in the Caribbean: Public, Private & Community Pharmacy","Career Pathways for Pharmacy Technicians in the Caribbean"],
+ u1:["Prescription Structure: Reading Every Line with Confidence","Sig Codes and Latin Abbreviations: Dosing Directions Decoded","Drug Name Conventions: Brand, Generic, USAN, and Chemical Names","Medical Abbreviations Used in Prescriptions and Patient Records","Body System Terminology: Common Roots, Prefixes, and Suffixes","Drug Label Requirements and Auxiliary Label Standards","Error-Prone Abbreviations and High-Alert Drug Names"],
+ u2:["Navigating the Pixopharm Platform: Your Learning Dashboard","Evidence-Based Study Techniques: Active Recall and Spaced Repetition","Time Management for Working Adult Learners","Reading and Retaining Technical Healthcare Material","Using Clinical References: BNF, Micromedex, and Online Drug Databases","Digital Professionalism: Social Media, Patient Privacy, and Online Conduct","Critical Thinking and Source Evaluation for Healthcare Information"],
+ u3:["Medical Terminology: Roots, Prefixes, Suffixes & Drug Name Stems","The Cardiovascular System & Common Conditions","The Respiratory, Digestive & Renal Systems","The Endocrine & Nervous Systems","The Musculoskeletal & Integumentary Systems","The Immune System & Infectious Disease in the Caribbean"],
+ u4:["Introduction to Pharmacology: Pharmacokinetics & Pharmacodynamics","Cardiovascular Medications: Hypertension, Heart Failure & Lipid Management","Endocrine & Metabolic Medications: Diabetes, Thyroid & Hormonal Therapies","Anti-Infective Agents: Antibiotics, Antivirals & Antifungals","Tropical & Vector-Borne Disease Treatments: Dengue, Chikungunya, Zika & Malaria","CNS Medications: Pain Management, Mental Health & Neurological Conditions","Drug Interactions, Contraindications & Adverse Effects","Over-the-Counter Medications & Herbal Remedies Common in the Caribbean"],
+ u5:["Musculoskeletal and Integumentary Medications: NSAIDs, Corticosteroids, and Topicals","CNS Medications: Analgesics, Antidepressants, Antipsychotics, and Anxiolytics","Neurological Medications: Anticonvulsants, Parkinson's, and Migraine Treatments","Immune System Medications: Immunosuppressants, Biologics, and Vaccines","Anti-Infective Agents: Antibiotics, Antivirals, and Antifungals in Depth","Tropical and Vector-Borne Disease Treatments: Dengue, Chikungunya, Zika, Malaria, and HIV","Complex Drug Interactions, Contraindications, and High-Risk Combinations","OTC Products and Caribbean Herbal Remedies: Evidence, Safety, and Interactions"],
+ u6:["A Day in the Pharmacy: Typical Workflows and Shift Structure","Receiving Prescriptions: Intake, Triage, and Initial Checks","Retrieving and Counting Medications: Accuracy Techniques","Labelling Prescriptions: Content, Format, and Verification","Dispensing to Patients: Handover Process and Counselling Handoff","Refill Processing and Repeat Prescription Management","Basic Inventory Awareness: Spotting Low Stock and Expiry Issues","End-of-Shift Procedures: Handover Notes and Closing Tasks"],
+ u7:["The Dispensing Process: Receiving, Verifying & Labeling Prescriptions","Inventory Management Principles for Caribbean Pharmacies","Procurement & Supply Chain: Importing Medications to the Caribbean","Storage, Handling & Cold Chain Management in Tropical Climates","Expiry Date Management & Stock Rotation (FEFO/FIFO Methods)","Controlled Substance Dispensing, Record-Keeping & Reporting","Technology in Dispensing: Barcode Systems, POS & Pharmacy Software","Medication Returns, Recalls & Waste Disposal Procedures"],
+ u8:["Pharmaceutical Supply Chain: From Manufacturer to Dispensing Counter","Procurement Principles: Ordering, Reorder Points, and Economic Order Quantity","Storage Requirements: Temperature, Light, Humidity, and Security","Cold Chain Management in Tropical Climates: Vaccines, Insulins, and Biologics","Stock Rotation: FEFO and FIFO Methods in Practice","Expiry Date Management and Handling of Expired Stock","Controlled Substance Stock Control: Registers, Audits, and Reconciliation","Caribbean Import Logistics and Managing Shortages on Island"],
+ u9:["Dispensing Records: What to Document, When, and How","Controlled Drug Registers: Mandatory Entries and Audit Trails","Patient Medication Records and Medication History Taking","Electronic Health Records and Pharmacy Information Systems","National Health Programme Documentation: CDAP, NHF, and Barbados Drug Service","Insurance Claims Processing and Third-Party Reimbursement Basics","Regulatory Inspection Readiness: Document Organisation and Retention","Confidentiality in Documentation: GDPR, Data Protection, and Caribbean Law"],
+ u10:["Pharmacy Information Systems: Architecture, Modules, and Data Flow","Electronic Prescribing in Caribbean Health Systems","Automated Dispensing Cabinets: Operation, Restocking, and Discrepancy Management","Barcode Verification and RFID Systems in Pharmacy","Clinical Decision Support Systems: Drug Interaction and Allergy Checking","System Downtime Procedures: Manual Backup Workflows","Data Quality and Integrity in Pharmacy Information Systems","Interoperability: Pharmacy Systems and Electronic Health Records"],
+ u11:["Introduction to AI & Machine Learning for Pharmacy Professionals","AI-Powered Inventory Forecasting & Demand Planning","Clinical Decision Support: Automated Drug Interaction & Allergy Checking","AI-Assisted Patient Counselling & Health Information Tools","Data Privacy, Security & Caribbean Data Protection Regulations","Ethical Considerations: Bias, Transparency & the Human-AI Partnership","Evaluating & Implementing AI Tools in Your Pharmacy","The Future of Pharmacy Technology in the Caribbean"],
+ u12:["Pharmacy Math Fundamentals: Fractions, Decimals, Ratios & Percentages","Systems of Measurement & Unit Conversions","Dosage Calculations: Oral Solids, Liquids & Injectables","Pediatric & Weight-Based Dosing Calculations","IV Flow Rates, Drip Rates & Infusion Time Calculations","Compounding Calculations: Dilutions, Concentrations & Alligation","Business Math for Pharmacy: Markup, Discount & Inventory Costing"],
+ u13:["Pharmacokinetic Calculations: Half-Life, Clearance, and Volume of Distribution","Therapeutic Drug Monitoring: Target Levels, Loading Doses, and Adjustments","Renal and Hepatic Dose Adjustment Calculations","Complex IV Calculations: Electrolyte Replacement and Fluid Balance","Oncology Calculations: Body Surface Area and Chemotherapy Dosing","Multi-Component Compounding: TPN and Complex Formulation Math","Paediatric and Neonatal Dose Calculations in Clinical Settings","Calculation Quality Assurance: Verification and Independent Double Checks"],
+ u14:["Introduction to Pharmaceutical Dosage Forms","Non-Sterile Compounding: Creams, Ointments & Suspensions","Compounding Equipment, Techniques & Best Practices","Extemporaneous Preparations & Paediatric Formulations","Quality Control in Compounding: Testing, Documentation & SOPs","Compounding Regulations & Record-Keeping in the Caribbean"],
+ u15:["Sterile vs Nonsterile Compounding: USP Standards and Caribbean Requirements","Gowning, Hand Hygiene, and Aseptic Technique","IV Admixture Preparation: Reconstitution, Dilution, and Compatibility","Total Parenteral Nutrition (TPN): Components, Calculations, and Stability","Concentrated Electrolyte Dilutions and High-Risk IV Preparations","Quality Control in Sterile Compounding: Sterility Testing and Beyond-Use Dating","Nonsterile Advanced Formulations: Modified-Release and Specialised Dosage Forms"],
+ u16:["Professional Standards: Appearance, Punctuality, and Workplace Conduct","Verbal Communication Skills: Clarity, Tone, and Active Listening","Non-Verbal Communication: Body Language, Eye Contact, and Presence","Emotional Intelligence: Self-Awareness and Emotional Regulation","Empathy in Healthcare: Serving Patients with Dignity","De-escalation and Conflict Resolution at the Counter","Written Communication: Notes, Emails, and Handover Documentation","Stress Management and Preventing Burnout in Pharmacy Work"],
+ u17:["The Caribbean Pharmacy: What Your First Day Really Looks Like","Customer Service Excellence: Building Trust at the Counter","Handling Irate Customers: De-escalation & Conflict Resolution","Emotional Intelligence in the Pharmacy Workplace","Time Management & Prioritisation Under Pressure","Asking the Right Questions: Working with Non-Technical Customers","Stress Management, Self-Care & Preventing Burnout"],
+ u18:["Principles of Patient-Centred Care in Pharmacy","Medication Counseling Techniques: Show-Tell-Ask & Beyond","Health Literacy: Assessing Understanding & Adapting Communication","Cultural Sensitivity & Competence in Caribbean Healthcare","Multilingual Communication Strategies: English, Spanish, French & Creole","Managing Difficult Conversations: Adherence, Stigma & Chronic Disease","Patient Rights, Informed Consent & Privacy in the Pharmacy Setting"],
+ u19:["The OTC vs Prescription Boundary in Caribbean Pharmacy Law","Pain and Fever: Analgesics, Antipyretics, and Common Mistakes","Coughs, Colds, and Respiratory OTC Products","Gastrointestinal OTCs: Antacids, Laxatives, and Anti-diarrhoeals","Topical Products: Antiseptics, Antifungals, and Wound Care","Vitamins, Supplements, and Herbal Remedies in the Caribbean","Structured Symptom Assessment: What to Ask and What to Listen For","Knowing When to Refer: Red Flag Symptoms and Mandatory Escalation"],
+ u20:["Pharmacy Business Operations & Financial Management","Human Resources: Staffing, Scheduling & Team Development","Leadership Skills for Pharmacy Supervisors","Pharmacy Informatics & Technology Management","Regulatory Compliance & Audit Management","Strategic Planning & Continuous Professional Development"],
+ u21:["Medication Error Types, Causes, and Consequences","Human Factors in Error: Cognitive Bias, Fatigue, and Distraction","High-Alert Medications and LASA Drug Pairs in Caribbean Practice","Tall Man Lettering, Barcode Verification, and Double-Check Protocols","Near-Miss Reporting and Learning from Close Calls","Root Cause Analysis: Investigating Incidents Without Blame","Standard Operating Procedures: Writing and Following Them","Building a Safety Culture in Your Pharmacy Team"],
+ u22:["Medication Safety: Types, Causes & Consequences of Pharmacy Errors","Error Prevention Strategies: Tall Man Lettering, Barcode Verification & Double Checks","Root Cause Analysis & Incident Reporting for Pharmacy Events","Standard Operating Procedures (SOPs): Writing, Implementing & Auditing","Pharmacovigilance: Adverse Drug Reaction Monitoring & Reporting","Quality Control in Compounding & Dispensing","Continuous Quality Improvement (CQI) Programs for Caribbean Pharmacies","Workplace Safety: Hazardous Drug Handling & Infection Control"],
+ u23:["Caribbean Pharmacy Governance: National Boards and Their Mandates","Technician Licensing, Scope of Practice, and Supervision Rules","Pharmacy Acts Compared: T&T, Jamaica, Barbados, and Grenada","Prescription-Only vs OTC Drug Classifications in the Caribbean","Controlled and Narcotic Substances: Handling, Storage, and Record-Keeping","Patient Confidentiality, Consent, and Digital Health Records","Ethics in Pharmacy: Frameworks for Difficult Decisions","Documentation Standards and Inspection Readiness"],
+ u24:["Overview of Caribbean Health Regulatory Bodies & Their Mandates","The CARICOM Regional Standard for Pharmaceuticals (CRS)","National Pharmacy Acts: Comparing Frameworks Across Caribbean States","Controlled Substances: Scheduling, Handling & International Treaty Obligations","Pharmaceutical Import/Export: Licensing, Customs & Quality Assurance","Drug Registration, Marketing Authorisation & Generic Substitution Policies","Record-Keeping, Inspection Readiness & Compliance Auditing"],
+ u25:["Controlled Substance Regulations by Island","Dispensing Controlled Medications","Traditional Medicine Interactions"],
+ u26:["Capstone Orientation: Case Methodology and Assessment Criteria","Community Pharmacy Case: A Complex Day in a Caribbean Retail Pharmacy","Hospital Pharmacy Case: IV Admixture, High-Alert Medications, and ADR Reporting","Regulatory Compliance Case: Inspection Preparation and Controlled Drug Discrepancy","Public Health Case: Vaccination Campaign, Cold Chain Failure, and Crisis Response","Communication Case: Challenging Patient, Low Health Literacy, Interprofessional Conflict","Leadership Case: Understaffed Shift, System Downtime, and Team Performance","Reflective Portfolio: Demonstrating Competency Across the Diploma"],
+ u27:["Exam Overview: Domains, Blueprints, and What Examiners Expect","Domain Review 1: Medications — Drug Classes, Interactions, and Brand/Generic Names","Domain Review 2: Federal and Caribbean Pharmacy Law and Regulations","Domain Review 3: Patient Safety and Quality Assurance","Domain Review 4: Order Entry and Processing","Domain Review 5: Pharmacy Inventory Management","Domain Review 6: Pharmacy Billing and Reimbursement","Timed Practice Examinations and Gap Analysis"],
+ u28:["Respiratory Disease Epidemiology in the Caribbean","Pharmacotherapy of Asthma and COPD","The Pharmacy Technician's Role in Respiratory Care","Supply Chain Challenges and Traditional Herbal Remedies"],
+ u29:["Diabetes Prevalence and Treatment Landscape in the Caribbean","Mechanism of Action and Clinical Use of Diabetes Medications","Patient-Centered Counselling for Diabetes Self-Management","Navigating Diabetes Supply Chain and Disease Challenges in the Caribbean"],
+ u30:["Epidemiology and Risk Factors of Hypertension in the Caribbean","Medication Management for Hypertension in the Caribbean","Interactions Between Traditional Caribbean Medicine and Hypertension Treatments","Pharmacy Technician's Role in Hypertension Management in the Caribbean"],
+ u31:[],u32:[],u33:[],u34:[],
+ u35:["Fundamentals of Pharmaceutical Calculations","Adapting Calculations for Caribbean Climates","Navigating Caribbean Drug Schedules and Formularies","Herbal Medicine Interactions in the Caribbean"]
+};
+
+const SEED={
+  domains:[
+    {id:"d-a",name:"Foundations & Learning Skills",icon:"🧭",color:"#0d8b7e"},
+    {id:"d-b",name:"Human Body & Pharmacology",icon:"🫀",color:"#c2557a"},
+    {id:"d-c",name:"Operations, Systems & Technology",icon:"⚙️",color:"#4d63c9"},
+    {id:"d-d",name:"Calculations & Compounding",icon:"🧪",color:"#7a59c2"},
+    {id:"d-e",name:"Patient Care & Communication",icon:"💬",color:"#c8743a"},
+    {id:"d-f",name:"Safety, Quality & Public Health",icon:"🛡️",color:"#2f9163"},
+    {id:"d-g",name:"Caribbean Law, Ethics & Regulation",icon:"⚖️",color:"#5a6b7b"},
+    {id:"d-h",name:"Capstone & Certification",icon:"🎓",color:"#b8893a"},
+    {id:"d-clin",name:"Clinical Therapeutics (Electives)",icon:"🩺",color:"#a8497e"},
+    {id:"d-clean",name:"Cleanup / Needs Decision",icon:"🧹",color:"#8a8f98"},
+    {id:"d-unsorted",name:"Unsorted (parking)",icon:"🗂️",color:"#9aa0a6"}
+  ],
+  units:[
+    ["Foundations of Pharmacy Practice",28,"pub","d-a"],["Medical & Pharmaceutical Terminology",0,"pub","d-a"],["Digital Learning & Study Skills",0,"pub","d-a"],
+    ["Anatomy, Physiology & Basic Pharmacology",24,"pub","d-b"],["Pharmacology & Body Systems — Part 1",34,"pub","d-b"],["Pharmacology & Body Systems — Part 2",0,"pub","d-b"],
+    ["Basic Pharmacy Workflow",0,"pub","d-c"],["Prescription Processing & Workflow",28,"pub","d-c"],["Inventory, Storage, Cold Chain & Supply",0,"pub","d-c"],["Documentation, Records & Reimbursement",0,"pub","d-c"],["Advanced Pharmacy Systems & Digital Workflow",0,"pub","d-c"],["Technology, Automation & AI in Pharmacy",25,"pub","d-c"],
+    ["Pharmacy Calculations",30,"pub","d-d"],["Complex Calculations",0,"pub","d-d"],["Basic Compounding Techniques",21,"pub","d-d"],["Sterile & Nonsterile Compounding (Simulation)",0,"pub","d-d"],
+    ["Professionalism, Communication & Emotional Intelligence",0,"pub","d-e"],["Applied & Written Communication",28,"pub","d-e"],["Patient & Interprofessional Communication Labs",24,"pub","d-e"],["OTC Medications & Health Advice Boundaries",0,"pub","d-e"],["Leadership, Teamwork, Adaptability & Problem Solving",20,"pub","d-e"],
+    ["Medication Safety & Error Prevention",0,"pub","d-f"],["Public Health, Pharmacovigilance & Quality Improvement",26,"pub","d-f"],
+    ["Caribbean Pharmacy Law, Ethics & Regulation",0,"pub","d-g"],["Caribbean Regulatory Compliance & Quality Systems",23,"pub","d-g"],["Drug Scheduling & Controlled Substances",9,"pub","d-g"],
+    ["Capstone Integrated Case Simulation",0,"pub","d-h"],["Caribbean Pharmacy Certification Exam Preparation",0,"pub","d-h"],
+    ["Asthma & Respiratory Drug Therapy",12,"pub","d-clin"],["Diabetes Medications & Counselling",12,"draft","d-clin"],["Hypertension Management",12,"draft","d-clin"],["HIV & Antiretroviral Therapy",12,"arch","d-clin"],["Dengue & Tropical Disease Drug Management",12,"arch","d-clin"],["Caribbean Island Pharmacy Practice",23,"arch","d-clin"],
+    ["HIV & Antiretroviral Therapy (duplicate, empty)",0,"arch","d-clean"],["Pharmaceutical Calculations for Caribbean (overlaps)",12,"draft","d-clean"]
+  ].map((u,i)=>({id:"u"+i,name:u[0],l:u[1],status:u[2],domainId:u[3],modules:(MODS["u"+i]||[]).slice(),open:false,
+                 mFallback:[4,4,4,4][["u31","u32","u33","u34"].indexOf("u"+i)]||0}))
+};
+
+const KEY="pixo-curriculum-organizer-v2";
+let state=load();
+function clone(o){return JSON.parse(JSON.stringify(o))}
+function load(){try{const s=localStorage.getItem(KEY);if(s){const st=JSON.parse(s);if(st&&Array.isArray(st.domains)&&Array.isArray(st.units))return st}}catch(e){}return clone(SEED)}
+function save(){try{localStorage.setItem(KEY,JSON.stringify(state))}catch(e){}}
+function mcount(u){return u.modules&&u.modules.length?u.modules.length:(u.mFallback||0)}
+
+const board=document.getElementById("board");
+const STATUS={pub:["Published","p-pub"],draft:["Draft","p-draft"],arch:["Archived","p-arch"]};
+let mode=null,draggedCol=null,dragList=null;
+
+/* ---------- RENDER ---------- */
+function render(){
+  board.innerHTML="";
+  state.domains.forEach((d,di)=>{
+    const units=state.units.filter(u=>u.domainId===d.id);
+    const mods=units.reduce((a,u)=>a+mcount(u),0), les=units.reduce((a,u)=>a+u.l,0);
+    const col=document.createElement("div");
+    col.className="column";col.dataset.id=d.id;col.style.animationDelay=(di*0.03)+"s";
+    col.innerHTML=`
+      <div class="accent" style="background:${d.color}"></div>
+      <div class="col-head">
+        <span class="grip" draggable="true" title="Drag to reorder this domain">⠿</span>
+        <div class="col-icon" style="background:${hex(d.color,.14)}"><span class="seqchip">${di+1}</span>${d.icon}</div>
+        <div class="col-title">
+          <div class="name" contenteditable="true" spellcheck="false">${esc(d.name)}</div>
+          <div class="col-meta">${units.length} courses · ${mods} mod · ${les} lessons</div>
+        </div>
+        <div class="col-menu"><button class="dots" title="Domain options">⋯</button>
+          <div class="menu">
+            <button data-act="rename">✏️ Rename</button>
+            <div class="swatches">${COLORS.map(c=>`<span data-color="${c}" style="background:${c}"></span>`).join("")}</div>
+            <hr><button data-act="delete" class="danger">🗑 Delete domain</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-body"></div>
+      <button class="add-course">＋ Add course</button>`;
+    const body=col.querySelector(".col-body");
+    if(!units.length)body.innerHTML=`<div class="drop-hint">Drop courses here</div>`;
+    else units.forEach((u,ci)=>body.appendChild(cardEl(u,ci+1)));
+    wireColumn(col,d);
+    col.querySelector(".add-course").onclick=()=>openAddCourse(d);
+    board.appendChild(col);
+  });
+  const add=document.createElement("div");
+  add.className="add-col";add.innerHTML=`<div class="plus">＋</div><div>New Domain</div>`;
+  add.onclick=openNewDomain;board.appendChild(add);
+  stats();save();
+}
+
+function cardEl(u,seq){
+  const c=document.createElement("div");
+  c.className="card";c.draggable=true;c.dataset.id=u.id;
+  const dom=state.domains.find(d=>d.id===u.domainId);
+  c.style.setProperty("--c",dom?dom.color:"#0d8b7e");
+  const st=STATUS[u.status],empty=u.l===0,n=mcount(u);
+  c.innerHTML=`
+    <div class="card-top">
+      <span class="cseq">${seq}</span>
+      <div class="c-main">
+        <div class="c-name">${esc(u.name)}</div>
+        <div class="c-foot">
+          <span class="pill ${st[1]}">${st[0]}</span>
+          ${empty?'<span class="pill p-empty">Needs content</span>':''}
+          <span class="counts"><b>${n}</b> mod · <b>${u.l}</b> L</span>
+        </div>
+      </div>
+      <button class="chev ${u.open?'open':''}" title="Show modules">▸</button>
+    </div>
+    ${u.open?moduleListHTML(u):''}`;
+  // expand toggle
+  c.querySelector(".chev").addEventListener("click",e=>{e.stopPropagation();u.open=!u.open;render()});
+  // card drag (guard against module/handle drags)
+  c.addEventListener("dragstart",e=>{
+    if(e.target.closest(".module")||e.target.classList.contains("grip"))return;
+    mode="card";c.classList.add("dragging");e.dataTransfer.effectAllowed="move";
+  });
+  c.addEventListener("dragend",()=>{if(mode==="card"){c.classList.remove("dragging");mode=null;commitCards()}});
+  if(u.open)wireModules(c,u);
+  return c;
+}
+function moduleListHTML(u){
+  if(!u.modules||!u.modules.length)
+    return `<div class="mod-list"><div class="mod-empty">No modules loaded${u.status==='arch'?' (archived)':''}.</div><button class="add-mod">＋ Add module</button></div>`;
+  return `<div class="mod-list">${u.modules.map((m,i)=>`
+     <div class="module" draggable="true" data-i="${i}">
+       <span class="mgrip">⠿</span><span class="mnum">${i+1}</span><span class="mname">${esc(m)}</span>
+     </div>`).join("")}<button class="add-mod">＋ Add module</button></div>`;
+}
+
+/* ---------- MODULE DnD (within a course) ---------- */
+function wireModules(card,u){
+  const list=card.querySelector(".mod-list");
+  card.querySelector(".add-mod").onclick=e=>{
+    e.stopPropagation();
+    const t=prompt("New module title:");
+    if(t&&t.trim()){u.modules.push(t.trim());render()}
+  };
+  list.querySelectorAll(".module").forEach(m=>{
+    m.addEventListener("dragstart",e=>{e.stopPropagation();mode="mod";dragList=list;m.classList.add("dragging");e.dataTransfer.effectAllowed="move"});
+    m.addEventListener("dragend",e=>{e.stopPropagation();if(mode==="mod"){m.classList.remove("dragging");mode=null;dragList=null;commitModules(card,u)}});
+  });
+  list.addEventListener("dragover",e=>{
+    if(mode!=="mod"||dragList!==list)return;        // strictly within this course
+    e.preventDefault();e.stopPropagation();
+    const dragging=list.querySelector(".module.dragging");if(!dragging)return;
+    const after=afterEl(list,e.clientY,".module");
+    const anchor=list.querySelector(".add-mod");
+    if(after==null)list.insertBefore(dragging,anchor);else list.insertBefore(dragging,after);
+  });
+}
+function commitModules(card,u){
+  const order=[...card.querySelectorAll(".module")].map(m=>u.modules[+m.dataset.i]);
+  if(order.length===u.modules.length)u.modules=order;
+  render();
+}
+
+/* ---------- COLUMN (course + domain DnD) ---------- */
+function wireColumn(col,d){
+  const body=col.querySelector(".col-body");
+  body.addEventListener("dragover",e=>{
+    if(mode!=="card")return;
+    e.preventDefault();col.classList.add("dragover");
+    const dragging=document.querySelector(".card.dragging");if(!dragging)return;
+    const hint=body.querySelector(".drop-hint");if(hint)hint.remove();
+    const after=afterEl(body,e.clientY,".card");
+    if(after==null)body.appendChild(dragging);else body.insertBefore(dragging,after);
+  });
+  body.addEventListener("dragleave",e=>{if(!col.contains(e.relatedTarget))col.classList.remove("dragover")});
+  body.addEventListener("drop",e=>{if(mode==="card"){e.preventDefault();col.classList.remove("dragover")}});
+  // domain reorder via grip
+  const grip=col.querySelector(".grip");
+  grip.addEventListener("dragstart",e=>{mode="col";draggedCol=col;col.classList.add("col-dragging");e.dataTransfer.effectAllowed="move";try{e.dataTransfer.setDragImage(col,30,20)}catch(_){}});
+  grip.addEventListener("dragend",()=>{if(mode==="col"){col.classList.remove("col-dragging");mode=null;draggedCol=null;commitDomains()}});
+  // menu
+  const mb=col.querySelector(".dots"),menu=col.querySelector(".menu");
+  mb.onclick=e=>{e.stopPropagation();document.querySelectorAll(".menu.open").forEach(m=>m!==menu&&m.classList.remove("open"));menu.classList.toggle("open")};
+  menu.querySelectorAll("[data-act]").forEach(b=>b.onclick=e=>{e.stopPropagation();menu.classList.remove("open");domainAction(b.dataset.act,d)});
+  menu.querySelectorAll("[data-color]").forEach(s=>s.onclick=e=>{e.stopPropagation();d.color=s.dataset.color;menu.classList.remove("open");render();toast("Colour updated")});
+  const name=col.querySelector(".name");
+  name.addEventListener("blur",()=>{const v=name.textContent.trim();if(v&&v!==d.name){d.name=v;save();stats()}else name.textContent=d.name});
+  name.addEventListener("keydown",e=>{if(e.key==="Enter"){e.preventDefault();name.blur()}});
+}
+// board-level column reordering
+board.addEventListener("dragover",e=>{
+  if(mode!=="col"||!draggedCol)return;
+  e.preventDefault();
+  const after=afterElX(board,e.clientX);
+  const addCol=board.querySelector(".add-col");
+  if(after==null||after===addCol)board.insertBefore(draggedCol,addCol);
+  else board.insertBefore(draggedCol,after);
+});
+function afterEl(c,y,sel){
+  const els=[...c.querySelectorAll(sel+":not(.dragging)")];
+  return els.reduce((cl,ch)=>{const b=ch.getBoundingClientRect();const o=y-b.top-b.height/2;return o<0&&o>cl.offset?{offset:o,element:ch}:cl;},{offset:-Infinity}).element||null;
+}
+function afterElX(c,x){
+  const els=[...c.querySelectorAll(".column:not(.col-dragging)")];
+  return els.reduce((cl,ch)=>{const b=ch.getBoundingClientRect();const o=x-b.left-b.width/2;return o<0&&o>cl.offset?{offset:o,element:ch}:cl;},{offset:-Infinity}).element||null;
+}
+function commitCards(){
+  const map={};state.units.forEach(u=>map[u.id]=u);const arr=[];
+  document.querySelectorAll(".column").forEach(col=>{const did=col.dataset.id;col.querySelectorAll(".card").forEach(c=>{const u=map[c.dataset.id];if(u){u.domainId=did;arr.push(u)}})});
+  if(arr.length===state.units.length)state.units=arr;
+  render();
+}
+function commitDomains(){
+  const order=[...board.querySelectorAll(".column")].map(c=>c.dataset.id);
+  state.domains.sort((a,b)=>order.indexOf(a.id)-order.indexOf(b.id));
+  render();
+}
+
+/* ---------- DOMAIN ACTIONS ---------- */
+function domainAction(act,d){
+  if(act==="rename"){const el=[...document.querySelectorAll(".column")].find(c=>c.dataset.id===d.id).querySelector(".name");el.focus();document.getSelection().selectAllChildren(el)}
+  if(act==="delete"){
+    if(state.domains.length<=1){toast("Keep at least one domain");return}
+    const has=state.units.filter(u=>u.domainId===d.id).length;
+    if(has){let park=state.domains.find(x=>x.id==="d-unsorted"&&x.id!==d.id)||state.domains.find(x=>x.id!==d.id);
+      state.units.forEach(u=>{if(u.domainId===d.id)u.domainId=park.id});toast(`${has} course${has>1?"s":""} moved to “${park.name}”`)}
+    else toast("Domain deleted");
+    state.domains=state.domains.filter(x=>x.id!==d.id);render();
+  }
+}
+
+/* ---------- MODALS ---------- */
+const overlay=document.getElementById("overlay"),modalBody=document.getElementById("modalBody");
+let pickIcon="💊",pickColor=COLORS[0],modalMode="domain",targetDomain=null;
+function openNewDomain(){
+  modalMode="domain";pickIcon="💊";pickColor=COLORS[0];
+  document.getElementById("modalTitle").textContent="New Domain";
+  document.getElementById("modalSub").textContent="A domain is a top-level grouping that holds courses.";
+  document.getElementById("saveModal").textContent="Add Domain";
+  modalBody.innerHTML=`
+    <div class="field"><label>Domain name</label><input id="f1" placeholder="e.g. Clinical Therapeutics" maxlength="48"></div>
+    <div class="field"><label>Icon</label><div class="picker" id="iconPicker"></div></div>
+    <div class="field"><label>Accent colour</label><div class="picker colors" id="colorPicker"></div></div>`;
+  buildPickers();overlay.classList.add("open");setTimeout(()=>document.getElementById("f1").focus(),60);
+}
+function openAddCourse(d){
+  modalMode="course";targetDomain=d;
+  document.getElementById("modalTitle").textContent="Add Course";
+  document.getElementById("modalSub").textContent=`New course in “${d.name}”. It starts empty — add modules after.`;
+  document.getElementById("saveModal").textContent="Add Course";
+  modalBody.innerHTML=`
+    <div class="field"><label>Course name</label><input id="f1" placeholder="e.g. Vaccine Storage & Handling" maxlength="70"></div>
+    <div class="field"><label>Status</label><select id="f2"><option value="draft">Draft</option><option value="pub">Published</option></select></div>`;
+  overlay.classList.add("open");setTimeout(()=>document.getElementById("f1").focus(),60);
+}
+function buildPickers(){
+  const ip=document.getElementById("iconPicker"),cp=document.getElementById("colorPicker");
+  ip.innerHTML=ICONS.map(i=>`<div class="opt${i===pickIcon?' sel':''}" data-i="${i}">${i}</div>`).join("");
+  cp.innerHTML=COLORS.map(c=>`<div class="opt${c===pickColor?' sel':''}" data-c="${c}" style="background:${c}"></div>`).join("");
+  ip.querySelectorAll(".opt").forEach(o=>o.onclick=()=>{pickIcon=o.dataset.i;buildPickers()});
+  cp.querySelectorAll(".opt").forEach(o=>o.onclick=()=>{pickColor=o.dataset.c;buildPickers()});
+}
+document.getElementById("addDomainBtn").onclick=openNewDomain;
+document.getElementById("cancelModal").onclick=()=>overlay.classList.remove("open");
+overlay.onclick=e=>{if(e.target===overlay)overlay.classList.remove("open")};
+document.getElementById("saveModal").onclick=()=>{
+  const v=(document.getElementById("f1").value||"").trim();
+  if(modalMode==="domain"){
+    state.domains.push({id:"d"+Date.now(),name:v||"New Domain",icon:pickIcon,color:pickColor});
+    overlay.classList.remove("open");render();
+    board.lastElementChild.previousElementSibling?.scrollIntoView({behavior:"smooth",inline:"end"});
+    toast(`Domain “${v||"New Domain"}” created`);
+  }else{
+    const stt=document.getElementById("f2").value;
+    state.units.push({id:"u"+Date.now(),name:v||"New Course",l:0,status:stt,domainId:targetDomain.id,modules:[],open:true,mFallback:0});
+    overlay.classList.remove("open");render();toast(`Course “${v||"New Course"}” added`);
+  }
+};
+document.addEventListener("keydown",e=>{if(e.key==="Enter"&&overlay.classList.contains("open")&&document.activeElement.id==="f1")document.getElementById("saveModal").click();if(e.key==="Escape")overlay.classList.remove("open")});
+
+/* ---------- STUDENT VIEW ---------- */
+document.getElementById("studentBtn").onclick=()=>{
+  save();
+  const w=window.open("curriculum-student-view.html","_blank");
+  if(!w)toast("Allow pop-ups, or open curriculum-student-view.html");
+};
+
+/* ---------- SEARCH / RESET / STATS ---------- */
+document.getElementById("search").addEventListener("input",e=>{
+  const q=e.target.value.toLowerCase().trim();
+  document.querySelectorAll(".card").forEach(c=>{const hit=!q||c.querySelector(".c-name").textContent.toLowerCase().includes(q);c.style.display=hit?"":"none";c.style.boxShadow=hit&&q?"0 0 0 2px var(--teal)":""});
+});
+document.getElementById("resetBtn").onclick=()=>{if(confirm("Restore the suggested layout? Clears your sandbox changes.")){state=clone(SEED);render();toast("Restored suggested layout")}};
+function stats(){
+  document.getElementById("s-dom").textContent=state.domains.length;
+  document.getElementById("s-unit").textContent=state.units.length;
+  document.getElementById("s-mod").textContent=state.units.reduce((a,u)=>a+mcount(u),0);
+  document.getElementById("s-les").textContent=state.units.reduce((a,u)=>a+u.l,0);
+  document.getElementById("s-gap").textContent=state.units.filter(u=>u.l===0).length;
+}
+function esc(s){return(s||"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]))}
+function hex(h,a){const n=parseInt(h.slice(1),16);return`rgba(${n>>16&255},${n>>8&255},${n&255},${a})`}
+let tT;function toast(m){const t=document.getElementById("toast");t.textContent=m;t.classList.add("show");clearTimeout(tT);tT=setTimeout(()=>t.classList.remove("show"),1900)}
+document.addEventListener("click",()=>document.querySelectorAll(".menu.open").forEach(m=>m.classList.remove("open")));
+render();
+</script>
+</body>
+</html>
