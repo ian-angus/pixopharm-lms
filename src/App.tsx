@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { courses, catalogStats, skillLevels } from "@/data/courses";
+import { useEffect, useState } from "react";
+import { courses, catalogStats } from "@/data/courses";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription, CardFooter } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -12,6 +12,7 @@ import { Label } from "@/components/ui/label";
 import { Progress } from "@/components/ui/progress";
 import { Separator } from "@/components/ui/separator";
 import CoursePlayer from "@/components/CoursePlayer";
+import JourneyPage from "@/components/JourneyPage";
 import ShelfSimulator from "@/components/ShelfSimulator";
 import PharmacyRoomPrototype from "@/components/PharmacyRoomPrototype";
 import AuthModal from "@/components/AuthModal";
@@ -19,6 +20,8 @@ import { useAuth } from "@/hooks/useAuth";
 import { useAdmin } from "@/hooks/useAdmin";
 import AdminDashboard from "@/components/AdminDashboard";
 import DebugPanel from "@/components/DebugPanel";
+import { supabase } from "@/lib/supabase";
+import { fetchDomains, type Domain } from "@/lib/admin-api";
 import "./App.css";
 
 /* ─── Generated Images ─── */
@@ -98,22 +101,6 @@ const courseIcons: Record<string, () => React.JSX.Element> = {
   Globe: IconGlobe,
 };
 
-const colorMap: Record<string, string> = {
-  blue: "bg-blue-50 text-blue-700 border-blue-200",
-  emerald: "bg-emerald-50 text-emerald-700 border-emerald-200",
-  violet: "bg-violet-50 text-violet-700 border-violet-200",
-  rose: "bg-rose-50 text-rose-700 border-rose-200",
-  amber: "bg-amber-50 text-amber-700 border-amber-200",
-  cyan: "bg-cyan-50 text-cyan-700 border-cyan-200",
-  teal: "bg-teal-50 text-teal-700 border-teal-200",
-  orange: "bg-orange-50 text-orange-700 border-orange-200",
-  indigo: "bg-indigo-50 text-indigo-700 border-indigo-200",
-  purple: "bg-purple-50 text-purple-700 border-purple-200",
-  pink: "bg-pink-50 text-pink-700 border-pink-200",
-  slate: "bg-slate-50 text-slate-700 border-slate-200",
-  sky: "bg-sky-50 text-sky-700 border-sky-200",
-};
-
 const iconBgMap: Record<string, string> = {
   blue: "bg-blue-100 text-blue-600",
   emerald: "bg-emerald-100 text-emerald-600",
@@ -174,7 +161,7 @@ const faqs = [
   },
   {
     q: "How long does it take to complete the full program?",
-    a: `The complete ${catalogStats.totalCourses}-course programme spans ${catalogStats.totalWeeks} weeks of content across 3 levels (Beginner, Intermediate, Advanced). However, courses are self-paced, so you can take longer if needed. Most students complete individual courses within the listed timeframe when studying 8-10 hours per week. You can also take courses individually or focus on a single level.`,
+    a: `The complete ${catalogStats.totalCourses}-course programme spans ${catalogStats.totalWeeks} weeks of content across 8 curriculum domains, from Foundations through to Capstone & Certification. However, courses are self-paced, so you can take longer if needed. Most students complete individual courses within the listed timeframe when studying 8-10 hours per week. You can also take courses individually or focus on a single domain.`,
   },
   {
     q: "Can I access courses on my phone or tablet?",
@@ -210,7 +197,7 @@ const plans = [
     period: "/month",
     description: "Perfect for individual learners beginning their pharmacy career",
     features: [
-      "Access to 3 Beginner courses",
+      "Access to the 3 Foundations courses",
       "Self-paced learning",
       "Course completion certificates",
       "Mobile-friendly access",
@@ -226,12 +213,12 @@ const plans = [
     period: "/month",
     description: "Full access for serious pharmacy professionals",
     features: [
-      `All ${catalogStats.totalCourses} courses across 3 levels`,
+      `All ${catalogStats.totalCourses} courses across every curriculum domain`,
       "Island Regulatory Navigator tool",
       "Drug scheduling comparison database",
       "AI in Pharmacy Practice course",
       "Practice exams & quizzes (800+ questions)",
-      "Level certificates (Beginner → Advanced)",
+      "Certificates for every course and domain",
       "Priority email & chat support",
       "Spaced repetition flashcards",
     ],
@@ -259,12 +246,13 @@ const plans = [
 ];
 
 /* ─── Navigation ─── */
-function Navbar({ user, onSignInClick, onSignOut, isAdmin, onAdminClick }: {
+function Navbar({ user, onSignInClick, onSignOut, isAdmin, onAdminClick, onJourneyClick }: {
   user: { email?: string; user_metadata?: { full_name?: string } } | null;
   onSignInClick: () => void;
   onSignOut: () => void;
   isAdmin?: boolean;
   onAdminClick?: () => void;
+  onJourneyClick?: () => void;
 }) {
   const [open, setOpen] = useState(false);
   const links = [
@@ -306,6 +294,11 @@ function Navbar({ user, onSignInClick, onSignOut, isAdmin, onAdminClick }: {
                     </span>
                     <span className="max-w-[120px] truncate">{user.user_metadata?.full_name || user.email}</span>
                   </span>
+                  {onJourneyClick && (
+                    <Button size="sm" className="text-sm bg-[hsl(174,62%,32%)] hover:bg-[hsl(174,62%,26%)]" onClick={onJourneyClick}>
+                      My Journey
+                    </Button>
+                  )}
                   {isAdmin && onAdminClick && (
                     <Button variant="outline" size="sm" className="text-sm border-[hsl(174,62%,32%)]/30 text-[hsl(174,62%,32%)]" onClick={onAdminClick}>
                       Admin
@@ -341,8 +334,16 @@ function Navbar({ user, onSignInClick, onSignOut, isAdmin, onAdminClick }: {
               </a>
             ))}
             <div className="mt-3 flex gap-2 px-3">
-              <Button variant="outline" size="sm" className="flex-1">Sign In</Button>
-              <Button size="sm" className="flex-1 bg-[hsl(174,62%,32%)]">Get Started</Button>
+              {user && onJourneyClick ? (
+                <Button size="sm" className="flex-1 bg-[hsl(174,62%,32%)]" onClick={() => { setOpen(false); onJourneyClick(); }}>
+                  My Journey
+                </Button>
+              ) : (
+                <>
+                  <Button variant="outline" size="sm" className="flex-1">Sign In</Button>
+                  <Button size="sm" className="flex-1 bg-[hsl(174,62%,32%)]">Get Started</Button>
+                </>
+              )}
             </div>
           </div>
         )}
@@ -410,18 +411,18 @@ function Hero() {
                       <svg viewBox="0 0 24 24" className="w-5 h-5 text-[hsl(174,70%,70%)]" fill="none" stroke="currentColor" strokeWidth={2}><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg>
                     </div>
                     <div>
-                      <div className="text-white/90 text-sm font-semibold">Your Learning Path</div>
-                      <div className="text-white/40 text-xs">3 levels &middot; {catalogStats.totalCourses} courses</div>
+                      <div className="text-white/90 text-sm font-semibold">Your Learning Journey</div>
+                      <div className="text-white/40 text-xs">8 stages &middot; {catalogStats.totalCourses} courses</div>
                     </div>
                   </div>
                   <div className="text-[hsl(174,70%,70%)] text-xs font-medium bg-[hsl(174,60%,45%)]/10 px-2.5 py-1 rounded-full border border-[hsl(174,60%,45%)]/20">Active</div>
                 </div>
 
-                {/* Progress bars for levels */}
+                {/* Progress bars for journey stages */}
                 {[
-                  { level: "Beginner", courses: 7, color: "hsl(174,60%,45%)", progress: 65 },
-                  { level: "Intermediate", courses: 11, color: "hsl(199,80%,55%)", progress: 30 },
-                  { level: "Advanced", courses: 9, color: "hsl(262,60%,60%)", progress: 0 },
+                  { level: "Foundations & Learning Skills", courses: 3, color: "hsl(174,60%,45%)", progress: 65 },
+                  { level: "Human Body & Pharmacology", courses: 3, color: "hsl(199,80%,55%)", progress: 30 },
+                  { level: "Calculations & Compounding", courses: 4, color: "hsl(262,60%,60%)", progress: 0 },
                 ].map((item) => (
                   <div key={item.level} className="space-y-2">
                     <div className="flex items-center justify-between text-xs">
@@ -840,10 +841,83 @@ function RegulatoryNavigator() {
 
 /* ─── Courses ─── */
 function Courses({ onStartCourse }: { onStartCourse?: (courseId: string) => void }) {
-  const [filter, setFilter] = useState<string>("All");
   const [selectedCourse, setSelectedCourse] = useState<typeof courses[0] | null>(null);
 
-  const filtered = filter === "All" ? courses : courses.filter((c) => c.skillLevel === filter);
+  // Phase 3: the catalog is grouped by curriculum domain. The DB is the source
+  // of truth for domain assignment + per-domain order; the static catalog data
+  // (src/data/courses.ts) still backs the card/detail content, joined by slug.
+  const [domains, setDomains] = useState<Domain[]>([]);
+  const [dbCourses, setDbCourses] = useState<{ slug: string; domain_id: string | null; order: number }[]>([]);
+
+  useEffect(() => {
+    let cancelled = false;
+    Promise.all([
+      fetchDomains(),
+      supabase.from("courses").select("slug,domain_id,order,status").eq("status", "published"),
+    ])
+      .then(([doms, res]) => {
+        if (cancelled) return;
+        if (res.error) throw new Error(res.error.message);
+        setDomains(doms);
+        setDbCourses((res.data ?? []) as { slug: string; domain_id: string | null; order: number }[]);
+      })
+      .catch((err) => {
+        // Grouping is progressive enhancement — fall back to the flat grid.
+        console.warn("Catalog domain grouping unavailable:", err);
+      });
+    return () => { cancelled = true; };
+  }, []);
+
+  const staticBySlug = new Map(courses.map((c) => [c.slug, c]));
+  const domainGroups = [...domains]
+    .sort((a, b) => a.order_index - b.order_index)
+    .map((domain) => ({
+      domain,
+      isElective: domain.name.toLowerCase().includes("elective"),
+      courses: dbCourses
+        .filter((dc) => dc.domain_id === domain.id && staticBySlug.has(dc.slug))
+        .sort((a, b) => (a.order ?? 0) - (b.order ?? 0))
+        .map((dc) => staticBySlug.get(dc.slug)!),
+    }))
+    .filter((g) => g.courses.length > 0);
+  const groupedSlugs = new Set(domainGroups.flatMap((g) => g.courses.map((c) => c.slug)));
+  const ungrouped = courses.filter((c) => !groupedSlugs.has(c.slug));
+
+  const renderCourseCard = (course: (typeof courses)[0]) => {
+    const IconComp = courseIcons[course.icon] || IconGradCap;
+    return (
+      <Card
+        key={course.id}
+        className="group hover:shadow-lg transition-all duration-300 cursor-pointer border-slate-200/80 hover:border-[hsl(174,62%,32%)]/30 bg-white"
+        onClick={() => setSelectedCourse(course)}
+      >
+        <CardHeader className="pb-3">
+          <div className={`w-11 h-11 rounded-lg flex items-center justify-center mb-3 ${iconBgMap[course.color]}`}>
+            <IconComp />
+          </div>
+          <div className="flex items-center gap-2 mb-1">
+            <span className="text-[10px] text-slate-400">{course.durationWeeks} weeks · {course.modules.length} modules</span>
+          </div>
+          <CardTitle className="text-base leading-snug group-hover:text-[hsl(174,62%,32%)] transition-colors">
+            {course.title}
+          </CardTitle>
+        </CardHeader>
+        <CardContent className="pt-0">
+          <CardDescription className="text-xs leading-relaxed line-clamp-3">
+            {course.description}
+          </CardDescription>
+        </CardContent>
+        <CardFooter className="pt-0">
+          <div className="flex items-center justify-between w-full text-xs text-slate-500">
+            <span>{course.modules.length} modules</span>
+            <span className="text-[hsl(174,62%,32%)] font-medium opacity-0 group-hover:opacity-100 transition-opacity">
+              View details →
+            </span>
+          </div>
+        </CardFooter>
+      </Card>
+    );
+  };
 
   return (
     <section id="courses" className="py-20 lg:py-28 section-gradient">
@@ -860,66 +934,52 @@ function Courses({ onStartCourse }: { onStartCourse?: (courseId: string) => void
           </p>
         </div>
 
-        {/* Filter tabs */}
-        <div className="flex justify-center mb-10">
-          <div className="inline-flex bg-white rounded-lg border border-slate-200 p-1 shadow-sm">
-            {["All", ...skillLevels].map((f) => (
-              <button
-                key={f}
-                onClick={() => setFilter(f)}
-                className={`px-4 py-2 rounded-md text-sm font-medium transition-all ${
-                  filter === f
-                    ? "bg-[hsl(174,62%,32%)] text-white shadow-sm"
-                    : "text-slate-600 hover:text-slate-800"
-                }`}
-              >
-                {f}
-              </button>
+        {/* Course catalog grouped by curriculum domain */}
+        {domainGroups.length > 0 ? (
+          <div className="space-y-12">
+            {domainGroups.map((g, i) => (
+              <div key={g.domain.id}>
+                <div className="flex items-center gap-3 mb-5">
+                  <span
+                    className="w-9 h-9 rounded-lg flex items-center justify-center text-lg text-white shadow-sm shrink-0"
+                    style={{ backgroundColor: g.domain.color ?? "hsl(174,62%,32%)" }}
+                  >
+                    {g.domain.icon ?? "📘"}
+                  </span>
+                  <div>
+                    <h3 className="text-lg font-bold text-[hsl(213,50%,16%)] leading-tight">
+                      {g.isElective ? g.domain.name : `Stage ${i + 1} — ${g.domain.name}`}
+                    </h3>
+                    {g.isElective && (
+                      <p className="text-xs text-slate-500" style={{ fontFamily: "'DM Sans', sans-serif" }}>
+                        Optional specialist topics you can take alongside the diploma
+                      </p>
+                    )}
+                  </div>
+                  <span className="ml-auto text-xs text-slate-400 whitespace-nowrap" style={{ fontFamily: "'DM Sans', sans-serif" }}>
+                    {g.courses.length} course{g.courses.length !== 1 ? "s" : ""}
+                  </span>
+                </div>
+                <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+                  {g.courses.map(renderCourseCard)}
+                </div>
+              </div>
             ))}
+            {ungrouped.length > 0 && (
+              <div>
+                <h3 className="text-lg font-bold text-[hsl(213,50%,16%)] mb-5">More Courses</h3>
+                <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+                  {ungrouped.map(renderCourseCard)}
+                </div>
+              </div>
+            )}
           </div>
-        </div>
-
-        {/* Course grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-          {filtered.map((course) => {
-            const IconComp = courseIcons[course.icon] || IconGradCap;
-            return (
-              <Card
-                key={course.id}
-                className="group hover:shadow-lg transition-all duration-300 cursor-pointer border-slate-200/80 hover:border-[hsl(174,62%,32%)]/30 bg-white"
-                onClick={() => setSelectedCourse(course)}
-              >
-                <CardHeader className="pb-3">
-                  <div className={`w-11 h-11 rounded-lg flex items-center justify-center mb-3 ${iconBgMap[course.color]}`}>
-                    <IconComp />
-                  </div>
-                  <div className="flex items-center gap-2 mb-1">
-                    <Badge variant="outline" className={`text-[10px] px-2 py-0 ${colorMap[course.color]}`}>
-                      {course.skillLevel}
-                    </Badge>
-                    <span className="text-[10px] text-slate-400">{course.durationWeeks} weeks</span>
-                  </div>
-                  <CardTitle className="text-base leading-snug group-hover:text-[hsl(174,62%,32%)] transition-colors">
-                    {course.title}
-                  </CardTitle>
-                </CardHeader>
-                <CardContent className="pt-0">
-                  <CardDescription className="text-xs leading-relaxed line-clamp-3">
-                    {course.description}
-                  </CardDescription>
-                </CardContent>
-                <CardFooter className="pt-0">
-                  <div className="flex items-center justify-between w-full text-xs text-slate-500">
-                    <span>{course.modules.length} modules</span>
-                    <span className="text-[hsl(174,62%,32%)] font-medium opacity-0 group-hover:opacity-100 transition-opacity">
-                      View details →
-                    </span>
-                  </div>
-                </CardFooter>
-              </Card>
-            );
-          })}
-        </div>
+        ) : (
+          /* Fallback while domains load (or if the DB is unreachable) */
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            {courses.map(renderCourseCard)}
+          </div>
+        )}
 
         {/* Course detail dialog */}
         <Dialog open={!!selectedCourse} onOpenChange={() => setSelectedCourse(null)}>
@@ -928,7 +988,6 @@ function Courses({ onStartCourse }: { onStartCourse?: (courseId: string) => void
               <>
                 <DialogHeader>
                   <div className="flex items-center gap-3 mb-2">
-                    <Badge className={colorMap[selectedCourse.color]}>{selectedCourse.skillLevel}</Badge>
                     <span className="text-sm text-slate-500">{selectedCourse.durationWeeks} weeks · {selectedCourse.modules.length} modules</span>
                   </div>
                   <DialogTitle className="text-2xl">{selectedCourse.title}</DialogTitle>
@@ -1201,7 +1260,7 @@ function AdminPanel() {
                       </div>
                       <div className="flex-1 min-w-0">
                         <div className="text-sm font-medium text-slate-800 truncate">{c.title}</div>
-                        <div className="text-xs text-slate-500">{c.modules.length} modules · {c.durationWeeks} weeks · {c.skillLevel}</div>
+                        <div className="text-xs text-slate-500">{c.modules.length} modules · {c.durationWeeks} weeks</div>
                       </div>
                       <Badge variant="outline" className="text-[10px] bg-emerald-50 text-emerald-700 border-emerald-200 shrink-0">
                         Published
@@ -1223,11 +1282,11 @@ function AdminPanel() {
                 </div>
                 <div className="grid grid-cols-2 gap-4">
                   <div className="grid gap-1.5">
-                    <Label htmlFor="level" className="text-xs">Skill Level</Label>
+                    <Label htmlFor="level" className="text-xs">Curriculum Domain</Label>
                     <select id="level" className="flex h-9 w-full rounded-md border border-input bg-transparent px-3 py-1 text-sm shadow-sm">
-                      <option>Beginner</option>
-                      <option>Intermediate</option>
-                      <option>Advanced</option>
+                      <option>Foundations & Learning Skills</option>
+                      <option>Calculations & Compounding</option>
+                      <option>Caribbean Law, Ethics & Regulation</option>
                     </select>
                   </div>
                   <div className="grid gap-1.5">
@@ -1448,6 +1507,7 @@ function Footer() {
 function App() {
   const [activeCourse, setActiveCourse] = useState<string | null>(null);
   const [showAdmin, setShowAdmin] = useState(false);
+  const [showJourney, setShowJourney] = useState(false);
   const [authOpen, setAuthOpen] = useState(false);
   const { user, loading, signIn, signUp, signOut } = useAuth();
   const { isAdmin } = useAdmin(user);
@@ -1485,6 +1545,19 @@ function App() {
     return <CoursePlayer user={user} onExit={() => setActiveCourse(null)} courseId={activeCourse} />;
   }
 
+  // Student journey page (the "My Journey" curriculum map)
+  if (showJourney) {
+    return (
+      <JourneyPage
+        onExit={() => setShowJourney(false)}
+        onStartCourse={(slug) => {
+          setShowJourney(false);
+          setActiveCourse(slug);
+        }}
+      />
+    );
+  }
+
   if (loading) {
     return (
       <div className="min-h-screen flex items-center justify-center">
@@ -1498,7 +1571,7 @@ function App() {
 
   return (
     <div className="min-h-screen">
-      <Navbar user={user} onSignInClick={() => setAuthOpen(true)} onSignOut={signOut} isAdmin={isAdmin} onAdminClick={() => setShowAdmin(true)} />
+      <Navbar user={user} onSignInClick={() => setAuthOpen(true)} onSignOut={signOut} isAdmin={isAdmin} onAdminClick={() => setShowAdmin(true)} onJourneyClick={user ? () => setShowJourney(true) : undefined} />
       <AuthModal open={authOpen} onClose={() => setAuthOpen(false)} onSignIn={signIn} onSignUp={signUp} />
       <Hero />
       <StatsBar />

@@ -79,7 +79,8 @@ export type QuestionType =
   | 'matching'
   | 'fill_in_blank'
   | 'true_false'
-  | 'scenario';
+  | 'scenario'
+  | 'numeric';
 
 export interface QuizQuestion {
   id: string;
@@ -98,6 +99,10 @@ export interface QuizQuestion {
     case_sensitive?: boolean;
     correct_answer?: boolean;
     context?: string;
+    // numeric
+    answer?: number;
+    tolerance?: number;
+    unit?: string;
   };
   difficulty?: 'easy' | 'medium' | 'hard' | 'expert';
   blooms_level?: 'remember' | 'understand' | 'apply' | 'analyze' | 'evaluate' | 'create';
@@ -199,7 +204,7 @@ export async function fetchCourses(): Promise<Course[]> {
 /** Fetch a single course by slug with full module/lesson/quiz tree. */
 export async function fetchCourseBySlug(slug: string): Promise<{
   course: Course;
-  modules: (Module & { lessons: Lesson[]; quiz_questions: QuizQuestion[] })[];
+  modules: (Module & { lessons: Lesson[]; quiz_questions: QuizQuestion[]; quiz_cases: QuizCase[] })[];
 }> {
   const { data: course, error: cErr } = await supabase
     .from("courses")
@@ -214,7 +219,7 @@ export async function fetchCourseBySlug(slug: string): Promise<{
 /** Shared: given a course row, fetch its full module/lesson/quiz tree. */
 async function fetchCourseTree(course: Record<string, unknown>): Promise<{
   course: Course;
-  modules: (Module & { lessons: Lesson[]; quiz_questions: QuizQuestion[] })[];
+  modules: (Module & { lessons: Lesson[]; quiz_questions: QuizQuestion[]; quiz_cases: QuizCase[] })[];
 }> {
   const courseId = course.id as string;
 
@@ -228,7 +233,7 @@ async function fetchCourseTree(course: Record<string, unknown>): Promise<{
 
   const moduleIds = (modules ?? []).map((m) => m.id);
 
-  const [lessonsRes, quizRes] = await Promise.all([
+  const [lessonsRes, quizRes, casesRes] = await Promise.all([
     moduleIds.length > 0
       ? supabase
           .from("lessons")
@@ -243,10 +248,18 @@ async function fetchCourseTree(course: Record<string, unknown>): Promise<{
           .in("module_id", moduleIds)
           .order("order_index", { ascending: true })
       : Promise.resolve({ data: [], error: null }),
+    moduleIds.length > 0
+      ? supabase
+          .from("quiz_cases")
+          .select("*")
+          .in("module_id", moduleIds)
+          .order("order_index", { ascending: true })
+      : Promise.resolve({ data: [], error: null }),
   ]);
 
   if (lessonsRes.error) console.warn("Could not fetch lessons:", lessonsRes.error);
   if (quizRes.error) console.warn("Could not fetch quiz questions:", quizRes.error);
+  if (casesRes.error) console.warn("Could not fetch quiz cases:", casesRes.error);
 
   const lessonsByModule = new Map<string, Lesson[]>();
   (lessonsRes.data ?? []).forEach((l) => {
@@ -262,10 +275,18 @@ async function fetchCourseTree(course: Record<string, unknown>): Promise<{
     quizByModule.set(q.module_id, arr);
   });
 
+  const casesByModule = new Map<string, QuizCase[]>();
+  (casesRes.data ?? []).forEach((c) => {
+    const arr = casesByModule.get(c.module_id) ?? [];
+    arr.push(c as QuizCase);
+    casesByModule.set(c.module_id, arr);
+  });
+
   const enrichedModules = (modules ?? []).map((m) => ({
     ...m,
     lessons: lessonsByModule.get(m.id) ?? [],
     quiz_questions: quizByModule.get(m.id) ?? [],
+    quiz_cases: casesByModule.get(m.id) ?? [],
     lessons_count: (lessonsByModule.get(m.id) ?? []).length,
     quiz_count: (quizByModule.get(m.id) ?? []).length,
   }));
@@ -283,7 +304,7 @@ async function fetchCourseTree(course: Record<string, unknown>): Promise<{
 /** Fetch a single course by ID with full module/lesson/quiz tree. */
 export async function fetchCourse(id: string): Promise<{
   course: Course;
-  modules: (Module & { lessons: Lesson[]; quiz_questions: QuizQuestion[] })[];
+  modules: (Module & { lessons: Lesson[]; quiz_questions: QuizQuestion[]; quiz_cases: QuizCase[] })[];
 }> {
   const { data: course, error: cErr } = await supabase
     .from("courses")

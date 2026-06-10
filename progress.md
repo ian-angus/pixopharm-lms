@@ -2,6 +2,28 @@
 
 ---
 
+## 2026-06-10 (cont.): Phase 3 COMPLETE — Student experience (journey page, domain catalog, numeric + case vignettes)
+
+### Branch: `feat/curriculum-phase-3` (not yet pushed/PR'd; edge function NOT redeployed)
+
+**A. Journey page (`src/components/JourneyPage.tsx`, 369 lines, new):** rebuilds the approved `curriculum-student-view.html` design in React from live Supabase data — domain stages (order_index) with published courses (per-domain `order`), stats chips (stages/courses/modules/lessons/~hours from real counts), vertical timeline + numbered nodes + diploma finish panel, Clinical Therapeutics (Electives) as separate card-grid track. Courses with 0 lessons show "Coming soon" and are not clickable; otherwise click → CoursePlayer via slug. Wired in App.tsx: `showJourney` state + "My Journey" navbar button (desktop + mobile) for signed-in users.
+
+**B. Catalog by domain (App.tsx Courses):** Beginner/Intermediate/Advanced filter + badges removed. Catalog now fetches domains + published courses (slug/domain_id/order) and groups the STATIC cards (src/data/courses.ts still backs card/detail content) by joining on slug. Stage N headers w/ domain icon+color; electives get an "optional" sub-label; flat ungrouped grid is the fallback while loading/offline. DB-only courses without static entries (2: asthma elective, drug-scheduling) appear on the Journey page but not in the static-backed homepage catalog.
+
+**C. CoursePlayer quizzes:** `numeric` type end-to-end (number input + optional unit, correct when |ans−answer| ≤ tolerance; labelled "Calculation"); case vignettes — fetchCourseTree now also pulls `quiz_cases` per module (RLS verified: anon can read cases of published courses), transform maps `case_id`→caseId + module.quizCases, QuizView shows a persistent styled vignette panel above any question with caseId. Instant feedback (explanation after each submit) confirmed already working.
+
+**D. QuizEditor:** numeric form (answer/tolerance/unit) + validation + payload `question_data:{answer,tolerance,unit?}`; lime "Calculation" badge.
+
+**E. enhance-module (edited, NOT deployed):** 'numeric' added to ALLOWED_TYPES, schema line 7 in prompt, validateQuestion case (finite answer, tolerance ≥ 0, unit string), typeMixForDomain now demands 2–3 numeric questions for Calculations & Compounding.
+
+**F. skill_level retired from student UI:** catalog filter/badges, CoursePlayer sidebar/overview badges, certificate "Level" stat (→ Modules), hero mockup (levels → journey stages), FAQ/pricing copy (levels → domains), AdminPanel marketing mock. Admin dashboard/tutorial + src/data/courses.ts keep internal references by design.
+
+**Quality:** `npx tsc --noEmit` ✅, `pnpm build` ✅ (removed now-dead `colorMap` in App.tsx). 4 eslint errors in CoursePlayer are pre-existing (shuffle/Math.random/setState-in-effect/Sidebar-in-render), untouched.
+
+**Next:** push branch → PR → Coderabbit/Codex review → deploy enhance-module after review → `npx vercel --prod`.
+
+---
+
 ## 2026-06-10: Phase 2 COMPLETE — Admin Curriculum Organizer (browser-verified)
 
 ### Branch: `feat/curriculum-phase-2` (PR #9 merged; phases 0/1/0b on main)
