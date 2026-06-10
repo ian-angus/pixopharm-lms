@@ -20,11 +20,32 @@ export interface Course {
   what_youll_learn: string[];
   status: "draft" | "published" | "archived";
   order: number;
+  domain_id: string | null;
   created_at: string;
   updated_at: string;
   // Joined counts (populated by specific queries)
   modules_count?: number;
   enrolled_count?: number;
+}
+
+export interface Domain {
+  id: string;
+  name: string;
+  icon: string | null;
+  color: string | null;
+  order_index: number;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface QuizCase {
+  id: string;
+  module_id: string;
+  title: string | null;
+  vignette: string;
+  order_index: number;
+  created_at: string;
+  updated_at: string;
 }
 
 export interface Module {
@@ -80,6 +101,7 @@ export interface QuizQuestion {
   };
   difficulty?: 'easy' | 'medium' | 'hard' | 'expert';
   blooms_level?: 'remember' | 'understand' | 'apply' | 'analyze' | 'evaluate' | 'create';
+  case_id?: string | null;
   created_at: string;
 }
 
@@ -291,6 +313,7 @@ export async function createCourse(
       what_youll_learn: data.what_youll_learn ?? [],
       status: data.status ?? "draft",
       order: data.order ?? 99,
+      domain_id: data.domain_id ?? null,
     })
     .select()
     .single();
@@ -942,14 +965,27 @@ export async function generateCourse(
 }
 
 export interface EnhanceModuleResult {
+  mode?: "append" | "overwrite";
   lessons_updated: number;
+  lessons_skipped_existing?: number;
   questions_count: number;
+  case_created?: boolean;
+  types_generated?: string[];
   model_used: string;
 }
 
-export async function enhanceModule(moduleId: string): Promise<EnhanceModuleResult> {
+/**
+ * Enhance a module with AI-generated lessons + interactive quiz.
+ * mode "append" (default, non-destructive): fills only EMPTY lessons and adds
+ * questions alongside existing ones. mode "overwrite" replaces lesson content
+ * and deletes + regenerates the quiz — gate it behind a confirm dialog (D6).
+ */
+export async function enhanceModule(
+  moduleId: string,
+  mode: "append" | "overwrite" = "append"
+): Promise<EnhanceModuleResult> {
   const { data, error } = await supabase.functions.invoke("enhance-module", {
-    body: { module_id: moduleId },
+    body: { module_id: moduleId, mode },
   });
   if (data?.error) throw new Error(`enhance-module: ${data.error}`);
 
@@ -971,11 +1007,176 @@ export async function enhanceModule(moduleId: string): Promise<EnhanceModuleResu
         .from("quiz_questions")
         .select("id", { count: "exact", head: true })
         .eq("module_id", moduleId);
-      return { lessons_updated: lessonsUpdated, questions_count: questionsCount ?? 3, model_used: "claude-opus-4-6" };
+      return { lessons_updated: lessonsUpdated, questions_count: questionsCount ?? 3, model_used: "claude-opus-4-8" };
     }
 
     handleError(error, "enhanceModule");
   }
 
   return data as EnhanceModuleResult;
+}
+
+// ============================================================================
+// CURRICULUM ORGANIZER — domains, cross-entity moves, batch reordering
+// ============================================================================
+
+/** All domains in display order. */
+export async function fetchDomains(): Promise<Domain[]> {
+  const { data, error } = await supabase
+    .from("domains")
+    .select("*")
+    .order("order_index", { ascending: true });
+  if (error) handleError(error, "fetchDomains");
+  return (data ?? []) as Domain[];
+}
+
+export async function createDomain(
+  data: Partial<Omit<Domain, "id" | "created_at" | "updated_at">>
+): Promise<Domain> {
+  const { data: domain, error } = await supabase
+    .from("domains")
+    .insert({
+      name: data.name ?? "New Domain",
+      icon: data.icon ?? "🗂️",
+      color: data.color ?? "#9aa0a6",
+      order_index: data.order_index ?? 99,
+    })
+    .select()
+    .single();
+  if (error) handleError(error, "createDomain");
+  return domain as Domain;
+}
+
+export async function updateDomain(
+  id: string,
+  data: Partial<Pick<Domain, "name" | "icon" | "color" | "order_index">>
+): Promise<Domain> {
+  const { data: domain, error } = await supabase
+    .from("domains")
+    .update({ ...data, updated_at: new Date().toISOString() })
+    .eq("id", id)
+    .select()
+    .single();
+  if (error) handleError(error, "updateDomain");
+  return domain as Domain;
+}
+
+/**
+ * Delete a domain. Its courses are reassigned to `reassignTo`
+ * (another domain id) or left Unsorted (null).
+ */
+export async function deleteDomain(id: string, reassignTo: string | null = null): Promise<void> {
+  const { error: moveErr } = await supabase
+    .from("courses")
+    .update({ domain_id: reassignTo })
+    .eq("domain_id", id);
+  if (moveErr) handleError(moveErr, "deleteDomain (reassign)");
+  const { error } = await supabase.from("domains").delete().eq("id", id);
+  if (error) handleError(error, "deleteDomain");
+}
+
+/** Persist a new domain order. Only writes rows whose position changed. */
+export async function reorderDomains(orderedIds: string[]): Promise<void> {
+  const current = await fetchDomains();
+  const updates = orderedIds
+    .map((id, i) => ({ id, order_index: i + 1 }))
+    .filter((u) => current.find((d) => d.id === u.id)?.order_index !== u.order_index);
+  for (const u of updates) {
+    const { error } = await supabase
+      .from("domains")
+      .update({ order_index: u.order_index, updated_at: new Date().toISOString() })
+      .eq("id", u.id);
+    if (error) handleError(error, "reorderDomains");
+  }
+}
+
+/** Move a course to a (possibly different) domain at a specific position. */
+export async function moveCourse(
+  courseId: string,
+  domainId: string | null,
+  order: number
+): Promise<void> {
+  const { error } = await supabase
+    .from("courses")
+    .update({ domain_id: domainId, order, updated_at: new Date().toISOString() })
+    .eq("id", courseId);
+  if (error) handleError(error, "moveCourse");
+}
+
+/** Batch-persist course order within a domain. Pass only changed rows. */
+export async function reorderCourses(
+  updates: { id: string; order: number }[]
+): Promise<void> {
+  for (const u of updates) {
+    const { error } = await supabase
+      .from("courses")
+      .update({ order: u.order, updated_at: new Date().toISOString() })
+      .eq("id", u.id);
+    if (error) handleError(error, "reorderCourses");
+  }
+}
+
+/** Batch-persist module order within a course. Pass only changed rows. */
+export async function reorderModules(
+  updates: { id: string; order_index: number }[]
+): Promise<void> {
+  for (const u of updates) {
+    const { error } = await supabase
+      .from("modules")
+      .update({ order_index: u.order_index, updated_at: new Date().toISOString() })
+      .eq("id", u.id);
+    if (error) handleError(error, "reorderModules");
+  }
+}
+
+// ============================================================================
+// QUIZ CASES (shared patient vignettes for case-based questions)
+// ============================================================================
+
+export async function fetchQuizCases(moduleId: string): Promise<QuizCase[]> {
+  const { data, error } = await supabase
+    .from("quiz_cases")
+    .select("*")
+    .eq("module_id", moduleId)
+    .order("order_index", { ascending: true });
+  if (error) handleError(error, "fetchQuizCases");
+  return (data ?? []) as QuizCase[];
+}
+
+export async function createQuizCase(
+  moduleId: string,
+  data: Partial<Pick<QuizCase, "title" | "vignette" | "order_index">>
+): Promise<QuizCase> {
+  const { data: qcase, error } = await supabase
+    .from("quiz_cases")
+    .insert({
+      module_id: moduleId,
+      title: data.title ?? "Case study",
+      vignette: data.vignette ?? "",
+      order_index: data.order_index ?? 1,
+    })
+    .select()
+    .single();
+  if (error) handleError(error, "createQuizCase");
+  return qcase as QuizCase;
+}
+
+export async function updateQuizCase(
+  id: string,
+  data: Partial<Pick<QuizCase, "title" | "vignette" | "order_index">>
+): Promise<QuizCase> {
+  const { data: qcase, error } = await supabase
+    .from("quiz_cases")
+    .update({ ...data, updated_at: new Date().toISOString() })
+    .eq("id", id)
+    .select()
+    .single();
+  if (error) handleError(error, "updateQuizCase");
+  return qcase as QuizCase;
+}
+
+/** Delete a case; linked questions keep existing but their case_id nulls out. */
+export async function deleteQuizCase(id: string): Promise<void> {
+  const { error } = await supabase.from("quiz_cases").delete().eq("id", id);
+  if (error) handleError(error, "deleteQuizCase");
 }

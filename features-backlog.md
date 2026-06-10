@@ -112,3 +112,6 @@
 | 2 | AI Course Generator | Medium | High |
 | 3 | Post-Course Survey | Medium | Medium |
 | 4 | Stripe Payments | High | High |
+
+## Hardening follow-up (from PR #10 review)
+- Wrap multi-step curriculum writes (deleteDomain reassign+delete, batch reorders) in a Postgres RPC transaction once multi-admin concurrency becomes real. Currently retry-safe + optimistic-UI rollback; partial reorders self-heal on next drag.

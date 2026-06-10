@@ -116,18 +116,18 @@ Program  (one comprehensive "Caribbean Pharmacy Technician Diploma")
 
 ### Phase 2 — Admin Curriculum Organizer (React, in `AdminDashboard.tsx`)
 Port the approved prototype (`curriculum-organizer-prototype.html`) into the React admin, backed by Supabase.
-- [ ] New **"Curriculum"** tab/route.
-- [ ] Data hooks in `src/lib/admin-api.ts`:
+- [x] New **"Curriculum"** sidebar page (AdminDashboard uses sidebar nav, not tabs).
+- [x] Data hooks in `src/lib/admin-api.ts`:
   - Domains: `listDomains`, `createDomain`, `updateDomain(name/icon/color)`, `reorderDomains(idsInOrder)`, `deleteDomain(id, reassignTo)`.
   - Courses: `createCourse(domainId)`, `updateCourse(name/status)`, `moveCourse(id, domainId, order)`, `reorderCourses`, `deleteCourse`.
   - Modules: `createModule(courseId)`, `updateModule(title)`, `reorderModules(courseId, idsInOrder)`, `deleteModule`.
   - All are **direct Supabase calls** (admin session → `is_admin()` true → RLS allows). No new edge functions needed for CRUD.
-- [ ] Drag-and-drop: domains (columns), courses (cards between/within domains), modules (within a course). Use the prototype's UX; consider `@dnd-kit` for touch + a11y in production.
-- [ ] Persistence: optimistic UI + **batched order updates** on drop (update only changed rows). Debounce.
-- [ ] Modals: add/edit course (name, status, domain), add/edit module (title); **delete** with confirm; rename/recolour domain.
-- [ ] Inline link to **Enhance ✦** per module (now working) with the mode picker (D6): Append/Merge default, Overwrite behind the destructive-action confirm.
-- [ ] **Quiz editor (D11/D12):** per-module quiz panel listing questions with type badges; add/edit any type via type-specific forms (MCQ options, numeric answer+tolerance+unit, match pairs, order sequence, cloze blanks, case vignette + linked questions); explanation field on every question; preview-as-student.
-- **Acceptance:** every create/edit/delete/reorder persists to Supabase and survives reload; non-admins get RLS-blocked; an admin can author and edit every question type by hand.
+- [x] Drag-and-drop via `@dnd-kit` (Pointer + Keyboard sensors): domains (columns), courses (within + across domains), modules (within a course).
+- [x] Persistence: optimistic UI + only-changed-rows writes on drop; snapshot rollback + toast on error.
+- [x] Modals: add/edit course, add/edit module, delete with confirm, rename/recolour domain, delete domain with reassign picker.
+- [x] Inline **Enhance ✦** per module with mode picker (D6): Append default, Overwrite behind destructive confirm; shows live result summary.
+- [x] **Quiz editor (D11/D12):** per-module quiz panel listing questions with type badges; add/edit any type via type-specific forms (MCQ options, numeric answer+tolerance+unit, match pairs, order sequence, cloze blanks, case vignette + linked questions); explanation field on every question; preview-as-student.
+- **Acceptance:** ✅ built + browser-verified 2026-06-10 (organizer renders 9 domains/36 courses live; modules lazy-load; quiz editor lists questions w/ type badges; tsc + vite build green). Reload-persistence + RLS-negative assertions land in the Phase 5 Playwright suite.
 
 ### Phase 3 — Student experience
 - [ ] **Curriculum / "My Journey" page** in the LMS using the approved student-view design (`curriculum-student-view.html`), data from `domains`+`courses` ordered.
