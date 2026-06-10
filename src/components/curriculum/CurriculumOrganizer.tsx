@@ -41,6 +41,7 @@ import {
 } from "@dnd-kit/sortable";
 import { CSS } from "@dnd-kit/utilities";
 import {
+  BookOpen,
   ChevronRight,
   GripVertical,
   ListChecks,
@@ -232,7 +233,12 @@ interface ModuleDialogState {
 // Main component
 // ============================================================================
 
-export default function CurriculumOrganizer() {
+export default function CurriculumOrganizer({
+  onEditCourseContent,
+}: {
+  /** Jump to the Courses page with this course expanded for lesson editing. */
+  onEditCourseContent?: (courseId: string) => void;
+} = {}) {
   const { toast } = useToast();
 
   // ── Data state ─────────────────────────────────────────────────────────────
@@ -740,67 +746,80 @@ export default function CurriculumOrganizer() {
   const renderModuleRow = (module: Module, index: number) => (
     <Sortable key={module.id} id={modId(module.id)}>
       {({ attributes, listeners }) => (
-        <div className="group flex items-center gap-1.5 rounded-md border bg-slate-50/80 px-1.5 py-1.5 text-[12.5px]">
-          <button
-            type="button"
-            {...attributes}
-            {...listeners}
-            onPointerDown={(e) => {
-              e.stopPropagation();
-              listeners?.onPointerDown?.(e);
-            }}
-            className="cursor-grab touch-none text-slate-300 hover:text-slate-500 shrink-0"
-            aria-label={`Reorder module ${module.title}`}
-          >
-            <GripVertical className="h-3.5 w-3.5" />
-          </button>
-          <span className="w-4 text-center text-[10px] font-bold text-slate-400 shrink-0">{index + 1}</span>
-          <span className="flex-1 truncate font-medium text-slate-700" title={module.title}>
-            {module.title}
-          </span>
-          <span className="hidden shrink-0 text-[10px] text-slate-400 sm:inline">
-            {module.lessons_count ?? 0}L · {module.quiz_count ?? 0}Q
-          </span>
+        <div className="rounded-md border bg-slate-50/80 px-1.5 py-1.5 text-[13px]">
+          <div className="flex items-start gap-1.5">
+            <button
+              type="button"
+              {...attributes}
+              {...listeners}
+              onPointerDown={(e) => {
+                e.stopPropagation();
+                listeners?.onPointerDown?.(e);
+              }}
+              className="mt-0.5 cursor-grab touch-none text-slate-300 hover:text-slate-500 shrink-0"
+              aria-label={`Reorder module ${module.title}`}
+            >
+              <GripVertical className="h-3.5 w-3.5" />
+            </button>
+            <span className="mt-0.5 w-4 text-center text-[10px] font-bold text-slate-400 shrink-0">{index + 1}</span>
+            <span className="min-w-0 flex-1 break-words font-medium leading-snug text-slate-700">
+              {module.title}
+            </span>
+          </div>
           <div
-            className="flex shrink-0 items-center gap-0.5 opacity-0 transition-opacity group-hover:opacity-100 focus-within:opacity-100"
+            className="mt-1 flex items-center justify-between pl-7"
             onPointerDown={(e) => e.stopPropagation()}
           >
-            <Button
-              variant="ghost"
-              size="icon"
-              className="h-6 w-6 text-violet-600 hover:text-violet-700"
-              title="Enhance with AI"
-              onClick={() => setEnhanceTarget(module)}
-            >
-              <Sparkles className="h-3.5 w-3.5" />
-            </Button>
-            <Button
-              variant="ghost"
-              size="icon"
-              className="h-6 w-6 text-teal-700 hover:text-teal-800"
-              title="Edit quiz"
-              onClick={() => setQuizTarget(module)}
-            >
-              <ListChecks className="h-3.5 w-3.5" />
-            </Button>
-            <Button
-              variant="ghost"
-              size="icon"
-              className="h-6 w-6"
-              title="Rename module"
-              onClick={() => openRenameModule(module)}
-            >
-              <Pencil className="h-3 w-3" />
-            </Button>
-            <Button
-              variant="ghost"
-              size="icon"
-              className="h-6 w-6 text-red-500 hover:text-red-600"
-              title="Delete module"
-              onClick={() => setModuleToDelete(module)}
-            >
-              <Trash2 className="h-3 w-3" />
-            </Button>
+            <span className="text-[10.5px] text-slate-400">
+              {module.lessons_count ?? 0} lessons · {module.quiz_count ?? 0} quiz
+            </span>
+            <div className="flex items-center gap-0.5">
+              <Button
+                variant="ghost"
+                size="icon"
+                className="h-6 w-6 text-slate-600 hover:text-slate-800"
+                title="Edit lesson content"
+                onClick={() => onEditCourseContent?.(module.course_id)}
+              >
+                <BookOpen className="h-3.5 w-3.5" />
+              </Button>
+              <Button
+                variant="ghost"
+                size="icon"
+                className="h-6 w-6 text-violet-600 hover:text-violet-700"
+                title="Enhance with AI"
+                onClick={() => setEnhanceTarget(module)}
+              >
+                <Sparkles className="h-3.5 w-3.5" />
+              </Button>
+              <Button
+                variant="ghost"
+                size="icon"
+                className="h-6 w-6 text-teal-700 hover:text-teal-800"
+                title="Edit quiz"
+                onClick={() => setQuizTarget(module)}
+              >
+                <ListChecks className="h-3.5 w-3.5" />
+              </Button>
+              <Button
+                variant="ghost"
+                size="icon"
+                className="h-6 w-6"
+                title="Rename module"
+                onClick={() => openRenameModule(module)}
+              >
+                <Pencil className="h-3 w-3" />
+              </Button>
+              <Button
+                variant="ghost"
+                size="icon"
+                className="h-6 w-6 text-red-500 hover:text-red-600"
+                title="Delete module"
+                onClick={() => setModuleToDelete(module)}
+              >
+                <Trash2 className="h-3 w-3" />
+              </Button>
+            </div>
           </div>
         </div>
       )}
@@ -855,7 +874,7 @@ export default function CurriculumOrganizer() {
                 {index + 1}
               </span>
               <div className="min-w-0 flex-1">
-                <p className="truncate text-[13px] font-semibold text-slate-800" title={course.title}>
+                <p className="break-words leading-snug text-[13px] font-semibold text-slate-800">
                   {course.title}
                 </p>
                 <div className="mt-1 flex flex-wrap items-center gap-1.5">
@@ -937,7 +956,7 @@ export default function CurriculumOrganizer() {
             {domain ? domain.icon ?? "🗂️" : "📥"}
           </div>
           <div className="min-w-0 flex-1">
-            <p className="truncate text-[13.5px] font-bold text-slate-800">
+            <p className="break-words leading-snug text-[13.5px] font-bold text-slate-800">
               {domain ? `${seq}. ${domain.name}` : "Unsorted"}
             </p>
             <p className="text-[11px] text-slate-400">

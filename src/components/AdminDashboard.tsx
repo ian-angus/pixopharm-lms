@@ -59,6 +59,7 @@ import type { AdminProfile } from "@/hooks/useAdmin";
 import {
   fetchCourses,
   fetchCourse,
+  fetchDomains,
   createCourse,
   updateCourse,
   deleteCourse,
@@ -80,6 +81,7 @@ import {
 } from "@/lib/admin-api";
 import type {
   Course,
+  Domain,
   Module,
   Lesson,
   QuizQuestion,
@@ -368,6 +370,7 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
 
   // ── Data State ───────────────────────────────────────────────────────────
   const [courses, setCourses] = useState<Course[]>([]);
+  const [domains, setDomains] = useState<Domain[]>([]);
   const [coursesLoading, setCoursesLoading] = useState(true);
   const [students, setStudents] = useState<StudentProfile[]>([]);
   const [studentsLoading, setStudentsLoading] = useState(true);
@@ -483,8 +486,9 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
   const loadCourses = useCallback(async () => {
     setCoursesLoading(true);
     try {
-      const data = await fetchCourses();
+      const [data, doms] = await Promise.all([fetchCourses(), fetchDomains()]);
       setCourses(data);
+      setDomains(doms);
     } catch (err) {
       toast({ title: "Error loading courses", description: String(err), variant: "destructive" });
     } finally {
@@ -1008,38 +1012,30 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
     return { totalCourses, totalStudents, activeEnrollments, avgCompletion };
   }, [courses, students, analytics]);
 
-  // ── Course groups (filtered + grouped by skill level) ───────────────────
-  const COURSE_LEVELS = ["Beginner", "Intermediate", "Advanced"] as const;
-  type CourseLevel = (typeof COURSE_LEVELS)[number] | "Other";
-  const LEVEL_COLORS: Record<string, string> = {
-    Beginner: "hsl(174,62%,32%)",
-    Intermediate: "hsl(199,80%,55%)",
-    Advanced: "hsl(262,60%,60%)",
-    Other: "hsl(40,85%,55%)",
-  };
-
+  // ── Course groups (filtered + grouped by curriculum domain) ─────────────
   const courseGroups = useMemo(() => {
     const q = courseSearch.toLowerCase().trim();
+    const domainName = (c: Course) => domains.find((d) => d.id === c.domain_id)?.name ?? "";
     const filtered = q
       ? courses.filter(
           (c) =>
             c.title.toLowerCase().includes(q) ||
-            (c.skill_level ?? "").toLowerCase().includes(q)
+            domainName(c).toLowerCase().includes(q)
         )
       : courses;
-    const groups: { level: CourseLevel; color: string; courses: typeof filtered }[] =
-      COURSE_LEVELS.map((level) => ({
-        level,
-        color: LEVEL_COLORS[level],
-        courses: filtered.filter((c) => c.skill_level === level),
+    const groups: { level: string; color: string; courses: typeof filtered }[] = [...domains]
+      .sort((a, b) => a.order_index - b.order_index)
+      .map((d) => ({
+        level: `${d.icon ?? ""} ${d.name}`.trim(),
+        color: d.color ?? "hsl(174,62%,32%)",
+        courses: filtered
+          .filter((c) => c.domain_id === d.id)
+          .sort((a, b) => (a.order ?? 0) - (b.order ?? 0)),
       }));
-    const other = filtered.filter(
-      (c) => !(COURSE_LEVELS as readonly string[]).includes(c.skill_level ?? "")
-    );
-    if (other.length > 0) groups.push({ level: "Other", color: LEVEL_COLORS["Other"], courses: other });
+    const unsorted = filtered.filter((c) => !c.domain_id);
+    if (unsorted.length > 0) groups.push({ level: "Unsorted", color: "hsl(40,85%,55%)", courses: unsorted });
     return { groups, total: filtered.length, query: q };
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [courses, courseSearch]);
+  }, [courses, domains, courseSearch]);
 
   const toggleGroup = (level: string) => {
     setCollapsedGroups((prev) => {
@@ -1317,7 +1313,14 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
           {/* ════════════════════════════════════════════════════════════════ */}
           {/* A2. CURRICULUM ORGANIZER                                       */}
           {/* ════════════════════════════════════════════════════════════════ */}
-          {activePage === "curriculum" && <CurriculumOrganizer />}
+          {activePage === "curriculum" && (
+            <CurriculumOrganizer
+              onEditCourseContent={(courseId) => {
+                setActivePage("courses");
+                setExpandedCourseId(courseId);
+              }}
+            />
+          )}
 
           {/* ════════════════════════════════════════════════════════════════ */}
           {/* B. COURSES MANAGEMENT                                          */}
@@ -1412,7 +1415,7 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
                             {statusBadge(course.status)}
                           </div>
                           <p className="text-xs text-muted-foreground mt-0.5">
-                            {course.skill_level} &middot; {course.duration_weeks} weeks &middot; {course.modules_count ?? 0} modules &middot; {course.enrolled_count ?? 0} enrolled
+                            {course.duration_weeks} weeks &middot; {course.modules_count ?? 0} modules &middot; {course.enrolled_count ?? 0} enrolled
                           </p>
                         </div>
                         <div className="flex items-center gap-1 shrink-0">
