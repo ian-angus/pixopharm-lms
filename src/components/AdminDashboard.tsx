@@ -95,6 +95,9 @@ import type {
 // ── CoursePlayer for Preview ─────────────────────────────────────────────────
 import CoursePlayer from "@/components/CoursePlayer";
 
+// ── Curriculum Organizer (domain board with drag-and-drop) ───────────────────
+import CurriculumOrganizer from "@/components/curriculum/CurriculumOrganizer";
+
 // ── TipTap WYSIWYG Editor (replaces block-by-block ContentBlockEditor) ───────
 import TipTapLessonEditor from "@/components/TipTapLessonEditor";
 import type { ContentBlock } from "@/components/TipTapLessonEditor";
@@ -116,11 +119,12 @@ interface AdminDashboardProps {
   onExit: () => void;
 }
 
-type AdminPage = "dashboard" | "courses" | "ai-generator" | "students" | "analytics" | "settings" | "help";
+type AdminPage = "dashboard" | "courses" | "curriculum" | "ai-generator" | "students" | "analytics" | "settings" | "help";
 
 const PAGE_TITLES: Record<AdminPage, string> = {
   dashboard: "Dashboard",
   courses: "Courses",
+  curriculum: "Curriculum",
   "ai-generator": "AI Generator",
   students: "Students",
   analytics: "Analytics",
@@ -146,6 +150,15 @@ function IconCourses() {
   return (
     <svg viewBox="0 0 24 24" className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
       <path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2zM22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z" />
+    </svg>
+  );
+}
+function IconCurriculum() {
+  return (
+    <svg viewBox="0 0 24 24" className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <rect x="3" y="3" width="5" height="18" rx="1" />
+      <rect x="10" y="3" width="5" height="13" rx="1" />
+      <rect x="17" y="3" width="5" height="9" rx="1" />
     </svg>
   );
 }
@@ -1115,6 +1128,7 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
           {([
             { id: "dashboard" as AdminPage, label: "Dashboard", icon: <IconDashboard /> },
             { id: "courses" as AdminPage, label: "Courses", icon: <IconCourses /> },
+            { id: "curriculum" as AdminPage, label: "Curriculum", icon: <IconCurriculum /> },
             { id: "ai-generator" as AdminPage, label: "AI Generator ✦", icon: <IconAI /> },
             { id: "students" as AdminPage, label: "Students", icon: <IconStudents /> },
             { id: "analytics" as AdminPage, label: "Analytics", icon: <IconAnalytics /> },
@@ -1299,6 +1313,11 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
               </div>
             </div>
           )}
+
+          {/* ════════════════════════════════════════════════════════════════ */}
+          {/* A2. CURRICULUM ORGANIZER                                       */}
+          {/* ════════════════════════════════════════════════════════════════ */}
+          {activePage === "curriculum" && <CurriculumOrganizer />}
 
           {/* ════════════════════════════════════════════════════════════════ */}
           {/* B. COURSES MANAGEMENT                                          */}

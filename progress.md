@@ -2,6 +2,27 @@
 
 ---
 
+## 2026-06-10: Phase 2 COMPLETE — Admin Curriculum Organizer (browser-verified)
+
+### Branch: `feat/curriculum-phase-2` (PR #9 merged; phases 0/1/0b on main)
+
+**Data layer (`src/lib/admin-api.ts` +262 lines):** Domain CRUD, deleteDomain(reassignTo), reorderDomains, moveCourse, reorderCourses, reorderModules, quiz_cases CRUD, enhanceModule(mode) — all direct Supabase calls under is_admin RLS. @dnd-kit added.
+
+**UI (`src/components/curriculum/`):**
+- `CurriculumOrganizer.tsx` (1326) — domain-column board + virtual Unsorted column; 3-level dnd (Pointer+Keyboard sensors, prefixed ids dom:/crs:/mod:, custom collision filter); optimistic UI, only-changed-rows persistence, snapshot rollback + toast on error; lazy module loading via fetchCourse on expand; domain create/rename/recolour/delete-with-reassign; course create/edit/delete + cross-domain moves; module add/rename/delete/reorder.
+- `QuizEditor.tsx` (1078) — per-module Sheet: question list w/ type+difficulty badges; type-specific forms for all 7 types producing exact CoursePlayer questionData shapes; case-vignette CRUD + case_id assignment; validation before save.
+- `EnhanceDialog.tsx` (208) — Append (default) vs Overwrite mode picker; Overwrite behind destructive confirm (D6); ~2min spinner; result summary (types, case, counts).
+- `ConfirmDialog.tsx` (80).
+- AdminDashboard.tsx +18 lines: "Curriculum" sidebar nav item (dashboard uses sidebar, not tabs).
+
+**Verified in browser (Playwright MCP, maintenance admin, localhost:5199):** organizer renders 9 domains/36 courses/1 unsorted with live Supabase data, prototype colors/icons, status pills, per-domain numbering; course expand lazy-loads modules with Enhance ✦ + Edit quiz buttons; quiz editor opens with 10 questions + badges + case section. tsc + pnpm build green.
+
+**Note:** Phase 2 UI was built by 2 subagents (first hit session limit after QuizEditor/EnhanceDialog/ConfirmDialog; second finished organizer + wiring).
+
+**Next:** PR #10 → Coderabbit → Phase 3 (student journey page, catalog by domain, numeric renderer + case vignette panel in player, retire skill_level UI).
+
+---
+
 ## 2026-06-09 (cont.): Phase 0b COMPLETE — AI interactive quiz generation (enhance-module v10)
 
 ### Branch: `feat/curriculum-phase-0b` (PRs #6/#7/#8 all MERGED; phases 0+1 on main)
