@@ -2,6 +2,25 @@
 
 ---
 
+## 2026-06-09 (cont.): Phase 0b COMPLETE — AI interactive quiz generation (enhance-module v10)
+
+### Branch: `feat/curriculum-phase-0b` (PRs #6/#7/#8 all MERGED; phases 0+1 on main)
+
+**enhance-module v10 (deployed + live-verified, opus-4-8):**
+- Generates 6–8 questions per module spanning the 7 player-supported types (multiple_choice, multiple_select, ordering, matching, fill_in_blank, true_false, scenario) — every question with an explanation.
+- Domain-aware type mix (Calculations→worked problems, Law→matching/ordering, Clinical→case vignette, Foundations→cloze).
+- Case-based: inserts a `quiz_cases` vignette row + 2–3 linked `scenario` questions via `case_id`.
+- Server-side validation of every question against the exact shapes CoursePlayer scores with (`correct_indices`, `correct_order`, `pairs`, `acceptable_answers`, boolean `correct_answer`); one auto-retry with rejection feedback; 502 if still under 5 valid / 3 types.
+- **D6 non-destructive default:** `mode:"append"` (skips lessons that already have content; questions added alongside existing, order_index continues). `mode:"overwrite"` = legacy destructive path (will sit behind confirm dialog in Phase 2 UI).
+- **Live test (draft Hypertension module, append):** 9 new Qs, ALL 7 types, 0 rejected, case+3 linked Qs, 2 pre-existing Qs and all 3 lesson contents preserved. Total now 11 Qs, 11 with explanations.
+- `generate-course` v22: opus fallback bumped 4-6→4-8 (it never generated quizzes; enhance is the quiz pipeline).
+
+**Key discovery:** CoursePlayer ALREADY implements all 7 interactive types with per-type state + instant feedback — Phase 3 quiz work shrinks to: numeric renderer, case-vignette panel, results persistence check. 'numeric' EXCLUDED from generation until then (one-line ALLOWED_TYPES flip in Phase 3).
+
+**Next:** PR for Phase 0b → Phase 2 (Admin Curriculum Organizer + quiz editor).
+
+---
+
 ## 2026-06-09: Curriculum Reorg — Phase 0 COMPLETE (edge-function hardening) — PR pending
 
 ### Branch: `feat/curriculum-phase-0`

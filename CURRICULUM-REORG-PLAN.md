@@ -79,14 +79,14 @@ Program  (one comprehensive "Caribbean Pharmacy Technician Diploma")
 - **Acceptance:** ✅ met 2026-06-09 — all three functions 401 unauthenticated; generate-course end-to-end 200 as admin; secret verified + stored.
 
 ### Phase 0b — AI interactive quiz generation *(after Phase 1's schema lands)*
-- [ ] Extend the `enhance-module` prompt + response schema: per module emit a **mix of question types** — MCQ, numeric/calculation (answer + tolerance + unit), drag-and-drop match/order (pairs or correct sequence), case-based (shared patient vignette feeding 2–3 linked questions), fill-in-the-blank/cloze — **every question with a 1–2 sentence explanation**.
-- [ ] Type mix heuristic by domain: Calculations & Compounding → numeric-heavy; Law/Scheduling → match/order; Clinical Therapeutics + Capstone → case-based; Terminology → cloze; default → MCQ + one interactive.
-- [ ] Validate the model output against the new schema server-side; reject/retry malformed payloads so bad JSON never reaches the DB.
-- [ ] Apply the same generation upgrade to `generate-course`.
-- [ ] **Upgrade the model to `claude-opus-4-8` (D7)** — done here because the prompt/schema is rewritten in this phase anyway; verify output quality in the same pass.
-- [ ] **Non-destructive enhance mode (D6):** enhance offers **Append/Merge** (default — keeps existing lessons + quiz, adds new content) and **Overwrite** (current behaviour, gated behind the destructive-action confirm). Merge logic: new lessons appended after existing ones; new quiz questions added alongside existing ones.
-- [ ] Keep backward compatibility: plain-MCQ modules continue to work untouched.
-- **Acceptance:** enhancing a draft module yields ≥5 questions spanning ≥3 types, each with an explanation, all rows valid against the schema; append mode verifiably preserves pre-existing lessons and questions.
+- [x] Extend the `enhance-module` prompt + response schema: per module emit a **mix of question types** — MCQ, numeric/calculation (answer + tolerance + unit), drag-and-drop match/order (pairs or correct sequence), case-based (shared patient vignette feeding 2–3 linked questions), fill-in-the-blank/cloze — **every question with a 1–2 sentence explanation**.
+- [x] Type mix heuristic by domain: Calculations & Compounding → numeric-heavy; Law/Scheduling → match/order; Clinical Therapeutics + Capstone → case-based; Terminology → cloze; default → MCQ + one interactive.
+- [x] Validate the model output against the new schema server-side; reject/retry malformed payloads so bad JSON never reaches the DB.
+- [x] `generate-course`: opus fallback bumped to 4-8 (it has never generated quiz questions — enhance-module is the quiz pipeline).
+- [x] **Upgrade the model to `claude-opus-4-8` (D7)** — done here because the prompt/schema is rewritten in this phase anyway; verify output quality in the same pass.
+- [x] **Non-destructive enhance mode (D6):** enhance offers **Append/Merge** (default — keeps existing lessons + quiz, adds new content) and **Overwrite** (current behaviour, gated behind the destructive-action confirm). Merge logic: new lessons appended after existing ones; new quiz questions added alongside existing ones.
+- [x] Keep backward compatibility: plain-MCQ modules continue to work untouched (append mode never deletes).
+- **Acceptance:** ✅ EXCEEDED 2026-06-09 — live test on draft Hypertension module (append mode): 9 new questions across ALL 7 types, 0 rejected, case vignette + 3 linked scenario Qs, 2 pre-existing questions + all 3 lesson contents preserved, every question explained. Deployed v10, opus-4-8. NOTE: 'numeric' type generation deferred to Phase 3 (live player can't render it yet — one-line ALLOWED_TYPES flip then).
 
 ### Phase 1 — Database & migration  *(write as a Supabase migration; back up first via `scripts/db-export.ts`)*
 - [x] `create table domains (id uuid pk default gen_random_uuid(), name text not null, icon text, color text, order_index int not null default 0, created_at timestamptz default now(), updated_at timestamptz default now())`.
