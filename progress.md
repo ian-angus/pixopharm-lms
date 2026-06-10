@@ -38,6 +38,12 @@
 
 **HARD STOP pending:** apply migration to production (owner approval required).
 
+**RESOLVED (later same day):** Owner approved "wait for Coderabbit, then apply." Coderabbit reviewed PR #7 (manually triggered — it auto-skips PRs not based on main) with ZERO findings. **Migration APPLIED + VERIFIED 2026-06-09:** 9 domains (all in use), 35/36 courses assigned (1 unsorted = D4 calc draft, intentional), 898 quiz questions intact, 0 orphaned questions/modules, quiz_cases live, 'numeric' type accepted, anon RLS verified (read 9 / write 401). Coderabbit's 8 comments on PR #6 all fixed + replied (commit bb0505e); functions redeployed with caller_id-only logging (enhance v9, generate v21, analyze v11). Note: OpenAI Codex bot is NOT installed on this repo — Coderabbit is the only review bot.
+
+**Phase 1 COMPLETE** except D4 cleanup (hard stop — owner approval needed for deletions/merge).
+
+**Next:** merge PRs #6/#7 → Phase 0b (AI interactive quiz generation: opus-4-8, all types + explanations, non-destructive append/merge mode).
+
 ---
 
 ## 2026-06-08 (late): Enhance REALLY fixed (v7, verified) + Curriculum Reorg plan
