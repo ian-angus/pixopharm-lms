@@ -26,7 +26,23 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { Label } from "@/components/ui/label";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { useToast } from "@/hooks/use-toast";
-import { enhanceModule, type EnhanceModuleResult, type Module } from "@/lib/admin-api";
+import {
+  enhanceModule,
+  type EnhanceModuleResult,
+  type Module,
+  type QuestionType,
+} from "@/lib/admin-api";
+
+const TYPE_CHOICES: { value: QuestionType; label: string }[] = [
+  { value: "multiple_choice", label: "Multiple Choice" },
+  { value: "true_false", label: "True / False" },
+  { value: "multiple_select", label: "Select All" },
+  { value: "ordering", label: "Ordering" },
+  { value: "matching", label: "Matching" },
+  { value: "fill_in_blank", label: "Fill in the Blank" },
+  { value: "numeric", label: "Calculation" },
+  { value: "scenario", label: "Case / Scenario" },
+];
 
 interface EnhanceDialogProps {
   module: Module | null;
@@ -42,12 +58,20 @@ export default function EnhanceDialog({ module, open, onOpenChange, onEnhanced }
   const [overwriteConfirmed, setOverwriteConfirmed] = useState(false);
   const [running, setRunning] = useState(false);
   const [result, setResult] = useState<EnhanceModuleResult | null>(null);
+  // Question-type control: default = domain-aware mix; custom = explicit subset.
+  const [customTypes, setCustomTypes] = useState(false);
+  const [selectedTypes, setSelectedTypes] = useState<QuestionType[]>([]);
 
   const reset = () => {
     setMode("append");
     setOverwriteConfirmed(false);
     setResult(null);
+    setCustomTypes(false);
+    setSelectedTypes([]);
   };
+
+  const toggleType = (t: QuestionType) =>
+    setSelectedTypes((prev) => (prev.includes(t) ? prev.filter((x) => x !== t) : [...prev, t]));
 
   const handleOpenChange = (o: boolean) => {
     if (running) return; // don't allow closing mid-run
@@ -55,14 +79,17 @@ export default function EnhanceDialog({ module, open, onOpenChange, onEnhanced }
     onOpenChange(o);
   };
 
-  const canRun = !running && (mode === "append" || overwriteConfirmed);
+  const canRun =
+    !running &&
+    (mode === "append" || overwriteConfirmed) &&
+    (!customTypes || selectedTypes.length > 0);
 
   const handleRun = async () => {
     if (!module || !canRun) return;
     setRunning(true);
     setResult(null);
     try {
-      const res = await enhanceModule(module.id, mode);
+      const res = await enhanceModule(module.id, mode, customTypes ? selectedTypes : undefined);
       setResult(res);
       onEnhanced?.(module.id, res);
       toast({
@@ -126,6 +153,41 @@ export default function EnhanceDialog({ module, open, onOpenChange, onEnhanced }
                 </span>
               </label>
             </RadioGroup>
+
+            {/* Question-type control (owner request: pick which quiz types get generated) */}
+            <div className="space-y-2 rounded-lg border p-3">
+              <div className="flex items-start gap-2">
+                <Checkbox
+                  id="custom-types"
+                  checked={customTypes}
+                  onCheckedChange={(c) => setCustomTypes(c === true)}
+                  disabled={running}
+                  className="mt-0.5"
+                />
+                <Label htmlFor="custom-types" className="text-xs font-normal leading-relaxed cursor-pointer">
+                  <span className="font-semibold">Choose question types myself.</span>{" "}
+                  Off = the recommended mix for this course's domain (e.g. calculations get numeric
+                  problems, clinical courses get a patient case).
+                </Label>
+              </div>
+              {customTypes && (
+                <div className="grid grid-cols-2 gap-1.5 pl-6 pt-1">
+                  {TYPE_CHOICES.map((t) => (
+                    <label key={t.value} className="flex items-center gap-2 text-xs cursor-pointer">
+                      <Checkbox
+                        checked={selectedTypes.includes(t.value)}
+                        onCheckedChange={() => toggleType(t.value)}
+                        disabled={running}
+                      />
+                      {t.label}
+                    </label>
+                  ))}
+                  {selectedTypes.length === 0 && (
+                    <p className="col-span-2 text-[11px] text-amber-700">Select at least one type.</p>
+                  )}
+                </div>
+              )}
+            </div>
 
             {mode === "overwrite" && (
               <div className="flex items-start gap-2 rounded-lg border border-red-200 bg-red-50 p-3">

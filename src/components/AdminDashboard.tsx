@@ -1323,6 +1323,7 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
                 setActivePage("courses");
                 setExpandedCourseId(courseId);
               }}
+              onPreviewCourse={(slug) => setPreviewCourseId(slug)}
             />
           )}
 

@@ -190,6 +190,15 @@ Deno.serve(async (req: Request) => {
     const mode: "append" | "overwrite" = body.mode === "overwrite" ? "overwrite" : "append";
     if (!module_id) return json({ error: "module_id is required" }, 400);
 
+    // Optional admin restriction: only generate these question types.
+    // Omitted/empty = the domain-aware default mix.
+    const requestedTypes: QType[] | null = Array.isArray(body.types)
+      ? (body.types as unknown[]).filter((t): t is QType => ALLOWED_TYPES.includes(t as QType))
+      : null;
+    if (Array.isArray(body.types) && (!requestedTypes || requestedTypes.length === 0)) {
+      return json({ error: `types must be a non-empty subset of: ${ALLOWED_TYPES.join(", ")}` }, 400);
+    }
+
     // ── Fetch module + course + domain context from DB ────────────────────────
     const { data: mod, error: modErr } = await sb
       .from("modules")
@@ -249,8 +258,9 @@ LESSON CONTENT BLOCKS — use ALL these block types across the lessons:
   {"type":"key-term","term":"...","definition":"Precise 1–2 sentence definition with Caribbean clinical context and an example."}
   {"type":"video-placeholder","title":"...","duration":"X min","description":"Specific Caribbean pharmacy scenario this video demonstrates."}
 
-QUIZ — produce 6–8 questions spanning AT LEAST 4 different question_type values.
-${typeMixForDomain(domainName)}
+QUIZ — produce 6–8 questions ${requestedTypes
+      ? `using ONLY these question_type values: ${requestedTypes.join(", ")}. Spread the questions across ${requestedTypes.length > 1 ? "all of them" : "it"}.`
+      : `spanning AT LEAST 4 different question_type values.\n${typeMixForDomain(domainName)}`}
 Every question MUST have an "explanation" (2–3 sentences citing specific Caribbean regulation or clinical evidence) — it is shown to the student immediately after they answer.
 
 QUESTION TYPE SCHEMAS (follow EXACTLY — these are machine-validated):
@@ -278,23 +288,30 @@ Return ONLY valid JSON:
     "questions": [ ...2-3 "scenario" questions linked to the vignette... ]
   }
 }
-The "case" object is OPTIONAL — include it when the domain emphasis calls for case-based assessment, otherwise omit it.`;
+${requestedTypes && !requestedTypes.includes("scenario")
+      ? 'Do NOT include the "case" object — scenario questions were not requested.'
+      : 'The "case" object is OPTIONAL — include it when the domain emphasis calls for case-based assessment, otherwise omit it.'}`;
 
     // ── Generate with validation + one retry ──────────────────────────────────
-    let result = (await callOpus(basePrompt, 8000)).result;
-    let { valid, rejected } = collectQuestions(result);
+    // With an admin type restriction the variety floor adapts to what was asked.
+    const minTypes = requestedTypes ? Math.min(3, requestedTypes.length) : 3;
+    const passes = (v: { standalone: GenQuestion[]; caseQs: GenQuestion[] }) =>
+      v.standalone.length + v.caseQs.length >= 5 && distinctTypes(v) >= minTypes;
 
-    if (valid.standalone.length + valid.caseQs.length < 5 || distinctTypes(valid) < 3) {
+    let result = (await callOpus(basePrompt, 8000)).result;
+    let { valid, rejected } = collectQuestions(result, requestedTypes);
+
+    if (!passes(valid)) {
       const feedback = rejected.map((r) => `- ${r.reason}`).join("\n") || "- too few valid questions or too few distinct types";
       console.log(`enhance-module: retrying generation; first pass had ${valid.standalone.length + valid.caseQs.length} valid questions. Rejections:\n${feedback}`);
       const retryPrompt = `${basePrompt}
 
 PREVIOUS ATTEMPT FAILED MACHINE VALIDATION:
 ${feedback}
-Regenerate the COMPLETE JSON, fixing these issues. Minimum 5 valid questions across 3+ types.`;
+Regenerate the COMPLETE JSON, fixing these issues. Minimum 5 valid questions across ${minTypes}+ types.`;
       result = (await callOpus(retryPrompt, 8000)).result;
-      ({ valid, rejected } = collectQuestions(result));
-      if (valid.standalone.length + valid.caseQs.length < 5 || distinctTypes(valid) < 3) {
+      ({ valid, rejected } = collectQuestions(result, requestedTypes));
+      if (!passes(valid)) {
         return json({
           error: "AI output failed validation after retry",
           rejections: rejected.map((r) => r.reason).slice(0, 10),
@@ -379,7 +396,7 @@ Regenerate the COMPLETE JSON, fixing these issues. Minimum 5 valid questions acr
   }
 });
 
-function collectQuestions(result: Record<string, unknown>) {
+function collectQuestions(result: Record<string, unknown>, requestedTypes: QType[] | null = null) {
   const standaloneRaw = Array.isArray(result.quiz_questions) ? result.quiz_questions as GenQuestion[] : [];
   const caseObj = (result.case ?? null) as { title?: string; vignette?: string; questions?: GenQuestion[] } | null;
   const caseRaw = Array.isArray(caseObj?.questions) ? caseObj!.questions! : [];
@@ -393,11 +410,19 @@ function collectQuestions(result: Record<string, unknown>) {
   const rejected: { reason: string }[] = [];
 
   for (const q of standaloneRaw) {
+    if (requestedTypes && !requestedTypes.includes(q.question_type as QType)) {
+      rejected.push({ reason: `standalone "${(q.question ?? "?").slice(0, 50)}": type "${q.question_type}" was not requested` });
+      continue;
+    }
     const err = validateQuestion(q);
     if (err) rejected.push({ reason: `standalone "${(q.question ?? "?").slice(0, 50)}": ${err}` });
     else valid.standalone.push(q);
   }
   for (const q of caseRaw) {
+    if (requestedTypes && !requestedTypes.includes("scenario")) {
+      rejected.push({ reason: `case "${(q.question ?? "?").slice(0, 50)}": scenario type was not requested` });
+      continue;
+    }
     if (q.question_type !== "scenario") q.question_type = "scenario";
     const err = validateQuestion(q);
     if (err) rejected.push({ reason: `case "${(q.question ?? "?").slice(0, 50)}": ${err}` });

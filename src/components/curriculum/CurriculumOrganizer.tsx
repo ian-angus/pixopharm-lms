@@ -43,6 +43,7 @@ import { CSS } from "@dnd-kit/utilities";
 import {
   BookOpen,
   ChevronRight,
+  Eye,
   GripVertical,
   ListChecks,
   Loader2,
@@ -235,9 +236,12 @@ interface ModuleDialogState {
 
 export default function CurriculumOrganizer({
   onEditCourseContent,
+  onPreviewCourse,
 }: {
   /** Jump to the Courses page with this course expanded for lesson editing. */
   onEditCourseContent?: (courseId: string) => void;
+  /** Open the student-preview CoursePlayer for this course slug. */
+  onPreviewCourse?: (slug: string) => void;
 } = {}) {
   const { toast } = useToast();
 
@@ -897,6 +901,11 @@ export default function CurriculumOrganizer({
                     <DropdownMenuItem onClick={() => openEditCourse(course)}>
                       <Pencil className="mr-2 h-3.5 w-3.5" /> Edit title & status
                     </DropdownMenuItem>
+                    {onPreviewCourse && (
+                      <DropdownMenuItem onClick={() => onPreviewCourse(course.slug)}>
+                        <Eye className="mr-2 h-3.5 w-3.5" /> Preview as student
+                      </DropdownMenuItem>
+                    )}
                     <DropdownMenuSeparator />
                     <DropdownMenuItem
                       className="text-red-600 focus:text-red-600"

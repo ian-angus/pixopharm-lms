@@ -1000,13 +1000,16 @@ export interface EnhanceModuleResult {
  * mode "append" (default, non-destructive): fills only EMPTY lessons and adds
  * questions alongside existing ones. mode "overwrite" replaces lesson content
  * and deletes + regenerates the quiz — gate it behind a confirm dialog (D6).
+ * types: optional restriction — only generate these question types. Omitted =
+ * the domain-aware default mix.
  */
 export async function enhanceModule(
   moduleId: string,
-  mode: "append" | "overwrite" = "append"
+  mode: "append" | "overwrite" = "append",
+  types?: QuestionType[]
 ): Promise<EnhanceModuleResult> {
   const { data, error } = await supabase.functions.invoke("enhance-module", {
-    body: { module_id: moduleId, mode },
+    body: { module_id: moduleId, mode, ...(types?.length ? { types } : {}) },
   });
   if (data?.error) throw new Error(`enhance-module: ${data.error}`);
 
