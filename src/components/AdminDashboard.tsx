@@ -486,9 +486,11 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
   const loadCourses = useCallback(async () => {
     setCoursesLoading(true);
     try {
-      const [data, doms] = await Promise.all([fetchCourses(), fetchDomains()]);
-      setCourses(data);
-      setDomains(doms);
+      // Settle independently — a domain fetch failure must not block courses.
+      const [coursesRes, domainsRes] = await Promise.allSettled([fetchCourses(), fetchDomains()]);
+      if (coursesRes.status === "fulfilled") setCourses(coursesRes.value);
+      if (domainsRes.status === "fulfilled") setDomains(domainsRes.value);
+      if (coursesRes.status === "rejected") throw coursesRes.reason;
     } catch (err) {
       toast({ title: "Error loading courses", description: String(err), variant: "destructive" });
     } finally {
@@ -1032,7 +1034,9 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
           .filter((c) => c.domain_id === d.id)
           .sort((a, b) => (a.order ?? 0) - (b.order ?? 0)),
       }));
-    const unsorted = filtered.filter((c) => !c.domain_id);
+    // Unsorted = no domain OR a dangling domain_id (deleted domain)
+    const domainIds = new Set(domains.map((d) => d.id));
+    const unsorted = filtered.filter((c) => !c.domain_id || !domainIds.has(c.domain_id));
     if (unsorted.length > 0) groups.push({ level: "Unsorted", color: "hsl(40,85%,55%)", courses: unsorted });
     return { groups, total: filtered.length, query: q };
   }, [courses, domains, courseSearch]);

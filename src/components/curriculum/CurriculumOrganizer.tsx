@@ -774,15 +774,17 @@ export default function CurriculumOrganizer({
               {module.lessons_count ?? 0} lessons · {module.quiz_count ?? 0} quiz
             </span>
             <div className="flex items-center gap-0.5">
-              <Button
-                variant="ghost"
-                size="icon"
-                className="h-6 w-6 text-slate-600 hover:text-slate-800"
-                title="Edit lesson content"
-                onClick={() => onEditCourseContent?.(module.course_id)}
-              >
-                <BookOpen className="h-3.5 w-3.5" />
-              </Button>
+              {onEditCourseContent && (
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  className="h-6 w-6 text-slate-600 hover:text-slate-800"
+                  title="Edit lesson content"
+                  onClick={() => onEditCourseContent(module.course_id)}
+                >
+                  <BookOpen className="h-3.5 w-3.5" />
+                </Button>
+              )}
               <Button
                 variant="ghost"
                 size="icon"
