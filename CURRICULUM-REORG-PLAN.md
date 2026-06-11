@@ -151,6 +151,8 @@ Port the approved prototype (`curriculum-organizer-prototype.html`) into the Rea
 
 ## 5. Testing & verification plan ("ensure everything works")
 
+> ✅ **2026-06-10:** Playwright suite SHIPPED — 14 specs green in 1.0m (db-integrity, rls-negative, student-flow, quiz-types covering all 8 types w/ instant-feedback assertions, admin curriculum CRUD, admin quiz editor authoring all 8 types). @ai-tagged enhance/generate regressions exist but are skipped by default (cost real API money; run via `pnpm test:e2e:ai`). All ZZ E2E test entities verified cleaned from prod DB after the run.
+
 **Automated (Playwright, logged in as `maintenance@pixopharm.com`):**
 - Admin CRUD: create domain → add course → add module → enhance module → reorder all three levels → reload → assert order persisted (and assert in DB via Supabase query).
 - Delete paths: delete module/course/domain (with reassignment) → assert DB state.
