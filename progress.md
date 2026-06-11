@@ -2,6 +2,18 @@
 
 ---
 
+## 2026-06-11 (pm): BULK-ENHANCE ROLLOUT COMPLETE — interactive quizzes platform-wide
+
+**Owner-approved full rollout executed** (detached run, ~3.5h, enhance-module v15 append mode, fresh token per module due to ~5-min JWT expiry):
+- **90/90 enhanceable modules succeeded** (every module that has lessons), adding **856 interactive questions** in this run (+121 from the Pharmacy Calculations pilot + 11 type-picker test = ~988 total new).
+- **Final DB state:** 1,903 quiz questions (1,000 MCQ + 903 interactive: 290 scenario, 112 fill-in-blank, 111 true/false, 102 ordering, 102 multi-select, 100 matching, 86 numeric), **103 patient-case vignettes**, 105 modules with interactive quizzes, 0 orphans.
+- **Tokens (rollout run):** 222,585 in / 308,965 out (~531K); pilot+test add ~85K → ~616K total for the whole interactive-quiz content pass.
+- **117 modules skipped — they have NO lesson rows** (pure skeletons; enhance needs lessons to anchor). Follow-up option: extend enhance-module to create lessons for empty modules, or run generate-course-style stub creation, then re-run the rollout script (/tmp/rollout.py pattern — it auto-targets modules without interactive questions).
+
+**Every published course now serves mixed interactive quizzes with instant feedback.**
+
+---
+
 ## 2026-06-11: CURRICULUM REORG COMPLETE — definition of done MET
 
 - **PR #15 merged** (Phase 5 e2e suite; 9 Coderabbit comments fixed incl. 2 critical — creds out of source via .env.local E2E_ADMIN_*, seeded-domain exclusion in cleanup; 1 declined w/ rationale). Suite green 14/14 ×3 runs.
