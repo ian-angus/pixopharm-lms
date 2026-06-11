@@ -667,9 +667,10 @@ export default function TipTapLessonEditor({ blocks, onChange }: TipTapLessonEdi
   if (!editor) return null;
 
   return (
-    <div className="border rounded-lg overflow-hidden">
-      {/* ── Toolbar ─────────────────────────────────────────────────────── */}
-      <div className="flex flex-wrap gap-0.5 items-center p-2 border-b bg-gray-50">
+    // No overflow-hidden on the wrapper — it would clip the sticky toolbar.
+    <div className="border rounded-lg">
+      {/* ── Toolbar (sticky: stays visible while scrolling long lessons) ── */}
+      <div className="sticky top-0 z-20 flex flex-wrap gap-0.5 items-center rounded-t-lg border-b bg-gray-50 p-2 shadow-sm">
         {/* Text formatting */}
         <ToolbarBtn
           title="Bold"
