@@ -23,7 +23,7 @@ pnpm lint         # lint check
 npx vercel --prod # deploy to production (ALWAYS use this, not git push)
 ```
 
-> **Warning:** Git auto-deploy to Vercel has silently failed before — always use `npx vercel --prod` and verify the bundle hash changed.
+> **Deploys:** This repo auto-deploys to production (academy.pixopharm.com) on every merge to main — the PR review + Vercel build check are the gate (owner confirmed 2026-06-10). The homepage repo does NOT auto-deploy: use `npx vercel --prod` from homepage/ and verify the bundle hash changed.
 
 ## Database State (as of 2026-06-09)
 - **36 courses** (27 sequenced diploma + 8 clinical/electives + 1 draft pending D4 merge), 234 modules, 415 lessons, 898 quiz questions
