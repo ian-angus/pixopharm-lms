@@ -140,10 +140,10 @@ Port the approved prototype (`curriculum-organizer-prototype.html`) into the Rea
 - **Acceptance:** ✅ built + browser-verified 2026-06-10 — Journey page renders approved design with live stats (8 stages/28 courses/206 modules/320 lessons); catalog grouped by domain, no skill tiers; numeric renderer + case-vignette panel added to player (all 8 types now); enhance-module v11 deployed generating numeric. Per-type scoring assertions land in Phase 5 Playwright.
 
 ### Phase 4 — Marketing site (`homepage/`)
-- [ ] `src/pages/Academy.tsx`: copy → "one comprehensive Caribbean Pharmacy Technician Diploma"; remove level language.
-- [ ] **Public syllabus page** (`/curriculum` or `/academy/syllabus`) = the journey diagram (SEO + conversion). Reuse the student-view design as a React page or static include.
-- [ ] Cross-link homepage → syllabus → LMS sign-up.
-- **Acceptance:** marketing reflects the new structure; syllabus page live and indexable.
+- [x] `src/pages/Academy.tsx`: repositioned around the one diploma; stale stats refreshed; 8-stage domain grid.
+- [x] **Public syllabus page** `/curriculum` — journey design from live Supabase data, SEO title/meta/prose, static fallback. DEPLOYED to pixopharm.com 2026-06-10 (bundle hash verified).
+- [x] Cross-links: Nav + Footer + Home Academy panel → /curriculum → academy.pixopharm.com CTAs.
+- **Acceptance:** ✅ met 2026-06-10 — /curriculum live on pixopharm.com with live data (smoke-tested); Academy repositioned. NOTE: academy.pixopharm.com (LMS) auto-deploys on merge to main — phases 0–3 + 0b are already live; owner approved keeping auto-deploy.
 
 ### Phase 5 — Test, deploy, verify (see §5)
 
