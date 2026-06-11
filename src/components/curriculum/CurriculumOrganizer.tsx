@@ -750,7 +750,7 @@ export default function CurriculumOrganizer({
   const renderModuleRow = (module: Module, index: number) => (
     <Sortable key={module.id} id={modId(module.id)}>
       {({ attributes, listeners }) => (
-        <div className="rounded-md border bg-slate-50/80 px-1.5 py-1.5 text-[13px]">
+        <div data-testid="module-row" className="rounded-md border bg-slate-50/80 px-1.5 py-1.5 text-[13px]">
           <div className="flex items-start gap-1.5">
             <button
               type="button"
