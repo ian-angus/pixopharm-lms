@@ -38,6 +38,7 @@ test.beforeAll(async () => {
 });
 
 test.afterAll(async () => {
+  if (!db) return; // beforeAll failed before the client existed
   try {
     await cleanupAllE2EEntities(db);
   } finally {
@@ -175,6 +176,10 @@ test("author all 8 question types, verify badges + DB shapes, delete one", async
     .eq("module_id", moduleId);
   expect(rows).toHaveLength(8);
   const byType = new Map((rows ?? []).map((r) => [r.question_type as string, r]));
+  const EXPECTED_TYPES = ["multiple_choice", "multiple_select", "ordering", "matching", "fill_in_blank", "true_false", "scenario", "numeric"];
+  for (const t of EXPECTED_TYPES) {
+    expect(byType.has(t), `DB must contain a ${t} question`).toBe(true);
+  }
 
   const mc = byType.get("multiple_choice")!;
   expect(mc.options).toHaveLength(4);

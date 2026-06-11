@@ -178,6 +178,12 @@ export async function seedQuizQuestion(db: SupabaseClient, moduleId: string, q: 
  * Deletes every ZZ-E2E-prefixed entity. Explicit child-first deletes so we do
  * not depend on FK cascade behaviour. Never touches unprefixed rows.
  */
+/** Throw on any Supabase error so cleanup/count can't silently no-op. */
+function must<T extends { error: { message: string } | null }>(res: T, ctx: string): T {
+  if (res.error) throw new Error(`${ctx}: ${res.error.message}`);
+  return res;
+}
+
 export async function cleanupAllE2EEntities(db: SupabaseClient): Promise<void> {
   // 1. ZZ E2E courses and their full tree
   const { data: courses } = await db.from("courses").select("id, slug").like("title", `${PREFIX}%`);
@@ -205,12 +211,14 @@ export async function cleanupAllE2EEntities(db: SupabaseClient): Promise<void> {
   }
 
   // 3. Stray ZZ E2E questions / cases / lessons created on real modules (defensive)
-  await db.from("quiz_questions").delete().like("question", `${PREFIX}%`);
-  await db.from("quiz_cases").delete().like("title", `${PREFIX}%`);
-  await db.from("lessons").delete().like("title", `${PREFIX}%`);
+  must(db.from("quiz_questions").delete().like("question", `${PREFIX}%`), "cleanup stray questions");
+  must(db.from("quiz_cases").delete().like("title", `${PREFIX}%`), "cleanup stray cases");
+  must(db.from("lessons").delete().like("title", `${PREFIX}%`), "cleanup stray lessons");
 
-  // 4. ZZ E2E domains — must never match the 9 seeded domains
-  await db.from("domains").delete().like("name", `${PREFIX}%`);
+  // 4. ZZ E2E domains — belt-and-braces: prefix match AND explicit exclusion
+  //    of the 9 seeded domain ids, so a mis-seeded name can never nuke real data.
+  must(await db.from("domains").delete().like("name", `${PREFIX}%`)
+    .not("id", "in", `(${SEEDED_DOMAIN_IDS.join(",")})`), "cleanup domains");
 
   // 5. Progress rows recorded against zz-e2e-* course slugs (own user only via
   //    RLS). course_progress has NO DELETE policy, so the delete is a no-op —

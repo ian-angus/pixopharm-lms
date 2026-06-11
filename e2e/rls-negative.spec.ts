@@ -26,6 +26,7 @@ test("anon INSERT into domains is rejected", async () => {
     .insert({ name: `ZZ E2E RLS Domain ${ts}`, order_index: 999 })
     .select();
   expect(error, "anon domain insert must fail").not.toBeNull();
+  expect(`${error?.code} ${error?.message}`).toMatch(/42501|row-level security|permission denied|401|403/i);
   expect(data ?? []).toHaveLength(0);
 });
 
@@ -48,6 +49,7 @@ test("anon INSERT into courses is rejected", async () => {
     })
     .select();
   expect(error, "anon course insert must fail").not.toBeNull();
+  expect(`${error?.code} ${error?.message}`).toMatch(/42501|row-level security|permission denied|401|403/i);
   expect(data ?? []).toHaveLength(0);
 });
 

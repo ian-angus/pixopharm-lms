@@ -29,6 +29,7 @@ test.beforeAll(async () => {
 });
 
 test.afterAll(async () => {
+  if (!db) return; // beforeAll failed before the client existed
   try {
     await cleanupAllE2EEntities(db);
   } finally {
@@ -87,19 +88,22 @@ test("admin can create, persist and delete domain → course → module", async 
 
   // ── Persisted (DB) ──────────────────────────────────────────────────────
   const { data: domainRow } = await db.from("domains").select("id, name").eq("name", DOMAIN_NAME).single();
+  expect(domainRow, "domain row must exist in DB").toBeTruthy();
   expect(domainRow?.name).toBe(DOMAIN_NAME);
   const { data: courseRow } = await db
     .from("courses")
     .select("id, title, domain_id")
     .eq("title", COURSE_TITLE)
     .single();
-  expect(courseRow?.domain_id).toBe(domainRow!.id);
+  expect(courseRow, "course row must exist in DB").toBeTruthy();
+  expect(courseRow?.domain_id).toBe(domainRow?.id);
   const { data: moduleRow } = await db
     .from("modules")
     .select("id, title, course_id")
     .eq("title", MODULE_TITLE)
     .single();
-  expect(moduleRow?.course_id).toBe(courseRow!.id);
+  expect(moduleRow, "module row must exist in DB").toBeTruthy();
+  expect(moduleRow?.course_id).toBe(courseRow?.id);
 
   // ── Delete module ───────────────────────────────────────────────────────
   const moduleRowLoc = cardAfter.locator('[data-testid="module-row"]').filter({ hasText: MODULE_TITLE }).first();

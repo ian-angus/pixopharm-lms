@@ -25,5 +25,11 @@ if (!SUPABASE_URL || !SUPABASE_ANON_KEY) {
 }
 
 // Admin test account (role=admin) used for UI sign-in and DB setup/cleanup.
-export const ADMIN_EMAIL = "maintenance@pixopharm.com";
-export const ADMIN_PASSWORD = "PxMaint2026!";
+// Set E2E_ADMIN_EMAIL / E2E_ADMIN_PASSWORD in the environment or .env.local
+// (gitignored) — never hardcode credentials in source control.
+export const ADMIN_EMAIL = process.env.E2E_ADMIN_EMAIL ?? env.E2E_ADMIN_EMAIL ?? "";
+export const ADMIN_PASSWORD = process.env.E2E_ADMIN_PASSWORD ?? env.E2E_ADMIN_PASSWORD ?? "";
+
+if (!ADMIN_EMAIL || !ADMIN_PASSWORD) {
+  throw new Error("Missing E2E_ADMIN_EMAIL / E2E_ADMIN_PASSWORD (set them in .env.local)");
+}

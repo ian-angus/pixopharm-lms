@@ -21,6 +21,7 @@ test.beforeAll(async () => {
 });
 
 test.afterAll(async () => {
+  if (!db) return; // beforeAll failed before the client existed
   try {
     await cleanupAllE2EEntities(db);
   } finally {
@@ -84,9 +85,11 @@ test("@ai generate-course creates course + modules + lessons in the DB", async (
   expect(data?.error, `generate-course returned error: ${data?.error}`).toBeFalsy();
 
   // Course saved (located via our title prefix / ai_job_id).
-  const { data: courses } = await db.from("courses").select("id, title, status").like("title", `${title}%`);
-  expect((courses ?? []).length).toBeGreaterThanOrEqual(1);
-  const courseId = courses![0].id;
+  const { data: courses } = await db.from("courses").select("id, title, status, ai_job_id").eq("ai_job_id", jobId);
+  expect(courses, "generated course must be retrievable by its job_id").toBeTruthy();
+  expect((courses ?? []).length).toBe(1);
+  const courseId = courses?.[0]?.id as string;
+  expect(courseId).toBeTruthy();
 
   const { data: modules } = await db.from("modules").select("id").eq("course_id", courseId);
   expect((modules ?? []).length).toBeGreaterThanOrEqual(1);

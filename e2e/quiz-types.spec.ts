@@ -124,6 +124,7 @@ test.beforeAll(async () => {
 });
 
 test.afterAll(async () => {
+  if (!db) return; // beforeAll failed before the client existed
   try {
     await cleanupAllE2EEntities(db);
   } finally {
