@@ -170,6 +170,8 @@ Port the approved prototype (`curriculum-organizer-prototype.html`) into the Rea
 
 **Definition of done:** all Playwright specs green · migration verified · both apps deployed & manually smoke-tested · PRs merged after Coderabbit/Codex review.
 
+> ✅ **DEFINITION OF DONE MET — 2026-06-10.** 14/14 Playwright specs green (×3 runs); migration applied + verified (0 orphans, counts reconciled); academy.pixopharm.com live via auto-deploy (owner-approved policy), pixopharm.com manually deployed + smoke-tested with bundle-hash verification; 15 PRs merged across both repos, every one Coderabbit-reviewed (Codex bot not installed). D4 cleanup complete. Remaining OPTIONAL work: bulk-enhance rollout (pilot run on Pharmacy Calculations), CI wiring for the e2e suite, quiz_emphasis-per-domain data-driven config.
+
 ---
 
 ## 6. Risks & mitigations

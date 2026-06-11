@@ -2,6 +2,16 @@
 
 ---
 
+## 2026-06-11: CURRICULUM REORG COMPLETE — definition of done MET
+
+- **PR #15 merged** (Phase 5 e2e suite; 9 Coderabbit comments fixed incl. 2 critical — creds out of source via .env.local E2E_ADMIN_*, seeded-domain exclusion in cleanup; 1 declined w/ rationale). Suite green 14/14 ×3 runs.
+- **D4 cleanup executed** (owner-approved, backup first): empty HIV dup deleted; calc draft's 4 modules → Pharmacy Calculations (now 11 modules); draft shell deleted. 0 orphans, 34 courses.
+- **enhance-module v13/14**: returns token usage for cost reporting.
+- **Bulk-enhance pilot** (Pharmacy Calculations, append): run 1 exposed two ops findings — (a) this project's JWTs expire ~5 min so long batch jobs must re-auth per call, (b) occasional Opus-side 500s after ~90s need a retry. Run 2 (per-module fresh token + retry) in progress; report to owner with rollout decision.
+- All 6 phases + 5 feedback PRs live on academy.pixopharm.com (auto-deploy) and pixopharm.com (manual, hash-verified).
+
+---
+
 ## 2026-06-10 (evening): Phase 5 E2E suite GREEN (14/14) + owner-feedback round shipped
 
 ### Branch: `feat/curriculum-phase-5` (PRs #12 sticky org-UX, #13 sticky toolbar, #14 enhance type-picker + organizer preview — ALL MERGED + auto-deployed)
