@@ -231,6 +231,14 @@ Deno.serve(async (req: Request) => {
     const maxOrder = existingQs?.[0]?.order_index ?? 0;
 
     const moduleCount = course.duration_weeks ? Math.min(Math.max(Math.round(Number(course.duration_weeks)), 2), 5) : 4;
+    // In append mode, lessons that already have content are never written —
+    // so when none are empty we ask the model for the QUIZ ONLY. This avoids
+    // generating thousands of tokens of lesson content that would be discarded
+    // (and the output-cap truncation that caused unparseable-JSON 500s).
+    const emptyLessonCount = lessons.filter(
+      (l) => !Array.isArray(l.content) || (l.content as unknown[]).length === 0
+    ).length;
+    const quizOnly = mode === "append" && emptyLessonCount === 0;
     const lessonList = lessons
       .map((l, i) => `  Lesson ${i + 1}: "${l.title}" — target ${l.duration_minutes ?? 25} min`)
       .join("\n");
@@ -247,16 +255,18 @@ Applies across ALL CARICOM nations — use specific island comparisons (T&T, Jam
 LESSONS IN THIS MODULE:
 ${lessonList}
 
-TASK — for EACH lesson write rich content (5–7 blocks), then an INTERACTIVE quiz for the module.
+${quizOnly
+  ? "TASK — every lesson above already has content. Write ONLY an INTERACTIVE quiz for the module (return an empty lessons array)."
+  : "TASK — for EACH lesson write rich content (5–7 blocks), then an INTERACTIVE quiz for the module."}
 
-LESSON CONTENT BLOCKS — use ALL these block types across the lessons:
+${quizOnly ? "" : `LESSON CONTENT BLOCKS — use ALL these block types across the lessons:
   {"type":"heading","text":"...","level":2}  — main section heading (required, 1 per lesson)
   {"type":"heading","text":"...","level":3}  — subsection heading
   {"type":"text","body":"3–5 sentence paragraph. Must be clinically accurate, Caribbean-specific, naming real drugs, regulations, and islands."}
   {"type":"callout","title":"...","body":"2–4 sentences","variant":"info"}  — island comparisons, regional clinical facts, regulatory differences
   {"type":"callout","title":"...","body":"...","variant":"warning"}  — patient safety alerts, dispensing errors, compliance warnings
   {"type":"key-term","term":"...","definition":"Precise 1–2 sentence definition with Caribbean clinical context and an example."}
-  {"type":"video-placeholder","title":"...","duration":"X min","description":"Specific Caribbean pharmacy scenario this video demonstrates."}
+  {"type":"video-placeholder","title":"...","duration":"X min","description":"Specific Caribbean pharmacy scenario this video demonstrates."}`}
 
 QUIZ — produce 6–8 questions ${requestedTypes
       ? `using ONLY these question_type values: ${requestedTypes.join(", ")}. Spread the questions across ${requestedTypes.length > 1 ? "all of them" : "it"}.`
@@ -279,7 +289,7 @@ QUESTION TYPE SCHEMAS (follow EXACTLY — these are machine-validated):
 Return ONLY valid JSON:
 {
   "lessons": [
-    {"title": "exact title matching the lesson list above", "duration_minutes": 25, "content": [ ...5-7 blocks... ]}
+    ${quizOnly ? "" : '{"title": "exact title matching the lesson list above", "duration_minutes": 25, "content": [ ...5-7 blocks... ]}'}
   ],
   "quiz_questions": [ ...4-6 standalone questions, mixed types... ],
   "case": {
@@ -298,7 +308,12 @@ ${requestedTypes && !requestedTypes.includes("scenario")
     const passes = (v: { standalone: GenQuestion[]; caseQs: GenQuestion[] }) =>
       v.standalone.length + v.caseQs.length >= 5 && distinctTypes(v) >= minTypes;
 
-    let result = (await callOpus(basePrompt, 8000)).result;
+    const maxOut = quizOnly ? 6000 : 16000;
+    const totalUsage = { input_tokens: 0, output_tokens: 0 };
+    const first = await callOpus(basePrompt, maxOut);
+    totalUsage.input_tokens += first.usage.input_tokens;
+    totalUsage.output_tokens += first.usage.output_tokens;
+    let result = first.result;
     let { valid, rejected } = collectQuestions(result, requestedTypes);
 
     if (!passes(valid)) {
@@ -309,7 +324,10 @@ ${requestedTypes && !requestedTypes.includes("scenario")
 PREVIOUS ATTEMPT FAILED MACHINE VALIDATION:
 ${feedback}
 Regenerate the COMPLETE JSON, fixing these issues. Minimum 5 valid questions across ${minTypes}+ types.`;
-      result = (await callOpus(retryPrompt, 8000)).result;
+      const retry = await callOpus(retryPrompt, maxOut);
+      totalUsage.input_tokens += retry.usage.input_tokens;
+      totalUsage.output_tokens += retry.usage.output_tokens;
+      result = retry.result;
       ({ valid, rejected } = collectQuestions(result, requestedTypes));
       if (!passes(valid)) {
         return json({
@@ -387,6 +405,7 @@ Regenerate the COMPLETE JSON, fixing these issues. Minimum 5 valid questions acr
       types_generated: [...new Set([...valid.standalone, ...valid.caseQs].map((q) => q.question_type))],
       rejected_count: rejected.length,
       model_used: OPUS_MODEL,
+      usage: totalUsage,
     });
 
   } catch (err) {
@@ -442,7 +461,7 @@ function distinctTypes(valid: { standalone: GenQuestion[]; caseQs: GenQuestion[]
 async function callOpus(
   prompt: string,
   maxTokens: number,
-): Promise<{ result: Record<string, unknown>; modelUsed: string }> {
+): Promise<{ result: Record<string, unknown>; modelUsed: string; usage: { input_tokens: number; output_tokens: number } }> {
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), CALL_TIMEOUT_MS);
 
@@ -474,6 +493,10 @@ async function callOpus(
   }
 
   const aiData = await resp.json();
+  const usage = {
+    input_tokens: Number(aiData.usage?.input_tokens ?? 0),
+    output_tokens: Number(aiData.usage?.output_tokens ?? 0),
+  };
   const rawText: string = aiData.content?.[0]?.text ?? "{}";
 
   const cleaned = rawText
@@ -485,7 +508,7 @@ async function callOpus(
   for (const attempt of [cleaned, cleaned.match(/\{[\s\S]*\}/)?.[0] ?? ""]) {
     if (!attempt) continue;
     try {
-      return { result: JSON.parse(attempt), modelUsed: OPUS_MODEL };
+      return { result: JSON.parse(attempt), modelUsed: OPUS_MODEL, usage };
     } catch {
       continue;
     }
