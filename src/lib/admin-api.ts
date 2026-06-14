@@ -56,6 +56,13 @@ export interface Module {
   order_index: number;
   created_at: string;
   updated_at: string;
+  // Accreditation: student-facing module fields (nullable until a draft is published)
+  module_overview?: string | null;
+  passing_score?: number | null;
+  attempts_allowed?: number | null;
+  seat_time_minutes?: number | null;
+  // Joined: accreditation learning objectives (when fetched with the course tree)
+  learning_objectives?: { id: string; objective_number?: string | null; text: string; blooms_level?: string | null; order_index?: number }[];
   // Joined counts
   lessons_count?: number;
   quiz_count?: number;
@@ -233,7 +240,7 @@ async function fetchCourseTree(course: Record<string, unknown>): Promise<{
 
   const moduleIds = (modules ?? []).map((m) => m.id);
 
-  const [lessonsRes, quizRes, casesRes] = await Promise.all([
+  const [lessonsRes, quizRes, casesRes, objectivesRes] = await Promise.all([
     moduleIds.length > 0
       ? supabase
           .from("lessons")
@@ -255,11 +262,19 @@ async function fetchCourseTree(course: Record<string, unknown>): Promise<{
           .in("module_id", moduleIds)
           .order("order_index", { ascending: true })
       : Promise.resolve({ data: [], error: null }),
+    moduleIds.length > 0
+      ? supabase
+          .from("learning_objectives")
+          .select("*")
+          .in("module_id", moduleIds)
+          .order("order_index", { ascending: true })
+      : Promise.resolve({ data: [], error: null }),
   ]);
 
   if (lessonsRes.error) console.warn("Could not fetch lessons:", lessonsRes.error);
   if (quizRes.error) console.warn("Could not fetch quiz questions:", quizRes.error);
   if (casesRes.error) console.warn("Could not fetch quiz cases:", casesRes.error);
+  if (objectivesRes.error) console.warn("Could not fetch learning objectives:", objectivesRes.error);
 
   const lessonsByModule = new Map<string, Lesson[]>();
   (lessonsRes.data ?? []).forEach((l) => {
@@ -282,11 +297,19 @@ async function fetchCourseTree(course: Record<string, unknown>): Promise<{
     casesByModule.set(c.module_id, arr);
   });
 
+  const objectivesByModule = new Map<string, unknown[]>();
+  (objectivesRes.data ?? []).forEach((o) => {
+    const arr = objectivesByModule.get((o as { module_id: string }).module_id) ?? [];
+    arr.push(o);
+    objectivesByModule.set((o as { module_id: string }).module_id, arr);
+  });
+
   const enrichedModules = (modules ?? []).map((m) => ({
     ...m,
     lessons: lessonsByModule.get(m.id) ?? [],
     quiz_questions: quizByModule.get(m.id) ?? [],
     quiz_cases: casesByModule.get(m.id) ?? [],
+    learning_objectives: objectivesByModule.get(m.id) ?? [],
     lessons_count: (lessonsByModule.get(m.id) ?? []).length,
     quiz_count: (quizByModule.get(m.id) ?? []).length,
   }));

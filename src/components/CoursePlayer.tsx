@@ -1428,7 +1428,13 @@ function transformDbCourse(
     number: m.order_index,
     title: m.title,
     description: m.description ?? "",
-    learningObjectives: [],
+    learningObjectives: (m.learning_objectives ?? [])
+      .map((o) => o.text)
+      .filter((t): t is string => typeof t === "string" && t.length > 0),
+    overview: m.module_overview ?? undefined,
+    passingScore: m.passing_score ?? undefined,
+    attemptsAllowed: m.attempts_allowed ?? undefined,
+    seatTimeMinutes: m.seat_time_minutes ?? undefined,
     lessons: (m.lessons ?? []).map((l) => ({
       id: l.id,
       title: l.title,
@@ -1949,22 +1955,38 @@ export default function CoursePlayer({
             <h1 className="text-2xl font-bold text-[hsl(213,50%,16%)]">{lesson.title}</h1>
           </div>
 
-          {/* Learning objectives for this module (show on first lesson only) */}
-          {view.lessonIndex === 0 && (
+          {/* Module overview, learning objectives & passing criteria (first lesson only) */}
+          {view.lessonIndex === 0 && (mod.learningObjectives.length > 0 || mod.overview || mod.passingScore) && (
             <div className="mb-8 rounded-xl bg-[hsl(174,45%,96%)] border border-[hsl(174,62%,32%)]/20 p-5">
-              <h4 className="text-sm font-semibold text-[hsl(174,62%,32%)] mb-3" style={{ fontFamily: "'DM Sans', sans-serif" }}>
-                Module {mod.number} Learning Objectives
-              </h4>
-              <ul className="space-y-2">
-                {mod.learningObjectives.map((obj, i) => (
-                  <li key={i} className="flex items-start gap-2 text-sm text-slate-700" style={{ fontFamily: "'DM Sans', sans-serif" }}>
-                    <svg viewBox="0 0 20 20" className="w-4 h-4 mt-0.5 fill-[hsl(174,62%,32%)] shrink-0">
-                      <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" />
-                    </svg>
-                    {obj}
-                  </li>
-                ))}
-              </ul>
+              {mod.overview && (
+                <p className="text-sm text-slate-700 mb-4 leading-relaxed" style={{ fontFamily: "'DM Sans', sans-serif" }}>
+                  {mod.overview}
+                </p>
+              )}
+              {mod.learningObjectives.length > 0 && (
+                <>
+                  <h4 className="text-sm font-semibold text-[hsl(174,62%,32%)] mb-3" style={{ fontFamily: "'DM Sans', sans-serif" }}>
+                    Module {mod.number} Learning Objectives
+                  </h4>
+                  <ul className="space-y-2">
+                    {mod.learningObjectives.map((obj, i) => (
+                      <li key={i} className="flex items-start gap-2 text-sm text-slate-700" style={{ fontFamily: "'DM Sans', sans-serif" }}>
+                        <svg viewBox="0 0 20 20" className="w-4 h-4 mt-0.5 fill-[hsl(174,62%,32%)] shrink-0">
+                          <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" />
+                        </svg>
+                        {obj}
+                      </li>
+                    ))}
+                  </ul>
+                </>
+              )}
+              {(mod.passingScore || mod.attemptsAllowed || mod.seatTimeMinutes) && (
+                <div className="mt-4 pt-3 border-t border-[hsl(174,62%,32%)]/15 flex flex-wrap gap-x-5 gap-y-1 text-xs text-slate-600" style={{ fontFamily: "'DM Sans', sans-serif" }}>
+                  {mod.passingScore != null && <span><b className="text-[hsl(174,62%,32%)]">Pass mark:</b> {mod.passingScore}%</span>}
+                  {mod.attemptsAllowed != null && <span><b className="text-[hsl(174,62%,32%)]">Attempts:</b> {mod.attemptsAllowed}</span>}
+                  {mod.seatTimeMinutes != null && <span><b className="text-[hsl(174,62%,32%)]">Est. time:</b> {mod.seatTimeMinutes} min</span>}
+                </div>
+              )}
             </div>
           )}
 
