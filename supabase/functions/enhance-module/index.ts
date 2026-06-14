@@ -266,10 +266,10 @@ Deno.serve(async (req: Request) => {
 
     // ── Build the generation prompt ───────────────────────────────────────────
     const taskLine = createLessons
-      ? `TASK — this module has NO lessons yet. DESIGN 3–5 short lessons that fully cover the module topic, following the instructional sequence (Foundational Concepts → Required Information → Common Challenges → Technician Role → Practice Application). For EACH lesson give a title, duration_minutes, and 5–7 content blocks. Then write the INTERACTIVE quiz.`
+      ? `TASK — this module has NO lessons yet. DESIGN 3–5 lessons that fully cover the module topic, following the instructional sequence (Foundational Concepts → Required Information → Common Challenges → Technician Role → Practice Application). For EACH lesson give a title, a realistic duration_minutes, and DEEP content (see DEPTH below). Then write the INTERACTIVE quiz.`
       : quizOnly
         ? "TASK — every lesson above already has content. Write ONLY an INTERACTIVE quiz for the module (return an empty lessons array)."
-        : "TASK — for EACH lesson write rich content (5–7 blocks), then an INTERACTIVE quiz for the module.";
+        : "TASK — for EACH lesson write DEEP, teaching-grade content (see DEPTH below), then an INTERACTIVE quiz for the module.";
 
     const basePrompt = `${CARIBBEAN_CONTEXT}
 
@@ -284,10 +284,20 @@ ${lessonList}
 
 ${taskLine}
 
-${quizOnly ? "" : `LESSON CONTENT BLOCKS — use ALL these block types across the lessons:
-  {"type":"heading","text":"...","level":2}  — main section heading (required, 1 per lesson)
-  {"type":"heading","text":"...","level":3}  — subsection heading
-  {"type":"text","body":"3–5 sentence paragraph. Must be clinically accurate, Caribbean-specific, naming real drugs, regulations, and islands."}
+${quizOnly ? "" : `DEPTH — each lesson MUST be deep enough to genuinely fill its target minutes. A real student should spend that long and come away able to practise. Aim for ~2–3 substantial blocks per 5 minutes of target time — a 25-minute lesson is ~12–16 blocks, NOT 5–7. Never pad: every block teaches something specific. Structure each lesson as:
+  1) an opening text block framing why this matters in Caribbean pharmacy practice;
+  2) 3–4 named subsections, each = a level-3 heading + TWO full teaching paragraphs + a callout or a worked example;
+  3) a comparison table across islands (drug scheduling, formularies, prevalence, etc.) where the topic allows;
+  4) 3–5 key-terms;
+  5) a closing summary text block of the key takeaways.
+Then set duration_minutes to a HONEST reading/study time for what you actually wrote (~180–200 words/min).
+
+LESSON CONTENT BLOCKS — use ALL of these across each lesson:
+  {"type":"heading","text":"...","level":2}  — lesson section heading (required, 1+ per lesson)
+  {"type":"heading","text":"...","level":3}  — subsection heading (one per subsection)
+  {"type":"text","body":"A FULL 4–7 sentence teaching paragraph. Clinically accurate, Caribbean-specific, naming real drugs, doses, regulations and islands. Explain mechanisms and the technician's role, don't just state facts."}
+  {"type":"list","style":"bullet","items":["specific point","specific point","specific point"]}  — steps, criteria, red-flags
+  {"type":"table","headers":["Island","...","..."],"rows":[["Jamaica","...","..."],["Trinidad & Tobago","...","..."]]}  — cross-island comparison (use REAL data)
   {"type":"callout","title":"...","body":"2–4 sentences","variant":"info"}  — island comparisons, regional clinical facts, regulatory differences
   {"type":"callout","title":"...","body":"...","variant":"warning"}  — patient safety alerts, dispensing errors, compliance warnings
   {"type":"key-term","term":"...","definition":"Precise 1–2 sentence definition with Caribbean clinical context and an example."}
@@ -314,7 +324,7 @@ QUESTION TYPE SCHEMAS (follow EXACTLY — these are machine-validated):
 Return ONLY valid JSON:
 {
 ${accreditation ? '  "module_overview": "3–5 sentence intro (see ACCREDITATION FORMAT).",\n  "learning_objectives": [ {"objective_number":"LO1","text":"...","blooms_level":"apply"} ],\n  "key_terms": [ {"term":"...","definition":"..."} ],\n  "crosswalk": [ {"standard":"...","objective":"LO1","instructional_content":"...","learning_activity":"didactic","assessment_method":"quiz","evidence":"quiz record"} ],\n  "competency_checklist": [ {"item":"...","validation_method":"..."} ],\n  "remediation_plan": ["step 1","step 2"],\n  "references": ["source actually used"],\n  "passing_score": 80,\n  "attempts_allowed": 3,\n  "seat_time_minutes": 60,\n  "module_code": "PTM-XXX",\n  "delivery_mode": "Online didactic",\n  "modality_tags": ["didactic"],\n' : ""}  "lessons": [
-    ${quizOnly ? "" : '{"title": "lesson title' + (createLessons ? '' : ' EXACTLY matching the list above') + '", "duration_minutes": 25, "content": [ ...5-7 blocks... ]}'}
+    ${quizOnly ? "" : '{"title": "lesson title' + (createLessons ? '' : ' EXACTLY matching the list above') + '", "duration_minutes": <honest minutes for the content>, "content": [ ...DEEP content per DEPTH above: ~12-16 blocks for a 25-min lesson... ]}'}
   ],
   "quiz_questions": [ ...4-6 standalone questions, mixed types... ],
   "case": {
@@ -333,7 +343,8 @@ ${requestedTypes && !requestedTypes.includes("scenario")
     const passes = (v: { standalone: GenQuestion[]; caseQs: GenQuestion[] }) =>
       v.standalone.length + v.caseQs.length >= 5 && distinctTypes(v) >= minTypes;
 
-    const maxOut = quizOnly ? 6000 : 16000;
+    // Deeper lessons need a much larger output budget (was 16000 → truncation with rich content).
+    const maxOut = quizOnly ? 6000 : 32000;
     const totalUsage = { input_tokens: 0, output_tokens: 0 };
     const first = await callOpus(basePrompt, maxOut);
     totalUsage.input_tokens += first.usage.input_tokens;
