@@ -2,6 +2,21 @@
 
 ---
 
+## 2026-06-13 (late): COURSE PAYMENTS + content depth + level removal + MERGE to main
+
+**Merged PR #19 (accreditation enhance) + PR #20 (course payments) into main** (union-resolved this
+progress.md; all PRDs/docs preserved: ACCREDITATION-ENHANCE-PRD, ACCREDITATION-MODULE-FORMAT, COURSE-PAYMENT-PLAN). Main auto-deploys → academy.pixopharm.com.
+
+**Course payments (whole-diploma purchase via Lemon Squeezy)** — one purchase unlocks all courses + certificate on completion. Built inert (LS creds added later); plan + go-live checklist in `docs/COURSE-PAYMENT-PLAN.md`. Tables programs/program_access/ls_webhook_events/program_certificates + RPCs; edge fns `ls-webhook` (HMAC verify — VERIFIED live: good sig→200 grant, bad→401) + `create-ls-checkout`; Paywall gates CoursePlayer. **SAFETY:** paywall is INERT until the diploma has an LS variant configured — no student lockout pre-launch (admins always bypass). LS onboarding = government-ID + KYC/KYB + Wise + W-8BEN, NOT a phone-verification gate.
+
+**Content depth fix** (client: "25-min lesson, a few paragraphs — too light"). Root cause: enhance prompt capped lessons at 5–7 blocks / ~250 words regardless of the 25-min label. Fixed: `enhance-module` now scales content to target minutes (~12–16 blocks for 25 min), structured subsections + full 4–7 sentence paragraphs + cross-island **tables** + lists + key-terms + worked examples + summary; honest durations; output cap 16k→32k. Deployed. (Re-enhance a module in Overwrite/draft mode to regenerate the old thin lessons.)
+
+**Course generator de-leveled** (client: "still uses beginner and stuff"). `generate-course`: skill_level now optional (defaults 'Regional'); prompt no longer frames content by beginner/intermediate/advanced (pitched at practising-technician level). Removed the Skill Level dropdown from the AI course-generator form. Deployed.
+
+**Still open:** (a) Academy **storefront** — academy page should present the ONE diploma program with an Enrol CTA (gap the client flagged: "academy page doesn't show the one program"; NOT yet built — add to plan). (b) Quiz-type AI + edit AT the add-quiz point (EnhanceDialog/DraftReviewDialog now live via merge, but wire an "✦ Generate with AI" into QuizEditor). (c) Certificate-on-completion. (d) LS creds → go-live.
+
+---
+
 ## 2026-06-13 (pm): ENHANCE BUG FIXED + ACCREDITATION DRAFT FLOW BUILT (branch `feat/accreditation-enhance`)
 
 **The 404-on-empty-module bug is fixed** and the client's accreditation format + "create THESE quiz
