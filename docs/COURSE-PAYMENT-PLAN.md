@@ -72,6 +72,33 @@ Supabase function secrets: `LS_WEBHOOK_SECRET`, `LS_API_KEY`, `LS_STORE_ID`, plu
 
 > Certificate-on-completion (issue `program_certificates` when all core courses are complete + a certificate view) is a tightly-scoped **follow-up phase** — the table + RPC land in step 2 so it's ready; the completion rule + UI ship next.
 
+## 5b. GO-LIVE checklist — exact steps once the client registers Lemon Squeezy
+
+Everything below is built and deployed; these steps flip it on. **No code changes needed.**
+
+1. **Client finishes LS onboarding** (identity/ID verification, KYC/KYB, Wise payout, W-8BEN). Confirm pharmacy/education content is approved.
+2. **Create the product** in LS: a single one-time product = the Diploma, with the agreed price. Note its **variant ID** and the **store ID**.
+3. **Set the price + LS ids in the DB** (no redeploy):
+   ```sql
+   update programs set price_usd_cents = <PRICE_CENTS>, ls_store_id='<STORE_ID>', ls_variant_id='<VARIANT_ID>'
+   where slug='diploma';
+   ```
+4. **Create the webhook** in LS → Settings → Webhooks:
+   - Callback URL: `https://hqyewiroiswmhfghkzhz.supabase.co/functions/v1/ls-webhook`
+   - Events: `order_created`, `order_refunded`
+   - Copy the **signing secret**.
+5. **Set the function secrets** (Supabase):
+   ```
+   supabase secrets set LS_WEBHOOK_SECRET=<secret> LS_API_KEY=<api_key> --project-ref hqyewiroiswmhfghkzhz
+   ```
+   (Optional `LS_REDIRECT_URL`; defaults to `https://academy.pixopharm.com/welcome?purchase=success`.)
+6. **Smoke test:** sign in as a test student → open a course → Paywall → Enrol → pay in LS test mode → returns to welcome → access granted (webhook). Refund in LS → access flips to `refunded`.
+7. **Comp/admin access:** grant staff/testers without paying via `select grant_program_access_comp('<user_uuid>')` (admins already bypass the paywall).
+
+**Endpoints (live now, inert until secrets set):**
+- Webhook: `…/functions/v1/ls-webhook` (returns 503 until `LS_WEBHOOK_SECRET` set; verified: valid signature → grants, bad signature → 401).
+- Checkout: `…/functions/v1/create-ls-checkout` (returns 503 until `LS_API_KEY` + program variant set).
+
 ## 6. Acceptance criteria
 
 - A simulated **signed** `order_created` with `custom_data.user_id` grants `program_access` active (idempotent on resend); `order_refunded` flips it to `refunded`. Bad signature → 401, no write.

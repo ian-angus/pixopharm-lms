@@ -2,6 +2,23 @@
 
 ---
 
+## 2026-06-13 (pm): COURSE PAYMENTS BUILT — whole-diploma purchase via Lemon Squeezy (branch `feat/course-payments`)
+
+**Model (client):** no per-course sales — one purchase = the WHOLE diploma → unlocks every course → certificate on completion. Processor = Lemon Squeezy (merchant of record, supports T&T → no sister-Stripe), payout → Wise CAD. Built now; LS credentials wired in once the client registers (endpoints inert/503 until then). **Zero data lost** — additive only, baseline (34/235/418/1,911/4) verified unchanged.
+
+**LS onboarding answer (client asked re phone verification):** LS verification is **government-ID upload + KYC/KYB review**, not an SMS gate. Needs: ID verification, store/product KYB approval (confirm pharmacy content allowed), Wise payout + W-8BEN tax form, 2FA for account security. Full steps in `docs/COURSE-PAYMENT-PLAN.md` (saved plan) §2 + §5b go-live checklist.
+
+**Shipped (branch, 5 commits):**
+1. `docs/COURSE-PAYMENT-PLAN.md` — full plan + LS go-live checklist.
+2. Migration `20260613000003_course_payments.sql` (applied, additive): `programs` (diploma seeded, price/variant null till client), `program_access` (entitlement), `ls_webhook_events` (idempotency/audit), `program_certificates`; SECURITY DEFINER RPCs `apply_ls_order` / `grant_program_access_comp` / `issue_program_certificate`. RPC grant/dedupe/refund verified at DB level.
+3. Edge fn `ls-webhook` (deployed --no-verify-jwt): HMAC X-Signature verify + idempotent grant/revoke. **Verified against the live deployed fn with a temp secret: valid signature → 200 granted, bad signature → 401**; cleaned up.
+4. Edge fn `create-ls-checkout` (deployed, authed): LS API checkout carrying `custom.user_id` + email + redirect; reads store/variant from `programs`.
+5. Client + UI: admin-api program helpers (`getMyProgramAccess`, `startDiplomaCheckout`, `grantComp`, `fetchAccessList`), `useProgramAccess` hook (admins bypass; polls for grant post-checkout), `Paywall` component (whole-diploma enrol → LS checkout; "opens soon" before store configured), CoursePlayer gates content behind active/comp access. `tsc` + `pnpm build` green.
+
+**Remaining:** (a) client provides LS store/variant/api-key/webhook-secret → run go-live checklist §5b; (b) certificate-on-completion (table + issue RPC ready; completion rule + cert view is the next phase); (c) optional admin "program access" UI panel (the `grantComp`/`fetchAccessList` functions exist). PR to open. NOTE: branched from `main` (independent of accreditation PR #19); both apply to the same prod DB and combine on merge.
+
+---
+
 ## 2026-06-11: CURRICULUM REORG COMPLETE — definition of done MET
 
 - **PR #15 merged** (Phase 5 e2e suite; 9 Coderabbit comments fixed incl. 2 critical — creds out of source via .env.local E2E_ADMIN_*, seeded-domain exclusion in cleanup; 1 declined w/ rationale). Suite green 14/14 ×3 runs.
