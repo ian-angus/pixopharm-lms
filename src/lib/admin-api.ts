@@ -1041,6 +1041,169 @@ export async function enhanceModule(
 }
 
 // ============================================================================
+// ACCREDITATION DRAFT FLOW — generate → review/modify → publish
+// enhance-module target:"draft" writes the full accreditation module to the
+// module_enhancement_drafts staging table. Nothing reaches live lessons /
+// quiz_questions until an admin reviews and calls publishModuleDraft().
+// ============================================================================
+
+export interface DraftObjective {
+  objective_number?: string;
+  text: string;
+  blooms_level?: string;
+}
+
+export interface DraftQuestion {
+  question_type: QuestionType;
+  question: string;
+  options?: unknown[];
+  correct_answer?: number;
+  question_data?: Record<string, unknown>;
+  explanation?: string;
+  difficulty?: string;
+  blooms_level?: string;
+  objective_ref?: string;
+}
+
+export interface DraftLesson {
+  title: string;
+  duration_minutes?: number;
+  content?: unknown[];
+  order_index?: number;
+}
+
+export interface DraftPayload {
+  module_id: string;
+  module_title?: string;
+  course_title?: string;
+  domain?: string | null;
+  create_lessons?: boolean;
+  module_overview?: string;
+  learning_objectives: DraftObjective[];
+  key_terms?: { term: string; definition: string }[];
+  crosswalk?: Record<string, unknown>[];
+  competency_checklist?: { item?: string; validation_method?: string }[];
+  remediation_plan?: string[];
+  references?: string[];
+  passing_score?: number;
+  attempts_allowed?: number;
+  seat_time_minutes?: number;
+  module_code?: string;
+  delivery_mode?: string;
+  modality_tags?: string[];
+  lessons: DraftLesson[];
+  quiz_questions: DraftQuestion[];
+  case?: { title?: string; vignette: string; questions: DraftQuestion[] } | null;
+  generated_at?: string;
+}
+
+export type DraftStatus = "pending_review" | "approved" | "published" | "discarded";
+
+export interface ModuleDraft {
+  id: string;
+  module_id: string;
+  status: DraftStatus;
+  payload: DraftPayload;
+  requested_types: string[];
+  model: string | null;
+  tokens_in: number | null;
+  tokens_out: number | null;
+  created_at: string;
+  published_at: string | null;
+}
+
+export interface EnhanceDraftResult {
+  target: "draft";
+  draft_id: string;
+  create_lessons: boolean;
+  lessons_count: number;
+  questions_count: number;
+  objectives_count: number;
+  has_case: boolean;
+  types_generated?: string[];
+  model_used: string;
+  usage?: { input_tokens: number; output_tokens: number };
+}
+
+export interface PublishDraftResult {
+  draft_id: string;
+  module_id?: string;
+  already_published?: boolean;
+  lessons_created?: number;
+  objectives_created?: number;
+  questions_created?: number;
+  case_created?: boolean;
+}
+
+/**
+ * Generate an accreditation-format module to the review-gate staging table.
+ * Writes NOTHING to live lessons/quiz — returns a draft id to review + publish.
+ * types: optional restriction (the "create THESE quiz types" picker).
+ */
+export async function enhanceModuleDraft(
+  moduleId: string,
+  types?: QuestionType[]
+): Promise<EnhanceDraftResult> {
+  const { data, error } = await supabase.functions.invoke("enhance-module", {
+    body: { module_id: moduleId, target: "draft", ...(types?.length ? { types } : {}) },
+  });
+  if (data?.error) throw new Error(`enhance-module: ${data.error}`);
+  if (error) handleError(error, "enhanceModuleDraft");
+  return data as EnhanceDraftResult;
+}
+
+/** Pending (or other-status) drafts for a module, newest first. */
+export async function fetchModuleDrafts(
+  moduleId: string,
+  status: DraftStatus = "pending_review"
+): Promise<ModuleDraft[]> {
+  const { data, error } = await supabase
+    .from("module_enhancement_drafts")
+    .select("*")
+    .eq("module_id", moduleId)
+    .eq("status", status)
+    .order("created_at", { ascending: false });
+  if (error) handleError(error, "fetchModuleDrafts");
+  return (data ?? []) as ModuleDraft[];
+}
+
+/** A single draft by id (with full payload). */
+export async function fetchDraft(draftId: string): Promise<ModuleDraft | null> {
+  const { data, error } = await supabase
+    .from("module_enhancement_drafts")
+    .select("*")
+    .eq("id", draftId)
+    .maybeSingle();
+  if (error) handleError(error, "fetchDraft");
+  return (data as ModuleDraft) ?? null;
+}
+
+/** Persist admin edits to a draft payload (the "modify before save" step). */
+export async function saveDraftPayload(draftId: string, payload: DraftPayload): Promise<void> {
+  const { error } = await supabase
+    .from("module_enhancement_drafts")
+    .update({ payload, updated_at: new Date().toISOString() })
+    .eq("id", draftId);
+  if (error) handleError(error, "saveDraftPayload");
+}
+
+/** Atomically promote an approved draft to live (additive). Idempotent. */
+export async function publishModuleDraft(draftId: string): Promise<PublishDraftResult> {
+  const { data, error } = await supabase.rpc("publish_module_draft", { p_draft_id: draftId });
+  if (error) handleError(error, "publishModuleDraft");
+  return data as PublishDraftResult;
+}
+
+/** Mark a draft discarded (kept for audit; never published). */
+export async function discardModuleDraft(draftId: string): Promise<void> {
+  const { error } = await supabase
+    .from("module_enhancement_drafts")
+    .update({ status: "discarded", updated_at: new Date().toISOString() })
+    .eq("id", draftId);
+  if (error) handleError(error, "discardModuleDraft");
+}
+
+// ============================================================================
 // CURRICULUM ORGANIZER — domains, cross-entity moves, batch reordering
 // ============================================================================
 
