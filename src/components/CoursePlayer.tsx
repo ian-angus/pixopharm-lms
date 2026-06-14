@@ -23,6 +23,9 @@ import {
 } from "@/data/interactiveContent";
 import { DEFAULT_COURSE_SLUG } from "@/data/courses";
 import { fetchCourseBySlug } from "@/lib/admin-api";
+import Paywall from "@/components/Paywall";
+import { useAdmin } from "@/hooks/useAdmin";
+import { useProgramAccess } from "@/hooks/useProgramAccess";
 import type {
   Course as DbCourse,
   Module as DbModule,
@@ -1555,6 +1558,16 @@ export default function CoursePlayer({
     if (!user || surveyDone) return;
     hasSubmittedSurvey(user.id, progressSlug).then(setSurveyDone);
   }, [user, progressSlug, surveyDone]);
+
+  // Program paywall — studying requires program access (admins always pass).
+  // When returning from a successful checkout we briefly poll for the webhook grant.
+  const { isAdmin } = useAdmin(user);
+  const expectGrant = typeof window !== "undefined" && window.location.search.includes("purchase=success");
+  const { hasAccess, loading: accessLoading } = useProgramAccess(user, isAdmin, expectGrant);
+
+  if (user && !accessLoading && !hasAccess) {
+    return <Paywall user={user} onExit={onExit} />;
+  }
 
   // Wait for course + progress to load
   if (courseLoading || (!courseError && !loaded)) {

@@ -1204,3 +1204,94 @@ export async function deleteQuizCase(id: string): Promise<void> {
   const { error } = await supabase.from("quiz_cases").delete().eq("id", id);
   if (error) handleError(error, "deleteQuizCase");
 }
+
+// ============================================================================
+// PROGRAM PAYMENTS — whole-diploma purchase via Lemon Squeezy
+// One purchase unlocks every course; a certificate is earned on completion.
+// ============================================================================
+
+export interface Program {
+  slug: string;
+  title: string;
+  description: string | null;
+  price_usd_cents: number;
+  ls_store_id: string | null;
+  ls_variant_id: string | null;
+  active: boolean;
+}
+
+export interface ProgramAccess {
+  program: string;
+  status: "active" | "refunded" | "revoked" | "comp";
+  source: "lemonsqueezy" | "comp";
+  granted_at: string;
+}
+
+/** The current signed-in user's access row for a program (null = no access). */
+export async function getMyProgramAccess(program = "diploma"): Promise<ProgramAccess | null> {
+  const { data: { user } } = await supabase.auth.getUser();
+  if (!user) return null;
+  const { data, error } = await supabase
+    .from("program_access")
+    .select("program, status, source, granted_at")
+    .eq("user_id", user.id)
+    .eq("program", program)
+    .maybeSingle();
+  if (error) {
+    console.warn("getMyProgramAccess:", error.message);
+    return null;
+  }
+  return (data as ProgramAccess) ?? null;
+}
+
+/** Program details for the paywall (price, title). */
+export async function fetchProgram(slug = "diploma"): Promise<Program | null> {
+  const { data, error } = await supabase
+    .from("programs")
+    .select("slug, title, description, price_usd_cents, ls_store_id, ls_variant_id, active")
+    .eq("slug", slug)
+    .maybeSingle();
+  if (error) {
+    console.warn("fetchProgram:", error.message);
+    return null;
+  }
+  return (data as Program) ?? null;
+}
+
+/**
+ * Start checkout for the whole diploma: asks the edge function to create a
+ * Lemon Squeezy checkout (carrying this user's id) and returns the URL to
+ * redirect the browser to. Throws if payments aren't configured yet.
+ */
+export async function startDiplomaCheckout(program = "diploma"): Promise<string> {
+  const { data, error } = await supabase.functions.invoke("create-ls-checkout", {
+    body: { program },
+  });
+  if (data?.error) throw new Error(data.error);
+  if (error) handleError(error, "startDiplomaCheckout");
+  const url = (data as { url?: string })?.url;
+  if (!url) throw new Error("No checkout URL returned");
+  return url;
+}
+
+/** Admin: comp-grant program access to a user (staff, testers, manual sales). */
+export async function grantComp(userId: string, program = "diploma"): Promise<void> {
+  const { error } = await supabase.rpc("grant_program_access_comp", {
+    p_user_id: userId,
+    p_program: program,
+  });
+  if (error) handleError(error, "grantComp");
+}
+
+/** Admin: everyone who currently has program access. */
+export async function fetchAccessList(program = "diploma"): Promise<
+  { user_id: string; status: string; source: string; granted_at: string }[]
+> {
+  const { data, error } = await supabase
+    .from("program_access")
+    .select("user_id, status, source, granted_at")
+    .eq("program", program)
+    .order("granted_at", { ascending: false });
+  if (error) handleError(error, "fetchAccessList");
+  return (data ?? []) as { user_id: string; status: string; source: string; granted_at: string }[];
+}
