@@ -55,8 +55,10 @@ Baseline at build start: **34 courses · 235 modules · 418 lessons · 1,911 qui
 **`module_enhancement_drafts`** — staging for the review gate.
 - `id uuid pk`, `module_id uuid fk modules`, `status text` (`pending_review` | `approved` | `published` | `discarded`), `payload jsonb` (full generated module: metadata, overview, objectives, key_terms, crosswalk, competency_checklist, remediation, references, lessons[], quizzes[], cases[]), `requested_types text[]`, `model text`, `tokens_in int`, `tokens_out int`, `created_by uuid`, `created_at`, `updated_at`, `published_at`. Admin-only RLS.
 
-**`module_metadata`** — 1:1 with modules; §1/§9/§10 accreditation fields.
-- `module_id uuid pk fk modules`, `module_code text`, `delivery_mode text`, `seat_time_minutes int`, `version text`, `review_date date`, `author text`, `reviewer text`, `module_overview text`, `crosswalk jsonb`, `competency_checklist jsonb`, `remediation_plan jsonb`, `references jsonb`, `instructor_notes text`, `sme_review_notes text`, `passing_score int`, `attempts_allowed int`, `modality_tags text[]`, `created_at`, `updated_at`. Student-readable: `module_overview`, `passing_score`, `attempts_allowed`, `seat_time_minutes`. Reviewer-only (admin RLS): crosswalk, competency_checklist, notes, version/author/reviewer.
+**Student-facing module fields** — added directly to the `modules` table (AS BUILT — see note): `module_overview text`, `passing_score int`, `attempts_allowed int`, `seat_time_minutes int`. They live on `modules` (not `module_metadata`) because RLS is row-level, not column-level — putting student-safe fields on the already-student-readable `modules` table enforces the split audience without a security-definer view.
+
+**`module_metadata`** — 1:1 with modules; **reviewer-only** (admin RLS). §1/§2/§9/§10 fields the client/accreditor needs but students must not see.
+- `module_id uuid pk fk modules`, `module_code text`, `delivery_mode text`, `version text`, `review_date date`, `author text`, `reviewer text`, `crosswalk jsonb`, `competency_checklist jsonb`, `remediation_plan jsonb`, `module_references jsonb` (named `module_references`, not `references`, to avoid the SQL reserved word), `modality_tags text[]`, `instructor_notes text`, `sme_review_notes text`, `created_at`, `updated_at`.
 
 **`learning_objectives`** — 1:many per module; §4.
 - `id uuid pk`, `module_id uuid fk modules`, `objective_number text` (LO1…), `text text`, `blooms_level text`, `order_index int`, `created_at`. Student-readable when parent course published.
@@ -65,27 +67,27 @@ Baseline at build start: **34 courses · 235 modules · 418 lessons · 1,911 qui
 
 ### 6.2 Edge function — `enhance-module` v16
 
-- New `target: "draft"` (default for accreditation flow). When set, the function generates and writes the result to `module_enhancement_drafts` (status `pending_review`) and returns the draft id + token usage. It does **not** write live rows.
-- **Empty-module fix:** when the module has no lessons, branch the prompt to *design* ~3–5 lesson titles + content and include them in the draft (instead of 404). When the module has lessons, enrich-in-place semantics are preserved in the draft payload.
+- New `target` param: `"draft" | "live"`, **default `"live"`** (AS BUILT — keeps the existing Enhance button's behavior unchanged; the `EnhanceDialog` UI defaults its selection to draft). `target:"draft"` generates and writes the result to `module_enhancement_drafts` (status `pending_review`), returns the draft id + token usage, and writes **no** live rows.
+- **Empty-module fix:** when the module has no lessons, branch the prompt to *design* ~3–5 lesson titles + content (instead of 404). On the draft path these go into the draft payload; on the live path they are **INSERTed** as new lesson rows (additive). Modules that already have lessons keep the legacy append/overwrite semantics unchanged.
 - **Accreditation prompt:** asks for the 20-section structure mapped to our model — overview, learning objectives (LO1…n with Bloom level), key terms, core lessons (content blocks), tables/job-aids, worked scenarios (cases), formative knowledge checks + summative quiz, crosswalk rows, competency checklist, remediation steps, references. Each generated quiz question carries an `objective_ref` (LOn) for later linking.
 - Honors `types[]` (already wired) to restrict quiz question types ("create THESE quiz types").
 - Per-call fresh JWT (project JWTs expire ~5 min) and Opus 500 retry behavior preserved from v13–v15.
 
 ### 6.3 Publish/promote
 
-`publishModuleDraft(draftId)` (admin-api + edge or service-role RPC):
-1. Re-reads the draft, asserts `status = pending_review|approved` (idempotent guard against double publish; `published` → no-op).
-2. If module empty → `INSERT` lessons from payload. Never overwrites existing lesson content.
-3. `INSERT` quiz_cases, then quiz_questions appended at `max(order_index)+1`; resolve each question's `objective_ref` → inserted objective id.
-4. `upsert module_metadata`; `INSERT learning_objectives`.
-5. Set draft `status = published`, `published_at = now()`.
-6. Return inserted counts for the caller to display + verify.
+AS BUILT: an **atomic Postgres `SECURITY DEFINER` RPC `publish_module_draft(p_draft_id uuid)`** (migration `20260613000002`), `is_admin()`-gated, `EXECUTE` revoked from anon/public and granted to `authenticated`. The client calls it via `supabase.rpc(...)`. One transaction = no partial/orphaned state. Steps:
+1. `SELECT … FOR UPDATE` the draft (locks against concurrent double-publish); asserts `status = pending_review|approved` (`published` → no-op JSON; `discarded` → error).
+2. If module has no lessons → `INSERT` lessons from payload. Never overwrites existing lesson content.
+3. `INSERT learning_objectives`, building an `objective_number → id` map.
+4. Quiz appended at `max(order_index)+1` with type-correct option/answer normalization; resolves each question's `objective_ref` → `objective_id`. Case (if any) inserted, its scenario questions linked.
+5. `UPDATE modules` student fields (overview, passing_score, attempts_allowed, seat_time_minutes); `upsert module_metadata` (reviewer fields).
+6. Set draft `status = published`, `published_at = now()`; return inserted counts.
 
 ### 6.4 Admin UI
 
-- **EnhanceDialog** (exists, has type-picker): add a "Generate accreditation module (draft)" action → calls v16 `target:"draft"`.
-- **Draft Review surface** (new): renders the generated module — overview, objectives, lessons, quizzes (via existing QuizEditor), crosswalk, competency checklist. Admin edits inline, then **Publish** (calls promote) or **Discard**.
-- **Reviewer / accreditation view** (new, admin-only): read-only render of §2 crosswalk + §8 assessment plan + §11 evidence + version control, with an **Export** (Markdown/printable) accreditation report per module.
+- **EnhanceDialog** (exists, has type-picker): AS BUILT — added an "Accreditation draft ✦ (recommended)" mode (the dialog's default) → calls `enhanceModuleDraft` (v16 `target:"draft"`). On success it hands the `draft_id` to the parent which opens the review surface.
+- **`DraftReviewDialog`** (new): tabbed review of the generated module. AS BUILT it uses **its own lightweight inline editors** (not the live-row `QuizEditor`, since draft questions aren't DB rows yet): edit overview/passing criteria, objectives (text + Bloom), question text/explanation, and MC/scenario options + correct answer + objective link; reviewer sections (crosswalk, competency, remediation, references) render read-only. **Save** persists the edited payload (`saveDraftPayload`); **Publish** (with a confirm checkbox) calls `publish_module_draft`; **Discard** marks it discarded. Finer answer-data for non-MC types (matching pairs, correct_indices, etc.) is edited post-publish in the existing live `QuizEditor`.
+- **DESCOPED this pass:** the standalone admin "accreditation Export report" (Markdown/printable per module) was *not* built — the reviewer fields are viewable in `DraftReviewDialog` and stored in `module_metadata`, but a one-click export document is a follow-up. The crosswalk/competency/evidence data all exist in the DB ready for it.
 
 ### 6.5 Student UI
 
@@ -94,17 +96,19 @@ Baseline at build start: **34 courses · 235 modules · 418 lessons · 1,911 qui
 ## 7. Build order (incremental commits)
 
 1. PRD + branch ✅
-2. Additive migration; re-verify counts.
-3. enhance-module v16 (draft target, empty-module fix, accreditation prompt, types).
-4. publish/promote (additive).
-5. Admin: EnhanceDialog draft action + Draft Review surface + accreditation export.
-6. Student: objectives + passing criteria in CoursePlayer.
-7. `tsc --noEmit` + `pnpm build` green; re-verify counts; update progress.md; PR; Coderabbit/Codex review.
+2. ✅ Additive migration; counts re-verified.
+3. ✅ enhance-module v16 (draft target, empty-module fix, accreditation prompt, types) — deployed.
+4. ✅ publish/promote RPC (additive, atomic, idempotent) — deployed.
+5. ✅ Admin: EnhanceDialog draft mode + DraftReviewDialog. (Accreditation export report DESCOPED — see §6.4.)
+6. ✅ Student: objectives + passing criteria in CoursePlayer.
+7. ✅ `tsc --noEmit` + `pnpm build` green; counts re-verified at baseline; progress.md updated; PR #19 opened; Coderabbit review queued.
+
+> **Status: shipped to PR #19** (`feat/accreditation-enhance`, unmerged). All §8 criteria met except the reviewer Export report (descoped, §6.4).
 
 ## 8. Acceptance criteria
 
-- Enhancing an empty module (e.g. `dda80bd2-…` "Sig Codes and Latin Abbreviations") produces a draft with lessons + quizzes — **no 404**.
-- Generated draft follows the accreditation structure (objectives mapped to quiz questions; crosswalk + competency checklist present).
-- Admin can restrict quiz types, review the generated set, modify, and publish; nothing reaches students before publish.
-- Students see objectives + passing criteria; reviewers can export an accreditation report.
-- DB row counts after publish are ≥ baseline for every table (never a decrease).
+- ✅ Enhancing an empty module (`dda80bd2-…` "Sig Codes and Latin Abbreviations") produces a draft with lessons + quizzes — **no 404**. (Verified: HTTP 200, 4 lessons + 6 q + 4 objectives.)
+- ✅ Generated draft follows the accreditation structure (objectives mapped to quiz questions; crosswalk + competency checklist present).
+- ✅ Admin can restrict quiz types, review the generated set, modify, and publish; nothing reaches students before publish.
+- ✅ Students see objectives + passing criteria. ⚠️ Reviewer **export report** descoped this pass (data is stored + viewable; one-click export is a follow-up).
+- ✅ DB row counts after publish are ≥ baseline for every table (verified: +4 lessons/+6 questions exactly on the test publish, then rolled back to exact baseline).
