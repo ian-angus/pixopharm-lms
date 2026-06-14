@@ -1693,37 +1693,18 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
                       />
                     </div>
 
-                    {/* Skill Level + Duration row */}
-                    <div className="grid grid-cols-2 gap-4">
-                      <div className="space-y-1.5">
-                        <Label>Skill Level <span className="text-destructive">*</span></Label>
-                        <Select
-                          value={aiGenForm.skill_level}
-                          onValueChange={(v) => setAiGenForm((f) => ({ ...f, skill_level: v as "Beginner" | "Intermediate" | "Advanced" }))}
-                          disabled={aiGenLoading}
-                        >
-                          <SelectTrigger>
-                            <SelectValue />
-                          </SelectTrigger>
-                          <SelectContent>
-                            <SelectItem value="Beginner">Beginner</SelectItem>
-                            <SelectItem value="Intermediate">Intermediate</SelectItem>
-                            <SelectItem value="Advanced">Advanced</SelectItem>
-                          </SelectContent>
-                        </Select>
-                      </div>
-                      <div className="space-y-1.5">
-                        <Label htmlFor="ai-duration">Duration (weeks) <span className="text-destructive">*</span></Label>
-                        <Input
-                          id="ai-duration"
-                          type="number"
-                          min={1}
-                          max={12}
-                          value={aiGenForm.duration_weeks}
-                          onChange={(e) => setAiGenForm((f) => ({ ...f, duration_weeks: Math.max(1, Math.min(12, parseInt(e.target.value) || 1)) }))}
-                          disabled={aiGenLoading}
-                        />
-                      </div>
+                    {/* Duration (the diploma is domain/stage-based — no skill levels) */}
+                    <div className="space-y-1.5">
+                      <Label htmlFor="ai-duration">Duration (weeks) <span className="text-destructive">*</span></Label>
+                      <Input
+                        id="ai-duration"
+                        type="number"
+                        min={1}
+                        max={12}
+                        value={aiGenForm.duration_weeks}
+                        onChange={(e) => setAiGenForm((f) => ({ ...f, duration_weeks: Math.max(1, Math.min(12, parseInt(e.target.value) || 1)) }))}
+                        disabled={aiGenLoading}
+                      />
                     </div>
 
                     {/* Jurisdiction */}

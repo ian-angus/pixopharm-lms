@@ -134,6 +134,11 @@ export interface Module {
   quiz: QuizQuestion[];
   /** Shared case vignettes referenced by quiz questions via caseId. */
   quizCases?: QuizCaseVignette[];
+  /** Accreditation: student-facing module fields (set when a draft is published). */
+  overview?: string;
+  passingScore?: number;
+  attemptsAllowed?: number;
+  seatTimeMinutes?: number;
 }
 
 export interface FullCourse {

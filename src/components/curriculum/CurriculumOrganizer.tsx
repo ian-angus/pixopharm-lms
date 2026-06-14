@@ -106,6 +106,7 @@ import {
 
 import ConfirmDialog from "./ConfirmDialog";
 import EnhanceDialog from "./EnhanceDialog";
+import DraftReviewDialog from "./DraftReviewDialog";
 import QuizEditor from "./QuizEditor";
 
 // ── Constants ────────────────────────────────────────────────────────────────
@@ -271,6 +272,7 @@ export default function CurriculumOrganizer({
   const [moduleToDelete, setModuleToDelete] = useState<Module | null>(null);
 
   const [enhanceTarget, setEnhanceTarget] = useState<Module | null>(null);
+  const [reviewDraftId, setReviewDraftId] = useState<string | null>(null);
   const [quizTarget, setQuizTarget] = useState<Module | null>(null);
 
   // ── Drag state ─────────────────────────────────────────────────────────────
@@ -1343,6 +1345,13 @@ export default function CurriculumOrganizer({
         open={!!enhanceTarget}
         onOpenChange={(o) => !o && setEnhanceTarget(null)}
         onEnhanced={handleEnhanced}
+        onDraftReady={(_moduleId, draftId) => setReviewDraftId(draftId)}
+      />
+      <DraftReviewDialog
+        draftId={reviewDraftId}
+        open={!!reviewDraftId}
+        onOpenChange={(o) => !o && setReviewDraftId(null)}
+        onPublished={handleEnhanced}
       />
       <QuizEditor
         module={quizTarget}

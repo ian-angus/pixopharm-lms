@@ -28,10 +28,14 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { useToast } from "@/hooks/use-toast";
 import {
   enhanceModule,
+  enhanceModuleDraft,
   type EnhanceModuleResult,
+  type EnhanceDraftResult,
   type Module,
   type QuestionType,
 } from "@/lib/admin-api";
+
+type EnhanceMode = "append" | "overwrite" | "draft";
 
 const TYPE_CHOICES: { value: QuestionType; label: string }[] = [
   { value: "multiple_choice", label: "Multiple Choice" },
@@ -50,22 +54,26 @@ interface EnhanceDialogProps {
   onOpenChange: (open: boolean) => void;
   /** Called after a successful run so the parent can refresh counts. */
   onEnhanced?: (moduleId: string, result: EnhanceModuleResult) => void;
+  /** Called when an accreditation draft is ready, so the parent can open review. */
+  onDraftReady?: (moduleId: string, draftId: string) => void;
 }
 
-export default function EnhanceDialog({ module, open, onOpenChange, onEnhanced }: EnhanceDialogProps) {
+export default function EnhanceDialog({ module, open, onOpenChange, onEnhanced, onDraftReady }: EnhanceDialogProps) {
   const { toast } = useToast();
-  const [mode, setMode] = useState<"append" | "overwrite">("append");
+  const [mode, setMode] = useState<EnhanceMode>("draft");
   const [overwriteConfirmed, setOverwriteConfirmed] = useState(false);
   const [running, setRunning] = useState(false);
   const [result, setResult] = useState<EnhanceModuleResult | null>(null);
+  const [draftResult, setDraftResult] = useState<EnhanceDraftResult | null>(null);
   // Question-type control: default = domain-aware mix; custom = explicit subset.
   const [customTypes, setCustomTypes] = useState(false);
   const [selectedTypes, setSelectedTypes] = useState<QuestionType[]>([]);
 
   const reset = () => {
-    setMode("append");
+    setMode("draft");
     setOverwriteConfirmed(false);
     setResult(null);
+    setDraftResult(null);
     setCustomTypes(false);
     setSelectedTypes([]);
   };
@@ -81,25 +89,44 @@ export default function EnhanceDialog({ module, open, onOpenChange, onEnhanced }
 
   const canRun =
     !running &&
-    (mode === "append" || overwriteConfirmed) &&
+    (mode !== "overwrite" || overwriteConfirmed) &&
     (!customTypes || selectedTypes.length > 0);
 
   const handleRun = async () => {
     if (!module || !canRun) return;
     setRunning(true);
     setResult(null);
+    setDraftResult(null);
+    const types = customTypes ? selectedTypes : undefined;
     try {
-      const res = await enhanceModule(module.id, mode, customTypes ? selectedTypes : undefined);
-      setResult(res);
-      onEnhanced?.(module.id, res);
-      toast({
-        title: "Module enhanced",
-        description: `"${module.title}" — ${res.lessons_updated} lesson${res.lessons_updated !== 1 ? "s" : ""} updated, ${res.questions_count} questions.`,
-      });
+      if (mode === "draft") {
+        const res = await enhanceModuleDraft(module.id, types);
+        setDraftResult(res);
+        toast({
+          title: "Accreditation draft ready",
+          description: `"${module.title}" — ${res.lessons_count} lessons, ${res.questions_count} questions, ${res.objectives_count} objectives. Review before publishing.`,
+        });
+      } else {
+        const res = await enhanceModule(module.id, mode, types);
+        setResult(res);
+        onEnhanced?.(module.id, res);
+        toast({
+          title: "Module enhanced",
+          description: `"${module.title}" — ${res.lessons_updated} lesson${res.lessons_updated !== 1 ? "s" : ""} updated, ${res.questions_count} questions.`,
+        });
+      }
     } catch (err) {
       toast({ title: "Enhancement failed", description: String(err), variant: "destructive" });
     } finally {
       setRunning(false);
+    }
+  };
+
+  const openReview = () => {
+    if (module && draftResult) {
+      onDraftReady?.(module.id, draftResult.draft_id);
+      onOpenChange(false);
+      reset();
     }
   };
 
@@ -113,17 +140,33 @@ export default function EnhanceDialog({ module, open, onOpenChange, onEnhanced }
           </DialogDescription>
         </DialogHeader>
 
-        {!result && (
+        {!result && !draftResult && (
           <div className="space-y-4">
             <RadioGroup
               value={mode}
               onValueChange={(v) => {
-                setMode(v as "append" | "overwrite");
+                setMode(v as EnhanceMode);
                 setOverwriteConfirmed(false);
               }}
               disabled={running}
               className="space-y-2"
             >
+              <label
+                htmlFor="enhance-draft"
+                className={`flex items-start gap-3 rounded-lg border p-3 cursor-pointer transition-colors ${
+                  mode === "draft" ? "border-[hsl(174,62%,32%)] bg-[hsl(174,45%,96%)]" : "border-border"
+                }`}
+              >
+                <RadioGroupItem value="draft" id="enhance-draft" className="mt-0.5" />
+                <span>
+                  <span className="block text-sm font-semibold text-foreground">Accreditation draft ✦ <span className="font-normal text-[hsl(174,62%,32%)]">recommended</span></span>
+                  <span className="block text-xs text-muted-foreground mt-0.5">
+                    Generates a full accreditation-format module (overview, learning objectives, crosswalk,
+                    competency checklist + quiz) to a draft you review and edit before publishing. Works on
+                    empty modules. Nothing goes live until you publish.
+                  </span>
+                </span>
+              </label>
               <label
                 htmlFor="enhance-append"
                 className={`flex items-start gap-3 rounded-lg border p-3 cursor-pointer transition-colors ${
@@ -243,11 +286,35 @@ export default function EnhanceDialog({ module, open, onOpenChange, onEnhanced }
           </div>
         )}
 
+        {draftResult && (
+          <div className="space-y-3 rounded-lg border border-[hsl(174,45%,80%)] bg-[hsl(174,45%,96%)] p-4">
+            <p className="text-sm font-semibold text-[hsl(174,62%,26%)]">Draft ready for review ✦</p>
+            <ul className="text-xs text-[hsl(174,62%,22%)] space-y-1">
+              <li><b>{draftResult.lessons_count}</b> lesson{draftResult.lessons_count !== 1 ? "s" : ""}{draftResult.create_lessons ? " (will be created)" : ""}, <b>{draftResult.questions_count}</b> question{draftResult.questions_count !== 1 ? "s" : ""}, <b>{draftResult.objectives_count}</b> objective{draftResult.objectives_count !== 1 ? "s" : ""}</li>
+              <li className="text-[hsl(174,62%,26%)]/70">Nothing is live yet — review and edit before publishing.</li>
+            </ul>
+            {draftResult.types_generated && draftResult.types_generated.length > 0 && (
+              <div className="flex flex-wrap gap-1.5">
+                {draftResult.types_generated.map((t) => (
+                  <Badge key={t} className="bg-white text-[hsl(174,62%,26%)] border-[hsl(174,45%,80%)] text-[10px]">
+                    {t.replace(/_/g, " ")}
+                  </Badge>
+                ))}
+              </div>
+            )}
+          </div>
+        )}
+
         <DialogFooter>
           <Button variant="outline" disabled={running} onClick={() => handleOpenChange(false)}>
-            {result ? "Close" : "Cancel"}
+            {result || draftResult ? "Close" : "Cancel"}
           </Button>
-          {!result && (
+          {draftResult && (
+            <Button onClick={openReview} className="gap-2 bg-[hsl(174,62%,32%)] hover:bg-[hsl(174,62%,26%)]">
+              Review &amp; publish →
+            </Button>
+          )}
+          {!result && !draftResult && (
             <Button
               onClick={handleRun}
               disabled={!canRun}
@@ -260,7 +327,7 @@ export default function EnhanceDialog({ module, open, onOpenChange, onEnhanced }
               {running && (
                 <span className="h-4 w-4 animate-spin rounded-full border-2 border-current border-t-transparent" />
               )}
-              {running ? "Enhancing…" : mode === "overwrite" ? "Overwrite & Enhance ✦" : "Enhance ✦"}
+              {running ? (mode === "draft" ? "Generating…" : "Enhancing…") : mode === "draft" ? "Generate draft ✦" : mode === "overwrite" ? "Overwrite & Enhance ✦" : "Enhance ✦"}
             </Button>
           )}
         </DialogFooter>

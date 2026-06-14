@@ -76,6 +76,7 @@ interface GenQuestion {
   explanation?: string;
   difficulty?: string;
   blooms_level?: string;
+  objective_ref?: string; // LOn — accreditation flow links each question to an objective
 }
 
 // Validate a generated question against the shapes the quiz player scores with.
@@ -188,6 +189,10 @@ Deno.serve(async (req: Request) => {
     // questions alongside existing ones. "overwrite" is the legacy destructive
     // behaviour and sits behind a confirm dialog in the admin UI.
     const mode: "append" | "overwrite" = body.mode === "overwrite" ? "overwrite" : "append";
+    // target "draft" (accreditation flow): generate the full accreditation module and
+    // write it ONLY to module_enhancement_drafts for admin review — no live writes.
+    // target "live" (default, legacy): write lessons + quiz directly as before.
+    const target: "draft" | "live" = body.target === "draft" ? "draft" : "live";
     if (!module_id) return json({ error: "module_id is required" }, 400);
 
     // Optional admin restriction: only generate these question types.
@@ -219,8 +224,15 @@ Deno.serve(async (req: Request) => {
       .select("id, title, order_index, duration_minutes, content")
       .eq("module_id", module_id)
       .order("order_index");
+    if (lessonErr) return json({ error: `Failed to read lessons: ${lessonErr.message}` }, 500);
 
-    if (lessonErr || !lessons?.length) return json({ error: "No lessons found for module" }, 404);
+    // THE 404-ON-EMPTY-MODULE FIX: 116 of 235 modules have zero lesson rows. Instead of
+    // bailing out, we ask the model to DESIGN lessons from scratch and create them.
+    const existingLessons = lessons ?? [];
+    const createLessons = existingLessons.length === 0;
+    if (createLessons && target === "live" && mode === "overwrite") {
+      // overwrite has nothing to overwrite on an empty module — treat as append.
+    }
 
     const { data: existingQs } = await sb
       .from("quiz_questions")
@@ -231,19 +243,34 @@ Deno.serve(async (req: Request) => {
     const maxOrder = existingQs?.[0]?.order_index ?? 0;
 
     const moduleCount = course.duration_weeks ? Math.min(Math.max(Math.round(Number(course.duration_weeks)), 2), 5) : 4;
-    // In append mode, lessons that already have content are never written —
-    // so when none are empty we ask the model for the QUIZ ONLY. This avoids
-    // generating thousands of tokens of lesson content that would be discarded
-    // (and the output-cap truncation that caused unparseable-JSON 500s).
-    const emptyLessonCount = lessons.filter(
+
+    // What lesson content does this generation need to produce?
+    //  - createLessons: design a fresh set of lessons (empty module).
+    //  - existing lessons with gaps (live append): fill only the empty ones.
+    //  - existing lessons all filled (live append): QUIZ ONLY (avoids discarded tokens).
+    //  - draft on a module that already has lessons: keep them, generate quiz+metadata only.
+    const emptyLessonCount = existingLessons.filter(
       (l) => !Array.isArray(l.content) || (l.content as unknown[]).length === 0
     ).length;
-    const quizOnly = mode === "append" && emptyLessonCount === 0;
-    const lessonList = lessons
-      .map((l, i) => `  Lesson ${i + 1}: "${l.title}" — target ${l.duration_minutes ?? 25} min`)
-      .join("\n");
+    const needLessonContent = createLessons || (target === "live" && mode === "append" && emptyLessonCount > 0)
+      || (target === "live" && mode === "overwrite");
+    const quizOnly = !needLessonContent;
+
+    const lessonList = createLessons
+      ? "  (none yet — DESIGN them, see TASK below)"
+      : existingLessons
+        .map((l, i) => `  Lesson ${i + 1}: "${l.title}" — target ${l.duration_minutes ?? 25} min`)
+        .join("\n");
+
+    const accreditation = target === "draft";
 
     // ── Build the generation prompt ───────────────────────────────────────────
+    const taskLine = createLessons
+      ? `TASK — this module has NO lessons yet. DESIGN 3–5 lessons that fully cover the module topic, following the instructional sequence (Foundational Concepts → Required Information → Common Challenges → Technician Role → Practice Application). For EACH lesson give a title, a realistic duration_minutes, and DEEP content (see DEPTH below). Then write the INTERACTIVE quiz.`
+      : quizOnly
+        ? "TASK — every lesson above already has content. Write ONLY an INTERACTIVE quiz for the module (return an empty lessons array)."
+        : "TASK — for EACH lesson write DEEP, teaching-grade content (see DEPTH below), then an INTERACTIVE quiz for the module.";
+
     const basePrompt = `${CARIBBEAN_CONTEXT}
 
 You are writing MODULE ${mod.order_index ?? 1} of ${moduleCount} for the PixoPharm course: "${course.title}" (${course.skill_level} level)${domainName ? `, in the curriculum domain "${domainName}"` : ""}.
@@ -255,23 +282,31 @@ Applies across ALL CARICOM nations — use specific island comparisons (T&T, Jam
 LESSONS IN THIS MODULE:
 ${lessonList}
 
-${quizOnly
-  ? "TASK — every lesson above already has content. Write ONLY an INTERACTIVE quiz for the module (return an empty lessons array)."
-  : "TASK — for EACH lesson write rich content (5–7 blocks), then an INTERACTIVE quiz for the module."}
+${taskLine}
 
-${quizOnly ? "" : `LESSON CONTENT BLOCKS — use ALL these block types across the lessons:
-  {"type":"heading","text":"...","level":2}  — main section heading (required, 1 per lesson)
-  {"type":"heading","text":"...","level":3}  — subsection heading
-  {"type":"text","body":"3–5 sentence paragraph. Must be clinically accurate, Caribbean-specific, naming real drugs, regulations, and islands."}
+${quizOnly ? "" : `DEPTH — each lesson MUST be deep enough to genuinely fill its target minutes. A real student should spend that long and come away able to practise. Aim for ~2–3 substantial blocks per 5 minutes of target time — a 25-minute lesson is ~12–16 blocks, NOT 5–7. Never pad: every block teaches something specific. Structure each lesson as:
+  1) an opening text block framing why this matters in Caribbean pharmacy practice;
+  2) 3–4 named subsections, each = a level-3 heading + TWO full teaching paragraphs + a callout or a worked example;
+  3) a comparison table across islands (drug scheduling, formularies, prevalence, etc.) where the topic allows;
+  4) 3–5 key-terms;
+  5) a closing summary text block of the key takeaways.
+Then set duration_minutes to a HONEST reading/study time for what you actually wrote (~180–200 words/min).
+
+LESSON CONTENT BLOCKS — use ALL of these across each lesson:
+  {"type":"heading","text":"...","level":2}  — lesson section heading (required, 1+ per lesson)
+  {"type":"heading","text":"...","level":3}  — subsection heading (one per subsection)
+  {"type":"text","body":"A FULL 4–7 sentence teaching paragraph. Clinically accurate, Caribbean-specific, naming real drugs, doses, regulations and islands. Explain mechanisms and the technician's role, don't just state facts."}
+  {"type":"list","style":"bullet","items":["specific point","specific point","specific point"]}  — steps, criteria, red-flags
+  {"type":"table","headers":["Island","...","..."],"rows":[["Jamaica","...","..."],["Trinidad & Tobago","...","..."]]}  — cross-island comparison (use REAL data)
   {"type":"callout","title":"...","body":"2–4 sentences","variant":"info"}  — island comparisons, regional clinical facts, regulatory differences
   {"type":"callout","title":"...","body":"...","variant":"warning"}  — patient safety alerts, dispensing errors, compliance warnings
   {"type":"key-term","term":"...","definition":"Precise 1–2 sentence definition with Caribbean clinical context and an example."}
   {"type":"video-placeholder","title":"...","duration":"X min","description":"Specific Caribbean pharmacy scenario this video demonstrates."}`}
-
+${accreditation ? accreditationPromptSection(createLessons) : ""}
 QUIZ — produce 6–8 questions ${requestedTypes
       ? `using ONLY these question_type values: ${requestedTypes.join(", ")}. Spread the questions across ${requestedTypes.length > 1 ? "all of them" : "it"}.`
       : `spanning AT LEAST 4 different question_type values.\n${typeMixForDomain(domainName)}`}
-Every question MUST have an "explanation" (2–3 sentences citing specific Caribbean regulation or clinical evidence) — it is shown to the student immediately after they answer.
+Every question MUST have an "explanation" (2–3 sentences citing specific Caribbean regulation or clinical evidence) — it is shown to the student immediately after they answer.${accreditation ? '\nEvery question (standalone AND case) MUST include "objective_ref":"LOn" tying it to one of the learning objectives. Ensure EVERY objective has at least one question.' : ""}
 
 QUESTION TYPE SCHEMAS (follow EXACTLY — these are machine-validated):
 1. {"question_type":"multiple_choice","question":"Scenario-grounded question?","options":["A","B","C","D"],"correct_answer":0,"explanation":"...","difficulty":"medium","blooms_level":"apply"}
@@ -288,8 +323,8 @@ QUESTION TYPE SCHEMAS (follow EXACTLY — these are machine-validated):
 
 Return ONLY valid JSON:
 {
-  "lessons": [
-    ${quizOnly ? "" : '{"title": "exact title matching the lesson list above", "duration_minutes": 25, "content": [ ...5-7 blocks... ]}'}
+${accreditation ? '  "module_overview": "3–5 sentence intro (see ACCREDITATION FORMAT).",\n  "learning_objectives": [ {"objective_number":"LO1","text":"...","blooms_level":"apply"} ],\n  "key_terms": [ {"term":"...","definition":"..."} ],\n  "crosswalk": [ {"standard":"...","objective":"LO1","instructional_content":"...","learning_activity":"didactic","assessment_method":"quiz","evidence":"quiz record"} ],\n  "competency_checklist": [ {"item":"...","validation_method":"..."} ],\n  "remediation_plan": ["step 1","step 2"],\n  "references": ["source actually used"],\n  "passing_score": 80,\n  "attempts_allowed": 3,\n  "seat_time_minutes": 60,\n  "module_code": "PTM-XXX",\n  "delivery_mode": "Online didactic",\n  "modality_tags": ["didactic"],\n' : ""}  "lessons": [
+    ${quizOnly ? "" : '{"title": "lesson title' + (createLessons ? '' : ' EXACTLY matching the list above') + '", "duration_minutes": <honest minutes for the content>, "content": [ ...DEEP content per DEPTH above: ~12-16 blocks for a 25-min lesson... ]}'}
   ],
   "quiz_questions": [ ...4-6 standalone questions, mixed types... ],
   "case": {
@@ -308,7 +343,8 @@ ${requestedTypes && !requestedTypes.includes("scenario")
     const passes = (v: { standalone: GenQuestion[]; caseQs: GenQuestion[] }) =>
       v.standalone.length + v.caseQs.length >= 5 && distinctTypes(v) >= minTypes;
 
-    const maxOut = quizOnly ? 6000 : 16000;
+    // Deeper lessons need a much larger output budget (was 16000 → truncation with rich content).
+    const maxOut = quizOnly ? 6000 : 32000;
     const totalUsage = { input_tokens: 0, output_tokens: 0 };
     const first = await callOpus(basePrompt, maxOut);
     totalUsage.input_tokens += first.usage.input_tokens;
@@ -341,34 +377,113 @@ Regenerate the COMPLETE JSON, fixing these issues. Minimum 5 valid questions acr
       ? (result as { lessons: { title?: string; duration_minutes?: number; content?: unknown[] }[] }).lessons
       : [];
 
-    // ── Write lessons ─────────────────────────────────────────────────────────
-    let lessonsUpdated = 0;
-    let lessonsSkipped = 0;
-    for (let i = 0; i < lessons.length; i++) {
-      const hasContent = Array.isArray(lessons[i].content) && (lessons[i].content as unknown[]).length > 0;
-      if (mode === "append" && hasContent) { lessonsSkipped++; continue; }
+    // ════════════════════════════════════════════════════════════════════════
+    // DRAFT TARGET — write the full accreditation module to staging ONLY.
+    // Nothing reaches live lessons/quiz_questions until an admin publishes.
+    // ════════════════════════════════════════════════════════════════════════
+    if (target === "draft") {
+      const acc = extractAccreditation(result as Record<string, unknown>);
+      const payload = {
+        module_id,
+        module_title: mod.title,
+        course_title: course.title,
+        domain: domainName,
+        create_lessons: createLessons,
+        ...acc,
+        lessons: createLessons
+          ? generatedLessons.map((l, i) => ({
+              title: l.title ?? `Lesson ${i + 1}`,
+              duration_minutes: l.duration_minutes ?? 25,
+              content: Array.isArray(l.content) ? l.content : [],
+              order_index: i,
+            }))
+          : [], // existing lessons are kept as-is; publish never overwrites them
+        quiz_questions: valid.standalone,
+        case: valid.caseQs.length && valid.vignette
+          ? { title: valid.caseTitle ?? "Case study", vignette: valid.vignette, questions: valid.caseQs }
+          : null,
+        generated_at: new Date().toISOString(),
+      };
 
-      const generated = generatedLessons.find(
-        (l) => l.title?.toLowerCase().trim() === lessons[i].title?.toLowerCase().trim()
-      ) ?? generatedLessons[i];
-      if (!generated?.content?.length) continue;
-
-      const { error: updateErr } = await sb
-        .from("lessons")
-        .update({
-          content: Array.isArray(generated.content) ? generated.content : [],
-          duration_minutes: generated.duration_minutes ?? lessons[i].duration_minutes ?? 25,
+      const { data: draftRow, error: draftErr } = await sb
+        .from("module_enhancement_drafts")
+        .insert({
+          module_id,
+          status: "pending_review",
+          payload,
+          requested_types: requestedTypes ?? [],
+          model: OPUS_MODEL,
+          tokens_in: totalUsage.input_tokens,
+          tokens_out: totalUsage.output_tokens,
+          created_by: user.id,
         })
-        .eq("id", lessons[i].id);
-      if (!updateErr) lessonsUpdated++;
+        .select("id")
+        .single();
+      if (draftErr || !draftRow) return json({ error: `Failed to save draft: ${draftErr?.message}` }, 500);
+
+      return json({
+        target: "draft",
+        draft_id: draftRow.id,
+        create_lessons: createLessons,
+        lessons_count: payload.lessons.length,
+        questions_count: valid.standalone.length + valid.caseQs.length,
+        objectives_count: acc.learning_objectives.length,
+        has_case: !!payload.case,
+        types_generated: [...new Set([...valid.standalone, ...valid.caseQs].map((q) => q.question_type))],
+        rejected_count: rejected.length,
+        model_used: OPUS_MODEL,
+        usage: totalUsage,
+      });
+    }
+
+    // ════════════════════════════════════════════════════════════════════════
+    // LIVE TARGET — legacy direct write. Append-safe; createLessons INSERTs new rows.
+    // ════════════════════════════════════════════════════════════════════════
+    let lessonsUpdated = 0;
+    let lessonsCreated = 0;
+    let lessonsSkipped = 0;
+
+    if (createLessons) {
+      // Empty module: INSERT fresh lesson rows (additive — nothing to overwrite).
+      for (let i = 0; i < generatedLessons.length; i++) {
+        const g = generatedLessons[i];
+        if (!Array.isArray(g.content) || g.content.length === 0) continue;
+        const { error: insErr } = await sb.from("lessons").insert({
+          module_id,
+          title: g.title ?? `Lesson ${i + 1}`,
+          content: g.content,
+          order_index: i,
+          duration_minutes: g.duration_minutes ?? 25,
+        });
+        if (!insErr) lessonsCreated++; else console.log(`enhance-module: lesson insert failed: ${insErr.message}`);
+      }
+    } else {
+      for (let i = 0; i < existingLessons.length; i++) {
+        const hasContent = Array.isArray(existingLessons[i].content) && (existingLessons[i].content as unknown[]).length > 0;
+        if (mode === "append" && hasContent) { lessonsSkipped++; continue; }
+
+        const generated = generatedLessons.find(
+          (l) => l.title?.toLowerCase().trim() === existingLessons[i].title?.toLowerCase().trim()
+        ) ?? generatedLessons[i];
+        if (!generated?.content?.length) continue;
+
+        const { error: updateErr } = await sb
+          .from("lessons")
+          .update({
+            content: Array.isArray(generated.content) ? generated.content : [],
+            duration_minutes: generated.duration_minutes ?? existingLessons[i].duration_minutes ?? 25,
+          })
+          .eq("id", existingLessons[i].id);
+        if (!updateErr) lessonsUpdated++;
+      }
     }
 
     // ── Write quiz ────────────────────────────────────────────────────────────
-    if (mode === "overwrite") {
+    if (mode === "overwrite" && !createLessons) {
       await sb.from("quiz_questions").delete().eq("module_id", module_id);
       await sb.from("quiz_cases").delete().eq("module_id", module_id);
     }
-    let orderIndex = mode === "append" ? maxOrder : 0;
+    let orderIndex = (mode === "append" || createLessons) ? maxOrder : 0;
     let questionsInserted = 0;
 
     for (const q of valid.standalone) {
@@ -397,7 +512,10 @@ Regenerate the COMPLETE JSON, fixing these issues. Minimum 5 valid questions acr
     }
 
     return json({
+      target: "live",
       mode,
+      created_lessons: createLessons,
+      lessons_created: lessonsCreated,
       lessons_updated: lessonsUpdated,
       lessons_skipped_existing: lessonsSkipped,
       questions_count: questionsInserted,
@@ -414,6 +532,53 @@ Regenerate the COMPLETE JSON, fixing these issues. Minimum 5 valid questions acr
     return json({ error: msg }, 500);
   }
 });
+
+// Accreditation prompt block (§1–§12 of the client format), mapped to our model.
+function accreditationPromptSection(createLessons: boolean): string {
+  return `
+ACCREDITATION FORMAT — this is an ACCREDITATION-READY pharmacy technician module (2026 ASHP/ACPE aligned).
+In ADDITION to ${createLessons ? "the lessons you design" : "the lessons"} and the quiz, return these fields:
+  "module_overview": 3–5 sentence professional intro — why the topic matters to Caribbean pharmacy technician practice, how it fits the diploma, what the learner will be able to do, and whether it is knowledge-, skill-, or competency-based.
+  "learning_objectives": 3–5 MEASURABLE, action-based objectives (use Bloom verbs; avoid "understand"). Each {objective_number:"LO1", text, blooms_level}.
+  "key_terms": the terms a beginner must know first, each {term, definition} (Caribbean context).
+  "crosswalk": one row per objective {standard (accreditation goal), objective:"LOn", instructional_content (lesson/section), learning_activity (didactic|simulation|discussion|assignment), assessment_method (quiz|scenario|checklist), evidence (quiz record|completion report|rubric)}.
+  "competency_checklist": observable skills the learner must demonstrate, each {item, validation_method}.
+  "remediation_plan": ordered steps a learner follows after an unsuccessful attempt.
+  "references": ONLY sources actually reflected in the content (real regulations, formularies, guidelines). Do NOT invent standards.
+  "passing_score" (int %), "attempts_allowed" (int), "seat_time_minutes" (int ≈ sum of lesson durations), "module_code" (e.g. "PTM-104"), "delivery_mode", "modality_tags" (subset of didactic/simulation/experiential).
+`;
+}
+
+// Pull the accreditation fields out of a model result with safe defaults so a
+// missing/garbled field never blocks the draft (reviewer can fix on review).
+function extractAccreditation(result: Record<string, unknown>) {
+  const arr = (v: unknown) => (Array.isArray(v) ? v : []);
+  const str = (v: unknown) => (typeof v === "string" ? v : "");
+  const intOr = (v: unknown, d: number) => (Number.isFinite(Number(v)) ? Math.round(Number(v)) : d);
+  const objectives = arr(result.learning_objectives).map((o, i) => {
+    const r = (o ?? {}) as Record<string, unknown>;
+    return {
+      objective_number: str(r.objective_number) || `LO${i + 1}`,
+      text: str(r.text),
+      blooms_level: str(r.blooms_level) || "apply",
+    };
+  }).filter((o) => o.text.length > 0);
+  return {
+    module_overview: str(result.module_overview),
+    learning_objectives: objectives,
+    key_terms: arr(result.key_terms),
+    crosswalk: arr(result.crosswalk),
+    competency_checklist: arr(result.competency_checklist),
+    remediation_plan: arr(result.remediation_plan),
+    references: arr(result.references),
+    passing_score: intOr(result.passing_score, 80),
+    attempts_allowed: intOr(result.attempts_allowed, 3),
+    seat_time_minutes: intOr(result.seat_time_minutes, 0),
+    module_code: str(result.module_code),
+    delivery_mode: str(result.delivery_mode) || "Online didactic",
+    modality_tags: arr(result.modality_tags).filter((t) => typeof t === "string"),
+  };
+}
 
 function collectQuestions(result: Record<string, unknown>, requestedTypes: QType[] | null = null) {
   const standaloneRaw = Array.isArray(result.quiz_questions) ? result.quiz_questions as GenQuestion[] : [];

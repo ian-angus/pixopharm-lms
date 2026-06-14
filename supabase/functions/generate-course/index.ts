@@ -88,9 +88,12 @@ Deno.serve(async (req: Request) => {
     const body = await req.json();
     const { title, skill_level, duration_weeks, jurisdiction, focus_areas, created_by, job_id } = body;
 
-    if (!title || !skill_level || !duration_weeks) {
-      return json({ error: "title, skill_level, and duration_weeks are required" }, 400);
+    if (!title || !duration_weeks) {
+      return json({ error: "title and duration_weeks are required" }, 400);
     }
+    // The diploma is domain/stage-based — the student UI no longer uses skill levels.
+    // skill_level is kept only as an internal column value; default to the neutral "Regional".
+    const level = skill_level ?? "Regional";
     const durationNum = Number(duration_weeks);
     if (!Number.isInteger(durationNum) || durationNum < 1 || durationNum > 26) {
       return json({ error: "duration_weeks must be an integer between 1 and 26" }, 400);
@@ -137,7 +140,7 @@ Deno.serve(async (req: Request) => {
       title,
       slug: initialSlug,
       description: "",
-      skill_level,
+      skill_level: level,
       duration_weeks: durationNum,
       icon: "GraduationCap",
       color: "blue",
@@ -162,7 +165,7 @@ Generate a course STRUCTURE OUTLINE (no lesson content yet — only titles and m
 
 COURSE SPECS:
 - Title: "${title}"
-- Level: ${skill_level}
+- Part of: the Caribbean Pharmacy Technician Diploma — a single domain/stage-based program. Do NOT frame the course or its content by "beginner/intermediate/advanced"; pitch it at a practising pharmacy-technician trainee level throughout.
 - Duration: ${duration_weeks} weeks
 - ${jurisdictionText}${focusText}
 - Modules: EXACTLY ${moduleCount}
@@ -213,7 +216,7 @@ COLOR options: blue|green|purple|amber|red|teal|orange|slate|violet|rose`;
 
         const modulePrompt = `${CARIBBEAN_CONTEXT}
 
-You are writing MODULE ${mi + 1} of ${moduleCount} for the PixoPharm course: "${title}" (${skill_level} level).
+You are writing MODULE ${mi + 1} of ${moduleCount} for the PixoPharm course: "${title}" (part of the Caribbean Pharmacy Technician Diploma).
 
 MODULE: "${mod.title}"
 Learning objectives: ${(mod.learning_objectives ?? []).join("; ")}
