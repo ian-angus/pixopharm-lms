@@ -2,6 +2,98 @@
 
 ---
 
+## 2026-06-13 (pm): ENHANCE BUG FIXED + ACCREDITATION DRAFT FLOW BUILT (branch `feat/accreditation-enhance`)
+
+**The 404-on-empty-module bug is fixed** and the client's accreditation format + "create THESE quiz
+types → review → modify → save" flow are built end-to-end. **Zero data lost** — every DB op additive;
+baseline (34 courses / 235 modules / 418 lessons / 1,911 quiz / 104 cases) verified unchanged after each step.
+
+**Design (brainstormed + approved-by-instruction "build it"):** full accreditation format with new DB
+fields; split audience (students see objectives + passing criteria; reviewers get crosswalk/competency/
+notes + export); generate→draft→review→publish (nothing live until an admin publishes); quiz type-picker
+review flow. PRD: `docs/ACCREDITATION-ENHANCE-PRD.md`. Format spec: `docs/ACCREDITATION-MODULE-FORMAT.md`.
+
+**Shipped (6 commits on branch):**
+1. **Migration `20260613000001_accreditation_enhance.sql`** (additive, applied to prod, counts verified):
+   - `modules` += student-facing `module_overview`, `passing_score`, `attempts_allowed`, `seat_time_minutes`
+   - `module_metadata` (admin-only RLS): crosswalk, competency_checklist, remediation_plan, module_references, notes, version/author/reviewer, modality_tags
+   - `learning_objectives` (1:many; published-read RLS) + `quiz_questions.objective_id` nullable FK
+   - `module_enhancement_drafts` (admin-only staging for the review gate)
+2. **enhance-module v16** (deployed): `target:"draft"` generates the full accreditation module to staging
+   only (no live writes); **createLessons** branch generates lessons from scratch for empty modules
+   (the 404 fix); honors `types[]`; modules-with-lessons keep legacy append/overwrite unchanged.
+3. **`publish_module_draft(uuid)` RPC `20260613000002`** (deployed): atomic SECURITY DEFINER, is_admin-gated,
+   INSERT/append-only, idempotent (locks draft row, re-publish no-ops); inserts lessons (only if empty) +
+   objectives + links each question via objective_ref + appends quiz + upserts module fields & metadata.
+4. **admin-api**: enhanceModuleDraft / fetchModuleDrafts / fetchDraft / saveDraftPayload / publishModuleDraft / discardModuleDraft + Draft* types.
+5. **EnhanceDialog**: new default "Accreditation draft" mode → `DraftReviewDialog` (tabbed review of
+   overview/objectives/lessons/quiz with inline edit of question text/options/correct/explanation/objective
+   link + reviewer-only crosswalk/competency/remediation/refs; Save edits / Publish-with-confirm / Discard).
+6. **CoursePlayer**: shows module overview + real learning objectives + pass mark/attempts/est. time
+   (guarded; non-accreditation modules unchanged).
+
+**Proven end-to-end on empty published-course module `dda80bd2…` ("Sig Codes…"):** draft gen HTTP 200
+(4 lessons + 6 questions + 4 objectives, types restricted to the 4 requested, ~531 tok-equiv, live module
+stayed 0/0 during generation) → publish created 4 lessons + 6 questions (all 6 linked to objectives) +
+metadata, globals +4 lessons/+6 questions exactly → **rolled back to baseline** (test content deleted,
+draft reset to pending_review). `tsc --noEmit` + `pnpm build` green. No new security-advisor findings on new tables.
+
+**Open / next:** push branch + PR; check Coderabbit/Codex; deploy `npx vercel --prod` after merge.
+One test draft (`e014232a…`) left in `pending_review` staging for `dda80bd2…` — owner can review+publish
+it for real, or discard. Client still to send a worked SAMPLE module to tune the format/prompt.
+
+---
+
+## 2026-06-13: ENHANCE BUG DIAGNOSED (not yet fixed) + new direction (accreditation module format)
+
+### Status: PAUSED mid-fix at user's request (computer reboot). No code changed yet.
+
+**"Lost all data" investigated → NO DATA WAS LOST.** Live DB intact and larger than any backup:
+34 courses, 235 modules, 418 lessons, 1,903 quiz questions, 103 quiz_cases, 9 domains, 4 users.
+Backend fully healthy: anon reads published courses, admin signs in + sees all 34, and a live
+enhance call returned HTTP 200 (8 questions, case, opus-4-8). Deployed academy.pixopharm.com loads
+clean (0 console errors), shows "34 courses total" + 9 domain groups. The 116 empty modules were
+ALWAYS empty skeletons — confirmed in git history (0 lesson files EVER committed for e.g. "Medical &
+Pharmaceutical Terminology"); the original plan flagged "~half of core courses have 0 lessons —
+skeletons awaiting Enhance."
+
+**THE CRITICAL ENHANCE BUG (reproduced):** `enhance-module` returns
+`404 "No lessons found for module"` for any module with zero lesson rows. **116 of 235 modules (49%)**
+are empty skeletons (incl. modules in PUBLISHED courses), so enhance HARD-FAILS on half the catalog.
+Root cause: enhance was built to ENRICH existing lessons (it UPDATEs lesson rows by title match); it
+cannot CREATE lessons for a bare module. Guard at `supabase/functions/enhance-module/index.ts:223`.
+Secondary bug: the client-side timeout fallback in `src/lib/admin-api.ts` enhanceModule (~line 1024)
+checks `firstBlocks >= 7`, which is wrong for the v15 quiz-only append path.
+
+**FIX DESIGNED (NOT APPLIED — was about to branch `fix/enhance-empty-modules` when user said wait):**
+When a module has no lessons, generate lessons from scratch (Opus designs ~3 lesson titles + content)
+and INSERT them, instead of 404-ing. Backend edits mapped: replace the 404 guard (line 223) with
+`const lessons = lessonsData ?? []; const createLessons = lessons.length === 0`; branch the prompt's
+LESSONS/TASK/return-JSON sections for createLessons; add an INSERT path in the write-lessons loop
+(currently only UPDATEs). quizOnly must be false when createLessons. Then redeploy + test on empty
+module `dda80bd2-a57d-4f5c-be72-11ceb6776170` ("Sig Codes and Latin Abbreviations", Medical & Pharm
+Terminology).
+
+### NEW DIRECTION (from client, 2026-06-13) — saved to `lms/docs/ACCREDITATION-MODULE-FORMAT.md`
+Client gave a full **accreditation-ready Pharmacy Technician module format** (20-section template:
+metadata, accreditation/curriculum crosswalk, learning objectives mapped to assessments, modality
+tagging didactic/simulation/experiential, formative+summative assessment plan, passing criteria,
+remediation, LMS evidence, QA review). Aligns to 2026 ASHP/ACPE. Full spec + gap analysis in that doc.
+
+**Client also wants:** an option to use AI to CREATE quizzes for a module by saying "create THESE quiz
+types," then REVIEW and MODIFY them before saving. (EnhanceDialog already has the type-picker;
+QuizEditor already allows per-type hand editing — flow needs generate → review → edit → save.)
+
+### NEXT SESSION (resume here)
+1. **Client will provide a worked SAMPLE module** — use it as the concrete reference/format target.
+2. Fix the enhance 404-on-empty-modules bug (design above) — CRITICAL, half the catalog can't enhance.
+3. Build/refine the "AI create quiz types → review → modify → save" flow.
+4. Consider aligning module structure to the accreditation format (metadata, objectives, crosswalk).
+Branch state when paused: a `git checkout main && branch` was rejected; uncommitted doc + this entry on
+disk (survive reboot). Confirm branch with `git status` before resuming.
+
+---
+
 ## 2026-06-11 (pm): BULK-ENHANCE ROLLOUT COMPLETE — interactive quizzes platform-wide
 
 **Owner-approved full rollout executed** (detached run, ~3.5h, enhance-module v15 append mode, fresh token per module due to ~5-min JWT expiry):
