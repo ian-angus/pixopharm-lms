@@ -68,6 +68,7 @@ import {
   createQuizQuestion,
   deleteQuizCase,
   deleteQuizQuestion,
+  enhanceModule,
   fetchQuizCases,
   updateQuizCase,
   updateQuizQuestion,
@@ -77,6 +78,18 @@ import {
   type QuizQuestion,
 } from "@/lib/admin-api";
 import ConfirmDialog from "./ConfirmDialog";
+
+// AI quiz-generation: the 8 types an admin can ask the AI to create.
+const AI_TYPE_CHOICES: { value: QuestionType; label: string }[] = [
+  { value: "multiple_choice", label: "Multiple choice" },
+  { value: "true_false", label: "True / false" },
+  { value: "multiple_select", label: "Select all" },
+  { value: "ordering", label: "Ordering" },
+  { value: "matching", label: "Matching" },
+  { value: "fill_in_blank", label: "Fill in the blank" },
+  { value: "numeric", label: "Calculation" },
+  { value: "scenario", label: "Case / scenario" },
+];
 
 // ── Local fetch helper (admin-api has no fetchQuizQuestions(moduleId)) ───────
 
@@ -389,6 +402,11 @@ export default function QuizEditor({ module, open, onOpenChange, onQuizChanged }
   const [cases, setCases] = useState<QuizCase[]>([]);
   const [loading, setLoading] = useState(false);
 
+  // AI quiz generation (pick types → generate → review/edit the new questions inline)
+  const [aiOpen, setAiOpen] = useState(false);
+  const [aiTypes, setAiTypes] = useState<QuestionType[]>([]);
+  const [aiRunning, setAiRunning] = useState(false);
+
   // Question form dialog
   const [formOpen, setFormOpen] = useState(false);
   const [editingQuestion, setEditingQuestion] = useState<QuizQuestion | null>(null);
@@ -436,6 +454,32 @@ export default function QuizEditor({ module, open, onOpenChange, onQuizChanged }
       void reload();
     }
   }, [open, moduleId, reload]);
+
+  // ── AI quiz generation ─────────────────────────────────────────────────────
+
+  const toggleAiType = (t: QuestionType) =>
+    setAiTypes((prev) => (prev.includes(t) ? prev.filter((x) => x !== t) : [...prev, t]));
+
+  const handleAiGenerate = async () => {
+    if (!moduleId || aiRunning) return;
+    setAiRunning(true);
+    try {
+      const res = await enhanceModule(moduleId, "append", aiTypes.length ? aiTypes : undefined);
+      toast({
+        title: "Questions generated",
+        description: `Added ${res.questions_count} question${res.questions_count !== 1 ? "s" : ""}${
+          aiTypes.length ? ` (${aiTypes.length} type${aiTypes.length !== 1 ? "s" : ""})` : ""
+        }. Review and edit them below.`,
+      });
+      setAiOpen(false);
+      setAiTypes([]);
+      await reload();
+    } catch (err) {
+      toast({ title: "AI generation failed", description: String(err), variant: "destructive" });
+    } finally {
+      setAiRunning(false);
+    }
+  };
 
   // ── Question form handlers ─────────────────────────────────────────────────
 
@@ -649,14 +693,66 @@ export default function QuizEditor({ module, open, onOpenChange, onQuizChanged }
               <section>
                 <div className="flex items-center justify-between mb-2">
                   <h3 className="text-sm font-semibold text-foreground">Questions</h3>
-                  <Button
-                    size="sm"
-                    onClick={openNewQuestion}
-                    className="bg-[hsl(174,62%,32%)] hover:bg-[hsl(174,62%,26%)]"
-                  >
-                    + Add question
-                  </Button>
+                  <div className="flex gap-2">
+                    <Button
+                      size="sm"
+                      variant="outline"
+                      onClick={() => setAiOpen((o) => !o)}
+                      disabled={aiRunning}
+                      className="border-[hsl(174,62%,32%)]/40 text-[hsl(174,62%,30%)] hover:bg-[hsl(174,45%,96%)]"
+                    >
+                      ✦ Generate with AI
+                    </Button>
+                    <Button
+                      size="sm"
+                      onClick={openNewQuestion}
+                      className="bg-[hsl(174,62%,32%)] hover:bg-[hsl(174,62%,26%)]"
+                    >
+                      + Add question
+                    </Button>
+                  </div>
                 </div>
+
+                {/* AI generate panel — pick the types you want, then review/edit the result */}
+                {aiOpen && (
+                  <div className="mb-3 rounded-lg border border-[hsl(174,62%,32%)]/25 bg-[hsl(174,45%,97%)] p-3">
+                    <p className="text-xs font-semibold text-[hsl(174,62%,28%)] mb-1.5">
+                      Which question types should the AI create?
+                    </p>
+                    <p className="text-[11px] text-muted-foreground mb-2.5">
+                      Leave all unticked for a recommended mix. The AI uses this module's lessons as
+                      context, appends the new questions, and you can edit or delete each one below.
+                    </p>
+                    <div className="grid grid-cols-2 gap-1.5">
+                      {AI_TYPE_CHOICES.map((t) => (
+                        <label key={t.value} className="flex items-center gap-2 text-xs cursor-pointer">
+                          <Checkbox
+                            checked={aiTypes.includes(t.value)}
+                            onCheckedChange={() => toggleAiType(t.value)}
+                            disabled={aiRunning}
+                          />
+                          {t.label}
+                        </label>
+                      ))}
+                    </div>
+                    <div className="mt-3 flex items-center justify-end gap-2">
+                      <Button size="sm" variant="ghost" disabled={aiRunning} onClick={() => setAiOpen(false)}>
+                        Cancel
+                      </Button>
+                      <Button
+                        size="sm"
+                        onClick={handleAiGenerate}
+                        disabled={aiRunning}
+                        className="gap-2 bg-[hsl(174,62%,32%)] hover:bg-[hsl(174,62%,26%)]"
+                      >
+                        {aiRunning && (
+                          <span className="h-3.5 w-3.5 animate-spin rounded-full border-2 border-white border-t-transparent" />
+                        )}
+                        {aiRunning ? "Generating… (~1–2 min)" : "Generate questions ✦"}
+                      </Button>
+                    </div>
+                  </div>
+                )}
                 {questions.length === 0 ? (
                   <p className="text-xs text-muted-foreground italic">No questions yet.</p>
                 ) : (
