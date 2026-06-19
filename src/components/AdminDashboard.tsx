@@ -750,6 +750,21 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
     if (!lessonForm.title.trim()) errors.title = "Title is required";
     if (Object.keys(errors).length > 0) {
       setFormErrors(errors);
+      // The title field sits at the TOP of a tall dialog; with a long lesson its
+      // error scrolls out of view and the button looks dead. Surface it loudly.
+      toast({
+        title: "Add a lesson title",
+        description: "A lesson needs a title before it can be created — the Title box is at the top of this dialog.",
+        variant: "destructive",
+      });
+      return;
+    }
+    if (!editingLesson && !lessonParentModuleId) {
+      toast({
+        title: "No module selected",
+        description: "Open “Add lesson” from a module so the lesson has a home, then try again.",
+        variant: "destructive",
+      });
       return;
     }
 
@@ -2750,7 +2765,12 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
             />
           </div>
 
-          <DialogFooter>
+          <DialogFooter className="items-center gap-2 sm:gap-2">
+            {formErrors.title && (
+              <p className="mr-auto text-xs text-destructive font-medium">
+                {formErrors.title} — it's at the top of this dialog.
+              </p>
+            )}
             <DialogClose asChild>
               <Button variant="outline">Cancel</Button>
             </DialogClose>
