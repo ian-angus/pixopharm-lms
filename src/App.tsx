@@ -340,8 +340,8 @@ function Navbar({ user, onSignInClick, onSignOut, isAdmin, onAdminClick, onJourn
                 </Button>
               ) : (
                 <>
-                  <Button variant="outline" size="sm" className="flex-1">Sign In</Button>
-                  <Button size="sm" className="flex-1 bg-[hsl(174,62%,32%)]">Get Started</Button>
+                  <Button variant="outline" size="sm" className="flex-1" onClick={() => { setOpen(false); onSignInClick(); }}>Sign In</Button>
+                  <Button size="sm" className="flex-1 bg-[hsl(174,62%,32%)]" onClick={() => { setOpen(false); onSignInClick(); }}>Get Started</Button>
                 </>
               )}
             </div>
