@@ -1525,7 +1525,7 @@ export default function CoursePlayer({
   courseId?: string;
 }) {
   const [view, setView] = useState<View>({ page: "overview" });
-  const [sidebarOpen, setSidebarOpen] = useState(true);
+  const [sidebarOpen, setSidebarOpen] = useState(() => window.matchMedia("(min-width: 768px)").matches);
   const contentRef = useRef<HTMLDivElement>(null);
 
   // Load course from Supabase
@@ -1618,6 +1618,8 @@ export default function CoursePlayer({
   const navigateTo = (v: View) => {
     setView(v);
     contentRef.current?.scrollTo(0, 0);
+    // On phones the sidebar overlays the content — close it after navigating
+    if (window.innerWidth < 768) setSidebarOpen(false);
   };
 
   const goToNextLesson = (moduleIndex: number, lessonIndex: number) => {
@@ -1642,7 +1644,7 @@ export default function CoursePlayer({
   // ── Sidebar ─────────────────────────────────────────────────────────────
 
   const Sidebar = () => (
-    <div className={`${sidebarOpen ? "w-80" : "w-0"} transition-all duration-300 overflow-hidden bg-white border-r border-slate-200 flex-shrink-0`}>
+    <div className={`${sidebarOpen ? "w-80 max-w-[85vw]" : "w-0"} transition-all duration-300 overflow-hidden bg-white border-r border-slate-200 flex-shrink-0 absolute inset-y-0 left-0 z-30 shadow-xl md:static md:z-auto md:shadow-none`}>
       <ScrollArea className="h-full">
         <div className="p-4">
           {/* Course header */}
@@ -2171,7 +2173,10 @@ export default function CoursePlayer({
       </div>
 
       {/* Body */}
-      <div className="flex flex-1 overflow-hidden">
+      <div className="flex flex-1 overflow-hidden relative">
+        {sidebarOpen && (
+          <div className="fixed inset-0 top-14 bg-black/30 z-20 md:hidden" onClick={() => setSidebarOpen(false)} />
+        )}
         <Sidebar />
         <div
           ref={contentRef}
