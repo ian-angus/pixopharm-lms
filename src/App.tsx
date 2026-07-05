@@ -333,16 +333,34 @@ function Navbar({ user, onSignInClick, onSignOut, isAdmin, onAdminClick, onJourn
                 {l.label}
               </a>
             ))}
-            <div className="mt-3 flex gap-2 px-3">
-              {user && onJourneyClick ? (
-                <Button size="sm" className="flex-1 bg-[hsl(174,62%,32%)]" onClick={() => { setOpen(false); onJourneyClick(); }}>
-                  My Journey
-                </Button>
+            <div className="mt-3 px-3">
+              {user ? (
+                <div className="flex flex-col gap-2">
+                  <span className="flex items-center gap-1.5 pb-1 text-sm text-slate-600">
+                    <span className="w-6 h-6 rounded-full bg-[hsl(174,62%,32%)] text-white flex items-center justify-center text-xs font-bold">
+                      {(user.user_metadata?.full_name || user.email || "U")[0].toUpperCase()}
+                    </span>
+                    <span className="truncate">{user.user_metadata?.full_name || user.email}</span>
+                  </span>
+                  {onJourneyClick && (
+                    <Button size="sm" className="w-full bg-[hsl(174,62%,32%)]" onClick={() => { setOpen(false); onJourneyClick(); }}>
+                      My Journey
+                    </Button>
+                  )}
+                  {isAdmin && onAdminClick && (
+                    <Button variant="outline" size="sm" className="w-full border-[hsl(174,62%,32%)]/30 text-[hsl(174,62%,32%)]" onClick={() => { setOpen(false); onAdminClick(); }}>
+                      Admin
+                    </Button>
+                  )}
+                  <Button variant="ghost" size="sm" className="w-full" onClick={() => { setOpen(false); onSignOut(); }}>
+                    Sign Out
+                  </Button>
+                </div>
               ) : (
-                <>
+                <div className="flex gap-2">
                   <Button variant="outline" size="sm" className="flex-1" onClick={() => { setOpen(false); onSignInClick(); }}>Sign In</Button>
                   <Button size="sm" className="flex-1 bg-[hsl(174,62%,32%)]" onClick={() => { setOpen(false); onSignInClick(); }}>Get Started</Button>
-                </>
+                </div>
               )}
             </div>
           </div>
