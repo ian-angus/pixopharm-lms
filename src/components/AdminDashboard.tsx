@@ -3,7 +3,7 @@
 // Full admin console: Dashboard, Courses, Students, Analytics, Settings
 // ============================================================================
 
-import { useState, useEffect, useCallback, useMemo } from "react";
+import { useState, useEffect, useCallback, useMemo, useRef } from "react";
 import type { User } from "@supabase/supabase-js";
 
 // ── UI Components ────────────────────────────────────────────────────────────
@@ -383,6 +383,11 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
 
   // ── Course Detail State ──────────────────────────────────────────────────
   const [expandedCourseId, setExpandedCourseId] = useState<string | null>(null);
+  // Live view of the expanded course for long-running async callbacks (an
+  // enhance takes ~2 min — the admin may have expanded a different course by
+  // the time it finishes, and a stale refetch must not overwrite that view).
+  const expandedCourseIdRef = useRef(expandedCourseId);
+  expandedCourseIdRef.current = expandedCourseId;
   const [surveyStats, setSurveyStats] = useState<Record<string, CourseSurveyStats>>({});
   const [surveyLoading, setSurveyLoading] = useState<Record<string, boolean>>({});
   const [aiAnalysis, setAiAnalysis] = useState<Record<string, { summary: string; recommendations: string[] } | null>>({});
@@ -1533,7 +1538,10 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
                                   <ModuleCard
                                     key={mod.id}
                                     mod={mod}
-                                    onEnhanced={() => loadCourseDetail(course.id)}
+                                    onEnhanced={() => {
+                                      // Only refetch if this course is still the one on screen.
+                                      if (expandedCourseIdRef.current === course.id) loadCourseDetail(course.id);
+                                    }}
                                     onEditModule={() => openEditModule(mod)}
                                     onDeleteModule={() => confirmDelete("module", mod.id, mod.title)}
                                     onAddLesson={() => openNewLesson(mod.id)}
