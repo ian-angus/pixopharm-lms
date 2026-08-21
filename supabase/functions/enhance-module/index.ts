@@ -191,12 +191,8 @@ Deno.serve(async (req: Request) => {
     const mode: "append" | "overwrite" = body.mode === "overwrite" ? "overwrite" : "append";
     // target "draft" (accreditation flow): generate the full accreditation module and
     // write it ONLY to module_enhancement_drafts for admin review — no live writes.
-    // target "quiz_refresh": propose a REPLACEMENT quiz grounded in the module's
-    // current lesson content, staged to module_enhancement_drafts (kind=quiz_refresh);
-    // apply_quiz_refresh() later swaps it in with per-question keep control.
     // target "live" (default, legacy): write lessons + quiz directly as before.
-    const target: "draft" | "live" | "quiz_refresh" =
-      body.target === "draft" ? "draft" : body.target === "quiz_refresh" ? "quiz_refresh" : "live";
+    const target: "draft" | "live" = body.target === "draft" ? "draft" : "live";
     if (!module_id) return json({ error: "module_id is required" }, 400);
 
     // Optional admin restriction: only generate these question types.
@@ -236,129 +232,6 @@ Deno.serve(async (req: Request) => {
     const createLessons = existingLessons.length === 0;
     if (createLessons && target === "live" && mode === "overwrite") {
       // overwrite has nothing to overwrite on an empty module — treat as append.
-    }
-
-    // ════════════════════════════════════════════════════════════════════════
-    // QUIZ REFRESH — propose a replacement question set grounded in the
-    // module's CURRENT lesson content. Staged only; nothing live changes here.
-    // ════════════════════════════════════════════════════════════════════════
-    if (target === "quiz_refresh") {
-      const withContent = (lessons ?? []).filter(
-        (l) => Array.isArray(l.content) && (l.content as unknown[]).length > 0
-      );
-      if (withContent.length === 0) {
-        return json({ error: "This module has no lesson content to ground a quiz refresh — enhance it first." }, 400);
-      }
-
-      // Compact grounding: headings, paragraphs and table headers per lesson,
-      // capped so the prompt stays well inside limits.
-      const grounding = withContent.map((l, i) => {
-        const parts: string[] = [];
-        for (const blk of l.content as Record<string, unknown>[]) {
-          if (blk.type === "heading" && typeof blk.text === "string") parts.push(`# ${blk.text}`);
-          else if (blk.type === "text" && typeof blk.body === "string") parts.push(blk.body as string);
-          else if (blk.type === "key-term") parts.push(`KEY TERM ${blk.term}: ${blk.definition}`);
-          else if (blk.type === "table" && Array.isArray(blk.headers)) parts.push(`TABLE: ${(blk.headers as string[]).join(" | ")}`);
-          else if (blk.type === "callout" && typeof blk.body === "string") parts.push(`${String(blk.title ?? "NOTE")}: ${blk.body}`);
-        }
-        return `LESSON ${i + 1}: "${l.title}"\n${parts.join("\n").slice(0, 4000)}`;
-      }).join("\n\n");
-
-      const focus = typeof body.instruction === "string" && body.instruction.trim()
-        ? `\nADMIN FOCUS FOR THIS REFRESH: "${body.instruction.trim()}"`
-        : "";
-
-      const quizPrompt = `${CARIBBEAN_CONTEXT}
-
-You are writing a REPLACEMENT quiz for module "${mod.title}" of the PixoPharm course "${course.title}"${domainName ? ` (curriculum domain "${domainName}")` : ""}.
-
-CURRENT LESSON CONTENT — ground EVERY question in this material (do not test anything it doesn't teach):
-${grounding}
-${focus}
-QUIZ — produce 6–8 questions ${requestedTypes
-        ? `using ONLY these question_type values: ${requestedTypes.join(", ")}. Spread the questions across ${requestedTypes.length > 1 ? "all of them" : "it"}.`
-        : `spanning AT LEAST 4 different question_type values.\n${typeMixForDomain(domainName)}`}
-Every question MUST have an "explanation" (2–3 sentences citing specific Caribbean regulation or clinical evidence).
-
-QUESTION TYPE SCHEMAS (follow EXACTLY — these are machine-validated):
-1. {"question_type":"multiple_choice","question":"Scenario-grounded question?","options":["A","B","C","D"],"correct_answer":0,"explanation":"...","difficulty":"medium","blooms_level":"apply"}
-2. {"question_type":"true_false","question":"Statement to judge.","question_data":{"correct_answer":true},"explanation":"...","difficulty":"easy","blooms_level":"remember"}
-3. {"question_type":"multiple_select","question":"Select ALL that apply...","options":["..","..","..","..","..."],"question_data":{"correct_indices":[0,2]},"explanation":"...","difficulty":"hard","blooms_level":"analyze"}
-4. {"question_type":"ordering","question":"Arrange the steps in the correct order.","options":["step","step","step","step"],"question_data":{"correct_order":[2,0,3,1]},"explanation":"...","difficulty":"medium","blooms_level":"apply"}
-5. {"question_type":"matching","question":"Match each item to its pair.","question_data":{"pairs":[{"left":"...","right":"..."},{"left":"...","right":"..."},{"left":"...","right":"..."}]},"explanation":"...","difficulty":"medium","blooms_level":"understand"}
-6. {"question_type":"fill_in_blank","question":"Sentence with ___ for the missing term.","question_data":{"acceptable_answers":["term","synonym"],"case_sensitive":false},"explanation":"...","difficulty":"medium","blooms_level":"remember"}
-7. {"question_type":"numeric","question":"Calculation question — the student types a number.","question_data":{"answer":12.5,"tolerance":0.1,"unit":"mL"},"explanation":"...","difficulty":"medium","blooms_level":"apply"}
-8. scenario questions go INSIDE the optional "case" object and use the multiple_choice schema with "question_type":"scenario".
-
-Return ONLY valid JSON:
-{
-  "quiz_questions": [ ...4-6 standalone questions, mixed types... ],
-  "case": { "title": "short case name", "vignette": "4–6 sentence Caribbean vignette grounded in the lesson content", "questions": [ ...2-3 "scenario" questions... ] }
-}
-${requestedTypes && !requestedTypes.includes("scenario")
-        ? 'Do NOT include the "case" object — scenario questions were not requested.'
-        : 'The "case" object is OPTIONAL — include it when case-based assessment fits, otherwise omit it.'}`;
-
-      const minTypesR = requestedTypes ? Math.min(3, requestedTypes.length) : 3;
-      const passesR = (v: { standalone: GenQuestion[]; caseQs: GenQuestion[] }) =>
-        v.standalone.length + v.caseQs.length >= 5 && distinctTypes(v) >= minTypesR;
-
-      const usageR = { input_tokens: 0, output_tokens: 0 };
-      const firstR = await callOpus(quizPrompt, 8000);
-      usageR.input_tokens += firstR.usage.input_tokens;
-      usageR.output_tokens += firstR.usage.output_tokens;
-      let resultR = firstR.result;
-      let { valid: validR, rejected: rejectedR } = collectQuestions(resultR, requestedTypes);
-      if (!passesR(validR)) {
-        const feedback = rejectedR.map((r) => `- ${r.reason}`).join("\n") || "- too few valid questions or too few distinct types";
-        const retryR = await callOpus(`${quizPrompt}\n\nPREVIOUS ATTEMPT FAILED MACHINE VALIDATION:\n${feedback}\nRegenerate the COMPLETE JSON, fixing these issues. Minimum 5 valid questions across ${minTypesR}+ types.`, 8000);
-        usageR.input_tokens += retryR.usage.input_tokens;
-        usageR.output_tokens += retryR.usage.output_tokens;
-        resultR = retryR.result;
-        ({ valid: validR, rejected: rejectedR } = collectQuestions(resultR, requestedTypes));
-        if (!passesR(validR)) {
-          return json({ error: "AI output failed validation after retry", rejections: rejectedR.map((r) => r.reason).slice(0, 10) }, 502);
-        }
-      }
-
-      const { data: refreshRow, error: refreshErr } = await sb
-        .from("module_enhancement_drafts")
-        .insert({
-          module_id,
-          kind: "quiz_refresh",
-          status: "pending_review",
-          payload: {
-            module_id,
-            module_title: mod.title,
-            course_title: course.title,
-            domain: domainName,
-            instruction: typeof body.instruction === "string" ? body.instruction.trim() : "",
-            quiz_questions: validR.standalone,
-            case: validR.caseQs.length && validR.vignette
-              ? { title: validR.caseTitle ?? "Case study", vignette: validR.vignette, questions: validR.caseQs }
-              : null,
-            generated_at: new Date().toISOString(),
-          },
-          requested_types: requestedTypes ?? [],
-          model: OPUS_MODEL,
-          tokens_in: usageR.input_tokens,
-          tokens_out: usageR.output_tokens,
-          created_by: user.id,
-        })
-        .select("id")
-        .single();
-      if (refreshErr || !refreshRow) return json({ error: `Failed to save quiz refresh: ${refreshErr?.message}` }, 500);
-
-      return json({
-        target: "quiz_refresh",
-        draft_id: refreshRow.id,
-        questions_count: validR.standalone.length + validR.caseQs.length,
-        has_case: !!(validR.caseQs.length && validR.vignette),
-        types_generated: [...new Set([...validR.standalone, ...validR.caseQs].map((q) => q.question_type))],
-        rejected_count: rejectedR.length,
-        model_used: OPUS_MODEL,
-        usage: usageR,
-      });
     }
 
     const { data: existingQs } = await sb
