@@ -1339,6 +1339,30 @@ export async function reorderModules(
   }
 }
 
+/** All lessons of a module, in display order. */
+export async function fetchLessons(moduleId: string): Promise<Lesson[]> {
+  const { data, error } = await supabase
+    .from("lessons")
+    .select("*")
+    .eq("module_id", moduleId)
+    .order("order_index", { ascending: true });
+  if (error) handleError(error, "fetchLessons");
+  return (data ?? []) as Lesson[];
+}
+
+/** Batch-persist lesson order within a module. Pass only changed rows. */
+export async function reorderLessons(
+  updates: { id: string; order_index: number }[]
+): Promise<void> {
+  for (const u of updates) {
+    const { error } = await supabase
+      .from("lessons")
+      .update({ order_index: u.order_index, updated_at: new Date().toISOString() })
+      .eq("id", u.id);
+    if (error) handleError(error, "reorderLessons");
+  }
+}
+
 // ============================================================================
 // QUIZ CASES (shared patient vignettes for case-based questions)
 // ============================================================================
