@@ -1533,6 +1533,7 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
                                   <ModuleCard
                                     key={mod.id}
                                     mod={mod}
+                                    onEnhanced={() => loadCourseDetail(course.id)}
                                     onEditModule={() => openEditModule(mod)}
                                     onDeleteModule={() => confirmDelete("module", mod.id, mod.title)}
                                     onAddLesson={() => openNewLesson(mod.id)}
@@ -3363,6 +3364,8 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
 
 interface ModuleCardProps {
   mod: Module & { lessons: Lesson[]; quiz_questions: QuizQuestion[] };
+  /** Called after a successful AI enhance so the parent refetches course data. */
+  onEnhanced: () => void;
   onEditModule: () => void;
   onDeleteModule: () => void;
   onAddLesson: () => void;
@@ -3375,6 +3378,7 @@ interface ModuleCardProps {
 
 function ModuleCard({
   mod,
+  onEnhanced,
   onEditModule,
   onDeleteModule,
   onAddLesson,
@@ -3432,6 +3436,7 @@ function ModuleCard({
                   await enhanceModule(mod.id);
                   setEnhanceState("done");
                   toast({ title: "Module enhanced!", description: `"${mod.title}" updated with Opus AI content.` });
+                  onEnhanced();
                 } catch {
                   setEnhanceState("error");
                   toast({ title: "Enhancement failed", description: "Click Retry to try again.", variant: "destructive" });
