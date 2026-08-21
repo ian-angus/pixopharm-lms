@@ -106,7 +106,8 @@ type View =
 
 // ── Content Renderers ───────────────────────────────────────────────────────
 
-function RenderContent({ block }: { block: ContentBlock }) {
+// Exported for read-only previews (e.g. the AI refine review dialog).
+export function RenderContent({ block }: { block: ContentBlock }) {
   switch (block.type) {
     case "heading":
       if (block.level === 2)

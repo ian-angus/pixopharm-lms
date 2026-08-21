@@ -1100,6 +1100,8 @@ export interface DraftPayload {
   module_title?: string;
   course_title?: string;
   domain?: string | null;
+  /** quiz_refresh drafts: the admin's optional focus instruction. */
+  instruction?: string;
   create_lessons?: boolean;
   module_overview?: string;
   learning_objectives: DraftObjective[];

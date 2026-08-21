@@ -11,7 +11,7 @@
 // ============================================================================
 
 import { useCallback, useEffect, useRef, useState } from "react";
-import { ArrowDown, ArrowUp, ExternalLink, Pencil, Plus, Trash2 } from "lucide-react";
+import { ArrowDown, ArrowUp, ExternalLink, Pencil, Plus, Sparkles, Trash2 } from "lucide-react";
 import {
   Sheet,
   SheetContent,
@@ -38,12 +38,15 @@ import {
   createLesson,
   deleteLesson,
   fetchLessons,
+  fetchPendingLessonRevisions,
   reorderLessons,
   updateLesson,
   type Lesson,
+  type LessonRevision,
   type Module,
 } from "@/lib/admin-api";
 import ConfirmDialog from "./ConfirmDialog";
+import RefineLessonDialog from "./RefineLessonDialog";
 
 interface LessonEditorSheetProps {
   module: Module | null;
@@ -77,6 +80,11 @@ export default function LessonEditorSheet({
 
   const [deleteTarget, setDeleteTarget] = useState<Lesson | null>(null);
 
+  // AI refine: dialog target + pending proposals per lesson (for the ✦ badge)
+  const [refineTarget, setRefineTarget] = useState<Lesson | null>(null);
+  const [refineDraft, setRefineDraft] = useState<LessonRevision | null>(null);
+  const [pendingRevisions, setPendingRevisions] = useState<Record<string, LessonRevision>>({});
+
   const moduleId = module?.id ?? null;
 
   const reloadSeq = useRef(0);
@@ -91,6 +99,12 @@ export default function LessonEditorSheet({
       if (seq !== reloadSeq.current) return;
       setLessons(ls);
       onLessonsChanged?.(moduleId, ls.length);
+      // Pending AI proposals must never get lost — surface them as row badges.
+      const pending = await fetchPendingLessonRevisions(ls.map((l) => l.id));
+      if (seq !== reloadSeq.current) return;
+      const byLesson: Record<string, LessonRevision> = {};
+      for (const p of pending) if (!byLesson[p.lesson_id]) byLesson[p.lesson_id] = p;
+      setPendingRevisions(byLesson);
     } catch (err) {
       if (seq !== reloadSeq.current) return;
       toast({ title: "Error loading lessons", description: String(err), variant: "destructive" });
@@ -253,6 +267,22 @@ export default function LessonEditorSheet({
                         <Button
                           variant="ghost"
                           size="icon"
+                          className={
+                            pendingRevisions[l.id]
+                              ? "h-7 w-7 text-amber-600 hover:text-amber-700"
+                              : "h-7 w-7 text-violet-600 hover:text-violet-700"
+                          }
+                          title={pendingRevisions[l.id] ? "Review AI proposal" : "Refine with AI"}
+                          onClick={() => {
+                            setRefineDraft(pendingRevisions[l.id] ?? null);
+                            setRefineTarget(l);
+                          }}
+                        >
+                          <Sparkles className="h-3.5 w-3.5" />
+                        </Button>
+                        <Button
+                          variant="ghost"
+                          size="icon"
                           className="h-7 w-7 text-slate-600 hover:text-slate-800"
                           title="Edit lesson"
                           onClick={() => openEditLesson(l)}
@@ -374,6 +404,20 @@ export default function LessonEditorSheet({
         description="This permanently deletes the lesson and its content."
         confirmLabel="Delete lesson"
         onConfirm={confirmDelete}
+      />
+
+      {/* ── AI refine (instruction → staged proposal → review → apply/undo) ── */}
+      <RefineLessonDialog
+        lesson={refineTarget}
+        open={!!refineTarget}
+        onOpenChange={(o) => {
+          if (!o) {
+            setRefineTarget(null);
+            setRefineDraft(null);
+          }
+        }}
+        initialDraft={refineDraft}
+        onChanged={() => void reload()}
       />
     </>
   );
