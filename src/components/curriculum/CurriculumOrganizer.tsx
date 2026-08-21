@@ -107,6 +107,7 @@ import {
 import ConfirmDialog from "./ConfirmDialog";
 import EnhanceDialog from "./EnhanceDialog";
 import DraftReviewDialog from "./DraftReviewDialog";
+import LessonEditorSheet from "./LessonEditorSheet";
 import QuizEditor from "./QuizEditor";
 
 // ── Constants ────────────────────────────────────────────────────────────────
@@ -274,6 +275,7 @@ export default function CurriculumOrganizer({
   const [enhanceTarget, setEnhanceTarget] = useState<Module | null>(null);
   const [reviewDraftId, setReviewDraftId] = useState<string | null>(null);
   const [quizTarget, setQuizTarget] = useState<Module | null>(null);
+  const [lessonTarget, setLessonTarget] = useState<Module | null>(null);
 
   // ── Drag state ─────────────────────────────────────────────────────────────
   const [activeDrag, setActiveDrag] = useState<{ type: "dom" | "crs" | "mod"; id: string } | null>(null);
@@ -747,6 +749,17 @@ export default function CurriculumOrganizer({
     }));
   };
 
+  const handleLessonsChanged = (moduleId: string, lessonCount: number) => {
+    const courseId = findCourseOfModule(moduleId);
+    if (!courseId) return;
+    setModulesByCourse((prev) => ({
+      ...prev,
+      [courseId]: prev[courseId]?.map((m) =>
+        m.id === moduleId ? { ...m, lessons_count: lessonCount } : m
+      ),
+    }));
+  };
+
   // ── Render helpers ──────────────────────────────────────────────────────────
 
   const renderModuleRow = (module: Module, index: number) => (
@@ -780,17 +793,15 @@ export default function CurriculumOrganizer({
               {module.lessons_count ?? 0} lessons · {module.quiz_count ?? 0} quiz
             </span>
             <div className="flex items-center gap-0.5">
-              {onEditCourseContent && (
-                <Button
-                  variant="ghost"
-                  size="icon"
-                  className="h-6 w-6 text-slate-600 hover:text-slate-800"
-                  title="Edit lesson content"
-                  onClick={() => onEditCourseContent(module.course_id)}
-                >
-                  <BookOpen className="h-3.5 w-3.5" />
-                </Button>
-              )}
+              <Button
+                variant="ghost"
+                size="icon"
+                className="h-6 w-6 text-slate-600 hover:text-slate-800"
+                title="Edit lessons"
+                onClick={() => setLessonTarget(module)}
+              >
+                <BookOpen className="h-3.5 w-3.5" />
+              </Button>
               <Button
                 variant="ghost"
                 size="icon"
@@ -1358,6 +1369,13 @@ export default function CurriculumOrganizer({
         open={!!quizTarget}
         onOpenChange={(o) => !o && setQuizTarget(null)}
         onQuizChanged={handleQuizChanged}
+      />
+      <LessonEditorSheet
+        module={lessonTarget}
+        open={!!lessonTarget}
+        onOpenChange={(o) => !o && setLessonTarget(null)}
+        onLessonsChanged={handleLessonsChanged}
+        onOpenInCourses={onEditCourseContent}
       />
     </div>
   );
