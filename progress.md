@@ -2,6 +2,25 @@
 
 ---
 
+## 2026-08-21: In-place lesson editor from Curriculum Organizer (branch feat/curriculum-inline-lesson-editor)
+
+UX fix (Ian): 📖 on a module row previously jumped to the Courses page where you had to re-find
+the course. Now it opens LessonEditorSheet in place (QuizEditor pattern): list lessons with
+add/edit (same TipTapLessonEditor)/delete/up-down reorder; module-row lesson counts refresh live;
+"Open in Courses view" link preserves the old path. admin-api += fetchLessons/reorderLessons.
+New e2e spec admin-lesson-editor.spec.ts (add/rename/reorder/delete + DB asserts + count badge) —
+green; full non-AI suite re-run for regressions. Mobile-verified 375px/430px (sheet full-width,
+zero overflow; row icon buttons 28px — consistent with existing admin UI, below the 44px student-
+surface ideal, flagged in PR). Plan: docs/superpowers/plans/2026-08-20-curriculum-inline-lesson-editor.md.
+PR #__ — Coderabbit review must be triggered manually (@coderabbitai review).
+
+**Same session, earlier:** Enhance-refresh fix shipped (PR #23, merged + prod-verified) — Courses-page
+module Enhance now refetches courseDetail on success, with a ref guard against course-switch races.
+**Open:** TipTap "[unsupported block type]" data-loss risk (5 block types not round-tripped by the
+editor; 4 prod lessons already damaged — see root progress.md).
+
+---
+
 ## 2026-06-13 (late): COURSE PAYMENTS + content depth + level removal + MERGE to main
 
 **Merged PR #19 (accreditation enhance) + PR #20 (course payments) into main** (union-resolved this
