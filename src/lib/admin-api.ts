@@ -1100,6 +1100,8 @@ export interface DraftPayload {
   module_title?: string;
   course_title?: string;
   domain?: string | null;
+  /** quiz_refresh drafts: the admin's optional focus instruction. */
+  instruction?: string;
   create_lessons?: boolean;
   module_overview?: string;
   learning_objectives: DraftObjective[];
@@ -1224,6 +1226,218 @@ export async function discardModuleDraft(draftId: string): Promise<void> {
     .update({ status: "discarded", updated_at: new Date().toISOString() })
     .eq("id", draftId);
   if (error) handleError(error, "discardModuleDraft");
+}
+
+// ============================================================================
+// AI CONTENT REFINEMENT — refine a lesson / refresh a module quiz, both staged
+// with review + apply + one-click undo. PRD: docs/AI-CONTENT-REFINEMENT-PRD.md
+// ============================================================================
+
+export type LessonRevisionStatus = "pending_review" | "applied" | "reverted" | "discarded";
+
+export interface LessonRevision {
+  id: string;
+  lesson_id: string;
+  instruction: string;
+  status: LessonRevisionStatus;
+  revised_content: unknown[];
+  revised_duration: number | null;
+  previous_content: unknown[] | null;
+  previous_duration: number | null;
+  model: string | null;
+  tokens_in: number | null;
+  tokens_out: number | null;
+  created_at: string;
+  applied_at: string | null;
+}
+
+export interface RefineLessonResult {
+  draft_id: string;
+  lesson_id: string;
+  blocks_before: number;
+  blocks_after: number;
+  duration_minutes: number | null;
+  preserved_blocks: number;
+  shrink_warning: boolean;
+  model_used: string;
+}
+
+/**
+ * Ask the AI to refine ONE lesson per the instruction. The proposal is staged
+ * server-side (lesson_revision_drafts) — nothing touches the live lesson until
+ * applyLessonRevision(). On a dropped connection (the known ~150s gateway
+ * timeout) we poll the staging table for the result instead of failing.
+ */
+export async function refineLesson(
+  lessonId: string,
+  instruction: string
+): Promise<RefineLessonResult> {
+  // 2-min skew margin: created_at is a SERVER timestamp — a fast browser clock
+  // must not make the recovery poll miss the row it is looking for.
+  const startedAt = new Date(Date.now() - 120_000).toISOString();
+  const { data, error } = await supabase.functions.invoke("refine-lesson", {
+    body: { lesson_id: lessonId, instruction },
+  });
+  if (data?.error) throw new Error(`refine-lesson: ${data.error}`);
+  if (!error) return data as RefineLessonResult;
+
+  // Network drop — the function stages the draft before responding, so poll for it.
+  for (let i = 0; i < 9; i++) {
+    await new Promise((r) => setTimeout(r, 20_000));
+    const { data: rows } = await supabase
+      .from("lesson_revision_drafts")
+      .select("id, lesson_id, revised_content, revised_duration")
+      .eq("lesson_id", lessonId)
+      .eq("status", "pending_review")
+      .gte("created_at", startedAt)
+      .order("created_at", { ascending: false })
+      .limit(1);
+    const row = rows?.[0];
+    if (row) {
+      return {
+        draft_id: row.id,
+        lesson_id: row.lesson_id,
+        blocks_before: 0,
+        blocks_after: Array.isArray(row.revised_content) ? row.revised_content.length : 0,
+        duration_minutes: row.revised_duration,
+        preserved_blocks: 0,
+        shrink_warning: false,
+        model_used: "claude-opus-4-8",
+      };
+    }
+  }
+  handleError(error, "refineLesson");
+}
+
+/** One revision draft by id (with full content for the review screen). */
+export async function fetchLessonRevision(draftId: string): Promise<LessonRevision | null> {
+  const { data, error } = await supabase
+    .from("lesson_revision_drafts")
+    .select("*")
+    .eq("id", draftId)
+    .maybeSingle();
+  if (error) handleError(error, "fetchLessonRevision");
+  return (data as LessonRevision) ?? null;
+}
+
+/** Pending revision drafts for a set of lessons (for the ✦ row badges). */
+export async function fetchPendingLessonRevisions(
+  lessonIds: string[]
+): Promise<LessonRevision[]> {
+  if (lessonIds.length === 0) return [];
+  const { data, error } = await supabase
+    .from("lesson_revision_drafts")
+    .select("*")
+    .in("lesson_id", lessonIds)
+    .eq("status", "pending_review")
+    .order("created_at", { ascending: false });
+  if (error) handleError(error, "fetchPendingLessonRevisions");
+  return (data ?? []) as LessonRevision[];
+}
+
+/** Swap the revision into the live lesson (snapshots the old content for undo). */
+export async function applyLessonRevision(draftId: string): Promise<void> {
+  const { error } = await supabase.rpc("apply_lesson_revision", { p_draft_id: draftId });
+  if (error) handleError(error, "applyLessonRevision");
+}
+
+/** One-click undo: restore the lesson content captured at apply time. */
+export async function revertLessonRevision(draftId: string): Promise<void> {
+  const { error } = await supabase.rpc("revert_lesson_revision", { p_draft_id: draftId });
+  if (error) handleError(error, "revertLessonRevision");
+}
+
+/** Mark a pending revision discarded (kept for audit; never applied). */
+export async function discardLessonRevision(draftId: string): Promise<void> {
+  const { error } = await supabase
+    .from("lesson_revision_drafts")
+    .update({ status: "discarded", updated_at: new Date().toISOString() })
+    .eq("id", draftId);
+  if (error) handleError(error, "discardLessonRevision");
+}
+
+export interface RefreshQuizResult {
+  draft_id: string;
+  questions_count: number;
+  has_case: boolean;
+  types_generated?: string[];
+  model_used: string;
+}
+
+/**
+ * Ask the AI for a REPLACEMENT quiz grounded in the module's current lesson
+ * content. Staged to module_enhancement_drafts (kind=quiz_refresh); apply with
+ * applyQuizRefresh(draftId, keepIds). Same connection-drop recovery as refine.
+ */
+export async function refreshModuleQuiz(
+  moduleId: string,
+  types?: QuestionType[],
+  instruction?: string
+): Promise<RefreshQuizResult> {
+  // Same 2-min clock-skew margin as refineLesson (server vs browser clocks).
+  const startedAt = new Date(Date.now() - 120_000).toISOString();
+  const { data, error } = await supabase.functions.invoke("refresh-quiz", {
+    body: {
+      module_id: moduleId,
+      ...(types?.length ? { types } : {}),
+      ...(instruction?.trim() ? { instruction: instruction.trim() } : {}),
+    },
+  });
+  if (data?.error) throw new Error(`refresh-quiz: ${data.error}`);
+  if (!error) return data as RefreshQuizResult;
+
+  for (let i = 0; i < 9; i++) {
+    await new Promise((r) => setTimeout(r, 20_000));
+    const { data: rows } = await supabase
+      .from("module_enhancement_drafts")
+      .select("id, payload")
+      .eq("module_id", moduleId)
+      .eq("kind", "quiz_refresh")
+      .eq("status", "pending_review")
+      .gte("created_at", startedAt)
+      .order("created_at", { ascending: false })
+      .limit(1);
+    const row = rows?.[0];
+    if (row) {
+      const payload = row.payload as { quiz_questions?: unknown[]; case?: { questions?: unknown[] } | null };
+      return {
+        draft_id: row.id,
+        questions_count:
+          (payload.quiz_questions?.length ?? 0) + (payload.case?.questions?.length ?? 0),
+        has_case: !!payload.case,
+        model_used: "claude-opus-4-8",
+      };
+    }
+  }
+  handleError(error, "refreshModuleQuiz");
+}
+
+export interface ApplyQuizRefreshResult {
+  draft_id: string;
+  module_id?: string;
+  already_applied?: boolean;
+  kept?: number;
+  deleted?: number;
+  inserted?: number;
+}
+
+/** Replace the module's quiz with the proposal, keeping only keepIds. */
+export async function applyQuizRefresh(
+  draftId: string,
+  keepIds: string[]
+): Promise<ApplyQuizRefreshResult> {
+  const { data, error } = await supabase.rpc("apply_quiz_refresh", {
+    p_draft_id: draftId,
+    p_keep_ids: keepIds,
+  });
+  if (error) handleError(error, "applyQuizRefresh");
+  return data as ApplyQuizRefreshResult;
+}
+
+/** One-click undo: restore the exact pre-refresh question set. */
+export async function revertQuizRefresh(draftId: string): Promise<void> {
+  const { error } = await supabase.rpc("revert_quiz_refresh", { p_draft_id: draftId });
+  if (error) handleError(error, "revertQuizRefresh");
 }
 
 // ============================================================================

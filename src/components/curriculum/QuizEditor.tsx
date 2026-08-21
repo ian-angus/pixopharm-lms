@@ -78,6 +78,7 @@ import {
   type QuizQuestion,
 } from "@/lib/admin-api";
 import ConfirmDialog from "./ConfirmDialog";
+import QuizRefreshDialog from "./QuizRefreshDialog";
 
 // AI quiz-generation: the 8 types an admin can ask the AI to create.
 const AI_TYPE_CHOICES: { value: QuestionType; label: string }[] = [
@@ -407,6 +408,9 @@ export default function QuizEditor({ module, open, onOpenChange, onQuizChanged }
   const [aiTypes, setAiTypes] = useState<QuestionType[]>([]);
   const [aiRunning, setAiRunning] = useState(false);
 
+  // AI quiz REFRESH (replacement set grounded in current lesson content)
+  const [refreshOpen, setRefreshOpen] = useState(false);
+
   // Question form dialog
   const [formOpen, setFormOpen] = useState(false);
   const [editingQuestion, setEditingQuestion] = useState<QuizQuestion | null>(null);
@@ -702,6 +706,16 @@ export default function QuizEditor({ module, open, onOpenChange, onQuizChanged }
                       className="border-[hsl(174,62%,32%)]/40 text-[hsl(174,62%,30%)] hover:bg-[hsl(174,45%,96%)]"
                     >
                       ✦ Generate with AI
+                    </Button>
+                    <Button
+                      size="sm"
+                      variant="outline"
+                      onClick={() => setRefreshOpen(true)}
+                      disabled={aiRunning}
+                      title="Propose a replacement quiz grounded in the module's current lesson content"
+                      className="border-amber-500/40 text-amber-700 hover:bg-amber-50"
+                    >
+                      ⟳ Refresh with AI
                     </Button>
                     <Button
                       size="sm"
@@ -1251,6 +1265,15 @@ export default function QuizEditor({ module, open, onOpenChange, onQuizChanged }
         }
         confirmLabel="Delete case"
         onConfirm={confirmDeleteCase}
+      />
+
+      {/* ── AI quiz refresh (replacement set → keep-per-question → apply/undo) ── */}
+      <QuizRefreshDialog
+        module={module}
+        open={refreshOpen}
+        onOpenChange={setRefreshOpen}
+        existingQuestions={questions}
+        onApplied={() => void reload()}
       />
     </>
   );
