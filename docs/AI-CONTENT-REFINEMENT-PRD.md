@@ -1,6 +1,6 @@
 # PRD — AI Lesson Refinement + Quiz Refresh
 
-**Status:** DESIGN — awaiting owner approval (Ian, requested 2026-08-21)
+**Status:** IMPLEMENTED (PR #25, 2026-08-21) — owner-approved with defaults ("defaults are fine, build it"). One deviation from the original design, made during build: quiz refresh shipped as a **standalone `refresh-quiz` edge function** instead of an `enhance-module` target, so the battle-tested enhance pipeline stays untouched (see §6.2).
 **Owner ask:** "If we enhance and then want to refine it we want a way to use the AI to do that. Also we need to refresh the quiz."
 
 ---
@@ -79,11 +79,11 @@ There is no middle gear: *AI, take what's there and make it better.* Enhance is 
 - Writes a row to `lesson_revision_drafts` (status `pending_review`) **before** returning; response = `{ draft_id, block_counts, est_minutes, usage }`.
 - Model `claude-opus-4-8`, `max_tokens` 32k, 300 s internal timeout.
 
-### 6.2 `enhance-module` gains `target: "quiz_refresh"`
+### 6.2 New Edge Function: `refresh-quiz` (standalone — implemented variant)
 
-Reuses everything that function already has — auth, the 8-type validators, `typeMixForDomain`, the case-vignette machinery — with two differences from the existing draft target:
-- The prompt includes the module's **current lesson content** (compacted: headings + text bodies + tables) as grounding, and generates **quiz only** (`lessons: []`, no accreditation sections unless already present).
-- The draft row is written with `kind = 'quiz_refresh'` so the UI opens the right review dialog.
+Originally designed as an `enhance-module` target; shipped as a **standalone function** so the critical enhance pipeline is never redeployed for this feature. It duplicates the 8-type validators, `typeMixForDomain` and the Opus caller (mirroring the existing generate-course/enhance-module duplication) and:
+- grounds the prompt in the module's **current lesson content** (compacted: headings + text bodies + key terms + table headers, capped per lesson) and generates **quiz only**;
+- writes the draft with `kind = 'quiz_refresh'` so the UI opens the right review dialog; `publish_module_draft` rejects non-accreditation kinds so the two flows cannot cross.
 
 ### 6.3 Data model (purely additive migration)
 

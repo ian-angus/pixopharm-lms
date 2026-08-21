@@ -169,10 +169,12 @@ test("pending AI proposal badge opens review; apply and undo round-trip the less
   await expect(dialog.getByText("4 → 5 blocks")).toBeVisible();
   await expect(dialog.getByText("ZZ E2E REVISED PARAGRAPH with deeper FEFO teaching.")).toBeVisible();
 
-  // Apply → lesson now has the revised 5 blocks.
+  // Apply → lesson now holds exactly the revised content, not just 5 blocks.
   await dialog.getByRole("button", { name: "Apply to lesson" }).click();
   await expect(dialog.getByText("Applied ✓")).toBeVisible();
   await expect.poll(lessonBlockCount).toBe(5);
+  const { data: applied } = await db.from("lessons").select("content").eq("id", lessonId).single();
+  expect(applied!.content).toEqual(REVISED_CONTENT);
 
   // Undo → byte-identical restore of the original 4 blocks.
   await dialog.getByRole("button", { name: "Undo" }).click();

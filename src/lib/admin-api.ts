@@ -1272,7 +1272,9 @@ export async function refineLesson(
   lessonId: string,
   instruction: string
 ): Promise<RefineLessonResult> {
-  const startedAt = new Date().toISOString();
+  // 2-min skew margin: created_at is a SERVER timestamp — a fast browser clock
+  // must not make the recovery poll miss the row it is looking for.
+  const startedAt = new Date(Date.now() - 120_000).toISOString();
   const { data, error } = await supabase.functions.invoke("refine-lesson", {
     body: { lesson_id: lessonId, instruction },
   });
@@ -1372,7 +1374,8 @@ export async function refreshModuleQuiz(
   types?: QuestionType[],
   instruction?: string
 ): Promise<RefreshQuizResult> {
-  const startedAt = new Date().toISOString();
+  // Same 2-min clock-skew margin as refineLesson (server vs browser clocks).
+  const startedAt = new Date(Date.now() - 120_000).toISOString();
   const { data, error } = await supabase.functions.invoke("refresh-quiz", {
     body: {
       module_id: moduleId,

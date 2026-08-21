@@ -26,8 +26,11 @@ Owner-approved PRD (docs/AI-CONTENT-REFINEMENT-PRD.md, "defaults are fine, build
 - **e2e:** admin-ai-refinement.spec.ts (2 tests, no AI spend — drafts seeded directly): badge→review→
   apply→undo byte-identical round-trip; quiz refresh keep/replace/revert with original ids. Full suite
   17/17. Mobile 375/430 zero overflow.
-- PR #__ open. **Coderabbit is RATE LIMITED today** — PR #24 (in-place lesson editor) merged under the
-  documented rate-limit precedent after 15/15 tests + full verification; auto-deployed to production.
+- PR #25 open (Coderabbit review completed after the rate limit cleared — all 10 findings addressed,
+  incl. migration `20260821000002_refinement_guards.sql`: quiz_questions.updated_at added — fixes a
+  latent PGRST204 on question edits — publish_module_draft kind guard, and undo-vs-newer-edits guards).
+  PR #24 (in-place lesson editor) was merged earlier under the documented rate-limit precedent after
+  15/15 tests + full verification; auto-deployed to production and live-verified.
 
 ---
 

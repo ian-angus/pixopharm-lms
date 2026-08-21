@@ -26,6 +26,7 @@ import { Separator } from "@/components/ui/separator";
 import { useToast } from "@/hooks/use-toast";
 import {
   applyQuizRefresh,
+  discardModuleDraft,
   fetchDraft,
   refreshModuleQuiz,
   revertQuizRefresh,
@@ -91,6 +92,20 @@ export default function QuizRefreshDialog({
     setApplyResult(null);
     setBusy(false);
   }, [open]);
+
+  // Closing from the review phase would otherwise orphan the staged draft
+  // (pending_review forever, tokens unreachable) — discard it instead.
+  const handleOpenChange = (o: boolean) => {
+    if (o) {
+      onOpenChange(true);
+      return;
+    }
+    if (phase === "running" || busy) return;
+    if (phase === "review" && draftId) {
+      void discardModuleDraft(draftId).catch(() => {});
+    }
+    onOpenChange(false);
+  };
 
   const toggleType = (t: QuestionType) =>
     setTypes((prev) => (prev.includes(t) ? prev.filter((x) => x !== t) : [...prev, t]));
@@ -183,7 +198,7 @@ export default function QuizRefreshDialog({
   };
 
   return (
-    <Dialog open={open} onOpenChange={(o) => phase !== "running" && !busy && onOpenChange(o)}>
+    <Dialog open={open} onOpenChange={handleOpenChange}>
       <DialogContent className="max-w-3xl max-h-[90vh] flex flex-col">
         <DialogHeader>
           <DialogTitle>Refresh with AI ✦ — {module?.title}</DialogTitle>
@@ -276,14 +291,16 @@ export default function QuizRefreshDialog({
                         Array.isArray(q.options) && (
                           <div className="space-y-1">
                             {(q.options as string[]).map((opt, oi) => (
-                              <label key={oi} className="flex items-center gap-2 text-xs">
+                              <div key={oi} className="flex items-center gap-2 text-xs">
                                 <input
                                   type="radio"
+                                  aria-label={`Mark option ${oi + 1} as correct`}
                                   name={`refresh-correct-${i}`}
                                   checked={q.correct_answer === oi}
                                   onChange={() => setProposed(i, { correct_answer: oi })}
                                 />
                                 <input
+                                  aria-label={`Option ${oi + 1} text`}
                                   value={String(opt)}
                                   onChange={(e) =>
                                     setProposed(i, {
@@ -292,7 +309,7 @@ export default function QuizRefreshDialog({
                                   }
                                   className="h-7 w-full rounded border bg-background px-2 text-xs"
                                 />
-                              </label>
+                              </div>
                             ))}
                             <p className="text-[10px] text-muted-foreground">● marks the correct answer</p>
                           </div>
@@ -392,7 +409,7 @@ export default function QuizRefreshDialog({
           )}
           {phase === "review" && (
             <>
-              <Button variant="outline" disabled={busy} onClick={() => onOpenChange(false)}>
+              <Button variant="outline" disabled={busy} onClick={() => handleOpenChange(false)}>
                 Cancel
               </Button>
               <Button
