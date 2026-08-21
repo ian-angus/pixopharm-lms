@@ -2,6 +2,35 @@
 
 ---
 
+## 2026-08-21 (later): AI LESSON REFINE + QUIZ REFRESH built (branch feat/ai-content-refinement)
+
+Owner-approved PRD (docs/AI-CONTENT-REFINEMENT-PRD.md, "defaults are fine, build it") executed:
+- **Migration `20260821000001_ai_content_refinement.sql`** (applied to prod, counts verified unchanged):
+  `lesson_revision_drafts` staging table; `module_enhancement_drafts` += kind ('accreditation'|'quiz_refresh'),
+  previous_payload, 'reverted' status; 4 SECURITY DEFINER RPCs — apply/revert_lesson_revision,
+  apply/revert_quiz_refresh (all snapshot-before-write, idempotent, is_admin-gated).
+- **`refine-lesson` edge fn v1** (deployed, verify_jwt on): single-lesson AI rewrite per instruction,
+  staged pending_review; 13-shape block validation + VERBATIM preservation of the 5 TipTap-unsupported
+  block types (canonical deep-equality, 1 retry); shrink warning. LIVE-VERIFIED end-to-end: video-placeholder
+  preserved, apply/reapply-noop/revert exact (~2k in/1.1k out tokens).
+- **`refresh-quiz` edge fn v1** (deployed): replacement quiz grounded in CURRENT lesson content,
+  kind=quiz_refresh draft. Shipped STANDALONE — enhance-module untouched in prod (its quiz_refresh
+  branch was written then reverted in favour of the standalone; CLI deploy hangs, MCP deploy used).
+  LIVE-VERIFIED: 9 questions/7 types + case; apply kept marked question first + replaced stale;
+  revert restored exact original ids.
+- **UI:** LessonEditorSheet lesson rows += ✦ Refine (violet; amber "Review AI proposal" badge when a
+  pending draft exists — proposals can't get lost); RefineLessonDialog (chips + instruction →
+  Current/Proposed preview via exported CoursePlayer RenderContent → Apply → Undo). QuizEditor +=
+  "⟳ Refresh with AI" → QuizRefreshDialog (type picker + focus → editable proposed questions +
+  Keep-per-existing checklist (default REPLACE) → transactional apply → Undo).
+- **e2e:** admin-ai-refinement.spec.ts (2 tests, no AI spend — drafts seeded directly): badge→review→
+  apply→undo byte-identical round-trip; quiz refresh keep/replace/revert with original ids. Full suite
+  17/17. Mobile 375/430 zero overflow.
+- PR #__ open. **Coderabbit is RATE LIMITED today** — PR #24 (in-place lesson editor) merged under the
+  documented rate-limit precedent after 15/15 tests + full verification; auto-deployed to production.
+
+---
+
 ## 2026-08-21: In-place lesson editor from Curriculum Organizer (branch feat/curriculum-inline-lesson-editor)
 
 UX fix (Ian): 📖 on a module row previously jumped to the Courses page where you had to re-find
