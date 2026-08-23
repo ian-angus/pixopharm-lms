@@ -221,6 +221,16 @@ Deno.serve(async (req: Request) => {
       return json({ error: `types must be a non-empty subset of: ${ALLOWED_TYPES.join(", ")}` }, 400);
     }
 
+    // Optional exact question count (1 = single-question reroll). Default: 6-8.
+    const targetCount: number | null =
+      Number.isInteger(body.count) && body.count >= 1 && body.count <= 15 ? body.count : null;
+    // Optional list of question texts the model must not duplicate (kept
+    // questions, other proposals) — used by add mode and rerolls.
+    const avoid: string[] = Array.isArray(body.avoid)
+      ? (body.avoid as unknown[]).filter((a): a is string => typeof a === "string" && a.trim().length > 0)
+          .slice(0, 40).map((a) => a.trim().slice(0, 200))
+      : [];
+
     const { data: mod, error: modErr } = await sb
       .from("modules")
       .select("id, title, course_id, courses(title, domains(name))")
@@ -271,6 +281,10 @@ Deno.serve(async (req: Request) => {
       ? `\nADMIN FOCUS FOR THIS REFRESH: "${body.instruction.trim()}"`
       : "";
 
+    const avoidSection = avoid.length
+      ? `\nDO NOT duplicate or closely paraphrase any of these existing questions:\n${avoid.map((a) => `- ${a}`).join("\n")}\n`
+      : "";
+
     const objectivesSection = objList.length
       ? `\nLEARNING OBJECTIVES for this module:\n${objList.map((o) => `[${o.objective_number}] ${o.text}`).join("\n")}\nEVERY question object (standalone AND case questions) MUST include "objective_ref" set to the bracketed number of the single objective it best assesses (e.g. "objective_ref":"${objList[0].objective_number}"). Collectively the questions should cover as many of the objectives as the lesson content supports.\n`
       : "";
@@ -281,8 +295,8 @@ You are writing a REPLACEMENT quiz for module "${mod.title}" of the PixoPharm co
 
 CURRENT LESSON CONTENT — ground EVERY question in this material (do not test anything it doesn't teach):
 ${grounding}
-${focus}${objectivesSection}
-QUIZ — produce 6–8 questions ${requestedTypes
+${focus}${objectivesSection}${avoidSection}
+QUIZ — produce ${targetCount ? `EXACTLY ${targetCount}` : "6–8"} question${targetCount === 1 ? "" : "s"} ${requestedTypes
       ? `using ONLY these question_type values: ${requestedTypes.join(", ")}. Spread the questions across ${requestedTypes.length > 1 ? "all of them" : "it"}.`
       : `spanning AT LEAST 4 different question_type values.\n${typeMixForDomain(domainName)}`}
 Every question MUST have an "explanation" (2–3 sentences citing specific Caribbean regulation or clinical evidence).
@@ -302,16 +316,20 @@ Return ONLY valid JSON:
   "quiz_questions": [ ...4-6 standalone questions, mixed types... ],
   "case": { "title": "short case name", "vignette": "4–6 sentence Caribbean vignette grounded in the lesson content", "questions": [ ...2-3 "scenario" questions... ] }
 }
-${requestedTypes && !requestedTypes.includes("scenario")
-      ? 'Do NOT include the "case" object — scenario questions were not requested.'
+${(requestedTypes && !requestedTypes.includes("scenario")) || (targetCount !== null && targetCount <= 3)
+      ? 'Do NOT include the "case" object — put every question in "quiz_questions".'
       : 'The "case" object is OPTIONAL — include it when case-based assessment fits, otherwise omit it.'}`;
 
-    const minTypes = requestedTypes ? Math.min(3, requestedTypes.length) : 3;
+    const minTypes = targetCount !== null && targetCount <= 3
+      ? 1
+      : requestedTypes ? Math.min(3, requestedTypes.length) : 3;
+    const minValid = targetCount !== null ? Math.max(1, targetCount - 1) : 5;
     const passes = (v: { standalone: GenQuestion[]; caseQs: GenQuestion[] }) =>
-      v.standalone.length + v.caseQs.length >= 5 && distinctTypes(v) >= minTypes;
+      v.standalone.length + v.caseQs.length >= minValid && distinctTypes(v) >= minTypes;
 
+    const maxTok = targetCount !== null && targetCount <= 3 ? 3000 : 8000;
     const totalUsage = { input_tokens: 0, output_tokens: 0 };
-    const first = await callOpus(quizPrompt, 8000);
+    const first = await callOpus(quizPrompt, maxTok);
     totalUsage.input_tokens += first.usage.input_tokens;
     totalUsage.output_tokens += first.usage.output_tokens;
     let result = first.result;
@@ -319,7 +337,7 @@ ${requestedTypes && !requestedTypes.includes("scenario")
     if (!passes(valid)) {
       const feedback = rejected.map((r) => `- ${r.reason}`).join("\n") || "- too few valid questions or too few distinct types";
       console.log(`refresh-quiz: retrying; problems:\n${feedback}`);
-      const retry = await callOpus(`${quizPrompt}\n\nPREVIOUS ATTEMPT FAILED MACHINE VALIDATION:\n${feedback}\nRegenerate the COMPLETE JSON, fixing these issues. Minimum 5 valid questions across ${minTypes}+ types.`, 8000);
+      const retry = await callOpus(`${quizPrompt}\n\nPREVIOUS ATTEMPT FAILED MACHINE VALIDATION:\n${feedback}\nRegenerate the COMPLETE JSON, fixing these issues. Minimum ${minValid} valid question${minValid === 1 ? "" : "s"} across ${minTypes}+ types.`, maxTok);
       totalUsage.input_tokens += retry.usage.input_tokens;
       totalUsage.output_tokens += retry.usage.output_tokens;
       result = retry.result;

@@ -75,6 +75,10 @@ export default function QuizRefreshDialog({
   // "replace" proposes a full replacement set; "add" keeps every existing
   // question by default and the proposal extends the quiz.
   const [mode, setMode] = useState<"replace" | "add">("replace");
+  // null = Auto (server default 6-8)
+  const [count, setCount] = useState<number | null>(null);
+  // Index of the proposal currently being rerolled (null = none)
+  const [rerolling, setRerolling] = useState<number | null>(null);
   const [instruction, setInstruction] = useState("");
   const [draftId, setDraftId] = useState<string | null>(null);
   const [payload, setPayload] = useState<DraftPayload | null>(null);
@@ -103,7 +107,7 @@ export default function QuizRefreshDialog({
       onOpenChange(true);
       return;
     }
-    if (phase === "running" || busy) return;
+    if (phase === "running" || busy || rerolling !== null) return;
     if (phase === "review" && draftId) {
       void discardModuleDraft(draftId).catch(() => {});
     }
@@ -139,11 +143,61 @@ export default function QuizRefreshDialog({
     setDirty(true);
   };
 
+  const setCaseQ = (i: number, patch: Partial<DraftQuestion>) => {
+    if (!payload?.case) return;
+    setPayload({
+      ...payload,
+      case: { ...payload.case, questions: payload.case.questions.map((q, j) => (j === i ? { ...q, ...patch } : q)) },
+    });
+    setDirty(true);
+  };
+  const removeCaseQ = (i: number) => {
+    if (!payload?.case) return;
+    const rest = payload.case.questions.filter((_, j) => j !== i);
+    // A case with no questions left is dropped entirely.
+    setPayload({ ...payload, case: rest.length ? { ...payload.case, questions: rest } : null });
+    setDirty(true);
+  };
+
+  /** Regenerate one standalone proposal, keeping the rest untouched. */
+  const handleReroll = async (i: number) => {
+    if (!module || !payload || rerolling !== null) return;
+    const target = proposed[i];
+    if (!target) return;
+    setRerolling(i);
+    try {
+      const avoidTexts = [
+        ...proposed.filter((_, j) => j !== i).map((q) => q.question),
+        ...(caseBlock?.questions ?? []).map((q) => q.question),
+        ...existingQuestions.map((q) => q.question),
+      ];
+      const res = await refreshModuleQuiz(module.id, [target.question_type as QuestionType], instruction, {
+        count: 1,
+        avoid: avoidTexts,
+      });
+      const row = await fetchDraft(res.draft_id);
+      // The mini-draft only exists to carry this one question — discard it so
+      // it never shows up as a pending proposal.
+      void discardModuleDraft(res.draft_id).catch(() => {});
+      const fresh = row?.payload?.quiz_questions?.[0];
+      if (!fresh) throw new Error("The reroll came back empty — try again.");
+      setPayload({ ...payload, quiz_questions: proposed.map((q, j) => (j === i ? fresh : q)) });
+      setDirty(true);
+    } catch (err) {
+      toast({ title: "Reroll failed", description: String(err), variant: "destructive" });
+    } finally {
+      setRerolling(null);
+    }
+  };
+
   const handleRun = async () => {
     if (!module) return;
     setPhase("running");
     try {
-      const res = await refreshModuleQuiz(module.id, types.length ? types : undefined, instruction);
+      const res = await refreshModuleQuiz(module.id, types.length ? types : undefined, instruction, {
+        count: count ?? undefined,
+        avoid: mode === "add" ? existingQuestions.map((q) => q.question) : undefined,
+      });
       const row = await fetchDraft(res.draft_id);
       if (!row) throw new Error("Proposal was staged but could not be loaded — try reopening this dialog.");
       setDraftId(res.draft_id);
@@ -263,6 +317,21 @@ export default function QuizRefreshDialog({
                 ))}
               </div>
             </div>
+            <div className="flex items-center gap-2">
+              <Label htmlFor="refresh-count" className="text-xs">How many questions?</Label>
+              <select
+                id="refresh-count"
+                className="h-8 rounded border bg-background px-2 text-xs"
+                value={count === null ? "auto" : String(count)}
+                onChange={(e) => setCount(e.target.value === "auto" ? null : Number(e.target.value))}
+                disabled={phase === "running"}
+              >
+                <option value="auto">Auto (6–8)</option>
+                {[5, 6, 8, 10, 12, 15].map((n) => (
+                  <option key={n} value={String(n)}>{n}</option>
+                ))}
+              </select>
+            </div>
             <div className="space-y-1.5">
               <Label htmlFor="refresh-instruction">Focus (optional)</Label>
               <Textarea
@@ -308,7 +377,18 @@ export default function QuizRefreshDialog({
                         <Button
                           variant="ghost"
                           size="sm"
+                          className="h-6 text-xs"
+                          disabled={rerolling !== null}
+                          title="Regenerate just this question (same type, avoids duplicating the others)"
+                          onClick={() => void handleReroll(i)}
+                        >
+                          {rerolling === i ? "Rerolling…" : "↻ Reroll"}
+                        </Button>
+                        <Button
+                          variant="ghost"
+                          size="sm"
                           className="h-6 text-xs text-red-600"
+                          disabled={rerolling !== null}
                           onClick={() => removeProposed(i)}
                         >
                           Delete
@@ -357,13 +437,66 @@ export default function QuizRefreshDialog({
                     </div>
                   ))}
                   {caseBlock && (
-                    <div className="rounded-md border border-amber-200 bg-amber-50 p-3 space-y-1">
+                    <div className="rounded-md border border-amber-200 bg-amber-50 p-3 space-y-2">
                       <p className="text-xs font-semibold text-amber-800">Patient case: {caseBlock.title}</p>
                       <p className="text-xs text-amber-900">{caseBlock.vignette}</p>
-                      <p className="text-[11px] text-amber-700">
-                        {caseBlock.questions?.length ?? 0} linked scenario questions (fine-tune in the Quiz
-                        editor after applying).
-                      </p>
+                      {(caseBlock.questions ?? []).map((q, ci) => (
+                        <div key={ci} className="rounded-md border border-amber-300 bg-white p-2.5 space-y-2">
+                          <div className="flex items-center gap-2">
+                            <Badge className="bg-amber-100 text-amber-800 border-0 text-[10px]">scenario</Badge>
+                            <span className="text-[11px] text-emerald-700">{questionSummary(q)}</span>
+                            <span className="ml-auto" />
+                            <Button
+                              variant="ghost"
+                              size="sm"
+                              className="h-6 text-xs text-red-600"
+                              disabled={rerolling !== null}
+                              onClick={() => removeCaseQ(ci)}
+                            >
+                              Delete
+                            </Button>
+                          </div>
+                          <Textarea
+                            value={q.question}
+                            onChange={(e) => setCaseQ(ci, { question: e.target.value })}
+                            rows={2}
+                            className="text-sm"
+                          />
+                          {Array.isArray(q.options) && (
+                            <div className="space-y-1">
+                              {(q.options as string[]).map((opt, oi) => (
+                                <div key={oi} className="flex items-center gap-2 text-xs">
+                                  <input
+                                    type="radio"
+                                    aria-label={`Mark case option ${oi + 1} as correct`}
+                                    name={`refresh-case-correct-${ci}`}
+                                    checked={q.correct_answer === oi}
+                                    onChange={() => setCaseQ(ci, { correct_answer: oi })}
+                                  />
+                                  <input
+                                    aria-label={`Case option ${oi + 1} text`}
+                                    value={String(opt)}
+                                    onChange={(e) =>
+                                      setCaseQ(ci, {
+                                        options: (q.options as string[]).map((x, j) => (j === oi ? e.target.value : x)),
+                                      })
+                                    }
+                                    className="h-7 w-full rounded border bg-background px-2 text-xs"
+                                  />
+                                </div>
+                              ))}
+                              <p className="text-[10px] text-muted-foreground">● marks the correct answer</p>
+                            </div>
+                          )}
+                          <Textarea
+                            value={q.explanation ?? ""}
+                            onChange={(e) => setCaseQ(ci, { explanation: e.target.value })}
+                            rows={2}
+                            className="text-xs"
+                            placeholder="Explanation shown after answering…"
+                          />
+                        </div>
+                      ))}
                     </div>
                   )}
                 </div>
@@ -448,11 +581,11 @@ export default function QuizRefreshDialog({
           )}
           {phase === "review" && (
             <>
-              <Button variant="outline" disabled={busy} onClick={() => handleOpenChange(false)}>
+              <Button variant="outline" disabled={busy || rerolling !== null} onClick={() => handleOpenChange(false)}>
                 Cancel
               </Button>
               <Button
-                disabled={busy || proposedTotal === 0}
+                disabled={busy || rerolling !== null || proposedTotal === 0}
                 onClick={() => void handleApply()}
                 className="gap-2 bg-[hsl(174,62%,32%)] hover:bg-[hsl(174,62%,26%)]"
               >
