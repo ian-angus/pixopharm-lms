@@ -1372,7 +1372,13 @@ export interface RefreshQuizResult {
 export async function refreshModuleQuiz(
   moduleId: string,
   types?: QuestionType[],
-  instruction?: string
+  instruction?: string,
+  opts?: {
+    /** Exact question count (1 = single-question reroll); server clamps to 1–15. */
+    count?: number;
+    /** Existing question texts the model must not duplicate. */
+    avoid?: string[];
+  }
 ): Promise<RefreshQuizResult> {
   // Same 2-min clock-skew margin as refineLesson (server vs browser clocks).
   const startedAt = new Date(Date.now() - 120_000).toISOString();
@@ -1381,6 +1387,8 @@ export async function refreshModuleQuiz(
       module_id: moduleId,
       ...(types?.length ? { types } : {}),
       ...(instruction?.trim() ? { instruction: instruction.trim() } : {}),
+      ...(opts?.count ? { count: opts.count } : {}),
+      ...(opts?.avoid?.length ? { avoid: opts.avoid } : {}),
     },
   });
   if (data?.error) throw new Error(`refresh-quiz: ${data.error}`);
