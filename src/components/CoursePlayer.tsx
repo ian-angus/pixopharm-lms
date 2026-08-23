@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from "react";
+import { useCallback, useState, useRef, useEffect } from "react";
 import type { User } from "@supabase/supabase-js";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -14,7 +14,8 @@ import type {
   QuestionType,
 } from "@/data/types";
 import { useProgress } from "@/hooks/useProgress";
-import FlashcardReview from "@/components/FlashcardReview";
+import FlashcardStudy from "@/components/FlashcardStudy";
+import { fetchDeckSummaries, type DeckSummary } from "@/lib/flashcards-api";
 import SurveyView from "@/components/SurveyView";
 import { hasSubmittedSurvey } from "@/lib/admin-api";
 import {
@@ -102,7 +103,7 @@ type View =
   | { page: "quiz"; moduleIndex: number }
   | { page: "survey" }
   | { page: "certificate" }
-  | { page: "flashcards" };
+  | { page: "flashcards"; moduleIndex?: number };
 
 // ── Content Renderers ───────────────────────────────────────────────────────
 
@@ -1466,6 +1467,7 @@ function transformDbCourse(
 
   return {
     courseId: dbCourse.slug ?? dbCourse.id,
+    dbId: dbCourse.id,
     title: dbCourse.title,
     tagline: dbCourse.description ?? "",
     skillLevel: dbCourse.skill_level ?? "Beginner",
@@ -1527,6 +1529,9 @@ export default function CoursePlayer({
 }) {
   const [view, setView] = useState<View>({ page: "overview" });
   const [sidebarOpen, setSidebarOpen] = useState(() => window.matchMedia("(min-width: 768px)").matches);
+  // Per-module study-deck badges ("18 cards · 5 due"). Refreshed when a study
+  // session closes so counts stay honest without polling.
+  const [deckSummaries, setDeckSummaries] = useState<Map<string, DeckSummary>>(new Map());
   const contentRef = useRef<HTMLDivElement>(null);
 
   // Load course from Supabase
@@ -1556,6 +1561,21 @@ export default function CoursePlayer({
 
   const course = dynamicCourse;
   const progressSlug = course?.courseId ?? courseId ?? DEFAULT_COURSE_SLUG;
+
+  const courseDbId = course?.dbId ?? null;
+  const refreshDeckSummaries = useCallback(() => {
+    if (!user || !courseDbId) return;
+    fetchDeckSummaries(courseDbId)
+      .then((rows) => setDeckSummaries(new Map(rows.map((r) => [r.module_id, r]))))
+      .catch(() => {
+        /* Decks are optional enrichment — a fetch failure must never break the player. */
+      });
+  }, [user, courseDbId]);
+  useEffect(() => {
+    refreshDeckSummaries();
+  }, [refreshDeckSummaries]);
+  const totalDue = [...deckSummaries.values()].reduce((n, s) => n + s.due, 0);
+  const totalCards = [...deckSummaries.values()].reduce((n, s) => n + s.total, 0);
 
   const { completion, loaded, markLessonComplete, saveQuizScore } = useProgress(user, progressSlug);
 
@@ -1746,6 +1766,32 @@ export default function CoursePlayer({
                           <span className="ml-auto text-[10px] text-slate-400">{quizScore.score}/{quizScore.total}</span>
                         )}
                       </button>
+
+                      {/* Study cards link (only when the module has a deck) */}
+                      {(() => {
+                        const deck = deckSummaries.get(mod.id);
+                        if (!deck || deck.total === 0) return null;
+                        const active = view.page === "flashcards" && view.moduleIndex === mi;
+                        return (
+                          <button
+                            onClick={() => navigateTo({ page: "flashcards", moduleIndex: mi })}
+                            className={`w-full text-left flex items-center gap-2 px-2 py-1.5 rounded text-xs transition-colors ${
+                              active
+                                ? "bg-[hsl(174,45%,96%)] text-[hsl(174,62%,32%)] font-medium"
+                                : "text-slate-600 hover:bg-slate-50"
+                            }`}
+                            style={{ fontFamily: "'DM Sans', sans-serif" }}
+                          >
+                            <span aria-hidden>🃏</span>
+                            <span>Study cards ({deck.total})</span>
+                            {deck.due > 0 && (
+                              <span className="ml-auto shrink-0 rounded-full bg-amber-500 px-1.5 text-[10px] font-bold text-white">
+                                {deck.due} due
+                              </span>
+                            )}
+                          </button>
+                        );
+                      })()}
                     </div>
                   )}
 
@@ -1761,16 +1807,21 @@ export default function CoursePlayer({
 
           {/* Study Tools */}
           <Separator className="my-4" />
-          <button
-            onClick={() => navigateTo({ page: "flashcards" })}
-            className="w-full flex items-center gap-2 px-3 py-2.5 rounded-lg bg-violet-50 text-violet-700 text-sm font-medium hover:bg-violet-100 transition-colors"
-            style={{ fontFamily: "'DM Sans', sans-serif" }}
-          >
-            <svg viewBox="0 0 24 24" className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2">
-              <rect x="2" y="4" width="20" height="16" rx="2" /><path d="M12 4v16" />
-            </svg>
-            Flashcard Review
-          </button>
+          {totalCards > 0 && (
+            <button
+              onClick={() => navigateTo({ page: "flashcards" })}
+              className="w-full flex items-center gap-2 px-3 py-2.5 rounded-lg bg-violet-50 text-violet-700 text-sm font-medium hover:bg-violet-100 transition-colors"
+              style={{ fontFamily: "'DM Sans', sans-serif" }}
+            >
+              <svg viewBox="0 0 24 24" className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2">
+                <rect x="2" y="4" width="20" height="16" rx="2" /><path d="M12 4v16" />
+              </svg>
+              Study cards
+              {totalDue > 0 && (
+                <span className="ml-auto rounded-full bg-amber-500 px-1.5 text-[10px] font-bold text-white">{totalDue} due</span>
+              )}
+            </button>
+          )}
 
           {/* Certificate */}
           {allComplete && (
@@ -1892,7 +1943,9 @@ export default function CoursePlayer({
                       Flashcard Review
                     </h3>
                     <p className="text-xs text-slate-500 mt-0.5" style={{ fontFamily: "'DM Sans', sans-serif" }}>
-                      Spaced repetition for key terms and concepts
+                      {totalCards > 0
+                        ? `${totalCards} cards across your modules${totalDue > 0 ? ` · ${totalDue} due today` : ""}`
+                        : "Decks appear here as your instructor publishes them"}
                     </p>
                   </div>
                   <div className="ml-auto shrink-0">
@@ -2039,6 +2092,19 @@ export default function CoursePlayer({
                   ✓ Completed
                 </Badge>
               )}
+              {view.lessonIndex === mod.lessons.length - 1 &&
+                (deckSummaries.get(mod.id)?.total ?? 0) > 0 && (
+                  <Button
+                    variant="outline"
+                    onClick={() => {
+                      markLessonComplete(lesson.id);
+                      navigateTo({ page: "flashcards", moduleIndex: view.moduleIndex });
+                    }}
+                    className="border-[hsl(174,62%,32%)]/40 text-[hsl(174,62%,30%)]"
+                  >
+                    🃏 Study cards first
+                  </Button>
+                )}
               <Button
                 onClick={() => {
                   markLessonComplete(lesson.id);
@@ -2135,13 +2201,29 @@ export default function CoursePlayer({
       );
     }
 
-    // ── Flashcard Review ──
+    // ── Flashcard study (Leitner decks) ──
     if (view.page === "flashcards") {
+      if (!courseDbId) return null;
+      const fcModuleIndex = view.moduleIndex;
+      const fcModule = fcModuleIndex !== undefined ? course.modules[fcModuleIndex] : undefined;
       return (
-        <FlashcardReview
-          user={user!}
-          courseId={progressSlug}
-          onClose={() => navigateTo({ page: "overview" })}
+        <FlashcardStudy
+          key={fcModule?.id ?? "course-wide"}
+          courseDbId={courseDbId}
+          moduleId={fcModule?.id}
+          moduleTitle={fcModule?.title}
+          onClose={() => {
+            refreshDeckSummaries();
+            navigateTo({ page: "overview" });
+          }}
+          onTakeQuiz={
+            fcModuleIndex !== undefined && (fcModule?.quiz.length ?? 0) > 0
+              ? () => {
+                  refreshDeckSummaries();
+                  navigateTo({ page: "quiz", moduleIndex: fcModuleIndex });
+                }
+              : undefined
+          }
         />
       );
     }

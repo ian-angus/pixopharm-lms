@@ -37,6 +37,8 @@ create table if not exists public.flashcards (
 );
 create index if not exists flashcards_module_idx on public.flashcards(module_id, position);
 
+<<<<<<< HEAD
+=======
 -- updated_at must stamp on EVERY update (the undo guard depends on it).
 create or replace function public.flashcards_touch_updated_at()
 returns trigger language plpgsql as $trg$
@@ -45,6 +47,7 @@ drop trigger if exists flashcards_updated_at on public.flashcards;
 create trigger flashcards_updated_at before update on public.flashcards
   for each row execute function public.flashcards_touch_updated_at();
 
+>>>>>>> origin/main
 alter table public.flashcards enable row level security;
 
 -- Same read posture as quiz_questions: published course, or admin.
@@ -217,7 +220,11 @@ language sql security definer set search_path = public as $$
     order by v.module_order, v.position
     limit greatest(0, least(p_new_limit, 20))
   )
+<<<<<<< HEAD
+  select coalesce(jsonb_agg(to_jsonb(q) order by q.is_new, q.due_at), '[]'::jsonb)
+=======
   select coalesce(jsonb_agg(to_jsonb(q) order by q.is_new, q.due_at, q.module_order, q.position), '[]'::jsonb)
+>>>>>>> origin/main
   from (select * from due union all select * from fresh) q;
 $$;
 revoke all on function public.get_due_flashcards(uuid, uuid, int, int) from public, anon;
@@ -345,7 +352,10 @@ declare
   v_draft    module_enhancement_drafts%rowtype;
   v_module   uuid;
   v_card     jsonb;
+<<<<<<< HEAD
+=======
   v_lesson   uuid;
+>>>>>>> origin/main
   v_restored int := 0;
 begin
   if not is_admin() then raise exception 'Forbidden: admin only'; end if;
@@ -378,16 +388,23 @@ begin
 
   -- Upsert every snapshot card back to its pre-apply state (original ids).
   for v_card in select * from jsonb_array_elements(coalesce(v_draft.previous_payload->'cards', '[]'::jsonb)) loop
+<<<<<<< HEAD
+=======
     -- Lesson may have been deleted since the snapshot; drop the stale ref.
     v_lesson := nullif(v_card->>'lesson_id', '')::uuid;
     if v_lesson is not null and not exists (select 1 from lessons l where l.id = v_lesson) then
       v_lesson := null;
     end if;
+>>>>>>> origin/main
     insert into flashcards(id, module_id, lesson_id, card_type, front, back, extra, source, position, created_at, updated_at)
     values (
       (v_card->>'id')::uuid,
       v_module,
+<<<<<<< HEAD
+      nullif(v_card->>'lesson_id', '')::uuid,
+=======
       v_lesson,
+>>>>>>> origin/main
       v_card->>'card_type',
       v_card->>'front',
       v_card->>'back',
