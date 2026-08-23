@@ -196,8 +196,8 @@ test("quiz refresh dialog opens from the Quiz editor; apply/revert RPCs keep + r
   // (Generate would spend real AI money, so the generation itself is covered
   // by the manual live verification against the deployed function).
   const quizSheet = page.getByRole("dialog").filter({ hasText: `Quiz — ${MODULE_TITLE}` });
-  await quizSheet.getByRole("button", { name: "⟳ Refresh with AI" }).click();
-  const refreshDialog = page.getByRole("dialog").filter({ hasText: "Refresh with AI ✦" });
+  await quizSheet.getByRole("button", { name: "✦ AI quiz" }).click();
+  const refreshDialog = page.getByRole("dialog").filter({ hasText: "AI quiz ✦" });
   await expect(refreshDialog.getByText("Question types (optional)")).toBeVisible();
   await refreshDialog.getByRole("button", { name: "Cancel" }).click();
   await expect(refreshDialog).toBeHidden();

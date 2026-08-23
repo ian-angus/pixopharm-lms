@@ -3013,10 +3013,10 @@ function ModuleCard({
                   size="sm"
                   variant="ghost"
                   className="h-6 text-xs gap-1 px-2 text-amber-700"
-                  title="Propose a replacement quiz grounded in the module's current lesson content"
+                  title="Generate or refresh quiz questions with AI — you review the proposal before anything goes live"
                   onClick={() => setRefreshOpen(true)}
                 >
-                  ⟳ Refresh with AI
+                  ✦ AI quiz
                 </Button>
                 <Button size="sm" variant="ghost" className="h-6 text-xs gap-1 px-2" onClick={onOpenQuizEditor}>
                   <IconEdit /> Edit quiz
