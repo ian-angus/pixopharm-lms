@@ -1848,6 +1848,16 @@ export async function generateFlashcards(
   });
   if (data?.error) throw new Error(`generate-flashcards: ${data.error}`);
   if (!error) return data as GenerateFlashcardsResult;
+  // A real HTTP error response (4xx/5xx) carries its body on error.context —
+  // surface it instead of pointlessly polling for a draft that won't appear.
+  const ctx = (error as { context?: Response }).context;
+  if (ctx && typeof ctx.json === "function") {
+    const body = await ctx.json().catch(() => null);
+    if (body?.error) throw new Error(`generate-flashcards: ${body.error}`);
+    if (ctx.status >= 400 && ctx.status !== 504 && ctx.status !== 502) {
+      throw new Error(`generate-flashcards: HTTP ${ctx.status}`);
+    }
+  }
 
   // Gateway drop recovery: the draft is staged server-side BEFORE the response,
   // so poll for it instead of failing (mirrors refreshModuleQuiz).
@@ -1855,7 +1865,7 @@ export async function generateFlashcards(
     await new Promise((r) => setTimeout(r, 20_000));
     const { data: rows } = await supabase
       .from("module_enhancement_drafts")
-      .select("id, payload")
+      .select("id, payload, model")
       .eq("module_id", moduleId)
       .eq("kind", "flashcards")
       .eq("status", "pending_review")
@@ -1869,7 +1879,7 @@ export async function generateFlashcards(
         target: "flashcards",
         draft_id: row.id,
         cards_count: payload.cards?.length ?? 0,
-        model_used: "claude-opus-4-8",
+        model_used: (row as { model?: string }).model ?? "unknown",
       };
     }
   }
