@@ -183,7 +183,13 @@ export default function QuizRefreshDialog({
       void discardModuleDraft(res.draft_id).catch(() => {});
       const fresh = row?.payload?.quiz_questions?.[0];
       if (!fresh) throw new Error("The reroll came back empty — try again.");
-      setPayload({ ...payload, quiz_questions: proposed.map((q, j) => (j === i ? fresh : q)) });
+      // Functional update: edits typed while the reroll was in flight survive.
+      // (Deletes are disabled during a reroll, so index i cannot shift.)
+      setPayload((current) =>
+        current
+          ? { ...current, quiz_questions: (current.quiz_questions ?? []).map((q, j) => (j === i ? fresh : q)) }
+          : current
+      );
       setDirty(true);
     } catch (err) {
       toast({ title: "Reroll failed", description: String(err), variant: "destructive" });

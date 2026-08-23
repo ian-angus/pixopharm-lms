@@ -325,7 +325,10 @@ ${(requestedTypes && !requestedTypes.includes("scenario")) || (targetCount !== n
     const minTypes = targetCount !== null && targetCount <= 3
       ? 1
       : requestedTypes ? Math.min(3, requestedTypes.length) : 3;
-    const minValid = targetCount !== null ? Math.max(1, targetCount - 1) : 5;
+    // A fixed count is a promise to the admin: require at least that many
+    // valid questions (retry otherwise) and trim any overshoot to the exact
+    // number after validation.
+    const minValid = targetCount ?? 5;
     const passes = (v: { standalone: GenQuestion[]; caseQs: GenQuestion[] }) =>
       v.standalone.length + v.caseQs.length >= minValid && distinctTypes(v) >= minTypes;
 
@@ -347,6 +350,12 @@ ${(requestedTypes && !requestedTypes.includes("scenario")) || (targetCount !== n
       if (!passes(valid)) {
         return json({ error: "AI output failed validation after retry", rejections: rejected.map((r) => r.reason).slice(0, 10) }, 502);
       }
+    }
+
+    if (targetCount !== null) {
+      let excess = valid.standalone.length + valid.caseQs.length - targetCount;
+      while (excess > 0 && valid.caseQs.length > 0) { valid.caseQs.pop(); excess--; }
+      while (excess > 0 && valid.standalone.length > 0) { valid.standalone.pop(); excess--; }
     }
 
     // Resolve objective_ref → objective_id (soft: an unknown ref stays
