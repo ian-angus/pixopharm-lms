@@ -531,8 +531,10 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
   }, [toast]);
 
   const loadCourseDetail = useCallback(
-    async (courseId: string) => {
-      setCourseDetailLoading(true);
+    async (courseId: string, opts?: { silent?: boolean }) => {
+      // Silent refetches keep the module cards mounted (no skeleton swap), so
+      // open dialogs — e.g. QuizRefreshDialog's post-apply Undo — survive.
+      if (!opts?.silent) setCourseDetailLoading(true);
       try {
         const data = await fetchCourse(courseId);
         setCourseDetail(data);
@@ -1543,7 +1545,7 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
                                     mod={mod}
                                     onEnhanced={() => {
                                       // Only refetch if this course is still the one on screen.
-                                      if (expandedCourseIdRef.current === course.id) loadCourseDetail(course.id);
+                                      if (expandedCourseIdRef.current === course.id) loadCourseDetail(course.id, { silent: true });
                                     }}
                                     onEditModule={() => openEditModule(mod)}
                                     onDeleteModule={() => confirmDelete("module", mod.id, mod.title)}
