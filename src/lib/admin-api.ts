@@ -1100,8 +1100,10 @@ export interface DraftPayload {
   module_title?: string;
   course_title?: string;
   domain?: string | null;
-  /** quiz_refresh drafts: the admin's optional focus instruction. */
+  /** quiz_refresh / flashcards drafts: the admin's optional focus instruction. */
   instruction?: string;
+  /** flashcards drafts: the proposed deck. */
+  cards?: DeckCard[];
   create_lessons?: boolean;
   module_overview?: string;
   learning_objectives: DraftObjective[];
@@ -1718,4 +1720,181 @@ export async function fetchAccessList(program = "diploma"): Promise<
     .order("granted_at", { ascending: false });
   if (error) handleError(error, "fetchAccessList");
   return (data ?? []) as { user_id: string; status: string; source: string; granted_at: string }[];
+}
+
+// ════════════════════════════════════════════════════════════════════════════
+// Flashcards — per-module study decks (admin editing + AI generation)
+// ════════════════════════════════════════════════════════════════════════════
+
+export type FlashcardType =
+  | "term_definition"
+  | "brand_generic"
+  | "drug_stem"
+  | "cloze"
+  | "calculation"
+  | "island_compare";
+
+export interface FlashcardExtra {
+  /** cloze: the blanked word/phrase. calculation: the numeric answer. */
+  answer?: string | number;
+  tolerance?: number;
+  unit?: string;
+  [key: string]: unknown;
+}
+
+export interface Flashcard {
+  id: string;
+  module_id: string;
+  lesson_id: string | null;
+  card_type: FlashcardType;
+  front: string;
+  back: string;
+  extra: FlashcardExtra;
+  source: { lesson_title?: string | null; lesson_ref?: number | null; [key: string]: unknown };
+  position: number;
+  created_at: string;
+  updated_at: string;
+}
+
+/** A proposed card inside a kind='flashcards' draft payload. */
+export interface DeckCard {
+  card_type: FlashcardType;
+  front: string;
+  back: string;
+  extra?: FlashcardExtra | null;
+  lesson_id?: string | null;
+  source?: { lesson_title?: string | null; lesson_ref?: number | null };
+}
+
+export async function fetchModuleDeck(moduleId: string): Promise<Flashcard[]> {
+  const { data, error } = await supabase
+    .from("flashcards")
+    .select("*")
+    .eq("module_id", moduleId)
+    .order("position", { ascending: true });
+  if (error) handleError(error, "fetchModuleDeck");
+  return (data ?? []) as Flashcard[];
+}
+
+export async function createFlashcard(
+  moduleId: string,
+  card: Omit<Partial<Flashcard>, "id" | "module_id" | "created_at" | "updated_at"> & Pick<Flashcard, "card_type" | "front" | "back">
+): Promise<Flashcard> {
+  const { data, error } = await supabase
+    .from("flashcards")
+    .insert({ ...card, module_id: moduleId })
+    .select("*")
+    .single();
+  if (error) handleError(error, "createFlashcard");
+  return data as Flashcard;
+}
+
+export async function updateFlashcard(id: string, patch: Partial<Flashcard>): Promise<void> {
+  const { error } = await supabase
+    .from("flashcards")
+    .update({ ...patch, updated_at: new Date().toISOString() })
+    .eq("id", id);
+  if (error) handleError(error, "updateFlashcard");
+}
+
+export async function deleteFlashcard(id: string): Promise<void> {
+  const { error } = await supabase.from("flashcards").delete().eq("id", id);
+  if (error) handleError(error, "deleteFlashcard");
+}
+
+/** Persist a new deck order (position = array index + 1). */
+export async function reorderFlashcards(orderedIds: string[]): Promise<void> {
+  for (let i = 0; i < orderedIds.length; i++) {
+    const { error } = await supabase
+      .from("flashcards")
+      .update({ position: i + 1, updated_at: new Date().toISOString() })
+      .eq("id", orderedIds[i]);
+    if (error) handleError(error, "reorderFlashcards");
+  }
+}
+
+export interface GenerateFlashcardsResult {
+  target: "flashcards";
+  draft_id: string;
+  cards_count: number;
+  types_generated?: string[];
+  rejected_count?: number;
+  model_used: string;
+  usage?: { input_tokens: number; output_tokens: number };
+}
+
+export async function generateFlashcards(
+  moduleId: string,
+  instruction?: string,
+  opts?: {
+    /** Exact card count (1 = single-card reroll); server clamps to 1–40. */
+    count?: number;
+    /** Restrict to these card types (used by rerolls). */
+    types?: FlashcardType[];
+    /** Existing card fronts the model must not duplicate. */
+    avoid?: string[];
+  }
+): Promise<GenerateFlashcardsResult> {
+  // Same 2-min clock-skew margin as refreshModuleQuiz (server vs browser clocks).
+  const startedAt = new Date(Date.now() - 120_000).toISOString();
+  const { data, error } = await supabase.functions.invoke("generate-flashcards", {
+    body: {
+      module_id: moduleId,
+      ...(instruction?.trim() ? { instruction: instruction.trim() } : {}),
+      ...(opts?.count ? { count: opts.count } : {}),
+      ...(opts?.types?.length ? { types: opts.types } : {}),
+      ...(opts?.avoid?.length ? { avoid: opts.avoid } : {}),
+    },
+  });
+  if (data?.error) throw new Error(`generate-flashcards: ${data.error}`);
+  if (!error) return data as GenerateFlashcardsResult;
+
+  // Gateway drop recovery: the draft is staged server-side BEFORE the response,
+  // so poll for it instead of failing (mirrors refreshModuleQuiz).
+  for (let i = 0; i < 9; i++) {
+    await new Promise((r) => setTimeout(r, 20_000));
+    const { data: rows } = await supabase
+      .from("module_enhancement_drafts")
+      .select("id, payload")
+      .eq("module_id", moduleId)
+      .eq("kind", "flashcards")
+      .eq("status", "pending_review")
+      .gte("created_at", startedAt)
+      .order("created_at", { ascending: false })
+      .limit(1);
+    const row = rows?.[0];
+    if (row) {
+      const payload = row.payload as { cards?: unknown[] };
+      return {
+        target: "flashcards",
+        draft_id: row.id,
+        cards_count: payload.cards?.length ?? 0,
+        model_used: "claude-opus-4-8",
+      };
+    }
+  }
+  handleError(error, "generateFlashcards");
+}
+
+export interface ApplyFlashcardRefreshResult {
+  draft_id: string;
+  module_id?: string;
+  kept?: number;
+  deleted?: number;
+  inserted?: number;
+  already_applied?: boolean;
+}
+
+export async function applyFlashcardRefresh(draftId: string, keepIds: string[]): Promise<ApplyFlashcardRefreshResult> {
+  const { data, error } = await supabase.rpc("apply_flashcard_refresh", {
+    p_draft_id: draftId,
+    p_keep_ids: keepIds,
+  });
+  if (error) handleError(error, "applyFlashcardRefresh");
+  return data as ApplyFlashcardRefreshResult;
+}
+
+export async function revertFlashcardRefresh(draftId: string): Promise<void> {
+  const { error } = await supabase.rpc("revert_flashcard_refresh", { p_draft_id: draftId });
+  if (error) handleError(error, "revertFlashcardRefresh");
 }
