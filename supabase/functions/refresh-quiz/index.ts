@@ -239,11 +239,13 @@ Deno.serve(async (req: Request) => {
 
     // Accreditation modules carry learning objectives — generated questions
     // must link back to them so objective-coverage reporting stays truthful.
-    const { data: objectives } = await sb
+    const { data: objectives, error: objErr } = await sb
       .from("learning_objectives")
       .select("id, objective_number, text")
       .eq("module_id", module_id)
       .order("order_index");
+    // A load failure must not silently stage an unlinked quiz as success.
+    if (objErr) return json({ error: `Failed to read learning objectives: ${objErr.message}` }, 500);
     const objList = (objectives ?? []).filter((o) => o.objective_number);
 
     const withContent = (lessons ?? []).filter(
