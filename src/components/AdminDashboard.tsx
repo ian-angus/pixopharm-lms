@@ -76,6 +76,8 @@ import {
   fetchAllSurveyStats,
   generateCourse,
   enhanceModule,
+  fetchPendingLessonRevisions,
+  type LessonRevision,
 } from "@/lib/admin-api";
 import type {
   Course,
@@ -99,6 +101,7 @@ import CurriculumOrganizer from "@/components/curriculum/CurriculumOrganizer";
 
 // ── AI quiz refresh (review-first replacement quiz; same dialog as organizer) ─
 import QuizRefreshDialog from "@/components/curriculum/QuizRefreshDialog";
+import RefineLessonDialog from "@/components/curriculum/RefineLessonDialog";
 import QuizEditor from "@/components/curriculum/QuizEditor";
 import DeckEditor from "@/components/curriculum/DeckEditor";
 
@@ -2893,6 +2896,27 @@ function ModuleCard({
   // AI quiz refresh (proposes a replacement set grounded in current lessons)
   const [refreshOpen, setRefreshOpen] = useState(false);
 
+  // Lesson AI refine: review-first dialog + pending-proposal badges, exactly
+  // as the Curriculum organizer's LessonEditorSheet surfaces them.
+  const [refineTarget, setRefineTarget] = useState<Lesson | null>(null);
+  const [refineDraft, setRefineDraft] = useState<LessonRevision | null>(null);
+  const [pendingRevisions, setPendingRevisions] = useState<Record<string, LessonRevision>>({});
+  useEffect(() => {
+    if (!expanded || mod.lessons.length === 0) return;
+    let cancelled = false;
+    fetchPendingLessonRevisions(mod.lessons.map((l) => l.id))
+      .then((pending) => {
+        if (cancelled) return;
+        const byLesson: Record<string, LessonRevision> = {};
+        for (const p of pending) if (!byLesson[p.lesson_id]) byLesson[p.lesson_id] = p;
+        setPendingRevisions(byLesson);
+      })
+      .catch(() => {});
+    return () => {
+      cancelled = true;
+    };
+  }, [expanded, mod.lessons]);
+
   return (
     <div className="border rounded-lg bg-white overflow-hidden">
       {/* Module Header */}
@@ -2987,11 +3011,28 @@ function ModuleCard({
                       <div className="flex-1 min-w-0">
                         <div className="flex items-center gap-2">
                           <span className="truncate text-foreground font-medium">{lesson.title}</span>
+                          {pendingRevisions[lesson.id] && (
+                            <span className="shrink-0 rounded-full border border-amber-300 bg-amber-50 px-1.5 text-[10px] font-bold text-amber-700">
+                              AI proposal
+                            </span>
+                          )}
                           <span className="text-xs text-muted-foreground shrink-0">{lesson.duration_minutes} min</span>
                         </div>
                         <p className="text-xs text-muted-foreground truncate mt-0.5">{contentPreview}</p>
                       </div>
                       <div className="flex items-center gap-0.5 shrink-0 opacity-0 group-hover:opacity-100">
+                        <Button
+                          size="sm"
+                          variant="ghost"
+                          className={`h-6 w-6 p-0 ${pendingRevisions[lesson.id] ? "text-amber-600 opacity-100" : "text-violet-600"}`}
+                          title={pendingRevisions[lesson.id] ? "Review AI proposal" : "Refine with AI"}
+                          onClick={() => {
+                            setRefineDraft(pendingRevisions[lesson.id] ?? null);
+                            setRefineTarget(lesson);
+                          }}
+                        >
+                          ✦
+                        </Button>
                         <Button
                           size="sm"
                           variant="ghost"
@@ -3122,6 +3163,20 @@ function ModuleCard({
           </div>
         </div>
       )}
+
+      {/* Lesson refine — same review-first dialog as the Curriculum organizer */}
+      <RefineLessonDialog
+        lesson={refineTarget}
+        open={!!refineTarget}
+        onOpenChange={(o) => {
+          if (!o) {
+            setRefineTarget(null);
+            setRefineDraft(null);
+          }
+        }}
+        initialDraft={refineDraft}
+        onChanged={onEnhanced}
+      />
 
       {/* AI quiz refresh — same review-first dialog as the Curriculum organizer */}
       <QuizRefreshDialog
