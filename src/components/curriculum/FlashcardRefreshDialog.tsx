@@ -174,7 +174,13 @@ export default function FlashcardRefreshDialog({
       void discardModuleDraft(res.draft_id).catch(() => {});
       const fresh = row?.payload?.cards?.[0];
       if (!fresh) throw new Error("The reroll came back empty — try again.");
-      setPayload({ ...payload, cards: cards.map((c, j) => (j === i ? fresh : c)) });
+      // Functional update: edits typed while the reroll was in flight survive.
+      // (Deletes are disabled during a reroll, so index i cannot shift.)
+      setPayload((current) =>
+        current
+          ? { ...current, cards: (current.cards ?? []).map((c, j) => (j === i ? fresh : c)) }
+          : current
+      );
       setDirty(true);
     } catch (err) {
       toast({ title: "Reroll failed", description: String(err), variant: "destructive" });
