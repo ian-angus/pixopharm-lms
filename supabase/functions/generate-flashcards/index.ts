@@ -217,7 +217,9 @@ CARD TYPE SCHEMAS (machine-validated — follow EXACTLY):
 Return ONLY valid JSON:
 { "cards": [ ...cards... ] }`;
 
-    const minValid = targetCount !== null ? Math.max(1, targetCount - 2) : 10;
+    // A fixed count is a promise to the admin: require at least that many
+    // valid cards (retry otherwise) and trim overshoot to the exact number.
+    const minValid = targetCount ?? 10;
     const maxTok = targetCount !== null && targetCount <= 3 ? 2000 : 6000;
 
     const collect = (result: Record<string, unknown>) => {
@@ -262,6 +264,10 @@ Return ONLY valid JSON:
       if (valid.length < minValid) {
         return json({ error: "AI output failed validation after retry", rejections: rejected.slice(0, 10) }, 502);
       }
+    }
+
+    if (targetCount !== null && valid.length > targetCount) {
+      valid = valid.slice(0, targetCount);
     }
 
     // Stage the proposal (BEFORE responding — connection-drop safe).
