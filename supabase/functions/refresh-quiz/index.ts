@@ -82,6 +82,9 @@ interface GenQuestion {
   explanation?: string;
   difficulty?: string;
   blooms_level?: string;
+  /** Model-emitted objective_number; resolved server-side to objective_id. */
+  objective_ref?: unknown;
+  objective_id?: string | null;
 }
 
 function validateQuestion(q: GenQuestion): string | null {
@@ -234,6 +237,17 @@ Deno.serve(async (req: Request) => {
       .order("order_index");
     if (lessonErr) return json({ error: `Failed to read lessons: ${lessonErr.message}` }, 500);
 
+    // Accreditation modules carry learning objectives — generated questions
+    // must link back to them so objective-coverage reporting stays truthful.
+    const { data: objectives, error: objErr } = await sb
+      .from("learning_objectives")
+      .select("id, objective_number, text")
+      .eq("module_id", module_id)
+      .order("order_index");
+    // A load failure must not silently stage an unlinked quiz as success.
+    if (objErr) return json({ error: `Failed to read learning objectives: ${objErr.message}` }, 500);
+    const objList = (objectives ?? []).filter((o) => o.objective_number);
+
     const withContent = (lessons ?? []).filter(
       (l) => Array.isArray(l.content) && (l.content as unknown[]).length > 0
     );
@@ -259,13 +273,17 @@ Deno.serve(async (req: Request) => {
       ? `\nADMIN FOCUS FOR THIS REFRESH: "${body.instruction.trim()}"`
       : "";
 
+    const objectivesSection = objList.length
+      ? `\nLEARNING OBJECTIVES for this module:\n${objList.map((o) => `[${o.objective_number}] ${o.text}`).join("\n")}\nEVERY question object (standalone AND case questions) MUST include "objective_ref" set to the bracketed number of the single objective it best assesses (e.g. "objective_ref":"${objList[0].objective_number}"). Collectively the questions should cover as many of the objectives as the lesson content supports.\n`
+      : "";
+
     const quizPrompt = `${CARIBBEAN_CONTEXT}
 
 You are writing a REPLACEMENT quiz for module "${mod.title}" of the PixoPharm course "${course.title}"${domainName ? ` (curriculum domain "${domainName}")` : ""}.
 
 CURRENT LESSON CONTENT — ground EVERY question in this material (do not test anything it doesn't teach):
 ${grounding}
-${focus}
+${focus}${objectivesSection}
 QUIZ — produce 6–8 questions ${requestedTypes
       ? `using ONLY these question_type values: ${requestedTypes.join(", ")}. Spread the questions across ${requestedTypes.length > 1 ? "all of them" : "it"}.`
       : `spanning AT LEAST 4 different question_type values.\n${typeMixForDomain(domainName)}`}
@@ -313,6 +331,19 @@ ${requestedTypes && !requestedTypes.includes("scenario")
       }
     }
 
+    // Resolve objective_ref → objective_id (soft: an unknown ref stays
+    // unlinked rather than failing the refresh).
+    const objByNumber = new Map(objList.map((o) => [String(o.objective_number).trim(), o.id]));
+    let unlinkedCount = 0;
+    for (const q of [...valid.standalone, ...valid.caseQs]) {
+      const ref = typeof q.objective_ref === "string" || typeof q.objective_ref === "number"
+        ? String(q.objective_ref).trim().replace(/^\[|\]$/g, "")
+        : "";
+      q.objective_id = objByNumber.get(ref) ?? null;
+      if (objList.length && !q.objective_id) unlinkedCount++;
+    }
+    if (unlinkedCount) console.log(`refresh-quiz: ${unlinkedCount} question(s) had no resolvable objective_ref`);
+
     // Stage the proposal (BEFORE responding — connection-drop safe).
     const { data: draftRow, error: draftErr } = await sb
       .from("module_enhancement_drafts")
@@ -349,6 +380,8 @@ ${requestedTypes && !requestedTypes.includes("scenario")
       has_case: !!(valid.caseQs.length && valid.vignette),
       types_generated: [...new Set([...valid.standalone, ...valid.caseQs].map((q) => q.question_type))],
       rejected_count: rejected.length,
+      objectives_in_module: objList.length,
+      objectives_unlinked: unlinkedCount,
       model_used: OPUS_MODEL,
       usage: totalUsage,
     });
