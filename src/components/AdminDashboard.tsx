@@ -100,6 +100,9 @@ import CoursePlayer from "@/components/CoursePlayer";
 // ── Curriculum Organizer (domain board with drag-and-drop) ───────────────────
 import CurriculumOrganizer from "@/components/curriculum/CurriculumOrganizer";
 
+// ── AI quiz refresh (review-first replacement quiz; same dialog as organizer) ─
+import QuizRefreshDialog from "@/components/curriculum/QuizRefreshDialog";
+
 // ── TipTap WYSIWYG Editor (replaces block-by-block ContentBlockEditor) ───────
 import TipTapLessonEditor from "@/components/TipTapLessonEditor";
 import type { ContentBlock } from "@/components/TipTapLessonEditor";
@@ -3405,6 +3408,9 @@ function ModuleCard({
     firstLessonBlocks >= 7 ? "done" : "idle"
   );
 
+  // AI quiz refresh (proposes a replacement set grounded in current lessons)
+  const [refreshOpen, setRefreshOpen] = useState(false);
+
   return (
     <div className="border rounded-lg bg-white overflow-hidden">
       {/* Module Header */}
@@ -3534,9 +3540,20 @@ function ModuleCard({
           <div>
             <div className="flex items-center justify-between mb-2">
               <h5 className="text-xs font-semibold text-muted-foreground uppercase tracking-wide">Quiz Questions</h5>
-              <Button size="sm" variant="ghost" className="h-6 text-xs gap-1 px-2" onClick={onAddQuiz}>
-                <IconPlus /> Add
-              </Button>
+              <div className="flex items-center gap-1">
+                <Button
+                  size="sm"
+                  variant="ghost"
+                  className="h-6 text-xs gap-1 px-2 text-amber-700"
+                  title="Propose a replacement quiz grounded in the module's current lesson content"
+                  onClick={() => setRefreshOpen(true)}
+                >
+                  ⟳ Refresh with AI
+                </Button>
+                <Button size="sm" variant="ghost" className="h-6 text-xs gap-1 px-2" onClick={onAddQuiz}>
+                  <IconPlus /> Add
+                </Button>
+              </div>
             </div>
             {mod.quiz_questions.length === 0 ? (
               <p className="text-xs text-muted-foreground italic">No quiz questions yet.</p>
@@ -3617,6 +3634,15 @@ function ModuleCard({
           </div>
         </div>
       )}
+
+      {/* AI quiz refresh — same review-first dialog as the Curriculum organizer */}
+      <QuizRefreshDialog
+        module={mod}
+        open={refreshOpen}
+        onOpenChange={setRefreshOpen}
+        existingQuestions={mod.quiz_questions}
+        onApplied={onEnhanced}
+      />
     </div>
   );
 }
