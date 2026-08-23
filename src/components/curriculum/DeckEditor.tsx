@@ -40,7 +40,6 @@ import {
   createFlashcard,
   deleteFlashcard,
   fetchModuleDeck,
-  reorderFlashcards,
   updateFlashcard,
   type Flashcard,
   type FlashcardType,
@@ -149,6 +148,7 @@ export default function DeckEditor({ module, open, onOpenChange, onDeckChanged }
   const [formError, setFormError] = useState<string | null>(null);
   const [saving, setSaving] = useState(false);
   const [deleteTarget, setDeleteTarget] = useState<Flashcard | null>(null);
+  const [reordering, setReordering] = useState(false);
 
   const moduleId = module?.id ?? null;
 
@@ -234,20 +234,48 @@ export default function DeckEditor({ module, open, onOpenChange, onDeckChanged }
 
   const move = async (index: number, dir: -1 | 1) => {
     const target = index + dir;
-    if (target < 0 || target >= cards.length) return;
+    if (target < 0 || target >= cards.length || reordering) return;
+    const a = cards[index];
+    const b = cards[target];
     const next = [...cards];
     [next[index], next[target]] = [next[target], next[index]];
     setCards(next); // optimistic
+    setReordering(true);
     try {
-      await reorderFlashcards(next.map((c) => c.id));
+      // A swap changes exactly two rows — write only those, serialized by the
+      // reordering flag so rapid clicks can't interleave write sequences.
+      await Promise.all([
+        updateFlashcard(a.id, { position: b.position }),
+        updateFlashcard(b.id, { position: a.position }),
+      ]);
+      // Keep local position fields consistent for subsequent swaps.
+      setCards((cur) =>
+        cur.map((c) =>
+          c.id === a.id ? { ...c, position: b.position } : c.id === b.id ? { ...c, position: a.position } : c
+        )
+      );
     } catch (e) {
       toast({ title: "Reorder failed", description: String(e), variant: "destructive" });
       await reload();
+    } finally {
+      setReordering(false);
     }
   };
 
+  const handleSheetChange = (next: boolean) => {
+    if (!next) {
+      // Nested dialogs must not survive a sheet close (stale form re-opens).
+      setFormOpen(false);
+      setEditingCard(null);
+      setFormError(null);
+      setAiOpen(false);
+      setDeleteTarget(null);
+    }
+    onOpenChange(next);
+  };
+
   return (
-    <Sheet open={open} onOpenChange={onOpenChange}>
+    <Sheet open={open} onOpenChange={handleSheetChange}>
       <SheetContent className="w-full sm:max-w-2xl overflow-y-auto">
         <SheetHeader>
           <SheetTitle>Deck — {module?.title}</SheetTitle>
@@ -292,7 +320,7 @@ export default function DeckEditor({ module, open, onOpenChange, onDeckChanged }
                         variant="ghost"
                         className="h-5 w-5 p-0 text-muted-foreground"
                         aria-label="Move card up"
-                        disabled={i === 0}
+                        disabled={i === 0 || reordering}
                         onClick={() => void move(i, -1)}
                       >
                         ↑
@@ -302,7 +330,7 @@ export default function DeckEditor({ module, open, onOpenChange, onDeckChanged }
                         variant="ghost"
                         className="h-5 w-5 p-0 text-muted-foreground"
                         aria-label="Move card down"
-                        disabled={i === cards.length - 1}
+                        disabled={i === cards.length - 1 || reordering}
                         onClick={() => void move(i, 1)}
                       >
                         ↓

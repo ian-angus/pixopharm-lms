@@ -320,6 +320,15 @@ export default function FlashcardStudy({
             className={`fc-card cursor-pointer select-none ${flipped ? "flipped" : ""}`}
             onClick={flip}
             role="button"
+            tabIndex={0}
+            onKeyDown={(e) => {
+              // The calculation input needs its own Enter/Space handling.
+              if ((e.target as HTMLElement).tagName === "INPUT") return;
+              if (e.key === "Enter" || e.key === " ") {
+                e.preventDefault();
+                flip();
+              }
+            }}
             aria-label={flipped ? "Card answer" : "Tap to reveal the answer"}
             data-testid="fc-card"
           >

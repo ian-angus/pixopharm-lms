@@ -189,8 +189,40 @@ export default function FlashcardRefreshDialog({
     }
   };
 
+  /** Same invariants the edge function and DeckEditor enforce. */
+  const validateCards = (): string | null => {
+    for (let i = 0; i < cards.length; i++) {
+      const c = cards[i];
+      const label = `Card ${i + 1} ("${c.front.slice(0, 40)}")`;
+      if (!c.front.trim()) return `${label}: front is required.`;
+      if (c.front.length > 300) return `${label}: front is over 300 characters.`;
+      if (!c.back.trim()) return `${label}: back is required.`;
+      if (c.back.length > 700) return `${label}: back is over 700 characters.`;
+      if (c.card_type === "cloze") {
+        if (!c.front.includes("___")) return `${label}: fill-the-gap cards need ___ in the front.`;
+        if (typeof c.extra?.answer !== "string" || !c.extra.answer.trim()) {
+          return `${label}: enter the word that fills the blank.`;
+        }
+      }
+      if (c.card_type === "calculation") {
+        if (typeof c.extra?.answer !== "number" || !Number.isFinite(c.extra.answer)) {
+          return `${label}: the calculation answer must be a number.`;
+        }
+        if (typeof c.extra?.unit !== "string" || !c.extra.unit.trim()) {
+          return `${label}: calculation cards need a unit.`;
+        }
+      }
+    }
+    return null;
+  };
+
   const handleApply = async () => {
     if (!draftId || !payload) return;
+    const invalid = validateCards();
+    if (invalid) {
+      toast({ title: "Fix a card before applying", description: invalid, variant: "destructive" });
+      return;
+    }
     setBusy(true);
     try {
       if (dirty) await saveDraftPayload(draftId, payload); // never apply stale edits
