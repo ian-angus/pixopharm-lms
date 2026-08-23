@@ -28,9 +28,9 @@ const TYPE_LABELS: Record<FlashcardType, string> = {
 };
 
 const FLIP_STYLES = `
-  .fc-stage { perspective: 1200px; }
+  .fc-stage { perspective: 1200px; display: flex; }
   .fc-card {
-    position: relative; width: 100%; height: 100%;
+    position: relative; width: 100%; flex: 1; min-height: 320px;
     transform-style: preserve-3d;
     transition: transform 0.45s cubic-bezier(0.4, 0.1, 0.25, 1);
   }
@@ -284,7 +284,11 @@ export default function FlashcardStudy({
   const verdict = flipped && card ? calcVerdict(card) : null;
 
   return (
-    <div className="flex-1 flex flex-col min-h-0 bg-slate-50" data-testid="flashcard-study">
+    <div
+      className="flex flex-col bg-slate-50"
+      style={{ minHeight: "calc(100dvh - 130px)" }}
+      data-testid="flashcard-study"
+    >
       <style>{FLIP_STYLES}</style>
       {/* Header */}
       <div className="flex items-center gap-3 px-4 pt-3 pb-2">
