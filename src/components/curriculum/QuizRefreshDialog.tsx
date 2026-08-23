@@ -72,6 +72,9 @@ export default function QuizRefreshDialog({
   const { toast } = useToast();
   const [phase, setPhase] = useState<Phase>("ask");
   const [types, setTypes] = useState<QuestionType[]>([]);
+  // "replace" proposes a full replacement set; "add" keeps every existing
+  // question by default and the proposal extends the quiz.
+  const [mode, setMode] = useState<"replace" | "add">("replace");
   const [instruction, setInstruction] = useState("");
   const [draftId, setDraftId] = useState<string | null>(null);
   const [payload, setPayload] = useState<DraftPayload | null>(null);
@@ -145,6 +148,7 @@ export default function QuizRefreshDialog({
       if (!row) throw new Error("Proposal was staged but could not be loaded — try reopening this dialog.");
       setDraftId(res.draft_id);
       setPayload(row.payload);
+      setKeepIds(mode === "add" ? new Set(existingQuestions.map((q) => q.id)) : new Set());
       setPhase("review");
     } catch (err) {
       toast({ title: "Quiz refresh failed", description: String(err), variant: "destructive" });
@@ -201,17 +205,46 @@ export default function QuizRefreshDialog({
     <Dialog open={open} onOpenChange={handleOpenChange}>
       <DialogContent className="max-w-3xl max-h-[90vh] flex flex-col">
         <DialogHeader>
-          <DialogTitle>Refresh with AI ✦ — {module?.title}</DialogTitle>
+          <DialogTitle>AI quiz ✦ — {module?.title}</DialogTitle>
           <DialogDescription>
             {phase === "review"
-              ? "The proposal below REPLACES the current quiz. Tick Keep on any existing question you want to survive."
-              : "Proposes a replacement question set generated from this module's CURRENT lesson content. Nothing changes until you review and apply."}
+              ? "Only questions ticked Keep survive alongside the proposal. Untick a Keep to replace that question."
+              : "Proposes questions generated from this module's CURRENT lesson content. Nothing changes until you review and apply."}
           </DialogDescription>
         </DialogHeader>
 
         {/* ── ASK ──────────────────────────────────────────────────────────── */}
         {(phase === "ask" || phase === "running") && (
           <div className="space-y-3">
+            {existingQuestions.length > 0 && (
+              <div className="rounded-lg border p-3">
+                <p className="text-xs font-semibold mb-1.5">What should happen to the current {existingQuestions.length} question{existingQuestions.length !== 1 ? "s" : ""}?</p>
+                <div className="flex flex-col gap-1.5">
+                  <label className="flex items-center gap-2 text-xs cursor-pointer">
+                    <input
+                      type="radio"
+                      name="ai-quiz-mode"
+                      checked={mode === "replace"}
+                      onChange={() => setMode("replace")}
+                      disabled={phase === "running"}
+                      aria-label="Replace the current quiz"
+                    />
+                    Replace them — you can still tick Keep on individual questions during review
+                  </label>
+                  <label className="flex items-center gap-2 text-xs cursor-pointer">
+                    <input
+                      type="radio"
+                      name="ai-quiz-mode"
+                      checked={mode === "add"}
+                      onChange={() => setMode("add")}
+                      disabled={phase === "running"}
+                      aria-label="Add to the current quiz"
+                    />
+                    Keep them all — the AI questions are added on top
+                  </label>
+                </div>
+              </div>
+            )}
             <div className="rounded-lg border p-3">
               <p className="text-xs font-semibold mb-1.5">Question types (optional)</p>
               <p className="text-[11px] text-muted-foreground mb-2">
@@ -403,7 +436,13 @@ export default function QuizRefreshDialog({
                 {phase === "running" && (
                   <span className="h-4 w-4 animate-spin rounded-full border-2 border-current border-t-transparent" />
                 )}
-                {phase === "running" ? "Generating…" : "Generate replacement ✦"}
+                {phase === "running"
+                  ? "Generating…"
+                  : existingQuestions.length === 0
+                  ? "Generate questions ✦"
+                  : mode === "add"
+                  ? "Generate additions ✦"
+                  : "Generate replacement ✦"}
               </Button>
             </>
           )}
