@@ -143,6 +143,8 @@ export interface Module {
 
 export interface FullCourse {
   courseId: string;
+  /** Database uuid of the course (courseId above is the slug). */
+  dbId?: string;
   title: string;
   tagline: string;
   skillLevel?: string;
