@@ -695,9 +695,9 @@ export default function QuizEditor({ module, open, onOpenChange, onQuizChanged }
 
               {/* ── Questions ───────────────────────────────────────────────── */}
               <section>
-                <div className="flex items-center justify-between mb-2">
+                <div className="flex items-center justify-between gap-2 flex-wrap mb-2">
                   <h3 className="text-sm font-semibold text-foreground">Questions</h3>
-                  <div className="flex gap-2">
+                  <div className="flex gap-2 flex-wrap">
                     <Button
                       size="sm"
                       variant="outline"
