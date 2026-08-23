@@ -79,6 +79,8 @@ export default function QuizRefreshDialog({
   const [count, setCount] = useState<number | null>(null);
   // Index of the proposal currently being rerolled (null = none)
   const [rerolling, setRerolling] = useState<number | null>(null);
+  // Which proposal shows the student-view preview ("s0", "c1", … or null)
+  const [previewKey, setPreviewKey] = useState<string | null>(null);
   const [instruction, setInstruction] = useState("");
   const [draftId, setDraftId] = useState<string | null>(null);
   const [payload, setPayload] = useState<DraftPayload | null>(null);
@@ -255,6 +257,80 @@ export default function QuizRefreshDialog({
     return "";
   };
 
+  const StudentPreview = ({ q }: { q: DraftQuestion }) => {
+    const qd = (q.question_data ?? {}) as Record<string, unknown>;
+    const t = q.question_type;
+    return (
+      <div className="rounded-md border bg-muted/40 p-3 space-y-2 text-sm">
+        <p className="text-[10px] font-semibold uppercase text-muted-foreground">Student view</p>
+        <p className="font-medium">{q.question}</p>
+        {(t === "multiple_choice" || t === "scenario") && Array.isArray(q.options) && (
+          <div className="space-y-1">
+            {(q.options as string[]).map((o, i) => (
+              <div key={i} className="rounded border bg-background px-3 py-1.5 text-xs">
+                {String.fromCharCode(65 + i)}. {o}
+              </div>
+            ))}
+          </div>
+        )}
+        {t === "multiple_select" && Array.isArray(q.options) && (
+          <div className="space-y-1">
+            {(q.options as string[]).map((o, i) => (
+              <div key={i} className="flex items-center gap-2 rounded border bg-background px-3 py-1.5 text-xs">
+                <span className="inline-block h-3.5 w-3.5 shrink-0 rounded-sm border" /> {o}
+              </div>
+            ))}
+            <p className="text-[10px] text-muted-foreground">Students tick every answer that applies.</p>
+          </div>
+        )}
+        {t === "ordering" && Array.isArray(q.options) && (
+          <div className="space-y-1">
+            {(q.options as string[]).map((o, i) => (
+              <div key={i} className="flex items-center gap-2 rounded border bg-background px-3 py-1.5 text-xs">
+                <span className="text-muted-foreground">⋮⋮</span> {o}
+              </div>
+            ))}
+            <p className="text-[10px] text-muted-foreground">
+              Listed in the correct order here — students see them shuffled and drag to reorder.
+            </p>
+          </div>
+        )}
+        {t === "matching" && Array.isArray(qd.pairs) && (
+          <div className="space-y-1">
+            {(qd.pairs as { left: string; right: string }[]).map((p, i) => (
+              <div key={i} className="grid grid-cols-2 gap-2 text-xs">
+                <div className="rounded border bg-background px-2 py-1.5">{p.left}</div>
+                <div className="rounded border bg-background px-2 py-1.5 text-muted-foreground">▼ {p.right}</div>
+              </div>
+            ))}
+            <p className="text-[10px] text-muted-foreground">The right column becomes shuffled dropdowns for students.</p>
+          </div>
+        )}
+        {t === "fill_in_blank" && (
+          <div className="text-xs">
+            <span className="inline-block w-28 rounded border bg-background px-2 py-1 text-muted-foreground">type answer…</span>
+            <p className="mt-1 text-[10px] text-muted-foreground">
+              Accepted: {((qd.acceptable_answers as string[] | undefined) ?? []).join(", ")}
+            </p>
+          </div>
+        )}
+        {t === "true_false" && (
+          <div className="flex gap-2 text-xs">
+            <span className="rounded border bg-background px-4 py-1.5">True</span>
+            <span className="rounded border bg-background px-4 py-1.5">False</span>
+          </div>
+        )}
+        {t === "numeric" && (
+          <div className="flex items-center gap-2 text-xs">
+            <span className="inline-block w-24 rounded border bg-background px-2 py-1 text-muted-foreground">0.00</span>
+            {typeof qd.unit === "string" && qd.unit ? <span>{qd.unit}</span> : null}
+            <span className="text-[10px] text-muted-foreground">tolerance ± {Number(qd.tolerance ?? 0)}</span>
+          </div>
+        )}
+      </div>
+    );
+  };
+
   return (
     <Dialog open={open} onOpenChange={handleOpenChange}>
       <DialogContent className="max-w-3xl max-h-[90vh] flex flex-col">
@@ -378,6 +454,14 @@ export default function QuizRefreshDialog({
                           variant="ghost"
                           size="sm"
                           className="h-6 text-xs"
+                          onClick={() => setPreviewKey(previewKey === `s${i}` ? null : `s${i}`)}
+                        >
+                          {previewKey === `s${i}` ? "Hide preview" : "👁 Preview"}
+                        </Button>
+                        <Button
+                          variant="ghost"
+                          size="sm"
+                          className="h-6 text-xs"
                           disabled={rerolling !== null}
                           title="Regenerate just this question (same type, avoids duplicating the others)"
                           onClick={() => void handleReroll(i)}
@@ -434,6 +518,7 @@ export default function QuizRefreshDialog({
                         className="text-xs"
                         placeholder="Explanation shown after answering…"
                       />
+                      {previewKey === `s${i}` && <StudentPreview q={q} />}
                     </div>
                   ))}
                   {caseBlock && (
@@ -446,6 +531,14 @@ export default function QuizRefreshDialog({
                             <Badge className="bg-amber-100 text-amber-800 border-0 text-[10px]">scenario</Badge>
                             <span className="text-[11px] text-emerald-700">{questionSummary(q)}</span>
                             <span className="ml-auto" />
+                            <Button
+                              variant="ghost"
+                              size="sm"
+                              className="h-6 text-xs"
+                              onClick={() => setPreviewKey(previewKey === `c${ci}` ? null : `c${ci}`)}
+                            >
+                              {previewKey === `c${ci}` ? "Hide preview" : "👁 Preview"}
+                            </Button>
                             <Button
                               variant="ghost"
                               size="sm"
@@ -495,6 +588,7 @@ export default function QuizRefreshDialog({
                             className="text-xs"
                             placeholder="Explanation shown after answering…"
                           />
+                          {previewKey === `c${ci}` && <StudentPreview q={q} />}
                         </div>
                       ))}
                     </div>
