@@ -100,6 +100,7 @@ import CurriculumOrganizer from "@/components/curriculum/CurriculumOrganizer";
 // ── AI quiz refresh (review-first replacement quiz; same dialog as organizer) ─
 import QuizRefreshDialog from "@/components/curriculum/QuizRefreshDialog";
 import QuizEditor from "@/components/curriculum/QuizEditor";
+import DeckEditor from "@/components/curriculum/DeckEditor";
 
 // ── TipTap WYSIWYG Editor (replaces block-by-block ContentBlockEditor) ───────
 import TipTapLessonEditor from "@/components/TipTapLessonEditor";
@@ -430,6 +431,8 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
   // Quiz editing goes through the shared QuizEditor sheet (same as the organizer).
   const [quizEditorModule, setQuizEditorModule] = useState<Module | null>(null);
   const [quizEditorOpen, setQuizEditorOpen] = useState(false);
+  const [deckEditorModule, setDeckEditorModule] = useState<Module | null>(null);
+  const [deckEditorOpen, setDeckEditorOpen] = useState(false);
   const [showDeleteDialog, setShowDeleteDialog] = useState(false);
   const [deleteTarget, setDeleteTarget] = useState<{ type: string; id: string; name: string } | null>(null);
 
@@ -1443,6 +1446,7 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
                                     onEditLesson={openEditLesson}
                                     onDeleteLesson={(l) => confirmDelete("lesson", l.id, l.title)}
                                     onOpenQuizEditor={() => openQuizEditor(mod)}
+                                    onOpenDeckEditor={() => { setDeckEditorModule(mod); setDeckEditorOpen(true); }}
                                     onDeleteQuiz={(q) => confirmDelete("quiz", q.id, q.question.slice(0, 40))}
                                   />
                                 ))
@@ -2684,6 +2688,13 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
         </DialogContent>
       </Dialog>
 
+      {/* ── Flashcard deck editor ───────────────────────────────────────── */}
+      <DeckEditor
+        module={deckEditorModule}
+        open={deckEditorOpen}
+        onOpenChange={setDeckEditorOpen}
+      />
+
       {/* ── Quiz Editor (shared with the Curriculum organizer) ───────────── */}
       <QuizEditor
         module={quizEditorModule}
@@ -2853,6 +2864,8 @@ interface ModuleCardProps {
   onDeleteLesson: (l: Lesson) => void;
   /** Opens the shared QuizEditor sheet for this module. */
   onOpenQuizEditor: () => void;
+  /** Opens the flashcard DeckEditor sheet for this module. */
+  onOpenDeckEditor: () => void;
   onDeleteQuiz: (q: QuizQuestion) => void;
 }
 
@@ -2865,6 +2878,7 @@ function ModuleCard({
   onEditLesson,
   onDeleteLesson,
   onOpenQuizEditor,
+  onOpenDeckEditor,
   onDeleteQuiz,
 }: ModuleCardProps) {
   const [expanded, setExpanded] = useState(false);
@@ -3020,6 +3034,9 @@ function ModuleCard({
                 </Button>
                 <Button size="sm" variant="ghost" className="h-6 text-xs gap-1 px-2" onClick={onOpenQuizEditor}>
                   <IconEdit /> Edit quiz
+                </Button>
+                <Button size="sm" variant="ghost" className="h-6 text-xs gap-1 px-2" title="Study flashcard deck for this module" onClick={onOpenDeckEditor}>
+                  🃏 Deck
                 </Button>
               </div>
             </div>
