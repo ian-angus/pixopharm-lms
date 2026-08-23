@@ -86,6 +86,9 @@ interface GenCard {
 function validateCard(c: GenCard): string | null {
   const t = c.card_type as CardType;
   if (!CARD_TYPES.includes(t)) return `card_type "${c.card_type}" not allowed`;
+  // Normalize extra to a plain object so a null/array/string extra can never
+  // reach the DB insert (the column is NOT NULL jsonb object).
+  if (typeof c.extra !== "object" || c.extra === null || Array.isArray(c.extra)) c.extra = {};
   if (!c.front || typeof c.front !== "string" || c.front.trim().length < 2 || c.front.length > 300) {
     return "front missing, too short or over 300 chars";
   }
