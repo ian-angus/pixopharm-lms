@@ -5,6 +5,7 @@
 
 import { useState, useEffect, useCallback, useMemo, useRef } from "react";
 import type { User } from "@supabase/supabase-js";
+import { supabase } from "@/lib/supabase";
 
 // ── UI Components ────────────────────────────────────────────────────────────
 import { Button } from "@/components/ui/button";
@@ -2248,6 +2249,8 @@ export default function AdminDashboard({ user, onExit }: AdminDashboardProps) {
             <div className="space-y-6 max-w-2xl">
               <h2 className="text-xl font-bold text-foreground">Settings</h2>
 
+              <EnrollmentCard />
+
               <Card>
                 <CardHeader>
                   <CardTitle className="text-base">Admin Profile</CardTitle>
@@ -3187,5 +3190,79 @@ function ModuleCard({
         onApplied={onEnhanced}
       />
     </div>
+  );
+}
+
+
+// ── Enrollment gate ──────────────────────────────────────────────────────────
+// Controls whether the public can create Academy accounts. While closed, the
+// sign-up modal collects waitlist emails instead. Note: the Supabase project
+// setting "Allow new users to sign up" is the hard lock at the auth layer —
+// flip BOTH when opening or closing enrollment.
+function EnrollmentCard() {
+  const [enabled, setEnabled] = useState<boolean | null>(null);
+  const [busy, setBusy] = useState(false);
+
+  useEffect(() => {
+    void supabase.rpc("academy_signups_enabled").then(({ data }) => {
+      if (typeof data === "boolean") setEnabled(data);
+    });
+  }, []);
+
+  const flip = async (on: boolean) => {
+    setBusy(true);
+    const { error } = await supabase
+      .from("academy_settings")
+      .update({ signups_enabled: on, updated_at: new Date().toISOString() })
+      .eq("id", true);
+    setBusy(false);
+    if (error) {
+      alert(`Could not update: ${error.message}`);
+      return;
+    }
+    setEnabled(on);
+  };
+
+  return (
+    <Card className={enabled === false ? "border-amber-300 bg-amber-50/40" : ""}>
+      <CardHeader>
+        <CardTitle className="text-base">Enrollment</CardTitle>
+        <CardDescription>
+          {enabled == null ? "Loading…"
+            : enabled
+              ? "Open — anyone can create a student account."
+              : "Closed — the sign-up form collects waitlist emails instead. Existing students sign in normally."}
+        </CardDescription>
+      </CardHeader>
+      <CardContent className="space-y-3">
+        <div className="flex items-center justify-between">
+          <span className="text-sm font-medium">
+            {enabled ? "Enrollment is OPEN" : "Enrollment is CLOSED"}
+          </span>
+          <Button
+            size="sm"
+            disabled={busy || enabled == null}
+            variant={enabled ? "destructive" : "default"}
+            className={enabled ? "" : "bg-[hsl(174,62%,32%)] hover:bg-[hsl(174,62%,26%)]"}
+            onClick={() => void flip(!enabled)}
+          >
+            {busy ? "Saving…" : enabled ? "Close enrollment" : "Open enrollment"}
+          </Button>
+        </div>
+        <p className="text-xs text-muted-foreground">
+          Also flip the auth-level lock ("Allow new users to sign up") in{" "}
+          <a
+            className="underline text-[hsl(174,62%,32%)]"
+            href="https://supabase.com/dashboard/project/hqyewiroiswmhfghkzhz/auth/providers"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Supabase auth settings
+          </a>{" "}
+          so the door is locked, not just hidden. Waitlist emails collected while closed
+          appear in the shared waitlist table (same list as the homepage).
+        </p>
+      </CardContent>
+    </Card>
   );
 }
